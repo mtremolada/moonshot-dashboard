@@ -1847,7 +1847,7 @@
                     const timestamp = new Date().getTime();
 
                     // Use Promise.allSettled instead of Promise.all to handle missing files gracefully
-                    const base = "./public/data/";
+                    const base = "./";
                     const results = await Promise.allSettled([
                         fetch(`${base}graduated_tokens_log_current_caps.json?t=${timestamp}`),
                         fetch(`${base}graduated_tokens_thresholds.json?t=${timestamp}`),
