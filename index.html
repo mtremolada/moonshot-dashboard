@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DailyRunner.Fun</title>
     <link rel="icon" type="image/png" href="logo.png">
@@ -15,18 +13,17 @@
             padding: 0;
             height: 100vh;
             overflow: hidden;
-            position: relative;
-            /* Add this for proper layering */
+            position: relative; /* Add this for proper layering */
         }
-
+        
         #race-track {
             position: relative;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(to top,
-                    rgba(26, 26, 26, 0.7) 0%,
-                    rgba(18, 18, 18, 0.7) 10%,
-                    rgba(10, 10, 10, 0.7) 100%);
+            background: linear-gradient(to top, 
+                rgba(26, 26, 26, 0.7) 0%, 
+                rgba(18, 18, 18, 0.7) 10%, 
+                rgba(10, 10, 10, 0.7) 100%);
             display: flex;
             justify-content: center;
         }
@@ -47,9 +44,9 @@
             left: 0;
             width: 100%;
             height: 20px;
-            background: linear-gradient(to right,
-                    rgba(76, 175, 80, 0.3) 0%,
-                    rgba(33, 150, 243, 0.3) 100%);
+            background: linear-gradient(to right, 
+                rgba(76, 175, 80, 0.3) 0%, 
+                rgba(33, 150, 243, 0.3) 100%);
             z-index: 5;
         }
 
@@ -58,8 +55,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 80px;
-            /* Reduced from 100px */
+            width: 80px; /* Reduced from 100px */
             transition: bottom 1s ease, left 1s ease;
             z-index: 15;
         }
@@ -69,8 +65,7 @@
             width: 60px;
             height: 60px;
             margin-bottom: 5px;
-            z-index: 12;
-            /* Add this line */
+            z-index: 12; /* Add this line */
         }
 
         .token-icon {
@@ -89,14 +84,12 @@
             z-index: 20;
             box-shadow: 0 0 15px rgba(33, 150, 243, 0.6);
         }
-
+        
         /* Token name style */
         .token-name {
-            margin-bottom: 0;
-            /* Removed margin */
+            margin-bottom: 0; /* Removed margin */
             background-color: rgba(36, 36, 36, 0.8);
-            border-radius: 4px 4px 0 0;
-            /* Rounded corners only on top */
+            border-radius: 4px 4px 0 0; /* Rounded corners only on top */
             padding: 2px 6px;
             font-size: 0.8em;
             text-align: center;
@@ -111,10 +104,9 @@
             overflow: hidden;
             text-overflow: ellipsis;
             max-width: 100%;
-            cursor: pointer;
-            /* Added cursor pointer to indicate clickable */
+            cursor: pointer; /* Added cursor pointer to indicate clickable */
         }
-
+        
         /* Enhanced name hover effect */
         .token-racer.expanded .token-name {
             transform: scale(1.15);
@@ -125,30 +117,23 @@
             max-width: 150px;
             word-break: break-word;
         }
-
+        
         .token-market-cap {
-            margin-top: 0;
-            /* Removed margin */
+            margin-top: 0; /* Removed margin */
             background-color: rgba(36, 36, 36, 0.8);
-            border-radius: 0 0 4px 4px;
-            /* Rounded corners only on bottom */
+            border-radius: 0 0 4px 4px; /* Rounded corners only on bottom */
             padding: 2px 6px;
             font-size: 0.8em;
             text-align: center;
             color: #ffffff;
-            transition: all 0.3s ease;
-            /* Change from opacity to all */
+            transition: all 0.3s ease; /* Change from opacity to all */
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
-            /* Add this */
-            z-index: 5;
-            /* Add this */
-            cursor: pointer;
-            /* Added cursor pointer to indicate clickable */
+            position: relative; /* Add this */
+            z-index: 5; /* Add this */
+            cursor: pointer; /* Added cursor pointer to indicate clickable */
         }
-
         /* Enhanced market cap hover effect */
         .token-racer.expanded .token-market-cap {
             transform: scale(1.15);
@@ -169,7 +154,6 @@
             transform: scale(1.5) !important;
             z-index: 30;
         }
-
         /* Enhanced social icons - IMPROVED */
         .social-icons {
             position: absolute;
@@ -185,19 +169,16 @@
         }
 
         .token-icon-container:hover .social-icons {
-            transform: translateY(-15px);
-            /* Move up more to avoid overlap */
+            transform: translateY(-15px); /* Move up more to avoid overlap */
             opacity: 1;
-            bottom: 0;
-            /* Adjust position to avoid overlapping with other elements */
+            bottom: 0; /* Adjust position to avoid overlapping with other elements */
         }
 
         .social-icon {
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            margin: 0 4px;
-            /* Equal margin on both sides */
+            margin: 0 4px; /* Equal margin on both sides */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -206,7 +187,7 @@
             text-decoration: none;
             transition: all 0.3s ease;
             transform: scale(0.8);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
             opacity: 0.9;
             overflow: hidden;
             /* Improve click target without changing visual size */
@@ -226,34 +207,29 @@
 
         /* Enhanced hover effect for individual social icons */
         .token-icon-container:hover .social-icon {
-            transform: scale(1.1);
-            /* Slightly larger */
+            transform: scale(1.1); /* Slightly larger */
             opacity: 1;
-            margin: 0 6px;
-            /* Equal increased margin on both sides */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-            /* Enhanced shadow */
+            margin: 0 6px; /* Equal increased margin on both sides */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.6); /* Enhanced shadow */
         }
 
         /* Staggers the animation for each consecutive icon for a nice effect */
         .token-icon-container:hover .social-icon:nth-child(1) {
             transition-delay: 0s;
         }
-
+        
         .token-icon-container:hover .social-icon:nth-child(2) {
             transition-delay: 0.05s;
         }
-
+        
         .token-icon-container:hover .social-icon:nth-child(3) {
             transition-delay: 0.1s;
         }
 
         .social-icon:hover {
-            transform: scale(1.3) !important;
-            /* Much larger on hover */
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.7);
-            z-index: 25;
-            /* Ensure it's above other elements */
+            transform: scale(1.3) !important; /* Much larger on hover */
+            box-shadow: 0 6px 14px rgba(0,0,0,0.7);
+            z-index: 25; /* Ensure it's above other elements */
         }
 
         .social-icon.website {
@@ -267,7 +243,7 @@
         .social-icon.telegram {
             background: linear-gradient(135deg, #0088cc, #0056a3);
         }
-
+        
         .social-icon svg {
             width: 14px;
             height: 14px;
@@ -287,11 +263,11 @@
             z-index: 1000;
             max-height: 350px;
             overflow-y: auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
             font-size: 0.85em;
             pointer-events: none;
             backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .token-info.visible {
@@ -304,14 +280,14 @@
             text-align: center;
             margin-bottom: 6px;
             padding-bottom: 6px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        /* Added - Social icons in the tooltip */
+        /* Added - Social icons in the tooltip */ 
         .token-info-social-icons {
             display: flex;
             justify-content: center;
@@ -472,10 +448,10 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255,255,255,0.1);
             z-index: 5;
         }
-
+        
         .toast-notification {
             position: fixed;
             bottom: 20px;
@@ -489,9 +465,9 @@
             z-index: 1000;
             opacity: 0;
             transition: opacity 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
-
+        
         .toast-notification.show {
             opacity: 1;
         }
@@ -503,23 +479,15 @@
 
         /* Animation for tooltip */
         @keyframes tooltipPulse {
-            0% {
-                box-shadow: 0 0 0 rgba(33, 150, 243, 0.4);
-            }
-
-            50% {
-                box-shadow: 0 0 10px rgba(33, 150, 243, 0.7);
-            }
-
-            100% {
-                box-shadow: 0 0 0 rgba(33, 150, 243, 0.4);
-            }
+            0% { box-shadow: 0 0 0 rgba(33, 150, 243, 0.4); }
+            50% { box-shadow: 0 0 10px rgba(33, 150, 243, 0.7); }
+            100% { box-shadow: 0 0 0 rgba(33, 150, 243, 0.4); }
         }
 
         .token-info.visible {
             animation: tooltipPulse 2s infinite;
         }
-
+        
         /* Filter Toggle Switch */
         .filter-controls {
             display: flex;
@@ -572,15 +540,15 @@
             transition: .4s;
         }
 
-        input:checked+.slider {
+        input:checked + .slider {
             background-color: #F44336;
         }
 
-        input:focus+.slider {
+        input:focus + .slider {
             box-shadow: 0 0 1px #F44336;
         }
 
-        input:checked+.slider:before {
+        input:checked + .slider:before {
             transform: translateX(26px);
         }
 
@@ -603,7 +571,7 @@
             font-size: 0.8em;
             color: #aaa;
             z-index: 100;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
             transition: all 0.3s ease;
         }
 
@@ -646,18 +614,18 @@
             font-family: 'Arial', sans-serif;
             font-size: 0.9em;
         }
-
+        
         #dashboard-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
-
+        
         #dashboard-button svg {
             margin-right: 6px;
             width: 16px;
             height: 16px;
         }
-
+        
         /* Add style for scan incomplete status */
         .scan-status-incomplete {
             display: inline-block;
@@ -669,7 +637,6 @@
             background-color: rgba(156, 39, 176, 0.3);
             color: #9C27B0;
         }
-
         /* Copy icon styles */
         .copy-address-icon {
             display: inline-flex;
@@ -684,7 +651,7 @@
             transition: all 0.2s ease;
             position: relative;
         }
-
+        
         .copy-address-icon::after {
             content: '';
             position: absolute;
@@ -778,210 +745,201 @@
             #race-header h1 {
                 font-size: 1.5em;
             }
-
+            
             .token-icon-container {
                 width: 40px;
                 height: 40px;
             }
-
+            
             .token-icon {
                 width: 40px;
                 height: 40px;
             }
-
+            
             .token-racer {
                 width: 60px;
             }
-
+            
             /* Hide market cap labels completely on tablets and smaller devices */
             .token-market-cap {
                 display: none !important;
             }
-
+            
             /* Hide token name completely on tablets and smaller devices */
             .token-name {
                 display: none !important;
             }
-
+            
             /* Hide social icons completely on iPad size screens and smaller */
             .social-icons {
                 display: none !important;
             }
-
+            
             /* Hide copy address icon on mobile */
             .copy-address-icon {
                 display: none !important;
             }
-
+            
             /* Disable all tooltip functionality for mobile */
             .token-info {
                 display: none !important;
             }
-
+            
             /* Disable the tooltip hover effects for mobile - any element with mouseenter events */
             .token-icon-container {
                 pointer-events: none;
             }
-
+            
             /* But restore click events just for the token icon for navigation */
             .token-icon {
                 pointer-events: auto;
                 cursor: pointer;
             }
-
+            
             /* Hide the Simple View toggle on smaller screens */
             .simple-view-row {
                 display: none !important;
             }
-
+            
             .filter-label {
                 font-size: 0.8em;
             }
-
+            
             #last-updated-container {
                 font-size: 0.7em;
                 padding: 3px 8px;
             }
-
             /* Hide the last updated container */
             #last-updated-container {
                 display: none !important;
             }
-
             #finish-line {
-                top: 160px;
-                /* Increased from 110px */
+                top: 160px; /* Increased from 110px */
             }
-
+            
             #finish-line::after {
                 font-size: 0.7em;
             }
-
+            
             /* Adjust slider for mobile */
             .range-slider {
                 height: 6px;
             }
-
+            
             .range-slider::-webkit-slider-thumb {
                 width: 16px;
                 height: 16px;
             }
-
+            
             .range-slider::-moz-range-thumb {
                 width: 16px;
                 height: 16px;
             }
         }
-
         /* Replace the existing 480px media query with this updated version */
         @media (max-width: 480px) {
             #race-header h1 {
                 font-size: 1.2em;
             }
-
+            
             .token-icon-container {
                 width: 30px;
                 height: 30px;
             }
-
+            
             .token-icon {
                 width: 30px;
                 height: 30px;
                 border-width: 2px;
             }
-
+            
             .token-racer {
                 width: 50px;
             }
-
+            
             /* Note: We don't need styles for hidden elements */
             /* .token-market-cap, .social-icon, .token-info styles removed */
-
+            
             .switch {
                 width: 40px;
                 height: 20px;
             }
-
+            
             .slider:before {
                 height: 14px;
                 width: 14px;
                 left: 3px;
                 bottom: 3px;
             }
-
-            input:checked+.slider:before {
+            
+            input:checked + .slider:before {
                 transform: translateX(20px);
             }
-
+            
             .filter-label {
                 font-size: 0.7em;
             }
-
+            
             #last-updated-container {
                 font-size: 0.6em;
                 padding: 2px 6px;
             }
-
+            
             /* Make the race track fill more screen space on small devices */
             #race-track {
                 height: calc(100vh - 20px);
             }
-
+            
             /* Make dashboard button smaller on very small screens */
             #dashboard-button {
                 font-size: 0.65em;
                 padding: 4px 6px;
             }
-
             /* Hide the last updated container */
             #last-updated-container {
                 display: none !important;
             }
-
             #finish-line {
-                top: 140px;
-                /* Increased from 90px */
+                top: 140px; /* Increased from 90px */
             }
-
+            
             #finish-line::after {
                 font-size: 0.6em;
                 right: 5px;
                 top: -15px;
             }
-
+            
             /* Further adjust slider for small screens */
             .range-slider-container {
                 max-width: 220px;
             }
-
+            
             .range-slider {
                 height: 5px;
             }
-
+            
             .range-slider::-webkit-slider-thumb {
                 width: 14px;
                 height: 14px;
             }
-
+            
             .range-slider::-moz-range-thumb {
                 width: 14px;
                 height: 14px;
             }
-
+            
             .range-slider-value {
                 font-size: 0.7em;
                 padding: 1px 5px;
             }
         }
-
         /* Replace the existing finish line CSS with this */
         #finish-line {
             position: absolute;
             top: 180px;
             left: 0;
             width: 100%;
-            height: 20px;
-            /* Doubled to 20px for two rows of checkers */
+            height: 20px; /* Doubled to 20px for two rows of checkers */
             z-index: 8;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
@@ -993,18 +951,14 @@
             right: 10px;
             top: -20px;
             font-size: 0.8em;
-            color: #ffffff;
-            /* Changed from blue to black for better contrast */
-            text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
-            /* Add text shadow for readability */
+            color: #ffffff; /* Changed from blue to black for better contrast */
+            text-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* Add text shadow for readability */
             font-weight: bold;
         }
-
         /* Add media queries to make the finish line responsive */
         @media (max-width: 768px) {
             #finish-line {
-                height: 16px;
-                /* Smaller on tablets but still has two rows */
+                height: 16px; /* Smaller on tablets but still has two rows */
                 background-size: 100% 8px;
                 background-position: 0 0, 0 8px;
             }
@@ -1012,8 +966,7 @@
 
         @media (max-width: 480px) {
             #finish-line {
-                height: 12px;
-                /* Smaller on mobile but still has two rows */
+                height: 12px; /* Smaller on mobile but still has two rows */
                 background-size: 100% 6px;
                 background-position: 0 0, 0 6px;
             }
@@ -1041,11 +994,10 @@
         }
 
         /* Different background color for simple view slider */
-        input#simple-view-filter:checked+.slider {
-            background-color: #2196F3;
-            /* Blue instead of red */
+        input#simple-view-filter:checked + .slider {
+            background-color: #2196F3;  /* Blue instead of red */
         }
-
+        
         /* CSS for fallback black token placeholder */
         .token-icon.placeholder {
             background-color: #000;
@@ -1056,7 +1008,6 @@
             font-size: 10px;
             overflow: hidden;
         }
-
         /* Add these new styles for the background image and tint */
         body::before {
             content: '';
@@ -1080,11 +1031,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            /* Adjust opacity here (0.7 = 70% opaque) */
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity here (0.7 = 70% opaque) */
             z-index: -1;
         }
-
         #race-header h1 {
             color: #4CAF50;
             margin: 0;
@@ -1094,14 +1043,13 @@
             align-items: center;
             justify-content: center;
         }
-
+        
         .header-logo {
             height: 1em;
             width: auto;
             margin-right: 10px;
             vertical-align: middle;
         }
-
         /* Dropdown Menu Styles */
         .menu-dropdown {
             position: fixed;
@@ -1167,7 +1115,6 @@
             display: block;
             animation: fadeIn 0.3s;
         }
-
         /* Optional: Add separator between Dashboard and other menu items */
         .dropdown-content a.separator-top {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1176,15 +1123,8 @@
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Media queries for responsive menu */
@@ -1193,7 +1133,7 @@
                 padding: 6px 10px;
                 font-size: 0.8em;
             }
-
+            
             .menu-button svg {
                 width: 14px;
                 height: 14px;
@@ -1205,22 +1145,22 @@
                 padding: 5px 8px;
                 font-size: 0.7em;
             }
-
+            
             .menu-button svg {
                 width: 12px;
                 height: 12px;
             }
-
+            
             .dropdown-content {
                 min-width: 140px;
             }
-
+            
             .dropdown-content a {
                 padding: 10px 14px;
                 font-size: 0.9em;
             }
         }
-
+        
         /* NEW CLASSIFICATION INDICATORS AROUND TOKEN IMAGES */
         .classification-indicator {
             position: absolute;
@@ -1232,63 +1172,63 @@
             justify-content: center;
             align-items: center;
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-            filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(0 0 3px rgba(0,0,0,0.7));
             border-radius: 50%;
             background-color: rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
         }
-
+        
         .token-icon-container:hover .classification-indicator {
             transform: scale(1.2);
             background-color: rgba(0, 0, 0, 0.7);
         }
-
+        
         /* Position indicators around the circle */
         .classification-indicator.pos-top {
             top: -8px;
             left: 50%;
             transform: translateX(-50%);
         }
-
+        
         .classification-indicator.pos-top-right {
             top: 0;
             right: -5px;
         }
-
+        
         .classification-indicator.pos-right {
             top: 50%;
             right: -8px;
             transform: translateY(-50%);
         }
-
+        
         .classification-indicator.pos-bottom-right {
             bottom: 0;
             right: -5px;
         }
-
+        
         .classification-indicator.pos-bottom {
             bottom: -8px;
             left: 50%;
             transform: translateX(-50%);
         }
-
+        
         .classification-indicator.pos-bottom-left {
             bottom: 0;
             left: -5px;
         }
-
+        
         .classification-indicator.pos-left {
             top: 50%;
             left: -8px;
             transform: translateY(-50%);
         }
-
+        
         .classification-indicator.pos-top-left {
             top: 0;
             left: -5px;
         }
-
+        
         /* Adjust for smaller screens */
         @media (max-width: 768px) {
             .classification-indicator {
@@ -1339,8 +1279,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
-            /* Add gap between the toggles */
+            gap: 15px; /* Add gap between the toggles */
             margin-bottom: 5px;
         }
 
@@ -1350,30 +1289,26 @@
         }
 
         /* Custom colors for the different launchpad toggle switches */
-        input#pumpfun-filter:checked+.slider {
-            background-color: #4CAF50;
-            /* Green for PumpFun */
+        input#pumpfun-filter:checked + .slider {
+            background-color: #4CAF50;  /* Green for PumpFun */
         }
 
-        input#raydium-filter:checked+.slider {
-            background-color: #2196F3;
-            /* Blue for Raydium */
+        input#raydium-filter:checked + .slider {
+            background-color: #2196F3;  /* Blue for Raydium */
         }
 
         /* Add Meteora toggle switch color */
-        input#meteora-filter:checked+.slider {
-            background-color: #9C27B0;
-            /* Purple for Meteora */
+        input#meteora-filter:checked + .slider {
+            background-color: #9C27B0;  /* Purple for Meteora */
         }
 
         /* Responsive styles for launchpad filters */
-        @media (max-width: 768px) {
+        @media (max-width: 768px) {            
             .launchpad-filter-row {
                 flex-direction: column;
                 gap: 8px;
             }
         }
-
         /* Hide the DEX Paid section */
         /*.token-info-section:nth-of-type(2) {
             display: none;
@@ -1504,85 +1439,74 @@
         }
 
         /* Custom toggle switch colors for classification filters */
-        input#memecoin-filter:checked+.slider {
-            background-color: #FF9800;
-            /* Orange for memecoins */
+        input#memecoin-filter:checked + .slider {
+            background-color: #FF9800; /* Orange for memecoins */
         }
 
-        input#utility-filter:checked+.slider {
-            background-color: #009688;
-            /* Teal for utility */
+        input#utility-filter:checked + .slider {
+            background-color: #009688; /* Teal for utility */
         }
 
-        input#ai-filter:checked+.slider {
-            background-color: #2196F3;
-            /* Blue for AI */
+        input#ai-filter:checked + .slider {
+            background-color: #2196F3; /* Blue for AI */
         }
 
-        input#tweet-filter:checked+.slider {
-            background-color: #9C27B0;
-            /* Purple for tweet */
+        input#tweet-filter:checked + .slider {
+            background-color: #9C27B0; /* Purple for tweet */
         }
 
-        input#current-event-filter:checked+.slider {
-            background-color: #E91E63;
-            /* Pink for current event */
+        input#current-event-filter:checked + .slider {
+            background-color: #E91E63; /* Pink for current event */
         }
 
-        input#animals-filter:checked+.slider {
-            background-color: #795548;
-            /* Brown for animals */
+        input#animals-filter:checked + .slider {
+            background-color: #795548; /* Brown for animals */
         }
 
-        input#political-filter:checked+.slider {
-            background-color: #3F51B5;
-            /* Indigo for political */
+        input#political-filter:checked + .slider {
+            background-color: #3F51B5; /* Indigo for political */
         }
 
-        input#racist-filter:checked+.slider {
-            background-color: #F44336;
-            /* Red for racist */
+        input#racist-filter:checked + .slider {
+            background-color: #F44336; /* Red for racist */
         }
 
-        input#offensive-filter:checked+.slider {
-            background-color: #FF5722;
-            /* Deep orange for offensive */
+        input#offensive-filter:checked + .slider {
+            background-color: #FF5722; /* Deep orange for offensive */
         }
     </style>
     <!-- DDoS Protection Script - Added for security without changing page appearance -->
     <script src="ddos-protection.js" defer></script>
 </head>
-
 <body>
     <div class="menu-dropdown">
         <button class="menu-button" onclick="toggleMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
             </svg>
             Menu
         </button>
         <div id="dropdown-menu" class="dropdown-content">
-            <a href="./index.html">Home Page</a>
-            <a href="./dashboard.html">Dashboard</a>
-            <a href="./trending.html">Trending</a>
-            <a href="./documentation.html">Documentation</a>
-            <a href="./privacy.html" class="separator-top">Privacy Policy</a>
-            <a href="./disclaimer.html">Disclaimer</a>
-            <a href="./termsofservice.html">Terms of Service</a>
+            <a href="/">Home Page</a>
+            <a href="/dashboard.html">Dashboard</a>
+            <a href="/trending.html">Trending</a>
+            <a href="/documentation.html">Documentation</a>
+            <a href="/privacy.html" class="separator-top">Privacy Policy</a>
+            <a href="/disclaimer.html">Disclaimer</a>
+            <a href="/termsofservice.html">Terms of Service</a>
         </div>
-    </div>
+    </div> 
     <div id="race-header">
         <h1><img src="logo.png" alt="Logo" class="header-logo">DailyRunner.Fun</h1>
-
+        
         <!-- New filter settings button -->
         <button id="filter-settings-button">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                <path
-                    d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z" />
+                <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/>
             </svg>
             Filter Settings
         </button>
-
+        
         <!-- Filter settings container (starts hidden) -->
         <div id="filter-settings-container">
             <!-- Launchpad Filters Section -->
@@ -1596,7 +1520,7 @@
                         </label>
                         <span class="filter-label">PumpFun</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="raydium-filter" checked>
@@ -1604,7 +1528,7 @@
                         </label>
                         <span class="filter-label">Raydium</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="meteora-filter" checked>
@@ -1614,17 +1538,16 @@
                     </div>
                 </div>
             </div>
-
+            
             <!-- Market Cap Filter Section -->
             <div class="settings-section">
                 <div class="settings-section-title">Market Cap Filter</div>
                 <div class="range-slider-container">
-                    <input type="range" id="market-cap-slider" min="50000" max="500000" step="10000" value="100000"
-                        class="range-slider">
+                    <input type="range" id="market-cap-slider" min="50000" max="500000" step="10000" value="100000" class="range-slider">
                     <div class="range-slider-value">Min Market Cap: $<span id="market-cap-value">100k</span></div>
                 </div>
             </div>
-
+            
             <!-- Other Filters Section -->
             <div class="settings-section">
                 <div class="settings-section-title">Other Filters</div>
@@ -1636,7 +1559,7 @@
                         </label>
                         <span class="filter-label">Show FARMS</span>
                     </div>
-
+                    
                     <div class="filter-group" style="margin-left: 20px;">
                         <label class="switch">
                             <input type="checkbox" id="simple-view-filter">
@@ -1646,7 +1569,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <!-- New Classification Filters Section -->
             <div class="settings-section">
                 <div class="settings-section-title">AI Classification Filters</div>
@@ -1658,7 +1581,7 @@
                         </label>
                         <span class="filter-label">😂 Memecoin</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="utility-filter" checked>
@@ -1666,7 +1589,7 @@
                         </label>
                         <span class="filter-label">🛠️ Utility</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="ai-filter" checked>
@@ -1674,7 +1597,7 @@
                         </label>
                         <span class="filter-label">🤖 AI Token</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="tweet-filter" checked>
@@ -1682,7 +1605,7 @@
                         </label>
                         <span class="filter-label">📱 Tweet Coin</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="current-event-filter" checked>
@@ -1690,7 +1613,7 @@
                         </label>
                         <span class="filter-label">📰 Current Event</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="animals-filter" checked>
@@ -1698,7 +1621,7 @@
                         </label>
                         <span class="filter-label">🐱 Animals</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="political-filter" checked>
@@ -1706,7 +1629,7 @@
                         </label>
                         <span class="filter-label">🏛️ Political</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="racist-filter">
@@ -1714,7 +1637,7 @@
                         </label>
                         <span class="filter-label">😭 Racist</span>
                     </div>
-
+                    
                     <div class="filter-group">
                         <label class="switch">
                             <input type="checkbox" id="offensive-filter">
@@ -1729,13 +1652,13 @@
 
     <div id="race-track">
         <div id="start-line"></div>
-        <div id="finish-line"></div> <!-- Finish line element -->
+        <div id="finish-line"></div>  <!-- Finish line element -->
         <div id="race-progress"></div>
         <div id="timeline"></div>
     </div>
-
+    
     <div id="toast" class="toast-notification"></div>
-
+    
     <!-- Last updated timestamp container -->
     <div id="last-updated-container">
         <span id="refresh-indicator"></span>
@@ -1762,12 +1685,12 @@
                 this.topPadding = 120; // New variable for top padding to keep highest tokens lower
                 this.minMarketCapFilter = 100000; // Default minimum market cap filter value
                 this.simpleViewEnabled = false; // Default to normal view with all details
-
+                
                 // NEW: Launchpad filter properties
                 this.showPumpFunTokens = true; // Default to showing PumpFun tokens
                 this.showRaydiumTokens = true; // Default to showing Raydium tokens
                 this.showMeteoraTokens = true; // Default to showing Meteora tokens
-
+                
                 // NEW: Classification filter properties
                 this.showMemecoinTokens = true; // Default to showing memecoin tokens
                 this.showUtilityTokens = true; // Default to showing utility tokens
@@ -1778,10 +1701,10 @@
                 this.showPoliticalTokens = true; // Default to showing political tokens
                 this.showRacistTokens = false; // Default to hiding racist tokens
                 this.showOffensiveTokens = false; // Default to hiding offensive tokens
-
+                
                 // Store classification data for tokens
                 this.tokenClassifications = {}; // Will store token_address -> classification data
-
+                
                 // New properties for auto-refresh
                 this.refreshInterval = 5000; // 5 seconds
                 this.refreshTimer = null;
@@ -1789,14 +1712,14 @@
                 this.isRefreshing = false;
                 this.lastUpdatedElement = document.getElementById('last-updated-text');
                 this.refreshIndicator = document.getElementById('refresh-indicator');
-
+                
                 // Calculate header height and safe display area
                 this.updateSafeDisplayArea();
-
+                
                 // Add resize listener
                 window.addEventListener('resize', () => this.updateSafeDisplayArea());
             }
-
+            
             updateFinishLineLabel() {
                 // Always set the content to 10M Market Cap since we're only using log scale
                 let style = document.getElementById('finish-line-style');
@@ -1805,27 +1728,27 @@
                     style.id = 'finish-line-style';
                     document.head.appendChild(style);
                 }
-
+                
                 style.textContent = `#finish-line::after { content: "10M Market Cap"; }`;
             }
 
             updateSafeDisplayArea() {
                 const header = document.getElementById('race-header');
                 this.headerHeight = header.offsetHeight + 20; // Add padding
-
+                
                 // Position the finish line with additional offset to make it lower
                 const finishLine = document.getElementById('finish-line');
                 const finishLineOffset = 60; // Additional offset to position it lower
                 finishLine.style.top = `${this.headerHeight + finishLineOffset}px`;
-
+                
                 // Calculate maximum display height based on finish line position
                 const finishLinePosition = this.headerHeight + finishLineOffset;
                 this.maxDisplayHeight = window.innerHeight - finishLinePosition - 80;
-
+                
                 // Calculate scale factor based on viewport width
                 const baseWidth = 1440; // Base width for scaling
                 this.scaleFactor = Math.max(0.5, Math.min(1, window.innerWidth / baseWidth));
-
+                
                 // Update positions if we have tokens loaded
                 if (this.filteredTokens.length > 0) {
                     this.calculateRacePositions();
@@ -1837,28 +1760,26 @@
                 try {
                     // If already refreshing, don't start another fetch
                     if (this.isRefreshing) return;
-
+                    
                     this.isRefreshing = true;
-
+                    
                     // Show refresh indicator
                     this.refreshIndicator.classList.add('active');
-
+                    
                     // Add cache-busting timestamp to prevent browser caching
                     const timestamp = new Date().getTime();
-
+                    
                     // Use Promise.allSettled instead of Promise.all to handle missing files gracefully
-                    const base = "./";
                     const results = await Promise.allSettled([
-                        fetch(`${base}graduated_tokens_log_current_caps.json?t=${timestamp}`),
-                        fetch(`${base}graduated_tokens_thresholds.json?t=${timestamp}`),
-                        fetch(`${base}graduated_bonk_tokens_log_current_caps.json?t=${timestamp}`),
-                        fetch(`${base}graduated_bonk_tokens_thresholds.json?t=${timestamp}`),
-                        fetch(`${base}graduated_meteora_tokens_log_current_caps.json?t=${timestamp}`),
-                        fetch(`${base}graduated_meteora_tokens_thresholds.json?t=${timestamp}`),
-                        fetch(`${base}tokens_llm_interpretations.json?t=${timestamp}`)
+                        fetch(`graduated_tokens_log_current_caps.json?t=${timestamp}`),
+                        fetch(`graduated_tokens_thresholds.json?t=${timestamp}`),
+                        fetch(`graduated_bonk_tokens_log_current_caps.json?t=${timestamp}`),
+                        fetch(`graduated_bonk_tokens_thresholds.json?t=${timestamp}`),
+                        fetch(`graduated_meteora_tokens_log_current_caps.json?t=${timestamp}`),
+                        fetch(`graduated_meteora_tokens_thresholds.json?t=${timestamp}`),
+                        fetch(`tokens_llm_interpretations.json?t=${timestamp}`)
                     ]);
-
-
+                    
                     // Process results and handle failures gracefully
                     const getResponseData = async (result, defaultValue) => {
                         if (result.status === 'fulfilled' && result.value.ok) {
@@ -1871,7 +1792,7 @@
                         }
                         return defaultValue;
                     };
-
+                    
                     // Extract data with fallbacks for missing files
                     const pumpFunLogData = await getResponseData(results[0], []);
                     const pumpFunThresholdData = await getResponseData(results[1], {});
@@ -1883,16 +1804,16 @@
 
                     // Process classification data
                     this.processClassificationData(tokenClassificationsData);
-
+                    
                     // Process PumpFun tokens
                     const pumpFunTokens = this.processTokenData(pumpFunLogData, pumpFunThresholdData, 'PumpFun');
-
+                    
                     // Process Raydium tokens
                     const raydiumTokens = this.processTokenData(raydiumLogData, raydiumThresholdData, 'Raydium');
-
+                    
                     // Process Meteora tokens
                     const meteoraTokens = this.processTokenData(meteoraLogData, meteoraThresholdData, 'Meteora');
-
+                    
                     // Combine all token sets
                     this.tokens = [...pumpFunTokens, ...raydiumTokens, ...meteoraTokens]
                         .filter(token => token.usd_market_cap >= this.startingMarketCap)
@@ -1913,9 +1834,9 @@
                     // Update last updated timestamp
                     this.lastUpdated = new Date();
                     this.updateTimestamp();
-
+                    
                     this.applyFilters(); // Apply all filters
-
+                    
                     // Hide refresh indicator with a small delay
                     setTimeout(() => {
                         this.refreshIndicator.classList.remove('active');
@@ -1925,18 +1846,18 @@
                 catch (error) {
                     console.error('Error fetching token data:', error);
                     this.showToast('Error refreshing data', 2000, 'error');
-
+                    
                     // Reset refresh state and indicator
                     this.refreshIndicator.classList.remove('active');
                     this.isRefreshing = false;
                 }
             }
-
+            
             // Process classification data from tokens_llm_interpretations.json
             processClassificationData(data) {
                 // Reset existing classification data
                 this.tokenClassifications = {};
-
+                
                 // Process each token entry
                 // Process each token entry
                 if (Array.isArray(data)) {
@@ -1961,51 +1882,51 @@
                         }
                     });
                 }
-
+                
                 console.log("Processed classification data for", Object.keys(this.tokenClassifications).length, "tokens");
             }
-
+            
             // Helper method to process token data from either source
             processTokenData(logData, thresholdData, launchpadSource) {
                 return logData.map(token => {
                     // Get the threshold data for this token
                     const thresholdInfo = thresholdData[token.token_address] || {};
-
+                    
                     // Use original_timestamp from threshold or fallback to log timestamp
-                    const tokenTimestamp = thresholdInfo.original_timestamp
-                        ? new Date(thresholdInfo.original_timestamp)
+                    const tokenTimestamp = thresholdInfo.original_timestamp 
+                        ? new Date(thresholdInfo.original_timestamp) 
                         : new Date(token.timestamp);
-
+                    
                     // Ensure we get dex_paid from the threshold data
-                    const dexPaid = thresholdInfo.dex_paid !== undefined
-                        ? thresholdInfo.dex_paid
+                    const dexPaid = thresholdInfo.dex_paid !== undefined 
+                        ? thresholdInfo.dex_paid 
                         : token.dex_paid || false;
-
+                    
                     // Check if the latest scan is incomplete
                     let latestScanIncomplete = false;
                     let hasFakeDistribution = false;
-
+                    
                     if (thresholdInfo.journey_history && thresholdInfo.journey_history.length > 0) {
                         // Check if the latest scan is incomplete
                         const latestEntry = thresholdInfo.journey_history[thresholdInfo.journey_history.length - 1];
                         latestScanIncomplete = latestEntry.is_scan_complete === false;
-
+                        
                         // Find the latest entry with fake_distribution information (from complete scans only)
                         const latestWithFakeDistribution = [...thresholdInfo.journey_history]
                             .reverse()
                             .find(entry => entry.is_scan_complete === true && entry.fake_distribution !== undefined);
-
+                        
                         if (latestWithFakeDistribution) {
                             hasFakeDistribution = latestWithFakeDistribution.fake_distribution === true;
                         }
                     }
-
+                    
                     // Check if farm_status is empty and set it to "FARM" if it is
                     let farmStatus = thresholdInfo.farm_status;
                     if (farmStatus === "" || farmStatus === undefined || farmStatus === null) {
                         farmStatus = "FARM";  // Set empty farm status to "FARM"
                     }
-
+                    
                     // Get classification data if available
                     // Get classification data if available
                     const classificationData = this.tokenClassifications[token.token_address] || {
@@ -2025,7 +1946,7 @@
 
                     const classifications = classificationData.classifications;
                     const llmDescription = classificationData.llm_description;
-
+                    
                     return {
                         ...token,
                         ...thresholdInfo,
@@ -2042,29 +1963,29 @@
                     };
                 });
             }
-
+            
             // Start auto-refresh timer
             startAutoRefresh() {
                 // Clear any existing timer
                 if (this.refreshTimer) {
                     clearInterval(this.refreshTimer);
                 }
-
+                
                 // Set new timer
                 this.refreshTimer = setInterval(() => {
                     this.fetchTokenData();
                 }, this.refreshInterval);
-
+                
                 console.log(`Auto-refresh enabled: Data will refresh every ${this.refreshInterval / 1000} seconds`);
             }
-
+            
             // Update the timestamp display
             updateTimestamp() {
                 if (!this.lastUpdated) return;
-
+                
                 const now = new Date();
                 const diff = Math.floor((now - this.lastUpdated) / 1000); // Difference in seconds
-
+                
                 let timeText;
                 if (diff < 60) {
                     timeText = `${diff} second${diff !== 1 ? 's' : ''} ago`;
@@ -2075,35 +1996,35 @@
                     const hours = Math.floor(diff / 3600);
                     timeText = `${hours} hour${hours !== 1 ? 's' : ''} ago`;
                 }
-
+                
                 // Update the element
                 this.lastUpdatedElement.textContent = `Last updated: ${timeText}`;
             }
-
+            
             // Combined filter method to apply all filters
             applyFilters() {
                 // First filter by market cap
-                let filteredByMarketCap = this.tokens.filter(token =>
+                let filteredByMarketCap = this.tokens.filter(token => 
                     token.usd_market_cap >= this.minMarketCapFilter
                 );
-
+                
                 // Then filter by farm status if needed
-                let filteredByFarmStatus = !this.hideFarmTokens
+                let filteredByFarmStatus = !this.hideFarmTokens 
                     ? [...filteredByMarketCap]
                     : filteredByMarketCap.filter(token => token.farm_status !== "FARM");
-
+                
                 // Filter by launchpad source
-                let filteredByLaunchpad = filteredByFarmStatus.filter(token =>
-                    (token.launchpad === 'PumpFun' && this.showPumpFunTokens) ||
+                let filteredByLaunchpad = filteredByFarmStatus.filter(token => 
+                    (token.launchpad === 'PumpFun' && this.showPumpFunTokens) || 
                     (token.launchpad === 'Raydium' && this.showRaydiumTokens) ||
                     (token.launchpad === 'Meteora' && this.showMeteoraTokens)
                 );
-
+                
                 // Filter by classifications
                 this.filteredTokens = filteredByLaunchpad.filter(token => {
                     // Get classifications for this token
                     const classifications = token.classifications || {};
-
+                    
                     // Check if token should be shown based on classification filters
                     const isMemecoin = classifications.memecoin === true;
                     const isUtility = classifications.utility === true;
@@ -2114,63 +2035,63 @@
                     const isPolitical = classifications.political === true;
                     const isRacist = classifications.racist === true;
                     const isOffensive = classifications.offensive === true;
-
+                    
                     // If token has no classifications, show it regardless
-                    const hasAnyClassification = isMemecoin || isUtility || isAI || isTweet ||
+                    const hasAnyClassification = isMemecoin || isUtility || isAI || isTweet || 
                         isCurrentEvent || isAnimals || isPolitical || isRacist || isOffensive;
-
+                    
                     if (!hasAnyClassification) {
                         return true; // Show tokens with no classification data
                     }
-
+                    
                     // If token is racist and we're not showing racist tokens, hide it
                     if (isRacist && !this.showRacistTokens) {
                         return false;
                     }
-
+                    
                     // If token is offensive and we're not showing offensive tokens, hide it
                     if (isOffensive && !this.showOffensiveTokens) {
                         return false;
                     }
-
+                    
                     // Check if token matches at least one enabled classification filter
                     return (isMemecoin && this.showMemecoinTokens) ||
-                        (isUtility && this.showUtilityTokens) ||
-                        (isAI && this.showAITokens) ||
-                        (isTweet && this.showTweetTokens) ||
-                        (isCurrentEvent && this.showCurrentEventTokens) ||
-                        (isAnimals && this.showAnimalsTokens) ||
-                        (isPolitical && this.showPoliticalTokens) ||
-                        (isRacist && this.showRacistTokens) ||
-                        (isOffensive && this.showOffensiveTokens);
+                           (isUtility && this.showUtilityTokens) ||
+                           (isAI && this.showAITokens) ||
+                           (isTweet && this.showTweetTokens) ||
+                           (isCurrentEvent && this.showCurrentEventTokens) ||
+                           (isAnimals && this.showAnimalsTokens) ||
+                           (isPolitical && this.showPoliticalTokens) ||
+                           (isRacist && this.showRacistTokens) ||
+                           (isOffensive && this.showOffensiveTokens);
                 });
-
+                
                 // Recalculate positions with filtered tokens
                 this.calculateRacePositions();
                 this.renderTokenRacers();
-
+                
                 // Update counter display showing number of visible tokens
                 this.updateTokenCounter();
-
+                
                 // Apply simple view if enabled
                 this.applySimpleViewMode();
             }
-
+            
             // Handle launchpad filter changes
             handleLaunchpadFilterChange(pumpFunEnabled, raydiumEnabled, meteoraEnabled) {
                 this.showPumpFunTokens = pumpFunEnabled;
                 this.showRaydiumTokens = raydiumEnabled;
                 this.showMeteoraTokens = meteoraEnabled;
                 this.applyFilters();
-
+                
                 // Show a toast notification about what's being shown
                 let message = '';
                 const enabledSources = [];
-
+                
                 if (pumpFunEnabled) enabledSources.push('PumpFun');
                 if (raydiumEnabled) enabledSources.push('Raydium');
                 if (meteoraEnabled) enabledSources.push('Meteora');
-
+                
                 if (enabledSources.length === 3) {
                     message = 'Showing all launchpads';
                 } else if (enabledSources.length === 0) {
@@ -2181,10 +2102,10 @@
                 } else {
                     message = `Showing only ${enabledSources.join(' and ')} launchpads`;
                 }
-
+                
                 this.showToast(message);
             }
-
+            
             // Handle classification filter changes
             handleClassificationFilterChange(filters) {
                 this.showMemecoinTokens = filters.memecoin;
@@ -2196,29 +2117,29 @@
                 this.showPoliticalTokens = filters.political;
                 this.showRacistTokens = filters.racist;
                 this.showOffensiveTokens = filters.offensive;
-
+                
                 this.applyFilters();
-
+                
                 // Show a toast notification about what's being filtered
                 let message = 'Updated classification filters';
                 this.showToast(message);
             }
-
+            
             // Method to toggle simple view mode
             handleSimpleViewToggle(enabled) {
                 this.simpleViewEnabled = enabled;
                 this.applySimpleViewMode();
-
+                
                 // Update the toggle checkbox to match
                 const simpleViewToggle = document.getElementById('simple-view-filter');
                 if (simpleViewToggle) {
                     simpleViewToggle.checked = enabled;
                 }
-
+                
                 // Show a toast notification
                 this.showToast(`${enabled ? 'Simple' : 'Normal'} view enabled`);
             }
-
+            
             // Method to apply simple view mode class to race track
             applySimpleViewMode() {
                 if (this.simpleViewEnabled) {
@@ -2227,7 +2148,7 @@
                     this.raceTracks.classList.remove('simple-view');
                 }
             }
-
+            
             // Method to check screen size and automatically apply simple view on small screens
             checkScreenSizeForSimpleView() {
                 // If screen is smaller than 768px, auto-enable simple view
@@ -2235,14 +2156,14 @@
                     this.handleSimpleViewToggle(true);
                 }
             }
-
+            
             // Method to update token count display
             updateTokenCounter() {
                 // Count tokens by launchpad for logging
                 const pumpFunCount = this.filteredTokens.filter(t => t.launchpad === 'PumpFun').length;
                 const raydiumCount = this.filteredTokens.filter(t => t.launchpad === 'Raydium').length;
                 const meteoraCount = this.filteredTokens.filter(t => t.launchpad === 'Meteora').length;
-
+                
                 // Count tokens by classification for logging
                 const memecoinCount = this.filteredTokens.filter(t => t.classifications?.memecoin === true).length;
                 const utilityCount = this.filteredTokens.filter(t => t.classifications?.utility === true).length;
@@ -2253,16 +2174,16 @@
                 const politicalCount = this.filteredTokens.filter(t => t.classifications?.political === true).length;
                 const racistCount = this.filteredTokens.filter(t => t.classifications?.racist === true).length;
                 const offensiveCount = this.filteredTokens.filter(t => t.classifications?.offensive === true).length;
-
+                
                 console.log(`Displaying ${this.filteredTokens.length} tokens out of ${this.tokens.length} total`);
                 console.log(`Launchpads: ${pumpFunCount} PumpFun, ${raydiumCount} Raydium, ${meteoraCount} Meteora`);
                 console.log(`Classifications: ${memecoinCount} Memecoin, ${utilityCount} Utility, ${aiCount} AI, ${tweetCount} Tweet, ${currentEventCount} Current Event, ${animalsCount} Animals, ${politicalCount} Political, ${racistCount} Racist, ${offensiveCount} Offensive`);
             }
-
+            
             // Market cap slider handler
             handleMarketCapSliderChange(value) {
                 this.minMarketCapFilter = parseInt(value);
-
+                
                 // Format the displayed value for readability
                 let displayValue;
                 if (value >= 1000000) {
@@ -2272,16 +2193,16 @@
                 } else {
                     displayValue = value;
                 }
-
+                
                 // Update the display element
                 const marketCapValueElement = document.getElementById('market-cap-value');
                 if (marketCapValueElement) {
                     marketCapValueElement.textContent = displayValue;
                 }
-
+                
                 // Apply the filters with the new value
                 this.applyFilters();
-
+                
                 // Show a toast notification
                 this.showToast(`Min market cap: $${displayValue}`);
             }
@@ -2289,33 +2210,33 @@
             calculateRacePositions() {
                 // Always use higher max for log scale since we're only using log scale now
                 const trackWidth = this.raceTracks.clientWidth - 100; // Account for token width
-
+                
                 // Get finish line position for accurate scaling
                 const finishLine = document.getElementById('finish-line');
                 const finishLinePosition = finishLine.getBoundingClientRect().top;
                 const startLinePosition = window.innerHeight; // Bottom of viewport
                 const availableHeight = startLinePosition - finishLinePosition - 40; // 40px buffer
-
+                
                 // Define min and max values for scaling
                 const minMarketCap = this.startingMarketCap; // 100k
                 const maxMarketCap = 10000000; // 10M for log scale
-
+                
                 this.filteredTokens.forEach((token, index) => {
                     // Always use logarithmic scaling
                     const minLog = Math.log10(minMarketCap);
                     const maxLog = Math.log10(maxMarketCap);
                     const logRange = maxLog - minLog;
-
+                    
                     // Ensure market cap is at least the minimum
                     const marketCap = Math.max(token.usd_market_cap, minMarketCap);
                     const logValue = Math.log10(marketCap);
-
+                    
                     // Normalize to [0,1] range
                     const marketCapRatio = (logValue - minLog) / logRange;
-
+                    
                     // Scale position from bottom of screen to finish line
                     token.racePosition = Math.min(
-                        availableHeight * marketCapRatio,
+                        availableHeight * marketCapRatio, 
                         availableHeight
                     );
 
@@ -2324,7 +2245,7 @@
                         const timeDiff = this.latestTimestamp - this.earliestTimestamp;
                         // Here's the key change - we invert the positioning with (1 - ...)
                         const tokenTimePortion = 1 - ((token.tokenTimestamp - this.earliestTimestamp) / timeDiff);
-
+                        
                         // Scale horizontal position by available width
                         token.horizontalPosition = tokenTimePortion * trackWidth;
                     }
@@ -2334,14 +2255,14 @@
             showToast(message, duration = 2000, type = 'success') {
                 this.toastElement.textContent = message;
                 this.toastElement.classList.add('show');
-
+                
                 // Set color based on message type
                 if (type === 'success') {
                     this.toastElement.style.backgroundColor = 'rgba(76, 175, 80, 0.9)'; // Green
                 } else if (type === 'error') {
                     this.toastElement.style.backgroundColor = 'rgba(244, 67, 54, 0.9)'; // Red
                 }
-
+                
                 setTimeout(() => {
                     this.toastElement.classList.remove('show');
                 }, duration);
@@ -2375,7 +2296,7 @@
                 this.filteredTokens.forEach((token, index) => {
                     const racer = document.createElement('div');
                     racer.className = 'token-racer';
-
+                    
                     // Apply position without any collision offset
                     racer.style.bottom = `${token.racePosition}px`;
                     racer.style.left = `${token.horizontalPosition}px`;
@@ -2388,7 +2309,7 @@
                     if (token.is_late_bloomer || token.is_old_creation) {
                         const indicator = document.createElement('div');
                         indicator.className = 'classification-indicator pos-top';
-
+                        
                         if (token.is_late_bloomer) {
                             indicator.textContent = '🌷'; // Flower emoji for late bloomers
                             indicator.title = 'Late Bloomer';
@@ -2396,25 +2317,25 @@
                             indicator.textContent = '📅'; // Calendar emoji for old creations
                             indicator.title = 'Old Creation';
                         }
-
+                        
                         // If both flags are true, prioritize late bloomer
                         if (token.is_late_bloomer && token.is_old_creation) {
                             indicator.textContent = '📅';
                             indicator.title = 'Late Bloomer & Old Creation';
                         }
-
+                        
                         iconContainer.appendChild(indicator);
                     }
-
+                    
                     // Add classification indicators around the circle
                     const classifications = token.classifications || {};
                     const positions = [
-                        'pos-top', 'pos-top-right', 'pos-right', 'pos-bottom-right',
+                        'pos-top', 'pos-top-right', 'pos-right', 'pos-bottom-right', 
                         'pos-bottom', 'pos-bottom-left', 'pos-left', 'pos-top-left'
                     ];
-
+                    
                     let posIndex = 0;
-
+                    
                     // Map each classification to its icon and add if enabled
                     const addClassificationIcon = (type, emoji, title) => {
                         if (classifications[type] === true) {
@@ -2426,7 +2347,7 @@
                             posIndex++;
                         }
                     };
-
+                    
                     // Add all classification icons in a nice circle around the token
                     addClassificationIcon('memecoin', '😂', 'Memecoin');
                     addClassificationIcon('utility', '🛠️', 'Utility Token');
@@ -2446,18 +2367,18 @@
                     icon.className = 'token-icon';
                     icon.src = token.image_uri || 'https://via.placeholder.com/60';
                     icon.alt = token.name || 'Token';
-
+                    
                     // Enhanced image loading with multiple IPFS gateway fallbacks
-                    icon.onerror = function () {
+                    icon.onerror = function() {
                         // Extract the IPFS hash if this is an IPFS URL
                         const originalSrc = this.src;
                         let ipfsHash = null;
-
+                        
                         // Try to extract IPFS hash from URL (matches formats like https://cf-ipfs.com/ipfs/Qm...)
                         const ipfsMatch = originalSrc.match(/ipfs\/([a-zA-Z0-9]+)/);
                         if (ipfsMatch && ipfsMatch[1]) {
                             ipfsHash = ipfsMatch[1];
-
+                            
                             // Array of alternative IPFS gateways to try
                             const ipfsGateways = [
                                 'https://ipfs.io/ipfs/',
@@ -2465,37 +2386,37 @@
                                 'https://cloudflare-ipfs.com/ipfs/',
                                 'https://dweb.link/ipfs/'
                             ];
-
+                            
                             // Get current gateway index from the element's data attribute, or start at 0
                             let gatewayIndex = parseInt(this.getAttribute('data-gateway-index') || '0');
-
+                            
                             // If we have more gateways to try
                             if (gatewayIndex < ipfsGateways.length) {
                                 // Try the next gateway
                                 const newSrc = ipfsGateways[gatewayIndex] + ipfsHash;
                                 console.log(`Trying alternative IPFS gateway: ${newSrc}`);
-
+                                
                                 // Update the gateway index for next failure
                                 this.setAttribute('data-gateway-index', (gatewayIndex + 1).toString());
-
+                                
                                 // Attempt to load from the new gateway
                                 this.src = newSrc;
                                 return; // Exit and try the new source
                             }
                         }
-
+                        
                         // If all gateways failed or this isn't an IPFS URL, use the black placeholder
                         console.log('All IPFS gateways failed or not an IPFS URL, using placeholder');
                         this.removeAttribute('src');
                         this.removeAttribute('data-gateway-index');
                         this.classList.add('placeholder');
-
+                        
                         // Add the token symbol if available
                         if (token.symbol) {
                             this.textContent = token.symbol.substring(0, 2);
                         }
                     };
-
+                    
                     // Set responsive size for icon
                     icon.style.width = `${tokenIconSize}px`;
                     icon.style.height = `${tokenIconSize}px`;
@@ -2505,11 +2426,11 @@
                     const isGreenMetric = (value) => {
                         return value !== undefined && value !== null && value <= 5;
                     };
-
+                    
                     // Check if all three wallet metrics are green
-                    const allWalletsGreen =
-                        isGreenMetric(token.current_sus_wallets) &&
-                        isGreenMetric(token.current_dev_holdings) &&
+                    const allWalletsGreen = 
+                        isGreenMetric(token.current_sus_wallets) && 
+                        isGreenMetric(token.current_dev_holdings) && 
                         isGreenMetric(token.current_insiders);
 
                     // Color coding - First check if scan is incomplete, then check other conditions
@@ -2528,14 +2449,14 @@
                     } else if (token.meets_filter_criteria) {
                         icon.style.borderColor = "#4CAF50"; // Green for meeting criteria
                     }
-
+                    
                     // Add social icons with improved styling
                     const socialIcons = document.createElement('div');
                     socialIcons.className = 'social-icons';
-
+                    
                     // Scale social icons based on screen size
                     const socialIconSize = Math.max(14, Math.round(24 * this.scaleFactor));
-
+                    
                     // Website icon
                     if (token.website) {
                         const websiteIcon = document.createElement('a');
@@ -2546,26 +2467,26 @@
                         websiteIcon.title = 'Website';
                         websiteIcon.style.width = `${socialIconSize}px`;
                         websiteIcon.style.height = `${socialIconSize}px`;
-                        websiteIcon.onclick = function (e) {
+                        websiteIcon.onclick = function(e) {
                             // Stop propagation to prevent conflicting with token click
                             e.stopPropagation();
                         };
                         socialIcons.appendChild(websiteIcon);
                     }
-
-
+                    
+                    
                     // Twitter icon
                     if (token.twitter) {
                         const twitterIcon = document.createElement('a');
-
+                        
                         // Check if the twitter value already contains a URL or handle prefix
                         let twitterUrl = token.twitter;
-
+                        
                         // If it's just a username without URL components, add the prefix
                         if (!twitterUrl.includes('http') && !twitterUrl.includes('twitter.com') && !twitterUrl.includes('x.com')) {
                             twitterUrl = `https://twitter.com/${twitterUrl}`;
                         }
-
+                        
                         twitterIcon.href = twitterUrl;
                         twitterIcon.target = '_blank';
                         twitterIcon.className = 'social-icon twitter';
@@ -2573,27 +2494,27 @@
                         twitterIcon.title = 'Twitter';
                         twitterIcon.style.width = `${socialIconSize}px`;
                         twitterIcon.style.height = `${socialIconSize}px`;
-                        twitterIcon.onclick = function (e) {
+                        twitterIcon.onclick = function(e) {
                             // Stop propagation to prevent conflicting with token click
                             e.stopPropagation();
                         };
                         socialIcons.appendChild(twitterIcon);
                     }
-
+                    
                     // Telegram icon
                     if (token.telegram) {
                         const telegramIcon = document.createElement('a');
-
+                        
                         // Check if the telegram value already contains a URL
                         let telegramUrl = token.telegram;
-
+                        
                         // If it doesn't include http or t.me, assume it's just a username
                         if (!telegramUrl.includes('http') && !telegramUrl.includes('t.me/')) {
                             // Remove any @ prefix if present
                             telegramUrl = telegramUrl.replace(/^@/, '');
                             telegramUrl = `https://t.me/${telegramUrl}`;
                         }
-
+                        
                         telegramIcon.href = telegramUrl;
                         telegramIcon.target = '_blank';
                         telegramIcon.className = 'social-icon telegram';
@@ -2601,27 +2522,27 @@
                         telegramIcon.title = 'Telegram';
                         telegramIcon.style.width = `${socialIconSize}px`;
                         telegramIcon.style.height = `${socialIconSize}px`;
-                        telegramIcon.onclick = function (e) {
+                        telegramIcon.onclick = function(e) {
                             // Stop propagation to prevent conflicting with token click
                             e.stopPropagation();
                         };
                         socialIcons.appendChild(telegramIcon);
                     }
-
+                    
                     // Add token name label before the market cap
                     const tokenNameLabel = document.createElement('div');
                     tokenNameLabel.className = 'token-name';
-
+                    
                     // Truncate long token names
                     const maxNameLength = 12; // Maximum characters to display
                     const tokenName = token.name || 'Unknown';
-                    const displayName = tokenName.length > maxNameLength
-                        ? tokenName.substring(0, maxNameLength) + '...'
+                    const displayName = tokenName.length > maxNameLength 
+                        ? tokenName.substring(0, maxNameLength) + '...' 
                         : tokenName;
-
+                    
                     tokenNameLabel.textContent = displayName;
                     tokenNameLabel.title = tokenName; // Full name shown on hover
-
+                    
                     // Add market cap label under the token with copy icon
                     const marketCapLabel = document.createElement('div');
                     marketCapLabel.className = 'token-market-cap';
@@ -2632,7 +2553,7 @@
                         copyIcon.className = 'copy-address-icon';
                         copyIcon.title = 'Copy token address';
                         copyIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>';
-
+                        
                         // Add click handler for copying
                         copyIcon.addEventListener('click', (e) => {
                             e.stopPropagation(); // Prevent other click events
@@ -2645,14 +2566,14 @@
                                     this.showToast('Failed to copy address', 1500, 'error');
                                 });
                         });
-
+                        
                         marketCapLabel.appendChild(copyIcon);
                     }
 
                     // Add the market cap text
                     const marketCapText = document.createTextNode(`$${this.formatNumber(token.usd_market_cap)}`);
                     marketCapLabel.appendChild(marketCapText);
-
+                    
                     // Format description with fallback
                     const formatDescription = (desc) => {
                         if (!desc) return 'No description available';
@@ -2679,59 +2600,59 @@
                     };
 
                     // Create farm status label
-                    const farmStatusHtml = token.farm_status ?
+                    const farmStatusHtml = token.farm_status ? 
                         `<div class="farm-status farm-status-${token.farm_status}">${token.farm_status}</div>` : '';
-
+                    
                     // Create scan incomplete label
-                    const scanIncompleteHtml = token.latest_scan_incomplete ?
+                    const scanIncompleteHtml = token.latest_scan_incomplete ? 
                         `<div class="scan-status-incomplete">SCAN INCOMPLETE</div>` : '';
-
+                    
                     // Create fake distribution label
-                    const fakeDistributionHtml = token.has_fake_distribution ?
+                    const fakeDistributionHtml = token.has_fake_distribution ? 
                         `<div class="fake-distribution-tag">FAKE DISTRIBUTION</div>` : '';
-
+                    
                     // Add launchpad source label to the info panel
                     const launchpadHtml = `<div class="launchpad-tag launchpad-${token.launchpad.toLowerCase()}">${token.launchpad} Launchpad</div>`;
-
+                    
                     // Add classification tags to the info panel
                     let classificationTags = '';
-
+                    
                     if (classifications.memecoin) {
                         classificationTags += `<div class="classification-tag classification-memecoin">😂 Memecoin</div>`;
                     }
-
+                    
                     if (classifications.utility) {
                         classificationTags += `<div class="classification-tag classification-utility">🛠️ Utility</div>`;
                     }
-
+                    
                     if (classifications.ai_token) {
                         classificationTags += `<div class="classification-tag classification-ai">🤖 AI Token</div>`;
                     }
-
+                    
                     if (classifications.tweet_coin) {
                         classificationTags += `<div class="classification-tag classification-tweet">📱 Tweet Coin</div>`;
                     }
-
+                    
                     if (classifications.current_event) {
                         classificationTags += `<div class="classification-tag classification-current-event">📰 Current Event</div>`;
                     }
-
+                    
                     if (classifications.animals) {
                         classificationTags += `<div class="classification-tag classification-animals">🐱 Animals</div>`;
                     }
-
+                    
                     if (classifications.political) {
                         classificationTags += `<div class="classification-tag classification-political">🏛️ Political</div>`;
                     }
-
+                    
                     if (classifications.racist) {
                         classificationTags += `<div class="classification-tag classification-racist">😭 Racist</div>`;
                     }
-
+                    
                     if (classifications.offensive) {
                         classificationTags += `<div class="classification-tag classification-offensive">😡 Offensive</div>`;
                     }
-
+                    
                     // Create the HTML content - MODIFIED: Added launchpad source tag
                     const infoHTML = `
                         <div class="token-info-header">
@@ -2784,17 +2705,17 @@
                     const showTooltip = (e) => {
                         // Don't show tooltip in simple view mode
                         if (this.simpleViewEnabled) return;
-
+                        
                         // Set content to the shared info panel
                         sharedInfoPanel.innerHTML = infoHTML;
-
+                        
                         // Calculate position to keep on screen
                         this.positionInfoPanel(sharedInfoPanel, e);
-
+                        
                         // Make visible
                         sharedInfoPanel.classList.add('visible');
                         this.activeInfoPanel = sharedInfoPanel;
-
+                        
                         // Make this token racer appear above others
                         racer.classList.add('expanded');
                     };
@@ -2803,7 +2724,7 @@
                     const updateTooltipPosition = (e) => {
                         // Don't update tooltip in simple view mode
                         if (this.simpleViewEnabled) return;
-
+                        
                         // Update position on mouse move
                         this.positionInfoPanel(sharedInfoPanel, e);
                     };
@@ -2812,11 +2733,11 @@
                     const hideTooltip = () => {
                         // Don't handle tooltip in simple view mode
                         if (this.simpleViewEnabled) return;
-
+                        
                         // Hide the panel
                         sharedInfoPanel.classList.remove('visible');
                         this.activeInfoPanel = null;
-
+                        
                         // Reset z-index
                         racer.classList.remove('expanded');
                     };
@@ -2827,15 +2748,15 @@
                             // Open explorer based on launchpad source
                             let url;
                             if (token.launchpad === 'PumpFun') {
-                                url = `https://neo.bullx.io/terminal?chainId=1399811149&address=${token.token_address}`;
+                                url = `https://dexscreener.com/solana/${token.token_address}`;
                             } else if (token.launchpad === 'Raydium') {
                                 // For Raydium tokens (which are on the Solana chain), use an appropriate explorer
-                                url = `https://neo.bullx.io/terminal?chainId=1399811149&address=${token.token_address}`;
+                                url = `https://dexscreener.com/solana/${token.token_address}`;
                             } else if (token.launchpad === 'Meteora') {
                                 // For Meteora tokens, use the same explorer format
-                                url = `https://neo.bullx.io/terminal?chainId=1399811149&address=${token.token_address}`;
+                                url = `https://dexscreener.com/solana/${token.token_address}`;
                             }
-
+                            
                             if (url) {
                                 window.open(url, '_blank');
                             }
@@ -2847,18 +2768,18 @@
                     iconContainer.addEventListener('mouseenter', showTooltip);
                     iconContainer.addEventListener('mousemove', updateTooltipPosition);
                     iconContainer.addEventListener('mouseleave', hideTooltip);
-
+                    
                     // Add click event to open the token's page
                     icon.addEventListener('click', openTokenPage);
-
+                    
                     // Add hover events to token name too
                     tokenNameLabel.addEventListener('mouseenter', showTooltip);
                     tokenNameLabel.addEventListener('mousemove', updateTooltipPosition);
                     tokenNameLabel.addEventListener('mouseleave', hideTooltip);
-
+                    
                     // Add click event to token name to open the token's page
                     tokenNameLabel.addEventListener('click', openTokenPage);
-
+                    
                     // Add hover events to market cap label too
                     marketCapLabel.addEventListener('mouseenter', (e) => {
                         showTooltip(e);
@@ -2868,7 +2789,7 @@
                     });
                     marketCapLabel.addEventListener('mousemove', updateTooltipPosition);
                     marketCapLabel.addEventListener('mouseleave', hideTooltip);
-
+                    
                     // Add click event to market cap to open the token's page
                     marketCapLabel.addEventListener('click', (e) => {
                         // Check if the click was on the copy icon
@@ -2876,7 +2797,7 @@
                             // If it was on the copy icon, the icon's event handler will take care of it
                             return;
                         }
-
+                        
                         // Otherwise, open the token's page
                         openTokenPage();
                     });
@@ -2895,46 +2816,46 @@
                 // Scale panel dimensions based on viewport
                 const panelWidth = Math.min(240, Math.round(240 * this.scaleFactor));
                 panel.style.width = `${panelWidth}px`;
-
+                
                 const panelHeight = Math.min(panel.scrollHeight, 350 * this.scaleFactor);
-
+                
                 // Get viewport dimensions
                 const viewportWidth = window.innerWidth;
                 const viewportHeight = window.innerHeight;
-
+                
                 // Calculate ideal position (centered above cursor)
                 let left = event.clientX - (panelWidth / 2);
                 let top = event.clientY - panelHeight - 20; // Position above the cursor
-
+                
                 // Adjust if off screen on the left
                 if (left < 10) {
                     left = 10;
                 }
-
+                
                 // Adjust if off screen on the right
                 if (left + panelWidth > viewportWidth - 10) {
                     left = viewportWidth - panelWidth - 10;
                 }
-
+                
                 // If off screen on top, position below cursor instead
                 if (top < this.headerHeight) {
                     top = event.clientY + 20; // Position below cursor
                 }
-
+                
                 // If still off screen on bottom, put at bottom of screen
                 if (top + panelHeight > viewportHeight - 10) {
                     top = viewportHeight - panelHeight - 10;
                 }
-
+                
                 // Apply the calculated position
                 panel.style.left = `${left}px`;
                 panel.style.top = `${top}px`;
             }
 
             formatNumber(num) {
-                return num.toLocaleString('en-US', {
-                    minimumFractionDigits: 0,
-                    maximumFractionDigits: 0
+                return num.toLocaleString('en-US', { 
+                    minimumFractionDigits: 0, 
+                    maximumFractionDigits: 0 
                 });
             }
 
@@ -2953,7 +2874,7 @@
                     this.updateSafeDisplayArea();
                     this.calculateRacePositions();
                     this.renderTokenRacers();
-
+                    
                     // Auto-apply simple view on small screens
                     this.checkScreenSizeForSimpleView();
                 });
@@ -2963,44 +2884,44 @@
                 farmFilterToggle.addEventListener('change', (e) => {
                     this.handleFarmFilterChange(e.target.checked);
                 });
-
+                
                 // Market cap slider event listener
                 const marketCapSlider = document.getElementById('market-cap-slider');
                 marketCapSlider.addEventListener('input', (e) => {
                     this.handleMarketCapSliderChange(e.target.value);
                 });
-
+                
                 // Simple view toggle event listener
                 const simpleViewToggle = document.getElementById('simple-view-filter');
                 simpleViewToggle.addEventListener('change', (e) => {
                     this.handleSimpleViewToggle(e.target.checked);
                 });
-
+                
                 // Add event listeners for launchpad filter toggles
                 const pumpFunToggle = document.getElementById('pumpfun-filter');
                 const raydiumToggle = document.getElementById('raydium-filter');
                 const meteoraToggle = document.getElementById('meteora-filter');
-
+                
                 const updateLaunchpadFilters = () => {
                     const pumpFunEnabled = pumpFunToggle ? pumpFunToggle.checked : true;
                     const raydiumEnabled = raydiumToggle ? raydiumToggle.checked : true;
                     const meteoraEnabled = meteoraToggle ? meteoraToggle.checked : true;
-
+                    
                     this.handleLaunchpadFilterChange(pumpFunEnabled, raydiumEnabled, meteoraEnabled);
                 };
-
+                
                 if (pumpFunToggle) {
                     pumpFunToggle.addEventListener('change', updateLaunchpadFilters);
                 }
-
+                
                 if (raydiumToggle) {
                     raydiumToggle.addEventListener('change', updateLaunchpadFilters);
                 }
-
+                
                 if (meteoraToggle) {
                     meteoraToggle.addEventListener('change', updateLaunchpadFilters);
                 }
-
+                
                 // Add event listeners for classification filter toggles
                 const memecoinToggle = document.getElementById('memecoin-filter');
                 const utilityToggle = document.getElementById('utility-filter');
@@ -3011,7 +2932,7 @@
                 const politicalToggle = document.getElementById('political-filter');
                 const racistToggle = document.getElementById('racist-filter');
                 const offensiveToggle = document.getElementById('offensive-filter');
-
+                
                 const updateClassificationFilters = () => {
                     const memecoinEnabled = memecoinToggle ? memecoinToggle.checked : true;
                     const utilityEnabled = utilityToggle ? utilityToggle.checked : true;
@@ -3022,7 +2943,7 @@
                     const politicalEnabled = politicalToggle ? politicalToggle.checked : true;
                     const racistEnabled = racistToggle ? racistToggle.checked : false;
                     const offensiveEnabled = offensiveToggle ? offensiveToggle.checked : false;
-
+                    
                     this.handleClassificationFilterChange({
                         memecoin: memecoinEnabled,
                         utility: utilityEnabled,
@@ -3035,65 +2956,65 @@
                         offensive: offensiveEnabled
                     });
                 };
-
+                
                 if (memecoinToggle) {
                     memecoinToggle.addEventListener('change', updateClassificationFilters);
                 }
-
+                
                 if (utilityToggle) {
                     utilityToggle.addEventListener('change', updateClassificationFilters);
                 }
-
+                
                 if (aiToggle) {
                     aiToggle.addEventListener('change', updateClassificationFilters);
                 }
-
+                
                 if (tweetToggle) {
                     tweetToggle.addEventListener('change', updateClassificationFilters);
                 }
-
+                
                 if (currentEventToggle) {
                     currentEventToggle.addEventListener('change', updateClassificationFilters);
                 }
-
+                
                 if (animalsToggle) {
                     animalsToggle.addEventListener('change', updateClassificationFilters);
                 }
-
+                
                 if (politicalToggle) {
                     politicalToggle.addEventListener('change', updateClassificationFilters);
                 }
-
+                
                 if (racistToggle) {
                     racistToggle.addEventListener('change', updateClassificationFilters);
                 }
-
+                
                 if (offensiveToggle) {
                     offensiveToggle.addEventListener('change', updateClassificationFilters);
                 }
-
+                
                 // Add filter settings button functionality
                 const filterSettingsButton = document.getElementById('filter-settings-button');
                 const filterSettingsContainer = document.getElementById('filter-settings-container');
-
+                
                 filterSettingsButton.addEventListener('click', () => {
                     // Toggle the filter settings container
                     const isVisible = filterSettingsContainer.style.display === 'block';
                     filterSettingsContainer.style.display = isVisible ? 'none' : 'block';
                 });
-
+                
                 // Close filter settings when clicking outside
                 document.addEventListener('click', (e) => {
-                    if (!filterSettingsContainer.contains(e.target) &&
-                        e.target !== filterSettingsButton &&
+                    if (!filterSettingsContainer.contains(e.target) && 
+                        e.target !== filterSettingsButton && 
                         !filterSettingsButton.contains(e.target)) {
                         filterSettingsContainer.style.display = 'none';
                     }
                 });
-
+                
                 // Auto-enable simple view on small screens
                 this.checkScreenSizeForSimpleView();
-
+                
                 // Set initial finish line position with additional offset
                 const header = document.getElementById('race-header');
                 const finishLine = document.getElementById('finish-line');
@@ -3104,10 +3025,10 @@
 
                 // Fetch initial data
                 this.fetchTokenData();
-
+                
                 // Start auto-refresh
                 this.startAutoRefresh();
-
+                
                 // Set up a timer to update the "last updated" text every minute
                 setInterval(() => {
                     this.updateTimestamp();
@@ -3127,11 +3048,11 @@
         }
 
         // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.menu-button') &&
-                !event.target.matches('.menu-button svg') &&
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-button') && 
+                !event.target.matches('.menu-button svg') && 
                 !event.target.matches('.menu-button path')) {
-
+                
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 for (var i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
@@ -3143,5 +3064,4 @@
         }
     </script>
 </body>
-
 </html>
