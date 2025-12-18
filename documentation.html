@@ -1,0 +1,3166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyRunner.Fun - Documentation</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        :root {
+            /* Dark mode colors */
+            --bg-color: #1c1f1d;
+            --widget-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --header-color: #4CAF50;
+            --subtext-color: #aaaaaa;
+            --border-color: #333333;
+            --hover-color: #2c2c2c;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --link-color: #4CAF50;
+            --code-bg: #2a2a2a;
+            --accent-color: #2196F3;
+            --accent-light: rgba(33, 150, 243, 0.2);
+            --warning-color: #F44336;
+            --warning-bg: rgba(244, 67, 54, 0.1);
+            --success-color: #4CAF50;
+            --success-bg: rgba(76, 175, 80, 0.1);
+            --neutral-color: #FFC107;
+            --neutral-bg: rgba(255, 193, 7, 0.1);
+            --special-color: #9C27B0;
+            --special-bg: rgba(156, 39, 176, 0.1);
+
+            /* Added precise token border colors */
+            --farm-color: #F44336;
+            --farmed-color: #FFC107;
+            --nofarm-color: #4CAF50;
+            --incomplete-color: #9C27B0;
+            --fake-color: #E91E63;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Page title styles */
+        .page-title {
+            font-size: 1.75rem;
+            color: var(--header-color);
+            margin-bottom: 5px;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-logo {
+            height: 1.5em;
+            width: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Content container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Table of Contents - FIXED */
+        .toc {
+            background-color: var(--widget-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            position: relative;
+            /* Changed from sticky to relative */
+            top: 0;
+            /* Reset top value */
+            max-height: none;
+            /* Reset max-height */
+            overflow-y: visible;
+            /* Allow normal overflow */
+            z-index: 1;
+            /* Lower z-index */
+        }
+
+        /* Add toggle functionality for table of contents */
+        .toc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .toc-content {
+            display: block;
+            /* Will be toggled with JavaScript */
+            margin-top: 15px;
+        }
+
+        .toc-toggle {
+            background: none;
+            border: none;
+            color: var(--header-color);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .toc h2 {
+            color: var(--header-color);
+            margin-top: 0;
+            margin-bottom: 0;
+            /* Changed from 15px */
+            font-size: 1.4rem;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 10px;
+        }
+
+        .toc a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: inline-block;
+            padding: 3px 0;
+        }
+
+        .toc a:hover {
+            color: var(--header-color);
+            text-decoration: underline;
+        }
+
+        .toc .sub-items {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        /* Section styles */
+        section {
+            margin-bottom: 40px;
+            background-color: var(--widget-bg);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        h2 {
+            color: var(--header-color);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--header-color);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--header-color);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        p,
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: var(--bg-color);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: rgba(76, 175, 80, 0.1);
+            color: var(--header-color);
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: var(--hover-color);
+        }
+
+        /* Code blocks */
+        code {
+            font-family: 'Consolas', 'Monaco', monospace;
+            background-color: var(--code-bg);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        /* Notes and warnings */
+        .note,
+        .warning,
+        .info-box {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border-left: 4px solid;
+        }
+
+        .note {
+            background-color: rgba(76, 175, 80, 0.1);
+            border-color: var(--header-color);
+        }
+
+        .warning {
+            background-color: rgba(255, 152, 0, 0.1);
+            border-color: #FF9800;
+        }
+
+        .info-box {
+            background-color: rgba(33, 150, 243, 0.1);
+            border-color: var(--accent-color);
+        }
+
+        .note h4,
+        .warning h4,
+        .info-box h4 {
+            margin-top: 0;
+            color: inherit;
+        }
+
+        /* Images */
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 20px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Definition lists */
+        dl {
+            margin: 20px 0;
+        }
+
+        dt {
+            font-weight: bold;
+            color: var(--header-color);
+            margin-top: 15px;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Status badges */
+        .status-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+
+        .status-farm {
+            background-color: var(--warning-bg);
+            color: var(--warning-color);
+        }
+
+        .status-farmed {
+            background-color: var(--neutral-bg);
+            color: var(--neutral-color);
+        }
+
+        .status-nofarm {
+            background-color: var(--success-bg);
+            color: var(--success-color);
+        }
+
+        .status-incomplete {
+            background-color: var(--special-bg);
+            color: var(--special-color);
+        }
+
+        /* Status legend */
+        .status-legend {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: var(--widget-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--shadow-color);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .border-purple {
+            background-color: var(--incomplete-color);
+        }
+
+        .border-red {
+            background-color: var(--farm-color);
+        }
+
+        .border-pink {
+            background-color: var(--fake-color);
+        }
+
+        .border-yellow {
+            background-color: var(--farmed-color);
+        }
+
+        .border-green {
+            background-color: var(--nofarm-color);
+        }
+
+        /* Token example */
+        .token-example {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: var(--widget-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--shadow-color);
+        }
+
+        .token-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid var(--success-color);
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .token-data {
+            flex: 1;
+        }
+
+        .token-hover {
+            background-color: rgba(33, 150, 243, 0.1);
+            border: 1px dashed var(--accent-color);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        /* Metric box styles */
+        .metric-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+
+        .metric-value-low {
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        .metric-value-medium {
+            color: var(--neutral-color);
+            font-weight: bold;
+        }
+
+        .metric-value-high {
+            color: var(--warning-color);
+            font-weight: bold;
+        }
+
+        /* Back to top link */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--header-color);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 50;
+            /* Ensure it's above other elements */
+        }
+
+        .back-to-top:hover {
+            opacity: 1;
+            text-decoration: none;
+        }
+
+        /* Tabs navigation for main sections */
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            background-color: var(--widget-bg);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-bottom: 3px solid transparent;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .tab:hover {
+            background-color: var(--hover-color);
+            text-decoration: none;
+        }
+
+        .tab.active {
+            border-bottom-color: var(--header-color);
+            font-weight: bold;
+            color: var(--header-color);
+        }
+
+        /* Menu Dropdown Styles */
+        .menu-dropdown {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+        }
+
+        .menu-button {
+            background: linear-gradient(135deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .menu-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .menu-button svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 5px;
+            background-color: rgba(36, 36, 36, 0.95);
+            min-width: 160px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            z-index: 101;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(76, 175, 80, 0.2);
+        }
+
+        .show {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        /* Optional: Add separator between Dashboard and other menu items */
+        .dropdown-content a.separator-top {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 4px;
+            padding-top: 12px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .menu-button {
+                padding: 6px 10px;
+                font-size: 0.8em;
+            }
+
+            .menu-button svg {
+                width: 14px;
+                height: 14px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            .status-legend {
+                flex-direction: column;
+            }
+
+            .legend-item {
+                margin-right: 0;
+            }
+
+            .token-example {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .token-icon {
+                margin-bottom: 10px;
+            }
+
+            .tabs {
+                flex-wrap: wrap;
+                /* Allow tabs to wrap on smaller screens */
+            }
+
+            .tab {
+                padding: 10px 0;
+                flex-basis: 50%;
+                /* Two tabs per row on medium screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu-button {
+                padding: 5px 8px;
+                font-size: 0.7em;
+            }
+
+            .menu-button svg {
+                width: 12px;
+                height: 12px;
+            }
+
+            .dropdown-content {
+                min-width: 140px;
+            }
+
+            .dropdown-content a {
+                padding: 10px 14px;
+                font-size: 0.9em;
+            }
+
+            .page-title {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            section {
+                padding: 12px;
+            }
+
+            .tab {
+                flex-basis: 100%;
+                /* One tab per row on smallest screens */
+            }
+        }
+
+        /* New and improved styles for the race track visualization */
+        .race-track-container {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+            margin: 30px 0;
+            min-height: 300px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .finish-line {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-image: repeating-linear-gradient(90deg,
+                    #000 0px,
+                    #000 20px,
+                    #fff 20px,
+                    #fff 40px);
+            z-index: 2;
+        }
+
+        .finish-line::after {
+            content: "10M Market Cap";
+            position: absolute;
+            right: 10px;
+            top: -20px;
+            font-size: 0.8em;
+            color: #ffffff;
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+        }
+
+        .token-racer {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon-example {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin: 0 3px;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-website {
+            background: linear-gradient(135deg, #2196F3, #0D47A1);
+        }
+
+        .social-twitter {
+            background: linear-gradient(135deg, #1DA1F2, #0077B5);
+        }
+
+        .social-telegram {
+            background: linear-gradient(135deg, #0088cc, #0056a3);
+        }
+
+        .token-details {
+            position: relative;
+            background-color: rgba(36, 36, 36, 0.8);
+            border-radius: 4px;
+            padding: 5px 10px;
+            margin-top: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .token-tooltip {
+            position: absolute;
+            width: 240px;
+            background-color: rgba(36, 36, 36, 0.95);
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            top: -10px;
+            right: -250px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .token-tooltip::before {
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: 30px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid rgba(36, 36, 36, 0.95);
+        }
+
+        .token-tooltip-header {
+            text-align: center;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .tooltip-farm-status {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .farm-tag {
+            background-color: rgba(244, 67, 54, 0.3);
+            color: #F44336;
+        }
+
+        .farmed-tag {
+            background-color: rgba(255, 193, 7, 0.3);
+            color: #FFC107;
+        }
+
+        .nofarm-tag {
+            background-color: rgba(76, 175, 80, 0.3);
+            color: #4CAF50;
+        }
+
+        .incomplete-scan-tag {
+            background-color: rgba(156, 39, 176, 0.3);
+            color: #9C27B0;
+        }
+
+        .fake-distribution-tag {
+            background-color: rgba(233, 30, 99, 0.3);
+            color: #E91E63;
+        }
+
+        /* Controls visualization */
+        .controls-container {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .control-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .slider-control {
+            flex: 1;
+            height: 8px;
+            background: linear-gradient(to right, #4CAF50, #2196F3);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .slider-thumb {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .slider-value {
+            background-color: rgba(36, 36, 36, 0.8);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 24px;
+            background-color: #444;
+            border-radius: 24px;
+        }
+
+        .switch-thumb {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: white;
+            border-radius: 50%;
+            top: 4px;
+            left: 4px;
+        }
+
+        .switch-on {
+            background-color: #F44336;
+        }
+
+        .switch-on .switch-thumb {
+            left: 30px;
+        }
+
+        .switch-blue {
+            background-color: #2196F3;
+        }
+
+        /* Dashboard specific styles */
+        .dashboard-widget {
+            background-color: var(--widget-bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .dashboard-widget-header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dashboard-widget-title {
+            color: var(--header-color);
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .dashboard-token-row {
+            display: grid;
+            grid-template-columns: 40px 1fr 80px;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dashboard-token-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .token-farm-label {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .token-farm {
+            background-color: rgba(244, 67, 54, 0.3);
+            color: #F44336;
+        }
+
+        .token-farmed {
+            background-color: rgba(255, 193, 7, 0.3);
+            color: #FFC107;
+        }
+
+        .token-nofarm {
+            background-color: rgba(76, 175, 80, 0.3);
+            color: #4CAF50;
+        }
+
+        .token-incomplete {
+            background-color: rgba(156, 39, 176, 0.3);
+            color: #9C27B0;
+        }
+
+        .dashboard-stats-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dashboard-stats-label {
+            font-weight: bold;
+            color: var(--header-color);
+        }
+
+        .dashboard-stats-value {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        .dashboard-pie-chart {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            height: 200px;
+            position: relative;
+        }
+
+        .dashboard-filter-controls {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .dashboard-filter-control {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .dashboard-filter-label {
+            font-size: 0.85rem;
+            color: var(--subtext-color);
+            white-space: nowrap;
+        }
+
+        .dashboard-token-metrics {
+            margin-top: 5px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .metric-tag {
+            display: inline-block;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .sus-tag {
+            background-color: rgba(231, 76, 60, 0.2);
+            color: #e74c3c;
+        }
+
+        .dev-tag {
+            background-color: rgba(17, 122, 101, 0.2);
+            color: #16a085;
+        }
+
+        .insider-tag {
+            background-color: rgba(211, 84, 0, 0.2);
+            color: #d35400;
+        }
+
+        .history-tag {
+            display: inline-block;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            margin-right: 2px;
+        }
+
+        .first-scan-tag {
+            background-color: #28355a;
+            color: white;
+        }
+
+        .threshold-scan-tag {
+            background-color: #4d2d4b;
+            color: white;
+        }
+
+        .rescan-tag {
+            background-color: #393939;
+            color: white;
+        }
+
+        .filter-dropdown-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Improved color tags */
+        .color-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin: 0 2px;
+        }
+
+        .purple-tag {
+            background-color: rgba(156, 39, 176, 0.3);
+            color: #9C27B0;
+        }
+
+        .red-tag {
+            background-color: rgba(244, 67, 54, 0.3);
+            color: #F44336;
+        }
+
+        .pink-tag {
+            background-color: rgba(233, 30, 99, 0.3);
+            color: #E91E63;
+        }
+
+        .yellow-tag {
+            background-color: rgba(255, 193, 7, 0.3);
+            color: #FFC107;
+        }
+
+        .green-tag {
+            background-color: rgba(76, 175, 80, 0.3);
+            color: #4CAF50;
+        }
+
+        /* For inline color indicators */
+        .color-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+
+        .color-dot-purple {
+            background-color: #9C27B0;
+        }
+
+        .color-dot-red {
+            background-color: #F44336;
+        }
+
+        .color-dot-pink {
+            background-color: #E91E63;
+        }
+
+        .color-dot-yellow {
+            background-color: #FFC107;
+        }
+
+        .color-dot-green {
+            background-color: #4CAF50;
+        }
+
+        /* Token indicator styles */
+        .token-indicator-example {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #333;
+            border: 3px solid var(--success-color);
+            margin: 10px;
+        }
+
+        .indicator-icon {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            background-color: var(--widget-bg);
+            padding: 2px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* New styles for launchpad tags */
+        .launchpad-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-top: 2px;
+            font-weight: bold;
+        }
+
+        .launchpad-pumpfun {
+            background-color: rgba(76, 175, 80, 0.3);
+            color: #4CAF50;
+        }
+
+        .launchpad-raydium {
+            background-color: rgba(33, 150, 243, 0.3);
+            color: #2196F3;
+        }
+
+        /* Add Meteora launchpad tag style */
+        .launchpad-meteora {
+            background-color: rgba(156, 39, 176, 0.3);
+            color: #9C27B0;
+        }
+
+        /* Launchpad filter row styles */
+        .launchpad-filter-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 5px;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu Dropdown -->
+    <div class="menu-dropdown">
+        <button class="menu-button" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+            Menu
+        </button>
+        <div id="dropdown-menu" class="dropdown-content">
+            <a href="./index.html">Home Page</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./trending.html">Trending</a>
+            <a href="./documentation.html">Documentation</a>
+            <a href="./privacy.html" class="separator-top">Privacy Policy</a>
+            <a href="./disclaimer.html">Disclaimer</a>
+            <a href="./termsofservice.html">Terms of Service</a>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <h1 class="page-title"><img src="logo.png" alt="Logo" class="header-logo">DailyRunner.Fun Documentation</h1>
+
+    <!-- Main Section Tabs -->
+    <div class="container">
+        <div class="tabs">
+            <a href="#introduction" class="tab active">Overview</a>
+            <a href="#race-page" class="tab">Race Page</a>
+            <a href="#dashboard" class="tab">Dashboard</a>
+            <a href="#telegram" class="tab">Telegram</a>
+            <a href="#technical" class="tab">Technical</a>
+        </div>
+
+        <!-- Table of Contents - FIXED with toggle button -->
+        <div class="toc">
+            <div class="toc-header" onclick="toggleTOC()">
+                <h2>Table of Contents</h2>
+                <button class="toc-toggle" id="tocToggle">▼</button>
+            </div>
+            <div class="toc-content" id="tocContent">
+                <ul>
+                    <li><a href="#introduction">1. Introduction</a></li>
+                    <li><a href="#race-page">2. Race Page</a>
+                        <ul class="sub-items">
+                            <li><a href="#race-visualization">2.1. Visualization Overview</a></li>
+                            <li><a href="#token-positioning">2.2. Token Positioning</a></li>
+                            <li><a href="#token-representation">2.3. Token Representation</a></li>
+                            <li><a href="#token-indicators">2.4. Token Indicators</a></li>
+                            <li><a href="#race-controls">2.5. Using Filters and Controls</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#dashboard">3. Dashboard</a>
+                        <ul class="sub-items">
+                            <li><a href="#daily-stats">3.1. Daily Stats Section</a></li>
+                            <li><a href="#graduated-tokens">3.2. Graduated Tokens</a></li>
+                            <li><a href="#threshold-widgets">3.3. Threshold Widgets</a></li>
+                            <li><a href="#history-widget">3.4. Graduated Token History</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#telegram">4. Telegram Feeds</a>
+                        <ul class="sub-items">
+                            <li><a href="#pumpfun-channels">4.1. PumpFun Feed Channels</a></li>
+                            <li><a href="#raydium-channels">4.2. Raydium Feed Channels</a></li>
+                            <li><a href="#meteora-channels">4.3. Meteora Feed Channels</a></li>
+                            <li><a href="#telegram-alerts">4.4. Alert System</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#token-metrics">5. Token Metrics Explained</a>
+                        <ul class="sub-items">
+                            <li><a href="#farm-status">5.1. Farm Status</a></li>
+                            <li><a href="#holder-metrics">5.2. Holder Map & Metrics</a></li>
+                            <li><a href="#bundles">5.3. Bundles & Farm Analysis</a></li>
+                            <li><a href="#clusters">5.4. Clusters</a></li>
+                            <li><a href="#token-age">5.5. Token Age Classifications</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#filtering-system">6. Filtering System</a>
+                        <ul class="sub-items">
+                            <li><a href="#filter-criteria">6.1. Filter Criteria</a></li>
+                            <li><a href="#using-filters">6.2. Using Filters</a></li>
+                            <li><a href="#search-function">6.3. Search Function</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#threshold-system">7. Threshold System</a>
+                        <ul class="sub-items">
+                            <li><a href="#threshold-levels">7.1. Threshold Levels</a></li>
+                            <li><a href="#token-distribution">7.2. Token Distribution</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#technical">8. Technical Details</a>
+                        <ul class="sub-items">
+                            <li><a href="#data-sources">8.1. Data Sources</a></li>
+                            <li><a href="#refresh-rate">8.2. Refresh Rate</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#tips">9. Tips for Effective Use</a></li>
+                    <li><a href="#faq">10. Frequently Asked Questions</a></li>
+                    <li><a href="#glossary">11. Glossary of Terms</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>Welcome to DailyRunner.Fun, a comprehensive platform for monitoring and analyzing Solana token metrics in
+                real-time. This platform combines powerful visualization tools, detailed analytics, and filtering
+                systems to help traders, investors, and researchers track newly graduated tokens on the Solana
+                blockchain from PumpFun, Raydium, and Meteora launchpads.</p>
+
+            <h3>Platform Overview</h3>
+            <p>DailyRunner provides continuous monitoring of tokens that cross specific market capitalization thresholds
+                ($100K, $250K, $500K, $750K, and $1M). The platform consists of three main components:</p>
+
+            <ul>
+                <li><strong>Race Track Visualization:</strong> An intuitive visual interface showing tokens "racing"
+                    toward higher market caps</li>
+                <li><strong>Dashboard:</strong> Detailed metrics, filtering tools, and categorization of tokens based on
+                    distribution patterns</li>
+                <li><strong>Telegram Integration:</strong> Real-time alerts with feeds for each market cap threshold.
+                </li>
+            </ul>
+
+            <p>Using sophisticated on-chain analysis, the system categorizes tokens as <span
+                    class="token-farm-label token-farm">FARM</span>, <span
+                    class="token-farm-label token-farmed">FARMED</span>, or <span
+                    class="token-farm-label token-nofarm">NO FARM DETECTED</span>, allowing users to quickly distinguish
+                between potentially manipulated tokens and those with more organic growth patterns.</p>
+
+            <div class="note">
+                <h4>Note:</h4>
+                <p>The metrics and classifications provided by DailyRunner.Fun are based on algorithmic analysis and
+                    should be used as one of many tools in your research process. Always conduct your own due diligence
+                    before making investment decisions.</p>
+            </div>
+        </section>
+
+        <!-- Race Page Section - IMPROVED -->
+        <section id="race-page">
+            <h2>2. Race Page</h2>
+            <p>The Race Page provides a dynamic visual representation of tokens as they "race" toward higher market
+                capitalization milestones. This intuitive visualization helps users quickly identify promising tokens
+                and differentiate them from potentially manipulated ones.</p>
+
+            <h3 id="race-visualization">2.1. Visualization Overview</h3>
+            <p>The Race Track visualization uses a logarithmic scale to display tokens based on their market
+                capitalization in a racing format. The interface resembles a virtual racetrack with tokens moving upward
+                as their market caps increase.</p>
+
+            <!-- NEW: Race track visualization example -->
+            <div class="race-track-container">
+                <div class="finish-line"></div>
+
+                <!-- Example tokens at different positions -->
+                <div class="token-racer" style="bottom: 50px; left: 180px;">
+                    <div class="token-icon" style="border-color: #4CAF50;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="#fff">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                        </svg>
+                    </div>
+                    <div class="token-details">Token A</div>
+                    <div class="token-details">$250K</div>
+                </div>
+
+                <div class="token-racer" style="bottom: 120px; left: 80px;">
+                    <div class="token-icon" style="border-color: #F44336;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="#fff">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                        </svg>
+                    </div>
+                    <div class="token-details">Token B</div>
+                    <div class="token-details">$500K</div>
+                </div>
+
+                <div class="token-racer" style="bottom: 200px; left: 280px;">
+                    <div class="token-icon" style="border-color: #FFC107;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="#fff">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                        </svg>
+                    </div>
+                    <div class="token-details">Token C</div>
+                    <div class="token-details">$750K</div>
+                </div>
+
+                <!-- Featured token with tooltip -->
+                <div class="token-racer" style="bottom: 170px; left: 150px;">
+                    <div class="token-icon" style="border-color: #4CAF50;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="#fff">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                        </svg>
+                    </div>
+                    <div class="token-details">Example Token</div>
+                    <div class="token-details">$650K</div>
+
+
+                </div>
+            </div>
+
+            <p>Key elements of the Race Track visualization include:</p>
+
+            <ul>
+                <li><strong>Race Track:</strong> The main visualization area where tokens "race" upward as their market
+                    caps increase</li>
+                <li><strong>Finish Line:</strong> A horizontal checkered line at the top representing the 10M market cap
+                    milestone</li>
+                <li><strong>Start Line:</strong> Located at the bottom of the screen, representing the minimum market
+                    cap threshold</li>
+                <li><strong>Tokens:</strong> Individual coin representations with icons, names, and market cap
+                    information</li>
+            </ul>
+
+            <p>The interface is designed to be intuitive, allowing you to quickly identify tokens based on their
+                position and visual attributes.</p>
+
+            <h3 id="token-positioning">2.2. Token Positioning</h3>
+            <p>Token positioning on the race track is determined by two main factors:</p>
+
+            <ul>
+                <li><strong>Vertical Position:</strong> Corresponds to market capitalization - tokens with higher market
+                    caps appear higher on the track</li>
+                <li><strong>Horizontal Position:</strong> Based on when the token was detected - newer tokens appear on
+                    the left, older tokens on the right</li>
+            </ul>
+
+            <p>The logarithmic scale ensures that tokens with smaller market caps can be visualized effectively
+                alongside those with larger market caps. This scaling provides a clearer representation of token
+                progress as they move toward higher market cap milestones.</p>
+
+            <div class="info-box">
+                <h4>Logarithmic Scale Explanation:</h4>
+                <p>The race track uses a logarithmic scale (rather than a linear scale) to better visualize the
+                    progression of tokens across different market cap ranges. This means the visual distance between
+                    $100K and $200K is the same as the distance between $500K and $1M, making it easier to track token
+                    progress at all stages of growth.</p>
+            </div>
+
+            <h3 id="token-representation">2.3. Token Representation</h3>
+            <p>Each token on the race track is represented with visual elements that convey important information at a
+                glance:</p>
+
+            <div class="token-example">
+                <div class="token-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="#fff">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                    </svg>
+                </div>
+                <div class="token-data">
+                    <div><strong>Example Token</strong> (EXT)</div>
+                    <div>Market Cap: <strong>$1.2M</strong></div>
+                    <div>Border: <span class="green-tag">Green</span> (Passes all criteria)</div>
+                    <div style="margin-top: 10px;">
+                        <span>Social Links:</span>
+                        <span class="social-icon-example social-website" title="Website">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14"
+                                fill="white">
+                                <path
+                                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm7.931 9h-2.764a14.67 14.67 0 0 0-1.792-6.243A8.013 8.013 0 0 1 19.931 11zM12.53 4.027c1.035 1.364 2.427 3.78 2.627 6.973H9.03c.139-2.596.994-5.028 2.451-6.974.172-.01.34-.026.519-.026.179 0 .346.016.53.027zm-3.842.7C7.704 6.618 7.136 8.762 7.03 11H4.069a8.013 8.013 0 0 1 4.619-6.273zM4.069 13h2.974c.136 2.379.665 4.478 1.556 6.23A8.01 8.01 0 0 1 4.069 13zm7.381 6.973C10.049 18.275 9.222 15.896 9.041 13h6.113c-.208 2.773-1.117 5.196-2.603 6.972-.182.012-.364.028-.551.028-.186 0-.367-.016-.55-.027zm4.011-.772c.955-1.794 1.538-3.901 1.691-6.201h2.778a8.005 8.005 0 0 1-4.469 6.201z" />
+                            </svg>
+                        </span>
+                        <span class="social-icon-example social-twitter" title="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14"
+                                fill="white">
+                                <path
+                                    d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+                            </svg>
+                        </span>
+                        <span class="social-icon-example social-telegram" title="Telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14"
+                                fill="white">
+                                <path
+                                    d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <span>Launchpad:</span>
+                        <span class="launchpad-tag launchpad-pumpfun">PumpFun</span>
+                    </div>
+                    <div class="token-hover">
+                        <strong>Hover to reveal details:</strong> When hovering over a token, you'll see additional
+                        information including farm status, metrics, and detailed analytics. This tooltip provides
+                        at-a-glance assessment of token quality.
+                    </div>
+                </div>
+            </div>
+
+            <p>Key visual elements include:</p>
+            <ul>
+                <li><strong>Icon:</strong> The token's logo or a placeholder if no logo is available</li>
+                <li><strong>Name:</strong> The token's name displayed directly below the icon</li>
+                <li><strong>Market Cap:</strong> Current USD market capitalization shown under the name</li>
+                <li><strong>Border Color:</strong> Colored border around the token icon indicating its status</li>
+                <li><strong>Social Links:</strong> Icons for website, Twitter, and Telegram when available</li>
+                <li><strong>Copy Icon:</strong> A clipboard icon to easily copy the token's address</li>
+                <li><strong>Launchpad Tag:</strong> Indicates whether the token was launched on PumpFun, Raydium, or
+                    Meteora</li>
+            </ul>
+
+            <h4>Border Colors Explained</h4>
+            <p>The border colors around token icons provide instant visual indicators of token status:</p>
+
+            <div class="status-legend">
+                <div class="legend-item">
+                    <div class="legend-color border-purple"></div>
+                    <span><span class="purple-tag">Purple</span> - Incomplete scan - data is still being
+                        processed</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color border-red"></div>
+                    <span><span class="red-tag">Red</span> - <span class="token-farm-label token-farm">FARM</span>
+                        status - fails one or more filter criteria</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color border-pink"></div>
+                    <span><span class="pink-tag">Pink</span> - <span class="fake-distribution-tag">FAKE
+                            DISTRIBUTION</span> - suspicious distribution pattern detected</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color border-yellow"></div>
+                    <span><span class="yellow-tag">Yellow</span> - <span
+                            class="token-farm-label token-farmed">FARMED</span> status - previously failed criteria but
+                        now passes</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color border-green"></div>
+                    <span><span class="green-tag">Green</span> - <span class="token-farm-label token-nofarm">NO FARM
+                            DETECTED</span> - passes all criteria</span>
+                </div>
+            </div>
+
+            <h4>Detailed Metrics on Hover</h4>
+            <p>When hovering over a token, you'll see a detailed tooltip containing critical metrics color-coded for
+                easy assessment:</p>
+
+            <div class="metric-box">
+                <span>Suspicious Wallets:</span>
+                <span class="metric-value-low">2.15%</span>
+            </div>
+            <div class="metric-box">
+                <span>Dev Holdings:</span>
+                <span class="metric-value-medium">8.50%</span>
+            </div>
+            <div class="metric-box">
+                <span>Insider Wallets:</span>
+                <span class="metric-value-high">35.20%</span>
+            </div>
+            <div class="metric-box">
+                <span>Farmed From:</span>
+                <span class="metric-value-low">4.80%</span>
+            </div>
+
+            <p>These metrics are color-coded for instant risk assessment:</p>
+            <ul>
+                <li><span class="metric-value-low">Green</span>: Low risk (≤5%)</li>
+                <li><span class="metric-value-medium">Yellow</span>: Medium risk (>5% and ≤15%)</li>
+                <li><span class="metric-value-high">Red</span>: High risk (>15%)</li>
+            </ul>
+
+            <p>The tooltip also displays additional status tags when applicable:</p>
+            <ul>
+                <li><span class="token-farm-label token-farm">FARM</span> - Token fails one or more filter criteria</li>
+                <li><span class="token-farm-label token-farmed">FARMED</span> - Token previously failed criteria but now
+                    passes</li>
+                <li><span class="token-farm-label token-nofarm">NO FARM DETECTED</span> - Token passes all filter
+                    criteria</li>
+                <li><span class="token-farm-label token-incomplete">SCAN INCOMPLETE</span> - Token data is still being
+                    processed</li>
+                <li><span class="fake-distribution-tag">FAKE DISTRIBUTION</span> - Suspicious distribution pattern
+                    detected</li>
+                <li><span class="launchpad-tag launchpad-pumpfun">PumpFun</span> - Token launched on PumpFun</li>
+                <li><span class="launchpad-tag launchpad-raydium">Raydium</span> - Token launched on Raydium</li>
+                <li><span class="launchpad-tag launchpad-meteora">Meteora</span> - Token launched on Meteora</li>
+            </ul>
+
+            <h3 id="token-indicators">2.4. Token Indicators</h3>
+            <p>Some tokens display special indicator icons above them to provide additional information about their age
+                and history:</p>
+
+            <div style="display: flex; justify-content: center; margin: 20px 0;">
+                <div class="token-indicator-example">
+                    <span class="indicator-icon">🌷</span>
+                </div>
+                <div class="token-indicator-example" style="border-color: var(--farmed-color);">
+                    <span class="indicator-icon">📅</span>
+                </div>
+            </div>
+
+            <h4>Late Bloomers</h4>
+            <p>Tokens marked with a <strong>🌷</strong> (flower) icon are classified as "Late Bloomers." These are
+                tokens that remained at a low market cap for some time before suddenly gaining significant value. The
+                Late Bloomer classification applies to tokens that are over 7 days old but under 30 days old.</p>
+
+            <h4>Old Creations</h4>
+            <p>Tokens marked with a <strong>📅</strong> (calendar) icon are classified as "Old Creations." These are
+                tokens that were created over 30 days ago but have only recently crossed market cap thresholds. Old
+                Creations may represent projects with longer development periods or tokens that were dormant before
+                becoming active.</p>
+
+            <div class="info-box">
+                <h4>Age Classification Thresholds:</h4>
+                <ul>
+                    <li><strong>New Tokens:</strong> Less than 7 days old (no special indicator)</li>
+                    <li><strong>Late Bloomers:</strong> 7 to 30 days old (🌷 indicator)</li>
+                    <li><strong>Old Creations:</strong> More than 30 days old (📅 indicator)</li>
+                </ul>
+                <p>If a token qualifies as both a Late Bloomer and an Old Creation, it will display the 📅 calendar
+                    icon, with Old Creation status taking precedence.</p>
+            </div>
+
+            <h3 id="race-controls">2.5. Using Filters and Controls</h3>
+            <p>The Race Page offers several controls to customize your view and help you focus on tokens that match your
+                criteria:</p>
+
+            <!-- NEW: Controls visualization -->
+            <div class="controls-container">
+                <!-- Updated: Launchpad filter controls with Meteora -->
+                <div class="control-row launchpad-filter-row">
+                    <div class="filter-group">
+                        <div>PumpFun:</div>
+                        <div class="toggle-switch" style="background-color: #4CAF50;">
+                            <div class="switch-thumb" style="left: 30px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div>Raydium:</div>
+                        <div class="toggle-switch" style="background-color: #2196F3;">
+                            <div class="switch-thumb" style="left: 30px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div>Meteora:</div>
+                        <div class="toggle-switch" style="background-color: #9C27B0;">
+                            <div class="switch-thumb" style="left: 30px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-row">
+                    <div>Min Market Cap:</div>
+                    <div class="slider-control">
+                        <div class="slider-thumb" style="left: 30%;"></div>
+                    </div>
+                    <div class="slider-value">$250K</div>
+                </div>
+
+                <div class="control-row">
+                    <div class="toggle-switch">
+                        <div class="switch-thumb"></div>
+                    </div>
+                    <div>Show FARMS</div>
+                </div>
+
+                <div class="control-row">
+                    <div class="toggle-switch switch-blue switch-on">
+                        <div class="switch-thumb"></div>
+                    </div>
+                    <div>Simple View</div>
+                </div>
+            </div>
+
+            <h4>Launchpad Filters</h4>
+            <p>The launchpad toggles at the top allow you to filter tokens based on their origin platform:</p>
+            <ul>
+                <li><strong>PumpFun:</strong> Toggle to show or hide tokens launched on the PumpFun platform</li>
+                <li><strong>Raydium:</strong> Toggle to show or hide tokens launched on the Raydium platform</li>
+                <li><strong>Meteora:</strong> Toggle to show or hide tokens launched on the Meteora platform</li>
+            </ul>
+            <p>You can enable any combination of toggles to focus on specific launchpads or view all tokens across
+                different platforms. This is especially useful for comparing performance between tokens from different
+                launchpads or focusing on your preferred platform.</p>
+
+            <h4>Market Cap Filter</h4>
+            <p>The market cap slider allows you to set a minimum threshold for displayed tokens. Only tokens with market
+                caps above this value will appear on the race track. This is useful for filtering out smaller tokens and
+                focusing on those that have reached specific milestones.</p>
+
+            <h4>FARM Filter</h4>
+            <p>The "Show FARMS" toggle controls whether tokens classified as farms are displayed:</p>
+            <ul>
+                <li><strong>OFF (default):</strong> Hides tokens with <span
+                        class="token-farm-label token-farm">FARM</span> status, showing only tokens that pass criteria
+                </li>
+                <li><strong>ON:</strong> Shows all tokens including those with <span
+                        class="token-farm-label token-farm">FARM</span> status, useful for comprehensive market analysis
+                </li>
+            </ul>
+
+            <h4>Simple View</h4>
+            <p>The "Simple View" toggle provides a cleaner interface by simplifying token displays:</p>
+            <ul>
+                <li><strong>OFF (default):</strong> Shows detailed token information including names, market caps, and
+                    social links</li>
+                <li><strong>ON:</strong> Shows only token icons with colored borders for a less cluttered view when
+                    tracking many tokens</li>
+            </ul>
+
+            <h4>Token Interaction</h4>
+            <p>You can interact with tokens on the race track in several ways:</p>
+            <ul>
+                <li><strong>Click on a token:</strong> Opens the token's page on Pump.fun, Raydium, or appropriate
+                    explorer where you can find more details or make trades</li>
+                <li><strong>Hover over a token:</strong> Reveals a detailed tooltip with metrics and status information
+                </li>
+                <li><strong>Click social icons:</strong> Opens the token's website, Twitter, or Telegram pages in a new
+                    tab</li>
+                <li><strong>Click copy icon:</strong> Copies the token's address to your clipboard for easy pasting
+                    elsewhere</li>
+            </ul>
+
+            <div class="note">
+                <h4>Mobile View:</h4>
+                <p>On mobile devices, the Race Page automatically switches to Simple View with reduced information to
+                    optimize for smaller screens. Detailed tooltips are disabled, and tokens are represented by their
+                    icons only. Tapping a token will still navigate to its appropriate explorer page.</p>
+            </div>
+        </section>
+
+        <!-- Dashboard Section - IMPROVED -->
+        <section id="dashboard">
+            <h2>3. Dashboard</h2>
+            <p>The DailyRunner dashboard provides comprehensive data visualization and token monitoring through multiple
+                interactive widgets. Each widget focuses on different aspects of token performance and classification,
+                offering an intuitive and detailed view of the market.</p>
+
+            <div class="note">
+                <h4>Dashboard Interface:</h4>
+                <p>The dashboard features a clean dark-themed interface with widgets organized in rows. Each widget has
+                    a consistent design with a colored header, content area, and interactive elements. The dashboard
+                    automatically refreshes every 5 seconds to ensure you always have the latest data.</p>
+            </div>
+
+            <h3 id="daily-stats">3.1. Daily Stats Section</h3>
+            <p>The top section of the dashboard contains two key widgets that provide an overview of market activity:
+            </p>
+
+            <!-- Farm Ratio Widget Visualization -->
+            <div class="dashboard-widget">
+                <div class="dashboard-widget-header">
+                    <h3 class="dashboard-widget-title">Daily Farm Ratio</h3>
+                </div>
+                <div style="display: flex; justify-content: center; padding: 10px;">
+                    <div class="dashboard-pie-chart">
+                        <svg width="100%" height="100%" viewBox="0 0 200 200">
+                            <!-- Red FARM segment ~30% -->
+                            <path d="M100 100 L175 100 A75 75 0 0 1 100 175" fill="#c62828" opacity="0.8"></path>
+                            <!-- Green NO FARM segment ~70% -->
+                            <path d="M100 100 L100 175 A75 75 0 1 1 175 100" fill="#4caf50" opacity="0.8"></path>
+                            <!-- Labels -->
+                            <text x="150" y="90" fill="#e0e0e0" font-size="12" text-anchor="middle">Farm Tokens
+                                (30%)</text>
+                            <text x="70" y="120" fill="#e0e0e0" font-size="12" text-anchor="middle">Non-Farm Tokens
+                                (70%)</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Threshold Stats Widget Visualization -->
+            <div class="dashboard-widget">
+                <div class="dashboard-widget-header">
+                    <h3 class="dashboard-widget-title">Daily Threshold Stats</h3>
+                    <div class="dashboard-filter-controls">
+                        <div class="dashboard-filter-control">
+                            <input type="checkbox" id="showUnfilteredStats">
+                            <label for="showUnfilteredStats" class="dashboard-filter-label">Include FARMS</label>
+                        </div>
+                        <div class="dashboard-filter-control time-toggle-container">
+                            <span class="dashboard-filter-label">Show Last 48 Hrs</span>
+                            <label class="toggle-switch" style="width: 40px; height: 20px;">
+                                <input type="checkbox" style="display: none;">
+                                <span style="border-radius: 34px; display: block; height: 100%; position: relative;">
+                                    <span
+                                        style="position: absolute; height: 16px; width: 16px; left: 2px; bottom: 2px; background-color: white; border-radius: 50%; transition: .4s;"></span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 10px;">
+                    <div class="dashboard-stats-row">
+                        <span class="dashboard-stats-label">Total Graduated:</span>
+                        <span class="dashboard-stats-value">127</span>
+                    </div>
+                    <div class="dashboard-stats-row">
+                        <span class="dashboard-stats-label">Farm Tokens:</span>
+                        <span class="dashboard-stats-value">38</span>
+                    </div>
+                    <div class="dashboard-stats-row">
+                        <span class="dashboard-stats-label">Non-Farm Tokens:</span>
+                        <span class="dashboard-stats-value">89</span>
+                    </div>
+                    <div class="dashboard-stats-row">
+                        <span class="dashboard-stats-label">$100K+ Threshold:</span>
+                        <span class="dashboard-stats-value">42</span>
+                    </div>
+                    <div class="dashboard-stats-row">
+                        <span class="dashboard-stats-label">$250K+ Threshold:</span>
+                        <span class="dashboard-stats-value">35</span>
+                    </div>
+                    <div class="dashboard-stats-row">
+                        <span class="dashboard-stats-label">$500K+ Threshold:</span>
+                        <span class="dashboard-stats-value">24</span>
+                    </div>
+                    <div class="dashboard-stats-row">
+                        <span class="dashboard-stats-label">$750K+ Threshold:</span>
+                        <span class="dashboard-stats-value">18</span>
+                    </div>
+                    <div class="dashboard-stats-row">
+                        <span class="dashboard-stats-label">$1M+ Threshold:</span>
+                        <span class="dashboard-stats-value">8</span>
+                    </div>
+                </div>
+            </div>
+
+            <p>The <strong>Daily Farm Ratio</strong> widget displays a color-coded pie chart showing the proportion of
+                farm tokens versus non-farm tokens over the past 24 hours. This provides an immediate visual indication
+                of overall market quality and can help gauge market sentiment.</p>
+
+            <ul>
+                <li><span class="red-tag">Red Segment</span>: Represents the percentage of <span
+                        class="token-farm-label token-farm">FARM</span> tokens</li>
+                <li><span class="green-tag">Green Segment</span>: Represents the percentage of non-farm tokens</li>
+            </ul>
+
+            <p>The <strong>Daily Threshold Stats</strong> widget presents numerical statistics about tokens crossing
+                different market capitalization thresholds. This widget includes:</p>
+
+            <ul>
+                <li><strong>Total Graduated:</strong> Total number of tokens that have migrated from PumpFun to PumpSwap
+                </li>
+                <li><strong>Farm Tokens:</strong> Number of tokens classified as farms in the time period</li>
+                <li><strong>Non-Farm Tokens:</strong> Number of tokens not classified as farms</li>
+                <li><strong>Threshold Counts:</strong> Breakdown of tokens at each threshold ($100K through $1M)</li>
+            </ul>
+
+            <div class="info-box">
+                <h4>Filter Controls:</h4>
+                <ul>
+                    <li><strong>Include FARMS Toggle:</strong> When checked, includes farm tokens in the statistics;
+                        when unchecked (default), only shows non-farm tokens</li>
+                </ul>
+            </div>
+
+            <h3 id="graduated-tokens">3.2. Graduated Tokens</h3>
+            <p>The Graduated Tokens widget displays all tokens that have migrated from PumpFun to PumpSwap or reached
+                significant market caps on Raydium, regardless of their farm classification.</p>
+
+            <!-- Graduated Tokens Widget Visualization -->
+            <div class="dashboard-widget">
+                <div class="dashboard-widget-header">
+                    <h3 class="dashboard-widget-title">Graduated</h3>
+                    <div class="dashboard-filter-controls">
+                        <div class="dashboard-filter-control">
+                            <input type="checkbox" id="hasSocialLinks">
+                            <label for="hasSocialLinks" class="dashboard-filter-label">Socials</label>
+                        </div>
+                        <div class="dashboard-filter-control">
+                            <input type="checkbox" id="excludeFarmTokens">
+                            <label for="excludeFarmTokens" class="dashboard-filter-label">No FARMS</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Token Header Row -->
+                <div
+                    style="display: grid; grid-template-columns: 40px 1fr 80px; padding: 6px 10px; border-bottom: 2px solid var(--border-color); font-weight: bold;">
+                    <div class="sortable" style="cursor: pointer; position: relative;">▼</div>
+                    <div>Token</div>
+                    <div style="text-align: center; cursor: pointer; position: relative;">MC ▲</div>
+                </div>
+
+                <!-- Example Token Rows -->
+                <div style="max-height: 400px; overflow-y: auto; padding: 0 10px;">
+                    <!-- Green NO FARM token -->
+                    <div class="dashboard-token-row">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23fff'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23333'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E"
+                                class="dashboard-token-image" style="border: 3px solid #4CAF50;">
+                            <div style="font-size: 0.65rem; color: var(--subtext-color); text-align: center;">2h 45m
+                            </div>
+                        </div>
+                        <div style="padding: 0 10px;">
+                            <h3 style="font-size: 0.85rem; color: var(--header-color); margin: 0;">Token Alpha</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; margin-top: 3px;">
+                                <span style="font-size: 0.75rem; color: #7f8c8d;">ALPHA</span>
+                                <span
+                                    style="font-size: 0.7rem; color: #95a5a6; font-family: monospace;">Exy...8pQ</span>
+                            </div>
+                            <div style="display: flex; gap: 4px; margin-top: 4px;">
+                                <span
+                                    style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #2196F3, #0D47A1); color: white; display: flex; justify-content: center; align-items: center; font-size: 10px;">🌐</span>
+                                <span
+                                    style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #1DA1F2, #0077B5); color: white; display: flex; justify-content: center; align-items: center; font-size: 10px;">🐦</span>
+                            </div>
+                            <div class="dashboard-token-metrics">
+                                <span class="metric-tag sus-tag">SUS: 2.4%</span>
+                                <span class="metric-tag dev-tag">DEV: 4.8%</span>
+                                <span class="metric-tag insider-tag">INSIDER: 10.2%</span>
+                            </div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span class="token-farm-label token-nofarm">NO FARM</span>
+                            <div
+                                style="font-weight: bold; font-size: 0.75rem; color: var(--header-color); margin-top: 4px;">
+                                $124,500</div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Market Cap</div>
+                        </div>
+                    </div>
+
+                    <!-- Red FARM token -->
+                    <div class="dashboard-token-row" style="background-color: rgba(198, 40, 40, 0.1);">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23fff'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23333'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E"
+                                class="dashboard-token-image" style="border: 3px solid #F44336;">
+                            <div style="font-size: 0.65rem; color: var(--subtext-color); text-align: center;">1h 20m
+                            </div>
+                        </div>
+                        <div style="padding: 0 10px;">
+                            <h3 style="font-size: 0.85rem; color: var(--header-color); margin: 0;">Token Beta</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; margin-top: 3px;">
+                                <span style="font-size: 0.75rem; color: #7f8c8d;">BETA</span>
+                                <span
+                                    style="font-size: 0.7rem; color: #95a5a6; font-family: monospace;">Fdt...7xL</span>
+                            </div>
+                            <div class="dashboard-token-metrics">
+                                <span class="metric-tag sus-tag">SUS: 28.5%</span>
+                                <span class="metric-tag dev-tag">DEV: 12.1%</span>
+                                <span class="metric-tag insider-tag">INSIDER: 34.6%</span>
+                            </div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span class="token-farm-label token-farm">FARM 28.5%</span>
+                            <div
+                                style="font-weight: bold; font-size: 0.75rem; color: var(--header-color); margin-top: 4px;">
+                                $356,200</div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Market Cap</div>
+                        </div>
+                    </div>
+
+                    <!-- Yellow FARMED token -->
+                    <div class="dashboard-token-row">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23fff'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23333'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E"
+                                class="dashboard-token-image" style="border: 3px solid #FFC107;">
+                            <div style="font-size: 0.65rem; color: var(--subtext-color); text-align: center;">5h 10m
+                            </div>
+                        </div>
+                        <div style="padding: 0 10px;">
+                            <h3 style="font-size: 0.85rem; color: var(--header-color); margin: 0;">Token Gamma</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; margin-top: 3px;">
+                                <span style="font-size: 0.75rem; color: #7f8c8d;">GAMMA</span>
+                                <span
+                                    style="font-size: 0.7rem; color: #95a5a6; font-family: monospace;">Hyz...9tR</span>
+                            </div>
+                            <div style="display: flex; gap: 4px; margin-top: 4px;">
+                                <span
+                                    style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #0088cc, #0056a3); color: white; display: flex; justify-content: center; align-items: center; font-size: 10px;">📱</span>
+                            </div>
+                            <div class="dashboard-token-metrics">
+                                <span class="metric-tag sus-tag">SUS: 4.9%</span>
+                                <span class="metric-tag dev-tag">DEV: 3.2%</span>
+                                <span class="metric-tag insider-tag">INSIDER: 18.9%</span>
+                            </div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span class="token-farm-label token-farmed">FARMED 16.2%</span>
+                            <div
+                                style="font-weight: bold; font-size: 0.75rem; color: var(--header-color); margin-top: 4px;">
+                                $525,800</div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Market Cap</div>
+                        </div>
+                    </div>
+
+                    <!-- Purple INCOMPLETE token -->
+                    <div class="dashboard-token-row" style="background-color: rgba(156, 39, 176, 0.1);">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23fff'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23333'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E"
+                                class="dashboard-token-image" style="border: 3px solid #9C27B0;">
+                            <div style="font-size: 0.65rem; color: var(--subtext-color); text-align: center;">25m</div>
+                        </div>
+                        <div style="padding: 0 10px;">
+                            <h3 style="font-size: 0.85rem; color: var(--header-color); margin: 0;">Token Delta</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; margin-top: 3px;">
+                                <span style="font-size: 0.75rem; color: #7f8c8d;">DELTA</span>
+                                <span
+                                    style="font-size: 0.7rem; color: #95a5a6; font-family: monospace;">Jnk...5wQ</span>
+                            </div>
+                            <div style="display: flex; gap: 4px; margin-top: 4px;">
+                                <span
+                                    style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #2196F3, #0D47A1); color: white; display: flex; justify-content: center; align-items: center; font-size: 10px;">🌐</span>
+                                <span
+                                    style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #1DA1F2, #0077B5); color: white; display: flex; justify-content: center; align-items: center; font-size: 10px;">🐦</span>
+                                <span
+                                    style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #0088cc, #0056a3); color: white; display: flex; justify-content: center; align-items: center; font-size: 10px;">📱</span>
+                            </div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span class="token-farm-label token-incomplete">SCAN INCOMPLETE</span>
+                            <div
+                                style="font-weight: bold; font-size: 0.75rem; color: var(--header-color); margin-top: 4px;">
+                                $180,950</div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Market Cap</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>Each token entry in the Graduated widget displays:</p>
+            <ul>
+                <li><strong>Token Image & Time:</strong> The token icon with colored border (matching classification)
+                    and time since graduation</li>
+                <li><strong>Token Information:</strong>
+                    <ul>
+                        <li>Name in green</li>
+                        <li>Symbol and abbreviated address in gray</li>
+                        <li>Social media links as colored circular icons</li>
+                        <li>Key metrics tags for SUS% (red), DEV% (teal), and INSIDER% (orange)</li>
+                    </ul>
+                </li>
+                <li><strong>Market Cap Column:</strong>
+                    <ul>
+                        <li>Farm status label with colored background matching the classification</li>
+                        <li>Market capitalization value in green ($)</li>
+                        <li>"Market Cap" label in gray</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>Farm status is visually indicated by both label and background:</p>
+            <ul>
+                <li><span class="token-farm-label token-farm">FARM</span> - Red label on light red background</li>
+                <li><span class="token-farm-label token-farmed">FARMED</span> - Yellow label on standard background</li>
+                <li><span class="token-farm-label token-nofarm">NO FARM</span> - Green label on standard background</li>
+                <li><span class="token-farm-label token-incomplete">SCAN INCOMPLETE</span> - Purple label on light
+                    purple background</li>
+            </ul>
+
+
+            Note: the percentege in <span class="token-farm-label token-farmed">FARMED 16.2%</span> is the highest
+            amount of suspicious holdings that has been recorded, not the current holdings. It is meant to provide a
+            hindsight view on how much was farmed.
+
+
+            <div class="info-box">
+                <h4>Graduated Widget Filters:</h4>
+                <ul>
+                    <li><strong>Socials:</strong> When checked, shows only tokens with social media links on PumpFun
+                    </li>
+                    <li><strong>No FARMS:</strong> When checked, hides tokens with <span
+                            class="token-farm-label token-farm">FARM</span> status</li>
+                </ul>
+                <p>The list can be sorted by clicking either the left column (graduation time) or right column (market
+                    cap).</p>
+            </div>
+
+            <h3 id="threshold-widgets">3.3. Threshold Widgets</h3>
+            <p>The dashboard includes individual widgets for each market cap threshold ($100K, $250K, $500K, $750K, and
+                $1M). These widgets have the same layout and functionality as the Graduated widget but only display
+                tokens that have reached their specific threshold.</p>
+
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 5px 10px; background-color: rgba(0, 0, 0, 0.2); border-radius: 4px;">
+                <label for="threshold-sort-dropdown" style="margin-right: 10px; color: var(--text-color);">Distribute
+                    Tokens By:</label>
+                <select id="threshold-sort-dropdown"
+                    style="padding: 5px; border-radius: 4px; background-color: var(--widget-bg); color: var(--text-color); border: 1px solid var(--border-color);">
+                    <option value="current">Current Market Cap</option>
+                    <option value="all_time_high">All-Time High Market Cap</option>
+                    <option value="status_high">Highest Market Cap By Status</option>
+                </select>
+            </div>
+
+            <p>Above the threshold widgets, you'll find a dropdown menu that controls how tokens are distributed across
+                the widgets:</p>
+            <ul>
+                <li><strong>Current Market Cap:</strong> Displays tokens based on their current market capitalization
+                </li>
+                <li><strong>All-Time High Market Cap:</strong> Displays tokens based on the highest market cap they've
+                    ever achieved</li>
+                <li><strong>Highest Market Cap By Status:</strong> Displays tokens based on the highest market cap
+                    achieved in their current status (<span class="token-farm-label token-farm">FARM</span>, <span
+                        class="token-farm-label token-farmed">FARMED</span>, or <span
+                        class="token-farm-label token-nofarm">NO FARM DETECTED</span>)</li>
+            </ul>
+
+            <p>Each threshold widget has its own FARM and Socials filtering options similar to the Graduated widget,
+                allowing for customized views of tokens at each threshold level.</p>
+
+            <h3 id="history-widget">3.4. Graduated Token History</h3>
+            <p>The Graduated Token History widget provides a comprehensive view of each token's journey through the
+                various market cap thresholds and scans. This widget is especially useful for understanding how tokens
+                have evolved over time and how their metrics have changed.</p>
+
+            <!-- History Widget Visualization -->
+            <div class="dashboard-widget">
+                <div class="dashboard-widget-header">
+                    <h3 class="dashboard-widget-title">Graduated Token History</h3>
+                    <div style="display: flex; align-items: center;">
+                        <button class="filter-dropdown-button">
+                            <span>FILTER</span>
+                            <span style="margin-left: 5px;">▼</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- History Color Key -->
+                <div
+                    style="display: flex; align-items: center; font-size: 0.7rem; color: var(--subtext-color); margin: 5px 10px 15px; flex-wrap: wrap; gap: 10px;">
+                    <div style="display: inline-flex; align-items: center; margin-right: 10px;">
+                        <span
+                            style="display: inline-block; width: 8px; height: 8px; background-color: rgba(198, 40, 40, 0.8); margin-right: 4px; border-radius: 2px;"></span>
+                        <span><span class="token-farm-label token-farm">FARMS</span></span>
+                    </div>
+                    <div style="display: inline-flex; align-items: center;">
+                        <span
+                            style="display: inline-block; width: 8px; height: 8px; background-color: rgba(156, 39, 176, 0.8); margin-right: 4px; border-radius: 2px;"></span>
+                        <span><span class="token-farm-label token-incomplete">INCOMPLETE SCANS</span></span>
+                    </div>
+                </div>
+
+                <!-- Token Header Row -->
+                <div
+                    style="display: grid; grid-template-columns: 40px 1fr 2fr 100px 80px; padding: 6px 10px; border-bottom: 2px solid var(--border-color); font-weight: bold;">
+                    <div class="sortable" style="cursor: pointer; position: relative;">▼</div>
+                    <div>Token</div>
+                    <div>Scan History</div>
+                    <div style="cursor: pointer; position: relative;">Highest</div>
+                    <div style="text-align: center; cursor: pointer; position: relative;">MC</div>
+                </div>
+
+                <!-- Example History Token Rows -->
+                <div style="max-height: 600px; overflow-y: auto; padding: 0 10px;">
+                    <!-- Green NO FARM token with history -->
+                    <div
+                        style="display: grid; grid-template-columns: 40px 1fr 2fr 100px 80px; align-items: start; padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23fff'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23333'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E"
+                                class="dashboard-token-image" style="border: 3px solid #4CAF50;">
+                            <div style="font-size: 0.65rem; color: var(--subtext-color); text-align: center;">6h 15m
+                            </div>
+                        </div>
+                        <div style="padding: 0 10px;">
+                            <h3 style="font-size: 0.85rem; color: var(--header-color); margin: 0;">Token Alpha</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; margin-top: 3px;">
+                                <span style="font-size: 0.75rem; color: #7f8c8d;">ALPHA</span>
+                                <span
+                                    style="font-size: 0.7rem; color: #95a5a6; font-family: monospace;">Exy...8pQ</span>
+                            </div>
+                            <div class="dashboard-token-metrics">
+                                <span class="metric-tag sus-tag">SUS: 2.4%</span>
+                                <span class="metric-tag dev-tag">DEV: 4.8%</span>
+                                <span class="metric-tag insider-tag">INSIDER: 10.2%</span>
+                            </div>
+                        </div>
+                        <div
+                            style="white-space: normal; overflow-x: auto; display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start; min-height: 40px; padding: 0 10px;">
+                            <!-- First Scan -->
+                            <div style="display: flex; flex-direction: column; margin-right: 8px;">
+                                <span class="history-tag first-scan-tag">2.4% $100K</span>
+                                <span style="font-size: 0.6rem; color: var(--subtext-color); margin-top: 2px;">6h 15m
+                                    ago</span>
+                            </div>
+                            <!-- Threshold Scan -->
+                            <div style="display: flex; flex-direction: column; margin-right: 8px;">
+                                <span class="history-tag threshold-scan-tag">2.4% $250K</span>
+                                <span style="font-size: 0.6rem; color: var(--subtext-color); margin-top: 2px;">4h 30m
+                                    ago</span>
+                            </div>
+                            <!-- Rescan -->
+                            <div style="display: flex; flex-direction: column; margin-right: 8px;">
+                                <span class="history-tag rescan-tag">2.4% $350K</span>
+                                <span style="font-size: 0.6rem; color: var(--subtext-color); margin-top: 2px;">2h 45m
+                                    ago</span>
+                            </div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 5px;">
+                            <div style="font-weight: bold; font-size: 0.85rem; color: var(--header-color);">$350K</div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Threshold</div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                            <div style="font-weight: bold; font-size: 0.75rem; color: var(--header-color);">$380,200
+                            </div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Market Cap</div>
+                        </div>
+                    </div>
+
+                    <!-- Red FARM to Yellow FARMED progression -->
+                    <div
+                        style="display: grid; grid-template-columns: 40px 1fr 2fr 100px 80px; align-items: start; padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23fff'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23333'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E"
+                                class="dashboard-token-image" style="border: 3px solid #FFC107;">
+                            <div style="font-size: 0.65rem; color: var(--subtext-color); text-align: center;">12h 30m
+                            </div>
+                        </div>
+                        <div style="padding: 0 10px;">
+                            <h3 style="font-size: 0.85rem; color: var(--header-color); margin: 0;">Token Gamma</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; margin-top: 3px;">
+                                <span style="font-size: 0.75rem; color: #7f8c8d;">GAMMA</span>
+                                <span
+                                    style="font-size: 0.7rem; color: #95a5a6; font-family: monospace;">Hyz...9tR</span>
+                            </div>
+                            <div class="dashboard-token-metrics">
+                                <span class="metric-tag sus-tag">SUS: 4.9%</span>
+                                <span class="metric-tag dev-tag">DEV: 3.2%</span>
+                                <span class="metric-tag insider-tag">INSIDER: 18.9%</span>
+                            </div>
+                        </div>
+                        <div
+                            style="white-space: normal; overflow-x: auto; display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start; min-height: 40px; padding: 0 10px;">
+                            <!-- First Scan with FARM status -->
+                            <div style="display: flex; flex-direction: column; margin-right: 8px;">
+                                <span class="history-tag first-scan-tag">16.2% $100K</span>
+                                <span class="token-farm-label token-farm"
+                                    style="margin-top: 2px; font-size: 0.55rem;">FARM</span>
+                                <span style="font-size: 0.6rem; color: var(--subtext-color); margin-top: 2px;">12h 30m
+                                    ago</span>
+                            </div>
+                            <!-- Threshold Scan still FARM -->
+                            <div style="display: flex; flex-direction: column; margin-right: 8px;">
+                                <span class="history-tag threshold-scan-tag">16.2% $250K</span>
+                                <span class="token-farm-label token-farm"
+                                    style="margin-top: 2px; font-size: 0.55rem;">FARM</span>
+                                <span style="font-size: 0.6rem; color: var(--subtext-color); margin-top: 2px;">10h
+                                    ago</span>
+                            </div>
+                            <!-- Rescan with improved metrics -->
+                            <div style="display: flex; flex-direction: column; margin-right: 8px;">
+                                <span class="history-tag rescan-tag">4.9% $500K</span>
+                                <span class="token-farm-label token-farmed"
+                                    style="margin-top: 2px; font-size: 0.55rem;">FARMED</span>
+                                <span style="font-size: 0.6rem; color: var(--subtext-color); margin-top: 2px;">5h 10m
+                                    ago</span>
+                            </div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 5px;">
+                            <div style="font-weight: bold; font-size: 0.85rem; color: var(--header-color);">$500K</div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Threshold</div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                            <div style="font-weight: bold; font-size: 0.75rem; color: var(--header-color);">$525,800
+                            </div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Market Cap</div>
+                        </div>
+                    </div>
+
+                    <!-- Incomplete scan purple token -->
+                    <div
+                        style="display: grid; grid-template-columns: 40px 1fr 2fr 100px 80px; align-items: start; padding: 10px 0; border-bottom: 1px solid var(--border-color); background-color: rgba(156, 39, 176, 0.1);">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23fff'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23333'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E"
+                                class="dashboard-token-image" style="border: 3px solid #9C27B0;">
+                            <div style="font-size: 0.65rem; color: var(--subtext-color); text-align: center;">25m</div>
+                        </div>
+                        <div style="padding: 0 10px;">
+                            <h3 style="font-size: 0.85rem; color: var(--header-color); margin: 0;">Token Delta</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; margin-top: 3px;">
+                                <span style="font-size: 0.75rem; color: #7f8c8d;">DELTA</span>
+                                <span
+                                    style="font-size: 0.7rem; color: #95a5a6; font-family: monospace;">Jnk...5wQ</span>
+                            </div>
+                        </div>
+                        <div
+                            style="white-space: normal; overflow-x: auto; display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start; min-height: 40px; padding: 0 10px;">
+                            <!-- Scan in Progress tag -->
+                            <div style="display: flex; flex-direction: column; margin-right: 8px; order: -1;">
+                                <span class="history-tag" style="background-color: #9b59b6; color: white;">Scan in
+                                    Progress</span>
+                                <span style="font-size: 0.6rem; color: var(--subtext-color); margin-top: 2px;">Current
+                                    Status</span>
+                            </div>
+                            <!-- First Scan -->
+                            <div style="display: flex; flex-direction: column; margin-right: 8px;">
+                                <span class="history-tag first-scan-tag">? $180K</span>
+                                <span style="font-size: 0.6rem; color: var(--subtext-color); margin-top: 2px;">25m
+                                    ago</span>
+                            </div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 5px;">
+                            <div style="font-weight: bold; font-size: 0.85rem; color: var(--header-color);">$100K</div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Threshold</div>
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                            <div style="font-weight: bold; font-size: 0.75rem; color: var(--header-color);">$180,950
+                            </div>
+                            <div style="font-size: 0.65rem; color: var(--subtext-color);">Market Cap</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>The History widget provides a comprehensive view of each token's progress through different market cap
+                thresholds and status changes. This widget extends the standard token information with:</p>
+
+            <ul>
+                <li><strong>Scan History Column:</strong> Displays a chronological sequence of scan events for each
+                    token
+                    <ul>
+                        <li>Each history item contains:
+                            <ul>
+                                <li>A colored tag showing metrics & market cap at time of scan</li>
+                                <li>A farm status label if applicable</li>
+                                <li>A timestamp showing when the scan occurred</li>
+                            </ul>
+                        </li>
+                        <li>History tags are color-coded by scan type:
+                            <ul>
+                                <li><span class="history-tag"
+                                        style="background-color: #4d6b30; color: white;">Green</span>: Migration -
+                                    initial Migration scan</li>
+                                <li><span class="history-tag first-scan-tag">Blue</span>: First Scan - initial token
+                                    detection</li>
+                                <li><span class="history-tag threshold-scan-tag">Purple</span>: Threshold Scan - market
+                                    cap milestone</li>
+                                <li><span class="history-tag rescan-tag">Gray</span>: Rescan - periodic update</li>
+                                <li><span class="history-tag" style="background-color: #9b59b6; color: white;">Bright
+                                        Purple</span>: Scan in Progress</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Highest Threshold Column:</strong> Shows the highest market cap threshold the token has
+                    achieved</li>
+            </ul>
+
+            <p>The History widget's FILTER button provides extensive filtering options:</p>
+            <ul>
+                <li><strong>PumpFun Socials:</strong> Show only tokens with social links on PumpFun</li>
+                <li><strong>No FARMS:</strong> Hide tokens classified as farms</li>
+                <li><strong>Market Cap Range:</strong> Filter by minimum and maximum market cap</li>
+                <li><strong>Age Range:</strong> Filter by token age in minutes</li>
+                <li><strong>Metric Ranges:</strong> Filter by specific metric percentages:
+                    <ul>
+                        <li>FARM% Range: Filter by farm percentage indicators, the total percentage of supply cornered
+                            at launch</li>
+                        <li>SUS% Range: Filter by suspicious wallet percentage</li>
+                        <li>DEV% Range: Filter by developer holdings percentage</li>
+                        <li>INSIDER% Range: Filter by insider wallet percentage</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>The History widget also includes a color-coded key at the top that explains the background colors used
+                for different token types:</p>
+            <ul>
+                <li><span class="red-tag">Red Background</span>: <span class="token-farm-label token-farm">FARM</span>
+                    tokens</li>
+                <li><span class="purple-tag">Purple Background</span>: Tokens with <span
+                        class="token-farm-label token-incomplete">INCOMPLETE SCANS</span></li>
+            </ul>
+
+            <div class="info-box">
+                <h4>Advanced Search:</h4>
+                <p>The History widget includes a search bar that allows you to find specific tokens by name, symbol, or
+                    address. This search works in combination with any active filters for precise targeting of tokens.
+                </p>
+            </div>
+        </section>
+
+        <!-- Telegram Feeds Section -->
+        <section id="telegram">
+            <h2>4. Telegram Feeds</h2>
+            <p>DailyRunner.Fun offers a powerful Telegram integration that allows users to receive alerts and interact
+                with the platform directly from Telegram. This mobile-friendly option ensures you never miss important
+                token events even when you're away from your computer.</p>
+
+            <h3 id="pumpfun-channels">4.1. PumpFun Feed Channels</h3>
+            <p>Join our official PumpFun Telegram channels to stay updated on token movements in real-time. We offer
+                different channels based on market cap thresholds:</p>
+
+            <div class="dashboard-widget">
+                <div class="dashboard-widget-header">
+                    <h3 class="dashboard-widget-title">PumpFun Standard Feed Channels</h3>
+                </div>
+                <div style="padding: 15px;">
+                    <p>These channels include ALL tokens crossing specific thresholds from the PumpFun platform:</p>
+                    <ul>
+                        <li><a href="https://t.me/dailyrunner_pumpfun_migrations" target="_blank">Pump.Fun
+                                Migrations</a> - Newly migrated tokens on Pump.Fun</li>
+                        <li><a href="https://t.me/dailyrunner_100k_pumpfuns" target="_blank">$100K Threshold</a> -
+                            Tokens reaching $100K market cap</li>
+                        <li><a href="https://t.me/dailyrunner_250k_pumpfuns" target="_blank">$250K Threshold</a> -
+                            Tokens reaching $250K market cap</li>
+                        <li><a href="https://t.me/dailyrunner_500k_pumpfuns" target="_blank">$500K Threshold</a> -
+                            Tokens reaching $500K market cap</li>
+                        <li><a href="https://t.me/dailyrunner_750k_pumpfuns" target="_blank">$750K Threshold</a> -
+                            Tokens reaching $750K market cap</li>
+                        <li><a href="https://t.me/dailyrunner_1m_pumpfuns" target="_blank">$1M Threshold</a> - Tokens
+                            reaching $1M market cap</li>
+                        <li><a href="https://t.me/dailyrunner_late_bloomer_pumpfun" target="_blank">Late Bloomers</a> -
+                            Tokens older than 7 days that are gaining value</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dashboard-widget" style="margin-top: 20px;">
+                <div class="dashboard-widget-header">
+                    <h3 class="dashboard-widget-title">PumpFun Filtered Feed Channels</h3>
+                </div>
+                <div style="padding: 15px;">
+                    <p>These channels only include tokens with <span class="token-farm-label token-nofarm">NO FARM
+                            DETECTED</span> or <span class="token-farm-label token-farmed">FARMED</span> status,
+                        filtering out <span class="token-farm-label token-farm">FARM</span> tokens:</p>
+                    <ul>
+                        <li><a href="https://t.me/dailyrunner_filtered_pumpfun_mig" target="_blank">Filtered Pump.Fun
+                                Migrations</a> - Quality newly migrated tokens</li>
+                        <li><a href="https://t.me/dailyrunner_filtered_100k_pumps" target="_blank">Filtered $100K
+                                Threshold</a> - Quality tokens reaching $100K</li>
+                        <li><a href="https://t.me/dailyrunner_filtered_250k_pumps" target="_blank">Filtered $250K
+                                Threshold</a> - Quality tokens reaching $250K</li>
+                        <li><a href="https://t.me/dailyrunner_filtered_500k_pumps" target="_blank">Filtered $500K
+                                Threshold</a> - Quality tokens reaching $500K</li>
+                        <li><a href="https://t.me/dailyrunner_filtered_750k_pumps" target="_blank">Filtered $750K
+                                Threshold</a> - Quality tokens reaching $750K</li>
+                        <li><a href="https://t.me/dailyrunner_filtered_1m_pumps" target="_blank">Filtered $1M
+                                Threshold</a> - Quality tokens reaching $1M</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 id="raydium-channels">4.2. Raydium Feed Channels</h3>
+            <p>Stay updated on tokens from the Raydium launchpad with these dedicated Telegram channels:</p>
+
+            <div class="dashboard-widget">
+                <div class="dashboard-widget-header">
+                    <h3 class="dashboard-widget-title">Raydium Feed Channels</h3>
+                </div>
+                <div style="padding: 15px;">
+                    <p>These channels track tokens from the Raydium launchpad crossing specific market cap thresholds:
+                    </p>
+                    <ul>
+                        <li><a href="https://t.me/dailyrunner_raydium_migrations" target="_blank">Raydium Migrations</a>
+                            - Newly listed tokens on Raydium</li>
+                        <li><a href="https://t.me/dailyrunner_100k_graduted_ray" target="_blank">$100K Raydium
+                                Threshold</a> - Raydium tokens reaching $100K market cap</li>
+                        <li><a href="https://t.me/dailyrunner_250k_graduated_ray" target="_blank">$250K Raydium
+                                Threshold</a> - Raydium tokens reaching $250K market cap</li>
+                        <li><a href="https://t.me/dailyrunner_500k_graduated_ray" target="_blank">$500K Raydium
+                                Threshold</a> - Raydium tokens reaching $500K market cap</li>
+                        <li><a href="https://t.me/dailyrunner_750k_graduated_ray" target="_blank">$750K Raydium
+                                Threshold</a> - Raydium tokens reaching $750K market cap</li>
+                        <li><a href="https://t.me/dailyrunner_1m_graduated_ray" target="_blank">$1M Raydium
+                                Threshold</a> - Raydium tokens reaching $1M market cap</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 id="meteora-channels">4.3. Meteora Feed Channels</h3>
+            <p>Follow tokens from the Meteora launchpad with our dedicated Telegram channels:</p>
+
+            <div class="dashboard-widget">
+                <div class="dashboard-widget-header">
+                    <h3 class="dashboard-widget-title">Meteora Feed Channels</h3>
+                </div>
+                <div style="padding: 15px;">
+                    <p>These channels track tokens from the Meteora launchpad as they cross important milestones:</p>
+                    <ul>
+                        <li><a href="https://t.me/dailyrunner_meteora_migrations" target="_blank">Meteora Migrations</a>
+                            - Newly listed tokens on Meteora</li>
+                        <!-- Additional threshold channels can be added here as they become available -->
+                    </ul>
+                    <p>More Meteora-specific threshold channels will be added as the platform expands coverage of these
+                        tokens.</p>
+                </div>
+            </div>
+
+            <div class="info-box" style="margin-top: 20px;">
+                <h4>Pro Tip</h4>
+                <p>For the best experience, we recommend joining both the standard and filtered channels for your
+                    preferred market cap thresholds. If you monitor tokens across multiple launchpads (PumpFun, Raydium,
+                    and Meteora), create separate Telegram folders for each platform to keep your feeds organized.</p>
+            </div>
+
+            <h3 id="telegram-alerts">4.4. Alert System</h3>
+            <p>The Telegram alert system can be customized to notify you about specific events:</p>
+
+            <h4>Alert Types</h4>
+            <ul>
+                <li><strong>New Graduations:</strong> Alerts when new tokens graduate from PumpFun to PumpSwap, reach
+                    thresholds on Raydium, or are listed on Meteora</li>
+                <li><strong>Threshold Crossings:</strong> Notifications when tokens reach specific market cap milestones
+                </li>
+                <li><strong>Status Changes:</strong> Alerts when tokens change status (e.g., from <span
+                        class="token-farm-label token-farm">FARM</span> to <span
+                        class="token-farm-label token-farmed">FARMED</span>)</li>
+                <li><strong>Late Bloomers:</strong> Notifications about tokens older than 7 days that are gaining
+                    significant value</li>
+            </ul>
+
+            <div class="info-box">
+                <h4>Pro Tip</h4>
+                <p>Create a dedicated Telegram folder and add the DailyRunner channels to it. This keeps all your alerts
+                    in one place, separate from your personal chats, making it easier to track token events. You can
+                    also set custom alert tones for each channel to quickly identify important notifications.</p>
+            </div>
+        </section>
+
+        <!-- Token Metrics Explained Section -->
+        <section id="token-metrics">
+            <h2>5. Token Metrics Explained</h2>
+            <p>DailyRunner uses a variety of metrics to analyze token health and classify tokens. Understanding these
+                metrics is crucial for interpreting the dashboard data correctly.</p>
+
+            <h3 id="farm-status">5.1. Farm Status</h3>
+            <p>Tokens are classified into three main categories based on their metrics:</p>
+
+            <h4><span class="token-farm-label token-farm">FARM</span></h4>
+            <p>Tokens classified as "FARM" currently fail one or more of the filtering criteria. These tokens typically
+                exhibit distribution patterns consistent with artificial price manipulation or concentrated ownership.
+                Farm tokens are highlighted with a <span class="red-tag">red</span> label and may have other visual
+                indicators depending on specific metrics.</p>
+
+            <h4><span class="token-farm-label token-farmed">FARMED</span></h4>
+            <p>Tokens classified as "FARMED" currently pass all filtering criteria but have failed at least one
+                criterion at some point in their history. These tokens show improvements in their distribution and may
+                represent projects that began with concentrated ownership but have since achieved better distribution.
+                They are marked with a <span class="yellow-tag">yellow</span> label.</p>
+
+            <h4><span class="token-farm-label token-nofarm">NO FARM DETECTED</span></h4>
+            <p>Tokens with this classification have never failed any filtering criteria since their initial detection.
+                These tokens typically have healthier distribution patterns from the start and may represent more
+                organically growing projects. They are marked with a <span class="green-tag">green</span> label when
+                shown in the history view.</p>
+
+            <div class="note">
+                <h4>Note:</h4>
+                <p>Farm status is determined automatically based on algorithm-defined criteria and is constantly
+                    reassessed as new data becomes available. A token's status can change over time as its metrics
+                    evolve.</p>
+            </div>
+
+            <h3 id="holder-metrics">5.2. Holder Map & Metrics</h3>
+            <p>The Holder Map section displays top token holders with percentage holdings and additional indicators:</p>
+
+            <dl>
+                <dt>Percentage Holdings</dt>
+                <dd>The percentage of total token supply held by each wallet</dd>
+
+                <dt>SOL Balance Indicators</dt>
+                <dd>Emojis indicating the SOL balance in the holder's wallet:
+                    <ul>
+                        <li>🐳 Whale: >500 SOL</li>
+                        <li>🦈 Shark: >250 SOL</li>
+                        <li>🐬 Dolphin: >50 SOL</li>
+                        <li>🐟 Fish: >5 SOL</li>
+                        <li>🦐 Shrimp: >2 SOL</li>
+                        <li>🦠 Plankton: >0 SOL</li>
+                        <li>💨 Empty: 0 SOL</li>
+                    </ul>
+                </dd>
+
+                <dt>Account Indicators</dt>
+                <dd>Emojis indicating the number of token accounts owned by the holder:
+                    <ul>
+                        <li>🌱 Fresh Wallet: A new wallet with minimal transaction history and age</li>
+                        <li>🪴 New Growth: A slightly older than new new wallet with minimal transaction history and age
+                        </li>
+                        <li>🤖 Bot/Institutional: 1100+ accounts</li>
+                    </ul>
+                </dd>
+
+                <dt>DEV Label</dt>
+                <dd>The 💼 symbol indicates the wallet belongs to the token creator/developer</dd>
+            </dl>
+
+            <h3 id="bundles">5.3. Bundles & Farm Analysis</h3>
+            <p>The FARM Analysis section provides key metrics related to token distribution and potential manipulation:
+            </p>
+
+            <dl>
+                <dt>Dev Holdings</dt>
+                <dd>Percentage of total supply held by the token creator/developer</dd>
+
+                <dt>Bundles</dt>
+                <dd>Percentage of tokens held by wallets identified as part of coordinated buying in the same
+                    transaction or "bundles"</dd>
+
+                <dt>Insiders</dt>
+                <dd>Percentage of tokens held by wallets that participated in early buying activity or are connected to
+                    project insiders</dd>
+
+                <dt>Fresh Wallets</dt>
+                <dd>Percentage of tokens held in new wallets with minimal transaction history and age</dd>
+
+                <dt>Clusters</dt>
+                <dd>Groups of connected wallets that exhibit coordinated behavior or are likely controlled by the same
+                    entity</dd>
+            </dl>
+
+            <h3 id="clusters">5.4. Clusters</h3>
+            <p>The Clusters section identifies groups of wallets that exhibit similar behavior patterns or are likely
+                controlled by the same entity. High cluster percentages may indicate artificial distribution or wash
+                trading.</p>
+            <p>The dashboard shows the total percentage of supply controlled by each identified cluster, which is used
+                as one of the filter criteria for farm detection.</p>
+
+            <h3 id="token-age">5.5. Token Age Classifications</h3>
+            <p>DailyRunner classifies tokens based on their age to help users identify tokens with different lifecycle
+                patterns:</p>
+
+            <h4>New Tokens</h4>
+            <p>Tokens that are less than 7 days old are considered "New Tokens." These are recent creations that have
+                just started trading. New tokens don't have any special indicator on the race track.</p>
+
+            <h4>Late Bloomers <span style="font-size: 1.2em;">🌷</span></h4>
+            <p>Tokens that are between 7 and 30 days old are classified as "Late Bloomers." These tokens have existed
+                for at least a week but less than a month before reaching significant market cap thresholds. Late
+                Bloomers are marked with a <strong>🌷</strong> (flower) icon above the token on the race track.</p>
+
+            <p>Late Bloomers can be interesting opportunities as they may represent projects that needed more time to
+                gain traction but are now experiencing growth. The platform offers a dedicated Telegram channel for Late
+                Bloomers to help you track these tokens specifically.</p>
+
+            <h4>Old Creations <span style="font-size: 1.2em;">📅</span></h4>
+            <p>Tokens that are older than 30 days are classified as "Old Creations." These are projects that have
+                existed for more than a month before starting to gain significant market value. Old Creations are marked
+                with a <strong>📅</strong> (calendar) icon above the token on the race track.</p>
+
+            <p>Old Creations may represent either:
+            <ul>
+                <li>Projects with long development phases that are only now being recognized by the market</li>
+                <li>Tokens that were dormant for a period and have been revived</li>
+                <li>Projects that have undergone rebranding or renewed marketing efforts</li>
+            </ul>
+            </p>
+
+            <div class="info-box">
+                <h4>Priority of Age Indicators</h4>
+                <p>If a token qualifies as both a Late Bloomer and an Old Creation (which can happen due to how the data
+                    is processed), it will display the 📅 (Old Creation) icon, as the Old Creation classification takes
+                    precedence.</p>
+            </div>
+        </section>
+
+        <!-- Filtering System Section -->
+        <section id="filtering-system">
+            <h2>6. Filtering System</h2>
+            <p>DailyRunner uses a sophisticated filtering system to distinguish between potentially manipulated tokens
+                (farms) and those with healthier, more organic distribution patterns.</p>
+
+            <h3 id="filter-criteria">6.1. Filter Criteria</h3>
+            <p>The system evaluates tokens based on seven primary criteria:</p>
+
+            <table>
+                <tr>
+                    <th>Criterion</th>
+                    <th>Description</th>
+                    <th>Failure Threshold</th>
+                </tr>
+                <tr>
+                    <td>Bundles</td>
+                    <td>Percentage of supply held by identified bundle wallets</td>
+                    <td>Fails if too many bundles holding supply</td>
+                </tr>
+                <tr>
+                    <td>Fresh Wallets</td>
+                    <td>Percentage of supply held in new wallets with minimal transaction history and age</td>
+                    <td>Fails if too many fresh wallets holding supply</td>
+                </tr>
+                <tr>
+                    <td>Dev Holding</td>
+                    <td>Percentage of supply held by the token creator</td>
+                    <td>Fails if dev is holding too much</td>
+                </tr>
+                <tr>
+                    <td>Large Holders</td>
+                    <td>Individual non-LP holders with large percentages</td>
+                    <td>Fails if too large of a holder</td>
+                </tr>
+                <tr>
+                    <td>Clusters</td>
+                    <td>Groups of related wallets acting in coordination</td>
+                    <td>Fails if too many clusters</td>
+                </tr>
+                <tr>
+                    <td>Insider Wallets</td>
+                    <td>Percentage of supply held by insider wallets</td>
+                    <td>Fails if too many insiders</td>
+                </tr>
+                <tr>
+                    <td>Distribution Check</td>
+                    <td>Combination of distribution pattern checks</td>
+                    <td>Fails if:
+                        <ul>
+                            <li>Too distributed, too early</li>
+                            <li>Too much identical activity</li>
+                            <li>Too scammy of wallets</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <p>A token must pass ALL criteria to be classified as <span class="token-farm-label token-nofarm">NO FARM
+                    DETECTED</span>. If it fails any criterion, it's classified as <span
+                    class="token-farm-label token-farm">FARM</span>. If it previously failed but now passes all
+                criteria, it's classified as <span class="token-farm-label token-farmed">FARMED</span>.</p>
+
+            <h3 id="using-filters">6.2. Using Filters</h3>
+            <p>Both the Race Page and Dashboard offer various filtering options to customize your view:</p>
+
+            <h4>Race Page Filters</h4>
+            <ul>
+                <li><strong>Launchpad Filters:</strong> Toggle between PumpFun, Raydium, and Meteora tokens or show any
+                    combination</li>
+                <li><strong>Market Cap:</strong> Set minimum market cap threshold using the slider</li>
+                <li><strong>Show FARMS:</strong> Toggle to show or hide tokens classified as farms</li>
+                <li><strong>Simple View:</strong> Toggle to show a simplified view with only token icons</li>
+            </ul>
+
+            <h4>Dashboard Filters</h4>
+            <ul>
+                <li><strong>Socials:</strong> Filter to show only tokens with social media links</li>
+                <li><strong>No FARMS:</strong> Hide tokens classified as farms</li>
+                <li><strong>Include FARMS Toggle:</strong> For statistical displays, include or exclude farm tokens</li>
+            </ul>
+
+            <h4>Advanced Filters (Dashboard History Widget)</h4>
+            <p>The "FILTER" dropdown in the History widget provides additional filtering options:</p>
+            <ul>
+                <li><strong>Market Cap Range:</strong> Set minimum and maximum market cap</li>
+                <li><strong>Age Range:</strong> Filter by token age in minutes</li>
+                <li><strong>FARM%:</strong> Filter by farm metric percentages</li>
+                <li><strong>SUS%:</strong> Filter by suspicious wallet percentage</li>
+                <li><strong>DEV%:</strong> Filter by developer holdings percentage</li>
+                <li><strong>INSIDER%:</strong> Filter by insider wallet percentage</li>
+            </ul>
+
+            <h3 id="search-function">6.3. Search Function</h3>
+            <p>The History widget includes a search function that allows you to find specific tokens by:</p>
+            <ul>
+                <li>Token name</li>
+                <li>Token symbol</li>
+                <li>Token address (partial or complete)</li>
+            </ul>
+            <p>This search is applied in addition to any active filters, allowing for precise targeting of specific
+                tokens within filtered results.</p>
+        </section>
+
+        <!-- Threshold System Section -->
+        <section id="threshold-system">
+            <h2>7. Threshold System</h2>
+            <p>DailyRunner tracks tokens based on market capitalization thresholds, providing organized views of tokens
+                at different stages of growth.</p>
+
+            <h3 id="threshold-levels">7.1. Threshold Levels</h3>
+            <p>The system monitors five primary threshold levels:</p>
+            <ul>
+                <li><strong>$100K:</strong> Entry-level threshold for all tracked tokens</li>
+                <li><strong>$250K:</strong> Secondary threshold</li>
+                <li><strong>$500K:</strong> Mid-level threshold</li>
+                <li><strong>$750K:</strong> Advanced threshold</li>
+                <li><strong>$1M:</strong> Top-tier threshold</li>
+            </ul>
+            <p>Tokens are monitored continuously and can move between threshold categories as their market
+                capitalization changes. The system keeps track of the highest threshold each token has achieved, both
+                overall and within each status category (<span class="token-farm-label token-farm">FARM</span>, <span
+                    class="token-farm-label token-farmed">FARMED</span>, <span class="token-farm-label token-nofarm">NO
+                    FARM DETECTED</span>).</p>
+
+            <h3 id="token-distribution">7.2. Token Distribution</h3>
+            <p>The dropdown menu "Distribute Tokens By:" allows you to change how tokens are distributed across
+                threshold widgets:</p>
+            <dl>
+                <dt>Current Market Cap</dt>
+                <dd>Places tokens in threshold widgets based on their current market capitalization</dd>
+
+                <dt>All-Time High Market Cap</dt>
+                <dd>Places tokens in threshold widgets based on the highest market cap they've ever achieved, regardless
+                    of current value</dd>
+
+                <dt>Highest Market Cap By Status</dt>
+                <dd>Places tokens based on the highest market cap achieved while in their current status (<span
+                        class="token-farm-label token-farm">FARM</span>, <span
+                        class="token-farm-label token-farmed">FARMED</span>, or <span
+                        class="token-farm-label token-nofarm">NO FARM DETECTED</span>)</dd>
+            </dl>
+            <p>This flexible distribution system allows you to track tokens based on their current performance,
+                historical peaks, or status-specific achievements.</p>
+        </section>
+
+        <!-- Technical Details Section -->
+        <section id="technical">
+            <h2>8. Technical Details</h2>
+            <p>Understanding the technical aspects of DailyRunner can help you better interpret the provided data and
+                make more informed decisions.</p>
+
+            <h3 id="data-sources">8.1. Data Sources</h3>
+            <p>DailyRunner collects and processes data from multiple sources:</p>
+            <ul>
+                <li><strong>Blockchain Explorers:</strong> Direct blockchain data for token transactions and holder
+                    information</li>
+                <li><strong>PumpFun API:</strong> Metadata for PumpFun tokens including names, symbols, and social links
+                </li>
+                <li><strong>Raydium API:</strong> Metadata for Raydium tokens including prices and trading information
+                </li>
+                <li><strong>Meteora API:</strong> Metadata for Meteora tokens including launch information and trading
+                    data</li>
+                <li><strong>Specialized Analytics APIs:</strong> Bundle analysis, cluster detection, and technical
+                    indicators</li>
+            </ul>
+            <p>The system performs a comprehensive scan of each token when it first crosses a threshold and during
+                subsequent rescans. For tokens classified as <span class="token-farm-label token-farm">FARM</span>,
+                rescans occur more frequently (approximately every 10 minutes) to detect any improvements in metrics.
+            </p>
+
+            <h3 id="refresh-rate">8.2. Refresh Rate</h3>
+            <p>The platform updates automatically with the following refresh rates:</p>
+            <ul>
+                <li><strong>Dashboard Data:</strong> Auto-refreshes every 5 seconds</li>
+                <li><strong>Race Track Visualization:</strong> Updates in real-time with market cap changes</li>
+                <li><strong>Token Scanning:</strong> New tokens are prioritized for immediate scanning</li>
+                <li><strong>Threshold Crossings:</strong> Tokens crossing new thresholds are prioritized</li>
+                <li><strong>FARM Rescans:</strong> Approximately every 10 minutes</li>
+                <li><strong>Telegram Alerts:</strong> Sent immediately when events occur</li>
+            </ul>
+
+            <div class="note">
+                <h4>Note:</h4>
+                <p>Some scans may show as <span class="token-farm-label token-incomplete">SCAN INCOMPLETE</span> if one
+                    or more API calls fail to return complete data. These tokens will be rescanned automatically in the
+                    next cycle.</p>
+            </div>
+
+            <p>The system uses a priority queue to ensure that new tokens and threshold crossings are processed first,
+                followed by periodic rescans of existing tokens.</p>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips">
+            <h2>9. Tips for Effective Use</h2>
+
+            <h3>Race Page Tips</h3>
+            <ul>
+                <li><strong>Use the launchpad filters:</strong> Toggle between PumpFun, Raydium, and Meteora tokens to
+                    focus on your preferred platforms</li>
+                <li><strong>Focus on border colors:</strong> Use token border colors as a quick visual indicator of
+                    quality</li>
+                <li><strong>Watch positioning patterns:</strong> Note how quickly tokens move up the track compared to
+                    others</li>
+                <li><strong>Compare similar market caps:</strong> Compare tokens at similar vertical positions to
+                    identify outliers</li>
+                <li><strong>Check token age indicators:</strong> Pay attention to Late Bloomer (🌷) and Old Creation
+                    (📅) indicators for additional context</li>
+                <li><strong>Compare across launchpads:</strong> Observe performance differences between tokens from
+                    PumpFun, Raydium, and Meteora</li>
+            </ul>
+
+            <h3>Dashboard Tips</h3>
+            <ul>
+                <li><strong>Use History Widget for research:</strong> The History widget provides the most comprehensive
+                    data for in-depth analysis</li>
+                <li><strong>Compare metrics across thresholds:</strong> Check how metrics change as tokens cross higher
+                    thresholds</li>
+                <li><strong>Set advanced filters:</strong> Use the advanced filtering options in the History widget for
+                    targeted analysis</li>
+                <li><strong>Track status changes:</strong> Pay attention to tokens that transition from <span
+                        class="token-farm-label token-farm">FARM</span> to <span
+                        class="token-farm-label token-farmed">FARMED</span> status</li>
+                <li><strong>Use the dropdown to distribute tokens:</strong> Change the "Distribute Tokens By" setting to
+                    see tokens organized by current, all-time high, or status-specific market caps</li>
+                <li><strong>Look for consistent SUS% values:</strong> Tokens with low and stable SUS%, DEV%, and
+                    INSIDER% values across multiple scans are more likely to have organic distribution</li>
+            </ul>
+
+            <h3>Telegram Tips</h3>
+            <ul>
+                <li><strong>Organize channels by platform:</strong> Create separate folders for PumpFun, Raydium, and
+                    Meteora channels</li>
+                <li><strong>Use filtered channels:</strong> Subscribe to filtered channels to focus on quality tokens
+                </li>
+                <li><strong>Customize alert thresholds:</strong> Set appropriate thresholds to avoid notification
+                    overload</li>
+                <li><strong>Combine with desktop usage:</strong> Use Telegram for alerts and desktop for detailed
+                    analysis</li>
+                <li><strong>Check the Late Bloomer channel:</strong> Follow the dedicated Late Bloomer channel to find
+                    tokens with delayed but significant growth</li>
+            </ul>
+
+            <h3>General Strategy Tips</h3>
+            <ul>
+                <li><strong>Use filters wisely:</strong> Start with FARM filter OFF to see quality tokens first</li>
+                <li><strong>Check metrics carefully:</strong> Look for tokens with low percentages across all metrics
+                    (green values)</li>
+                <li><strong>Watch for red flags:</strong> <span class="purple-tag">Purple borders</span> (incomplete
+                    scans), <span class="pink-tag">pink borders</span> (fake distribution), and high metric values</li>
+                <li><strong>Monitor over time:</strong> Regularly check how tokens progress through thresholds</li>
+                <li><strong>Look for consistent patterns:</strong> Tokens with consistently good metrics over time may
+                    be more reliable</li>
+                <li><strong>Focus on the $500K threshold:</strong> Tokens that reach this threshold with good metrics
+                    have demonstrated significant market interest</li>
+                <li><strong>Compare launchpads:</strong> See how tokens from different launchpads (PumpFun vs. Raydium
+                    vs. Meteora) perform over time</li>
+            </ul>
+
+            <div class="info-box">
+                <h4>Pro Tip</h4>
+                <p>Consider the triangle approach: use the Race Page for quick visual identification of interesting
+                    tokens, the Dashboard for detailed metrics analysis, and Telegram for real-time alerts. This
+                    multi-platform approach ensures you never miss opportunities while maintaining deep analytical
+                    capabilities.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>10. Frequently Asked Questions</h2>
+
+            <h3>What does "FARM" status mean?</h3>
+            <p>A token classified as <span class="token-farm-label token-farm">FARM</span> has failed one or more of the
+                filtering criteria, indicating potential manipulation or concentrated ownership. This could suggest
+                artificial price inflation, wash trading, or other concerning distribution patterns.</p>
+
+            <h3>What exactly is the "SUS%" metric?</h3>
+            <p>The SUS metric is an all-in-one metric, a simplified version of bundles, clusters, fresh wallets etc. It
+                shows the highest percentage of any of each of those metrics. This makes it easier to display token data
+                on the dashboard.</p>
+
+            <h3>What's the difference between "FARMED" and "NO FARM DETECTED"?</h3>
+            <p>Both statuses indicate that a token currently passes all filter criteria. The difference is historical:
+            </p>
+            <ul>
+                <li><span class="token-farm-label token-farmed">FARMED</span>: Has failed criteria at some point in its
+                    history but now passes all criteria</li>
+                <li><span class="token-farm-label token-nofarm">NO FARM DETECTED</span>: Has never failed any criteria
+                    since initial detection</li>
+            </ul>
+
+            <h3>What are the flower and calendar icons above some tokens?</h3>
+            <p>These icons indicate the token's age classification:</p>
+            <ul>
+                <li><strong>🌷 (Flower):</strong> Late Bloomer - tokens that are 7-30 days old</li>
+                <li><strong>📅 (Calendar):</strong> Old Creation - tokens that are more than 30 days old</li>
+            </ul>
+            <p>These classifications help you identify tokens with different lifecycle patterns and potentially find
+                overlooked opportunities.</p>
+
+            <h3>Why do some tokens show "Scan in Progress"?</h3>
+            <p>This indicates an incomplete scan where one or more API calls failed to return complete data. These
+                tokens will be rescanned automatically in the next cycle. You can identify these tokens by their <span
+                    class="purple-tag">purple background</span> in the token list.</p>
+
+            <h3>What are "Bundles"?</h3>
+            <p>Bundles refer to groups of wallets that appear to be coordinating their buying activity by buying from
+                multiple wallets in the same transaction, often to artificially inflate a token's price or trading
+                volume. High bundle percentages may indicate manipulative activities.</p>
+
+            <h3>How often is the data updated?</h3>
+            <p>The dashboard auto-refreshes every 5 seconds. New tokens and threshold crossings are prioritized for
+                immediate scanning, while existing tokens (especially those with <span
+                    class="token-farm-label token-farm">FARM</span> status) are rescanned periodically.</p>
+
+            <h3>What's the difference between PumpFun, Raydium, and Meteora tokens?</h3>
+            <p>These are different launchpad platforms on the Solana blockchain. The main differences are:</p>
+            <ul>
+                <li><strong>PumpFun:</strong> Primarily focused on meme tokens with a simpler launch process</li>
+                <li><strong>Raydium:</strong> More established launchpad with a broader range of projects including
+                    utility tokens</li>
+                <li><strong>Meteora:</strong> A newer launchpad offering additional options for token launch and
+                    liquidity</li>
+            </ul>
+            <p>DailyRunner tracks tokens from all three platforms, allowing you to compare performance and metrics
+                across different launchpad ecosystems.</p>
+
+            <h3>How do I use the Meteora filter on the Race Page?</h3>
+            <p>The Meteora filter toggle is located in the top section of the Race Page controls alongside the PumpFun
+                and Raydium toggles. Simply click the toggle to enable or disable the display of Meteora tokens. You can
+                use it in combination with other launchpad filters to compare tokens across different platforms or focus
+                on specific ones.</p>
+        </section>
+
+        <!-- Glossary Section -->
+        <section id="glossary">
+            <h2>11. Glossary of Terms</h2>
+
+            <dl>
+                <dt>Bundle</dt>
+                <dd>A group of coordinated wallets that bought in the same transaction block, that appear to be working
+                    together to buy or manipulate tokens</dd>
+
+                <dt>Cluster</dt>
+                <dd>A group of connected wallets that exhibit similar behavior patterns or are likely controlled by the
+                    same entity</dd>
+
+                <dt>DEX</dt>
+                <dd>Decentralized Exchange - a platform for trading tokens without a central intermediary</dd>
+
+                <dt>FARM</dt>
+                <dd>A token classification indicating it fails one or more filter criteria, suggesting potential
+                    manipulation</dd>
+
+                <dt>FARMED</dt>
+                <dd>A token classification for tokens that currently pass all criteria but have failed at least one in
+                    the past</dd>
+
+                <dt>Fresh Wallet</dt>
+                <dd>A new wallet with minimal transaction history and age</dd>
+
+                <dt>Graduated Token</dt>
+                <dd>A token that has crossed the minimum market capitalization threshold ($100K)</dd>
+
+                <dt>Holder Map</dt>
+                <dd>Visual representation of top token holders with percentage holdings and wallet characteristics</dd>
+
+                <dt>Insider Wallet</dt>
+                <dd>A wallet identified as belonging to project insiders or early participants</dd>
+
+                <dt>Late Bloomer</dt>
+                <dd>A token that is 7-30 days old, indicated by a 🌷 (flower) icon</dd>
+
+                <dt>LP</dt>
+                <dd>Liquidity Pool - tokens locked in a DEX to facilitate trading</dd>
+
+                <dt>Market Cap</dt>
+                <dd>Total value of all tokens in circulation (price × circulating supply)</dd>
+
+                <dt>Meteora</dt>
+                <dd>A launchpad platform on Solana for token launches and liquidity provision</dd>
+
+                <dt>NO FARM DETECTED</dt>
+                <dd>A token classification for tokens that have never failed any filter criteria</dd>
+
+                <dt>Old Creation</dt>
+                <dd>A token that is more than 30 days old, indicated by a 📅 (calendar) icon</dd>
+
+                <dt>PumpFun</dt>
+                <dd>A launchpad platform on Solana primarily focused on meme tokens</dd>
+
+                <dt>Race Track</dt>
+                <dd>The visual representation of tokens "racing" toward higher market capitalization thresholds</dd>
+
+                <dt>Raydium</dt>
+                <dd>An established launchpad platform on Solana with a broader range of token projects</dd>
+
+                <dt>SUS%</dt>
+                <dd>Suspicious Wallets Percentage - the highest percentage among various suspicious wallet metrics</dd>
+
+                <dt>Threshold</dt>
+                <dd>A market capitalization level used to categorize tokens ($100K, $250K, $500K, $750K, $1M)</dd>
+            </dl>
+        </section>
+
+        <!-- Back to Top Link -->
+        <a href="#" class="back-to-top">↑</a>
+    </div>
+
+    <script>
+        // Function to toggle dropdown menu
+        function toggleMenu() {
+            document.getElementById("dropdown-menu").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.addEventListener('click', function (event) {
+            if (!event.target.matches('.menu-button') &&
+                !event.target.matches('.menu-button svg') &&
+                !event.target.matches('.menu-button path')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        });
+
+        // Toggle Table of Contents visibility
+        function toggleTOC() {
+            const tocContent = document.getElementById('tocContent');
+            const tocToggle = document.getElementById('tocToggle');
+
+            if (tocContent.style.display === 'none') {
+                tocContent.style.display = 'block';
+                tocToggle.innerHTML = '▼';
+            } else {
+                tocContent.style.display = 'none';
+                tocToggle.innerHTML = '▶';
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+
+                // Update active tab
+                if (targetId === '#introduction' ||
+                    targetId === '#race-page' ||
+                    targetId === '#dashboard' ||
+                    targetId === '#telegram' ||
+                    targetId === '#technical') {
+
+                    document.querySelectorAll('.tab').forEach(tab => {
+                        tab.classList.remove('active');
+                    });
+
+                    document.querySelector(`a[href="${targetId}"]`).classList.add('active');
+                }
+            });
+        });
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function () {
+            var backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.style.opacity = '0.7';
+            } else {
+                backToTop.style.opacity = '0';
+            }
+        });
+
+        // Tab navigation
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function () {
+                document.querySelectorAll('.tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        // Add explicit click handler for back to top button
+        document.querySelector('.back-to-top').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>

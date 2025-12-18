@@ -1,0 +1,4460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/moonshot-dashboard/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyRunner.Fun - Trending</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <!-- Load ApexCharts directly - more reliable for multiple charts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <style>
+        :root {
+            /* Dark mode colors from the Terms of Service page */
+            --bg-color: #1c1f1d;
+            --widget-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --header-color: #4CAF50;
+            --subtext-color: #aaaaaa;
+            --border-color: #333333;
+            --hover-color: #2c2c2c;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --scrollbar-thumb: #4CAF50;
+            --scrollbar-track: rgba(49, 95, 31, 0.2);
+            --tab-active-bg: #2c2c2c;
+            --tab-inactive-bg: #252525;
+            --category-title-bg: linear-gradient(135deg, #4CAF50, #2196F3);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            /* Space for the page title */
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--scrollbar-track);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--scrollbar-thumb);
+            border-radius: 10px;
+            border: 3px solid var(--scrollbar-track);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #3a582a;
+        }
+
+        /* Page title styles */
+        .page-title {
+            font-size: 1.75rem;
+            color: var(--header-color);
+            margin-bottom: 5px;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header-logo {
+            height: 1.5em;
+            width: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Update time display */
+        .last-updated {
+            color: var(--subtext-color);
+            font-style: italic;
+            text-align: right;
+            margin: 10px 20px 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Tabs styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 0 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background-color: var(--tab-inactive-bg);
+            color: var(--text-color);
+            border: none;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+            border-bottom: none;
+        }
+
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--header-color);
+            position: relative;
+            z-index: 1;
+        }
+
+        .tab:hover:not(.active) {
+            background-color: var(--hover-color);
+        }
+
+        /* Container for dashboard widgets - UPDATED for responsive layout */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* Default: 6 widgets per row */
+            gap: 20px;
+            padding: 0 20px 20px 20px;
+            flex: 1;
+        }
+
+        /* Full-width container for Axiom/Dexscreener tabs */
+        .full-width-container {
+            display: block;
+            /* Override grid layout */
+            padding: 0 20px 20px 20px;
+        }
+
+        /* Ensure the widget uses the full row */
+        .full-width-container .widget {
+            width: 100%;
+        }
+
+        /* Category container for charts */
+        .category-container {
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        .category-title {
+            background: var(--category-title-bg);
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        /* Charts container - updated for 5 charts per row */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* 5 charts per row by default */
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .tab-content {
+            display: none;
+            padding-top: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .widget {
+            background-color: var(--widget-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            overflow: hidden;
+            height: 698px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-widget {
+            background-color: var(--widget-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            overflow: hidden;
+            height: 350px;
+            /* Reduced height for grid layout */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .widget-header {
+            background: linear-gradient(135deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .widget-content {
+            padding: 10px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .chart-header {
+            background: linear-gradient(135deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chart-token-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chart-token-name {
+            color: white;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .chart-token-name:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .chart-market-cap {
+            font-size: 0.8rem;
+            margin-left: 8px;
+            color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .timeframe-badge {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 0.8rem;
+            margin-left: 8px;
+        }
+
+        .chart-content {
+            padding: 5px;
+            flex: 1;
+            position: relative;
+        }
+
+        /* Updated token card layout */
+        .token-card {
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 4px solid var(--header-color);
+            position: relative;
+        }
+
+        .token-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        /* Middle mini-chart for holders */
+        .token-holder-chart {
+            flex: 0 0 160px;
+            /* fixed-ish width */
+            height: 60px;
+        }
+
+        .token-name-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .token-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-decoration: none;
+            /* Remove default underline */
+            color: var(--text-color);
+            /* Maintain text color */
+            transition: color 0.2s;
+        }
+
+        .token-name:hover {
+            color: #4CAF50;
+            /* Change color on hover */
+            text-decoration: underline;
+            /* Add underline on hover */
+        }
+
+        .token-symbol {
+            color: var(--header-color);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 3px;
+        }
+
+        .token-metrics {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .fdv-value {
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 5px;
+        }
+
+        .price-value {
+            font-size: 0.95rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .price-positive {
+            color: #4CAF50;
+        }
+
+        .price-negative {
+            color: #ff4d4d;
+        }
+
+        /* Extra details under each trending token */
+        .token-meta-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--subtext-color);
+        }
+
+        .token-meta-row span {
+            white-space: nowrap;
+        }
+
+        .token-holders-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 6px;
+            font-size: 0.8rem;
+            color: var(--subtext-color);
+        }
+
+        .token-holders-row span {
+            background-color: #232323;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .whales-24h-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 6px 12px;
+            margin-top: 8px;
+            font-size: 11px;
+            opacity: 0.95;
+        }
+
+        .whales-24h-metric {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .whales-24h-metric-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            opacity: 0.6;
+            margin-bottom: 1px;
+        }
+
+        .whales-24h-metric-value {
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .copy-icon {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            color: var(--subtext-color);
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+            margin-left: 8px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .copy-icon:hover {
+            opacity: 1;
+        }
+
+        .loader {
+            text-align: center;
+            padding: 30px;
+            font-size: 1.2rem;
+        }
+
+        /* Error message */
+        .error-message {
+            color: #ff4d4d;
+            background-color: rgba(255, 77, 77, 0.1);
+            border: 1px solid rgba(255, 77, 77, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Tooltip styles */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 140px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -70px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.8rem;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+        }
+
+        /* Dropdown Menu Styles */
+        .menu-dropdown {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+        }
+
+        .menu-button {
+            background: linear-gradient(135deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .menu-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .menu-button svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 5px;
+            background-color: rgba(36, 36, 36, 0.95);
+            min-width: 160px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            z-index: 101;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(76, 175, 80, 0.2);
+        }
+
+        .show {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        /* Fallback chart style for ApexCharts */
+        .chart-area {
+            height: 100%;
+            width: 100%;
+            min-height: 250px;
+        }
+
+        /* Optional: Add separator between Dashboard and other menu items */
+        .dropdown-content a.separator-top {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 4px;
+            padding-top: 12px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Chain Selector Styles */
+        .chain-selector-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .chain-selector {
+            background: linear-gradient(135deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9em;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .chain-selector:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .chain-selector option {
+            background-color: #2d2d2d;
+            color: white;
+        }
+
+        /* Auto-refresh indicator */
+        .refresh-indicator {
+            display: inline-block;
+            margin-left: 8px;
+            animation: pulsate 2s infinite;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        @keyframes pulsate {
+            0% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        /* No data message */
+        .no-data-message {
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            color: var(--subtext-color);
+        }
+
+        /* Debug panel */
+        .debug-panel {
+            background-color: #111;
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 20px;
+            color: #ccc;
+            font-family: monospace;
+            white-space: pre-wrap;
+            max-height: 100px;
+            overflow-y: auto;
+            display: none;
+            /* Hidden by default */
+        }
+
+        /* Custom chart tooltip */
+        .apexcharts-tooltip-custom {
+            padding: 8px 12px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 4px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* Bubbles Canvas Styles */
+        #bubbles-canvas {
+            width: 100%;
+            height: calc(100vh - 200px);
+            min-height: 600px;
+            cursor: default;
+            /* Changed from pointer to default */
+            display: block;
+            margin: 0 auto;
+        }
+
+        .bubbles-container {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 200px);
+            min-height: 600px;
+            background-color: var(--bg-color);
+            overflow: hidden;
+        }
+
+        /* Media queries for responsive layout - UPDATED */
+        /* Large screens: 5 charts per row (default) */
+
+        /* Medium-large screens: 3 charts per row */
+        @media (max-width: 1600px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .charts-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Medium screens: 2 charts per row */
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .charts-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Small screens: 1 widget/chart per row */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .menu-button {
+                padding: 6px 10px;
+                font-size: 0.8em;
+            }
+
+            .menu-button svg {
+                width: 14px;
+                height: 14px;
+            }
+
+            .tabs {
+                flex-wrap: wrap;
+            }
+
+            .tab {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+                margin-bottom: 5px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .category-container {
+                padding: 0 15px;
+            }
+
+            .chain-selector {
+                padding: 6px 10px;
+                font-size: 0.8em;
+                min-width: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu-button {
+                padding: 5px 8px;
+                font-size: 0.7em;
+            }
+
+            .menu-button svg {
+                width: 12px;
+                height: 12px;
+            }
+
+            .dropdown-content {
+                min-width: 140px;
+            }
+
+            .dropdown-content a {
+                padding: 10px 14px;
+                font-size: 0.9em;
+            }
+
+            .page-title {
+                font-size: 1.5rem;
+            }
+
+            .widget {
+                height: 600px;
+            }
+
+            .chart-widget {
+                height: 300px;
+            }
+
+            .chain-selector {
+                padding: 5px 8px;
+                font-size: 0.7em;
+                min-width: 80px;
+            }
+
+            .tab {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+
+            .category-title {
+                font-size: 1rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu Dropdown -->
+    <div class="menu-dropdown">
+        <button class="menu-button" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+            Menu
+        </button>
+        <div id="dropdown-menu" class="dropdown-content">
+            <a href="./index.html">Home Page</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./trending.html">Trending</a>
+            <a href="./documentation.html">Documentation</a>
+            <a href="./privacy.html" class="separator-top">Privacy Policy</a>
+            <a href="./disclaimer.html">Disclaimer</a>
+            <a href="./termsofservice.html">Terms of Service</a>
+        </div>
+    </div>
+
+    <!-- Chain Selector -->
+    <div class="chain-selector-container">
+        <select id="chain-selector" class="chain-selector" onchange="loadChainData()">
+            <option value="solana">Solana</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="base">Base</option>
+        </select>
+    </div>
+
+    <!-- Page Title -->
+    <h1 class="page-title"><img src="logo.png" alt="Logo" class="header-logo">DailyRunner.Fun Trending <span
+            id="chain-name">Solana</span></h1>
+
+    <!-- Last Updated -->
+    <div class="last-updated">Updated: <span id="update-time">Loading...</span> <span id="refresh-indicator"
+            class="refresh-indicator">⟳</span></div>
+
+    <!-- Tabs Navigation -->
+    <div class="tabs">
+        <button class="tab active" data-tab="tokens">Tokens</button>
+        <button class="tab" data-tab="charts">Charts</button>
+        <button class="tab" data-tab="bubbles">Bubbles</button>
+        <button class="tab" data-tab="axiom-trending">Axiom Trending</button>
+        <button class="tab" data-tab="dexscreener-trending">Dexscreener Trending</button>
+        <button class="tab" data-tab="whales">Whales</button> <!-- NEW -->
+        <button class="tab" data-tab="pumpfun-trending">PumpFun Trending</button>
+        <button class="tab" data-tab="kol-buys">KOL Buys</button>
+    </div>
+
+
+    <!-- Optional: Debug Panel (uncomment to use) -->
+    <!-- <div id="debug-panel" class="debug-panel"></div> -->
+
+    <!-- Tokens Tab Content -->
+    <div id="tokens-tab" class="tab-content active">
+        <div class="container" id="dashboard-container">
+            <div class="loader">Loading token data...</div>
+        </div>
+    </div>
+
+    <!-- Charts Tab Content -->
+    <div id="charts-tab" class="tab-content">
+        <div id="charts-container">
+            <div class="loader">Loading chart data...</div>
+        </div>
+    </div>
+
+    <!-- Bubbles Tab Content -->
+    <div id="bubbles-tab" class="tab-content">
+        <div class="bubbles-container">
+            <canvas id="bubbles-canvas"></canvas>
+        </div>
+    </div>
+
+    <!-- Axiom Trending Tab Content -->
+    <div id="axiom-trending-tab" class="tab-content">
+        <div class="container full-width-container" id="axiom-trending-container">
+            <div class="loader">Loading Axiom trending tokens...</div>
+        </div>
+    </div>
+
+    <!-- Dexscreener Trending Tab Content -->
+    <div id="dexscreener-trending-tab" class="tab-content">
+        <div class="container full-width-container" id="dexscreener-trending-container">
+            <div class="loader">Loading Dexscreener trending tokens...</div>
+        </div>
+    </div>
+
+    <!-- Whales (Moby) Tab Content -->
+    <div id="whales-tab" class="tab-content">
+        <div class="container full-width-container" id="whales-container">
+            <div class="loader">Loading whale activity...</div>
+        </div>
+    </div>
+
+
+    <!-- PumpFun Trending Tab Content -->
+    <div id="pumpfun-trending-tab" class="tab-content">
+        <div class="container full-width-container" id="pumpfun-trending-container">
+            <div class="loader">Loading PumpFun trending tokens...</div>
+        </div>
+    </div>
+
+    <!-- KOL Buys Tab Content -->
+    <div id="kol-buys-tab" class="tab-content">
+        <div class="container full-width-container" id="kol-buys-container">
+            <div class="loader">Loading KOL buys...</div>
+        </div>
+    </div>
+
+    <script>
+        // Define refresh interval and timer variable
+        const REFRESH_INTERVAL = 600000; // 10 min
+        let refreshTimer;
+        let chartsInitialized = false;
+        let chartInstances = {};
+        let bubblesInitialized = false;
+        let axiomTrendingInitialized = false;
+        let dexscreenerTrendingInitialized = false;
+        let pumpfunTrendingInitialized = false;
+        let kolBuysInitialized = false;
+        let whalesInitialized = false;   // NEW
+        let bubbleAnimationId = null;
+        let bubbles = [];
+        let bubblePositions = {}; // Store bubble positions by token address
+        let bubbleOriginalPositions = {}; // Store original positions for gravity return
+        let hoveredBubble = null; // Track which bubble is being hovered
+        // Maximum number of charts to show per category
+        const MAX_CHARTS_PER_CATEGORY = 10;
+
+        // Global cache for trending tokens JSON
+        let trendingTokensData = null;
+        let solanaTrendingMap = null;
+
+        // Cache settings for trending_tokens.json
+        const TRENDING_CACHE_TTL = 30 * 60 * 1000; // 30 minutes in ms
+
+        // Global cache for holderscan-specific Solana data
+        let solanaHolderscanData = null;
+        let solanaHolderscanMap = null;
+
+        // Cached fetch for trending_tokens_holderscan_data.json (Solana only)
+        function fetchSolanaHolderscanData(force = false) {
+            const now = Date.now();
+
+            // Reuse if fresh
+            if (!force && solanaHolderscanData && solanaHolderscanData._fetchedAt) {
+                const age = now - solanaHolderscanData._fetchedAt;
+                if (age < TRENDING_CACHE_TTL) {
+                    debug(
+                        `Using cached trending_tokens_holderscan_data.json (age: ${Math.round(
+                            age / 1000
+                        )}s)`
+                    );
+                    return Promise.resolve(solanaHolderscanData);
+                }
+            }
+
+            const cacheBuster = '?_=' + now;
+            debug('Fetching trending_tokens_holderscan_data.json from server');
+
+            return fetch('trending_tokens_holderscan_data.json' + cacheBuster)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(
+                            'Network response was not ok for trending_tokens_holderscan_data.json'
+                        );
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    data = data || {};
+                    data._fetchedAt = now;
+                    solanaHolderscanData = data;
+                    return data;
+                });
+        }
+
+        // Build lookup map: token_address → holderscan entry
+        function loadSolanaHolderscanJson() {
+            return fetchSolanaHolderscanData(false)
+                .then(data => {
+                    solanaHolderscanData = data || {};
+
+                    if (
+                        !solanaHolderscanData.tokens ||
+                        typeof solanaHolderscanData.tokens !== 'object'
+                    ) {
+                        console.warn(
+                            'No tokens map found in trending_tokens_holderscan_data.json'
+                        );
+                        solanaHolderscanMap = {};
+                        return;
+                    }
+
+                    const map = {};
+
+                    // New file structure: tokens is a flat object keyed by token address
+                    Object.keys(solanaHolderscanData.tokens).forEach(addr => {
+                        const t = solanaHolderscanData.tokens[addr];
+                        if (!t) return;
+                        map[addr] = t;
+                    });
+
+                    solanaHolderscanMap = map;
+                    debug(
+                        `Indexed ${Object.keys(solanaHolderscanMap).length} Solana holderscan tokens`
+                    );
+                })
+                .catch(err => {
+                    console.error(
+                        'Error loading trending_tokens_holderscan_data.json:',
+                        err
+                    );
+                    solanaHolderscanMap = {};
+                });
+        }
+
+
+        // Cached fetch for trending_tokens.json
+        function fetchTrendingTokens(force = false) {
+            const now = Date.now();
+
+            // If we already have fresh data and not forcing, reuse it
+            if (!force && trendingTokensData && trendingTokensData._fetchedAt) {
+                const age = now - trendingTokensData._fetchedAt;
+                if (age < TRENDING_CACHE_TTL) {
+                    debug(`Using cached trending_tokens.json (age: ${Math.round(age / 1000)}s)`);
+                    return Promise.resolve(trendingTokensData);
+                }
+            }
+
+            const cacheBuster = '?_=' + now;
+            debug('Fetching trending_tokens.json from server');
+
+            return fetch('trending_tokens.json' + cacheBuster)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok for trending_tokens.json');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Stamp fetch time and cache it
+                    data = data || {};
+                    data._fetchedAt = now;
+                    trendingTokensData = data;
+                    return data;
+                });
+        }
+
+        // Fetch and index trending_tokens.json for Solana
+        function loadTrendingTokensJson() {
+            return fetchTrendingTokens(false)
+                .then(data => {
+                    trendingTokensData = data || {};
+
+                    // Safety checks
+                    if (!trendingTokensData.tokens ||
+                        !trendingTokensData.tokens.solana ||
+                        typeof trendingTokensData.tokens.solana !== 'object') {
+                        console.warn('No Solana tokens found in trending_tokens.json');
+                        solanaTrendingMap = {};
+                        return;
+                    }
+
+                    const solanaBuckets = trendingTokensData.tokens.solana;
+                    const map = {};
+
+                    // Flatten all Solana categories and index by token_address
+                    Object.keys(solanaBuckets).forEach(categoryName => {
+                        const arr = solanaBuckets[categoryName];
+                        if (!Array.isArray(arr)) return;
+
+                        arr.forEach(t => {
+                            const addr = t.token_address;
+                            if (!addr) return;
+
+                            // First one wins; you can change this logic if you prefer
+                            if (!map[addr]) {
+                                map[addr] = t;
+                            }
+                        });
+                    });
+
+                    solanaTrendingMap = map;
+                    debug(`Indexed ${Object.keys(solanaTrendingMap).length} Solana tokens from trending_tokens.json`);
+                })
+                .catch(err => {
+                    console.error('Error loading trending_tokens.json:', err);
+                    solanaTrendingMap = {};
+                });
+        }
+
+        // Attach holderscan mini-chart (holders + marketCap) to Solana Tokens tab rows
+        function attachSolanaTokenHolderCharts() {
+            // If we haven't loaded the holderscan file yet, load it first and then rerun
+            if (solanaHolderscanMap === null) {
+                loadSolanaHolderscanJson()
+                    .then(() => {
+                        attachSolanaTokenHolderCharts();
+                    })
+                    .catch(err => {
+                        console.error(
+                            'Failed to attach Solana token charts (holderscan load failed):',
+                            err
+                        );
+                    });
+                return;
+            }
+
+            const container = document.getElementById('dashboard-container');
+            if (!container) {
+                console.warn('Dashboard container not found');
+                return;
+            }
+
+            // Grab all token cards that have a data-token-address
+            const cards = container.querySelectorAll('.token-card[data-token-address]');
+            if (!cards || cards.length === 0) {
+                console.warn('No Solana token cards with data-token-address found in tokens tab');
+                return;
+            }
+
+            cards.forEach(card => {
+                const addr = card.getAttribute('data-token-address');
+                if (!addr) return;
+
+                // ✅ USE HOLDERSCAN MAP, NOT TRENDING MAP
+                const trendingToken = solanaHolderscanMap[addr];
+                if (!trendingToken) {
+                    // Not in holderscan file; nothing to attach
+                    return;
+                }
+
+                const history = trendingToken.holderscan_history;
+                if (!Array.isArray(history) || history.length === 0) {
+                    // No holderscan history; nothing to chart
+                    return;
+                }
+
+                // Avoid duplicate charts
+                let chartContainer = card.querySelector('.token-holder-chart.main-solana-trending');
+                if (!chartContainer) {
+                    chartContainer = document.createElement('div');
+                    chartContainer.className = 'token-holder-chart.main-solana-trending';
+                    chartContainer.style.width = '100%';
+                    chartContainer.style.height = '60px';
+                    chartContainer.style.marginTop = '8px';
+
+                    // Append UNDER all existing content in the token row
+                    card.appendChild(chartContainer);
+                }
+
+                // Unique ID per token
+                const safeId = addr.replace(/[^a-zA-Z0-9_-]/g, '');
+                const chartId = `holder-chart-main-${safeId}`;
+                chartContainer.id = chartId;
+
+                // Use the SAME dual-axis chart function
+                createHolderCountChart(chartId, history);
+            });
+        }
+
+
+        // Load bubble positions from localStorage
+        function loadBubblePositions() {
+            const selectedChain = document.getElementById('chain-selector').value;
+            const savedPositions = localStorage.getItem(`bubblePositions_${selectedChain}`);
+            if (savedPositions) {
+                try {
+                    bubblePositions = JSON.parse(savedPositions);
+                    debug(`Loaded ${Object.keys(bubblePositions).length} saved bubble positions for ${selectedChain}`);
+                } catch (e) {
+                    console.error('Failed to parse saved bubble positions:', e);
+                    bubblePositions = {};
+                }
+            } else {
+                bubblePositions = {};
+            }
+        }
+
+        // Save bubble positions to localStorage
+        function saveBubblePositions() {
+            const selectedChain = document.getElementById('chain-selector').value;
+            try {
+                localStorage.setItem(`bubblePositions_${selectedChain}`, JSON.stringify(bubblePositions));
+                debug(`Saved ${Object.keys(bubblePositions).length} bubble positions for ${selectedChain}`);
+            } catch (e) {
+                console.error('Failed to save bubble positions:', e);
+            }
+        }
+
+        // Debug function - helps with troubleshooting chart issues
+        function debug(message) {
+            console.log(message);
+            // Uncomment to show debug messages on page
+            //const debugPanel = document.getElementById('debug-panel');
+            //if (debugPanel) {
+            //    debugPanel.style.display = 'block';
+            //    debugPanel.innerHTML += message + '\n';
+            //}
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            debug('Page loaded');
+
+            // Load saved bubble positions for the default chain
+            loadBubblePositions();
+
+            // Set up tab navigation
+            setupTabs();
+
+            // Load initial data
+            loadChainData();
+
+            // Start auto-refresh timer
+            startAutoRefresh();
+        });
+
+        // Setup tab navigation
+        function setupTabs() {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+
+                    // Hide all tab content
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+
+                    // Show content for clicked tab
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-tab`).classList.add('active');
+
+                    // Initialize charts if charts tab is selected and not yet initialized
+                    if (tabId === 'charts' && !chartsInitialized) {
+                        initializeCharts();
+                    }
+
+                    // Initialize bubbles if bubbles tab is selected and not yet initialized
+                    if (tabId === 'bubbles' && !bubblesInitialized) {
+                        initializeBubbles();
+                    }
+
+                    // Initialize Axiom trending tab
+                    if (tabId === 'axiom-trending' && !axiomTrendingInitialized) {
+                        loadAxiomTrending();
+                    }
+
+                    // Initialize Dexscreener trending tab
+                    if (tabId === 'dexscreener-trending' && !dexscreenerTrendingInitialized) {
+                        loadDexscreenerTrending();
+                    }
+
+                    // Initialize Whales (Moby) tab
+                    if (tabId === 'whales' && !whalesInitialized) {
+                        loadWhalesTrending();
+                    }
+
+                    // Initialize PumpFun trending tab
+                    if (tabId === 'pumpfun-trending' && !pumpfunTrendingInitialized) {
+                        loadPumpfunTrending();
+                    }
+
+                    // Initialize KOL Buys tab
+                    if (tabId === 'kol-buys' && !kolBuysInitialized) {
+                        loadKolBuys();
+                    }
+
+
+
+                });
+            });
+
+            debug('Tabs initialized');
+        }
+
+        // Function to start auto-refresh timer
+        function startAutoRefresh() {
+            // Clear any existing timer
+            if (refreshTimer) {
+                clearInterval(refreshTimer);
+            }
+
+            // Set new timer
+            refreshTimer = setInterval(function () {
+                refreshDataPreservingScroll();
+
+                // Update the time display to show current time
+                const now = new Date();
+                document.getElementById('update-time').textContent = now.toLocaleString();
+
+                // Pulse the refresh indicator
+                flashRefreshIndicator();
+
+            }, REFRESH_INTERVAL);
+
+            debug("Auto-refresh started - will refresh every " + (REFRESH_INTERVAL / 1000) + " seconds");
+        }
+
+        // Flash the refresh indicator to show refresh has occurred
+        function flashRefreshIndicator() {
+            const indicator = document.getElementById('refresh-indicator');
+            indicator.style.opacity = "1";
+
+            // Fade the indicator back after a moment
+            setTimeout(function () {
+                indicator.style.opacity = "0.8";
+            }, 500);
+        }
+
+        // This function refreshes the data while preserving scroll positions
+        function refreshDataPreservingScroll() {
+            const selectedChain = document.getElementById('chain-selector').value;
+
+            // First, save all the scroll positions for tokens tab
+            const widgetContents = document.querySelectorAll('.widget-content');
+            const scrollPositions = {};
+
+            // Store the category names and their scroll positions
+            widgetContents.forEach((content, index) => {
+                const category = content.parentElement.querySelector('.widget-header').textContent;
+                scrollPositions[category] = content.scrollTop;
+            });
+
+            debug(`Refreshing data for ${selectedChain}`);
+
+            // Fetch the updated data using cache
+            fetchTrendingTokens(false)
+                .then(data => {
+                    // Check if we have data for the selected chain
+                    if (!data.tokens || !data.tokens[selectedChain]) {
+                        debug(`No data found for ${selectedChain}`);
+                        return;
+                    }
+
+                    // Get tokens for the selected chain
+                    const chainTokens = data.tokens[selectedChain];
+
+                    // Define the specific order of categories
+                    const orderedCategories = [
+                        "Market Leaders",
+                        "Consolidating Leaders",
+                        "Hot Older Pairs",
+                        "Consolidating Older Pairs",
+                        "Hot New Pairs",
+                        "Back To Life"
+                    ];
+
+                    // For each category, update its content while preserving scroll
+                    orderedCategories.forEach(category => {
+                        // Skip if this category doesn't exist in the data
+                        if (!chainTokens[category]) return;
+
+                        // Find the widget for this category
+                        const widgets = document.querySelectorAll('.widget');
+                        let categoryWidget = null;
+
+                        for (let widget of widgets) {
+                            const header = widget.querySelector('.widget-header');
+                            if (header && header.textContent === category) {
+                                categoryWidget = widget;
+                                break;
+                            }
+                        }
+
+                        // If we found the widget, update its content
+                        if (categoryWidget) {
+                            const widgetContent = categoryWidget.querySelector('.widget-content');
+
+                            // Generate new HTML for the tokens
+                            let newHtml = '';
+
+                            // Create token cards HTML
+                            chainTokens[category].forEach(token => {
+                                // Create appropriate URL based on chain
+                                let tokenUrl;
+                                if (selectedChain === 'solana') {
+                                    tokenUrl = `https://dexscreener.com/solana/${token.token_address}`;
+                                } else if (selectedChain === 'ethereum') {
+                                    tokenUrl = `https://dexscreener.com/ethereum/${token.token_address}`;
+                                } else if (selectedChain === 'base') {
+                                    tokenUrl = `https://dexscreener.com/base/${token.token_address}`;
+                                }
+
+                                // Generate HTML for this token card
+                                newHtml += `
+                                    <div class="token-card" data-token-address="${token.token_address}">
+                                        <div class="token-header">
+                                            <div class="token-name-container">
+                                                <div style="display: flex; align-items: center;">
+                                                    <a class="token-name" href="${tokenUrl}" target="_blank" rel="noopener noreferrer">
+                                                        ${token.token_name}
+                                                    </a>
+                                                    <div class="copy-icon tooltip" onclick="copyToClipboard('${token.token_address}')">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <span class="tooltiptext" id="copy-tooltip-${token.token_address}">Copied!</span>
+                                                    </div>
+                                                </div>
+                                                <div class="token-symbol">${token.token_symbol}</div>
+                                            </div>
+                                            <div class="token-metrics">
+                                                <div class="fdv-value">$${formatNumber(token.fdv_usd)}</div>
+                                                <div class="price-value ${parseFloat(token.price_change_24h) >= 0 ? 'price-positive' : 'price-negative'}">
+                                                    ${parseFloat(token.price_change_24h) >= 0 ? '+' : ''}${token.price_change_24h}%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+                            });
+
+                            // Update the content
+                            widgetContent.innerHTML = newHtml;
+
+                            // Restore scroll position
+                            if (scrollPositions[category] !== undefined) {
+                                widgetContent.scrollTop = scrollPositions[category];
+                            }
+                        }
+                    });
+
+                    // If charts tab is active, refresh chart data
+                    if (document.getElementById('charts-tab').classList.contains('active')) {
+                        debug('Updating charts with fresh data');
+                        updateAllCharts(data, selectedChain);
+                    }
+
+                    // If bubbles tab is active, refresh bubble data
+                    if (document.getElementById('bubbles-tab').classList.contains('active')) {
+                        debug('Updating bubbles with fresh data');
+                        updateBubbles(data, selectedChain);
+                    }
+
+                    // Refresh holder charts for Solana tokens if on Solana chain
+                    if (selectedChain === 'solana') {
+                        attachSolanaTokenHolderCharts();
+                    }
+                })
+                .catch(error => {
+                    console.error('Error refreshing data:', error);
+                    debug(`Error refreshing data: ${error.message}`);
+                    // Don't disrupt the UI on error, just log it
+                });
+        }
+
+        // Load data for the selected chain (initial load or chain switching)
+        function loadChainData() {
+            const chainSelector = document.getElementById('chain-selector');
+            const selectedChain = chainSelector.value;
+
+            debug(`Loading data for ${selectedChain}`);
+
+            // Update the chain name in the title
+            document.getElementById('chain-name').textContent = selectedChain.charAt(0).toUpperCase() + selectedChain.slice(1);
+
+            // Reset the dashboard for initial load or chain change
+            document.getElementById('dashboard-container').innerHTML = '<div class="loader">Loading token data...</div>';
+            document.getElementById('charts-container').innerHTML = '<div class="loader">Loading chart data...</div>';
+
+            // Reset the charts initialized flag
+            chartsInitialized = false;
+            // Clear chart instances
+            chartInstances = {};
+
+            // Load bubble positions for the new chain
+            loadBubblePositions();
+
+            // Reset bubbles but keep positions loaded from localStorage
+            bubblesInitialized = false;
+            bubbles = [];
+            bubbleOriginalPositions = {};
+            if (bubbleAnimationId) {
+                cancelAnimationFrame(bubbleAnimationId);
+                bubbleAnimationId = null;
+            }
+
+            // Restart auto-refresh when chain is changed
+            startAutoRefresh();
+
+            // Fetch JSON data using cache
+            fetchTrendingTokens(false)
+                .then(data => {
+                    // Clear loading message
+                    document.getElementById('dashboard-container').innerHTML = '';
+
+                    // Check if we have data for the selected chain
+                    if (!data.tokens || !data.tokens[selectedChain]) {
+                        document.getElementById('dashboard-container').innerHTML = `
+                            <div class="widget">
+                                <div class="widget-header">No Data</div>
+                                <div class="widget-content">
+                                    <p>No token data available for ${selectedChain}. Please try another chain or check back later.</p>
+                                </div>
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    debug(`Successfully loaded data for ${selectedChain}`);
+
+                    // Set update time from metadata or current time
+                    if (data.metadata && data.metadata.last_updated && data.metadata.last_updated[selectedChain]) {
+                        const updateTime = new Date(data.metadata.last_updated[selectedChain]);
+                        document.getElementById('update-time').textContent = updateTime.toLocaleString();
+                    } else {
+                        const now = new Date();
+                        document.getElementById('update-time').textContent = now.toLocaleString();
+                    }
+
+                    // Get tokens for the selected chain
+                    const chainTokens = data.tokens[selectedChain];
+
+                    // Define the specific order of categories
+                    const orderedCategories = [
+                        "Market Leaders",
+                        "Consolidating Leaders",
+                        "Hot Older Pairs",
+                        "Consolidating Older Pairs",
+                        "Hot New Pairs",
+                        "Back To Life"
+                    ];
+
+                    // Process each category in the specified order
+                    orderedCategories.forEach(category => {
+                        // Skip if this category doesn't exist in the data
+                        if (!chainTokens[category]) return;
+
+                        const tokens = chainTokens[category];
+
+                        // Create widget for this category
+                        const widget = document.createElement('div');
+                        widget.className = 'widget';
+                        widget.setAttribute('data-category', category);
+
+                        // Widget header
+                        const widgetHeader = document.createElement('div');
+                        widgetHeader.className = 'widget-header';
+                        widgetHeader.textContent = category;
+                        widget.appendChild(widgetHeader);
+
+                        // Widget content
+                        const widgetContent = document.createElement('div');
+                        widgetContent.className = 'widget-content';
+                        widget.appendChild(widgetContent);
+
+                        // Add token cards
+                        tokens.forEach(token => {
+                            const tokenCard = document.createElement('div');
+                            tokenCard.className = 'token-card';
+                            tokenCard.setAttribute('data-token-address', token.token_address);
+
+                            // Token header with name and symbol
+                            const tokenHeader = document.createElement('div');
+                            tokenHeader.className = 'token-header';
+
+                            // Left side - Name and Symbol
+                            const nameContainer = document.createElement('div');
+                            nameContainer.className = 'token-name-container';
+
+                            const tokenNameWrapper = document.createElement('div');
+                            tokenNameWrapper.style.display = 'flex';
+                            tokenNameWrapper.style.alignItems = 'center';
+
+                            // Create appropriate URL based on chain
+                            let tokenUrl;
+                            if (selectedChain === 'solana') {
+                                tokenUrl = `https://dexscreener.com/solana/${token.token_address}`;
+                            } else if (selectedChain === 'ethereum') {
+                                tokenUrl = `https://dexscreener.com/ethereum/${token.token_address}`;
+                            } else if (selectedChain === 'base') {
+                                tokenUrl = `https://dexscreener.com/base/${token.token_address}`;
+                            }
+
+                            const tokenName = document.createElement('a');
+                            tokenName.className = 'token-name';
+                            tokenName.textContent = token.token_name;
+                            tokenName.href = tokenUrl;
+                            tokenName.target = "_blank";
+                            tokenName.rel = "noopener noreferrer";
+                            tokenNameWrapper.appendChild(tokenName);
+
+                            // Copy icon for token address
+                            const copyIcon = document.createElement('div');
+                            copyIcon.className = 'copy-icon tooltip';
+                            copyIcon.innerHTML = `
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                </svg>
+                                <span class="tooltiptext" id="copy-tooltip-${token.token_address}">Copied!</span>
+                            `;
+                            copyIcon.addEventListener('click', function () {
+                                copyToClipboard(token.token_address, `copy-tooltip-${token.token_address}`);
+                            });
+                            tokenNameWrapper.appendChild(copyIcon);
+
+                            nameContainer.appendChild(tokenNameWrapper);
+
+                            const tokenSymbol = document.createElement('div');
+                            tokenSymbol.className = 'token-symbol';
+                            tokenSymbol.textContent = token.token_symbol;
+
+                            nameContainer.appendChild(tokenSymbol);
+
+                            // Right side - Financial metrics
+                            const metricsContainer = document.createElement('div');
+                            metricsContainer.className = 'token-metrics';
+
+                            // FDV Value (without label)
+                            const fdvValue = document.createElement('div');
+                            fdvValue.className = 'fdv-value';
+                            fdvValue.textContent = '$' + formatNumber(token.fdv_usd);
+                            metricsContainer.appendChild(fdvValue);
+
+                            // Price Change Value (without label)
+                            const priceValue = document.createElement('div');
+                            const priceChange = parseFloat(token.price_change_24h);
+                            priceValue.className = 'price-value ' + (priceChange >= 0 ? 'price-positive' : 'price-negative');
+                            priceValue.textContent = (priceChange >= 0 ? '+' : '') + priceChange + '%';
+                            metricsContainer.appendChild(priceValue);
+
+                            // Add name container and metrics to the header
+                            tokenHeader.appendChild(nameContainer);
+                            tokenHeader.appendChild(metricsContainer);
+                            tokenCard.appendChild(tokenHeader);
+
+                            widgetContent.appendChild(tokenCard);
+                        });
+
+                        // Add widget to container
+                        document.getElementById('dashboard-container').appendChild(widget);
+                    });
+
+                    // If charts tab is active, initialize charts
+                    if (document.getElementById('charts-tab').classList.contains('active')) {
+                        initializeCharts(data, selectedChain);
+                    }
+
+                    // If bubbles tab is active, initialize bubbles
+                    if (document.getElementById('bubbles-tab').classList.contains('active')) {
+                        initializeBubbles(data, selectedChain);
+                    }
+
+                    // Attach holder charts to Solana tokens if on Solana chain
+                    if (selectedChain === 'solana') {
+                        attachSolanaTokenHolderCharts();
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching the JSON data:', error);
+                    debug(`Error fetching the JSON data: ${error.message}`);
+                    document.getElementById('dashboard-container').innerHTML = `
+                        <div class="widget">
+                            <div class="widget-header">Error</div>
+                            <div class="widget-content">
+                                <p>Failed to load token data. Please check if the trending_tokens.json file exists on the server.</p>
+                                <p>Error details: ${error.message}</p>
+                            </div>
+                        </div>
+                    `;
+                    // Also update charts container with error message
+                    document.getElementById('charts-container').innerHTML = `
+                        <div class="chart-widget">
+                            <div class="widget-header">Error</div>
+                            <div class="chart-content">
+                                <p class="error-message">Failed to load token data. Please check if the trending_tokens.json file exists on the server.</p>
+                                <p>Error details: ${error.message}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+        }
+
+        // Initialize charts for the active categories
+        function initializeCharts(data = null, chain = null) {
+            debug('Initializing charts');
+
+            if (!data) {
+                const selectedChain = document.getElementById('chain-selector').value;
+
+                // Fetch data using cache
+                fetchTrendingTokens(false)
+                    .then(jsonData => {
+                        setupCharts(jsonData, selectedChain);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data for charts:', error);
+                        debug(`Error fetching data for charts: ${error.message}`);
+                        document.getElementById('charts-container').innerHTML = `
+                            <div class="chart-widget">
+                                <div class="widget-header">Error</div>
+                                <div class="chart-content">
+                                    <p class="error-message">Failed to load chart data. Please try again later.</p>
+                                    <p>Error details: ${error.message}</p>
+                                </div>
+                            </div>
+                        `;
+                    });
+            } else {
+                // Use provided data
+                setupCharts(data, chain || document.getElementById('chain-selector').value);
+            }
+        }
+
+        // Initialize bubbles
+        function initializeBubbles(data = null, chain = null) {
+            debug('Initializing bubbles');
+
+            if (!data) {
+                const selectedChain = document.getElementById('chain-selector').value;
+
+                // Fetch data using cache
+                fetchTrendingTokens(false)
+                    .then(jsonData => {
+                        setupBubbles(jsonData, selectedChain);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data for bubbles:', error);
+                        debug(`Error fetching data for bubbles: ${error.message}`);
+                    });
+            } else {
+                // Use provided data
+                setupBubbles(data, chain || document.getElementById('chain-selector').value);
+            }
+        }
+
+        // Set up bubbles visualization
+        function setupBubbles(data, selectedChain) {
+            debug(`Setting up bubbles for ${selectedChain}`);
+
+            // Check if we have data for the selected chain
+            if (!data.tokens || !data.tokens[selectedChain]) {
+                debug(`No data found for ${selectedChain}`);
+                return;
+            }
+
+            // Get all tokens for the selected chain
+            const chainTokens = data.tokens[selectedChain];
+
+            // Collect all tokens from all categories
+            const allTokens = [];
+            Object.keys(chainTokens).forEach(category => {
+                const tokens = chainTokens[category];
+                tokens.forEach(token => {
+                    // Only include tokens with market cap >= $1M
+                    if (token.fdv_usd >= 1000000) {
+                        allTokens.push({
+                            ...token,
+                            category: category
+                        });
+                    }
+                });
+            });
+
+            debug(`Found ${allTokens.length} tokens with market cap >= $1M`);
+
+            // Create bubbles
+            createBubbles(allTokens);
+
+            // Set up canvas event handlers
+            const canvas = document.getElementById('bubbles-canvas');
+            canvas.addEventListener('click', handleCanvasClick);
+            canvas.addEventListener('mousemove', handleCanvasMouseMove);
+            canvas.addEventListener('mouseleave', handleCanvasMouseLeave);
+
+            // Mark as initialized
+            bubblesInitialized = true;
+
+            // Start drawing
+            drawBubbles();
+        }
+
+        // Create bubble objects from token data
+        function createBubbles(tokens) {
+            const canvas = document.getElementById('bubbles-canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Set canvas size
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+
+            // Clear existing bubbles
+            bubbles = [];
+
+            // Calculate bubble sizes - 10% smaller than before
+            const minRadius = Math.min(canvas.width, canvas.height) * 0.027; // 2.7% (was 3%)
+            const maxRadius = Math.min(canvas.width, canvas.height) * 0.135; // 13.5% (was 15%)
+
+            // Sort tokens by market cap (largest first) to place bigger bubbles first
+            tokens.sort((a, b) => b.fdv_usd - a.fdv_usd);
+
+            tokens.forEach(token => {
+                const priceChange = parseFloat(token.price_change_24h);
+                const absChange = Math.abs(priceChange);
+
+                // NEW SCALING: Use logarithmic scale for better distribution
+                // This makes the size differences more proportionate for extreme gains
+                let radius;
+                if (absChange === 0) {
+                    radius = minRadius;
+                } else {
+                    // Use log scale: log(1 + absChange) to handle all values
+                    // Map log(1) to log(1001) → 0 to ~6.9
+                    const logValue = Math.log(1 + absChange);
+                    const maxLogValue = Math.log(1001); // log of 1001 ≈ 6.9
+                    const radiusRatio = Math.min(logValue / maxLogValue, 1);
+
+                    // For extreme gains (>1000%), allow even larger bubbles
+                    if (absChange > 1000) {
+                        const extremeMultiplier = 1 + (absChange - 1000) / 2000; // Extra scaling for extreme gains
+                        radius = minRadius + (maxRadius - minRadius) * radiusRatio * Math.min(extremeMultiplier, 2);
+                    } else {
+                        radius = minRadius + (maxRadius - minRadius) * radiusRatio;
+                    }
+                }
+
+                // Ensure minimum visible size
+                radius = Math.max(radius, minRadius);
+
+                // Check if we have a saved position for this token
+                let x, y;
+                if (bubblePositions[token.token_address]) {
+                    // Use saved position
+                    const saved = bubblePositions[token.token_address];
+                    x = saved.x;
+                    y = saved.y;
+                    // Ensure position is still valid with current canvas size
+                    x = Math.max(radius, Math.min(canvas.width - radius, x));
+                    y = Math.max(radius, Math.min(canvas.height - radius, y));
+                } else {
+                    // Find a non-overlapping position for new bubble
+                    let placed = false;
+                    let attempts = 0;
+                    const maxAttempts = 1000;
+                    const spacing = 15; // Increased spacing between bubbles
+
+                    while (!placed && attempts < maxAttempts) {
+                        // Random position with padding
+                        x = radius + Math.random() * (canvas.width - 2 * radius);
+                        y = radius + Math.random() * (canvas.height - 2 * radius);
+
+                        // Check for overlaps with existing bubbles
+                        let overlapping = false;
+                        for (let existingBubble of bubbles) {
+                            const dx = x - existingBubble.x;
+                            const dy = y - existingBubble.y;
+                            const distance = Math.sqrt(dx * dx + dy * dy);
+                            const minDistance = radius + existingBubble.radius + spacing;
+
+                            if (distance < minDistance) {
+                                overlapping = true;
+                                break;
+                            }
+                        }
+
+                        if (!overlapping) {
+                            placed = true;
+                        }
+
+                        attempts++;
+                    }
+
+                    // If we couldn't find a non-overlapping position after many attempts,
+                    // use a grid-based approach
+                    if (!placed) {
+                        const gridSize = Math.ceil(Math.sqrt(tokens.length));
+                        const cellWidth = canvas.width / gridSize;
+                        const cellHeight = canvas.height / gridSize;
+                        const index = bubbles.length;
+                        const gridX = index % gridSize;
+                        const gridY = Math.floor(index / gridSize);
+
+                        x = (gridX + 0.5) * cellWidth;
+                        y = (gridY + 0.5) * cellHeight;
+
+                        // Add some randomness within the grid cell
+                        x += (Math.random() - 0.5) * cellWidth * 0.3;
+                        y += (Math.random() - 0.5) * cellHeight * 0.3;
+
+                        // Ensure within bounds
+                        x = Math.max(radius, Math.min(canvas.width - radius, x));
+                        y = Math.max(radius, Math.min(canvas.height - radius, y));
+                    }
+
+                    // Save the position
+                    bubblePositions[token.token_address] = { x, y };
+                }
+
+                // Store original position for gravity return
+                bubbleOriginalPositions[token.token_address] = { x, y };
+
+                // Color based on gain/loss with enhanced intensity for extreme values
+                let color;
+                if (priceChange >= 0) {
+                    // Green gradient based on gain
+                    const greenIntensity = Math.min(priceChange / 100, 1); // Max intensity at 100%
+                    const opacity = 0.3 + greenIntensity * 0.5; // Higher opacity for bigger gains
+                    color = `rgba(76, 175, 80, ${opacity})`;
+                } else {
+                    // Red gradient based on loss
+                    const redIntensity = Math.min(Math.abs(priceChange) / 100, 1); // Max intensity at 100%
+                    const opacity = 0.3 + redIntensity * 0.5; // Higher opacity for bigger losses
+                    color = `rgba(255, 77, 77, ${opacity})`;
+                }
+
+                bubbles.push({
+                    x: x,
+                    y: y,
+                    vx: 0, // velocity x
+                    vy: 0, // velocity y
+                    radius: radius,
+                    color: color,
+                    symbol: token.token_symbol,
+                    marketCap: token.fdv_usd,
+                    priceChange: priceChange,
+                    token: token
+                });
+            });
+
+            // After all bubbles are created, run a separation pass to fix any overlaps
+            separateBubbles();
+
+            // Save positions to localStorage
+            saveBubblePositions();
+
+            debug(`Created ${bubbles.length} bubbles`);
+        }
+
+        // Separate overlapping bubbles
+        function separateBubbles() {
+            const iterations = 50; // Number of separation iterations
+            const separationStrength = 0.5;
+            const minSpacing = 15; // Minimum spacing between bubbles
+
+            for (let iter = 0; iter < iterations; iter++) {
+                let moved = false;
+
+                for (let i = 0; i < bubbles.length; i++) {
+                    for (let j = i + 1; j < bubbles.length; j++) {
+                        const b1 = bubbles[i];
+                        const b2 = bubbles[j];
+
+                        const dx = b2.x - b1.x;
+                        const dy = b2.y - b1.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        const minDistance = b1.radius + b2.radius + minSpacing;
+
+                        if (distance < minDistance && distance > 0) {
+                            // Bubbles are overlapping, separate them
+                            const overlap = minDistance - distance;
+                            const separateX = (dx / distance) * overlap * separationStrength;
+                            const separateY = (dy / distance) * overlap * separationStrength;
+
+                            // Move bubbles apart
+                            b1.x -= separateX * 0.5;
+                            b1.y -= separateY * 0.5;
+                            b2.x += separateX * 0.5;
+                            b2.y += separateY * 0.5;
+
+                            // Keep bubbles within canvas bounds
+                            const canvas = document.getElementById('bubbles-canvas');
+                            b1.x = Math.max(b1.radius, Math.min(canvas.width - b1.radius, b1.x));
+                            b1.y = Math.max(b1.radius, Math.min(canvas.height - b1.radius, b1.y));
+                            b2.x = Math.max(b2.radius, Math.min(canvas.width - b2.radius, b2.x));
+                            b2.y = Math.max(b2.radius, Math.min(canvas.height - b2.radius, b2.y));
+
+                            // Update saved positions
+                            if (b1.token && b1.token.token_address) {
+                                bubblePositions[b1.token.token_address] = { x: b1.x, y: b1.y };
+                                bubbleOriginalPositions[b1.token.token_address] = { x: b1.x, y: b1.y };
+                            }
+                            if (b2.token && b2.token.token_address) {
+                                bubblePositions[b2.token.token_address] = { x: b2.x, y: b2.y };
+                                bubbleOriginalPositions[b2.token.token_address] = { x: b2.x, y: b2.y };
+                            }
+
+                            moved = true;
+                        }
+                    }
+                }
+
+                // If no bubbles moved in this iteration, we can stop early
+                if (!moved) {
+                    debug(`Separation completed in ${iter + 1} iterations`);
+                    break;
+                }
+            }
+
+            // Save positions after separation
+            saveBubblePositions();
+        }
+
+        // Handle canvas click
+        function handleCanvasClick(event) {
+            const canvas = document.getElementById('bubbles-canvas');
+            const rect = canvas.getBoundingClientRect();
+            const clickX = event.clientX - rect.left;
+            const clickY = event.clientY - rect.top;
+
+            // Check if clicking on a bubble
+            let clickedBubble = null;
+            for (let bubble of bubbles) {
+                const dx = bubble.x - clickX;
+                const dy = bubble.y - clickY;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance <= bubble.radius) {
+                    clickedBubble = bubble;
+                    break;
+                }
+            }
+
+            if (clickedBubble) {
+                // Open dexscreener link for the clicked bubble
+                const selectedChain = document.getElementById('chain-selector').value;
+                let tokenUrl;
+                if (selectedChain === 'solana') {
+                    tokenUrl = `https://dexscreener.com/solana/${clickedBubble.token.token_address}`;
+                } else if (selectedChain === 'ethereum') {
+                    tokenUrl = `https://dexscreener.com/ethereum/${clickedBubble.token.token_address}`;
+                } else if (selectedChain === 'base') {
+                    tokenUrl = `https://dexscreener.com/base/${clickedBubble.token.token_address}`;
+                }
+                window.open(tokenUrl, '_blank');
+            } else {
+                // Apply repel force to bubbles (increased force)
+                bubbles.forEach(bubble => {
+                    const dx = bubble.x - clickX;
+                    const dy = bubble.y - clickY;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 300) { // Increased affect radius from 200 to 300
+                        const force = (300 - distance) / 300 * 25; // Increased force strength from 15 to 25
+                        const angle = Math.atan2(dy, dx);
+
+                        bubble.vx += Math.cos(angle) * force;
+                        bubble.vy += Math.sin(angle) * force;
+                    }
+                });
+
+                // Start animation if not already running
+                if (!bubbleAnimationId) {
+                    animateBubbles();
+                }
+            }
+        }
+
+        // Handle canvas mouse move
+        function handleCanvasMouseMove(event) {
+            const canvas = document.getElementById('bubbles-canvas');
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = event.clientX - rect.left;
+            const mouseY = event.clientY - rect.top;
+
+            // Check if hovering over a bubble
+            let hoveringBubble = false;
+            for (let bubble of bubbles) {
+                const dx = bubble.x - mouseX;
+                const dy = bubble.y - mouseY;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance <= bubble.radius) {
+                    hoveringBubble = true;
+                    hoveredBubble = bubble;
+                    break;
+                }
+            }
+
+            // Set cursor style
+            if (hoveringBubble) {
+                canvas.style.cursor = 'pointer';
+            } else {
+                canvas.style.cursor = 'default';
+                hoveredBubble = null;
+            }
+        }
+
+        // Handle canvas mouse leave
+        function handleCanvasMouseLeave() {
+            const canvas = document.getElementById('bubbles-canvas');
+            canvas.style.cursor = 'default';
+            hoveredBubble = null;
+        }
+
+        // Animate bubbles
+        function animateBubbles() {
+            const canvas = document.getElementById('bubbles-canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Apply return-to-home gravity (reduced for easier movement)
+            const returnGravity = 0.008; // Reduced from 0.02 to 0.008 - much weaker pull back
+
+            // Update bubble positions
+            bubbles.forEach(bubble => {
+                // Get original position
+                const originalPos = bubbleOriginalPositions[bubble.token.token_address];
+                if (originalPos) {
+                    // Calculate distance from original position
+                    const dx = originalPos.x - bubble.x;
+                    const dy = originalPos.y - bubble.y;
+
+                    // Apply return force proportional to distance
+                    bubble.vx += dx * returnGravity;
+                    bubble.vy += dy * returnGravity;
+                }
+
+                // Apply velocity
+                bubble.x += bubble.vx;
+                bubble.y += bubble.vy;
+
+                // Apply friction (reduced for more fluid movement)
+                bubble.vx *= 0.985; // Reduced from 0.98 to 0.985 - less friction
+                bubble.vy *= 0.985; // Reduced from 0.98 to 0.985 - less friction
+
+                // Bounce off walls with more elastic collision
+                if (bubble.x - bubble.radius < 0 || bubble.x + bubble.radius > canvas.width) {
+                    bubble.vx = -bubble.vx * 0.9; // More elastic bounce
+                    bubble.x = Math.max(bubble.radius, Math.min(canvas.width - bubble.radius, bubble.x));
+                }
+                if (bubble.y - bubble.radius < 0 || bubble.y + bubble.radius > canvas.height) {
+                    bubble.vy = -bubble.vy * 0.9; // More elastic bounce
+                    bubble.y = Math.max(bubble.radius, Math.min(canvas.height - bubble.radius, bubble.y));
+                }
+
+                // Update stored position
+                if (bubble.token && bubble.token.token_address) {
+                    bubblePositions[bubble.token.token_address] = { x: bubble.x, y: bubble.y };
+                }
+            });
+
+            // Check for collisions with more bouncy response
+            for (let i = 0; i < bubbles.length; i++) {
+                for (let j = i + 1; j < bubbles.length; j++) {
+                    const b1 = bubbles[i];
+                    const b2 = bubbles[j];
+
+                    const dx = b2.x - b1.x;
+                    const dy = b2.y - b1.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    const minDistance = b1.radius + b2.radius;
+
+                    if (distance < minDistance) {
+                        // Collision detected
+                        const angle = Math.atan2(dy, dx);
+                        const overlap = minDistance - distance;
+
+                        // Separate bubbles
+                        const separateX = Math.cos(angle) * overlap * 0.5;
+                        const separateY = Math.sin(angle) * overlap * 0.5;
+
+                        b1.x -= separateX;
+                        b1.y -= separateY;
+                        b2.x += separateX;
+                        b2.y += separateY;
+
+                        // Calculate collision response (more elastic)
+                        const v1n = b1.vx * Math.cos(angle) + b1.vy * Math.sin(angle);
+                        const v1t = -b1.vx * Math.sin(angle) + b1.vy * Math.cos(angle);
+                        const v2n = b2.vx * Math.cos(angle) + b2.vy * Math.sin(angle);
+                        const v2t = -b2.vx * Math.sin(angle) + b2.vy * Math.cos(angle);
+
+                        // Exchange normal velocities (with some bounce factor)
+                        const bounceFactor = 0.95; // Higher = more bouncy
+                        const v1n_new = v2n * bounceFactor;
+                        const v2n_new = v1n * bounceFactor;
+
+                        // Convert back to x,y coordinates
+                        b1.vx = v1n_new * Math.cos(angle) - v1t * Math.sin(angle);
+                        b1.vy = v1n_new * Math.sin(angle) + v1t * Math.cos(angle);
+                        b2.vx = v2n_new * Math.cos(angle) - v2t * Math.sin(angle);
+                        b2.vy = v2n_new * Math.sin(angle) + v2t * Math.cos(angle);
+                    }
+                }
+            }
+
+            // Save positions periodically during animation
+            if (Math.random() < 0.1) { // Save 10% of the time to reduce overhead
+                saveBubblePositions();
+            }
+
+            // Draw bubbles
+            drawBubbles();
+
+            // Check if animation should continue (more sensitive threshold for longer movement)
+            const totalVelocity = bubbles.reduce((sum, bubble) => {
+                return sum + Math.abs(bubble.vx) + Math.abs(bubble.vy);
+            }, 0);
+
+            if (totalVelocity > 0.05) { // Reduced from 0.1 to 0.05 - allows longer movement
+                bubbleAnimationId = requestAnimationFrame(animateBubbles);
+            } else {
+                bubbleAnimationId = null;
+                // Save final positions when animation stops
+                saveBubblePositions();
+            }
+        }
+
+        // Draw bubbles on canvas
+        function drawBubbles() {
+            const canvas = document.getElementById('bubbles-canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw each bubble
+            bubbles.forEach(bubble => {
+                // Check if bubble is 200%+ gain
+                const isGlowing = bubble.priceChange >= 200;
+
+                // Save context state
+                ctx.save();
+
+                // Add glow effect for 200%+ bubbles
+                if (isGlowing) {
+                    ctx.shadowColor = '#4CAF50';
+                    ctx.shadowBlur = 30;
+                    ctx.shadowOffsetX = 0;
+                    ctx.shadowOffsetY = 0;
+                }
+
+                // First, draw a dark background circle
+                ctx.beginPath();
+                ctx.arc(bubble.x, bubble.y, bubble.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)'; // Dark semi-transparent background
+                ctx.fill();
+
+                // Then draw the colored bubble on top
+                // Then draw the colored bubble on top
+                // Then draw the colored bubble on top
+                ctx.beginPath();
+                ctx.arc(bubble.x, bubble.y, bubble.radius, 0, Math.PI * 2);
+
+                // Use radial gradient for all bubbles to make them darker in the center
+                const gradient = ctx.createRadialGradient(
+                    bubble.x, bubble.y, 0,                    // Inner circle (center)
+                    bubble.x, bubble.y, bubble.radius        // Outer circle (edge)
+                );
+
+                // Create a gradient from dark center to normal color at edges
+                gradient.addColorStop(0, 'rgba(0, 0, 0, 0.4)');      // Dark center
+                gradient.addColorStop(0.3, 'rgba(0, 0, 0, 0.2)');    // Transition
+                gradient.addColorStop(0.6, bubble.color);            // Normal color
+                gradient.addColorStop(1, bubble.color);              // Bright edges
+
+                ctx.fillStyle = gradient;
+                ctx.fill();
+
+                // Draw border (brighter for glowing bubbles)
+                ctx.strokeStyle = bubble.priceChange >= 0 ?
+                    (isGlowing ? '#4CAF50' : 'rgba(76, 175, 80, 0.8)') :
+                    'rgba(255, 77, 77, 0.8)';
+                ctx.lineWidth = isGlowing ? 3 : 2;
+                ctx.stroke();
+
+                // Restore context state (removes shadow)
+                ctx.restore();
+
+                // Draw text
+                ctx.fillStyle = '#ffffff';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+
+                // Adjust font size based on bubble radius
+                const fontSize = Math.max(bubble.radius * 0.25, 10);
+                ctx.font = `bold ${fontSize}px Arial`;
+
+                // Draw symbol
+                ctx.fillText(bubble.symbol, bubble.x, bubble.y - fontSize * 0.8);
+
+                // Draw market cap
+                ctx.font = `${fontSize * 0.7}px Arial`;
+                ctx.fillText('$' + formatNumber(bubble.marketCap), bubble.x, bubble.y);
+
+                // Draw price change
+                const changeText = (bubble.priceChange >= 0 ? '+' : '') + bubble.priceChange.toFixed(1) + '%';
+                ctx.fillStyle = bubble.priceChange >= 0 ? '#4CAF50' : '#ff4d4d';
+                ctx.fillText(changeText, bubble.x, bubble.y + fontSize * 0.8);
+            });
+        }
+
+        // Update bubbles with new data (preserving positions)
+        function updateBubbles(data, selectedChain) {
+            debug('Updating bubbles data');
+
+            // Check if we have data for the selected chain
+            if (!data.tokens || !data.tokens[selectedChain]) {
+                debug(`No data found for ${selectedChain}`);
+                return;
+            }
+
+            // Get all tokens for the selected chain
+            const chainTokens = data.tokens[selectedChain];
+
+            // Collect all tokens from all categories
+            const allTokens = [];
+            Object.keys(chainTokens).forEach(category => {
+                const tokens = chainTokens[category];
+                tokens.forEach(token => {
+                    // Only include tokens with market cap >= $1M
+                    if (token.fdv_usd >= 1000000) {
+                        allTokens.push({
+                            ...token,
+                            category: category
+                        });
+                    }
+                });
+            });
+
+            // Calculate new bubble sizes - 10% smaller than before
+            const canvas = document.getElementById('bubbles-canvas');
+            const minRadius = Math.min(canvas.width, canvas.height) * 0.027; // 2.7% (was 3%)
+            const maxRadius = Math.min(canvas.width, canvas.height) * 0.135; // 13.5% (was 15%)
+
+            // Update existing bubbles with new data
+            bubbles.forEach(bubble => {
+                // Find the updated token data
+                const updatedToken = allTokens.find(t => t.token_address === bubble.token.token_address);
+
+                if (updatedToken) {
+                    // Update the data
+                    bubble.marketCap = updatedToken.fdv_usd;
+                    bubble.priceChange = parseFloat(updatedToken.price_change_24h);
+                    bubble.token = updatedToken;
+
+                    // Recalculate radius based on new price change
+                    const absChange = Math.abs(bubble.priceChange);
+
+                    let radius;
+                    if (absChange === 0) {
+                        radius = minRadius;
+                    } else {
+                        const logValue = Math.log(1 + absChange);
+                        const maxLogValue = Math.log(1001);
+                        const radiusRatio = Math.min(logValue / maxLogValue, 1);
+
+                        if (absChange > 1000) {
+                            const extremeMultiplier = 1 + (absChange - 1000) / 2000;
+                            radius = minRadius + (maxRadius - minRadius) * radiusRatio * Math.min(extremeMultiplier, 2);
+                        } else {
+                            radius = minRadius + (maxRadius - minRadius) * radiusRatio;
+                        }
+                    }
+
+                    bubble.radius = Math.max(radius, minRadius);
+
+                    // Update color based on new price change
+                    if (bubble.priceChange >= 0) {
+                        const greenIntensity = Math.min(bubble.priceChange / 100, 1);
+                        const opacity = 0.3 + greenIntensity * 0.5;
+                        bubble.color = `rgba(76, 175, 80, ${opacity})`;
+                    } else {
+                        const redIntensity = Math.min(Math.abs(bubble.priceChange) / 100, 1);
+                        const opacity = 0.3 + redIntensity * 0.5;
+                        bubble.color = `rgba(255, 77, 77, ${opacity})`;
+                    }
+                }
+            });
+
+            // Add any new tokens that aren't already in bubbles
+            allTokens.forEach(token => {
+                const exists = bubbles.some(b => b.token.token_address === token.token_address);
+                if (!exists) {
+                    // This is a new token, add it
+                    const priceChange = parseFloat(token.price_change_24h);
+                    const absChange = Math.abs(priceChange);
+
+                    let radius;
+                    if (absChange === 0) {
+                        radius = minRadius;
+                    } else {
+                        const logValue = Math.log(1 + absChange);
+                        const maxLogValue = Math.log(1001);
+                        const radiusRatio = Math.min(logValue / maxLogValue, 1);
+
+                        if (absChange > 1000) {
+                            const extremeMultiplier = 1 + (absChange - 1000) / 2000;
+                            radius = minRadius + (maxRadius - minRadius) * radiusRatio * Math.min(extremeMultiplier, 2);
+                        } else {
+                            radius = minRadius + (maxRadius - minRadius) * radiusRatio;
+                        }
+                    }
+
+                    radius = Math.max(radius, minRadius);
+
+                    // Find a non-overlapping position
+                    let x, y;
+                    let placed = false;
+                    let attempts = 0;
+                    const maxAttempts = 100;
+                    const spacing = 15;
+
+                    while (!placed && attempts < maxAttempts) {
+                        x = radius + Math.random() * (canvas.width - 2 * radius);
+                        y = radius + Math.random() * (canvas.height - 2 * radius);
+
+                        let overlapping = false;
+                        for (let existingBubble of bubbles) {
+                            const dx = x - existingBubble.x;
+                            const dy = y - existingBubble.y;
+                            const distance = Math.sqrt(dx * dx + dy * dy);
+                            const minDistance = radius + existingBubble.radius + spacing;
+
+                            if (distance < minDistance) {
+                                overlapping = true;
+                                break;
+                            }
+                        }
+
+                        if (!overlapping) {
+                            placed = true;
+                        }
+
+                        attempts++;
+                    }
+
+                    // If couldn't place, use edge position
+                    if (!placed) {
+                        x = radius + 10;
+                        y = radius + 10;
+                    }
+
+                    // Save position
+                    bubblePositions[token.token_address] = { x, y };
+                    bubbleOriginalPositions[token.token_address] = { x, y };
+
+                    // Color
+                    let color;
+                    if (priceChange >= 0) {
+                        const greenIntensity = Math.min(priceChange / 100, 1);
+                        const opacity = 0.3 + greenIntensity * 0.5;
+                        color = `rgba(76, 175, 80, ${opacity})`;
+                    } else {
+                        const redIntensity = Math.min(Math.abs(priceChange) / 100, 1);
+                        const opacity = 0.3 + redIntensity * 0.5;
+                        color = `rgba(255, 77, 77, ${opacity})`;
+                    }
+
+                    bubbles.push({
+                        x: x,
+                        y: y,
+                        vx: 0,
+                        vy: 0,
+                        radius: radius,
+                        color: color,
+                        symbol: token.token_symbol,
+                        marketCap: token.fdv_usd,
+                        priceChange: priceChange,
+                        token: token
+                    });
+                }
+            });
+
+            // Remove bubbles for tokens that no longer exist in the data
+            bubbles = bubbles.filter(bubble => {
+                const stillExists = allTokens.some(t => t.token_address === bubble.token.token_address);
+                if (!stillExists) {
+                    // Remove from saved positions too
+                    delete bubblePositions[bubble.token.token_address];
+                    delete bubbleOriginalPositions[bubble.token.token_address];
+                }
+                return stillExists;
+            });
+
+            // Run separation pass to ensure no overlaps after updates
+            separateBubbles();
+
+            // Save updated positions
+            saveBubblePositions();
+
+            // Redraw
+            drawBubbles();
+        }
+
+        // Reload chart tab (for recovery from loading errors)
+        function reloadChartTab() {
+            document.getElementById('charts-container').innerHTML = '<div class="loader">Reloading chart data...</div>';
+
+            // Set a slight delay to ensure UI updates
+            setTimeout(() => {
+                initializeCharts();
+            }, 500);
+        }
+
+        // Set up charts based on data
+        function setupCharts(data, selectedChain) {
+            debug(`Setting up charts for ${selectedChain}`);
+
+            // Clear charts container
+            document.getElementById('charts-container').innerHTML = '';
+
+            // Check if we have data for the selected chain
+            if (!data.tokens || !data.tokens[selectedChain]) {
+                document.getElementById('charts-container').innerHTML = `
+                    <div class="chart-widget">
+                        <div class="widget-header">No Data</div>
+                        <div class="chart-content">
+                            <p class="no-data-message">No chart data available for ${selectedChain}. Please try another chain or check back later.</p>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            // Get tokens for the selected chain
+            const chainTokens = data.tokens[selectedChain];
+
+            // Categories to show charts for
+            const chartCategories = [
+                "Market Leaders",
+                "Consolidating Leaders",
+                "Hot Older Pairs",
+                "Consolidating Older Pairs"
+            ];
+
+            // Process each category
+            chartCategories.forEach(category => {
+                // Skip if this category doesn't exist in the data
+                if (!chainTokens[category]) return;
+
+                const tokens = chainTokens[category];
+
+                // Skip if no tokens in this category
+                if (!tokens || tokens.length === 0) return;
+
+                // Find tokens with OHLCV data (up to 10)
+                const tokensWithData = tokens
+                    .filter(token => token.ohlcv_data && token.ohlcv_data.length > 0)
+                    .slice(0, MAX_CHARTS_PER_CATEGORY);
+
+                // Skip category if no token has OHLCV data
+                if (tokensWithData.length === 0) {
+                    debug(`No OHLCV data found for category: ${category}`);
+                    return;
+                }
+
+                debug(`Found ${tokensWithData.length} tokens with OHLCV data for ${category}`);
+
+                // Create category container
+                const categoryContainer = document.createElement('div');
+                categoryContainer.className = 'category-container';
+
+                // Add category title
+                const categoryTitle = document.createElement('div');
+                categoryTitle.className = 'category-title';
+                categoryTitle.textContent = category;
+                categoryContainer.appendChild(categoryTitle);
+
+                // Create charts grid
+                const chartsGrid = document.createElement('div');
+                chartsGrid.className = 'charts-grid';
+                categoryContainer.appendChild(chartsGrid);
+
+                // Create a chart for each token with data
+                tokensWithData.forEach((token, index) => {
+                    // Create chart widget
+                    const chartWidget = document.createElement('div');
+                    chartWidget.className = 'chart-widget';
+
+                    // Create appropriate URL based on chain
+                    let tokenUrl;
+                    if (selectedChain === 'solana') {
+                        tokenUrl = `https://dexscreener.com/solana/${token.token_address}`;
+                    } else if (selectedChain === 'ethereum') {
+                        tokenUrl = `https://dexscreener.com/ethereum/${token.token_address}`;
+                    } else if (selectedChain === 'base') {
+                        tokenUrl = `https://dexscreener.com/base/${token.token_address}`;
+                    }
+
+                    // Chart header with token name, market cap, and timeframe badge
+                    const chartHeader = document.createElement('div');
+                    chartHeader.className = 'chart-header';
+
+                    // Left side - token info including clickable name and market cap
+                    const tokenInfoContainer = document.createElement('div');
+                    tokenInfoContainer.className = 'chart-token-info';
+
+                    // Clickable token symbol
+                    const tokenLink = document.createElement('a');
+                    tokenLink.className = 'chart-token-name';
+                    tokenLink.textContent = token.token_symbol;
+                    tokenLink.href = tokenUrl;
+                    tokenLink.target = "_blank";
+                    tokenLink.rel = "noopener noreferrer";
+                    tokenInfoContainer.appendChild(tokenLink);
+
+                    // Market cap badge
+                    const marketCapBadge = document.createElement('span');
+                    marketCapBadge.className = 'chart-market-cap';
+                    marketCapBadge.textContent = '$' + formatNumber(token.fdv_usd);
+                    tokenInfoContainer.appendChild(marketCapBadge);
+
+                    chartHeader.appendChild(tokenInfoContainer);
+
+                    // Right side - timeframe badge
+                    const timeframeBadge = document.createElement('span');
+                    timeframeBadge.className = 'timeframe-badge';
+                    timeframeBadge.textContent = '1D'; // Daily timeframe
+                    chartHeader.appendChild(timeframeBadge);
+
+                    chartWidget.appendChild(chartHeader);
+
+                    // Chart content
+                    const chartContent = document.createElement('div');
+                    chartContent.className = 'chart-content';
+
+                    // Chart area with unique ID
+                    const chartId = `chart-${category.replace(/\s+/g, '-').toLowerCase()}-${index}`;
+                    const chartArea = document.createElement('div');
+                    chartArea.className = 'chart-area';
+                    chartArea.id = chartId;
+                    chartContent.appendChild(chartArea);
+
+                    chartWidget.appendChild(chartContent);
+                    chartsGrid.appendChild(chartWidget);
+                });
+
+                // Add category container to charts container
+                document.getElementById('charts-container').appendChild(categoryContainer);
+
+                // Create all charts after DOM elements are created
+                tokensWithData.forEach((token, index) => {
+                    const chartId = `chart-${category.replace(/\s+/g, '-').toLowerCase()}-${index}`;
+                    try {
+                        createApexChart(chartId, token);
+                    } catch (error) {
+                        debug(`Error creating chart ${chartId}: ${error.message}`);
+                        document.getElementById(chartId).innerHTML = `
+                            <p class="error-message">Error creating chart: ${error.message}</p>
+                        `;
+                    }
+                });
+            });
+
+            // Set chartsInitialized flag
+            chartsInitialized = true;
+            debug('Charts initialization completed');
+        }
+
+        // Create a tiny holder-count bar chart using holderscan_history
+        // Create a tiny holder-count bar chart using holderscan_history
+        // Create a tiny holder-count bar chart using holderscan_history
+        // Create a tiny dual-axis chart: bars = holderCount, line = marketCap
+        // Create a tiny dual-axis chart: bars = holderCount, line = marketCap
+        function createHolderCountChart(chartId, holderscanHistory) {
+            const el = document.getElementById(chartId);
+            if (!el || !Array.isArray(holderscanHistory) || holderscanHistory.length === 0) return;
+
+            // Destroy existing chart if present
+            if (el._holderChartInstance) {
+                try { el._holderChartInstance.destroy(); } catch (e) { }
+                el._holderChartInstance = null;
+            }
+            el.innerHTML = '';
+
+            // Sort by updatedAt ascending — FULL DATASET (no slice)
+            const sorted = [...holderscanHistory]
+                .filter(entry => entry && entry.updatedAt)
+                .sort((a, b) => new Date(a.updatedAt) - new Date(b.updatedAt));
+
+            if (sorted.length === 0) return;
+
+            // Build full-length series
+            const holdersSeries = [];
+            const mcapSeries = [];
+
+            sorted.forEach(entry => {
+                const t = new Date(entry.updatedAt);
+
+                holdersSeries.push({
+                    x: t,
+                    y: entry.holderCount ?? null
+                });
+
+                // MarketCap fallback options
+                let mcap = entry.marketCap;
+                if (mcap === undefined || mcap === null) {
+                    mcap = entry.usdMarketCap ?? entry.marketcap ?? null;
+                }
+
+                mcapSeries.push({
+                    x: t,
+                    y: mcap
+                });
+            });
+
+            const options = {
+                series: [
+                    {
+                        name: 'Holders',
+                        type: 'column',
+                        data: holdersSeries
+                    },
+                    {
+                        name: 'Market Cap',
+                        type: 'line',
+                        data: mcapSeries
+                    }
+                ],
+                chart: {
+                    type: 'line',
+                    height: 60,
+                    sparkline: { enabled: true },
+                    animations: { enabled: false },
+                    background: 'transparent',
+                    toolbar: { show: false }
+                },
+                stroke: {
+                    width: [0, 2]  // bar = 0, line = 2
+                },
+                plotOptions: {
+                    bar: {
+                        columnWidth: '70%',
+                        borderRadius: 2
+                    }
+                },
+                dataLabels: { enabled: false },
+
+                // FULL dataset across time
+                xaxis: {
+                    type: 'datetime',
+                    labels: { show: false },
+                    axisBorder: { show: false },
+                    axisTicks: { show: false }
+                },
+
+                yaxis: [
+                    {
+                        show: false,   // left axis: holders
+                    },
+                    {
+                        show: false,   // right axis: market cap
+                        opposite: true
+                    }
+                ],
+
+                grid: { show: false },
+
+                tooltip: {
+                    shared: true,
+                    theme: 'dark',
+                    x: {
+                        formatter: value => new Date(value).toLocaleString()
+                    },
+                    y: {
+                        formatter: function (val, opts) {
+                            if (val === null) return 'N/A';
+
+                            return opts.seriesIndex === 0
+                                ? `${val} holders`
+                                : '$' + formatNumber(val, 0);
+                        }
+                    }
+                }
+            };
+
+            const chart = new ApexCharts(el, options);
+            chart.render();
+            el._holderChartInstance = chart;
+        }
+
+
+
+
+
+        // Create a chart using ApexCharts
+        function createApexChart(chartId, token) {
+            debug(`Creating chart for ${token.token_symbol} with ID ${chartId}`);
+
+            // Check if token has OHLCV data
+            if (!token.ohlcv_data || token.ohlcv_data.length === 0) {
+                document.getElementById(chartId).innerHTML = `<p class="no-data-message">No OHLCV data available.</p>`;
+                return;
+            }
+
+            try {
+                // Prepare data for ApexCharts
+                const candleData = token.ohlcv_data.map(item => ({
+                    x: new Date(item[0]), // ApexCharts expects Date objects or timestamp in milliseconds
+                    y: [
+                        parseFloat(item[1]), // Open
+                        parseFloat(item[2]), // High
+                        parseFloat(item[3]), // Low
+                        parseFloat(item[4])  // Close
+                    ]
+                }));
+
+                // Chart options
+                const options = {
+                    series: [{
+                        name: token.token_symbol,
+                        data: candleData
+                    }],
+                    chart: {
+                        type: 'candlestick',
+                        height: 250,
+                        background: '#1e1e1e',
+                        foreColor: '#d1d4dc',
+                        animations: {
+                            enabled: false
+                        },
+                        toolbar: {
+                            show: false
+                        }
+                    },
+                    xaxis: {
+                        type: 'datetime',
+                        labels: {
+                            show: false, // Hide date labels on x-axis
+                            formatter: function () {
+                                return ''; // Return empty string to hide date
+                            }
+                        },
+                        axisBorder: {
+                            show: true,
+                            color: '#78909C'
+                        },
+                        crosshairs: {
+                            show: false // Disable crosshairs to hide hover info
+                        },
+                        tooltip: {
+                            enabled: false // Disable x-axis tooltip
+                        }
+                    },
+                    yaxis: {
+                        tooltip: {
+                            enabled: false // Disable y-axis tooltip
+                        },
+                        labels: {
+                            formatter: function (value) {
+                                // Use scientific notation for small values
+                                if (value < 0.00001) {
+                                    return value.toExponential(2);
+                                }
+                                return value.toFixed(Math.min(8, Math.max(2, countDecimals(value))));
+                            },
+                            style: {
+                                fontSize: '8px'
+                            }
+                        }
+                    },
+                    plotOptions: {
+                        candlestick: {
+                            colors: {
+                                upward: '#4CAF50',
+                                downward: '#FF4D4D'
+                            },
+                            wick: {
+                                useFillColor: true,
+                            }
+                        }
+                    },
+                    tooltip: {
+                        enabled: true,
+                        theme: 'dark',
+                        x: {
+                            show: false // Hide date in tooltip
+                        },
+                        y: {
+                            formatter: undefined // Use default formatter for y values
+                        },
+                        custom: function ({ series, seriesIndex, dataPointIndex, w }) {
+                            // Get only the close price (index 3 in the OHLC array)
+                            const closePrice = w.globals.seriesCandleC[seriesIndex][dataPointIndex];
+
+                            // Format the price based on value
+                            let formattedPrice;
+                            if (closePrice < 0.00001) {
+                                formattedPrice = closePrice.toExponential(6);
+                            } else {
+                                formattedPrice = closePrice.toFixed(Math.min(8, Math.max(2, countDecimals(closePrice))));
+                            }
+
+                            // Return custom HTML with only the price
+                            return `<div class="apexcharts-tooltip-custom">
+                                    <span>Price: ${formattedPrice}</span>
+                                    </div>`;
+                        }
+                    },
+                    grid: {
+                        borderColor: '#333333',
+                        strokeDashArray: 2
+                    },
+                    // Hide hover markers
+                    markers: {
+                        size: 0
+                    }
+                };
+
+                // Create the chart
+                const chart = new ApexCharts(document.getElementById(chartId), options);
+                chart.render();
+
+                // Store chart instance for later updates
+                chartInstances[chartId] = {
+                    chart: chart,
+                    token: token
+                };
+
+                debug(`Successfully created chart for ${token.token_symbol}`);
+            } catch (error) {
+                console.error('Error creating chart:', error);
+                debug(`Error in createApexChart: ${error.message}`);
+                document.getElementById(chartId).innerHTML = `
+                    <p class="error-message">Error creating chart: ${error.message}</p>
+                `;
+            }
+        }
+
+        // Count decimal places for formatting
+        function countDecimals(value) {
+            if (Math.floor(value) === value) return 0;
+            return value.toString().split(".")[1].length || 0;
+        }
+
+        // Update all charts when data refreshes
+        function updateAllCharts(data, selectedChain) {
+            debug('Updating all charts');
+
+            if (!data.tokens || !data.tokens[selectedChain]) {
+                return;
+            }
+
+            // Get the updated token data
+            const chainTokens = data.tokens[selectedChain];
+
+            // Categories to show charts for
+            const chartCategories = [
+                "Market Leaders",
+                "Consolidating Leaders",
+                "Hot Older Pairs",
+                "Consolidating Older Pairs"
+            ];
+
+            // Update charts for each category
+            chartCategories.forEach(category => {
+                // Skip if this category doesn't exist in the data
+                if (!chainTokens[category]) return;
+
+                const tokens = chainTokens[category];
+
+                // Find tokens with OHLCV data (up to MAX_CHARTS_PER_CATEGORY)
+                const tokensWithData = tokens
+                    .filter(token => token.ohlcv_data && token.ohlcv_data.length > 0)
+                    .slice(0, MAX_CHARTS_PER_CATEGORY);
+
+                // Update each chart
+                tokensWithData.forEach((token, index) => {
+                    const chartId = `chart-${category.replace(/\s+/g, '-').toLowerCase()}-${index}`;
+
+                    // First, update the header with new market cap if it exists
+                    const chartWidget = document.querySelector(`#${chartId}`).closest('.chart-widget');
+                    if (chartWidget) {
+                        const marketCapElement = chartWidget.querySelector('.chart-market-cap');
+                        if (marketCapElement && token.fdv_usd) {
+                            marketCapElement.textContent = '$' + formatNumber(token.fdv_usd);
+                        }
+                    }
+
+                    // Then update the chart data
+                    updateChart(chartId, token);
+                });
+            });
+
+            debug('Chart updates completed');
+        }
+
+        // Update a specific chart with new data
+        function updateChart(chartId, token) {
+            // Skip if chart instance doesn't exist
+            if (!chartInstances[chartId]) {
+                debug(`Chart instance not found for ${chartId}`);
+                return;
+            }
+
+            // Get chart instance
+            const chartInstance = chartInstances[chartId];
+
+            try {
+                // Prepare updated data
+                const candleData = token.ohlcv_data.map(item => ({
+                    x: new Date(item[0]),
+                    y: [
+                        parseFloat(item[1]), // Open
+                        parseFloat(item[2]), // High
+                        parseFloat(item[3]), // Low
+                        parseFloat(item[4])  // Close
+                    ]
+                }));
+
+                // Update chart series
+                chartInstance.chart.updateSeries([{
+                    name: token.token_symbol,
+                    data: candleData
+                }]);
+
+                // Update stored token
+                chartInstance.token = token;
+
+                debug(`Updated chart ${chartId} with fresh data`);
+            } catch (error) {
+                console.error(`Error updating chart ${chartId}:`, error);
+                debug(`Error updating chart ${chartId}: ${error.message}`);
+            }
+        }
+
+        // Safe percent formatter for holder metrics
+        function safePercent(value) {
+            if (value === undefined || value === null || isNaN(value)) return '0.00';
+            return parseFloat(value).toFixed(2);
+        }
+
+        // Convert createdAt into "Xd Yh ago"
+        function formatTimeSince(createdAt) {
+            if (!createdAt) return 'Unknown age';
+
+            let createdDate;
+
+            // Handle numeric timestamps (seconds or ms) and ISO strings
+            if (typeof createdAt === 'number') {
+                // If it's in seconds, convert to ms
+                if (createdAt < 1e12) {
+                    createdDate = new Date(createdAt * 1000);
+                } else {
+                    createdDate = new Date(createdAt);
+                }
+            } else {
+                createdDate = new Date(createdAt);
+            }
+
+            if (isNaN(createdDate)) return 'Unknown age';
+
+            const now = new Date();
+            const diffMs = now - createdDate;
+            const diffSec = Math.floor(diffMs / 1000);
+            const diffMin = Math.floor(diffSec / 60);
+            const diffHr = Math.floor(diffMin / 60);
+            const diffDay = Math.floor(diffHr / 24);
+
+            if (diffDay > 0) return `${diffDay}d ${diffHr % 24}h ago`;
+            if (diffHr > 0) return `${diffHr}h ${diffMin % 60}m ago`;
+            if (diffMin > 0) return `${diffMin}m ago`;
+            return `${diffSec}s ago`;
+        }
+
+        // Get earliest holderscan timestamp (for trending age)
+        function getHolderscanStartTime(token) {
+            if (!token || !Array.isArray(token.holderscan_history)) return null;
+
+            const times = token.holderscan_history
+                .filter(entry => entry && entry.updatedAt)
+                .map(entry => {
+                    const d = new Date(entry.updatedAt);
+                    return isNaN(d) ? null : d.getTime();
+                })
+                .filter(ts => ts !== null);
+
+            if (times.length === 0) return null;
+
+            const minTs = Math.min(...times);
+            return new Date(minTs);
+        }
+
+        // Get age label for UI, preferring holderscan history
+        // createdFieldName is 'createdAt' for Axiom/Dex and 'created_timestamp' for Pumpfun
+        function getTrendingAgeLabel(token, createdFieldName) {
+            const holderscanStart = getHolderscanStartTime(token);
+            if (holderscanStart) {
+                // formatTimeSince can take Date, ISO string, or numeric timestamp
+                return formatTimeSince(holderscanStart.toISOString());
+            }
+
+            // Fallback to original created field if holderscan data missing
+            const fallback = token && token[createdFieldName];
+            return formatTimeSince(fallback);
+        }
+
+        // Global variable to store SOL price
+        let solPriceUSD = null;
+
+        // Get latest USD market cap directly from the usdmarketcap field
+        function getLatestMarketCapUSD(token) {
+            // Use the usdmarketcap field directly from the JSON
+            // Both Axiom and Dexscreener JSONs have this field
+            if (token.usdmarketcap !== undefined && token.usdmarketcap !== null) {
+                return token.usdmarketcap;
+            }
+
+            // Fallback to usdMarketCap (capital M) if lowercase version doesn't exist
+            if (token.usdMarketCap !== undefined && token.usdMarketCap !== null) {
+                return token.usdMarketCap;
+            }
+
+            return null;
+        }
+
+        // Format numbers function
+        function formatNumber(num, decimals = 2) {
+            if (num === undefined || num === null) return 'N/A';
+            if (typeof num === 'string') num = parseFloat(num);
+
+            // Handle large numbers
+            if (num >= 1000000000) {
+                return (num / 1000000000).toFixed(decimals) + 'B';
+            } else if (num >= 1000000) {
+                return (num / 1000000).toFixed(decimals) + 'M';
+            } else if (num >= 1000) {
+                return (num / 1000).toFixed(decimals) + 'K';
+            }
+
+            return num.toFixed(decimals);
+        }
+
+        // Copy to clipboard function
+        function copyToClipboard(text, tooltipId) {
+            navigator.clipboard.writeText(text).then(function () {
+                // Show the tooltip
+                const tooltip = document.getElementById(tooltipId || 'copy-tooltip');
+                if (tooltip) {
+                    tooltip.style.visibility = 'visible';
+                    tooltip.style.opacity = '1';
+
+                    // Hide tooltip after 1.5 seconds
+                    setTimeout(function () {
+                        tooltip.style.visibility = 'hidden';
+                        tooltip.style.opacity = '0';
+                    }, 1500);
+                }
+            }, function (err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+
+        // Function to toggle dropdown menu
+        function toggleMenu() {
+            document.getElementById("dropdown-menu").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.addEventListener('click', function (event) {
+            if (!event.target.matches('.menu-button') &&
+                !event.target.matches('.menu-button svg') &&
+                !event.target.matches('.menu-button path')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        });
+
+        // Load Axiom trending tokens from trending_tokens_axiom.json
+        function loadAxiomTrending() {
+            const container = document.getElementById('axiom-trending-container');
+            container.innerHTML = '<div class="loader">Loading Axiom trending tokens...</div>';
+
+            const cacheBuster = '?_=' + new Date().getTime();
+
+            fetch('trending_tokens_axiom.json' + cacheBuster)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok for Axiom trending');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    container.innerHTML = '';
+
+                    if (!data.tokens || !Array.isArray(data.tokens) || data.tokens.length === 0) {
+                        container.innerHTML = `
+                            <div class="widget">
+                                <div class="widget-header">Axiom Trending</div>
+                                <div class="widget-content">
+                                    <p class="no-data-message">No Axiom trending data available.</p>
+                                </div>
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    // Dedupe by tokenAddress, then sort by marketCapSol (descending)
+                    const tokens = dedupeByKey(data.tokens, 'tokenAddress')
+                        .sort((a, b) => (b.marketCapSol || 0) - (a.marketCapSol || 0));
+
+                    const widget = document.createElement('div');
+                    widget.className = 'widget';
+                    widget.setAttribute('data-category', 'Axiom Trending');
+
+                    const header = document.createElement('div');
+                    header.className = 'widget-header';
+                    header.textContent = 'Axiom Trending';
+                    widget.appendChild(header);
+
+                    const content = document.createElement('div');
+                    content.className = 'widget-content';
+                    widget.appendChild(content);
+
+                    tokens.forEach(token => {
+                        const tokenCard = document.createElement('div');
+                        tokenCard.className = 'token-card';
+                        tokenCard.setAttribute('data-token-address', token.tokenAddress);
+
+                        const tokenHeader = document.createElement('div');
+                        tokenHeader.className = 'token-header';
+
+                        // LEFT: name + ticker + copy
+                        const nameContainer = document.createElement('div');
+                        nameContainer.className = 'token-name-container';
+
+                        const nameRow = document.createElement('div');
+                        nameRow.style.display = 'flex';
+                        nameRow.style.alignItems = 'center';
+
+                        // Add token image if available
+                        if (token.tokenImage && token.tokenImage !== 'Unknown') {
+                            const tokenImg = document.createElement('img');
+                            tokenImg.src = token.tokenImage;
+                            tokenImg.alt = token.tokenTicker || 'Token';
+                            tokenImg.style.width = '65px';
+                            tokenImg.style.height = '65px';
+                            tokenImg.style.borderRadius = '10%';
+                            tokenImg.style.marginRight = '8px';
+                            tokenImg.style.objectFit = 'cover';
+                            nameRow.appendChild(tokenImg);
+                        }
+
+                        // Clickable name → dexscreener
+                        const link = document.createElement('a');
+                        link.className = 'token-name';
+                        link.textContent = token.tokenName || token.tokenTicker || token.tokenAddress;
+                        if (token.pairAddress) {
+                            link.href = `https://dexscreener.com/solana/${token.pairAddress}`;
+                        } else {
+                            link.href = `https://dexscreener.com/solana/${token.tokenAddress}`;
+                        }
+                        link.target = '_blank';
+                        link.rel = 'noopener noreferrer';
+                        nameRow.appendChild(link);
+
+                        const copyIcon = document.createElement('div');
+                        copyIcon.className = 'copy-icon tooltip';
+                        const tooltipId = `copy-tooltip-axiom-${token.tokenAddress}`;
+                        copyIcon.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
+                            <span class="tooltiptext" id="${tooltipId}">Copied!</span>
+                        `;
+                        copyIcon.addEventListener('click', function () {
+                            copyToClipboard(token.tokenAddress, tooltipId);
+                        });
+                        nameRow.appendChild(copyIcon);
+
+                        nameContainer.appendChild(nameRow);
+
+                        const symbolDiv = document.createElement('div');
+                        symbolDiv.className = 'token-symbol';
+                        symbolDiv.textContent = token.tokenTicker || '';
+                        nameContainer.appendChild(symbolDiv);
+
+                        // RIGHT: main metrics (USD MC only)
+                        const metrics = document.createElement('div');
+                        metrics.className = 'token-metrics';
+
+                        const usdMc = getLatestMarketCapUSD(token);
+                        const mcUsd = document.createElement('div');
+                        mcUsd.className = 'fdv-value';
+                        mcUsd.textContent = usdMc ? '$' + formatNumber(usdMc, 0) : 'N/A';
+                        metrics.appendChild(mcUsd);
+
+                        tokenHeader.appendChild(nameContainer);
+
+                        // Middle: holder-count mini chart
+                        const holderChart = document.createElement('div');
+                        holderChart.className = 'token-holder-chart';
+                        const holderChartId = `holder-chart-axiom-${token.tokenAddress}`;
+                        holderChart.id = holderChartId;
+                        tokenHeader.appendChild(holderChart);
+
+                        // Right: main metrics (USD MC only)
+                        tokenHeader.appendChild(metrics);
+                        tokenCard.appendChild(tokenHeader);
+
+                        // --- Age row (now using holderscan_history when available) ---
+                        const metaRow = document.createElement('div');
+                        metaRow.className = 'token-meta-row';
+                        metaRow.innerHTML = `
+                            <span>Age: ${getTrendingAgeLabel(token, 'createdAt')}</span>
+                        `;
+                        tokenCard.appendChild(metaRow);
+
+                        // --- NEW: holder breakdown row ---
+                        const holdersRow = document.createElement('div');
+                        holdersRow.className = 'token-holders-row';
+                        holdersRow.innerHTML = `
+                            <span>Top 10: ${safePercent(token.top10HoldersPercent)}%</span>
+                            <span>Dev: ${safePercent(token.devHoldsPercent)}%</span>
+                            <span>Snipers: ${safePercent(token.snipersHoldPercent)}%</span>
+                            <span>Insiders: ${safePercent(token.insidersHoldPercent)}%</span>
+                            <span>Bundlers: ${safePercent(token.bundlersHoldPercent)}%</span>
+                        `;
+                        tokenCard.appendChild(holdersRow);
+
+                        content.appendChild(tokenCard);
+                    });
+
+                    container.appendChild(widget);
+
+                    // After DOM is attached, render holder-count charts for each token
+                    tokens.forEach(token => {
+                        if (Array.isArray(token.holderscan_history) && token.holderscan_history.length > 0) {
+                            const chartId = `holder-chart-axiom-${token.tokenAddress}`;
+                            createHolderCountChart(chartId, token.holderscan_history);
+                        }
+                    });
+
+                    axiomTrendingInitialized = true;
+                })
+                .catch(error => {
+                    console.error('Error loading Axiom trending:', error);
+                    const container = document.getElementById('axiom-trending-container');
+                    container.innerHTML = `
+                        <div class="widget">
+                            <div class="widget-header">Error</div>
+                            <div class="widget-content">
+                                <p class="error-message">Failed to load Axiom trending data.</p>
+                                <p>Error details: ${error.message}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+        }
+
+        // Load PumpFun trending tokens from trending_tokens_pumpfun.json
+        function loadPumpfunTrending() {
+            const container = document.getElementById('pumpfun-trending-container');
+            container.innerHTML = '<div class="loader">Loading PumpFun trending tokens...</div>';
+
+            const cacheBuster = '?_=' + new Date().getTime();
+
+            fetch('trending_tokens_pumpfun.json' + cacheBuster)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok for PumpFun trending');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    container.innerHTML = '';
+
+                    if (!data.tokens || !Array.isArray(data.tokens) || data.tokens.length === 0) {
+                        container.innerHTML = `
+                            <div class="widget">
+                                <div class="widget-header">PumpFun Trending</div>
+                                <div class="widget-content">
+                                    <p class="no-data-message">No PumpFun trending data available.</p>
+                                </div>
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    // Dedupe by mint, then sort by USD market cap descending
+                    const tokens = dedupeByKey(data.tokens, 'mint')
+                        .sort((a, b) => (b.usdMarketCap || 0) - (a.usdMarketCap || 0));
+
+                    const widget = document.createElement('div');
+                    widget.className = 'widget';
+                    widget.setAttribute('data-category', 'PumpFun Trending');
+
+                    const header = document.createElement('div');
+                    header.className = 'widget-header';
+                    header.textContent = 'PumpFun Trending';
+                    widget.appendChild(header);
+
+                    const content = document.createElement('div');
+                    content.className = 'widget-content';
+                    widget.appendChild(content);
+
+                    tokens.forEach(token => {
+                        const tokenCard = document.createElement('div');
+                        tokenCard.className = 'token-card';
+                        tokenCard.setAttribute('data-token-address', token.mint);
+
+                        const tokenHeader = document.createElement('div');
+                        tokenHeader.className = 'token-header';
+
+                        // LEFT: name + symbol + copy
+                        const nameContainer = document.createElement('div');
+                        nameContainer.className = 'token-name-container';
+
+                        const nameRow = document.createElement('div');
+                        nameRow.style.display = 'flex';
+                        nameRow.style.alignItems = 'center';
+
+                        // Add token image if available
+                        if (token.image_uri) {
+                            const tokenImg = document.createElement('img');
+                            tokenImg.src = token.image_uri;
+                            tokenImg.alt = token.symbol || 'Token';
+                            tokenImg.style.width = '65px';
+                            tokenImg.style.height = '65px';
+                            tokenImg.style.borderRadius = '10%';
+                            tokenImg.style.marginRight = '8px';
+                            tokenImg.style.objectFit = 'cover';
+                            nameRow.appendChild(tokenImg);
+                        }
+
+                        const link = document.createElement('a');
+                        link.className = 'token-name';
+                        link.textContent = token.name || token.symbol || token.mint;
+                        // Link to pump.fun page
+                        link.href = `https://pump.fun/${token.mint}`;
+                        link.target = '_blank';
+                        link.rel = 'noopener noreferrer';
+                        nameRow.appendChild(link);
+
+                        const copyIcon = document.createElement('div');
+                        copyIcon.className = 'copy-icon tooltip';
+                        const tooltipId = `copy-tooltip-pumpfun-${token.mint}`;
+                        copyIcon.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
+                            <span class="tooltiptext" id="${tooltipId}">Copied!</span>
+                        `;
+                        copyIcon.addEventListener('click', function () {
+                            copyToClipboard(token.mint, tooltipId);
+                        });
+                        nameRow.appendChild(copyIcon);
+
+                        nameContainer.appendChild(nameRow);
+
+                        const symbolDiv = document.createElement('div');
+                        symbolDiv.className = 'token-symbol';
+                        symbolDiv.textContent = token.symbol || '';
+                        nameContainer.appendChild(symbolDiv);
+
+                        // RIGHT: main metrics (USD MC only)
+                        const metrics = document.createElement('div');
+                        metrics.className = 'token-metrics';
+
+                        const usdMc = token.usdMarketCap;
+                        const mcUsd = document.createElement('div');
+                        mcUsd.className = 'fdv-value';
+                        mcUsd.textContent = usdMc ? '$' + formatNumber(usdMc, 0) : 'N/A';
+                        metrics.appendChild(mcUsd);
+
+                        tokenHeader.appendChild(nameContainer);
+
+                        // Middle: holder-count mini chart
+                        const holderChart = document.createElement('div');
+                        holderChart.className = 'token-holder-chart';
+                        const holderChartId = `holder-chart-pump-${token.mint}`;
+                        holderChart.id = holderChartId;
+                        tokenHeader.appendChild(holderChart);
+
+                        // Right: main metrics (USD MC only)
+                        tokenHeader.appendChild(metrics);
+                        tokenCard.appendChild(tokenHeader);
+
+                        // --- Description row ---
+                        if (token.description) {
+                            const descRow = document.createElement('div');
+                            descRow.className = 'token-meta-row';
+                            descRow.style.marginTop = '8px';
+                            descRow.style.fontStyle = 'italic';
+                            descRow.innerHTML = `<span>${token.description}</span>`;
+                            tokenCard.appendChild(descRow);
+                        }
+
+                        // --- Runner description row ---
+                        if (token.runner_description) {
+                            const runnerRow = document.createElement('div');
+                            runnerRow.className = 'token-meta-row';
+                            runnerRow.style.marginTop = '4px';
+                            runnerRow.style.fontWeight = 'bold';
+                            runnerRow.style.color = '#4CAF50';
+                            runnerRow.innerHTML = `<span>📰 ${token.runner_description}</span>`;
+                            tokenCard.appendChild(runnerRow);
+                        }
+
+                        // --- Age row (holderscan-aware) ---
+                        const metaRow = document.createElement('div');
+                        metaRow.className = 'token-meta-row';
+                        metaRow.innerHTML = `
+                            <span>Age: ${getTrendingAgeLabel(token, 'created_timestamp')}</span>
+                        `;
+                        tokenCard.appendChild(metaRow);
+
+                        content.appendChild(tokenCard);
+                    });
+
+                    container.appendChild(widget);
+
+                    // Render holder-count charts
+                    tokens.forEach(token => {
+                        if (Array.isArray(token.holderscan_history) && token.holderscan_history.length > 0) {
+                            const chartId = `holder-chart-pump-${token.mint}`;
+                            createHolderCountChart(chartId, token.holderscan_history);
+                        }
+                    });
+
+                    pumpfunTrendingInitialized = true;
+                })
+                .catch(error => {
+                    console.error('Error loading PumpFun trending:', error);
+                    const container = document.getElementById('pumpfun-trending-container');
+                    container.innerHTML = `
+                        <div class="widget">
+                            <div class="widget-header">Error</div>
+                            <div class="widget-content">
+                                <p class="error-message">Failed to load PumpFun trending data.</p>
+                                <p>Error details: ${error.message}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+        }
+
+        // Load Dexscreener trending tokens from trending_tokens_dexscreener.json
+        function loadDexscreenerTrending() {
+            const container = document.getElementById('dexscreener-trending-container');
+            container.innerHTML = '<div class="loader">Loading Dexscreener trending tokens...</div>';
+
+            const cacheBuster = '?_=' + new Date().getTime();
+
+            fetch('trending_tokens_dexscreener.json' + cacheBuster)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok for Dexscreener trending');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    container.innerHTML = '';
+
+                    if (!data.tokens || !Array.isArray(data.tokens) || data.tokens.length === 0) {
+                        container.innerHTML = `
+                            <div class="widget">
+                                <div class="widget-header">Dexscreener Trending</div>
+                                <div class="widget-content">
+                                    <p class="no-data-message">No Dexscreener trending data available.</p>
+                                </div>
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    // Dedupe by tokenAddress, then sort by SOL market cap descending
+                    const tokens = dedupeByKey(data.tokens, 'tokenAddress')
+                        .sort((a, b) => (b.marketCapSol || 0) - (a.marketCapSol || 0));
+
+                    const widget = document.createElement('div');
+                    widget.className = 'widget';
+                    widget.setAttribute('data-category', 'Dexscreener Trending');
+
+                    const header = document.createElement('div');
+                    header.className = 'widget-header';
+                    header.textContent = 'Dexscreener Trending';
+                    widget.appendChild(header);
+
+                    const content = document.createElement('div');
+                    content.className = 'widget-content';
+                    widget.appendChild(content);
+
+                    tokens.forEach(token => {
+                        const tokenCard = document.createElement('div');
+                        tokenCard.className = 'token-card';
+                        tokenCard.setAttribute('data-token-address', token.tokenAddress);
+
+                        const tokenHeader = document.createElement('div');
+                        tokenHeader.className = 'token-header';
+
+                        // LEFT: name + ticker + copy
+                        const nameContainer = document.createElement('div');
+                        nameContainer.className = 'token-name-container';
+
+                        const nameRow = document.createElement('div');
+                        nameRow.style.display = 'flex';
+                        nameRow.style.alignItems = 'center';
+
+                        // Add token image if available
+                        if (token.tokenImage && token.tokenImage !== 'Unknown') {
+                            const tokenImg = document.createElement('img');
+                            tokenImg.src = token.tokenImage;
+                            tokenImg.alt = token.tokenTicker || 'Token';
+                            tokenImg.style.width = '65px';
+                            tokenImg.style.height = '65px';
+                            tokenImg.style.borderRadius = '10%';
+                            tokenImg.style.marginRight = '8px';
+                            tokenImg.style.objectFit = 'cover';
+                            nameRow.appendChild(tokenImg);
+                        }
+
+                        const link = document.createElement('a');
+                        link.className = 'token-name';
+                        link.textContent = token.tokenName || token.tokenTicker || token.tokenAddress;
+                        // For Dexscreener JSON, use pairAddress directly
+                        link.href = `https://dexscreener.com/solana/${token.pairAddress}`;
+                        link.target = '_blank';
+                        link.rel = 'noopener noreferrer';
+                        nameRow.appendChild(link);
+
+                        const copyIcon = document.createElement('div');
+                        copyIcon.className = 'copy-icon tooltip';
+                        const tooltipId = `copy-tooltip-dex-${token.tokenAddress}`;
+                        copyIcon.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
+                            <span class="tooltiptext" id="${tooltipId}">Copied!</span>
+                        `;
+                        copyIcon.addEventListener('click', function () {
+                            copyToClipboard(token.tokenAddress, tooltipId);
+                        });
+                        nameRow.appendChild(copyIcon);
+
+                        nameContainer.appendChild(nameRow);
+
+                        const symbolDiv = document.createElement('div');
+                        symbolDiv.className = 'token-symbol';
+                        symbolDiv.textContent = token.tokenTicker || '';
+                        nameContainer.appendChild(symbolDiv);
+
+                        // RIGHT: main metrics (USD MC only)
+                        const metrics = document.createElement('div');
+                        metrics.className = 'token-metrics';
+
+                        const usdMc = getLatestMarketCapUSD(token);
+                        const mcUsd = document.createElement('div');
+                        mcUsd.className = 'fdv-value';
+                        mcUsd.textContent = usdMc ? '$' + formatNumber(usdMc, 0) : 'N/A';
+                        metrics.appendChild(mcUsd);
+
+                        tokenHeader.appendChild(nameContainer);
+
+                        // Middle: holder-count mini chart
+                        const holderChart = document.createElement('div');
+                        holderChart.className = 'token-holder-chart';
+                        const holderChartId = `holder-chart-dex-${token.tokenAddress}`;
+                        holderChart.id = holderChartId;
+                        tokenHeader.appendChild(holderChart);
+
+                        // Right: main metrics (USD MC only)
+                        tokenHeader.appendChild(metrics);
+                        tokenCard.appendChild(tokenHeader);
+
+                        // --- Age row (holderscan-aware) ---
+                        const metaRow = document.createElement('div');
+                        metaRow.className = 'token-meta-row';
+                        metaRow.innerHTML = `
+                            <span>Age: ${getTrendingAgeLabel(token, 'createdAt')}</span>
+                        `;
+                        tokenCard.appendChild(metaRow);
+
+                        content.appendChild(tokenCard);
+                    });
+
+                    container.appendChild(widget);
+
+                    // Render holder-count charts
+                    tokens.forEach(token => {
+                        if (Array.isArray(token.holderscan_history) && token.holderscan_history.length > 0) {
+                            const chartId = `holder-chart-dex-${token.tokenAddress}`;
+                            createHolderCountChart(chartId, token.holderscan_history);
+                        }
+                    });
+
+                    dexscreenerTrendingInitialized = true;
+                })
+                .catch(error => {
+                    console.error('Error loading Dexscreener trending:', error);
+                    const container = document.getElementById('dexscreener-trending-container');
+                    container.innerHTML = `
+                        <div class="widget">
+                            <div class="widget-header">Error</div>
+                            <div class="widget-content">
+                                <p class="error-message">Failed to load Dexscreener trending data.</p>
+                                <p>Error details: ${error.message}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+        }
+
+
+        // Load Whales (Moby) trending tokens from trending_tokens_moby.json
+        function loadWhalesTrending() {
+            const container = document.getElementById('whales-container');
+            container.innerHTML = '<div class="loader">Loading whale activity...</div>';
+
+            const cacheBuster = '?_=' + new Date().getTime();
+
+            fetch('trending_tokens_moby.json' + cacheBuster)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok for Whales (Moby) trending');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    container.innerHTML = '';
+
+                    // Correct shape: { payload: { entries: [...] } }
+                    const entries = data &&
+                        data.payload &&
+                        Array.isArray(data.payload.entries)
+                        ? data.payload.entries
+                        : [];
+
+                    if (entries.length === 0) {
+                        container.innerHTML = `
+                            <div class="widget">
+                                <div class="widget-header">Whales (Moby)</div>
+                                <div class="widget-content">
+                                    <p class="no-data-message">No whale data available.</p>
+                                </div>
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    // Normalize with explicit 24h fields
+                    const normalized = entries.map(raw => {
+                        const addr = raw.token_address || null;
+                        const symbol = raw.token_symbol || '';
+                        const name = raw.token_symbol || raw.token_address || 'Unknown';
+
+                        const usdMc = raw.market_cap_usd ?? null;
+
+                        // 24h whale metrics
+                        const whaleBuy24hUsd =
+                            raw.whale_buy_volume_usd &&
+                                typeof raw.whale_buy_volume_usd.h24 === 'number'
+                                ? raw.whale_buy_volume_usd.h24
+                                : null;
+
+                        const whaleNet24hUsd =
+                            raw.whale_net_flow_usd &&
+                                typeof raw.whale_net_flow_usd.h24 === 'number'
+                                ? raw.whale_net_flow_usd.h24
+                                : null;
+
+                        const whaleCount24h =
+                            raw.whale_count &&
+                                typeof raw.whale_count.h24 === 'number'
+                                ? raw.whale_count.h24
+                                : null;
+
+                        const priceChange24h =
+                            raw.price_change_percent &&
+                                typeof raw.price_change_percent.h24 === 'number'
+                                ? raw.price_change_percent.h24
+                                : null;
+
+                        const whaleTrades24h =
+                            raw.whale_trades_count &&
+                                typeof raw.whale_trades_count.h24 === 'number'
+                                ? raw.whale_trades_count.h24
+                                : null;
+
+                        const whaleBuys24h =
+                            raw.whale_buys_count &&
+                                typeof raw.whale_buys_count.h24 === 'number'
+                                ? raw.whale_buys_count.h24
+                                : null;
+
+                        const whaleSells24h =
+                            raw.whale_sells_count &&
+                                typeof raw.whale_sells_count.h24 === 'number'
+                                ? raw.whale_sells_count.h24
+                                : null;
+
+                        const whaleSell24hUsd =
+                            raw.whale_sell_volume_usd &&
+                                typeof raw.whale_sell_volume_usd.h24 === 'number'
+                                ? raw.whale_sell_volume_usd.h24
+                                : null;
+
+                        const whaleBuyAmount24h =
+                            raw.whale_buy_amount &&
+                                typeof raw.whale_buy_amount.h24 === 'number'
+                                ? raw.whale_buy_amount.h24
+                                : null;
+
+                        const whaleSellAmount24h =
+                            raw.whale_sell_amount &&
+                                typeof raw.whale_sell_amount.h24 === 'number'
+                                ? raw.whale_sell_amount.h24
+                                : null;
+
+                        const whaleNetAmount24h =
+                            raw.whale_net_amount &&
+                                typeof raw.whale_net_amount.h24 === 'number'
+                                ? raw.whale_net_amount.h24
+                                : null;
+
+                        const whaleRetention24h =
+                            raw.whale_holder_retention_percent &&
+                                typeof raw.whale_holder_retention_percent.h24 === 'number'
+                                ? raw.whale_holder_retention_percent.h24
+                                : null;
+
+                        const whaleBuySupply24h =
+                            raw.whale_buy_supply_percent &&
+                                typeof raw.whale_buy_supply_percent.h24 === 'number'
+                                ? raw.whale_buy_supply_percent.h24
+                                : null;
+
+                        const whaleSellSupply24h =
+                            raw.whale_sell_supply_percent &&
+                                typeof raw.whale_sell_supply_percent.h24 === 'number'
+                                ? raw.whale_sell_supply_percent.h24
+                                : null;
+
+                        const whaleNetSupply24h =
+                            raw.whale_net_supply_percent &&
+                                typeof raw.whale_net_supply_percent.h24 === 'number'
+                                ? raw.whale_net_supply_percent.h24
+                                : null;
+
+                        const volume24hUsd =
+                            raw.volume_usd &&
+                                typeof raw.volume_usd.h24 === 'number'
+                                ? raw.volume_usd.h24
+                                : null;
+
+                        const txCount24h =
+                            raw.transactions_count &&
+                                typeof raw.transactions_count.h24 === 'number'
+                                ? raw.transactions_count.h24
+                                : null;
+
+                        const score24h =
+                            raw.score_values &&
+                                typeof raw.score_values.h24 === 'number'
+                                ? raw.score_values.h24
+                                : null;
+
+
+                        return {
+                            ...raw,
+                            _addr: addr,
+                            _symbol: symbol,
+                            _name: name,
+                            _usdMc: usdMc,
+                            _whaleBuy24hUsd: whaleBuy24hUsd,
+                            _whaleNet24hUsd: whaleNet24hUsd,
+                            _whaleCount24h: whaleCount24h,
+
+                            _priceChange24h: priceChange24h,
+                            _whaleTrades24h: whaleTrades24h,
+                            _whaleBuys24h: whaleBuys24h,
+                            _whaleSells24h: whaleSells24h,
+                            _whaleSell24hUsd: whaleSell24hUsd,
+                            _whaleBuyAmount24h: whaleBuyAmount24h,
+                            _whaleSellAmount24h: whaleSellAmount24h,
+                            _whaleNetAmount24h: whaleNetAmount24h,
+                            _whaleRetention24h: whaleRetention24h,
+                            _whaleBuySupply24h: whaleBuySupply24h,
+                            _whaleSellSupply24h: whaleSellSupply24h,
+                            _whaleNetSupply24h: whaleNetSupply24h,
+                            _volume24hUsd: volume24hUsd,
+                            _txCount24h: txCount24h,
+                            _score24h: score24h
+                        };
+                    });
+
+                    // Sort primarily by 24h whale buy volume, then by 24h net flow, then by MC
+                    const tokens = dedupeByKey(normalized, '_addr')
+                        .sort((a, b) => {
+                            const wA = a._whaleBuy24hUsd || 0;
+                            const wB = b._whaleBuy24hUsd || 0;
+                            if (wB !== wA) return wB - wA;
+
+                            const nA = a._whaleNet24hUsd || 0;
+                            const nB = b._whaleNet24hUsd || 0;
+                            if (nB !== nA) return nB - nA;
+
+                            const mA = a._usdMc || 0;
+                            const mB = b._usdMc || 0;
+                            return mB - mA;
+                        });
+
+                    const widget = document.createElement('div');
+                    widget.className = 'widget';
+                    widget.setAttribute('data-category', 'Whales (Moby)');
+
+                    const header = document.createElement('div');
+                    header.className = 'widget-header';
+                    header.textContent = 'Whales (24h – Moby)';
+                    widget.appendChild(header);
+
+                    const content = document.createElement('div');
+                    content.className = 'widget-content';
+                    widget.appendChild(content);
+
+                    tokens.forEach(token => {
+                        const addr = token._addr;
+                        if (!addr) return; // skip totally broken rows
+
+                        const tokenCard = document.createElement('div');
+                        tokenCard.className = 'token-card';
+                        tokenCard.setAttribute('data-token-address', addr);
+
+                        const tokenHeader = document.createElement('div');
+                        tokenHeader.className = 'token-header';
+
+                        // LEFT: image + name + symbol + copy
+                        const nameContainer = document.createElement('div');
+                        nameContainer.className = 'token-name-container';
+
+                        const nameRow = document.createElement('div');
+                        nameRow.style.display = 'flex';
+                        nameRow.style.alignItems = 'center';
+
+                        // Token image if present
+                        if (token.token_logo) {
+                            const tokenImg = document.createElement('img');
+                            tokenImg.src = token.token_logo;
+                            tokenImg.alt = token._symbol || 'Token';
+                            tokenImg.style.width = '65px';
+                            tokenImg.style.height = '65px';
+                            tokenImg.style.borderRadius = '10%';
+                            tokenImg.style.marginRight = '8px';
+                            tokenImg.style.objectFit = 'cover';
+                            nameRow.appendChild(tokenImg);
+                        }
+
+                        // Link (pump.fun if pump mint, else dexscreener)
+                        let tokenLinkUrl;
+                        if (addr && addr.endsWith('pump')) {
+                            tokenLinkUrl = `https://pump.fun/${addr}`;
+                        } else {
+                            tokenLinkUrl = `https://dexscreener.com/solana/${addr}`;
+                        }
+
+                        const link = document.createElement('a');
+                        link.className = 'token-name';
+                        link.textContent = token._name;
+                        link.href = tokenLinkUrl;
+                        link.target = '_blank';
+                        link.rel = 'noopener noreferrer';
+                        nameRow.appendChild(link);
+
+                        // Copy icon
+                        const copyIcon = document.createElement('div');
+                        copyIcon.className = 'copy-icon tooltip';
+                        const tooltipId = `copy-tooltip-whales-${addr}`;
+                        copyIcon.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
+                            <span class="tooltiptext" id="${tooltipId}">Copied!</span>
+                        `;
+                        copyIcon.addEventListener('click', function () {
+                            copyToClipboard(addr, tooltipId);
+                        });
+                        nameRow.appendChild(copyIcon);
+
+                        nameContainer.appendChild(nameRow);
+
+                        const symbolDiv = document.createElement('div');
+                        symbolDiv.className = 'token-symbol';
+                        symbolDiv.textContent = token._symbol || '';
+                        nameContainer.appendChild(symbolDiv);
+
+                        // RIGHT: main metrics (USD MC + 24h whale buy volume)
+                        const metrics = document.createElement('div');
+                        metrics.className = 'token-metrics';
+
+                        const mcUsdDiv = document.createElement('div');
+                        mcUsdDiv.className = 'fdv-value';
+                        mcUsdDiv.textContent = token._usdMc
+                            ? '$' + formatNumber(token._usdMc, 0)
+                            : 'N/A';
+                        metrics.appendChild(mcUsdDiv);
+
+                        // Whale metric – 24h buy volume, with fallback text
+                        const whaleDiv = document.createElement('div');
+                        whaleDiv.className = 'price-value price-positive';
+
+                        if (token._whaleBuy24hUsd) {
+                            whaleDiv.textContent =
+                                '$' + formatNumber(token._whaleBuy24hUsd, 0) + ' Whale Buys (24h)';
+                        } else if (token._whaleCount24h) {
+                            whaleDiv.textContent =
+                                `${token._whaleCount24h} whales (24h)`;
+                        } else {
+                            whaleDiv.textContent = 'Whale (24h) N/A';
+                        }
+
+                        metrics.appendChild(whaleDiv);
+
+                        tokenHeader.appendChild(nameContainer);
+                        tokenHeader.appendChild(metrics);
+                        tokenCard.appendChild(tokenHeader);
+
+                        // META: Age from token_created + 24h whales
+                        const metaRow = document.createElement('div');
+                        metaRow.className = 'token-meta-row';
+
+                        const ageLabel = formatTimeSince(token.token_created);
+
+                        const whales24 = token._whaleCount24h || 0;
+
+                        metaRow.innerHTML = `
+                            <span>Age: ${ageLabel}</span>
+                            <span>Whales (24h): ${whales24}</span>
+                        `;
+                        tokenCard.appendChild(metaRow);
+
+                        // Holderscan mini chart (24h history still visual, full series)
+                        if (Array.isArray(token.holderscan_history) && token.holderscan_history.length > 0) {
+                            const holderChart = document.createElement('div');
+                            holderChart.className = 'token-holder-chart';
+                            const holderChartId = `holder-chart-whale-${addr}`;
+                            holderChart.id = holderChartId;
+                            tokenHeader.insertBefore(holderChart, metrics); // in the middle
+                            // After card is in DOM:
+                            setTimeout(() => {
+                                createHolderCountChart(holderChartId, token.holderscan_history);
+                            }, 0);
+                        }
+
+                        // 24h metrics grid
+                        const statsGrid = document.createElement('div');
+                        statsGrid.className = 'whales-24h-grid';
+
+                        // Price % change 24h
+                        appendMetricCell(statsGrid, 'Price Δ 24h', token._priceChange24h, {
+                            isPercent: true,
+                            decimals: 1
+                        });
+
+                        // Whale counts / trades
+                        appendMetricCell(statsGrid, 'Whales 24h', token._whaleCount24h);
+                        appendMetricCell(statsGrid, 'Whale Trades 24h', token._whaleTrades24h);
+                        appendMetricCell(statsGrid, 'Whale Buys 24h', token._whaleBuys24h);
+                        appendMetricCell(statsGrid, 'Whale Sells 24h', token._whaleSells24h);
+
+                        // Whale volume (USD)
+                        appendMetricCell(statsGrid, 'Whale Buy Vol 24h', token._whaleBuy24hUsd, {
+                            isUsd: true
+                        });
+                        appendMetricCell(statsGrid, 'Whale Sell Vol 24h', token._whaleSell24hUsd, {
+                            isUsd: true
+                        });
+                        appendMetricCell(statsGrid, 'Whale Net Flow 24h', token._whaleNet24hUsd, {
+                            isUsd: true
+                        });
+
+                        // Whale amount (token units)
+                        appendMetricCell(statsGrid, 'Whale Buy Amt 24h', token._whaleBuyAmount24h);
+                        appendMetricCell(statsGrid, 'Whale Sell Amt 24h', token._whaleSellAmount24h);
+                        appendMetricCell(statsGrid, 'Whale Net Amt 24h', token._whaleNetAmount24h);
+
+                        // Retention / supply %
+                        appendMetricCell(statsGrid, 'Whale Retention 24h', token._whaleRetention24h, {
+                            isPercent: true,
+                            decimals: 1
+                        });
+                        appendMetricCell(statsGrid, 'Buy Supply 24h', token._whaleBuySupply24h, {
+                            isPercent: true,
+                            decimals: 3
+                        });
+                        appendMetricCell(statsGrid, 'Sell Supply 24h', token._whaleSellSupply24h, {
+                            isPercent: true,
+                            decimals: 3
+                        });
+                        appendMetricCell(statsGrid, 'Net Supply 24h', token._whaleNetSupply24h, {
+                            isPercent: true,
+                            decimals: 3
+                        });
+
+                        // Volume + tx + score
+                        appendMetricCell(statsGrid, 'Volume 24h', token._volume24hUsd, {
+                            isUsd: true
+                        });
+                        appendMetricCell(statsGrid, 'Tx Count 24h', token._txCount24h);
+                        appendMetricCell(statsGrid, 'Score 24h', token._score24h, {
+                            decimals: 2
+                        });
+
+                        tokenCard.appendChild(statsGrid);
+
+                        content.appendChild(tokenCard);
+                    });
+
+                    container.appendChild(widget);
+                    whalesInitialized = true;
+                })
+                .catch(error => {
+                    console.error('Error loading Whales (Moby) trending:', error);
+                    const container = document.getElementById('whales-container');
+                    container.innerHTML = `
+                        <div class="widget">
+                            <div class="widget-header">Error</div>
+                            <div class="widget-content">
+                                <p class="error-message">Failed to load whale (Moby) data.</p>
+                                <p>Error details: ${error.message}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+        }
+
+
+        // Load KOL Buys from kol_buys.json
+        function loadKolBuys() {
+            const container = document.getElementById('kol-buys-container');
+            container.innerHTML = '<div class="loader">Loading KOL buys...</div>';
+
+            const cacheBuster = '?_=' + new Date().getTime();
+
+            fetch('kol_buys.json' + cacheBuster)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok for KOL buys');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    container.innerHTML = '';
+
+                    // kol_buys.json is a plain array, not { tokens: [...] }
+                    if (!Array.isArray(data) || data.length === 0) {
+                        container.innerHTML = `
+                            <div class="widget">
+                                <div class="widget-header">KOL Buys</div>
+                                <div class="widget-content">
+                                    <p class="no-data-message">No KOL buys data available.</p>
+                                </div>
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    // Dedupe by token_address, then sort by most recent timestamp
+                    const tokens = dedupeByKey(data, 'token_address')
+                        .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+                    const widget = document.createElement('div');
+                    widget.className = 'widget';
+                    widget.setAttribute('data-category', 'KOL Buys');
+
+                    const header = document.createElement('div');
+                    header.className = 'widget-header';
+                    header.textContent = 'KOL Buys';
+                    widget.appendChild(header);
+
+                    const content = document.createElement('div');
+                    content.className = 'widget-content';
+                    widget.appendChild(content);
+
+                    tokens.forEach(token => {
+                        const tokenCard = document.createElement('div');
+                        tokenCard.className = 'token-card';
+                        tokenCard.setAttribute('data-token-address', token.token_address);
+
+                        const tokenHeader = document.createElement('div');
+                        tokenHeader.className = 'token-header';
+
+                        // LEFT: image + name + symbol + copy
+                        const nameContainer = document.createElement('div');
+                        nameContainer.className = 'token-name-container';
+
+                        const nameRow = document.createElement('div');
+                        nameRow.style.display = 'flex';
+                        nameRow.style.alignItems = 'center';
+
+                        // Token image
+                        if (token.image_uri) {
+                            const tokenImg = document.createElement('img');
+                            tokenImg.src = token.image_uri;
+                            tokenImg.alt = token.symbol || 'Token';
+                            tokenImg.style.width = '65px';
+                            tokenImg.style.height = '65px';
+                            tokenImg.style.borderRadius = '10%';
+                            tokenImg.style.marginRight = '8px';
+                            tokenImg.style.objectFit = 'cover';
+                            nameRow.appendChild(tokenImg);
+                        }
+
+                        // Decide link: pump.fun if looks like Pump address, else dexscreener solana
+                        let tokenLinkUrl;
+                        if (token.token_address && token.token_address.endsWith('pump')) {
+                            tokenLinkUrl = `https://pump.fun/${token.token_address}`;
+                        } else {
+                            tokenLinkUrl = `https://dexscreener.com/solana/${token.token_address}`;
+                        }
+
+                        const link = document.createElement('a');
+                        link.className = 'token-name';
+                        link.textContent = token.name || token.symbol || token.token_address;
+                        link.href = tokenLinkUrl;
+                        link.target = '_blank';
+                        link.rel = 'noopener noreferrer';
+                        nameRow.appendChild(link);
+
+                        // Copy icon
+                        const copyIcon = document.createElement('div');
+                        copyIcon.className = 'copy-icon tooltip';
+                        const tooltipId = `copy-tooltip-kol-${token.token_address}`;
+                        copyIcon.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
+                            <span class="tooltiptext" id="${tooltipId}">Copied!</span>
+                        `;
+                        copyIcon.addEventListener('click', function () {
+                            copyToClipboard(token.token_address, tooltipId);
+                        });
+                        nameRow.appendChild(copyIcon);
+
+                        nameContainer.appendChild(nameRow);
+
+                        const symbolDiv = document.createElement('div');
+                        symbolDiv.className = 'token-symbol';
+                        symbolDiv.textContent = token.symbol || '';
+                        nameContainer.appendChild(symbolDiv);
+
+                        // RIGHT: main metrics – USD market cap + KOL SOL spent
+                        const metrics = document.createElement('div');
+                        metrics.className = 'token-metrics';
+
+                        const mcUsd = document.createElement('div');
+                        mcUsd.className = 'fdv-value';
+                        mcUsd.textContent = token.usd_market_cap
+                            ? '$' + formatNumber(token.usd_market_cap, 0)
+                            : 'N/A';
+                        metrics.appendChild(mcUsd);
+
+                        const kolSpent = document.createElement('div');
+                        kolSpent.className = 'price-value price-positive';
+                        let kolSpentText = '';
+
+                        if (!token.is_multi_buy) {
+                            // Normal single KOL buy
+                            kolSpentText = token.kol_sol_spent
+                                ? `$${token.kol_sol_spent.toFixed(2)} Spent`
+                                : '0 SOL';
+                        } else {
+                            // MULTI BUY – combine all SOL entries
+                            let totalSol = 0;
+
+                            if (Array.isArray(token.kol_entries)) {
+                                token.kol_entries.forEach(entry => {
+                                    // Prefer numeric amount_sol
+                                    if (entry.amount_sol && !isNaN(entry.amount_sol)) {
+                                        totalSol += Number(entry.amount_sol);
+                                    } else {
+                                        // Fallback: extract SOL amount from text like "Total buy: 24.98 SOL"
+                                        const match = entry.total_buy?.match(/([\d.]+)\s*SOL/i);
+                                        if (match) {
+                                            totalSol += parseFloat(match[1]);
+                                        }
+                                    }
+                                });
+                            }
+
+                            kolSpentText = `${totalSol.toFixed(2)} SOL`;
+                        }
+
+                        kolSpent.textContent = kolSpentText;
+
+                        metrics.appendChild(kolSpent);
+
+                        tokenHeader.appendChild(nameContainer);
+                        tokenHeader.appendChild(metrics);
+                        tokenCard.appendChild(tokenHeader);
+
+                        // META: Age + KOL name + flags
+                        const metaRow = document.createElement('div');
+                        metaRow.className = 'token-meta-row';
+
+                        const ageLabel = formatTimeSince(token.timestamp);
+                        const cleanKolName = (token.kol_name || '').replace(/[\[\]\*]/g, '');
+
+                        metaRow.innerHTML = `
+                            <span>Age: ${ageLabel}</span>
+                            <span>KOL: ${cleanKolName || 'Unknown'}</span>
+                        `;
+                        tokenCard.appendChild(metaRow);
+
+                        // FLAGS row: meets_filter_criteria, dex_paid, is_multi_buy
+                        const flagsRow = document.createElement('div');
+                        flagsRow.className = 'token-holders-row';
+                        flagsRow.innerHTML = `
+                            <span>Filter OK: ${token.meets_filter_criteria ? 'Yes' : 'No'}</span>
+                            <span>DEX Paid: ${token.dex_paid ? 'Yes' : 'No'}</span>
+                            <span>Multi-buy: ${token.is_multi_buy ? 'Yes' : 'No'}</span>
+                        `;
+                        tokenCard.appendChild(flagsRow);
+
+                        // KOL entries row(s) – show the same SOL that contributes to the total
+                        if (Array.isArray(token.kol_entries) && token.kol_entries.length > 0) {
+                            const entriesRow = document.createElement('div');
+                            entriesRow.className = 'token-holders-row';
+
+                            token.kol_entries.forEach(entry => {
+                                const cleanEntryKol = (entry.kol_name || '').replace(/[\[\]\*]/g, '');
+                                const span = document.createElement('span');
+                                const parts = [];
+
+                                // 1) Compute per-entry SOL using the SAME rule as totalSol
+                                let entrySol = 0;
+
+                                // Prefer numeric amount_sol
+                                if (entry.amount_sol && !isNaN(entry.amount_sol)) {
+                                    entrySol = Number(entry.amount_sol);
+                                } else if (typeof entry.total_buy === 'string') {
+                                    // Fallback: extract SOL amount from text like "Total buy: 24.98 SOL"
+                                    const match = entry.total_buy.match(/([\d.]+)\s*SOL/i);
+                                    if (match) {
+                                        entrySol = parseFloat(match[1]);
+                                    }
+                                }
+
+                                // 2) Build display line
+                                if (cleanEntryKol) parts.push(cleanEntryKol);
+
+                                if (entrySol) {
+                                    parts.push(`${entrySol.toFixed(2)} SOL`);
+                                } else if (entry.total_buy) {
+                                    // If we still don't have a numeric SOL, show the raw text
+                                    parts.push(entry.total_buy);
+                                }
+
+                                if (entry.time_ago) {
+                                    const cleanTime = String(entry.time_ago).replace(/[\[\]]/g, '');
+                                    parts.push(cleanTime);
+                                }
+
+                                if (entry.market_cap) {
+                                    parts.push(entry.market_cap);
+                                }
+
+                                span.textContent = parts.join(' | ');
+                                entriesRow.appendChild(span);
+                            });
+
+                            tokenCard.appendChild(entriesRow);
+                        }
+
+
+
+                        content.appendChild(tokenCard);
+                    });
+
+                    container.appendChild(widget);
+                    kolBuysInitialized = true;
+                })
+                .catch(error => {
+                    console.error('Error loading KOL buys:', error);
+                    const container = document.getElementById('kol-buys-container');
+                    container.innerHTML = `
+                        <div class="widget">
+                            <div class="widget-header">Error</div>
+                            <div class="widget-content">
+                                <p class="error-message">Failed to load KOL buys data.</p>
+                                <p>Error details: ${error.message}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+        }
+
+
+        function formatPercent(value, decimals = 1) {
+            if (value === null || typeof value !== 'number' || isNaN(value)) return 'N/A';
+            return value.toFixed(decimals) + '%';
+        }
+
+        function appendMetricCell(container, label, value, options = {}) {
+            const { isUsd = false, isPercent = false, decimals = 0, suffix = '' } = options;
+
+            const cell = document.createElement('div');
+            cell.className = 'whales-24h-metric';
+
+            const labelSpan = document.createElement('span');
+            labelSpan.className = 'whales-24h-metric-label';
+            labelSpan.textContent = label;
+
+            const valueSpan = document.createElement('span');
+            valueSpan.className = 'whales-24h-metric-value';
+
+            if (value === null || value === undefined || isNaN(value)) {
+                valueSpan.textContent = 'N/A';
+            } else if (isPercent) {
+                valueSpan.textContent = formatPercent(value, decimals);
+            } else if (isUsd) {
+                valueSpan.textContent = '$' + formatNumber(value, decimals);
+            } else {
+                valueSpan.textContent = formatNumber(value, decimals) + (suffix || '');
+            }
+
+            cell.appendChild(labelSpan);
+            cell.appendChild(valueSpan);
+            container.appendChild(cell);
+        }
+
+        // Deduplicate an array of objects by a specific key
+        function dedupeByKey(arr, key) {
+            if (!Array.isArray(arr)) return [];
+            const seen = new Set();
+            return arr.filter(item => {
+                const val = item && item[key];
+                if (!val) return true; // keep entries that don't have the key
+                if (seen.has(val)) return false;
+                seen.add(val);
+                return true;
+            });
+        }
+
+        // Handle window resize for bubbles canvas
+        window.addEventListener('resize', function () {
+            if (bubblesInitialized && document.getElementById('bubbles-tab').classList.contains('active')) {
+                const canvas = document.getElementById('bubbles-canvas');
+                canvas.width = canvas.offsetWidth;
+                canvas.height = canvas.offsetHeight;
+
+                // Reposition bubbles to fit new canvas size
+                bubbles.forEach(bubble => {
+                    bubble.x = Math.max(bubble.radius, Math.min(canvas.width - bubble.radius, bubble.x));
+                    bubble.y = Math.max(bubble.radius, Math.min(canvas.height - bubble.radius, bubble.y));
+
+                    // Update original positions too
+                    if (bubbleOriginalPositions[bubble.token.token_address]) {
+                        bubbleOriginalPositions[bubble.token.token_address].x = bubble.x;
+                        bubbleOriginalPositions[bubble.token.token_address].y = bubble.y;
+                    }
+                });
+
+                // Run separation pass to fix any overlaps after resize
+                separateBubbles();
+
+                // Save new positions
+                saveBubblePositions();
+
+                drawBubbles();
+            }
+        });
+    </script>
+</body>
+
+</html>
