@@ -1587,6 +1587,27 @@
             letter-spacing: 2px;
         }
 
+        .coming-soon-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .coming-soon-link:hover {
+            background: rgba(76, 175, 80, 0.1);
+            border-color: #4CAF50;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
+        }
+
         @keyframes pulse-glow {
             0% {
                 box-shadow: 0 0 20px rgba(76, 175, 80, 0.2);
@@ -1615,6 +1636,7 @@
         <div class="coming-soon-content">
             <h1 class="coming-soon-title">AGENT</h1>
             <div class="coming-soon-subtitle">COMING SOON</div>
+            <a href="/new_pairs.html" class="coming-soon-link">visit New Pairs page for old view</a>
         </div>
     </div>
     <!-- Menu and header structure from reference -->
