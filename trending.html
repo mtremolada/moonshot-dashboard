@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DailyRunner.Fun - Trending</title>
     <link rel="icon" type="image/png" href="logo.png">
@@ -26,44 +24,43 @@
             --tab-inactive-bg: #252525;
             --category-title-bg: linear-gradient(135deg, #4CAF50, #2196F3);
         }
-
+        
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            padding-top: 60px;
-            /* Space for the page title */
+            padding-top: 60px; /* Space for the page title */
         }
-
+        
         /* Scrollbar styling */
         ::-webkit-scrollbar {
             width: 12px;
         }
-
+        
         ::-webkit-scrollbar-track {
             background: var(--scrollbar-track);
             border-radius: 10px;
         }
-
+        
         ::-webkit-scrollbar-thumb {
             background-color: var(--scrollbar-thumb);
             border-radius: 10px;
             border: 3px solid var(--scrollbar-track);
         }
-
+        
         ::-webkit-scrollbar-thumb:hover {
             background-color: #3a582a;
         }
-
+        
         /* Page title styles */
         .page-title {
             font-size: 1.75rem;
@@ -77,7 +74,7 @@
             justify-content: center;
             position: relative;
         }
-
+        
         .header-logo {
             height: 1.5em;
             width: auto;
@@ -93,7 +90,7 @@
             margin: 10px 20px 20px;
             font-size: 0.9rem;
         }
-
+        
         /* Tabs styling */
         .tabs {
             display: flex;
@@ -101,7 +98,7 @@
             margin: 0 20px;
             border-bottom: 1px solid var(--border-color);
         }
-
+        
         .tab {
             padding: 12px 24px;
             background-color: var(--tab-inactive-bg);
@@ -116,32 +113,30 @@
             border: 1px solid var(--border-color);
             border-bottom: none;
         }
-
+        
         .tab.active {
             background-color: var(--tab-active-bg);
             color: var(--header-color);
             position: relative;
             z-index: 1;
         }
-
+        
         .tab:hover:not(.active) {
             background-color: var(--hover-color);
         }
-
+        
         /* Container for dashboard widgets - UPDATED for responsive layout */
         .container {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            /* Default: 6 widgets per row */
+            grid-template-columns: repeat(6, 1fr); /* Default: 6 widgets per row */
             gap: 20px;
             padding: 0 20px 20px 20px;
             flex: 1;
         }
-
+        
         /* Full-width container for Axiom/Dexscreener tabs */
         .full-width-container {
-            display: block;
-            /* Override grid layout */
+            display: block;                  /* Override grid layout */
             padding: 0 20px 20px 20px;
         }
 
@@ -149,13 +144,13 @@
         .full-width-container .widget {
             width: 100%;
         }
-
+        
         /* Category container for charts */
         .category-container {
             margin-bottom: 30px;
             padding: 0 20px;
         }
-
+        
         .category-title {
             background: var(--category-title-bg);
             color: white;
@@ -166,25 +161,24 @@
             margin-bottom: 20px;
             box-shadow: 0 4px 8px var(--shadow-color);
         }
-
+        
         /* Charts container - updated for 5 charts per row */
         .charts-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            /* 5 charts per row by default */
+            grid-template-columns: repeat(5, 1fr); /* 5 charts per row by default */
             gap: 15px;
             margin-bottom: 20px;
         }
-
+        
         .tab-content {
             display: none;
             padding-top: 20px;
         }
-
+        
         .tab-content.active {
             display: block;
         }
-
+        
         .widget {
             background-color: var(--widget-bg);
             border-radius: 10px;
@@ -194,18 +188,17 @@
             display: flex;
             flex-direction: column;
         }
-
+        
         .chart-widget {
             background-color: var(--widget-bg);
             border-radius: 10px;
             box-shadow: 0 4px 8px var(--shadow-color);
             overflow: hidden;
-            height: 350px;
-            /* Reduced height for grid layout */
+            height: 350px; /* Reduced height for grid layout */
             display: flex;
             flex-direction: column;
         }
-
+        
         .widget-header {
             background: linear-gradient(135deg, #4CAF50, #2196F3);
             color: white;
@@ -213,13 +206,13 @@
             font-size: 1.2rem;
             font-weight: bold;
         }
-
+        
         .widget-content {
             padding: 10px;
             overflow-y: auto;
             flex: 1;
         }
-
+        
         .chart-header {
             background: linear-gradient(135deg, #4CAF50, #2196F3);
             color: white;
@@ -232,24 +225,24 @@
             justify-content: space-between;
             align-items: center;
         }
-
+        
         .chart-token-info {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
+        
         .chart-token-name {
             color: white;
             text-decoration: none;
             transition: all 0.2s ease;
         }
-
+        
         .chart-token-name:hover {
             opacity: 0.8;
             text-decoration: underline;
         }
-
+        
         .chart-market-cap {
             font-size: 0.8rem;
             margin-left: 8px;
@@ -258,7 +251,7 @@
             padding: 2px 6px;
             border-radius: 4px;
         }
-
+        
         .timeframe-badge {
             background-color: rgba(255, 255, 255, 0.2);
             border-radius: 4px;
@@ -266,13 +259,13 @@
             font-size: 0.8rem;
             margin-left: 8px;
         }
-
+        
         .chart-content {
             padding: 5px;
             flex: 1;
             position: relative;
         }
-
+        
         /* Updated token card layout */
         .token-card {
             background-color: #2d2d2d;
@@ -282,7 +275,7 @@
             border-left: 4px solid var(--header-color);
             position: relative;
         }
-
+        
         .token-header {
             display: flex;
             align-items: center;
@@ -293,67 +286,62 @@
 
         /* Middle mini-chart for holders */
         .token-holder-chart {
-            flex: 0 0 160px;
-            /* fixed-ish width */
+            flex: 0 0 160px;  /* fixed-ish width */
             height: 60px;
         }
-
+        
         .token-name-container {
             display: flex;
             flex-direction: column;
         }
-
+        
         .token-name {
             font-weight: bold;
             font-size: 1.1rem;
-            text-decoration: none;
-            /* Remove default underline */
-            color: var(--text-color);
-            /* Maintain text color */
+            text-decoration: none; /* Remove default underline */
+            color: var(--text-color); /* Maintain text color */
             transition: color 0.2s;
         }
-
+        
         .token-name:hover {
-            color: #4CAF50;
-            /* Change color on hover */
-            text-decoration: underline;
-            /* Add underline on hover */
+            color: #4CAF50; /* Change color on hover */
+            text-decoration: underline; /* Add underline on hover */
         }
-
+        
         .token-symbol {
             color: var(--header-color);
             font-weight: bold;
             font-size: 0.9rem;
             margin-top: 3px;
         }
-
+        
         .token-metrics {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
         }
-
+        
         .fdv-value {
             font-size: 1rem;
             font-weight: bold;
             text-align: right;
             margin-bottom: 5px;
         }
-
+        
         .price-value {
             font-size: 0.95rem;
             font-weight: bold;
             text-align: right;
         }
-
+        
         .price-positive {
             color: #4CAF50;
         }
-
+        
         .price-negative {
             color: #ff4d4d;
         }
-
+        
         /* Extra details under each trending token */
         .token-meta-row {
             display: flex;
@@ -408,7 +396,7 @@
             font-weight: 600;
             white-space: nowrap;
         }
-
+        
         .copy-icon {
             width: 16px;
             height: 16px;
@@ -420,17 +408,17 @@
             display: inline-flex;
             align-items: center;
         }
-
+        
         .copy-icon:hover {
             opacity: 1;
         }
-
+        
         .loader {
             text-align: center;
             padding: 30px;
             font-size: 1.2rem;
         }
-
+        
         /* Error message */
         .error-message {
             color: #ff4d4d;
@@ -441,13 +429,13 @@
             margin: 20px;
             text-align: center;
         }
-
+        
         /* Tooltip styles */
         .tooltip {
             position: relative;
             display: inline-block;
         }
-
+        
         .tooltip .tooltiptext {
             visibility: hidden;
             width: 140px;
@@ -465,7 +453,7 @@
             transition: opacity 0.3s;
             font-size: 0.8rem;
         }
-
+        
         .tooltip .tooltiptext::after {
             content: "";
             position: absolute;
@@ -476,7 +464,7 @@
             border-style: solid;
             border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
         }
-
+        
         /* Dropdown Menu Styles */
         .menu-dropdown {
             position: fixed;
@@ -542,14 +530,14 @@
             display: block;
             animation: fadeIn 0.3s;
         }
-
+        
         /* Fallback chart style for ApexCharts */
         .chart-area {
             height: 100%;
             width: 100%;
             min-height: 250px;
         }
-
+        
         /* Optional: Add separator between Dashboard and other menu items */
         .dropdown-content a.separator-top {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -558,17 +546,10 @@
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
+        
         /* Chain Selector Styles */
         .chain-selector-container {
             position: fixed;
@@ -576,7 +557,7 @@
             right: 20px;
             z-index: 100;
         }
-
+        
         .chain-selector {
             background: linear-gradient(135deg, #4CAF50, #2196F3);
             color: white;
@@ -591,17 +572,17 @@
             transition: all 0.3s ease;
             min-width: 120px;
         }
-
+        
         .chain-selector:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
-
+        
         .chain-selector option {
             background-color: #2d2d2d;
             color: white;
         }
-
+        
         /* Auto-refresh indicator */
         .refresh-indicator {
             display: inline-block;
@@ -612,19 +593,11 @@
         }
 
         @keyframes pulsate {
-            0% {
-                opacity: 0.5;
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0.5;
-            }
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
         }
-
+        
         /* No data message */
         .no-data-message {
             text-align: center;
@@ -632,7 +605,7 @@
             font-style: italic;
             color: var(--subtext-color);
         }
-
+        
         /* Debug panel */
         .debug-panel {
             background-color: #111;
@@ -645,10 +618,9 @@
             white-space: pre-wrap;
             max-height: 100px;
             overflow-y: auto;
-            display: none;
-            /* Hidden by default */
+            display: none; /* Hidden by default */
         }
-
+        
         /* Custom chart tooltip */
         .apexcharts-tooltip-custom {
             padding: 8px 12px;
@@ -658,18 +630,17 @@
             font-size: 12px;
             text-align: center;
         }
-
+        
         /* Bubbles Canvas Styles */
         #bubbles-canvas {
             width: 100%;
             height: calc(100vh - 200px);
             min-height: 600px;
-            cursor: default;
-            /* Changed from pointer to default */
+            cursor: default; /* Changed from pointer to default */
             display: block;
             margin: 0 auto;
         }
-
+        
         .bubbles-container {
             position: relative;
             width: 100%;
@@ -678,70 +649,70 @@
             background-color: var(--bg-color);
             overflow: hidden;
         }
-
+        
         /* Media queries for responsive layout - UPDATED */
         /* Large screens: 5 charts per row (default) */
-
+        
         /* Medium-large screens: 3 charts per row */
         @media (max-width: 1600px) {
             .container {
                 grid-template-columns: repeat(3, 1fr);
             }
-
+            
             .charts-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
-
+        
         /* Medium screens: 2 charts per row */
         @media (max-width: 1200px) {
             .container {
                 grid-template-columns: repeat(2, 1fr);
             }
-
+            
             .charts-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-
+        
         /* Small screens: 1 widget/chart per row */
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: 1fr;
             }
-
+            
             .charts-grid {
                 grid-template-columns: 1fr;
             }
-
+            
             .menu-button {
                 padding: 6px 10px;
                 font-size: 0.8em;
             }
-
+            
             .menu-button svg {
                 width: 14px;
                 height: 14px;
             }
-
+            
             .tabs {
                 flex-wrap: wrap;
             }
-
+            
             .tab {
                 padding: 8px 16px;
                 font-size: 0.9rem;
                 margin-bottom: 5px;
             }
-
+            
             .container {
                 padding: 15px;
             }
-
+            
             .category-container {
                 padding: 0 15px;
             }
-
+            
             .chain-selector {
                 padding: 6px 10px;
                 font-size: 0.8em;
@@ -754,44 +725,44 @@
                 padding: 5px 8px;
                 font-size: 0.7em;
             }
-
+            
             .menu-button svg {
                 width: 12px;
                 height: 12px;
             }
-
+            
             .dropdown-content {
                 min-width: 140px;
             }
-
+            
             .dropdown-content a {
                 padding: 10px 14px;
                 font-size: 0.9em;
             }
-
+            
             .page-title {
                 font-size: 1.5rem;
             }
-
+            
             .widget {
                 height: 600px;
             }
-
+            
             .chart-widget {
                 height: 300px;
             }
-
+            
             .chain-selector {
                 padding: 5px 8px;
                 font-size: 0.7em;
                 min-width: 80px;
             }
-
+            
             .tab {
                 padding: 6px 12px;
                 font-size: 0.8rem;
             }
-
+            
             .category-title {
                 font-size: 1rem;
                 padding: 12px;
@@ -799,27 +770,27 @@
         }
     </style>
 </head>
-
 <body>
     <!-- Menu Dropdown -->
     <div class="menu-dropdown">
         <button class="menu-button" onclick="toggleMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
             </svg>
             Menu
         </button>
         <div id="dropdown-menu" class="dropdown-content">
-            <a href="./index.html">Home Page</a>
-            <a href="./dashboard.html">Dashboard</a>
-            <a href="./trending.html">Trending</a>
-            <a href="./documentation.html">Documentation</a>
-            <a href="./privacy.html" class="separator-top">Privacy Policy</a>
-            <a href="./disclaimer.html">Disclaimer</a>
-            <a href="./termsofservice.html">Terms of Service</a>
+            <a href="/">Agent Desk</a>
+            <a href="/new_pairs.html">New Pairs</a>
+            <a href="/dashboard.html">Dashboard</a>
+            <a href="/trending.html">Trending</a>
+            <a href="/documentation.html">Documentation</a>
+            <a href="/privacy.html" class="separator-top">Privacy Policy</a>
+            <a href="/disclaimer.html">Disclaimer</a>
+            <a href="/termsofservice.html">Terms of Service</a>
         </div>
     </div>
-
+    
     <!-- Chain Selector -->
     <div class="chain-selector-container">
         <select id="chain-selector" class="chain-selector" onchange="loadChainData()">
@@ -828,67 +799,65 @@
             <option value="base">Base</option>
         </select>
     </div>
-
+    
     <!-- Page Title -->
-    <h1 class="page-title"><img src="logo.png" alt="Logo" class="header-logo">DailyRunner.Fun Trending <span
-            id="chain-name">Solana</span></h1>
-
+    <h1 class="page-title"><img src="logo.png" alt="Logo" class="header-logo">DailyRunner.Fun Trending <span id="chain-name">Solana</span></h1>
+    
     <!-- Last Updated -->
-    <div class="last-updated">Updated: <span id="update-time">Loading...</span> <span id="refresh-indicator"
-            class="refresh-indicator">⟳</span></div>
-
+    <div class="last-updated">Updated: <span id="update-time">Loading...</span> <span id="refresh-indicator" class="refresh-indicator">⟳</span></div>
+    
     <!-- Tabs Navigation -->
     <div class="tabs">
-        <button class="tab active" data-tab="tokens">Tokens</button>
-        <button class="tab" data-tab="charts">Charts</button>
-        <button class="tab" data-tab="bubbles">Bubbles</button>
-        <button class="tab" data-tab="axiom-trending">Axiom Trending</button>
-        <button class="tab" data-tab="dexscreener-trending">Dexscreener Trending</button>
-        <button class="tab" data-tab="whales">Whales</button> <!-- NEW -->
-        <button class="tab" data-tab="pumpfun-trending">PumpFun Trending</button>
-        <button class="tab" data-tab="kol-buys">KOL Buys</button>
+            <button class="tab active" data-tab="tokens">Tokens</button>
+            <button class="tab" data-tab="charts">Charts</button>
+            <button class="tab" data-tab="bubbles">Bubbles</button>
+            <button class="tab" data-tab="axiom-trending">Axiom Trending</button>
+            <button class="tab" data-tab="dexscreener-trending">Dexscreener Trending</button>
+            <button class="tab" data-tab="whales">Whales</button>          <!-- NEW -->
+            <button class="tab" data-tab="pumpfun-trending">PumpFun Trending</button>
+            <button class="tab" data-tab="kol-buys">KOL Buys</button>
     </div>
 
-
+    
     <!-- Optional: Debug Panel (uncomment to use) -->
     <!-- <div id="debug-panel" class="debug-panel"></div> -->
-
+    
     <!-- Tokens Tab Content -->
     <div id="tokens-tab" class="tab-content active">
         <div class="container" id="dashboard-container">
             <div class="loader">Loading token data...</div>
         </div>
     </div>
-
+    
     <!-- Charts Tab Content -->
     <div id="charts-tab" class="tab-content">
         <div id="charts-container">
             <div class="loader">Loading chart data...</div>
         </div>
     </div>
-
-    <!-- Bubbles Tab Content -->
+    
+<!-- Bubbles Tab Content -->
     <div id="bubbles-tab" class="tab-content">
         <div class="bubbles-container">
             <canvas id="bubbles-canvas"></canvas>
         </div>
     </div>
 
-    <!-- Axiom Trending Tab Content -->
+<!-- Axiom Trending Tab Content -->
     <div id="axiom-trending-tab" class="tab-content">
         <div class="container full-width-container" id="axiom-trending-container">
             <div class="loader">Loading Axiom trending tokens...</div>
         </div>
     </div>
 
-    <!-- Dexscreener Trending Tab Content -->
+<!-- Dexscreener Trending Tab Content -->
     <div id="dexscreener-trending-tab" class="tab-content">
         <div class="container full-width-container" id="dexscreener-trending-container">
             <div class="loader">Loading Dexscreener trending tokens...</div>
         </div>
     </div>
 
-    <!-- Whales (Moby) Tab Content -->
+<!-- Whales (Moby) Tab Content -->
     <div id="whales-tab" class="tab-content">
         <div class="container full-width-container" id="whales-container">
             <div class="loader">Loading whale activity...</div>
@@ -896,14 +865,14 @@
     </div>
 
 
-    <!-- PumpFun Trending Tab Content -->
+<!-- PumpFun Trending Tab Content -->
     <div id="pumpfun-trending-tab" class="tab-content">
         <div class="container full-width-container" id="pumpfun-trending-container">
             <div class="loader">Loading PumpFun trending tokens...</div>
         </div>
     </div>
 
-    <!-- KOL Buys Tab Content -->
+<!-- KOL Buys Tab Content -->
     <div id="kol-buys-tab" class="tab-content">
         <div class="container full-width-container" id="kol-buys-container">
             <div class="loader">Loading KOL buys...</div>
@@ -929,11 +898,11 @@
         let hoveredBubble = null; // Track which bubble is being hovered
         // Maximum number of charts to show per category
         const MAX_CHARTS_PER_CATEGORY = 10;
-
+        
         // Global cache for trending tokens JSON
         let trendingTokensData = null;
         let solanaTrendingMap = null;
-
+        
         // Cache settings for trending_tokens.json
         const TRENDING_CACHE_TTL = 30 * 60 * 1000; // 30 minutes in ms
 
@@ -1050,7 +1019,7 @@
                     return data;
                 });
         }
-
+        
         // Fetch and index trending_tokens.json for Solana
         function loadTrendingTokensJson() {
             return fetchTrendingTokens(false)
@@ -1093,7 +1062,7 @@
                     solanaTrendingMap = {};
                 });
         }
-
+        
         // Attach holderscan mini-chart (holders + marketCap) to Solana Tokens tab rows
         function attachSolanaTokenHolderCharts() {
             // If we haven't loaded the holderscan file yet, load it first and then rerun
@@ -1164,7 +1133,7 @@
             });
         }
 
-
+        
         // Load bubble positions from localStorage
         function loadBubblePositions() {
             const selectedChain = document.getElementById('chain-selector').value;
@@ -1181,7 +1150,7 @@
                 bubblePositions = {};
             }
         }
-
+        
         // Save bubble positions to localStorage
         function saveBubblePositions() {
             const selectedChain = document.getElementById('chain-selector').value;
@@ -1192,7 +1161,7 @@
                 console.error('Failed to save bubble positions:', e);
             }
         }
-
+        
         // Debug function - helps with troubleshooting chart issues
         function debug(message) {
             console.log(message);
@@ -1203,47 +1172,47 @@
             //    debugPanel.innerHTML += message + '\n';
             //}
         }
-
-        document.addEventListener('DOMContentLoaded', function () {
+        
+        document.addEventListener('DOMContentLoaded', function() {
             debug('Page loaded');
-
+            
             // Load saved bubble positions for the default chain
             loadBubblePositions();
-
+            
             // Set up tab navigation
             setupTabs();
-
+            
             // Load initial data
             loadChainData();
-
+            
             // Start auto-refresh timer
             startAutoRefresh();
         });
-
+        
         // Setup tab navigation
         function setupTabs() {
             const tabs = document.querySelectorAll('.tab');
             tabs.forEach(tab => {
-                tab.addEventListener('click', function () {
+                tab.addEventListener('click', function() {
                     // Remove active class from all tabs
                     tabs.forEach(t => t.classList.remove('active'));
                     // Add active class to clicked tab
                     this.classList.add('active');
-
+                    
                     // Hide all tab content
                     document.querySelectorAll('.tab-content').forEach(content => {
                         content.classList.remove('active');
                     });
-
+                    
                     // Show content for clicked tab
                     const tabId = this.getAttribute('data-tab');
                     document.getElementById(`${tabId}-tab`).classList.add('active');
-
+                    
                     // Initialize charts if charts tab is selected and not yet initialized
                     if (tabId === 'charts' && !chartsInitialized) {
                         initializeCharts();
                     }
-
+                    
                     // Initialize bubbles if bubbles tab is selected and not yet initialized
                     if (tabId === 'bubbles' && !bubblesInitialized) {
                         initializeBubbles();
@@ -1274,64 +1243,64 @@
                         loadKolBuys();
                     }
 
-
+                    
 
                 });
             });
-
+            
             debug('Tabs initialized');
         }
-
+        
         // Function to start auto-refresh timer
         function startAutoRefresh() {
             // Clear any existing timer
             if (refreshTimer) {
                 clearInterval(refreshTimer);
             }
-
+            
             // Set new timer
-            refreshTimer = setInterval(function () {
+            refreshTimer = setInterval(function() {
                 refreshDataPreservingScroll();
-
+                
                 // Update the time display to show current time
                 const now = new Date();
                 document.getElementById('update-time').textContent = now.toLocaleString();
-
+                
                 // Pulse the refresh indicator
                 flashRefreshIndicator();
-
+                
             }, REFRESH_INTERVAL);
-
-            debug("Auto-refresh started - will refresh every " + (REFRESH_INTERVAL / 1000) + " seconds");
+            
+            debug("Auto-refresh started - will refresh every " + (REFRESH_INTERVAL/1000) + " seconds");
         }
-
+        
         // Flash the refresh indicator to show refresh has occurred
         function flashRefreshIndicator() {
             const indicator = document.getElementById('refresh-indicator');
             indicator.style.opacity = "1";
-
+            
             // Fade the indicator back after a moment
-            setTimeout(function () {
+            setTimeout(function() {
                 indicator.style.opacity = "0.8";
             }, 500);
         }
-
+        
         // This function refreshes the data while preserving scroll positions
         function refreshDataPreservingScroll() {
             const selectedChain = document.getElementById('chain-selector').value;
-
+            
             // First, save all the scroll positions for tokens tab
             const widgetContents = document.querySelectorAll('.widget-content');
             const scrollPositions = {};
-
+            
             // Store the category names and their scroll positions
             widgetContents.forEach((content, index) => {
                 const category = content.parentElement.querySelector('.widget-header').textContent;
                 scrollPositions[category] = content.scrollTop;
             });
-
+            
             debug(`Refreshing data for ${selectedChain}`);
-
+            
             // Fetch the updated data using cache
             fetchTrendingTokens(false)
                 .then(data => {
@@ -1340,29 +1309,29 @@
                         debug(`No data found for ${selectedChain}`);
                         return;
                     }
-
+                    
                     // Get tokens for the selected chain
                     const chainTokens = data.tokens[selectedChain];
-
+                    
                     // Define the specific order of categories
                     const orderedCategories = [
                         "Market Leaders",
                         "Consolidating Leaders",
                         "Hot Older Pairs",
-                        "Consolidating Older Pairs",
+                        "Consolidating Older Pairs", 
                         "Hot New Pairs",
                         "Back To Life"
                     ];
-
+                    
                     // For each category, update its content while preserving scroll
                     orderedCategories.forEach(category => {
                         // Skip if this category doesn't exist in the data
                         if (!chainTokens[category]) return;
-
+                        
                         // Find the widget for this category
                         const widgets = document.querySelectorAll('.widget');
                         let categoryWidget = null;
-
+                        
                         for (let widget of widgets) {
                             const header = widget.querySelector('.widget-header');
                             if (header && header.textContent === category) {
@@ -1370,14 +1339,14 @@
                                 break;
                             }
                         }
-
+                        
                         // If we found the widget, update its content
                         if (categoryWidget) {
                             const widgetContent = categoryWidget.querySelector('.widget-content');
-
+                            
                             // Generate new HTML for the tokens
                             let newHtml = '';
-
+                            
                             // Create token cards HTML
                             chainTokens[category].forEach(token => {
                                 // Create appropriate URL based on chain
@@ -1389,7 +1358,7 @@
                                 } else if (selectedChain === 'base') {
                                     tokenUrl = `https://dexscreener.com/base/${token.token_address}`;
                                 }
-
+                                
                                 // Generate HTML for this token card
                                 newHtml += `
                                     <div class="token-card" data-token-address="${token.token_address}">
@@ -1418,29 +1387,29 @@
                                     </div>
                                 `;
                             });
-
+                            
                             // Update the content
                             widgetContent.innerHTML = newHtml;
-
+                            
                             // Restore scroll position
                             if (scrollPositions[category] !== undefined) {
                                 widgetContent.scrollTop = scrollPositions[category];
                             }
                         }
                     });
-
+                    
                     // If charts tab is active, refresh chart data
                     if (document.getElementById('charts-tab').classList.contains('active')) {
                         debug('Updating charts with fresh data');
                         updateAllCharts(data, selectedChain);
                     }
-
+                    
                     // If bubbles tab is active, refresh bubble data
                     if (document.getElementById('bubbles-tab').classList.contains('active')) {
                         debug('Updating bubbles with fresh data');
                         updateBubbles(data, selectedChain);
                     }
-
+                    
                     // Refresh holder charts for Solana tokens if on Solana chain
                     if (selectedChain === 'solana') {
                         attachSolanaTokenHolderCharts();
@@ -1452,29 +1421,29 @@
                     // Don't disrupt the UI on error, just log it
                 });
         }
-
+        
         // Load data for the selected chain (initial load or chain switching)
         function loadChainData() {
             const chainSelector = document.getElementById('chain-selector');
             const selectedChain = chainSelector.value;
-
+            
             debug(`Loading data for ${selectedChain}`);
-
+            
             // Update the chain name in the title
             document.getElementById('chain-name').textContent = selectedChain.charAt(0).toUpperCase() + selectedChain.slice(1);
-
+            
             // Reset the dashboard for initial load or chain change
             document.getElementById('dashboard-container').innerHTML = '<div class="loader">Loading token data...</div>';
             document.getElementById('charts-container').innerHTML = '<div class="loader">Loading chart data...</div>';
-
+            
             // Reset the charts initialized flag
             chartsInitialized = false;
             // Clear chart instances
             chartInstances = {};
-
+            
             // Load bubble positions for the new chain
             loadBubblePositions();
-
+            
             // Reset bubbles but keep positions loaded from localStorage
             bubblesInitialized = false;
             bubbles = [];
@@ -1483,16 +1452,16 @@
                 cancelAnimationFrame(bubbleAnimationId);
                 bubbleAnimationId = null;
             }
-
+            
             // Restart auto-refresh when chain is changed
             startAutoRefresh();
-
+            
             // Fetch JSON data using cache
             fetchTrendingTokens(false)
                 .then(data => {
                     // Clear loading message
                     document.getElementById('dashboard-container').innerHTML = '';
-
+                    
                     // Check if we have data for the selected chain
                     if (!data.tokens || !data.tokens[selectedChain]) {
                         document.getElementById('dashboard-container').innerHTML = `
@@ -1505,9 +1474,9 @@
                         `;
                         return;
                     }
-
+                    
                     debug(`Successfully loaded data for ${selectedChain}`);
-
+                    
                     // Set update time from metadata or current time
                     if (data.metadata && data.metadata.last_updated && data.metadata.last_updated[selectedChain]) {
                         const updateTime = new Date(data.metadata.last_updated[selectedChain]);
@@ -1516,61 +1485,61 @@
                         const now = new Date();
                         document.getElementById('update-time').textContent = now.toLocaleString();
                     }
-
+                    
                     // Get tokens for the selected chain
                     const chainTokens = data.tokens[selectedChain];
-
+                    
                     // Define the specific order of categories
                     const orderedCategories = [
                         "Market Leaders",
                         "Consolidating Leaders",
                         "Hot Older Pairs",
-                        "Consolidating Older Pairs",
+                        "Consolidating Older Pairs", 
                         "Hot New Pairs",
                         "Back To Life"
                     ];
-
+                    
                     // Process each category in the specified order
                     orderedCategories.forEach(category => {
                         // Skip if this category doesn't exist in the data
                         if (!chainTokens[category]) return;
-
+                        
                         const tokens = chainTokens[category];
-
+                        
                         // Create widget for this category
                         const widget = document.createElement('div');
                         widget.className = 'widget';
                         widget.setAttribute('data-category', category);
-
+                        
                         // Widget header
                         const widgetHeader = document.createElement('div');
                         widgetHeader.className = 'widget-header';
                         widgetHeader.textContent = category;
                         widget.appendChild(widgetHeader);
-
+                        
                         // Widget content
                         const widgetContent = document.createElement('div');
                         widgetContent.className = 'widget-content';
                         widget.appendChild(widgetContent);
-
+                        
                         // Add token cards
                         tokens.forEach(token => {
                             const tokenCard = document.createElement('div');
                             tokenCard.className = 'token-card';
                             tokenCard.setAttribute('data-token-address', token.token_address);
-
+                            
                             // Token header with name and symbol
                             const tokenHeader = document.createElement('div');
                             tokenHeader.className = 'token-header';
-
+                            
                             // Left side - Name and Symbol
                             const nameContainer = document.createElement('div');
                             nameContainer.className = 'token-name-container';
-
+                            
                             const tokenNameWrapper = document.createElement('div');
                             tokenNameWrapper.style.display = 'flex';
                             tokenNameWrapper.style.alignItems = 'center';
-
+                            
                             // Create appropriate URL based on chain
                             let tokenUrl;
                             if (selectedChain === 'solana') {
@@ -1580,7 +1549,7 @@
                             } else if (selectedChain === 'base') {
                                 tokenUrl = `https://dexscreener.com/base/${token.token_address}`;
                             }
-
+                            
                             const tokenName = document.createElement('a');
                             tokenName.className = 'token-name';
                             tokenName.textContent = token.token_name;
@@ -1588,7 +1557,7 @@
                             tokenName.target = "_blank";
                             tokenName.rel = "noopener noreferrer";
                             tokenNameWrapper.appendChild(tokenName);
-
+                            
                             // Copy icon for token address
                             const copyIcon = document.createElement('div');
                             copyIcon.className = 'copy-icon tooltip';
@@ -1598,58 +1567,58 @@
                                 </svg>
                                 <span class="tooltiptext" id="copy-tooltip-${token.token_address}">Copied!</span>
                             `;
-                            copyIcon.addEventListener('click', function () {
+                            copyIcon.addEventListener('click', function() {
                                 copyToClipboard(token.token_address, `copy-tooltip-${token.token_address}`);
                             });
                             tokenNameWrapper.appendChild(copyIcon);
-
+                            
                             nameContainer.appendChild(tokenNameWrapper);
-
+                            
                             const tokenSymbol = document.createElement('div');
                             tokenSymbol.className = 'token-symbol';
                             tokenSymbol.textContent = token.token_symbol;
-
+                            
                             nameContainer.appendChild(tokenSymbol);
-
+                            
                             // Right side - Financial metrics
                             const metricsContainer = document.createElement('div');
                             metricsContainer.className = 'token-metrics';
-
+                            
                             // FDV Value (without label)
                             const fdvValue = document.createElement('div');
                             fdvValue.className = 'fdv-value';
                             fdvValue.textContent = '$' + formatNumber(token.fdv_usd);
                             metricsContainer.appendChild(fdvValue);
-
+                            
                             // Price Change Value (without label)
                             const priceValue = document.createElement('div');
                             const priceChange = parseFloat(token.price_change_24h);
                             priceValue.className = 'price-value ' + (priceChange >= 0 ? 'price-positive' : 'price-negative');
                             priceValue.textContent = (priceChange >= 0 ? '+' : '') + priceChange + '%';
                             metricsContainer.appendChild(priceValue);
-
+                            
                             // Add name container and metrics to the header
                             tokenHeader.appendChild(nameContainer);
                             tokenHeader.appendChild(metricsContainer);
                             tokenCard.appendChild(tokenHeader);
-
+                            
                             widgetContent.appendChild(tokenCard);
                         });
-
+                        
                         // Add widget to container
                         document.getElementById('dashboard-container').appendChild(widget);
                     });
-
+                    
                     // If charts tab is active, initialize charts
                     if (document.getElementById('charts-tab').classList.contains('active')) {
                         initializeCharts(data, selectedChain);
                     }
-
+                    
                     // If bubbles tab is active, initialize bubbles
                     if (document.getElementById('bubbles-tab').classList.contains('active')) {
                         initializeBubbles(data, selectedChain);
                     }
-
+                    
                     // Attach holder charts to Solana tokens if on Solana chain
                     if (selectedChain === 'solana') {
                         attachSolanaTokenHolderCharts();
@@ -1679,14 +1648,14 @@
                     `;
                 });
         }
-
+        
         // Initialize charts for the active categories
         function initializeCharts(data = null, chain = null) {
             debug('Initializing charts');
-
+            
             if (!data) {
                 const selectedChain = document.getElementById('chain-selector').value;
-
+                
                 // Fetch data using cache
                 fetchTrendingTokens(false)
                     .then(jsonData => {
@@ -1710,14 +1679,14 @@
                 setupCharts(data, chain || document.getElementById('chain-selector').value);
             }
         }
-
+        
         // Initialize bubbles
         function initializeBubbles(data = null, chain = null) {
             debug('Initializing bubbles');
-
+            
             if (!data) {
                 const selectedChain = document.getElementById('chain-selector').value;
-
+                
                 // Fetch data using cache
                 fetchTrendingTokens(false)
                     .then(jsonData => {
@@ -1732,20 +1701,20 @@
                 setupBubbles(data, chain || document.getElementById('chain-selector').value);
             }
         }
-
+        
         // Set up bubbles visualization
         function setupBubbles(data, selectedChain) {
             debug(`Setting up bubbles for ${selectedChain}`);
-
+            
             // Check if we have data for the selected chain
             if (!data.tokens || !data.tokens[selectedChain]) {
                 debug(`No data found for ${selectedChain}`);
                 return;
             }
-
+            
             // Get all tokens for the selected chain
             const chainTokens = data.tokens[selectedChain];
-
+            
             // Collect all tokens from all categories
             const allTokens = [];
             Object.keys(chainTokens).forEach(category => {
@@ -1760,48 +1729,48 @@
                     }
                 });
             });
-
+            
             debug(`Found ${allTokens.length} tokens with market cap >= $1M`);
-
+            
             // Create bubbles
             createBubbles(allTokens);
-
+            
             // Set up canvas event handlers
             const canvas = document.getElementById('bubbles-canvas');
             canvas.addEventListener('click', handleCanvasClick);
             canvas.addEventListener('mousemove', handleCanvasMouseMove);
             canvas.addEventListener('mouseleave', handleCanvasMouseLeave);
-
+            
             // Mark as initialized
             bubblesInitialized = true;
-
+            
             // Start drawing
             drawBubbles();
         }
-
+        
         // Create bubble objects from token data
         function createBubbles(tokens) {
             const canvas = document.getElementById('bubbles-canvas');
             const ctx = canvas.getContext('2d');
-
+            
             // Set canvas size
             canvas.width = canvas.offsetWidth;
             canvas.height = canvas.offsetHeight;
-
+            
             // Clear existing bubbles
             bubbles = [];
-
+            
             // Calculate bubble sizes - 10% smaller than before
             const minRadius = Math.min(canvas.width, canvas.height) * 0.027; // 2.7% (was 3%)
             const maxRadius = Math.min(canvas.width, canvas.height) * 0.135; // 13.5% (was 15%)
-
+            
             // Sort tokens by market cap (largest first) to place bigger bubbles first
             tokens.sort((a, b) => b.fdv_usd - a.fdv_usd);
-
+            
             tokens.forEach(token => {
                 const priceChange = parseFloat(token.price_change_24h);
                 const absChange = Math.abs(priceChange);
-
+                
                 // NEW SCALING: Use logarithmic scale for better distribution
                 // This makes the size differences more proportionate for extreme gains
                 let radius;
@@ -1813,7 +1782,7 @@
                     const logValue = Math.log(1 + absChange);
                     const maxLogValue = Math.log(1001); // log of 1001 ≈ 6.9
                     const radiusRatio = Math.min(logValue / maxLogValue, 1);
-
+                    
                     // For extreme gains (>1000%), allow even larger bubbles
                     if (absChange > 1000) {
                         const extremeMultiplier = 1 + (absChange - 1000) / 2000; // Extra scaling for extreme gains
@@ -1822,10 +1791,10 @@
                         radius = minRadius + (maxRadius - minRadius) * radiusRatio;
                     }
                 }
-
+                
                 // Ensure minimum visible size
                 radius = Math.max(radius, minRadius);
-
+                
                 // Check if we have a saved position for this token
                 let x, y;
                 if (bubblePositions[token.token_address]) {
@@ -1842,12 +1811,12 @@
                     let attempts = 0;
                     const maxAttempts = 1000;
                     const spacing = 15; // Increased spacing between bubbles
-
+                    
                     while (!placed && attempts < maxAttempts) {
                         // Random position with padding
                         x = radius + Math.random() * (canvas.width - 2 * radius);
                         y = radius + Math.random() * (canvas.height - 2 * radius);
-
+                        
                         // Check for overlaps with existing bubbles
                         let overlapping = false;
                         for (let existingBubble of bubbles) {
@@ -1855,20 +1824,20 @@
                             const dy = y - existingBubble.y;
                             const distance = Math.sqrt(dx * dx + dy * dy);
                             const minDistance = radius + existingBubble.radius + spacing;
-
+                            
                             if (distance < minDistance) {
                                 overlapping = true;
                                 break;
                             }
                         }
-
+                        
                         if (!overlapping) {
                             placed = true;
                         }
-
+                        
                         attempts++;
                     }
-
+                    
                     // If we couldn't find a non-overlapping position after many attempts,
                     // use a grid-based approach
                     if (!placed) {
@@ -1878,26 +1847,26 @@
                         const index = bubbles.length;
                         const gridX = index % gridSize;
                         const gridY = Math.floor(index / gridSize);
-
+                        
                         x = (gridX + 0.5) * cellWidth;
                         y = (gridY + 0.5) * cellHeight;
-
+                        
                         // Add some randomness within the grid cell
                         x += (Math.random() - 0.5) * cellWidth * 0.3;
                         y += (Math.random() - 0.5) * cellHeight * 0.3;
-
+                        
                         // Ensure within bounds
                         x = Math.max(radius, Math.min(canvas.width - radius, x));
                         y = Math.max(radius, Math.min(canvas.height - radius, y));
                     }
-
+                    
                     // Save the position
                     bubblePositions[token.token_address] = { x, y };
                 }
-
+                
                 // Store original position for gravity return
                 bubbleOriginalPositions[token.token_address] = { x, y };
-
+                
                 // Color based on gain/loss with enhanced intensity for extreme values
                 let color;
                 if (priceChange >= 0) {
@@ -1911,7 +1880,7 @@
                     const opacity = 0.3 + redIntensity * 0.5; // Higher opacity for bigger losses
                     color = `rgba(255, 77, 77, ${opacity})`;
                 }
-
+                
                 bubbles.push({
                     x: x,
                     y: y,
@@ -1925,54 +1894,54 @@
                     token: token
                 });
             });
-
+            
             // After all bubbles are created, run a separation pass to fix any overlaps
             separateBubbles();
-
+            
             // Save positions to localStorage
             saveBubblePositions();
-
+            
             debug(`Created ${bubbles.length} bubbles`);
         }
-
+        
         // Separate overlapping bubbles
         function separateBubbles() {
             const iterations = 50; // Number of separation iterations
             const separationStrength = 0.5;
             const minSpacing = 15; // Minimum spacing between bubbles
-
+            
             for (let iter = 0; iter < iterations; iter++) {
                 let moved = false;
-
+                
                 for (let i = 0; i < bubbles.length; i++) {
                     for (let j = i + 1; j < bubbles.length; j++) {
                         const b1 = bubbles[i];
                         const b2 = bubbles[j];
-
+                        
                         const dx = b2.x - b1.x;
                         const dy = b2.y - b1.y;
                         const distance = Math.sqrt(dx * dx + dy * dy);
                         const minDistance = b1.radius + b2.radius + minSpacing;
-
+                        
                         if (distance < minDistance && distance > 0) {
                             // Bubbles are overlapping, separate them
                             const overlap = minDistance - distance;
                             const separateX = (dx / distance) * overlap * separationStrength;
                             const separateY = (dy / distance) * overlap * separationStrength;
-
+                            
                             // Move bubbles apart
                             b1.x -= separateX * 0.5;
                             b1.y -= separateY * 0.5;
                             b2.x += separateX * 0.5;
                             b2.y += separateY * 0.5;
-
+                            
                             // Keep bubbles within canvas bounds
                             const canvas = document.getElementById('bubbles-canvas');
                             b1.x = Math.max(b1.radius, Math.min(canvas.width - b1.radius, b1.x));
                             b1.y = Math.max(b1.radius, Math.min(canvas.height - b1.radius, b1.y));
                             b2.x = Math.max(b2.radius, Math.min(canvas.width - b2.radius, b2.x));
                             b2.y = Math.max(b2.radius, Math.min(canvas.height - b2.radius, b2.y));
-
+                            
                             // Update saved positions
                             if (b1.token && b1.token.token_address) {
                                 bubblePositions[b1.token.token_address] = { x: b1.x, y: b1.y };
@@ -1982,43 +1951,43 @@
                                 bubblePositions[b2.token.token_address] = { x: b2.x, y: b2.y };
                                 bubbleOriginalPositions[b2.token.token_address] = { x: b2.x, y: b2.y };
                             }
-
+                            
                             moved = true;
                         }
                     }
                 }
-
+                
                 // If no bubbles moved in this iteration, we can stop early
                 if (!moved) {
                     debug(`Separation completed in ${iter + 1} iterations`);
                     break;
                 }
             }
-
+            
             // Save positions after separation
             saveBubblePositions();
         }
-
+        
         // Handle canvas click
         function handleCanvasClick(event) {
             const canvas = document.getElementById('bubbles-canvas');
             const rect = canvas.getBoundingClientRect();
             const clickX = event.clientX - rect.left;
             const clickY = event.clientY - rect.top;
-
+            
             // Check if clicking on a bubble
             let clickedBubble = null;
             for (let bubble of bubbles) {
                 const dx = bubble.x - clickX;
                 const dy = bubble.y - clickY;
                 const distance = Math.sqrt(dx * dx + dy * dy);
-
+                
                 if (distance <= bubble.radius) {
                     clickedBubble = bubble;
                     break;
                 }
             }
-
+            
             if (clickedBubble) {
                 // Open dexscreener link for the clicked bubble
                 const selectedChain = document.getElementById('chain-selector').value;
@@ -2037,44 +2006,44 @@
                     const dx = bubble.x - clickX;
                     const dy = bubble.y - clickY;
                     const distance = Math.sqrt(dx * dx + dy * dy);
-
+                    
                     if (distance < 300) { // Increased affect radius from 200 to 300
                         const force = (300 - distance) / 300 * 25; // Increased force strength from 15 to 25
                         const angle = Math.atan2(dy, dx);
-
+                        
                         bubble.vx += Math.cos(angle) * force;
                         bubble.vy += Math.sin(angle) * force;
                     }
                 });
-
+                
                 // Start animation if not already running
                 if (!bubbleAnimationId) {
                     animateBubbles();
                 }
             }
         }
-
+        
         // Handle canvas mouse move
         function handleCanvasMouseMove(event) {
             const canvas = document.getElementById('bubbles-canvas');
             const rect = canvas.getBoundingClientRect();
             const mouseX = event.clientX - rect.left;
             const mouseY = event.clientY - rect.top;
-
+            
             // Check if hovering over a bubble
             let hoveringBubble = false;
             for (let bubble of bubbles) {
                 const dx = bubble.x - mouseX;
                 const dy = bubble.y - mouseY;
                 const distance = Math.sqrt(dx * dx + dy * dy);
-
+                
                 if (distance <= bubble.radius) {
                     hoveringBubble = true;
                     hoveredBubble = bubble;
                     break;
                 }
             }
-
+            
             // Set cursor style
             if (hoveringBubble) {
                 canvas.style.cursor = 'pointer';
@@ -2083,22 +2052,22 @@
                 hoveredBubble = null;
             }
         }
-
+        
         // Handle canvas mouse leave
         function handleCanvasMouseLeave() {
             const canvas = document.getElementById('bubbles-canvas');
             canvas.style.cursor = 'default';
             hoveredBubble = null;
         }
-
+        
         // Animate bubbles
         function animateBubbles() {
             const canvas = document.getElementById('bubbles-canvas');
             const ctx = canvas.getContext('2d');
-
+            
             // Apply return-to-home gravity (reduced for easier movement)
             const returnGravity = 0.008; // Reduced from 0.02 to 0.008 - much weaker pull back
-
+            
             // Update bubble positions
             bubbles.forEach(bubble => {
                 // Get original position
@@ -2107,20 +2076,20 @@
                     // Calculate distance from original position
                     const dx = originalPos.x - bubble.x;
                     const dy = originalPos.y - bubble.y;
-
+                    
                     // Apply return force proportional to distance
                     bubble.vx += dx * returnGravity;
                     bubble.vy += dy * returnGravity;
                 }
-
+                
                 // Apply velocity
                 bubble.x += bubble.vx;
                 bubble.y += bubble.vy;
-
+                
                 // Apply friction (reduced for more fluid movement)
                 bubble.vx *= 0.985; // Reduced from 0.98 to 0.985 - less friction
                 bubble.vy *= 0.985; // Reduced from 0.98 to 0.985 - less friction
-
+                
                 // Bounce off walls with more elastic collision
                 if (bubble.x - bubble.radius < 0 || bubble.x + bubble.radius > canvas.width) {
                     bubble.vx = -bubble.vx * 0.9; // More elastic bounce
@@ -2130,49 +2099,49 @@
                     bubble.vy = -bubble.vy * 0.9; // More elastic bounce
                     bubble.y = Math.max(bubble.radius, Math.min(canvas.height - bubble.radius, bubble.y));
                 }
-
+                
                 // Update stored position
                 if (bubble.token && bubble.token.token_address) {
                     bubblePositions[bubble.token.token_address] = { x: bubble.x, y: bubble.y };
                 }
             });
-
+            
             // Check for collisions with more bouncy response
             for (let i = 0; i < bubbles.length; i++) {
                 for (let j = i + 1; j < bubbles.length; j++) {
                     const b1 = bubbles[i];
                     const b2 = bubbles[j];
-
+                    
                     const dx = b2.x - b1.x;
                     const dy = b2.y - b1.y;
                     const distance = Math.sqrt(dx * dx + dy * dy);
                     const minDistance = b1.radius + b2.radius;
-
+                    
                     if (distance < minDistance) {
                         // Collision detected
                         const angle = Math.atan2(dy, dx);
                         const overlap = minDistance - distance;
-
+                        
                         // Separate bubbles
                         const separateX = Math.cos(angle) * overlap * 0.5;
                         const separateY = Math.sin(angle) * overlap * 0.5;
-
+                        
                         b1.x -= separateX;
                         b1.y -= separateY;
                         b2.x += separateX;
                         b2.y += separateY;
-
+                        
                         // Calculate collision response (more elastic)
                         const v1n = b1.vx * Math.cos(angle) + b1.vy * Math.sin(angle);
                         const v1t = -b1.vx * Math.sin(angle) + b1.vy * Math.cos(angle);
                         const v2n = b2.vx * Math.cos(angle) + b2.vy * Math.sin(angle);
                         const v2t = -b2.vx * Math.sin(angle) + b2.vy * Math.cos(angle);
-
+                        
                         // Exchange normal velocities (with some bounce factor)
                         const bounceFactor = 0.95; // Higher = more bouncy
                         const v1n_new = v2n * bounceFactor;
                         const v2n_new = v1n * bounceFactor;
-
+                        
                         // Convert back to x,y coordinates
                         b1.vx = v1n_new * Math.cos(angle) - v1t * Math.sin(angle);
                         b1.vy = v1n_new * Math.sin(angle) + v1t * Math.cos(angle);
@@ -2181,20 +2150,20 @@
                     }
                 }
             }
-
+            
             // Save positions periodically during animation
             if (Math.random() < 0.1) { // Save 10% of the time to reduce overhead
                 saveBubblePositions();
             }
-
+            
             // Draw bubbles
             drawBubbles();
-
+            
             // Check if animation should continue (more sensitive threshold for longer movement)
             const totalVelocity = bubbles.reduce((sum, bubble) => {
                 return sum + Math.abs(bubble.vx) + Math.abs(bubble.vy);
             }, 0);
-
+            
             if (totalVelocity > 0.05) { // Reduced from 0.1 to 0.05 - allows longer movement
                 bubbleAnimationId = requestAnimationFrame(animateBubbles);
             } else {
@@ -2203,23 +2172,23 @@
                 saveBubblePositions();
             }
         }
-
+        
         // Draw bubbles on canvas
         function drawBubbles() {
             const canvas = document.getElementById('bubbles-canvas');
             const ctx = canvas.getContext('2d');
-
+            
             // Clear canvas
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+            
             // Draw each bubble
             bubbles.forEach(bubble => {
                 // Check if bubble is 200%+ gain
                 const isGlowing = bubble.priceChange >= 200;
-
+                
                 // Save context state
                 ctx.save();
-
+                
                 // Add glow effect for 200%+ bubbles
                 if (isGlowing) {
                     ctx.shadowColor = '#4CAF50';
@@ -2227,80 +2196,80 @@
                     ctx.shadowOffsetX = 0;
                     ctx.shadowOffsetY = 0;
                 }
-
+                
                 // First, draw a dark background circle
                 ctx.beginPath();
                 ctx.arc(bubble.x, bubble.y, bubble.radius, 0, Math.PI * 2);
                 ctx.fillStyle = 'rgba(0, 0, 0, 0.7)'; // Dark semi-transparent background
                 ctx.fill();
-
+                
                 // Then draw the colored bubble on top
                 // Then draw the colored bubble on top
                 // Then draw the colored bubble on top
                 ctx.beginPath();
                 ctx.arc(bubble.x, bubble.y, bubble.radius, 0, Math.PI * 2);
-
+                
                 // Use radial gradient for all bubbles to make them darker in the center
                 const gradient = ctx.createRadialGradient(
                     bubble.x, bubble.y, 0,                    // Inner circle (center)
                     bubble.x, bubble.y, bubble.radius        // Outer circle (edge)
                 );
-
+                
                 // Create a gradient from dark center to normal color at edges
                 gradient.addColorStop(0, 'rgba(0, 0, 0, 0.4)');      // Dark center
                 gradient.addColorStop(0.3, 'rgba(0, 0, 0, 0.2)');    // Transition
                 gradient.addColorStop(0.6, bubble.color);            // Normal color
                 gradient.addColorStop(1, bubble.color);              // Bright edges
-
+                
                 ctx.fillStyle = gradient;
                 ctx.fill();
-
+                
                 // Draw border (brighter for glowing bubbles)
-                ctx.strokeStyle = bubble.priceChange >= 0 ?
-                    (isGlowing ? '#4CAF50' : 'rgba(76, 175, 80, 0.8)') :
+                ctx.strokeStyle = bubble.priceChange >= 0 ? 
+                    (isGlowing ? '#4CAF50' : 'rgba(76, 175, 80, 0.8)') : 
                     'rgba(255, 77, 77, 0.8)';
                 ctx.lineWidth = isGlowing ? 3 : 2;
                 ctx.stroke();
-
+                
                 // Restore context state (removes shadow)
                 ctx.restore();
-
+                
                 // Draw text
                 ctx.fillStyle = '#ffffff';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
-
+                
                 // Adjust font size based on bubble radius
                 const fontSize = Math.max(bubble.radius * 0.25, 10);
                 ctx.font = `bold ${fontSize}px Arial`;
-
+                
                 // Draw symbol
                 ctx.fillText(bubble.symbol, bubble.x, bubble.y - fontSize * 0.8);
-
+                
                 // Draw market cap
                 ctx.font = `${fontSize * 0.7}px Arial`;
                 ctx.fillText('$' + formatNumber(bubble.marketCap), bubble.x, bubble.y);
-
+                
                 // Draw price change
                 const changeText = (bubble.priceChange >= 0 ? '+' : '') + bubble.priceChange.toFixed(1) + '%';
                 ctx.fillStyle = bubble.priceChange >= 0 ? '#4CAF50' : '#ff4d4d';
                 ctx.fillText(changeText, bubble.x, bubble.y + fontSize * 0.8);
             });
         }
-
+        
         // Update bubbles with new data (preserving positions)
         function updateBubbles(data, selectedChain) {
             debug('Updating bubbles data');
-
+            
             // Check if we have data for the selected chain
             if (!data.tokens || !data.tokens[selectedChain]) {
                 debug(`No data found for ${selectedChain}`);
                 return;
             }
-
+            
             // Get all tokens for the selected chain
             const chainTokens = data.tokens[selectedChain];
-
+            
             // Collect all tokens from all categories
             const allTokens = [];
             Object.keys(chainTokens).forEach(category => {
@@ -2315,26 +2284,26 @@
                     }
                 });
             });
-
+            
             // Calculate new bubble sizes - 10% smaller than before
             const canvas = document.getElementById('bubbles-canvas');
             const minRadius = Math.min(canvas.width, canvas.height) * 0.027; // 2.7% (was 3%)
             const maxRadius = Math.min(canvas.width, canvas.height) * 0.135; // 13.5% (was 15%)
-
+            
             // Update existing bubbles with new data
             bubbles.forEach(bubble => {
                 // Find the updated token data
                 const updatedToken = allTokens.find(t => t.token_address === bubble.token.token_address);
-
+                
                 if (updatedToken) {
                     // Update the data
                     bubble.marketCap = updatedToken.fdv_usd;
                     bubble.priceChange = parseFloat(updatedToken.price_change_24h);
                     bubble.token = updatedToken;
-
+                    
                     // Recalculate radius based on new price change
                     const absChange = Math.abs(bubble.priceChange);
-
+                    
                     let radius;
                     if (absChange === 0) {
                         radius = minRadius;
@@ -2342,7 +2311,7 @@
                         const logValue = Math.log(1 + absChange);
                         const maxLogValue = Math.log(1001);
                         const radiusRatio = Math.min(logValue / maxLogValue, 1);
-
+                        
                         if (absChange > 1000) {
                             const extremeMultiplier = 1 + (absChange - 1000) / 2000;
                             radius = minRadius + (maxRadius - minRadius) * radiusRatio * Math.min(extremeMultiplier, 2);
@@ -2350,9 +2319,9 @@
                             radius = minRadius + (maxRadius - minRadius) * radiusRatio;
                         }
                     }
-
+                    
                     bubble.radius = Math.max(radius, minRadius);
-
+                    
                     // Update color based on new price change
                     if (bubble.priceChange >= 0) {
                         const greenIntensity = Math.min(bubble.priceChange / 100, 1);
@@ -2365,7 +2334,7 @@
                     }
                 }
             });
-
+            
             // Add any new tokens that aren't already in bubbles
             allTokens.forEach(token => {
                 const exists = bubbles.some(b => b.token.token_address === token.token_address);
@@ -2373,7 +2342,7 @@
                     // This is a new token, add it
                     const priceChange = parseFloat(token.price_change_24h);
                     const absChange = Math.abs(priceChange);
-
+                    
                     let radius;
                     if (absChange === 0) {
                         radius = minRadius;
@@ -2381,7 +2350,7 @@
                         const logValue = Math.log(1 + absChange);
                         const maxLogValue = Math.log(1001);
                         const radiusRatio = Math.min(logValue / maxLogValue, 1);
-
+                        
                         if (absChange > 1000) {
                             const extremeMultiplier = 1 + (absChange - 1000) / 2000;
                             radius = minRadius + (maxRadius - minRadius) * radiusRatio * Math.min(extremeMultiplier, 2);
@@ -2389,50 +2358,50 @@
                             radius = minRadius + (maxRadius - minRadius) * radiusRatio;
                         }
                     }
-
+                    
                     radius = Math.max(radius, minRadius);
-
+                    
                     // Find a non-overlapping position
                     let x, y;
                     let placed = false;
                     let attempts = 0;
                     const maxAttempts = 100;
                     const spacing = 15;
-
+                    
                     while (!placed && attempts < maxAttempts) {
                         x = radius + Math.random() * (canvas.width - 2 * radius);
                         y = radius + Math.random() * (canvas.height - 2 * radius);
-
+                        
                         let overlapping = false;
                         for (let existingBubble of bubbles) {
                             const dx = x - existingBubble.x;
                             const dy = y - existingBubble.y;
                             const distance = Math.sqrt(dx * dx + dy * dy);
                             const minDistance = radius + existingBubble.radius + spacing;
-
+                            
                             if (distance < minDistance) {
                                 overlapping = true;
                                 break;
                             }
                         }
-
+                        
                         if (!overlapping) {
                             placed = true;
                         }
-
+                        
                         attempts++;
                     }
-
+                    
                     // If couldn't place, use edge position
                     if (!placed) {
                         x = radius + 10;
                         y = radius + 10;
                     }
-
+                    
                     // Save position
                     bubblePositions[token.token_address] = { x, y };
                     bubbleOriginalPositions[token.token_address] = { x, y };
-
+                    
                     // Color
                     let color;
                     if (priceChange >= 0) {
@@ -2444,7 +2413,7 @@
                         const opacity = 0.3 + redIntensity * 0.5;
                         color = `rgba(255, 77, 77, ${opacity})`;
                     }
-
+                    
                     bubbles.push({
                         x: x,
                         y: y,
@@ -2459,7 +2428,7 @@
                     });
                 }
             });
-
+            
             // Remove bubbles for tokens that no longer exist in the data
             bubbles = bubbles.filter(bubble => {
                 const stillExists = allTokens.some(t => t.token_address === bubble.token.token_address);
@@ -2470,34 +2439,34 @@
                 }
                 return stillExists;
             });
-
+            
             // Run separation pass to ensure no overlaps after updates
             separateBubbles();
-
+            
             // Save updated positions
             saveBubblePositions();
-
+            
             // Redraw
             drawBubbles();
         }
-
+        
         // Reload chart tab (for recovery from loading errors)
         function reloadChartTab() {
             document.getElementById('charts-container').innerHTML = '<div class="loader">Reloading chart data...</div>';
-
+            
             // Set a slight delay to ensure UI updates
             setTimeout(() => {
                 initializeCharts();
             }, 500);
         }
-
+        
         // Set up charts based on data
         function setupCharts(data, selectedChain) {
             debug(`Setting up charts for ${selectedChain}`);
-
+            
             // Clear charts container
             document.getElementById('charts-container').innerHTML = '';
-
+            
             // Check if we have data for the selected chain
             if (!data.tokens || !data.tokens[selectedChain]) {
                 document.getElementById('charts-container').innerHTML = `
@@ -2510,10 +2479,10 @@
                 `;
                 return;
             }
-
+            
             // Get tokens for the selected chain
             const chainTokens = data.tokens[selectedChain];
-
+            
             // Categories to show charts for
             const chartCategories = [
                 "Market Leaders",
@@ -2521,51 +2490,51 @@
                 "Hot Older Pairs",
                 "Consolidating Older Pairs"
             ];
-
+            
             // Process each category
             chartCategories.forEach(category => {
                 // Skip if this category doesn't exist in the data
                 if (!chainTokens[category]) return;
-
+                
                 const tokens = chainTokens[category];
-
+                
                 // Skip if no tokens in this category
                 if (!tokens || tokens.length === 0) return;
-
+                
                 // Find tokens with OHLCV data (up to 10)
                 const tokensWithData = tokens
                     .filter(token => token.ohlcv_data && token.ohlcv_data.length > 0)
                     .slice(0, MAX_CHARTS_PER_CATEGORY);
-
+                
                 // Skip category if no token has OHLCV data
                 if (tokensWithData.length === 0) {
                     debug(`No OHLCV data found for category: ${category}`);
                     return;
                 }
-
+                
                 debug(`Found ${tokensWithData.length} tokens with OHLCV data for ${category}`);
-
+                
                 // Create category container
                 const categoryContainer = document.createElement('div');
                 categoryContainer.className = 'category-container';
-
+                
                 // Add category title
                 const categoryTitle = document.createElement('div');
                 categoryTitle.className = 'category-title';
                 categoryTitle.textContent = category;
                 categoryContainer.appendChild(categoryTitle);
-
+                
                 // Create charts grid
                 const chartsGrid = document.createElement('div');
                 chartsGrid.className = 'charts-grid';
                 categoryContainer.appendChild(chartsGrid);
-
+                
                 // Create a chart for each token with data
                 tokensWithData.forEach((token, index) => {
                     // Create chart widget
                     const chartWidget = document.createElement('div');
                     chartWidget.className = 'chart-widget';
-
+                    
                     // Create appropriate URL based on chain
                     let tokenUrl;
                     if (selectedChain === 'solana') {
@@ -2575,15 +2544,15 @@
                     } else if (selectedChain === 'base') {
                         tokenUrl = `https://dexscreener.com/base/${token.token_address}`;
                     }
-
+                    
                     // Chart header with token name, market cap, and timeframe badge
                     const chartHeader = document.createElement('div');
                     chartHeader.className = 'chart-header';
-
+                    
                     // Left side - token info including clickable name and market cap
                     const tokenInfoContainer = document.createElement('div');
                     tokenInfoContainer.className = 'chart-token-info';
-
+                    
                     // Clickable token symbol
                     const tokenLink = document.createElement('a');
                     tokenLink.className = 'chart-token-name';
@@ -2592,41 +2561,41 @@
                     tokenLink.target = "_blank";
                     tokenLink.rel = "noopener noreferrer";
                     tokenInfoContainer.appendChild(tokenLink);
-
+                    
                     // Market cap badge
                     const marketCapBadge = document.createElement('span');
                     marketCapBadge.className = 'chart-market-cap';
                     marketCapBadge.textContent = '$' + formatNumber(token.fdv_usd);
                     tokenInfoContainer.appendChild(marketCapBadge);
-
+                    
                     chartHeader.appendChild(tokenInfoContainer);
-
+                    
                     // Right side - timeframe badge
                     const timeframeBadge = document.createElement('span');
                     timeframeBadge.className = 'timeframe-badge';
                     timeframeBadge.textContent = '1D'; // Daily timeframe
                     chartHeader.appendChild(timeframeBadge);
-
+                    
                     chartWidget.appendChild(chartHeader);
-
+                    
                     // Chart content
                     const chartContent = document.createElement('div');
                     chartContent.className = 'chart-content';
-
+                    
                     // Chart area with unique ID
                     const chartId = `chart-${category.replace(/\s+/g, '-').toLowerCase()}-${index}`;
                     const chartArea = document.createElement('div');
                     chartArea.className = 'chart-area';
                     chartArea.id = chartId;
                     chartContent.appendChild(chartArea);
-
+                    
                     chartWidget.appendChild(chartContent);
                     chartsGrid.appendChild(chartWidget);
                 });
-
+                
                 // Add category container to charts container
                 document.getElementById('charts-container').appendChild(categoryContainer);
-
+                
                 // Create all charts after DOM elements are created
                 tokensWithData.forEach((token, index) => {
                     const chartId = `chart-${category.replace(/\s+/g, '-').toLowerCase()}-${index}`;
@@ -2640,12 +2609,12 @@
                     }
                 });
             });
-
+            
             // Set chartsInitialized flag
             chartsInitialized = true;
             debug('Charts initialization completed');
         }
-
+        
         // Create a tiny holder-count bar chart using holderscan_history
         // Create a tiny holder-count bar chart using holderscan_history
         // Create a tiny holder-count bar chart using holderscan_history
@@ -2657,7 +2626,7 @@
 
             // Destroy existing chart if present
             if (el._holderChartInstance) {
-                try { el._holderChartInstance.destroy(); } catch (e) { }
+                try { el._holderChartInstance.destroy(); } catch (e) {}
                 el._holderChartInstance = null;
             }
             el.innerHTML = '';
@@ -2752,7 +2721,7 @@
                         formatter: value => new Date(value).toLocaleString()
                     },
                     y: {
-                        formatter: function (val, opts) {
+                        formatter: function(val, opts) {
                             if (val === null) return 'N/A';
 
                             return opts.seriesIndex === 0
@@ -2775,13 +2744,13 @@
         // Create a chart using ApexCharts
         function createApexChart(chartId, token) {
             debug(`Creating chart for ${token.token_symbol} with ID ${chartId}`);
-
+            
             // Check if token has OHLCV data
             if (!token.ohlcv_data || token.ohlcv_data.length === 0) {
                 document.getElementById(chartId).innerHTML = `<p class="no-data-message">No OHLCV data available.</p>`;
                 return;
             }
-
+            
             try {
                 // Prepare data for ApexCharts
                 const candleData = token.ohlcv_data.map(item => ({
@@ -2793,7 +2762,7 @@
                         parseFloat(item[4])  // Close
                     ]
                 }));
-
+                
                 // Chart options
                 const options = {
                     series: [{
@@ -2816,7 +2785,7 @@
                         type: 'datetime',
                         labels: {
                             show: false, // Hide date labels on x-axis
-                            formatter: function () {
+                            formatter: function() {
                                 return ''; // Return empty string to hide date
                             }
                         },
@@ -2836,7 +2805,7 @@
                             enabled: false // Disable y-axis tooltip
                         },
                         labels: {
-                            formatter: function (value) {
+                            formatter: function(value) {
                                 // Use scientific notation for small values
                                 if (value < 0.00001) {
                                     return value.toExponential(2);
@@ -2868,10 +2837,10 @@
                         y: {
                             formatter: undefined // Use default formatter for y values
                         },
-                        custom: function ({ series, seriesIndex, dataPointIndex, w }) {
+                        custom: function({ series, seriesIndex, dataPointIndex, w }) {
                             // Get only the close price (index 3 in the OHLC array)
                             const closePrice = w.globals.seriesCandleC[seriesIndex][dataPointIndex];
-
+                            
                             // Format the price based on value
                             let formattedPrice;
                             if (closePrice < 0.00001) {
@@ -2879,7 +2848,7 @@
                             } else {
                                 formattedPrice = closePrice.toFixed(Math.min(8, Math.max(2, countDecimals(closePrice))));
                             }
-
+                            
                             // Return custom HTML with only the price
                             return `<div class="apexcharts-tooltip-custom">
                                     <span>Price: ${formattedPrice}</span>
@@ -2895,17 +2864,17 @@
                         size: 0
                     }
                 };
-
+                
                 // Create the chart
                 const chart = new ApexCharts(document.getElementById(chartId), options);
                 chart.render();
-
+                
                 // Store chart instance for later updates
                 chartInstances[chartId] = {
                     chart: chart,
                     token: token
                 };
-
+                
                 debug(`Successfully created chart for ${token.token_symbol}`);
             } catch (error) {
                 console.error('Error creating chart:', error);
@@ -2915,24 +2884,24 @@
                 `;
             }
         }
-
+        
         // Count decimal places for formatting
         function countDecimals(value) {
             if (Math.floor(value) === value) return 0;
             return value.toString().split(".")[1].length || 0;
         }
-
+        
         // Update all charts when data refreshes
         function updateAllCharts(data, selectedChain) {
             debug('Updating all charts');
-
+            
             if (!data.tokens || !data.tokens[selectedChain]) {
                 return;
             }
-
+            
             // Get the updated token data
             const chainTokens = data.tokens[selectedChain];
-
+            
             // Categories to show charts for
             const chartCategories = [
                 "Market Leaders",
@@ -2940,23 +2909,23 @@
                 "Hot Older Pairs",
                 "Consolidating Older Pairs"
             ];
-
+            
             // Update charts for each category
             chartCategories.forEach(category => {
                 // Skip if this category doesn't exist in the data
                 if (!chainTokens[category]) return;
-
+                
                 const tokens = chainTokens[category];
-
+                
                 // Find tokens with OHLCV data (up to MAX_CHARTS_PER_CATEGORY)
                 const tokensWithData = tokens
                     .filter(token => token.ohlcv_data && token.ohlcv_data.length > 0)
                     .slice(0, MAX_CHARTS_PER_CATEGORY);
-
+                
                 // Update each chart
                 tokensWithData.forEach((token, index) => {
                     const chartId = `chart-${category.replace(/\s+/g, '-').toLowerCase()}-${index}`;
-
+                    
                     // First, update the header with new market cap if it exists
                     const chartWidget = document.querySelector(`#${chartId}`).closest('.chart-widget');
                     if (chartWidget) {
@@ -2965,15 +2934,15 @@
                             marketCapElement.textContent = '$' + formatNumber(token.fdv_usd);
                         }
                     }
-
+                    
                     // Then update the chart data
                     updateChart(chartId, token);
                 });
             });
-
+            
             debug('Chart updates completed');
         }
-
+        
         // Update a specific chart with new data
         function updateChart(chartId, token) {
             // Skip if chart instance doesn't exist
@@ -2981,10 +2950,10 @@
                 debug(`Chart instance not found for ${chartId}`);
                 return;
             }
-
+            
             // Get chart instance
             const chartInstance = chartInstances[chartId];
-
+            
             try {
                 // Prepare updated data
                 const candleData = token.ohlcv_data.map(item => ({
@@ -2996,23 +2965,23 @@
                         parseFloat(item[4])  // Close
                     ]
                 }));
-
+                
                 // Update chart series
                 chartInstance.chart.updateSeries([{
                     name: token.token_symbol,
                     data: candleData
                 }]);
-
+                
                 // Update stored token
                 chartInstance.token = token;
-
+                
                 debug(`Updated chart ${chartId} with fresh data`);
             } catch (error) {
                 console.error(`Error updating chart ${chartId}:`, error);
                 debug(`Error updating chart ${chartId}: ${error.message}`);
             }
         }
-
+        
         // Safe percent formatter for holder metrics
         function safePercent(value) {
             if (value === undefined || value === null || isNaN(value)) return '0.00';
@@ -3043,11 +3012,11 @@
             const diffMs = now - createdDate;
             const diffSec = Math.floor(diffMs / 1000);
             const diffMin = Math.floor(diffSec / 60);
-            const diffHr = Math.floor(diffMin / 60);
+            const diffHr  = Math.floor(diffMin / 60);
             const diffDay = Math.floor(diffHr / 24);
 
             if (diffDay > 0) return `${diffDay}d ${diffHr % 24}h ago`;
-            if (diffHr > 0) return `${diffHr}h ${diffMin % 60}m ago`;
+            if (diffHr > 0)  return `${diffHr}h ${diffMin % 60}m ago`;
             if (diffMin > 0) return `${diffMin}m ago`;
             return `${diffSec}s ago`;
         }
@@ -3086,7 +3055,7 @@
 
         // Global variable to store SOL price
         let solPriceUSD = null;
-
+        
         // Get latest USD market cap directly from the usdmarketcap field
         function getLatestMarketCapUSD(token) {
             // Use the usdmarketcap field directly from the JSON
@@ -3094,12 +3063,12 @@
             if (token.usdmarketcap !== undefined && token.usdmarketcap !== null) {
                 return token.usdmarketcap;
             }
-
+            
             // Fallback to usdMarketCap (capital M) if lowercase version doesn't exist
             if (token.usdMarketCap !== undefined && token.usdMarketCap !== null) {
                 return token.usdMarketCap;
             }
-
+            
             return null;
         }
 
@@ -3107,7 +3076,7 @@
         function formatNumber(num, decimals = 2) {
             if (num === undefined || num === null) return 'N/A';
             if (typeof num === 'string') num = parseFloat(num);
-
+            
             // Handle large numbers
             if (num >= 1000000000) {
                 return (num / 1000000000).toFixed(decimals) + 'B';
@@ -3116,41 +3085,41 @@
             } else if (num >= 1000) {
                 return (num / 1000).toFixed(decimals) + 'K';
             }
-
+            
             return num.toFixed(decimals);
         }
-
+        
         // Copy to clipboard function
         function copyToClipboard(text, tooltipId) {
-            navigator.clipboard.writeText(text).then(function () {
+            navigator.clipboard.writeText(text).then(function() {
                 // Show the tooltip
                 const tooltip = document.getElementById(tooltipId || 'copy-tooltip');
                 if (tooltip) {
                     tooltip.style.visibility = 'visible';
                     tooltip.style.opacity = '1';
-
+                    
                     // Hide tooltip after 1.5 seconds
-                    setTimeout(function () {
+                    setTimeout(function() {
                         tooltip.style.visibility = 'hidden';
                         tooltip.style.opacity = '0';
                     }, 1500);
                 }
-            }, function (err) {
+            }, function(err) {
                 console.error('Could not copy text: ', err);
             });
         }
-
+        
         // Function to toggle dropdown menu
         function toggleMenu() {
             document.getElementById("dropdown-menu").classList.toggle("show");
         }
 
         // Close the dropdown menu if the user clicks outside of it
-        window.addEventListener('click', function (event) {
-            if (!event.target.matches('.menu-button') &&
-                !event.target.matches('.menu-button svg') &&
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('.menu-button') && 
+                !event.target.matches('.menu-button svg') && 
                 !event.target.matches('.menu-button path')) {
-
+                
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 for (var i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
@@ -3160,7 +3129,7 @@
                 }
             }
         });
-
+        
         // Load Axiom trending tokens from trending_tokens_axiom.json
         function loadAxiomTrending() {
             const container = document.getElementById('axiom-trending-container');
@@ -3716,8 +3685,8 @@
 
                     // Correct shape: { payload: { entries: [...] } }
                     const entries = data &&
-                        data.payload &&
-                        Array.isArray(data.payload.entries)
+                                    data.payload &&
+                                    Array.isArray(data.payload.entries)
                         ? data.payload.entries
                         : [];
 
@@ -3735,120 +3704,120 @@
 
                     // Normalize with explicit 24h fields
                     const normalized = entries.map(raw => {
-                        const addr = raw.token_address || null;
+                        const addr   = raw.token_address || null;
                         const symbol = raw.token_symbol || '';
-                        const name = raw.token_symbol || raw.token_address || 'Unknown';
+                        const name   = raw.token_symbol || raw.token_address || 'Unknown';
 
                         const usdMc = raw.market_cap_usd ?? null;
 
                         // 24h whale metrics
                         const whaleBuy24hUsd =
                             raw.whale_buy_volume_usd &&
-                                typeof raw.whale_buy_volume_usd.h24 === 'number'
+                            typeof raw.whale_buy_volume_usd.h24 === 'number'
                                 ? raw.whale_buy_volume_usd.h24
                                 : null;
 
                         const whaleNet24hUsd =
                             raw.whale_net_flow_usd &&
-                                typeof raw.whale_net_flow_usd.h24 === 'number'
+                            typeof raw.whale_net_flow_usd.h24 === 'number'
                                 ? raw.whale_net_flow_usd.h24
                                 : null;
 
                         const whaleCount24h =
                             raw.whale_count &&
-                                typeof raw.whale_count.h24 === 'number'
+                            typeof raw.whale_count.h24 === 'number'
                                 ? raw.whale_count.h24
                                 : null;
 
-                        const priceChange24h =
-                            raw.price_change_percent &&
+                            const priceChange24h =
+                                raw.price_change_percent &&
                                 typeof raw.price_change_percent.h24 === 'number'
-                                ? raw.price_change_percent.h24
-                                : null;
+                                    ? raw.price_change_percent.h24
+                                    : null;
 
-                        const whaleTrades24h =
-                            raw.whale_trades_count &&
+                            const whaleTrades24h =
+                                raw.whale_trades_count &&
                                 typeof raw.whale_trades_count.h24 === 'number'
-                                ? raw.whale_trades_count.h24
-                                : null;
+                                    ? raw.whale_trades_count.h24
+                                    : null;
 
-                        const whaleBuys24h =
-                            raw.whale_buys_count &&
+                            const whaleBuys24h =
+                                raw.whale_buys_count &&
                                 typeof raw.whale_buys_count.h24 === 'number'
-                                ? raw.whale_buys_count.h24
-                                : null;
+                                    ? raw.whale_buys_count.h24
+                                    : null;
 
-                        const whaleSells24h =
-                            raw.whale_sells_count &&
+                            const whaleSells24h =
+                                raw.whale_sells_count &&
                                 typeof raw.whale_sells_count.h24 === 'number'
-                                ? raw.whale_sells_count.h24
-                                : null;
+                                    ? raw.whale_sells_count.h24
+                                    : null;
 
-                        const whaleSell24hUsd =
-                            raw.whale_sell_volume_usd &&
+                            const whaleSell24hUsd =
+                                raw.whale_sell_volume_usd &&
                                 typeof raw.whale_sell_volume_usd.h24 === 'number'
-                                ? raw.whale_sell_volume_usd.h24
-                                : null;
+                                    ? raw.whale_sell_volume_usd.h24
+                                    : null;
 
-                        const whaleBuyAmount24h =
-                            raw.whale_buy_amount &&
+                            const whaleBuyAmount24h =
+                                raw.whale_buy_amount &&
                                 typeof raw.whale_buy_amount.h24 === 'number'
-                                ? raw.whale_buy_amount.h24
-                                : null;
+                                    ? raw.whale_buy_amount.h24
+                                    : null;
 
-                        const whaleSellAmount24h =
-                            raw.whale_sell_amount &&
+                            const whaleSellAmount24h =
+                                raw.whale_sell_amount &&
                                 typeof raw.whale_sell_amount.h24 === 'number'
-                                ? raw.whale_sell_amount.h24
-                                : null;
+                                    ? raw.whale_sell_amount.h24
+                                    : null;
 
-                        const whaleNetAmount24h =
-                            raw.whale_net_amount &&
+                            const whaleNetAmount24h =
+                                raw.whale_net_amount &&
                                 typeof raw.whale_net_amount.h24 === 'number'
-                                ? raw.whale_net_amount.h24
-                                : null;
+                                    ? raw.whale_net_amount.h24
+                                    : null;
 
-                        const whaleRetention24h =
-                            raw.whale_holder_retention_percent &&
+                            const whaleRetention24h =
+                                raw.whale_holder_retention_percent &&
                                 typeof raw.whale_holder_retention_percent.h24 === 'number'
-                                ? raw.whale_holder_retention_percent.h24
-                                : null;
+                                    ? raw.whale_holder_retention_percent.h24
+                                    : null;
 
-                        const whaleBuySupply24h =
-                            raw.whale_buy_supply_percent &&
+                            const whaleBuySupply24h =
+                                raw.whale_buy_supply_percent &&
                                 typeof raw.whale_buy_supply_percent.h24 === 'number'
-                                ? raw.whale_buy_supply_percent.h24
-                                : null;
+                                    ? raw.whale_buy_supply_percent.h24
+                                    : null;
 
-                        const whaleSellSupply24h =
-                            raw.whale_sell_supply_percent &&
+                            const whaleSellSupply24h =
+                                raw.whale_sell_supply_percent &&
                                 typeof raw.whale_sell_supply_percent.h24 === 'number'
-                                ? raw.whale_sell_supply_percent.h24
-                                : null;
+                                    ? raw.whale_sell_supply_percent.h24
+                                    : null;
 
-                        const whaleNetSupply24h =
-                            raw.whale_net_supply_percent &&
+                            const whaleNetSupply24h =
+                                raw.whale_net_supply_percent &&
                                 typeof raw.whale_net_supply_percent.h24 === 'number'
-                                ? raw.whale_net_supply_percent.h24
-                                : null;
+                                    ? raw.whale_net_supply_percent.h24
+                                    : null;
 
-                        const volume24hUsd =
-                            raw.volume_usd &&
+                            const volume24hUsd =
+                                raw.volume_usd &&
                                 typeof raw.volume_usd.h24 === 'number'
-                                ? raw.volume_usd.h24
-                                : null;
+                                    ? raw.volume_usd.h24
+                                    : null;
 
-                        const txCount24h =
-                            raw.transactions_count &&
+                            const txCount24h =
+                                raw.transactions_count &&
                                 typeof raw.transactions_count.h24 === 'number'
-                                ? raw.transactions_count.h24
-                                : null;
+                                    ? raw.transactions_count.h24
+                                    : null;
 
-                        const score24h =
-                            raw.score_values &&
+                            const score24h =
+                                raw.score_values &&
                                 typeof raw.score_values.h24 === 'number'
-                                ? raw.score_values.h24
-                                : null;
+                                    ? raw.score_values.h24
+                                    : null;
 
 
                         return {
@@ -4427,34 +4396,33 @@
         }
 
         // Handle window resize for bubbles canvas
-        window.addEventListener('resize', function () {
+        window.addEventListener('resize', function() {
             if (bubblesInitialized && document.getElementById('bubbles-tab').classList.contains('active')) {
                 const canvas = document.getElementById('bubbles-canvas');
                 canvas.width = canvas.offsetWidth;
                 canvas.height = canvas.offsetHeight;
-
+                
                 // Reposition bubbles to fit new canvas size
                 bubbles.forEach(bubble => {
                     bubble.x = Math.max(bubble.radius, Math.min(canvas.width - bubble.radius, bubble.x));
                     bubble.y = Math.max(bubble.radius, Math.min(canvas.height - bubble.radius, bubble.y));
-
+                    
                     // Update original positions too
                     if (bubbleOriginalPositions[bubble.token.token_address]) {
                         bubbleOriginalPositions[bubble.token.token_address].x = bubble.x;
                         bubbleOriginalPositions[bubble.token.token_address].y = bubble.y;
                     }
                 });
-
+                
                 // Run separation pass to fix any overlaps after resize
                 separateBubbles();
-
+                
                 // Save new positions
                 saveBubblePositions();
-
+                
                 drawBubbles();
             }
         });
     </script>
 </body>
-
 </html>

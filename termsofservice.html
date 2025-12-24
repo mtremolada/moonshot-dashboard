@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DailyRunner.Fun - Terms of Service</title>
     <link rel="icon" type="image/png" href="logo.png">
@@ -19,7 +17,7 @@
             --hover-color: #2c2c2c;
             --shadow-color: rgba(0, 0, 0, 0.3);
         }
-
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -30,7 +28,7 @@
             display: flex;
             flex-direction: column;
         }
-
+        
         /* Page title styles */
         .page-title {
             font-size: 1.75rem;
@@ -43,14 +41,14 @@
             align-items: center;
             justify-content: center;
         }
-
+        
         .header-logo {
             height: 1.5em;
             width: auto;
             margin-right: 10px;
             vertical-align: middle;
         }
-
+        
         /* Content container */
         .container {
             flex: 1;
@@ -58,47 +56,47 @@
             margin: 0 auto;
             padding: 20px;
         }
-
+        
         /* Terms of service specific styles */
         .policy-section {
             margin-bottom: 30px;
         }
-
+        
         .policy-section h2 {
             color: var(--header-color);
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 8px;
             margin-top: 25px;
         }
-
+        
         .policy-section h3 {
             color: var(--header-color);
             margin-top: 20px;
             margin-bottom: 10px;
         }
-
+        
         .policy-section p {
             line-height: 1.6;
             margin: 10px 0;
         }
-
+        
         .policy-section ul {
             margin-top: 10px;
             margin-bottom: 10px;
         }
-
+        
         .policy-section li {
             margin-bottom: 8px;
             line-height: 1.5;
         }
-
+        
         .last-updated {
             color: var(--subtext-color);
             font-style: italic;
             text-align: right;
             margin-bottom: 30px;
         }
-
+        
         /* Dropdown Menu Styles */
         .menu-dropdown {
             position: fixed;
@@ -164,7 +162,7 @@
             display: block;
             animation: fadeIn 0.3s;
         }
-
+        
         /* Optional: Add separator between Dashboard and other menu items */
         .dropdown-content a.separator-top {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -173,15 +171,8 @@
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Media queries for responsive menu */
@@ -190,20 +181,20 @@
                 padding: 6px 10px;
                 font-size: 0.8em;
             }
-
+            
             .menu-button svg {
                 width: 14px;
                 height: 14px;
             }
-
+            
             .container {
                 padding: 15px;
             }
-
+            
             .policy-section h2 {
                 font-size: 1.4rem;
             }
-
+            
             .policy-section h3 {
                 font-size: 1.2rem;
             }
@@ -214,29 +205,29 @@
                 padding: 5px 8px;
                 font-size: 0.7em;
             }
-
+            
             .menu-button svg {
                 width: 12px;
                 height: 12px;
             }
-
+            
             .dropdown-content {
                 min-width: 140px;
             }
-
+            
             .dropdown-content a {
                 padding: 10px 14px;
                 font-size: 0.9em;
             }
-
+            
             .page-title {
                 font-size: 1.5rem;
             }
-
+            
             .policy-section h2 {
                 font-size: 1.3rem;
             }
-
+            
             .policy-section h3 {
                 font-size: 1.1rem;
             }
@@ -245,84 +236,70 @@
     <!-- DDoS Protection Script - Added for security without changing page appearance -->
     <script src="ddos-protection.js" defer></script>
 </head>
-
 <body>
     <!-- Menu Dropdown -->
     <div class="menu-dropdown">
         <button class="menu-button" onclick="toggleMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
             </svg>
             Menu
         </button>
         <div id="dropdown-menu" class="dropdown-content">
-            <a href="./index.html">Home Page</a>
-            <a href="./dashboard.html">Dashboard</a>
-            <a href="./trending.html">Trending</a>
-            <a href="./documentation.html">Documentation</a>
-            <a href="./privacy.html" class="separator-top">Privacy Policy</a>
-            <a href="./disclaimer.html">Disclaimer</a>
-            <a href="./termsofservice.html">Terms of Service</a>
+            <a href="/">Agent Desk</a>
+            <a href="/new_pairs.html">New Pairs</a>
+            <a href="/dashboard.html">Dashboard</a>
+            <a href="/trending.html">Trending</a>
+            <a href="/documentation.html">Documentation</a>
+            <a href="/privacy.html" class="separator-top">Privacy Policy</a>
+            <a href="/disclaimer.html">Disclaimer</a>
+            <a href="/termsofservice.html">Terms of Service</a>
         </div>
     </div>
-
+    
     <!-- Page Title -->
     <h1 class="page-title"><img src="logo.png" alt="Logo" class="header-logo">Terms of Service</h1>
-
+    
     <!-- Content Container -->
     <div class="container">
         <div class="last-updated">Last Updated: April 18, 2025</div>
-
+        
         <div class="policy-section">
             <h2>1. INTRODUCTION</h2>
-            <p>These Terms of Service ("Terms") govern your access to and use of DailyRunner.fun and its associated
-                services, tools, data, and content (collectively, the "Service"). The Service is owned and operated by
-                DailyRunner.fun ("we," "us," or "our").</p>
-            <p>By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to these
-                Terms, do not access or use the Service.</p>
+            <p>These Terms of Service ("Terms") govern your access to and use of DailyRunner.fun and its associated services, tools, data, and content (collectively, the "Service"). The Service is owned and operated by DailyRunner.fun ("we," "us," or "our").</p>
+            <p>By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to these Terms, do not access or use the Service.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>2. DEFINITIONS</h2>
-            <p><strong>"Content"</strong> refers to all data, information, text, graphics, visualizations, charts,
-                statistics, analysis, and other materials displayed on or available through the Service.</p>
-            <p><strong>"User"</strong> or <strong>"you"</strong> refers to any individual or entity accessing or using
-                the Service.</p>
+            <p><strong>"Content"</strong> refers to all data, information, text, graphics, visualizations, charts, statistics, analysis, and other materials displayed on or available through the Service.</p>
+            <p><strong>"User"</strong> or <strong>"you"</strong> refers to any individual or entity accessing or using the Service.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>3. ACCEPTANCE OF TERMS</h2>
-            <p>By accessing the Service, you acknowledge that you have read, understood, and agree to be bound by these
-                Terms. You represent and warrant that you have the legal capacity to enter into these Terms.</p>
+            <p>By accessing the Service, you acknowledge that you have read, understood, and agree to be bound by these Terms. You represent and warrant that you have the legal capacity to enter into these Terms.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>4. DESCRIPTION OF SERVICE</h2>
-            <p>DailyRunner.fun provides a data dashboard displaying cryptocurrency and token information including, but
-                not limited to, market caps, prices, trends, and related metrics. The Service may be modified, updated,
-                or changed at our sole discretion without notice.</p>
+            <p>DailyRunner.fun provides a data dashboard displaying cryptocurrency and token information including, but not limited to, market caps, prices, trends, and related metrics. The Service may be modified, updated, or changed at our sole discretion without notice.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>5. LICENSE AND DATA RESTRICTIONS</h2>
-
+            
             <h3>5.1 Limited License</h3>
-            <p>We grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to access
-                and view the Service and its Content solely for your personal, non-commercial informational purposes.
-            </p>
-
+            <p>We grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to access and view the Service and its Content solely for your personal, non-commercial informational purposes.</p>
+            
             <h3>5.2 Data Ownership</h3>
-            <p>All Content provided through the Service is owned by or licensed to DailyRunner.fun and is protected by
-                copyright, trademark, and other intellectual property laws. No ownership rights in the Content are
-                transferred to you through your use of the Service.</p>
-
+            <p>All Content provided through the Service is owned by or licensed to DailyRunner.fun and is protected by copyright, trademark, and other intellectual property laws. No ownership rights in the Content are transferred to you through your use of the Service.</p>
+            
             <h3>5.3 Prohibited Data Uses</h3>
             <p>You expressly agree NOT to:</p>
             <ul>
-                <li>Scrape, crawl, index, copy, download, extract, or harvest the Content by automated or manual means
-                </li>
-                <li>Reproduce, duplicate, copy, sell, trade, resell, distribute, or exploit the Content for any
-                    commercial purpose</li>
+                <li>Scrape, crawl, index, copy, download, extract, or harvest the Content by automated or manual means</li>
+                <li>Reproduce, duplicate, copy, sell, trade, resell, distribute, or exploit the Content for any commercial purpose</li>
                 <li>Create derivative works based on the Content</li>
                 <li>Store, cache, or archive the Content in any database or similar storage system</li>
                 <li>Reverse engineer or decompile any part of the Service to access underlying data</li>
@@ -332,71 +309,59 @@
                 <li>Frame or embed the Service or any Content in any website or platform</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>6. PROHIBITED ACTIVITIES</h2>
             <p>In addition to the data restrictions above, you agree not to:</p>
-
+            
             <h3>6.1 Technical Restrictions</h3>
             <ul>
                 <li>Use any robot, spider, scraper, or other automated means to access the Service</li>
-                <li>Bypass our robot exclusion headers or other measures we may use to prevent or restrict access to the
-                    Service</li>
+                <li>Bypass our robot exclusion headers or other measures we may use to prevent or restrict access to the Service</li>
                 <li>Interfere with or disrupt the Service or servers or networks connected to the Service</li>
                 <li>Impose an unreasonable or disproportionately large load on our infrastructure</li>
                 <li>Introduce any viruses, Trojan horses, worms, logic bombs, or other harmful material</li>
             </ul>
-
+            
             <h3>6.2 Access Restrictions</h3>
             <ul>
                 <li>Attempt to access any areas of the Service that you are not authorized to access</li>
-                <li>Attempt to probe, scan, or test the vulnerability of the Service or any network connected to the
-                    Service</li>
-                <li>Forge headers or otherwise manipulate identifiers to disguise your identity or the origin of any
-                    message or transmittal you send to us</li>
+                <li>Attempt to probe, scan, or test the vulnerability of the Service or any network connected to the Service</li>
+                <li>Forge headers or otherwise manipulate identifiers to disguise your identity or the origin of any message or transmittal you send to us</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>7. INTELLECTUAL PROPERTY RIGHTS</h2>
-
+            
             <h3>7.1 Our Intellectual Property</h3>
-            <p>The Service contains material, including without limitation, text, software, graphics, data,
-                visualizations, and other content that is protected by copyright, trademark, trade dress, patent, trade
-                secret, or other proprietary rights. All such content is owned by us or our licensors.</p>
-
+            <p>The Service contains material, including without limitation, text, software, graphics, data, visualizations, and other content that is protected by copyright, trademark, trade dress, patent, trade secret, or other proprietary rights. All such content is owned by us or our licensors.</p>
+            
             <h3>7.2 Trademarks</h3>
-            <p>All trademarks, service marks, and trade names used on the Service are the property of their respective
-                owners. No license or right is granted directly or indirectly to any user for any of the trademarks,
-                service marks, or trade names.</p>
-
+            <p>All trademarks, service marks, and trade names used on the Service are the property of their respective owners. No license or right is granted directly or indirectly to any user for any of the trademarks, service marks, or trade names.</p>
+            
             <h3>7.3 Copyright Claims</h3>
-            <p>If you believe that any content on the Service infringes upon your copyright, please contact us with
-                information supporting your claim.</p>
+            <p>If you believe that any content on the Service infringes upon your copyright, please contact us with information supporting your claim.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>8. USER CONDUCT</h2>
-            <p>You agree to use the Service only for lawful purposes and in a way that does not infringe upon the rights
-                of others or inhibit their use and enjoyment of the Service.</p>
+            <p>You agree to use the Service only for lawful purposes and in a way that does not infringe upon the rights of others or inhibit their use and enjoyment of the Service.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>9. DISCLAIMER OF WARRANTIES</h2>
-            <p>THE SERVICE AND ALL CONTENT ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES
-                OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
-                FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR COURSE OF PERFORMANCE.</p>
-
+            <p>THE SERVICE AND ALL CONTENT ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR COURSE OF PERFORMANCE.</p>
+            
             <p>We do not warrant that:</p>
             <ul>
-                <li>The Service will function uninterrupted, secure, or available at any particular time or location
-                </li>
+                <li>The Service will function uninterrupted, secure, or available at any particular time or location</li>
                 <li>Any errors or defects will be corrected</li>
                 <li>The Service is free of viruses or other harmful components</li>
                 <li>The results of using the Service will meet your requirements</li>
                 <li>The Content is accurate, complete, reliable, current, or error-free</li>
             </ul>
-
+            
             <p>You acknowledge that:</p>
             <ul>
                 <li>Cryptocurrency and token data is inherently volatile</li>
@@ -404,14 +369,11 @@
                 <li>We are not responsible for any actions you take based on the Content</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>10. LIMITATION OF LIABILITY</h2>
-            <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WE, OUR AFFILIATES, EMPLOYEES,
-                AGENTS, PARTNERS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
-                PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER
-                INTANGIBLE LOSSES, RESULTING FROM:</p>
-
+            <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WE, OUR AFFILIATES, EMPLOYEES, AGENTS, PARTNERS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:</p>
+            
             <ul>
                 <li>Your access to or use of or inability to access or use the Service</li>
                 <li>Any conduct or content of any third party on the Service</li>
@@ -419,85 +381,62 @@
                 <li>Unauthorized access, use, or alteration of your transmissions or content</li>
                 <li>Any trading, investment, or business decisions made using the Content</li>
             </ul>
-
-            <p>Our total liability for all claims related to the Service shall not exceed one hundred dollars ($100).
-            </p>
+            
+            <p>Our total liability for all claims related to the Service shall not exceed one hundred dollars ($100).</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>11. INDEMNIFICATION</h2>
-            <p>You agree to defend, indemnify, and hold harmless DailyRunner.fun, its affiliates, licensors, and service
-                providers, and its and their respective officers, directors, employees, contractors, agents, licensors,
-                suppliers, successors, and assigns from and against any claims, liabilities, damages, judgments, awards,
-                losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to
-                your violation of these Terms or your use of the Service.</p>
+            <p>You agree to defend, indemnify, and hold harmless DailyRunner.fun, its affiliates, licensors, and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Service.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>12. TERMINATION</h2>
-
+            
             <h3>12.1 Termination by Us</h3>
-            <p>We may terminate or suspend your access to all or part of the Service, without notice, for any conduct
-                that we, in our sole discretion, believe violates these Terms or is harmful to other users of the
-                Service, us, or third parties, or for any other reason.</p>
-
+            <p>We may terminate or suspend your access to all or part of the Service, without notice, for any conduct that we, in our sole discretion, believe violates these Terms or is harmful to other users of the Service, us, or third parties, or for any other reason.</p>
+            
             <h3>12.2 Effect of Termination</h3>
-            <p>Upon termination, your right to use the Service will immediately cease. All provisions of these Terms
-                which by their nature should survive termination shall survive, including without limitation, ownership
-                provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+            <p>Upon termination, your right to use the Service will immediately cease. All provisions of these Terms which by their nature should survive termination shall survive, including without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>13. GOVERNING LAW</h2>
-            <p>These Terms shall be governed by and construed in accordance with the laws of the United States and the
-                State of California, without regard to its conflict of law provisions. Any dispute arising from or
-                relating to the subject matter of these Terms shall be subject to the exclusive jurisdiction of the
-                state and federal courts in California.</p>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the United States and the State of California, without regard to its conflict of law provisions. Any dispute arising from or relating to the subject matter of these Terms shall be subject to the exclusive jurisdiction of the state and federal courts in California.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>14. CHANGES TO TERMS</h2>
-            <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing
-                to access or use our Service after any revisions become effective, you agree to be bound by the revised
-                terms. If you do not agree to the new terms, you are no longer authorized to use the Service.</p>
+            <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Service.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>15. FORCE MAJEURE</h2>
-            <p>We will not be liable for any failure or delay in performing our obligations where such failure or delay
-                results from any cause beyond our reasonable control, including, without limitation, acts of God, fire,
-                flood, earthquake, explosion, governmental actions, war, invasion or hostilities, terrorist threats or
-                acts, riot or other civil unrest, national emergency, revolution, insurrection, epidemic, lockouts,
-                strikes or other labor disputes, or restraints or delays affecting carriers or inability or delay in
-                obtaining supplies of adequate or suitable materials.</p>
+            <p>We will not be liable for any failure or delay in performing our obligations where such failure or delay results from any cause beyond our reasonable control, including, without limitation, acts of God, fire, flood, earthquake, explosion, governmental actions, war, invasion or hostilities, terrorist threats or acts, riot or other civil unrest, national emergency, revolution, insurrection, epidemic, lockouts, strikes or other labor disputes, or restraints or delays affecting carriers or inability or delay in obtaining supplies of adequate or suitable materials.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>16. SEVERABILITY</h2>
-            <p>If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed
-                and interpreted to accomplish the objectives of such provision to the greatest extent possible under
-                applicable law and the remaining provisions will continue in full force and effect.</p>
+            <p>If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>17. ENTIRE AGREEMENT</h2>
-            <p>These Terms constitute the entire agreement between you and us regarding the Service and supersede and
-                replace any prior agreements we might have had between us regarding the Service.</p>
+            <p>These Terms constitute the entire agreement between you and us regarding the Service and supersede and replace any prior agreements we might have had between us regarding the Service.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>18. CONTACT US</h2>
             <p>If you have any questions about these Terms, please contact us at:</p>
             <p>Email: mattt1499@yahoo.com</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>19. ACKNOWLEDGMENT</h2>
-            <p>BY USING THE SERVICE, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF SERVICE, UNDERSTAND THEM, AND
-                AGREE TO BE BOUND BY THEIR TERMS AND CONDITIONS.</p>
+            <p>BY USING THE SERVICE, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF SERVICE, UNDERSTAND THEM, AND AGREE TO BE BOUND BY THEIR TERMS AND CONDITIONS.</p>
         </div>
     </div>
-
+    
     <script>
         // Function to toggle dropdown menu
         function toggleMenu() {
@@ -505,11 +444,11 @@
         }
 
         // Close the dropdown menu if the user clicks outside of it
-        window.addEventListener('click', function (event) {
-            if (!event.target.matches('.menu-button') &&
-                !event.target.matches('.menu-button svg') &&
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('.menu-button') && 
+                !event.target.matches('.menu-button svg') && 
                 !event.target.matches('.menu-button path')) {
-
+                
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 for (var i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
@@ -521,5 +460,4 @@
         });
     </script>
 </body>
-
 </html>

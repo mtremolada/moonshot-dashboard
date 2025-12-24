@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DailyRunner.Fun - Disclaimer</title>
     <link rel="icon" type="image/png" href="logo.png">
@@ -19,7 +17,7 @@
             --hover-color: #2c2c2c;
             --shadow-color: rgba(0, 0, 0, 0.3);
         }
-
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -30,7 +28,7 @@
             display: flex;
             flex-direction: column;
         }
-
+        
         /* Page title styles */
         .page-title {
             font-size: 1.75rem;
@@ -43,14 +41,14 @@
             align-items: center;
             justify-content: center;
         }
-
+        
         .header-logo {
             height: 1.5em;
             width: auto;
             margin-right: 10px;
             vertical-align: middle;
         }
-
+        
         /* Content container */
         .container {
             flex: 1;
@@ -58,47 +56,47 @@
             margin: 0 auto;
             padding: 20px;
         }
-
+        
         /* Disclaimer specific styles */
         .policy-section {
             margin-bottom: 30px;
         }
-
+        
         .policy-section h2 {
             color: var(--header-color);
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 8px;
             margin-top: 25px;
         }
-
+        
         .policy-section h3 {
             color: var(--header-color);
             margin-top: 20px;
             margin-bottom: 10px;
         }
-
+        
         .policy-section p {
             line-height: 1.6;
             margin: 10px 0;
         }
-
+        
         .policy-section ul {
             margin-top: 10px;
             margin-bottom: 10px;
         }
-
+        
         .policy-section li {
             margin-bottom: 8px;
             line-height: 1.5;
         }
-
+        
         .last-updated {
             color: var(--subtext-color);
             font-style: italic;
             text-align: right;
             margin-bottom: 30px;
         }
-
+        
         /* Dropdown Menu Styles */
         .menu-dropdown {
             position: fixed;
@@ -164,7 +162,7 @@
             display: block;
             animation: fadeIn 0.3s;
         }
-
+        
         /* Optional: Add separator between Dashboard and other menu items */
         .dropdown-content a.separator-top {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -173,15 +171,8 @@
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Media queries for responsive menu */
@@ -190,20 +181,20 @@
                 padding: 6px 10px;
                 font-size: 0.8em;
             }
-
+            
             .menu-button svg {
                 width: 14px;
                 height: 14px;
             }
-
+            
             .container {
                 padding: 15px;
             }
-
+            
             .policy-section h2 {
                 font-size: 1.4rem;
             }
-
+            
             .policy-section h3 {
                 font-size: 1.2rem;
             }
@@ -214,91 +205,80 @@
                 padding: 5px 8px;
                 font-size: 0.7em;
             }
-
+            
             .menu-button svg {
                 width: 12px;
                 height: 12px;
             }
-
+            
             .dropdown-content {
                 min-width: 140px;
             }
-
+            
             .dropdown-content a {
                 padding: 10px 14px;
                 font-size: 0.9em;
             }
-
+            
             .page-title {
                 font-size: 1.5rem;
             }
-
+            
             .policy-section h2 {
                 font-size: 1.3rem;
             }
-
+            
             .policy-section h3 {
                 font-size: 1.1rem;
             }
         }
     </style>
 </head>
-
 <body>
     <!-- Menu Dropdown -->
     <div class="menu-dropdown">
         <button class="menu-button" onclick="toggleMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
             </svg>
             Menu
         </button>
         <div id="dropdown-menu" class="dropdown-content">
-            <a href="./index.html">Home Page</a>
-            <a href="./dashboard.html">Dashboard</a>
-            <a href="./trending.html">Trending</a>
-            <a href="./documentation.html">Documentation</a>
-            <a href="./privacy.html" class="separator-top">Privacy Policy</a>
-            <a href="./disclaimer.html">Disclaimer</a>
-            <a href="./termsofservice.html">Terms of Service</a>
+            <a href="/">Agent Desk</a>
+            <a href="/new_pairs.html">New Pairs</a>
+            <a href="/dashboard.html">Dashboard</a>
+            <a href="/trending.html">Trending</a>
+            <a href="/documentation.html">Documentation</a>
+            <a href="/privacy.html" class="separator-top">Privacy Policy</a>
+            <a href="/disclaimer.html">Disclaimer</a>
+            <a href="/termsofservice.html">Terms of Service</a>
         </div>
     </div>
-
+    
     <!-- Page Title -->
     <h1 class="page-title"><img src="logo.png" alt="Logo" class="header-logo">Disclaimer</h1>
-
+    
     <!-- Content Container -->
     <div class="container">
         <div class="last-updated">Last Updated: April 18, 2025</div>
-
+        
         <div class="policy-section">
             <h2>IMPORTANT NOTICE</h2>
             <p>PLEASE READ THIS DISCLAIMER CAREFULLY BEFORE USING DAILYRUNNER.FUN</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>NOT FINANCIAL ADVICE</h2>
-            <p>The information provided on DailyRunner.fun is for general informational and educational purposes only.
-                It is not intended to be and should not be construed as financial, investment, tax, or legal advice. The
-                content on this website does not constitute a recommendation or solicitation to buy, sell, or hold any
-                cryptocurrency, token, or other financial instrument.</p>
-            <p>Users should always conduct their own research and consult with qualified financial advisors, legal
-                experts, or tax professionals before making any investment decisions. Cryptocurrency investments should
-                be undertaken with a full understanding of the risks involved and only with money that you can afford to
-                lose.</p>
+            <p>The information provided on DailyRunner.fun is for general informational and educational purposes only. It is not intended to be and should not be construed as financial, investment, tax, or legal advice. The content on this website does not constitute a recommendation or solicitation to buy, sell, or hold any cryptocurrency, token, or other financial instrument.</p>
+            <p>Users should always conduct their own research and consult with qualified financial advisors, legal experts, or tax professionals before making any investment decisions. Cryptocurrency investments should be undertaken with a full understanding of the risks involved and only with money that you can afford to lose.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>NO AFFILIATION WITH LISTED TOKENS</h2>
-            <p>DailyRunner.fun is not affiliated with, endorsed by, or connected to any of the tokens, projects, or
-                cryptocurrencies listed on our platform. We do not create, develop, sell, or distribute any of the
-                tokens shown on our dashboard. We do not receive compensation from token creators, developers, or
-                promoters for listing their tokens on our platform.</p>
-            <p>Our listing of a token should not be interpreted as an endorsement of its quality, legitimacy, or
-                potential for return on investment. We make no representations regarding the viability or safety of any
-                token displayed on our platform.</p>
+            <p>DailyRunner.fun is not affiliated with, endorsed by, or connected to any of the tokens, projects, or cryptocurrencies listed on our platform. We do not create, develop, sell, or distribute any of the tokens shown on our dashboard. We do not receive compensation from token creators, developers, or promoters for listing their tokens on our platform.</p>
+            <p>Our listing of a token should not be interpreted as an endorsement of its quality, legitimacy, or potential for return on investment. We make no representations regarding the viability or safety of any token displayed on our platform.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>NON-COMMERCIAL SERVICE</h2>
             <p>DailyRunner.fun operates as a non-commercial service. We do not:</p>
@@ -309,43 +289,28 @@
                 <li>Sell user data or information</li>
                 <li>Accept payment for preferential treatment or visibility of specific tokens</li>
             </ul>
-            <p>Our platform is provided as-is without any monetary incentive from third parties that might bias our
-                presentation of information.</p>
+            <p>Our platform is provided as-is without any monetary incentive from third parties that might bias our presentation of information.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>RISK WARNING</h2>
-            <p>Cryptocurrency and token trading involve substantial risk of loss and are not suitable for all investors.
-                The market for cryptocurrencies and tokens is highly volatile and unpredictable. Prices can fluctuate
-                significantly in a short period of time, potentially resulting in the complete loss of invested capital.
-            </p>
+            <p>Cryptocurrency and token trading involve substantial risk of loss and are not suitable for all investors. The market for cryptocurrencies and tokens is highly volatile and unpredictable. Prices can fluctuate significantly in a short period of time, potentially resulting in the complete loss of invested capital.</p>
             <p>Specific risks include but are not limited to:</p>
             <ul>
-                <li><strong>Market Volatility:</strong> Extreme price fluctuations can occur rapidly and without warning
-                </li>
-                <li><strong>Liquidity Risk:</strong> Tokens may become difficult or impossible to sell at certain times
-                </li>
-                <li><strong>Regulatory Risk:</strong> Changes in laws and regulations may adversely affect the value and
-                    legality of crypto assets</li>
-                <li><strong>Technical Risk:</strong> Blockchain networks and smart contracts may contain bugs,
-                    vulnerabilities, or design flaws</li>
-                <li><strong>Security Risk:</strong> Digital assets are susceptible to hacking, theft, and permanent loss
-                </li>
-                <li><strong>Scams and Fraud:</strong> The cryptocurrency space is rife with fraudulent schemes,
-                    including but not limited to "rug pulls," where developers abandon a project after raising funds
-                </li>
-                <li><strong>Fake Distribution:</strong> Some tokens may appear to have wide distribution but are
-                    actually controlled by a small group of wallets</li>
-                <li><strong>Manipulation:</strong> Markets may be subject to manipulation by large holders or
-                    coordinated groups</li>
+                <li><strong>Market Volatility:</strong> Extreme price fluctuations can occur rapidly and without warning</li>
+                <li><strong>Liquidity Risk:</strong> Tokens may become difficult or impossible to sell at certain times</li>
+                <li><strong>Regulatory Risk:</strong> Changes in laws and regulations may adversely affect the value and legality of crypto assets</li>
+                <li><strong>Technical Risk:</strong> Blockchain networks and smart contracts may contain bugs, vulnerabilities, or design flaws</li>
+                <li><strong>Security Risk:</strong> Digital assets are susceptible to hacking, theft, and permanent loss</li>
+                <li><strong>Scams and Fraud:</strong> The cryptocurrency space is rife with fraudulent schemes, including but not limited to "rug pulls," where developers abandon a project after raising funds</li>
+                <li><strong>Fake Distribution:</strong> Some tokens may appear to have wide distribution but are actually controlled by a small group of wallets</li>
+                <li><strong>Manipulation:</strong> Markets may be subject to manipulation by large holders or coordinated groups</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>ACCURACY OF INFORMATION</h2>
-            <p>While we strive to ensure that the information on DailyRunner.fun is accurate and up-to-date, we make no
-                warranties or representations regarding the completeness, accuracy, reliability, or availability of the
-                information provided. The data displayed on our platform:</p>
+            <p>While we strive to ensure that the information on DailyRunner.fun is accurate and up-to-date, we make no warranties or representations regarding the completeness, accuracy, reliability, or availability of the information provided. The data displayed on our platform:</p>
             <ul>
                 <li>May be delayed or incomplete</li>
                 <li>May contain errors or inaccuracies</li>
@@ -353,23 +318,15 @@
                 <li>Should not be relied upon for making investment decisions</li>
                 <li>May be affected by technical issues beyond our control</li>
             </ul>
-            <p>Market capitalization, token prices, supply figures, and other metrics are derived from third-party
-                sources that we do not control and for which we cannot guarantee accuracy.</p>
+            <p>Market capitalization, token prices, supply figures, and other metrics are derived from third-party sources that we do not control and for which we cannot guarantee accuracy.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>NO LIABILITY</h2>
-            <p>To the maximum extent permitted by applicable law, DailyRunner.fun, its owners, operators, developers,
-                contributors, and affiliates shall not be liable for any direct, indirect, incidental, special,
-                consequential, or punitive damages, including but not limited to loss of profits, data, or goodwill,
-                arising out of or in connection with your use of our platform or any decision made based on information
-                presented on our platform.</p>
-            <p>By using DailyRunner.fun, you acknowledge and agree that you assume full responsibility for your use of
-                the platform and any decisions you make based on the information provided. You expressly waive and
-                release DailyRunner.fun and its operators from any and all liability related to your use of the
-                platform.</p>
+            <p>To the maximum extent permitted by applicable law, DailyRunner.fun, its owners, operators, developers, contributors, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or goodwill, arising out of or in connection with your use of our platform or any decision made based on information presented on our platform.</p>
+            <p>By using DailyRunner.fun, you acknowledge and agree that you assume full responsibility for your use of the platform and any decisions you make based on the information provided. You expressly waive and release DailyRunner.fun and its operators from any and all liability related to your use of the platform.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>USER RESPONSIBILITY</h2>
             <p>Users of DailyRunner.fun are solely responsible for:</p>
@@ -385,11 +342,10 @@
                 <li>Determining the legitimacy of projects before investing</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>"FARM" AND SCAN STATUS DESIGNATIONS</h2>
-            <p>DailyRunner.fun uses various metrics and algorithms to classify tokens with labels such as "FARM,"
-                "FARMED," or "NO FARM" and to indicate scan completeness status. These designations:</p>
+            <p>DailyRunner.fun uses various metrics and algorithms to classify tokens with labels such as "FARM," "FARMED," or "NO FARM" and to indicate scan completeness status. These designations:</p>
             <ul>
                 <li>Are based on automated analysis and not manual review</li>
                 <li>Represent our best effort to identify certain patterns but are not guaranteed to be accurate</li>
@@ -397,14 +353,12 @@
                 <li>May change as our methodologies evolve</li>
                 <li>Are not definitive judgments on the quality or legitimacy of a token</li>
             </ul>
-            <p>A token labeled as having no farming activity may still present other risks, and conversely, a token
-                labeled as "FARM" may still have legitimate utility or value.</p>
+            <p>A token labeled as having no farming activity may still present other risks, and conversely, a token labeled as "FARM" may still have legitimate utility or value.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>NO GUARANTEES</h2>
-            <p>Past performance is not indicative of future results. DailyRunner.fun makes no guarantees or promises
-                regarding:</p>
+            <p>Past performance is not indicative of future results. DailyRunner.fun makes no guarantees or promises regarding:</p>
             <ul>
                 <li>Future performance of any token</li>
                 <li>Future market conditions</li>
@@ -414,17 +368,13 @@
                 <li>The accuracy of any "FARM" designation or other classification</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>REGULATORY NOTICE</h2>
-            <p>Cryptocurrency and token regulations vary widely by jurisdiction. It is the responsibility of each user
-                to understand and comply with the laws and regulations applicable in their location. DailyRunner.fun
-                does not guarantee that the tokens listed on our platform comply with the laws of any jurisdiction. The
-                use of our platform may be restricted or prohibited in certain jurisdictions.</p>
-            <p>DailyRunner.fun is not registered with any regulatory authority in any jurisdiction as an exchange,
-                broker-dealer, investment advisor, or financial services provider.</p>
+            <p>Cryptocurrency and token regulations vary widely by jurisdiction. It is the responsibility of each user to understand and comply with the laws and regulations applicable in their location. DailyRunner.fun does not guarantee that the tokens listed on our platform comply with the laws of any jurisdiction. The use of our platform may be restricted or prohibited in certain jurisdictions.</p>
+            <p>DailyRunner.fun is not registered with any regulatory authority in any jurisdiction as an exchange, broker-dealer, investment advisor, or financial services provider.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>TECHNICAL LIMITATIONS</h2>
             <p>Our platform may experience:</p>
@@ -436,44 +386,33 @@
                 <li>Limited visibility into on-chain transaction details</li>
                 <li>Constraints in processing high transaction volumes</li>
             </ul>
-            <p>We do not guarantee continuous, uninterrupted access to our platform or that it will be free from bugs,
-                errors, or other defects.</p>
+            <p>We do not guarantee continuous, uninterrupted access to our platform or that it will be free from bugs, errors, or other defects.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>INTELLECTUAL PROPERTY</h2>
-            <p>All content on DailyRunner.fun, including but not limited to text, graphics, logos, icons, images, and
-                software, is the property of DailyRunner.fun or its content suppliers and is protected by international
-                copyright laws. The compilation of all content on this site is the exclusive property of
-                DailyRunner.fun.</p>
+            <p>All content on DailyRunner.fun, including but not limited to text, graphics, logos, icons, images, and software, is the property of DailyRunner.fun or its content suppliers and is protected by international copyright laws. The compilation of all content on this site is the exclusive property of DailyRunner.fun.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>CHANGES TO THIS DISCLAIMER</h2>
-            <p>We reserve the right to modify this disclaimer at any time without prior notice. Changes will be
-                effective immediately upon posting to the website. Your continued use of DailyRunner.fun after any
-                changes to this disclaimer constitutes your acceptance of such changes.</p>
+            <p>We reserve the right to modify this disclaimer at any time without prior notice. Changes will be effective immediately upon posting to the website. Your continued use of DailyRunner.fun after any changes to this disclaimer constitutes your acceptance of such changes.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>GOVERNING LAW</h2>
-            <p>This disclaimer and your use of DailyRunner.fun shall be governed by and construed in accordance with the
-                laws of the jurisdiction where the service provider is located, without regard to its conflict of law
-                principles.</p>
+            <p>This disclaimer and your use of DailyRunner.fun shall be governed by and construed in accordance with the laws of the jurisdiction where the service provider is located, without regard to its conflict of law principles.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>CONTACT INFORMATION</h2>
             <p>If you have any questions about this disclaimer, please contact us at: mattt1499@yahoo.com</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>ACKNOWLEDGMENT</h2>
-            <p>By using DailyRunner.fun, you acknowledge that you have read this disclaimer, understood it, and agree to
-                be bound by its terms and conditions. If you do not agree with any part of this disclaimer, you must not
-                use our platform.</p>
-            <p>THE USE OF DAILYRUNNER.FUN IS AT YOUR SOLE RISK. THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE"
-                BASIS.</p>
+            <p>By using DailyRunner.fun, you acknowledge that you have read this disclaimer, understood it, and agree to be bound by its terms and conditions. If you do not agree with any part of this disclaimer, you must not use our platform.</p>
+            <p>THE USE OF DAILYRUNNER.FUN IS AT YOUR SOLE RISK. THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS.</p>
         </div>
     </div>
 
@@ -484,11 +423,11 @@
         }
 
         // Close the dropdown menu if the user clicks outside of it
-        window.addEventListener('click', function (event) {
-            if (!event.target.matches('.menu-button') &&
-                !event.target.matches('.menu-button svg') &&
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('.menu-button') && 
+                !event.target.matches('.menu-button svg') && 
                 !event.target.matches('.menu-button path')) {
-
+                
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 for (var i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
@@ -500,5 +439,4 @@
         });
     </script>
 </body>
-
 </html>

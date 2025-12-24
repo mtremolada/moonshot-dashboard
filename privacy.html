@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DailyRunner.Fun - Privacy Policy</title>
     <link rel="icon" type="image/png" href="logo.png">
@@ -19,7 +17,7 @@
             --hover-color: #2c2c2c;
             --shadow-color: rgba(0, 0, 0, 0.3);
         }
-
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -30,7 +28,7 @@
             display: flex;
             flex-direction: column;
         }
-
+        
         /* Page title styles */
         .page-title {
             font-size: 1.75rem;
@@ -43,14 +41,14 @@
             align-items: center;
             justify-content: center;
         }
-
+        
         .header-logo {
             height: 1.5em;
             width: auto;
             margin-right: 10px;
             vertical-align: middle;
         }
-
+        
         /* Content container */
         .container {
             flex: 1;
@@ -58,47 +56,47 @@
             margin: 0 auto;
             padding: 20px;
         }
-
+        
         /* Privacy policy specific styles */
         .policy-section {
             margin-bottom: 30px;
         }
-
+        
         .policy-section h2 {
             color: var(--header-color);
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 8px;
             margin-top: 25px;
         }
-
+        
         .policy-section h3 {
             color: var(--header-color);
             margin-top: 20px;
             margin-bottom: 10px;
         }
-
+        
         .policy-section p {
             line-height: 1.6;
             margin: 10px 0;
         }
-
+        
         .policy-section ul {
             margin-top: 10px;
             margin-bottom: 10px;
         }
-
+        
         .policy-section li {
             margin-bottom: 8px;
             line-height: 1.5;
         }
-
+        
         .last-updated {
             color: var(--subtext-color);
             font-style: italic;
             text-align: right;
             margin-bottom: 30px;
         }
-
+        
         /* Dropdown Menu Styles */
         .menu-dropdown {
             position: fixed;
@@ -164,7 +162,7 @@
             display: block;
             animation: fadeIn 0.3s;
         }
-
+        
         /* Optional: Add separator between Dashboard and other menu items */
         .dropdown-content a.separator-top {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -173,15 +171,8 @@
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Media queries for responsive menu */
@@ -190,20 +181,20 @@
                 padding: 6px 10px;
                 font-size: 0.8em;
             }
-
+            
             .menu-button svg {
                 width: 14px;
                 height: 14px;
             }
-
+            
             .container {
                 padding: 15px;
             }
-
+            
             .policy-section h2 {
                 font-size: 1.4rem;
             }
-
+            
             .policy-section h3 {
                 font-size: 1.2rem;
             }
@@ -214,86 +205,79 @@
                 padding: 5px 8px;
                 font-size: 0.7em;
             }
-
+            
             .menu-button svg {
                 width: 12px;
                 height: 12px;
             }
-
+            
             .dropdown-content {
                 min-width: 140px;
             }
-
+            
             .dropdown-content a {
                 padding: 10px 14px;
                 font-size: 0.9em;
             }
-
+            
             .page-title {
                 font-size: 1.5rem;
             }
-
+            
             .policy-section h2 {
                 font-size: 1.3rem;
             }
-
+            
             .policy-section h3 {
                 font-size: 1.1rem;
             }
         }
     </style>
 </head>
-
 <body>
     <!-- Menu Dropdown -->
     <div class="menu-dropdown">
         <button class="menu-button" onclick="toggleMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
             </svg>
             Menu
         </button>
         <div id="dropdown-menu" class="dropdown-content">
-            <a href="./index.html">Home Page</a>
-            <a href="./dashboard.html">Dashboard</a>
-            <a href="./trending.html">Trending</a>
-            <a href="./documentation.html">Documentation</a>
-            <a href="./privacy.html" class="separator-top">Privacy Policy</a>
-            <a href="./disclaimer.html">Disclaimer</a>
-            <a href="./termsofservice.html">Terms of Service</a>
+            <a href="/">Agent Desk</a>
+            <a href="/new_pairs.html">New Pairs</a>
+            <a href="/dashboard.html">Dashboard</a>
+            <a href="/trending.html">Trending</a>
+            <a href="/documentation.html">Documentation</a>
+            <a href="/privacy.html" class="separator-top">Privacy Policy</a>
+            <a href="/disclaimer.html">Disclaimer</a>
+            <a href="/termsofservice.html">Terms of Service</a>
         </div>
     </div>
-
+    
     <!-- Page Title -->
     <h1 class="page-title"><img src="logo.png" alt="Logo" class="header-logo">Privacy Policy</h1>
-
+    
     <!-- Content Container -->
     <div class="container">
         <div class="last-updated">Last Updated: April 18, 2025</div>
-
+        
         <div class="policy-section">
             <h2>1. Introduction</h2>
-            <p>Welcome to DailyRunner.Fun ("we," "our," or "us"). We are committed to protecting your privacy and
-                ensuring you have a positive experience on our website. This Privacy Policy outlines our practices
-                regarding information security and privacy when you visit our website.</p>
+            <p>Welcome to DailyRunner.Fun ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you have a positive experience on our website. This Privacy Policy outlines our practices regarding information security and privacy when you visit our website.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>2. Information We Collect</h2>
-
+            
             <h3>2.1 Automatically Collected Information</h3>
             <p>We collect minimal information automatically during your visit to our website:</p>
             <ul>
-                <li><strong>IP Addresses</strong>: Your IP address is temporarily stored in memory (not persistent
-                    storage) for security purposes, specifically to implement rate limiting that prevents
-                    denial-of-service attacks.</li>
-                <li><strong>User-Agent Headers</strong>: We check your browser's User-Agent string against known
-                    malicious patterns for security purposes. This information is not stored.</li>
-                <li><strong>Server Logs</strong>: Our server may automatically log basic information about requests,
-                    including IP addresses, timestamps, requested URLs, and HTTP status codes. These logs are used
-                    solely for technical troubleshooting and security monitoring.</li>
+                <li><strong>IP Addresses</strong>: Your IP address is temporarily stored in memory (not persistent storage) for security purposes, specifically to implement rate limiting that prevents denial-of-service attacks.</li>
+                <li><strong>User-Agent Headers</strong>: We check your browser's User-Agent string against known malicious patterns for security purposes. This information is not stored.</li>
+                <li><strong>Server Logs</strong>: Our server may automatically log basic information about requests, including IP addresses, timestamps, requested URLs, and HTTP status codes. These logs are used solely for technical troubleshooting and security monitoring.</li>
             </ul>
-
+            
             <h3>2.2 Information You Provide</h3>
             <p>We do not collect any personal information directly from you. Our website does not have:</p>
             <ul>
@@ -304,10 +288,10 @@
                 <li>Comment sections</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>3. Cookies and Tracking</h2>
-
+            
             <h3>3.1 No Cookies</h3>
             <p>We do not use cookies on our website. This includes:</p>
             <ul>
@@ -315,7 +299,7 @@
                 <li>No persistent cookies</li>
                 <li>No third-party cookies</li>
             </ul>
-
+            
             <h3>3.2 No Tracking Technologies</h3>
             <p>We do not use:</p>
             <ul>
@@ -326,11 +310,11 @@
                 <li>Advertising identifiers</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>4. How We Use Information</h2>
             <p>The limited information we collect is used exclusively for:</p>
-
+            
             <h3>4.1 Security Purposes</h3>
             <ul>
                 <li>DDoS protection</li>
@@ -338,7 +322,7 @@
                 <li>Request size limiting</li>
                 <li>Blocking suspicious traffic</li>
             </ul>
-
+            
             <h3>4.2 Technical Administration</h3>
             <ul>
                 <li>Server maintenance</li>
@@ -346,10 +330,10 @@
                 <li>Improving website performance</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>5. Data Retention</h2>
-
+            
             <h3>5.1 IP Addresses</h3>
             <ul>
                 <li>Temporary storage in server memory only (not persistent)</li>
@@ -357,7 +341,7 @@
                 <li>If rate limits are exceeded, the IP may be temporarily blocked for up to 5 minutes</li>
                 <li>All IP records are deleted once the rate limiting window or blocking period expires</li>
             </ul>
-
+            
             <h3>5.2 Server Logs</h3>
             <ul>
                 <li>Retained for a maximum of 7 days</li>
@@ -365,20 +349,18 @@
                 <li>Automatically deleted after the retention period</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>6. Information Sharing</h2>
             <p>We do not share, sell, rent, or trade any information with third parties.</p>
-
+            
             <h3>6.1 Legal Requirements</h3>
-            <p>We may disclose information if required to do so by law or in response to valid requests by public
-                authorities (e.g., a court or government agency).</p>
+            <p>We may disclose information if required to do so by law or in response to valid requests by public authorities (e.g., a court or government agency).</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>7. Security Measures</h2>
-            <p>We implement appropriate technical and organizational measures to protect against unauthorized access,
-                alteration, disclosure, or destruction of information. These measures include:</p>
+            <p>We implement appropriate technical and organizational measures to protect against unauthorized access, alteration, disclosure, or destruction of information. These measures include:</p>
             <ul>
                 <li>Security headers (X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Referrer-Policy)</li>
                 <li>Request size limiting</li>
@@ -387,44 +369,35 @@
                 <li>User-Agent filtering</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>8. Your Rights</h2>
-            <p>Depending on your location, you may have certain rights regarding your personal information. Since we
-                collect minimal data that is temporarily stored for security purposes only, most traditional data
-                subject rights do not apply. However, you may have the right to:</p>
+            <p>Depending on your location, you may have certain rights regarding your personal information. Since we collect minimal data that is temporarily stored for security purposes only, most traditional data subject rights do not apply. However, you may have the right to:</p>
             <ul>
                 <li>Access information about what data is collected</li>
                 <li>Object to processing</li>
                 <li>Lodge a complaint with a supervisory authority</li>
             </ul>
         </div>
-
+        
         <div class="policy-section">
             <h2>9. Children's Privacy</h2>
-            <p>Our website is not directed to children under the age of 13, and we do not knowingly collect personal
-                information from children. If you believe we might have collected information from a child, please
-                contact us.</p>
+            <p>Our website is not directed to children under the age of 13, and we do not knowingly collect personal information from children. If you believe we might have collected information from a child, please contact us.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>10. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time to reflect changes to our practices or for other
-                operational, legal, or regulatory reasons. The updated version will be indicated by an updated "Last
-                Updated" date.</p>
+            <p>We may update this Privacy Policy from time to time to reflect changes to our practices or for other operational, legal, or regulatory reasons. The updated version will be indicated by an updated "Last Updated" date.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>11. International Data Transfers</h2>
-            <p>Our servers are located in the United States. If you are accessing our website from outside the United
-                States, please be aware that your information may be transferred to, stored, and processed in the United
-                States. By using our website, you consent to this transfer.</p>
+            <p>Our servers are located in the United States. If you are accessing our website from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States. By using our website, you consent to this transfer.</p>
         </div>
-
+        
         <div class="policy-section">
             <h2>12. Contact Us</h2>
-            <p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact
-                us at:</p>
+            <p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:</p>
             <p>Email: mattt1499@yahoo.com</p>
         </div>
     </div>
@@ -436,11 +409,11 @@
         }
 
         // Close the dropdown menu if the user clicks outside of it
-        window.addEventListener('click', function (event) {
-            if (!event.target.matches('.menu-button') &&
-                !event.target.matches('.menu-button svg') &&
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('.menu-button') && 
+                !event.target.matches('.menu-button svg') && 
                 !event.target.matches('.menu-button path')) {
-
+                
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 for (var i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
@@ -452,5 +425,4 @@
         });
     </script>
 </body>
-
 </html>
