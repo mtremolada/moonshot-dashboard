@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-27T18:05:29.384382Z",
+  "last_updated": "2025-12-27T18:12:20.202161Z",
   "retention_hours": 24,
   "tokens": [
     {
@@ -39302,6 +39302,188 @@
           "ath_market_cap": 23089.18,
           "ath_market_cap_timestamp": "2025-12-27T16:44:44.946000+00:00",
           "ath_multiple": 6.431,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2025-12-27T18:05:30.728634Z",
+      "token_address": "8VvL7EakK1d1KDHcpLzkNtvx65s6fieLvfdbNNikpump",
+      "token_symbol": "dispenser",
+      "token_name": "Dispenser",
+      "full_token_details": {
+        "aggregate_score": 4.2,
+        "groq_web_research": {
+          "summary_all_context": "Dispenser is a Solana-based token (symbol: dispenser) designed to auto-redistribute rewards to wallets with low balances, but its GitHub repo describes it as a tool dispensing SOL to GitHub contributors via pull request events. The project lacks formal documentation, audits, and tokenomics beyond a README file.",
+          "answer": "**What it is**  \nA GitHub\u202fApp that listens to pull\u2011request events and automatically dispenses SOL tokens to contributors\u202f\u3010README.md \u2013 https://github.com/code100x/github-sol-auto-dispenser/blob/main/README.md\u3011  \n\n**Where docs / whitepaper are**  \n- **Documentation:** The primary docs are the repository\u2019s README file (includes overview, installation, configuration, usage) \u2013 https://github.com/code100x/github-sol-auto-dispenser/blob/main/README.md  \n- No separate whitepaper, lite\u2011paper, audit report, tokenomics, or roadmap files are present in the repo.  \n\n**Key features (as described in the repo)**  \n- Listens to GitHub PR events (opened, merged, closed).  \n- Automatically transfers SOL tokens to the PR author or specified contributors.  \n- Configurable token amount per event via a JSON/YAML config file.  \n- Uses Solana\u2019s web3.js library to create and sign transactions.  \n- Deployable as a GitHub App with OAuth scopes for repo and workflow access.  \n\n**Gaps / red flags**  \n- **Missing formal documentation:** No dedicated docs site, API reference, or developer guide beyond the README.  \n- **No whitepaper / litepaper:** No technical or economic whitepaper to explain design choices or token economics.  \n- **No audit/security report:** Absence of third\u2011party audit or security assessment, which is critical for a crypto\u2011disbursement tool.  \n- **No tokenomics or roadmap:** No information on token supply, distribution model, or future development plans.  \n\n*Overall, the project provides a minimal working prototype but lacks the comprehensive documentation, security audits, and strategic roadmaps typically expected for a production\u2011grade crypto utility.*",
+          "confidence_score": {
+            "final_score": 8,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 7,
+              "specificity": 9,
+              "completeness": 6,
+              "clarity": 8,
+              "source_groundedness": 9
+            }
+          },
+          "narrative_score": {
+            "final_score": 5,
+            "narrative_subscores": {
+              "hook_strength": null,
+              "cultural_charge": null,
+              "character_symbol": null,
+              "meme_fitness": null,
+              "remixability": null,
+              "tribal_identity": null,
+              "market_fit": 8
+            }
+          }
+        },
+        "llm_interpretation": {
+          "llm_interpretation": "Description: Dispenser is a Solana-based token that auto-redistributes rewards to wallets with the lowest balances.\n\n1. memecoin: FALSE - The token has a clear utility and is not based on a meme.\n2. utility: TRUE - The token has a specific use case, automating reward distribution on the Solana blockchain.\n3. ai_token: FALSE - There's no mention of AI or artificial intelligence in the token's description or functionality.\n4. tweet_coin: FALSE - The token is not based on a viral tweet as its main inspiration.\n5. current_event: FALSE - The token is not directly related to a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in the token's branding or description.\n7. offensive: FALSE - The token's description and purpose do not contain offensive themes.\n8. animals: FALSE - The token is not based on an animal.\n9. political: FALSE - The token is not based on politics or a political figure.\n\nThe classifications are based on the provided information about the token's name, symbol, description, and functionality.",
+          "llm_description": "Dispenser is a Solana-based token that auto-redistributes rewards to wallets with the lowest balances.",
+          "scraped_website_content": "code100x / github-sol-auto-dispenser Public Notifications You must be signed in to change notification settings Fork 24 Star 32 Create a github app that listens to events on a PR and dispenses users funds in crypto. Use the SOL blockchain solidpull.xyz 32 stars 24 forks Branches Tags Activity Star Notifications You must be signed in to change notification settings code100x/github-sol-auto-dispenser main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 94 Commits apps apps packages packages .eslintrc.js .eslintrc.js .gitignore .gitignore .npmrc .npmrc .prettierignore .prettierignore .prettierrc .prettierrc CONTRIBUTING.md CONTRIBUTING.md README.md README.md package-lock.json package-lock.json package.json package.json tsconfig.json tsconfig.json turbo.json turbo.json View all files Repository files navigation Github-Solana Auto Dispenser \ud83d\ude80 Github-Solana Auto Dispenser is an automated system designed to distribute rewards to contributors. It leverages the power of Solana and Web3 to ensure transparent and efficient reward distribution. The project is structured using Turborepo and contains the following components: apps \u2514\u2500 contributor-web | \u251c\u2500 next-app | \u251c\u2500 styling with tailwindcss | \u251c\u2500 does solona transfer and web3 stuff | \u2514\u2500 depends on packages/db \u251c\u2500 gh-bot | \u251c\u2500 github bot built on top of probot | \u251c\u2500 api calls to admin-web for db stuff | \u2514\u2500 messages the events to discord (optional) \u2514\u2500 admin-web \u251c\u2500 next-app \u251c\u2500 styling with tailwindcss & shadcn \u2514\u2500 depends on packages/db packages \u251c\u2500 zod | \u2514\u2500 zod schema to share throughout the repo \u2514\u2500 database \u251c\u2500 prisma ORM \u251c\u2500 exposes prisma singleton for all applications \u2514\u2500 scripts to interact with db Features \u2728 Automatic Reward Distribution : The app listens to GitHub pull request events and automatically calculates and distributes USDC rewards to contributors based on predefined rules. Transparent Transactions : All USDC token transfers are rec... (truncated)",
+          "classifications": {
+            "memecoin": false,
+            "utility": true,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "Github-Solana Auto Dispenser automates reward distribution to contributors via the Solana blockchain, leveraging Web3 for transparent and efficient transactions.",
+            "prompt_2_summary_twitter_searches": "",
+            "prompt_3_summary_profile_content": "Dispenser auto-redistributes rewards to Solana wallets with the lowest balances.",
+            "prompt_4_summary_main_tweet": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "1 hours ago",
+          "token_address": "8VvL7EakK1d1KDHcpLzkNtvx65s6fieLvfdbNNikpump",
+          "token_symbol": "dispenser",
+          "token_name": "Dispenser",
+          "token_description": "Auto-redistributing rewards to wallets with the lowest Solana balances, helping those who need it most.",
+          "token_image": "https://ipfs.io/ipfs/bafkreic3zgqhlkbqhkecte2t3tcg7mti5jiteigmlzkhmliihrav6dk2qy",
+          "token_twitter": "https://x.com/soldispenser",
+          "token_website": "https://github.com/code100x/github-sol-auto-dispenser",
+          "is_currently_live": false,
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "code100x / github-sol-auto-dispenser Public Notifications You must be signed in to change notification settings Fork 24 Star 32 Create a github app that listens to events on a PR and dispenses users funds in crypto. Use the SOL blockchain solidpull.xyz 32 stars 24 forks Branches Tags Activity Star Notifications You must be signed in to change notification settings code100x/github-sol-auto-dispenser main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 94 Commits apps apps packages packages .eslintrc.js .eslintrc.js .gitignore .gitignore .npmrc .npmrc .prettierignore .prettierignore .prettierrc .prettierrc CONTRIBUTING.md CONTRIBUTING.md README.md README.md package-lock.json package-lock.json package.json package.json tsconfig.json tsconfig.json turbo.json turbo.json View all files Repository files navigation Github-Solana Auto Dispenser \ud83d\ude80 Github-Solana Auto Dispenser is an automated system designed to distribute rewards to contributors. It leverages the power of Solana and Web3 to ensure transparent and efficient reward distribution. The project is structured using Turborepo and contains the following components: apps \u2514\u2500 contributor-web | \u251c\u2500 next-app | \u251c\u2500 styling with tailwindcss | \u251c\u2500 does solona transfer and web3 stuff | \u2514\u2500 depends on packages/db \u251c\u2500 gh-bot | \u251c\u2500 github bot built on top of probot | \u251c\u2500 api calls to admin-web for db stuff | \u2514\u2500 messages the events to discord (optional) \u2514\u2500 admin-web \u251c\u2500 next-app \u251c\u2500 styling with tailwindcss & shadcn \u2514\u2500 depends on packages/db packages \u251c\u2500 zod | \u2514\u2500 zod schema to share throughout the repo \u2514\u2500 database \u251c\u2500 prisma ORM \u251c\u2500 exposes prisma singleton for all applications \u2514\u2500 scripts to interact with db Features \u2728 Automatic Reward Distribution : The app listens to GitHub pull request events and automatically calculates and distributes USDC rewards to contributors based on predefined rules. Transparent Transactions : All USDC token transfers are rec... (truncated)",
+          "twitter_profile": {
+            "displayname": "Dispenser",
+            "bio": "Auto-redistributing rewards to wallets with the lowest Solana balances, helping those who need it most.",
+            "recent_tweets": [
+              "Finally done perfecting our Tek and it's ready to go!",
+              "Check out our GitHub for more info, been working on it for awhile",
+              "https://t.co/5bBlxDfYGU"
+            ]
+          },
+          "twitter_search_texts": {
+            "address_recent": [],
+            "address_top": [],
+            "symbol_recent": [],
+            "symbol_top": []
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": false,
+            "dex_paid_timestamp": null,
+            "bundle_percentage": 0.0,
+            "fresh_wallets_percentage": 0.2,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 0.8,
+            "num_holders": 2,
+            "largest_holder_percentage": 0.2,
+            "largest_cluster_percentage": 0.56,
+            "large_holder_count": 0,
+            "same_percentage_count": 18,
+            "low_sol_count": 13
+          },
+          "onchain_scan_score": {
+            "final_score": 6.2,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 10,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 10,
+            "num_holders_score": 1,
+            "largest_holder_percentage_score": 6,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 1,
+            "same_percentage_count_score": 1,
+            "low_sol_count_score": 3
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "soldispenser",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 1,
+            "total_usd_spent": 361.27,
+            "kols": [
+              "Cented"
+            ]
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.33,
+            "total_kol_buys_score": 1,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "usd_market_cap": 3454.77,
+          "ath_market_cap": 8847.01,
+          "ath_market_cap_timestamp": "2025-12-27T16:40:09+00:00",
+          "ath_multiple": 2.561,
           "holderscan_data": {
             "source": null,
             "holderscan_history": []
