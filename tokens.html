@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tokens</title>
+  <style>
+    body{font-family:system-ui,Arial;margin:18px}
+    .meta{opacity:.7;margin-bottom:12px}
+    .row{padding:10px 0;border-bottom:1px solid #ddd}
+    .addr{font-family:ui-monospace,Menlo,monospace;opacity:.8}
+    a{text-decoration:none}
+  </style>
+</head>
+<body>
+  <h2>Tokens (24h window)</h2>
+  <div id="meta" class="meta"></div>
+  <div id="list"></div>
+
+<script>
+const JSON_PATH = './trending_tokens_agent_research_desk.json';
+
+async function load(){
+  const res = await fetch(JSON_PATH, {cache:'no-store'});
+  if(!res.ok){
+    document.getElementById('meta').textContent = 'Could not load JSON: ' + JSON_PATH;
+    return;
+  }
+  const data = await res.json();
+  const tokens = data.tokens || [];
+
+  document.getElementById('meta').textContent =
+    `last_updated: ${data.last_updated || 'n/a'} | retention_hours: ${data.retention_hours || 24} | count: ${tokens.length}`;
+
+  const list = document.getElementById('list');
+  list.innerHTML = '';
+
+  for(const t of tokens){
+    const name = (t.token_symbol || '???') + (t.token_name ? ` — ${t.token_name}` : '');
+    const row = document.createElement('div');
+    row.className = 'row';
+    row.innerHTML = `
+      <div><a href="token.html?address=${encodeURIComponent(t.token_address)}">${name}</a></div>
+      <div class="addr">${t.token_address}</div>
+      <div class="meta">processed_at: ${t.processed_at || 'n/a'} | score: ${(t.full_token_details?.aggregate_score ?? 'n/a')}</div>
+    `;
+    list.appendChild(row);
+  }
+}
+
+load();
+setInterval(load, 15000);
+</script>
+</body>
+</html>

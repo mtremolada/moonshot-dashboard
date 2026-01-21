@@ -1,0 +1,3926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Narrow Swarm</title>
+    <style>
+        :root {
+            --bg0: #05020a;
+            --bg1: #070a14;
+            --panel: rgba(16, 10, 30, 0.68);
+            --panel2: rgba(12, 8, 24, 0.62);
+            --border: rgba(255, 255, 255, 0.10);
+
+            --text: #f2efff;
+            --muted: #b7a9ff;
+
+            --neonPink: #ff4fd8;
+            --neonPurple: #a855ff;
+            --neonBlue: #4ad7ff;
+            --neonGreen: #35ffb2;
+            --neonYellow: #ffe27a;
+            --neonRed: #ff4b6e;
+
+            --green: var(--neonGreen);
+            --yellow: var(--neonYellow);
+            --red: var(--neonRed);
+            --blue: var(--neonBlue);
+
+            --shadowDeep: 0 20px 70px rgba(0, 0, 0, 0.65);
+            --shadowLift: 0 14px 40px rgba(0, 0, 0, 0.55);
+
+            --radius: 18px;
+            --ring: 0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+            --neonRing: 0 0 0 1px rgba(255, 255, 255, 0.10) inset,
+                0 0 22px rgba(168, 85, 255, 0.20),
+                0 0 36px rgba(255, 79, 216, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+            background:
+                radial-gradient(1200px 700px at 50% 18%, rgba(168, 85, 255, 0.26), transparent 60%),
+                radial-gradient(900px 600px at 20% 80%, rgba(255, 79, 216, 0.16), transparent 55%),
+                radial-gradient(1000px 700px at 85% 72%, rgba(74, 215, 255, 0.14), transparent 60%),
+                linear-gradient(180deg, rgba(10, 4, 24, 0.0), rgba(5, 2, 10, 1) 60%),
+                linear-gradient(140deg, var(--bg1), var(--bg0));
+            position: relative;
+        }
+
+        body:before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(circle at 12% 18%, rgba(255, 79, 216, 0.20), transparent 45%),
+                radial-gradient(circle at 72% 22%, rgba(168, 85, 255, 0.20), transparent 46%),
+                radial-gradient(circle at 70% 78%, rgba(74, 215, 255, 0.14), transparent 45%),
+                radial-gradient(circle at 18% 82%, rgba(53, 255, 178, 0.10), transparent 45%),
+                repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0px, rgba(255, 255, 255, 0.035) 1px, transparent 2px, transparent 6px);
+            mix-blend-mode: screen;
+            opacity: 0.55;
+            filter: blur(0.2px);
+            animation: bgPulse 6.5s ease-in-out infinite;
+        }
+
+        body:after {
+            content: "";
+            position: fixed;
+            inset: -40%;
+            pointer-events: none;
+            background: conic-gradient(from 180deg at 50% 50%,
+                    rgba(255, 79, 216, 0.10),
+                    rgba(168, 85, 255, 0.12),
+                    rgba(74, 215, 255, 0.10),
+                    rgba(53, 255, 178, 0.06),
+                    rgba(255, 79, 216, 0.10));
+            opacity: 0.18;
+            filter: blur(40px);
+            animation: spin 24s linear infinite;
+            transform-origin: center;
+        }
+
+        @keyframes bgPulse {
+
+            0%,
+            100% {
+                opacity: 0.50;
+            }
+
+            50% {
+                opacity: 0.70;
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 18px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ---------- STATES ---------- */
+        .state {
+            display: none;
+            min-height: calc(100vh - 36px);
+        }
+
+        .state.active {
+            display: flex;
+        }
+
+        /* ---------- START SCREEN ---------- */
+        .start {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .startCard {
+            width: min(820px, 94vw);
+            background: var(--panel);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius);
+            padding: 22px;
+            backdrop-filter: blur(10px) saturate(1.2);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--neonRing), var(--shadowDeep);
+        }
+
+        .startCard:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 28px 28px;
+            opacity: 0.18;
+            pointer-events: none;
+        }
+
+        .startInner {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 0.4px;
+            text-shadow:
+                0 0 10px rgba(255, 79, 216, 0.25),
+                0 0 18px rgba(168, 85, 255, 0.22),
+                0 0 26px rgba(74, 215, 255, 0.12);
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6px;
+            width: 100%;
+        }
+
+        input {
+            width: min(560px, 90vw);
+            padding: 12px 12px;
+            font-size: 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(6, 4, 14, 0.66);
+            color: var(--text);
+            outline: none;
+            box-shadow: var(--ring);
+            backdrop-filter: blur(6px);
+            transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+        }
+
+        input::placeholder {
+            color: rgba(183, 169, 255, 0.65);
+        }
+
+        input:focus {
+            border-color: rgba(255, 79, 216, 0.55);
+            box-shadow:
+                0 0 0 3px rgba(255, 79, 216, 0.14),
+                0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+                0 0 22px rgba(168, 85, 255, 0.12);
+            transform: translateY(-1px);
+        }
+
+        button {
+            padding: 12px 14px;
+            font-size: 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            color: var(--text);
+            cursor: pointer;
+            min-width: 128px;
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(180deg, rgba(20, 10, 40, 0.92), rgba(10, 6, 22, 0.92));
+            box-shadow:
+                0 10px 28px rgba(0, 0, 0, 0.55),
+                0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+                0 0 18px rgba(255, 79, 216, 0.10);
+            transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease, filter 160ms ease;
+        }
+
+        button:before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(120deg,
+                    rgba(255, 79, 216, 0.75),
+                    rgba(168, 85, 255, 0.75),
+                    rgba(74, 215, 255, 0.65),
+                    rgba(53, 255, 178, 0.45));
+            opacity: 0.35;
+            filter: blur(12px);
+            z-index: 0;
+            transition: opacity 160ms ease;
+        }
+
+        button:hover {
+            border-color: rgba(74, 215, 255, 0.45);
+            box-shadow:
+                0 0 0 3px rgba(74, 215, 255, 0.10),
+                0 0 28px rgba(168, 85, 255, 0.16),
+                0 14px 34px rgba(0, 0, 0, 0.60);
+            transform: translateY(-1px);
+            filter: brightness(1.05);
+        }
+
+        button:active {
+            transform: translateY(0px);
+            filter: brightness(0.98);
+        }
+
+        button:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+            box-shadow: none;
+            filter: none;
+        }
+
+        .error {
+            margin-top: 8px;
+            color: var(--neonRed);
+            font-size: 13px;
+            white-space: pre-wrap;
+            display: none;
+            text-shadow: 0 0 10px rgba(255, 75, 110, 0.25);
+        }
+
+        /* ---------- LOADING OVERLAY ---------- */
+        .loadingOverlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(4, 2, 10, 0.72);
+            backdrop-filter: blur(10px) saturate(1.2);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .loadingOverlay.active {
+            display: flex;
+        }
+
+        .loaderCard {
+            width: min(760px, 92vw);
+            background: var(--panel2);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius);
+            padding: 18px;
+            box-shadow: var(--neonRing), var(--shadowDeep);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .loaderCard:before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(120deg,
+                    rgba(255, 79, 216, 0.22),
+                    rgba(168, 85, 255, 0.26),
+                    rgba(74, 215, 255, 0.18),
+                    rgba(53, 255, 178, 0.14));
+            filter: blur(18px);
+            opacity: 0.55;
+            z-index: 0;
+            animation: neonBreath2 3.2s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes neonBreath2 {
+
+            0%,
+            100% {
+                opacity: 0.38;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.72;
+                transform: scale(1.01);
+            }
+        }
+
+        .loaderTop {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .loaderTitle {
+            font-size: 14px;
+            color: var(--text);
+            font-weight: 950;
+            letter-spacing: 0.4px;
+            text-shadow: 0 0 14px rgba(168, 85, 255, 0.20);
+        }
+
+        .loaderMeta {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.80);
+        }
+
+        /* AI thinking animation (kept) */
+        .aiBox {
+            position: relative;
+            z-index: 1;
+            margin-top: 14px;
+            height: 150px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(6, 4, 14, 0.58);
+            overflow: hidden;
+            box-shadow:
+                0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+                0 0 30px rgba(168, 85, 255, 0.12);
+            transform: translateZ(0);
+        }
+
+        .aiNebula {
+            position: absolute;
+            inset: -45%;
+            background: conic-gradient(from 220deg at 50% 50%,
+                    rgba(255, 79, 216, 0.18),
+                    rgba(168, 85, 255, 0.20),
+                    rgba(74, 215, 255, 0.16),
+                    rgba(53, 255, 178, 0.10),
+                    rgba(255, 79, 216, 0.18));
+            filter: blur(40px);
+            opacity: 0.85;
+            animation: nebulaSpin 10s linear infinite;
+            mix-blend-mode: screen;
+        }
+
+        @keyframes nebulaSpin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .aiDust,
+        .aiDust2,
+        .aiDust3 {
+            position: absolute;
+            inset: 0;
+            opacity: 0.85;
+            pointer-events: none;
+            mix-blend-mode: screen;
+            transform: translateZ(0);
+        }
+
+        .aiDust {
+            background-image:
+                radial-gradient(rgba(255, 255, 255, 0.22) 1px, transparent 1.2px),
+                radial-gradient(rgba(74, 215, 255, 0.22) 1px, transparent 1.2px),
+                radial-gradient(rgba(168, 85, 255, 0.18) 1px, transparent 1.3px);
+            background-size: 22px 22px, 34px 34px, 46px 46px;
+            background-position: 0 0, 10px 14px, 18px 8px;
+            filter: drop-shadow(0 0 10px rgba(74, 215, 255, 0.10));
+            animation: dustDrift 4.8s linear infinite;
+            opacity: 0.45;
+        }
+
+        .aiDust2 {
+            background-image:
+                radial-gradient(rgba(255, 79, 216, 0.20) 1.2px, transparent 1.6px),
+                radial-gradient(rgba(168, 85, 255, 0.20) 1.2px, transparent 1.6px);
+            background-size: 60px 60px, 78px 78px;
+            background-position: 0 0, 22px 8px;
+            filter: blur(0.2px);
+            animation: dustDrift2 6.5s linear infinite;
+            opacity: 0.35;
+        }
+
+        .aiDust3 {
+            background-image:
+                radial-gradient(rgba(53, 255, 178, 0.18) 1.6px, transparent 2.2px),
+                radial-gradient(rgba(255, 255, 255, 0.14) 1.6px, transparent 2.2px);
+            background-size: 110px 110px, 160px 160px;
+            background-position: 0 0, 40px 60px;
+            animation: dustDrift3 9.5s linear infinite;
+            opacity: 0.22;
+        }
+
+        @keyframes dustDrift {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(24px, 18px) rotate(12deg);
+            }
+        }
+
+        @keyframes dustDrift2 {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-18px, 26px) rotate(-10deg);
+            }
+        }
+
+        @keyframes dustDrift3 {
+            0% {
+                transform: translate(14px, -22px) rotate(8deg);
+            }
+
+            100% {
+                transform: translate(14px, -22px) rotate(8deg);
+            }
+        }
+
+        .aiGrid {
+            position: absolute;
+            inset: -20%;
+            background:
+                linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+            background-size: 26px 26px;
+            opacity: 0.18;
+            transform-origin: center;
+            animation: gridSpin 14s linear infinite;
+            filter: drop-shadow(0 0 18px rgba(168, 85, 255, 0.10));
+        }
+
+        @keyframes gridSpin {
+            0% {
+                transform: rotate(0deg) translateZ(0);
+            }
+
+            100% {
+                transform: rotate(360deg) translateZ(0);
+            }
+        }
+
+        .aiArc {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 320px;
+            height: 320px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background:
+                conic-gradient(from 0deg,
+                    rgba(74, 215, 255, 0.00) 0deg,
+                    rgba(74, 215, 255, 0.00) 280deg,
+                    rgba(74, 215, 255, 0.32) 320deg,
+                    rgba(255, 79, 216, 0.24) 340deg,
+                    rgba(168, 85, 255, 0.00) 360deg);
+            filter: blur(0.2px) drop-shadow(0 0 16px rgba(74, 215, 255, 0.18));
+            animation: arcSpin 1.6s linear infinite;
+            opacity: 0.9;
+            mix-blend-mode: screen;
+        }
+
+        @keyframes arcSpin {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .aiCore {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 78px;
+            height: 78px;
+            border-radius: 20px;
+            background: rgba(6, 4, 14, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow:
+                0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+                0 0 28px rgba(255, 79, 216, 0.14),
+                0 0 34px rgba(168, 85, 255, 0.12);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .aiCore:before {
+            content: "";
+            position: absolute;
+            inset: -30%;
+            background: conic-gradient(from 180deg,
+                    rgba(255, 79, 216, 0.32),
+                    rgba(74, 215, 255, 0.26),
+                    rgba(53, 255, 178, 0.16),
+                    rgba(168, 85, 255, 0.32));
+            filter: blur(16px);
+            opacity: 0.8;
+            animation: coreSpin 2.2s linear infinite;
+            mix-blend-mode: screen;
+        }
+
+        @keyframes coreSpin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .aiCore:after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+            opacity: 0.35;
+            animation: coreSheen 1.1s ease-in-out infinite;
+        }
+
+        @keyframes coreSheen {
+
+            0%,
+            100% {
+                transform: translateX(-40%);
+                opacity: 0.18;
+            }
+
+            50% {
+                transform: translateX(40%);
+                opacity: 0.45;
+            }
+        }
+
+        .aiOrbit {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 260px;
+            height: 260px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 0 30px rgba(168, 85, 255, 0.08);
+            opacity: 0.95;
+        }
+
+        .aiOrbit:before,
+        .aiOrbit:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            transform: translate(-50%, -50%);
+            background: rgba(74, 215, 255, 0.9);
+            filter: drop-shadow(0 0 10px rgba(74, 215, 255, 0.55));
+        }
+
+        .aiOrbit:before {
+            animation: nodeOrbit1 2.6s linear infinite;
+            box-shadow: 0 0 18px rgba(74, 215, 255, 0.25);
+        }
+
+        .aiOrbit:after {
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 79, 216, 0.85);
+            filter: drop-shadow(0 0 10px rgba(255, 79, 216, 0.50));
+            animation: nodeOrbit2 3.4s linear infinite reverse;
+        }
+
+        @keyframes nodeOrbit1 {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg) translateX(130px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg) translateX(130px) rotate(-360deg);
+            }
+        }
+
+        @keyframes nodeOrbit2 {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg) translateX(95px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg) translateX(95px) rotate(-360deg);
+            }
+        }
+
+        .aiEQ {
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            bottom: 14px;
+            height: 54px;
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+            opacity: 0.95;
+            z-index: 2;
+        }
+
+        .aiEQ .bar {
+            width: 10px;
+            border-radius: 999px;
+            background: linear-gradient(180deg,
+                    rgba(74, 215, 255, 0.95),
+                    rgba(168, 85, 255, 0.70),
+                    rgba(255, 79, 216, 0.35));
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            animation: bounce 0.9s ease-in-out infinite;
+            box-shadow: 0 0 18px rgba(74, 215, 255, 0.10);
+        }
+
+        .aiEQ .bar:nth-child(2) {
+            animation-delay: 0.08s;
+        }
+
+        .aiEQ .bar:nth-child(3) {
+            animation-delay: 0.16s;
+        }
+
+        .aiEQ .bar:nth-child(4) {
+            animation-delay: 0.24s;
+        }
+
+        .aiEQ .bar:nth-child(5) {
+            animation-delay: 0.32s;
+        }
+
+        .aiEQ .bar:nth-child(6) {
+            animation-delay: 0.40s;
+        }
+
+        .aiEQ .bar:nth-child(7) {
+            animation-delay: 0.48s;
+        }
+
+        .aiEQ .bar:nth-child(8) {
+            animation-delay: 0.56s;
+        }
+
+        .aiEQ .bar:nth-child(9) {
+            animation-delay: 0.64s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                height: 10px;
+                opacity: .65;
+            }
+
+            50% {
+                height: 52px;
+                opacity: 1;
+            }
+        }
+
+        .loaderHint {
+            position: relative;
+            z-index: 2;
+            margin-top: 12px;
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.82);
+            line-height: 1.5;
+            white-space: pre-wrap;
+            text-shadow: 0 0 12px rgba(168, 85, 255, 0.12);
+        }
+
+        /* ---------- RESULTS SCREEN ---------- */
+        .results {
+            flex-direction: column;
+            min-height: calc(100vh - 36px);
+        }
+
+        .topBar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px;
+            background: rgba(12, 8, 24, 0.62);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            backdrop-filter: blur(10px) saturate(1.2);
+            box-shadow: var(--neonRing), var(--shadowLift);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topBar:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(700px 220px at 10% 10%, rgba(255, 79, 216, 0.16), transparent 60%),
+                radial-gradient(700px 220px at 90% 10%, rgba(74, 215, 255, 0.12), transparent 60%),
+                linear-gradient(90deg, rgba(168, 85, 255, 0.05), transparent 35%, rgba(255, 79, 216, 0.05));
+            opacity: 0.9;
+            pointer-events: none;
+        }
+
+        .topLeft {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-width: 260px;
+        }
+
+        .topTitle {
+            font-size: 14px;
+            font-weight: 950;
+            letter-spacing: 0.35px;
+            margin: 0;
+            text-shadow: 0 0 10px rgba(255, 79, 216, 0.15), 0 0 16px rgba(168, 85, 255, 0.12);
+        }
+
+        .topMeta {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.85);
+            margin: 0;
+        }
+
+        .topRight {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            flex: 1;
+        }
+
+        .pill {
+            font-size: 12px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            color: rgba(183, 169, 255, 0.85);
+            background: rgba(255, 255, 255, 0.04);
+            white-space: nowrap;
+            box-shadow:
+                0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+                0 0 14px rgba(168, 85, 255, 0.10);
+        }
+
+        .grid {
+            margin-top: 12px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .card {
+            background: rgba(12, 8, 24, 0.62);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 14px;
+            box-shadow: var(--neonRing), var(--shadowLift);
+            overflow: hidden;
+            position: relative;
+            backdrop-filter: blur(10px) saturate(1.2);
+        }
+
+        .card:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(900px 320px at 15% 10%, rgba(255, 79, 216, 0.12), transparent 60%),
+                radial-gradient(900px 320px at 85% 20%, rgba(74, 215, 255, 0.10), transparent 60%);
+            opacity: 0.9;
+            pointer-events: none;
+        }
+
+        .card>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: var(--neonGreen);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            text-shadow: 0 0 12px rgba(53, 255, 178, 0.20), 0 0 16px rgba(74, 215, 255, 0.08);
+        }
+
+        /* ---- Token header ---- */
+        .tokenHeader {
+            display: flex;
+            gap: 12px;
+            align-items: stretch;
+            flex-wrap: wrap;
+            /* <-- allow Tags row to span full width */
+        }
+
+        /* NEW: two widgets at top (left token, right aggregate scores) */
+        .topWidgets {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 12px;
+            width: 100%;
+        }
+
+        @media (max-width: 980px) {
+            .topWidgets {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .topWidget {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 12px;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset, 0 0 18px rgba(168, 85, 255, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Left main token widget keeps prior layout */
+        .tokenIconWrap {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: center;
+            flex: 0 0 auto;
+            margin-top: 2px;
+        }
+
+        .tokenIcon {
+            width: 140px;
+            height: 140px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(6, 4, 14, 0.70);
+            object-fit: cover;
+            box-shadow:
+                0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+                0 0 18px rgba(255, 79, 216, 0.10),
+                0 12px 26px rgba(0, 0, 0, 0.45);
+        }
+
+        .createdUnder {
+            font-size: 11px;
+            color: rgba(183, 169, 255, 0.82);
+            line-height: 1.15;
+            text-align: center;
+            max-width: 140px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-shadow: 0 0 10px rgba(168, 85, 255, 0.08);
+        }
+
+        .tokenTitle {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .tokenName {
+            font-size: 18px;
+            font-weight: 950;
+            line-height: 1.1;
+            text-shadow: 0 0 10px rgba(168, 85, 255, 0.18), 0 0 18px rgba(255, 79, 216, 0.10);
+        }
+
+        .tokenSymbol {
+            font-size: 13px;
+            color: rgba(183, 169, 255, 0.86);
+        }
+
+        /* NEW: big USD market cap in top-right of token widget */
+        .mcapBigWrap {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            gap: 4px;
+            padding-left: 6px;
+            margin-top: 2px;
+            min-width: 160px;
+        }
+
+        .mcapBigLabel {
+            font-size: 11px;
+            color: rgba(183, 169, 255, 0.78);
+            font-weight: 900;
+            letter-spacing: 0.25px;
+            text-transform: uppercase;
+        }
+
+        .mcapBigNum {
+            font-size: 34px;
+            font-weight: 950;
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+            text-shadow:
+                0 0 18px rgba(255, 255, 255, 0.08),
+                0 0 26px rgba(168, 85, 255, 0.16),
+                0 0 20px rgba(255, 79, 216, 0.10);
+            white-space: nowrap;
+        }
+
+        /* ---------- Social circle icons ---------- */
+        .links {
+            margin-top: 6px;
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        .iconLink {
+            width: 22px;
+            height: 22px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.035);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+            transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease, filter 140ms ease;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .iconLink:hover {
+            border-color: rgba(74, 215, 255, 0.42);
+            box-shadow:
+                0 0 0 3px rgba(74, 215, 255, 0.10),
+                0 0 22px rgba(168, 85, 255, 0.10);
+            transform: translateY(-1px);
+            filter: brightness(1.06);
+        }
+
+        .iconLink svg {
+            width: 12px;
+            height: 12px;
+            opacity: 0.95;
+            filter: drop-shadow(0 0 10px rgba(168, 85, 255, 0.08));
+        }
+
+        /* ---------- DEX/CTO/LIVE key row under socials ---------- */
+        .keyRow {
+            margin-top: 8px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 8px 10px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+            width: fit-content;
+            max-width: 100%;
+        }
+
+        .keyItem {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: rgba(242, 239, 255, 0.92);
+        }
+
+        .keyLabel {
+            color: rgba(183, 169, 255, 0.82);
+            font-weight: 900;
+            letter-spacing: 0.25px;
+        }
+
+        .keyVal {
+            font-weight: 950;
+            letter-spacing: 0.25px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .keyVal.ok {
+            color: var(--neonGreen);
+            text-shadow: 0 0 12px rgba(53, 255, 178, 0.18);
+        }
+
+        .keyVal.no {
+            color: var(--neonRed);
+            text-shadow: 0 0 12px rgba(255, 75, 110, 0.18);
+        }
+
+        /* NEW: bool coloring for metric values (Trending Ranks section) */
+        .metricVal.ok {
+            color: var(--neonGreen);
+            text-shadow: 0 0 12px rgba(53, 255, 178, 0.18);
+            font-weight: 950;
+        }
+
+        .metricVal.no {
+            color: var(--neonRed);
+            text-shadow: 0 0 12px rgba(255, 75, 110, 0.18);
+            font-weight: 950;
+        }
+
+        /* ---------- Tags ---------- */
+        .tagRow {
+            margin-top: 10px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+
+            width: 100%;
+            /* <-- full widget width */
+            flex: 0 0 100%;
+            /* <-- force onto its own full-width row */
+        }
+
+        .tagLabel {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.82);
+            font-weight: 900;
+            letter-spacing: 0.25px;
+            margin-right: 2px;
+        }
+
+        .tag {
+            font-size: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.04);
+            color: rgba(183, 169, 255, 0.92);
+            border-radius: 999px;
+            padding: 5px 9px;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+        }
+
+        .tag.on {
+            color: var(--text);
+            border-color: rgba(53, 255, 178, 0.40);
+            background: rgba(53, 255, 178, 0.08);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset, 0 0 18px rgba(53, 255, 178, 0.10);
+        }
+
+        .sectionTitle {
+            margin-top: 14px;
+            font-size: 13px;
+            color: rgba(53, 255, 178, 0.92);
+            font-weight: 950;
+            letter-spacing: 0.35px;
+            text-shadow: 0 0 12px rgba(53, 255, 178, 0.18);
+        }
+
+        .summary {
+            margin-top: 8px;
+            background: rgba(6, 4, 14, 0.68);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 12px;
+            font-size: 13px;
+            line-height: 1.55;
+            white-space: pre-wrap;
+            color: var(--text);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset, 0 0 24px rgba(168, 85, 255, 0.08);
+        }
+
+        /* Main scores (5) - kept styles, but no longer used as a row */
+        .scoreRow {
+            margin-top: 12px;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        @media (max-width: 980px) {
+            .scoreRow {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 720px) {
+            .scoreRow {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .scoreBox {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset, 0 0 18px rgba(168, 85, 255, 0.08);
+            transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+        }
+
+        .scoreBox:hover {
+            transform: translateY(-1px);
+            border-color: rgba(74, 215, 255, 0.28);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) inset, 0 0 26px rgba(74, 215, 255, 0.10), 0 0 20px rgba(255, 79, 216, 0.06);
+        }
+
+        .scoreTop {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .scoreTitle {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.82);
+        }
+
+        .scoreNum {
+            font-size: 18px;
+            font-weight: 950;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+        }
+
+        .barWrap {
+            height: 9px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            overflow: hidden;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+        }
+
+        .fill {
+            height: 100%;
+            width: 0%;
+            background: var(--green);
+            transition: width 250ms ease;
+            filter: drop-shadow(0 0 10px rgba(53, 255, 178, 0.22));
+        }
+
+        /* NEW: aggregate scores widget layout (big aggregate on left, stacked bars on right) */
+        .aggWidget {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        @media (max-width: 980px) {
+            .aggWidget {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .aggBig {
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(6, 4, 14, 0.58);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset, 0 0 22px rgba(168, 85, 255, 0.10);
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 6px;
+            min-height: 124px;
+        }
+
+        .aggBigLabel {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.82);
+            font-weight: 900;
+            letter-spacing: 0.25px;
+        }
+
+        .aggBigNum {
+            font-size: 44px;
+            font-weight: 950;
+            line-height: 1;
+            text-shadow:
+                0 0 18px rgba(255, 255, 255, 0.08),
+                0 0 26px rgba(168, 85, 255, 0.16),
+                0 0 20px rgba(255, 79, 216, 0.10);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .aggBigOutOf {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.78);
+        }
+
+        .aggBars {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .aggBarRow {
+            display: grid;
+            grid-template-columns: 92px 1fr auto;
+            gap: 10px;
+            align-items: center;
+            padding: 8px 10px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.03);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+        }
+
+        .aggBarName {
+            font-size: 12px;
+            color: rgba(242, 239, 255, 0.92);
+            font-weight: 900;
+            letter-spacing: 0.2px;
+        }
+
+        .aggBarNum {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.90);
+            font-weight: 950;
+            font-variant-numeric: tabular-nums;
+            text-align: right;
+            min-width: 26px;
+        }
+
+        /* Holderscan */
+        .chartWrap {
+            margin-top: 8px;
+            background: rgba(6, 4, 14, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 10px;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset, 0 0 24px rgba(74, 215, 255, 0.05);
+        }
+
+        canvas {
+            width: 100%;
+            height: 180px;
+            display: block;
+        }
+
+        .legend {
+            margin-top: 8px;
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.82);
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .legItem {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 0 14px rgba(255, 255, 255, 0.06);
+        }
+
+        /* ---- Compact tech row ---- */
+        .techRow {
+            margin-top: 10px;
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 8px 10px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+        }
+
+        .techItem {
+            font-size: 12px;
+            color: rgba(242, 239, 255, 0.92);
+            display: flex;
+            gap: 6px;
+            align-items: baseline;
+            white-space: nowrap;
+        }
+
+        .techK {
+            color: rgba(183, 169, 255, 0.82);
+            font-weight: 950;
+            letter-spacing: 0.25px;
+        }
+
+        .techV {
+            font-weight: 950;
+            font-variant-numeric: tabular-nums;
+            text-shadow: 0 0 10px rgba(168, 85, 255, 0.08);
+        }
+
+        ul {
+            margin: 8px 0 0;
+            padding: 0 0 0 18px;
+            font-size: 13px;
+            line-height: 1.5;
+            color: rgba(242, 239, 255, 0.92);
+            white-space: pre-wrap;
+        }
+
+        .status {
+            color: rgba(242, 239, 255, 0.92);
+            text-shadow: 0 0 12px rgba(168, 85, 255, 0.10);
+        }
+
+        /* ----- Mini cards / metrics ----- */
+        .miniCard {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 10px;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset, 0 0 18px rgba(168, 85, 255, 0.06);
+            overflow: hidden;
+        }
+
+        .miniCardHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .miniCardTitle {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.86);
+            font-weight: 900;
+            letter-spacing: 0.25px;
+            text-transform: uppercase;
+        }
+
+        .miniCardHint {
+            font-size: 11px;
+            color: rgba(183, 169, 255, 0.72);
+        }
+
+        .metricRow {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 8px;
+            align-items: baseline;
+            padding: 6px 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+        }
+
+        .metricRow:last-child {
+            border-bottom: none;
+        }
+
+        .metricKey {
+            font-size: 12px;
+            color: rgba(242, 239, 255, 0.92);
+        }
+
+        .metricVal {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.90);
+            text-align: right;
+        }
+
+        .subscore {
+            margin-top: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .subscoreItem {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .subscoreName {
+            font-size: 12px;
+            color: rgba(242, 239, 255, 0.92);
+        }
+
+        .subscoreNum {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.90);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .subscoreBarWrap {
+            grid-column: 1 / -1;
+            height: 8px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            overflow: hidden;
+        }
+
+        .subscoreFill {
+            height: 100%;
+            width: 0%;
+            background: var(--neonBlue);
+            filter: drop-shadow(0 0 10px rgba(74, 215, 255, 0.18));
+            transition: width 250ms ease;
+        }
+
+        /* ----- Alpha bars (compact) ----- */
+        .alphaBars {
+            margin-top: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .barItem {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .barItemName {
+            font-size: 12px;
+            color: rgba(242, 239, 255, 0.92);
+        }
+
+        .barItemVal {
+            font-size: 12px;
+            color: rgba(183, 169, 255, 0.90);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .barItemTrack {
+            grid-column: 1 / -1;
+            height: 8px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            overflow: hidden;
+        }
+
+        .barItemFill {
+            height: 100%;
+            width: 0%;
+            background: var(--neonYellow);
+            filter: drop-shadow(0 0 10px rgba(255, 226, 122, 0.18));
+            transition: width 250ms ease;
+        }
+
+        /* ---------- NEW: 4 widgets row under Groq Summary ---------- */
+        .quadRow {
+            margin-top: 12px;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 10px;
+            align-items: start;
+        }
+
+        @media (max-width: 1200px) {
+            .quadRow {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 850px) {
+            .quadRow {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 580px) {
+            .quadRow {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .miniSectionLabel {
+            margin-top: 10px;
+            font-size: 11px;
+            color: rgba(183, 169, 255, 0.78);
+            font-weight: 900;
+            letter-spacing: 0.25px;
+            text-transform: uppercase;
+        }
+
+        /* ---------- NEW: make tweet/community/search lists match summary styling ---------- */
+        .summaryList {
+            margin-top: 8px;
+            background: rgba(6, 4, 14, 0.68);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 12px 12px 12px 30px;
+            font-size: 13px;
+            line-height: 1.55;
+            white-space: pre-wrap;
+            color: var(--text);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset, 0 0 24px rgba(168, 85, 255, 0.08);
+        }
+
+        .summaryList li {
+            margin: 0 0 6px;
+        }
+
+        .summaryList li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ---------- NEW: Raw metrics toggle ---------- */
+        .rawToggleRow {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .rawToggleBtn {
+            padding: 7px 10px;
+            font-size: 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.04);
+            color: rgba(242, 239, 255, 0.92);
+            cursor: pointer;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset, 0 0 16px rgba(168, 85, 255, 0.08);
+            transition: transform 140ms ease, filter 140ms ease, border-color 140ms ease;
+            user-select: none;
+        }
+
+        .rawToggleBtn:hover {
+            transform: translateY(-1px);
+            border-color: rgba(74, 215, 255, 0.35);
+            filter: brightness(1.05);
+        }
+
+        .rawToggleBtn:active {
+            transform: translateY(0px);
+            filter: brightness(0.98);
+        }
+
+        .chartsStack {
+            margin-top: 8px;
+            background: rgba(6, 4, 14, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset, 0 0 24px rgba(74, 215, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chartSlot {
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.015);
+        }
+
+        .chartSlot:last-child {
+            border-bottom: none;
+        }
+
+        /* Adjust internal chart styling if needed */
+        .chartSlot .loaderMeta {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 4px 8px;
+            border-radius: 6px;
+            pointer-events: none;
+            z-index: 10;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <!-- START STATE -->
+        <div id="stateStart" class="state start active">
+            <div class="startCard">
+                <div class="startInner">
+                    <h1>Narrow Swarm Scanner</h1>
+                    <div class="row">
+                        <input id="addrStart" placeholder="Enter token address..." value="" />
+                        <button id="runBtnStart">Run Scan</button>
+                    </div>
+                    <div id="startError" class="error"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESULTS STATE -->
+        <div id="stateResults" class="state results">
+            <div class="topBar">
+                <div class="topLeft">
+                    <p class="topTitle">Narrow Agent Scan Completed!</p>
+                    <p id="topMeta" class="topMeta">—</p>
+                </div>
+                <div class="topRight">
+                    <input id="addrTop" placeholder="Enter token address..." />
+                    <button id="runBtnTop">Run New Scan</button>
+                    <span id="runPill" class="pill" style="display:none;"></span>
+                </div>
+            </div>
+
+            <div id="status" class="status" style="margin-top:10px;"></div>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>
+                        <span>Token Information</span>
+                        <span id="resultPill" class="pill" style="display:none;"></span>
+                    </h3>
+
+                    <!-- UPDATED: Two top widgets (left main token data, right aggregate scores) -->
+                    <div class="topWidgets">
+
+                        <!-- LEFT: Main token data widget -->
+                        <div class="topWidget">
+                            <div class="tokenHeader">
+                                <div class="tokenIconWrap">
+                                    <img id="tokenImage" class="tokenIcon" src="logo.png" alt="token image" />
+                                    <div id="createdUnderImage" class="createdUnder">—</div>
+                                </div>
+
+                                <div class="tokenTitle">
+                                    <div id="tokenName" class="tokenName">—</div>
+                                    <div id="tokenSymbol" class="tokenSymbol">—</div>
+
+                                    <!-- Social icons now live here -->
+                                    <div class="links" id="links"></div>
+
+                                    <!-- DEX/CTO/LIVE under socials -->
+                                    <div class="keyRow" id="keyRow" style="display:none;">
+                                        <div class="keyItem"><span class="keyLabel">DEX</span> <span id="dexKey"
+                                                class="keyVal">—</span></div>
+                                        <div class="keyItem"><span class="keyLabel">CTO</span> <span id="ctoKey"
+                                                class="keyVal">—</span></div>
+                                        <div class="keyItem"><span class="keyLabel">LIVE</span> <span id="liveKey"
+                                                class="keyVal">—</span></div>
+                                    </div>
+                                </div>
+
+                                <!-- NEW: big USD market cap in the top-right of this same widget -->
+                                <div class="mcapBigWrap">
+                                    <div class="mcapBigLabel">USD Market Cap</div>
+                                    <div id="usdMcapBig" class="mcapBigNum">—</div>
+                                </div>
+
+                                <!-- Tags now span full width of this widget -->
+                                <div id="classTags" class="tagRow"></div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT: Aggregate scores widget -->
+                        <div class="topWidget">
+                            <div class="aggWidget">
+                                <div class="aggBig">
+                                    <div class="aggBigLabel">Agent Score</div>
+                                    <div id="aggBigScore" class="aggBigNum">—</div>
+                                    <div class="aggBigOutOf">out of 10</div>
+                                </div>
+
+                                <div class="aggBars">
+                                    <!-- UPDATED ORDER: Alpha, Onchain, Technical, Narrative, Confidence -->
+                                    <div class="aggBarRow">
+                                        <div class="aggBarName">Alpha</div>
+                                        <div class="barWrap">
+                                            <div id="alphaFill" class="fill"></div>
+                                        </div>
+                                        <div id="alphaScore" class="aggBarNum">—</div>
+                                    </div>
+                                    <div class="aggBarRow">
+                                        <div class="aggBarName">Onchain</div>
+                                        <div class="barWrap">
+                                            <div id="onchainFill" class="fill"></div>
+                                        </div>
+                                        <div id="onchainScore" class="aggBarNum">—</div>
+                                    </div>
+                                    <div class="aggBarRow">
+                                        <div class="aggBarName">Technical</div>
+                                        <div class="barWrap">
+                                            <div id="technicalFill" class="fill"></div>
+                                        </div>
+                                        <div id="technicalScore" class="aggBarNum">—</div>
+                                    </div>
+                                    <div class="aggBarRow">
+                                        <div class="aggBarName">Narrative</div>
+                                        <div class="barWrap">
+                                            <div id="narrativeFill" class="fill"></div>
+                                        </div>
+                                        <div id="narrativeScore" class="aggBarNum">—</div>
+                                    </div>
+                                    <div class="aggBarRow">
+                                        <div class="aggBarName">Confidence</div>
+                                        <div class="barWrap">
+                                            <div id="confidenceFill" class="fill"></div>
+                                        </div>
+                                        <div id="confidenceScore" class="aggBarNum">—</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- MOVED: Main Tweet above Groq Summary, under main token info widget -->
+                    <div class="sectionTitle">Main Post</div>
+                    <div id="mainTweet" class="summary">—</div>
+
+                    <!-- Agent Summary above Holderscan graph -->
+                    <div class="sectionTitle">Agent Summary</div>
+                    <div id="groqSummary" class="summary">—</div>
+
+                    <!-- Combined Chart Widget (Price + Cipher + MACD) -->
+                    <div class="sectionTitle" style="display:flex; justify-content:space-between; align-items:center;">
+                        <span>Price / Cipher / MACD</span>
+                        <select id="timeframeSelect"
+                            style="background:rgba(0,0,0,0.4); border:1px solid rgba(255,255,255,0.1); color:rgba(183,169,255,0.9); padding:4px 10px; border-radius:8px; font-size:12px; outline:none; cursor:pointer; font-weight:900; letter-spacing:0.25px; transition:border-color 0.2s, box-shadow 0.2s;">
+                            <option value="15m" selected style="background:#070a14; color:#f2efff;">15 Min</option>
+                            <option value="1h" style="background:#070a14; color:#f2efff;">1 Hour</option>
+                            <option value="4h" style="background:#070a14; color:#f2efff;">4 Hours</option>
+                            <option value="24h" style="background:#070a14; color:#f2efff;">24 Hours</option>
+                        </select>
+                    </div>
+
+                    <div class="chartsStack">
+                        <!-- Top: Price -->
+                        <div class="chartSlot top">
+                            <div id="priceChart" style="min-height:280px;"></div>
+                            <div id="priceHint" class="loaderMeta" style="display:none;">—</div>
+                        </div>
+
+                        <!-- Middle: Cipher -->
+                        <div class="chartSlot middle">
+                            <div id="cipherChart" style="min-height:220px;"></div>
+                            <div id="cipherHint" class="loaderMeta" style="display:none;">—</div>
+                        </div>
+
+                        <!-- Bottom: MACD -->
+                        <div class="chartSlot bottom">
+                            <div id="macdChart" style="min-height:160px;"></div>
+                            <div id="macdHint" class="loaderMeta" style="display:none;">—</div>
+                        </div>
+                    </div>
+
+                    <!-- Holderscan graph -->
+                    <div class="sectionTitle">Holder Growth</div>
+                    <div class="chartWrap">
+                        <canvas id="holdersChart" width="1000" height="220"></canvas>
+                        <div class="legend">
+                            <div class="legItem"><span class="swatch" id="swatchHolders"></span> Holders</div>
+                            <div class="legItem"><span class="swatch" id="swatchMcap"></span> Market Cap</div>
+                            <div class="legItem"><span class="swatch" id="swatchRatio"></span> Mcap / Holders</div>
+                        </div>
+                        <div id="holdersHint" class="loaderMeta" style="margin-top:8px; display:none;">—</div>
+                    </div>
+
+                    <!-- UPDATED: single-line technical metrics -->
+                    <div class="techRow" id="techRow">
+                        <div class="techItem"><span class="techK">MCAP:</span> <span id="mcapVal" class="techV">—</span>
+                        </div>
+                        <div class="techItem"><span class="techK">ATH:</span> <span id="athVal" class="techV">—</span>
+                        </div>
+                        <div class="techItem"><span class="techK">ATH MULT:</span> <span id="athMultVal"
+                                class="techV">—</span></div>
+                        <div class="techItem"><span class="techK">ATH TS:</span> <span id="athTsVal"
+                                class="techV">—</span></div>
+                    </div>
+
+                    <!-- UPDATED: 4 widgets in one row under Holderscan data -->
+                    <div class="quadRow">
+                        <!-- Alpha -->
+                        <div class="miniCard">
+                            <div class="miniCardHeader">
+                                <div class="miniCardTitle">Alpha Score</div>
+                                <div class="miniCardHint" id="alphaWidgetHint">—</div>
+                            </div>
+                            <div class="scoreBox" style="margin-top:0;">
+                                <div class="scoreTop">
+                                    <div class="scoreTitle">Weighted Score</div>
+                                    <div id="alphaWidgetFinal" class="scoreNum">—</div>
+                                </div>
+                                <div class="barWrap">
+                                    <div id="alphaWidgetFill" class="fill"></div>
+                                </div>
+                            </div>
+
+                            <div id="alphaWidgetBars" class="alphaBars"></div>
+
+                            <div class="rawToggleRow">
+                                <button id="alphaRawToggle" class="rawToggleBtn" type="button">Show raw metrics</button>
+                            </div>
+
+                            <div id="alphaRawSections" style="display:none;">
+                                <div class="miniSectionLabel">Trending Ranks</div>
+                                <div id="alphaTrendingBox"></div>
+
+                                <div class="miniSectionLabel">Whale Activity</div>
+                                <div id="alphaMobyBox"></div>
+
+                                <div class="miniSectionLabel">Twitter Mentions</div>
+                                <div id="alphaTwitterTrendBox"></div>
+
+                                <div class="miniSectionLabel">KOL Buys</div>
+                                <div id="alphaKolBox"></div>
+                            </div>
+                        </div>
+
+                        <!-- Onchain -->
+                        <div class="miniCard">
+                            <div class="miniCardHeader">
+                                <div class="miniCardTitle">Onchain Score</div>
+                                <div class="miniCardHint" id="onchainWidgetHint">—</div>
+                            </div>
+                            <div class="scoreBox" style="margin-top:0;">
+                                <div class="scoreTop">
+                                    <div class="scoreTitle">Weighted Score</div>
+                                    <div id="onchainWidgetFinal" class="scoreNum">—</div>
+                                </div>
+                                <div class="barWrap">
+                                    <div id="onchainWidgetFill" class="fill"></div>
+                                </div>
+                            </div>
+
+                            <div id="onchainWidgetSubscores" class="subscore"></div>
+
+                            <div class="rawToggleRow">
+                                <button id="onchainRawToggle" class="rawToggleBtn" type="button">Show raw
+                                    metrics</button>
+                            </div>
+
+                            <div id="onchainRawSections" style="display:none;">
+                                <div class="miniSectionLabel">Raw Onchain Metrics</div>
+                                <div id="onchainWidgetRawList"></div>
+                            </div>
+                        </div>
+
+                        <!-- Technical Analysis -->
+                        <div class="miniCard">
+                            <div class="miniCardHeader">
+                                <div class="miniCardTitle">Technical Analysis Score</div>
+                                <div class="miniCardHint" id="technicalWidgetHint">—</div>
+                            </div>
+                            <div class="scoreBox" style="margin-top:0;">
+                                <div class="scoreTop">
+                                    <div class="scoreTitle">Weighted Score</div>
+                                    <div id="technicalWidgetFinal" class="scoreNum">—</div>
+                                </div>
+                                <div class="barWrap">
+                                    <div id="technicalWidgetFill" class="fill"></div>
+                                </div>
+                            </div>
+
+                            <div id="technicalWidgetSubscores" class="subscore"></div>
+
+                            <div class="rawToggleRow">
+                                <button id="technicalRawToggle" class="rawToggleBtn" type="button">Show raw
+                                    metrics</button>
+                            </div>
+
+                            <div id="technicalRawSections" style="display:none;">
+                                <div class="miniSectionLabel">Timeframe Scores</div>
+                                <div id="technicalWidgetTimeframeScores"></div>
+                            </div>
+                        </div>
+
+                        <!-- Narrative -->
+                        <div class="miniCard">
+                            <div class="miniCardHeader">
+                                <div class="miniCardTitle">Narrative Score</div>
+                                <div class="miniCardHint" id="narrativeWidgetHint">—</div>
+                            </div>
+                            <div class="scoreBox" style="margin-top:0;">
+                                <div class="scoreTop">
+                                    <div class="scoreTitle">Weighted Score</div>
+                                    <div id="narrativeWidgetFinal" class="scoreNum">—</div>
+                                </div>
+                                <div class="barWrap">
+                                    <div id="narrativeWidgetFill" class="fill"></div>
+                                </div>
+                            </div>
+                            <div id="narrativeWidgetSubscores" class="subscore"></div>
+                        </div>
+
+                        <!-- Confidence -->
+                        <div class="miniCard">
+                            <div class="miniCardHeader">
+                                <div class="miniCardTitle">Confidence Score</div>
+                                <div class="miniCardHint" id="confidenceWidgetHint">—</div>
+                            </div>
+                            <div class="scoreBox" style="margin-top:0;">
+                                <div class="scoreTop">
+                                    <div class="scoreTitle">Weighted Score</div>
+                                    <div id="confidenceWidgetFinal" class="scoreNum">—</div>
+                                </div>
+                                <div class="barWrap">
+                                    <div id="confidenceWidgetFill" class="fill"></div>
+                                </div>
+                            </div>
+                            <div id="confidenceWidgetSubscores" class="subscore"></div>
+                        </div>
+                    </div>
+
+                    <div class="sectionTitle">Agentic Web Search Results</div>
+                    <div id="groqAnswer" class="summary">—</div>
+
+                    <div class="sectionTitle">Website Content</div>
+                    <div id="websiteContent" class="summary">—</div>
+
+                    <div class="sectionTitle">X Profile</div>
+                    <div id="twitterProfile" class="summary">—</div>
+
+                    <div class="sectionTitle">X Profile Recent Posts</div>
+                    <ul id="profileTweets" class="summaryList"></ul>
+
+                    <div class="sectionTitle">X Community Recent Posts</div>
+                    <ul id="communityPosts" class="summaryList"></ul>
+
+                    <div class="sectionTitle">X Search Results</div>
+
+                    <div id="twitterSearchTextsBlock" class="quadRow" style="grid-template-columns: 1fr;">
+                        <div class="miniCard">
+                            <div class="miniCardHeader">
+                                <div class="miniCardTitle">Symbol Search (Top Posts)</div>
+                                <div class="miniCardHint" id="symTopHint">—</div>
+                            </div>
+                            <ul id="symTopList" class="summaryList"></ul>
+                        </div>
+
+                        <div class="miniCard">
+                            <div class="miniCardHeader">
+                                <div class="miniCardTitle">Address Search (Top Posts)</div>
+                                <div class="miniCardHint" id="addrTopHint">—</div>
+                            </div>
+                            <ul id="addrTopList" class="summaryList"></ul>
+                        </div>
+
+                        <div class="miniCard">
+                            <div class="miniCardHeader">
+                                <div class="miniCardTitle">Symbol Search (Recent Posts)</div>
+                                <div class="miniCardHint" id="symRecentHint">—</div>
+                            </div>
+                            <ul id="symRecentList" class="summaryList"></ul>
+                        </div>
+
+                        <div class="miniCard">
+                            <div class="miniCardHeader">
+                                <div class="miniCardTitle">Address Search (Recent Posts)</div>
+                                <div class="miniCardHint" id="addrRecentHint">—</div>
+                            </div>
+                            <ul id="addrRecentList" class="summaryList"></ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- LOADING OVERLAY -->
+    <div id="loadingOverlay" class="loadingOverlay">
+        <div class="loaderCard">
+            <div class="loaderTop">
+                <div>
+                    <div class="loaderTitle">AI is thinking…</div>
+                    <div id="loaderAddr" class="loaderMeta">—</div>
+                </div>
+                <div id="loaderTime" class="loaderMeta">—</div>
+            </div>
+
+            <div class="aiBox">
+                <div class="aiNebula"></div>
+                <div class="aiGrid"></div>
+                <div class="aiDust"></div>
+                <div class="aiDust2"></div>
+                <div class="aiDust3"></div>
+                <div class="aiArc"></div>
+                <div class="aiOrbit"></div>
+                <div class="aiCore"></div>
+                <div class="aiEQ">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <div id="loaderHint" class="loaderHint">
+                Waiting for backend to finish… Groq can take a bit. Don’t refresh.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ---- Elements
+        const stateStart = document.getElementById("stateStart");
+        const stateResults = document.getElementById("stateResults");
+
+        const addrStart = document.getElementById("addrStart");
+        const runBtnStart = document.getElementById("runBtnStart");
+        const startError = document.getElementById("startError");
+
+        const addrTop = document.getElementById("addrTop");
+        const runBtnTop = document.getElementById("runBtnTop");
+        const runPill = document.getElementById("runPill");
+        const topMeta = document.getElementById("topMeta");
+        const statusEl = document.getElementById("status");
+
+        const loadingOverlay = document.getElementById("loadingOverlay");
+        const loaderAddr = document.getElementById("loaderAddr");
+        const loaderTime = document.getElementById("loaderTime");
+        const loaderHint = document.getElementById("loaderHint");
+
+        const tokenImageEl = document.getElementById("tokenImage");
+        const tokenNameEl = document.getElementById("tokenName");
+        const tokenSymbolEl = document.getElementById("tokenSymbol");
+        const createdUnderImageEl = document.getElementById("createdUnderImage");
+
+        const usdMcapBigEl = document.getElementById("usdMcapBig");
+
+        // NOTE: aggregateScoreEl no longer exists in DOM (moved to aggBigScore)
+        const aggBigScoreEl = document.getElementById("aggBigScore");
+
+        const narrativeScoreEl = document.getElementById("narrativeScore");
+        const confidenceScoreEl = document.getElementById("confidenceScore");
+        const onchainScoreEl = document.getElementById("onchainScore");
+        const technicalScoreEl = document.getElementById("technicalScore");
+        const alphaScoreEl = document.getElementById("alphaScore");
+
+        const narrativeFillEl = document.getElementById("narrativeFill");
+        const confidenceFillEl = document.getElementById("confidenceFill");
+        const onchainFillEl = document.getElementById("onchainFill");
+        const technicalFillEl = document.getElementById("technicalFill");
+        const alphaFillEl = document.getElementById("alphaFill");
+
+        const linksEl = document.getElementById("links");
+
+        const keyRowEl = document.getElementById("keyRow");
+        const dexKeyEl = document.getElementById("dexKey");
+        const ctoKeyEl = document.getElementById("ctoKey");
+        const liveKeyEl = document.getElementById("liveKey");
+
+        const classTagsEl = document.getElementById("classTags");
+
+        const mainTweetEl = document.getElementById("mainTweet");
+        const websiteContentEl = document.getElementById("websiteContent");
+        const twitterProfileEl = document.getElementById("twitterProfile");
+        const profileTweetsEl = document.getElementById("profileTweets");
+        const communityPostsEl = document.getElementById("communityPosts");
+        const twitterSearchTextsBlockEl = document.getElementById("twitterSearchTextsBlock");
+
+        const addrRecentListEl = document.getElementById("addrRecentList");
+        const addrTopListEl = document.getElementById("addrTopList");
+        const symRecentListEl = document.getElementById("symRecentList");
+        const symTopListEl = document.getElementById("symTopList");
+
+        const addrRecentHintEl = document.getElementById("addrRecentHint");
+        const addrTopHintEl = document.getElementById("addrTopHint");
+        const symRecentHintEl = document.getElementById("symRecentHint");
+        const symTopHintEl = document.getElementById("symTopHint");
+
+        const groqSummaryEl = document.getElementById("groqSummary");
+        const groqAnswerEl = document.getElementById("groqAnswer");
+
+        const resultPillEl = document.getElementById("resultPill");
+
+        const holdersCanvas = document.getElementById("holdersChart");
+        const holdersHintEl = document.getElementById("holdersHint");
+        const swatchHoldersEl = document.getElementById("swatchHolders");
+        const swatchMcapEl = document.getElementById("swatchMcap");
+        const swatchRatioEl = document.getElementById("swatchRatio");
+
+        // Compact tech
+        const mcapValEl = document.getElementById("mcapVal");
+        const athValEl = document.getElementById("athVal");
+        const athMultValEl = document.getElementById("athMultVal");
+        const athTsValEl = document.getElementById("athTsVal");
+
+        // Narrative/Confidence widgets
+        const narrativeWidgetHintEl = document.getElementById("narrativeWidgetHint");
+        const narrativeWidgetFinalEl = document.getElementById("narrativeWidgetFinal");
+        const narrativeWidgetFillEl = document.getElementById("narrativeWidgetFill");
+        const narrativeWidgetSubscoresEl = document.getElementById("narrativeWidgetSubscores");
+
+        const confidenceWidgetHintEl = document.getElementById("confidenceWidgetHint");
+        const confidenceWidgetFinalEl = document.getElementById("confidenceWidgetFinal");
+        const confidenceWidgetFillEl = document.getElementById("confidenceWidgetFill");
+        const confidenceWidgetSubscoresEl = document.getElementById("confidenceWidgetSubscores");
+
+        // Alpha widget containers
+        const alphaWidgetHintEl = document.getElementById("alphaWidgetHint");
+        const alphaWidgetFinalEl = document.getElementById("alphaWidgetFinal");
+        const alphaWidgetFillEl = document.getElementById("alphaWidgetFill");
+        const alphaWidgetBarsEl = document.getElementById("alphaWidgetBars");
+        const alphaTrendingBoxEl = document.getElementById("alphaTrendingBox");
+        const alphaMobyBoxEl = document.getElementById("alphaMobyBox");
+        const alphaTwitterTrendBoxEl = document.getElementById("alphaTwitterTrendBox");
+        const alphaKolBoxEl = document.getElementById("alphaKolBox");
+
+        // Onchain widget containers
+        const onchainWidgetHintEl = document.getElementById("onchainWidgetHint");
+        const onchainWidgetFinalEl = document.getElementById("onchainWidgetFinal");
+        const onchainWidgetFillEl = document.getElementById("onchainWidgetFill");
+        const onchainWidgetSubscoresEl = document.getElementById("onchainWidgetSubscores");
+        const onchainWidgetRawListEl = document.getElementById("onchainWidgetRawList");
+
+        // Technical widget containers
+        const technicalWidgetHintEl = document.getElementById("technicalWidgetHint");
+        const technicalWidgetFinalEl = document.getElementById("technicalWidgetFinal");
+        const technicalWidgetFillEl = document.getElementById("technicalWidgetFill");
+        const technicalWidgetSubscoresEl = document.getElementById("technicalWidgetSubscores");
+        const technicalWidgetTimeframeScoresEl = document.getElementById("technicalWidgetTimeframeScores");
+
+        // NEW: raw toggles + raw sections wrappers
+        const alphaRawToggleBtn = document.getElementById("alphaRawToggle");
+        const alphaRawSectionsEl = document.getElementById("alphaRawSections");
+        const onchainRawToggleBtn = document.getElementById("onchainRawToggle");
+        const onchainRawSectionsEl = document.getElementById("onchainRawSections");
+        const technicalRawToggleBtn = document.getElementById("technicalRawToggle");
+        const technicalRawSectionsEl = document.getElementById("technicalRawSections");
+
+        // Price Chart Globals
+        const priceChartEl = document.getElementById("priceChart");
+        const priceHintEl = document.getElementById("priceHint");
+        const timeframeSelectEl = document.getElementById("timeframeSelect");
+        let currentOhlcvData = null;
+        let priceChartInstance = null;
+
+        // Shared chart paddings to align y-axis / plot area across charts
+        const chartLeftPad = 48;
+        // Per-chart override for Cipher left padding (increase gap between y-axis labels and plot)
+        const cipherLeftPad = chartLeftPad + 26;
+
+        // MACD Chart Globals
+        const macdChartEl = document.getElementById("macdChart");
+        const macdHintEl = document.getElementById("macdHint");
+        let macdChartInstance = null;
+
+        // Cipher Chart Globals
+        const cipherChartEl = document.getElementById("cipherChart");
+        const cipherHintEl = document.getElementById("cipherHint");
+        let cipherChartInstance = null;
+
+        // ---- Utils
+        function setStatus(msg) { statusEl.textContent = msg || ""; }
+        function showState(which) {
+            stateStart.classList.remove("active");
+            stateResults.classList.remove("active");
+            which.classList.add("active");
+            window.scrollTo({ top: 0, behavior: "instant" });
+        }
+        function showStartError(msg) {
+            if (!msg) { startError.style.display = "none"; startError.textContent = ""; return; }
+            startError.style.display = "block"; startError.textContent = msg;
+        }
+        function safeStr(v, fallback = "—") {
+            if (v === null || v === undefined) return fallback;
+            if (typeof v === "string") { const s = v.trim(); return s ? s : fallback; }
+            return String(v);
+        }
+        function isNonEmptyString(v) { return (typeof v === "string" && v.trim().length > 0); }
+        function clamp01(x) { if (!isFinite(x)) return 0; return Math.max(0, Math.min(1, x)); }
+        function scoreToPct(score0to10) {
+            const x = Number(score0to10);
+            if (!isFinite(x)) return 0;
+            return clamp01(x / 10) * 100;
+        }
+        function setBar(fillEl, score) {
+            const pct = scoreToPct(score);
+            fillEl.style.width = pct.toFixed(1) + "%";
+            const x = Number(score);
+            let color = "var(--red)";
+            if (isFinite(x) && x >= 7) color = "var(--green)";
+            else if (isFinite(x) && x >= 4) color = "var(--yellow)";
+            fillEl.style.background = color;
+        }
+        function clearList(ulEl) { ulEl.innerHTML = ""; }
+        function fillUl(ulEl, arr, maxItems = 12) {
+            clearList(ulEl);
+            if (Array.isArray(arr) && arr.length) {
+                arr.slice(0, maxItems).forEach((t) => {
+                    const li = document.createElement("li");
+                    li.textContent = safeStr(t, "");
+                    ulEl.appendChild(li);
+                });
+            }
+        }
+
+        function metricRow(key, val) {
+            const row = document.createElement("div");
+            row.className = "metricRow";
+            const k = document.createElement("div"); k.className = "metricKey"; k.textContent = key;
+            const v = document.createElement("div"); v.className = "metricVal"; v.textContent = safeStr(val);
+            row.appendChild(k); row.appendChild(v);
+            return row;
+        }
+
+        // NEW: bool metric row (for Trending Ranks checks)
+        function metricRowBool(key, boolVal) {
+            const row = document.createElement("div");
+            row.className = "metricRow";
+            const k = document.createElement("div"); k.className = "metricKey"; k.textContent = key;
+            const v = document.createElement("div"); v.className = "metricVal";
+
+            const m = boolToMark(boolVal);
+            v.textContent = m.txt;
+            v.classList.remove("ok", "no");
+            if (m.ok === true) v.classList.add("ok");
+            if (m.ok === false) v.classList.add("no");
+
+            row.appendChild(k); row.appendChild(v);
+            return row;
+        }
+
+        function formatUSDCompact(v) {
+            const x = Number(v);
+            if (!isFinite(x)) return "—";
+            try {
+                return new Intl.NumberFormat("en-US", {
+                    style: "currency",
+                    currency: "USD",
+                    notation: "compact",
+                    maximumFractionDigits: 2
+                }).format(x);
+            } catch (_) {
+                return "$" + x.toFixed(0);
+            }
+        }
+
+        // NEW: pretty "1.3x"
+        function formatMult(v) {
+            const x = Number(v);
+            if (!isFinite(x)) return "—";
+            const s = (Math.abs(x) >= 100) ? x.toFixed(0) : (Math.abs(x) >= 10 ? x.toFixed(1) : x.toFixed(2));
+            return s.replace(/\.0+$/, "").replace(/(\.\d*[1-9])0+$/, "$1") + "x";
+        }
+
+        // NEW: relative time like "10 hours ago" from ISO timestamp (fallback to original string)
+        function timeAgoFromISO(iso) {
+            if (!isNonEmptyString(iso)) return "—";
+            const ms = Date.parse(iso);
+            if (!isFinite(ms)) return safeStr(iso);
+            const now = Date.now();
+            let diff = Math.max(0, now - ms);
+            const sec = Math.floor(diff / 1000);
+
+            const min = Math.floor(sec / 60);
+            const hr = Math.floor(min / 60);
+            const day = Math.floor(hr / 24);
+
+            if (day >= 1) return `${day} day${day === 1 ? "" : "s"} ago`;
+            if (hr >= 1) return `${hr} hour${hr === 1 ? "" : "s"} ago`;
+            if (min >= 1) return `${min} min${min === 1 ? "" : "s"} ago`;
+            return `${sec} sec${sec === 1 ? "" : "s"} ago`;
+        }
+
+        // -----------------------------
+        // Custom labels for subscores (EDIT THESE)
+        // -----------------------------
+        const SUBSCORE_LABELS = {
+            onchain: {
+                bundle_percentage_score: "Bundle %",
+                fresh_wallets_percentage_score: "Fresh Wallets %",
+                dev_hold_percentage_score: "Dev Hold %",
+                insider_wallets_percentage_score: "Insider Wallets %",
+                num_holders_score: "Holder Count",
+                largest_holder_percentage_score: "Largest Holder %",
+                largest_cluster_percentage_score: "Largest Cluster %",
+                large_holder_count_score: "Large Holder Count",
+                same_percentage_count_score: "Same % Count",
+                low_sol_count_score: "Low SOL Count",
+            },
+            narrative: {
+                hook_strength: "Hook Strength",
+                cultural_relevance: "Cultural Relevance",
+                cultural_charge: "Cultural Charge",
+                mission_statement: "Mission Clarity",
+                compellingness: "Compellingness",
+                tribal_identity: "Tribal Identity",
+                lore_amount: "Lore Amount",
+                lore_depth: "Lore Depth",
+            },
+            confidence: {
+                context_faithfulness: "Context Faithfulness",
+                internal_consistency: "Internal Consistency",
+                specificity: "Specificity",
+                completeness: "Completeness",
+                clarity: "Clarity",
+                source_groundedness: "Source Groundedness",
+            },
+            technical: {
+                oversold: "Oversold",
+                momentum_shift: "Momentum Shift",
+                drawdown_value: "Drawdown Value",
+                holder_trend: "Holder Trend"
+            }
+        };
+
+        function titleizeKey(k) {
+            return String(k || "")
+                .replace(/_/g, " ")
+                .replace(/\s+/g, " ")
+                .trim()
+                .replace(/\b\w/g, (c) => c.toUpperCase());
+        }
+
+        function subscoreLabel(group, key) {
+            const g = SUBSCORE_LABELS[group] || {};
+            return g[key] || titleizeKey(key);
+        }
+        // -----------------------------
+
+        function subscoreItem(name, score0to10) {
+            const wrap = document.createElement("div");
+            wrap.className = "subscoreItem";
+            const n = document.createElement("div"); n.className = "subscoreName"; n.textContent = name;
+            const num = document.createElement("div"); num.className = "subscoreNum"; num.textContent = safeStr(score0to10);
+
+            const barWrap = document.createElement("div"); barWrap.className = "subscoreBarWrap";
+            const fill = document.createElement("div"); fill.className = "subscoreFill";
+            fill.style.width = scoreToPct(score0to10).toFixed(1) + "%";
+
+            const x = Number(score0to10);
+            let color = "var(--neonRed)";
+            if (isFinite(x) && x >= 7) color = "var(--neonGreen)";
+            else if (isFinite(x) && x >= 4) color = "var(--neonYellow)";
+            fill.style.background = color;
+
+            barWrap.appendChild(fill);
+            wrap.appendChild(n); wrap.appendChild(num); wrap.appendChild(barWrap);
+            return wrap;
+        }
+
+        function barItem(name, score0to10, max = 10) {
+            const wrap = document.createElement("div");
+            const row = document.createElement("div");
+            row.className = "barItem";
+
+            const n = document.createElement("div"); n.className = "barItemName"; n.textContent = name;
+            const num = document.createElement("div"); num.className = "barItemVal"; num.textContent = safeStr(score0to10);
+
+            const track = document.createElement("div"); track.className = "barItemTrack";
+            const fill = document.createElement("div"); fill.className = "barItemFill";
+
+            const x = Number(score0to10);
+            const pct = (isFinite(x) && max > 0) ? clamp01(x / max) * 100 : 0;
+            fill.style.width = pct.toFixed(1) + "%";
+
+            let color = "var(--neonRed)";
+            if (isFinite(x) && x >= max * 0.7) color = "var(--neonGreen)";
+            else if (isFinite(x) && x >= max * 0.4) color = "var(--neonYellow)";
+            fill.style.background = color;
+
+            track.appendChild(fill);
+            row.appendChild(n); row.appendChild(num); row.appendChild(track);
+            wrap.appendChild(row);
+            return wrap;
+        }
+
+        function boolToMark(v) {
+            if (v === true) return { txt: "✓", ok: true };
+            if (v === false) return { txt: "✗", ok: false };
+            return { txt: "—", ok: null };
+        }
+        function setKey(el, v) {
+            const m = boolToMark(v);
+            el.textContent = m.txt;
+            el.classList.remove("ok", "no");
+            if (m.ok === true) el.classList.add("ok");
+            if (m.ok === false) el.classList.add("no");
+        }
+
+        // ---- section show/hide helpers (hide title + block if empty)
+        function getSectionTitleEl(contentEl) {
+            const prev = contentEl ? contentEl.previousElementSibling : null;
+            if (prev && prev.classList && prev.classList.contains("sectionTitle")) return prev;
+            return null;
+        }
+        function setSectionVisible(contentEl, visible) {
+            if (!contentEl) return;
+            const titleEl = getSectionTitleEl(contentEl);
+            const disp = visible ? "" : "none";
+            if (titleEl) titleEl.style.display = disp;
+            contentEl.style.display = disp;
+        }
+        function setSectionByText(contentEl, text) {
+            const ok = isNonEmptyString(text);
+            if (ok) contentEl.textContent = text.trim();
+            else contentEl.textContent = "";
+            setSectionVisible(contentEl, ok);
+            return ok;
+        }
+        function setSectionByList(ulEl, arr) {
+            const ok = Array.isArray(arr) && arr.length > 0;
+            clearList(ulEl);
+            if (ok) fillUl(ulEl, arr, 12);
+            setSectionVisible(ulEl, ok);
+            return ok;
+        }
+
+        // ---------- Icon Links ----------
+        const ICONS = {
+            twitter: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18.9 2H21.8L15.4 9.3L23 22H16.9L12.1 14.2L5.3 22H2.4L9.3 14.1L2 2H8.2L12.6 9.0L18.9 2Z" fill="currentColor" opacity="0.92"/></svg>`,
+            globe: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20Zm6.8 9H16a15.3 15.3 0 00-1.4-6 8 8 0 014.2 6ZM12 4c1 1.4 1.8 3.9 2.1 7H9.9C10.2 7.9 11 5.4 12 4Zm-6.8 7H8a15.3 15.3 0 011.4-6 8 8 0 00-4.2 6Zm0 2h2.8c.3 2.2.9 4.1 1.6 5.4A8 8 0 015.2 13Zm4.7 0h4.2c-.3 2.5-1 4.6-2.1 6-1.1-1.4-1.8-3.5-2.1-6Zm6.1 0h2.8a8 8 0 01-4.2 5.4c.7-1.3 1.3-1.3 1.6-5.4Zm-1.9 0h1.9c-.2-1-.3-2-.3-3H16c.1 1 .1 2 0 3ZM8 10h1.3c-.1 1-.1 2 0 3H8c-.1-1-.1 2 0-3Zm10.8 0c.2 1 .3 2 .3 3h-1.9c.1-1 .1-2 0-3h1.6Z" fill="currentColor" opacity="0.92"/></svg>`,
+            telegram: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21.9 4.6 19 19.2c-.2 1-.8 1.2-1.6.8l-4.4-3.2-2.1 2c-.2.2-.4.4-.8.4l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2l-10.6 6.7-4.6-1.4c-1-.3-1-1 .2-1.5L20 3.6c.9-.4 1.7.2 1.9 1Z" fill="currentColor" opacity="0.92"/></svg>`,
+            discord: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19.5 6.3a15.3 15.3 0 00-3.8-1.2l-.2.4c1.3.4 2 .8 2.9 1.5-1.1-.6-2.5-1.2-4.4-1.2s-3.3.6-4.4 1.2c.9-.7 1.7-1.1 2.9-1.5l-.2-.4a15.3 15.3 0 00-3.8 1.2C5.8 9.3 5.1 12 5.2 14.8c1.7 1.2 3.3 1.9 4.8 2.2l.6-.8c-.9-.3-1.6-.6-2.4-1.1.2.1.4.2.6.3 1.4.7 2.8 1 4.2 1s2.8-.3 4.2-1c.2-.1.4-.2.6-.3-.7.5-1.5.8-2.4 1.1l.6.8c1.6-.3 3.1-1 4.8-2.2.2-3.2-.7-5.9-2.6-8.5ZM9.4 14c-.6 0-1.1-.6-1.1-1.3 0-.7.5-1.3 1.1-1.3s1.1.6 1.1 1.3c0 .7-.5 1.3-1.1 1.3Zm5.2 0c-.6 0-1.1-.6-1.1-1.3 0-.7.5-1.3 1.1-1.3s1.1.6 1.1 1.3c0 .7-.5 1.3-1.1 1.3Z" fill="currentColor" opacity="0.92"/></svg>`,
+            search: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 105.1 13l3.9 3.9 1.4-1.4-3.9-3.9A7.5 7.5 0 0010.5 3Zm0 2a5.5 5.5 0 110 11 5.5 5.5 0 010-11Z" fill="currentColor" opacity="0.92"/></svg>`
+        };
+        function detectIconKind(url, fallbackKind) {
+            if (!isNonEmptyString(url)) return fallbackKind || "globe";
+            const u = url.toLowerCase();
+            if (u.includes("x.com") || u.includes("twitter.com")) return "twitter";
+            if (u.includes("t.me") || u.includes("telegram")) return "telegram";
+            if (u.includes("discord.gg") || u.includes("discord.com")) return "discord";
+            if (u.includes("search") || u.includes("query")) return "search";
+            return fallbackKind || "globe";
+        }
+        function addIconLink(url, title, preferredKind) {
+            if (!isNonEmptyString(url)) return;
+            const kind = detectIconKind(url, preferredKind);
+            const a = document.createElement("a");
+            a.className = "iconLink";
+            a.href = url.trim();
+            a.target = "_blank";
+            a.rel = "noreferrer";
+            a.title = title;
+            a.setAttribute("aria-label", title);
+            a.innerHTML = ICONS[kind] || ICONS.globe;
+            linksEl.appendChild(a);
+        }
+
+        function normalizeTagName(k) {
+            return String(k || "").trim().replace(/_/g, " ").replace(/\s+/g, " ").toLowerCase();
+        }
+
+        function clearCanvas(canvas) {
+            const ctx = canvas.getContext("2d");
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+        function toNum(v) {
+            if (v === null || v === undefined) return null;
+            if (typeof v === "string" && v.trim() === "") return null;
+            const x = Number(v);
+            return Number.isFinite(x) ? x : null;
+        }
+        function drawHolderscan(canvas, history) {
+            const ctx = canvas.getContext("2d");
+            const w = canvas.width, h = canvas.height;
+            clearCanvas(canvas);
+
+            if (!Array.isArray(history) || history.length < 2) {
+                ctx.fillStyle = "rgba(183,169,255,0.85)";
+                ctx.font = "14px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial";
+                ctx.fillText("No holder history available.", 14, 28);
+                return;
+            }
+
+            const ptsAll = history
+                .map((p) => ({
+                    t: isNonEmptyString(p?.updatedAt) ? Date.parse(p.updatedAt) : null,
+                    holders: toNum(p?.holderCount),
+                    mcap: toNum(p?.marketCap),
+                    ratio: toNum(p?.mcapOverHolders),
+                }))
+                .filter(p => p.t !== null && p.holders !== null)
+                .sort((a, b) => a.t - b.t);
+
+            const pts = ptsAll.filter(p => p.mcap !== null && p.ratio !== null);
+
+            if (pts.length < 2) {
+                ctx.fillStyle = "rgba(183,169,255,0.85)";
+                ctx.font = "14px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial";
+                ctx.fillText("No usable holderscan points.", 14, 28);
+                return;
+            }
+
+            const padL = 44, padR = 16, padT = 14, padB = 34;
+            const cw = w - padL - padR, ch = h - padT - padB;
+
+            const holdersMin = Math.min(...pts.map(p => p.holders));
+            const holdersMax = Math.max(...pts.map(p => p.holders));
+            const hSpan = Math.max(1, holdersMax - holdersMin);
+
+            const mMin = Math.min(...pts.map(p => p.mcap));
+            const mMax = Math.max(...pts.map(p => p.mcap));
+            const mSpan = Math.max(1, mMax - mMin);
+
+            const rMin = Math.min(...pts.map(p => p.ratio));
+            const rMax = Math.max(...pts.map(p => p.ratio));
+            const rSpan = Math.max(1, rMax - rMin);
+
+            function yHolders(v) { const u = (v - holdersMin) / hSpan; return padT + (1 - u) * ch; }
+            function yMcap(v) { const u = (v - mMin) / mSpan; return padT + (1 - u) * ch; }
+            function yRatio(v) { const u = (v - rMin) / rSpan; return padT + (1 - u) * ch; }
+
+            ctx.strokeStyle = "rgba(255,255,255,0.06)";
+            ctx.lineWidth = 1;
+            for (let i = 0; i <= 4; i++) {
+                const y = padT + (i / 4) * ch;
+                ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(w - padR, y); ctx.stroke();
+            }
+            for (let i = 0; i <= 6; i++) {
+                const x = padL + (i / 6) * cw;
+                ctx.beginPath(); ctx.moveTo(x, padT); ctx.lineTo(x, h - padB); ctx.stroke();
+            }
+
+            ctx.fillStyle = "rgba(183,169,255,0.85)";
+            ctx.font = "12px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial";
+            ctx.fillText(String(holdersMax), 8, padT + 10);
+            ctx.fillText(String(holdersMin), 8, h - padB + 4);
+
+            const leftDate = new Date(pts[0].t).toISOString().slice(5, 16).replace("T", " ");
+            const rightDate = new Date(pts[pts.length - 1].t).toISOString().slice(5, 16).replace("T", " ");
+            ctx.fillText(leftDate, padL, h - 12);
+            const wRight = ctx.measureText(rightDate).width;
+            ctx.fillText(rightDate, w - padR - wRight, h - 12);
+
+            const n = pts.length;
+            function xAt(i) { if (n <= 1) return padL; const u = i / (n - 1); return padL + u * cw; }
+            const step = cw / Math.max(1, n - 1);
+            const barW = Math.max(3, Math.min(14, step * 0.6));
+
+            pts.forEach((p, i) => {
+                const x = xAt(i);
+                const y = yHolders(p.holders);
+                const baseY = padT + ch;
+
+                ctx.fillStyle = "rgba(74,215,255,0.35)";
+                ctx.strokeStyle = "rgba(74,215,255,0.85)";
+                ctx.lineWidth = 1;
+
+                ctx.beginPath();
+                ctx.rect(x - barW / 2, y, barW, baseY - y);
+                ctx.fill();
+                ctx.stroke();
+            });
+
+            ctx.strokeStyle = "rgba(255,79,216,0.85)";
+            ctx.lineWidth = 2;
+            ctx.shadowColor = "rgba(255,79,216,0.22)";
+            ctx.shadowBlur = 10;
+            ctx.beginPath();
+            pts.forEach((p, idx) => {
+                const x = xAt(idx), y = yMcap(p.mcap);
+                if (idx === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+            ctx.shadowBlur = 0;
+
+            ctx.fillStyle = "rgba(255,79,216,0.85)";
+            pts.forEach((p, i) => {
+                const x = xAt(i), y = yMcap(p.mcap);
+                ctx.beginPath(); ctx.arc(x, y, 2.2, 0, Math.PI * 2); ctx.fill();
+            });
+
+            ctx.strokeStyle = "rgba(168,85,255,0.85)";
+            ctx.lineWidth = 2;
+            ctx.shadowColor = "rgba(168,85,255,0.22)";
+            ctx.shadowBlur = 10;
+            ctx.beginPath();
+            pts.forEach((p, idx) => {
+                const x = xAt(idx), y = yRatio(p.ratio);
+                if (idx === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+            ctx.shadowBlur = 0;
+
+            ctx.fillStyle = "rgba(168,85,255,0.85)";
+            pts.forEach((p, i) => {
+                const x = xAt(i), y = yRatio(p.ratio);
+                ctx.beginPath(); ctx.arc(x, y, 2.0, 0, Math.PI * 2); ctx.fill();
+            });
+        }
+
+        function setRawExpanded(btn, panel, expanded) {
+            if (!btn || !panel) return;
+            panel.style.display = expanded ? "" : "none";
+            btn.textContent = expanded ? "Hide raw metrics" : "Show raw metrics";
+            btn.dataset.expanded = expanded ? "1" : "0";
+        }
+        function initRawToggles() {
+            if (alphaRawToggleBtn && alphaRawSectionsEl) {
+                setRawExpanded(alphaRawToggleBtn, alphaRawSectionsEl, false);
+                alphaRawToggleBtn.onclick = () => {
+                    const expanded = alphaRawToggleBtn.dataset.expanded === "1";
+                    setRawExpanded(alphaRawToggleBtn, alphaRawSectionsEl, !expanded);
+                };
+            }
+            if (onchainRawToggleBtn && onchainRawSectionsEl) {
+                setRawExpanded(onchainRawToggleBtn, onchainRawSectionsEl, false);
+                onchainRawToggleBtn.onclick = () => {
+                    const expanded = onchainRawToggleBtn.dataset.expanded === "1";
+                    setRawExpanded(onchainRawToggleBtn, onchainRawSectionsEl, !expanded);
+                };
+            }
+            if (technicalRawToggleBtn && technicalRawSectionsEl) {
+                setRawExpanded(technicalRawToggleBtn, technicalRawSectionsEl, false);
+                technicalRawToggleBtn.onclick = () => {
+                    const expanded = technicalRawToggleBtn.dataset.expanded === "1";
+                    setRawExpanded(technicalRawToggleBtn, technicalRawSectionsEl, !expanded);
+                };
+            }
+        }
+
+        function clearResultsUI() {
+            tokenImageEl.src = "logo.png";
+            tokenNameEl.textContent = "—";
+            tokenSymbolEl.textContent = "—";
+            createdUnderImageEl.textContent = "—";
+            usdMcapBigEl.textContent = "—";
+
+            aggBigScoreEl.textContent = "—";
+
+            narrativeScoreEl.textContent = "—";
+            confidenceScoreEl.textContent = "—";
+            onchainScoreEl.textContent = "—";
+            technicalScoreEl.textContent = "—";
+            alphaScoreEl.textContent = "—";
+
+            setBar(narrativeFillEl, 0);
+            setBar(confidenceFillEl, 0);
+            setBar(onchainFillEl, 0);
+            setBar(technicalFillEl, 0);
+            setBar(alphaFillEl, 0);
+
+            linksEl.innerHTML = "";
+
+            keyRowEl.style.display = "none";
+            dexKeyEl.textContent = "—"; dexKeyEl.classList.remove("ok", "no");
+            ctoKeyEl.textContent = "—"; ctoKeyEl.classList.remove("ok", "no");
+            liveKeyEl.textContent = "—"; liveKeyEl.classList.remove("ok", "no");
+
+            classTagsEl.innerHTML = "";
+
+            groqSummaryEl.textContent = "—";
+            groqAnswerEl.textContent = "—";
+
+            mainTweetEl.textContent = "—";
+            websiteContentEl.textContent = "—";
+            twitterProfileEl.textContent = "—";
+            profileTweetsEl.innerHTML = "";
+            communityPostsEl.innerHTML = "";
+
+            addrRecentHintEl.textContent = "—";
+            addrTopHintEl.textContent = "—";
+            symRecentHintEl.textContent = "—";
+            symTopHintEl.textContent = "—";
+            addrRecentListEl.innerHTML = "";
+            addrTopListEl.innerHTML = "";
+            symRecentListEl.innerHTML = "";
+            symTopListEl.innerHTML = "";
+
+            narrativeWidgetHintEl.textContent = "—";
+            narrativeWidgetFinalEl.textContent = "—";
+            setBar(narrativeWidgetFillEl, 0);
+            narrativeWidgetSubscoresEl.innerHTML = "";
+
+            confidenceWidgetHintEl.textContent = "—";
+            confidenceWidgetFinalEl.textContent = "—";
+            setBar(confidenceWidgetFillEl, 0);
+            confidenceWidgetSubscoresEl.innerHTML = "";
+
+            alphaWidgetHintEl.textContent = "—";
+            alphaWidgetFinalEl.textContent = "—";
+            setBar(alphaWidgetFillEl, 0);
+            alphaWidgetBarsEl.innerHTML = "";
+            alphaTrendingBoxEl.innerHTML = "";
+            alphaMobyBoxEl.innerHTML = "";
+            alphaTwitterTrendBoxEl.innerHTML = "";
+            alphaKolBoxEl.innerHTML = "";
+
+            onchainWidgetHintEl.textContent = "—";
+            onchainWidgetFinalEl.textContent = "—";
+            setBar(onchainWidgetFillEl, 0);
+            onchainWidgetSubscoresEl.innerHTML = "";
+            onchainWidgetRawListEl.innerHTML = "";
+
+            technicalWidgetHintEl.textContent = "—";
+            technicalWidgetFinalEl.textContent = "—";
+            setBar(technicalWidgetFillEl, 0);
+            technicalWidgetSubscoresEl.innerHTML = "";
+            technicalWidgetTimeframeScoresEl.innerHTML = "";
+
+            setRawExpanded(alphaRawToggleBtn, alphaRawSectionsEl, false);
+            setRawExpanded(onchainRawToggleBtn, onchainRawSectionsEl, false);
+            setRawExpanded(technicalRawToggleBtn, technicalRawSectionsEl, false);
+
+            holdersHintEl.textContent = "—";
+            clearCanvas(holdersCanvas);
+
+            priceHintEl.textContent = "—";
+            if (priceChartInstance) {
+                priceChartInstance.destroy();
+                priceChartInstance = null;
+            }
+            document.getElementById("priceChart").innerHTML = "";
+
+            macdHintEl.textContent = "—";
+            if (macdChartInstance) {
+                macdChartInstance.destroy();
+                macdChartInstance = null;
+            }
+            if (macdChartEl) macdChartEl.innerHTML = "";
+
+            cipherHintEl.textContent = "—";
+            if (cipherChartInstance) {
+                cipherChartInstance.destroy();
+                cipherChartInstance = null;
+            }
+            if (cipherChartEl) cipherChartEl.innerHTML = "";
+
+            currentOhlcvData = null;
+
+            mcapValEl.textContent = "—";
+            athValEl.textContent = "—";
+            athMultValEl.textContent = "—";
+            athTsValEl.textContent = "—";
+
+            resultPillEl.style.display = "none";
+
+            setSectionVisible(mainTweetEl, true);
+            setSectionVisible(websiteContentEl, true);
+            setSectionVisible(twitterProfileEl, true);
+            setSectionVisible(profileTweetsEl, true);
+            setSectionVisible(communityPostsEl, true);
+            setSectionVisible(twitterSearchTextsBlockEl, true);
+            setSectionVisible(groqAnswerEl, true);
+        }
+
+        async function fetchJson(name) {
+            const res = await fetch(`/json/${name}`, { cache: "no-store" });
+            const data = await res.json();
+            return { ok: res.ok, data };
+        }
+
+        function renderFromWithGroq(j) {
+            const staged = (j && typeof j === "object") ? j.llm_staged_data : null;
+            const groq = (j && typeof j === "object") ? j.groq_web_research : null;
+
+            const token_name = staged?.token_name ?? null;
+            const token_symbol = staged?.token_symbol ?? null;
+            const token_image = staged?.token_image ?? null;
+
+            tokenNameEl.textContent = safeStr(token_name);
+            tokenSymbolEl.textContent = safeStr(token_symbol, "—");
+
+            createdUnderImageEl.textContent = safeStr(staged?.created);
+
+            if (typeof token_image === "string" && token_image.trim()) {
+                tokenImageEl.src = token_image.trim();
+                tokenImageEl.onerror = function () { this.onerror = null; this.src = "logo.png"; };
+            } else {
+                tokenImageEl.src = "logo.png";
+            }
+
+            linksEl.innerHTML = "";
+            addIconLink(staged?.token_twitter, "Token Twitter", "twitter");
+            addIconLink(staged?.token_website, "Token Website", "globe");
+
+            addIconLink(staged?.pump_twitter, "Pump Twitter Search", "search");
+            addIconLink(staged?.pump_telegram, "Pump Telegram", "telegram");
+            addIconLink(staged?.pump_website, "Pump Website", "globe");
+
+            addIconLink(staged?.dex_twitter, "DEX Twitter/Community", "twitter");
+            addIconLink(staged?.dex_telegram, "DEX Telegram", "telegram");
+            addIconLink(staged?.dex_discord, "DEX Discord", "discord");
+            addIconLink(staged?.dex_website, "DEX Website", "globe");
+
+            const dexPaid = j?.risk_analysis?.onchain_scan?.dex_paid;
+            const isLive = staged?.is_currently_live;
+            const ctoBool = staged?.community_takeover;
+
+            keyRowEl.style.display = "flex";
+            setKey(dexKeyEl, dexPaid);
+            setKey(ctoKeyEl, ctoBool);
+            setKey(liveKeyEl, isLive);
+
+            classTagsEl.innerHTML = "";
+            const classifications = j?.llm_interpretation?.classifications;
+            const trueKeys = [];
+            if (classifications && typeof classifications === "object") {
+                Object.entries(classifications).forEach(([k, v]) => {
+                    if (v === true) trueKeys.push(normalizeTagName(k));
+                });
+            }
+            const label = document.createElement("span");
+            label.className = "tagLabel";
+            label.textContent = "Tags:";
+            classTagsEl.appendChild(label);
+            if (trueKeys.length) {
+                trueKeys.forEach((k) => {
+                    const tag = document.createElement("span");
+                    tag.className = "tag on";
+                    tag.textContent = k;
+                    classTagsEl.appendChild(tag);
+                });
+            } else {
+                const tag = document.createElement("span");
+                tag.className = "tag";
+                tag.textContent = "—";
+                classTagsEl.appendChild(tag);
+            }
+
+            const aggregate_score = j?.aggregate_score ?? null;
+            const narrative_score = groq?.narrative_score?.final_score ?? null;
+            const confidence_score = groq?.confidence_score?.final_score ?? null;
+            const onchain_score = j?.risk_analysis?.onchain_scan_score?.final_score ?? null;
+            const technical_score = j?.technical_analysis?.ta_buy_score?.final_score ?? null;
+            const alpha_score = j?.alpha_analysis?.alpha_score?.final_score ?? null;
+
+            aggBigScoreEl.textContent = safeStr(aggregate_score);
+
+            narrativeScoreEl.textContent = safeStr(narrative_score);
+            confidenceScoreEl.textContent = safeStr(confidence_score);
+            onchainScoreEl.textContent = safeStr(onchain_score);
+            technicalScoreEl.textContent = safeStr(technical_score);
+            alphaScoreEl.textContent = safeStr(alpha_score);
+
+            setBar(alphaFillEl, alpha_score);
+            setBar(onchainFillEl, onchain_score);
+            setBar(technicalFillEl, technical_score);
+            setBar(narrativeFillEl, narrative_score);
+            setBar(confidenceFillEl, confidence_score);
+
+            groqSummaryEl.textContent = safeStr(groq?.summary_all_context);
+
+            const tech = j?.technical_analysis;
+            const hs = tech?.holderscan_data?.holderscan_history;
+
+            if (Array.isArray(hs)) {
+                const total = hs.length;
+                const usable = hs.filter(p => p && p.marketCap != null && p.mcapOverHolders != null).length;
+                holdersHintEl.textContent = `technical_analysis.holderscan_data.holderscan_history • ${total} points • ${usable} usable (non-null mcap & ratio)`;
+            } else {
+                holdersHintEl.textContent = "—";
+            }
+            drawHolderscan(holdersCanvas, hs);
+
+            swatchHoldersEl.style.background = "rgba(74,215,255,0.95)";
+            swatchMcapEl.style.background = "rgba(255,79,216,0.85)";
+            swatchRatioEl.style.background = "rgba(168,85,255,0.85)";
+
+            mcapValEl.textContent = formatUSDCompact(tech?.usd_market_cap);
+            athValEl.textContent = formatUSDCompact(tech?.ath_market_cap);
+            athMultValEl.textContent = formatMult(tech?.ath_multiple);
+            athTsValEl.textContent = timeAgoFromISO(tech?.ath_market_cap_timestamp);
+
+            usdMcapBigEl.textContent = formatUSDCompact(tech?.usd_market_cap);
+
+            const nObj = groq?.narrative_score;
+            narrativeWidgetHintEl.textContent = (nObj && typeof nObj === "object") ? "" : "—";
+            const nFinal = nObj?.final_score ?? null;
+            narrativeWidgetFinalEl.textContent = safeStr(nFinal);
+            setBar(narrativeWidgetFillEl, nFinal);
+            narrativeWidgetSubscoresEl.innerHTML = "";
+            const nSub = nObj?.narrative_subscores;
+            if (nSub && typeof nSub === "object") {
+                Object.entries(nSub).forEach(([k, v]) => {
+                    narrativeWidgetSubscoresEl.appendChild(subscoreItem(subscoreLabel("narrative", k), v));
+                });
+            } else {
+                narrativeWidgetSubscoresEl.appendChild(subscoreItem("narrative_subscores", null));
+            }
+
+            const cObj = groq?.confidence_score;
+            confidenceWidgetHintEl.textContent = (cObj && typeof cObj === "object") ? "" : "—";
+            const cFinal = cObj?.final_score ?? null;
+            confidenceWidgetFinalEl.textContent = safeStr(cFinal);
+            setBar(confidenceWidgetFillEl, cFinal);
+            confidenceWidgetSubscoresEl.innerHTML = "";
+            const cSub = cObj?.confidence_subscores;
+            if (cSub && typeof cSub === "object") {
+                Object.entries(cSub).forEach(([k, v]) => {
+                    confidenceWidgetSubscoresEl.appendChild(subscoreItem(subscoreLabel("confidence", k), v));
+                });
+            } else {
+                confidenceWidgetSubscoresEl.appendChild(subscoreItem("confidence_subscores", null));
+            }
+
+            const alpha = j?.alpha_analysis;
+            const as = alpha?.alpha_score;
+            alphaWidgetBarsEl.innerHTML = "";
+            alphaTrendingBoxEl.innerHTML = "";
+            alphaMobyBoxEl.innerHTML = "";
+            alphaTwitterTrendBoxEl.innerHTML = "";
+            alphaKolBoxEl.innerHTML = "";
+
+            if (as && typeof as === "object") {
+                alphaWidgetHintEl.textContent = "";
+                const aFinal = as.final_score ?? null;
+                alphaWidgetFinalEl.textContent = safeStr(aFinal);
+                setBar(alphaWidgetFillEl, aFinal);
+
+                alphaWidgetBarsEl.appendChild(barItem("KOL Buys", as.total_kol_buys_score, 10));
+                alphaWidgetBarsEl.appendChild(barItem("Trending Ranks", as.trending_ranks_score, 10));
+                alphaWidgetBarsEl.appendChild(barItem("Mentions", as.twitter_trending_score, 10));
+            } else {
+                alphaWidgetHintEl.textContent = "—";
+                alphaWidgetFinalEl.textContent = "—";
+                setBar(alphaWidgetFillEl, 0);
+                alphaWidgetBarsEl.appendChild(barItem("—", 0, 10));
+            }
+
+            const tr = alpha?.trending_ranks;
+            if (tr && typeof tr === "object") {
+                [
+                    ["Axiom", tr.axiom],
+                    ["Dexscreener", tr.dexscreener],
+                    ["Whale Activity", tr.moby],
+                ].forEach(([k, v]) => alphaTrendingBoxEl.appendChild(metricRow(k, v)));
+
+                alphaTrendingBoxEl.appendChild(metricRowBool("PumpFun News", tr.pumpfun_found));
+                alphaTrendingBoxEl.appendChild(metricRowBool("DailyRunner Trending", tr.trending_found));
+                alphaTrendingBoxEl.appendChild(metricRowBool("Mentions", tr.twitter_trending_found));
+            } else {
+                alphaTrendingBoxEl.appendChild(metricRow("—", "—"));
+            }
+
+            const moby = alpha?.moby;
+            if (moby && typeof moby === "object") {
+                [
+                    ["Whale Count (24h)", moby.whale_count_h24],
+                    ["Whale Trades Count (24h)", moby.whale_trades_count_h24],
+                    ["Whale Net Flow USD (24h)", moby.whale_net_flow_usd_h24],
+                    ["Whale Net Supply Percent (24h)", moby.whale_net_supply_percent_h24],
+                    ["Whale Holder Retention Percent (24h)", moby.whale_holder_retention_percent_h24],
+                ].forEach(([k, v]) => alphaMobyBoxEl.appendChild(metricRow(k, v)));
+            } else {
+                alphaMobyBoxEl.appendChild(metricRow("—", "—"));
+            }
+
+            const tt = alpha?.twitter_trending;
+            if (tt && typeof tt === "object") {
+                alphaTwitterTrendBoxEl.appendChild(metricRow("Total Mentions", tt.mentions_total));
+                const accounts = tt.accounts;
+                if (Array.isArray(accounts) && accounts.length) {
+                    alphaTwitterTrendBoxEl.appendChild(metricRow("Accounts", accounts.length));
+                    accounts.slice(0, 8).forEach((a, idx) => {
+                        let label = a;
+                        if (a && typeof a === "object") {
+                            const u = a.username || a.handle || a.user || null;
+                            const d = a.displayname || a.name || null;
+                            label = (u || d) ? `${u ? "@" + u : ""}${(u && d) ? " • " : ""}${d ? d : ""}` : JSON.stringify(a);
+                        }
+                        alphaTwitterTrendBoxEl.appendChild(metricRow(`account_${idx + 1}`, label));
+                    });
+                } else {
+                    alphaTwitterTrendBoxEl.appendChild(metricRow("Accounts", "—"));
+                }
+            } else {
+                alphaTwitterTrendBoxEl.appendChild(metricRow("—", "—"));
+            }
+
+            const kb = alpha?.kol_buys;
+            if (kb && typeof kb === "object") {
+                alphaKolBoxEl.appendChild(metricRow("Total KOL Buys", kb.total_kol_buys));
+                alphaKolBoxEl.appendChild(metricRow("Total USD Spent", kb.total_usd_spent));
+                const kols = kb.kols;
+                if (Array.isArray(kols) && kols.length) {
+                    kols.slice(0, 12).forEach((k) => alphaKolBoxEl.appendChild(metricRow("KOL", k?.kol_name ?? "—")));
+                } else {
+                    alphaKolBoxEl.appendChild(metricRow("kols", "—"));
+                }
+            } else {
+                alphaKolBoxEl.appendChild(metricRow("—", "—"));
+            }
+
+            const onRaw = j?.risk_analysis?.onchain_scan;
+            const onScore = j?.risk_analysis?.onchain_scan_score;
+
+            onchainWidgetSubscoresEl.innerHTML = "";
+            if (onScore && typeof onScore === "object") {
+                onchainWidgetHintEl.textContent = "";
+                const oFinal = onScore.final_score ?? null;
+                onchainWidgetFinalEl.textContent = safeStr(oFinal);
+                setBar(onchainWidgetFillEl, oFinal);
+
+                const subEntries = Object.entries(onScore).filter(([k, _]) => k !== "final_score");
+                if (subEntries.length) {
+                    subEntries.forEach(([k, v]) => {
+                        onchainWidgetSubscoresEl.appendChild(subscoreItem(subscoreLabel("onchain", k), v));
+                    });
+                } else {
+                    onchainWidgetSubscoresEl.appendChild(subscoreItem("—", null));
+                }
+            } else {
+                onchainWidgetHintEl.textContent = "—";
+                onchainWidgetFinalEl.textContent = "—";
+                setBar(onchainWidgetFillEl, 0);
+                onchainWidgetSubscoresEl.appendChild(subscoreItem("—", null));
+            }
+
+            onchainWidgetRawListEl.innerHTML = "";
+            if (onRaw && typeof onRaw === "object") {
+                [
+                    ["Bundle Percentage", onRaw.bundle_percentage],
+                    ["Fresh Wallets Percentage", onRaw.fresh_wallets_percentage],
+                    ["Dev Hold Percentage", onRaw.dev_hold_percentage],
+                    ["Insider Wallets Percentage", onRaw.insider_wallets_percentage],
+                    ["Holder Count", onRaw.num_holders],
+                    ["Largest Holder Percentage", onRaw.largest_holder_percentage],
+                    ["Largest Cluster Percentage", onRaw.largest_cluster_percentage],
+                    ["Large Holder Count", onRaw.large_holder_count],
+                    ["Same Percentage Count", onRaw.same_percentage_count],
+                    ["Low SOL Count", onRaw.low_sol_count],
+                ].forEach(([k, v]) => onchainWidgetRawListEl.appendChild(metricRow(k, v)));
+            } else {
+                onchainWidgetRawListEl.appendChild(metricRow("—", "—"));
+            }
+
+            const taObj = tech?.ta_buy_score;
+            technicalWidgetSubscoresEl.innerHTML = "";
+            technicalWidgetTimeframeScoresEl.innerHTML = "";
+            if (taObj && typeof taObj === "object") {
+                technicalWidgetHintEl.textContent = "";
+                const taFinal = taObj.final_score ?? null;
+                technicalWidgetFinalEl.textContent = safeStr(taFinal);
+                setBar(technicalWidgetFillEl, taFinal);
+
+                const taSub = taObj.subscores;
+                if (taSub && typeof taSub === "object") {
+                    Object.entries(taSub).forEach(([k, v]) => {
+                        technicalWidgetSubscoresEl.appendChild(subscoreItem(subscoreLabel("technical", k), v));
+                    });
+                } else {
+                    technicalWidgetSubscoresEl.appendChild(subscoreItem("—", null));
+                }
+
+                const taTimeframes = taObj.timeframe_scores;
+                if (taTimeframes && typeof taTimeframes === "object") {
+                    Object.entries(taTimeframes).forEach(([tf, data]) => {
+                        technicalWidgetTimeframeScoresEl.appendChild(metricRow(tf, data.final_score));
+                    });
+                } else {
+                    technicalWidgetTimeframeScoresEl.appendChild(metricRow("—", "—"));
+                }
+            } else {
+                technicalWidgetHintEl.textContent = "—";
+                technicalWidgetFinalEl.textContent = "—";
+                setBar(technicalWidgetFillEl, 0);
+                technicalWidgetSubscoresEl.appendChild(subscoreItem("—", null));
+            }
+
+            setRawExpanded(alphaRawToggleBtn, alphaRawSectionsEl, false);
+            setRawExpanded(onchainRawToggleBtn, onchainRawSectionsEl, false);
+            setRawExpanded(technicalRawToggleBtn, technicalRawSectionsEl, false);
+
+            let mainTweetText = "";
+            const mt = staged?.main_tweet;
+            if (mt && typeof mt === "object") {
+                const t = (typeof mt.text === "string") ? mt.text.trim() : "";
+                const u = (typeof mt.username === "string") ? mt.username.trim() : "";
+                const d = (typeof mt.displayname === "string") ? mt.displayname.trim() : "";
+                const head = u ? `@${u}${d ? " • " + d : ""}` : (d ? d : "");
+                if (t) mainTweetText = (head ? head + "\n\n" : "") + t;
+            }
+            setSectionByText(mainTweetEl, mainTweetText);
+
+            const wc = (typeof staged?.website_content === "string") ? staged.website_content : "";
+            setSectionByText(websiteContentEl, wc);
+
+            const tp = staged?.twitter_profile;
+            let profileTxt = "";
+            let recentTweetsArr = null;
+            if (tp && typeof tp === "object") {
+                const dn = (typeof tp.displayname === "string") ? tp.displayname.trim() : "";
+                const bio = (typeof tp.bio === "string") ? tp.bio.trim() : "";
+                if (dn) profileTxt += `Display Name: ${dn}`;
+                if (bio) profileTxt += (profileTxt ? "\n" : "") + `Bio: ${bio}`;
+                recentTweetsArr = Array.isArray(tp.recent_tweets) ? tp.recent_tweets : null;
+            }
+            setSectionByText(twitterProfileEl, profileTxt);
+            setSectionByList(profileTweetsEl, recentTweetsArr);
+
+            const posts = staged?.twitter_community_content?.recent_posts;
+            const postsArr = Array.isArray(posts) ? posts : null;
+            setSectionByList(communityPostsEl, postsArr);
+
+            const ts = staged?.twitter_search_texts;
+            const addrRecent = ts?.address_recent;
+            const addrTop = ts?.address_top;
+            const symRecent = ts?.symbol_recent;
+            const symTop = ts?.symbol_top;
+
+            const hasAnySearch =
+                (Array.isArray(addrRecent) && addrRecent.length) ||
+                (Array.isArray(addrTop) && addrTop.length) ||
+                (Array.isArray(symRecent) && symRecent.length) ||
+                (Array.isArray(symTop) && symTop.length);
+
+            addrRecentHintEl.textContent = Array.isArray(addrRecent) ? `${addrRecent.length} items` : "—";
+            addrTopHintEl.textContent = Array.isArray(addrTop) ? `${addrTop.length} items` : "—";
+            symRecentHintEl.textContent = Array.isArray(symRecent) ? `${symRecent.length} items` : "—";
+            symTopHintEl.textContent = Array.isArray(symTop) ? `${symTop.length} items` : "—";
+
+            if (hasAnySearch) {
+                fillUl(addrRecentListEl, addrRecent, 10);
+                fillUl(addrTopListEl, addrTop, 10);
+                fillUl(symRecentListEl, symRecent, 10);
+                fillUl(symTopListEl, symTop, 10);
+            } else {
+                clearList(addrRecentListEl);
+                clearList(addrTopListEl);
+                clearList(symRecentListEl);
+                clearList(symTopListEl);
+            }
+            setSectionVisible(twitterSearchTextsBlockEl, !!hasAnySearch);
+
+            const ga = (typeof groq?.answer === "string") ? groq.answer : "";
+            setSectionByText(groqAnswerEl, ga);
+
+            // --- Price Chart Logic ---
+            const ohlcv = tech?.ohlcv;
+            currentOhlcvData = ohlcv; // Store for switching
+            renderPriceChart(timeframeSelectEl.value);
+            renderMacdChart(timeframeSelectEl.value);
+            renderCipherChart(timeframeSelectEl.value);
+
+            // Ensure all three charts share the exact same x-axis range so crosshairs/tooltips sync
+            // allow charts to mount, then sync ranges so tooltips/crosshairs align
+            setTimeout(() => {
+                try { syncChartsForInterval(timeframeSelectEl.value); } catch (e) {}
+            }, 60);
+        }
+
+        // Helper to extract timestamp consistently across all charts
+        function extractTimestamp(bar) {
+            let t = bar.timestamp;
+            if (typeof t === 'string') {
+                const parsed = Date.parse(t);
+                t = Number.isFinite(parsed) ? parsed : Number(t);
+            }
+            if (!Number.isFinite(t) && bar.time !== undefined) {
+                t = Number(bar.time);
+            }
+            if (!Number.isFinite(t)) return null;
+
+            // Normalize seconds -> milliseconds if needed
+            if (t > 0 && t < 1e12) t = t * 1000;
+
+            return Number.isFinite(t) ? t : null;
+        }
+
+        // Helper to get consistent min/max timestamps for all synced charts
+        function getTimeRange(bars) {
+            let minTs = null;
+            let maxTs = null;
+            
+            for (let i = 0; i < bars.length; i++) {
+                const t = extractTimestamp(bars[i]);
+                if (t !== null) {
+                    if (minTs === null) minTs = t;
+                    maxTs = t;
+                }
+            }
+            
+            return { minTs, maxTs };
+        }
+
+        // Force all charts to use the same x-axis range to keep crosshairs/tooltips synchronized.
+        function syncChartsForInterval(interval) {
+            if (!currentOhlcvData || !currentOhlcvData.intervals || !currentOhlcvData.intervals[interval]) return;
+            const bars = currentOhlcvData.intervals[interval].bars || [];
+            const { minTs, maxTs } = getTimeRange(bars);
+            if (!minTs || !maxTs) return;
+
+            try {
+                // Use ApexCharts.exec to apply zoom/update to each chart id in the shared group.
+                ApexCharts.exec('price-chart', 'zoomX', [minTs, maxTs]);
+                ApexCharts.exec('macd-chart', 'zoomX', [minTs, maxTs]);
+                ApexCharts.exec('cipher-chart', 'zoomX', [minTs, maxTs]);
+                // After zoom, normalize plot-left offsets so plotting areas visually align
+                setTimeout(() => { try { normalizePlotLefts(); } catch (e) {} }, 80);
+            } catch (e) {
+                // Ignore if ApexCharts not available or exec fails
+            }
+        }
+
+        // Measure plot left offsets and update grid.padding.left so all charts align
+        function normalizePlotLefts() {
+            const charts = [
+                { id: 'price-chart', el: priceChartEl },
+                { id: 'macd-chart', el: macdChartEl },
+                { id: 'cipher-chart', el: cipherChartEl }
+            ];
+
+            // Try multiple selectors to find the actual plot area for each chart. ApexCharts internals
+            // vary with chart type; prefer a precise plot-area element when available.
+            function getPlotRect(container) {
+                if (!container) return null;
+                const selectors = [
+                    '.apexcharts-plot-area',
+                    '.apexcharts-inner .apexcharts-plot-area',
+                    '.apexcharts-inner .apexcharts-canvas',
+                    '.apexcharts-inner svg',
+                    'svg'
+                ];
+                for (let s of selectors) {
+                    try {
+                        const el = container.querySelector(s);
+                        if (el) {
+                            const r = el.getBoundingClientRect();
+                            if (Number.isFinite(r.left) && Number.isFinite(r.right)) return r;
+                        }
+                    } catch (e) { /* ignore and continue */ }
+                }
+                return null;
+            }
+
+            const rects = charts.map(c => getPlotRect(c.el));
+            const valid = rects.filter(r => r && Number.isFinite(r.left) && Number.isFinite(r.right));
+            if (!valid.length) return;
+
+            // Align to the leftmost plot-left and use the smallest plot width so we don't expand any plots.
+            const minLeft = Math.min(...valid.map(r => r.left));
+            const widths = valid.map(r => Math.max(0, Math.round(r.right - r.left)));
+            const targetWidth = Math.min(...widths);
+
+            charts.forEach((c, idx) => {
+                try {
+                    const r = rects[idx];
+                    if (!r) return;
+
+                    const deltaLeft = Math.round(r.left - minLeft);
+                    let newLeftPad = Math.max(0, chartLeftPad + deltaLeft);
+                    // Respect manual cipher padding: never reduce below cipherLeftPad for cipher-chart
+                    if (c.id === 'cipher-chart') newLeftPad = Math.max(newLeftPad, cipherLeftPad);
+
+                    const curWidth = Math.max(0, Math.round(r.right - r.left));
+                    const extraRightPad = curWidth > targetWidth ? (curWidth - targetWidth) : 0;
+                    const baseRightPad = 16;
+                    const newRightPad = Math.max(0, baseRightPad + extraRightPad);
+
+                    ApexCharts.exec(c.id, 'updateOptions', { grid: { padding: { left: newLeftPad, right: newRightPad } } }, false, true);
+                } catch (e) { /* ignore */ }
+            });
+        }
+
+        function renderPriceChart(interval) {
+            priceHintEl.style.display = "none";
+
+            if (!currentOhlcvData || !currentOhlcvData.intervals || !currentOhlcvData.intervals[interval]) {
+                if (priceChartInstance) {
+                    priceChartInstance.destroy();
+                    priceChartInstance = null;
+                }
+                document.getElementById("priceChart").innerHTML = "<div style='padding:20px; text-align:center; color:rgba(183,169,255,0.5);'>No chart data for " + interval + "</div>";
+                return;
+            }
+
+            const bars = currentOhlcvData.intervals[interval].bars || [];
+            if (bars.length === 0) {
+                if (priceChartInstance) {
+                    priceChartInstance.destroy();
+                    priceChartInstance = null;
+                }
+                document.getElementById("priceChart").innerHTML = "<div style='padding:20px; text-align:center; color:rgba(183,169,255,0.5);'>Empty chart data for " + interval + "</div>";
+                return;
+            }
+
+            // Get consistent time range for all charts
+            const { minTs, maxTs } = getTimeRange(bars);
+
+            // Format for ApexCharts: [timestamp, open, high, low, close]
+            const seriesData = bars.map(b => {
+                const t = extractTimestamp(b);
+                return {
+                    x: t,
+                    y: [b.open, b.high, b.low, b.close]
+                };
+            }).filter(d => d.x !== null);
+
+            // Debug hint
+            priceHintEl.textContent = `Interval: ${interval} • Points: ${seriesData.length}`;
+            priceHintEl.style.display = "block";
+
+            const options = {
+                series: [{
+                    data: seriesData
+                }],
+                chart: {
+                    id: 'price-chart',
+                    group: 'market-data',
+                    type: 'candlestick',
+                    height: 280,
+                    background: 'transparent',
+                    toolbar: { show: false },
+                    animations: { enabled: false },
+                    zoom: { enabled: false }
+                },
+                theme: { mode: 'dark' },
+                plotOptions: {
+                    candlestick: {
+                        colors: {
+                            upward: '#35ffb2',
+                            downward: '#ff4b6e'
+                        },
+                        wick: { useFillColor: true }
+                    }
+                },
+                xaxis: {
+                    type: 'datetime',
+                    min: minTs,
+                    max: maxTs,
+                    tooltip: { enabled: false },
+                    axisBorder: { show: false },
+                    axisTicks: { show: false },
+                    labels: { show: false },
+                    crosshairs: { show: true, stroke: { color: 'rgba(183,169,255,0.25)', width: 1 } }
+                },
+                yaxis: {
+                    tooltip: { enabled: false },
+                    labels: {
+                        style: { colors: 'rgba(183,169,255,0.6)' },
+                        formatter: function (val) { return val.toFixed(6); }
+                    }
+                },
+                grid: {
+                    borderColor: 'rgba(255,255,255,0.06)',
+                    xaxis: { lines: { show: false } },
+                    padding: { left: chartLeftPad, right: 16 }
+                },
+                tooltip: {
+                    theme: 'dark',
+                    shared: true,
+                    intersect: false,
+                    x: { format: 'dd MMM HH:mm' }
+                }
+            };
+
+            if (priceChartInstance) {
+                priceChartInstance.destroy();
+                priceChartInstance = null;
+            }
+            document.getElementById("priceChart").innerHTML = "";
+            priceChartInstance = new ApexCharts(document.getElementById("priceChart"), options);
+            priceChartInstance.render();
+        }
+
+        function renderCipherChart(interval) {
+            cipherHintEl.style.display = "none";
+
+            if (!currentOhlcvData || !currentOhlcvData.intervals || !currentOhlcvData.intervals[interval]) {
+                if (cipherChartInstance) {
+                    cipherChartInstance.destroy();
+                    cipherChartInstance = null;
+                }
+                cipherChartEl.innerHTML =
+                    "<div style='padding:20px; text-align:center; color:rgba(183,169,255,0.5);'>No Cipher data for " +
+                    interval +
+                    "</div>";
+                return;
+            }
+
+            const bars = currentOhlcvData.intervals[interval].bars || [];
+            if (bars.length === 0) {
+                if (cipherChartInstance) {
+                    cipherChartInstance.destroy();
+                    cipherChartInstance = null;
+                }
+                cipherChartEl.innerHTML =
+                    "<div style='padding:20px; text-align:center; color:rgba(183,169,255,0.5);'>Empty Cipher data for " +
+                    interval +
+                    "</div>";
+                return;
+            }
+
+            // Get consistent time range for all charts
+            const { minTs, maxTs } = getTimeRange(bars);
+
+            const wt1Series = [];
+            const wt2Series = [];
+            const fastWt1Series = [];
+
+            // Split MFI into 2 masked series so it can be green above 0 and red below 0
+            const mfiPositive = [];
+            const mfiNegative = [];
+
+            const rsiSeries = [];
+            const schaffSeries = [];
+
+            const bullishCrosses = [];
+            const bearishCrosses = [];
+
+            let mfiPoints = 0;
+
+            bars.forEach(b => {
+                const t = extractTimestamp(b);
+                if (t === null) return;
+
+                wt1Series.push({ x: t, y: Number.isFinite(b.cipher_wt1) ? b.cipher_wt1 : null });
+                wt2Series.push({ x: t, y: Number.isFinite(b.cipher_wt2) ? b.cipher_wt2 : null });
+                fastWt1Series.push({ x: t, y: Number.isFinite(b.cipher_fast_wt1_centered) ? b.cipher_fast_wt1_centered : null });
+
+                const vMfi = Number.isFinite(b.cipher_mfi) ? b.cipher_mfi : null;
+                if (vMfi !== null) {
+                    mfiPositive.push({ x: t, y: vMfi >= 0 ? vMfi : null });
+                    mfiNegative.push({ x: t, y: vMfi < 0 ? vMfi : null });
+                    mfiPoints++;
+                } else {
+                    mfiPositive.push({ x: t, y: null });
+                    mfiNegative.push({ x: t, y: null });
+                }
+
+                rsiSeries.push({ x: t, y: Number.isFinite(b.cipher_rsi) ? b.cipher_rsi : null });
+                schaffSeries.push({ x: t, y: Number.isFinite(b.cipher_schaff_tc) ? b.cipher_schaff_tc : null });
+
+                if (b.cipher_bullish_cross && Number.isFinite(b.cipher_wt2)) {
+                    bullishCrosses.push({ x: t, y: b.cipher_wt2 });
+                }
+
+                if (b.cipher_bearish_cross && Number.isFinite(b.cipher_wt2)) {
+                    bearishCrosses.push({ x: t, y: b.cipher_wt2 });
+                }
+            });
+
+            if (wt1Series.length === 0 && wt2Series.length === 0) {
+                cipherChartEl.innerHTML =
+                    "<div style='padding:20px; text-align:center; color:rgba(183,169,255,0.5);'>No Cipher values for " +
+                    interval +
+                    "</div>";
+                return;
+            }
+
+            
+
+            cipherHintEl.textContent =
+                `Cipher Interval: ${interval} • Points: ${Math.max(wt1Series.length, wt2Series.length)} • MFI: ${mfiPoints}`;
+            cipherHintEl.style.display = "block";
+
+            const options = {
+                series: [
+                    { name: "WT1", type: "area", data: wt1Series },
+                    { name: "WT2", type: "area", data: wt2Series },
+
+                    // MFI split: green above 0, red below 0 (null-masked)
+                    { name: "MFI+", type: "area", data: mfiPositive },
+                    { name: "MFI-", type: "area", data: mfiNegative },
+
+                    { name: "Fast WT1", type: "area", data: fastWt1Series },
+
+                    { name: "RSI", type: "line", data: rsiSeries },
+                    { name: "Schaff TC", type: "line", data: schaffSeries },
+                    { name: "Bullish Cross", type: "scatter", data: bullishCrosses },
+                    { name: "Bearish Cross", type: "scatter", data: bearishCrosses }
+                ],
+
+                chart: {
+                    id: 'cipher-chart',
+                    group: 'market-data',
+                    height: 220,
+                    background: "transparent",
+                    toolbar: { show: false },
+                    animations: { enabled: false },
+                    zoom: { enabled: false },
+                    foreColor: "rgba(183,169,255,0.85)"
+                },
+
+                theme: { mode: "dark" },
+
+                stroke: {
+                    width: [2, 2, 2, 2, 2, 1.5, 1.5, 0, 0],
+                    curve: "smooth"
+                },
+
+                colors: [
+                    "#1f6bff", // WT1
+                    "#4da3ff", // WT2
+                    "#00ff9c", // MFI+
+                    "#ff3b3b", // MFI-
+                    "#ffd400", // Fast WT1
+                    "#ff2fd1", // RSI
+                    "#9ca3af", // Schaff
+                    "#00ff9c", // Bullish Cross
+                    "#ff2a55"  // Bearish Cross
+                ],
+
+                fill: {
+                    type: ["gradient", "gradient", "gradient", "gradient", "gradient", "solid", "solid", "solid", "solid"],
+                    opacity: [0.85, 0.75, 0.99, 0.95, 0.95, 1, 1, 1, 1],
+                    gradient: {
+                        shadeIntensity: 0.3,
+                        opacityFrom: 0.95,
+                        opacityTo: 0.8,
+                        stops: [0, 100]
+                    }
+                },
+
+                markers: {
+                    size: [0, 0, 0, 0, 0, 0, 0, 3, 3],
+                    strokeWidth: 0
+                },
+
+                xaxis: {
+                    type: "datetime",
+                    min: minTs,
+                    max: maxTs,
+                    tooltip: { enabled: false }, // prevents axis tooltip weirdness competing with shared tooltip
+                    labels: { show: false },
+                    axisBorder: { show: false },
+                    axisTicks: { show: false },
+                    crosshairs: {
+                        show: true,
+                        stroke: {
+                            color: "rgba(183,169,255,0.25)",
+                            width: 1
+                        }
+                    }
+                },
+
+                yaxis: {
+                    min: -100,
+                    max: 100,
+                    tickAmount: 4,
+                    labels: {
+                        style: { colors: "rgba(183,169,255,0.6)" },
+                        formatter: v => v.toFixed(0)
+                    }
+                },
+
+                grid: {
+                    borderColor: 'rgba(255,255,255,0.06)',
+                    padding: { left: cipherLeftPad, right: 16 }
+                },
+
+                annotations: {
+                    yaxis: [
+                        { y: 60, borderColor: "rgba(255,75,110,0.2)" },
+                        { y: -60, borderColor: "rgba(53,255,178,0.2)" },
+                        { y: 0, borderColor: "rgba(255,255,255,0.1)" }
+                    ]
+                },
+
+                legend: { show: false },
+
+                tooltip: {
+                    enabled: true,
+                    theme: "dark",
+                    shared: true,
+                    intersect: false,
+                    x: { format: "dd MMM HH:mm" },
+                    y: {
+                        formatter: function (val) {
+                            if (val === null || val === undefined) return undefined;
+                            return val.toFixed(2);
+                        }
+                    }
+                }
+            };
+
+            if (cipherChartInstance) {
+                cipherChartInstance.destroy();
+                cipherChartInstance = null;
+            }
+            cipherChartEl.innerHTML = "";
+            cipherChartInstance = new ApexCharts(cipherChartEl, options);
+            cipherChartInstance.render();
+        }
+
+
+        function renderMacdChart(interval) {
+            macdHintEl.style.display = "none";
+
+            if (!currentOhlcvData || !currentOhlcvData.intervals || !currentOhlcvData.intervals[interval]) {
+                if (macdChartInstance) {
+                    macdChartInstance.destroy();
+                    macdChartInstance = null;
+                }
+                macdChartEl.innerHTML = "<div style='padding:20px; text-align:center; color:rgba(183,169,255,0.5);'>No MACD data for " + interval + "</div>";
+                return;
+            }
+
+            const bars = currentOhlcvData.intervals[interval].bars || [];
+            if (bars.length === 0) {
+                if (macdChartInstance) {
+                    macdChartInstance.destroy();
+                    macdChartInstance = null;
+                }
+                macdChartEl.innerHTML = "<div style='padding:20px; text-align:center; color:rgba(183,169,255,0.5);'>Empty MACD data for " + interval + "</div>";
+                return;
+            }
+
+            // Get consistent time range for all charts
+            const { minTs, maxTs } = getTimeRange(bars);
+
+            const macdSeries = [];
+            const signalSeries = [];
+            const histSeries = [];
+
+            bars.forEach(b => {
+                const t = extractTimestamp(b);
+                if (t !== null) {
+                    macdSeries.push({ x: t, y: Number.isFinite(b.macd) ? b.macd : null });
+                    signalSeries.push({ x: t, y: Number.isFinite(b.macd_signal) ? b.macd_signal : null });
+                    histSeries.push({ x: t, y: Number.isFinite(b.macd_hist) ? b.macd_hist : null });
+                }
+            });
+
+            if (macdSeries.length === 0) {
+                macdChartEl.innerHTML = "<div style='padding:20px; text-align:center; color:rgba(183,169,255,0.5);'>No MACD values for " + interval + "</div>";
+                return;
+            }
+
+            macdHintEl.textContent = `MACD Interval: ${interval} • Points: ${macdSeries.length}`;
+            macdHintEl.style.display = "block";
+
+            const options = {
+                series: [
+                    {
+                        name: 'MACD',
+                        type: 'line',
+                        data: macdSeries
+                    },
+                    {
+                        name: 'Signal',
+                        type: 'line',
+                        data: signalSeries
+                    },
+                    {
+                        name: 'Histogram',
+                        type: 'bar',
+                        data: histSeries
+                    }
+                ],
+                chart: {
+                    id: 'macd-chart',
+                    group: 'market-data',
+                    height: 160,
+                    type: 'line',
+                    background: 'transparent',
+                    toolbar: { show: false },
+                    animations: { enabled: false },
+                    sparkline: { enabled: false },
+                    zoom: { enabled: false }
+                },
+                theme: { mode: 'dark' },
+                stroke: {
+                    width: [2, 2, 0],
+                    curve: 'smooth'
+                },
+                colors: ['#4ad7ff', '#ff4fd8', '#35ffb2'], // Neon Blue, Neon Pink, Neon Green
+                plotOptions: {
+                    bar: {
+                        columnWidth: '80%',
+                        colors: {
+                            ranges: [{
+                                from: -100000000,
+                                to: 0,
+                                color: '#ff4b6e' // Neon Red for negative hist
+                            }, {
+                                from: 0.00000001,
+                                to: 100000000,
+                                color: '#35ffb2' // Neon Green for positive hist
+                            }]
+                        }
+                    }
+                },
+                xaxis: {
+                    type: 'datetime',
+                    min: minTs,
+                    max: maxTs,
+                    tooltip: { enabled: false },
+                    axisBorder: { show: false },
+                    axisTicks: { show: false },
+                    labels: { show: true, style: { colors: 'rgba(183,169,255,0.6)' } },
+                    crosshairs: { show: true, stroke: { color: 'rgba(183,169,255,0.25)', width: 1 } }
+                },
+                yaxis: {
+                    tooltip: { enabled: false },
+                    labels: {
+                        style: { colors: 'rgba(183,169,255,0.6)' },
+                        formatter: function (val) { return val ? val.toFixed(6) : "0.00"; }
+                    }
+                },
+                grid: {
+                    borderColor: 'rgba(255,255,255,0.06)',
+                    xaxis: { lines: { show: false } },
+                    padding: { left: chartLeftPad, right: 16 }
+                },
+                legend: { show: false },
+                tooltip: {
+                    theme: 'dark',
+                    shared: true,
+                    intersect: false,
+                    x: { format: 'dd MMM HH:mm' }
+                }
+            };
+
+            if (macdChartInstance) {
+                macdChartInstance.destroy();
+                macdChartInstance = null;
+            }
+            macdChartEl.innerHTML = "";
+            macdChartInstance = new ApexCharts(macdChartEl, options);
+            macdChartInstance.render();
+        }
+
+        // --- Init Listeners ---
+        if (timeframeSelectEl) {
+            timeframeSelectEl.addEventListener("change", (e) => {
+                const iv = e.target.value;
+                renderPriceChart(iv);
+                renderMacdChart(iv);
+                renderCipherChart(iv);
+
+                // allow charts to mount then force same x-axis across them
+                setTimeout(() => {
+                    try { syncChartsForInterval(iv); } catch (err) {}
+                }, 60);
+            });
+        }
+
+        let loadingTimer = null;
+        let loadingStart = null;
+
+        function showLoading(token_address) {
+            loadingOverlay.classList.add("active");
+            loaderAddr.textContent = safeStr(token_address);
+            loaderHint.textContent = "Consulting the DMT oracles...";
+            loadingStart = new Date();
+
+            if (loadingTimer) clearInterval(loadingTimer);
+            loadingTimer = setInterval(() => {
+                const now = new Date();
+                const secs = Math.max(0, Math.round((now - loadingStart) / 1000));
+                loaderTime.textContent = `Elapsed: ${secs}s`;
+                if (secs > 8 && secs <= 20) loaderHint.textContent = "Agentic magic is afoot...";
+                if (secs > 20 && secs <= 45) loaderHint.textContent = "Web Search tool calls type shit...";
+                if (secs > 45) loaderHint.textContent = "This may be way too much voodoo for our intended purposes...";
+            }, 500);
+
+            loaderTime.textContent = "Elapsed: 0s";
+        }
+
+        function hideLoading() {
+            loadingOverlay.classList.remove("active");
+            if (loadingTimer) clearInterval(loadingTimer);
+            loadingTimer = null;
+            loadingStart = null;
+        }
+
+        async function runScan(token_address) {
+            token_address = (token_address || "").trim();
+            if (!token_address) return { ok: false, error: "Enter a token address." };
+
+            runBtnStart.disabled = true;
+            runBtnTop.disabled = true;
+            showStartError(null);
+            setStatus("");
+
+            showLoading(token_address);
+
+            const scanStartedAt = new Date();
+
+            try {
+                const res = await fetch("/run", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ token_address })
+                });
+
+                const out = await res.json();
+                if (!out.ok) return { ok: false, error: out.error || "unknown" };
+
+                const withGroqResp = await fetchJson("with_groq");
+                if (!withGroqResp.ok || !withGroqResp.data) {
+                    return { ok: false, error: "Scan finished, but with_groq JSON not available yet." };
+                }
+
+                showState(stateResults);
+                addrTop.value = token_address;
+
+                clearResultsUI();
+                renderFromWithGroq(withGroqResp.data);
+
+                const scanEndedAt = new Date();
+                const secs = Math.max(0, Math.round((scanEndedAt - scanStartedAt) / 1000));
+
+                topMeta.textContent = `Last scanned: ${token_address}`;
+                runPill.style.display = "inline-block";
+                runPill.textContent = `Completed • ${secs}s`;
+
+                resultPillEl.style.display = "none";
+                resultPillEl.textContent = "";
+
+                setStatus("");
+                return { ok: true };
+            } catch (e) {
+                return { ok: false, error: String(e) };
+            } finally {
+                hideLoading();
+                runBtnStart.disabled = false;
+                runBtnTop.disabled = false;
+            }
+        }
+
+        runBtnStart.addEventListener("click", async () => {
+            const r = await runScan(addrStart.value);
+            if (!r.ok) showStartError(r.error || "Unknown error");
+        });
+        addrStart.addEventListener("keydown", async (e) => {
+            if (e.key === "Enter") {
+                const r = await runScan(addrStart.value);
+                if (!r.ok) showStartError(r.error || "Unknown error");
+            }
+        });
+        runBtnTop.addEventListener("click", async () => {
+            const r = await runScan(addrTop.value);
+            if (!r.ok) setStatus("Error:\n" + (r.error || "unknown"));
+        });
+        addrTop.addEventListener("keydown", async (e) => {
+            if (e.key === "Enter") {
+                const r = await runScan(addrTop.value);
+                if (!r.ok) setStatus("Error:\n" + (r.error || "unknown"));
+            }
+        });
+
+        showState(stateStart);
+        clearResultsUI();
+        initRawToggles();
+        addrStart.value = "";
+        addrTop.value = "";
+        swatchHoldersEl.style.background = "rgba(74,215,255,0.95)";
+        swatchMcapEl.style.background = "rgba(255,79,216,0.85)";
+        swatchRatioEl.style.background = "rgba(168,85,255,0.85)";
+    </script>
+</body>
+
+</html>

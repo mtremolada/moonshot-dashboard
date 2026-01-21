@@ -1,0 +1,1889 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DailyRunner.Fun - General Market Data</title>
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="ae5e7afd-7091-44f9-84c3-95f543a90d22"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <style>
+        :root {
+            --bg-color: #1c1f1d;
+            --widget-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --header-color: #4CAF50;
+            --subtext-color: #aaaaaa;
+            --border-color: #333333;
+            --hover-color: #2c2c2c;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+
+            --good: #2ee59d;
+            --bad: #ff4d6d;
+            --warn: #ffd166;
+
+            --r: 14px;
+            --sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            --select-bg: #121212;
+            --select-bg-2: #0f0f0f;
+            --select-border: rgba(255, 255, 255, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--sans);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-dropdown {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+        }
+
+        .menu-button {
+            background: linear-gradient(135deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .menu-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .menu-button svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 5px;
+            background-color: rgba(36, 36, 36, 0.95);
+            min-width: 160px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            z-index: 101;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(76, 175, 80, 0.2);
+        }
+
+        .show {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        .dropdown-content a.separator-top {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 4px;
+            padding-top: 12px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .page-title {
+            font-size: 1.75rem;
+            color: var(--header-color);
+            margin-bottom: 5px;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-logo {
+            height: 1.5em;
+            width: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 12px;
+        }
+
+        .card {
+            background: var(--widget-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--r);
+            box-shadow: 0 2px 10px var(--shadow-color);
+            padding: 14px;
+            overflow: hidden;
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 1.1rem;
+            color: var(--header-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .card h2 .hint {
+            color: var(--subtext-color);
+            font-weight: 400;
+            font-size: 0.85rem;
+        }
+
+        .kpiRow {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .kpiRow4 {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .kpiRow3 {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .kpi {
+            background: rgba(0, 0, 0, .12);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .kpi .label {
+            color: var(--subtext-color);
+            font-size: 0.85rem;
+        }
+
+        .kpi .value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        .kpi .sub {
+            margin-top: 8px;
+            color: var(--subtext-color);
+            font-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .good {
+            color: var(--good);
+        }
+
+        .bad {
+            color: var(--bad);
+        }
+
+        .warn {
+            color: var(--warn);
+        }
+
+        .muted {
+            color: var(--subtext-color);
+        }
+
+        .small {
+            font-size: 0.85rem;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        thead th {
+            text-align: left;
+            color: var(--subtext-color);
+            padding: 10px;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(0, 0, 0, .12);
+            font-size: 0.85rem;
+        }
+
+        tbody td {
+            padding: 10px;
+            border-bottom: 1px solid rgba(51, 51, 51, .7);
+            vertical-align: top;
+            font-size: 0.95rem;
+        }
+
+        tbody tr:hover td {
+            background: var(--hover-color);
+        }
+
+        .err {
+            margin-top: 10px;
+            border: 1px solid rgba(255, 77, 109, .4);
+            background: rgba(255, 77, 109, .08);
+            border-radius: 10px;
+            padding: 10px;
+            color: #ffd1d9;
+            font-size: 0.9rem;
+        }
+
+        .span-12 {
+            grid-column: span 12;
+        }
+
+        .span-8 {
+            grid-column: span 8;
+        }
+
+        .span-6 {
+            grid-column: span 6;
+        }
+
+        .span-4 {
+            grid-column: span 4;
+        }
+
+        .meterWrap {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .meterBox {
+            flex: 0 1 260px;
+            max-width: 280px;
+            background: rgba(0, 0, 0, .12);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .meterTitle {
+            font-weight: 700;
+            color: var(--text-color);
+            min-height: 0.9rem;
+        }
+
+        .meterValueTop {
+            margin-top: 6px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .meterValueTop .big {
+            font-size: 2.05rem;
+            font-weight: 900;
+            color: var(--text-color);
+            letter-spacing: 0.2px;
+            line-height: 1;
+        }
+
+        .meterValueTop .rating {
+            font-size: 0.9rem;
+            color: var(--subtext-color);
+        }
+
+        .meterSvg {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 6px;
+        }
+
+        .meterTitle:empty {
+            display: none;
+        }
+
+        .mainGrid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 12px;
+            align-items: start;
+        }
+
+        .historyControls {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .historyControls .row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .historyControls label {
+            color: var(--subtext-color);
+            font-size: 0.85rem;
+        }
+
+        .historyControls select {
+            background: linear-gradient(180deg, var(--select-bg), var(--select-bg-2));
+            color: var(--text-color);
+            border: 1px solid var(--select-border);
+            border-radius: 10px;
+            padding: 8px 10px;
+            outline: none;
+            font-size: 0.95rem;
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+        }
+
+        .historyControls select:hover {
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+
+        .historyControls select:focus {
+            border-color: rgba(76, 175, 80, 0.55);
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35), 0 0 0 3px rgba(76, 175, 80, 0.15);
+        }
+
+        .historyControls select option {
+            background: var(--select-bg);
+            color: var(--text-color);
+        }
+
+        .chartWrap {
+            position: relative;
+            width: 100%;
+            height: 360px;
+            background: rgba(0, 0, 0, .12);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        .chartWrapTall {
+            height: 420px;
+        }
+
+        .chartWrapShort {
+            height: 180px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-button {
+                padding: 6px 10px;
+                font-size: 0.8em;
+            }
+
+            .menu-button svg {
+                width: 14px;
+                height: 14px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .page-title {
+                font-size: 1.5rem;
+            }
+
+            .kpiRow,
+            .kpiRow3,
+            .kpiRow4 {
+                grid-template-columns: 1fr;
+            }
+
+            .span-8,
+            .span-6,
+            .span-4 {
+                grid-column: span 12;
+            }
+
+            tbody td {
+                font-size: 0.9rem;
+            }
+
+            .meterBox {
+                flex: 1 1 260px;
+                max-width: 100%;
+            }
+
+            .stocksCol,
+            .cryptoCol {
+                grid-column: span 12 !important;
+            }
+
+            .chartWrap {
+                height: 320px;
+            }
+
+            .chartWrapTall {
+                height: 360px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu-button {
+                padding: 5px 8px;
+                font-size: 0.7em;
+            }
+
+            .menu-button svg {
+                width: 12px;
+                height: 12px;
+            }
+
+            .dropdown-content {
+                min-width: 140px;
+            }
+
+            .dropdown-content a {
+                padding: 10px 14px;
+                font-size: 0.9em;
+            }
+
+            .page-title {
+                font-size: 1.35rem;
+            }
+
+            .meterValueTop .big {
+                font-size: 1.85rem;
+            }
+        }
+
+        .section-title {
+            grid-column: span 12;
+            font-size: 1.5rem;
+            color: var(--header-color);
+            margin: 30px 0 10px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-dropdown">
+        <button class="menu-button" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+            Menu
+        </button>
+        <div id="dropdown-menu" class="dropdown-content">
+            <a href="/">Agent Desk</a>
+            <a href="market_data.html">Market Climate</a>
+            <a href="trending.html">Trending Tokens</a>
+            <a href="new_pairs.html" class="separator-top">New Pairs</a>
+            <a href="dashboard.html">New Pairs Dashboard</a>
+            <a href="strategy_planner.html">New Pairs Strategy</a>
+            <a href="documentation.html" class="separator-top">Documentation</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="termsofservice.html">Terms of Service</a>
+        </div>
+    </div>
+
+    <h1 class="page-title"><img src="logo.png" alt="Logo" class="header-logo">General Market Data</h1>
+
+    <div class="container">
+        <div class="grid" id="root"></div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("dropdown-menu").classList.toggle("show");
+        }
+
+        window.addEventListener('click', function (event) {
+            if (!event.target.matches('.menu-button') &&
+                !event.target.matches('.menu-button svg') &&
+                !event.target.matches('.menu-button path')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        });
+
+        const fmt = {
+            num: (x, d = 2) => (x === null || x === undefined || Number.isNaN(Number(x))) ? "—" : Number(x).toLocaleString(undefined, { maximumFractionDigits: d }),
+            pct: (x, d = 2) => (x === null || x === undefined || Number.isNaN(Number(x))) ? "—" : (Number(x).toLocaleString(undefined, { maximumFractionDigits: d }) + "%"),
+            compactUSD: (x) => {
+                if (x === null || x === undefined || Number.isNaN(Number(x))) return "—";
+                const n = Number(x);
+                const abs = Math.abs(n);
+                const sign = n < 0 ? "-" : "";
+                const units = [
+                    { v: 1e12, s: "T" },
+                    { v: 1e9, s: "B" },
+                    { v: 1e6, s: "M" },
+                    { v: 1e3, s: "K" },
+                ];
+                for (const u of units) {
+                    if (abs >= u.v) return sign + "$" + (abs / u.v).toFixed(2) + u.s;
+                }
+                return sign + "$" + abs.toFixed(2);
+            },
+            compactNum: (x) => {
+                if (x === null || x === undefined || Number.isNaN(Number(x))) return "—";
+                const n = Number(x);
+                const abs = Math.abs(n);
+                const sign = n < 0 ? "-" : "";
+                const units = [
+                    { v: 1e12, s: "T" },
+                    { v: 1e9, s: "B" },
+                    { v: 1e6, s: "M" },
+                    { v: 1e1, s: "K" },
+                ];
+                for (const u of units) {
+                    if (abs >= u.v) return sign + (abs / u.v).toFixed(1) + u.s;
+                }
+                return sign + abs.toLocaleString();
+            },
+            humanMonthDay: (isoDate) => {
+                if (!isoDate) return "—";
+                const d = new Date(isoDate + "T00:00:00");
+                const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                const day = d.getDate();
+                const suffix = (n) => {
+                    if (n % 100 >= 11 && n % 100 <= 13) return "th";
+                    switch (n % 10) {
+                        case 1: return "st";
+                        case 2: return "nd";
+                        case 3: return "rd";
+                        default: return "th";
+                    }
+                };
+                return `${months[d.getMonth()]} ${day}${suffix(day)}`;
+            },
+            humanDurationYDH: (seconds) => {
+                if (seconds === null || seconds === undefined || Number.isNaN(Number(seconds))) return "—";
+                let s = Math.max(0, Math.floor(Number(seconds)));
+
+                const secsPerDay = 86400;
+                const secsPerYear = 365 * secsPerDay;
+
+                const years = Math.floor(s / secsPerYear);
+                s -= years * secsPerYear;
+
+                const days = Math.floor(s / secsPerDay);
+                s -= days * secsPerDay;
+
+                const hrs = Math.floor(s / 3600);
+                s -= hrs * 3600;
+
+                const mins = Math.floor(s / 60);
+
+                const parts = [];
+                if (years) parts.push(`${years}y`);
+                if (days || years) parts.push(`${days}d`);
+                parts.push(`${hrs}h`);
+                parts.push(`${mins}m`);
+                return parts.join(" ");
+            }
+        };
+
+        function el(tag, attrs = {}, children = []) {
+            const node = document.createElement(tag);
+            for (const [k, v] of Object.entries(attrs)) {
+                if (k === "class") node.className = v;
+                else if (k === "html") node.innerHTML = v;
+                else node.setAttribute(k, v);
+            }
+            for (const c of [].concat(children)) {
+                if (c === null || c === undefined) continue;
+                node.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+            }
+            return node;
+        }
+
+        function clsFromChange(pct) {
+            if (pct === null || pct === undefined || Number.isNaN(Number(pct))) return "muted";
+            return Number(pct) >= 0 ? "good" : "bad";
+        }
+
+        function ratingColor(r) {
+            const s = String(r || "").toLowerCase();
+            if (s.includes("fear") && !s.includes("neutral")) return "bad";
+            if (s.includes("greed")) return "good";
+            if (s.includes("neutral")) return "warn";
+            return "muted";
+        }
+
+        function card(title, hint, body) {
+            return el("section", { class: "card" }, [
+                el("h2", {}, [
+                    el("span", {}, [title]),
+                    hint ? el("span", { class: "hint" }, [hint]) : null
+                ]),
+                body
+            ]);
+        }
+
+        function kpi(label, value, subLines) {
+            const node = el("div", { class: "kpi" }, [
+                el("div", { class: "label" }, [label]),
+                el("div", { class: "value" }, [value])
+            ]);
+            if (subLines && subLines.length) {
+                node.appendChild(el("div", { class: "sub" }, subLines.map(s => el("div", {}, [s]))));
+            }
+            return node;
+        }
+
+        function table(headers, rows) {
+            return el("table", {}, [
+                el("thead", {}, [
+                    el("tr", {}, headers.map(h => el("th", h.align ? { class: h.align } : {}, [h.label])))
+                ]),
+                el("tbody", {}, rows.map(r => el("tr", {}, r.map((cell, idx) => {
+                    const align = headers[idx]?.align ? { class: headers[idx].align } : {};
+                    return el("td", align, [cell]);
+                }))))
+            ]);
+        }
+
+        function errorBox(err) {
+            if (!err) return null;
+            return el("div", { class: "err" }, [
+                el("strong", {}, ["Error: "]), String(err)
+            ]);
+        }
+
+        function fearGreedMeter({ title, value, rating, error, kind }) {
+            const safeVal = (value === null || value === undefined || Number.isNaN(Number(value)))
+                ? null
+                : Math.max(0, Math.min(100, Number(value)));
+
+            const W = 260, H = 150;
+            const cx = W / 2, cy = 128;
+            const rOuter = 92;
+            const rInner = 74;
+
+            function degToRad(d) { return (Math.PI / 180) * d; }
+
+            let angleDeg = -180;
+            if (safeVal !== null) {
+                angleDeg = -180 + (safeVal * 180 / 100);
+            }
+            const a = degToRad(angleDeg);
+
+            const tipR = rInner + 6;
+            const xTip = cx + tipR * Math.cos(a);
+            const yTip = cy + tipR * Math.sin(a);
+
+            const baseR = 18;
+            const xBase = cx + baseR * Math.cos(a);
+            const yBase = cy + baseR * Math.sin(a);
+
+            const perp = a + Math.PI / 2;
+            const w = 5;
+            const xL = xBase + w * Math.cos(perp);
+            const yL = yBase + w * Math.sin(perp);
+            const xR = xBase - w * Math.cos(perp);
+            const yR = yBase - w * Math.sin(perp);
+
+            const ratingCls = ratingColor(rating);
+            const bg = getComputedStyle(document.documentElement).getPropertyValue('--widget-bg').trim() || '#1e1e1e';
+            const valueTop = (safeVal === null) ? "—" : fmt.num(safeVal, 0);
+
+            const svg = `
+        <svg class="meterSvg" viewBox="0 0 ${W} ${H}" aria-label="Fear & Greed meter">
+          <defs>
+            <linearGradient id="fgGrad-${kind}" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="var(--bad)" stop-opacity="0.95"/>
+              <stop offset="50%" stop-color="var(--warn)" stop-opacity="0.95"/>
+              <stop offset="100%" stop-color="var(--good)" stop-opacity="0.95"/>
+            </linearGradient>
+          </defs>
+
+          <path d="M ${cx - rOuter} ${cy}
+                   A ${rOuter} ${rOuter} 0 0 1 ${cx + rOuter} ${cy}"
+                fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="16" />
+
+          <path d="M ${cx - rOuter} ${cy}
+                   A ${rOuter} ${rOuter} 0 0 1 ${cx + rOuter} ${cy}"
+                fill="none" stroke="url(#fgGrad-${kind})" stroke-width="12" stroke-linecap="round" />
+
+          <path d="M ${cx - rInner} ${cy}
+                   A ${rInner} ${rInner} 0 0 1 ${cx + rInner} ${cy}"
+                fill="none" stroke="${bg}" stroke-width="16" />
+
+          ${[0, 25, 50, 75, 100].map(v => {
+                const d = -180 + (v * 180 / 100);
+                const rad = degToRad(d);
+                const r1 = rOuter + 1;
+                const r2 = rOuter - 8;
+                const x1 = cx + r1 * Math.cos(rad);
+                const y1 = cy + r1 * Math.sin(rad);
+                const x2 = cx + r2 * Math.cos(rad);
+                const y2 = cy + r2 * Math.sin(rad);
+                return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="rgba(255,255,255,0.18)" stroke-width="2" />`;
+            }).join("")}
+
+          ${safeVal === null ? "" : `
+            <polygon points="${xL},${yL} ${xR},${yR} ${xTip},${yTip}"
+                     fill="rgba(255,255,255,0.90)" />
+            <circle cx="${cx}" cy="${cy}" r="7" fill="rgba(255,255,255,0.9)" />
+            <circle cx="${cx}" cy="${cy}" r="3.5" fill="rgba(0,0,0,0.5)" />
+          `}
+        </svg>
+      `;
+
+            return el("div", { class: "meterBox" }, [
+                el("div", { class: "meterTitle" }, [title]),
+                el("div", { class: "meterValueTop" }, [
+                    el("div", { class: "big" }, [valueTop]),
+                    el("div", { class: "rating" }, [
+                        el("span", {}, ["Rating: "]),
+                        el("b", { class: ratingCls }, [rating ?? "—"])
+                    ])
+                ]),
+                el("div", { html: svg }),
+                errorBox(error)
+            ]);
+        }
+
+        // ============================
+        // General Market Data Monthly (30D)
+        // ============================
+        const GM_MONTHLY_FILE = "general_market_data_monthly.json";
+        const MARKET_CAP_CEILINGS_MONTHLY_FILE = "market_cap_ceilings_monthly.json"; // <-- NEW
+        
+        // Archive directories for 30D historical data
+        const MARKET_CAP_CEILINGS_ARCHIVE_DIR = "archives/market_cap_ceilings_monthly";
+        const DASHBOARD_STATS_ARCHIVE_DIR = "archives/dashboard_stats_monthly";
+        
+        let gmMainChart = null;
+        let gmFearGreedChart = null;
+        let gmOnchainChart = null;
+        let gmCeilingsChart = null; // <-- NEW
+
+        function parseYMD(ymd) {
+            const [Y, M, D] = String(ymd || "").split("-").map(x => parseInt(x, 10));
+            if (!Y || !M || !D) return null;
+            return new Date(Date.UTC(Y, M - 1, D, 0, 0, 0));
+        }
+
+        function fmtYMD(d) {
+            const Y = d.getUTCFullYear();
+            const M = String(d.getUTCMonth() + 1).padStart(2, "0");
+            const D = String(d.getUTCDate()).padStart(2, "0");
+            return `${Y}-${M}-${D}`;
+        }
+
+        function addDaysUTC(d, n) {
+            const out = new Date(d.getTime());
+            out.setUTCDate(out.getUTCDate() + n);
+            return out;
+        }
+
+        function isNumeric(v) {
+            return v !== null && v !== undefined && !Number.isNaN(Number(v));
+        }
+
+        /**
+         * Load NDJSON entries from archive directory for last N days.
+         * Each archive file is named YYYY-MM-DD.ndjson and contains one JSON per line.
+         * Returns array of parsed entries consolidated from all relevant files.
+         */
+        async function loadArchiveNDJSON(archiveDir, maxDays = 30) {
+            const entries = [];
+            const today = new Date();
+            const fileNames = [];
+            
+            // Generate file names for the last maxDays days
+            for (let i = 0; i < maxDays; i++) {
+                const d = new Date(today);
+                d.setUTCDate(d.getUTCDate() - i);
+                const ymd = fmtYMD(d);
+                fileNames.push(`${ymd}.ndjson`);
+            }
+            
+            // Try to fetch each file (silently skip missing files)
+            const fetchPromises = fileNames.map(async (fileName) => {
+                const url = `${archiveDir}/${fileName}`;
+                try {
+                    const res = await fetch(url, { cache: "no-store" });
+                    if (!res.ok) return []; // File doesn't exist for this day
+                    const text = await res.text();
+                    
+                    // Parse NDJSON (one JSON object per line)
+                    const lines = text.trim().split('\n').filter(line => line.trim());
+                    const parsed = [];
+                    for (const line of lines) {
+                        try {
+                            parsed.push(JSON.parse(line));
+                        } catch (e) {
+                            console.warn(`Failed to parse line in ${fileName}:`, e);
+                        }
+                    }
+                    return parsed;
+                } catch (e) {
+                    // Network error or file not found - skip silently
+                    return [];
+                }
+            });
+            
+            const results = await Promise.all(fetchPromises);
+            for (const fileEntries of results) {
+                entries.push(...fileEntries);
+            }
+            
+            // De-duplicate by snapshot_day_utc (keep latest entry per day)
+            const byDay = new Map();
+            for (const entry of entries) {
+                const day = entry.snapshot_day_utc;
+                if (day) {
+                    // If multiple entries for same day, keep the one with latest timestamp
+                    const existing = byDay.get(day);
+                    if (!existing) {
+                        byDay.set(day, entry);
+                    } else {
+                        // Compare logged_at or last_updated timestamps
+                        const existingTs = existing.logged_at || existing.last_updated || "";
+                        const newTs = entry.logged_at || entry.last_updated || "";
+                        if (newTs > existingTs) {
+                            byDay.set(day, entry);
+                        }
+                    }
+                }
+            }
+            
+            // Return as sorted array (oldest to newest)
+            return Array.from(byDay.values()).sort((a, b) => 
+                (a.snapshot_day_utc || "").localeCompare(b.snapshot_day_utc || "")
+            );
+        }
+        
+        /**
+         * Try to load archive data first, fall back to hot file if archives unavailable.
+         */
+        async function loadMonthlyDataWithFallback(archiveDir, hotFilePath, maxDays = 30) {
+            // First try archives
+            try {
+                const archiveData = await loadArchiveNDJSON(archiveDir, maxDays);
+                if (archiveData.length > 0) {
+                    console.log(`Loaded ${archiveData.length} entries from archives: ${archiveDir}`);
+                    return archiveData;
+                }
+            } catch (e) {
+                console.warn(`Archive loading failed for ${archiveDir}:`, e);
+            }
+            
+            // Fall back to hot file
+            console.log(`Falling back to hot file: ${hotFilePath}`);
+            const res = await fetch(hotFilePath, { cache: "no-store" });
+            if (!res.ok) throw new Error(`Failed to fetch ${hotFilePath} (HTTP ${res.status})`);
+            const data = await res.json();
+            if (!Array.isArray(data)) throw new Error(`${hotFilePath} is not an array`);
+            return data;
+        }
+
+        function build30DayAxisFromSnapshots(snapshots) {
+            const days = (snapshots || [])
+                .map(s => s && s.day)
+                .filter(Boolean)
+                .map(parseYMD)
+                .filter(Boolean)
+                .sort((a, b) => a - b);
+
+            const unique = [];
+            const seen = new Set();
+            for (const d of days) {
+                const key = fmtYMD(d);
+                if (!seen.has(key)) {
+                    seen.add(key);
+                    unique.push(d);
+                }
+            }
+            if (!unique.length) return null;
+
+            let start = null;
+            let end = null;
+
+            if (unique.length < 30) {
+                start = unique[0];
+                end = addDaysUTC(start, 29);
+            } else {
+                end = unique[unique.length - 1];
+                start = addDaysUTC(end, -29);
+            }
+
+            const axis = [];
+            for (let i = 0; i < 30; i++) {
+                const d = addDaysUTC(start, i);
+                axis.push({
+                    ymd: fmtYMD(d),
+                    label: fmt.humanMonthDay(fmtYMD(d))
+                });
+            }
+            return axis;
+        }
+
+        function getSnapValue(snap, path, fallback = null) {
+            try {
+                const parts = path.split(".");
+                let cur = snap;
+                for (const p of parts) {
+                    if (cur == null) return fallback;
+                    cur = cur[p];
+                }
+                return (cur === undefined) ? fallback : cur;
+            } catch {
+                return fallback;
+            }
+        }
+
+        function makeBaseLineOptions(ytickCallback) {
+            const css = getComputedStyle(document.documentElement);
+            const textColor = css.getPropertyValue("--text-color").trim() || "#e0e0e0";
+            const subTextColor = css.getPropertyValue("--subtext-color").trim() || "#aaaaaa";
+            const gridColor = "rgba(255,255,255,0.08)";
+            return {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: "nearest", intersect: false },
+                plugins: {
+                    legend: {
+                        position: "top",
+                        labels: {
+                            color: textColor,
+                            boxWidth: 12,
+                            boxHeight: 12,
+                            usePointStyle: true,
+                            pointStyle: "line",
+                        }
+                    },
+                    tooltip: {
+                        enabled: true,
+                        callbacks: {
+                            label: (ctx) => {
+                                const v = ctx.parsed.y;
+                                const label = ctx.dataset.label || "";
+                                return `${label}: ${v === null || v === undefined ? "—" : (ytickCallback ? ytickCallback(v) : fmt.num(v, 2))}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: subTextColor, maxRotation: 0, autoSkip: true },
+                        grid: { color: gridColor }
+                    },
+                    y: {
+                        ticks: {
+                            color: subTextColor,
+                            callback: (val) => ytickCallback ? ytickCallback(val) : val
+                        },
+                        grid: { color: gridColor }
+                    }
+                }
+            };
+        }
+
+        // Fixed palette to match your mental model:
+        // red = bottom, green = middle, blue = top
+        function fixedRGB(name) {
+            if (name === "red") return { border: "rgb(255,77,109)", fill: "rgb(255,77,109)" };
+            if (name === "green") return { border: "rgb(76,175,80)", fill: "rgb(76,175,80)" };
+            if (name === "blue") return { border: "rgb(33,150,243)", fill: "rgb(33,150,243)" };
+            return { border: "rgb(255,255,255)", fill: "rgb(255,255,255)" };
+        }
+
+        function makeAreaDataset(label, data, colorName, order) {
+            const { border, fill } = fixedRGB(colorName);
+            return {
+                label,
+                data,
+                order,                  // enforce draw order (bigger order drawn later)
+                tension: 0.4,
+                pointRadius: 2.5,
+                pointHoverRadius: 4,
+                borderWidth: 2,
+                borderColor: border,
+                fill: true,             // fill to baseline
+                backgroundColor: fill,  // solid colors as requested
+                spanGaps: false
+            };
+        }
+
+        function makeLineDataset(label, data, colorName, order) {
+            const { border } = fixedRGB(colorName);
+            return {
+                label,
+                data,
+                order,
+                tension: 0.4,
+                pointRadius: 3.5,
+                pointBackgroundColor: border,
+                pointHoverRadius: 5,
+                borderWidth: 2,
+                borderColor: border,
+                fill: false,
+                spanGaps: false
+            };
+        }
+
+        function renderGeneralMonthlyCharts(monthly) {
+            const snapshots = (monthly && Array.isArray(monthly.snapshots)) ? monthly.snapshots : null;
+            if (!snapshots) {
+                throw new Error("general_market_data_monthly.json must have a { snapshots: [...] } array.");
+            }
+
+            const axis = build30DayAxisFromSnapshots(snapshots);
+            if (!axis) throw new Error("No valid day entries found in general_market_data_monthly.json.");
+
+            const byDay = new Map();
+            for (const s of snapshots) {
+                if (!s || !s.day) continue;
+                byDay.set(String(s.day), s.snapshot || {});
+            }
+
+            const labels = axis.map(d => d.label);
+
+            // --- Main Market (filled areas) ---
+            const mmSp = axis.map(d => {
+                const snap = byDay.get(d.ymd);
+                const v = getSnapValue(snap, "sp500_total_market_cap.total_mcap_usd", null);
+                return isNumeric(v) ? Number(v) : null;
+            });
+            const mmGold = axis.map(d => {
+                const snap = byDay.get(d.ymd);
+                const v = getSnapValue(snap, "gold_market_cap.total_mcap_usd", null);
+                return isNumeric(v) ? Number(v) : null;
+            });
+            const mmCrypto = axis.map(d => {
+                const snap = byDay.get(d.ymd);
+                const v = getSnapValue(snap, "crypto_global.total_mcap_usd", null);
+                return isNumeric(v) ? Number(v) : null;
+            });
+
+            // Draw order: red (bottom) -> green -> blue (top)
+            const mmDatasets = [
+                makeAreaDataset("Crypto Total Market Cap", mmCrypto, "blue", 1),
+                makeAreaDataset("Gold Market Cap", mmGold, "green", 2),
+                makeAreaDataset("S&P 500 Market Cap", mmSp, "red", 3),
+            ];
+
+            // --- Fear & Greed (lines) ---
+            const fgStocks = axis.map(d => {
+                const snap = byDay.get(d.ymd);
+                const v = getSnapValue(snap, "fear_greed.stocks.value", null);
+                return isNumeric(v) ? Number(v) : null;
+            });
+            const fgCrypto = axis.map(d => {
+                const snap = byDay.get(d.ymd);
+                const v = getSnapValue(snap, "fear_greed.crypto.value", null);
+                return isNumeric(v) ? Number(v) : null;
+            });
+
+            const fgDatasets = [
+                makeLineDataset("Stocks", fgStocks, "green", 1),
+                makeLineDataset("Crypto", fgCrypto, "blue", 2),
+            ];
+
+            // --- Onchain (filled areas) ---
+            const ocDefi = axis.map(d => {
+                const snap = byDay.get(d.ymd);
+                const v = getSnapValue(snap, "defi.tvl.total_defi_tvl_usd", null);
+                return isNumeric(v) ? Number(v) : null;
+            });
+            const ocSolTvl = axis.map(d => {
+                const snap = byDay.get(d.ymd);
+                const v = getSnapValue(snap, "defi.tvl.solana_tvl_usd", null);
+                return isNumeric(v) ? Number(v) : null;
+            });
+            const ocSolVol24h = axis.map(d => {
+                const snap = byDay.get(d.ymd);
+                const v = getSnapValue(snap, "solana.dex.totals.total24h", null);
+                return isNumeric(v) ? Number(v) : null;
+            });
+
+            // Draw order: red bottom -> green -> blue top
+            const ocDatasets = [
+                makeAreaDataset("Solana Onchain Total 24h Volume", ocSolVol24h, "blue", 1),
+                makeAreaDataset("Solana TVL", ocSolTvl, "green", 2),
+                makeAreaDataset("Total DeFi TVL", ocDefi, "red", 3),
+            ];
+
+            const optMain = makeBaseLineOptions(v => fmt.compactNum(v));
+            const optFG = makeBaseLineOptions();
+            const optOC = makeBaseLineOptions(v => fmt.compactNum(v));
+
+            // Force dataset order to be respected for drawing
+            optMain.plugins = optMain.plugins || {};
+            optOC.plugins = optOC.plugins || {};
+            optMain.plugins.legend = optMain.plugins.legend || {};
+            optOC.plugins.legend = optOC.plugins.legend || {};
+            optMain.plugins.legend.reverse = false;
+            optOC.plugins.legend.reverse = false;
+
+            optFG.scales.y.suggestedMin = 0;
+            optFG.scales.y.suggestedMax = 100;
+
+            const cMain = document.getElementById("gmMainChart");
+            const cFG = document.getElementById("gmFearGreedChart");
+            const cOC = document.getElementById("gmOnchainChart");
+            if (!cMain || !cFG || !cOC) return;
+
+            if (gmMainChart) gmMainChart.destroy();
+            if (gmFearGreedChart) gmFearGreedChart.destroy();
+            if (gmOnchainChart) gmOnchainChart.destroy();
+
+            gmFearGreedChart = new Chart(cFG, {
+                type: "line",
+                data: { labels, datasets: fgDatasets },
+                options: optFG
+            });
+
+            gmMainChart = new Chart(cMain, {
+                type: "line",
+                data: { labels, datasets: mmDatasets },
+                options: optMain
+            });
+
+            gmOnchainChart = new Chart(cOC, {
+                type: "line",
+                data: { labels, datasets: ocDatasets },
+                options: optOC
+            });
+        }
+
+        // ============================
+        // NEW: Market Cap Ceilings Monthly (30D)
+        // ============================
+        function renderMarketCapCeilingsMonthly(entries) {
+            if (!Array.isArray(entries)) {
+                throw new Error("market_cap_ceilings_monthly.json must be an array.");
+            }
+
+            const axis = build30DayAxisFromEntries(entries);
+            if (!axis) throw new Error("No snapshot_day_utc entries found in market_cap_ceilings_monthly.json.");
+
+            const entriesByDay = new Map();
+            for (const e of entries) {
+                if (!e || !e.snapshot_day_utc) continue;
+                entriesByDay.set(String(e.snapshot_day_utc), e);
+            }
+
+            const labels = axis.map(d => d.label);
+
+            const timeframes = ["1D","3D","7D","14D","30D","60D","90D","180D","365D"];
+
+            // Build data series
+            const series = timeframes.map(tf => {
+                const dataPoints = axis.map(day => {
+                    const e = entriesByDay.get(day.ymd);
+                    const v = e && e.ceilings ? e.ceilings[tf] : null;
+                    return isNumeric(v) ? Number(v) : null;
+                });
+                return { tf, dataPoints };
+            });
+
+            // Sort so smaller ceilings draw first, biggest on top
+            series.sort((a, b) => {
+                const av = latestNonNull(a.dataPoints);
+                const bv = latestNonNull(b.dataPoints);
+                const aa = (av === null) ? -Infinity : av;
+                const bb = (bv === null) ? -Infinity : bv;
+                return aa - bb;
+            });
+
+            // Use SAME filled-area builder as other graphs
+            const datasets = series.map((s, idx) => {
+                // Cycle red → green → blue → repeat
+                const colorCycle = ["red","green","blue"];
+                const colorName = colorCycle[idx % colorCycle.length];
+                return makeAreaDataset(
+                    s.tf,          // label
+                    s.dataPoints,  // data
+                    colorName,     // color
+                    idx + 1        // draw order
+                );
+            });
+
+            const canvas = document.getElementById("gmCeilingsChart");
+            if (!canvas) return;
+
+            const opt = makeBaseLineOptions(v => fmt.compactUSD(v));
+
+            if (gmCeilingsChart) gmCeilingsChart.destroy();
+            gmCeilingsChart = new Chart(canvas, {
+                type: "line",
+                data: { labels, datasets },
+                options: opt
+            });
+        }
+
+        function buildGeneralMonthlyWidgetShell() {
+            const titleRow = el("h2", {}, [
+                el("span", {}, ["Market History"])
+            ]);
+
+            const body = el("div", {}, [
+                // Fear & Greed FIRST
+                el("div", { class: "small muted", style: "margin: 0 0 8px" }, ["Fear & Greed"]),
+                el("div", { class: "chartWrapShort chartWrap" }, [el("canvas", { id: "gmFearGreedChart" })]),
+
+                el("div", { style: "height:12px" }),
+
+                el("div", { class: "small muted", style: "margin: 0 0 8px" }, ["Main Market"]),
+                el("div", { class: "chartWrapShort chartWrap" }, [el("canvas", { id: "gmMainChart" })]),
+
+                el("div", { style: "height:12px" }),
+
+                el("div", { class: "small muted", style: "margin: 0 0 8px" }, ["Onchain"]),
+                el("div", { class: "chartWrapShort chartWrap" }, [el("canvas", { id: "gmOnchainChart" })]),
+
+                // NEW graph below Onchain
+                el("div", { style: "height:12px" }),
+
+                el("div", { class: "small muted", style: "margin: 0 0 8px" }, ["Market Cap Ceilings (30D)"]),
+                el("div", { class: "chartWrapShort chartWrap" }, [el("canvas", { id: "gmCeilingsChart" })]),
+            ]);
+
+            return el("section", { class: "card span-12", id: "gmMonthlyCard" }, [titleRow, body]);
+        }
+
+        // ============================
+        // Existing: New Pairs Dashboard 30D widget (unchanged)
+        // ============================
+        const DASH_MONTHLY_FILE = "dashboard_stats_monthly.json";
+        let monthlyChart = null;
+
+        const EXCLUDE_KEYS = new Set([
+            "graduated_tokens_48h", "farm_tokens_48h", "non_farm_filtered_48h",
+            "farm_tokens_percentage_48h", "non_farm_filtered_percentage_48h",
+            "farm_to_non_farm_ratio", "non_farm_to_farm_ratio",
+            "filtered_sol_multiplier", "non_filtered_sol_multiplier",
+            "multiplier_100k", "multiplier_250k", "multiplier_500k", "multiplier_750k", "multiplier_1m",
+            "threshold_100k_total_48h", "threshold_100k_filtered_48h",
+            "threshold_250k_total_48h", "threshold_250k_filtered_48h",
+            "threshold_500k_total_48h", "threshold_500k_filtered_48h",
+            "threshold_750k_total_48h", "threshold_750k_filtered_48h",
+            "threshold_1m_total_48h", "threshold_1m_filtered_48h",
+            "farm_tokens_24h", "non_farm_filtered_24h",
+            "farm_tokens_percentage_24h", "non_farm_filtered_percentage_24h",
+        ]);
+
+        function niceKeyLabel(k) { return String(k).replaceAll("_", " "); }
+
+        function classifyMetric(key) {
+            const k = String(key || "").toLowerCase();
+            if (k.includes("_filtered_") || k.startsWith("non_farm_filtered") || k.includes("filtered_sol_") || k.includes("filtered_sol_multiplier")) return "filtered";
+            if (k.includes("_total_") || k.includes("non_filtered_") || k.includes("farm_tokens") || k.includes("graduated_tokens") || k.includes("threshold_")) return "unfiltered";
+            return "other";
+        }
+
+        function buildHistoryWidgetShell() {
+            const titleRow = el("h2", {}, [el("span", {}, ["Migrations & Thresholds History"])]);
+
+            const sectionSelect = el("select", { id: "histSection" }, [
+                el("option", { value: "pumpfun" }, ["pumpfun"]),
+                el("option", { value: "raydium" }, ["raydium"]),
+                el("option", { value: "combined" }, ["combined"]),
+            ]);
+
+            const filterSelect = el("select", { id: "histFilter" }, [
+                el("option", { value: "filtered" }, ["filtered"]),
+                el("option", { value: "unfiltered" }, ["unfiltered"]),
+                el("option", { value: "all" }, ["show all"]),
+            ]);
+
+            sectionSelect.value = "combined";
+            filterSelect.value = "unfiltered";
+
+            const controls = el("div", { class: "historyControls" }, [
+                el("div", { class: "row" }, [el("label", {}, ["Section: "]), sectionSelect]),
+                el("div", { class: "row" }, [el("label", {}, ["View: "]), filterSelect])
+            ]);
+
+            const canvas = el("canvas", { id: "monthlyHistoryChart" });
+            const chartWrap = el("div", { class: "chartWrap" }, [canvas]);
+
+            const body = el("div", {}, [controls, chartWrap]);
+            return el("section", { class: "card span-12", id: "historyCard" }, [titleRow, body]);
+        }
+
+        function build30DayAxisFromEntries(entries) {
+            const days = (entries || [])
+                .map(e => e && e.snapshot_day_utc)
+                .filter(Boolean)
+                .map(parseYMD)
+                .filter(Boolean)
+                .sort((a, b) => a - b);
+
+            const unique = [];
+            const seen = new Set();
+            for (const d of days) {
+                const key = fmtYMD(d);
+                if (!seen.has(key)) {
+                    seen.add(key);
+                    unique.push(d);
+                }
+            }
+            if (!unique.length) return null;
+
+            let start = null;
+            let end = null;
+
+            if (unique.length < 30) {
+                start = unique[0];
+                end = addDaysUTC(start, 29);
+            } else {
+                end = unique[unique.length - 1];
+                start = addDaysUTC(end, -29);
+            }
+
+            const axis = [];
+            for (let i = 0; i < 30; i++) {
+                const d = addDaysUTC(start, i);
+                axis.push({ ymd: fmtYMD(d), label: fmt.humanMonthDay(fmtYMD(d)) });
+            }
+            return axis;
+        }
+
+        function pickMetricsForMode(sectionObj, mode) {
+            const keys = Object.keys(sectionObj || {});
+            const numericKeys = keys.filter(k => isNumeric(sectionObj[k]));
+            const kept = numericKeys.filter(k => !EXCLUDE_KEYS.has(k));
+
+            const always = "graduated_tokens_24h";
+            const out = [];
+
+            for (const k of kept) {
+                if (k === always) continue;
+                if (mode === "all") { out.push(k); continue; }
+
+                const c = classifyMetric(k);
+                if (mode === "filtered") {
+                    if (c === "filtered") out.push(k);
+                } else if (mode === "unfiltered") {
+                    if (c === "unfiltered" || c === "other") out.push(k);
+                }
+            }
+
+            out.unshift(always);
+            return Array.from(new Set(out));
+        }
+
+        function latestNonNull(series) {
+            for (let i = series.length - 1; i >= 0; i--) {
+                const v = series[i];
+                if (v !== null && v !== undefined && !Number.isNaN(Number(v))) return Number(v);
+            }
+            return null;
+        }
+
+        function seriesColorSolid(i, n) {
+            const hue = (n <= 1) ? 140 : Math.round((i * 360) / n);
+            const fill = `hsl(${hue}, 70%, 45%)`;
+            const border = `hsl(${hue}, 70%, 62%)`;
+            return { border, fill };
+        }
+
+        function buildSeries(entriesByDay, axis, sectionName, mode) {
+            let sample = null;
+            for (const day of axis) {
+                const e = entriesByDay.get(day.ymd);
+                if (e && e[sectionName]) { sample = e[sectionName]; break; }
+            }
+            if (!sample) {
+                for (const [_, e] of entriesByDay) {
+                    if (e && e[sectionName]) { sample = e[sectionName]; break; }
+                }
+            }
+            sample = sample || {};
+
+            const metrics = pickMetricsForMode(sample, mode);
+
+            const seriesByMetric = metrics.map(metricKey => {
+                const dataPoints = axis.map(day => {
+                    const e = entriesByDay.get(day.ymd);
+                    const section = e ? e[sectionName] : null;
+                    const v = section ? section[metricKey] : null;
+                    return isNumeric(v) ? Number(v) : null;
+                });
+                return { metricKey, dataPoints };
+            });
+
+            seriesByMetric.sort((a, b) => {
+                const av = latestNonNull(a.dataPoints);
+                const bv = latestNonNull(b.dataPoints);
+                const aa = (av === null) ? -Infinity : av;
+                const bb = (bv === null) ? -Infinity : bv;
+                return aa - bb;
+            });
+
+            const n = seriesByMetric.length;
+
+            const datasets = seriesByMetric.map((s, idx) => {
+                const { border, fill } = seriesColorSolid(idx, n);
+                return {
+                    label: niceKeyLabel(s.metricKey),
+                    data: s.dataPoints,
+                    tension: 0.4,
+                    pointRadius: 3.5,
+                    pointBackgroundColor: border,
+                    pointHoverRadius: 5,
+                    borderWidth: 2,
+                    borderColor: border,
+                    fill: true,
+                    backgroundColor: fill,
+                    spanGaps: false,
+                };
+            });
+
+            return datasets;
+        }
+
+        function renderMonthlyChart(entries, defaultSection = "combined", defaultMode = "unfiltered") {
+            const canvas = document.getElementById("monthlyHistoryChart");
+            if (!canvas) return;
+
+            const axis = build30DayAxisFromEntries(entries);
+            if (!axis) {
+                const wrap = canvas.closest(".chartWrap");
+                wrap.innerHTML = "";
+                wrap.appendChild(el("div", { class: "err" }, ["No snapshot_day_utc found in dashboard_stats_monthly.json."]));
+                return;
+            }
+
+            const entriesByDay = new Map();
+            for (const e of (entries || [])) {
+                if (!e || !e.snapshot_day_utc) continue;
+                entriesByDay.set(String(e.snapshot_day_utc), e);
+            }
+
+            const labels = axis.map(d => d.label);
+
+            const css = getComputedStyle(document.documentElement);
+            const textColor = css.getPropertyValue("--text-color").trim() || "#e0e0e0";
+            const subTextColor = css.getPropertyValue("--subtext-color").trim() || "#aaaaaa";
+            const gridColor = "rgba(255,255,255,0.08)";
+
+            const sectionSelect = document.getElementById("histSection");
+            const filterSelect = document.getElementById("histFilter");
+            if (sectionSelect) sectionSelect.value = defaultSection;
+            if (filterSelect) filterSelect.value = defaultMode;
+
+            function redraw() {
+                const sectionName = (sectionSelect && sectionSelect.value) ? sectionSelect.value : defaultSection;
+                const mode = (filterSelect && filterSelect.value) ? filterSelect.value : defaultMode;
+
+                const datasets = buildSeries(entriesByDay, axis, sectionName, mode);
+
+                if (monthlyChart) {
+                    monthlyChart.data.labels = labels;
+                    monthlyChart.data.datasets = datasets;
+                    monthlyChart.update();
+                    return;
+                }
+
+                monthlyChart = new Chart(canvas, {
+                    type: "line",
+                    data: { labels, datasets },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: { mode: "nearest", intersect: false },
+                        plugins: {
+                            legend: {
+                                position: "top",
+                                labels: {
+                                    color: textColor,
+                                    boxWidth: 12,
+                                    boxHeight: 12,
+                                    usePointStyle: true,
+                                    pointStyle: "line",
+                                }
+                            },
+                            tooltip: {
+                                enabled: true,
+                                callbacks: {
+                                    label: (ctx) => {
+                                        const v = ctx.parsed.y;
+                                        const label = ctx.dataset.label || "";
+                                        return `${label}: ${v === null || v === undefined ? "—" : fmt.num(v, 4)}`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: { ticks: { color: subTextColor, maxRotation: 0, autoSkip: true }, grid: { color: gridColor } },
+                            y: { ticks: { color: subTextColor }, grid: { color: gridColor } }
+                        }
+                    }
+                });
+            }
+
+            if (sectionSelect) sectionSelect.addEventListener("change", redraw);
+            if (filterSelect) filterSelect.addEventListener("change", redraw);
+            redraw();
+        }
+
+        async function load() {
+            const root = document.getElementById("root");
+
+            try {
+                const res = await fetch("general_market_data.json", { cache: "no-store" });
+                if (!res.ok) throw new Error(`Failed to fetch general_market_data.json (HTTP ${res.status})`);
+                const data = await res.json();
+
+                const normName = (s) => String(s ?? "").trim().toLowerCase();
+                const dropFromStocksWatchlist = new Set(["nasdaq", "hyg", "tlt", "dxy", "usd10y", "bitcoin", "ethereum"]);
+                const cryptoWatchlistNames = new Set(["bitcoin", "ethereum"]);
+
+                const fg = data.fear_greed || {};
+                const stocksFearGreedCard = card("Stocks Fear & Greed", "", el("div", {}, [
+                    el("div", { class: "meterWrap" }, [
+                        fearGreedMeter({ title: "", value: fg.stocks?.value, rating: fg.stocks?.rating, error: fg.stocks?.error, kind: "stocks" })
+                    ])
+                ]));
+
+                const cryptoFearGreedCard = card("Crypto Fear & Greed", "", el("div", {}, [
+                    el("div", { class: "meterWrap" }, [
+                        fearGreedMeter({ title: "", value: fg.crypto?.value, rating: fg.crypto?.rating, error: fg.crypto?.error, kind: "crypto" })
+                    ])
+                ]));
+
+                const spm = data.sp500_total_market_cap || {};
+                const gm = data.gold_market_cap || {};
+                const nv = data.nvidia_market_cap || {};
+
+                const tradCard = card("Traditional Markets", "", el("div", {}, [
+                    el("div", { class: "kpiRow3" }, [
+                        kpi("S&P 500 Market Cap", fmt.compactUSD(spm.total_mcap_usd)),
+                        kpi("Gold Market Cap", gm.raw ? String(gm.raw) : fmt.compactUSD(gm.total_mcap_usd)),
+                        kpi("NVIDIA Market Cap", nv.raw ? String(nv.raw) : fmt.compactUSD(nv.total_mcap_usd))
+                    ]),
+                    errorBox(spm.error),
+                    errorBox(gm.error),
+                    errorBox(nv.error)
+                ]));
+
+                const fomc = data.fomc || {};
+                const days = (fomc.days_until === null || fomc.days_until === undefined) ? "—" : String(fomc.days_until);
+                const meeting = `${fmt.humanMonthDay(fomc.start_date)}/${fmt.humanMonthDay(fomc.end_date)}`;
+                const fomcCard = card("Upcoming FOMC Meetings", "", el("div", {}, [
+                    el("div", { class: "kpiRow" }, [
+                        kpi("Days Until Next Meeting", `${days}`),
+                        kpi("Meeting Dates", meeting)
+                    ]),
+                    errorBox(fomc.error),
+                ]));
+
+                const prices = data.prices || {};
+
+                const stockRows = Object.entries(prices)
+                    .filter(([name]) => !dropFromStocksWatchlist.has(normName(name)))
+                    .map(([name, v]) => {
+                        const ch = v.change_pct_1d;
+                        return [
+                            el("div", {}, [el("div", { style: "font-weight:700" }, [name])]),
+                            el("div", { class: "right nowrap" }, [fmt.num(v.last_close, 4)]),
+                            el("div", { class: `right nowrap ${clsFromChange(ch)}` }, [fmt.pct(ch, 2)])
+                        ];
+                    });
+
+                const stocksWatchlistCard = card("Stocks Watchlist", "", el("div", {}, [
+                    table(
+                        [{ label: "Asset" }, { label: "Last Close", align: "right" }, { label: "1D %", align: "right" }],
+                        stockRows
+                    )
+                ]));
+
+                const cryptoRows = Object.entries(prices)
+                    .filter(([name]) => cryptoWatchlistNames.has(normName(name)))
+                    .map(([name, v]) => {
+                        const ch = v.change_pct_1d;
+                        return [
+                            el("div", {}, [el("div", { style: "font-weight:700" }, [name])]),
+                            el("div", { class: "right nowrap" }, [fmt.num(v.last_close, 4)]),
+                            el("div", { class: `right nowrap ${clsFromChange(ch)}` }, [fmt.pct(ch, 2)])
+                        ];
+                    });
+
+                const cryptoWatchlistCard = card("Crypto Watchlist", "", el("div", {}, [
+                    table(
+                        [{ label: "Asset" }, { label: "Last Close", align: "right" }, { label: "1D %", align: "right" }],
+                        cryptoRows
+                    )
+                ]));
+
+                const breadth = data.breadth || {};
+                const breadthETFs = ["SPY", "RSP", "IWM"].filter(k => breadth[k]);
+                const breadthRows = breadthETFs.map(k => {
+                    const v = breadth[k];
+                    return [
+                        el("div", {}, [el("div", { style: "font-weight:700" }, [v.name || k])]),
+                        el("div", { class: "right nowrap" }, [fmt.num(v.last_close, 4)]),
+                        el("div", { class: `right nowrap ${clsFromChange(v.percent_change)}` }, [fmt.pct(v.percent_change, 2)])
+                    ];
+                });
+
+                const rspLine = el("div", {}, [
+                    el("span", { class: "muted" }, ["RSP - SPY: "]),
+                    el("b", { class: clsFromChange(breadth.rsp_minus_spy_pct) }, [fmt.pct(breadth.rsp_minus_spy_pct, 3)])
+                ]);
+                const iwmLine = el("div", {}, [
+                    el("span", { class: "muted" }, ["IWM - SPY: "]),
+                    el("b", { class: clsFromChange(breadth.iwm_minus_spy_pct) }, [fmt.pct(breadth.iwm_minus_spy_pct, 3)])
+                ]);
+
+                const breadthCard = card("Breadth", "", el("div", {}, [
+                    el("div", { class: "kpi" }, [
+                        el("div", { class: "label" }, ["Spreads"]),
+                        el("div", { class: "value", style: "font-size:1.05rem; font-weight:700; line-height:1.35" }, [rspLine, iwmLine])
+                    ]),
+                    el("div", { style: "margin-top:10px" }, [
+                        table(
+                            [{ label: "ETF" }, { label: "Last Close", align: "right" }, { label: "1D %", align: "right" }],
+                            breadthRows
+                        )
+                    ])
+                ]));
+
+                const cg = data.crypto_global || {};
+                const tvl = (data.defi && data.defi.tvl) ? data.defi.tvl : {};
+
+                const cryptoMarketCard = card("Crypto Market", "", el("div", {}, [
+                    el("div", { class: "kpiRow4" }, [
+                        kpi("Total Market Cap", `${fmt.compactUSD(cg.total_mcap_usd)}`),
+                        kpi("BTC Dominance", `${fmt.pct(cg.btc_dominance_pct, 2)}`),
+                        kpi("Total DeFi TVL", `${fmt.compactUSD(tvl.total_defi_tvl_usd)}`),
+                        kpi("Solana TVL", `${fmt.compactUSD(tvl.solana_tvl_usd)}`)
+                    ]),
+                    errorBox(cg.error),
+                    errorBox(tvl.error)
+                ]));
+
+                const bh = data.bitcoin_halving || {};
+                const secondsRemaining = (bh.blocks_remaining !== null && bh.blocks_remaining !== undefined && bh.assumed_seconds_per_block)
+                    ? Number(bh.blocks_remaining) * Number(bh.assumed_seconds_per_block)
+                    : null;
+
+                const etaBlock = el("div", { class: "kpi" }, [
+                    el("div", { class: "label" }, ["Estimated Date/Time"]),
+                    el("div", { class: "value", style: "font-size:1.15rem; font-weight:900; line-height:1.2" }, ["Apr 10, 2028"])
+                ]);
+
+                const bitcoinHalvingCard = card("Upcoming Bitcoin Halving", "", el("div", {}, [
+                    el("div", { class: "kpiRow" }, [
+                        kpi("Est. Time Remaining", fmt.humanDurationYDH(secondsRemaining)),
+                        etaBlock
+                    ]),
+                    errorBox(bh.error),
+                ]));
+
+                const sol = data.solana || {};
+                const dex = sol.dex || {};
+                const totals = dex.totals || {};
+                const top5 = Array.isArray(dex.top5_by_24h) ? dex.top5_by_24h : [];
+                const ratio = dex.pumpfun_over_pumpswap_ratio_24h;
+
+                const top5Rows = top5.map(v => ([
+                    el("div", { style: "font-weight:700" }, [v.name || "—"]),
+                    el("div", { class: "right nowrap" }, [fmt.compactUSD(v.total24h)])
+                ]));
+
+                const pumpRows = [
+                    [el("div", { style: "font-weight:700" }, ["PumpFun"]), el("div", { class: "right nowrap" }, [fmt.compactUSD(dex.pumpfun?.total24h)])],
+                    [el("div", { style: "font-weight:700" }, ["PumpSwap"]), el("div", { class: "right nowrap" }, [fmt.compactUSD(dex.pumpswap?.total24h)])]
+                ];
+
+                const solDexCard = card("Solana Onchain", "", el("div", {}, [
+                    el("div", { class: "kpiRow" }, [
+                        kpi("Total 24h Volume", `${fmt.compactUSD(totals.total24h)}`),
+                        kpi("PumpFun / PumpSwap (24h Vol.)", `${fmt.num(ratio, 4)}`)
+                    ]),
+                    el("div", { style: "margin-top:12px" }, [
+                        table([{ label: "DEX Platform" }, { label: "24h Volume", align: "right" }], pumpRows)
+                    ]),
+                    (top5Rows.length ? el("div", { style: "margin-top:12px" }, [
+                        el("div", { class: "small muted", style: "margin: 0 0 8px" }, ["Top 5 DEXs by 24h volume"]),
+                        table([{ label: "DEX Platform" }, { label: "24h Volume", align: "right" }], top5Rows)
+                    ]) : null),
+                    errorBox(dex.error),
+                ]));
+
+                const stocksCol = el("div", { class: "stocksCol span-6" }, [
+                    stocksFearGreedCard, tradCard, fomcCard, stocksWatchlistCard, breadthCard
+                ]);
+
+                const cryptoCol = el("div", { class: "cryptoCol span-6" }, [
+                    cryptoFearGreedCard, cryptoMarketCard, bitcoinHalvingCard, cryptoWatchlistCard, solDexCard
+                ]);
+
+                const mainGrid = el("div", { class: "mainGrid span-12" }, [stocksCol, cryptoCol]);
+
+                const gmMonthlyCard = buildGeneralMonthlyWidgetShell();
+                const historyCard = buildHistoryWidgetShell();
+
+                const snapshotTitle = el("h2", { class: "section-title" }, ["Today's Market Snapshot"]);
+
+                root.innerHTML = "";
+                root.appendChild(gmMonthlyCard);
+                root.appendChild(historyCard);
+                root.appendChild(snapshotTitle);
+                root.appendChild(mainGrid);
+
+                // Render general_market_data_monthly.json charts
+                try {
+                    const rGM = await fetch(GM_MONTHLY_FILE, { cache: "no-store" });
+                    if (!rGM.ok) throw new Error(`Failed to fetch ${GM_MONTHLY_FILE} (HTTP ${rGM.status})`);
+                    const gmMonthly = await rGM.json();
+                    renderGeneralMonthlyCharts(gmMonthly);
+                } catch (eGM) {
+                    const cardNode = document.getElementById("gmMonthlyCard");
+                    if (cardNode) {
+                        cardNode.appendChild(el("div", { class: "err" }, [
+                            `Could not load ${GM_MONTHLY_FILE}. `,
+                            "Make sure it's in the same folder and you're serving the folder over HTTP. ",
+                            el("div", { style: "margin-top:8px" }, [String(eGM.message || eGM)])
+                        ]));
+                    }
+                }
+
+                // NEW: Render market_cap_ceilings_monthly chart from archives (30D)
+                try {
+                    const ceilingsMonthly = await loadMonthlyDataWithFallback(
+                        MARKET_CAP_CEILINGS_ARCHIVE_DIR,
+                        MARKET_CAP_CEILINGS_MONTHLY_FILE,
+                        30
+                    );
+                    renderMarketCapCeilingsMonthly(ceilingsMonthly);
+                } catch (eC) {
+                    const cardNode = document.getElementById("gmMonthlyCard");
+                    if (cardNode) {
+                        cardNode.appendChild(el("div", { class: "err" }, [
+                            `Could not load market cap ceilings data. `,
+                            "Make sure archives folder exists or hot file is available. ",
+                            el("div", { style: "margin-top:8px" }, [String(eC.message || eC)])
+                        ]));
+                    }
+                }
+
+                // Render dashboard_stats_monthly chart from archives (30D)
+                try {
+                    const monthlyEntries = await loadMonthlyDataWithFallback(
+                        DASHBOARD_STATS_ARCHIVE_DIR,
+                        DASH_MONTHLY_FILE,
+                        30
+                    );
+                    renderMonthlyChart(monthlyEntries, "combined", "unfiltered");
+                } catch (e2) {
+                    const cardNode = document.getElementById("historyCard");
+                    if (cardNode) {
+                        cardNode.appendChild(el("div", { class: "err" }, [
+                            "Could not load dashboard stats data. ",
+                            "Make sure archives folder exists or hot file is available. ",
+                            el("div", { style: "margin-top:8px" }, [String(e2.message || e2)])
+                        ]));
+                    }
+                }
+
+            } catch (e) {
+                root.innerHTML = "";
+                root.appendChild(el("div", { class: "card span-12" }, [
+                    el("h2", {}, ["Load Error"]),
+                    el("div", { class: "err" }, [
+                        "Could not fetch general_market_data.json. If you opened the HTML from disk, browsers may block fetch(). ",
+                        "Serve the folder (your python http server on port 8000 works)."
+                    ]),
+                    el("pre", {}, [String(e.stack || e)])
+                ]));
+            }
+        }
+
+        load();
+    </script>
+</body>
+
+</html>
