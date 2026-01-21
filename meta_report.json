@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-21T20:45:19.280287Z",
+  "generated_at_utc": "2026-01-21T21:57:37.950587Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 161,
+  "token_context_count": 164,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 10 PVP group(s); excluding 13 token(s) from META prompt."
+    "Detected 10 PVP group(s); excluding 14 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 13,
+  "pvp_excluded_token_count": 14,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -146,6 +146,13 @@
           "token_address": "7YsoMkke2j7jCs4APJPHDPEwLp1F6MpLjzuHucJpcaqx",
           "usd_market_cap": 13269.0,
           "processed_at": "2026-01-21T07:04:55.207917Z"
+        },
+        {
+          "token_symbol": "MEMES",
+          "token_name": "Memes",
+          "token_address": "7ZyypEDcwtUFjwiKzLA54iEipnMQGXRQxAjbtWMHpump",
+          "usd_market_cap": 152091.9,
+          "processed_at": "2026-01-21T21:36:53.126809Z"
         }
       ]
     },
@@ -221,25 +228,76 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political and Social Commentary Tokens",
-        "description": "Tokens that reference political figures, events, or social commentary. These often leverage public sentiment or political memes to drive adoption.",
+        "meta_name": "Crypto Meme Animals",
+        "description": "This META is characterized by tokens that reference animals or animal-related memes. These tokens often use humor, satire, or parody to create community-driven value.",
         "defining_signals": [
-          "Names or themes referencing political figures or events",
-          "Use of political memes or commentary in branding",
-          "Community-driven narratives around political or social issues",
-          "No traditional utility beyond symbolic or commentary value",
-          "Strong social media presence and engagement"
+          "Tokens referencing animals or animal-related memes.",
+          "Names or narratives inspired by animal memes or internet culture.",
+          "Community-driven projects with an animal-based meme or narrative.",
+          "Tokens tied to animal-based humor or satirical content."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "TACO",
-            "token_name": "TRUMP ALWAYS CHICKENS OUT",
-            "token_address": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWiC"
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "BARRON",
-            "token_name": "The Hero",
-            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address_address": "x95HN3DWvbfCBtTjGmm87z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "MOMO",
+            "token_name": "Momo",
+            "token_token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGgKzex3ebonk"
+          },
+          {
+            "token_symbol": "KAI",
+            "token_name": "Kai's Mind",
+            "token_token_address": "2PvDmoQ8f9VpopfcstnLj2Ff9YjiBjhvxvV6EGPWpump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "DINO",
+            "token_name": "Dinocoin",
+            "token_token_address": "CYCLLCPa8iMgK2i2a8LgLNDiiafCrqZfERmQHGNCDNQm"
+          }
+        ],
+        "leader_hint_token_address": "BONK",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The animal-based meme narrative is strong and recurring across multiple tokens, with clear community engagement and thematic consistency.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 806687923.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto Meme Personas",
+        "description": "This META is characterized by tokens that reference real or fictional personas from internet culture, politics, or pop culture. These tokens often use humor, satire, or parody to create community-driven value.",
+        "defining_signals": [
+          "Tokens referencing real or fictional personas (e.g., politicians, celebrities, internet memes).",
+          "Names or narratives inspired by internet personas or satirical figures.",
+          "Community-driven projects with a persona-based meme or narrative.",
+          "Tokens tied to persona-based humor or satirical content."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "DADDY",
+            "token_name": "Donald Daddy Trump",
+            "token_address": "AF9PqqWZgTRVNpsUPYUKAuQC5Du75JJGP7Ede332bonk"
           },
           {
             "token_symbol": "MELANIA",
@@ -247,54 +305,24 @@
             "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
           },
           {
-            "token_symbol": "DONROE",
-            "token_name": "DONROOE DOCTRINE",
-            "token_token": "2ZtpNyFVEdSJ18UH5hNNPW3aAHpsSGZ8s1CN8NVPbonk"
-          },
-          {
-            "token_symbol": "CRUISE",
-            "token_name": "Tom Cruise Missile",
-            "token_token": "G7Bvy6FaERYypjFvsvAuv8s4CUttgQ4XfzavZUfgpump"
-          },
-          {
-            "token_symbol": "DADDY",
-            "token_name": "Donald Daddy Trump",
-            "token_token": "AF9PqqWZgTRVNpsUPYUKAuQC5Du75JJGP7Ede332bonk"
+            "token_symbol": "BARRON",
+            "token_name": "The Hero",
+            "token_address": "4Eefn1EZL23G8Vv6zdstYQKkWeoMBJjGjGBw4jembonk"
           },
           {
             "token_symbol": "FISHBACK",
             "token_name": "James Fishback Fund",
-            "token_token": "8zZgRRZtQSsz9nmY2c6jfcCzWtdQrDJFSGB1fvyBAGS"
+            "token_address": "8zZgRRZtQSsz9nmY2c6jfcCzZtdQrDJFSsz1fvyBAGS"
           },
           {
-            "token_symbol": "BROKE",
-            "token_name": "TheBrokeWhale",
-            "token_token": "5PKit456Q6ZfkuVXet66jXV9CgFHRSSL9UGn6Gg3pump"
-          },
-          {
-            "token_symbol": "MOMO",
-            "token_name": "Momo",
-            "token_token": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGgKzex3ebonk"
-          },
-          {
-            "token_symbol": "BARRON",
-            "token_name": "The Hero",
-            "token_token": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
-          },
-          {
-            "token_symbol": "TACO",
-            "token_name": "TRUMP ALWAYS CHICKENS OUT",
-            "token_token": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWyC"
-          },
-          {
-            "token_symbol": "MELANIA",
-            "token_name": "Melania Meme",
-            "token_token": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
+            "token_symbol": "KINGSMAN",
+            "token_name": "KINGSMAN265",
+            "token_address_address": "F8uNy4zi2kr1pRN1yewgFcttJyg6gZb1HmbwhM88BAGS"
           }
         ],
-        "leader_hint_token_address": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWyC",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong political and social commentary themes are gaining traction, especially around high-profile figures and events.",
+        "leader_hint_token_address": "RALPH",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The persona-based meme narrative is strong and recurring across multiple tokens, with clear community engagement and thematic consistency.",
         "leader_token": {
           "token_symbol": "MELANIA",
           "token_name": "Melania Meme",
@@ -304,35 +332,24 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Utility Tokens",
-        "description": "Tokens that leverage AI as a core component of their utility, either through AI-powered platforms, agents, or tools. These tokens often focus on decentralized AI infrastructure, data, or automation.",
+        "meta_name": "AI Meme Tokens",
+        "description": "This META is characterized by tokens that leverage AI-related memes or narratives, often referencing AI agents, AI-generated content, or AI-driven platforms. These tokens are typically community-driven and use AI as a central theme for humor or speculative value.",
         "defining_signals": [
-          "Integration with AI platforms or tools",
-          "Focus on decentralized AI infrastructure or data marketplaces",
-          "Claims of AI-powered automation or agent-based functionality",
-          "Utilization of AI for productivity, analytics, or governance",
-          "Inference of AI-driven workflows or smart contracts"
+          "Tokens referencing AI agents or AI-generated content as a core theme.",
+          "Names or narratives inspired by AI memes or AI-related internet culture.",
+          "Community-driven projects with AI as a central meme or utility.",
+          "Tokens tied to AI art, AI voice, or AI-generated characters."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PRIMIS",
-            "token_name": "Primis Protocol",
-            "token_address": "2DfBjrPFZjDTiCY6pxchS6aSdUdEpkm7PdqpovHjBAGS"
+            "token_symbol": "CLAUDE101",
+            "token_name": "Claude Code 101",
+            "token_address": "FiPmVaKTNxvCwmiZgayGC1VvK2aqVpYAq3qK1EXTBAGS"
           },
           {
-            "token_symbol": "CONFER",
-            "token_name": "Confer",
-            "token_address": "5FwWMqHxdbafnB1aoA5ZmnzHQ1ByrULyJ16YgnRpBAGS"
-          },
-          {
-            "token_symbol": "QUARRY",
-            "token_name": "Quarry",
-            "token_address": "2dTj1md4aGw5sXd9VCmFRnVhZH5LyDfGkG39Eh37BAGS"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+            "token_symbol": "CLOON",
+            "token_name": "Cloon",
+            "token_address": "FLBwxwtAQkdXNwQXLwVZok5Cge2fWiSsXggkgueBAGS"
           },
           {
             "token_symbol": "CMEM",
@@ -340,44 +357,24 @@
             "token_address": "2TsmuYUrsctE57VLckZBYEEzdokUF8j8e1GavekWBAGS"
           },
           {
-            "token_symbol": "SPLyc",
-            "token_name": "Splyc App",
-            "token_address": "BCNue5xwfm3prevLyK3yGg7XNuiPCPCg8TfGJxxhpump"
+            "token_symbol": "KLED",
+            "token_name": "KLEDAI",
+            "token_address": "1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm"
           },
           {
-            "token_symbol": "OBJECTS",
-            "token_name": "Talking Objects",
-            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpump"
-          },
-          {
-            "token_symbol": "SIGNAL",
-            "token_name": "Moxie Marlinspike",
-            "token_address": "G7pJX2R4CnzW23q8kRTJBxAGZ5T3VAsrv6aFxJFhBAGS"
-          },
-          {
-            "token_symbol": "FLOW",
-            "token_name": "Flowier",
-            "token_address": "7DBG9zXzubKg7ua588QcNrznwTgvT1xHvEcxCYL4pump"
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
             "token_symbol": "SKILLSTACK",
             "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          },
-          {
-            "token_symbol": "SPLC",
-            "token_name": "Splyc App",
-            "token_address": "BCNue5xwfm3prevLyK3yGg7XNuiPCPCg8TfGJxxhpump"
-          },
-          {
-            "token_symbol": "QUARRY",
-            "token_name": "Quarry",
-            "token_address": "2dTj1md4aGw5sXd9VCmFRnVhZH5LyDfGkG39Eh37BAGS"
+            "token_address": "Bb1HnSUdk1HzcQq4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
           }
         ],
-        "leader_hint_token_address": "2DfBjrPFZjDTiCY6pxchS6aSdUdEpkm7PdqpovHjBAGS",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Growing interest in AI-based utility tokens, especially those tied to decentralized infrastructure and data marketplaces.",
+        "leader_hint_token_address": "ALCH",
+        "confidence_0_100": 85,
+        "confidence_rationale": "The AI meme narrative is strong and recurring across multiple tokens, with clear community engagement and thematic consistency.",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -387,226 +384,19 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens leveraging internet memes and viral internet culture to drive community engagement and speculative interest. These tokens often repurpose existing memes or create new ones to generate buzz.",
+        "meta_name": "Retro Gaming Meme Tokens",
+        "description": "This META is defined by tokens that reference classic video games, retro gaming culture, or iconic gaming characters. These tokens often leverage nostalgia and the popularity of retro gaming memes to drive community interest.",
         "defining_signals": [
-          "Names and themes derived from viral internet memes or cultural references",
-          "Strong community-driven narratives with no prior non-crypto cultural origin",
-          "High social media engagement and viral potential",
-          "Lack of traditional utility or product backing",
-          "Frequent use of humor, absurdity, or shock value in branding"
+          "Tokens referencing classic video games or characters (e.g., Snake, Mario, etc.).",
+          "Names or narratives inspired by retro gaming culture or memes.",
+          "Community-driven projects with a nostalgic or retro gaming theme.",
+          "Tokens tied to retro gaming aesthetics or gameplay references."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "RIZZENTINE",
-            "token_name": "RIZZENTINE",
-            "token_address": "9yRYJT3Lq2Kq2ZheqLcZayKx4ZnARjr7na1cS32Zpump"
-          },
-          {
-            "token_symbol": "NEEGA",
-            "token_name": "Lil Neega",
-            "token_address": "5MN4Bv1ndZXb5SeQrzcuUGitS4eF13cW66Bhu97rpump"
-          },
-          {
-            "token_symbol": "HAMSTERS",
-            "token_name": "4 HAMSTERS",
-            "token_address": "FC6D3y4wTLSxPWaRg56uGXnZQ8mHdkj8bYP5Ycxtpump"
-          },
-          {
-            "token_symbol": "SLOPCOIN",
-            "token_name": "SLOPCOIN",
-            "token_address": "sN4u5N8QzK5ggixnZRwiWhURKz2b49RKTfAcYR6pump"
-          },
-          {
-            "token_symbol": "TYLER",
-            "token_name": "Tyler Oliveira Support Fund",
-            "token_address": "69Y2QNL3tQeWZbQyQvij85mXpdRDeVKEWNXFshyWBAGS"
-          },
-          {
-            "token_symbol": "ROKO",
-            "token_name": "ROKO",
-            "token_address": "CZ4ra1Cxx8ZxVJeQxLYocGBxAMCPpjDSBHjqp3egroko"
-          },
-          {
-            "token_symbol": "TANKELI",
+            "token_symbol": "SNAKE",
             "token_name": "Taneli Armanto",
             "token_address": "BirJWqKdHnh1LpEm9E3WF1DVLzx1dsEsbkdkb55yBAGS"
-          },
-          {
-            "token_symbol": "TOWELIE",
-            "token_name": "Towelie",
-            "token_address": "9Cxm1dvN3QQFohR2V6uQ3ULvuf2aWNvE8DQnYHiYpump"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "BUTT",
-            "token_name": "Buttcoin",
-            "token_address": "Cm6fNnMk7NfStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
-          },
-          {
-            "token_symbol": "GIGA",
-            "token_name": "GIGACHAD",
-            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
-          },
-          {
-            "token_symbol": "MOMO",
-            "token_name": "Momo",
-            "token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGgKzex3ebonk"
-          }
-        ],
-        "leader_hint_token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong meme narratives with viral potential, active community engagement, and clear cultural references make this the most prominent theme.",
-        "leader_token": {
-          "token_symbol": "GIGA",
-          "token_name": "GIGACHAD",
-          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-          "usd_market_cap": 36015683.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "GameFi and Play-to-Earn Tokens",
-        "description": "Tokens tied to gaming ecosystems, including play-to-earn models, in-game economies, or game-related utilities. These tokens often leverage gaming narratives and community engagement.",
-        "defining_signals": [
-          "Integration with gaming platforms or mechanics",
-          "Play-to-earn or in-game rewards",
-          "Community-driven game development or funding",
-          "Tokenomics tied to game progression or ownership",
-          "Lack of traditional utility outside the game context"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "RIVALS",
-            "token_name": "Trench Rivals",
-            "token_address": "2H3cdEiiSApBB8qJBqw2T1HoD7YZugejGYc2FBoVpump"
-          },
-          {
-            "token_symbol": "THECORE",
-            "token_name": "The Core",
-            "token_address": "5R7XvfZbjJdWwyCD9viR5g3KLho2JrzTozXeBEfsBAGS"
-          },
-          {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
-          },
-          {
-            "token_symbol": "WEED",
-            "token_name": "WEED Token",
-            "token_address": "E2gLkTXSbbTMmJM19xkquawun2ShJSi7G59A8c2PtbFa"
-          },
-          {
-            "token_symbol": "JAILED",
-            "token_name": "JAILED",
-            "token_address": "PXespMoquGgnrPBgmz3BmVEpnJq8LxKtyQJ4qadr1o1"
-          },
-          {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          },
-          {
-            "token_symbol": "PANDU",
-            "token_name": "Pandu Pandas",
-            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
-          },
-          {
-            "token_symbol": "REKILL",
-            "token_name": "rekill",
-            "token_token": "ADnE9o6B7WHhzaRctmbqdPCRiLiA34WBXzYPbrFqBAGG"
-          },
-          {
-            "token_symbol": "BROKE",
-            "token_name": "TheBrokeWhale",
-            "token_token": "5PKit456Q6ZffkuVXet66jXV9CgFHRSSL9UGn6Gp3pump"
-          },
-          {
-            "token_symbol": "BOOGIE",
-            "token_name": "Boogie Bug",
-            "token_token": "7LCg1zkom5ewGb43RmrLmgPJh6oZQ6BMhNtVqUnxpump"
-          },
-          {
-            "token_symbol": "KAI",
-            "token_name": "Kai's Mind",
-            "token_token": "2PvDmoQ8f9VpopfcstnLj2Ff9YjiBjhvxvV6EGPWpump"
-          }
-        ],
-        "leader_hint_token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKKxYjp",
-        "confidence_0_100": 65,
-        "confidence_rationale": "Emerging trend in gaming-related tokens, especially those with community-driven narratives and speculative utility.",
-        "leader_token": {
-          "token_symbol": "IDLE",
-          "token_name": "IdleMine",
-          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-          "usd_market_cap": 15148519.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Community-Driven and NFT-Related Tokens",
-        "description": "Tokens that rely on community engagement and often have ties to NFTs or collectibles projects. These tokens often emphasize community ownership and participation.",
-        "defining_signals": [
-          "Strong community-driven narratives",
-          "Ties to NFTs or collectible projects",
-          "Community governance or airdrop strategies",
-          "Lack of traditional utility beyond community engagement",
-          "High social media and Discord activity"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "TYLER",
-            "token_name": "Tyler Oliveira Support Fund",
-            "token_address": "69Y2QNL3tQeWZbQyQvij85mXpdRDeVKEWNXFshyWBAGS"
-          },
-          {
-            "token_symbol": "PANDU",
-            "token_name": "Pandu Pandas",
-            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
-          },
-          {
-            "token_symbol": "FUNDICO",
-            "token_name": "Fundico",
-            "token_address": "HSq9Ao7Sgkd1i8eNFboqMJSoAietFCRr3ubidJ7sBAGS"
-          },
-          {
-            "token_symbol": "GOODSHIT",
-            "token_name": "we ate off that twin",
-            "token_address": "9BjpfijA6apAC5JHcVWTtBeeoKaqKgp3S9b6tK3rpump"
-          },
-          {
-            "token_symbol": "BELAC",
-            "token_name": "Belac Dev Fund",
-            "token_address": "JAtS3FzpiMQMcRmPBEzsaTC9mAiprsptWPDTpoqXBAGS"
-          },
-          {
-            "token_symbol": "LEILAN",
-            "token_name": "Temple Of Leilan",
-            "token_address": "3JivnXjW5kYkGrQ6jdxFuarqw6wcimLiVBgRs9SKBAGS"
-          },
-          {
-            "token_symbol": "FARTLESS",
-            "token_name": "Fartless",
-            "token_address": "8AinLThG8AHdcqQ5FhDTR7TZgxJhucBvTTxEQT6ppump"
-          },
-          {
-            "token_symbol": "FROG",
-            "token_name": "The First Frog",
-            "token_address": "7P8RM8hpQttAzC4an8CaYHko1njts73P1mawgbW3pump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
             "token_symbol": "KAI",
@@ -614,32 +404,103 @@
             "token_address": "2PvDmoQ8f9VpopfcstnLj2Ff9YjiBjhvxvV6EGPWpump"
           },
           {
-            "token_symbol": "PANDU",
-            "token_name": "Pandu Pandas",
-            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "FUNDICO",
-            "token_name": "Fundico",
-            "token_address": "HSq9Ao7Sgkd1i8eNFboqMJSoAietFCRr3ubidJ7sBAGS"
+            "token_symbol": "BOOGIE",
+            "token_name": "Boogie Bug",
+            "token_address": "7LCg1zkom5ewGb43RmrLmgPJh6oZQ6BMhNtVqUnxpump"
+          },
+          {
+            "token_symbol": "PAX",
+            "token_name": "Paxton Pengu",
+            "token_address": "JE8zmsKRivXggZsJxXHBdCkako85YawNtU5hqS4upump"
+          },
+          {
+            "token_symbol": "DINO",
+            "token_name": "Dinocoin",
+            "token_address": "CYCLLCPa8iMgK2i2a8LgLNDiiafCrqZfERmQHGNCDNQm"
           }
         ],
-        "leader_hint_token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk",
-        "confidence_0_100": 60,
-        "confidence_rationale": "Community-driven tokens are gaining traction, especially those with NFT or collectible ties and active Discord engagement.",
+        "leader_hint_token_address": "SNAKE",
+        "confidence_0_100": 75,
+        "confidence_rationale": "The retro gaming theme is well-represented across multiple tokens, with strong community engagement and nostalgic appeal.",
         "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 2882145.99
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 1782719.76
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Meme Tokens",
+        "description": "This META is defined by tokens that leverage AI-generated content or AI-driven narratives. These tokens often use AI as a central theme for humor, speculation, or community-driven value.",
+        "defining_signals": [
+          "Tokens referencing AI-generated content or AI-driven narratives.",
+          "Names or narratives inspired by AI memes or AI-related internet culture.",
+          "Community-driven projects with AI as a central meme or utility.",
+          "Tokens tied to AI art, AI voice, or AI-generated characters."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "OBJECTS",
+            "token_name": "Talking Objects",
+            "token_address_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGppump"
+          },
+          {
+            "token_symbol": "HOMUNCULUS",
+            "token_name": "Homunculus",
+            "token_address_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGS"
+          },
+          {
+            "token_symbol": "QUARRY",
+            "token_name": "Quarry",
+            "token_token_address": "2dTj1md4aGw5sXd9VCmFRnVhZH5LyDffGkG39Eh37BAGS"
+          },
+          {
+            "token_symbol": "NORMIE",
+            "token_name": "The Normie",
+            "token_token_address": "AAini8gBi4iaSzvWbA4bWMaAgWHUWZtcwDfGtUeopump"
+          },
+          {
+            "token_symbol": "SWEAT",
+            "token_name": "Skill & Work Ethic Aren't Taboo",
+            "token_token_address": "MnHm2ts1pq6XsLch3oAnsN1jTHucmktj6tjhngPpump"
+          },
+          {
+            "token_symbol": "SMONKE",
+            "token_name": "Small Monkey John Deere",
+            "token_token_address": "s9i4uez2WP2xwqLVR2kJgUBsuc9V5iGppH7NokJDpump"
+          }
+        ],
+        "leader_hint_token_address": "OBJECTS",
+        "confidence_0_100": 70,
+        "confidence_rationale": "The AI-powered meme narrative is strong and recurring across multiple tokens, with clear community engagement and thematic consistency.",
+        "leader_token": {
+          "token_symbol": "NORMIE",
+          "token_name": "The Normie",
+          "token_address": "AAini8gBi4iaSzvWbA4bWMaAgWHUWZtcwDfGtUeopump",
+          "usd_market_cap": 320277.65
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Meme-Driven Tokens remain dominant due to strong community engagement and viral potential. AI-Driven Utility Tokens are emerging as a strong contender with growing interest in decentralized AI infrastructure. Political and Social Commentary Tokens are gaining momentum, especially around high-profile figures and events. GameFi and Play-to-Earn Tokens are showing signs of fading as the novelty of play-to-earn models wanes. Community-Driven and NFT-Related Tokens are stable but not growing as rapidly as other categories.",
+    "meta_rotation_note": "The AI Meme Tokens and Crypto Meme Personas are currently the most active and dominant METAs, showing strong community engagement and recurring themes. The Retro Gaming Meme Tokens and AI-Powered Meme Tokens are also gaining traction. The Crypto Meme Animals META is fading slightly as newer AI and persona-based tokens capture more attention.",
     "meta_leaders": [
       {
-        "meta_name": "Political and Social Commentary Tokens",
+        "meta_name": "Crypto Meme Animals",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 806687923.0
+        }
+      },
+      {
+        "meta_name": "Crypto Meme Personas",
         "leader_token": {
           "token_symbol": "MELANIA",
           "token_name": "Melania Meme",
@@ -648,7 +509,7 @@
         }
       },
       {
-        "meta_name": "AI-Driven Utility Tokens",
+        "meta_name": "AI Meme Tokens",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -657,30 +518,21 @@
         }
       },
       {
-        "meta_name": "Meme-Driven Tokens",
+        "meta_name": "Retro Gaming Meme Tokens",
         "leader_token": {
-          "token_symbol": "GIGA",
-          "token_name": "GIGACHAD",
-          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-          "usd_market_cap": 36015683.0
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 1782719.76
         }
       },
       {
-        "meta_name": "GameFi and Play-to-Earn Tokens",
+        "meta_name": "AI-Powered Meme Tokens",
         "leader_token": {
-          "token_symbol": "IDLE",
-          "token_name": "IdleMine",
-          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-          "usd_market_cap": 15148519.0
-        }
-      },
-      {
-        "meta_name": "Community-Driven and NFT-Related Tokens",
-        "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 2882145.99
+          "token_symbol": "NORMIE",
+          "token_name": "The Normie",
+          "token_address": "AAini8gBi4iaSzvWbA4bWMaAgWHUWZtcwDfGtUeopump",
+          "usd_market_cap": 320277.65
         }
       }
     ]
