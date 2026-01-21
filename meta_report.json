@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-01-21T20:25:06.572782Z",
+  "generated_at_utc": "2026-01-21T20:45:19.280287Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 162,
+  "token_context_count": 161,
   "prompt_truncated": false,
   "warnings": [
     "Detected 10 PVP group(s); excluding 13 token(s) from META prompt."
@@ -86,26 +86,6 @@
           "token_address": "47DSzyieXaC5ao3Kyvo8zrkhe93S6HnA369cmJwFpump",
           "usd_market_cap": 59842.89,
           "processed_at": "2026-01-21T10:39:39.784115Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "arc",
-      "tokens": [
-        {
-          "token_symbol": "ARC",
-          "token_name": "Redemption Arc",
-          "token_address": "DCgZjb2LN5r9Ck5VZAATh8x3sTUHyTzEguThGqh1pump",
-          "usd_market_cap": 1549717.18,
-          "processed_at": "2026-01-20T20:33:53.734977Z"
-        },
-        {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 82515140.0,
-          "processed_at": "2026-01-21T13:29:54.005530Z"
         }
       ]
     },
@@ -215,20 +195,40 @@
           "processed_at": "2026-01-21T10:39:39.784115Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "arc",
+      "tokens": [
+        {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 82515140.0,
+          "processed_at": "2026-01-21T13:29:54.005530Z"
+        },
+        {
+          "token_symbol": "ARC",
+          "token_name": "Redemption Arc",
+          "token_address": "DCgZjb2LN5r9Ck5VZAATh8x3sTUHyTzEguThGqh1pump",
+          "usd_market_cap": 2468845.95,
+          "processed_at": "2026-01-21T20:35:10.882112Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political and Celebrity Meme Tokens",
-        "description": "This META involves tokens that leverage political figures, celebrities, or public personalities as central themes. These tokens often capitalize on the popularity and controversy surrounding these individuals to drive interest and speculation.",
+        "meta_name": "Political and Social Commentary Tokens",
+        "description": "Tokens that reference political figures, events, or social commentary. These often leverage public sentiment or political memes to drive adoption.",
         "defining_signals": [
-          "Tokens referencing political figures (e.g., Trump, Melania).",
-          "Celebrity or public figure names or personas as core themes.",
-          "Meme narratives tied to real-world events or controversies.",
-          "High social media engagement and meme virality.",
-          "Tokens often lack utility beyond symbolic or satirical value."
+          "Names or themes referencing political figures or events",
+          "Use of political memes or commentary in branding",
+          "Community-driven narratives around political or social issues",
+          "No traditional utility beyond symbolic or commentary value",
+          "Strong social media presence and engagement"
         ],
         "supporting_tokens": [
           {
@@ -237,34 +237,64 @@
             "token_address": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWiC"
           },
           {
+            "token_symbol": "BARRON",
+            "token_name": "The Hero",
+            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
+          },
+          {
             "token_symbol": "MELANIA",
             "token_name": "Melania Meme",
             "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
           },
           {
+            "token_symbol": "DONROE",
+            "token_name": "DONROOE DOCTRINE",
+            "token_token": "2ZtpNyFVEdSJ18UH5hNNPW3aAHpsSGZ8s1CN8NVPbonk"
+          },
+          {
+            "token_symbol": "CRUISE",
+            "token_name": "Tom Cruise Missile",
+            "token_token": "G7Bvy6FaERYypjFvsvAuv8s4CUttgQ4XfzavZUfgpump"
+          },
+          {
             "token_symbol": "DADDY",
             "token_name": "Donald Daddy Trump",
-            "token_address": "AF9PqqWZgTRVNpsUPYUKAuQC5Du75JJGP7Ede332bonk"
-          },
-          {
-            "token_symbol": "BARRON",
-            "token_name": "The Hero",
-            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeo8MBJjGiBw4jembonk"
-          },
-          {
-            "token_symbol": "WSB",
-            "token_name": "Wall Street Bull",
-            "token_address": "5AqzXHDa8ZypNoXNdhKRGmNMgDM9kVbKMyA6dMoFpump"
+            "token_token": "AF9PqqWZgTRVNpsUPYUKAuQC5Du75JJGP7Ede332bonk"
           },
           {
             "token_symbol": "FISHBACK",
             "token_name": "James Fishback Fund",
-            "token_address": "8zZgRRZtQSsz9nmY2c6jfcCzWtdQrDJFSGB1fvyBAGS"
+            "token_token": "8zZgRRZtQSsz9nmY2c6jfcCzWtdQrDJFSGB1fvyBAGS"
+          },
+          {
+            "token_symbol": "BROKE",
+            "token_name": "TheBrokeWhale",
+            "token_token": "5PKit456Q6ZfkuVXet66jXV9CgFHRSSL9UGn6Gg3pump"
+          },
+          {
+            "token_symbol": "MOMO",
+            "token_name": "Momo",
+            "token_token": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGgKzex3ebonk"
+          },
+          {
+            "token_symbol": "BARRON",
+            "token_name": "The Hero",
+            "token_token": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
+          },
+          {
+            "token_symbol": "TACO",
+            "token_name": "TRUMP ALWAYS CHICKENS OUT",
+            "token_token": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWyC"
+          },
+          {
+            "token_symbol": "MELANIA",
+            "token_name": "Melania Meme",
+            "token_token": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
           }
         ],
-        "leader_hint_token_address": "F6gmgZzHt9xQxytPF2cBbYPZVKacBn9D9jXFtodqyWiC",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong political meme traction, high social media engagement, and clear narrative.",
+        "leader_hint_token_address": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWyC",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong political and social commentary themes are gaining traction, especially around high-profile figures and events.",
         "leader_token": {
           "token_symbol": "MELANIA",
           "token_name": "Melania Meme",
@@ -274,25 +304,35 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Tech-Driven Utility Tokens",
-        "description": "This META includes tokens that position themselves as utility tokens for AI, blockchain, or tech-related platforms. These tokens often emphasize innovation, decentralized infrastructure, or AI integration as their core value proposition.",
+        "meta_name": "AI-Driven Utility Tokens",
+        "description": "Tokens that leverage AI as a core component of their utility, either through AI-powered platforms, agents, or tools. These tokens often focus on decentralized AI infrastructure, data, or automation.",
         "defining_signals": [
-          "Tokens tied to AI, blockchain, or tech platforms.",
-          "Emphasis on decentralized infrastructure or AI integration.",
-          "Claims of utility in governance, staking, or platform access.",
-          "Tokens often lack clear documentation or audits.",
-          "Community-driven narratives with speculative utility."
+          "Integration with AI platforms or tools",
+          "Focus on decentralized AI infrastructure or data marketplaces",
+          "Claims of AI-powered automation or agent-based functionality",
+          "Utilization of AI for productivity, analytics, or governance",
+          "Inference of AI-driven workflows or smart contracts"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "PRIMIS",
+            "token_name": "Primis Protocol",
+            "token_address": "2DfBjrPFZjDTiCY6pxchS6aSdUdEpkm7PdqpovHjBAGS"
+          },
+          {
+            "token_symbol": "CONFER",
+            "token_name": "Confer",
+            "token_address": "5FwWMqHxdbafnB1aoA5ZmnzHQ1ByrULyJ16YgnRpBAGS"
+          },
+          {
+            "token_symbol": "QUARRY",
+            "token_name": "Quarry",
+            "token_address": "2dTj1md4aGw5sXd9VCmFRnVhZH5LyDfGkG39Eh37BAGS"
+          },
           {
             "token_symbol": "ALCH",
             "token_name": "Alchemist AI",
             "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "PRIMIS",
-            "token_name": "Primis Protocol",
-            "token_address": "2DfBjrPFZjDTiCY6pxchS6aSdUEpkm7PdqpovHjBAGS"
           },
           {
             "token_symbol": "CMEM",
@@ -300,14 +340,34 @@
             "token_address": "2TsmuYUrsctE57VLckZBYEEzdokUF8j8e1GavekWBAGS"
           },
           {
-            "token_symbol": "SPL",
+            "token_symbol": "SPLyc",
             "token_name": "Splyc App",
             "token_address": "BCNue5xwfm3prevLyK3yGg7XNuiPCPCg8TfGJxxhpump"
           },
           {
-            "token_symbol": "KLED",
-            "token_name": "KLEDAI",
-            "token_address": "1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm"
+            "token_symbol": "OBJECTS",
+            "token_name": "Talking Objects",
+            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpump"
+          },
+          {
+            "token_symbol": "SIGNAL",
+            "token_name": "Moxie Marlinspike",
+            "token_address": "G7pJX2R4CnzW23q8kRTJBxAGZ5T3VAsrv6aFxJFhBAGS"
+          },
+          {
+            "token_symbol": "FLOW",
+            "token_name": "Flowier",
+            "token_address": "7DBG9zXzubKg7ua588QcNrznwTgvT1xHvEcxCYL4pump"
+          },
+          {
+            "token_symbol": "SKILLSTACK",
+            "token_name": "SkillStack",
+            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
+          },
+          {
+            "token_symbol": "SPLC",
+            "token_name": "Splyc App",
+            "token_address": "BCNue5xwfm3prevLyK3yGg7XNuiPCPCg8TfGJxxhpump"
           },
           {
             "token_symbol": "QUARRY",
@@ -315,9 +375,9 @@
             "token_address": "2dTj1md4aGw5sXd9VCmFRnVhZH5LyDfGkG39Eh37BAGS"
           }
         ],
-        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong AI and tech narrative, active community engagement, and speculative utility claims.",
+        "leader_hint_token_address": "2DfBjrPFZjDTiCY6pxchS6aSdUdEpkm7PdqpovHjBAGS",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Growing interest in AI-based utility tokens, especially those tied to decentralized infrastructure and data marketplaces.",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -327,136 +387,30 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Crypto Integration Tokens",
-        "description": "This META involves tokens that integrate AI concepts or tools into their core narrative. These tokens often claim to leverage AI for governance, analytics, or platform features, though many lack clear utility or documentation.",
+        "meta_name": "Meme-Driven Tokens",
+        "description": "Tokens leveraging internet memes and viral internet culture to drive community engagement and speculative interest. These tokens often repurpose existing memes or create new ones to generate buzz.",
         "defining_signals": [
-          "Tokens claiming AI integration for governance, analytics, or platform features.",
-          "Lack of clear utility or documentation.",
-          "Community-driven narratives with speculative AI claims.",
-          "Tokens often launched on platforms like j7tracker.com.",
-          "High social media engagement and meme potential."
+          "Names and themes derived from viral internet memes or cultural references",
+          "Strong community-driven narratives with no prior non-crypto cultural origin",
+          "High social media engagement and viral potential",
+          "Lack of traditional utility or product backing",
+          "Frequent use of humor, absurdity, or shock value in branding"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "HOMUNCULUS",
-            "token_name": "Homunculus",
-            "token_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGS"
-          },
-          {
-            "token_symbol": "CMEM",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYEEzdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "SPL",
-            "token_name": "Splyc App",
-            "token_address": "BCNue5xwfm3prevLyK3yGg7XNuiPCPCg8TfGJxxhpump"
-          },
-          {
-            "token_symbol": "KLED",
-            "token_name": "KLEDAI",
-            "token_address": "1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm"
-          },
-          {
-            "token_symbol": "QUARRY",
-            "token_name": "Quarry",
-            "token_address": "2dTj1md4aGw5sXd9VCmFRnVhZH5LyDffkG39Eh37BAGS"
-          },
-          {
-            "token_symbol": "PRIMIS",
-            "token_name": "Primis Protocol",
-            "token_address": "2DffBjrPFZjDTiCY6pxchS6aSdUdEpEpkm7PdqpovHjBAGS"
-          }
-        ],
-        "leader_hint_token_addressress": "2TsmuYUrsctE57VLckZBYEEzdokUF8j8e1GavekWBAGS",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong AI integration claims, active community engagement, and speculative utility.",
-        "leader_token": {
-          "token_symbol": "KLED",
-          "token_name": "KLEDAI",
-          "token_address": "1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm",
-          "usd_market_cap": 29826546.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Culture Revival",
-        "description": "This META is characterized by tokens leveraging well-established internet memes and cultural references, often repurposed for crypto narratives. These tokens capitalize on nostalgia and viral internet culture to drive community engagement and speculative interest.",
-        "defining_signals": [
-          "Use of iconic or widely recognized memes (e.g., Wojak, Clippy, Momo).",
-          "Meme origins traceable to 2000s-2020s internet culture.",
-          "Community-driven narratives with no prior crypto context.",
-          "Strong social media presence and viral potential.",
-          "Tokens often have no utility beyond meme value."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "CLIP",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "MOMO",
-            "token_name": "Momo",
-            "token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brr2oGkzex3ebonk"
-          },
-          {
-            "token_symbol": "GIGA",
-            "token_name": "GIGACHAD",
-            "token_address": "63LfDm8MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "RAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          }
-        ],
-        "leader_hint_token_address": "63LfDd8MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong meme recognition, viral social media presence, and community engagement.",
-        "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 19894670.67
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Community-Driven and Niche Meme Tokens",
-        "description": "This META consists of tokens that are community-driven and often lack a clear non-crypto cultural origin. These tokens are typically launched with a niche meme or concept, often with no prior internet culture context.",
-        "defining_signals": [
-          "Tokens with no verifiable non-crypto cultural origin.",
-          "Community-driven narratives with no prior meme or cultural context.",
-          "Highly speculative and often launched on PumpFun or similar platforms.",
-          "Limited documentation, audits, or team transparency.",
-          "Tokens often rely on social media virality and hype."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "NEEGA",
-            "token_name": "Lil Neega",
-            "token_address": "5MN4Bv1ndZXb5SeQrzcuUGitS4eF13cW66Bhu97rpump"
-          },
           {
             "token_symbol": "RIZZENTINE",
             "token_name": "RIZZENTINE",
             "token_address": "9yRYJT3Lq2Kq2ZheqLcZayKx4ZnARjr7na1cS32Zpump"
           },
           {
+            "token_symbol": "NEEGA",
+            "token_name": "Lil Neega",
+            "token_address": "5MN4Bv1ndZXb5SeQrzcuUGitS4eF13cW66Bhu97rpump"
+          },
+          {
             "token_symbol": "HAMSTERS",
             "token_name": "4 HAMSTERS",
-            "token_address": "FC6D3y4wTLSxPWaRg56uGXXnZQ8mHdkj8bYP5Ycxtpump"
+            "token_address": "FC6D3y4wTLSxPWaRg56uGXnZQ8mHdkj8bYP5Ycxtpump"
           },
           {
             "token_symbol": "SLOPCOIN",
@@ -466,30 +420,226 @@
           {
             "token_symbol": "TYLER",
             "token_name": "Tyler Oliveira Support Fund",
-            "token_address": "69Y2QNL3tQeWZbQqyQvij85mXpdRDeVKEWNXFshyWBAGS"
+            "token_address": "69Y2QNL3tQeWZbQyQvij85mXpdRDeVKEWNXFshyWBAGS"
           },
           {
-            "token_symbol": "HOMUNCULUS",
-            "token_name": "Homunculus",
-            "token_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGS"
+            "token_symbol": "ROKO",
+            "token_name": "ROKO",
+            "token_address": "CZ4ra1Cxx8ZxVJeQxLYocGBxAMCPpjDSBHjqp3egroko"
+          },
+          {
+            "token_symbol": "TANKELI",
+            "token_name": "Taneli Armanto",
+            "token_address": "BirJWqKdHnh1LpEm9E3WF1DVLzx1dsEsbkdkb55yBAGS"
+          },
+          {
+            "token_symbol": "TOWELIE",
+            "token_name": "Towelie",
+            "token_address": "9Cxm1dvN3QQFohR2V6uQ3ULvuf2aWNvE8DQnYHiYpump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "BUTT",
+            "token_name": "Buttcoin",
+            "token_address": "Cm6fNnMk7NfStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
+          },
+          {
+            "token_symbol": "GIGA",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
+          },
+          {
+            "token_symbol": "MOMO",
+            "token_name": "Momo",
+            "token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGgKzex3ebonk"
           }
         ],
-        "leader_hint_token_address": "9yRYJT3Lq2Kq2ZheqLcZayKx4ZnARjr7na1cS32Zpump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong community-driven narratives, lack of prior cultural context, and high speculative engagement.",
+        "leader_hint_token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong meme narratives with viral potential, active community engagement, and clear cultural references make this the most prominent theme.",
         "leader_token": {
-          "token_symbol": "HOMUNCULUS",
-          "token_name": "Homunculus",
-          "token_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGS",
-          "usd_market_cap": 207480.33
+          "token_symbol": "GIGA",
+          "token_name": "GIGACHAD",
+          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+          "usd_market_cap": 36015683.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "GameFi and Play-to-Earn Tokens",
+        "description": "Tokens tied to gaming ecosystems, including play-to-earn models, in-game economies, or game-related utilities. These tokens often leverage gaming narratives and community engagement.",
+        "defining_signals": [
+          "Integration with gaming platforms or mechanics",
+          "Play-to-earn or in-game rewards",
+          "Community-driven game development or funding",
+          "Tokenomics tied to game progression or ownership",
+          "Lack of traditional utility outside the game context"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "RIVALS",
+            "token_name": "Trench Rivals",
+            "token_address": "2H3cdEiiSApBB8qJBqw2T1HoD7YZugejGYc2FBoVpump"
+          },
+          {
+            "token_symbol": "THECORE",
+            "token_name": "The Core",
+            "token_address": "5R7XvfZbjJdWwyCD9viR5g3KLho2JrzTozXeBEfsBAGS"
+          },
+          {
+            "token_symbol": "IDLE",
+            "token_name": "IdleMine",
+            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
+          },
+          {
+            "token_symbol": "WEED",
+            "token_name": "WEED Token",
+            "token_address": "E2gLkTXSbbTMmJM19xkquawun2ShJSi7G59A8c2PtbFa"
+          },
+          {
+            "token_symbol": "JAILED",
+            "token_name": "JAILED",
+            "token_address": "PXespMoquGgnrPBgmz3BmVEpnJq8LxKtyQJ4qadr1o1"
+          },
+          {
+            "token_symbol": "CARDS",
+            "token_name": "Collector Crypt",
+            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+          },
+          {
+            "token_symbol": "OPUS",
+            "token_name": "Opus The Trencher",
+            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+          },
+          {
+            "token_symbol": "PANDU",
+            "token_name": "Pandu Pandas",
+            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+          },
+          {
+            "token_symbol": "REKILL",
+            "token_name": "rekill",
+            "token_token": "ADnE9o6B7WHhzaRctmbqdPCRiLiA34WBXzYPbrFqBAGG"
+          },
+          {
+            "token_symbol": "BROKE",
+            "token_name": "TheBrokeWhale",
+            "token_token": "5PKit456Q6ZffkuVXet66jXV9CgFHRSSL9UGn6Gp3pump"
+          },
+          {
+            "token_symbol": "BOOGIE",
+            "token_name": "Boogie Bug",
+            "token_token": "7LCg1zkom5ewGb43RmrLmgPJh6oZQ6BMhNtVqUnxpump"
+          },
+          {
+            "token_symbol": "KAI",
+            "token_name": "Kai's Mind",
+            "token_token": "2PvDmoQ8f9VpopfcstnLj2Ff9YjiBjhvxvV6EGPWpump"
+          }
+        ],
+        "leader_hint_token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKKxYjp",
+        "confidence_0_100": 65,
+        "confidence_rationale": "Emerging trend in gaming-related tokens, especially those with community-driven narratives and speculative utility.",
+        "leader_token": {
+          "token_symbol": "IDLE",
+          "token_name": "IdleMine",
+          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+          "usd_market_cap": 15148519.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Community-Driven and NFT-Related Tokens",
+        "description": "Tokens that rely on community engagement and often have ties to NFTs or collectibles projects. These tokens often emphasize community ownership and participation.",
+        "defining_signals": [
+          "Strong community-driven narratives",
+          "Ties to NFTs or collectible projects",
+          "Community governance or airdrop strategies",
+          "Lack of traditional utility beyond community engagement",
+          "High social media and Discord activity"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "TYLER",
+            "token_name": "Tyler Oliveira Support Fund",
+            "token_address": "69Y2QNL3tQeWZbQyQvij85mXpdRDeVKEWNXFshyWBAGS"
+          },
+          {
+            "token_symbol": "PANDU",
+            "token_name": "Pandu Pandas",
+            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+          },
+          {
+            "token_symbol": "FUNDICO",
+            "token_name": "Fundico",
+            "token_address": "HSq9Ao7Sgkd1i8eNFboqMJSoAietFCRr3ubidJ7sBAGS"
+          },
+          {
+            "token_symbol": "GOODSHIT",
+            "token_name": "we ate off that twin",
+            "token_address": "9BjpfijA6apAC5JHcVWTtBeeoKaqKgp3S9b6tK3rpump"
+          },
+          {
+            "token_symbol": "BELAC",
+            "token_name": "Belac Dev Fund",
+            "token_address": "JAtS3FzpiMQMcRmPBEzsaTC9mAiprsptWPDTpoqXBAGS"
+          },
+          {
+            "token_symbol": "LEILAN",
+            "token_name": "Temple Of Leilan",
+            "token_address": "3JivnXjW5kYkGrQ6jdxFuarqw6wcimLiVBgRs9SKBAGS"
+          },
+          {
+            "token_symbol": "FARTLESS",
+            "token_name": "Fartless",
+            "token_address": "8AinLThG8AHdcqQ5FhDTR7TZgxJhucBvTTxEQT6ppump"
+          },
+          {
+            "token_symbol": "FROG",
+            "token_name": "The First Frog",
+            "token_address": "7P8RM8hpQttAzC4an8CaYHko1njts73P1mawgbW3pump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "KAI",
+            "token_name": "Kai's Mind",
+            "token_address": "2PvDmoQ8f9VpopfcstnLj2Ff9YjiBjhvxvV6EGPWpump"
+          },
+          {
+            "token_symbol": "PANDU",
+            "token_name": "Pandu Pandas",
+            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+          },
+          {
+            "token_symbol": "FUNDICO",
+            "token_name": "Fundico",
+            "token_address": "HSq9Ao7Sgkd1i8eNFboqMJSoAietFCRr3ubidJ7sBAGS"
+          }
+        ],
+        "leader_hint_token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk",
+        "confidence_0_100": 60,
+        "confidence_rationale": "Community-driven tokens are gaining traction, especially those with NFT or collectible ties and active Discord engagement.",
+        "leader_token": {
+          "token_symbol": "Mia",
+          "token_name": "Mia Ko",
+          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
+          "usd_market_cap": 2882145.99
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Meme Culture Revival' and 'Political and Celebrity Meme Tokens' METAs are currently the most active and dominant, driven by strong social media engagement and viral narratives. The 'AI and Tech-Driven Utility Tokens' META is gaining traction due to the growing interest in AI and blockchain integration. The 'Community-Driven and Niche Meme Tokens' META is fading slightly as newer, more culturally resonant tokens emerge. The 'AI and Crypto Integration Tokens' META is emerging as a new trend, leveraging the intersection of AI and crypto for speculative value.",
+    "meta_rotation_note": "Meme-Driven Tokens remain dominant due to strong community engagement and viral potential. AI-Driven Utility Tokens are emerging as a strong contender with growing interest in decentralized AI infrastructure. Political and Social Commentary Tokens are gaining momentum, especially around high-profile figures and events. GameFi and Play-to-Earn Tokens are showing signs of fading as the novelty of play-to-earn models wanes. Community-Driven and NFT-Related Tokens are stable but not growing as rapidly as other categories.",
     "meta_leaders": [
       {
-        "meta_name": "Political and Celebrity Meme Tokens",
+        "meta_name": "Political and Social Commentary Tokens",
         "leader_token": {
           "token_symbol": "MELANIA",
           "token_name": "Melania Meme",
@@ -498,7 +648,7 @@
         }
       },
       {
-        "meta_name": "AI and Tech-Driven Utility Tokens",
+        "meta_name": "AI-Driven Utility Tokens",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -507,30 +657,30 @@
         }
       },
       {
-        "meta_name": "AI and Crypto Integration Tokens",
+        "meta_name": "Meme-Driven Tokens",
         "leader_token": {
-          "token_symbol": "KLED",
-          "token_name": "KLEDAI",
-          "token_address": "1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm",
-          "usd_market_cap": 29826546.0
+          "token_symbol": "GIGA",
+          "token_name": "GIGACHAD",
+          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+          "usd_market_cap": 36015683.0
         }
       },
       {
-        "meta_name": "Meme Culture Revival",
+        "meta_name": "GameFi and Play-to-Earn Tokens",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 19894670.67
+          "token_symbol": "IDLE",
+          "token_name": "IdleMine",
+          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+          "usd_market_cap": 15148519.0
         }
       },
       {
-        "meta_name": "Community-Driven and Niche Meme Tokens",
+        "meta_name": "Community-Driven and NFT-Related Tokens",
         "leader_token": {
-          "token_symbol": "HOMUNCULUS",
-          "token_name": "Homunculus",
-          "token_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGS",
-          "usd_market_cap": 207480.33
+          "token_symbol": "Mia",
+          "token_name": "Mia Ko",
+          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
+          "usd_market_cap": 2882145.99
         }
       }
     ]
