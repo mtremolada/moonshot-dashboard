@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-22T22:54:11.967468Z",
+  "generated_at_utc": "2026-01-22T23:54:38.723458Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 160,
+  "token_context_count": 167,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 10 PVP group(s); excluding 14 token(s) from META prompt."
+    "Detected 11 PVP group(s); excluding 16 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 14,
+  "pvp_excluded_token_count": 16,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -198,6 +198,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "arc",
+      "tokens": [
+        {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 65379868.0,
+          "processed_at": "2026-01-22T17:02:37.837408Z"
+        },
+        {
+          "token_symbol": "ARC",
+          "token_name": "Redemption Arc",
+          "token_address": "DCgZjb2LN5r9Ck5VZAATh8x3sTUHyTzEguThGqh1pump",
+          "usd_market_cap": 1997438.79,
+          "processed_at": "2026-01-22T23:10:31.490048Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "soap",
       "tokens": [
         {
@@ -221,30 +241,20 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI and Future Tech",
-        "description": "Tokens centered around AI, machine learning, and futuristic tech concepts are emerging. These tokens often focus on AI development, autonomous agents, and decentralized AI infrastructure.",
+        "meta_name": "AI-Driven Utility",
+        "description": "Tokens tied to AI development, deployment, or integration. These often focus on AI agents, tools, or platforms with potential governance or access utilities.",
         "defining_signals": [
-          "AI-related themes in token descriptions",
-          "Focus on machine learning or autonomous agents",
-          "Use of futuristic tech jargon",
-          "Integration with AI platforms or tools",
-          "Decentralized AI infrastructure or governance"
+          "AI agent or tool integration as a core theme",
+          "Claims of governance, access, or staking utilities for AI systems",
+          "Tokenomics tied to AI development or deployment",
+          "Lack of official documentation or team transparency",
+          "Community-driven narratives around AI innovation"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "HUGGI",
-            "token_name": "Huggi",
-            "token_address": "96zMCM9nALK2cDv5p2CiDkGrgbJX9McCnQkxyBaoBAGS"
-          },
-          {
-            "token_symbol": "QTX",
-            "token_name": "QuantumX",
-            "token_address": "AvMdYR4dVLatpMa3YecWhDrerXp5Wx7sNLNTyiA3pump"
-          },
-          {
-            "token_symbol": "ELIZA TOWN",
-            "token_name": "Eliza Town",
-            "token_address": "CZRsbB6BrHsAmGKeoxyfwzCyhttXvhfEukXCWnseBAGS"
+            "token_symbol": "POLLEN",
+            "token_name": "Pollinet",
+            "token_address": "ApRorkYfFt2nZ4jj5E1fvoHd9pK7YJWVQM8DYX5cyai"
           },
           {
             "token_symbol": "CODEX",
@@ -257,24 +267,110 @@
             "token_address": "32Bea1jmNj2669zP3JEzqoP6JgZH7cLYhmnQ5cNrBAGS"
           },
           {
-            "token_symbol": "FSAGA",
-            "token_name": "Saga Genesis Token FL",
-            "token_address": "G7bd8E2QPJpwYFHCkr3zYeRGsB7ysFQzesvPQsJpYoj"
+            "token_symbol": "GRASP",
+            "token_name": "GRASP",
+            "token_address": "4uUB9gLxUdh6jRMr1E5hgHEjQo7Z7gMPCjLHAm4KBAGS"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "AUTOMEM",
+            "token_name": "AUTOMEM",
+            "token_address": "CV485ySXfgFiwLtbh815JRukH4r9ChLhddqsAaZKBAGS"
           },
           {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+            "token_symbol": "LEON",
+            "token_name": "LEON AI",
+            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
+          }
+        ],
+        "leader_hint_token_address": "BRIDGE",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Tokens like BRIDGE and GRASP are showing strong AI integration themes, with claims of governance and access utilities. This is a growing trend in the AI-driven utility space.",
+        "leader_token": {
+          "token_symbol": "GRASP",
+          "token_name": "GRASP",
+          "token_address": "4uUB9gLxUdh6jRMr1E5hgHEjQo7Z7gMPCjLHAm4KBAGS",
+          "usd_market_cap": 555658.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Game Ecosystems",
+        "description": "Tokens tied to AI-powered game development, play-to-earn mechanics, or virtual worldss. These often claim to enable AI-driven game experiences or economies.",
+        "defining_signals": [
+          "AI-powered game development or play-to-earn mechanics",
+          "Claims of virtual world or game economies",
+          "Tokenomics tied to in-game transactions or rewards",
+          "Lack of official documentation or team transparency",
+          "Community-driven narratives around game innovation"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "HS",
+            "token_name": "HyperScape",
+            "token_address": "EJDVmpQk1jYvmtik4zMN7dFo7Mv9mzzzVswzdzXnpump"
           },
           {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
+            "token_symbol": "GIANT",
+            "token_name": "GIANTAI",
+            "token_address": "CnQLwzyojahWyz1Gut3LciHYAK9vFycqJFRSyA6cyai"
+          },
+          {
+            "token_symbol": "PEACHES",
+            "token_name": "Prunus Persica",
+            "token_address": "CkvYTRMBVPygZu6mcRCXs6ekb6o4CSG6RpJMJ3PYpump"
+          },
+          {
+            "token_symbol": "RIVALS",
+            "token_name": "Trench Rivals",
+            "token_address": "2H3cdEiiSApBB8qJBqw2T1HoD7YZugejGYc2FBoVppump"
+          },
+          {
+            "token_symbol": "CITY",
+            "token_name": "Gas City",
+            "token_address": "VTCQxY6bAE6TJyYWxeJZzaXuK23pitUqSZ8gGk9BAGS"
+          },
+          {
+            "token_symbol": "BRIDGE",
+            "token_name": "BridgeMind",
+            "token_address": "32Bea1jmNj2669zP3JEzqoP6JgZH7cLYhmnQ5cNrBAGS"
+          }
+        ],
+        "leader_hint_token_address": "HS",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens like HS and GIANT are showing strong AI-powered game ecosystem themes, with claims of virtual world economies and play-to-earn mechanics. This is a growing trend in the AI-driven utility space.",
+        "leader_token": {
+          "token_symbol": "BRIDGE",
+          "token_name": "BridgeMind",
+          "token_address": "32Bea1jmNj2669zP3JEzqoP6JgZH7cLYhmnQ5cNrBAGS",
+          "usd_market_cap": 368602.26
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Ecosystems",
+        "description": "Tokens focused on AI agent development, orchestration, or deployment. These often claim to enable autonomous AI systems or agent-based economies.",
+        "defining_signals": [
+          "AI agent orchestration or deployment as a core theme",
+          "Claims of autonomous AI systems or agent-based economies",
+          "Tokenomics tied to AI agent interactions or governance",
+          "Lack of official documentation or team transparency",
+          "Community-driven narratives around AI agent innovation"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CITY",
+            "token_name": "Gas City",
+            "token_address": "VTCQxY6bAE6TJyYWxeJZzaXuK23pitUqSZ8gGk9BAGS"
+          },
+          {
+            "token_symbol": "RELE",
+            "token_name": "ReLE",
+            "token_address": "9tSDjWekS4jnRj7jcmokeXgTv4p4fpWDR5DpcYGTBAGS"
+          },
+          {
+            "token_symbol": "HS",
+            "token_name": "HyperScape",
+            "token_address": "EJDVmpQk1jYvmtik4zMN7dFo7Mv9mzzzVswzdzXnpump"
           },
           {
             "token_symbol": "LEON",
@@ -282,405 +378,165 @@
             "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
           },
           {
-            "token_symbol": "FRANK",
-            "token_name": "Frankenstein AI",
-            "token_address": "81UmREFJsQe78ggSFxCUxwEPFTKWHJ93oP9cmUD1BAGS"
+            "token_symbol": "GIANT",
+            "token_name": "GIANTAI",
+            "token_address": "CnQLwzyojahWyz1Gut3LciHYAK9vFycqJFRSyA6cyai"
           },
           {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4Jccwo1dmBGHsyhzodcPqnEVpump"
+            "token_symbol": "PEACHES",
+            "token_name": "Prunus Persica",
+            "token_address": "CkvYTRMBVPygZu6mcRCXs6ekb6o4CSG6RpJMJ3PYpump"
           }
         ],
-        "leader_hint_token_address": "ELIZA TOWN",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Tokens like Eliza Town and BridgeMind are leading the AI and future tech narrative with strong community engagement and clear utility in AI development.",
-        "leader_token": {
-          "token_symbol": "IDLE",
-          "token_name": "IdleMine",
-          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-          "usd_market_cap": 15345680.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Crypto Integration",
-        "description": "Tokens combining AI and crypto themes are emerging. These projects often focus on AI-driven tools, decentralized AI infrastructure, or AI-based governance models.",
-        "defining_signals": [
-          "Integration of AI and blockchain technologies",
-          "AI-driven tools or platforms",
-          "Decentralized AI infrastructure",
-          "AI-based governance or decision-making",
-          "Use of AI for data analysis or automation"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "ELIZA TOWN",
-            "token_name": "Eliza Town",
-            "token_token_address": "CZRsbB6BrHsAmGKeoxyfwzCyhttXvhfEukXCWnseBAGS"
-          },
-          {
-            "token_symbol": "BRIDGE",
-            "token_name": "BridgeMind",
-            "token_token_address": "32Bea1jmNj2669zP3JEzqoP6JgZH7tLYhmnQ5cNrBAGS"
-          },
-          {
-            "token_symbol": "CODEX",
-            "token_name": "CODEX",
-            "token_token_address": "HAK9cX1jfYmcNpr6keTkLvxehGPWKELXSu7GH2ofBAGS"
-          },
-          {
-            "token_symbol": "FSAGA",
-            "token_name": "Saga Genesis Token FL",
-            "token_token_address": "G7bd8E2QPJpwYFHCkr3zYeRGsB7ysFQzesvPQsJpYoj"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_token_address": "A9E2AopuG56LWYYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
-          },
-          {
-            "token_symbol": "LEON",
-            "token_name": "LEON AI",
-            "token_token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "FRANK",
-            "token_name": "Frankenstein AI",
-            "token_token_address": "81UmREFJsQe78ggSFxCUxwEPFTKWHJ93oP9cmUD1BAGS"
-          },
-          {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "GRASP",
-            "token_name": "GRASP",
-            "token_token_address": "4uUB9gLxUdh6jRMr1E5hgHEjQo7Z7gMPCjLHAm4KBAGS"
-          },
-          {
-            "token_symbol": "FLYBET",
-            "token_name": "Flywheel Bet",
-            "token_token_address": "Bdh5n3qvb1JDz5rjEjZ3mUbHQfaq5sjwikL5Acxssurg"
-          }
-        ],
-        "leader_hint_token_address": "ELIZA TOWN",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Tokens like Eliza Town and BridgeMind are leading the AI and crypto integration trend with strong community engagement and clear utility in AI development.",
-        "leader_token": {
-          "token_symbol": "IDLE",
-          "token_name": "IdleMine",
-          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-          "usd_market_cap": 15345680.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Community-Driven Projects",
-        "description": "Tokens with strong community focus and decentralized governance are emerging. These projects often emphasize community ownership, decentralized decision-making, and grassroots growth.",
-        "defining_signals": [
-          "Community-driven governance or decision-making",
-          "Decentralized ownership models",
-          "Grassroots marketing or community-led initiatives",
-          "Open-source or transparent development",
-          "Strong emphasis on community engagement"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "ELIZA TOWN",
-            "token_name": "Eliza Town",
-            "token_address_address": "CZRsbB6BrHsAmGKeoxyfwzCyhttXvhfEukXCWnseBAGS"
-          },
-          {
-            "token_symbol": "BRIDGE",
-            "token_name": "BridgeMind",
-            "token_token_address": "32Bea1jmNj2669zP3JEzqoP6JgZH7tLYhmnQ5cNrBAGS"
-          },
-          {
-            "token_symbol": "FSAGA",
-            "token_name": "Saga Genesis Token FL",
-            "token_token_address": "G7bd8E2QPJpwYFHCkr3zYeRGsB7ysFQzesvPQsJpYoj"
-          },
-          {
-            "token_symbol": "DAVE",
-            "token_name": "Dave",
-            "token_token_address": "9NEym1p95EYaY1X5iFuN6dWHb9PepLvcJkFLmD6eG4sa"
-          },
-          {
-            "token_symbol": "Misanthropic",
-            "token_name": "Misanthropic",
-            "token_token_address": "AWQSXRxiNUGLj9moJMFhq2axqwu6Dqerp16ftj4FjLyG"
-          },
-          {
-            "token_symbol": "BALLSCOIN",
-            "token_name": "BALLSCOIN",
-            "token_token_address": "GBqbHGdcj5srqV4AvWThraYc3rrkGFhpp1cxZQ5spump"
-          },
-          {
-            "token_symbol": "SNOW",
-            "token_name": "SNOW - 251110-1527",
-            "token_token_address": "3oq6ScCNPr4KtDiP8GYdxeRtk7iqqwyR5X3E6mRyhere"
-          },
-          {
-            "token_symbol": "MONKBIZ",
-            "token_name": "Business Monkey",
-            "token_token_address": "DZ5ZxgSTJEHwKJNwMwjiQdwuectjkPuXpyjUa2pmpump"
-          },
-          {
-            "token_symbol": "POLARBEARS",
-            "token_name": "Polar Bears International",
-            "token_token_address": "2ST4PgetBDjR5dQqdUnJLVNQg8Y5pD1iowfGMXHvBAGS"
-          },
-          {
-            "token_symbol": "SOMNICORE",
-            "token_name": "SOMNICORE",
-            "token_token_address": "4BcaY3TvKYc9FiPvUDkcTQ4XLRjmuY9FK2rBgWdTpump"
-          },
-          {
-            "token_symbol": "RBLX6900",
-            "token_name": "Roblox Index 6900",
-            "token_token_address": "DCFCBFU4pYY3r8aYikVEwbABrFGczbunxCLXR943pump"
-          },
-          {
-            "token_symbol": "MTA",
-            "token_name": "make trends awesome",
-            "token_token_address": "AMrvWwoqMU1ntFoVUUgPorheEDuddEhtsq5zPQFsTRND"
-          }
-        ],
-        "leader_hint_token_address": "ELIZA TOWN",
+        "leader_hint_token_address_address": "GIANT",
         "confidence_0_100": 75,
-        "confidence_rationale": "Community-driven projects like Eliza Town and BridgeMind are gaining traction with strong community engagement and decentralized governance models.",
+        "confidence_rationale": "Tokens like GIANT and PEACHES are showing strong AI agent ecosystem themes, with claims of autonomous systems and agent-based economies. This is a growing trend in the AI-driven utility space.",
         "leader_token": {
-          "token_symbol": "ELIZA TOWN",
-          "token_name": "Eliza Town",
-          "token_address": "CZRsbB6BrHsAmGKeoxyfwzCyhttXvhfEukXCWnseBAGS",
-          "usd_market_cap": 676565.15
+          "token_symbol": "LEON",
+          "token_name": "LEON AI",
+          "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS",
+          "usd_market_cap": 297054.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Culture and Internet Humor",
-        "description": "Tokens leveraging internet memes, viral phrases, and humor are gaining popularity. These tokens often draw from TikTok, Reddit, and YouTube trends to create a sense of community and shared experience.",
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens repurposing established memes, slang, or cultural references for crypto branding. These often leverage viral internet phrases or characters with no direct crypto origin.",
         "defining_signals": [
-          "Use of viral internet memes or phrases",
-          "Community-driven humor or inside jokes",
-          "References to TikTok or YouTube trends",
-          "Meme-based branding or naming",
-          "Leveraging viral social media content"
+          "Use of viral internet memes or slang as token names or themes",
+          "No verifiable non-crypto cultural origin for the token name or concept",
+          "Token descriptions that repackage existing memes or phrases for crypto context",
+          "Lack of external documentation or team transparency",
+          "Community-driven narratives with no official website or socials"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "RICK",
-            "token_name": "Pickle Rick",
-            "token_address": "FtX6b1fvAXZYiQ1jF6fBLoZ67ipHwQxs6bTt9KvQBAGS"
-          },
-          {
-            "token_symbol": "SHOGGOTH",
-            "token_name": "SHOGGOTH",
-            "token_address": "63wfFjQ2X2R9Avf51ZQeS2W15kKu1xQT488XA99BAGS"
-          },
-          {
-            "token_symbol": "COPCAT",
-            "token_name": "Copper Cat",
-            "token_address": "jpxfcZEzCX5h1usbaEhwG4vq9A1ZYoceU7wbBDApump"
-          },
-          {
-            "token_symbol": "KORI",
-            "token_name": "pomkori",
-            "token_address": "2gAFPvnr8WzLUcqdpBbeEtKuxNxhvusyrCDjbtWeBAGS"
-          },
-          {
-            "token_symbol": "SRC",
-            "token_name": "Screaming Rubber Chicken",
-            "token_address": "6kXcy5KkZSw8HA3YSFo2fifX5NCZVLPg7eEazGDnKtw4"
-          },
-          {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
-          },
-          {
-            "token_symbol": "POOPINU",
-            "token_name": "POOPINU - 251119-0814",
-            "token_address_address": "4kpdxGDP5To7JEXUC3X2Nh9cLgtqfWEBu8XYPyRKhere"
-          },
-          {
-            "token_symbol": "USOR",
-            "token_name": "United States Reserve",
-            "token_address_address": "USRNhpu5yt8kjoXBAGLf6maGEvWfkapt2XheuARXPvf"
-          },
-          {
-            "token_symbol": "DAVE",
-            "token_name": "Dave",
-            "token_token_address": "9NEym1p95EYaY1X5iFuN6dWHb9PepLvcJkFLmD6eG4sa"
-          },
-          {
-            "token_symbol": "Misanthropic",
-            "token_name": "Misanthropic",
-            "token_token_address": "AWQSXRxiNUGLj9moJMFhq2axqwu6Dqerp16ftj4FjLyG"
-          },
-          {
-            "token_symbol": "BALLSCOIN",
-            "token_name": "BALLSCOIN",
-            "token_token_address": "GBqbHGdcj5srqV4AvWThraYc3rrkGFhpp1cxZQ5spump"
-          },
-          {
-            "token_symbol": "SNOW",
-            "token_name": "SNOW - 251110-1527",
-            "token_token_address": "3oq6ScCNPr4KtDiP8GYdxeRtk7iqqwyR5X3E6mRyhere"
-          }
-        ],
-        "leader_hint_token_address": "RICK",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Pickle Rick and Shoggoth are strong indicators of the meme culture trend, with significant community engagement and viral appeal.",
-        "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 630024.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Retro Tech Nostalgia",
-        "description": "Tokens referencing retro technology, pop culture, and 80s/90s nostalgia are gaining traction. These tokens often draw from TV shows, classic computer hardware, or vintage internet culture to create a sense of familiarity and community.",
-        "defining_signals": [
-          "References to 80s/90s TV shows or computer hardware",
-          "Use of retro slang or phrases",
-          "Memes or references to classic internet culture",
-          "Nostalgic branding and naming conventions",
-          "Community-driven revival of old tech or media"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "RPUTER",
-            "token_name": "RALPHPUTER",
-            "token_address": "5LAccB8Fq7tpkifh143YuYB1d3k7adfRjYUMqERFhBBAGS"
-          },
-          {
-            "token_symbol": "RyanAir",
-            "token_name": "Ryan Air",
-            "token_address": "9R4zqfeasqeEKCEQxX89gbK5dXvkYegNxHmnZWjTpJWY"
-          },
-          {
-            "token_symbol": "BlueChip",
-            "token_name": "Blue Chip",
-            "token_address": "DHJVYXsikcimtcVo49FAZqYd1XPYPaXezYhbKArJbonk"
-          },
-          {
-            "token_symbol": "RICK",
-            "token_name": "Pickle Rick",
-            "token_address": "FtX6b1fvAXZYiQ1jF6cBLoZ67ipHwQxs6bTc9KvQBAGS"
-          },
-          {
-            "token_symbol": "SHOGGOTH",
-            "token_name": "SHOGGOTH",
-            "token_address": "63wfFjQ2X2R9Avf51ZQeS2W15kZu1xQT488XA99BAGS"
-          },
-          {
-            "token_symbol": "COPCAT",
-            "token_name": "Copper Cat",
-            "token_address": "jpxfcZEzCX5h1usbaEhwG4vq9A1ZYoceU7wbBDApump"
-          },
-          {
-            "token_symbol": "HUGGI",
-            "token_name": "Huggi",
-            "token_address": "96zMCM9nALK2cDv5p2CiDkGrgbJX9McCnQkxyBaoBAGS"
-          },
-          {
-            "token_symbol": "QTX",
-            "token_name": "QuantumX",
-            "token_address": "AvMdYR4dVLatpMa3YecWhDrerXp5Wx7sNLNTyiA3pump"
-          },
           {
             "token_symbol": "STICK",
             "token_name": "just a stick",
             "token_address": "7pcaz5hK7mFqK7YS2DBogNoQ2NDkSdBoB3crvHXKpump"
           },
           {
-            "token_symbol": "KAWAI",
-            "token_name": "KAWAI",
-            "token_address": "4Wc2Pbn13dB5FH5qNY3PVRRCsekey1ebHwCTfLdCBAGS"
+            "token_symbol": "COCK",
+            "token_name": "COCK COIN",
+            "token_address": "Axdd2DEpsQgTZ71ZTZwHyQ65iBpGA2p8d3Lm3sLopump"
           },
           {
-            "token_symbol": "ADEQUATE",
-            "token_name": "Adequate Coin",
-            "token_address": "4y1sJ7LU2pNq9qE6V5brQdUX1QuhbngW3kjH1s2pBAGS"
+            "token_symbol": "POOPINU",
+            "token_name": "POOPINU - 251119-0814",
+            "token_address": "4kpdxGDP5To7JEXUC3X2Nh9cLgtqfWEBu8XYPyRKhere"
           },
           {
-            "token_symbol": "POLLEN",
-            "token_name": "Pollinet",
-            "token_address": "ApRorkYfFt2nZ4jj5E1fvoHd9pK7YJWVQM8DYX5cyai"
+            "token_symbol": "BALLSCOIN",
+            "token_name": "BALLSCOIN",
+            "token_address": "GBqbHGdcj5srqV4AvWThraYc3rrkGFhpp1cxZQ5spump"
+          },
+          {
+            "token_symbol": "SNOW",
+            "token_name": "SNOW - 251110-1527",
+            "token_address": "3oq6ScCNPr4KtDiP8GYdxeRtk7iqqwyR5X3E6mRyhere"
+          },
+          {
+            "token_symbol": "MONKBIZ",
+            "token_name": "Business Monkey",
+            "token_address": "DZ5ZxgSTJEHwKJNwMwjiQdwuectjkPuXpyjUa2pmpump"
           }
         ],
-        "leader_hint_token_address": "RICK",
+        "leader_hint_token_address": "BALLSCOIN",
         "confidence_0_100": 85,
-        "confidence_rationale": "Multiple tokens reference retro tech, pop culture, and internet nostalgia. Pickle Rick and RALPHPUTER are particularly strong indicators of this trend.",
+        "confidence_rationale": "Multiple tokens are leveraging repurposed internet slang or phrases with no direct crypto origin. Tokens like BALLSCOIN and MONKBIZ are strong examples of this trend.",
         "leader_token": {
-          "token_symbol": "RyanAir",
-          "token_name": "Ryan Air",
-          "token_address": "9R4zqfeasqeEKCEQxX89gbK5dXvkYegNxHmnZWjTpJWY",
-          "usd_market_cap": 512806.12
+          "token_symbol": "BALLSCOIN",
+          "token_name": "BALLSCOIN",
+          "token_address": "GBqbHGdcj5srqV4AvWThraYc3rrkGFhpp1cxZQ5spump",
+          "usd_market_cap": 91363.46
         },
         "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Infrastructure",
+        "description": "Tokens focused on AI-powered infrastructure, including data processing, analytics, or deployment. These often claim to enable AI-driven infrastructure or services.",
+        "defining_signals": [
+          "AI-powered infrastructure or data processing",
+          "Claims of analytics or deployment services",
+          "Tokenomics tied to infrastructure usage or governance",
+          "Lack of official documentation or team transparency",
+          "Community-driven narratives around infrastructure innovation"
+        ],
+        "supportinging_tokens": [
+          {
+            "token_symbol": "BRIDGE",
+            "token_name": "BridgeMind",
+            "token_address": "32Bea1jmNj2669zP3JEzqoP6JgZH7cLYhmnQ5cNrBAGS"
+          },
+          {
+            "token_symbol": "GRASP",
+            "token_name": "GRASP",
+            "token_address": "4uUB9gLxUdh6jRMr1E5hgHEjQo7Z7gMPCjLHAm4KBAGS"
+          },
+          {
+            "token_symbol": "AUTOMEM",
+            "token_name": "AUTOMEM",
+            "token_address": "CV485ySXfgFiwLtbh815JRukH4r9ChLhddqsAaZKBAGS"
+          },
+          {
+            "token_symbol": "LEON",
+            "token_name": "LEON AI",
+            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
+          },
+          {
+            "token_symbol": "GIANT",
+            "token_name": "GIANTAI",
+            "token_address": "CnQLwzyojahWyz1Gut3LciHYAK9vFycqJFRSyA6cyai"
+          },
+          {
+            "token_symbol": "PEACHES",
+            "token_name": "Prunus Persica",
+            "token_address": "CkvYTRMBVPygZu6mcRCXs6ekb6o4CSG6RpJMJ3PYpump"
+          }
+        ],
+        "leader_hint_token_address": "BRIDGE",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens like BRIDGE and GRASP are showing strong AI-powered infrastructure themes, with claims of analytics and deployment services. This is a growing trend in the AI-driven utility space.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
-    "meta_rotation_note": "Retro Tech Nostalgia and AI and Crypto Integration are emerging as dominant themes, while Meme Culture and Community-Driven Projects are fading slightly as the market shifts toward more utility-focused tokens.",
+    "meta_rotation_note": "Meme Rebranding remains the dominant trend, with strong new entries in AI-Driven Utility and AI Agent Ecosystems. AI-Powered Game Ecosystems and AI-Powered Infrastructure are emerging but not yet dominant. Meme Rebranding is showing signs of fatigue as newer AI-focused themes gain traction.",
     "meta_leaders": [
       {
-        "meta_name": "AI and Future Tech",
+        "meta_name": "AI-Driven Utility",
         "leader_token": {
-          "token_symbol": "IDLE",
-          "token_name": "IdleMine",
-          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-          "usd_market_cap": 15345680.0
+          "token_symbol": "GRASP",
+          "token_name": "GRASP",
+          "token_address": "4uUB9gLxUdh6jRMr1E5hgHEjQo7Z7gMPCjLHAm4KBAGS",
+          "usd_market_cap": 555658.0
         }
       },
       {
-        "meta_name": "AI and Crypto Integration",
+        "meta_name": "AI-Powered Game Ecosystems",
         "leader_token": {
-          "token_symbol": "IDLE",
-          "token_name": "IdleMine",
-          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-          "usd_market_cap": 15345680.0
+          "token_symbol": "BRIDGE",
+          "token_name": "BridgeMind",
+          "token_address": "32Bea1jmNj2669zP3JEzqoP6JgZH7cLYhmnQ5cNrBAGS",
+          "usd_market_cap": 368602.26
         }
       },
       {
-        "meta_name": "Community-Driven Projects",
+        "meta_name": "AI Agent Ecosystems",
         "leader_token": {
-          "token_symbol": "ELIZA TOWN",
-          "token_name": "Eliza Town",
-          "token_address": "CZRsbB6BrHsAmGKeoxyfwzCyhttXvhfEukXCWnseBAGS",
-          "usd_market_cap": 676565.15
+          "token_symbol": "LEON",
+          "token_name": "LEON AI",
+          "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS",
+          "usd_market_cap": 297054.0
         }
       },
       {
-        "meta_name": "Meme Culture and Internet Humor",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 630024.0
-        }
-      },
-      {
-        "meta_name": "Retro Tech Nostalgia",
-        "leader_token": {
-          "token_symbol": "RyanAir",
-          "token_name": "Ryan Air",
-          "token_address": "9R4zqfeasqeEKCEQxX89gbK5dXvkYegNxHmnZWjTpJWY",
-          "usd_market_cap": 512806.12
+          "token_symbol": "BALLSCOIN",
+          "token_name": "BALLSCOIN",
+          "token_address": "GBqbHGdcj5srqV4AvWThraYc3rrkGFhpp1cxZQ5spump",
+          "usd_market_cap": 91363.46
         }
       }
     ]
