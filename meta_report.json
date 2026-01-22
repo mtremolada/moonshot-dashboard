@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-01-22T09:02:21.157639Z",
+  "generated_at_utc": "2026-01-22T10:02:44.795471Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
   "token_context_count": 140,
@@ -141,23 +141,78 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political and Celebrity Meme Tokens",
-        "description": "Tokens that reference political figures, celebrities, or public personalities, often leveraging memes or viral content tied to them. These tokens are typically community-driven and satirical.",
+        "meta_name": "Crypto-Driven Utility Tokens",
+        "description": "Tokens with utility claims tied to real-world applications or blockchain infrastructure. These often leverage AI, DeFi, or game-based ecosystems.",
         "defining_signals": [
-          "Names or themes tied to public figures or political memes",
-          "Leverage viral or satirical content related to the individual",
-          "Community-driven with no official endorsement from the referenced figure"
+          "Claims of real-world utility or infrastructure integration",
+          "Names referencing AI, DeFi, or blockchain infrastructure",
+          "Inferred governance or staking mechanics",
+          "Community-driven development or ecosystem growth",
+          "Names derived from technical or infrastructure concepts"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MELANIA",
-            "token_name": "Melania Meme",
-            "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
+            "token_symbol": "AVAA",
+            "token_name": "Ava AI",
+            "token_address": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump"
           },
+          {
+            "token_symbol": "LUMEN",
+            "token_name": "LUMEN",
+            "token_address": "EKPWiLkk5fwTNZVeL5PrKSFDjdJrvRkvoPafVT54ppump"
+          },
+          {
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+          },
+          {
+            "token_symbol": "GHOST",
+            "token_name": "GhostwareOS",
+            "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6ssEHRKnwqeBGHST"
+          },
+          {
+            "token_symbol": "RADR",
+            "token_name": "RADR",
+            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
+          },
+          {
+            "token_symbol": "POLLIN",
+            "token_name": "Pollinet",
+            "token_address": "ApRorkYfFt2nZq9qE6V5brQdUX1QuhbngW3kjH1s2pBAGS"
+          }
+        ],
+        "leader_HINT_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong utility claims, technical integration, and community-driven development, though many lack full documentation.",
+        "leader_token": {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 164084883.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political Meme Tokens",
+        "description": "Tokens leveraging political figures or events as memes, often with satirical or ideological undertones. These tokens are typically tied to viral political commentary or internet culture.",
+        "defining_signals": [
+          "References to political figures like Donald Trump, Barron Trump, or Elon Musk",
+          "Meme origins tied to political commentary or satire",
+          "Names derived from political slogans, events, or controversies",
+          "Strong presence on platforms like TikTok, Reddit, or X (Twitter)",
+          "Community-driven narratives with ideological or satirical themes"
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "DADDY",
             "token_name": "Donald Daddy Trump",
             "token_address": "AF9PqqWZgTRVNpsUPYUKAuQC5Du75JJGP7Ede332bonk"
+          },
+          {
+            "token_symbol": "BARRON",
+            "token_name": "The Hero",
+            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiBw4jembonk"
           },
           {
             "token_symbol": "TACO",
@@ -165,19 +220,110 @@
             "token_address": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWiC"
           },
           {
+            "token_symbol": "MELANIA",
+            "token_name": "Melania Meme",
+            "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
+          },
+          {
             "token_symbol": "DONROE",
             "token_name": "DONROE DOCTRINE",
             "token_address": "2ZtpNyFVEdSJ18UH5hNNPW3aAHpsSGZ8s1CN8NVPbonk"
           },
           {
+            "token_symbol": "MWG",
+            "token_name": "Meme Wars General",
+            "token_address": "HVf6DTf2tLAoy5m2gdK9mgYPfupHUmkzyfkprBWbonk"
+          }
+        ],
+        "leader_hint_token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong political meme origins, viral social media presence, and community-driven narratives with clear ideological or satirical themes.",
+        "leader_token": {
+          "token_symbol": "MELANIA",
+          "token_name": "Melania Meme",
+          "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+          "usd_market_cap": 138310928.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Absurd/Deadpan Meme Tokens",
+        "description": "Tokens built around absurd, ironic, or deadpan humor. These often use surreal or nonsensical themes to create community and drive virality.",
+        "defining_signals": [
+          "Names and themes rooted in absurd or ironic humor",
+          "Meme origins from deadpan or surreal internet culture",
+          "Strong presence on TikTok, Reddit, or Instagram",
+          "Names derived from absurdist phrases or concepts",
+          "Community engagement centered around humor and irony"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "REKILL",
+            "token_name": "rekill",
+            "token_address": "ADnE9o6B7WHhzaRctmbqdPCRiLiA34WBXzYPbrFqBAGS"
+          },
+          {
+            "token_symbol": "BRAINNROT",
+            "token_name": "brainrot",
+            "token_address": "7iX4yQ4zTraFSRXEGpF89emA9xGrhgv6jX57dMENpump"
+          },
+          {
+            "token_symbol": "USELESS",
+            "token_name": "USELESS COIN",
+            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
+          },
+          {
+            "token_symbol": "RETTARDMAXXING",
+            "token_name": "Retardmaxxing",
+            "token_address": "3Y7uP2UhEE68dpyAmWfXc7biSQmQqQonCiyDp6KYpump"
+          },
+          {
+            "token_symbol": "BRAINN",
+            "token_name": "balls",
+            "token_address": "GGEikGvJgRqgoFajyfMAsha5GjKg6suAmhBVW91zjupx"
+          },
+          {
+            "token_symbol": "INUMPLUED",
+            "token_name": "inumployed",
+            "token_address": "898YiYkXrvh4HaHhgaMY2frBz8fExM8wAjbq6AMdpump"
+          }
+        ],
+        "leader_HINT_token_address": "3Y7uP2UhEE68dpyAmWffXc7biSQmQqQonCiyDp6KYpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong deadpan/absurd meme roots, viral social media presence, and community engagement centered around humor.",
+        "leader_token": {
+          "token_symbol": "USELESS",
+          "token_name": "USELESS COIN",
+          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+          "usd_market_cap": 72520071.15
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal-Based Meme Tokens",
+        "description": "Tokens inspired by viral animal memes or internet culture. These often leverage cute, absurd, or iconic animal imagery to create community and drive virality.",
+        "defining_signals": [
+          "Names and themes tied to viral animal memes",
+          "Visuals or narratives referencing specific animals or breeds",
+          "Meme origins from viral videos or images of animals",
+          "Names derived from animal-related slang or internet culture",
+          "Strong presence on platforms like TikTok, Instagram, and Reddit"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CUPSEY",
+            "token_name": "Cupsey",
+            "token_address": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump"
+          },
+          {
+            "token_symbol": "LOLA",
+            "token_name": "Lola",
+            "token_address": "E1dtJs9uY31fVJKyeekBcQD5QKw4hJcTjbYjzm3eGusB"
+          },
+          {
             "token_symbol": "MOMO",
             "token_name": "Momo",
             "token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGsKzex3ebonk"
-          },
-          {
-            "token_symbol": "BOBO",
-            "token_name": "Bobo the bear",
-            "token_address": "BzZ2XBe4fWvMAiUkeKLLnXZRmQw8nVek67H6FaRDBAGS"
           },
           {
             "token_symbol": "KINGSMAN",
@@ -185,136 +331,57 @@
             "token_address": "F8uNy4zi2kr1pRN1yewgFcttJyg6gZb1HmbwhM88BAGS"
           },
           {
-            "token_symbol": "BROKEWHALE",
-            "token_name": "TheBrokeWhale",
-            "token_address": "5PKit456Q6ZfkuVXet66jXV9CgFHRSSL9UGn6Gp3pump"
-          },
-          {
-            "token_symbol": "NIETZSCHE",
-            "token_name": "Friedrich Nietzsche",
-            "token_address": "ERunnL6f7kfSM6Zm2vZkUpmRdNvuHrubQkS6Netpump"
-          },
-          {
-            "token_symbol": "BARRON",
-            "token_name": "The Hero",
-            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBww4jembonk"
-          }
-        ],
-        "leader_hint_token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong political and celebrity meme presence, with multiple tokens referencing public figures and viral content. This is a well-established and recurring theme.",
-        "leader_token": {
-          "token_symbol": "MELANIA",
-          "token_name": "Melania Meme",
-          "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
-          "usd_market_cap": 138310928.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Niche and Subculture Meme Tokens",
-        "description": "Tokens that reference niche internet subcultures, memes, or specific communities. These tokens often leverage inside jokes, subcultural slang, or community-specific humor.",
-        "defining_signals": [
-          "Names or themes tied to niche internet subcultures or memes",
-          "Leverage inside jokes or community-specific humor",
-          "Limited mainstream cultural references"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "RETTARDMAXXING",
-            "token_name": "Retardmaxxing",
-            "token_address": "3Y7uP2UhEE68dpyAmWfSQmQqQonCiyDp6KYpump"
-          },
-          {
-            "token_symbol": "BRAINROT",
-            "token_name": "brainrot",
-            "token_address": "7iX4yQ4zTraFSRXEGpF89emA9xGrhgv6jX57dMENpump"
-          },
-          {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
-          },
-          {
-            "token_symbol": "NICHETOK",
-            "token_name": "Niche Memes",
-            "token_address": "9tMXPmoR79LuD6WnNpBJ8nHff3tXDVzeLp46XzF7ipump"
-          },
-          {
-            "token_symbol": "BRAINROT",
-            "token_name": "brainrot",
-            "token_address": "7iX4yQ4zTraFSRXEGpF89emA9xGrhgv6jX57dMENpump"
-          },
-          {
-            "token_symbol": "RETTARDMAXXING",
-            "token_name": "Retardmaxxing",
-            "token_address": "3Y7uP2UhEE68dpyAmWffSQmQqQonCiyDp6KYpump"
-          },
-          {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
-          },
-          {
-            "token_symbol": "NICHETOK",
-            "token_name": "Niche Memes",
-            "token_address": "9tMXPmoR79LuD6WnNpBJ8nHff3tXDVzeLp46XzF7ipump"
-          },
-          {
-            "token_symbol": "BRAINROT",
-            "token_name": "brainrot",
-            "token_address": "7iX4yQ4zTraFSRXEGpF89emA9xGrhgv6jX57dMENpump"
-          },
-          {
-            "token_symbol": "RETTARDMAXXING",
-            "token_name": "Retardmaxxing",
-            "token_address": "3Y7uP2UhEE68dpyAmWwSQmQqQonCiyDp6KYpump"
-          }
-        ],
-        "leader_hint_token_address": "3Y7uP2UhEE68dpyAmWwSQmQqQonCiyDp6KYpump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong niche and subculture meme presence, with multiple tokens referencing niche internet culture. This is a growing and recurring theme.",
-        "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 72520071.15
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Animal and Character Meme Tokens",
-        "description": "Tokens that derive their names and themes from animals, fictional characters, or internet personas. These tokens often leverage viral images, memes, or character-based humor.",
-        "defining_signals": [
-          "Names or themes based on animals or fictional characters",
-          "Leverage viral images or memes associated with the character or animal",
-          "Community-driven with no official connection to the original character or animal"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MOMO",
-            "token_name": "Momo",
-            "token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGsKzex3ebonk"
-          },
-          {
-            "token_symbol": "DADDY",
-            "token_name": "Donald Daddy Trump",
-            "token_address": "AF9PqqWZgTRVNpsUPYUKAuQC5Du75JJGP7Ede332bonk"
-          },
-          {
-            "token_symbol": "DANK",
-            "token_name": "Dank Doge",
-            "token_address": "5GhCbdx8uHT1wJ88gj3fYSLpsqEW9x4s6NXJ5GPJpump"
-          },
-          {
-            "token_symbol": "CUPSEY",
-            "token_name": "Cupsey",
-            "token_address": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump"
-          },
-          {
             "token_symbol": "PANDU",
             "token_name": "Pandu Pandas",
             "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+          },
+          {
+            "token_symbol": "KIA",
+            "token_name": "Kiwi",
+            "token_address": "73YTABpVR19xmaqNJEiiiXVi5PYsRPsPakbuN3Jtpump"
+          }
+        ],
+        "leader_HINT_token_address": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong viral animal meme roots, visual appeal, and community engagement on social platforms.",
+        "leader_token": {
+          "token_symbol": "MOMO",
+          "token_name": "Momo",
+          "token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGsKzex3ebonk",
+          "usd_market_cap": 4066127.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Anime/Media Character Tokens",
+        "description": "Tokens inspired by characters from popular media, including anime, TV shows, and video games. These often leverage nostalgia or fan culture for community engagement.",
+        "defining_signals": [
+          "Names and themes tied to well-known characters or franchises",
+          "Meme origins from specific media or character moments",
+          "Community engagement centered around fanbases or nostalgia",
+          "Visual or narrative references to original media",
+          "Names derived from iconic lines or scenes"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "PICKLE",
+            "token_name": "Pickle Rick",
+            "token_address": "FtX6b1fvAXZYiQ1jF6cBLoZ67ipHwQxs6bTc9KvQBAGS"
+          },
+          {
+            "token_symbol": "BOBO",
+            "token_name": "Bobo the bear",
+            "token_address": "BzZ2XBe4fWvMAiUkeKLLnXZRmQw8nVek67H6FaRDBAGS"
+          },
+          {
+            "token_symbol": "SMITHERS",
+            "token_name": "Smithers",
+            "token_address": "EVuD9nVSK3XUhd25EPSacf3xp1N6itj8QEHmmXnPBAGS"
+          },
+          {
+            "token_symbol": "DUMB",
+            "token_name": "Dumb Patrick",
+            "token_address": "HGT3rH6KKy9w765zvbDdtoHUhT3hpK8Q9Ks57NYqpump"
           },
           {
             "token_symbol": "KAWAI",
@@ -322,184 +389,89 @@
             "token_address": "4Wc2Pbn13dB5FH5qNY3PVRRCsekey1ebHwCTfLdCBAGS"
           },
           {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe By Matt Furie",
-            "token_address": "EkJuyYyD3to61CHVPJn6wHb7xANxvqApnV4o2SdBAGS"
-          },
-          {
-            "token_symbol": "RAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "DRAGON",
-            "token_name": "Smug Bookworm Dragon",
-            "token_address": "5Rk1J4g2Pio98iQSu6T29Z45ecp93VZrGW4PBZjWpump"
-          },
-          {
-            "token_symbol": "PANDU",
-            "token_name": "Pandu Pandas",
-            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+            "token_symbol": "GNAMI",
+            "token_name": "Gengar Nami",
+            "token_address": "6mSyfLzQCmz1BQxbe2PGDP3AHcdC5PERfAtbAm7Kpump"
           }
         ],
-        "leader_hint_token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGsKzex3ebonk",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong animal and character meme presence, with multiple tokens referencing fictional or viral characters. This is a well-established and recurring theme.",
+        "leader_hint_token_address": "FtX6b1fvAXZYiQ1jF6cBLoZ67ipHwQxs6bTc9KvQBAGS",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong media character references, nostalgic appeal, and active fanbases driving engagement.",
         "leader_token": {
-          "token_symbol": "MOMO",
-          "token_name": "Momo",
-          "token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGsKzex3ebonk",
-          "usd_market_cap": 4066127.0
+          "token_symbol": "SMITHERS",
+          "token_name": "Smithers",
+          "token_address": "EVuD9nVSK3XUhd25EPSacf3xp1N6itj8QEHmmXnPBAGS",
+          "usd_market_cap": 405758.36
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Crypto-Native Meme Tokens",
-        "description": "Tokens that originate from or are entirely native to the crypto ecosystem, often with no pre-existing cultural or internet meme context outside of crypto. These tokens leverage crypto-specific humor, slang, or inside jokes.",
+        "meta_name": "Niche/Community-Driven Tokens",
+        "description": "Tokens built around niche communities or subcultures. These often leverage specific interests, hobbies, or subcultural identities to drive engagement.",
         "defining_signals": [
-          "No verifiable non-crypto cultural or meme origin",
-          "Names or themes derived from crypto-native humor or inside jokes",
-          "Lack of external references in mainstream media or meme databases"
+          "Names and themes tied to niche communities or subcultures",
+          "Meme origins from specific subcultural or hobbyist groups",
+          "Strong presence on platforms like Reddit, Discord, or niche forums",
+          "Names derived from subcultural slang or references",
+          "Community engagement centered around shared interests"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "balls",
-            "token_name": "balls",
-            "token_address": "GGEikGvJgRqgoFajyfMAsha5GjKg6suAmhBVW91zjupx"
+            "token_symbol": "NICH",
+            "token_name": "Niche Memes",
+            "token_address": "9tMXPmoR79LuD6WnNppBJ8nHf3tXDVzeLp46XzF7ipump"
           },
           {
-            "token_symbol": "67",
-            "token_name": "The Official 67 Coin",
-            "token_address": "9AvytnUKsxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump"
+            "token_symbol": "ELIZAATOWN",
+            "token_name": "Eliza Town",
+            "token_address": "CZRsbB6BrHssAmGKeoxyfwzCyhttXvhfEukXCWnseBAGS"
           },
           {
-            "token_symbol": "BROKEWHALE",
-            "token_name": "TheBrokeWhale",
-            "token_address": "5PKit456Q6ZfkuVXet66jXV9CgFHRSSL9UGn6Gp3pump"
+            "token_symbol": "KORI",
+            "token_name": "pomkori",
+            "token_address": "2gAFPvnr8WzLUcqdpBbeEtKuxNxhvusyrCDjbtWeBAGS"
           },
           {
-            "token_symbol": "7ET5UO",
-            "token_name": "7et5uo",
-            "token_address": "DJZFKAtJPzm4zEr9SXt8dXKzEuKJFjpMekrnCBTJBAGS"
+            "token_symbol": "COPCAT",
+            "token_name": "Copper Cat",
+            "token_address": "jpxfcZEzCX5h1usbaEhwG4vq9A1ZYoceU7wbBDApump"
           },
           {
-            "token_symbol": "X1XHLOL",
-            "token_name": "x1xhlol",
-            "token_address": "DEffWzJyaFRNyA4ogUox631hfHuv3KLeCcpBh2ipBAGS"
+            "token_symbol": "SRC",
+            "token_name": "Screaming Rubber Chicken",
+            "token_address": "6kXcy5KkZSw8HA3YSFo2fifX5NCZVLPg7eEazGDnKtw4"
           },
           {
-            "token_symbol": "inumployed",
-            "token_name": "inumployed",
-            "token_address": "898YiYkXrvh4HaHhgaMY2frBz8fExM8wAjbq6AMdpump"
-          },
-          {
-            "token_symbol": "BARRON",
-            "token_name": "The Hero",
-            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
-          },
-          {
-            "token_symbol": "DANK",
-            "token_name": "Dank Doge",
-            "token_address": "5GhCbdx8uHT1wJ88gj3fYSLpsqEW9x4s6NXJ5GPJpump"
-          },
-          {
-            "token_symbol": "REKILL",
-            "token_name": "rekill",
-            "token_address": "ADnE9o6B7WHhzaRctmbqdPCRiLiA34WBXzYPbrFqBAGS"
-          },
-          {
-            "token_symbol": "BROKEWHALE",
-            "token_name": "TheBrokeWhale",
-            "token_address": "5PKit456Q6ZfkuVXet66jXV9CgFHRSSL9UGn6Gp3pump"
+            "token_symbol": "ELIZABETH",
+            "token_name": "Just Elizabeth Cat",
+            "token_address": "DiiTPZdpd9t3XorHiuZUu4E1FoSaQ7uGN4q9YkQupump"
           }
         ],
-        "leader_hint_token_address": "GGEikGvJgRqgoFajyfMAsha5GjKg6suAmhBVW91zjupx",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong evidence of crypto-native origin for multiple tokens, with no external cultural references. This is a consistent and recurring theme.",
+        "leader_HINT_token_address": "9tMXPmoR79LuD6WnNpBJ8nHh3tXDVzeLp46XzF7ipump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong niche community roots, subcultural engagement, and community-driven narratives.",
         "leader_token": {
-          "token_symbol": "inumployed",
-          "token_name": "inumployed",
-          "token_address": "898YiYkXrvh4HaHhgaMY2frBz8fExM8wAjbq6AMdpump",
-          "usd_market_cap": 3434882.66
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Game and Simulation Meme Tokens",
-        "description": "Tokens that reference games mechanics, simulations, or virtual worlds. These tokens often leverage gaming culture, in-game items, or simulation-based humor.",
-        "defining_signals": [
-          "Names or themes tied to games or simulations",
-          "Leverage gaming culture, in-game items, or simulation-based humor",
-          "Community-driven with no official connection to the referenced game or simulation"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_address": "BjcRmmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
-          },
-          {
-            "token_symbol": "WEED",
-            "token_name": "WEED Token",
-            "token_address": "E2gLkTXSbbTMmJM19xkquawun2ShJSi7G59A8c2PtbFa"
-          },
-          {
-            "token_symbol": "JAILED",
-            "token_name": "JAILED",
-            "token_address": "PXespMoquGgnrPBgmz3BmVEpnJq8LxKtyQJ4qadr1o1"
-          },
-          {
-            "token_symbol": "REKILL",
-            "token_name": "rekill",
-            "token_address": "ADnE9o6B7WHhzaRctmbqdPCRiLiA34WBXxYPbrFqBAGS"
-          },
-          {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_address": "BjcRmmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
-          },
-          {
-            "token_symbol": "WEED",
-            "token_name": "WEED Token",
-            "token_address": "E2gLkTXSbbTMmJM19xkquawun2ShJSi7G59A8c2PtbFa"
-          },
-          {
-            "token_symbol": "JAILED",
-            "token_name": "JAILED",
-            "token_address": "PXespMoquGgnrPBgmz3BmVEpnJq8LxKtyQJ4qadr1o1"
-          },
-          {
-            "token_symbol": "REKILL",
-            "token_name": "rekill",
-            "token_address": "ADnE9o6B7WHhzaRctmbqdPCRiLiA34WBXxYPbrFqFAGS"
-          },
-          {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_address": "BjcRmmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
-          },
-          {
-            "token_symbol": "WEED",
-            "token_name": "WEED Token",
-            "token_address": "E2gLkTXSbbTMmJM19xkquawun2ShJSi7G59A8c2PtbFa"
-          }
-        ],
-        "leader_hint_token_address": "E2gLkTXSbbTMmJM19xkquawun2ShJSi7G59A8c2PtbFa",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong game and simulation meme presence, with multiple tokens referencing game mechanics or virtual worlds. This is a growing and recurring theme.",
-        "leader_token": {
-          "token_symbol": "WEED",
-          "token_name": "WEED Token",
-          "token_address": "E2gLkTXSbbTMmJM19xkquawun2ShJSi7G59A8c2PtbFa",
-          "usd_market_cap": 2105380.0
+          "token_symbol": "ELIZABETH",
+          "token_name": "Just Elizabeth Cat",
+          "token_address": "DiiTPZdpd9t3XorHiuZUu4E1FoSaQ7uGN4q9YkQupump",
+          "usd_market_cap": 233476.99
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Crypto-Native Meme Tokens' and 'Political and Celebrity Meme Tokens' are currently the most dominant METAs, with strong community engagement and recurring themes. 'Animal and Character Meme Tokens' and 'Niche and Subculture Meme Tokens' are also gaining traction. 'Game and Simulation Meme Tokens' are emerging but not yet as dominant. The 'Crypto-Native Meme Tokens' are showing signs of fading as newer tokens in the 'Niche and Subculture Meme Tokens' category gain attention.",
+    "meta_rotation_note": "Fading: Political Meme Tokens are showing signs of fatigue as new tokens in the 'Absurd/Deadpan' and 'Niche/Community-Driven' categories gain traction. Emerging: 'Niche/Community-Driven' and 'Absurd/Deadpan' themes are gaining momentum, with new tokens showing strong virality and community engagement. 'Anime/Media Character' tokens remain stable but are being outpaced by more absurd and community-driven narratives.",
     "meta_leaders": [
       {
-        "meta_name": "Political and Celebrity Meme Tokens",
+        "meta_name": "Crypto-Driven Utility Tokens",
+        "leader_token": {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 164084883.0
+        }
+      },
+      {
+        "meta_name": "Political Meme Tokens",
         "leader_token": {
           "token_symbol": "MELANIA",
           "token_name": "Melania Meme",
@@ -508,7 +480,7 @@
         }
       },
       {
-        "meta_name": "Niche and Subculture Meme Tokens",
+        "meta_name": "Absurd/Deadpan Meme Tokens",
         "leader_token": {
           "token_symbol": "USELESS",
           "token_name": "USELESS COIN",
@@ -517,7 +489,7 @@
         }
       },
       {
-        "meta_name": "Animal and Character Meme Tokens",
+        "meta_name": "Animal-Based Meme Tokens",
         "leader_token": {
           "token_symbol": "MOMO",
           "token_name": "Momo",
@@ -526,21 +498,21 @@
         }
       },
       {
-        "meta_name": "Crypto-Native Meme Tokens",
+        "meta_name": "Anime/Media Character Tokens",
         "leader_token": {
-          "token_symbol": "inumployed",
-          "token_name": "inumployed",
-          "token_address": "898YiYkXrvh4HaHhgaMY2frBz8fExM8wAjbq6AMdpump",
-          "usd_market_cap": 3434882.66
+          "token_symbol": "SMITHERS",
+          "token_name": "Smithers",
+          "token_address": "EVuD9nVSK3XUhd25EPSacf3xp1N6itj8QEHmmXnPBAGS",
+          "usd_market_cap": 405758.36
         }
       },
       {
-        "meta_name": "Game and Simulation Meme Tokens",
+        "meta_name": "Niche/Community-Driven Tokens",
         "leader_token": {
-          "token_symbol": "WEED",
-          "token_name": "WEED Token",
-          "token_address": "E2gLkTXSbbTMmJM19xkquawun2ShJSi7G59A8c2PtbFa",
-          "usd_market_cap": 2105380.0
+          "token_symbol": "ELIZABETH",
+          "token_name": "Just Elizabeth Cat",
+          "token_address": "DiiTPZdpd9t3XorHiuZUu4E1FoSaQ7uGN4q9YkQupump",
+          "usd_market_cap": 233476.99
         }
       }
     ]
