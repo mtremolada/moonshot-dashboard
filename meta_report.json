@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-22T15:54:52.737536Z",
+  "generated_at_utc": "2026-01-22T16:55:23.845546Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 129,
+  "token_context_count": 157,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 9 PVP group(s); excluding 10 token(s) from META prompt."
+    "Detected 8 PVP group(s); excluding 8 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 10,
+  "pvp_excluded_token_count": 8,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -86,26 +86,6 @@
           "token_address": "5heFpjbEpD7shwBNVGHVnjzjRES4zwLj2qJG8MS9pump",
           "usd_market_cap": 102870.85,
           "processed_at": "2026-01-22T14:49:28.863129Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "trump",
-      "tokens": [
-        {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 977944783.0,
-          "processed_at": "2026-01-21T16:26:16.473656Z"
-        },
-        {
-          "token_symbol": "TRUMP",
-          "token_name": "Meme Lord",
-          "token_address": "8PC9MQMXYdLX34N16ZBZgZjpDe8iGkpNFSF6YFcPpump",
-          "usd_market_cap": 5135210.37,
-          "processed_at": "2026-01-22T04:20:03.954618Z"
         }
       ]
     },
@@ -194,26 +174,23 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political and Public Figure Meme",
-        "description": "Tokens referencing political figures, public personalities, or political events. These often leverage the cultural relevance of public figures or political memes for community engagement.",
+        "meta_name": "Political Meme Tokens",
+        "description": "Tokens leveraging political figures and events as cultural references to create community-driven narratives and speculative value.",
         "defining_signals": [
-          "Names or themes referencing political figures (e.g., 'Melania Trump', 'Trump On Bear', 'Barron Trump')",
-          "Use of political memes or events (e.g., 'Taco Fell', 'TACO', 'TACO token')",
-          "Names or descriptions referencing political events or commentary (e.g., 'TACO', 'FISHBACK')",
-          "Community-driven narratives around political satire or commentary",
-          "Absence of utility, with value proposition centered on political relevance",
-          "High social media engagement from political or meme-centric platforms"
+          "Use of real-world political figures (e.g., Donald Trump, Melania Trump) in token names and descriptions.",
+          "Meme culture tied to political commentary or satire (e.g., 'Taco Fell' edits, 'Let’s Go TACO' chants).",
+          "Tokens referencing political candidates or events (e.g., James Fishback, Barron Trump)."
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "MELANIA",
-            "token_name": "Melania Meme",
-            "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
-          },
           {
             "token_symbol": "TACO",
             "token_name": "TRUMP ALWAYS CHICKENS OUT",
             "token_address": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWiC"
+          },
+          {
+            "token_symbol": "MELANIA",
+            "token_name": "Melania Meme",
+            "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
           },
           {
             "token_symbol": "BARRON",
@@ -223,52 +200,17 @@
           {
             "token_symbol": "FISHBACK",
             "token_name": "James Fishback Fund",
-            "token_address": "8zrZgRRZtQSsz9nmY2c6jfcCzWtdQrDJFSGB1fvyBAGS"
-          },
-          {
-            "token_symbol": "TOB",
-            "token_name": "Trump On Bear",
-            "token_address": "5e1jbBw5NKbsMaShftKR8mzmEDcHQrXghp16Q4dVsTti"
-          },
-          {
-            "token_symbol": "SMITHERS",
-            "token_name": "Smithers",
-            "token_address": "EVuD9nVSK3XUhd25EPSacf3xp1N6itj8QEHmmXnPBAGS"
-          },
-          {
-            "token_symbol": "KINGSMAN",
-            "token_name": "KINGSMAN265",
-            "token_address": "F8uNy4zi2kr1pRN1yewgFcttJyg6gZb1HmbwhM88BAGS"
-          },
-          {
-            "token_symbol": "CONQUEREDD",
-            "token_name": "I CONQUERED",
-            "token_address": "DYxDgb3CvtKFDJ6oaPUECxenYT9jMM9pwEf9fD7jpump"
-          },
-          {
-            "token_symbol": "BRENDAN",
-            "token_name": "Brendan Eich",
-            "token_address": "9tMXPmoR79LuD6WnNpBJ8nHf3tXDVzeLp46XzF7ipump"
-          },
-          {
-            "token_symbol": "ELON",
-            "token_name": "Elon Air",
-            "token_address": "Anzz4D2M2XisJmQ86Hpjp6Ckuh6AMVkguLJUfSdtBkmB"
+            "token_address": "8zrgRRZtQSsz9nmY2c6jfcCzWtdQrDJFSGB1fvyBAGS"
           },
           {
             "token_symbol": "TRUMP",
-            "token_name": "Trump On Bear",
-            "token_address": "5e1jbBw5NKbsMaShftKR8mzmEDcHQrXghp16Q4dVsTti"
-          },
-          {
-            "token_symbol": "MELANIA",
-            "token_name": "Melania Meme",
-            "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
+            "token_name": "Meme Lord",
+            "token_address": "8PC9MQMXYdLX34N16ZBZgZjpDe8iGkpNFSF6YFcPpump"
           }
         ],
         "leader_hint_token_address": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWiC",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong evidence of political and public figure meme reuse across multiple tokens with clear cultural relevance and community engagement.",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong cultural references to political figures and events, with clear meme origins and community adoption.",
         "leader_token": {
           "token_symbol": "MELANIA",
           "token_name": "Melania Meme",
@@ -278,61 +220,18 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Culture Reuse",
-        "description": "Tokens repurposing established internet memes, slang, or viral phrases for crypto branding. These often leverage pre-existing cultural familiarity to drive community engagement.",
+        "meta_name": "AI and Tech Meme Tokens",
+        "description": "Tokens leveraging AI, tech, and developer culture as central themes, often with humorous or satirical undertones.",
         "defining_signals": [
-          "Use of well-known memes (e.g., 'Patrick Star drooling', 'Pickle Rick', 'Elon Musk Jumping')",
-          "Leverage viral internet slang or phrases with documented non-crypto origins",
-          "Names or descriptions referencing meme characters, events, or formats (e.g., 'Bobo the Bear', 'Nietzschean Penguin')",
-          "Community-driven narratives tied to meme history or evolution",
-          "Absence of utility, with value proposition centered on cultural resonance",
-          "High social media engagement from meme-centric platforms like TikTok, Reddit, and X"
+          "Use of AI-related themes (e.g., 'AI companion,' 'AI agent,' 'AI-generated content').",
+          "Tokens referencing tech culture (e.g., 'Homebrew,' 'GitHub,' 'Open Source').",
+          "Meme-based tech references (e.g., 'Ralph Computer,' 'Clippy')."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Patrick",
-            "token_name": "Dumb Patrick",
-            "token_address": "HGT3rH6KKy9w765zvbDdtoHUhT3hpK8Q9Ks57NYqpump"
-          },
-          {
-            "token_symbol": "brainrot",
-            "token_name": "brainrot",
-            "token_address": "7iX4yQ4zTraFSRXEGpF89emA9xGrhgv6jX57dMENpump"
-          },
-          {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
-          },
-          {
-            "token_symbol": "BARRON",
-            "token_name": "The Hero",
-            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
-          },
-          {
-            "token_symbol": "TACO",
-            "token_name": "TRUMP ALWAYS CHICKENS OUT",
-            "token_address": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWiC"
-          },
-          {
-            "token_symbol": "RICK",
-            "token_name": "Pickle Rick",
-            "token_address": "FtX6b1fvAXZYiQ1jF6cBLoZ67ipHwQxs6bTc9KvQBAGS"
-          },
-          {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe By Matt Furie",
-            "token_address": "EkJuyYyD3to61CHVPJn6wHb7xANxvqApnVJ4o2SdBAGS"
-          },
-          {
-            "token_symbol": "BOME",
-            "token_name": "BOOK OF MEME",
-            "token_address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
-          },
-          {
-            "token_symbol": "DONT",
-            "token_name": "DisclaimerCoin",
-            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
+            "token_symbol": "BREW",
+            "token_name": "brew services start",
+            "token_address": "Bbco81RDzgubLV1FtX1rrAMNx3GaWht1V6BcAPVpBAGS"
           },
           {
             "token_symbol": "HUGGI",
@@ -340,43 +239,50 @@
             "token_address": "96zMCM9nALK2cDv5p2CiDkGrgbJX9McCnQkxyBaoBAGS"
           },
           {
-            "token_symbol": "KORI",
-            "token_name": "pomkori",
-            "token_address": "2gAFPvnr8WzLUcqdpBbeEtKuxNxhvusyrCDjbtWeBAGS"
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "BUTT",
-            "token_name": "Buttcoin",
-            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
+            "token_symbol": "CLIPPI",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "HOMUNCULUS",
+            "token_name": "Homunculus",
+            "token_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGS"
           }
         ],
-        "leader_hint_token_address": "ukHH6c7mMyiWCc1b9pnWe25TSpkDDt3H5pQZgZ74J82",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong evidence of meme reuse across multiple tokens with clear cultural origins and high social engagement.",
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong AI/tech themes with growing community interest and meme-based narratives.",
         "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 72520071.15
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 131143200.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Tech Meme",
-        "description": "Tokens leveraging AI, coding, or tech-related themes, often with a humorous or satirical twist. These tokens often repurpose tech jargon or AI-related internet culture.",
+        "meta_name": "Meme Character Tokens",
+        "description": "Tokens inspired by internet memes featuring specific characters or archetypes, often repurposed for crypto narratives.",
         "defining_signals": [
-          "Names or themes referencing AI, coding, or tech (e.g., 'Ralph Wiggum Technique', 'AI-native', 'Nocode')",
-          "Use of AI-related humor or satire (e.g., 'Ralph Computer', 'AI agent', 'AI-native')",
-          "Inferred utility tied to AI development, tools, or workflows",
-          "Community-driven narratives around AI innovation or parody",
-          "Names or descriptions referencing AI memes (e.g., 'Nietzschean Penguin', 'Shoggoth')",
-          "Lack of traditional utility, with value proposition centered on AI culture"
+          "Use of meme characters (e.g., 'Wojak,' 'Pickle Rick,' 'Elon Musk Jumping').",
+          "Tokens referencing pop culture characters or archetypes (e.g., 'Pope Leo blessing a lamb,' 'Nietzschean Penguin').",
+          "Meme-based character evolution (e.g., 'Nietzsche' evolving into 'Nietzschean Penguin')."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "NOCODE",
-            "token_name": "nocode",
-            "token_address": "79VXvEt7xSPhvQggeJ75UVqD41yXJwBS44zrstreBAGS"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "RICK",
+            "token_name": "Pickle Rick",
+            "token_address": "FtX6b1fvAXZYiQ1jF6cBLoZ67ipHwQxs6bTc9KvQBAGS"
           },
           {
             "token_symbol": "PENGUIN",
@@ -384,161 +290,34 @@
             "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "HOMUNCULUS",
-            "token_name": "Homunculus",
-            "token_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGS"
+            "token_symbol": "LAMB",
+            "token_name": "The Holy Lamb",
+            "token_address": "2yH8j9Vcm4yfdUAXGnEcrToF9wgKanaWUKhE6RZfpump"
           },
           {
-            "token_symbol": "RPUTER",
-            "token_name": "RALPHPUTER",
-            "token_address": "5LAcB8Fq7tpkifh143YuYB1d3k7adfRjYUMqERFhBAGS"
-          },
-          {
-            "token_symbol": "SHOGGOTH",
-            "token_name": "SHOGGOTH",
-            "token_address": "63wfFjQ2X2R9Avf51ZQeS2W15kZu1xQT488XA99BAGS"
-          },
-          {
-            "token_symbol": "ARC",
-            "token_name": "Redemption Arc",
-            "token_address": "DCgZjb2LN5r9Ck5VZAATh8x3sTUHyTzEguThGqh1pump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "HOMO",
-            "token_name": "Homunculus",
-            "token_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGS"
-          },
-          {
-            "token_symbol": "CODEX",
-            "token_name": "CODEX",
-            "token_address": "HAK9cX1jfYmcNpr6keTkLvxehGPWKELXSu7GH2ofBAGS"
-          },
-          {
-            "token_symbol": "BRIDGE",
-            "token_name": "BridgeMind",
-            "token_address": "32Bea1jmNj2669zP3JEzqoP6JgZH7cLYhmnQ5cNrBAGS"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          },
-          {
-            "token_symbol": "SURGE",
-            "token_name": "SURGE",
-            "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg"
+            "token_symbol": "SMITHERS",
+            "token_name": "Smithers",
+            "token_address": "EVuD9nV8K3XUhd25EPSacf3xp1N6itj8QEHmmXnPBAGS"
           }
         ],
-        "leader_hint_token_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGS",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency around AI, coding, and tech culture, with clear community engagement and meme reuse.",
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong meme character references with established cultural origins and active community engagement.",
         "leader_token": {
-          "token_symbol": "SURGE",
-          "token_name": "SURGE",
-          "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg",
-          "usd_market_cap": 53824341.0
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 12313156.64
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Utility and Project-Based Meme",
-        "description": "Tokens that blend meme culture with utility or project-based narratives. These often have a dual focus on community engagement and functional use cases.",
+        "meta_name": "Niche and Hyper-Specific Meme Tokens",
+        "description": "Tokens referencing hyper-specific memes or subcultures, often with limited mainstream exposure but strong community appeal.",
         "defining_signals": [
-          "Names or themes referencing utility or project-based concepts (e.g., 'SkillStack', 'Pollinet', 'GhostwareOS')",
-          "Use of meme culture to frame utility or project goals (e.g., 'Redemption Arc', 'Seeker Tracker')",
-          "Community-driven narratives around utility or project development",
-          "Inferred or stated utility beyond meme culture (e.g., governance, staking, governance)",
-          "Names or descriptions referencing real-world or crypto projects (e.g., 'Brew', 'Seeker Tracker')",
-          "Absence of pure meme culture, with value proposition centered on utility"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          },
-          {
-            "token_symbol": "POLLEN",
-            "token_name": "Pollinet",
-            "token_address": "ApRorkYfFt2nZ4jj5E1fvoHd9pK7YJWVQM8DYX5cyai"
-          },
-          {
-            "token_symbol": "GHOST",
-            "token_name": "GhostwareOS",
-            "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST"
-          },
-          {
-            "token_symbol": "TRACKER",
-            "token_name": "Seeker Tracker",
-            "token_address": "ehipS3kn9GUSnEMgtB9RxCNBVfH5gTNRVxNtqFTBAGS"
-          },
-          {
-            "token_symbol": "ARC",
-            "token_name": "Redemption Arc",
-            "token_address": "DCgZjb2LN5r9Ck5VZAATh8x3sTUHyTzEguThGqh1pump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          },
-          {
-            "token_symbol": "INJECT",
-            "token_name": "Injector",
-            "token_address": "5kw36VCQ1Q26rHmmVjK6Xo6roX3jjYXnqFibx8DW2pump"
-          },
-          {
-            "token_symbol": "NGL",
-            "token_name": "NGL",
-            "token_address": "3eKEQD9Ej3Usq3CLKgmYkBDXANGwV69XETvs3CNHBAGS"
-          },
-          {
-            "token_symbol": "SILLAN",
-            "token_name": "Sillan",
-            "token_address": "QB7oEQuUAGAqvWrT3zJFxjeFqYErbfbJfDApCbnpump"
-          },
-          {
-            "token_symbol": "QTX",
-            "token_name": "QuantumX",
-            "token_address": "AvMdYR4dVLatpMa3YecWhDrerXp5Wx7sNLNTyiA3pump"
-          },
-          {
-            "token_symbol": "CIPHER",
-            "token_name": "Cipher",
-            "token_address": "Fa8V9NTQNNZQTUCmTGfPRi7XBXx4zHq4AFXogvDPBAGS"
-          },
-          {
-            "token_symbol": "BRIDGE",
-            "token_name": "BridgeMind",
-            "token_address": "32Bea1jmNj2669zP3JEzqoP6JgZH7cLYhmnQ5cNrBAGS"
-          }
-        ],
-        "leader_hint_token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong evidence of utility and project-based meme reuse across multiple tokens with clear community engagement and functional narratives.",
-        "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 2996258.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Niche and Subculture Meme",
-        "description": "Tokens referencing niche internet subcultures, specific communities, or hyper-specific memes. These often appeal to smaller, tightly-knit groups with shared interests.",
-        "defining_signals": [
-          "Names or themes referencing niche internet subcultures (e.g., 'Niche Memes', 'Pomkori', 'Shoggoth')",
-          "Use of hyper-specific memes or inside jokes (e.g., 'Kawai', 'Tanuppo', 'Bobo Show')",
-          "Community-driven narratives around niche interests or subcultures",
-          "Absence of utility, with value proposition centered on subculture relevance",
-          "High engagement within specific online communities (e.g., TikTok, Reddit, Discord)",
-          "Names or descriptions referencing obscure or emerging memes"
+          "Use of hyper-specific memes (e.g., 'Pomkori,' 'Tanuppo,' 'Grass Mud Horse').",
+          "Tokens referencing niche internet communities (e.g., 'Niche Memes,' 'Just Elizabeth Cat').",
+          "Meme-based subcultures (e.g., 'Niche Memes,' 'Pomkori')."
         ],
         "supporting_tokens": [
           {
@@ -552,34 +331,9 @@
             "token_address": "2gAFPvnr8WzLUcqdpBbeEtKuxNxhvusyrCDjbtWeBAGS"
           },
           {
-            "token_symbol": "SHOGGOTH",
-            "token_name": "SHOGGOTH",
-            "token_address": "63wfFjQ2X2R9Avf51ZQeS2W15kZu1xQT488XA99BAGS"
-          },
-          {
             "token_symbol": "TANUPPO",
             "token_name": "TANUPPO",
             "token_address": "CyHf3YPHymsiHhw2nbYZPNXhjoKAWx4H221mdDHSpump"
-          },
-          {
-            "token_symbol": "POVEL",
-            "token_name": "POVEL",
-            "token_address": "51tFbfh65Bx8gPBAw44s6ZdwZZCcuXZru6xXhQpQsurg"
-          },
-          {
-            "token_symbol": "COPCAT",
-            "token_name": "Copper Cat",
-            "token_address": "jpxfcZEzCX5h1usbaEhwG4vq9A1ZYoceU7wbBDApump"
-          },
-          {
-            "token_symbol": "KAWAI",
-            "token_name": "KAWAI",
-            "token_address": "4Wc2Pbn13dB5FH5qNY3PVRRCsekey1ebHwCTfLdCBAGS"
-          },
-          {
-            "token_symbol": "ELIZA",
-            "token_name": "Eliza Town",
-            "token_address": "CZRsbB6BrHsAmGKeoxyfwzCyhttXvhfEukXCWnseBAGS"
           },
           {
             "token_symbol": "ELIZABETH",
@@ -587,37 +341,73 @@
             "token_address": "DiiTPZdpd9t3XorHiuZUu4E1FoSaQ7uGN4q9YkQupump"
           },
           {
-            "token_symbol": "GNAMI",
-            "token_name": "Gengar Nami",
-            "token_address": "6mSyfLzQCmz1BQxbe2PGDP3AHcdC5PERfAtbAm7Kpump"
-          },
-          {
-            "token_symbol": "POOPINU",
-            "token_name": "POOPINU - 251119-0814",
-            "token_address": "4kpdxGDP5To7JEXUC3X2Nh9cLgtqfWEBu8XYPyRKhere"
-          },
-          {
-            "token_symbol": "CHINESE",
-            "token_name": "VERY CHINESE TIME OF MY LIFE",
-            "token_address": "C3PoSr3d4PVis4MmRJY4riVTLjMkV1VLYVudjoN2pump"
+            "token_symbol": "HORSE",
+            "token_name": "horsetwting",
+            "token_address": "EqquikmAsy62SHadHzHnVXWusLRnWtP2vgseAthdpump"
           }
         ],
-        "leader_hint_token_address": "9tMXPmoR79LuD6WnNpBJ8nHf3tXDVzeLp46Xx57ipump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong evidence of niche and subculture meme reuse across multiple tokens with clear community engagement and cultural relevance.",
+        "leader_hint_token_address": "9tMXPmoR79LuD6WnNpBJ8nHf3tXDVzeLp46XzF7ipump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong niche meme references with active community engagement and growing interest.",
         "leader_token": {
-          "token_symbol": "POVEL",
-          "token_name": "POVEL",
-          "token_address": "51tFbfh65Bx8gPBAw44s6ZdwZZCcuXZru6xXhQpQsurg",
-          "usd_market_cap": 804368.0
+          "token_symbol": "ELIZABETH",
+          "token_name": "Just Elizabeth Cat",
+          "token_address": "DiiTPZdpd9t3XorHiuZUu4E1FoSaQ7uGN4q9YkQupump",
+          "usd_market_cap": 233476.99
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto-Driven Meme Tokens",
+        "description": "Tokens that originate from or are heavily influenced by crypto culture, often with no non-crypto cultural origin.",
+        "defining_signals": [
+          "Use of crypto-specific slang or references (e.g., 'B' emoji, 'PumpFun,' 'Bleebzorx').",
+          "Tokens with no verifiable non-crypto cultural origin (e.g., '7et5uo,' 'Xoge').",
+          "Meme-based tokens with crypto-centric narratives (e.g., 'Elon Air,' 'Copper Cat')."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "B",
+            "token_name": "B",
+            "token_address": "6PMuLSPRz9ae2xPDn5Dc3zH3kDtmE7tTyL8XQKmEbonk"
+          },
+          {
+            "token_symbol": "7ET5UO",
+            "token_name": "7et5uo",
+            "token_address": "DJZFKAtJPzm4zEr9SXt8dXKzEuKJFjpMekrnCBTJBAGS"
+          },
+          {
+            "token_symbol": "XOGE",
+            "token_name": "Xoge",
+            "token_address": "HEPvyunjSoiua8rAWZVMjgZ5TLp9vMQ61iGQh2u7pump"
+          },
+          {
+            "token_symbol": "COPCAT",
+            "token_name": "Copper Cat",
+            "token_address": "jpxfcZEzCX5h1usbaEhwG4vq9A1ZYoceU7wbBDApump"
+          },
+          {
+            "token_symbol": "BLEEBZORX",
+            "token_name": "The Bleebzorx Network",
+            "token_address": "C749Mb7GNtqir8F7HV3MBEGRUGaqmxpFKqmaiX1ABAGS"
+          }
+        ],
+        "leader_hint_token_address": "6PMuLSPRz9ae2xPDn5Dc3zH3kDtmE7tTyL8XQKmEbonk",
+        "confidence_0_100": 65,
+        "confidence_rationale": "Strong crypto-centric meme themes with no external cultural references, indicating a growing trend in crypto-native meme culture.",
+        "leader_token": {
+          "token_symbol": "B",
+          "token_name": "B",
+          "token_address": "6PMuLSPRz9ae2xPDn5Dc3zH3kDtmE7tTyL8XQKmEbonk",
+          "usd_market_cap": 211416.84
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Meme Culture Reuse remains dominant due to strong community engagement and viral potential. AI and Tech Meme is emerging as a strong contender with growing interest in AI-related humor and satire. Political and Public Figure Meme is fading slightly as new political memes emerge and older ones lose traction. Niche and Subculture Meme is stable but lacks the broad appeal of other METAs. Utility and Project-Based Meme is gaining momentum as investors seek tokens with both meme appeal and functional use cases.",
+    "meta_rotation_note": "The 'Political Meme Tokens' and 'Meme Character Tokens' are currently the most active and dominant METAs, with high community engagement and clear cultural references. 'Niche and Hyper-Specific Meme Tokens' are emerging as a new trend, driven by subculture and community-specific memes. 'Crypto-Driven Meme Tokens' are fading slightly as the market shifts toward more culturally resonant themes.",
     "meta_leaders": [
       {
-        "meta_name": "Political and Public Figure Meme",
+        "meta_name": "Political Meme Tokens",
         "leader_token": {
           "token_symbol": "MELANIA",
           "token_name": "Melania Meme",
@@ -626,39 +416,39 @@
         }
       },
       {
-        "meta_name": "Meme Culture Reuse",
+        "meta_name": "AI and Tech Meme Tokens",
         "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 72520071.15
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 131143200.0
         }
       },
       {
-        "meta_name": "AI and Tech Meme",
+        "meta_name": "Meme Character Tokens",
         "leader_token": {
-          "token_symbol": "SURGE",
-          "token_name": "SURGE",
-          "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg",
-          "usd_market_cap": 53824341.0
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 12313156.64
         }
       },
       {
-        "meta_name": "Utility and Project-Based Meme",
+        "meta_name": "Niche and Hyper-Specific Meme Tokens",
         "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 2996258.0
+          "token_symbol": "ELIZABETH",
+          "token_name": "Just Elizabeth Cat",
+          "token_address": "DiiTPZdpd9t3XorHiuZUu4E1FoSaQ7uGN4q9YkQupump",
+          "usd_market_cap": 233476.99
         }
       },
       {
-        "meta_name": "Niche and Subculture Meme",
+        "meta_name": "Crypto-Driven Meme Tokens",
         "leader_token": {
-          "token_symbol": "POVEL",
-          "token_name": "POVEL",
-          "token_address": "51tFbfh65Bx8gPBAw44s6ZdwZZCcuXZru6xXhQpQsurg",
-          "usd_market_cap": 804368.0
+          "token_symbol": "B",
+          "token_name": "B",
+          "token_address": "6PMuLSPRz9ae2xPDn5Dc3zH3kDtmE7tTyL8XQKmEbonk",
+          "usd_market_cap": 211416.84
         }
       }
     ]
