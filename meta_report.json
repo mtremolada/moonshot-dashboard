@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-01-22T06:00:55.668217Z",
+  "generated_at_utc": "2026-01-22T07:01:21.755893Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 169,
+  "token_context_count": 167,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 8 PVP group(s); excluding 12 token(s) from META prompt."
+    "Detected 6 PVP group(s); excluding 10 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 12,
+  "pvp_excluded_token_count": 10,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "seeker",
-      "tokens": [
-        {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "E5fEzqw24NxPWd3W8rSkPnsUqxpRVnb8om9EyDEJSsKr",
-          "usd_market_cap": 97592979.0,
-          "processed_at": "2026-01-21T06:42:44.295631Z"
-        },
-        {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 164084883.0,
-          "processed_at": "2026-01-22T01:59:48.525754Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "greenland memes",
@@ -66,26 +46,6 @@
           "token_address": "9RgsMRGBjJMhppZEV77iDa83KwfZbTmnXSuas2G1pump",
           "usd_market_cap": 72716.64,
           "processed_at": "2026-01-21T22:10:01.291498Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "skr",
-      "tokens": [
-        {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "E5fEzqw24NxPWd3W8rSkPnsUqxpRVnb8om9EyDEJSsKr",
-          "usd_market_cap": 97592979.0,
-          "processed_at": "2026-01-21T06:42:44.295631Z"
-        },
-        {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 164084883.0,
-          "processed_at": "2026-01-22T01:59:48.525754Z"
         }
       ]
     },
@@ -188,169 +148,67 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Character Revival",
-        "description": "This META involves tokens based on established meme characters or archetypes from pop culture, internet history, and meme communities. These tokens leverage the cultural familiarity and emotional resonance of iconic characters to drive engagement and adoption.",
-        "defining_signals": [
-          "Tokens based on well-known meme characters like Pepe the Frog, Wojak, and Ralph Wiggum.",
-          "Tokens referencing characters from popular media, such as Shiba Inu (Bonk), Momo, and Trump.",
-          "Tokens using established meme archetypes like 'Giga Chad' or 'Feels Guy' for branding.",
-          "Tokens with clear cultural or meme lineage, including historical references or viral internet personas."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe By Matt Furie",
-            "token_address": "EkJuyYyD3to61CHVPJn6wHb7xANxvqApnVJ4o2SdBAGS"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "GIGA",
-            "token_name": "GIGACHAD",
-            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
-          },
-          {
-            "token_symbol": "MOMO",
-            "token_name": "Momo",
-            "token_address": "G4zwEA9NSd3nMBbEj31MMPq2853Brx2oGsKzex3ebonk"
-          }
-        ],
-        "leader_hint_token_addressress": "EkJuyYyD3to61CHVPJn6wHb7xANxvqApnVJ4o2SdBAGS",
-        "confidence_0_100": 88,
-        "confidence_rationale": "This META is well-supported by tokens with strong cultural and meme lineage, including Pepe, Wojak, and Ralph Wiggum. These tokens have clear historical and viral internet references, and their market caps indicate strong community engagement.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 806687923.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto-Driven Utility and Governance",
-        "description": "This META involves tokens that focus on utility, governance, or community-driven initiatives within crypto ecosystems. These tokens often serve as governance tokens, staking rewards, or access mechanisms for decentralized platforms.",
-        "defining_signals": [
-          "Tokens with governance or voting rights in decentralized platforms.",
-          "Tokens used for staking, yield farming, or liquidity provision.",
-          "Tokens tied to community-driven projects or initiatives.",
-          "Tokens with clear utility in decentralized applications or platforms."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CTM",
-            "token_name": "c8ntinuum",
-            "token_token": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_token": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          },
-          {
-            "token_symbol": "POLLIN",
-            "token_name": "Pollinet",
-            "token_token": "ApRorkYfFt2nZ4jj5E1fvoHd9pK7YJWVQM8DYX5cyai"
-          },
-          {
-            "token_symbol": "TRACKER",
-            "token_name": "Seeker Tracker",
-            "token_token": "ehipS3kn9GUSnEMgtB9RxCNBVfH5gTNRVxNtqFTBAGS"
-          },
-          {
-            "token_symbol": "START",
-            "token_name": "Start Fun",
-            "token_token": "5QMMgVWJH9w8ne1284GhY878pKgKWjnYwExyiwcTzBAGG"
-          },
-          {
-            "token_symbol": "NGL",
-            "token_name": "NGL",
-            "token_token": "3eKEQD9Ej3Usq3CLKgmYkBDXANGwV69XETvs3CNHBAGG"
-          }
-        ],
-        "leader_hint_token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-        "confidence_0_100": 68,
-        "confidence_rationale": "This META is supported by tokens like c8ntinuum and SkillStack, which focus on utility and governance in decentralized ecosystems. These tokens reflect the growing interest in community-driven crypto projects.",
-        "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 516354944.0
-        },
-        "leader_missing_reason": null
-      },
-      {
         "meta_name": "Crypto Parody and Satire",
-        "description": "This META involves tokens that parody or satirize real-world events, institutions, or crypto phenomena. These tokens often use humor, irony, or absurdity to comment on crypto culture, politics, or finance.",
+        "description": "Tokens that parody real-world events, political figures, or crypto phenomena, often using humor or irony to comment on broader trends or personalities.",
         "defining_signals": [
-          "Tokens referencing real-world events, politicians, or institutions in a humorous or satirical way.",
-          "Tokens with absurd or ironic names or themes, such as 'Fartcoin' or 'Dumb Patrick'.",
-          "Tokens leveraging political or cultural satire, such as 'Taco' or 'Melania'.",
-          "Tokens with staged or ironic utility descriptions, such as 'Shitcoin' or 'Useless Coin'."
+          "Direct references to real-world events or figures (e.g., Donald Trump, Elon Musk)",
+          "Satirical or ironic naming and descriptions",
+          "Community-driven humor or meme-based engagement",
+          "Absence of non-crypto cultural origin but strong meme presence",
+          "Strong ties to political or crypto-related humor"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "FART",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+            "token_symbol": "DADDY",
+            "token_name": "Donald Daddy Trump",
+            "token_address": "AF9PqqWZgTRVNpsUPYUKAuQC5Du75JJGP7Ede332bonk"
           },
           {
             "token_symbol": "TACO",
             "token_name": "TRUMP ALWAYS CHICKENS OUT",
-            "token_token": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWiC"
+            "token_address": "F6gmgZzHt9xQxytPF2cBcYPZVKacBn9D9jXFtodqyWiWiC"
+          },
+          {
+            "token_symbol": "DONROE",
+            "token_name": "DONroE DOCTRINE",
+            "token_address": "2ZtpNyFVEdSJ18UH5hNNPW3aAHpsSGZ8s1CN8NVPbonk"
           },
           {
             "token_symbol": "MELANIA",
             "token_name": "Melania Meme",
-            "token_token": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
+            "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
           },
           {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_token": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
+            "token_symbol": "ELON AIR",
+            "token_name": "Elon Air",
+            "token_address": "Anzz4D2M2XisJmQ86Hpjp6Ckuh6AMVkguLJUfSdtBkmB"
           },
           {
-            "token_symbol": "DUMB",
-            "token_name": "Dumb Patrick",
-            "token_token": "HGT3rH6KKy9w765zvbDdtoHUhT3hpK8Q9Ks57NYqpump"
-          },
-          {
-            "token_symbol": "STC",
-            "token_name": "Shitcoin",
-            "token_token": "6Z2ySZNDh6n1RFsrsdQqgXgQ7Ytz8v92nN5Fx4Drpump"
+            "token_symbol": "REKILL",
+            "token_name": "rekill",
+            "token_address_address": "ADnE9o6B7WHhzaRctmbqdPCRiLiA34WBXzYPbrFqBAGS"
           }
         ],
-        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-        "confidence_0_100": 72,
-        "confidence_rationale": "This META is supported by tokens like Fartcoin and Taco, which use humor and satire to comment on crypto culture and politics. These tokens often have strong community engagement and viral appeal.",
+        "leader_hint_token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong satirical themes tied to real-world figures and events, consistent naming patterns, and community engagement in political/crypto humor.",
         "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 303594200.0
+          "token_symbol": "MELANIA",
+          "token_name": "Melania Meme",
+          "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+          "usd_market_cap": 138310928.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Automation",
-        "description": "This META involves tokens tied to AI, automation, and smart agents. These tokens often focus on AI-driven productivity tools, autonomous systems, or AI-generated content, leveraging the growing interest in AI and machine learning.",
+        "meta_name": "AI and Future Tech",
+        "description": "Tokens leveraging AI, AI agents, or futuristic tech themes to attract interest in speculative or experimental projects.",
         "defining_signals": [
-          "Tokens focused on AI agents, automation, or machine learning.",
-          "Tokens with AI-related utility, such as AI-generated content or AI-powered tools.",
-          "Tokens referencing AI personas or AI-generated characters.",
-          "Tokens with a focus on AI development, training, or integration."
+          "AI or AI-related themes in token names or descriptions",
+          "Speculative or experimental project claims",
+          "Community-driven narratives around AI or future tech",
+          "Absence of non-crypto cultural origin but strong tech presence",
+          "Strong ties to AI development or AI-native platforms"
         ],
         "supporting_tokens": [
           {
@@ -359,34 +217,34 @@
             "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "CMEM",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYEEzdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_token": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_token": "FyPDX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "AVAA",
+            "token_name": "Ava AI",
+            "token_address": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump"
           },
           {
             "token_symbol": "HUGGI",
             "token_name": "Huggi",
-            "token_token": "96zMCM9nALK2cDv5p2CiDkGrgbJX9McCnQkxyBaoBAGS"
+            "token_address": "96zMCM9nALK2cDv5p2CiDkGrgbJX9McCnQkxyBaoBAGS"
+          },
+          {
+            "token_symbol": "CODEX",
+            "token_name": "CODEX",
+            "token_address": "HAK9cX1jfYmcNpr6keTkLvxehGPWKELXSu7GH2ofBAGS"
+          },
+          {
+            "token_symbol": "REKILL",
+            "token_name": "rekill",
+            "token_address": "ADnE9o6B7WHhzaRctmbqdPCRiLiA34WBXzYPbrFqBAGS"
+          },
+          {
+            "token_symbol": "HOMUNCULUS",
+            "token_name": "Homunculus",
+            "token_address": "6D2zPfLoDWHR2MtNsAm7dwrsRChFGxYW3LoPfFBaBAGG"
           }
         ],
-        "leader_hint_token_addressress": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 76,
-        "confidence_rationale": "This META is driven by tokens with AI and automation themes, such as Alchemist AI and Claude Memory. These tokens reflect the growing interest in AI tools and agents, though their market caps are lower compared to meme-based tokens.",
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong focus on AI and future tech themes, consistent naming patterns, and community engagement in speculative projects.",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -396,49 +254,103 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Niche and Hyper-Specific Meme Culture",
-        "description": "This META involves tokens that tap into niche or hyper-specific meme subcultures, often referencing obscure internet trends, inside jokes, or subcommunities. These tokens are usually driven by small, dedicated communities.",
+        "meta_name": "Meme Character Revival",
+        "description": "Tokens reviving or repurposing iconic internet memes or characters from pop culture, such as Ralph Wiggum, Wojak, and Clippy, to create a sense of nostalgia and community engagement.",
         "defining_signals": [
-          "Tokens referencing obscure or hyper-specific meme formats or subcultures.",
-          "Tokens tied to niche internet communities or subreddits.",
-          "Tokens leveraging inside jokes or subcultural references.",
-          "Tokens with names or themes that are not widely known outside of specific online groups."
+          "Use of well-known meme characters or phrases with established internet histories",
+          "Community-driven narratives around the character’s traits or behaviors",
+          "Strong ties to viral internet culture or reaction memes",
+          "Absence of non-crypto cultural origin but strong meme presence",
+          "High engagement in meme-centric communities like Reddit or TikTok"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "CLIPY",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "BARRON",
+            "token_name": "The Hero",
+            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
+          },
+          {
+            "token_symbol": "DUMB PATRICK",
+            "token_name": "Dumb Patrick",
+            "token_address": "HGT3rH6KKy9w765zvbDdtoHUhT3hpK8Q9Ks57NYqpump"
+          }
+        ],
+        "leader_hint_token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong presence of meme characters with established cultural references, high engagement in meme communities, and consistent naming patterns.",
+        "leader_token": {
+          "token_symbol": "RALPH",
+          "token_name": "Ralph Wiggum",
+          "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS",
+          "usd_market_cap": 18456059.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia and Retro Culture",
+        "description": "Tokens leveraging retro or nostalgic themes, such as 90s pop culture, classic memes, or historical references, to attract a sense of familiarity and community.",
+        "defining_signals": [
+          "Retro or nostalgic themes in token names or descriptions",
+          "Community-driven narratives around historical or cultural references",
+          "Strong ties to 90s or early 2000s pop culture",
+          "Absence of non-crypto cultural origin but strong meme presence",
+          "High engagement in retro or nostalgic communities"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "67",
             "token_name": "The Official 67 Coin",
-            "token_token": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump"
+            "token_address": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump"
           },
           {
-            "token_symbol": "BARRON",
-            "token_name": "The Hero",
-            "token_token": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
+            "token_symbol": "KAWAI",
+            "token_name": "KAWAI",
+            "token_address": "4Wc2Pbn13dB5FH5qNY3PVRRCsekey1ebHwCTfLdCBAGS"
           },
           {
-            "token_symbol": "NICH",
-            "token_name": "Niche Memes",
-            "token_token": "9tMXPmoR79LuD6WnNpBJ8nHf3tXDVzeLp46XzF7ipump"
+            "token_symbol": "PANDU",
+            "token_name": "Pandu Pandas",
+            "token_token": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_token": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          },
+          {
+            "token_symbol": "CUPSEY",
+            "token_name": "Cupsey",
+            "token_token": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump"
           },
           {
             "token_symbol": "KORI",
             "token_name": "pomkori",
             "token_token": "2gAFPvnr8WzLUcqdpBbeEtKuxNxhvusyrCDjbtWeBAGS"
-          },
-          {
-            "token_symbol": "SHOGGOTH",
-            "token_name": "SHOGGOTH",
-            "token_token": "63wfFjQ2X2R9Avf51ZQeS2W15kZu1xQT488XA99BAGS"
-          },
-          {
-            "token_symbol": "COPCAT",
-            "token_name": "Copper Cat",
-            "token_token": "jpxfcZEzCX5h1usbaEhwG4vq9A1ZYoceU7wbBDApump"
           }
         ],
-        "leader_hint_token_address": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53sd2Chpump",
-        "confidence_0_100": 65,
-        "confidence_rationale": "This META is driven by tokens like '67' and 'Niche Memes,' which tap into niche internet communities and obscure meme formats. These tokens are often community-driven and have strong engagement within specific subcultures.",
+        "leader_hint_token_address": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong retro themes, consistent naming patterns, and community engagement in nostalgic communities.",
         "leader_token": {
           "token_symbol": "67",
           "token_name": "The Official 67 Coin",
@@ -446,39 +358,74 @@
           "usd_market_cap": 12666914.75
         },
         "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto Parody and Absurdity",
+        "description": "Tokens that use absurd or surreal themes to parody crypto culture, often with no clear cultural origin but strong community-driven humor.",
+        "defining_signals": [
+          "Absurd or surreal themes in token names or descriptions",
+          "Community-driven humor or meme-based engagement",
+          "Absence of non-crypto cultural origin but strong meme presence",
+          "Strong ties to crypto-specific humor or inside jokes",
+          "High engagement in meme-centric communities"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "TESTICLE",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "GOYSLOP",
+            "token_name": "Goyslop",
+            "token_address": "9vD6a2gFMNAJoztorVx6q8VCkxaWo1uoR7i8nFo1BAGS"
+          },
+          {
+            "token_symbol": "BUTT",
+            "token_name": "Buttcoin",
+            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
+          },
+          {
+            "token_symbol": "BALLS",
+            "token_name": "balls",
+            "token_address": "GGEikGvJgRqgoFajyfMAsha5GjKg6suAmhBVW91zjupx"
+          },
+          {
+            "token_symbol": "CUPSEY",
+            "token_name": "Cupsey",
+            "token_address": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong absurd themes, consistent naming patterns, and community engagement in crypto-specific humor.",
+        "leader_token": {
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 11104373.42
+        },
+        "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Meme Character Revival' META remains strong due to its cultural depth and viral appeal, with tokens like Pepe and Bonk leading the pack. The 'Crypto Parody and Satire' META is gaining traction as humor and irony become more prominent in crypto discourse. The 'Niche and Hyper-Specific Meme Culture' META is fading slightly as broader meme themes take precedence. The 'AI and Automation' META is emerging as interest in AI tools and agents grows.",
+    "meta_rotation_note": "The 'Meme Character Revival' and 'Crypto Parody and Satire' METAs are currently the most active and dominant, with high engagement and strong community narratives. 'AI and Future Tech' is emerging as a growing trend, while 'Nostalgia and Retro Culture' is fading slightly as newer, more absurd themes gain traction. 'Crypto Parody and Absurdity' remains steady but is showing signs of fragmentation into more niche sub-themes.",
     "meta_leaders": [
-      {
-        "meta_name": "Meme Character Revival",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 806687923.0
-        }
-      },
-      {
-        "meta_name": "Crypto-Driven Utility and Governance",
-        "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 516354944.0
-        }
-      },
       {
         "meta_name": "Crypto Parody and Satire",
         "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 303594200.0
+          "token_symbol": "MELANIA",
+          "token_name": "Melania Meme",
+          "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+          "usd_market_cap": 138310928.0
         }
       },
       {
-        "meta_name": "AI and Automation",
+        "meta_name": "AI and Future Tech",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -487,12 +434,30 @@
         }
       },
       {
-        "meta_name": "Niche and Hyper-Specific Meme Culture",
+        "meta_name": "Meme Character Revival",
+        "leader_token": {
+          "token_symbol": "RALPH",
+          "token_name": "Ralph Wiggum",
+          "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS",
+          "usd_market_cap": 18456059.0
+        }
+      },
+      {
+        "meta_name": "Nostalgia and Retro Culture",
         "leader_token": {
           "token_symbol": "67",
           "token_name": "The Official 67 Coin",
           "token_address": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump",
           "usd_market_cap": 12666914.75
+        }
+      },
+      {
+        "meta_name": "Crypto Parody and Absurdity",
+        "leader_token": {
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 11104373.42
         }
       }
     ]
