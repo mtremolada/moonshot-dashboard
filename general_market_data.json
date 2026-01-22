@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at_local": "2026-01-21T23:01:06.954322-08:00",
-    "generated_at_utc": "2026-01-22T07:01:06.954322+00:00",
+    "generated_at_local": "2026-01-22T00:01:33.329212-08:00",
+    "generated_at_utc": "2026-01-22T08:01:33.329212+00:00",
     "timezone": "America/Los_Angeles",
     "version": "2.0"
   },
@@ -23,7 +23,7 @@
   },
   "fomc": {
     "status": "in_future",
-    "days_until": 6,
+    "days_until": 5,
     "start_date": "2026-01-27",
     "end_date": "2026-01-28",
     "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
@@ -40,24 +40,24 @@
     },
     "Gold": {
       "symbol": "GC=F",
-      "change_pct_1d": -0.15315,
-      "last_close": 4824.39990234375,
+      "change_pct_1d": 0.043464,
+      "last_close": 4833.89990234375,
       "prev_close": 4831.7998046875,
       "source": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
       "error": null
     },
     "Bitcoin": {
       "symbol": "BTC-USD",
-      "change_pct_1d": 0.808898,
-      "last_close": 90099.9296875,
+      "change_pct_1d": 0.376294,
+      "last_close": 89713.28125,
       "prev_close": 89376.9609375,
       "source": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
       "error": null
     },
     "Ethereum": {
       "symbol": "ETH-USD",
-      "change_pct_1d": 1.265,
-      "last_close": 3016.584228515625,
+      "change_pct_1d": 0.648137,
+      "last_close": 2998.20849609375,
       "prev_close": 2978.901123046875,
       "source": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
       "error": null
@@ -72,8 +72,8 @@
     },
     "DXY": {
       "symbol": "DX-Y.NYB",
-      "change_pct_1d": 0.050623,
-      "last_close": 98.80999755859375,
+      "change_pct_1d": -0.003036,
+      "last_close": 98.75700378417969,
       "prev_close": 98.76000213623047,
       "source": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
       "error": null
@@ -88,8 +88,8 @@
     },
     "WTI": {
       "symbol": "CL=F",
-      "change_pct_1d": -0.032993,
-      "last_close": 60.599998474121094,
+      "change_pct_1d": -0.280432,
+      "last_close": 60.45000076293945,
       "prev_close": 60.619998931884766,
       "source": "https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
       "error": null
@@ -159,16 +159,16 @@
     "iwm_minus_spy_pct": 0.8300580000000002
   },
   "crypto_global": {
-    "total_mcap_usd": 3183931303282.6562,
-    "mcap_change_24h_pct": 2.8723690900774432,
-    "btc_dominance_pct": 56.53693016405021,
+    "total_mcap_usd": 3172751744845.2944,
+    "mcap_change_24h_pct": 2.5734272981129154,
+    "btc_dominance_pct": 56.5061236542231,
     "source": "https://api.coingecko.com/api/v3/global",
     "error": null
   },
   "defi": {
     "tvl": {
-      "total_defi_tvl_usd": 121227218460.6525,
-      "solana_tvl_usd": 8558067221.002456,
+      "total_defi_tvl_usd": 121230320270.15053,
+      "solana_tvl_usd": 8557238193.673825,
       "source": "https://api.llama.fi/v2/chains",
       "error": null
     }
@@ -177,9 +177,9 @@
     "dex": {
       "source": "https://api.llama.fi/overview/dexs/Solana",
       "totals": {
-        "total24h": 5670017683.0,
-        "total7d": 25549245108.0,
-        "total30d": 102976653909.0
+        "total24h": 5670033334.0,
+        "total7d": 25549260759.0,
+        "total30d": 102976669560.0
       },
       "selected": [
         {
@@ -188,31 +188,31 @@
           "total24h": 54903061.0,
           "total7d": 442624844.0,
           "total30d": 1787971806.0,
-          "share_pct_24h": 0.9683049342969747,
-          "share_pct_7d": 1.7324380510225132,
-          "share_pct_30d": 1.7362885063055384,
+          "share_pct_24h": 0.9683022614836713,
+          "share_pct_7d": 1.7324369897633172,
+          "share_pct_30d": 1.7362882424141974,
           "error": null
         },
         {
           "venue": "Raydium",
           "matched_name": "Raydium AMM",
-          "total24h": 341352232.0,
+          "total24h": 338819796.0,
           "total7d": 2146742047.0,
           "total30d": 10186953007.0,
-          "share_pct_24h": 6.020302776540741,
-          "share_pct_7d": 8.402369768364743,
-          "share_pct_30d": 9.892487879827756,
+          "share_pct_24h": 5.975622647018463,
+          "share_pct_7d": 8.402364621229939,
+          "share_pct_30d": 9.892486376309256,
           "error": null
         },
         {
           "venue": "Meteora",
           "matched_name": "Meteora DAMM V1",
-          "total24h": 4324113.0,
+          "total24h": 4315742.0,
           "total7d": 38626597.0,
           "total30d": 137742560.0,
-          "share_pct_24h": 0.07626277803268008,
-          "share_pct_7d": 0.15118488564621116,
-          "share_pct_30d": 0.1337609591798569,
+          "share_pct_24h": 0.07611493170808932,
+          "share_pct_7d": 0.15118479303317364,
+          "share_pct_30d": 0.13376093885007947,
           "error": null
         }
       ],
@@ -235,7 +235,7 @@
         },
         {
           "name": "Manifest Trade",
-          "total24h": 403953854.0
+          "total24h": 401450263.0
         }
       ],
       "pumpfun": {
@@ -254,8 +254,8 @@
     "error": null
   },
   "gold_market_cap": {
-    "total_mcap_usd": 33552000000000.0,
-    "raw": "$33.552 T",
+    "total_mcap_usd": 33612000000000.0,
+    "raw": "$33.612 T",
     "source": "https://companiesmarketcap.com/gold/marketcap/",
     "error": null
   },
@@ -266,12 +266,12 @@
     "error": null
   },
   "bitcoin_halving": {
-    "current_height": 933330,
+    "current_height": 933338,
     "next_halving_height": 1050000,
-    "blocks_remaining": 116670,
+    "blocks_remaining": 116662,
     "assumed_seconds_per_block": 600,
-    "estimated_datetime_utc": "2028-04-11T12:01:08.464464+00:00",
-    "estimated_datetime_local": "2028-04-11T05:01:08.464464-07:00",
+    "estimated_datetime_utc": "2028-04-11T11:41:34.590248+00:00",
+    "estimated_datetime_local": "2028-04-11T04:41:34.590248-07:00",
     "source": "https://blockstream.info/api/blocks/tip/height",
     "error": null
   },
