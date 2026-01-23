@@ -1,14 +1,34 @@
 {
-  "generated_at_utc": "2026-01-23T04:26:05.345833Z",
+  "generated_at_utc": "2026-01-23T05:26:38.846377Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 179,
+  "token_context_count": 186,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 23 PVP group(s); excluding 34 token(s) from META prompt."
+    "Detected 25 PVP group(s); excluding 36 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 34,
+  "pvp_excluded_token_count": 36,
   "pvp_report": [
+    {
+      "match_type": "token_name",
+      "match_value": "seeker",
+      "tokens": [
+        {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "E5fEzqw24NxPWd3W8rSkPnsUqxpRVnb8om9EyDEJSsKr",
+          "usd_market_cap": 2634637.0,
+          "processed_at": "2026-01-22T14:01:26.244725Z"
+        },
+        {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 237458045.0,
+          "processed_at": "2026-01-23T05:09:52.079995Z"
+        }
+      ]
+    },
     {
       "match_type": "token_name",
       "match_value": "wikicoin",
@@ -240,6 +260,26 @@
           "token_address": "7yfYHg1nyReJYdnCZt3ynQu8XMrMttUe7QyBdjUpump",
           "usd_market_cap": 2847.83,
           "processed_at": "2026-01-23T00:50:36.370323Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "skr",
+      "tokens": [
+        {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "E5fEzqw24NxPWd3W8rSkPnsUqxpRVnb8om9EyDEJSsKr",
+          "usd_market_cap": 2634637.0,
+          "processed_at": "2026-01-22T14:01:26.244725Z"
+        },
+        {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 237458045.0,
+          "processed_at": "2026-01-23T05:09:52.079995Z"
         }
       ]
     },
@@ -516,51 +556,30 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Rehashing",
-        "description": "Tokens are leveraging well-known memes or cultural references from outside the crypto space, repurposing them for community-driven narratives. These tokens often have a clear cultural origin that predates their crypto launch, making them recognizable to broader audiences.",
+        "meta_name": "Meme Rehashes",
+        "description": "This META is characterized by tokens repurposing well-known memes, internet slang, or cultural references for branding. These tokens often leverage nostalgia or viral internet history to create community-driven value. The themes are usually rooted in pre-crypto internet culture.",
         "defining_signals": [
-          "Tokens referencing established memes like 'Wojak', 'Feels Guy', or 'Hachiko'.",
-          "Tokens drawing from pop culture, such as 'Ralph Wiggum', 'The Simpsons', or 'Minecraft Grandma Fund'.",
-          "Tokens using internet slang or phrases with documented meme history, like 'OOF', 'YO MAMA', or 'STOP BUYING THIS'.",
-          "Tokens referencing historical or literary figures, such as 'Hachiko', 'Nietzschean Penguin', or 'Victoria Beckham Centrality'.",
-          "Tokens leveraging viral TikTok or YouTube trends, such as 'Owl Impression', 'Pumpurr the Cat', or 'The Cage is All I Know'.",
-          "Tokens with clear meme origins in gaming culture, like 'Roblox Index 6900', 'Robux', or 'Bacon Roblox Avatar'."
+          "Tokens referencing established memes or viral internet phrases",
+          "Use of slang or internet lingo with historical roots",
+          "Community-driven branding based on pre-existing cultural references",
+          "Tokens with no original non-crypto cultural origin but strong meme alignment",
+          "Leveraging nostalgia or humor from viral content"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
           {
             "token_symbol": "RALPH",
             "token_name": "Ralph Wiggum",
             "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
-            "token_symbol": "MIAA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "OOF",
-            "token_name": "OOF",
-            "token_address": "6u2fHSDU75GjarRQdCgGqAbkSD9Bnas7te8HeCY3pump"
-          },
-          {
-            "token_symbol": "STOP",
-            "token_name": "STOP BUYING THIS",
-            "token_address": "UCYT8hzhKZWeGyaQLBd8A7LD5dQVcznMGmNSADvpump"
-          },
-          {
-            "token_symbol": "BOME",
-            "token_name": "BOOK OF MEME",
-            "token_address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "Fartcoin",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
           },
           {
             "token_symbol": "TROLL",
@@ -568,29 +587,39 @@
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "YOMAMA",
-            "token_name": "Yo mama",
-            "token_address": "E2BLSv4tXo7qA4Pr3nkJqxyn6743peC7x8E9D5s8pump"
-          },
-          {
-            "token_symbol": "FAP",
-            "token_name": "Fapcoin",
-            "token_address": "8vGr1eX9vfpootWiUPYa5kYoGx9bTuRy2Xc4dNMrpump"
-          },
-          {
-            "token_symbol": "PUMP",
-            "token_name": "PumperCoin",
-            "token_address": "2aHYAD78FKBr9pPWfsbG3nGW9umgrAVcLFDLFu9qpump"
-          },
-          {
             "token_symbol": "BONK",
             "token_name": "Bonk",
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "HACH",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "ALONE",
+            "token_name": "forever alone",
+            "token_address": "8AdsF2QXFA8QkFuQ9TrQW6nEyM4E6yT4AwqgZ5cTpump"
+          },
+          {
+            "token_symbol": "OOF",
+            "token_name": "OOF",
+            "token_address": "6u2fHHSU75GjarRQdCgGqAbkSD9Bnas7te8HeCY3pump"
+          },
+          {
+            "token_symbol": "STICK",
+            "token_name": "just a stick",
+            "token_address": "7pcaz5hK7mFqK7YS2DBogNoQ2NDkSdBoB3crvHXKpump"
+          },
+          {
+            "token_symbol": "WOAH",
+            "token_name": "i got like hella money",
+            "token_address": "GRh9QPH6Sv5XQ1kruWLzR5VgZXVaX3mmM4fKnHkypump"
           }
         ],
-        "leader_hint_token_address": "TROLL",
-        "confidence_0_100": 92,
-        "confidence_rationale": "This META is strong due to the consistent use of well-known memes and cultural references across multiple tokens. Tokens like TROLL and BONK have clear meme origins and high market caps, indicating strong community adoption.",
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wWBoRgigCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 85,
+        "confidence_rationale": "This META is well-supported by a broad range of tokens that clearly leverage established memes and internet culture. Tokens like BONK and TROLL have strong cultural roots and high market caps, indicating strong community adoption.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -600,298 +629,25 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens are leveraging the growing interest in AI by positioning themselves as utility tokens for AI-driven platforms, tools, or ecosystems. These tokens often claim to enable governance, access to AI models, or participation in AI-related projects.",
+        "meta_name": "AI and Tech Utility",
+        "description": "This META is defined by tokens that focus on AI, blockchain, or tech-related utility. These tokens often claim to provide access to AI tools, blockchain infrastructure, or other tech-driven services, leveraging the growing interest in AI and decentralized systems.",
         "defining_signals": [
-          "Tokens tied to AI agent platforms, such as 'LEON AI', 'Fcode AI', or 'SkillStack'.",
-          "Tokens claiming to enable access to AI models, such as 'Clippy', 'Clyde', or 'Mini Companion'.",
-          "Tokens referencing AI-generated content or AI-driven narratives, such as 'Alchemist AI' or 'AutoMem'.",
-          "Tokens with AI-related themes in their names or descriptions, such as 'AI Companion', 'AI Agent', or 'AI Assistant'.",
-          "Tokens claiming to use AI for governance, staking, or decision-making, such as 'The Company' or 'SkillStack'.",
-          "Tokens with AI-related utility claims, such as 'AI-powered trading', 'AI-generated art', or 'AI-driven analytics'."
+          "Tokens with AI or blockchain-related utility",
+          "Focus on decentralized infrastructure or tools",
+          "Tokens claiming to provide access to AI models or platforms",
+          "Tokens with no meme origin but strong tech narrative",
+          "Leveraging the growing interest in AI and blockchain"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "LEON",
-            "token_name": "LEON AI",
-            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "FCOD",
-            "token_name": "Fcode AI",
-            "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          },
-          {
-            "token_symbol": "CLYDE",
-            "token_name": "Smol Clyde",
-            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
-          },
-          {
-            "token_symbol": "MINI",
-            "token_name": "Mini Companion",
-            "token_address": "CxAP5cLC2hyqrp3WUAPt9FXDVM51EvFsnF5yAkAUpump"
-          },
           {
             "token_symbol": "ALCH",
             "token_name": "Alchemist AI",
             "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "AUTOMEM",
-            "token_name": "AutoMem",
-            "token_address": "CV485ySXfgFiwLtbh815JRukH4r9ChLhddqsAaZKBAGS"
-          },
-          {
-            "token_symbol": "THEME",
-            "token_name": "The Company",
-            "token_address": "Ce9hapsvwow8vnqCSHwZEZSeatNuZXvPWqs1GYiVpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "FRANK",
-            "token_name": "Frankenstein AI",
-            "token_address": "81UmREFJsQe78ggSFxCUxwEPFTKWHJ93oP9cmUD1BAGS"
-          },
-          {
             "token_symbol": "LEON",
             "token_name": "LEON AI",
             "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          }
-        ],
-        "leader_hint_token_address": "ALCH",
-        "confidence_0_100": 85,
-        "confidence_rationale": "This META is gaining traction due to the increasing interest in AI-driven platforms and tools. Tokens like ALCH and CLYDE are leading the charge with clear AI utility claims and growing community engagement.",
-        "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 131143200.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens are leveraging the growing interest in AI by positioning themselves as utility tokens for ai-driven platforms, tools, or ecosystems. These tokens often claim to enable governance, access to ai models, or participation in ai-related projects.",
-        "defining_signals": [
-          "Tokens tied to ai agent platforms, such as 'LEON AI', 'Fcode ai', or 'SkillStack'.",
-          "Tokens claiming to enable access to ai models, such as 'Clippy', 'Clyde', or 'Mini Companion'.",
-          "Tokens referencing ai-generated content or ai-driven narratives, such as 'Alchemist ai' or 'AutoMem'.",
-          "Tokens with ai-related themes in their names or descriptions, such as 'ai companion', 'ai agent', or 'ai assistant'.",
-          "Tokens claiming to use ai for governance, staking, or decision-making, such as 'The Company' or 'SkillStack'.",
-          "Tokens with ai-related utility claims, such as 'ai-powered trade', 'ai-generated art', or 'ai-driven analytics'."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "LEON",
-            "token_name": "LEON ai",
-            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "FCOD",
-            "token_name": "Fcode ai",
-            "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          },
-          {
-            "token_symbol": "CLYDE",
-            "token_name": "Smol Clyde",
-            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
-          },
-          {
-            "token_symbol": "MINI",
-            "token_name": "Mini Companion",
-            "token_address": "CxAP5cLC2hyqrp3WUAPt9FXDVM51EvFsnF5yAkAUpump"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist ai",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "AUTOMEM",
-            "token_name": "AutoMem",
-            "token_address": "CV485ySXfgFiwLtbh815JRukH4r9ChLhddqsAaZKBAGS"
-          },
-          {
-            "token_symbol": "THEME",
-            "token_name": "The Company",
-            "token_address": "Ce9hapsvwow8vnqCSHwZEZSeatNuZXvPWqs1GYiVpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "FRANK",
-            "token_name": "Frankenstein ai",
-            "token_address": "81UmREFJsQe78ggSFxCUxwEPFTKWHJ93oP9cmUD1BAGS"
-          },
-          {
-            "token_symbol": "LEON",
-            "token_name": "LEON ai",
-            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          }
-        ],
-        "leader_hint_token_address": "ALCH",
-        "confidence_0_100": 85,
-        "confidence_rationale": "This META is gaining traction due to the increasing interest in ai-driven platforms and tools. Tokens like alch and clude are leading the charge with clear ai utility claims and growing community engagement.",
-        "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 131143200.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens are leveraging the growing interest in AI by positioning themselves as utility tokens for ai-driven platforms, tools, or ecosystems. These tokens often claim to enable governance, access to ai models, or participation in ai-related projects.",
-        "defining_signals": [
-          "Tokens tied to ai agent platforms, such as 'LEON AI', 'Fcode ai', or 'SkillStack'.",
-          "Tokens claiming to enable access to ai models, such as 'Clippy', 'Clyde', or 'Mini Companion'.",
-          "Tokens referencing ai-generated content or ai-driven narratives, such as 'Alchemist ai' or 'AutoMem'.",
-          "Tokens with ai-related themes in their names or descriptions, such as 'ai companion', 'ai agent', or 'ai assistant'.",
-          "Tokens claiming to use ai for governance, staking, or decision-making, such as 'The Company' or 'SkillStack'.",
-          "Tokens with ai-related utility claims, such as 'ai-powered trading', 'ai-generated art', or 'ai-driven analytics'."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "LEON",
-            "token_name": "LEON ai",
-            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "FCOD",
-            "token_name": "Fcode ai",
-            "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          },
-          {
-            "token_symbol": "CLYDE",
-            "token_name": "Smol Clyde",
-            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
-          },
-          {
-            "token_symbol": "MINI",
-            "token_name": "Mini Companion",
-            "token_address": "CxAP5cLC2hyqrp3WUAPt9FXDVM51EvFsnF5yAkAUpump"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist ai",
-            "token_address": "HNg5PYJmtqcmmzXrv6S9zP1CDKk5BgDuyFBxbvNAapump"
-          },
-          {
-            "token_symbol": "AUTOMEM",
-            "token_name": "AutoMem",
-            "token_address": "CV485ySXfgFiwLtbh815JRukH4r9ChLhddqsAaZKBAGS"
-          },
-          {
-            "token_symbol": "THEME",
-            "token_name": "The Company",
-            "token_address": "Ce9hapsvwow8vnqCSHwZEZSeatNuZXvPWqs1GYiVpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "FRANK",
-            "token_name": "Frankenstein ai",
-            "token_address": "81UmREFJsQe78ggSFxCUxwEPFTKWHJ93oP9cmUD1BAGS"
-          },
-          {
-            "token_symbol": "LEON",
-            "token_name": "LEON ai",
-            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          }
-        ],
-        "leader_hint_token_address": "ALCH",
-        "confidence_0_100": 85,
-        "confidence_rationale": "This META is gaining traction due to the increasing interest in ai-driven platforms and tools. Tokens like ALch and clude are leading the charge with clear ai utility claims and growing community engagement.",
-        "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 2915825.35
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Retro Culture",
-        "description": "Tokens are leveraging nostalgia for past decades, particularly the 2000s and 1990s, by referencing pop culture, internet trends, or media from those eras. These tokens often appeal to users who are familiar with the referenced content and seek to tokenize it for community engagement.",
-        "defining_signals": [
-          "Tokens referencing 2000s-era memes or internet culture, such as '2000 Coin' or '2016 Coin'.",
-          "Tokens inspired by retro gaming culture, such as 'Skeleton Banging Shield' or 'Roblox Index 6900'.",
-          "Tokens referencing Y2K aesthetics or nostalgia, such as '2000 Coin' or 'Yacon Roblox Avatar'.",
-          "Tokens referencing 2000s-era internet slang or phrases, such as 'TWIN' or '2016 Coin'.",
-          "Tokens inspired by retro media or pop culture, such as 'The White Whale' or 'The Cage is All I Know'.",
-          "Tokens referencing 2000s-era internet memes, such as 'The Cage is All I Know' or 'The First Frog'."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "2000",
-            "token_name": "2000 Coin",
-            "token_address": "EqbJLmrcip2T9ULueB1Lj4ew4YzUs9WatGWfh5opump"
-          },
-          {
-            "token_symbol": "2016",
-            "token_name": "2016 Coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "ROBUX",
-            "token_name": "Robux",
-            "token_address": "CS6ANSaCckHpiYrmYdeWp9gSptv7h1MuwkzX3wkypump"
-          },
-          {
-            "token_symbol_symbol": "BACON",
-            "token_name": "Bacon Roblox Avatar",
-            "token_address": "9vrm9a2nRTPHWTzZsaK6DHsxXQgPw6MtgA6mTHYxpump"
-          },
-          {
-            "token_symbol": "2000",
-            "token_name": "2000 Coin",
-            "token_address": "EqbJLmrcip2T9ULueB1Lj4ew4YzUs9WatGWfh5opump"
           },
           {
             "token_symbol": "CAGE",
@@ -899,147 +655,248 @@
             "token_address": "GdCN7rQA5egc8SU2Bc2kKB2kMwELneQZJVSt8gGBpump"
           },
           {
-            "token_symbol": "FIRSTFROG",
-            "token_name": "The First Frog",
-            "token_address": "7P8RM8hpQttAzC4an8CaYHko1njts73P1mawgbW3pump"
+            "token_symbol": "SAYO",
+            "token_name": "Sayo",
+            "token_address": "H7yuUsX2DUudQ8gaykEbz5yUKkg1BJf9L8TfwQdHBAGS"
           },
           {
-            "token_symbol": "Y2K",
-            "token_name": "Y2K Coin",
-            "token_address": "Not provided"
-          },
-          {
-            "token_symbol": "2016",
-            "token_name": "2016 Coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
-          },
-          {
-            "token_symbol": "2000",
-            "token_name": "2000 Coin",
-            "token_address": "EqbJLmrcip2T9ULueB1Lj4ew4YzUs9WatGWfh5opump"
-          },
-          {
-            "token_symbol": "BACON",
-            "token_name": "Bacon Roblox Avatar",
-            "token_address": "9vrm9a2nRTPHWTzZsaK6DHsxXQgPw6MtgA6mTHYxpump"
-          }
-        ],
-        "leader_hint_token_address": "2000",
-        "confidence_0_100": 88,
-        "confidence_rationale": "This META is strong due to the consistent use of nostalgia-driven themes across multiple tokens. Tokens like 2000 Coin and 2016 Coin have clear retro appeal and are gaining traction among users seeking to tokenize past internet culture.",
-        "leader_token": {
-          "token_symbol": "2016",
-          "token_name": "2016 coin",
-          "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-          "usd_market_cap": 1262881.45
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens are leveraging the growing interest in AI by positioning themselves as utility tokens for ai-driven platforms, tools, or ecosystems. These tokens often claim to enable governance, access to ai models, or participation in ai-related projects.",
-        "defining_signals": [
-          "Tokens tied to ai agent platforms, such as 'LEON AI', 'Fcode AI', or 'SkillStack'.",
-          "Tokens claiming to enable access to ai models, such as 'Clippy', 'Clyde', or 'Mini Companion'.",
-          "Tokens referencing ai-generated content or ai-driven narratives, such as 'Alchemist AI' or 'AutoMem'.",
-          "Tokens with ai-related themes in their names or descriptions, such as 'ai companion', 'ai agent', or 'ai assistant'.",
-          "Tokens claiming to use ai for governance, staking, or decision-making, such as 'The Company' or 'SkillStack'.",
-          "Tokens with ai-related utility claims, such as 'ai-powered trading', 'ai-generated art', or 'ai-driven analytics'."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "LEON",
-            "token_name": "LEón ai",
-            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
+            "token_symbol": "CJFT",
+            "token_name": "cjft",
+            "token_address": "6WBynoJreWH4dfayG1Qzrq5PBUstDMUkR1c7mSemBAGS"
           },
           {
             "token_symbol": "FCOD",
-            "token_name": "Fcode ai",
+            "token_name": "Fcode AI",
             "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro"
           },
           {
             "token_symbol": "SKILLSTACK",
             "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaaSuEDCVtBAGS"
+            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
           },
           {
-            "token_symbol": "CLYDE",
-            "token_name": "Smol Clyde",
-            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
+            "token_symbol": "LEON",
+            "token_name": "LEON ai",
+            "token_address": "Fnmq5udTPPkGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
           },
           {
-            "token_symbol": "MINI",
-            "token_name": "Mini Companion",
-            "token_address": "CxAP5cLC2hyqrp3WUAPt9FXDVM51EvFsnF5yAkAUpump"
+            "token_symbol": "CYS",
+            "token_name": "Claimyoursol",
+            "token_address": "9WHyywreoUQRc5KCZtfp3czTY9QAMG1jcWmgTBwhBAGS"
           },
           {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist ai",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNAapump"
+            "token_symbol": "LUX",
+            "token_name": "Luxxcoin",
+            "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2"
+          }
+        ],
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 72,
+        "confidence_rationale": "This META is supported by tokens that clearly focus on AI and tech utility. Tokens like ALchemist AI and skillstack have strong tech narratives and are well-aligned with the theme.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 131143200.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia Revival",
+        "description": "This META is defined by tokens that tap into nostalgia for past internet trends, pop culture, or historical references. These tokens often repurpose older memes, media, or cultural touchstones to create a sense of familiarity and emotional connection with the community.",
+        "defining_signals": [
+          "Tokens referencing 90s/2000s internet culture",
+          "Use of retro pop culture or historical references",
+          "Memes or phrases with a long-standing internet history",
+          "Tokens with no original non-crypto cultural origin but strong nostalgic appeal",
+          "Leveraging viral content from earlier decades"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "2016",
+            "token_name": "2016 coin",
+            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
           },
           {
-            "token_symbol": "AUTOMEM",
-            "token_name": "AutoMem",
-            "token_address": "CV485ySXfgFiwLtbh815JRukH4r9ChLhddqsAaZKBAGS"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "THEME",
-            "token_name": "The Company",
-            "token_address": "Ce9hapsvwow8vnqCSHwZEZSeatNuZXvPWwq1GYiVpump"
+            "token_symbol": "BARRON",
+            "token_name": "The Hero",
+            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
           },
           {
-            "token_symbol": "MIAA",
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "BON",
+            "token_name": "Bogdanoff",
+            "token_address": "B2s5k7pK73wYn66icFUnzFos1ZBMHTcjp5M58WP8EVRY"
+          },
+          {
+            "token_symbol": "BAN",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+          },
+          {
+            "token_symbol": "MICHAEL",
+            "token_name": "Michael Titus SpaceX Fund",
+            "token_address": "Ak6dD1KrnZ5p6PjqoaXna6NfeVJuuUU6H5QanbzFBAGS"
+          },
+          {
+            "token_symbol": "MOONCAT",
+            "token_name": "Mooncat",
+            "token_address": "5kSWidFwDKPZiNf52TfincpVn8ufvkAfEzZ9pk8Dpump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "2000",
+            "token_name": "2000 Coin",
+            "token_address": "EqbJLmrcip2T9ULueB1Lj4ew4YzUs9WatGWfh5opump"
+          }
+        ],
+        "leader_hint_token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+        "confidence_0_100": 78,
+        "confidence_rationale": "This META is supported by tokens that clearly tap into nostalgia for past internet culture and pop culture. Tokens like BANAN and 2016 Coin have strong nostalgic appeal and are well-aligned with the theme.",
+        "leader_token": {
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 77101842.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Community and Governance",
+        "description": "This META is characterized by tokens that emphasize community-driven governance or decentralized decision-making. These tokens often claim to provide voting rights, community rewards, or other forms of decentralized governance.",
+        "defining_signals": [
+          "Tokens with community-driven governance",
+          "Focus on decentralized decision-making",
+          "Tokens claiming to provide voting rights or community rewards",
+          "Tokens with no meme origin but strong community focus",
+          "Leveraging the growing interest in decentralized governance"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "DO",
+            "token_name": "DO",
+            "token_address": "5tc7WewyuESm9w9ir5nw5Da21KNiZkpwz2Sie5sqpump"
+          },
+          {
+            "token_symbol": "YAMS",
+            "token_name": "The Yams Cult",
+            "token_address": "63r9SNr8UF6Cq6VcrMB5Ybkb4TTX23E5zTEXhu4TpuMP"
+          },
+          {
+            "token_symbol": "DONT",
+            "token_name": "DisclaimerCoin",
+            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
+          },
+          {
+            "token_symbol": "DUMMY",
+            "token_name": "DUMMY",
+            "token_address": "524eoQUY82k6nL8J8geyen7Q3kbecHSecUYQrt7xZ95b"
+          },
+          {
+            "token_symbol": "DYOR",
+            "token_name": "DoYouOwnResearchCoin",
+            "token_address": "B3VHCA5HiCxMTjxPjbdftUYVuRQW3bCSAgBZ1vwdpump"
+          },
+          {
+            "token_symbol": "STOP",
+            "token_name": "STOP BUYING THIS",
+            "token_address": "UCYT8hzhKZWeGyaQLBd8A7LD5dQVcznMGmNSADvpump"
+          },
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+          },
+          {
+            "token_symbol": "MIA",
             "token_name": "Mia Ko",
             "token_address": "FyPDX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "FRANK",
-            "token_name": "Frankenstein ai",
-            "token_address": "81UmREFJsQe78ggSFxCUxwEPFTKWHJ93oP9cmUD1BAGS"
+            "token_symbol": "CYS",
+            "token_name": "Claimyoursol",
+            "token_address": "9WHyywreoUQRc5KCZtfp3czTY9QamG1jcWmgTBwhBAGS"
           },
           {
             "token_symbol": "LEON",
             "token_name": "LEON ai",
             "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaaSuEDCVtBAGS"
           }
         ],
-        "leader_hint_token_address": "ALCH",
-        "confidence_0_100": 85,
-        "confidence_rationale": "This META is gaining traction due to the increasing interest in ai-driven platforms and tools. Tokens like ALch and clude are leading the charge with clear ai utility claims and growing community engagement.",
+        "leader_hint_token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk",
+        "confidence_0_100": 70,
+        "confidence_rationale": "This META is supported by tokens that clearly emphasize community governance and decentralized decision-making. Tokens like DisclaimerCoin and DoYouOwnResearchCoin have strong community narratives and are well-aligned with the theme.",
         "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 6287158.35
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens are leveraging the growing interest in AI by positioning themselves as utility tokens for AI-driven platforms, tools, or ecosystems. These tokens often claim to enable governance, access to AI models, or participation in AI-related projects.",
+        "meta_name": "AI and Gaming",
+        "description": "This META is defined by tokens that focus on AI-driven gaming or virtual experiences. These tokens often claim to provide access to AI-powered games, virtual worlds, or other gaming-related services, leveraging the growing interest in AI and gaming.",
         "defining_signals": [
-          "Tokens tied to AI agent platforms, such as 'LEON AI', 'Fcode AI', or 'SkillStack'.",
-          "Tokens claiming to enable access to AI models, such as 'Clippy', 'Clyde', or 'Mini Companion'.",
-          "Tokens referencing AI-generated content or AI-driven narratives, such as 'Alchemist AI' or 'AutoMem'.",
-          "Tokens with AI-related themes in their names or descriptions, such as 'AI Companion', 'AI Agent', or 'AI Assistant'.",
-          "Tokens claiming to use AI for governance, staking, or decision-making, such as 'The Company' or 'SkillStack'.",
-          "Tokens with AI-related utility claims, such as 'AI-powered trading', 'AI-generated art', or 'AI-driven analytics'."
+          "Tokens with AI or gaming-related utility",
+          "Focus on virtual worlds or AI-powered games",
+          "Tokens claiming to provide access to gaming platforms or experiences",
+          "Tokens with no meme origin but strong gaming narrative",
+          "Leveraging the growing interest in AI and gaming"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "LEON",
-            "token_name": "LEON AI",
-            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
+            "token_symbol": "HS",
+            "token_name": "HyperScape",
+            "token_address": "EJDVmpQk1jJvmtik4zMN7dFo7Mv9mzV1VswzBdXnpump"
+          },
+          {
+            "token_symbol": "RIVALS",
+            "token_name": "Trench Rivals",
+            "token_address": "2H3cdEiiSApBB8qJBqw2T1HoD7YZugejGYc2FBoVpump"
+          },
+          {
+            "token_symbol": "LAND",
+            "token_name": "Green Land",
+            "token_address": "7JDYi1FqBwJepq24BvvaJeMvihJfgdfTPh1GoR8Zbonk"
+          },
+          {
+            "token_symbol": "GIANT",
+            "token_name": "GIANTAI",
+            "token_address": "CnQLwzyojahWyz1Gut3LciHYAK9vFycqJFRSyA6cyai"
+          },
+          {
+            "token_symbol": "PEACHES",
+            "token_name": "Prunus Persica",
+            "token_address": "CkvYTRMBVPygZu6mcRCXs6ekb6o4CSG6RpJMJ3PYpump"
+          },
+          {
+            "token_symbol": "ROBUX",
+            "token_name": "Robux",
+            "token_address": "CS6ANSaCckHpiYrmYdeWp9gSptv7h1MuwkzX3wkypump"
+          },
+          {
+            "token_symbol": "CJFT",
+            "token_name": "cjft",
+            "token_address": "6WBynoJreWH4dfayG1Qzrq5PBUstDMUkR1c7mSemBAGS"
           },
           {
             "token_symbol": "FCOD",
             "token_name": "Fcode AI",
-            "token_address": "9NiHcbT8EohKJid1RdU3232tATmmM1CvYemTeCP5iwro"
+            "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro"
           },
           {
             "token_symbol": "SKILLSTACK",
@@ -1047,117 +904,27 @@
             "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
           },
           {
-            "token_symbol": "CLYDE",
-            "token_name": "Smol Clyde",
-            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
-          },
-          {
-            "token_symbol": "MINI",
-            "token_name": "Mini Companion",
-            "token_address": "CxAP5cLC2hyqrp3WUAPt9FXDVM51EvFsnF5yAkAUpump"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbVNApump"
-          },
-          {
-            "token_symbol": "AUTOMEM",
-            "token_name": "AutoMem",
-            "token_address": "CV485ySXfgFiwLtbh815JRukH4r9ChLhddqsAaZKBAGS"
-          },
-          {
-            "token_symbol": "THEME",
-            "token_name": "The Company",
-            "token_address": "Ce9hapsvwow8vnqCSHwZEZSeatNuZXvPWqs1GYiVpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBzAFSsZpump"
-          },
-          {
-            "token_symbol": "FRANK",
-            "token_name": "Frankenstein AI",
-            "token_address": "81UmREFJsQe78ggSFxCUxwEPFTKWHJ93oP9cmUD1BAGS"
-          },
-          {
             "token_symbol": "LEON",
-            "token_name": "LEON AI",
+            "token_name": "LEON ai",
             "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
           }
         ],
-        "leader_hint_token_address": "ALCH",
-        "confidence_0_100": 85,
-        "confidence_rationale": "This META is gaining traction due to the increasing interest in AI-driven platforms and tools. Tokens like ALCH and CLYDE are leading the charge with clear AI utility claims and growing community engagement.",
+        "leader_hint_token_address": "EJDVmpQk1jJvmtik4zMN7dFo7Mv9mzV1VswzBdXnpump",
+        "confidence_0_100": 68,
+        "confidence_rationale": "This META is supported by tokens that clearly focus on AI and gaming. Tokens like HyperScape and Trench Rivals have strong gaming narratives and are well-aligned with the theme.",
         "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens are leveraging the growing interest in AI by positioning themselves as utility tokens for AI-driven platforms, tools, or ecosystems. These tokens often claim to enable governance, access to AI models, or participation in AI-related projects.",
-        "defining_signals": [
-          "Tokens tied to AI agent platforms, such as 'LEON AI', 'Fcode AI', or 'SkillStack'.",
-          "Tokens claiming to enable access to AI models, such as 'Clippy', 'Clyde', or 'Mini Companion'.",
-          "Tokens referencing AI-generated content or AI-driven narratives, such as 'Alchemist AI' or 'AutoMem'.",
-          "Tokens with AI-related themes in their names or descriptions, such as 'AI Companion', 'AI Agent', or 'AI Assistant'.",
-          "Tokens claiming to use AI for governance, staking, or decision-making, such as 'The Company' or 'SkillStack'.",
-          "Tokens with AI-related utility claims, such as 'AI-powered trading', 'AI-generated art', or 'AI-driven analytics'."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "LEON",
-            "token_name": "LEON AI",
-            "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "FCOD",
-            "token_name": "Fcode AI",
-            "token_address": "9NiHcbT8EohKJid1RdU3232tATmmM1CvYemTeCP5iwro"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtauEDCVtBAGS"
-          },
-          {
-            "token_symbol": "CLYDE",
-            "token_name": "Smol Clyde",
-            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
-          },
-          {
-            "token_symbol": "MINI",
-            "token_name": "Mini Companion",
-            "token_address": "CxAP5cLC2hyqrp3WUAPt9fxDVM51EvFsnF5yAkAUpump"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDK5BgDuyFBxiVNApump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
+          "token_symbol": "FCOD",
+          "token_name": "Fcode AI",
+          "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro",
+          "usd_market_cap": 343872.0
         },
         "leader_missing_reason": null
       }
     ],
+    "meta_rotation_note": "Meme Rehashes and Nostalgia Revival remain strong, with tokens leveraging well-known internet culture and historical references. AI and Tech Utility is gaining traction as more tokens focus on decentralized infrastructure and AI tools. Community and Governance is also growing, with tokens emphasizing decentralized decision-making. AI and Gaming is emerging as a new trend, with tokens focusing on AI-powered gaming experiences.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Rehashing",
+        "meta_name": "Meme Rehashes",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -1166,7 +933,7 @@
         }
       },
       {
-        "meta_name": "AI-Powered Utility",
+        "meta_name": "AI and Tech Utility",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -1175,57 +942,30 @@
         }
       },
       {
-        "meta_name": "AI-Powered Utility",
+        "meta_name": "Nostalgia Revival",
         "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 131143200.0
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 77101842.0
         }
       },
       {
-        "meta_name": "AI-Powered Utility",
+        "meta_name": "Community and Governance",
         "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 2915825.35
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 6287158.35
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
+        "meta_name": "AI and Gaming",
         "leader_token": {
-          "token_symbol": "2016",
-          "token_name": "2016 coin",
-          "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-          "usd_market_cap": 1262881.45
-        }
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
-        }
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
-        }
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
+          "token_symbol": "FCOD",
+          "token_name": "Fcode AI",
+          "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro",
+          "usd_market_cap": 343872.0
         }
       }
     ]
