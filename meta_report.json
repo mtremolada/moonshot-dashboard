@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-01-23T18:34:18.258769Z",
+  "generated_at_utc": "2026-01-23T19:34:50.108962Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 202,
+  "token_context_count": 196,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 29 PVP group(s); excluding 45 token(s) from META prompt."
+    "Detected 27 PVP group(s); excluding 41 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 45,
+  "pvp_excluded_token_count": 41,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "pepe",
-      "tokens": [
-        {
-          "token_symbol": "男孩",
-          "token_name": "Pepe",
-          "token_address": "78AswdwhU2DxpJLUp1QqW1JDaSxYkpQj8X2R9P1Wpump",
-          "usd_market_cap": 3588.54,
-          "processed_at": "2026-01-22T18:40:41.971053Z"
-        },
-        {
-          "token_symbol": "PEPE",
-          "token_name": "PEPE",
-          "token_address": "EWLsecBt2uBh4gNr9mUDSKRJJh7hSbX4ivFnLd3dsurg",
-          "usd_market_cap": 4427.73,
-          "processed_at": "2026-01-22T18:57:54.200684Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "hyperscape",
@@ -287,26 +267,6 @@
           "token_address": "9dnfcPBRfvRjZtadPdV95DCqi8VFZNAxeW8CkPqekm23",
           "usd_market_cap": 55798.0,
           "processed_at": "2026-01-23T16:45:21.964570Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "soap",
-      "tokens": [
-        {
-          "token_symbol": "SOAP",
-          "token_name": "SOAP Token",
-          "token_address": "HQTDdC91Y7BPL1ceVJijREmTRvqPz365DwJVBEwNYCJb",
-          "usd_market_cap": 848.0,
-          "processed_at": "2026-01-22T18:38:52.119834Z"
-        },
-        {
-          "token_symbol": "SOAP",
-          "token_name": "Soap",
-          "token_address": "BZM6zUQxKMmpSBodb6zw2RafDxzb26A9jhUwTPf5SoP",
-          "usd_market_cap": 95222.0,
-          "processed_at": "2026-01-22T19:06:57.406896Z"
         }
       ]
     },
@@ -650,291 +610,316 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Nostalgia Meme Tokens",
-        "description": "Tokens referencing older memes or cultural references, often with a nostalgic twist on internet culture.",
+        "meta_name": "Roblox Integration",
+        "description": "Tokens leveraging Roblox's vast user base and in-game economy, often tied to virtual goods, game mechanics, or community-driven initiatives within the platform.",
         "defining_signals": [
-          "Memes referencing older internet culture.",
-          "Nostalgic twist on internet culture.",
-          "Community engagement around older memes.",
-          "Use of older memes as a core theme.",
-          "Leveraging nostalgia for meme-driven narratives."
+          "Direct references to Roblox game mechanics or virtual economy",
+          "Community-driven initiatives within Roblox",
+          "Tokens enabling in-game purchases or rewards",
+          "Integration with Roblox's user base and ecosystem",
+          "Utilization of Roblox's API or game development tools"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "P250",
-            "token_name": "Sand Dune",
-            "token_address": "4HX5VSjszacfWKTGapVhNHKLjBzGQvZvni9qJE6Rpump"
-          },
-          {
-            "token_symbol": "PEPE",
-            "token_name": "Pepel",
-            "token_address": "GrM2hSKc2Z6pVQAsbJP9h4LBarughV1eehTunJ53pump"
-          },
-          {
-            "token_symbol": "CLIP",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGeWPEo6pump"
-          },
-          {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "RAALPH",
-            "token_name": "Ralph Niggum",
-            "token_address": "6JpaDhkmeYtVJA7vMwbcPdkmGesLHpWv67vGrJyKpump"
-          }
-        ],
-        "leader_hint_token_address": "GrM2hSKc2Z6pVQAsbJP9h4LBarughV1eehTunJ53pump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong nostalgia for older memes and internet culture.",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 11798871.53
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Revival",
-        "description": "Tokens reviving older memes from internet culture, often with roots in 2000s-2010s internet culture, including 4chan, Reddit, and early TikTok trends.",
-        "defining_signals": [
-          "References to older memes like 'Wojak', 'Clippy', 'Pepe', and 'Sand Dune' skins.",
-          "Use of established meme formats with new crypto narratives.",
-          "Recontextualization of classic meme characters or phrases into crypto themes.",
-          "High engagement from communities already familiar with the original meme.",
-          "Leveraging nostalgia for meme authenticity and community bonding."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "WOj",
-            "token_name": "Wojak",
-            "token_address": "8J69rbbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "CLYDE",
-            "token_name": "Smol Clyde",
-            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
-          },
-          {
-            "token_symbol": "PEPE",
-            "token_name": "Pepel",
-            "token_address": "GrM2hSKc2Z6pVQAsbJP9h4LBarughV1eehTunJ53pump"
-          },
-          {
-            "token_symbol": "CLIP",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVVoKkGEWPEo6pump"
-          },
-          {
-            "token_symbol": "P250",
-            "token_name": "Sand Dune",
-            "token_address": "4HX5VSjszacfWKTGapVhNHKLjBzGQvZvni9qJE6Rpump"
-          }
-        ],
-        "leader_hint_token_address": "GrM2hSKc2Z6pVQAsbJP9h4LBarughV1eehTunJ53pump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong historical meme roots and active community engagement.",
-        "leader_token": {
-          "token_symbol": "PFPEPE",
-          "token_name": "Pumpfun Pepe",
-          "token_address": "GrM2hSKc2Z6pVQAsbJP9h4LBarughV1eehTunJ53pump",
-          "usd_market_cap": 2593375.76
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Meme Tokens",
-        "description": "Tokens leveraging AI-generated memes or characters, often with a humorous or ironic twist on AI culture or tech.",
-        "defining_signals": [
-          "AI-generated meme characters or narratives.",
-          "Community-driven AI meme culture.",
-          "Use of AI as a core theme or meme element.",
-          "Meme content generated or inspired by AI tools.",
-          "Community interaction through AI-generated content."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "AI",
-            "token_name": "AI Meme",
-            "token_address": "E2BLSv4tXo7qA4Pr3nkJqxyn6743peC7x8E9D5s8pump"
-          },
-          {
-            "token_symbol": "CLYDE",
-            "token_name": "Smol Clyde",
-            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
-          },
-          {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
-          },
           {
             "token_symbol": "CLOUT",
-            "token_name": "ChudGPT",
-            "token_address": "FmW8YPS6gg3f2pvBfC6ZE2LjaXH8btkjWJeyyQU2pump"
+            "token_name": "CLOUT",
+            "token_address": "Cwq13pofafd7KNbWBabULgt7QC1w53NjiPgES49Ypump"
           },
           {
-            "token_symbol": "NEURO",
-            "token_name": "Neuro Meme",
-            "token_address": "7karUWvThwhCPmdaa1EuP6NgjmJvA5eKTKK1GaiFpump"
+            "token_symbol": "Bacon",
+            "token_name": "Bacon Roblox Avatar",
+            "token_address": "9vrm9a2nRTPHWTzZsaK6DHsxXQgPw6MtgA6mTHYxpump"
+          },
+          {
+            "token_symbol": "RBLX6900",
+            "token_name": "Roblox Index 6900",
+            "token_address": "DCFCBFU4pYY3r8aYikVEwbABrFGczbunxCLXR943pump"
+          },
+          {
+            "token_symbol": "BLOX",
+            "token_name": "BLOX",
+            "token_address": "B3VHCA5HiCxMTjxPjbdftUYVuRQW3bCSAgBZ1vwdpump"
+          },
+          {
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+          },
+          {
+            "token_symbol": "BLOX",
+            "token_name": "BLOX",
+            "token_address": "B3VHCA5HiCxMtjxPjbdftUYVuRQW3bCSAgBZ1vwdpump"
           }
         ],
-        "leader_hint_token_address": "E2BLSs4tXo7qA4Pr3nkJqxyn6743peC7x8E9D5s8pump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Growing interest in AI-generated content and meme culture.",
+        "leader_hint_token_address": "DCFCBFU4pYY3r8aYikVEwbABrFGczbunxCLump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Multiple tokens directly reference Roblox's ecosystem, including game mechanics, virtual economy, and community-driven initiatives. The market cap and integration signals indicate a strong and emerging trend.",
         "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 237458045.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Powered Meme Tokens",
-        "description": "Tokens leveraging AI-generated memes or characters, often with a humorous or ironic twist on AI culture or tech.",
+        "meta_name": "AI Integration",
+        "description": "Tokens integrating AI capabilities into their ecosystem, often through AI agents, chatbots, or automated systems for governance, utility, or user interaction.",
         "defining_signals": [
-          "AI-generated meme characters or narratives.",
-          "Community-driven AI meme culture.",
-          "Use of AI as a core theme or meme element.",
-          "Meme content generated or inspired by AI tools.",
-          "Community interaction through AI-generated content."
+          "Integration of AI agents or chatbots",
+          "Automated systems for governance or utility",
+          "AI-driven user interaction features",
+          "Utilization of AI for tokenomics or community management",
+          "AI-powered tools for transaction or governance"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "AI",
-            "token_name": "AI Meme",
-            "token_address": "E2BLSv4tXo7qA4Pr3nkJqxyn6743peC7x8E9D5s8pump"
-          },
           {
             "token_symbol": "CLYDE",
             "token_name": "Smol Clyde",
             "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
           },
           {
-            "token_symbol": "SKILLSTACK",
-            "token_name": "SkillStack",
-            "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
+            "token_symbol": "OBJECTS",
+            "token_name": "Talking Objects",
+            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpump"
           },
           {
-            "token_symbol": "CLOUT",
-            "token_name": "ChudGPT",
-            "token_address": "FmW8YPS6gg3f2pvBfC6ZE2LjaXH8btkjWJeyyQU2pump"
+            "token_symbol": "SKR",
+            "token_name": "SKR",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
           },
           {
-            "token_symbol": "NEURO",
-            "token_name": "Neuro Meme",
-            "token_address": "7karUWvThwhCPmdaa1EuP6NgjmJvA5eKTKK1GaiFpump"
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist ai",
+            "token_address": "HNg5PYJmtqcmmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "GRU",
+            "token_name": "GRU",
+            "token_address": "96NbRGpi19SkUrtvFWH17rqaV9LGsviHVmSdJ9qD8app"
+          },
+          {
+            "token_symbol": "RO",
+            "token_name": "ralph-orchestrator",
+            "token_address": "BFTPbgPoeLjcmH1QCUAZxCafT56AgwRKGmJvbCv6BAGs"
           }
         ],
-        "leader_hint_token_address": "E2BLSv4tXo7qA4Pr3nkJqxyn6743peC7x8E9D5s8pump",
+        "leader_hint_token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
         "confidence_0_100": 75,
-        "confidence_rationale": "Growing interest in AI-generated content and meme culture.",
+        "confidence_rationale": "Multiple tokens are integrating AI capabilities into their ecosystems, showing a growing trend in AI-driven utility and user interaction features.",
         "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 237458045.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political Meme Tokens",
-        "description": "Tokens referencing political memes or figures, often with a satirical or ironic twist on current events or political culture.",
+        "meta_name": "AI and Automation",
+        "description": "Tokens focused on AI-driven automation, often involving AI agents, smart contracts, or automated systems for governance, utility, or user interaction.",
         "defining_signals": [
-          "Memes referencing political figures or events.",
-          "Satirical or ironic take on political culture.",
-          "Community engagement around political memes.",
-          "Use of political memes as a core theme.",
-          "Leveraging political events for meme-driven narratives."
+          "AI-driven automation features",
+          "Smart contract-based governance",
+          "Automated systems for user interaction",
+          "Utilization of AI for transaction or governance",
+          "AI-powered tools for community management"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MWM",
-            "token_name": "Meme Wars General",
-            "token_address": "5CQWHUyXHHZeaiyDj6CDQYmDAHU9YgkK51jbfe8Mpump"
+            "token_symbol": "CLYDE",
+            "token_name": "Smol Clyde",
+            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
           },
           {
-            "token_symbol": "TRUMP",
-            "token_name": "Trump Meme",
-            "token_address": "E3HwooLGDXHDi3FLzTt3NygbzfSBHxy1c3AAMbeDBAGS"
+            "token_symbol": "OBJECTS",
+            "token_name": "Talking Objects",
+            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpump"
+          },
+          {
+            "token_symbol": "SKR",
+            "token_name": "SKR",
+            "token_address": "skRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+          },
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist ai",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "GRU",
+            "token_name": "GRU",
+            "token_address": "96NbRGpi19SkUrtvFWH17rqaV9LGsviHVmSdJ9qD8app"
+          },
+          {
+            "token_symbol": "RO",
+            "token_name": "ralph-orchestrator",
+            "token_address": "BFTPbgPoeLjcmH1QCUAZxCafT56AgwRKGmJvbCv6BAGS"
+          }
+        ],
+        "leader_hint_token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Multiple tokens are integrating AI-driven automation into their ecosystems, showing a growing trend in AI-powered utility and user interaction features.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 119894830.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia and Pop Culture References",
+        "description": "Tokens leveraging nostalgia for 90s/2000s pop culture, often referencing movies, TV shows, or internet culture from that era for community engagement.",
+        "defining_signals": [
+          "References to 90s/2000s pop culture",
+          "Nostalgic references to classic media",
+          "Community engagement through retro themes",
+          "Utilization of vintage internet culture",
+          "Cultural revival of past entertainment"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "WONDERLAND",
+            "token_name": "Wonderland",
+            "token_address": "CD6cakWRBJWto8YV2eXDhqHBVwe7dXk2uqWiwmSWpump"
+          },
+          {
+            "token_symbol": "NME",
+            "token_name": "Naruto's Milk Expired",
+            "token_address": "oehM91EyXzixKjCDo9HGBGP58n9d39BGx91wdL5pump"
           },
           {
             "token_symbol": "POTUS",
             "token_name": "Penguin Of The United States",
-            "token_address": "BwyjU6Nbd9XJ5eEqqQc7dwyEdfFViZDjfTrw4sJTpump"
+            "token_address": "BwyjU6Nbd9XJ5eEqqNc7dwyEdfZViZDjfTrw4sJTpump"
           },
           {
-            "token_symbol": "BARRON",
-            "token_name": "Barron",
-            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
+            "token_symbol": "PENGICLE",
+            "token_name": "pengicle",
+            "token_address": "GbBEqNi6st54nEW88rYJdKt9FoBcyVYwNhqewBaMpump"
           },
           {
-            "token_symbol": "VBC",
-            "token_name": "Victoria Beckham Centrality",
-            "token_address": "CE87zH8g8S6S8bj8uZYaqRwWgF7drSSuTFPebZEpump"
+            "token_symbol": "BUTT",
+            "token_name": "Buttcoin",
+            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
+          },
+          {
+            "token_symbol": "FISH",
+            "token_name": "rainbowfish",
+            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
           }
         ],
-        "leader_hint_token_address": "5CQWHUyXhhZeaiyDj6CDQYmDAHU9YgkK51jbfe8Mpump",
+        "leader_hint_token_address": "cd6cakWRBJWto8YV2eXDhqHBVwe7dXk2uqWiwmSWpump",
         "confidence_0_100": 70,
-        "confidence_rationale": "Political memes are a strong and recurring theme in internet culture.",
+        "confidence_rationale": "Nostalgia for 90s/2000s pop culture is being leveraged across multiple tokens, showing a consistent trend in community engagement through retro themes.",
         "leader_token": {
-          "token_symbol": "BARRON",
-          "token_name": "The Hero",
-          "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk",
-          "usd_market_cap": 19828.0
+          "token_symbol": "Buttcoin",
+          "token_name": "Buttcoin",
+          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+          "usd_market_cap": 4927611.4
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Culture Revival",
+        "description": "Tokens repurposing classic internet memes, often with historical roots in early 2000s internet culture, for crypto branding and community engagement.",
+        "defining_signals": [
+          "References to early 2000s internet memes",
+          "Historical roots in early internet culture",
+          "Community engagement through meme revival",
+          "Utilization of classic meme formats for crypto branding",
+          "Cultural nostalgia for early internet humor"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "TWIN",
+            "token_name": "TWIN",
+            "token_address": "2h6EQ8oYnDQK4ppwHqR3JgmfRVpL4L6ga7AhaPnxpump"
+          },
+          {
+            "token_symbol": "ALONE",
+            "token_name": "forever alone",
+            "token_address": "8AdsF2QXFA8QkFuQ9TrQW6nEyM4E6yT4AwqgZ5cTpump"
+          },
+          {
+            "token_symbol": "DUMMY",
+            "token_name": "DUMMY",
+            "token_address": "524eoQUY82k6nL8J8geyen7Q3kbecHSecUYQrt7xZ95b"
+          },
+          {
+            "token_symbol": "W",
+            "token_name": "w social",
+            "token_address": "6s9TcM8QMXiyRkaKDxkuUEenJ4cpnEb72tsnDMK5pump"
+          },
+          {
+            "token_symbol": "ACORN",
+            "token_name": "Acorn By GSD",
+            "token_address": "HpW4y8XUj7PK5npjbjwT7GH1J98ue7WjNB89xrhwpump"
+          },
+          {
+            "token_symbol": "NEED",
+            "token_name": "NEED",
+            "token_address": "FLeuXXyxKqrDU8MULuxLSPPWpv1TLroMSHM6XsG8bttN"
+          }
+        ],
+        "leader_hint_token_address": "2h6eq8oYnDQK4ppwHqR3JgmfRVpL4L6ga7AhaPnxpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Classic internet memes from the early 2000s are being repurposed for crypto branding, showing a strong revival trend with multiple tokens leveraging nostalgia for community engagement.",
+        "leader_token": {
+          "token_symbol": "MEEK",
+          "token_name": "THEMEEKSHALLINHERITTHEEARTH",
+          "token_address": "FLeuXXyxKqrDU8MULuxLSPPWpv1TLroMSHM6XsG8bttN",
+          "usd_market_cap": 235426.0
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Meme Revival remains strong with tokens like Pepe and Wojak. AI-Powered Meme Tokens are gaining traction but still emerging. Political Meme Tokens are fading slightly as new memes emerge.",
+    "meta_rotation_note": "The Roblox Integration and Meme Culture Revival METAs are showing strong growth with new tokens entering the space. AI and Automation is gaining traction as more projects integrate AI-driven features. Nostalgia and Pop Culture References remains steady but shows signs of plateauing. AI and Automation is emerging as a new dominant trend with increasing adoption across multiple tokens.",
     "meta_leaders": [
       {
-        "meta_name": "Nostalgia Meme Tokens",
+        "meta_name": "Roblox Integration",
         "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 11798871.53
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 237458045.0
         }
       },
       {
-        "meta_name": "Meme Revival",
+        "meta_name": "AI Integration",
         "leader_token": {
-          "token_symbol": "PFPEPE",
-          "token_name": "Pumpfun Pepe",
-          "token_address": "GrM2hSKc2Z6pVQAsbJP9h4LBarughV1eehTunJ53pump",
-          "usd_market_cap": 2593375.76
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 237458045.0
         }
       },
       {
-        "meta_name": "AI-Powered Meme Tokens",
+        "meta_name": "AI and Automation",
         "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 119894830.0
         }
       },
       {
-        "meta_name": "AI-Powered Meme Tokens",
+        "meta_name": "Nostalgia and Pop Culture References",
         "leader_token": {
-          "token_symbol": "CLYDE",
-          "token_name": "Smol Clyde",
-          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-          "usd_market_cap": 471165.02
+          "token_symbol": "Buttcoin",
+          "token_name": "Buttcoin",
+          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+          "usd_market_cap": 4927611.4
         }
       },
       {
-        "meta_name": "Political Meme Tokens",
+        "meta_name": "Meme Culture Revival",
         "leader_token": {
-          "token_symbol": "BARRON",
-          "token_name": "The Hero",
-          "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk",
-          "usd_market_cap": 19828.0
+          "token_symbol": "MEEK",
+          "token_name": "THEMEEKSHALLINHERITTHEEARTH",
+          "token_address": "FLeuXXyxKqrDU8MULuxLSPPWpv1TLroMSHM6XsG8bttN",
+          "usd_market_cap": 235426.0
         }
       }
     ]
