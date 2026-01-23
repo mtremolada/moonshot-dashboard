@@ -1,844 +1,7 @@
 {
-  "last_updated": "2026-01-23T21:42:38.005077Z",
+  "last_updated": "2026-01-23T22:38:29.057019Z",
   "retention_hours": 24,
   "tokens": [
-    {
-      "processed_at": "2026-01-22T21:51:24.671584Z",
-      "token_address": "G7H74urAtPDL4hi2847UD82iRfQ1CUL8kWFu3fxWBAGS",
-      "token_symbol": "RAILWAY",
-      "token_name": "Railway",
-      "first_time_seen": true,
-      "times_seen_before": 0,
-      "full_token_details": {
-        "aggregate_score": 3.5,
-        "groq_web_research": {
-          "summary_all_context": "Railway (RAILWAY) is a utility token enabling CLI-based management of Railway deployments, offering status checks, health monitoring, logs, and project management. It is deployed via https://j7tracker.com but lacks an official website or socials.",
-          "answer": "**1. What it claims to be**  \n- A \u201cRailway\u201d token (symbol **RAILWAY**) that \u201cmanages Railway deployments via CLI,\u201d providing commands for status checks, health checks, logs, and project management.  \n- It is advertised as being deployed through the URL **https://j7tracker.com**.  \n\n**2. Likely utility / features** *(inferred from the description)*  \n- **CLI\u2011based deployment control** \u2013 ability to start, stop, and update Railway\u2011hosted services.  \n- **Status monitoring** \u2013 commands that return the current health and operational state of a deployment.  \n- **Log retrieval** \u2013 fetch and view logs from deployed applications.  \n- **Project management** \u2013 tools to list, create, or modify Railway projects from the command line.  \n- **Health\u2011check automation** \u2013 scripted checks that can be run regularly to verify service integrity.  \n- **Integration with external tracker** \u2013 the token appears to be linked to the tracker site\u202fhttps://j7tracker.com (likely for analytics or monitoring).  \n\n**3. Missing information checklist**  \n- **Comprehensive documentation** (API/CLI reference, usage guides).  \n- **Whitepaper or technical overview** explaining the token\u2019s architecture and security model.  \n- **Official website** (beyond the short tracker URL).  \n- **Team / developer identities** and contact information.  \n- **Tokenomics** (supply, distribution, governance, any on\u2011chain mechanisms).  \n- **Audit reports** or security assessments.  \n\n**4. Risk note**  \nAll statements above are based solely on the provided metadata. No external verification has been performed, and the actual functionality, security, or legitimacy of the Railway token cannot be confirmed without additional documentation or independent review. Use caution and perform your own due diligence before interacting with or investing in the token.",
-          "confidence_score": {
-            "final_score": 8,
-            "confidence_subscores": {
-              "context_faithfulness": 8,
-              "internal_consistency": 7,
-              "specificity": 9,
-              "completeness": 6,
-              "clarity": 8,
-              "source_groundedness": 9
-            }
-          },
-          "narrative_score": {
-            "final_score": 5,
-            "narrative_subscores": {
-              "hook_strength": null,
-              "cultural_relevance": null,
-              "cultural_charge": null,
-              "mission_statement": null,
-              "compellingness": null,
-              "tribal_identity": null,
-              "lore_amount": null,
-              "lore_depth": null
-            }
-          },
-          "sentiment_score": {
-            "final_score": null,
-            "sentiment_subscores": null
-          }
-        },
-        "llm_interpretation": {
-          "created_at": "2026-01-22T21:53:02.277335Z",
-          "token_address": "G7H74urAtPDL4hi2847UD82iRfQ1CUL8kWFu3fxWBAGS",
-          "name": "Railway",
-          "symbol": "RAILWAY",
-          "description": "Deployed using https://j7tracker.com",
-          "timestamp": "2026-01-22T21:52:54.994011+00:00",
-          "llm_interpretation": "Description: The Railway token is related to managing Railway deployments via CLI, offering various features like status checks and logs.\n\n1. memecoin: FALSE - The token is related to a specific utility, not a meme.\n2. utility: TRUE - The token is based on tech or utility, specifically for managing Railway deployments.\n3. ai_token: FALSE - There's no mention of AI or artificial intelligence in the provided information.\n4. tweet_coin: TRUE - The main tweet summary mentions a token related to Matt Shumer's repository, indicating a connection to a viral or notable tweet.\n5. current_event: FALSE - There's no indication that the token is based on a current event or trend.\n6. racist: FALSE - There's no mention of racist themes in the token branding or description.\n7. offensive: FALSE - There's no indication of offensive themes in the token branding or description.\n8. animals: FALSE - The token is not based on an animal.\n9. political: FALSE - There's no mention of politics or a political figure in the token description or branding.",
-          "llm_description": "The Railway token manages Railway deployments via CLI, offering features like status checks, health checks, logs, and project management.",
-          "scraped_website_content": "mshumer / claude-skill-railway Public Notifications You must be signed in to change notification settings Fork 1 Star 3 Railway skill for Claude Code - manage deployments via CLI 3 stars 1 fork Branches Tags Activity Star Notifications You must be signed in to change notification settings Code Issues 0 Pull requests 0 Actions Projects 0 Security 0 Insights Additional navigation options Code Issues Pull requests Actions Projects Security Insights mshumer/claude-skill-railway main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1 Commit railway railway README.md README.md View all files Repository files navigation README Railway Skill for Claude Code A Claude Code skill for managing Railway deployments via CLI. Features Status checks - View project, environment, service, and deployment info Health checks - Verify your deployment is responding Logs - View deploy/build logs with natural language filters (\"errors\", \"last hour\") Deploy - Deploy with automatic health verification Variables - View/set env vars (sensitive values auto-redacted) Project switching - Quick switch between Railway projects Database access - Connect to database shells Installation npx add-skill mshumer/claude-skill-railway Or manually copy the railway folder to your Claude Code skills directory: # Personal (all projects) cp -r railway ~ /.claude/skills/ # Or project-specific cp -r railway /path/to/project/.claude/skills/ Prerequisites Install Railway CLI: npm install -g @railway/cli Login: railway login Link a project: railway link Usage /railway # Status check (default) /railway status # Project info + last deployment /railway health # Check if deployment is responding /railway logs # Recent logs /railway logs errors # Error logs only /railway logs 1h # Logs from last hour /railway deploy # Deploy + verify /railway redeploy # Redeploy without rebuild /railway vars # List environment variables /railway switc... (truncated)",
-          "classifications": {
-            "memecoin": false,
-            "utility": true,
-            "ai_token": false,
-            "tweet_coin": true,
-            "current_event": false,
-            "racist": false,
-            "offensive": false,
-            "animals": false,
-            "political": false
-          },
-          "prompt_summaries": {
-            "prompt_1_summary_website_content": "Claude Code skill for managing Railway deployments via CLI, offering features like status checks, health checks, logs, deploy, variables, and project switching.",
-            "prompt_2_summary_twitter_searches": "",
-            "prompt_3_summary_profile_content": "",
-            "prompt_4_summary_main_tweet": "Matt Shumer's repository is related to a token, details can be found at the provided link.",
-            "prompt_5_summary_twitter_community_recent_posts": ""
-          }
-        },
-        "llm_staged_data": {
-          "created": "43 minutes ago",
-          "token_created_timestamp": "2026-01-22T21:08:59.629000+00:00",
-          "token_address": "G7H74urAtPDL4hi2847UD82iRfQ1CUL8kWFu3fxWBAGS",
-          "token_symbol": "RAILWAY",
-          "token_name": "Railway",
-          "first_time_seen": true,
-          "times_seen_before": 0,
-          "token_description": "Deployed using https://j7tracker.com",
-          "token_image": "https://metadata.j7tracker.com/images/3ee3606c5ca545e0.png",
-          "token_twitter": null,
-          "token_website": null,
-          "pump_twitter": "https://x.com/mattshumer_/status/2014444713391038906",
-          "pump_telegram": null,
-          "pump_website": "https://github.com/mshumer/claude-skill-railway",
-          "dex_twitter": null,
-          "dex_telegram": null,
-          "dex_discord": null,
-          "dex_website": null,
-          "is_currently_live": false,
-          "community_takeover": false,
-          "community_takeover_payment_time": null,
-          "community_takeover_time_ago": "N/A",
-          "main_tweet": {
-            "text": "Repo: https://t.co/dDCNUEUdNx",
-            "username": "mattshumer_",
-            "displayname": "Matt Shumer"
-          },
-          "website_content": "mshumer / claude-skill-railway Public Notifications You must be signed in to change notification settings Fork 1 Star 3 Railway skill for Claude Code - manage deployments via CLI 3 stars 1 fork Branches Tags Activity Star Notifications You must be signed in to change notification settings Code Issues 0 Pull requests 0 Actions Projects 0 Security 0 Insights Additional navigation options Code Issues Pull requests Actions Projects Security Insights mshumer/claude-skill-railway main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1 Commit railway railway README.md README.md View all files Repository files navigation README Railway Skill for Claude Code A Claude Code skill for managing Railway deployments via CLI. Features Status checks - View project, environment, service, and deployment info Health checks - Verify your deployment is responding Logs - View deploy/build logs with natural language filters (\"errors\", \"last hour\") Deploy - Deploy with automatic health verification Variables - View/set env vars (sensitive values auto-redacted) Project switching - Quick switch between Railway projects Database access - Connect to database shells Installation npx add-skill mshumer/claude-skill-railway Or manually copy the railway folder to your Claude Code skills directory: # Personal (all projects) cp -r railway ~ /.claude/skills/ # Or project-specific cp -r railway /path/to/project/.claude/skills/ Prerequisites Install Railway CLI: npm install -g @railway/cli Login: railway login Link a project: railway link Usage /railway # Status check (default) /railway status # Project info + last deployment /railway health # Check if deployment is responding /railway logs # Recent logs /railway logs errors # Error logs only /railway logs 1h # Logs from last hour /railway deploy # Deploy + verify /railway redeploy # Redeploy without rebuild /railway vars # List environment variables /railway switc... (truncated)",
-          "twitter_community_content": null,
-          "twitter_profile": {
-            "displayname": null,
-            "bio": null,
-            "recent_tweets": []
-          },
-          "twitter_search_texts": {
-            "address_recent": [],
-            "address_top": [],
-            "symbol_recent": [],
-            "symbol_top": []
-          }
-        },
-        "risk_analysis": {
-          "onchain_scan": {
-            "dex_paid": false,
-            "dex_paid_timestamp": null,
-            "bundle_percentage": 13.05,
-            "fresh_wallets_percentage": 1.2,
-            "dev_hold_percentage": 0.0,
-            "insider_wallets_percentage": 0.0,
-            "num_holders": 505,
-            "largest_holder_percentage": 14.0,
-            "largest_cluster_percentage": 1.87,
-            "large_holder_count": 10,
-            "same_percentage_count": 4,
-            "low_sol_count": 4
-          },
-          "onchain_scan_score": {
-            "final_score": 4.8,
-            "bundle_percentage_score": 5,
-            "fresh_wallets_percentage_score": 9,
-            "dev_hold_percentage_score": 10,
-            "insider_wallets_percentage_score": 10,
-            "num_holders_score": 4,
-            "largest_holder_percentage_score": 4,
-            "largest_cluster_percentage_score": 9,
-            "large_holder_count_score": 10,
-            "same_percentage_count_score": 7,
-            "low_sol_count_score": 8
-          },
-          "graduated_tokens_thresholds": {
-            "highest_threshold": null,
-            "all_time_highest_threshold": null,
-            "highest_threshold_as_farm": null,
-            "highest_threshold_as_farmed": null,
-            "highest_threshold_as_no_farm_detected": null,
-            "farm_status": null,
-            "ever_failed_criteria": null,
-            "last_scanned": null
-          },
-          "social_scan": {
-            "handle_reuse": null
-          }
-        },
-        "alpha_analysis": {
-          "kol_buys": {
-            "total_kol_buys": 1,
-            "total_usd_spent": 445.36,
-            "kols": [
-              {
-                "kol_name": "Cuspey"
-              }
-            ]
-          },
-          "trending_ranks": {
-            "axiom": null,
-            "dexscreener": null,
-            "moby": null,
-            "pumpfun_found": false,
-            "trending_found": false,
-            "twitter_trending_found": false
-          },
-          "moby": {
-            "whale_count_h24": null,
-            "whale_trades_count_h24": null,
-            "whale_net_flow_usd_h24": null,
-            "whale_net_supply_percent_h24": null,
-            "whale_holder_retention_percent_h24": null
-          },
-          "twitter_trending": {
-            "mentions_total": null,
-            "accounts": []
-          },
-          "alpha_score": {
-            "final_score": 0.33,
-            "total_kol_buys_score": 1,
-            "trending_ranks_score": 0.0,
-            "twitter_trending_score": 0
-          }
-        },
-        "technical_analysis": {
-          "ta_buy_score": {
-            "final_score": null,
-            "timeframe_scores": {
-              "15m": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "1h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "4h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "24h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              }
-            },
-            "subscores": {
-              "oversold": null,
-              "momentum_shift": null,
-              "drawdown_value": null,
-              "holder_trend": null
-            }
-          },
-          "usd_market_cap": 94616.17,
-          "ath_market_cap": 127770.92,
-          "ath_market_cap_timestamp": "2026-01-22T21:49:13+00:00",
-          "ath_multiple": 1.35,
-          "backup_ath_market_cap": null,
-          "backup_ath_market_cap_timestamp": null,
-          "holderscan_data": {
-            "source": null,
-            "holderscan_history": []
-          }
-        }
-      }
-    },
-    {
-      "processed_at": "2026-01-22T22:34:51.973766Z",
-      "token_address": "8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU",
-      "token_symbol": null,
-      "token_name": null,
-      "first_time_seen": true,
-      "times_seen_before": 0,
-      "full_token_details": {
-        "aggregate_score": null,
-        "groq_web_research": {
-          "summary_all_context": "Fight is a Solana (SOL)-based cryptocurrency with a 220 million token distribution and contract address 8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU. Its name suggests potential use in gaming, esports, or competitive platforms, though no concrete utility is explicitly stated.",
-          "answer": "**1) What it claims to be**  \n- A cryptocurrency called \u201cFight\u201d that operates on the Solana (SOL) blockchain.  \n- It has a total distribution of\u202f220\u202fmillion tokens and is identified by the contract address\u202f`8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU`.\n\n**2) Likely utility / features** *(inferred from the limited description)*  \n- **Utility for transactions** \u2013 can be transferred or used for payments on Solana. *(inferred)*  \n- **Potential use in gaming or competitive platforms** \u2013 the name \u201cFight\u201d suggests a link to esports, betting, or PvP\u2011style applications. *(inferred)*  \n- **Liquidity provision** \u2013 may be listed on Solana\u2011based DEXs for swapping. *(inferred)*  \n- **Community incentives** \u2013 distribution of 220\u202fM tokens could support airdrops or reward programs. *(inferred)*  \n- **Governance participation** \u2013 holders might vote on protocol decisions. *(inferred)*  \n\n**3) Missing information checklist**  \n- Official whitepaper or technical documentation  \n- Project website / landing page  \n- Team or founder identities and credentials  \n- Detailed tokenomics (allocation breakdown, vesting, supply caps)  \n- Audits or security reviews of the contract  \n- Roadmap and development milestones  \n\n**4) Risk note**  \nAll statements above are based solely on the provided text. No external verification has been performed, and the token\u2019s actual purpose, security, and legitimacy cannot be confirmed without the missing documentation. Use caution and conduct thorough due\u2011diligence before any interaction.",
-          "confidence_score": {
-            "final_score": 6,
-            "confidence_subscores": {
-              "context_faithfulness": 8,
-              "internal_consistency": 7,
-              "specificity": 6,
-              "completeness": 5,
-              "clarity": 7,
-              "source_groundedness": 2
-            }
-          },
-          "narrative_score": {
-            "final_score": 4,
-            "narrative_subscores": {
-              "hook_strength": null,
-              "cultural_relevance": null,
-              "cultural_charge": null,
-              "mission_statement": null,
-              "compellingness": null,
-              "tribal_identity": null,
-              "lore_amount": null,
-              "lore_depth": null
-            }
-          },
-          "sentiment_score": {
-            "final_score": 5,
-            "sentiment_subscores": {
-              "overall_tone": 5,
-              "excitement_level": 5,
-              "concern_signals": 5,
-              "engagement_quality": 5,
-              "community_trust": 5,
-              "fomo_indicators": 5,
-              "skepticism_level": 5,
-              "organic_feel": 5
-            }
-          }
-        },
-        "llm_interpretation": {
-          "created_at": "2026-01-22T22:40:31.642354Z",
-          "token_address": "8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU",
-          "name": "",
-          "symbol": "",
-          "description": "",
-          "timestamp": "2026-01-22T22:40:29.852695+00:00",
-          "llm_interpretation": "To classify the token and provide a description, let's analyze the given information.\n\nFirst, we need to summarize the information provided:\n- The token is named \"Fight\" and has a contract address of 8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU.\n- It is supported on the SOL network.\n- The token's distribution is 220 million.\n\nGiven the name \"Fight\" and the lack of explicit information about its theme or purpose, we can infer that it might be related to a competitive or adversarial context, but the exact nature is unclear.\n\nDescription: The Fight token is a cryptocurrency on the SOL network with a 220 million token distribution.\n\nNow, let's classify the token into the given categories:\n\n1. memecoin: FALSE - There's no clear indication that it's based on a meme.\n2. utility: TRUE - The token has a specific distribution and is on a particular network, suggesting some form of utility or use case, even though it's not explicitly stated.\n3. ai_token: FALSE - There's no information suggesting it's related to AI or artificial intelligence.\n4. tweet_coin: FALSE - There's no direct link provided or mentioned between the token and a viral tweet.\n5. current_event: TRUE - The name \"Fight\" could be related to a current event or trend, possibly a social or cultural phenomenon.\n6. racist: FALSE - There's no information indicating racist themes.\n7. offensive: FALSE - Without more context on the token's branding or purpose, there's no clear indication it's offensive.\n8. animals: FALSE - There's no mention or indication that the token is based on an animal.\n9. political: TRUE - The term \"Fight\" could be interpreted in a political context, suggesting a possible connection to political activism or a political figure.\n\nSo, the classifications are:\n1. memecoin: FALSE - No clear indication it's based on a meme.\n2. utility: TRUE - It has a distribution and is on a specific network.\n3. ai_token: FALSE - No relation to AI mentioned.\n4. tweet_coin: FALSE - No link to a viral tweet.\n5. current_event: TRUE - Could be related to a current event or trend.\n6. racist: FALSE - No racist themes indicated.\n7. offensive: FALSE - No clear indication of being offensive.\n8. animals: FALSE - Not based on an animal.\n9. political: TRUE - Could be related to politics or activism.\n\nHere is the response in the required format:\n\nDescription: The Fight token is a cryptocurrency on the SOL network with a 220 million token distribution.\n\n1. memecoin: FALSE - No clear indication it's based on a meme.\n2. utility: TRUE - It has a distribution and is on a specific network.\n3. ai_token: FALSE - No relation to AI mentioned.\n4. tweet_coin: FALSE - No link to a viral tweet.\n5. current_event: TRUE - Could be related to a current event or trend.\n6. racist: FALSE - No racist themes indicated.\n7. offensive: FALSE - No clear indication of being offensive.\n8. animals: FALSE - Not based on an animal.\n9. political: TRUE - Could be related to politics or activism.",
-          "llm_description": "The Fight token is a cryptocurrency on the SOL network with a 220 million token distribution and contract address 8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU.",
-          "scraped_website_content": "",
-          "classifications": {
-            "memecoin": false,
-            "utility": true,
-            "ai_token": false,
-            "tweet_coin": false,
-            "current_event": true,
-            "racist": false,
-            "offensive": false,
-            "animals": false,
-            "political": true
-          },
-          "prompt_summaries": {
-            "prompt_1_summary_website_content": "",
-            "prompt_2_summary_twitter_searches": "The Fight token has a contract address of 8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU and is supported on the SOL network. The token's distribution sits at 220 million.",
-            "prompt_3_summary_profile_content": "",
-            "prompt_4_summary_main_tweet": "",
-            "prompt_5_summary_twitter_community_recent_posts": ""
-          }
-        },
-        "llm_staged_data": {
-          "created": null,
-          "token_created_timestamp": null,
-          "token_address": null,
-          "token_symbol": null,
-          "token_name": null,
-          "first_time_seen": true,
-          "times_seen_before": 0,
-          "token_description": null,
-          "token_image": null,
-          "token_twitter": null,
-          "token_website": null,
-          "pump_twitter": null,
-          "pump_telegram": null,
-          "pump_website": null,
-          "dex_twitter": null,
-          "dex_telegram": null,
-          "dex_discord": null,
-          "dex_website": null,
-          "is_currently_live": null,
-          "community_takeover": null,
-          "community_takeover_payment_time": null,
-          "community_takeover_time_ago": null,
-          "main_tweet": {
-            "text": null,
-            "username": null,
-            "displayname": null
-          },
-          "website_content": null,
-          "twitter_community_content": null,
-          "twitter_profile": {
-            "displayname": null,
-            "bio": null,
-            "recent_tweets": []
-          },
-          "twitter_search_texts": {
-            "address_recent": [
-              "Distribution of fight token. Sitting at 220 mil. 8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU https://t.co/T6j16APnUy",
-              "Fight!!!  8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU  NFA",
-              "1. Kucoin \u65b0\u589e FIGHT(Fight) \u8d44\u4ea7  \u652f\u6301\u7f51\u7edc\uff1a  1&gt;\uff1aSOL\uff1b\u5408\u7ea6\u5730\u5740: 8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU  \u7248\u672c:v4 \u901a\u77e5\u65f6\u95f4\uff1a2026-01-22 09:42:58  info from: https://t.co/HPUXmI8hPF"
-            ],
-            "address_top": [
-              "1. Kucoin \u65b0\u589e FIGHT(Fight) \u8d44\u4ea7  \u652f\u6301\u7f51\u7edc\uff1a  1&gt;\uff1aSOL\uff1b\u5408\u7ea6\u5730\u5740: 8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU  \u7248\u672c:v4 \u901a\u77e5\u65f6\u95f4\uff1a2026-01-22 09:42:58  info from: https://t.co/HPUXmI8hPF",
-              "\ud83d\udea8 \ud83e\uddea: 8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU \ud83e\uddeb-Token \u22ee $FIGHT \ud83d\udd0a Born from the spirit of digital bat... - \ud83c\udf2a\ufe0f Check \ud83d\udc49 https://t.co/inunJoGgHF \ud83d\udc8e https://t.co/51Ng9VTavz",
-              "Distribution of fight token. Sitting at 220 mil. 8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU https://t.co/T6j16APnUy",
-              "Fight!!!  8f62NyJGo7He5uWeveTA2JJQf4xzf8aqxkmzxRQ3mxfU  NFA"
-            ],
-            "symbol_recent": [],
-            "symbol_top": []
-          }
-        },
-        "risk_analysis": {
-          "onchain_scan": {
-            "dex_paid": null,
-            "dex_paid_timestamp": null,
-            "bundle_percentage": null,
-            "fresh_wallets_percentage": null,
-            "dev_hold_percentage": null,
-            "insider_wallets_percentage": null,
-            "num_holders": null,
-            "largest_holder_percentage": null,
-            "largest_cluster_percentage": null,
-            "large_holder_count": null,
-            "same_percentage_count": null,
-            "low_sol_count": null
-          },
-          "onchain_scan_score": {
-            "final_score": null,
-            "bundle_percentage_score": null,
-            "fresh_wallets_percentage_score": null,
-            "dev_hold_percentage_score": null,
-            "insider_wallets_percentage_score": null,
-            "num_holders_score": null,
-            "largest_holder_percentage_score": null,
-            "largest_cluster_percentage_score": null,
-            "large_holder_count_score": null,
-            "same_percentage_count_score": null,
-            "low_sol_count_score": null
-          },
-          "graduated_tokens_thresholds": {
-            "highest_threshold": null,
-            "all_time_highest_threshold": null,
-            "highest_threshold_as_farm": null,
-            "highest_threshold_as_farmed": null,
-            "highest_threshold_as_no_farm_detected": null,
-            "farm_status": null,
-            "ever_failed_criteria": null,
-            "last_scanned": null
-          },
-          "social_scan": {
-            "handle_reuse": null
-          }
-        },
-        "alpha_analysis": {
-          "kol_buys": {
-            "total_kol_buys": 1,
-            "total_usd_spent": 993.5,
-            "kols": [
-              {
-                "kol_name": "Orangie"
-              }
-            ]
-          },
-          "trending_ranks": {
-            "axiom": null,
-            "dexscreener": null,
-            "moby": null,
-            "pumpfun_found": false,
-            "trending_found": false,
-            "twitter_trending_found": false
-          },
-          "moby": {
-            "whale_count_h24": null,
-            "whale_trades_count_h24": null,
-            "whale_net_flow_usd_h24": null,
-            "whale_net_supply_percent_h24": null,
-            "whale_holder_retention_percent_h24": null
-          },
-          "twitter_trending": {
-            "mentions_total": null,
-            "accounts": []
-          },
-          "alpha_score": {
-            "final_score": 0.33,
-            "total_kol_buys_score": 1,
-            "trending_ranks_score": 0.0,
-            "twitter_trending_score": 0
-          }
-        },
-        "technical_analysis": {
-          "ta_buy_score": {
-            "final_score": 2.41,
-            "timeframe_scores": {
-              "15m": {
-                "final_score": 7.65,
-                "subscores": {
-                  "oversold": 10.0,
-                  "momentum_shift": 4.3,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": 20.10660166847356,
-                  "cipher_mfi": null,
-                  "cipher_wt1": -51.48916527559838,
-                  "cipher_wt2": -50.287410201049575,
-                  "macd_hist": -8.387317178326084e-05,
-                  "cipher_bullish_cross": false,
-                  "cipher_bearish_cross": false
-                }
-              },
-              "1h": {
-                "final_score": 1.44,
-                "subscores": {
-                  "oversold": 0.0,
-                  "momentum_shift": 3.5,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": -127.88634078286753,
-                  "cipher_wt2": -139.63603294467995,
-                  "macd_hist": -0.00036609807212121875,
-                  "cipher_bullish_cross": false,
-                  "cipher_bearish_cross": false
-                }
-              },
-              "4h": {
-                "final_score": 0.0,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": 0.0,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": -3.708596300098788e-06,
-                  "cipher_bullish_cross": false,
-                  "cipher_bearish_cross": false
-                }
-              },
-              "24h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              }
-            },
-            "subscores": {
-              "oversold": 5.0,
-              "momentum_shift": 2.6,
-              "drawdown_value": null,
-              "holder_trend": 2.0
-            }
-          },
-          "usd_market_cap": null,
-          "ath_market_cap": null,
-          "ath_market_cap_timestamp": null,
-          "ath_multiple": null,
-          "backup_ath_market_cap": null,
-          "backup_ath_market_cap_timestamp": null,
-          "holderscan_data": {
-            "source": "holderscan_http_fallback",
-            "holderscan_history": [
-              {
-                "updatedAt": "2026-01-22T22:00:00.000Z",
-                "holderCount": 4963,
-                "marketCap": 221415946.22964236,
-                "mcapOverHolders": 44613.32787218262
-              },
-              {
-                "updatedAt": "2026-01-22T21:00:00.000Z",
-                "holderCount": 4971,
-                "marketCap": 229235000,
-                "mcapOverHolders": 46114.463890565276
-              },
-              {
-                "updatedAt": "2026-01-22T20:00:00.000Z",
-                "holderCount": 5025,
-                "marketCap": 227859808.38872364,
-                "mcapOverHolders": 45345.235500243514
-              },
-              {
-                "updatedAt": "2026-01-22T19:00:00.000Z",
-                "holderCount": 5049,
-                "marketCap": 237690000,
-                "mcapOverHolders": 47076.64884135473
-              },
-              {
-                "updatedAt": "2026-01-22T18:00:00.000Z",
-                "holderCount": 5028,
-                "marketCap": 242725000,
-                "mcapOverHolders": 48274.66189339698
-              },
-              {
-                "updatedAt": "2026-01-22T17:00:00.000Z",
-                "holderCount": 4979,
-                "marketCap": 226290000,
-                "mcapOverHolders": 45448.885318337016
-              },
-              {
-                "updatedAt": "2026-01-22T16:00:00.000Z",
-                "holderCount": 5001,
-                "marketCap": 223535000,
-                "mcapOverHolders": 44698.060387922415
-              },
-              {
-                "updatedAt": "2026-01-22T15:00:00.000Z",
-                "holderCount": 5009,
-                "marketCap": 241205000,
-                "mcapOverHolders": 48154.322220003996
-              },
-              {
-                "updatedAt": "2026-01-22T14:00:00.000Z",
-                "holderCount": 4990,
-                "marketCap": 231990000,
-                "mcapOverHolders": 46490.98196392786
-              },
-              {
-                "updatedAt": "2026-01-22T13:00:00.000Z",
-                "holderCount": 4514,
-                "marketCap": 234460000,
-                "mcapOverHolders": 51940.62915374391
-              },
-              {
-                "updatedAt": "2026-01-22T12:00:00.000Z",
-                "holderCount": 1791,
-                "marketCap": 231325000,
-                "mcapOverHolders": 129159.68732551647
-              },
-              {
-                "updatedAt": "2026-01-22T11:00:00.000Z",
-                "holderCount": 102,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T10:00:00.000Z",
-                "holderCount": 99,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T09:00:00.000Z",
-                "holderCount": 97,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T08:00:00.000Z",
-                "holderCount": 97,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T07:00:00.000Z",
-                "holderCount": 97,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T06:00:00.000Z",
-                "holderCount": 98,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T05:00:00.000Z",
-                "holderCount": 97,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T04:00:00.000Z",
-                "holderCount": 97,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T03:00:00.000Z",
-                "holderCount": 96,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T02:00:00.000Z",
-                "holderCount": 94,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T01:00:00.000Z",
-                "holderCount": 45,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-22T00:00:00.000Z",
-                "holderCount": 42,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T23:00:00.000Z",
-                "holderCount": 42,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T22:00:00.000Z",
-                "holderCount": 41,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T21:00:00.000Z",
-                "holderCount": 41,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T20:00:00.000Z",
-                "holderCount": 39,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T19:00:00.000Z",
-                "holderCount": 39,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T18:00:00.000Z",
-                "holderCount": 39,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T17:00:00.000Z",
-                "holderCount": 38,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T16:00:00.000Z",
-                "holderCount": 37,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T15:00:00.000Z",
-                "holderCount": 36,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T14:00:00.000Z",
-                "holderCount": 36,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T13:00:00.000Z",
-                "holderCount": 36,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T12:00:00.000Z",
-                "holderCount": 35,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T11:00:00.000Z",
-                "holderCount": 34,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T10:00:00.000Z",
-                "holderCount": 34,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T09:00:00.000Z",
-                "holderCount": 32,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T08:00:00.000Z",
-                "holderCount": 31,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T07:00:00.000Z",
-                "holderCount": 31,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T06:00:00.000Z",
-                "holderCount": 31,
-                "marketCap": null,
-                "mcapOverHolders": null
-              },
-              {
-                "updatedAt": "2026-01-21T05:00:00.000Z",
-                "holderCount": 31,
-                "marketCap": null,
-                "mcapOverHolders": null
-              }
-            ]
-          }
-        }
-      }
-    },
     {
       "processed_at": "2026-01-22T22:45:32.615583Z",
       "token_address": "2H3cdEiiSApBB8qJBqw2T1HoD7YZugejGYc2FBoVpump",
@@ -187632,6 +186795,3046 @@
           "holderscan_data": {
             "source": null,
             "holderscan_history": []
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-23T22:03:43.509005Z",
+      "token_address": "5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump",
+      "token_symbol": "DrPepper",
+      "token_name": "Dr Pepper Baby",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 3.9,
+        "groq_web_research": {
+          "summary_all_context": "The \"Dr Pepper Baby\" token (symbol: DrPepper) references a non-crypto cultural origin claimed to involve a viral jingle/marketing campaign, but no verifiable meme, slang, or TikTok trend named \"Dr Pepper Baby\" exists in non-crypto archives. Web searches found only unrelated Dr Pepper memes (e.g., \"Dr Pepper Hair\") and no dated cultural references.",
+          "answer": "**Summary**  \n- No verifiable cultural, slang, or meme origin for the phrase **\u201cDr\u202fPepper\u202fBaby\u201d** could be located in non\u2011crypto sources. The term does not appear in known meme databases, news archives, or popular culture write\u2011ups.\n\n**Origin / Timeline**  \n- A targeted web\u2011search of major meme\u2011 and news\u2011focused sites (KnowYourMeme, Wikipedia, The Verge, Mashable, NYTimes, BBC, Vox) using queries such as\u202f`\"Dr Pepper Baby\" meme` and `DrPepper slang` returned only unrelated results (e.g., generic Dr\u202fPepper images, unrelated \u201cDr\u202fPepper Hair\u201d memes).  \n- No dated posts, viral videos, TikTok trends, or slang explanations referencing a \u201cDr\u202fPepper\u202fBaby\u201d were found, indicating the phrase likely has **no established cultural meaning outside of the newly created token**.\n\n**Sources**  \n1. **KnowYourMeme search results** \u2013 shows only unrelated Dr\u202fPepper memes (e.g., \u201cDr\u202fPepper Hair\u201d) and no entry for \u201cDr\u202fPepper\u202fBaby\u201d. \u3010https://knowyourmeme.com/search?q=Dr%20Pepper%20Baby\u3011 \u2013 confirms absence of a meme.  \n2. **Google search (site:knowyourmeme.com \u201cDr Pepper Baby\u201d)** \u2013 returns no relevant pages, confirming the term isn\u2019t documented in meme archives. \u3010https://www.google.com/search?q=site%3Aknowyourmeme.com+%22Dr+Pepper+Baby%22\u3011 \u2013 no cultural reference found.  \n\n*Conclusion*: There is currently **no identifiable non\u2011crypto cultural origin** for \u201cDr\u202fPepper\u202fBaby\u201d.",
+          "confidence_score": {
+            "final_score": 8,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 9,
+              "completeness": 8,
+              "clarity": 8,
+              "source_groundedness": 9
+            }
+          },
+          "narrative_score": {
+            "final_score": 1,
+            "narrative_subscores": {
+              "hook_strength": 2,
+              "cultural_relevance": 1,
+              "cultural_charge": 2,
+              "mission_statement": 1,
+              "compellingness": 2,
+              "tribal_identity": 2,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": 9,
+            "sentiment_subscores": {
+              "overall_tone": 8,
+              "excitement_level": 9,
+              "concern_signals": 1,
+              "engagement_quality": 8,
+              "community_trust": 9,
+              "fomo_indicators": 2,
+              "skepticism_level": 1,
+              "organic_feel": 9
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-23T22:05:15.384441Z",
+          "token_address": "5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump",
+          "name": "Dr Pepper Baby",
+          "symbol": "DrPepper",
+          "description": "",
+          "timestamp": "2026-01-23T22:05:13.224411+00:00",
+          "llm_interpretation": "Description: DrPepper Baby token is related to a viral jingle and marketing campaign by Dr Pepper, featuring a TikTok creator's song.\n\n1. memecoin: TRUE - based on a viral meme or joke related to Dr Pepper\n2. utility: FALSE - no clear utility or tech-based purpose mentioned\n3. ai_token: FALSE - no relation to AI or artificial intelligence\n4. tweet_coin: TRUE - inspired by a viral tweet or social media post\n5. current_event: TRUE - related to a current marketing campaign or trend\n6. racist: FALSE - no racist themes or branding\n7. offensive: FALSE - no offensive themes or branding\n8. animals: FALSE - not directly related to an animal\n9. political: FALSE - not related to politics or a political figure\n\n1. memecoin: TRUE - based on a viral meme or joke related to Dr Pepper\n2. utility: FALSE - no clear utility or tech-based purpose mentioned\n3. ai_token: FALSE - no relation to AI or artificial intelligence\n4. tweet_coin: TRUE - inspired by a viral tweet or social media post\n5. current_event: TRUE - related to a current marketing campaign or trend\n6. racist: FALSE - no racist themes or branding\n7. offensive: FALSE - no offensive themes or branding\n8. animals: FALSE - not directly related to an animal\n9. political: FALSE - not related to politics or a political figure",
+          "llm_description": "DrPepper Baby token is related to a viral jingle and marketing campaign by Dr Pepper, on the Pump.fun platform.",
+          "scraped_website_content": "Dr Pepper Baby (It's Good and Nice) Dr Pepper Baby (It's Good and Nice) CONTRACT ADDRESS 5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump PLAY JINGLE COPY CA PUMP .FUN",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": true,
+            "current_event": true,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "Dr Pepper Baby token, contract address provided, related to Pump.fun platform.",
+            "prompt_2_summary_twitter_searches": "The $DrPepper token is related to a viral jingle and marketing campaign by Dr Pepper, featuring a TikTok creator's song that became a national sensation.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": "DrPepper Baby is a viral sensation with a catchy song and growing popularity, attracting attention from major companies and media outlets, with the creator receiving numerous requests for collaborations."
+          }
+        },
+        "llm_staged_data": {
+          "created": "1 hours ago",
+          "token_created_timestamp": "2026-01-23T21:03:20+00:00",
+          "token_address": "5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump",
+          "token_symbol": "DrPepper",
+          "token_name": "Dr Pepper Baby",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "",
+          "token_image": "https://ipfs.io/ipfs/bafybeib4z47cjtyso5sohc57mcosw27espfgyp6jiz2n5p2bplgjdavjje",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/i/communities/2014792928997031987",
+          "pump_telegram": null,
+          "pump_website": "https://tiktok.com/@romeosshow/video/7586923248651095310",
+          "dex_twitter": "https://x.com/i/communities/2014792928997031987",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": "https://drpepperbaby.fun",
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Dr Pepper Baby (It's Good and Nice) Dr Pepper Baby (It's Good and Nice) CONTRACT ADDRESS 5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump PLAY JINGLE COPY CA PUMP .FUN",
+          "twitter_community_content": {
+            "url": "https://x.com/i/communities/2014792928997031987",
+            "community_id": "2014792928997031987",
+            "recent_posts": [
+              "Dr Pepper Baby Jingle is the most viral tune and stuck in everyone's heads rn  $DrPepper\n\nThe website is do dope! https://drpepperbaby.fun\n\nListen to the song a lot!\n\n5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump",
+              "This is the video that started it all! $DrPepper\n\nDR PEPPER BAAAAAAABY IT'S GOOD AND NICE!",
+              "How do we get in contact to her to redirect the fees",
+              "All the popular websites and magazines are talking about the DrPepper Baby song and of how viral it is!\n\n$DrPepper\n\n5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump",
+              "The meme has gone so far that now other companies are asking her to create something for them. \n\nEach of her TikTok posts is filled with hundreds of requests from major companies around the world."
+            ]
+          },
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump https://t.co/BtnLFtRiio",
+              "This is the video that started it all! $DrPepper  DR PEPPER BAAAAAAABY IT'S GOOD AND NICE! https://t.co/vYjXkUmF0m",
+              "Send $DrPepper !! This is crazy story lol   5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump",
+              "Nahh that's crazy, i'll start to sing online too lol $DrPepper https://t.co/bPPmVvp6BS",
+              "Dr Pepper Baby Jingle is the most viral tune and stuck in everyone's heads rn \ud83c\udfb5 $DrPepper  The website is do dope! https://t.co/vYsNxVLe0q  Listen to the song a lot!  5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump  https://t.co/1LD1k3ACzj"
+            ],
+            "address_top": [
+              "5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump https://t.co/BtnLFtRiio",
+              "\u23f3 Dr Pepper Baby $DrPepper 5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump https://t.co/q0ogQoPEwl",
+              "$DRPEPPER 5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump https://t.co/nfw0ijULTb",
+              "This is the video that started it all! $DrPepper  DR PEPPER BAAAAAAABY IT'S GOOD AND NICE! https://t.co/vYjXkUmF0m"
+            ],
+            "symbol_recent": [
+              "$DrPepper Babbbyyyyyy   A new ATH   That will be the norm for the next 24 hours",
+              "I\u2019m a god damn bag worker   You should be too   Work for your bags   Don\u2019t stare at the chart that does nothing   Go out there and make a difference in the work   $DrPepper Baaabbyyyyy",
+              "\ud83d\udc40\ud83d\udc40\ud83d\udc40\ud83d\udc40\ud83d\udc40\ud83d\udc40 $DrPepper is exactly that. But actually it's so viral it extends so much further than Tiktok (although it originated there).  Truly the tune is the most viral thing and has made so many national headlines. Company itself onboarded the woman. Seriously insane lore.",
+              "This is the video that started it all! $DrPepper  DR PEPPER BAAAAAAABY IT'S GOOD AND NICE! https://t.co/vYjXkUmF0m",
+              "Only 30 minutes old\u2026   Dev is cooking he\u2019s got lots of work to do now that we\u2019re cooking   We need to do our part and hold and buy dips   Dev will come out with more he\u2019s based asf   Mod me up let\u2019s run it up   $DrPepper Baaaaabbyyyy",
+              "$DrPepper baaaabbyyyyy   It\u2019s good and nice   Every time I say it in real life I\u2019m gonna post it",
+              "Send $DrPepper !! This is crazy story lol   5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump",
+              "Nahh that's crazy, i'll start to sing online too lol $DrPepper https://t.co/bPPmVvp6BS",
+              "Dr Pepper Baby Jingle is the most viral tune and stuck in everyone's heads rn \ud83c\udfb5 $DrPepper  The website is do dope! https://t.co/vYsNxVLe0q  Listen to the song a lot!  5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump  https://t.co/1LD1k3ACzj",
+              "$DrPepper babayyyyy",
+              "DEV buyy boost lets send thiiis $DRPEPPER BABBYYY"
+            ],
+            "symbol_top": [
+              "This is the video that started it all! $DrPepper  DR PEPPER BAAAAAAABY IT'S GOOD AND NICE! https://t.co/vYjXkUmF0m",
+              "DEV buyy boost lets send thiiis $DRPEPPER BABBYYY",
+              "Dr Pepper Baby Jingle is the most viral tune and stuck in everyone's heads rn \ud83c\udfb5 $DrPepper  The website is do dope! https://t.co/vYsNxVLe0q  Listen to the song a lot!  5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump  https://t.co/1LD1k3ACzj",
+              "$DRPEPPER 5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump https://t.co/nfw0ijULTb",
+              "Dev is gonna be known as a legend   Just like the $DrPepper girl   Dev gonna get his own commercial when we hit 5 million mc",
+              "Nahh that's crazy, i'll start to sing online too lol $DrPepper https://t.co/bPPmVvp6BS",
+              "$DrPepper baaaabbyyyyy   It\u2019s good and nice   Every time I say it in real life I\u2019m gonna post it",
+              "Here's the official Youtube Video Dr Pepper posted giving her full credit.  Lore is insane on $DrPepper \ud83e\udd2f  https://t.co/qOvmDMepzH",
+              "All the popular websites and magazines are talking about the DrPepper Baby song and of how viral it is!  $DrPepper  5h3tLsfdTpCt8Uj7B5idzCUYEeMMQrsr1aqXjGkgpump  https://t.co/Fg5trWjuIn",
+              "$DrPepper babayyyyy",
+              "Dr Pepper used a jingle made by TikToker Romeo after it went viral in one of their commercials  \"I would like to thank all of my supporters and all of the Dr Pepper fans\" https://t.co/Rr9eM7E0Wd"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-01-23 21:13:32",
+            "bundle_percentage": 1.63,
+            "fresh_wallets_percentage": 3.8,
+            "dev_hold_percentage": 0.2,
+            "insider_wallets_percentage": 7.46,
+            "num_holders": 550,
+            "largest_holder_percentage": 2.9,
+            "largest_cluster_percentage": 0.0,
+            "large_holder_count": 12,
+            "same_percentage_count": 3,
+            "low_sol_count": 9
+          },
+          "onchain_scan_score": {
+            "final_score": 7.2,
+            "bundle_percentage_score": 9,
+            "fresh_wallets_percentage_score": 8,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 6,
+            "num_holders_score": 4,
+            "largest_holder_percentage_score": 9,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 9,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 5
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 1,
+            "total_usd_spent": 1259.77,
+            "kols": [
+              {
+                "kol_name": "Dior"
+              }
+            ]
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.33,
+            "total_kol_buys_score": 1,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": 3.92,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": 3.57,
+                "subscores": {
+                  "oversold": 3.0,
+                  "momentum_shift": 5.5,
+                  "drawdown_value": 1.0
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": -157.46241003823593,
+                  "cipher_wt2": -232.30701323357943,
+                  "macd_hist": 4.5401634513841945e-06,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "1h": {
+                "final_score": 4.15,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": 5.5,
+                  "drawdown_value": 1.0
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": 2.1979649822350103e-06,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": 3.0,
+              "momentum_shift": 5.5,
+              "drawdown_value": 1.0,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 118490.83,
+          "ath_market_cap": 121233.34,
+          "ath_market_cap_timestamp": "2026-01-23T22:02:40+00:00",
+          "ath_multiple": 1.023,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_http_fallback",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-01-23T22:00:00.000Z",
+                "holderCount": 506,
+                "marketCap": 91759.99645453013,
+                "mcapOverHolders": 181.3438665109291
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-23T22:18:41.447636Z",
+      "token_address": "6LMwwFveUAcV597bj9NoGoWnatQNydEXjmSV79ktpump",
+      "token_symbol": "SOL",
+      "token_name": "SOL THE PENGUIN",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 2.6,
+        "groq_web_research": {
+          "summary_all_context": "The token \"SOL THE PENGUIN\" (SOL) references Solana (a cryptocurrency) but has no documented non-crypto cultural origin. Web searches found no evidence of a meme, slang, or media figure named \"SOL THE PENGUIN,\" suggesting the token\u2019s name likely derives from Solana rather than an independent cultural reference.",
+          "answer": "**Result:** I could not locate any verifiable non\u2011crypto cultural reference, meme, slang, or media character named **\u201cSOL\u202fTHE\u202fPENGUIN.\u201d** Searches of mainstream meme and encyclopedia sites (e.g., KnowYourMeme, Wikipedia, major news outlets) return only results related to the cryptocurrency token itself or unrelated uses of \u201cSol\u201d (the sun deity, the Solana blockchain, etc.). No distinct cultural figure, viral video, or slang term matching that exact name appears in the public record.  \n\n*If a non\u2011crypto origin does exist, it is not documented in the sources typically indexed by web searches.*",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 9,
+              "completeness": 6,
+              "clarity": 8,
+              "source_groundedness": 1
+            }
+          },
+          "narrative_score": {
+            "final_score": 1,
+            "narrative_subscores": {
+              "hook_strength": 2,
+              "cultural_relevance": 1,
+              "cultural_charge": 2,
+              "mission_statement": 1,
+              "compellingness": 2,
+              "tribal_identity": 1,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": 7,
+            "sentiment_subscores": {
+              "overall_tone": 5,
+              "excitement_level": 6,
+              "concern_signals": 2,
+              "engagement_quality": 8,
+              "community_trust": 6,
+              "fomo_indicators": 4,
+              "skepticism_level": 3,
+              "organic_feel": 7
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-23T22:19:37.830256Z",
+          "token_address": "6LMwwFveUAcV597bj9NoGoWnatQNydEXjmSV79ktpump",
+          "name": "SOL THE PENGUIN",
+          "symbol": "SOL",
+          "description": "",
+          "timestamp": "2026-01-23T22:19:36.247703+00:00",
+          "llm_interpretation": "Description: SOL is a token named after a Galapagos penguin, symbolizing cleverness and hunting prowess.\n\n1. memecoin: TRUE - The token is based on a meme or a playful representation of a penguin.\n2. utility: FALSE - There's no clear indication of the token's utility or tech-based purpose.\n3. ai_token: FALSE - No information suggests the token is related to AI or artificial intelligence.\n4. tweet_coin: FALSE - There's no evidence that the token is based on a viral tweet.\n5. current_event: FALSE - The token doesn't appear to be directly related to a current event or trend.\n6. racist: FALSE - The token's branding doesn't contain racist themes.\n7. offensive: FALSE - The token's branding doesn't contain overtly offensive themes.\n8. animals: TRUE - The token is based on a penguin, an animal.\n9. political: FALSE - The token doesn't appear to be related to politics or a political figure.",
+          "llm_description": "SOL is a token related to Solana, a cryptocurrency.",
+          "scraped_website_content": "Error Sorry, something went wrong. We're working on getting this fixed as soon as we can. Go Back Meta \u00a9 2026 \u00b7 Help",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": true,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "No information provided about a token. Error message displayed.",
+            "prompt_2_summary_twitter_searches": "The token appears to be related to Solana, a cryptocurrency. Two individuals are giving away SOL tokens, one offering 150 tokens and the other offering 100 tokens to people who like a post or participate in a random selection.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "3 minutes ago",
+          "token_created_timestamp": "2026-01-23T22:15:57+00:00",
+          "token_address": "6LMwwFveUAcV597bj9NoGoWnatQNydEXjmSV79ktpump",
+          "token_symbol": "SOL",
+          "token_name": "SOL THE PENGUIN",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "",
+          "token_image": "https://ipfs.io/ipfs/bafkreiep4r22u4ewbmnpkrmx3ylalotx2c56d4elnrvle26wcjnzhem3m4",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/AndilexFN/status/2014824396838342710",
+          "pump_telegram": null,
+          "pump_website": "https://www.instagram.com/natgeo/p/DIuOMuFh2M6?img_index=5",
+          "dex_twitter": null,
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Error Sorry, something went wrong. We're working on getting this fixed as soon as we can. Go Back Meta \u00a9 2026 \u00b7 Help",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [],
+            "address_top": [],
+            "symbol_recent": [
+              "Today im felling lucky. RT+Pick 1-10 \ud83c\udfb2 Giving away 150 $SOL"
+            ],
+            "symbol_top": [
+              "If I win, everyone who likes this post gets 100 $SOL https://t.co/RC0LecymRd",
+              "0.01 $SOL | 180 mins \u2728  \u2022 \ud83d\udd01\u2764\ufe0f + Drop Solana Address https://t.co/7wGnRJ0O5o"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": false,
+            "dex_paid_timestamp": null,
+            "bundle_percentage": 9.25,
+            "fresh_wallets_percentage": 31.5,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 0.0,
+            "num_holders": 37,
+            "largest_holder_percentage": 4.8,
+            "largest_cluster_percentage": 0.0,
+            "large_holder_count": 8,
+            "same_percentage_count": 4,
+            "low_sol_count": 18
+          },
+          "onchain_scan_score": {
+            "final_score": 2.6,
+            "bundle_percentage_score": 6,
+            "fresh_wallets_percentage_score": 3,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 10,
+            "num_holders_score": 1,
+            "largest_holder_percentage_score": 7,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 10,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 1
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": true
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": 13,
+            "accounts": [
+              {
+                "username": "theunipcs",
+                "category": "big_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "memeologist99",
+                "category": "degen_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "traderpow",
+                "category": "big_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "taikimaeda2",
+                "category": "big_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "poortardio",
+                "category": "alpha_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "notsofast",
+                "category": "alpha_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "xbtdln",
+                "category": "alpha_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "venomcrypto_",
+                "category": "alpha_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "bon_g",
+                "category": "alpha_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "leftcurvemaxing",
+                "category": "alpha_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "flooksta",
+                "category": "alpha_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "theboggartt",
+                "category": "alpha_accounts",
+                "mention_count": 1
+              },
+              {
+                "username": "cryptolaanie",
+                "category": "alpha_accounts",
+                "mention_count": 1
+              }
+            ]
+          },
+          "alpha_score": {
+            "final_score": 3.67,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 1.0,
+            "twitter_trending_score": 10
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 9096.95,
+          "ath_market_cap": 9622.2,
+          "ath_market_cap_timestamp": "2026-01-23T22:16:54+00:00",
+          "ath_multiple": 1.058,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-23T22:25:05.402675Z",
+      "token_address": "6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS",
+      "token_symbol": "BEN10",
+      "token_name": "Ben 10",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 3.9,
+        "groq_web_research": {
+          "summary_all_context": "The \"Ben 10\" token (BEN10) references the animated franchise created by Man of Action, featuring protagonist Ben Tennyson and the alien-tech device Omnitrix. The token aims to compensate co-creator Dave Johnson (@TheDevilPig), who designed major characters but received no royalties. The franchise (2005\u2013present) became a cultural touchstone, spawning memes, fan art, and TikTok transformations.",
+          "answer": "**Summary (non\u2011crypto meaning)**  \n- \u201cBen\u202f10\u201d refers to the animated franchise created by the writer collective **Man of Action** and produced by Cartoon\u202fNetwork.  \n- The central character, **Ben Tennyson**, is a 10\u2011year\u2011old who discovers the alien\u2011tech device **Omnitrix**, allowing him to transform into ten (later many more) alien heroes.  \n- The series has become a cultural touchstone for a generation of kids (mid\u20112000s\u20112020s) and spawns merchandise, spin\u2011offs, video games, and a modest meme presence (e.g., \u201cBen\u202f10 transformation\u201d clips on TikTok).\n\n**Origin / Timeline (non\u2011crypto)**  \n- **2002\u20112005** \u2013 Man of Action pitches the concept (originally \u201cForce\u202f10\u201d/\u201cBen to the Tenth\u201d). Cartoon\u202fNetwork green\u2011lights it in 2005.  \n- **Dec\u202f27\u202f2005** \u2013 Pilot airs as part of Cartoon\u202fNetwork\u2019s \u201cSneak Peek Week.\u201d  \n- **Jan\u202f13\u202f2006\u202f\u2013\u202fApr\u202f15\u202f2008** \u2013 First series \u201cBen\u202f10\u201d runs (4 seasons, 49 episodes).  \n- **2008\u20112014** \u2013 Sequels: *Ben\u202f10: Alien Force*, *Ben\u202f10: Ultimate Alien*, *Ben\u202f10: Omniverse* expand the lore and the number of alien forms.  \n- **2016\u20112021** \u2013 Reboot series re\u2011imagines Ben as a 10\u2011year\u2011old for a new audience.  \n- **Cultural footprint** \u2013 The show\u2019s iconic watch\u2011shaped Omnitrix and \u201ctransform!\u201d catchphrase appear in fan art, cosplay, and short\u2011form video memes (e.g., TikTok users remix the transformation sound effect).\n\n**Sources**  \n- **Know Your Meme \u2013 \u201cBen\u202f10\u201d** \u2013 outlines the series\u2019 creation, broadcast history, and its meme usage on social platforms. https://knowyourmeme.com/memes/subcultures/ben-10 (cultural background).  \n- **Wikipedia \u2013 Ben\u202fTennyson** \u2013 detailed overview of the character, series development, and timeline. https://en.wikipedia.org/wiki/Ben_Tennyson (origin & chronology).  \n- **Wikipedia \u2013 Ben\u202f10 (2005 TV series)** \u2013 specifics on production, original airing dates, and creators. https://en.wikipedia.org/wiki/Ben_10_(2005_TV_series) (timeline details).",
+          "confidence_score": {
+            "final_score": 8,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 7,
+              "completeness": 8,
+              "clarity": 8,
+              "source_groundedness": 9
+            }
+          },
+          "narrative_score": {
+            "final_score": 9,
+            "narrative_subscores": {
+              "hook_strength": 8,
+              "cultural_relevance": 9,
+              "cultural_charge": 8,
+              "mission_statement": 9,
+              "compellingness": 9,
+              "tribal_identity": 8,
+              "lore_amount": 9,
+              "lore_depth": 8
+            }
+          },
+          "sentiment_score": {
+            "final_score": 8,
+            "sentiment_subscores": {
+              "overall_tone": 8,
+              "excitement_level": 6,
+              "concern_signals": 2,
+              "engagement_quality": 9,
+              "community_trust": 8,
+              "fomo_indicators": 1,
+              "skepticism_level": 2,
+              "organic_feel": 8
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-23T22:26:36.979910Z",
+          "token_address": "6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS",
+          "name": "Ben 10",
+          "symbol": "BEN10",
+          "description": "Supporting the work of Dave Johnson, @TheDevilpig, co-creator of Ben 10. He has never been compensated for his work. 100% of creator fees go to him.",
+          "timestamp": "2026-01-23T22:26:34.981287+00:00",
+          "llm_interpretation": "Description: A token inspired by the Ben 10 franchise, aiming to compensate co-creator @TheDevilPig for his uncompensated work.\n\n1. memecoin: TRUE - based on a popular childhood franchise and cartoon character\n2. utility: FALSE - no clear utility mentioned beyond supporting a co-creator\n3. ai_token: FALSE - no AI or artificial intelligence related to the token\n4. tweet_coin: FALSE - no evidence that a viral tweet inspired the token\n5. current_event: FALSE - not directly related to a current event or trend\n6. racist: FALSE - no racist themes or branding\n7. offensive: FALSE - no offensive themes or branding\n8. animals: FALSE - while Ben 10 involves alien creatures, it's not primarily about animals\n9. political: FALSE - not related to politics or a political figure",
+          "llm_description": "A token inspired by Ben 10, aiming to compensate co-creator @TheDevilPig for his uncompensated work on major characters.",
+          "scraped_website_content": "A required part of this site couldn\u2019t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "No content to summarize. The provided text appears to be an error message related to a website's functionality.",
+            "prompt_2_summary_twitter_searches": "The token is related to Ben10, a childhood franchise. The community discusses and shares content about Ben10, including fan art and nostalgia. A specific address is mentioned multiple times.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": "The token $BEN10 is related to Ben 10, a popular childhood show. The token's creators aim to recognize and compensate @TheDevilPig, the co-creator of Ben 10, who designed major characters and did not receive fair compensation or royalties for his work."
+          }
+        },
+        "llm_staged_data": {
+          "created": "23 minutes ago",
+          "token_created_timestamp": "2026-01-23T22:02:08.145000+00:00",
+          "token_address": "6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS",
+          "token_symbol": "BEN10",
+          "token_name": "Ben 10",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "Supporting the work of Dave Johnson, @TheDevilpig, co-creator of Ben 10. He has never been compensated for his work. 100% of creator fees go to him.",
+          "token_image": "https://ipfs.io/ipfs/QmY2bxcs1teKEdfKLNmxRw6JR2e3eqXUFJCbLH1hTYGbUc",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/i/communities/2014563968229023819",
+          "pump_telegram": null,
+          "pump_website": "https://ben10.fandom.com/wiki/Dave_Johnson",
+          "dex_twitter": "https://x.com/i/communities/2014563968229023819",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "A required part of this site couldn\u2019t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
+          "twitter_community_content": {
+            "url": "https://x.com/i/communities/2014563968229023819",
+            "community_id": "2014563968229023819",
+            "recent_posts": [
+              "There\u2019s been a lot of artist coins running recently, and one of my favorite shows growing up was Ben 10. \n\nI recently found out one of the co-creators, @TheDevilPig, who created all the major characters, has never been compensated for his work.   \n\n$BEN10\n\nCA:",
+              "The architects of Ben 10's soul deserve recognition.\n\n@TheDevilPig never received no fair compensation, no royalties for work that still generates value decades later.\n\nTag @TheDevilPig. Share $BEN10. Let's get him to claim fees.",
+              "EVERYONE KNOWS $BEN10",
+              "yooo @finnbags",
+              "$BEN10 shaped an entire generation.\n\nWhat most people don\u2019t realize is that Dave Johnson (@TheDevilPig) was the art director behind the original Ben 10 series and designed much of the visual identity that made it iconic.\n\nIf you're reading this Dave, your designs defined a",
+              "Ben 10 creator onboarded??",
+              "6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS\n\nClaim , this was made for you as a way to thank you for bringing joy to our childhood",
+              "CRAZYYYY"
+            ]
+          },
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "millions pleas. 6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS https://t.co/o2J4qTvykb",
+              "This is Crazy! Hope it works out.  https://t.co/lYlGNdGZ14",
+              "$BEN10  6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS https://t.co/pJ2MxVqotY",
+              "$BEN10  6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS https://t.co/vADpRBRQHs",
+              "The lore runs deep  6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS",
+              "I love $ben10   6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS",
+              "Send it for $BEN10  The creator just reposted  6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS"
+            ],
+            "address_top": [
+              "$BEN10  6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS https://t.co/pJ2MxVqotY",
+              "I love $ben10   6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS",
+              "millions pleas. 6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS https://t.co/o2J4qTvykb",
+              "This is Crazy! Hope it works out.  https://t.co/lYlGNdGZ14"
+            ],
+            "symbol_recent": [
+              "Sir we love $ben10 \ud83d\ude0a",
+              "This is Crazy! Hope it works out.  https://t.co/lYlGNdGZ14",
+              "WE GOT THE CREATOR OF $BEN10 @finnbags",
+              "Ben10 out here saving my bags \ud83d\ude02 https://t.co/oVrawR0cUi",
+              "Much HIGHER for BEN10 https://t.co/D5c8zSsqmM",
+              "I love $ben10   6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS",
+              "EVERYONE KNOWS $BEN10",
+              "WE GONNA SEND $BEN10",
+              "$BEN10  6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS https://t.co/pJ2MxVqotY",
+              "We love $BEN10",
+              "I love $ben10   6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS",
+              "$BEN10  6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS https://t.co/vADpRBRQHs",
+              "Send it for $BEN10  The creator just reposted  6dhG73Q2KeiCZQ1E9dMzXUDr5UKwx7wtPcFRstAQBAGS",
+              "Ben10 is literally my childhood",
+              "this is crazy $BEN10",
+              "i grew up with $BEN10",
+              "You were all so wrong!!!! Here is a better sketch #Ben10  #tawog  #adventuretime  #RegularShow https://t.co/gzzSRsloJz"
+            ],
+            "symbol_top": [
+              "Squad goals  #ben10 https://t.co/Pdn2afrGaY",
+              "Finally finished my Ben design! \ud83d\udc7d  #Ben10 #ben10fanart https://t.co/nOuLKxGeuy",
+              "i grew up with $BEN10",
+              "Man, fuck this stupid ass meme #ben10 https://t.co/fLXobGTUd6",
+              "I've revised part of the embroidery, and it looks much better now. #Ben10 https://t.co/xnvqP2Nfgg",
+              "#Sketch from Page 1 of #ben10: my hero time https://t.co/Fzl669Cu9Q",
+              "Dr. Psychoboss clay figure  made on request #ben10fanart #Ben10  #Ben10Omniverse https://t.co/XF1T8SswAv",
+              "Mutt Gone Wild #Ben10 https://t.co/rAq35ZaMWo",
+              "Soarnitho Comm for @jkyle7251!  Thank you for C0mM1$$iNg me once again!  #ben10fanart #Ben10 #5YL #commissionsopen  #Commission https://t.co/YjUoEMlQoD",
+              "DiamondHead \ud83d\udc8e\ud83e\udd1e\ud83c\udffb #Ben10 #Art https://t.co/skStox9iPc",
+              "Bro I\u2019m a certified unc https://t.co/3Z5mjhkBr3",
+              "I\u2019m sure https://t.co/N9jTZbzuZ1"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-01-23 22:20:57",
+            "bundle_percentage": 7.34,
+            "fresh_wallets_percentage": 17.1,
+            "dev_hold_percentage": 2.0,
+            "insider_wallets_percentage": 19.92,
+            "num_holders": 600,
+            "largest_holder_percentage": 10.5,
+            "largest_cluster_percentage": 2.84,
+            "large_holder_count": 14,
+            "same_percentage_count": 4,
+            "low_sol_count": 11
+          },
+          "onchain_scan_score": {
+            "final_score": 4.0,
+            "bundle_percentage_score": 6,
+            "fresh_wallets_percentage_score": 4,
+            "dev_hold_percentage_score": 9,
+            "insider_wallets_percentage_score": 4,
+            "num_holders_score": 4,
+            "largest_holder_percentage_score": 4,
+            "largest_cluster_percentage_score": 8,
+            "large_holder_count_score": 7,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 4
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 1,
+            "total_usd_spent": 1274.63,
+            "kols": [
+              {
+                "kol_name": "Dior"
+              }
+            ]
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.33,
+            "total_kol_buys_score": 1,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 163310.81,
+          "ath_market_cap": 211485.83,
+          "ath_market_cap_timestamp": "2026-01-23T22:24:21+00:00",
+          "ath_multiple": 1.295,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-23T22:27:04.466799Z",
+      "token_address": "7qz9dRpacs9MV34aPQTCbnGZr8zKdA96u86BN1VPbonk",
+      "token_symbol": "B&R",
+      "token_name": "Bananas and Rice",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 4.0,
+        "groq_web_research": {
+          "summary_all_context": "The \"Bananas and Rice\" (B&R) token claims to reference a Somali meme, but no verifiable non-crypto origin exists for the exact phrase. Cultural parallels include Filipino \"kamayan\" (banana-leaf rice meals) and the \"shrimp fried this rice?\" meme, though neither ties to Somali culture. The token was created 4 hours ago with no website or socials.",
+          "answer": "**Summary \u2013 non\u2011crypto meaning**  \n- No distinct \u201cBananas and\u202fRice\u201d phrase or meme could be traced in reliable cultural sources.  \n- The closest cultural pairings are **banana\u2011leaf\u2011served rice meals** (e.g., the Filipino \u201ckamayan\u201d style) and a separate meme about \u201cshrimp fried this rice,\u201d but neither directly uses the exact wording \u201cbananas and rice\u201d nor ties to Somali culture.\n\n**Origin / timeline (non\u2011crypto)**  \n- **Filipino kamayan** \u2013 communal feasts where rice and assorted dishes are eaten on banana leaves; a long\u2011standing tradition documented on Wikipedia.  \n- **\u201cShrimp fried this rice?\u201d meme** \u2013 an internet meme that surfaced in the early\u20112010s and resurfaced in 2019 on Know Your Meme; unrelated to bananas but shows the pattern of pairing a food item with rice in meme culture.  \n- No verifiable Somali\u2011specific meme, slang, or gesture using the exact phrase \u201cbananas and rice\u201d appears in the searched non\u2011crypto domains.\n\n**Sources**  \n- Wikipedia \u2013 *Kamayan*: explains the cultural practice of serving rice on banana leaves in the Philippines. \u3010https://en.wikipedia.org/wiki/Kamayan\u3011 (shows banana\u2011leaf\u202f+\u202frice pairing).  \n- Know Your Meme \u2013 *\u201cYou\u2019re Telling Me a Shrimp Fried This Rice?\u201d*: documents a meme format that pairs a food item with rice, illustrating the meme\u2011style usage of rice in jokes. \u3010https://knowyourmeme.com/photos/1676462-youre-telling-me-a-shrimp-fried-this-rice\u3011 (provides meme origin).  \n\n*Conclusion:* A specific cultural or meme origin for the exact phrase \u201cBananas and\u202fRice\u201d (especially Somali) could not be located in the available non\u2011crypto sources.",
+          "confidence_score": {
+            "final_score": 8,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 8,
+              "completeness": 7,
+              "clarity": 9,
+              "source_groundedness": 9
+            }
+          },
+          "narrative_score": {
+            "final_score": 3,
+            "narrative_subscores": {
+              "hook_strength": 6,
+              "cultural_relevance": 7,
+              "cultural_charge": 2,
+              "mission_statement": 1,
+              "compellingness": 5,
+              "tribal_identity": 3,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": 5,
+            "sentiment_subscores": {
+              "overall_tone": 5,
+              "excitement_level": 5,
+              "concern_signals": 5,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 5,
+              "skepticism_level": 5,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-23T22:28:27.555203Z",
+          "token_address": "7qz9dRpacs9MV34aPQTCbnGZr8zKdA96u86BN1VPbonk",
+          "name": "Bananas and Rice",
+          "symbol": "B&R",
+          "description": "",
+          "timestamp": "2026-01-23T22:28:25.662040+00:00",
+          "llm_interpretation": "Description: A Somali meme token themed around bananas and rice.\n\n1. memecoin: TRUE - The token is based on a meme related to bananas and rice.\n2. utility: FALSE - There's no indication that the token is based on tech or utility.\n3. ai_token: FALSE - There's no mention or indication that the token is related to AI or artificial intelligence.\n4. tweet_coin: FALSE - While there's a main tweet summary, it's not indicated that the token is directly based on a viral tweet.\n5. current_event: FALSE - There's no clear indication that the token is based on a current event or trend.\n6. racist: FALSE - The token's theme doesn't appear to be racist.\n7. offensive: FALSE - The token's theme doesn't appear to be directly offensive.\n8. animals: FALSE - While bananas are related to an animal (monkeys), the token isn't directly based on an animal.\n9. political: FALSE - There's no clear indication that the token is based on politics or a political figure, although it mentions Elon Musk, it's not directly related to politics.\n\nThe classifications are based on the provided information about the token.",
+          "llm_description": "A Somali meme token themed around bananas and rice.",
+          "scraped_website_content": "",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "",
+            "prompt_2_summary_twitter_searches": "Bananas and Rice is a token, symbolized as $B&R, with the address 7qz9dRpacs9MV34aPQTCbnGZr8zKdA96u86BN1VPbonk.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "Somali meme token, bananas and rice theme.",
+            "prompt_5_summary_twitter_community_recent_posts": "It's a meme token related to bananas and rice, with a community seeking moderation and interaction with Elon Musk."
+          }
+        },
+        "llm_staged_data": {
+          "created": "4 hours ago",
+          "token_created_timestamp": "2026-01-23T18:25:02.284000+00:00",
+          "token_address": "7qz9dRpacs9MV34aPQTCbnGZr8zKdA96u86BN1VPbonk",
+          "token_symbol": "B&R",
+          "token_name": "Bananas and Rice",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "",
+          "token_image": "https://edge.uxento.io/image/EupS9Bfa1UXnwjsRZzBWRzhxM5WJXSZxHewEcuCgpump",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/zeus_quant/status/2014766222898794903?s=20",
+          "pump_telegram": null,
+          "pump_website": "https://x.com/i/trending/2014759308005625941",
+          "dex_twitter": "https://x.com/i/communities/2014768079343907112",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": "This new Somali meme is going mega viral on Twitter right now. 6000 tweets and trending. Bananas and rice. Elon will certainly interact here.",
+            "username": "zeus_quant",
+            "displayname": "Le Chef \ud83d\udc68\u200d\ud83c\udf73"
+          },
+          "website_content": null,
+          "twitter_community_content": {
+            "url": "https://x.com/i/communities/2014768079343907112",
+            "community_id": "2014768079343907112",
+            "recent_posts": [
+              "This new Somali meme is going mega viral on Twitter right now. 6000 tweets and trending. Bananas and rice. Elon will certainly interact here.\n\n7qz9dRpacs9MV34aPQTCbnGZr8zKdA96u86BN1VPbonk",
+              "TAG ELON",
+              "Who wants mod? Its like bananas and rice and its like not only bananas and rice but like bananas and rice"
+            ]
+          },
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [],
+            "address_top": [
+              "Bananas and rice \ud83c\udf4c \ud83c\udf5a  This shit wil blow up @elonmusk   7qz9dRpacs9MV34aPQTCbnGZr8zKdA96u86BN1VPbonk https://t.co/9bShoP3ahi",
+              "\ud83c\udf4c&amp;\ud83c\udf5a  B&amp;R  Bananas and Rice  7qz9dRpacs9MV34aPQTCbnGZr8zKdA96u86BN1VPbonk https://t.co/PbvMGdwYHZ",
+              "@EndWokeness I love bananas and rice."
+            ],
+            "symbol_recent": [
+              "Sorry guys  The tend to move even while am still studying them\ud83d\ude05 Might be a good play though  $B&amp;R https://t.co/3fG7awfzmQ"
+            ],
+            "symbol_top": [
+              "Inter Milan debut their new fourth kit \ud83d\udc55 https://t.co/8TLEZrGJRZ",
+              "23\u2019\u2014Inter 0-2 Pisa 39\u2019\u2014Inter 1-2 Pisa 41\u2019\u2014Inter 2-2 Pisa 45+2\u2019\u2014Inter 3-2 Pisa  Inter with three goals in eight minutes to turn it around by halftime \ud83d\udc4a https://t.co/9N8Qcq3oqj",
+              "Bradley Barcola wins it for PSG with a 79th-minute goal vs. Auxerre \ud83d\udd2b https://t.co/jO58UQYxim",
+              "The Champions League returns \ud83e\udd29 https://t.co/Bqp8sUU72n",
+              "Trinity Rodman has signed a three-year contract with the Washington Spirit.  With an average annual value of over $1M it makes her the highest-paid women\u2019s footballer in the world \ud83c\uddfa\ud83c\uddf8 https://t.co/NoR2E1pe2R",
+              "Senegal fans packed the streets for the AFCON trophy parade in Dakar \ud83c\udfc6\ud83c\uddf8\ud83c\uddf3 https://t.co/Fxbok0ZYq3",
+              "Seven G/A in six Champions League games for Ferm\u00edn L\u00f3pez this season \ud83e\udee1 https://t.co/D4tqFC9Edf",
+              "\ud83c\udf4c&amp;\ud83c\udf5a  B&amp;R  Bananas and Rice  7qz9dRpacs9MV34aPQTCbnGZr8zKdA96u86BN1VPbonk https://t.co/PbvMGdwYHZ",
+              "@EndWokeness I love bananas and rice.",
+              "\u201conly time i go back &amp; forth..playing tennis\u201d \ud83d\ude02 https://t.co/xVu2kyzpSV",
+              "SENEGAL ARE AFCON CHAMPIONS \ud83c\uddf8\ud83c\uddf3\ud83c\udfc6 https://t.co/gLDjAyoN4A",
+              "\u0628\u0631\u062f\u0627\u0646 \u2026\u2026: https://t.co/Q9syHUHF5Q"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-01-23 19:02:22",
+            "bundle_percentage": 4.48,
+            "fresh_wallets_percentage": 4.9,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 44.78,
+            "num_holders": 638,
+            "largest_holder_percentage": 3.4,
+            "largest_cluster_percentage": 4.46,
+            "large_holder_count": 10,
+            "same_percentage_count": 5,
+            "low_sol_count": 11
+          },
+          "onchain_scan_score": {
+            "final_score": 6.8,
+            "bundle_percentage_score": 8,
+            "fresh_wallets_percentage_score": 8,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 2,
+            "num_holders_score": 4,
+            "largest_holder_percentage_score": 7,
+            "largest_cluster_percentage_score": 7,
+            "large_holder_count_score": 10,
+            "same_percentage_count_score": 6,
+            "low_sol_count_score": 4
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": 2.86,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": 4.62,
+                "subscores": {
+                  "oversold": 1.5,
+                  "momentum_shift": 10.0,
+                  "drawdown_value": 2.5
+                },
+                "inputs": {
+                  "rsi": 68.84672775873133,
+                  "cipher_mfi": null,
+                  "cipher_wt1": 78.35873968274873,
+                  "cipher_wt2": 65.5206716760432,
+                  "macd_hist": 1.0914598831151523e-05,
+                  "cipher_bullish_cross": true,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "1h": {
+                "final_score": 3.8,
+                "subscores": {
+                  "oversold": 3.0,
+                  "momentum_shift": 5.5,
+                  "drawdown_value": 2.5
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": 230.07218595072862,
+                  "cipher_wt2": 255.51330715377537,
+                  "macd_hist": 6.435227794408383e-06,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "4h": {
+                "final_score": 0.75,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": 0.0,
+                  "drawdown_value": 2.5
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": 0.0,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": 2.25,
+              "momentum_shift": 5.17,
+              "drawdown_value": 2.5,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 262596.82,
+          "ath_market_cap": 327370.39,
+          "ath_market_cap_timestamp": "2026-01-23T22:22:33+00:00",
+          "ath_multiple": 1.247,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-23T22:34:52.588244Z",
+      "token_address": "3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump",
+      "token_symbol": "weird",
+      "token_name": "this would never work",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 2.9,
+        "groq_web_research": {
+          "summary_all_context": "The token \"this would never work\" ($WEIRD) references a phrase with no verified non-crypto cultural origin. Its description links to a Twitter search and Discord community, but no documented meme, slang, or gesture ties to the phrase \"Weird, we were told this would never work.\"",
+          "answer": "**Result:** I was unable to locate any reliable, non\u2011crypto sources that document a cultural, slang, meme, or TikTok origin for the phrase \u201cWeird, we were told this would never work.\u201d Searches of major meme\u2011tracking sites (Know Your Meme, Wikipedia) and mainstream media outlets (The Verge, Mashable, NY\u202fTimes, BBC, Vox) returned no entries linking that exact wording to a recognized meme, gesture, or slang usage.\n\n**Conclusion:** No verifiable non\u2011crypto origin could be found for the token\u2019s reference phrase.",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 7,
+              "completeness": 6,
+              "clarity": 8,
+              "source_groundedness": 4
+            }
+          },
+          "narrative_score": {
+            "final_score": 2,
+            "narrative_subscores": {
+              "hook_strength": 4,
+              "cultural_relevance": 3,
+              "cultural_charge": 2,
+              "mission_statement": 6,
+              "compellingness": 2,
+              "tribal_identity": 3,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": 5,
+            "sentiment_subscores": {
+              "overall_tone": 5,
+              "excitement_level": 5,
+              "concern_signals": 5,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 5,
+              "skepticism_level": 5,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-23T22:36:39.489788Z",
+          "token_address": "3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump",
+          "name": "this would never work",
+          "symbol": "weird",
+          "description": "https://x.com/search?q=Weird%2C%20we%20were%20told%20this%20would%20never%20work&src=typed_query Launched on discord.gg/uxento",
+          "timestamp": "2026-01-23T22:36:37.358618+00:00",
+          "llm_interpretation": "Description: A community-driven cryptocurrency token called \"Weird\" launched on Discord.\n\n1. memecoin: TRUE - The token's name and description suggest it's based on a meme or humorous concept.\n2. utility: FALSE - There's no clear indication of a specific utility or technological use case.\n3. ai_token: FALSE - No mention of AI or artificial intelligence is made in the provided information.\n4. tweet_coin: TRUE - The token's description references a viral tweet, suggesting it was inspired by one.\n5. current_event: FALSE - While the token may be related to a current online trend, there's no clear connection to a specific event.\n6. racist: FALSE - There's no indication of racist themes or branding associated with the token.\n7. offensive: FALSE - The available information doesn't suggest the token has offensive themes or branding.\n8. animals: FALSE - No animals are mentioned in the provided information about the token.\n9. political: FALSE - There's no clear connection to politics or a political figure.\n\nThe classifications are based on the information provided about the token, including its name, description, and community-driven approach.",
+          "llm_description": "A community-driven cryptocurrency token called $WEIRD is building a project.",
+          "scraped_website_content": "",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": true,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "",
+            "prompt_2_summary_twitter_searches": "The token $WEIRD is associated with the address 3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump and appears to be a community-driven project building something brick by brick.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": "Weird is a crypto token with a community driven approach, mentioned on social media and listed on Binance, with a paying decentralized exchange."
+          }
+        },
+        "llm_staged_data": {
+          "created": "18 minutes ago",
+          "token_created_timestamp": "2026-01-23T22:17:01+00:00",
+          "token_address": "3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump",
+          "token_symbol": "weird",
+          "token_name": "this would never work",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "https://x.com/search?q=Weird%2C%20we%20were%20told%20this%20would%20never%20work&src=typed_query Launched on discord.gg/uxento",
+          "token_image": "https://edge.uxento.io/image/LtWboqaYBfcY8vAKpNreNp8S7vLU6LbtfyAjXPwpump",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/i/communities/2014824600346231209",
+          "pump_telegram": null,
+          "pump_website": "https://x.com/search?q=Weird%2C%20we%20were%20told%20this%20would%20never%20work&src=typed_query",
+          "dex_twitter": "https://x.com/i/communities/2014824600346231209",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": null,
+          "twitter_community_content": {
+            "url": "https://x.com/i/communities/2014824600346231209",
+            "community_id": "2014824600346231209",
+            "recent_posts": [
+              "This Trend is blowing up on x rn\n\nLink to trend:https://x.com/search?q=Weird%2C%20we%20were%20told%20this%20would%20never%20work&src=typed_query\u2026\n\n$weird\n\nCA:3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump",
+              "Paid",
+              "Binance even posted it",
+              "Paying dex",
+              "we were told this crypto shit would never work, weird.",
+              "Can someone cook a good banner",
+              "brick by brick\ncommunity\nhttps://coinmarketscap.fun/community/voting/3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump/\u2026",
+              "Still need Banner?"
+            ]
+          },
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "$WEIRD  3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/yGDLjIOpxG",
+              "$WEIRD  3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/7Ilb2fjeHP",
+              "$Weird   3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/mHpnjQj5Z6"
+            ],
+            "address_top": [
+              "\ud83e\uddf1 brick by brick community https://t.co/2jIdvAKSGB",
+              "$WEIRD  3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/7Ilb2fjeHP",
+              "$Weird   3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/mHpnjQj5Z6",
+              "3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/jbZQbLYmxU"
+            ],
+            "symbol_recent": [
+              "$WEIRD  3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/yGDLjIOpxG",
+              "$WEIRD  3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/7Ilb2fjeHP",
+              "$Weird   3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/mHpnjQj5Z6"
+            ],
+            "symbol_top": [
+              "$Weird   3AD5BXdeU5DMFLd6kAKPAeVfjFP9iPix4bm3ZsK5pump https://t.co/mHpnjQj5Z6",
+              "Weird, we were told this would never work"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-01-23 22:24:54",
+            "bundle_percentage": 12.89,
+            "fresh_wallets_percentage": 0.0,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 8.92,
+            "num_holders": 611,
+            "largest_holder_percentage": 2.9,
+            "largest_cluster_percentage": 3.39,
+            "large_holder_count": 3,
+            "same_percentage_count": 6,
+            "low_sol_count": 1
+          },
+          "onchain_scan_score": {
+            "final_score": 4.8,
+            "bundle_percentage_score": 5,
+            "fresh_wallets_percentage_score": 10,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 6,
+            "num_holders_score": 4,
+            "largest_holder_percentage_score": 9,
+            "largest_cluster_percentage_score": 7,
+            "large_holder_count_score": 4,
+            "same_percentage_count_score": 6,
+            "low_sol_count_score": 9
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "search",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 1,
+            "total_usd_spent": 1893.38,
+            "kols": [
+              {
+                "kol_name": "Letterbomb"
+              }
+            ]
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.33,
+            "total_kol_buys_score": 1,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 69007.75,
+          "ath_market_cap": 84507.92,
+          "ath_market_cap_timestamp": "2026-01-23T22:33:57+00:00",
+          "ath_multiple": 1.225,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-23T22:37:09.064932Z",
+      "token_address": "6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump",
+      "token_symbol": "POLLY",
+      "token_name": "Polly Penguin",
+      "first_time_seen": false,
+      "times_seen_before": 5,
+      "full_token_details": {
+        "aggregate_score": 2.2,
+        "groq_web_research": {
+          "summary_all_context": "Polly Penguin (POLLY) is a community-driven Solana token featuring a digital penguin companion and charity initiatives, including a community-chosen coloring book. Web research found no pre-existing cultural reference for \"Polly Penguin\" in memes, slang, or media, suggesting the name is an original creation unrelated to non-crypto cultural touchpoints.",
+          "answer": "**Summary**  \n- No verifiable non\u2011crypto cultural reference for the phrase **\u201cPolly Penguin\u201d** could be located in mainstream meme, slang, or media sources.  \n\n**Origin / Timeline**  \n- Searches of reputable non\u2011crypto domains (KnowYourMeme, Wikipedia, major news outlets) return results for \u201cPolly\u201d (a given name, a parrot nickname, a song, a cheese brand) but nothing linking \u201cPolly\u201d with \u201cPenguin\u201d as a recognized meme, slang term, or character.  \n- Consequently, the token\u2019s name appears to be an original creation rather than a repurposing of an existing cultural meme or phrase.  \n\n**Sources**  \n- No relevant sources found that document a pre\u2011existing \u201cPolly Penguin\u201d cultural meaning. (All searched results pertained to unrelated \u201cPolly\u201d topics.)",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 8,
+              "completeness": 6,
+              "clarity": 8,
+              "source_groundedness": 1
+            }
+          },
+          "narrative_score": {
+            "final_score": 2,
+            "narrative_subscores": {
+              "hook_strength": 2,
+              "cultural_relevance": 1,
+              "cultural_charge": 2,
+              "mission_statement": 6,
+              "compellingness": 2,
+              "tribal_identity": 2,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": 5,
+            "sentiment_subscores": {
+              "overall_tone": 5,
+              "excitement_level": 5,
+              "concern_signals": 5,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 5,
+              "skepticism_level": 5,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-23T22:38:10.759216Z",
+          "token_address": "6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump",
+          "name": "Polly Penguin",
+          "symbol": "POLLY",
+          "description": "",
+          "timestamp": "2026-01-23T22:38:08.997383+00:00",
+          "llm_interpretation": "Description: Polly Penguin is a community-driven token on Solana with a digital penguin companion offering emotional support and charity focus.\n\n1. memecoin: TRUE - based on a digital penguin character, which can be considered a meme.\n2. utility: FALSE - no clear utility mentioned beyond emotional support and charity.\n3. ai_token: TRUE - features a chatbot, indicating AI technology.\n4. tweet_coin: FALSE - no indication that the token was inspired by a viral tweet.\n5. current_event: FALSE - no direct connection to a current event or trend.\n6. racist: FALSE - no racist themes or branding.\n7. offensive: FALSE - no offensive themes or branding.\n8. animals: TRUE - features a penguin character.\n9. political: FALSE - no direct connection to politics or a political figure.\n\n1. memecoin: TRUE - based on a digital penguin character.\n2. utility: FALSE - lacks clear utility.\n3. ai_token: TRUE - features a chatbot.\n4. tweet_coin: FALSE - no viral tweet inspiration.\n5. current_event: FALSE - no direct connection to current events.\n6. racist: FALSE - no racist themes.\n7. offensive: FALSE - no offensive themes.\n8. animals: TRUE - features a penguin.\n9. political: FALSE - no political connection.",
+          "llm_description": "Polly Penguin is a community-driven token on Solana with a digital penguin companion and charity focus, supported by a coloring book for community-chosen causes.",
+          "scraped_website_content": "Polly on Sol \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 Polly is on Solana now Meet Polly \ud83d\udc97 Polly Wait for it... Your penguin of love, comfort, and kindness on Solana. A gentle therapist, a soft companion, and a pink-hearted penguin here to make you feel loved. Talk to Polly AI Games Arcade Penglish Dictionary Generate PFP Polly\u2019s Origin Story Why she chose the Solana blockchain \ud83d\udc27\u26a1 Pengu Lives on Solana Pengu migrated to Solana for speed, freedom, and adventure. Polly followed him because... \u201cWherever Pengu is\u2026 that\u2019s home for me.\u201d A Penguin City She loves Solana\u2019s speed, low fees, and vibrant creative community. \u201cIt feels like a bustling city made for penguins!\u201d Helping More People On Solana, she can comfort and guide thousands of hearts at once with lightning speed. \u201cFast transactions mean faster hugs.\u201d \u201cPolly found her forever home on Solana because that\u2019s where Pengu\u2019s heart lives \u2014 and where her kindness could reach the world.\u201d Polly Hub Polly Chat RELATIONSHIP THERAPIST A wholesome emotional chatbot ready to listen. Open App Penguin Game PLAY WITH POLLY Cute interactive games inside the app. Open App Penglish Dictionary LEARN THE LANGUAGE mmm, aww, peng, hmm - explained! Open App PFP Generator \ud83c\udfa8 Generate PFP \u2728 Interact With Polly \u2014 Live on Solana \u2728 All About Love \ud83d\udc9e Polly isn't just a penguin; she's a feeling. Listens without judgment Soft, loving, and patient Speaks in emotional fillers (mmm, aww, peng) Deeply connected to Pengu Wants everyone to feel safe Finds joy in comforting others The Journey Ahead \ud83d\uddfa\ufe0f Where Polly and Pengu are heading next \ud83c\udfce\ufe0f More games on Polly Arcade More speed, more fun! \ud83e\udd16 Polly AI Expansion Coming to TG and other socials \ud83c\udfc6 Community Rewards Contests & giveaways for the flock Official Contract Address 6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump Copy CA Join the Flock \ud83d\udc27 Follow Polly and Pengu on their adventures across the social verse! Telegram Twitter Dexscreener TikTok Instagram YouTube Frequently Asked Questions What is Polly? Why Solana? Is P... (truncated)",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": true,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": true,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "Polly is a digital penguin companion offering comfort, kindness, and emotional support through a chatbot, games, and interactive features on Solana.",
+            "prompt_2_summary_twitter_searches": "$Polly is a token on the SOL blockchain with a community, referenced by @PollyFans_sol, focused on building its future.",
+            "prompt_3_summary_profile_content": "Polly is a community-driven token on Solana with a charity focus, accompanied by a coloring book with proceeds going to community-chosen causes.",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "21 days ago",
+          "token_created_timestamp": "2026-01-02T06:35:31+00:00",
+          "token_address": "6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump",
+          "token_symbol": "POLLY",
+          "token_name": "Polly Penguin",
+          "first_time_seen": false,
+          "times_seen_before": 5,
+          "token_description": "",
+          "token_image": "https://ipfs.io/ipfs/Qmejkfe2aqcasg6WuxHQ8YzdzqCB2vUwufTnoAmQYtzC4d",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": null,
+          "pump_telegram": null,
+          "pump_website": null,
+          "dex_twitter": "https://x.com/PollyFans_sol",
+          "dex_telegram": "https://t.me/pollyonowonsol",
+          "dex_discord": "https://discord.gg/DueKabUM",
+          "dex_website": "https://pollyonsol.fun/",
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Polly on Sol \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 \u2764 Polly is on Solana now Meet Polly \ud83d\udc97 Polly Wait for it... Your penguin of love, comfort, and kindness on Solana. A gentle therapist, a soft companion, and a pink-hearted penguin here to make you feel loved. Talk to Polly AI Games Arcade Penglish Dictionary Generate PFP Polly\u2019s Origin Story Why she chose the Solana blockchain \ud83d\udc27\u26a1 Pengu Lives on Solana Pengu migrated to Solana for speed, freedom, and adventure. Polly followed him because... \u201cWherever Pengu is\u2026 that\u2019s home for me.\u201d A Penguin City She loves Solana\u2019s speed, low fees, and vibrant creative community. \u201cIt feels like a bustling city made for penguins!\u201d Helping More People On Solana, she can comfort and guide thousands of hearts at once with lightning speed. \u201cFast transactions mean faster hugs.\u201d \u201cPolly found her forever home on Solana because that\u2019s where Pengu\u2019s heart lives \u2014 and where her kindness could reach the world.\u201d Polly Hub Polly Chat RELATIONSHIP THERAPIST A wholesome emotional chatbot ready to listen. Open App Penguin Game PLAY WITH POLLY Cute interactive games inside the app. Open App Penglish Dictionary LEARN THE LANGUAGE mmm, aww, peng, hmm - explained! Open App PFP Generator \ud83c\udfa8 Generate PFP \u2728 Interact With Polly \u2014 Live on Solana \u2728 All About Love \ud83d\udc9e Polly isn't just a penguin; she's a feeling. Listens without judgment Soft, loving, and patient Speaks in emotional fillers (mmm, aww, peng) Deeply connected to Pengu Wants everyone to feel safe Finds joy in comforting others The Journey Ahead \ud83d\uddfa\ufe0f Where Polly and Pengu are heading next \ud83c\udfce\ufe0f More games on Polly Arcade More speed, more fun! \ud83e\udd16 Polly AI Expansion Coming to TG and other socials \ud83c\udfc6 Community Rewards Contests & giveaways for the flock Official Contract Address 6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump Copy CA Join the Flock \ud83d\udc27 Follow Polly and Pengu on their adventures across the social verse! Telegram Twitter Dexscreener TikTok Instagram YouTube Frequently Asked Questions What is Polly? Why Solana? Is P... (truncated)",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": "Fans of Polly",
+            "bio": "Fan account to support the Polly on Sol community \ud83e\ude77\nTG: https://t.co/xTNDBWiuBG\nCA: 6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump",
+            "recent_tweets": [
+              "Polly Fam! Now starts the first month of every single cent of proceeds, not only profit, but the ENTIRE sales amount received from the Polly coloring book, going to charity. The community decides. What do we do with it? Does it go to Variety, a diasbled childrens' charity, or does it go to feeding those less fortunate? You decide! Poll closes in one week. Coloring book available on Amazon, at https://t.co/8xhXItXRYa",
+              "What's up, Polly fam! @MichaelSuppo We thank you for your latest video, we have linked our main X to Dex like you kindly suggested we do! We have also released a coloring book, now available on Amazon! All proceeds will go to charitable causes as chosen by the community! Thanks Suppo! Coloring book available here: https://t.co/8xhXItXRYa",
+              "https://t.co/0h2wsI2xSk",
+              "I'm Sorry\ud83e\ude75\ud83e\ude77 #RelationshipGoals #Wholesome #CuteComic $Polly $Pengu @LilPudgys @pudgypenguins https://t.co/4D5Cw9yzY8",
+              "Looks like $Polly on @solana is getting some nice culture calls.  @MichaelSuppo sees the vision. \ud83e\ude77  @pudgypenguins @okx  @MEXC_Official @cryptorover @CryptoYeezussss @thesolanapost https://t.co/yINjkRWUEw",
+              "RT @SimopLabs: Suppoman was LIVE dropping any alpha project!  And guess who was on the 100x tier list?  Year of the penguins , year of $POLLY on SOL  @MichaelSuppo said: \u201cDon't follow this crap with 4k volume, this ridiculous competitor to $POLLY on SOL.\u201d \ud83e\udd23\ud83e\udd23\ud83e\udd23  Don't miss out on $POLLY on SOL and its amazing community.  @PollyFans_sol  @MichaelSuppo you are a G.O.A.T \ud83d\udc10  #Solana #POLLY #CryptoCommunity  @CryptoYeezussss @pudgypenguins  https://t.co/5ihIOp0ZV0",
+              "Suppoman was LIVE dropping any alpha project!  And guess who was on the 100x tier list?  Year of the penguins , year of $POLLY on SOL  @MichaelSuppo said: \u201cDon't follow this crap with 4k volume, this ridiculous competitor to $POLLY on SOL.\u201d \ud83e\udd23\ud83e\udd23\ud83e\udd23  Don't miss out on $POLLY on SOL and its amazing community.  @PollyFans_sol  @MichaelSuppo you are a G.O.A.T \ud83d\udc10  #Solana #POLLY #CryptoCommunity  @CryptoYeezussss @pudgypenguins  https://t.co/5ihIOp0ZV0",
+              "\u26a1 Boosted 100x POLLY  on DEX Screener! https://t.co/Z9zxCTWCNY",
+              "Optimism is the best way to view life. @elonmusk @BarackObama @TonyRobbins @JamesClear #Positivity #PositiveVibes #Motivation #Optimism #Mindset #Inspiration https://t.co/6m4L899DHd",
+              "Facetime for no reason \ud83e\ude75\ud83e\ude77 #RelationshipGoals #Wholesome #CuteComic $Polly $Pengu @LilPudgys @pudgypenguins https://t.co/N6XAdeEXev",
+              "It's all she needed \ud83e\ude77 #RelationshipGoals #Wholesome #CuteComic $Polly $Pengu @LilPudgys @pudgypenguins https://t.co/SsXH9g5VcX",
+              "Any Congress woman out there @RepTimMooreNC ?? @RepJasmine @RepStefanik @SenGillibrand @SenKlobuchar @ElissaSlotkin @SenBaldwin @pudgypenguins https://t.co/5SlTFaIHMB",
+              "\ud83d\udc40  Me on the House floor today after changing my pfp https://t.co/4FBpukkj7D",
+              "Even though Pump made a huge error and apparently allowed some rando to replace the dev wallet and claim all our rewards, (now resolved) the Polly team is still here and active, did you catch our last VC? @a1lon9 @pumpfun , please give us a shoutout for all we've been through, and get us back to where we deserve to be. If your project was taken out from under you, would you keep buying up supply even while investors were freaking out? We did. Let's get Polly shining brighter than ever.",
+              "Man, is this AWESOME or what!?!?",
+              "Everyone\u2019s making AI memes and regular memes, so I switched it up. I made a physical notebook for $POLLY and I\u2019ll be giving it out to students when school resumes tomorrow  Hope the real-life grind counts.  #pollymemecontest  @pudgypenguins   @OnSol64174 https://t.co/ZnWj8kgWfT",
+              "She just wants to play\ud83d\ude0a #RelationshipGoals #Wholesome #CuteComic $Polly $Pengu @LilPudgys @pudgypenguins https://t.co/yz7n8TCpCa",
+              "\ud83d\udc97 Special Mentions & Community Love \ud83d\udc97  The creativity in the Polly Meme Contest was next level, and we couldn\u2019t let some of these amazing efforts go unnoticed.  Huge shoutout to @BenTerranas @Dhouseahum1 @ItachiMSSG2 @yBbb97  for their incredible work!   Each of you will receive $50 as a token of appreciation. We\u2019ve DM\u2019ed you on X ,  just reply with your Solana wallet address to claim.  Thank you to everyone who participated and showed love to Polly. Stay tuned for more.\ud83d\udc40Keep supporting Polly on Sol\ud83d\udc97  #pollymemecontest $polly $pengu",
+              "Congratulations to our meme contest winner, Mireia - Mireia, we have reached out to you on telegram, please DM back for your $250 in Sol! Cheers! https://t.co/dzGHjpiIbj",
+              "Big culture call incoming!!\ud83d\udc27\ud83d\udcf7 Just watched @MichaelSuppo drop his latest tier list on undiscovered meme + AI coins with massive upside... and $POLLY landed in the top 5 with serious conviction!  He breaks down why Polly's viral TikTok stories, Pudgy Penguins roots, killer community, and that low-cap entry point scream 50x\u2013100x potential in this bull. (Shoutout to the high-quality site, NFT generator, and real momentum building.)  Not shilling\u2014just vibes. This is the kind of alpha that hits different when it's organic. Go check it if you're hunting the next leg up in meme culture.  Watch here: https://t.co/4tOz3LgvYT $POLLY on Solana | CA: 6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump  @pudgypenguins penguin fam vibes? @blknoiz06 this feels like your kind of Solana meme rotation energy.   What do you think\u2014Polly flying soon? \ud83d\udcf7 #PollyPenguin #PudgyPenguins #SolanaMemes #MemeCoinSeason $Polly $Pengu @solana @toly @rajgokal @cryptorover @binance @Bybit_Official",
+              "They were witnesses!! #RelationshipGoals #Wholesome #CuteComic $Polly $Pengu https://t.co/kBl4kr0O3g",
+              "$Polly is in control now. https://t.co/2dQpwNIqvL"
+            ]
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "The $Polly reversal is on \ud83d\udd25\ud83d\udd25  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump https://t.co/JzexMiYXxH",
+              "$POLLY on SOL  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump https://t.co/mQjPPUi7Ih",
+              "$POLLY on SOL  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump  #PenguinSeason #Polly https://t.co/AcD4B6dY0h"
+            ],
+            "address_top": [
+              "$Polly on Sol @PollyFans_sol  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump https://t.co/JG8v6UjRtK",
+              "The $Polly reversal is on \ud83d\udd25\ud83d\udd25  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump https://t.co/JzexMiYXxH",
+              "POLLY isn\u2019t waiting for the future. She\u2019s building it.   6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump https://t.co/DeWWTIotD4",
+              "Once $POLLY takes off, there\u2019s no rewinding this flight   6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump",
+              "So glad I found $POLLY on SOL  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump https://t.co/hiJwJnpnuc",
+              "POLLY isn\u2019t a gamble, it\u2019s a position.   6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump",
+              "POLLY got that \u201cone look and you\u2019re hooked\u201d energy  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump"
+            ],
+            "symbol_recent": [
+              "LFG $POLLY SENDOOOORRR! https://t.co/TmixmmBWh0",
+              "The $Polly reversal is on \ud83d\udd25\ud83d\udd25  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump https://t.co/JzexMiYXxH"
+            ],
+            "symbol_top": [
+              "The $Polly reversal is on \ud83d\udd25\ud83d\udd25  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump https://t.co/JzexMiYXxH",
+              "$Polly will melt faces",
+              "$POLLY https://t.co/g9oX8QDBz6",
+              "$Polly on Sol @PollyFans_sol  6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump https://t.co/JG8v6UjRtK"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-01-02 20:27:39",
+            "bundle_percentage": 1.52,
+            "fresh_wallets_percentage": 18.1,
+            "dev_hold_percentage": 0.51,
+            "insider_wallets_percentage": 50.47,
+            "num_holders": 3386,
+            "largest_holder_percentage": 3.4,
+            "largest_cluster_percentage": 1.12,
+            "large_holder_count": 8,
+            "same_percentage_count": 6,
+            "low_sol_count": 12
+          },
+          "onchain_scan_score": {
+            "final_score": 3.6,
+            "bundle_percentage_score": 9,
+            "fresh_wallets_percentage_score": 4,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 2,
+            "num_holders_score": 9,
+            "largest_holder_percentage_score": 7,
+            "largest_cluster_percentage_score": 9,
+            "large_holder_count_score": 10,
+            "same_percentage_count_score": 6,
+            "low_sol_count_score": 4
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "PollyFans_sol",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": true,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": 3.81,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": 2.82,
+                "subscores": {
+                  "oversold": 0.0,
+                  "momentum_shift": 5.5,
+                  "drawdown_value": 6.0
+                },
+                "inputs": {
+                  "rsi": 74.37790249452036,
+                  "cipher_mfi": 51.95122047801712,
+                  "cipher_wt1": 70.76234565830103,
+                  "cipher_wt2": 64.27617128011717,
+                  "macd_hist": 1.731738063991526e-05,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "1h": {
+                "final_score": 3.24,
+                "subscores": {
+                  "oversold": 0.83,
+                  "momentum_shift": 5.5,
+                  "drawdown_value": 6.0
+                },
+                "inputs": {
+                  "rsi": 71.38973886545787,
+                  "cipher_mfi": 8.678546840895818,
+                  "cipher_wt1": 79.01586397420643,
+                  "cipher_wt2": 74.97043718033521,
+                  "macd_hist": 2.731452354298665e-05,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "4h": {
+                "final_score": 5.02,
+                "subscores": {
+                  "oversold": 3.33,
+                  "momentum_shift": 7.0,
+                  "drawdown_value": 6.0
+                },
+                "inputs": {
+                  "rsi": 47.22461442942861,
+                  "cipher_mfi": -7.449121733055267,
+                  "cipher_wt1": -12.24243501992096,
+                  "cipher_wt2": -30.898616047326747,
+                  "macd_hist": 2.90812552498967e-05,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "24h": {
+                "final_score": 5.93,
+                "subscores": {
+                  "oversold": 9.5,
+                  "momentum_shift": 0.8,
+                  "drawdown_value": 6.0
+                },
+                "inputs": {
+                  "rsi": 26.80286521489732,
+                  "cipher_mfi": null,
+                  "cipher_wt1": -29.955776674823465,
+                  "cipher_wt2": -20.740852440506913,
+                  "macd_hist": -0.00011127953857793974,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              }
+            },
+            "subscores": {
+              "oversold": 3.42,
+              "momentum_shift": 4.7,
+              "drawdown_value": 6.0,
+              "holder_trend": 0.0
+            }
+          },
+          "usd_market_cap": 673939.11,
+          "ath_market_cap": 2011146.42,
+          "ath_market_cap_timestamp": "2026-01-09T13:08:13+00:00",
+          "ath_multiple": 2.984,
+          "backup_ath_market_cap": 2011455.720660715,
+          "backup_ath_market_cap_timestamp": "2026-01-09T00:00:00Z",
+          "holderscan_data": {
+            "source": "holderscan_data",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-01-23T22:00:00.000Z",
+                "holderCount": 3364,
+                "marketCap": 574699.9370526517,
+                "mcapOverHolders": 170.83826904062178
+              },
+              {
+                "updatedAt": "2026-01-23T19:00:00.000Z",
+                "holderCount": 3282,
+                "marketCap": 394699.9567681948,
+                "mcapOverHolders": 120.26202217190578
+              },
+              {
+                "updatedAt": "2026-01-23T16:00:00.000Z",
+                "holderCount": 3275,
+                "marketCap": 374685.773718374,
+                "mcapOverHolders": 114.40786983767146
+              },
+              {
+                "updatedAt": "2026-01-23T13:00:00.000Z",
+                "holderCount": 3274,
+                "marketCap": 368473.1997022908,
+                "mcapOverHolders": 112.54526563906256
+              },
+              {
+                "updatedAt": "2026-01-23T10:00:00.000Z",
+                "holderCount": 3283,
+                "marketCap": 332819.27703257295,
+                "mcapOverHolders": 101.37656930629697
+              },
+              {
+                "updatedAt": "2026-01-23T07:00:00.000Z",
+                "holderCount": 3292,
+                "marketCap": 385677.1895427935,
+                "mcapOverHolders": 117.15588989756789
+              },
+              {
+                "updatedAt": "2026-01-23T04:00:00.000Z",
+                "holderCount": 3291,
+                "marketCap": 369099.9595721832,
+                "mcapOverHolders": 112.1543480924288
+              },
+              {
+                "updatedAt": "2026-01-23T01:00:00.000Z",
+                "holderCount": 3291,
+                "marketCap": 357399.96085369354,
+                "mcapOverHolders": 108.59919807161761
+              },
+              {
+                "updatedAt": "2026-01-22T22:00:00.000Z",
+                "holderCount": 3287,
+                "marketCap": 338099.96296763787,
+                "mcapOverHolders": 102.85973926609002
+              },
+              {
+                "updatedAt": "2026-01-22T19:00:00.000Z",
+                "holderCount": 3303,
+                "marketCap": 264699.97100719827,
+                "mcapOverHolders": 80.13925855501007
+              },
+              {
+                "updatedAt": "2026-01-22T16:00:00.000Z",
+                "holderCount": 3297,
+                "marketCap": 405999.95553049684,
+                "mcapOverHolders": 123.14223704291685
+              },
+              {
+                "updatedAt": "2026-01-22T13:00:00.000Z",
+                "holderCount": 3299,
+                "marketCap": 428705.2889740093,
+                "mcapOverHolders": 129.95007243831745
+              },
+              {
+                "updatedAt": "2026-01-22T10:00:00.000Z",
+                "holderCount": 3300,
+                "marketCap": 424899.9534603647,
+                "mcapOverHolders": 128.75756165465597
+              },
+              {
+                "updatedAt": "2026-01-22T07:00:00.000Z",
+                "holderCount": 3295,
+                "marketCap": 488299.9465161123,
+                "mcapOverHolders": 148.19421745557278
+              },
+              {
+                "updatedAt": "2026-01-22T04:00:00.000Z",
+                "holderCount": 3299,
+                "marketCap": 427099.953219397,
+                "mcapOverHolders": 129.46345959969597
+              },
+              {
+                "updatedAt": "2026-01-22T01:00:00.000Z",
+                "holderCount": 3307,
+                "marketCap": 389999.9572829896,
+                "mcapOverHolders": 117.93164719775918
+              },
+              {
+                "updatedAt": "2026-01-21T22:00:00.000Z",
+                "holderCount": 3302,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-21T19:00:00.000Z",
+                "holderCount": 3310,
+                "marketCap": 468099.9487286344,
+                "mcapOverHolders": 141.4199240872007
+              },
+              {
+                "updatedAt": "2026-01-21T16:00:00.000Z",
+                "holderCount": 3333,
+                "marketCap": 591499.9352125342,
+                "mcapOverHolders": 177.4677273364939
+              },
+              {
+                "updatedAt": "2026-01-21T13:00:00.000Z",
+                "holderCount": 3343,
+                "marketCap": 621199.9319594696,
+                "mcapOverHolders": 185.8210984024737
+              },
+              {
+                "updatedAt": "2026-01-21T10:00:00.000Z",
+                "holderCount": 3351,
+                "marketCap": 663499.927326317,
+                "mcapOverHolders": 198.00057514960218
+              },
+              {
+                "updatedAt": "2026-01-21T07:00:00.000Z",
+                "holderCount": 3348,
+                "marketCap": 701499.9231641466,
+                "mcapOverHolders": 209.52805351378333
+              },
+              {
+                "updatedAt": "2026-01-21T04:00:00.000Z",
+                "holderCount": 3352,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-21T01:00:00.000Z",
+                "holderCount": 3374,
+                "marketCap": 693799.9240075337,
+                "mcapOverHolders": 205.63127563945872
+              },
+              {
+                "updatedAt": "2026-01-20T22:00:00.000Z",
+                "holderCount": 3390,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-20T19:00:00.000Z",
+                "holderCount": 3399,
+                "marketCap": 748799.91798334,
+                "mcapOverHolders": 220.3000641316093
+              },
+              {
+                "updatedAt": "2026-01-20T16:00:00.000Z",
+                "holderCount": 3418,
+                "marketCap": 669499.9266691321,
+                "mcapOverHolders": 195.87475911911412
+              },
+              {
+                "updatedAt": "2026-01-20T13:00:00.000Z",
+                "holderCount": 3435,
+                "marketCap": 702399.923065569,
+                "mcapOverHolders": 204.4832381559153
+              },
+              {
+                "updatedAt": "2026-01-20T10:00:00.000Z",
+                "holderCount": 3436,
+                "marketCap": 708799.9223645718,
+                "mcapOverHolders": 206.28635691634804
+              },
+              {
+                "updatedAt": "2026-01-20T07:00:00.000Z",
+                "holderCount": 3446,
+                "marketCap": 778299.9147521815,
+                "mcapOverHolders": 225.85604026470733
+              },
+              {
+                "updatedAt": "2026-01-20T04:00:00.000Z",
+                "holderCount": 3454,
+                "marketCap": 757699.9170085159,
+                "mcapOverHolders": 219.36882368515225
+              },
+              {
+                "updatedAt": "2026-01-20T01:00:00.000Z",
+                "holderCount": 3456,
+                "marketCap": 786099.9138978412,
+                "mcapOverHolders": 227.45946582692164
+              },
+              {
+                "updatedAt": "2026-01-19T22:00:00.000Z",
+                "holderCount": 3463,
+                "marketCap": 831799.9088922839,
+                "mcapOverHolders": 240.1963352273416
+              },
+              {
+                "updatedAt": "2026-01-19T19:00:00.000Z",
+                "holderCount": 3463,
+                "marketCap": 888599.9026709347,
+                "mcapOverHolders": 256.59829704618386
+              },
+              {
+                "updatedAt": "2026-01-19T16:00:00.000Z",
+                "holderCount": 3439,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-19T13:00:00.000Z",
+                "holderCount": 3453,
+                "marketCap": 870699.9046315359,
+                "mcapOverHolders": 252.1575165454781
+              },
+              {
+                "updatedAt": "2026-01-19T10:00:00.000Z",
+                "holderCount": 3461,
+                "marketCap": 906099.9007541457,
+                "mcapOverHolders": 261.8029184496231
+              },
+              {
+                "updatedAt": "2026-01-19T07:00:00.000Z",
+                "holderCount": 3447,
+                "marketCap": 859399.9058692339,
+                "mcapOverHolders": 249.31822044364196
+              },
+              {
+                "updatedAt": "2026-01-19T04:00:00.000Z",
+                "holderCount": 3438,
+                "marketCap": 934799.8976106119,
+                "mcapOverHolders": 271.90223897923556
+              },
+              {
+                "updatedAt": "2026-01-19T01:00:00.000Z",
+                "holderCount": 3429,
+                "marketCap": 925099.8986730607,
+                "mcapOverHolders": 269.7870803945934
+              },
+              {
+                "updatedAt": "2026-01-18T22:00:00.000Z",
+                "holderCount": 3432,
+                "marketCap": 846199.9073150404,
+                "mcapOverHolders": 246.56174455566443
+              },
+              {
+                "updatedAt": "2026-01-18T19:00:00.000Z",
+                "holderCount": 3452,
+                "marketCap": 833299.9087279877,
+                "mcapOverHolders": 241.396265564307
+              },
+              {
+                "updatedAt": "2026-01-18T16:00:00.000Z",
+                "holderCount": 3460,
+                "marketCap": 793099.9131311257,
+                "mcapOverHolders": 229.2196280725797
+              },
+              {
+                "updatedAt": "2026-01-18T13:00:00.000Z",
+                "holderCount": 3451,
+                "marketCap": 805499.9117729438,
+                "mcapOverHolders": 233.41058005590952
+              },
+              {
+                "updatedAt": "2026-01-18T10:00:00.000Z",
+                "holderCount": 3452,
+                "marketCap": 803199.9120248646,
+                "mcapOverHolders": 232.67668366884837
+              },
+              {
+                "updatedAt": "2026-01-18T07:00:00.000Z",
+                "holderCount": 3450,
+                "marketCap": 744099.9184981348,
+                "mcapOverHolders": 215.68113579656082
+              },
+              {
+                "updatedAt": "2026-01-18T04:00:00.000Z",
+                "holderCount": 3446,
+                "marketCap": 795599.9128572987,
+                "mcapOverHolders": 230.87635312167694
+              },
+              {
+                "updatedAt": "2026-01-18T01:00:00.000Z",
+                "holderCount": 3451,
+                "marketCap": 829299.9091661109,
+                "mcapOverHolders": 240.30713102466268
+              },
+              {
+                "updatedAt": "2026-01-17T22:00:00.000Z",
+                "holderCount": 3469,
+                "marketCap": 821399.9100314042,
+                "mcapOverHolders": 236.78290862825145
+              },
+              {
+                "updatedAt": "2026-01-17T19:00:00.000Z",
+                "holderCount": 3481,
+                "marketCap": 902399.9011594097,
+                "mcapOverHolders": 259.2358233724245
+              },
+              {
+                "updatedAt": "2026-01-17T16:00:00.000Z",
+                "holderCount": 3498,
+                "marketCap": 848999.9070083542,
+                "mcapOverHolders": 242.71009348437798
+              },
+              {
+                "updatedAt": "2026-01-17T13:00:00.000Z",
+                "holderCount": 3517,
+                "marketCap": 1015999.8887167112,
+                "mcapOverHolders": 288.8825387309386
+              },
+              {
+                "updatedAt": "2026-01-17T10:00:00.000Z",
+                "holderCount": 3520,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-17T07:00:00.000Z",
+                "holderCount": 3528,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-17T04:00:00.000Z",
+                "holderCount": 3544,
+                "marketCap": 862299.9055515946,
+                "mcapOverHolders": 243.3126144332942
+              },
+              {
+                "updatedAt": "2026-01-17T01:00:00.000Z",
+                "holderCount": 3587,
+                "marketCap": 1011999.8891548346,
+                "mcapOverHolders": 282.1298826748912
+              },
+              {
+                "updatedAt": "2026-01-16T22:00:00.000Z",
+                "holderCount": 3587,
+                "marketCap": 1201999.868343983,
+                "mcapOverHolders": 335.09893179369476
+              },
+              {
+                "updatedAt": "2026-01-16T19:00:00.000Z",
+                "holderCount": 3588,
+                "marketCap": 1151999.873820523,
+                "mcapOverHolders": 321.0701989466341
+              },
+              {
+                "updatedAt": "2026-01-16T16:00:00.000Z",
+                "holderCount": 3602,
+                "marketCap": 1237999.8644008746,
+                "mcapOverHolders": 343.69790794027614
+              },
+              {
+                "updatedAt": "2026-01-16T13:00:00.000Z",
+                "holderCount": 3617,
+                "marketCap": 1246999.8634150974,
+                "mcapOverHolders": 344.7608137724903
+              },
+              {
+                "updatedAt": "2026-01-16T10:00:00.000Z",
+                "holderCount": 3632,
+                "marketCap": 1280999.8596910504,
+                "mcapOverHolders": 352.69819925414384
+              },
+              {
+                "updatedAt": "2026-01-16T07:00:00.000Z",
+                "holderCount": 3628,
+                "marketCap": 1220999.866262898,
+                "mcapOverHolders": 336.5490259820557
+              },
+              {
+                "updatedAt": "2026-01-16T04:00:00.000Z",
+                "holderCount": 3630,
+                "marketCap": 1356999.8513667097,
+                "mcapOverHolders": 373.82916015611835
+              },
+              {
+                "updatedAt": "2026-01-16T01:00:00.000Z",
+                "holderCount": 3623,
+                "marketCap": 1402999.8463282932,
+                "mcapOverHolders": 387.2480944875223
+              },
+              {
+                "updatedAt": "2026-01-15T22:00:00.000Z",
+                "holderCount": 3625,
+                "marketCap": 1359999.8510381174,
+                "mcapOverHolders": 375.17237270017034
+              },
+              {
+                "updatedAt": "2026-01-15T19:00:00.000Z",
+                "holderCount": 3628,
+                "marketCap": 1287999.8589243346,
+                "mcapOverHolders": 355.0164991522422
+              },
+              {
+                "updatedAt": "2026-01-15T16:00:00.000Z",
+                "holderCount": 3630,
+                "marketCap": 1450999.841070815,
+                "mcapOverHolders": 399.72447412419143
+              },
+              {
+                "updatedAt": "2026-01-15T13:00:00.000Z",
+                "holderCount": 3641,
+                "marketCap": 1483999.8374562988,
+                "mcapOverHolders": 407.58029043018365
+              },
+              {
+                "updatedAt": "2026-01-15T10:00:00.000Z",
+                "holderCount": 3637,
+                "marketCap": 1392999.847423601,
+                "mcapOverHolders": 383.0079316534509
+              },
+              {
+                "updatedAt": "2026-01-15T07:00:00.000Z",
+                "holderCount": 3639,
+                "marketCap": 1444999.841728,
+                "mcapOverHolders": 397.0870683506458
+              },
+              {
+                "updatedAt": "2026-01-15T04:00:00.000Z",
+                "holderCount": 3619,
+                "marketCap": 1319999.8554193494,
+                "mcapOverHolders": 364.7416013869437
+              },
+              {
+                "updatedAt": "2026-01-15T01:00:00.000Z",
+                "holderCount": 3624,
+                "marketCap": 1498999.8358133368,
+                "mcapOverHolders": 413.6313012729958
+              },
+              {
+                "updatedAt": "2026-01-14T22:00:00.000Z",
+                "holderCount": 3639,
+                "marketCap": 1517999.8337322518,
+                "mcapOverHolders": 417.1475223226853
+              },
+              {
+                "updatedAt": "2026-01-14T19:00:00.000Z",
+                "holderCount": 3567,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-14T16:00:00.000Z",
+                "holderCount": 3559,
+                "marketCap": 1382999.848518909,
+                "mcapOverHolders": 388.5922586453804
+              },
+              {
+                "updatedAt": "2026-01-14T13:00:00.000Z",
+                "holderCount": 3551,
+                "marketCap": 1235999.864619936,
+                "mcapOverHolders": 348.07092780060157
+              },
+              {
+                "updatedAt": "2026-01-14T10:00:00.000Z",
+                "holderCount": 3544,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-14T07:00:00.000Z",
+                "holderCount": 3547,
+                "marketCap": 1274999.8603482351,
+                "mcapOverHolders": 359.4586581190401
+              },
+              {
+                "updatedAt": "2026-01-14T04:00:00.000Z",
+                "holderCount": 3498,
+                "marketCap": 1231999.8650580593,
+                "mcapOverHolders": 352.2012192847511
+              },
+              {
+                "updatedAt": "2026-01-14T01:00:00.000Z",
+                "holderCount": 3447,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-13T22:00:00.000Z",
+                "holderCount": 3346,
+                "marketCap": 668699.9267567567,
+                "mcapOverHolders": 199.85054595240786
+              },
+              {
+                "updatedAt": "2026-01-13T19:00:00.000Z",
+                "holderCount": 3363,
+                "marketCap": 644499.9294074019,
+                "mcapOverHolders": 191.64434415920368
+              },
+              {
+                "updatedAt": "2026-01-13T16:00:00.000Z",
+                "holderCount": 3393,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-13T13:00:00.000Z",
+                "holderCount": 3412,
+                "marketCap": 829199.909177064,
+                "mcapOverHolders": 243.0245923731137
+              },
+              {
+                "updatedAt": "2026-01-13T10:00:00.000Z",
+                "holderCount": 3429,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-13T07:00:00.000Z",
+                "holderCount": 3433,
+                "marketCap": 836699.908355583,
+                "mcapOverHolders": 243.72266482830847
+              },
+              {
+                "updatedAt": "2026-01-13T04:00:00.000Z",
+                "holderCount": 3434,
+                "marketCap": 851999.9066797618,
+                "mcapOverHolders": 248.1071364821671
+              },
+              {
+                "updatedAt": "2026-01-13T01:00:00.000Z",
+                "holderCount": 3424,
+                "marketCap": 690599.9243580322,
+                "mcapOverHolders": 201.69390314194865
+              },
+              {
+                "updatedAt": "2026-01-12T22:00:00.000Z",
+                "holderCount": 3447,
+                "marketCap": 866699.9050696591,
+                "mcapOverHolders": 251.43600379160404
+              },
+              {
+                "updatedAt": "2026-01-12T19:00:00.000Z",
+                "holderCount": 3483,
+                "marketCap": 916299.8996369316,
+                "mcapOverHolders": 263.07777767353764
+              },
+              {
+                "updatedAt": "2026-01-12T16:00:00.000Z",
+                "holderCount": 3468,
+                "marketCap": 1074999.8822543942,
+                "mcapOverHolders": 309.9768979972302
+              },
+              {
+                "updatedAt": "2026-01-12T13:00:00.000Z",
+                "holderCount": 3458,
+                "marketCap": 1050999.8848831335,
+                "mcapOverHolders": 303.93287590605365
+              },
+              {
+                "updatedAt": "2026-01-12T10:00:00.000Z",
+                "holderCount": 3456,
+                "marketCap": 1072999.8824734557,
+                "mcapOverHolders": 310.4745030305138
+              },
+              {
+                "updatedAt": "2026-01-12T07:00:00.000Z",
+                "holderCount": 3465,
+                "marketCap": 1081999.8814876787,
+                "mcapOverHolders": 312.2654780628221
+              },
+              {
+                "updatedAt": "2026-01-12T04:00:00.000Z",
+                "holderCount": 3480,
+                "marketCap": 1110999.8783112857,
+                "mcapOverHolders": 319.25283859519703
+              },
+              {
+                "updatedAt": "2026-01-12T01:00:00.000Z",
+                "holderCount": 3513,
+                "marketCap": 1101999.8792970628,
+                "mcapOverHolders": 313.69196677969336
+              },
+              {
+                "updatedAt": "2026-01-11T22:00:00.000Z",
+                "holderCount": 3492,
+                "marketCap": 1080999.8815972095,
+                "mcapOverHolders": 309.56468545166365
+              },
+              {
+                "updatedAt": "2026-01-11T19:00:00.000Z",
+                "holderCount": 3494,
+                "marketCap": 1129999.8762302005,
+                "mcapOverHolders": 323.41152725535215
+              },
+              {
+                "updatedAt": "2026-01-11T16:00:00.000Z",
+                "holderCount": 3413,
+                "marketCap": 1015999.8887167112,
+                "mcapOverHolders": 297.68528822640235
+              },
+              {
+                "updatedAt": "2026-01-11T13:00:00.000Z",
+                "holderCount": 3373,
+                "marketCap": 1023999.8878404648,
+                "mcapOverHolders": 303.58727774695075
+              },
+              {
+                "updatedAt": "2026-01-11T10:00:00.000Z",
+                "holderCount": 3374,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-11T07:00:00.000Z",
+                "holderCount": 3362,
+                "marketCap": 1030999.8870737494,
+                "mcapOverHolders": 306.6626671843395
+              },
+              {
+                "updatedAt": "2026-01-11T04:00:00.000Z",
+                "holderCount": 3358,
+                "marketCap": 1018999.8883881188,
+                "mcapOverHolders": 303.4544039273731
+              },
+              {
+                "updatedAt": "2026-01-11T01:00:00.000Z",
+                "holderCount": 3347,
+                "marketCap": 1007999.8895929577,
+                "mcapOverHolders": 301.16518960052514
+              },
+              {
+                "updatedAt": "2026-01-10T22:00:00.000Z",
+                "holderCount": 3103,
+                "marketCap": 885699.902988574,
+                "mcapOverHolders": 285.43342023479664
+              },
+              {
+                "updatedAt": "2026-01-10T19:00:00.000Z",
+                "holderCount": 3072,
+                "marketCap": 582199.9362311705,
+                "mcapOverHolders": 189.51820840858417
+              },
+              {
+                "updatedAt": "2026-01-10T16:00:00.000Z",
+                "holderCount": 3166,
+                "marketCap": 591699.935190628,
+                "mcapOverHolders": 186.89195678794317
+              },
+              {
+                "updatedAt": "2026-01-10T13:00:00.000Z",
+                "holderCount": 3242,
+                "marketCap": 883899.9031857294,
+                "mcapOverHolders": 272.6403156032478
+              },
+              {
+                "updatedAt": "2026-01-10T10:00:00.000Z",
+                "holderCount": 3290,
+                "marketCap": 1189999.8696583528,
+                "mcapOverHolders": 361.70208804205254
+              },
+              {
+                "updatedAt": "2026-01-10T07:00:00.000Z",
+                "holderCount": 3285,
+                "marketCap": 1317999.855638411,
+                "mcapOverHolders": 401.21761206648733
+              },
+              {
+                "updatedAt": "2026-01-10T04:00:00.000Z",
+                "holderCount": 3267,
+                "marketCap": 1469999.8389897298,
+                "mcapOverHolders": 449.9540370338934
+              },
+              {
+                "updatedAt": "2026-01-10T01:00:00.000Z",
+                "holderCount": 3315,
+                "marketCap": 1681999.815769201,
+                "mcapOverHolders": 507.3905929922175
+              },
+              {
+                "updatedAt": "2026-01-09T22:00:00.000Z",
+                "holderCount": 3280,
+                "marketCap": 1622999.822231518,
+                "mcapOverHolders": 494.81701897302383
+              },
+              {
+                "updatedAt": "2026-01-09T19:00:00.000Z",
+                "holderCount": 3290,
+                "marketCap": 1579999.8269413423,
+                "mcapOverHolders": 480.2431084928092
+              },
+              {
+                "updatedAt": "2026-01-09T16:00:00.000Z",
+                "holderCount": 3294,
+                "marketCap": 1692999.8145643626,
+                "mcapOverHolders": 513.9647281616159
+              },
+              {
+                "updatedAt": "2026-01-09T13:00:00.000Z",
+                "holderCount": 3282,
+                "marketCap": 1871999.7949583498,
+                "mcapOverHolders": 570.383849774025
+              },
+              {
+                "updatedAt": "2026-01-09T10:00:00.000Z",
+                "holderCount": 3258,
+                "marketCap": 1666999.8174121631,
+                "mcapOverHolders": 511.66354125603533
+              },
+              {
+                "updatedAt": "2026-01-09T07:00:00.000Z",
+                "holderCount": 3241,
+                "marketCap": 1653999.8188360634,
+                "mcapOverHolders": 510.33626005432376
+              },
+              {
+                "updatedAt": "2026-01-09T04:00:00.000Z",
+                "holderCount": 3234,
+                "marketCap": 1799999.8028445672,
+                "mcapOverHolders": 556.5862099086479
+              },
+              {
+                "updatedAt": "2026-01-09T01:00:00.000Z",
+                "holderCount": 3086,
+                "marketCap": 1756999.8075543917,
+                "mcapOverHolders": 569.345368617755
+              },
+              {
+                "updatedAt": "2026-01-08T22:00:00.000Z",
+                "holderCount": 2960,
+                "marketCap": 1475999.8383325452,
+                "mcapOverHolders": 498.6485940312653
+              },
+              {
+                "updatedAt": "2026-01-08T19:00:00.000Z",
+                "holderCount": 2979,
+                "marketCap": 1381999.84862844,
+                "mcapOverHolders": 463.9140143096475
+              },
+              {
+                "updatedAt": "2026-01-08T16:00:00.000Z",
+                "holderCount": 2921,
+                "marketCap": 1473999.8385516068,
+                "mcapOverHolders": 504.62164962396673
+              },
+              {
+                "updatedAt": "2026-01-08T13:00:00.000Z",
+                "holderCount": 2844,
+                "marketCap": 1260999.8618816664,
+                "mcapOverHolders": 443.3895435589544
+              },
+              {
+                "updatedAt": "2026-01-08T10:00:00.000Z",
+                "holderCount": 2894,
+                "marketCap": 1468999.8390992607,
+                "mcapOverHolders": 507.6018794399657
+              },
+              {
+                "updatedAt": "2026-01-08T07:00:00.000Z",
+                "holderCount": 2840,
+                "marketCap": 1186999.869986945,
+                "mcapOverHolders": 417.95770069962856
+              },
+              {
+                "updatedAt": "2026-01-08T04:00:00.000Z",
+                "holderCount": 2837,
+                "marketCap": 1316999.8557479416,
+                "mcapOverHolders": 464.2227196855628
+              },
+              {
+                "updatedAt": "2026-01-08T01:00:00.000Z",
+                "holderCount": 2825,
+                "marketCap": 1221999.866153367,
+                "mcapOverHolders": 432.56632430207685
+              },
+              {
+                "updatedAt": "2026-01-07T22:00:00.000Z",
+                "holderCount": 2804,
+                "marketCap": 1277999.8600196429,
+                "mcapOverHolders": 455.77741084866005
+              },
+              {
+                "updatedAt": "2026-01-07T19:00:00.000Z",
+                "holderCount": 2795,
+                "marketCap": 1016999.8886071804,
+                "mcapOverHolders": 363.86400307949214
+              },
+              {
+                "updatedAt": "2026-01-07T16:00:00.000Z",
+                "holderCount": 2801,
+                "marketCap": 1112999.878092224,
+                "mcapOverHolders": 397.3580428747676
+              },
+              {
+                "updatedAt": "2026-01-07T13:00:00.000Z",
+                "holderCount": 2832,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-07T10:00:00.000Z",
+                "holderCount": 2785,
+                "marketCap": 1328999.8544335722,
+                "mcapOverHolders": 477.1992295991282
+              },
+              {
+                "updatedAt": "2026-01-07T07:00:00.000Z",
+                "holderCount": 2768,
+                "marketCap": 1307999.8567337187,
+                "mcapOverHolders": 472.54330084310646
+              },
+              {
+                "updatedAt": "2026-01-07T04:00:00.000Z",
+                "holderCount": 2743,
+                "marketCap": 1376999.849176094,
+                "mcapOverHolders": 502.0050489158199
+              },
+              {
+                "updatedAt": "2026-01-07T01:00:00.000Z",
+                "holderCount": 2635,
+                "marketCap": 1060999.8837878255,
+                "mcapOverHolders": 402.65650238627154
+              },
+              {
+                "updatedAt": "2026-01-06T22:00:00.000Z",
+                "holderCount": 2604,
+                "marketCap": 862799.9054968292,
+                "mcapOverHolders": 331.3363692384137
+              },
+              {
+                "updatedAt": "2026-01-06T19:00:00.000Z",
+                "holderCount": 2650,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-06T16:00:00.000Z",
+                "holderCount": 2642,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-06T13:00:00.000Z",
+                "holderCount": 2589,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-06T10:00:00.000Z",
+                "holderCount": 2546,
+                "marketCap": 1072999.8824734557,
+                "mcapOverHolders": 421.44535839491584
+              },
+              {
+                "updatedAt": "2026-01-06T07:00:00.000Z",
+                "holderCount": 2510,
+                "marketCap": 1082999.881378148,
+                "mcapOverHolders": 431.47405632595536
+              },
+              {
+                "updatedAt": "2026-01-06T04:00:00.000Z",
+                "holderCount": 2474,
+                "marketCap": 977099.8929774592,
+                "mcapOverHolders": 394.9474102576634
+              },
+              {
+                "updatedAt": "2026-01-06T01:00:00.000Z",
+                "holderCount": 2410,
+                "marketCap": 954999.8953980899,
+                "mcapOverHolders": 396.2655167626929
+              },
+              {
+                "updatedAt": "2026-01-05T22:00:00.000Z",
+                "holderCount": 2366,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-05T19:00:00.000Z",
+                "holderCount": 2349,
+                "marketCap": 1132999.8759016078,
+                "mcapOverHolders": 482.3328547899565
+              },
+              {
+                "updatedAt": "2026-01-05T16:00:00.000Z",
+                "holderCount": 2193,
+                "marketCap": 1004999.88992155,
+                "mcapOverHolders": 458.27628359395806
+              },
+              {
+                "updatedAt": "2026-01-05T13:00:00.000Z",
+                "holderCount": 2132,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-05T10:00:00.000Z",
+                "holderCount": 2107,
+                "marketCap": 799499.9124301285,
+                "mcapOverHolders": 379.449412638884
+              },
+              {
+                "updatedAt": "2026-01-05T07:00:00.000Z",
+                "holderCount": 2099,
+                "marketCap": 827499.9093632663,
+                "mcapOverHolders": 394.23530698583437
+              },
+              {
+                "updatedAt": "2026-01-05T04:00:00.000Z",
+                "holderCount": 2055,
+                "marketCap": 880099.9036019464,
+                "mcapOverHolders": 428.2724591736966
+              },
+              {
+                "updatedAt": "2026-01-05T01:00:00.000Z",
+                "holderCount": 1951,
+                "marketCap": 954699.8954309489,
+                "mcapOverHolders": 489.3387470174008
+              },
+              {
+                "updatedAt": "2026-01-04T22:00:00.000Z",
+                "holderCount": 1689,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-04T19:00:00.000Z",
+                "holderCount": 1626,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-04T16:00:00.000Z",
+                "holderCount": 1654,
+                "marketCap": 605699.9336571969,
+                "mcapOverHolders": 366.2031037830695
+              },
+              {
+                "updatedAt": "2026-01-04T13:00:00.000Z",
+                "holderCount": 1688,
+                "marketCap": 661899.9275015661,
+                "mcapOverHolders": 392.12081013125953
+              },
+              {
+                "updatedAt": "2026-01-04T10:00:00.000Z",
+                "holderCount": 1696,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-04T07:00:00.000Z",
+                "holderCount": 1713,
+                "marketCap": 795599.9128572987,
+                "mcapOverHolders": 464.4482853807932
+              },
+              {
+                "updatedAt": "2026-01-04T04:00:00.000Z",
+                "holderCount": 1653,
+                "marketCap": 738999.9190567418,
+                "mcapOverHolders": 447.06589174636525
+              },
+              {
+                "updatedAt": "2026-01-04T01:00:00.000Z",
+                "holderCount": 1625,
+                "marketCap": 819899.9101957005,
+                "mcapOverHolders": 504.55379088966185
+              },
+              {
+                "updatedAt": "2026-01-03T22:00:00.000Z",
+                "holderCount": 1581,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-03T19:00:00.000Z",
+                "holderCount": 1594,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-03T16:00:00.000Z",
+                "holderCount": 1516,
+                "marketCap": 510399.94409548177,
+                "mcapOverHolders": 336.67542486509353
+              },
+              {
+                "updatedAt": "2026-01-03T13:00:00.000Z",
+                "holderCount": 1551,
+                "marketCap": 628299.9311818009,
+                "mcapOverHolders": 405.0934437019993
+              },
+              {
+                "updatedAt": "2026-01-03T10:00:00.000Z",
+                "holderCount": 1574,
+                "marketCap": 560099.9386518012,
+                "mcapOverHolders": 355.8449419642956
+              },
+              {
+                "updatedAt": "2026-01-03T07:00:00.000Z",
+                "holderCount": 1593,
+                "marketCap": 776799.9149164776,
+                "mcapOverHolders": 487.6333426970983
+              },
+              {
+                "updatedAt": "2026-01-03T04:00:00.000Z",
+                "holderCount": 1361,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-03T01:00:00.000Z",
+                "holderCount": 1064,
+                "marketCap": 454999.9501634878,
+                "mcapOverHolders": 427.6315321085412
+              }
+            ]
           }
         }
       }
