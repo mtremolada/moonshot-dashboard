@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-01-23T19:34:50.108962Z",
+  "generated_at_utc": "2026-01-23T20:35:15.582525Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 196,
+  "token_context_count": 197,
   "prompt_truncated": false,
   "warnings": [
     "Detected 27 PVP group(s); excluding 41 token(s) from META prompt."
@@ -610,14 +610,97 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Roblox Integration",
-        "description": "Tokens leveraging Roblox's vast user base and in-game economy, often tied to virtual goods, game mechanics, or community-driven initiatives within the platform.",
+        "meta_name": "Meme Culture Revival",
+        "description": "Tokens are leveraging established internet memes and cultural references to build community and drive engagement. These include references to historical memes, internet slang, and pop culture figures, often with a humorous or ironic twist.",
         "defining_signals": [
-          "Direct references to Roblox game mechanics or virtual economy",
-          "Community-driven initiatives within Roblox",
-          "Tokens enabling in-game purchases or rewards",
-          "Integration with Roblox's user base and ecosystem",
-          "Utilization of Roblox's API or game development tools"
+          "Use of established memes (e.g., Wojak, Clippy, Rage Guy)",
+          "Incorporation of slang or phrases with internet meme origins (e.g., 'W', 'OOF', 'WOAH')",
+          "Recontextualization of pop culture references (e.g., 'McDonald's King', 'The Simpsons Ralph Wiggum')",
+          "Community-driven humor and ironic branding (e.g., 'DisclaimerCoin', 'Useless Coin')",
+          "Leveraging viral TikTok/Reddit trends (e.g., 'Pumpurr the cat', 'The White Whale')"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "W",
+            "token_name": "w social",
+            "token_address": "6s9TcM8QMXiyRkaKDxkuUEenJ4cpnEb72tsnDMK5pump"
+          },
+          {
+            "token_symbol": "OOF",
+            "token_name": "OOF",
+            "token_address": "6u2fHHSU75GjarRQdCgGqAbkSD9Bnas7te8HeCY3pump"
+          },
+          {
+            "token_symbol": "WOAH",
+            "token_name": "i got like hella money",
+            "token_address": "GRh9QPH6Sv5XQ1kruWLzR5VgZXVaX3mmM4fKnHkypump"
+          },
+          {
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "DONT",
+            "token_name": "DisclaimerCoin",
+            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAQ8Zs9NXVbimibonk"
+          },
+          {
+            "token_symbol": "USELESS",
+            "token_name": "USELESS COIN",
+            "token_address": "Dz9mQ9NzkBbCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
+          },
+          {
+            "token_symbol": "PUMP",
+            "token_name": "PumperCoin",
+            "token_address": "2aHYAD78FKBr9pPWWfsbG3nGW9umgrAVcLFDLFu9qpump"
+          },
+          {
+            "token_symbol": "RAGE",
+            "token_name": "Rage Guy",
+            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "DONT",
+            "token_name": "DisclaimerCoin",
+            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAQ8Zs9NXVbimibonk"
+          },
+          {
+            "token_symbol": "W",
+            "token_name": "w social",
+            "token_address": "6s9TcM8QMXiyRkaKDxkuUEenJ4cpnEb72tsnDMK5pump"
+          }
+        ],
+        "leader_hint_token_address": "6s9TcM8QMXiyRkaKDxkuUEenJ4cpnEb72tsnDMK5pump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong presence of meme-based tokens with clear cultural references and community engagement.",
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 29670768.07
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Virtual and Gaming Economy",
+        "description": "Tokens are being developed around virtual worlds, gaming environments, and in-game economies. These tokens often provide access to virtual assets, in-game items, or governance within gaming platforms.",
+        "defining_signals": [
+          "Integration with gaming platforms (e.g., Roblox, Minecraft)",
+          "In-game economy mechanics (e.g., staking, rewards)",
+          "Virtual asset ownership or trading",
+          "Play-to-earn or play-to-earn models",
+          "Community-driven virtual experiences"
         ],
         "supporting_tokens": [
           {
@@ -626,51 +709,81 @@
             "token_address": "Cwq13pofafd7KNbWBabULgt7QC1w53NjiPgES49Ypump"
           },
           {
-            "token_symbol": "Bacon",
-            "token_name": "Bacon Roblox Avatar",
-            "token_address": "9vrm9a2nRTPHWTzZsaK6DHsxXQgPw6MtgA6mTHYxpump"
+            "token_symbol": "MINE",
+            "token_name": "MineSwap",
+            "token_address": "7GJw4i1LX6JsiY4C9Kcp5hRnoXrrEwsCioN2Kuvm35zJ"
           },
           {
-            "token_symbol": "RBLX6900",
-            "token_name": "Roblox Index 6900",
-            "token_address": "DCFCBFU4pYY3r8aYikVEwbABrFGczbunxCLXR943pump"
+            "token_symbol": "LAND",
+            "token_name": "Green Land",
+            "token_address": "7JDYi1FqBwJepq24BvvaJeMvihJfgdfTPh1GoR8Zbonk"
           },
           {
-            "token_symbol": "BLOX",
-            "token_name": "BLOX",
-            "token_address": "B3VHCA5HiCxMTjxPjbdftUYVuRQW3bCSAgBZ1vwdpump"
+            "token_symbol": "RIVALS",
+            "token_name": "Trench Rivals",
+            "token_address": "2H3cdEiiSApBB8qJBqw2T1HoD7YZugejGYc2FBoVpump"
           },
           {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+            "token_symbol": "BLOXX",
+            "token_name": "BloxAPI",
+            "token_address": "B1rGc4HM4Q6q4nU78ADM7fGguxqiasH53fh6ViDXpump"
           },
           {
-            "token_symbol": "BLOX",
-            "token_name": "BLOX",
-            "token_address": "B3VHCA5HiCxMtjxPjbdftUYVuRQW3bCSAgBZ1vwdpump"
+            "token_symbol": "CLOUT",
+            "token_name": "CLOUT",
+            "token_address": "Cwq13pofafd7KNbWBabULgt7QC1w53NjiPgES49Ypump"
+          },
+          {
+            "token_symbol": "MINE",
+            "token_name": "MineSwap",
+            "token_address": "7GJw4i1LX6JsiY4C9Kcp5hRnoXrrEwsCioN2Kuvm35zJ"
+          },
+          {
+            "token_symbol": "LAND",
+            "token_name": "Green Land",
+            "token_address": "7JDYi1FqBwJepq24BvvaJeMvihJfgdfTPh1GoR8Zbonk"
+          },
+          {
+            "token_symbol": "RIVALS",
+            "token_name": "Trench Rivals",
+            "token_address": "2H3cdEiiSApBB8qJBqw2T1HoD7YZugejGYc2FBoVpump"
+          },
+          {
+            "token_symbol": "BLOXX",
+            "token_name": "BloxAPI",
+            "token_address": "B1rGc4HM4Q6q4nU78ADM7fGguxqiasH53fh6ViDXpump"
+          },
+          {
+            "token_symbol": "CLOUT",
+            "token_name": "CLOUT",
+            "token_address": "Cwq13pofafd7KNbWBabULgt7QC1w53NjiPgES49Ypump"
+          },
+          {
+            "token_symbol": "MINE",
+            "token_name": "MineSwap",
+            "token_address": "7GJw4i1LX6JsiY4C9Kcp5hRnoXrrEwsCioN2Kuvm35zJ"
           }
         ],
-        "leader_hint_token_address": "DCFCBFU4pYY3r8aYikVEwbABrFGczbunxCLump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Multiple tokens directly reference Roblox's ecosystem, including game mechanics, virtual economy, and community-driven initiatives. The market cap and integration signals indicate a strong and emerging trend.",
+        "leader_hint_token_address": "Cwq13pofafd7KNbWBabULgt7QC1w53NjiPgES49Ypump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong integration with gaming platforms and in-game economies, with clear utility and community engagement.",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 237458045.0
+          "token_symbol": "BLOXX",
+          "token_name": "BloxAPI",
+          "token_address": "B1rGc4HM4Q6q4nU78ADM7fGguxqiasH53fh6ViDXpump",
+          "usd_market_cap": 974567.95
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI Integration",
-        "description": "Tokens integrating AI capabilities into their ecosystem, often through AI agents, chatbots, or automated systems for governance, utility, or user interaction.",
+        "meta_name": "AI and Tech Integration",
+        "description": "Tokens are increasingly tied to AI-driven platforms, tools, or concepts, leveraging the growing interest in AI and its integration into everyday life. These tokens often focus on utility, governance, or access to AI services.",
         "defining_signals": [
-          "Integration of AI agents or chatbots",
-          "Automated systems for governance or utility",
-          "AI-driven user interaction features",
-          "Utilization of AI for tokenomics or community management",
-          "AI-powered tools for transaction or governance"
+          "Integration with AI tools or platforms (e.g., Clippy, AI companions)",
+          "Focus on AI-driven applications (e.g., AI chatbots, AI agents)",
+          "Utilization of AI for governance or decision-making",
+          "Incorporation of AI in gaming or virtual environments",
+          "AI-based content creation or curation"
         ],
         "supporting_tokens": [
           {
@@ -679,247 +792,100 @@
             "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
           },
           {
-            "token_symbol": "OBJECTS",
-            "token_name": "Talking Objects",
-            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpump"
-          },
-          {
-            "token_symbol": "SKR",
-            "token_name": "SKR",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
-          },
-          {
             "token_symbol": "ALCH",
-            "token_name": "Alchemist ai",
+            "token_name": "Alchemist AI",
             "token_address": "HNg5PYJmtqcmmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "GRU",
-            "token_name": "GRU",
-            "token_address": "96NbRGpi19SkUrtvFWH17rqaV9LGsviHVmSdJ9qD8app"
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpAaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
           },
           {
-            "token_symbol": "RO",
-            "token_name": "ralph-orchestrator",
-            "token_address": "BFTPbgPoeLjcmH1QCUAZxCafT56AgwRKGmJvbCv6BAGs"
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpAaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
+          },
+          {
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpPaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
+          },
+          {
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpPaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
+          },
+          {
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpPaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
+          },
+          {
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpPaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
+          },
+          {
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpPaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
+          },
+          {
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpPaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
+          },
+          {
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpPaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
+          },
+          {
+            "token_symbol": "WAIFU",
+            "token_name": "Nietzschean WIF",
+            "token_address": "ArpPaeCuZahmwRWvLyakYNbBY5Vixh2YqtnrsqHsFpump"
           }
         ],
         "leader_hint_token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Multiple tokens are integrating AI capabilities into their ecosystems, showing a growing trend in AI-driven utility and user interaction features.",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong integration with AI tools and platforms, with clear utility and community interest.",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 237458045.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Automation",
-        "description": "Tokens focused on AI-driven automation, often involving AI agents, smart contracts, or automated systems for governance, utility, or user interaction.",
-        "defining_signals": [
-          "AI-driven automation features",
-          "Smart contract-based governance",
-          "Automated systems for user interaction",
-          "Utilization of AI for transaction or governance",
-          "AI-powered tools for community management"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLYDE",
-            "token_name": "Smol Clyde",
-            "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C"
-          },
-          {
-            "token_symbol": "OBJECTS",
-            "token_name": "Talking Objects",
-            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpump"
-          },
-          {
-            "token_symbol": "SKR",
-            "token_name": "SKR",
-            "token_address": "skRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist ai",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "GRU",
-            "token_name": "GRU",
-            "token_address": "96NbRGpi19SkUrtvFWH17rqaV9LGsviHVmSdJ9qD8app"
-          },
-          {
-            "token_symbol": "RO",
-            "token_name": "ralph-orchestrator",
-            "token_address": "BFTPbgPoeLjcmH1QCUAZxCafT56AgwRKGmJvbCv6BAGS"
-          }
-        ],
-        "leader_hint_token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Multiple tokens are integrating AI-driven automation into their ecosystems, showing a growing trend in AI-powered utility and user interaction features.",
-        "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 119894830.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Pop Culture References",
-        "description": "Tokens leveraging nostalgia for 90s/2000s pop culture, often referencing movies, TV shows, or internet culture from that era for community engagement.",
-        "defining_signals": [
-          "References to 90s/2000s pop culture",
-          "Nostalgic references to classic media",
-          "Community engagement through retro themes",
-          "Utilization of vintage internet culture",
-          "Cultural revival of past entertainment"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "WONDERLAND",
-            "token_name": "Wonderland",
-            "token_address": "CD6cakWRBJWto8YV2eXDhqHBVwe7dXk2uqWiwmSWpump"
-          },
-          {
-            "token_symbol": "NME",
-            "token_name": "Naruto's Milk Expired",
-            "token_address": "oehM91EyXzixKjCDo9HGBGP58n9d39BGx91wdL5pump"
-          },
-          {
-            "token_symbol": "POTUS",
-            "token_name": "Penguin Of The United States",
-            "token_address": "BwyjU6Nbd9XJ5eEqqNc7dwyEdfZViZDjfTrw4sJTpump"
-          },
-          {
-            "token_symbol": "PENGICLE",
-            "token_name": "pengicle",
-            "token_address": "GbBEqNi6st54nEW88rYJdKt9FoBcyVYwNhqewBaMpump"
-          },
-          {
-            "token_symbol": "BUTT",
-            "token_name": "Buttcoin",
-            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
-          },
-          {
-            "token_symbol": "FISH",
-            "token_name": "rainbowfish",
-            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
-          }
-        ],
-        "leader_hint_token_address": "cd6cakWRBJWto8YV2eXDhqHBVwe7dXk2uqWiwmSWpump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Nostalgia for 90s/2000s pop culture is being leveraged across multiple tokens, showing a consistent trend in community engagement through retro themes.",
-        "leader_token": {
-          "token_symbol": "Buttcoin",
-          "token_name": "Buttcoin",
-          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
-          "usd_market_cap": 4927611.4
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Culture Revival",
-        "description": "Tokens repurposing classic internet memes, often with historical roots in early 2000s internet culture, for crypto branding and community engagement.",
-        "defining_signals": [
-          "References to early 2000s internet memes",
-          "Historical roots in early internet culture",
-          "Community engagement through meme revival",
-          "Utilization of classic meme formats for crypto branding",
-          "Cultural nostalgia for early internet humor"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "TWIN",
-            "token_name": "TWIN",
-            "token_address": "2h6EQ8oYnDQK4ppwHqR3JgmfRVpL4L6ga7AhaPnxpump"
-          },
-          {
-            "token_symbol": "ALONE",
-            "token_name": "forever alone",
-            "token_address": "8AdsF2QXFA8QkFuQ9TrQW6nEyM4E6yT4AwqgZ5cTpump"
-          },
-          {
-            "token_symbol": "DUMMY",
-            "token_name": "DUMMY",
-            "token_address": "524eoQUY82k6nL8J8geyen7Q3kbecHSecUYQrt7xZ95b"
-          },
-          {
-            "token_symbol": "W",
-            "token_name": "w social",
-            "token_address": "6s9TcM8QMXiyRkaKDxkuUEenJ4cpnEb72tsnDMK5pump"
-          },
-          {
-            "token_symbol": "ACORN",
-            "token_name": "Acorn By GSD",
-            "token_address": "HpW4y8XUj7PK5npjbjwT7GH1J98ue7WjNB89xrhwpump"
-          },
-          {
-            "token_symbol": "NEED",
-            "token_name": "NEED",
-            "token_address": "FLeuXXyxKqrDU8MULuxLSPPWpv1TLroMSHM6XsG8bttN"
-          }
-        ],
-        "leader_hint_token_address": "2h6eq8oYnDQK4ppwHqR3JgmfRVpL4L6ga7AhaPnxpump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Classic internet memes from the early 2000s are being repurposed for crypto branding, showing a strong revival trend with multiple tokens leveraging nostalgia for community engagement.",
-        "leader_token": {
-          "token_symbol": "MEEK",
-          "token_name": "THEMEEKSHALLINHERITTHEEARTH",
-          "token_address": "FLeuXXyxKqrDU8MULuxLSPPWpv1TLroMSHM6XsG8bttN",
-          "usd_market_cap": 235426.0
+          "token_symbol": "CLYDE",
+          "token_name": "Smol Clyde",
+          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
+          "usd_market_cap": 471165.02
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The Roblox Integration and Meme Culture Revival METAs are showing strong growth with new tokens entering the space. AI and Automation is gaining traction as more projects integrate AI-driven features. Nostalgia and Pop Culture References remains steady but shows signs of plateauing. AI and Automation is emerging as a new dominant trend with increasing adoption across multiple tokens.",
+    "meta_rotation_note": "The 'Meme Culture Revival' meta is currently the most active, with a strong presence of tokens leveraging established internet memes and cultural references. The 'AI and Tech Integration' meta is gaining traction as more tokens integrate with AI tools and platforms. The 'Virtual and Gaming Economy' meta is also showing growth, particularly with tokens tied to gaming and in-game economies. The 'Meme Culture Revival' is fading slightly as some meme-based tokens struggle with long-term utility.",
     "meta_leaders": [
-      {
-        "meta_name": "Roblox Integration",
-        "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 237458045.0
-        }
-      },
-      {
-        "meta_name": "AI Integration",
-        "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 237458045.0
-        }
-      },
-      {
-        "meta_name": "AI and Automation",
-        "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 119894830.0
-        }
-      },
-      {
-        "meta_name": "Nostalgia and Pop Culture References",
-        "leader_token": {
-          "token_symbol": "Buttcoin",
-          "token_name": "Buttcoin",
-          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
-          "usd_market_cap": 4927611.4
-        }
-      },
       {
         "meta_name": "Meme Culture Revival",
         "leader_token": {
-          "token_symbol": "MEEK",
-          "token_name": "THEMEEKSHALLINHERITTHEEARTH",
-          "token_address": "FLeuXXyxKqrDU8MULuxLSPPWpv1TLroMSHM6XsG8bttN",
-          "usd_market_cap": 235426.0
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 29670768.07
+        }
+      },
+      {
+        "meta_name": "Virtual and Gaming Economy",
+        "leader_token": {
+          "token_symbol": "BLOXX",
+          "token_name": "BloxAPI",
+          "token_address": "B1rGc4HM4Q6q4nU78ADM7fGguxqiasH53fh6ViDXpump",
+          "usd_market_cap": 974567.95
+        }
+      },
+      {
+        "meta_name": "AI and Tech Integration",
+        "leader_token": {
+          "token_symbol": "CLYDE",
+          "token_name": "Smol Clyde",
+          "token_address": "6Ks9R9H1Kqmz1XQTgCcZKqriCun5EwC1cukM9TUL996C",
+          "usd_market_cap": 471165.02
         }
       }
     ]
