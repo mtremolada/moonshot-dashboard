@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-23T08:28:30.280065Z",
+  "generated_at_utc": "2026-01-23T09:29:10.355297Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
   "token_context_count": 192,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 25 PVP group(s); excluding 36 token(s) from META prompt."
+    "Detected 26 PVP group(s); excluding 38 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 36,
+  "pvp_excluded_token_count": 38,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -472,6 +472,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "warwhale",
+      "tokens": [
+        {
+          "token_symbol": "WarWhale",
+          "token_name": "WarWhale",
+          "token_address": "A4MJT4b6hbdUq38bksSSBuGgjoM6wsNTbdB2HpM9pump",
+          "usd_market_cap": 2607.0,
+          "processed_at": "2026-01-23T00:41:11.051586Z"
+        },
+        {
+          "token_symbol": "WARWHALE",
+          "token_name": "TheWarWhale",
+          "token_address": "6S478PU7rpreZy74VVkzPbPx65yNXoCDDHp49FAqpump",
+          "usd_market_cap": 734276.14,
+          "processed_at": "2026-01-23T08:34:49.808083Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "mgga",
       "tokens": [
         {
@@ -556,99 +576,14 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI-Powered Finance",
-        "description": "Tokens leveraging AI for financial applications, including yield optimization, automated trading, or AI-driven financial modeling. These tokens often focus on AI-based financial tools or platforms.",
-        "defining_signals": [
-          "AI-based financial tools or algorithms",
-          "Yield optimization or automated trading",
-          "AI-driven financial modeling",
-          "Integration with DeFi or traditional finance",
-          "Community-driven financial AI ecosystems",
-          "Focus on AI for financial decision-making"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "LUX",
-            "token_name": "Luxxcoin",
-            "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2"
-          },
-          {
-            "token_symbol": "CYS",
-            "token_name": "Claimyoursol",
-            "token_address": "9WHyywreoUQRc5KCZtfp3czTY9QAMG1jcWmgTBwhBAGS"
-          },
-          {
-            "token_symbol": "PRIMIS",
-            "token_name": "Primis Protocol",
-            "token_address": "2DfBjrPFZjDTiCY6pxchS6aSdUdEpkk7PdqpovHjBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8eWBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGd"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57BLckZBYeezdokuf8j8e1GavekWBAGd"
-          }
-        ],
-        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 68,
-        "confidence_rationale": "Strong AI financial tool integration, growing interest in AI-driven finance, and community adoption.",
-        "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 131143200.0
-        },
-        "leader_missing_reason": null
-      },
-      {
         "meta_name": "Meme Revival",
-        "description": "Tokens leveraging established memes from pop culture, internet, or internet history to create community-driven narratives. These tokens often repurpose well-known memes or characters for crypto branding.",
+        "description": "Tokens leveraging classic internet memes from the 2000s-2010s, such as 'Wojak', 'Doge', 'Homer', and 'Feels Guy'. These tokens repurpose established meme culture for community-driven narratives.",
         "defining_signals": [
-          "Use of established meme characters (e.g., Wojak, Clippy, Ralph Wiggum)",
-          "References to viral internet trends or viral phrases (e.g., 'DOGE', 'HODL')",
-          "Community-driven branding with meme-based themes",
-          "Lack of original non-crypto cultural origin but strong meme history",
-          "High engagement from meme-centric communities",
-          "Recontextualization of memes for crypto narratives"
+          "Use of iconic meme imagery or phrases with documented 2000s-2010s origins",
+          "Community-driven narratives tied to viral meme history",
+          "Leveraging nostalgia for early internet culture",
+          "Meme characters repurposed as token mascots (e.g., Wojak, Clippy)",
+          "Clear cultural references to pre-crypto meme archives"
         ],
         "supporting_tokens": [
           {
@@ -662,19 +597,19 @@
             "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
             "token_symbol": "DONT",
             "token_name": "DisclaimerCoin",
             "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
           },
           {
-            "token_symbol": "BARRON",
-            "token_name": "The Hero",
-            "token_address": "4Eefn1EZL23G8Vv6zdstYQKcWeoMBJjGiGBw4jembonk"
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "HACH",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
             "token_symbol": "TROLL",
@@ -682,83 +617,130 @@
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "ALONE",
-            "token_name": "Forever Alone",
-            "token_address": "8AdsF2QXFA8QkFuQ9TrQW6nEyM4E6yT4AwqgZ5cTpump"
+            "token_symbol": "ALON",
+            "token_name": "Alpine",
+            "token_address": "7pskt3A1Zsjhngazam7vHWjWHnfgiRump916Xj7ABAGS"
           },
           {
-            "token_symbol": "W",
-            "token_name": "w social",
-            "token_address": "6s9TcM8QMXiyRkaKDxkuUEenJ4cpnEb72tsnDMK5pump"
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
           },
           {
-            "token_symbol": "YAMS",
-            "token_name": "The Yamss Cult",
-            "token_address": "63r9SNr8UF6Cq6VcrMB5Ybkb4TTX23E5zTEXhu4TpuMP"
+            "token_symbol": "HODL",
+            "token_name": "HODL COININ",
+            "token_address": "63XL5ttViSFT1aefpUuMtSNg59cNepcFE8kNXYEipump"
           },
           {
-            "token_symbol": "CAGE",
-            "token_name": "The Cage is All I Know",
-            "token_address": "GdCN7rQA5egc8SU2Bc2kKB2kMwELneQZJVSt8gGBpump"
-          },
-          {
-            "token_symbol": "PUMP",
-            "token_name": "PumperCoin",
-            "token_address": "2aHYAD78FKBr9pPWWfsbG3nGW9umgrAVcLFDLFu9qpump"
-          },
-          {
-            "token_symbol": "STICK",
-            "token_name": "Just a Stick",
-            "token_address": "7pcaz5hK7mFqK7YS2DBogNoQ2NDkSdBoB3crvHXKpump"
+            "token_symbol": "ALp",
+            "token_name": "Alpine",
+            "token_address": "7pskt3A1Zsjhngazam7vHWjWHnfgiRump916Xj7ABAGS"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong presence of established meme characters and themes, consistent community engagement, and clear cultural references.",
+        "leader_hint_token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong historical meme references with clear cultural origins and multiple tokens leveraging the same themes.",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 28930904.94
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 788961462.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Utility",
-        "description": "Tokens tied to AI-based tools, agents, or platforms, often emphasizing automation, intelligence, or decentralized AI ecosystems. These tokens focus on utility in AI development or integration.",
+        "meta_name": "Community-Driven Meme",
+        "description": "Tokens built around community-driven humor, often with no clear non-crypto origin. These tokens thrive on community engagement and inside jokes.",
         "defining_signals": [
-          "AI-based platform or tool integration",
-          "Focus on automation or agent-based systems",
-          "Claims of decentralized AI governance or execution",
-          "Use of AI for content generation or analysis",
-          "Community or developer-driven AI ecosystems",
-          "Lack of traditional financial utility but strong AI narrative"
+          "No clear non-crypto cultural origin",
+          "Community-driven humor or inside jokes",
+          "Lack of external meme or cultural reference",
+          "Strong community engagement and social media presence",
+          "Token narratives built around community-driven humor"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "FART",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          },
+          {
+            "token_symbol": "TEST",
+            "token_name": "Testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "BOB",
+            "token_name": "Boob",
+            "token_address": "9zqre5sRRdFvKqyTyvEd1jcKDRF4g47s7mZSGUnQpump"
+          },
+          {
+            "token_symbol": "YAK",
+            "token_name": "Yak",
+            "token_address": "EkyHcwaJHrqogFSGKdU79S83RFheZ1CsN6GCS1Ansoar"
+          },
+          {
+            "token_symbol": "FART",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8hhM13kCyYcdQbgpump"
+          },
+          {
+            "token_symbol": "TEST",
+            "token_name": "Testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "BOB",
+            "token_name": "Boob",
+            "token_address": "9zqre5sRRdFvKqyTyvEd1jcKDRF4g47s7mZSGUnQpump"
+          },
+          {
+            "token_symbol": "YAK",
+            "token_name": "Yak",
+            "token_address": "EkyHcwaJHrqogFSGKdU79S83RFheZ1CsN6GCS1Ansoar"
+          },
+          {
+            "token_symbol": "FART",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8hhM13kCyYcdQbgpump"
+          },
+          {
+            "token_symbol": "TEST",
+            "token_name": "Testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMmVojXinAmkL8xpump"
+          }
+        ],
+        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8hhM13kCyYcdQbgpump",
+        "confidence_0_100": 60,
+        "confidence_rationale": "Strong community engagement and humor-driven narratives, but limited external cultural references.",
+        "leader_token": {
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 302331780.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Utility",
+        "description": "Tokens centered around AI integration, including AI agents, AI assistants, and AI-driven governance. These tokens often claim to leverage AI for automation, decision-making, or content generation.",
+        "defining_signals": [
+          "AI agent or assistant integration in tokenomics or platform",
+          "Claims of AI-driven governance or decision-making",
+          "AI-based content generation or analysis",
+          "AI-powered automation for yield or governance",
+          "AI as a core utility for token holders"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
           {
             "token_symbol": "LEON",
             "token_name": "LEON AI",
             "token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS"
-          },
-          {
-            "token_symbol": "CLOUT",
-            "token_name": "CLOUT",
-            "token_address": "Cwq13pofafd7KNbWBabULgtt7QC1w53NjiPgES49Ypump"
-          },
-          {
-            "token_symbol": "WAIFU",
-            "token_name": "desktop waifu",
-            "token_address": "G6TuWo7PhrdSFDiTjyjn9nqkyNvNqpwfkJYxwh3MBAGS"
-          },
-          {
-            "token_symbol": "CYS",
-            "token_name": "Claimyoursol",
-            "token_address": "9WHyywreoUQRc5KCZtfp3czTY9QAMG1jcWmgTBwhBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYEEzdokUF8j8e1GavekWBAGS"
           },
           {
             "token_symbol": "MIA",
@@ -766,57 +748,61 @@
             "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "SKILLSTACK",
+            "token_symbol": "SKILL",
             "token_name": "SkillStack",
             "token_address": "Bb1HnSUdk1HzcQz4oi6mTdcra7vUx7YtaSuEDCVtBAGS"
           },
           {
-            "token_symbol": "GIANT",
-            "token_name": "GIANTAI",
-            "token_address": "CnQLwzyojahWyz1Gut3LciHYAK9vFycqJFRSyA6cyai"
+            "token_symbol": "CYS",
+            "token_name": "Claimyoursol",
+            "token_address": "9WHyywreoUQRc5KCZtfp3czTY9QAMG1jcWmgTBwhBAGS"
           },
           {
-            "token_symbol": "PRIMIS",
+            "token_symbol": "CLOUT",
+            "token_name": "CloUd",
+            "token_address": "7karUWvThwhCPmdaa1EuP6NgjmJvA5eKTKK1GaiFpump"
+          },
+          {
+            "token_symbol": "PRis",
             "token_name": "Primis Protocol",
-            "token_address": "2DfBBjrPFZjDTiCY6pxchS6aSdUdEpkk7PdqpovHjBAGS"
+            "token_address": "2DfBjrPFZjDTiCY6pxchS6aSdUdEpkk7PdqpovHjBAGs"
           },
           {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYEEzdokUF8j8e1GavekWBAGS"
+            "token_symbol": "LUMEN",
+            "token_name": "LUMEN",
+            "token_address": "EKPWiLk5fwTNZVeL5PrKSFDjdJrvRkvoPafVT54ppump"
           },
           {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYEEzdokUF8j8e1GavekWBAGS"
+            "token_symbol": "CLOUT",
+            "token_name": "CloUd",
+            "token_address": "7karUWvThwhcpmdaa1EuP6NgjmJvA5eKTKK1GaiFpump"
           },
           {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
+            "token_symbol": "CYS",
+            "token_name": "Claimyoursol",
+            "token_address": "9WTyywreoUQRc5KCZtfp3czTY9QAMG1jcWmgTBwhBAGS"
           }
         ],
-        "leader_hint_token_address": "Fnmq5udTPPkxGjw8nDtnRsjJWfHfdNmsfKGLhUerBAGS",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong AI narrative, integration with tools, and growing community interest in AI utility.",
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6s9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong AI integration in tokenomics and platform, but many tokens lack documentation or team details.",
         "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 2915825.35
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 131143200.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Nostalgia & Retro Culture",
-        "description": "Tokens leveraging nostalgia for past decades, retro aesthetics, or cultural references from the 90s, 2000s, or early 2010s. These tokens often tie into retro gaming, music, or internet culture.",
+        "meta_name": "Nostalgia Revival",
+        "description": "Tokens leveraging nostalgia for 2000s-2010s pop culture, including games, memes, and media. These tokens often tie into retro gaming, retro internet culture, or retro media.",
         "defining_signals": [
-          "Use of retro gaming or pop culture references",
-          "Nostalgic branding (e.g., 90s/2000s internet culture)",
+          "References to 2000s-2010s pop culture (e.g., games, memes)",
+          "Use of retro gaming or media references",
+          "Nostalgic meme revival (e.g., '2000', 'Y2K')",
           "Incorporation of retro aesthetics or themes",
-          "Community-driven revival of older memes or trends",
-          "Leveraging of vintage internet slang or formats",
-          "Strong ties to early 2000s or 2010s internet culture"
+          "Community-driven nostalgia-based narratives"
         ],
         "supporting_tokens": [
           {
@@ -830,24 +816,14 @@
             "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
           },
           {
-            "token_symbol": "YAMS",
-            "token_name": "The Yams Cult",
-            "token_address": "63r9SNr8UF6Cq6VcrMB5Ybkb4TTX23E5zTEXhu4TpuMP"
+            "token_symbol": "RAIL",
+            "token_name": "Railway",
+            "token_address": "G7H74urAtPDL4hi2847UD82iRfQ1CUL8kWFu3fxWBAGs"
           },
           {
-            "token_symbol": "CAGE",
-            "token_name": "The Cage is All I Know",
-            "token_address": "GdCN7rQA5egc8SU2Bc2kKB2kMwELneQZJVSt8gGBpump"
-          },
-          {
-            "token_symbol": "PUMP",
-            "token_name": "PumperCoin",
-            "token_address": "2aHYAD78FKBr9pPWfsbG3nGW9umgrAVcLFDLFu9qpump"
-          },
-          {
-            "token_symbol": "STICK",
-            "token_name": "Just a Stick",
-            "token_address": "7pcaz5hK7mFqK7YS2DBogNoQ2NDkSdBoB3crvHXKpump"
+            "token_symbol": "RAIL",
+            "token_name": "Railway",
+            "token_address": "G7H74urAtPDL4hi2847UD82iRfQ1CUL8kWFu3fxWBAGs"
           },
           {
             "token_symbol": "2000",
@@ -857,32 +833,32 @@
           {
             "token_symbol": "2016",
             "token_name": "2016 Coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfwrMV1qcRL21PumVd4pump"
+            "token_address": "EwEJ5R1im54MowvsGwYUkyfWrMV1qcRL21PumVd4pump"
           },
           {
-            "token_symbol": "YAMS",
-            "token_name": "The Yamss Cult",
-            "token_address": "63r9SNr8UF6Cq6VcrMB5Ybkb4TTX23E5zTEXhu4TpuMP"
+            "token_symbol": "RAIL",
+            "token_name": "Railway",
+            "token_address": "G7H74urAtPDL4hi2847UD82iRfQ1CUL8kWFu3fxWBAgS"
           },
           {
-            "token_symbol": "CAGE",
-            "token_name": "The Cage is All I Know",
-            "token_address": "GdCN7rQA5egc8SU2Bc2kKB2kMwELneQZJVSt8gGBpump"
+            "token_symbol": "2000",
+            "token_name": "2000 Coin",
+            "token_address": "EqbJLmrcip2T9ULueB1Lj4ew4YzUs9WatGWfh5opump"
           },
           {
-            "token_symbol": "PUMP",
-            "token_name": "PumperCoin",
-            "token_address": "2aHYad78FKBr9pPWfsbG3nGW9umgrAVcLFDLFu9qpump"
+            "token_symbol": "2016",
+            "token_name": "2016 Coin",
+            "token_address": "EwEJ5R1im54MowvsGwYUkyfWrMV1qcRL21PumVd4pump"
           },
           {
-            "token_symbol": "STICK",
-            "token_name": "Just a Stick",
-            "token_address": "7pcaz5hK7mFqK7YS2DBogNoQ2NDkSdBoB3crvHXKpump"
+            "token_symbol": "RAIL",
+            "token_name": "Railway",
+            "token_address": "G7H74urAtPDL4hi2847UD82iRfQ1CUL8kWFu3fxWBAgS"
           }
         ],
         "leader_hint_token_address": "EqbJLmrcip2T9ULueB1Lj4ew4YzUs9WatGWfh5opump",
-        "confidence_0_100": 72,
-        "confidence_rationale": "Strong nostalgic themes, retro internet culture, and community engagement around past trends.",
+        "confidence_0_100": 65,
+        "confidence_rationale": "Strong nostalgia references with clear cultural origins, but limited utility or documentation.",
         "leader_token": {
           "token_symbol": "2016",
           "token_name": "2016 coin",
@@ -890,96 +866,30 @@
           "usd_market_cap": 1262881.45
         },
         "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Gaming",
-        "description": "Tokens tied to AI-driven or AI-enhanced gaming experiences, often involving play-to-earn mechanics, virtual worlds, or AI-generated content. These tokens focus on gaming ecosystems with AI integration.",
-        "defining_signals": [
-          "AI-generated content or environments",
-          "Play-to-earn or game-based utility",
-          "Integration with AI agents or NPCs",
-          "Virtual world or metaverse elements",
-          "Community-driven game economies",
-          "Leveraging AI for dynamic gameplay"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "RIVALS",
-            "token_name": "Trench Rivals",
-            "token_address": "2H3cdEiiSApBB8qJBqw2T1HoD7YZugejGYc2FBoVpump"
-          },
-          {
-            "token_symbol": "HYPER",
-            "token_name": "HyperScape",
-            "token_address": "EJDVmpQk1jYvmtik4zMN7dFo7Mv9mzV1VswzBdXnpump"
-          },
-          {
-            "token_symbol": "COTTON",
-            "token_name": "cotton.fun",
-            "token_address": "9yGqGG3NXg8Mt8BVRh4MwHzYtpiLaacwpMT46VQvpump"
-          },
-          {
-            "token_symbol": "GIANT",
-            "token_name": "GIANTAI",
-            "token_address": "CnQLwzyojahWyz1Gut3LciHYAK9vFycqJFRSyA6cyai"
-          },
-          {
-            "token_symbol": "PEACHES",
-            "token_name": "Prunus Persica",
-            "token_address": "CkvYTRMBVPygZu6mcRCXs6ekb6o4CSG6RpJMJ3PYpump"
-          },
-          {
-            "token_symbol": "ROBUX",
-            "token_name": "Robux",
-            "token_address": "CS6ANSaCckHpiYrmYdeWp9gspv7h1MuwkzX3wkypump"
-          },
-          {
-            "token_symbol": "CLOUT",
-            "token_name": "CLOUT",
-            "token_address": "Cwq13pofafd7KNbWBabULgt7QC1w53NjiPgES49Ypump"
-          },
-          {
-            "token_symbol": "WAIFU",
-            "token_name": "desktop waifu",
-            "token_address": "G6TuWo7PhrdSFDiTjyjn9nqkyNvNqpwfkJYxwh3MBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "CLOXX",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYeezdokUF8j8e1GavekWBAGS"
-          }
-        ],
-        "leader_hint_token_address": "2H3cdEiiSApBB8qJBqw2T1HoD7YZugejGYc2FBoVpump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong gaming integration, AI-driven mechanics, and community interest in play-to-earn models.",
-        "leader_token": {
-          "token_symbol": "CLOUT",
-          "token_name": "CLOUT",
-          "token_address": "Cwq13pofafd7KNbWBabULgt7QC1w53NjiPgES49Ypump",
-          "usd_market_cap": 223048.48
-        },
-        "leader_missing_reason": null
       }
     ],
-    "meta_rotationion_note": "The 'Meme Revival' and 'AI-Driven Utility' METAs are currently gaining momentum, with strong community engagement and clear cultural/AI narratives. 'Nostalgia & Retro Culture' is fading slightly as newer AI and meme-based tokens attract more attention. 'AI-Powered Gaming' and 'AI-Powered Finance' are are emerging as niche but growing themes, driven by specific use cases and developer interest.",
+    "meta_rotation_note": "The 'Meme Revival' META is gaining strength, with tokens like $WOJAK and $TROLL showing strong historical meme references. 'AI-Powered Utility' is emerging as a new META with tokens like $ALCH and $LEON. 'Nostalgia Revival' is fading slightly as newer tokens focus more on AI and community-driven humor. 'Community-Driven Meme' remains stable but lacks clear external cultural references.",
     "meta_leaders": [
       {
-        "meta_name": "AI-Powered Finance",
+        "meta_name": "Meme Revival",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 788961462.0
+        }
+      },
+      {
+        "meta_name": "Community-Driven Meme",
+        "leader_token": {
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 302331780.0
+        }
+      },
+      {
+        "meta_name": "AI-Powered Utility",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -988,39 +898,12 @@
         }
       },
       {
-        "meta_name": "Meme Revival",
-        "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 28930904.94
-        }
-      },
-      {
-        "meta_name": "AI-Driven Utility",
-        "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 2915825.35
-        }
-      },
-      {
-        "meta_name": "Nostalgia & Retro Culture",
+        "meta_name": "Nostalgia Revival",
         "leader_token": {
           "token_symbol": "2016",
           "token_name": "2016 coin",
           "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
           "usd_market_cap": 1262881.45
-        }
-      },
-      {
-        "meta_name": "AI-Powered Gaming",
-        "leader_token": {
-          "token_symbol": "CLOUT",
-          "token_name": "CLOUT",
-          "token_address": "Cwq13pofafd7KNbWBabULgt7QC1w53NjiPgES49Ypump",
-          "usd_market_cap": 223048.48
         }
       }
     ]
