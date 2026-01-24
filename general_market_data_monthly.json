@@ -2,7 +2,7 @@
     "meta": {
         "retention_days": 30,
         "timezone": "America/Los_Angeles",
-        "last_updated_utc": "2026-01-23T23:36:12.861244+00:00"
+        "last_updated_utc": "2026-01-24T00:36:52.120395+00:00"
     },
     "snapshots": [
         {
@@ -3583,12 +3583,12 @@
         },
         {
             "day": "2026-01-23",
-            "generated_at_local": "2026-01-23T15:36:10.404755-08:00",
+            "generated_at_local": "2026-01-23T16:36:49.476442-08:00",
             "timezone": "America/Los_Angeles",
             "snapshot": {
                 "meta": {
-                    "generated_at_local": "2026-01-23T15:36:10.404755-08:00",
-                    "generated_at_utc": "2026-01-23T23:36:10.404755+00:00",
+                    "generated_at_local": "2026-01-23T16:36:49.476442-08:00",
+                    "generated_at_utc": "2026-01-24T00:36:49.476442+00:00",
                     "timezone": "America/Los_Angeles",
                     "version": "2.0"
                 },
@@ -3596,14 +3596,14 @@
                     "stocks": {
                         "value": 52.3714285714286,
                         "rating": "neutral",
-                        "timestamp": "2026-01-23T23:16:03+00:00",
+                        "timestamp": "2026-01-23T23:59:55+00:00",
                         "source": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
                         "error": null
                     },
                     "crypto": {
-                        "value": 24.0,
+                        "value": 25.0,
                         "rating": "Extreme Fear",
-                        "timestamp": "2026-01-23T00:00:00+00:00",
+                        "timestamp": "2026-01-24T00:00:00+00:00",
                         "source": "https://api.alternative.me/fng/?limit=1&format=json",
                         "error": null
                     }
@@ -3635,16 +3635,16 @@
                     },
                     "Bitcoin": {
                         "symbol": "BTC-USD",
-                        "change_pct_1d": 0.005161,
-                        "last_close": 89467.0703125,
+                        "change_pct_1d": -0.075442,
+                        "last_close": 89394.9609375,
                         "prev_close": 89462.453125,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
                     },
                     "Ethereum": {
                         "symbol": "ETH-USD",
-                        "change_pct_1d": 0.096253,
-                        "last_close": 2952.472412109375,
+                        "change_pct_1d": 0.040119,
+                        "last_close": 2950.816650390625,
                         "prev_close": 2949.63330078125,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
@@ -3746,16 +3746,16 @@
                     "iwm_minus_spy_pct": -1.8821700000000001
                 },
                 "crypto_global": {
-                    "total_mcap_usd": 3106561663501.6484,
-                    "mcap_change_24h_pct": -0.01716706649258424,
-                    "btc_dominance_pct": 57.536762291946886,
+                    "total_mcap_usd": 3105180186760.2344,
+                    "mcap_change_24h_pct": -0.12627777323613462,
+                    "btc_dominance_pct": 57.52392377554949,
                     "source": "https://api.coingecko.com/api/v3/global",
                     "error": null
                 },
                 "defi": {
                     "tvl": {
-                        "total_defi_tvl_usd": 119784882132.04512,
-                        "solana_tvl_usd": 8296235613.156327,
+                        "total_defi_tvl_usd": 119783506205.9987,
+                        "solana_tvl_usd": 8150519443.256685,
                         "source": "https://api.llama.fi/v2/chains",
                         "error": null
                     }
@@ -3764,42 +3764,42 @@
                     "dex": {
                         "source": "https://api.llama.fi/overview/dexs/Solana",
                         "totals": {
-                            "total24h": 5103890910.0,
-                            "total7d": 27639155588.0,
-                            "total30d": 106007201242.0
+                            "total24h": 4915637393.0,
+                            "total7d": 25016728919.0,
+                            "total30d": 103834997471.0
                         },
                         "selected": [
                             {
                                 "venue": "PumpFun",
                                 "matched_name": "pump.fun",
                                 "total24h": 55644501.0,
-                                "total7d": 405655635.0,
-                                "total30d": 1784702536.0,
-                                "share_pct_24h": 1.090236879690675,
-                                "share_pct_7d": 1.4676846176014224,
-                                "share_pct_30d": 1.6835672624973534,
+                                "total7d": 345376288.0,
+                                "total30d": 1732674012.0,
+                                "share_pct_24h": 1.1319895376994094,
+                                "share_pct_7d": 1.3805813266725273,
+                                "share_pct_30d": 1.6686801696931879,
                                 "error": null
                             },
                             {
                                 "venue": "Raydium",
                                 "matched_name": "Raydium AMM",
                                 "total24h": 299623641.0,
-                                "total7d": 2107914714.0,
-                                "total30d": 10135101239.0,
-                                "share_pct_24h": 5.870494614470512,
-                                "share_pct_7d": 7.626552509133767,
-                                "share_pct_30d": 9.560766740613163,
+                                "total7d": 2143693216.0,
+                                "total30d": 10153975633.0,
+                                "share_pct_24h": 6.095316172561307,
+                                "share_pct_7d": 8.569038833737702,
+                                "share_pct_30d": 9.778953031549788,
                                 "error": null
                             },
                             {
                                 "venue": "Meteora",
                                 "matched_name": "Meteora DAMM V1",
-                                "total24h": 3925637.0,
-                                "total7d": 35144606.0,
-                                "total30d": 134319726.0,
-                                "share_pct_24h": 0.0769145945558621,
-                                "share_pct_7d": 0.1271551364443949,
-                                "share_pct_30d": 0.1267081145679588,
+                                "total24h": 3803989.0,
+                                "total7d": 32596616.0,
+                                "total30d": 134271491.0,
+                                "share_pct_24h": 0.07738546796427627,
+                                "share_pct_7d": 0.13029927336040778,
+                                "share_pct_30d": 0.1293123650698798,
                                 "error": null
                             }
                         ],
@@ -3853,12 +3853,12 @@
                     "error": null
                 },
                 "bitcoin_halving": {
-                    "current_height": 933577,
+                    "current_height": 933585,
                     "next_halving_height": 1050000,
-                    "blocks_remaining": 116423,
+                    "blocks_remaining": 116415,
                     "assumed_seconds_per_block": 600,
-                    "estimated_datetime_utc": "2028-04-11T11:26:11.780714+00:00",
-                    "estimated_datetime_local": "2028-04-11T04:26:11.780714-07:00",
+                    "estimated_datetime_utc": "2028-04-11T11:06:50.974686+00:00",
+                    "estimated_datetime_local": "2028-04-11T04:06:50.974686-07:00",
                     "source": "https://blockstream.info/api/blocks/tip/height",
                     "error": null
                 },
