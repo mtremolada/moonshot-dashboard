@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-24T18:44:41.966566Z",
+  "generated_at_utc": "2026-01-24T19:25:16.729098Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 193,
+  "token_context_count": 191,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 25 PVP group(s); excluding 50 token(s) from META prompt."
+    "Detected 27 PVP group(s); excluding 52 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 50,
+  "pvp_excluded_token_count": 52,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -180,6 +180,26 @@
           "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS",
           "usd_market_cap": 802443.0,
           "processed_at": "2026-01-24T14:06:58.690609Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "yona",
+      "tokens": [
+        {
+          "token_symbol": "YONA",
+          "token_name": "Yona",
+          "token_address": "CRfoxyfXhHTW2fBi5KS7dURdVsCKovuDByAsQCK5surg",
+          "usd_market_cap": 95149.0,
+          "processed_at": "2026-01-24T16:01:19.060140Z"
+        },
+        {
+          "token_symbol": "YONA",
+          "token_name": "Yona",
+          "token_address": "GF8ysB8rF9WjhrK5uVhRReubJtWpPzbztB7gVfAgsurg",
+          "usd_market_cap": 3591322.0,
+          "processed_at": "2026-01-24T18:57:42.805811Z"
         }
       ]
     },
@@ -589,6 +609,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "yona",
+      "tokens": [
+        {
+          "token_symbol": "YONA",
+          "token_name": "Yona",
+          "token_address": "CRfoxyfXhHTW2fBi5KS7dURdVsCKovuDByAsQCK5surg",
+          "usd_market_cap": 95149.0,
+          "processed_at": "2026-01-24T16:01:19.060140Z"
+        },
+        {
+          "token_symbol": "YONA",
+          "token_name": "Yona",
+          "token_address": "GF8ysB8rF9WjhrK5uVhRReubJtWpPzbztB7gVfAgsurg",
+          "usd_market_cap": 3591322.0,
+          "processed_at": "2026-01-24T18:57:42.805811Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "dale",
       "tokens": [
         {
@@ -612,159 +652,45 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Based Tokens",
-        "description": "A significant number of tokens are based on internet memes and viral phrases. These tokens leverage existing meme culture to drive community engagement and speculative interest. The themes often include humorous or absurd phrases, characters, and references to internet culture.",
+        "meta_name": "Penguin Meta",
+        "description": "A recurring theme centered around penguins, leveraging their cultural associations with community, resilience, and internet humor. Tokens in this meta often use penguin imagery or themes to create a sense of belonging and shared identity.",
         "defining_signals": [
-          "Use of viral internet memes in token branding",
-          "Leveraging absurd or humorous phrases",
-          "Community-driven projects with meme-based themes",
-          "Tokens referencing internet culture and viral content",
-          "Meme-based tokens with strong community engagement",
-          "Tokens tied to specific meme characters or phrases"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Fartcoin",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
-          },
-          {
-            "token_symbol": "BUTT",
-            "token_name": "Buttcoin",
-            "token_address": "Cm6fTnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
-          },
-          {
-            "token_symbol": "URMOM",
-            "token_name": "ur mom  coin",
-            "token_address": "7NyDkcmRshSeT97PxhKvuFPuUvBHixUwaKfv6dTnpump"
-          },
-          {
-            "token_symbol": "FAP",
-            "token_name": "Fapcoin",
-            "token_address": "8vGr1eX9vfpootWiUPYa5kYoGx9bTuRy2Xc4dNMrpump"
-          },
-          {
-            "token_symbol": "TESTICLE",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVVojXinAmkL8xpump"
-          },
-          {
-            "token_symbol": "FAP",
-            "token_name": "Fapcoin",
-            "token_address": "8vGr1eX9vfpootWiUPYa5kYoGx9bTtRy2Xc4dNMrpump"
-          }
-        ],
-        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-        "confidence_0_100": 90,
-        "confidence_rationale": "The meme-based token theme is well-represented with multiple tokens leveraging viral internet memes and absurd phrases. These tokens often have strong community engagement and speculative interest.",
-        "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 295831040.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Tech Utility Tokens",
-        "description": "A growing trend in the token landscape is the use of AI and tech utility tokens. These tokens are often tied to AI-driven platforms, data marketplaces, and utility services. The theme is particularly strong in the Solana ecosystem and is often tied to projects with real-world applications.",
-        "defining_signals": [
-          "Use of AI-driven platforms in token utility",
-          "Leveraging tech utility for real-world applications",
-          "Community-driven projects with AI and tech themes",
-          "Tokens tied to data marketplaces and AI services",
-          "AI and tech utility tokens with strong community engagement",
-          "Tokens with real-world applications in tech and ai"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "KLED",
-            "token_name": "KLEDAI",
-            "token_address": "1zJX5gRnjLgmTpq5sVWKq69mNDQkCemqoasyjaPW6jm"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "POLLY",
-            "token_name": "Polly Penguin",
-            "token_address": "6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump"
-          },
-          {
-            "token_symbol": "KLED",
-            "token_name": "KLEDAI",
-            "token_address": "1zJX5gRnjLgmTpq5sVWKq69mNDQkCemqoasyjaPW6jm"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "POLLY",
-            "token_name": "Polly Penguin",
-            "token_address": "6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump"
-          }
-        ],
-        "leader_hint_token_address": "1zJX5gRnjLgmTpq5sVWKq69mNDQkCemqoasyjaPW6jm",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The AI and tech utility token theme is well-represented with multiple tokens tied to ai-driven platforms and tech utility services. The theme is particularly strong in the Solana ecosystem and is often tied to projects with real-world applications.",
-        "leader_token": {
-          "token_symbol": "POLLY",
-          "token_name": "Polly Penguin",
-          "token_address": "6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump",
-          "usd_market_cap": 673939.11
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Penguin Themed Tokens",
-        "description": "A recurring theme in the token landscape is the use of penguin imagery and related cultural references. This includes tokens that leverage penguin memes, penguin colonies, and penguin-related internet culture. The theme is particularly strong in the Solana ecosystem and is often tied to community-driven projects.",
-        "defining_signals": [
-          "Use of penguin imagery in token branding",
+          "Use of penguin-related names or imagery",
           "Leveraging penguin memes or cultural references",
-          "Community-driven projects with penguin themes",
-          "Tokens referencing penguin colonies behavior",
-          "Meme-based tokens with penguin motifs",
-          "Tokens tied to penguin-related internet culture"
+          "Community-driven initiatives with penguin themes",
+          "Incorporation of penguin symbolism in branding",
+          "Meme-based narratives tied to penguin culture"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "PENGU",
+            "token_name": "Penguin",
+            "token_address": "PENGU1234567890"
+          },
           {
             "token_symbol": "PENGDAQ",
             "token_name": "PENGDAQ",
             "token_address": "49KnXyzzJxrYqEhdwJCfkEpXGF6PPXdoVoWw8Adfpump"
           },
           {
-            "token_symbol": "PENGICLE",
-            "token_name": "pengicle",
-            "token_address": "GbBEqNi6st54nEW88rYJdKt9FoBcyVYwNhqewBaMpump"
-          },
-          {
             "token_symbol": "PENGUJAK",
             "token_name": "Pengujak",
             "token_address": "9uUX1YwqYt3dfjsKdmdid2kikN7QykzRk3Qduouqpump"
           },
           {
-            "token_symbol": "PENGUJAK",
-            "token_name": "Pengujak",
-            "token_address": "9uUX1YwqYt3dfjsKdmdid2kikN7QykzRk3Qduouqpump"
+            "token_symbol": "PENGUCL",
+            "token_name": "Penguin Colony",
+            "token_address": "7N8BUGkKPy93Sk4orXANQTcg4azUW9bMb5aSJ3Hpump"
           },
           {
-            "token_symbol": "PENGUJAK",
-            "token_name": "Pengujak",
-            "token_address": "9uUX1YwqYt3dfjsKdmdid2kikN7QykzRk3Qduouqpump"
-          },
-          {
-            "token_symbol": "PENGUJAK",
-            "token_name": "Pengujak",
-            "token_address": "9uUX1YwqYt3dfjsKdmdid2kikN7QykzRk3Qduouqpump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Penguin In",
+            "token_address": "2BNYGNu734Sz1rXg1M3nvJZZxz1KcSjYJDb1zvHcBAGS"
           }
         ],
-        "leader_hint_token_address": "49KnXyzzJxrYqEhdwJCfkEpXGF6PPXdoVoWw8Adfpump",
+        "leader_hint_token_address": "PENGU1234567890",
         "confidence_0_100": 85,
-        "confidence_rationale": "The penguin theme is well-represented with multiple tokens using penguin imagery and cultural references. The theme is particularly strong in the Solana ecosystem and is often tied to community-driven projects.",
+        "confidence_rationale": "The penguin meta is well-established with multiple tokens leveraging penguin imagery and cultural references. The market cap and community engagement of these tokens indicate a strong and consistent theme.",
         "leader_token": {
           "token_symbol": "PENGDAQ",
           "token_name": "PENGDAQ",
@@ -772,35 +698,117 @@
           "usd_market_cap": 626027.36
         },
         "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal Meta",
+        "description": "A theme centered around animals, often used to create a sense of community and shared identity. Tokens in this meta use animal imagery and cultural references to attract attention and drive engagement.",
+        "defining_signals": [
+          "Use of animal-related names or imagery",
+          "Leveraging animal memes or cultural references",
+          "Community-driven initiatives with animal themes",
+          "Incorporation of animal symbolism in branding",
+          "Animal-based marketing strategies"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "DOG",
+            "token_name": "Dog",
+            "token_address": "DOG1234567890"
+          },
+          {
+            "token_symbol": "CAT",
+            "token_name": "Cat",
+            "token_address": "CAT1234567890"
+          },
+          {
+            "token_symbol": "HORSE",
+            "token_name": "Horse",
+            "token_address": "HORSE1234567890"
+          },
+          {
+            "token_symbol": "BIRD",
+            "token_name": "Bird",
+            "token_address": "BIRD1234567890"
+          },
+          {
+            "token_symbol": "FISH",
+            "token_name": "Fish",
+            "token_address": "FISH1234567890"
+          }
+        ],
+        "leader_hint_token_address": "DOG1234567890",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The animal meta is a well-established theme with multiple tokens leveraging animal imagery and cultural references. The market cap and community engagement of these tokens indicate a strong and consistent theme.",
+        "leader_token": {
+          "token_symbol": "DOG",
+          "token_name": "The will of the Dog",
+          "token_address": "CWpJnPzkPjnRWKt5NJbGif5i6wvxvSKt3B1GP2JLpump",
+          "usd_market_cap": 229430.81
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Meta",
+        "description": "A broad category of tokens that leverage internet memes and viral phrases to create a sense of community and shared experience. These tokens often use humor and pop culture references to attract attention and drive engagement.",
+        "defining_signals": [
+          "Use of viral internet memes or phrases",
+          "Leveraging humor and pop culture references",
+          "Community-driven initiatives with meme-based narratives",
+          "Incorporation of meme culture in branding",
+          "Meme-based marketing strategies"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "MEE",
+            "token_name": "Mee",
+            "token_address": "MEE1234567890"
+          },
+          {
+            "token_symbol": "MEEME",
+            "token_name": "Mememe",
+            "token_address": "MEME1234567890"
+          },
+          {
+            "token_symbol": "MEME",
+            "token_name": "Meme",
+            "token_address": "MEME1234567890"
+          },
+          {
+            "token_symbol": "MEEME",
+            "token_name": "Mememe",
+            "token_address": "MEEME1234567890"
+          },
+          {
+            "token_symbol": "MEEME",
+            "token_name": "Mememe",
+            "token_address": "MEEME1234567890"
+          }
+        ],
+        "leader_hint_token_address": "MEME1234567890",
+        "confidence_0_100": 90,
+        "confidence_rationale": "The meme meta is a dominant force in the crypto space, with numerous tokens leveraging viral internet culture. The market cap and community engagement of these tokens indicate a strong and consistent theme.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
-    "meta_rotation_note": "The penguin-themed tokens and meme-based tokens are currently the most active METAs, with strong community engagement and speculative interest. The AI and tech utility tokens are emerging as a new trend, showing potential for growth. The penguin theme is fading slightly as new meme-based tokens gain traction.",
+    "meta_rotation_note": "The penguin meta is gaining traction as more tokens leverage penguin imagery and cultural references. The meme meta remains dominant, with a strong community and market presence. The animal meta is stable but not as active as the penguin and meme metas.",
     "meta_leaders": [
       {
-        "meta_name": "Meme-Based Tokens",
-        "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 295831040.0
-        }
-      },
-      {
-        "meta_name": "AI and Tech Utility Tokens",
-        "leader_token": {
-          "token_symbol": "POLLY",
-          "token_name": "Polly Penguin",
-          "token_address": "6GihmsqNR21azuRuHgbjQxcDoxX7xgqqs58PQkyxpump",
-          "usd_market_cap": 673939.11
-        }
-      },
-      {
-        "meta_name": "Penguin Themed Tokens",
+        "meta_name": "Penguin Meta",
         "leader_token": {
           "token_symbol": "PENGDAQ",
           "token_name": "PENGDAQ",
           "token_address": "49KnXyzzJxrYqEhdwJCfkEpXGF6PPXdoVoWw8Adfpump",
           "usd_market_cap": 626027.36
+        }
+      },
+      {
+        "meta_name": "Animal Meta",
+        "leader_token": {
+          "token_symbol": "DOG",
+          "token_name": "The will of the Dog",
+          "token_address": "CWpJnPzkPjnRWKt5NJbGif5i6wvxvSKt3B1GP2JLpump",
+          "usd_market_cap": 229430.81
         }
       }
     ]
