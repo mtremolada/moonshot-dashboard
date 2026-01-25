@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-01-25T06:13:13.666552Z",
+  "generated_at_utc": "2026-01-25T07:23:47.979297Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 187,
+  "token_context_count": 188,
   "prompt_truncated": false,
   "warnings": [
     "Detected 29 PVP group(s); excluding 55 token(s) from META prompt."
   ],
   "pvp_excluded_token_count": 55,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "the white penguin",
-      "tokens": [
-        {
-          "token_symbol": "WPENGUIN",
-          "token_name": "The White Penguin",
-          "token_address": "83x54nRBXbDD6YrWomBPV7K1BRu5hz3dVRt37iHpump",
-          "usd_market_cap": 37096.72,
-          "processed_at": "2026-01-24T06:37:22.573940Z"
-        },
-        {
-          "token_symbol": "WhitePenguin",
-          "token_name": "The White Penguin",
-          "token_address": "5JKu1mw8brd7KxzzsreVJtGCr91SMXxiA7qw2EaUFimo",
-          "usd_market_cap": 269000.12,
-          "processed_at": "2026-01-24T16:24:48.095556Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "nihilist penguin",
@@ -147,6 +127,26 @@
           "token_address": "GF8ysB8rF9WjhrK5uVhRReubJtWpPzbztB7gVfAgsurg",
           "usd_market_cap": 3591322.0,
           "processed_at": "2026-01-24T18:57:42.805811Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "the white penguin",
+      "tokens": [
+        {
+          "token_symbol": "WhitePenguin",
+          "token_name": "The White Penguin",
+          "token_address": "5JKu1mw8brd7KxzzsreVJtGCr91SMXxiA7qw2EaUFimo",
+          "usd_market_cap": 269000.12,
+          "processed_at": "2026-01-24T16:24:48.095556Z"
+        },
+        {
+          "token_symbol": "WhitePengu",
+          "token_name": "The White Penguin",
+          "token_address": "94vaM8nKbs9cdUh6EG6xxy4xc1x2Kr9GXQwEvB1hpump",
+          "usd_market_cap": 244071.15,
+          "processed_at": "2026-01-25T06:45:28.481306Z"
         }
       ]
     },
@@ -713,126 +713,75 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Revival",
-        "description": "This theme involves the revival of older internet memes and cultural references in the crypto space. Tokens like 'Bonk', 'Pepe', and 'Wojak' are leveraging well-established memes that have been repurposed for crypto narratives. These tokens often tie into viral TikTok/Reddit trends and historical meme origins.",
+        "meta_name": "Meme Rehashing",
+        "description": "Tokens repurposing older internet memes or cultural references for crypto branding. These tokens often tie to viral images, phrases, or characters that have been reinterpreted in the crypto context.",
         "defining_signals": [
-          "Revival of older memes (e.g., 'Bonk', 'Pepe', 'Wojak')",
-          "Tie-ins to viral TikTok/Reddit trends",
-          "Historical meme origins (e.g., 2000s-2010s) with new crypto narratives",
-          "Community-driven meme culture with clear meme lineage",
-          "Cross-platform meme adoption (e.g., TikTok, Reddit, Instagram)"
+          "Use of established memes (e.g., Wojak, Pepe, Chudsome)",
+          "Recontextualization of historical memes for crypto communities",
+          "Leveraging meme culture for community identity",
+          "Meme-based token names with pre-existing cultural roots",
+          "Meme revival in crypto narratives (e.g., 'Distracted Boyfriend' + 'degen')",
+          "Meme-based humor or irony in token descriptions"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "PFPEPE",
-            "token_name": "Pumpfun Pepe",
-            "token_address": "GrM2hSKc2Z6pPAsbJP9h4LBarughV1eehTunJ53pump"
-          },
-          {
-            "token_symbol": "WOjak",
+            "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pV9VaAduKrLcEBi3RGXedKTrBAGS"
+            "token_symbol": "PFPEpe",
+            "token_name": "Pumpfun Pepe",
+            "token_address": "GrM2hSKc2Z6pVQAsbJP9h4LBarughV1eehTunJ53pump"
           },
           {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+            "token_symbol": "CHUD",
+            "token_name": "Chudsome",
+            "token_address": "4mPNcCy6xZXJmgQdWmUsKENdSUMpijco4ja9hfy5chud"
           },
           {
             "token_symbol": "DADDY",
             "token_name": "DADDY",
             "token_address": "4VKacuegL9XQLCkYq1J2jFSB4dZRqR1BsgYwoX85bonk"
+          },
+          {
+            "token_symbol": "GIGA",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
+          },
+          {
+            "token_symbol": "BANAN",
+            "token_name": "Banana",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The 'Meme Revival' theme is well-supported by tokens like 'Bonk' and 'Pepe', which have strong historical meme roots and viral TikTok/Reddit adoption. 'Bonk' is the largest in terms of market cap and has a clear revival narrative.",
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Strong meme revival with established cultural references, community engagement, and multiple tokens leveraging similar meme-based themes.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 797369181.0
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 77628512.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Animal Meme Culture",
-        "description": "This theme involves tokens that reference or are inspired by animal-based memes. Tokens like 'Fartcoin', 'Shark', and 'Kabuto' are leveraging animal imagery and cultural references to create meme-based tokens. These tokens often tie into viral TikTok/Reddit trends and historical meme origins.",
+        "meta_name": "Nostalgia Revival",
+        "description": "Tokens that repurpose cultural or historical nostalgia for crypto branding. These often tie to viral internet nostalgia, pop culture, or historical events for community identity.",
         "defining_signals": [
-          "Animal-based meme references (e.g., 'Fartcoin', 'Shark')",
-          "Viral TikTok/Reddit trends with animal themes",
-          "Historical meme origins (e.g., 2000s-2010s) with new crypto narratives",
-          "Community-driven animal meme culture with clear meme lineage",
-          "Cross-platform animal meme adoption (e.g., TikTok, Reddit, Instagram)"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Fartcoin",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
-          },
-          {
-            "token_symbol": "Shark",
-            "token_name": "Why does a shark keep moving?",
-            "token_address": "BRGMbYAQZmaZ3wwosSZJia5NzdTgAXdyDuDyQg9pump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGlLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "GABAGOOL",
-            "token_name": "The Gabagool",
-            "token_address": "8T5Kttew8UL9KGPGWSjfBaTmE997F7hcvH8zzKSypump"
-          },
-          {
-            "token_symbol": "SKYSCRAPER",
-            "token_name": "Alex Honnold",
-            "token_address": "FTfaMwgskDxezC89rTqeeG8kgcAky4ejV2JciZhdpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          }
-        ],
-        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "The 'Animal Meme Culture' theme is supported by tokens like 'Fartcoin' and 'Shark', which have strong animal-based meme roots and viral TikTok/Reddit adoption. 'Fartcoin' is the largest in terms of market cap and has a clear animal meme narrative.",
-        "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 295831040.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Retro Culture",
-        "description": "This theme involves tokens that reference or are inspired by retro culture, historical events, or nostalgia-driven content. Tokens like '2010 Coin', '2016 Coin', and 'Kabuto' are leveraging nostalgia for past decades, cultural touchstones, or historical events. These tokens often tie into viral TikTok/Instagram trends and historical meme origins.",
-        "defining_signals": [
-          "Reference to past decades or historical events (e.g., 2010s, 2016)",
-          "Nostalgic cultural touchstones (e.g., 'Double Rainbow', 'Inception')",
-          "Viral TikTok/Instagram trends with historical roots",
-          "Historical meme origins (e.g., 2000s-2010s) with new crypto narratives",
-          "Community-driven nostalgia culture with clear meme lineage"
+          "Nostalgic references to historical events or pop culture",
+          "Revival of viral nostalgia (e.g., 2010s, 2000s)",
+          "Use of historical or cultural nostalgia for branding",
+          "Nostalgic meme revival in crypto context",
+          "Community-driven nostalgia themes",
+          "Nostalgic cultural references in token descriptions"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "2010",
             "token_name": "2010 Coin",
-            "token_address": "H4AH57vbcGWrmm3E3ZXLkZgnadvjEmV4AeTs4hoRpump"
+            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
           },
           {
             "token_symbol": "2016",
@@ -840,57 +789,63 @@
             "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
           },
           {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+            "token_symbol": "2131",
+            "token_name": "2131KOBUSHIDE",
+            "token_address": "4vGHdzcNrDf8XVE8H19Rqea86RULz7xi89ew1sSJpump"
           },
           {
-            "token_symbol": "GABAGOOL",
-            "token_name": "The Gabagool",
-            "token_address": "8T5Kttew8UL9KGPGWSjfBaTmE997F7hcvH8zzKSypump"
+            "token_symbol": "BANAN",
+            "token_name": "Banana",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
           },
           {
-            "token_symbol": "SKYSCRAPER",
-            "token_name": "Alex Honnold",
-            "token_address": "FTfaMwgskDxezC89rTqEEG8kgcAky4ejV2JciZhdpump"
+            "token_symbol": "HISTORIC",
+            "token_name": "Historic",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDF92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "REMEMBER",
+            "token_name": "Remember",
+            "token_address": "9Pr7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
           }
         ],
-        "leader_hint_token_address": "EwEJ5R1im54MowvsGwYUkyfwrMV1qcRL21PumVd4pump",
+        "leader_hint_token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
         "confidence_0_100": 75,
-        "confidence_rationale": "The 'Nostalgia and Retro Culture' theme is supported by tokens like '2016 Coin' and 'Gabagool', which have strong historical and cultural roots. '2016 Coin' is the largest in terms of market cap and has a clear retro narrative.",
+        "confidence_rationale": "Strong nostalgic themes with multiple tokens leveraging historical and cultural nostalgia for branding and community identity.",
         "leader_token": {
-          "token_symbol": "2016",
-          "token_name": "2016 coin",
-          "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-          "usd_market_cap": 3398746.78
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 77628512.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Philosophical and Existential Themes",
-        "description": "This theme involves tokens that reference or are inspired by philosophical and existential concepts. Tokens like 'Ubermensch', 'Nietzschean Penguin', and 'CAGE' are leveraging philosophical ideas and existential themes to create meme-based tokens. These tokens often tie into viral TikTok/Reddit trends and historical philosophical references.",
+        "meta_name": "Philosophical Meme Tokens",
+        "description": "Tokens that draw from philosophical or existential themes, often repurposing philosophical concepts or figures for crypto branding. These tokens often tie to memes or cultural references with philosophical undertones.",
         "defining_signals": [
-          "Philosophical and existential themes (e.g., 'Ubermensch', 'Nietzschean Penguin')",
-          "Viral TikTok/Reddit trends with philosophical roots",
-          "Historical philosophical references (e.g., 19th-20th century) with new crypto narratives",
-          "Community-driven philosophical meme culture with clear meme lineage",
-          "Cross-platform philosophical meme adoption (e.g., TikTok, Reddit, Instagram)"
+          "Philosophical or existential themes in token branding",
+          "Use of philosophical figures (e.g., Nietzsche, Friedrich)",
+          "Meme-based philosophical references (e.g., 'Nihilist Penguin')",
+          "Community-driven philosophical narratives",
+          "Philosophical meme revival in crypto context",
+          "Philosophical concepts as core to token identity"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Ubermensch",
-            "token_name": "Nietzschean Ubermensch",
+            "token_symbol": "FRIEDRICH",
+            "token_name": "Friedrich Nietzsche",
+            "token_address": "GsQjR6ikwyjxqnwc1LLmrvnyfZqhRqu7NjZtT7HYdhUd"
+          },
+          {
+            "token_symbol": "UBER",
+            "token_name": "Ubermensch",
             "token_address": "Ew5U9dpvqnHCE4M2abXDCJPp7GHcBxxe9usbiRnNpump"
           },
           {
-            "token_symbol": "PENGUIN2",
-            "token_name": "Nietzschean Penguin Friend",
-            "token_address": "439qfAYG8AL64rwNRVwhrMZtmDUFj72sFYrMgznopump"
+            "token_symbol": "BLACKSHEEP",
+            "token_name": "The Black Sheep",
+            "token_address": "8V29cUbz7MeF16rBJhkuGMxByZjfjDxcuqQsPb8AchmG"
           },
           {
             "token_symbol": "CAGE",
@@ -898,47 +853,48 @@
             "token_address": "GdCN7rQA5egc8SU2Bc2kKB2kMwELneQZJVSt8gGBpump"
           },
           {
-            "token_symbol": "FCH",
-            "token_name": "Flying Ketamine Horse",
-            "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
+            "token_symbol": "SKY",
+            "token_name": "Skyking",
+            "token_address": "73NE3Bruqm4yRsQeUapoFcy5363XmTqKFqc8QZcspump"
           },
           {
-            "token_symbol": "SKYSCRAP",
-            "token_name": "Alex Honnold",
-            "token_address": "FTfaMwgskDxezC89rTqeeG8kgcAky4ejV2JciZhdpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "MEEK",
+            "token_name": "THEMEKSHALLINHERITTHEEARTH",
+            "token_address": "FLeuXXyxKqrDU8MULuxLSPPWpv1TLroMSHM6XsG8bttN"
           }
         ],
-        "leader_hint_token_address": "Ew5U9dpvqnHCE4M2abXDCJPp7GHcBxxe9usbiRnNpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "The 'Philosophical and Existential Themes' theme is supported by tokens like 'Ubermensch' and 'Nietzschean Penguin', which have strong philosophical roots and viral TikTok/Reddit adoption. 'Ubermensch' is the largest in terms of market cap and has a clear philosophical narrative.",
+        "leader_hint_token_address": "GsQjR6ikwyjxqnwc1LLmrvnyfZqRqu7NjZtT7HYdhUd",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong philosophical and meme-based themes, with multiple tokens leveraging philosophical figures and existential memes for community engagement.",
         "leader_token": {
-          "token_symbol": "FKH",
-          "token_name": "Flying Ketamine Horse",
-          "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk",
-          "usd_market_cap": 2129791.0
+          "token_symbol": "CAGE",
+          "token_name": "The cage is all I know",
+          "token_address": "GdCN7rQA5egc8SU2Bc2kKB2kMwELneQZJVSt8gGBpump",
+          "usd_market_cap": 486997.07
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "Penguin Meta",
-        "description": "A recurring theme in the token batch involves penguin-related memes and cultural references. Tokens like 'TheWarWhale', 'Nietzschean Penguin', and 'PENGUIN2' all leverage the penguin meme, which originated from a 2007 Werner Herzog documentary and later evolved into a viral TikTok/Instagram meme with existentialist captions. This theme is also linked to penguin rehabilitation, cute penguin imagery, and philosophical interpretations.",
+        "description": "A recurring theme in crypto involving penguin imagery, often tied to philosophical or meme-based narratives. Tokens in this category leverage penguin symbolism for community-driven engagement, often referencing viral penguin memes or philosophical archetypes.",
         "defining_signals": [
-          "Penguin imagery or metaphors in token names and descriptions",
-          "Existentialist or philosophical themes tied to penguins",
-          "References to viral penguin memes (e.g., 'Nihilist Penguin', 'lonely penguin')",
-          "Community-driven narratives around penguin rehabilitation or cute penguin content",
-          "Cross-references to penguin-related internet culture (e.g., 'Nietzschean Penguin', 'PENGUIN2')"
+          "Penguin mascot or imagery in token branding",
+          "Philosophical or existential themes (e.g., Nietzschean penguin)",
+          "Community-driven meme culture with penguin motifs",
+          "Leveraging viral penguin memes (e.g., Herzog documentary penguin)",
+          "Penguin as a symbol of resilience or individualism",
+          "Penguin-based meme narratives with online cultural roots"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "WARWHALE",
-            "token_name": "TheWarWhale",
-            "token_address": "6S478PU7rpreZy74VVkzPbPx65yNXoCDDHp49FAqpump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "GgBXMMKApMGKtSMwSU6Cp8Top4q7jXAHgUctNMnNpump"
+          },
+          {
+            "token_symbol": "PENGUINS",
+            "token_name": "Nietzschean Penguins",
+            "token_address": "Cku1jXK5D69BYCNh62n74uaGN5LWZ8hXRAgGwhCYpump"
           },
           {
             "token_symbol": "PENGUIN2",
@@ -946,83 +902,132 @@
             "token_address": "439qfAYG8AL64rwNRVwhrMZtmDUFj72sFYrMgznopump"
           },
           {
-            "token_symbol": "PENGUINS",
-            "token_name": "Nietzschean Penguins",
-            "token_address": "Cku1jXK5D69BYCNh62n74uaGN5LWZ8hXRAgKwhCYpump"
-          },
-          {
-            "token_symbol": "BPENGUIN",
-            "token_name": "Baby Nietzschean Penguin",
-            "token_address": "GgBXMMKApMGKtSMwSU6Cp8Top4q7jXAHgUctNMnNpump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Japanese Cheesecake Yoghurt",
+            "token_address": "63YXPZHWSBWb1xLxRQNuc5smDYJJhnGYwckM5EVpump"
           },
           {
             "token_symbol": "PENGUIN",
-            "token_name": "PENGU",
-            "token_address": "7xWFtxD6pgaRwPmn376QeWoCFZ2bwX3o31BnMFepump"
+            "token_name": "TheWarWhale",
+            "token_address": "6S478PU7rpreZy74VVkzPbPx65yNXoCDDHp49FAqpump"
           },
           {
-            "token_symbol": "Igloo",
-            "token_name": "Igloocoin",
-            "token_address": "8VRg5e3FW333eEfyJ81HYN1zNUP4LobtJhnu5crMpump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Save The Penguin",
+            "token_address": "k1EjBXNjFWm1pF76dsxZpafo4Gj13uNv7WfpZJhpump"
           }
         ],
-        "leader_hint_token_address": "Cku1jXK5D69BYCNh62n74uaGN5LWZ8hXRAgKwhCYpump",
+        "leader_hint_token_address": "Cku1jXK5D69BYCNh62n74uaGN5LWZ8hXRAgGwhCYpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "The 'Penguin Meta' is strongly supported by multiple tokens referencing penguin memes, philosophical themes, and viral content. 'Nietzschean Penguins' (PENGUINS) is the largest in terms of market cap and has a clear cultural and philosophical narrative.",
+        "confidence_rationale": "Strong community engagement and viral penguin meme references, with multiple tokens leveraging philosophical and meme-based narratives.",
         "leader_token": {
-          "token_symbol": "PENGUINS",
-          "token_name": "Nietzschean Penguins",
-          "token_address": "Cku1jXK5D69BYCNh62n74uaGN5LWZ8hXRAgKwhCYpump",
-          "usd_market_cap": 266079.46
+          "token_symbol": "STP",
+          "token_name": "Save The Penguin",
+          "token_address": "k1EjBXNjFWm1pF76dsxZpafo4Gj13uNv7WfpZJhpump",
+          "usd_market_cap": 466796.13
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal Meme Tokens",
+        "description": "Tokens that leverage animal-based memes or imagery for branding. These often tie to viral animal memes or characters that have become cultural touchstones.",
+        "defining_signals": [
+          "Animal-based meme references in token branding",
+          "Use of viral animal memes (e.g., penguin, dog, cat)",
+          "Community-driven animal meme culture",
+          "Animal-based meme narratives with online roots",
+          "Animal imagery as a core part of token identity",
+          "Animal meme revival in crypto context"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Japanese Cheesecake Yoghurt",
+            "token_address": "63YXPZHWSBWb1xLxRQNuNc5smDYJJhnGYwckM5EVpump"
+          },
+          {
+            "token_symbol": "PENGUINS",
+            "token_name": "Nietzschean Penguins",
+            "token_address": "Cku1jXK5D69BYCNh62n74uaGN5LWZ8hXRAgGwhCYpump"
+          },
+          {
+            "token_symbol": "PENGUIN2",
+            "token_name": "Nietzschean Penguin Friend",
+            "token_address": "439qfAYG8AL64rwNRVwhrMZtmDUFj72sFYrMgznopump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Save The Penguin",
+            "token_address": "k1EjBXNjFWm1pF76dsxZpafo4Gj13uNv7WfpZJhpump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "TheWarWhale",
+            "token_address": "6S478PU7rpreZy74VVkzPbPx65yNXoCDDHp49FAqpump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "GgBXMMKApMGKtSMwSU6Cp8Top4q7jXAHgUctNMnNpump"
+          }
+        ],
+        "leader_hint_token_address": "Cku1jXK5D69BYCNh62n74uaGN5LWZ8hXRAgGwhCYpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong animal meme presence with multiple tokens leveraging penguin and other animal-based memes for branding and community engagement.",
+        "leader_token": {
+          "token_symbol": "STP",
+          "token_name": "Save The Penguin",
+          "token_address": "k1EjBXNjFWm1pF76dsxZpafo4Gj13uNv7WfpZJhpump",
+          "usd_market_cap": 466796.13
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Penguin Meta' and 'Meme Revival' themes are currently dominant, with strong community engagement and viral adoption. 'Nostalgia and Retro Culture' and 'Philosophical and Existential Themes' are emerging as secondary themes, showing signs of growing traction. 'Animal Meme Culture' is fading slightly as newer themes gain more attention.",
+    "meta_rotation_note": "The Penguin Meta remains strong with multiple tokens leveraging penguin imagery and philosophical themes. Meme Rehashing is gaining traction with older memes being repurposed for crypto branding. Philosophical Meme Tokens are emerging as a new trend, while Nostalgia Revival and Animal Meme Tokens are fading slightly as newer themes gain attention.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Revival",
+        "meta_name": "Meme Rehashing",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 797369181.0
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 77628512.0
         }
       },
       {
-        "meta_name": "Animal Meme Culture",
+        "meta_name": "Nostalgia Revival",
         "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 295831040.0
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 77628512.0
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
+        "meta_name": "Philosophical Meme Tokens",
         "leader_token": {
-          "token_symbol": "2016",
-          "token_name": "2016 coin",
-          "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-          "usd_market_cap": 3398746.78
-        }
-      },
-      {
-        "meta_name": "Philosophical and Existential Themes",
-        "leader_token": {
-          "token_symbol": "FKH",
-          "token_name": "Flying Ketamine Horse",
-          "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk",
-          "usd_market_cap": 2129791.0
+          "token_symbol": "CAGE",
+          "token_name": "The cage is all I know",
+          "token_address": "GdCN7rQA5egc8SU2Bc2kKB2kMwELneQZJVSt8gGBpump",
+          "usd_market_cap": 486997.07
         }
       },
       {
         "meta_name": "Penguin Meta",
         "leader_token": {
-          "token_symbol": "PENGUINS",
-          "token_name": "Nietzschean Penguins",
-          "token_address": "Cku1jXK5D69BYCNh62n74uaGN5LWZ8hXRAgKwhCYpump",
-          "usd_market_cap": 266079.46
+          "token_symbol": "STP",
+          "token_name": "Save The Penguin",
+          "token_address": "k1EjBXNjFWm1pF76dsxZpafo4Gj13uNv7WfpZJhpump",
+          "usd_market_cap": 466796.13
+        }
+      },
+      {
+        "meta_name": "Animal Meme Tokens",
+        "leader_token": {
+          "token_symbol": "STP",
+          "token_name": "Save The Penguin",
+          "token_address": "k1EjBXNjFWm1pF76dsxZpafo4Gj13uNv7WfpZJhpump",
+          "usd_market_cap": 466796.13
         }
       }
     ]
