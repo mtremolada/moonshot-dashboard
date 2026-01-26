@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-26T00:59:52.243917Z",
+  "generated_at_utc": "2026-01-26T02:00:22.779681Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 197,
+  "token_context_count": 202,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 29 PVP group(s); excluding 49 token(s) from META prompt."
+    "Detected 30 PVP group(s); excluding 51 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 49,
+  "pvp_excluded_token_count": 51,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -697,6 +697,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "clod",
+      "tokens": [
+        {
+          "token_symbol": "Clod",
+          "token_name": "Clod",
+          "token_address": "CimKD8Lm7MzgLxwrs36A18aoRxJUGyR1YjEyp7sEpump",
+          "usd_market_cap": 10515.82,
+          "processed_at": "2026-01-25T18:32:01.254941Z"
+        },
+        {
+          "token_symbol": "CLOD",
+          "token_name": "Clod AI",
+          "token_address": "H3GFUeeaFSg1zF8FDMjkvjswS7ZsdUL637j3piwLBAGS",
+          "usd_market_cap": 64272.28,
+          "processed_at": "2026-01-26T01:02:34.548300Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "aegis",
       "tokens": [
         {
@@ -720,15 +740,67 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political and Social Commentary Tokens",
-        "description": "Tokens are emerging that leverage political and social commentary, often tied to real-world events or figures. These tokens use themes of activism, protest, and social justice to drive community engagement and narrative.",
+        "meta_name": "Crypto Meme Revival",
+        "description": "Tokens are reviving older crypto memes or referencing well-known crypto figures. This includes tokens like Doge-1, Bonk, and Fartcoin, which are leveraging the legacy of established crypto memes.",
         "defining_signals": [
-          "Tokens referencing real-world political events or figures",
-          "Community-driven narratives around social justice or activism",
-          "Strong ties to real-world movements or causes",
-          "Use of hashtags or phrases from social media campaigns",
-          "Incorporation of real-world activism into token descriptions",
-          "Strong community engagement around political themes"
+          "Revival of older crypto memes",
+          "Reference to well-known crypto figures or memes",
+          "Tokens with established meme histories",
+          "Community-driven narratives around crypto nostalgia",
+          "Tokens referencing crypto history or figures"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "DOGE1",
+            "token_name": "DOGE-1",
+            "token_address": "8HnCwo5eGkh3qkW9Rfy7hLNXvA28sRqvVpTDwqb4bonk"
+          },
+          {
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "FART",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          },
+          {
+            "token_symbol": "DOGE1",
+            "token_name": "DOGE-1 Satellite",
+            "token_address": "DpBzjtgGLF7QA9Ug3eUVGbnqa6j3jvYBn1XuQuktvfhm"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          }
+        ],
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong revival of older crypto memes with multiple tokens referencing established crypto figures and memes.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 769783754.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political and Social Commentary",
+        "description": "Tokens are leveraging political and social commentary themes, often referencing real-world events or figures. This includes tokens like Justice for Alex Pretti, Melania Meme, and The Black Whale.",
+        "defining_signals": [
+          "Political or social commentary in token descriptions",
+          "Reference to real-world events or figures",
+          "Tokens with activist or social justice themes",
+          "Community-driven narratives around political issues",
+          "Tokens referencing controversial or polarizing topics"
         ],
         "supporting_tokens": [
           {
@@ -742,9 +814,9 @@
             "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
           },
           {
-            "token_symbol": "AMELIA",
-            "token_name": "Amelia the Patriot",
-            "token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump"
+            "token_symbol": "BLACKSHEEP",
+            "token_name": "The Black Sheep",
+            "token_address": "8V29cUbz7MeF16rBJhkuGMxByZjfjDxcuqQsPb8AchmG"
           },
           {
             "token_symbol": "SIGNAL",
@@ -752,73 +824,100 @@
             "token_address": "9gEYJdpKAdVkXkyWCQi8gwvbKVqFctWnKPtyRrLtpump"
           },
           {
-            "token_symbol": "BUTWHY",
-            "token_name": "but why?",
-            "token_address": "5EvPAtkL5r8PhGedwafiTvDDLi5JoqZMyiSQFfUvpump"
+            "token_symbol": "EMPEROR",
+            "token_name": "Lonely Penguin",
+            "token_address": "9LEJnJQX5uLHGbvPSNiX1CXP4iovEwfvgqZCoGhppump"
           },
           {
-            "token_symbol": "BAG",
-            "token_name": "Just A Plastic Bag",
-            "token_address": "AFkCcbhyxY36DFGvd9fbtXH4vjTggahrNSDjYYZKpump"
-          },
-          {
-            "token_symbol": "LPPP",
-            "token_name": "Larry Pink's Pool Party",
-            "token_address": "444HXMkPeciUpqhecfCysVs7RcaxeM24VPMauQouBREV"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wZBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wZBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "AMELIA",
+            "token_name": "Amelia the Patriot",
+            "token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump"
           }
         ],
-        "leader_hint_token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnebaRxM1P",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Political and social commentary tokens are gaining traction, with 'Melania Meme' and 'Justice for Alex Pretti' showing strong community engagement and narrative depth.",
+        "leader_hint_token_address": "FxVL58r94P2SsBYi4eaSVSqX8kGpoj7gST2Hoiopump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong political and social commentary themes with multiple tokens referencing real-world events and figures.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 769783754.0
+          "token_symbol": "MELANIA",
+          "token_name": "Melania Meme",
+          "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+          "usd_market_cap": 156477586.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Penguin Themed Tokens",
-        "description": "Penguin-themed tokens are dominating the market, leveraging the cultural and meme significance of penguins from various sources including documentaries, internet memes, and pop culture. These tokens often tie into themes of loyalty, isolation, and absurdity, drawing from viral penguin narratives like the 'Nihilist Penguin' and 'Nietzschean Penguin'.",
+        "meta_name": "Animal and Nature Meme",
+        "description": "Tokens are leveraging animal and nature themes, often referencing specific animals or natural phenomena. This includes tokens like The White Whale, The Black Whale, and The Shoebill.",
         "defining_signals": [
-          "Tokens with penguin imagery or names referencing penguin species (e.g., King Penguin, Black Penguin)",
-          "Leverage of penguin-related memes from documentaries like Herzog’s 'Encounters at the End of the World'",
-          "Community-driven narratives around penguin loyalty or existential themes",
-          "Penguin as a symbol of isolation or absurdity in token descriptions",
-          "Penguin-centric viral stories (e.g., 'Lonely Penguin' or 'The White Penguin')",
-          "Penguin as a mascot for broader themes like climate change or conservation"
+          "Animal or nature references in token descriptions",
+          "Tokens referencing to specific animals or natural phenomena",
+          "Community-driven narratives around animals or nature",
+          "Tokens with animal imagery or names",
+          "Cultural references to animals or nature"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "cap",
-            "token_name": "cap",
-            "token_address": "6td9vBokn7L7ELewY26Cst4DKdFPEXkLB28Fybhox5Br"
+            "token_symbol": "WHITEWHALE",
+            "token_name": "The White Whale",
+            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+          },
+          {
+            "token_symbol": "BLACKWHALE",
+            "token_name": "The Black Whale",
+            "token_address": "8V29cUbz7MeF16rBJhkuGMxByZjfjDxcuqQsPb8AchmG"
+          },
+          {
+            "token_symbol": "SHOEBILL",
+            "token_name": "The Shoebill",
+            "token_address": "DRLJffxQMkPPxQVUNWC4B6UA5B5CSXMnHfuJKqAfpump"
+          },
+          {
+            "token_symbol": "PENGUINS",
+            "token_name": "Nietzschean Penguins",
+            "token_address": "Cku1jXK5D69BYCNh62n74uaGN5LW8hXRAgKwhCYpump"
+          },
+          {
+            "token_symbol": "FLAWD",
+            "token_name": "The Anti-Clawd",
+            "token_address": "3KiwTemp26MCduFdg6aF6twwfVQfwsWbXCyqF2dcpump"
+          },
+          {
+            "token_symbol": "CHONKMASTER",
+            "token_name": "Chonkmaster",
+            "token_address": "HYEqTqKZKZBr71j97EHfQhBn4uPiL7pvWvmeFs9aZfJAQ"
+          }
+        ],
+        "leader_hint_token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong animal and nature themes with multiple tokens referencing to specific animals or natural phenomena.",
+        "leader_token": {
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 34868706.95
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Penguin Meme",
+        "description": "Penguins are being used as a recurring meme theme across multiple tokens, often referencing cultural or philosophical narratives. This includes penguins as symbols of loyalty, existential questioning, or absurdity. The theme is particularly strong with tokens like Baby Pingu, The Black Penguin, and The White Narwhal.",
+        "defining_signals": [
+          "Penguins as symbols of loyalty or absurdity",
+          "Philosophical or existential themes tied to penguins",
+          "Cultural references to penguin documentaries or internet memes",
+          "Tokens with penguin imagery or names",
+          "Community-driven narratives around penguin characters"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "bPINGU",
+            "token_name": "Baby Pingu",
+            "token_address": "GN2iQMDCcDciuyke5JC8StFKU8U6hGZj4MhTvoyxrbonk"
+          },
+          {
+            "token_symbol": "BPENGU",
+            "token_name": "The Black Penguin",
+            "token_address": "GTbWsjDBiAs7NtmqsaQZ4Qfwdnwhsf2HdMKTaha4pump"
           },
           {
             "token_symbol": "NARWHAL",
@@ -826,59 +925,24 @@
             "token_address": "BXaYiGLnEDWmLQpXjyhYYjAbYdFBSnwhfDchnbfHpump"
           },
           {
-            "token_symbol": "PENGUIN2",
-            "token_name": "Nietzschean Penguin Friend",
-            "token_address": "439qfAYG8AL64rwNRVwhrMZtmDUFj72sFYrMgznopump"
-          },
-          {
-            "token_symbol": "BPengu",
-            "token_name": "The Black Penguin",
-            "token_address": "GTbWsjDBiAs7NtmqsaQZ4Qfwdnwhsf2HdMKTaha4pump"
-          },
-          {
-            "token_symbol": "EMPEROR",
-            "token_name": "Lonely Penguin",
-            "token_address": "9LEJnJQX5uLHGbvPSNiX1CXP4iovEwfvgqZCoGhppump"
-          },
-          {
             "token_symbol": "KINGPENGUIN",
             "token_name": "King Penguin",
             "token_address": "gYWHyDH7z3soHQ7REfexJsJHGNUJBaFDEAKKjjzpump"
           },
           {
+            "token_symbol": "PENGU",
+            "token_name": "Nietzschean Penguin Friend",
+            "token_address": "439qfAYG8AL64rwNRVwhrMZtmDUFj72sFYrMgznopump"
+          },
+          {
             "token_symbol": "PENGUS",
             "token_name": "Penguin of the United States",
             "token_address": "J1dU6PbhGYjYxYX6dBeqZxMgkFdsnEM2cnFEVxP1pump"
-          },
-          {
-            "token_symbol": "BLACKSHEEP",
-            "token_name": "The Black Sheep",
-            "token_address": "8V29cUbz7MeF16rBJhkuGMxByZjfjDxcuqQsPb8AchmG"
-          },
-          {
-            "token_symbol": "SHANNON",
-            "token_name": "Claude Shannon",
-            "token_address": "GDYKguadwhmcexFzK9adHjegJgHeFPZDo831p2p637"
-          },
-          {
-            "token_symbol": "ANTARCTA",
-            "token_name": "Antarctica",
-            "token_address": "66Cd6ieCYM4PKi3swrmegCLzFKPWhJUV4SsiBY4Apump"
-          },
-          {
-            "token_symbol": "BZPENGUIN",
-            "token_name": "Penguins are busy",
-            "token_address": "gPQxCaE9C9NcdfFMnYpRPY13DMgCxisesDFCFm1pump"
-          },
-          {
-            "token_symbol": "MPGA",
-            "token_name": "Make Penguin Great Again",
-            "token_address": "2Yb3VToPpKvFuNLqoLeVVvTt4o2dpjdd8TUqaXjDpump"
           }
         ],
-        "leader_hint_token_address": "66Cd6ieCYM4pkk3swrmegCLzFKPWhJUV4SsiBY4Apump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Penguin-themed tokens are highly concentrated in the dataset, with multiple tokens referencing penguin memes, documentaries, and cultural narratives. The market cap of 'Antarctica' and 'The White Narwhal' indicates strong community and meme traction.",
+        "leader_hint_token_address": "GN2iQMDCcDciuyke5JC8StFKU8U6hGZj4MhTvoyxrbonk",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong recurring theme with multiple tokens referencing penguin-related memes, philosophical themes, and cultural references.",
         "leader_token": {
           "token_symbol": "NARWHAL",
           "token_name": "The White Narwhal",
@@ -888,178 +952,63 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Nostalgia and Retro Culture Tokens",
-        "description": "Tokens are emerging that leverage nostalgia and retro culture, often referencing older internet memes, pop culture, or historical events. These tokens tap into the resurgence of interest in past internet trends and cultural artifacts.",
+        "meta_name": "Nihilist and Existential Meme",
+        "description": "Tokens are leveraging the 'Nihilist Penguin' meme and other existential themes. This includes tokens that reference philosophical ideas, absurdity, or existential questioning. Tokens like The Anti-Clawd and The Narrator are part of this theme.",
         "defining_signals": [
-          "Tokens referencing older internet memes or viral content",
-          "Leverage of retro pop culture references (e.g., 2010, 1990s)",
-          "Community-driven narratives around nostalgia",
-          "Use of retro aesthetics in token branding",
-          "Incorporation of historical events or figures into token descriptions",
-          "Strong ties to older meme formats or characters"
+          "Existential or nihilist themes in token descriptions",
+          "Philosophical references or quotes",
+          "Tokens referencing absurd or existential memes",
+          "Community-driven narratives around questioning or absurdity",
+          "Penguin or animal-based existential themes"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "2010",
-            "token_name": "2010 Coin",
-            "token_address": "H4AH57vbcGWrmm3E3ZXLkZgnadvjEmV4AeTs4hoRpump"
+            "token_symbol": "FLAWD",
+            "token_name": "The Anti-Clawd",
+            "token_address": "3KiwTemp26MCduFdg6aF6twwfVQfwsWbXCyqF2dcpump"
           },
           {
-            "token_symbol": "2016",
-            "token_name": "2016 coin",
-            "token_address": "EwEJ5R1im54MowvsG9YUkyfWRMV1qcRL21PumVd4pump"
+            "token_symbol": "BUTWHY",
+            "token_name": "but why?",
+            "token_address": "5EvPAtkL5r8PhGedwafiTvDDLi5JoqZMyiSQFfUvpump"
           },
           {
-            "token_symbol": "1",
-            "token_name": "1 coin can change your life",
-            "token_address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabononk"
+            "token_symbol": "NARWHAL",
+            "token_name": "The White Narwhal",
+            "token_address": "BXaYiGLnEDWmLQpXjyhYYjAbYdFBSnwhfDchnbfHpump"
           },
           {
-            "token_symbol": "DA1ZY",
-            "token_name": "da1zy",
-            "token_address": "BQMfwyw8ZkLzNjEyQnrwMVuV8gCQ5TbQoo1sETAjpump"
+            "token_symbol": "NARRATOR",
+            "token_name": "The Narrator",
+            "token_address": "G3orAqtqz6JbWKhktuYyuc9z34t3HCgBEkpJhxxWpump"
           },
           {
-            "token_symbol": "19",
-            "token_name": "Born in 19",
-            "token_address": "Fn8UCBRMAAu9ivmUv3Fzpxz4McnuqS8CKS15jQrpump"
-          },
-          {
-            "token_symbol": "1BTC",
-            "token_name": "The Road To One Bitcoin",
-            "token_address": "5i3EanBZznKSPfghjgGq1mCndf9WyyCXgPmubeABAGS"
-          },
-          {
-            "token_symbol": "1990",
-            "token_name": "1990s Nostalgia",
-            "token_address": "Fn8UCBRMAAZ9ivvUv3Fzpxz4McnuqS8CKK15jQrpump"
-          },
-          {
-            "token_symbol": "1995",
-            "token_name": "1995 Nostalgia",
-            "token_address": "Fn8UCBRMAAZ9ivvUv3Fzpxz4McnuqS8CKK15jQrpump"
-          },
-          {
-            "token_symbol": "1997",
-            "token_name": "1997 Nostalgia",
-            "token_address": "Fn8UCBRMAAZ9ivvUv3Fzpxz4McnuqS8CKK15jQrpump"
-          },
-          {
-            "token_symbol": "1998",
-            "token_name": "1998 Nostalgia",
-            "token_address": "Fn8UCBRMAAZ9ivvUv3Fzpxz4McnuqS8CKK15jQrpump"
-          },
-          {
-            "token_symbol": "1999",
-            "token_name": "1999 Nostalgia",
-            "token_address": "Fn8UCBRMAAZ9ivvUv3Fzpxz4McnuqS8CKK15jQrpump"
-          },
-          {
-            "token_symbol": "2000",
-            "token_name": "2000 Nostalgia",
-            "token_address": "Fn8UCBRMAAZ9ivvUv3Fzpxz4McnuqS8CKK15jQrpump"
-          }
-        ],
-        "leader_hint_token_address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNababonk",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Nostalgia and retro culture tokens are gaining traction, with '1 coin can change your life' and '2010 Coin' showing strong community engagement and narrative depth.",
-        "leader_token": {
-          "token_symbol": "DA1ZY",
-          "token_name": "da1zy",
-          "token_address": "BQMfwyw8ZkLzNjEyQnrwMVuV8gCQ5TbQoo1sETAjpump",
-          "usd_market_cap": 697866.34
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Season 2.0 Tokens",
-        "description": "Tokens are emerging under the 'Meme Season 2.0' umbrella, building on the success of the first wave of meme coins like Dogecoin and Shiba Inu. These tokens often have viral internet origins, are community-driven, and leverage humor or absurdity to drive adoption.",
-        "defining_signals": [
-          "Tokens with viral internet origins (e.g., TikTok, Reddit, or meme communities)",
-          "Community-driven narratives with strong meme culture ties",
-          "Absurd or humorous token names and descriptions",
-          "Leverage of existing meme formats or characters (e.g., 'Nihilist Penguin', 'Chad', 'Wojak')",
-          "Strong social media presence and engagement",
-          "Community-driven marketing and virality"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "cap",
-            "token_name": "cap",
-            "token_address": "6td9vBokn7L7ELewY26Cst4DKdFPEXkLB28Fybhox5Br"
-          },
-          {
-            "token_symbol": "IGLOO",
-            "token_name": "Igloocoin",
-            "token_address": "8VRg5e3FW333eEfyJ81HYN1zNUP4LobtJhnu5crMpump"
-          },
-          {
-            "token_symbol": "bPINGU",
-            "token_name": "Baby Pingu",
-            "token_address": "GN2iQMDCciuyke5JC8StFKU8U6hGZj4MhTvoyxrbonk"
-          },
-          {
-            "token_symbol": "RISKIT",
-            "token_name": "Risk It",
-            "token_address": "G5TvkdcDq7dZ1QSQSgdq5B1d2Tt7Q5UREATSFYLypump"
-          },
-          {
-            "token_symbol": "GABAGOOL",
-            "token_name": "The Gabagool",
-            "token_address": "8T5Kttew8UL9KGPGWSjfBaTmE997F7hcvH8zzKSypump"
-          },
-          {
-            "token_symbol": "JINJING",
-            "token_name": "Jinjing The Penguin",
-            "token_address": "8Zax2SBBy7PxYbKgS5NzyazBgy5pfPieMZfc2xXdpump"
-          },
-          {
-            "token_symbol": "SCOOBERT",
-            "token_name": "Scoobert",
-            "token_address": "84FVmZjwf9y1p45DRuD12Xnjc82C3q9ozt3Y2d4cpump"
-          },
-          {
-            "token_symbol": "COINY",
-            "token_name": "Coiny Sprite",
-            "token_address": "7AjYXHomGcZue5trab8sdtvWb3UGaoT24xay1jEPpump"
-          },
-          {
-            "token_symbol": "PENGUIN2",
-            "token_name": "Nietzschean Penguin Friend",
-            "token_address": "439qfAYG8AL64rwNRVwhrMZtmDUFj72sFYrMgznopump"
+            "token_symbol": "EMPEROR",
+            "token_name": "Friedrich Wilhelm Nietzsche",
+            "token_address": "8JVso3qvBkZoSZcuXZewmmBJNagYP9fY2VZFLuippump"
           },
           {
             "token_symbol": "EMPEROR",
             "token_name": "Lonely Penguin",
             "token_address": "9LEJnJQX5uLHGbvPSNiX1CXP4iovEwfvgqZCoGhppump"
-          },
-          {
-            "token_symbol": "KINGPENGUIN",
-            "token_name": "King Penguin",
-            "token_address": "gYWHyDH7z3soHQ7REfexJsJHGNUJBaFDEAKKjjzpump"
-          },
-          {
-            "token_symbol": "PENGUS",
-            "token_name": "Penguin of the United States",
-            "token_address": "J1dU6PbhGYjYxYX6dBeqZxMgkFdsnEM2cnFEVxP1pump"
           }
         ],
-        "leader_hint_token_address": "8Zax2SBBy7PxYbKgS5nzyazBgy5pfPieMZfc2xXdpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Tokens under 'Meme Season 2.0' are highly active and have strong community engagement. 'Jinjing The Penguin' and 'The Gabagool' show high market caps and viral potential.",
+        "leader_hint_token_address": "5EvPAtkL5r8PhGedwafiTvDDLi5JoqZMyiSQFfUvpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong philosophical and existential themes with multiple tokens referencing penguin-based existential memes and philosophical ideas.",
         "leader_token": {
-          "token_symbol": "COINY",
-          "token_name": "Coiny Sprite",
-          "token_address": "7AjYXHomGcZue5trab8sdtvWb3UGaoT24xay1jEPpump",
-          "usd_market_cap": 306842.13
+          "token_symbol": "NARWHAL",
+          "token_name": "The White Narwhal",
+          "token_address": "BXaYiGLnEDWmLQpXjyhYYjAbYdFBSnwhfDchnbfHpump",
+          "usd_market_cap": 1235491.65
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Penguin-themed tokens are currently the most dominant meta, with strong community engagement and viral potential. Meme Season 2.0 tokens are also gaining momentum, while political and social commentary tokens are emerging. Nostalgia and retro culture tokens are fading slightly but still have a niche following.",
+    "meta_rotation_note": "The 'Penguin Meme' and 'Nihilist and Existential Meme' are currently the most active METAs, showing strong community engagement and recurring themes. The 'Crypto Meme Revival' is also gaining traction, leveraging nostalgia for older crypto memes. The 'Political and Social Commentary' and 'Animal and Nature Meme' are emerging but are not as dominant as the others.",
     "meta_leaders": [
       {
-        "meta_name": "Political and Social Commentary Tokens",
+        "meta_name": "Crypto Meme Revival",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -1068,7 +1017,25 @@
         }
       },
       {
-        "meta_name": "Penguin Themed Tokens",
+        "meta_name": "Political and Social Commentary",
+        "leader_token": {
+          "token_symbol": "MELANIA",
+          "token_name": "Melania Meme",
+          "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+          "usd_market_cap": 156477586.0
+        }
+      },
+      {
+        "meta_name": "Animal and Nature Meme",
+        "leader_token": {
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 34868706.95
+        }
+      },
+      {
+        "meta_name": "Penguin Meme",
         "leader_token": {
           "token_symbol": "NARWHAL",
           "token_name": "The White Narwhal",
@@ -1077,21 +1044,12 @@
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Culture Tokens",
+        "meta_name": "Nihilist and Existential Meme",
         "leader_token": {
-          "token_symbol": "DA1ZY",
-          "token_name": "da1zy",
-          "token_address": "BQMfwyw8ZkLzNjEyQnrwMVuV8gCQ5TbQoo1sETAjpump",
-          "usd_market_cap": 697866.34
-        }
-      },
-      {
-        "meta_name": "Meme Season 2.0 Tokens",
-        "leader_token": {
-          "token_symbol": "COINY",
-          "token_name": "Coiny Sprite",
-          "token_address": "7AjYXHomGcZue5trab8sdtvWb3UGaoT24xay1jEPpump",
-          "usd_market_cap": 306842.13
+          "token_symbol": "NARWHAL",
+          "token_name": "The White Narwhal",
+          "token_address": "BXaYiGLnEDWmLQpXjyhYYjAbYdFBSnwhfDchnbfHpump",
+          "usd_market_cap": 1235491.65
         }
       }
     ]
