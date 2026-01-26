@@ -1,25 +1,18 @@
 {
-  "generated_at_utc": "2026-01-26T05:01:39.286159Z",
+  "generated_at_utc": "2026-01-26T06:02:26.544248Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 208,
+  "token_context_count": 209,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 30 PVP group(s); excluding 50 token(s) from META prompt."
+    "Detected 31 PVP group(s); excluding 52 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 50,
+  "pvp_excluded_token_count": 52,
   "pvp_report": [
     {
       "match_type": "token_name",
       "match_value": "mechahitler",
       "tokens": [
-        {
-          "token_symbol": "Mechahitler",
-          "token_name": "Mechahitler",
-          "token_address": "9He1uoAy4JVn5NGzGhokBLbhAvnEVLu1D9qFQRkMpump",
-          "usd_market_cap": 180846.6,
-          "processed_at": "2026-01-25T05:25:01.494838Z"
-        },
         {
           "token_symbol": "Mecha",
           "token_name": "MechaHitler",
@@ -40,6 +33,13 @@
           "token_address": "FhTAv3MARFESjbXpTAaSeqe4S4bixLce3w3eGw6vpump",
           "usd_market_cap": 7386.18,
           "processed_at": "2026-01-25T06:07:00.915602Z"
+        },
+        {
+          "token_symbol": "Mechahitler",
+          "token_name": "Mechahitler",
+          "token_address": "9He1uoAy4JVn5NGzGhokBLbhAvnEVLu1D9qFQRkMpump",
+          "usd_market_cap": 70046.01,
+          "processed_at": "2026-01-26T05:25:37.156163Z"
         }
       ]
     },
@@ -663,6 +663,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "goat",
+      "tokens": [
+        {
+          "token_symbol": "GOAT",
+          "token_name": "The Goat",
+          "token_address": "2HU4xRr2pfi5rrUQuseBZFn6nyzCv94Jd3UP7L82pump",
+          "usd_market_cap": 240872.28,
+          "processed_at": "2026-01-26T01:16:09.732141Z"
+        },
+        {
+          "token_symbol": "Goat",
+          "token_name": "First form of currency",
+          "token_address": "Eo27b2DABqQjYAU28KqYE7ybMX3sPokFgTQFJmdepump",
+          "usd_market_cap": 154480.18,
+          "processed_at": "2026-01-26T05:02:42.351002Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "zoin",
       "tokens": [
         {
@@ -726,242 +746,120 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI and Memes Fusion",
-        "description": "Tokens that blend AI culture with meme themes, often using AI as a narrative or utility element. These tokens leverage AI's growing influence in internet culture and its role in generating or interacting with memes.",
+        "meta_name": "Nostalgia and Retro",
+        "description": "Tokens that reference retro or nostalgic themes, such as 90s culture, vintage media, or retro aesthetics. This includes tokens that leverage nostalgia for community engagement.",
         "defining_signals": [
-          "AI-related utility or narrative in token descriptions",
-          "Meme themes tied to AI characters or concepts",
-          "Community-driven AI meme culture",
-          "Use of AI as a central meme or narrative element",
-          "References to AI-generated or AI-driven meme content"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "AI",
-            "token_name": "Autistic Inu",
-            "token_address": "86gK1zQ4beNScD2HE5Gz35wbRCvdSsgurxXJDV2zpump"
-          },
-          {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "EuVEsEEYwvuN3sz1LSpRgy8gzYufuiecAGHck6sQpump"
-          },
-          {
-            "token_symbol": "CLAWD",
-            "token_name": "Clawdbot",
-            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
-          },
-          {
-            "token_symbol": "GHOST",
-            "token_name": "GhostwareOS",
-            "token_address": "bbKPiLM9KjdJW7oQSKt99RVWcZddF6sEHRKnwqeBGHST"
-          },
-          {
-            "token_symbol": "SPLAT",
-            "token_name": "Splatworld",
-            "token_address": "6wcPQWr9zQgzkaieGaWq9vZaZJMC7xWRtVPm8ZKWpump"
-          },
-          {
-            "token_symbol": "SHY",
-            "token_name": "Sky The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUj1jz7pump"
-          }
-        ],
-        "leader_hint_token_address": "86gK1zQ4beNScD2HE5Gz35wbRCvdSsgurxXJDV2zpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong AI meme culture, with multiple tokens leveraging AI as a central theme or utility.",
-        "leader_token": {
-          "token_symbol": "clawd",
-          "token_name": "clawdbot",
-          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
-          "usd_market_cap": 8851949.87
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Crypto Fusion",
-        "description": "Tokens that blend AI technology with crypto themes, often using AI as a core utility or narrative element. These tokens leverage the growing intersection of AI and blockchain to create innovative and community-driven projects.",
-        "defining_signals": [
-          "AI-related utility or narrative in token descriptions",
-          "Community-driven AI crypto narratives",
-          "Use of AI as a central theme or utility element",
-          "References to AI-generated or AI-driven crypto content",
-          "Meme-based AI crypto culture"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "AI",
-            "token_name": "Autistic Inu",
-            "token_address": "86gK1zQ4beNScD2HE5Gz35wbRCvdSsgurxXJDV2zpump"
-          },
-          {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "EuVEsEEYwvuN3sz1LSpRgy8gzYufuiecAGHck6sQpump"
-          },
-          {
-            "token_symbol": "CLAWD",
-            "token_name": "Clawdbot",
-            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
-          },
-          {
-            "token_symbol": "GHOST",
-            "token_name": "GhostwareOS",
-            "token_address": "bbKPiLM9KjdJW7oQSKt99RVWcZddF6sEHRKnwqeBGHST"
-          },
-          {
-            "token_symbol": "SPLAT",
-            "token_name": "Splatworld",
-            "token_address": "6wcPQWr9zQgzkaieGaWqT9vZaZJMC7vWRtVPm8ZKWpump"
-          },
-          {
-            "token_symbol": "SKY",
-            "token_name": "Sky The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuTj1jz7pump"
-          }
-        ],
-        "leader_hint_token_address": "86gK1zQ4beNScD2HE5Gz35wbRCvdSsgurxXJDV2zpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong AI and crypto fusion themes, with multiple tokens leveraging AI as a central theme or utility.",
-        "leader_token": {
-          "token_symbol": "clawd",
-          "token_name": "clawdbot",
-          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
-          "usd_market_cap": 8851949.87
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Retro Culture",
-        "description": "Tokens that leverage nostalgia and retro culture, often referencing past internet trends, memes, or cultural artifacts. These tokens tap into the emotional resonance of nostalgia to build community and engagement.",
-        "defining_signals": [
-          "References to past internet trends or memes",
-          "Use of retro or nostalgic themes in token descriptions",
-          "Community-driven nostalgia-based narratives",
-          "Leveraging retro culture for community engagement",
-          "Meme-based nostalgia in token lore"
+          "Tokens referencing 90s or early 2000s internet culture.",
+          "Tokens using retro aesthetics or vintage media references.",
+          "Tokens leveraging nostalgia for community identity."
         ],
         "supporting_tokens": [
           {
             "token_symbol": "2010",
             "token_name": "2010 Coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
+            "token_address": "H4AH57vbcGWrmm3E3ZXLkZgnadvjEmV4AeTs4hoRpRpump"
           },
           {
-            "token_symbol": "2016",
-            "token_name": "2016 Coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
+            "token_symbol": "19",
+            "token_name": "Born in 19",
+            "token_address": "Fn8UCBRMAAu9ivmUv3Fzpxz4McnuqS8CKS15jQrppump"
           },
           {
-            "token_symbol": "2020",
-            "token_name": "2020 Coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
+            "token_symbol": "DA1ZY",
+            "token_name": "da1zy",
+            "token_address": "BQMfwyw8ZkLzNjEyQnrwMaV8gCQ5TbQoo1sETAjpump"
           },
           {
-            "token_symbol": "2025",
-            "token_name": "2025 Coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
+            "token_symbol": "1",
+            "token_name": "1 coin can change your life",
+            "token_address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpda7Nababonk"
           },
           {
-            "token_symbol": "2026",
-            "token_name": "2026 Coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
-          },
-          {
-            "token_symbol": "2027",
-            "token_name": "2027 Coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
-          }
-        ],
-        "leader_hint_token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-        "confidence_0_100": 65,
-        "confidence_rationale": "Strong nostalgic and retro themes, with multiple tokens referencing past internet trends and cultural artifacts.",
-        "leader_token": {
-          "token_symbol": "2016",
-          "token_name": "2016 coin",
-          "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-          "usd_market_cap": 2142142.76
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political and Cultural Satire",
-        "description": "Tokens that use political or cultural satire as a core theme, often referencing real-world events or figures in a humorous or critical way. These tokens leverage the satirical nature of internet culture to create community-driven narratives.",
-        "defining_signals": [
-          "References to political figures or events",
-          "Satirical or humorous take on political or cultural themes",
-          "Community-driven narratives around political memes",
-          "Use of political or cultural satire in token descriptions",
-          "Meme-based political commentary in token lore"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MELANIA",
-            "token_name": "Melania Meme",
-            "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRbonk"
-          },
-          {
-            "token_symbol": "AMERICA",
-            "token_name": "American is Beautiful Country",
-            "token_address": "VoV7MP5P87cazN5RcEDSBKqm98ix9KYwanns49Vpump"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUu9wDnSpump"
-          },
-          {
-            "token_symbol": "RIP",
-            "token_name": "Something has been ruined",
-            "token_addressdress": "6g5sDC4UDHNx2P56m2G1dMeHq7GzAs1b1vdrWnvpump"
+            "token_symbol": "1BTC",
+            "token_name": "The Road To One Bitcoin",
+            "token_address": "5i3EanBZznkSPfghjgGq1mCndf9WyyCXgPmubeABAGG"
           },
           {
             "token_symbol": "BANANA",
             "token_name": "Banana",
-            "token_address": "7MDApufGNAKDDcM3hrUpUpUfZ8jcaXdaoSZy1sQdRpump"
-          },
-          {
-            "token_symbol": "ARMSTRONG",
-            "token_name": "Brian Armstrong",
-            "token_address": "9YwoekrqzGdJUpr5QnhEJwWWRg4Qf4MUyqQFQ9UCpump"
+            "token_address": "BANANA"
           }
         ],
-        "leader_hint_token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRbonk",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong political and cultural satire themes, with multiple tokens referencing political figures and events.",
+        "leader_hint_token_address": "H4AH57vbcGWrmm3E3ZXLkZgnadvjEmV4AeTs4hoRpRpump",
+        "confidence_0_100": 65,
+        "confidence_rationale": "Tokens like '2010 Coin' and 'Born in 19' clearly reference older internet culture and nostalgia. The revival of older memes and historical references is a strong and recurring theme.",
         "leader_token": {
-          "token_symbol": "ARMSTRONG",
-          "token_name": "Brian Armstrong",
-          "token_address": "9YwoekrqzGdJUpr5QnhEJwWWRg4Qf4MUyqQFQ9UCpump",
-          "usd_market_cap": 299034.34
+          "token_symbol": "1",
+          "token_name": "1 coin can change your life",
+          "token_address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk",
+          "usd_market_cap": 9505327.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Penguin Meme Revival",
-        "description": "A recurring theme where penguin-related memes from internet culture are repurposed into crypto tokens. These include references to 'Nihilist Penguin,' 'Lonely Penguin,' and 'Penguin of the United States,' leveraging the penguin's symbolic and meme-driven cultural presence.",
+        "meta_name": "AI and Automation",
+        "description": "Tokens centered around artificial intelligence, automation, and AI agents. This includes tokens that leverage AI for productivity, governance, or creative purposes.",
         "defining_signals": [
-          "Recurring penguin imagery in token descriptions",
-          "References to penguin memes from Herzog documentaries",
-          "Community-driven narratives around penguin symbolism",
-          "Use of penguin as a metaphor for isolation or existential themes",
-          "Token names and descriptions tied to viral penguin content"
+          "Tokens tied to AI agents or AI-driven productivity tools.",
+          "Tokens referencing AI-generated content or AI-assisted workflows.",
+          "Tokens emphasizing automation, code execution, or AI-driven governance."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PENGU",
+            "token_symbol": "AI",
+            "token_name": "Autistic Inu",
+            "token_address": "86gK1zQ4beNScD2HE5Gz35wbRCvdSsgurxXJDV2zpump"
+          },
+          {
+            "token_symbol": "CLAWD",
+            "token_name": "Clawdbbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+          },
+          {
+            "token_symbol": "ECC",
+            "token_name": "Everything Claude Code",
+            "token_address": "5pXCgix5omo4SLU6f2JcGUGhxMBih6PxcF6RfabsBAG"
+          },
+          {
+            "token_symbol": "OPAL",
+            "token_name": "Opal",
+            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
+          },
+          {
+            "token_symbol": "Sig",
+            "token_name": "Niggabase Coin",
+            "token_address": "6RWHtpNLZywKN3xpuJNTNj8XAk6Tqc7z9559ahGopump"
+          },
+          {
+            "token_symbol": "Sir",
+            "token_name": "Sirfish",
+            "token_address": "GaZQZMjE78rsDruEirGWpsuS89eWCwkYvEeqR2cpump"
+          }
+        ],
+        "leader_hint_token_address": "Hoi9Lo8s2pp7EM9mv9bSjQ3aSB7ijyS238sTqQjbpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens like 'Clawdbot' and 'Everything Claude Code' are strong indicators of the AI and automation theme. The focus on AI agents and productivity tools is a clear and emerging trend.",
+        "leader_token": {
+          "token_symbol": "clawd",
+          "token_name": "clawdbot",
+          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
+          "usd_market_cap": 8851949.87
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Penguin Themed",
+        "description": "A recurring theme centered around penguins, leveraging various cultural references and memes related to penguins. This includes political satire, viral internet memes, and historical or fictional penguin narratives.",
+        "defining_signals": [
+          "Tokens referencing penguin memes like 'Nihilist Penguin' or 'Penguin Tariff' from political satire.",
+          "Tokens using penguin imagery as a symbol of isolation, absurdity, or community identity.",
+          "Tokens tied to rare or symbolic penguin sightings or fictional narratives, such as the 'Black Penguin' or 'Lonely Penguin'."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "PENGUS",
             "token_name": "Penguin of the United States",
             "token_address": "J1dU6PbhGYjYxYX6dBeqZxMgkFdsnEM2cnFEVxP1pump"
-          },
-          {
-            "token_symbol": "EMPEROR",
-            "token_name": "Lonely Penguin",
-            "token_address": "9LEJnJQX5uLHGbvPSNiX1CXP4iovEwfvgqZCoGhppump"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguins",
-            "token_address": "Cku1jXK5D69BYCNh62n74uaGN5LWZ8hXRAgKwhCYpump"
           },
           {
             "token_symbol": "BPENGU",
@@ -971,30 +869,151 @@
           {
             "token_symbol": "PENGUIN2",
             "token_name": "Nietzschean Penguin Friend",
-            "token_address": "439qfayG8AL64rwNRVwhrMZtmDUFj72sFYrMgznopump"
+            "token_address": "439qfAYG8AL64rwNRVwhrMZtmDUFj72sFYrMgznopump"
           },
           {
-            "token_symbol": "SHOEBILL",
-            "token_name": "THE SHOEBILL",
-            "token_address": "DRLJffxQMkPPxQVUNWC4B6UA5B5CSXMnHfuJKqAfpump"
+            "token_symbol": "BZPenguin",
+            "token_name": "Penguins are busy",
+            "token_address": "gPQxCaE9C9NcdfFMnYpRPY13DMgCxisesDFCFm1pump"
+          },
+          {
+            "token_symbol": "EMPEROR",
+            "token_name": "Lonely Penguin",
+            "token_address": "9LEJnJQX5uLHGbvPSNiX1CXP4iovEwfvgqZCoGhppump"
+          },
+          {
+            "token_symbol": "APENGUIN",
+            "token_name": "American Penguin",
+            "token_address": "7zoAbtCmd59H3M4dgyqQoiCQK19cV3AdkEXcKMpapump"
           }
         ],
-        "leader_hint_token_address": "J1dU6PbhGYjYxYX6dBeqZxMgkFdsnEM2cnFEVxP1pump",
+        "leader_hint_token_address": "GTbWsjDBiAs7NtmqsaQZ4Qfwdnwhsf2HdMKTaha4pump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong cultural references to penguin memes, including 'Nihilist Penguin' and 'Lonely Penguin,' with multiple tokens leveraging the same imagery and themes.",
+        "confidence_rationale": "Multiple tokens reference penguin memes and narratives, including political satire, rare sightings, and philosophical themes. The 'Black Penguin' and 'Nietzschean Penguin' tokens have strong cultural ties and significant market caps.",
         "leader_token": {
-          "token_symbol": "SHOEBILL",
-          "token_name": "THE SHOEBILL",
-          "token_address": "DRLJffxQMkPPxQVUNWC4B6UA5B5CSXMnHfuJKqAfpump",
-          "usd_market_cap": 235470.9
+          "token_symbol": "BZPenguin",
+          "token_name": "Penguins are busy",
+          "token_address": "gPQxCaE9C9NcdfFMnYpRPY13DMgCxisesDFCFm1pump",
+          "usd_market_cap": 342255.81
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Revival",
+        "description": "A trend where older memes or cultural references are repurposed for new tokens. This includes reviving internet slang, viral videos, or historical references to create a sense of nostalgia or familiarity.",
+        "defining_signals": [
+          "Tokens referencing older memes or viral content from the 2010s or earlier.",
+          "Tokens using historical or literary references that have gained new life in internet culture.",
+          "Tokens leveraging nostalgia-driven themes, such as '2010' or '1990s' references."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "2010",
+            "token_name": "2010 Coin",
+            "token_address": "H4AH57vbcGWrmm3E3ZXLkZgnadvjEmV4AeTs4hoRpump"
+          },
+          {
+            "token_symbol": "19",
+            "token_name": "Born in 19",
+            "token_address": "Fn8UCBRMAAuK9ivmUv3Fzpxz4McnuqS8CKS15jQrpump"
+          },
+          {
+            "token_symbol": "DA1ZY",
+            "token_name": "da1zy",
+            "token_address": "BQMfwyw8ZkLzNjEyQnrwMVV8gCQ5TbQoo1sETAjpump"
+          },
+          {
+            "token_symbol": "BANANA",
+            "token_name": "Banana",
+            "token_address": "BANANA"
+          },
+          {
+            "token_symbol": "1",
+            "token_name": "1 coin can change your life",
+            "token_address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7Nabononk"
+          },
+          {
+            "token_symbol": "1BTC",
+            "token_name": "The RoadTo1Bitcoin",
+            "token_address": "5i3EanBZznKSPfghjgGq1mCndfj9WyyCXgPmubeABAGG"
+          }
+        ],
+        "leader_hint_token_address": "H4AH57vbcGWrmm3E3ZXLkZgnadvjEmV4AeTs4hoRpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Tokens like '2010 Coin' and 'Born in 19' clearly reference older internet culture and nostalgia. The revival of older memes and historical references is a strong and recurring theme.",
+        "leader_token": {
+          "token_symbol": "19",
+          "token_name": "Born in 19",
+          "token_address": "Fn8UCBRMAAuK9ivmUv3Fzpxz4McnuqS8CKS15jQrpump",
+          "usd_market_cap": 293475.36
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political and Satirical",
+        "description": "Tokens referencing political figures, political events, or satirical commentary on current affairs. This includes tokens that leverage political memes or commentary for community engagement.",
+        "defiding_signals": [
+          "Tokens referencing political figures or events, such as 'Melania Trump' or 'Barron Meme'.",
+          "Tokens using political satire or commentary as a core theme.",
+          "Tokens leveraging political memes or viral political content."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "MELANIA",
+            "token_name": "Melania Meme",
+            "token_address": "FUAfBo2j6gB4Z4LfZkqSZgzNucisEHqnNebaRxXpump"
+          },
+          {
+            "token_symbol": "BARRON",
+            "token_name": "Barron Meme",
+            "token_address": "Av3cLhrHypqqh5VNqgmASeCGKbPGM8L2teNRuhH3bonk"
+          },
+          {
+            "token_symbol": "AMERIKA",
+            "token_name": "American is Beautiful Country",
+            "token_address": "VoV7MP5P87cazN5RcEDSBKqm98ix9KYwanns49V9pump"
+          },
+          {
+            "token_symbol": "MPGA",
+            "token_name": "Make PenguinGreatAgain",
+            "token_address": "2Yb3VToPpKvFuNLqoLeVVvTt4odpjdd8TUqaXjDpump"
+          },
+          {
+            "token_symbol": "RICHARD",
+            "token_name": "Richard Russell",
+            "token_address": "73NE3Bruqm4yRsQeUapoFcy5363XmTqKFqc8QZcspump"
+          },
+          {
+            "token_symbol": "BANANA",
+            "token_name": "Banana",
+            "token_address": "BANANA"
+          }
+        ],
+        "leader_hint_token_address": "FUAfBo2an6gB4Z4LfZkqSZgzNucisEHqnNebaRrXpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens like 'Melania Meme' and 'Barron Meme' are strong political references. The theme is consistent and growing, with tokens leveraging political satire and commentary.",
+        "leader_token": {
+          "token_symbol": "Skyking",
+          "token_name": "Richard Russell",
+          "token_address": "73NE3Bruqm4yRsQeUapoFcy5363XmTqKFqc8QZcspump",
+          "usd_market_cap": 16422.02
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Penguin Meme Revival' and 'AI and Memes Fusion' METAs are currently the most active, with strong community engagement and cultural references. The 'Political and Cultural Satire' and 'Nostalgia and Retro Culture' METAs are showing signs of fading as newer AI and penguin-themed tokens gain traction.",
+    "meta_rotation_note": "The 'Penguin Themed' and 'Meme Revival' METAs are currently the most active, with strong community engagement and market presence. 'AI and Automation' is emerging as a new trend, gaining traction with tokens leveraging AI for productivity and governance. 'Political and Satirical' and 'Nostalgia and Retro' are also showing signs of growth, indicating a shift towards more thematic and community-driven tokens.",
     "meta_leaders": [
       {
-        "meta_name": "AI and Memes Fusion",
+        "meta_name": "Nostalgia and Retro",
+        "leader_token": {
+          "token_symbol": "1",
+          "token_name": "1 coin can change your life",
+          "token_address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk",
+          "usd_market_cap": 9505327.0
+        }
+      },
+      {
+        "meta_name": "AI and Automation",
         "leader_token": {
           "token_symbol": "clawd",
           "token_name": "clawdbot",
@@ -1003,39 +1022,30 @@
         }
       },
       {
-        "meta_name": "AI and Crypto Fusion",
+        "meta_name": "Penguin Themed",
         "leader_token": {
-          "token_symbol": "clawd",
-          "token_name": "clawdbot",
-          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
-          "usd_market_cap": 8851949.87
+          "token_symbol": "BZPenguin",
+          "token_name": "Penguins are busy",
+          "token_address": "gPQxCaE9C9NcdfFMnYpRPY13DMgCxisesDFCFm1pump",
+          "usd_market_cap": 342255.81
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
+        "meta_name": "Meme Revival",
         "leader_token": {
-          "token_symbol": "2016",
-          "token_name": "2016 coin",
-          "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-          "usd_market_cap": 2142142.76
+          "token_symbol": "19",
+          "token_name": "Born in 19",
+          "token_address": "Fn8UCBRMAAuK9ivmUv3Fzpxz4McnuqS8CKS15jQrpump",
+          "usd_market_cap": 293475.36
         }
       },
       {
-        "meta_name": "Political and Cultural Satire",
+        "meta_name": "Political and Satirical",
         "leader_token": {
-          "token_symbol": "ARMSTRONG",
-          "token_name": "Brian Armstrong",
-          "token_address": "9YwoekrqzGdJUpr5QnhEJwWWRg4Qf4MUyqQFQ9UCpump",
-          "usd_market_cap": 299034.34
-        }
-      },
-      {
-        "meta_name": "Penguin Meme Revival",
-        "leader_token": {
-          "token_symbol": "SHOEBILL",
-          "token_name": "THE SHOEBILL",
-          "token_address": "DRLJffxQMkPPxQVUNWC4B6UA5B5CSXMnHfuJKqAfpump",
-          "usd_market_cap": 235470.9
+          "token_symbol": "Skyking",
+          "token_name": "Richard Russell",
+          "token_address": "73NE3Bruqm4yRsQeUapoFcy5363XmTqKFqc8QZcspump",
+          "usd_market_cap": 16422.02
         }
       }
     ]
