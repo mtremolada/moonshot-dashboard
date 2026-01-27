@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-27T14:02:50.234259Z",
+  "generated_at_utc": "2026-01-27T15:03:46.482049Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 227,
+  "token_context_count": 226,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 26 PVP group(s); excluding 49 token(s) from META prompt."
+    "Detected 29 PVP group(s); excluding 53 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 49,
+  "pvp_excluded_token_count": 53,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -255,6 +255,26 @@
           "token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump",
           "usd_market_cap": 249737.83,
           "processed_at": "2026-01-27T12:02:03.195554Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "ryanair",
+      "tokens": [
+        {
+          "token_symbol": "RYAN",
+          "token_name": "ryanair",
+          "token_address": "5bbfHiDURmxCTJR7BjcumaoBsKRhtruUqw8FiJ5UM8My",
+          "usd_market_cap": 135971.83,
+          "processed_at": "2026-01-27T14:37:50.031290Z"
+        },
+        {
+          "token_symbol": "RYAN",
+          "token_name": "ryanair",
+          "token_address": "4S3zJ1ufRfWfBVL5QFCPvs9r6pe3vzuLbvMMKWHwBAGS",
+          "usd_market_cap": 170038.44,
+          "processed_at": "2026-01-27T14:53:38.836817Z"
         }
       ]
     },
@@ -575,6 +595,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "silverinu",
+      "tokens": [
+        {
+          "token_symbol": "SILVERINU",
+          "token_name": "silver inu",
+          "token_address": "HMc4QzqyULo11uSGnj9NvwHrTwAAjXbDWdXqnXzq4a8B",
+          "usd_market_cap": 110636.97,
+          "processed_at": "2026-01-27T05:47:01.431886Z"
+        },
+        {
+          "token_symbol": "SILVERINU",
+          "token_name": "SILVERINU",
+          "token_address": "BPvpvM1nWzmqy9Atkd76V7wuX3QXh2HYxcb7xR7Jpump",
+          "usd_market_cap": 1211449.36,
+          "processed_at": "2026-01-27T14:48:36.663310Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "molty",
       "tokens": [
         {
@@ -626,147 +666,119 @@
           "processed_at": "2026-01-27T13:05:28.617242Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "ryan",
+      "tokens": [
+        {
+          "token_symbol": "RYAN",
+          "token_name": "ryanair",
+          "token_address": "5bbfHiDURmxCTJR7BjcumaoBsKRhtruUqw8FiJ5UM8My",
+          "usd_market_cap": 135971.83,
+          "processed_at": "2026-01-27T14:37:50.031290Z"
+        },
+        {
+          "token_symbol": "RYAN",
+          "token_name": "ryanair",
+          "token_address": "4S3zJ1ufRfWfBVL5QFCPvs9r6pe3vzuLbvMMKWHwBAGS",
+          "usd_market_cap": 170038.44,
+          "processed_at": "2026-01-27T14:53:38.836817Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Crypto Parody of Real-World Figures",
-        "description": "Tokens mocking or repackaging real-world celebrities/politicians as crypto memes, leveraging existing internet ridicule of public figures.",
+        "meta_name": "Penguin Themed",
+        "description": "A recurring theme in the crypto space where tokens are inspired by penguin imagery and narratives. This includes references to penguins as symbols of resilience, existential themes, and community-driven projects.",
         "defining_signals": [
-          "Direct use of public figures' names/images",
-          "Satirical take on political statements",
-          "Meme templates from existing figure ridicule",
-          "Cross-platform meme distribution (X/TikTok)",
-          "Token narratives mirroring figure's controversies"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "TRUMP",
-            "token_name": "Official TRUMP",
-            "token_address": "TRUMP_ADDRESS"
-          },
-          {
-            "token_symbol": "MELANIA",
-            "token_name": "Melania Meme",
-            "token_address": "MELANIA_ADDRESS"
-          },
-          {
-            "token_symbol": "BIDEN",
-            "token_name": "Biden Meme",
-            "token_address": "BIDEN_ADDRESS"
-          },
-          {
-            "token_symbol": "MACRON",
-            "token_name": "Macron's Neck",
-            "token_address": "MACRON_ADDRESS"
-          },
-          {
-            "token_symbol": "OBAMWICH",
-            "token_name": "grilled cheese obama sandwich",
-            "token_address": "OBAMWICH_ADDRESS"
-          }
-        ],
-        "leader_hint_token_address": "TRUMP_ADDRESS",
-        "confidence_0_100": 76,
-        "confidence_rationale": "Established meme templates for political ridicule (Trump, Macron) with active social media presence",
-        "leader_token": {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 961401603.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Penguin Meme Revival",
-        "description": "A resurgence of penguin-themed tokens leveraging existing internet memes and cultural references, including nihilist penguin walks, Antarctic metaphors, and meme characterizations.",
-        "defining_signals": [
-          "Nihilist Penguin existential meme (2026 TikTok trend)",
-          "Antarctic isolation/coldness symbolism",
-          "Penguin-as-meme-character (e.g., 'penguin going to the moon')",
-          "Cross-platform TikTok/Reddit meme templates",
-          "Penguin-as-philosophical-figure narratives"
+          "Tokens with penguin-related names or themes",
+          "Existential or philosophical narratives involving penguins",
+          "Community-driven projects with penguin motifs",
+          "Meme-based tokens referencing penguin imagery",
+          "Tokens leveraging penguin symbolism for market appeal"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "PENGUIN",
             "token_name": "Nietzschean Penguin",
-            "token_address": "PENGUIN_ADDRESS"
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "CPENG",
-            "token_name": "Club Penguin",
-            "token_address": "CPENG_ADDRESS"
+            "token_symbol": "PENG",
+            "token_name": "Project Metals",
+            "token_address": "6LWDxUU4A5mzaK4DLaQsXtADg1yAQr8imszxJZfXpump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Penguins are busy",
+            "token_address": "gPQxCaE9C9NcdfFMnYpRPY13DMgCxisesDFCFm1pump"
+          },
+          {
+            "token_symbol": "PENG",
+            "token_name": "Project Metals",
+            "token_address": "6LWDxUU4A5mzaK4DLaQsXtADg1yAQr8imszxJZfXpump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          }
+        ],
+        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Multiple tokens with penguin themes and narratives are emerginging, indicating a strong and recurring pattern in the market.",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 112413561.04
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme-Driven Tokens",
+        "description": "Tokens that are inspired by or repurpose existing internet memes, often leveraging viral content or cultural references to drive community engagement and speculative interest.",
+        "defining_signals": [
+          "Tokenss referencing viral memes or internet slang",
+          "Community-driven projects with meme-based branding",
+          "Tokens leveraging humor or absurdity for market appeal",
+          "Meme-based narratives with no direct crypto origin",
+          "Tokens with staged descriptions referencing viral content"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BAG",
+            "token_name": "Just A Plastic Bag",
+            "token_address": "AFkCcbhyxY36DFGvd9fbtX4vjTggahrNSDjYYZKpump"
           },
           {
             "token_symbol": "BZPenguin",
             "token_name": "Penguins are busy",
-            "token_address": "BZPENGUIN_ADDRESS"
+            "token_address": "gPQxCaE9C9NcdfFMnYpRPY13DMgCxisesDFCFm1pump"
           },
-          {
-            "token_symbol": "PENG",
-            "token_name": "Penguin",
-            "token_address": "PENG_ADDRESS"
-          },
-          {
-            "token_symbol": "PENGID",
-            "token_name": "PENG ID",
-            "token_address": "PENGID_ADDRESS"
-          }
-        ],
-        "leader_hint_token_address": "PENGUIN_ADDRESS",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong cultural ties to 2026 TikTok/Reddit penguin existentialism trend and multiple tokens repurposing established penguin meme DNA",
-        "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 112413561.04
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Existential Crypto Nihilism",
-        "description": "Tokens embracing philosophical nihilism themes, often using penguin/mountain metaphors and existential dread aesthetics.",
-        "defining_signals": [
-          "Existential crisis-as-meme framing",
-          "Penguin/mountain visual motifs",
-          "Philosophical nihilism references",
-          "Dark humor about crypto investing",
-          "Cross-platform existential meme distribution"
-        ],
-        "supporting_tokens": [
           {
             "token_symbol": "PENGUIN",
             "token_name": "Nietzschean Penguin",
-            "token_address": "PENGUIN_ADDRESS"
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "VOID",
-            "token_name": "Crypto Void",
-            "token_address": "VOID_ADDRESS"
+            "token_symbol": "PENG",
+            "token_name": "Project Metals",
+            "token_address": "6LWDxUU4A5mzaK4DLaQsXtADg1yAQr8imszxJZfXpump"
           },
           {
-            "token_symbol": "DREAD",
-            "token_name": "Existential Dread",
-            "token_address": "DREAD_ADDRESS"
-          },
-          {
-            "token_symbol": "ABYSS",
-            "token_name": "Crypto Abyss",
-            "token_address": "ABYSS_ADDRESS"
-          },
-          {
-            "token_symbol": "VOIDCOIN",
-            "token_name": "The Void Coin",
-            "token_address": "VOIDCOIN_ADDRESS"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           }
         ],
-        "leader_hint_token_address": "PENGUIN_ADDRESS",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong cultural ties to 2026 penguin existentialism trend with clear philosophical underpinnings",
+        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Multiple tokens are leveraging meme-based narratives, indicating a strong and recurring pattern in the market.",
         "leader_token": {
           "token_symbol": "PENGUIN",
           "token_name": "Nietzschean Penguin",
@@ -776,67 +788,58 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Animal-Based Meme Finance",
-        "description": "Tokens using anthropomorphized animals as meme characters, leveraging existing animal meme DNA from internet culture.",
+        "meta_name": "AI and Automation",
+        "description": "Tokens that are inspired by or repurpose existing internet memes, often leveraging viral content or cultural references to drive community engagement and speculative interest.",
         "defining_signals": [
-          "Animal character as central meme figure",
-          "Use of animal behavior as metaphor",
-          "Existing animal meme template repurposing",
-          "Cross-platform animal meme distribution",
-          "Satirical take on animal traits"
+          "Tokens referencing viral memes or internet slang",
+          "Community-driven projects with meme-based branding",
+          "Tokens leveraging humor or absurdity for market appeal",
+          "Meme-based narratives with no direct crypto origin",
+          "Tokens with staged descriptions referencing viral content"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "DOG",
-            "token_name": "Shiba Inu",
-            "token_address": "DOG_ADDRESS"
+            "token_symbol": "CQNT",
+            "token_name": "ClawdAI",
+            "token_address": "9NiHcbT8EohKJ9KzeEQ9ZHieE8GyVnXr1U3QPrjBAGG"
           },
           {
-            "token_symbol": "CAT",
-            "token_name": "Cat Meme",
-            "token_address": "CAT_ADDRESS"
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
           },
           {
-            "token_symbol": "RABBIT",
-            "token_name": "Bunny Meme",
-            "token_address": "RABBIT_ADDRESS"
+            "token_symbol": "GIGA",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
           },
           {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe the Frog",
-            "token_address": "PEPE_ADDRESS"
+            "token_symbol": "CLAWD",
+            "token_name": "Clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "CHONKY",
-            "token_name": "Chonky",
-            "token_address": "CHONKY_ADDRESS"
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
           }
         ],
-        "leader_hint_token_address": "DOG_ADDRESS",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong foundational animal meme DNA (Shiba Inu, Pepe) with clear cultural lineage and multiple derivatives",
+        "leader_hint_token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Multiple tokens are leveraging AI and automation themes, indicating a strong and recurring pattern in the market.",
         "leader_token": {
-          "token_symbol": "CHONKY",
-          "token_name": "CHONKY",
-          "token_address": "2MwjFE1zbXyNKw6VjzGWa3BhPtFcs8htuX2xwRAtbonk",
-          "usd_market_cap": 1227632.0
+          "token_symbol": "GIGA",
+          "token_name": "GIGACHAD",
+          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+          "usd_market_cap": 31774186.0
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Penguin Meme Revival and Existential Crypto Nihilism are gaining dominance as penguin existentialism trends dominate TikTok/Reddit. Animal-Based Meme Finance remains stable but faces competition from newer philosophical themes. Political parody tokens are fading as fresh meme cycles emerge.",
+    "meta_rotation_note": "The 'Penguin Themed' and 'Meme-Driven Tokens' METAs are currently emerging and gaining traction, while the 'AI and Automation' META is also showing strong signs of growth. There is no clear fading META at this time.",
     "meta_leaders": [
       {
-        "meta_name": "Crypto Parody of Real-World Figures",
-        "leader_token": {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 961401603.0
-        }
-      },
-      {
-        "meta_name": "Penguin Meme Revival",
+        "meta_name": "Penguin Themed",
         "leader_token": {
           "token_symbol": "PENGUIN",
           "token_name": "Nietzschean Penguin",
@@ -845,7 +848,7 @@
         }
       },
       {
-        "meta_name": "Existential Crypto Nihilism",
+        "meta_name": "Meme-Driven Tokens",
         "leader_token": {
           "token_symbol": "PENGUIN",
           "token_name": "Nietzschean Penguin",
@@ -854,12 +857,12 @@
         }
       },
       {
-        "meta_name": "Animal-Based Meme Finance",
+        "meta_name": "AI and Automation",
         "leader_token": {
-          "token_symbol": "CHONKY",
-          "token_name": "CHONKY",
-          "token_address": "2MwjFE1zbXyNKw6VjzGWa3BhPtFcs8htuX2xwRAtbonk",
-          "usd_market_cap": 1227632.0
+          "token_symbol": "GIGA",
+          "token_name": "GIGACHAD",
+          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+          "usd_market_cap": 31774186.0
         }
       }
     ]
