@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-01-27T12:01:57.971911Z",
+  "generated_at_utc": "2026-01-27T13:02:26.785415Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 224,
+  "token_context_count": 225,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 27 PVP group(s); excluding 48 token(s) from META prompt."
+    "Detected 28 PVP group(s); excluding 50 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 48,
+  "pvp_excluded_token_count": 50,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "barking puppy",
-      "tokens": [
-        {
-          "token_symbol": "BP",
-          "token_name": "Barking Puppy",
-          "token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump",
-          "usd_market_cap": 60826.27,
-          "processed_at": "2026-01-26T12:01:27.628733Z"
-        },
-        {
-          "token_symbol": "PUPPY",
-          "token_name": "Barking Puppy",
-          "token_address": "BYsRMRKpDf2QYuR8ugeiCh8SggwDh1QUhPmuUHDxpump",
-          "usd_market_cap": 337220.28,
-          "processed_at": "2026-01-27T11:39:07.848872Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "gamestop",
@@ -259,22 +239,42 @@
       ]
     },
     {
-      "match_type": "token_symbol",
-      "match_value": "pepe",
+      "match_type": "token_name",
+      "match_value": "pepe wif balloon",
       "tokens": [
         {
-          "token_symbol": "Pepe",
-          "token_name": "Nietzschean Pepe",
-          "token_address": "CNJdrgFj2r5ryvPtiHK7ANghcuYSKVy3YFarm3dHpump",
-          "usd_market_cap": 2373.93,
-          "processed_at": "2026-01-26T12:30:26.594698Z"
+          "token_symbol": "PWB",
+          "token_name": "Pepe Wif Balloon",
+          "token_address": "94Zr4QxTSMnLM6R2NSz9Diti3u15HxXVK1Bsvh6UtYiZ",
+          "usd_market_cap": 11739.53,
+          "processed_at": "2026-01-27T10:39:29.581435Z"
         },
         {
-          "token_symbol": "Pepe",
-          "token_name": "Pepe",
-          "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-          "usd_market_cap": 322726.5,
-          "processed_at": "2026-01-27T11:29:58.688234Z"
+          "token_symbol": "BALLOON",
+          "token_name": "PEPE Wif Balloon",
+          "token_address": "Dw4vQmiYJdpEaZuuWwgQHna28DawYGikBfwCDLMpump",
+          "usd_market_cap": 253136.09,
+          "processed_at": "2026-01-27T12:55:06.639057Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "barking puppy",
+      "tokens": [
+        {
+          "token_symbol": "PUPPY",
+          "token_name": "Barking Puppy",
+          "token_address": "BYsRMRKpDf2QYuR8ugeiCh8SggwDh1QUhPmuUHDxpump",
+          "usd_market_cap": 337220.28,
+          "processed_at": "2026-01-27T11:39:07.848872Z"
+        },
+        {
+          "token_symbol": "BP",
+          "token_name": "Barking Puppy",
+          "token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump",
+          "usd_market_cap": 249737.83,
+          "processed_at": "2026-01-27T12:02:03.195554Z"
         }
       ]
     },
@@ -528,6 +528,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "goldinu",
+      "tokens": [
+        {
+          "token_symbol": "GOLDINU",
+          "token_name": "gold inu",
+          "token_address": "ER8HgvjkEa4c3ToUTGZXAcNH3Vs3XKu3KGcncM8jeJUQ",
+          "usd_market_cap": 154170.0,
+          "processed_at": "2026-01-27T02:41:36.306922Z"
+        },
+        {
+          "token_symbol": "GOLDINU",
+          "token_name": "GOLDINU",
+          "token_address": "2LYTMGch89RabgQsCnzgMRiFLuzXi8rrnYqQRnZMe7mx",
+          "usd_market_cap": 32857.67,
+          "processed_at": "2026-01-27T12:16:34.402617Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "corn",
       "tokens": [
         {
@@ -645,70 +665,50 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Revival",
-        "description": "Tokens repurposing older memes, internet slang, or pop culture references for crypto narratives. These tokens leverage nostalgia and existing cultural context to drive community engagement.",
+        "meta_name": "Meme Coin Revival",
+        "description": "A resurgence of meme coins inspired by classic internet memes and viral content. These tokens leverage nostalgia and humor to attract community engagement.",
         "defining_signals": [
-          "Repurposing of older memes or slang (e.g., 'Doge', 'Pepe', 'Shiba Inu')",
-          "Cultural references to viral internet trends from 2010s to 2020",
-          "Use of established meme formats (e.g., 'Nietzschean Penguin', 'Giga Chad')",
-          "Leveraging historical meme origins (e.g., 'Wojak', 'Mocking SpongeBob')",
-          "Community-driven narratives with meme-based branding"
+          "Use of classic internet memes as inspiration",
+          "Community-driven narratives with viral potential",
+          "Leveraging nostalgia for older meme formats",
+          "High social media engagement and community growth",
+          "Repetition of meme formats across different tokens"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "GIGACHAD",
-            "token_name": "GIGACHAD",
-            "token_address": "63LfDmnb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
-          },
-          {
-            "token_symbol": "WOOF",
-            "token_name": "WOOF",
-            "token_address": "9yLV1s9FU4ERWzeRHyTCBkuU61tfCscHyM69i8H3pump"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "BONK",
-            "token_address": "CMj7ErczRbWvG5MgGnfbhGuaJJRfVFL5oqDeAy4LBAGS"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "PENGUIN",
-            "token_address": "7XZ2kxFac3TRXnEJKJ22peDqd3XphUAtGcip1JmEpump"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "BZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_symbol": "STEPHEN",
-            "token_name": "STEPHEN",
-            "token_address": "GwhnpMPt5q6PqzGXd4MwFamMbPPe5FT2i9jNZipcpump"
-          },
           {
             "token_symbol": "BUTWHY",
             "token_name": "ButWhy",
             "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg"
           },
           {
-            "token_symbol": "ALright",
-            "token_name": "alright",
-            "token_address": "Bm5S4VNzFhZ924buKMHtNwvcXhcHXyCkcRPJpqSmpump"
+            "token_symbol": "GIGACHAD",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "BZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "BZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
+            "token_symbol": "CHONKY",
+            "token_name": "CHONKY",
+            "token_address": "2MwjFE1zbX6VjzGWa3BhPtFcs8htuX2xwRAtbonk"
+          },
+          {
+            "token_symbol": "EGG",
+            "token_name": "THE EGG",
+            "token_address": "29TWWr9Lk9wr4yhzNvJb7qgrgrftTzvHgG1C5AKwspump"
+          },
+          {
+            "token_symbol": "BULLFIREX",
+            "token_name": "BULLFIREX",
+            "token_address": "85bd3Tj4GuuG2DtKdpi4Vf7FABCg2jLq2AyEsL2pump"
           }
         ],
         "leader_hint_token_address": "63LfDmnb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong evidence of meme revival in multiple tokens, including GIGACHAD, Wietzschean Penguin, and BONK. These tokens leverage well-established meme formats and cultural references to drive community engagement and virality.",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The resurgence of meme coins is evident across multiple tokens, with GIGACHAD showing the highest market cap and strong community engagement.",
         "leader_token": {
           "token_symbol": "BUTWHY",
           "token_name": "ButWhy",
@@ -718,297 +718,222 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens projects that integrate AI as a core component of their utility, governance, or infrastructure. These tokens often leverage AI for automation, data processing, or decision-making.",
+        "meta_name": "Crypto-Inspired Meme",
+        "description": "Tokens that repurpose existing internet memes and cultural references for crypto-native audiences. These tokens often leverage established meme formats to create community-driven narratives.",
         "defining_signals": [
-          "AI-driven governance or decision-making",
-          "AI-based infrastructure or tools",
-          "AI-powered automation or agents",
-          "Integration with AI models for data processing",
-          "AI-driven analytics or prediction capabilities"
+          "Use of established internet memes as inspiration",
+          "Community-driven narratives with viral potential",
+          "Leveraging nostalgia for older meme formats",
+          "High social media engagement and community growth",
+          "Repetition of meme formats across different tokens"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CLAWD",
-            "token_name": "clawdbot",
-            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+            "token_symbol": "BUTWHY",
+            "token_name": "ButWhy",
+            "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg"
           },
           {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Y8BAGG"
+            "token_symbol": "GIGACHAD",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
           },
           {
-            "token_symbol": "KLED",
-            "token_name": "KLEDAI",
-            "token_address": "1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm"
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "AIDERDESK",
-            "token_name": "AiderDesk",
-            "token_address": "GVmGoD3iDdLGM7sHoY664k8AHQbK55G6pNQKaBZDBAGG"
+            "token_symbol": "CHONKY",
+            "token_name": "CHONKY",
+            "token_address": "2MwjFE1zbB6VjzGWa3BhPtFcs8htuX2xwRAtbonk"
           },
           {
-            "token_symbol": "LUFFY",
-            "token_name": "Monkey D. Luffy",
-            "token_address": "CoXbfb2DYVPgrGeoMQcgX6LQwKdA51mqUymEjzjuhako"
+            "token_symbol": "EGG",
+            "token_name": "THE EGG",
+            "token_address": "29TWWr9Lk9wr4yhzNvJb7qgrgrftTzvHgG1C5AKwspump"
           },
           {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
-          },
-          {
-            "token_symbol": "CLAWPH",
-            "token_name": "Clawph Bananawiggum",
-            "token_address": "CLniw6TqKcQk7hd83TQxfEkG48QL3fXAMxJRvKWQpump"
-          },
-          {
-            "token_symbol": "KNOSS",
-            "token_name": "KNOSS",
-            "token_address": "9NiHcbT8EohKJid1RdU3232tATmmM1CvYemTeCP5iwro"
-          },
-          {
-            "token_symbol": "LUFFY",
-            "token_name": "Monkey D. Luffy",
-            "token_address": "CoXbfb2DYVPgrGeoMQcgX6LQwKdA51mqUymEjzjuhako"
-          },
-          {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+            "token_symbol": "BULLFIREX",
+            "token_name": "BULLFIREX",
+            "token_address": "85bd3Tj4GuuG2DtKdpi4V7FABCg2jLq2AyEsL2pump"
           }
         ],
-        "leader_hint_token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
+        "leader_hint_token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The resurgence of meme coins is evident across multiple tokens, with GIGACHAD showing the highest market cap and strong community engagement.",
+        "leader_token": {
+          "token_symbol": "BUTWHY",
+          "token_name": "ButWhy",
+          "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg",
+          "usd_market_cap": 991058592.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto-Inspired Meme",
+        "description": "Tokens that repurpose existing internet memes and cultural references for crypto-native audiences. These tokens often leverage established meme formats to create community-driven narratives.",
+        "defining_signals": [
+          "Use of established internet memes as inspiration",
+          "Community-driven narratives with viral potential",
+          "Leveraging nostalgia for older meme formats",
+          "High social media engagement and community growth",
+          "Repetition of meme formats across different tokens"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BUTWHY",
+            "token_name": "ButWhy",
+            "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg"
+          },
+          {
+            "token_symbol": "GIGACHAD",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
+          },
+          {
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "CHONKY",
+            "token_name": "CHONKY",
+            "token_address": "2MwjFE1zbB6VjzGWa3BhPtFcs8htuX2xwRAtbonk"
+          },
+          {
+            "token_symbol": "EGG",
+            "token_name": "THE EGG",
+            "token_address": "29TWWr9Lk9wr4yhzNvJb7qgrgrftTzvHgG1C5AKwspump"
+          },
+          {
+            "token_symbol": "BULLFIREX",
+            "token_name": "BULLFIREX",
+            "token_address": "85bd3Tj4GuuG2DtKdpi4V7FABCg2jLq2AyEsL2pump"
+          }
+        ],
+        "leader_hint_token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The resurgence of meme coins is evident across multiple tokens, with GIGACHAD showing the highest market cap and strong community engagement.",
+        "leader_token": {
+          "token_symbol": "BUTWHY",
+          "token_name": "ButWhy",
+          "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg",
+          "usd_market_cap": 991058592.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto-Inspired Meme",
+        "description": "Tokens that repurpose existing internet memes and cultural references for crypto-native audiences. These tokens often leverage established meme formats to create community-driven narratives.",
+        "defining_signals": [
+          "Use of established internet memes as inspiration",
+          "Community-driven narratives with viral potential",
+          "Leveraging nostalgia for older meme formats",
+          "High social media engagement and community growth",
+          "Repetition of meme formats across different tokens"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BUTWHY",
+            "token_name": "ButWhy",
+            "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg"
+          },
+          {
+            "token_symbol": "GIGACHAD",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
+          },
+          {
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wni5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "CHONKY",
+            "token_name": "CHONKY",
+            "token_address": "2MwjFE1zbB6VjzGWa3BhPtFcs8htuX2xwRAtbonk"
+          },
+          {
+            "token_symbol": "EGG",
+            "token_NAME": "THE EGG",
+            "token_address": "29TWWr9Lk9wr4yhzNvJb7qgrgrftTzvHgG1C5AKwspump"
+          },
+          {
+            "token_symbol": "BULLFIREX",
+            "token_name": "BULLFIREX",
+            "token_address": "85bd3Tj4GuuG2DtKdpi4V7FABCg2jLq2AyEsL2pump"
+          }
+        ],
+        "leader_hint_token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The resurgence of meme coins is evident across multiple tokens, with GIGACHAD showing the highest market cap and strong community engagement.",
+        "leader_token": {
+          "token_symbol": "BUTWHY",
+          "token_name": "ButWhy",
+          "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg",
+          "usd_market_cap": 991058592.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Penguin Meme",
+        "description": "A recurring theme across multiple tokens using penguin imagery and related memes. This includes references to penguins as symbols of resilience, community, and internet culture.",
+        "defining_signals": [
+          "Penguin as a mascot or central theme in token descriptions",
+          "Use of penguin-related memes and cultural references",
+          "Community-driven narratives around penguin imagery",
+          "Repetition of penguin motifs across different tokens",
+          "Leveraging p of penguin memes from TikTok and Reddit"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "PENG",
+            "token_name": "Clawd Nodes",
+            "token_address": "6YRKp6hwGU5EruSi9fEieZ4hrwF6SwAMNe5B7ouYpump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJAPump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJAPump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJAPump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJAPump"
+          }
+        ],
+        "leader_hint_token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJAPump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong evidence of AI integration in multiple tokens, including Clawdbot, EVA, and KLED. These tokens leverage AI for automation, governance, and analytics, indicating a growing trend in AI-powered utility tokens.",
+        "confidence_rationale": "The p repeated use of penguin imagery and cultural references across multiple tokens indicates a strong and consistent theme. The p token with the highest market cap and most detailed description is likely the leader.",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 147794385.0
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 112413561.04
         },
         "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Retro Culture",
-        "description": "Tokens that leverage nostalgia for older internet culture, gaming, or pop culture references. These tokens often repurpose retro aesthetics, memes, or cultural touchstones to attract community engagement.",
-        "defining_signals": [
-          "Use of retro gaming or internet culture references",
-          "Leveraging nostalgia for older memes or trends",
-          "Repurposing retro aesthetics or themes",
-          "Incorporating nostalgic pop culture references",
-          "Community-driven nostalgia-based branding"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLUBPENG",
-            "token_name": "Club Penguin",
-            "token_address": "258Po41aeXsh3jyqt5TqcJ4JSQe4rnSVd9wvcNPupump"
-          },
-          {
-            "token_symbol": "2016",
-            "token_name": "2016 coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
-          },
-          {
-            "token_symbol": "AFK",
-            "token_name": "afk",
-            "token_address": "kMKX8hBaj3BTRBbeYix9c16EieBP5dih8DTSSwCpump"
-          },
-          {
-            "token_name": "2016 coin",
-            "token_symbol": "2016",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
-          },
-          {
-            "token_symbol": "AFK",
-            "token_name": "afk",
-            "token_address": "kMKX8hBaj3BTRBbeYix9c16EieBP5dih8DTSSwCpump"
-          },
-          {
-            "token_symbol": "CLUBPENG",
-            "token_name": "Club Penguin",
-            "token_address": "258Po41aeXsh3jyqt5TqcJ4JSQe4rnSVd9wvcNPupump"
-          },
-          {
-            "token_symbol": "2016",
-            "token_name": "2016 coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
-          },
-          {
-            "token_symbol": "AFK",
-            "token_name": "afk",
-            "token_address": "kMKX8hBaj3BTRBbeYix9c16EieBP5dih8DTSSwCpump"
-          },
-          {
-            "token_symbol": "2016",
-            "token_name": "2016 coin",
-            "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump"
-          },
-          {
-            "token_symbol": "AFK",
-            "token_name": "afk",
-            "token_address": "kMKX8hBaj3BTRBbeYix9c16EieBP5dih8DTSSwCpump"
-          }
-        ],
-        "leader_hint_token_address": "258Po41aeXsh3jyqt5TqcJ4JSQe4rnSVd9wvcNPupump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong evidence of nostalgia-based tokens, including Club Penguin, 2016, and AFK. These tokens leverage nostalgia for older internet culture and gaming to drive community engagement and virality.",
-        "leader_token": {
-          "token_symbol": "2016",
-          "token_name": "2016 coin",
-          "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-          "usd_market_cap": 1229334.72
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Community-Driven Governance",
-        "description": "Tokens that emphasize decentralized governance, community decision-making, or collective ownership. These tokens often involve DAO-like structures or community-driven initiatives.",
-        "defining_signals": [
-          "Community-driven governance models",
-          "Decentralized decision-making processes",
-          "Community ownership or control",
-          "DAO-like structures or voting mechanisms",
-          "Community-led initiatives or projects"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS"
-          },
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS"
-          },
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS"
-          },
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS"
-          },
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS"
-          },
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS"
-          },
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWWGG8cdcwBAGS"
-          },
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS"
-          },
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS"
-          },
-          {
-            "token_symbol": "DREAMERS",
-            "token_name": "DREAMERS",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS"
-          }
-        ],
-        "leader_hint_token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong evidence of community-driven governance in tokens like REDACTED. These tokens emphasize decentralized decision-making and community ownership, indicating a growing trend in community-driven governance models.",
-        "leader_token": {
-          "token_symbol": "REDACTED",
-          "token_name": "REDACTED",
-          "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS",
-          "usd_market_cap": 81745.88
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme-Driven Finance (MemeFi)",
-        "description": "Tokens that blend meme culture with financial incentives, often using gamification or community-driven rewards. These tokens leverage meme culture to drive engagement and virality.",
-        "defining_signals": [
-          "Meme-based branding and marketing",
-          "Gamification of token usage",
-          "Community-driven meme culture",
-          "Incentivized meme creation or sharing",
-          "Meme-based rewards or airdrops"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "BZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_SYMBOL": "BAN",
-            "token_name": "BAN",
-            "token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG"
-          }
-        ],
-        "leader_hint_token_address": "bZ7PxqsczvDN2EottEg6twJCUdzydcXJDVvzy2FFBAGG",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong evidence of meme-driven finance in tokens like BAN. These tokens leverage meme culture and gamification to drive community engagement and virality, indicating a growing trend in MemeFi.",
-        "leader_token": null,
-        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
-    "meta_rotation_note": "Meme revival and AI-powered utility are currently the strongest and most consistent METAs, with strong community engagement and virality. Nostalgia-based tokens are also gaining traction. Community-driven governance is fading in comparison, while MemeFi is emerging as a new trend with potential for growth.",
+    "meta_rotation_note": "The 'Penguin Meme' is currently the most active and dominant theme, with strong community engagement and high market cap. The 'Meme Coin Revival' theme is gaining traction as classic meme formats are repurposed for crypto audiences. Emerging themes include AI-driven meme tokens and niche internet meme references.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Revival",
+        "meta_name": "Meme Coin Revival",
         "leader_token": {
           "token_symbol": "BUTWHY",
           "token_name": "ButWhy",
@@ -1017,30 +942,39 @@
         }
       },
       {
-        "meta_name": "AI-Powered Utility",
+        "meta_name": "Crypto-Inspired Meme",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 147794385.0
+          "token_symbol": "BUTWHY",
+          "token_name": "ButWhy",
+          "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg",
+          "usd_market_cap": 991058592.0
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
+        "meta_name": "Crypto-Inspired Meme",
         "leader_token": {
-          "token_symbol": "2016",
-          "token_name": "2016 coin",
-          "token_address": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-          "usd_market_cap": 1229334.72
+          "token_symbol": "BUTWHY",
+          "token_name": "ButWhy",
+          "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg",
+          "usd_market_cap": 991058592.0
         }
       },
       {
-        "meta_name": "Community-Driven Governance",
+        "meta_name": "Crypto-Inspired Meme",
         "leader_token": {
-          "token_symbol": "REDACTED",
-          "token_name": "REDACTED",
-          "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmUJVXbgvJWGG8cdcwBAGS",
-          "usd_market_cap": 81745.88
+          "token_symbol": "BUTWHY",
+          "token_name": "ButWhy",
+          "token_address": "WHYdudWjJHzcnU4MbNWgA94JyNCx6EqNNrLoebLykQg",
+          "usd_market_cap": 991058592.0
+        }
+      },
+      {
+        "meta_name": "Penguin Meme",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 112413561.04
         }
       }
     ]
