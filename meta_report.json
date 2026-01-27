@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-27T04:58:23.055840Z",
+  "generated_at_utc": "2026-01-27T05:58:54.799579Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 222,
+  "token_context_count": 224,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 27 PVP group(s); excluding 44 token(s) from META prompt."
+    "Detected 28 PVP group(s); excluding 45 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 44,
+  "pvp_excluded_token_count": 45,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -225,42 +225,22 @@
       ]
     },
     {
-      "match_type": "token_symbol",
-      "match_value": "bald",
+      "match_type": "token_name",
+      "match_value": "mr. lobster",
       "tokens": [
         {
-          "token_symbol": "bald",
-          "token_name": "baldcoin",
-          "token_address": "5bzT4J12BqUZwC5vZs3KgNYpeDfyyZJn3KTrvNeLpump",
-          "usd_market_cap": 50894.82,
-          "processed_at": "2026-01-26T04:50:53.819275Z"
+          "token_symbol": "Mr. Lobster",
+          "token_name": "Mr. Lobster",
+          "token_address": "J7YcZVfMgpo4CR2g7VBs9EBJkJip8TArrShg1aAxjtEZ",
+          "usd_market_cap": 118886.6,
+          "processed_at": "2026-01-27T05:19:19.054366Z"
         },
         {
-          "token_symbol": "BALD",
-          "token_name": "Bald",
-          "token_address": "38XprhVUr2gwRNBkmScckgJzh7p2E9hht529cSvApump",
-          "usd_market_cap": 20542.25,
-          "processed_at": "2026-01-27T04:14:38.574094Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "goat",
-      "tokens": [
-        {
-          "token_symbol": "Goat",
-          "token_name": "First form of currency",
-          "token_address": "Eo27b2DABqQjYAU28KqYE7ybMX3sPokFgTQFJmdepump",
-          "usd_market_cap": 154480.18,
-          "processed_at": "2026-01-26T05:02:42.351002Z"
-        },
-        {
-          "token_symbol": "GOAT",
-          "token_name": "The Goat",
-          "token_address": "2HU4xRr2pfi5rrUQuseBZFn6nyzCv94Jd3UP7L82pump",
-          "usd_market_cap": 4741.6,
-          "processed_at": "2026-01-27T01:17:09.532226Z"
+          "token_symbol": "LOBSTA",
+          "token_name": "Mr. Lobster",
+          "token_address": "GPn79TuZcHyiA1pLFQbkoehndoFdNusSPqG1yG56pump",
+          "usd_market_cap": 128592.05,
+          "processed_at": "2026-01-27T05:38:55.185808Z"
         }
       ]
     },
@@ -574,6 +554,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "goat",
+      "tokens": [
+        {
+          "token_symbol": "GOAT",
+          "token_name": "The Goat",
+          "token_address": "2HU4xRr2pfi5rrUQuseBZFn6nyzCv94Jd3UP7L82pump",
+          "usd_market_cap": 4741.6,
+          "processed_at": "2026-01-27T01:17:09.532226Z"
+        },
+        {
+          "token_symbol": "Goat",
+          "token_name": "First form of currency",
+          "token_address": "Eo27b2DABqQjYAU28KqYE7ybMX3sPokFgTQFJmdepump",
+          "usd_market_cap": 9746.17,
+          "processed_at": "2026-01-27T05:05:42.148642Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "corn",
       "tokens": [
         {
@@ -611,127 +611,101 @@
           "processed_at": "2026-01-27T03:28:41.549631Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "lobsta",
+      "tokens": [
+        {
+          "token_symbol": "LOBSTA",
+          "token_name": "Lobsta",
+          "token_address": "74aw2ujVPmtMyWPWchfm7iHfJ1UAyHX8qLzJ58Yi7dgS",
+          "usd_market_cap": 303467.63,
+          "processed_at": "2026-01-27T05:12:14.627256Z"
+        },
+        {
+          "token_symbol": "LOBSTA",
+          "token_name": "Mr. Lobster",
+          "token_address": "GPn79TuZcHyiA1pLFQbkoehndoFdNusSPqG1yG56pump",
+          "usd_market_cap": 128592.05,
+          "processed_at": "2026-01-27T05:38:55.185808Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political/Influencer Satire",
-        "description": "Tokens leveraging political figures, public personas, or influencer culture for meme-driven narratives. Often satirizes real-world events or personalities.",
+        "meta_name": "Meme and Internet Culture Tokens",
+        "description": "Tokens that draw from internet memes, viral trends, and internet culture. These often leverage well-known memes, slang, or viral content to build community and drive engagement.",
         "defining_signals": [
-          "Direct references to political figures (e.g., Melania Trump, Barron Trump)",
-          "Influencer culture repurposing (e.g., 'Barron X Spaces')",
-          "Satirical takes on political events (e.g., 'Dumb Money')",
-          "High social media engagement around political/influencer themes",
-          "Cross-pollination with broader political meme trends"
+          "Use of internet memes or viral trends",
+          "References to viral internet content",
+          "Leveraging slang or internet lingo",
+          "Community-driven narratives around memes",
+          "Tokens with meme-related names or imagery",
+          "High engagement on social media platforms"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MELANIA",
-            "token_name": "Melania Meme",
-            "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
-          },
-          {
-            "token_symbol": "BWT",
-            "token_name": "Barron Meme",
-            "token_address": "Av3cLhrHypqqh5VNqgmASeCGKbPGB8L2teNRuhH3bonk"
-          },
-          {
-            "token_symbol": "DM",
+            "token_symbol": "DUMB",
             "token_name": "Dumb Money",
             "token_address": "BMhHXK6XQSGLkX3KjoUcppmBsssUKAqUYwQ68tMzpump"
           },
           {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+            "token_symbol": "BAN",
+            "token_name": "BAN",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
           },
           {
-            "token_symbol": "STEPHEN",
-            "token_name": "Stephen",
-            "token_address": "GwhnpMPt5q6PqzGXd4MwFamMbPPe5FT2i9jNZipcpump"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "GIGA",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
+          },
+          {
+            "token_symbol": "BATHROOM",
+            "token_name": "Bathroom Coin",
+            "token_address": "ErbrU2TM7WXDwKevgTaJRLngVEoW9grVwrP7P7pYbonk"
+          },
+          {
+            "token_symbol": "REDACTED",
+            "token_name": "REDACTED",
+            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmmUJVXbgvJWGG8cdcwBAGS"
           }
         ],
-        "leader_hint_token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
-        "confidence_0_100": 79,
-        "confidence_rationale": "Strong political/influencer meme lineage with clear pre-existing cultural references (e.g., Melania Trump, Ralph Wiggum). High social engagement despite minimal documentation.",
+        "leader_hint_token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJp6ShBTBhgH2",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong presence of meme and internet culture themes across multiple tokens. High market cap and engagement for several tokens indicate strong community interest.",
         "leader_token": {
-          "token_symbol": "MELANIA",
-          "token_name": "Melania Meme",
-          "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
-          "usd_market_cap": 154986672.0
+          "token_symbol": "GIGA",
+          "token_name": "GIGACHAD",
+          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+          "usd_market_cap": 31774186.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Recontextualization",
-        "description": "A pattern of repurposing non-crypto internet memes (e.g., 'Disclaimer', 'Nietzschean', 'Snowball Effect') into crypto-native narratives. Tokens leverage pre-existing viral concepts while adding blockchain-specific twists.",
+        "meta_name": "AI and Automation Themed Tokens",
+        "description": "Tokens centered around AI, automation, and autonomous agents. These projects often emphasize decentralized, self-sustaining systems or AI-driven functionalities.",
         "defining_signals": [
-          "Direct references to established internet memes (e.g., 'Disclaimer', 'Snowball Effect')",
-          "Recontextualization of philosophical or cultural concepts (e.g., 'Nietzschean')",
-          "Meme templates with crypto-native modifications (e.g., 'Canary in the Coal Mine')",
-          "Cross-platform meme adoption (TikTok/Reddit/X)",
-          "High social media engagement despite low documentation"
+          "Focus on AI or automation as core utility",
+          "Mentions of autonomous agents or self-sustaining systems",
+          "Integration with AI tools or platforms",
+          "Community or governance models involving AI",
+          "Tokens with AI-related names or descriptions",
+          "Claims of decentralized or autonomous operations"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "DONT",
-            "token_name": "DisclaimerCoin",
-            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
-          },
-          {
-            "token_symbol": "Nietzschean Pepe",
-            "token_name": "Nietzschean Soldier",
-            "token_address": "DQ1A4AijhM4ueZtWSfyA4TBpYdz2EFk37hCDn4Vpump"
-          },
-          {
-            "token_symbol": "snowball",
-            "token_name": "snowball",
-            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
-          },
-          {
-            "token_symbol": "Canary",
-            "token_name": "Canary in the Coal Mine",
-            "token_address": "EfN2shvb1pPxcaHs5uFTPZybDcAhD9SMMhZFTFe2pump"
-          },
-          {
-            "token_symbol": "ONEPIECE",
-            "token_name": "The One Piece",
-            "token_address": "B4p8B62Ln6H8YYmxvNVX1wDC6wJom4dqX8cXA8Ybonk"
-          }
-        ],
-        "leader_hint_token_address": "FbmmdcCGHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk",
-        "confidence_0_100": 76,
-        "confidence_rationale": "Strong meme lineage with clear pre-existing cultural references (e.g., 'Disclaimer', 'Snowball Effect') and active social engagement. Tokens show high meme virality despite minimal documentation.",
-        "leader_token": {
-          "token_symbol": "DONT",
-          "token_name": "DisclaimerCoin",
-          "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk",
-          "usd_market_cap": 7465574.87
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens positioning themselves as infrastructure for AI agents, autonomous systems, or AI-driven productivity tools. Often leverage AI hype cycles and developer tooling narratives.",
-        "defining_signals": [
-          "AI agent infrastructure claims (e.g., 'AI Rig Complex', 'Clawd Nodes')",
-          "Developer tooling narratives (e.g., 'Prompt Engineering', 'Code Automation')",
-          "Cross-platform integration claims (e.g., 'Claude', 'GitHub')",
-          "High utility concentration in AI-related functions",
-          "Strong developer community engagement"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "ORGO",
-            "token_name": "ORGO",
-            "token_address": "GtN4GR4s4ekTrM5Ssoe94WEj8Vv2wmgSdd4mHoYkW3w2"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "CNODE",
+            "token_name": "Clawd Nodes",
+            "token_address": "6YRKp6hwGU5Ergsi9fEieZ4hrwF6SwAMNe5B7ouY"
           },
           {
             "token_symbol": "Henry",
@@ -739,47 +713,53 @@
             "token_address": "92c57GeytDoioGURCJTmB7vMJPGxaDavu8K7G1TfcN5u"
           },
           {
-            "token_symbol": "AI Food Videos",
-            "token_name": "AI Food Videos",
-            "token_address": "8eQnqsGzDtJ6haWqdwa2prMb51mmySnKrvT6S4Q6pump"
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKGGEgWPEo6pump"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia AI",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "AIFOOD",
+            "token_name": "AI Food Videos",
+            "token_address": "8eQnsGzDtJ6haWqdwa2prMb51mmySnKrvT6S4Q6pump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Q63QXN4Yy8BAGS"
+          },
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
           }
         ],
-        "leader_hint_token_address": "GtN4GR4s4ekTrM5Ssoe94WEj8Vv2wmgSdd4dHoYkW3w2",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong alignment with AI infrastructure narratives and developer tooling. High utility concentration in AI-related functions and active community engagement in developer circles.",
+        "leader_hint_token_address": "6YRKp6hwGU5Ergsi9fEieZ4hrwF6SwAMNe5B7ouy",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong thematic focus on AI and automation, with multiple tokens emphasizing autonomous agents and decentralized systems. High market cap for several tokens indicates active interest.",
         "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 1861377.16
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 3258386.88
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Penguin Memeconomy",
-        "description": "A surge in penguin-themed tokens leveraging viral penguin memes, internet folklore, and crypto-native penguin symbolism. Tokens often reference rare penguin species, internet penguin memes, or repurpose penguin imagery for community-driven narratives.",
+        "meta_name": "Penguin Themed Memecoins",
+        "description": "A cluster of tokens leveraging penguin imagery and themes, often tied to internet memes or cultural references involving penguins. This includes rare or unique penguin variations like albino, black, or symbolic p penguins.",
         "defining_signals": [
-          "Penguin species references (e.g., Black Penguin, White Penguin)",
-          "Meme repurposing of penguin imagery (e.g., 'Penguin Great Again')",
-          "Community-driven narratives around pENG, PENPE, and PENGUIN tokens",
-          "Cross-pollination with broader animal meme trends (e.g., Doge, Shiba Inu)",
-          "High market cap concentration in penguin-themed tokens"
+          "Use of penguin as a mascot or central theme",
+          "References to rare or unique penguin variations (e.g., albino, black penguin)",
+          "Community-driven narratives around penguin symbolism",
+          "Meme or viral cultural references to penguins",
+          "Tokens with penguin-related names or imagery",
+          "Leveraging penguin as a metaphor for uniqueness or community"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "American Penguin",
-            "token_address": "7zoAbtCmd59H3M4dgyqQoiCQK19cV3AdkEXcKMpapump"
-          },
-          {
             "token_symbol": "PENGID",
             "token_name": "PENG ID",
-            "token_address": "5gdmkH7fRf2cHeX8AtrmRS75s87gbnDd4SpXHiVcpump"
+            "token_address": "5gdmkH7fRf2cHeX8AtrmRS75s87gbnD2H652SctQpump"
           },
           {
             "token_symbol": "BPENGU",
@@ -788,18 +768,28 @@
           },
           {
             "token_symbol": "WhitePengu",
-            "token_name": "Penguins are busy",
-            "token_address": "gPQxCaE9C9NcdfFMnYPpRY13DMgCxisesDFCFm1pump"
+            "token_name": "The White Penguin",
+            "token_address": "94vaM8nKbs9cdUh6EG6xxy4xc1x2Kr9GqNEgR2otpump"
           },
           {
-            "token_symbol": "MPGA",
-            "token_name": "Make Penguin Great Again",
-            "token_address": "2Yb3VToPpKvFuNLqoLeVVvTt4o2dpjdd8TUqaXjDpump"
+            "token_symbol": "PENGY",
+            "token_name": "PENGY",
+            "token_address": "4aRMfPuLA5UJ9YEA9pmb8e1t1vqEkiEuBwL3yRtpump"
+          },
+          {
+            "token_symbol": "PENGU",
+            "token_name": "PENGU",
+            "token_address": "3bbCsQMEZDrjf6Ztku7Y4cGZu93xt938YToCmDun93pump"
+          },
+          {
+            "token_symbol": "PENG",
+            "token_name": "PENG",
+            "token_address": "4soaHmE7u1tsnuarHnAbRMLSBDB7ivq1HHPE7p6eauip"
           }
         ],
-        "leader_hint_token_address": "5gdmkH7fRf2cHeX8AtrmRS75s87gbnDd4SpXHiVcpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Penguin-themed tokens dominate multiple market cap tiers with clear meme lineage (e.g., White Penguin, Black Penguin) and cross-pollination with broader animal meme trends. High market cap concentration in Penguin tokens suggests strong community momentum.",
+        "leader_hint_token_address": "5gdmkH7fRf2cHeX8AtrmRS75s87gbnD2H652SctQpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong thematic consistency across multiple tokens, including rare paleen variations and meme references. High market cap for several tokens indicates active community engagement.",
         "leader_token": {
           "token_symbol": "BPENGU",
           "token_name": "The Black Penguin",
@@ -809,85 +799,136 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Nostalgia-Driven Meme Revival",
-        "description": "Tokens repurposing 2010s-era internet memes (e.g., 'Forever Alone', 'Canary in the Coal Mine') for crypto-native audiences. Leverages retro meme nostalgia and cross-generational meme adoption.",
+        "meta_name": "Community and Social Themed Tokens",
+        "description": "Tokens that emphasize community engagement, social interactions, and user-driven content. These often leverage social media, community events, and user-generated content.",
         "defining_signals": [
-          "Direct references to 2010s-era memes (e.g., 'Forever Alone', 'Canary in the Coal Mine')",
-          "Retro meme repurposing for crypto context",
-          "Cross-generational meme adoption (TikTok/Reddit)",
-          "High engagement from older meme communities",
-          "Strong visual meme continuity with original templates"
+          "Focus on community engagement and social interactions",
+          "Mentions of user-generated content or events",
+          "Integration with social media platforms",
+          "Community-driven narratives",
+          "Tokens with social or community-related names or imagery",
+          "High engagement on social media platforms"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "ALONE",
-            "token_name": "forever alone",
-            "token_address": "8AdsF2QXFA8QkFuQ9TrQW6nEy4E6yT4AwqgZ5cTpump"
+            "token_symbol": "BAG",
+            "token_name": "Just A Plastic Bag",
+            "token_address": "AFkCcbhyxY36DFGvd9fbtXH4vjTggahrNSDjYYZKpump"
           },
           {
-            "token_symbol": "Canary",
-            "token_name": "Canary in the Coal Mine",
-            "token_address": "EfN2shvb1pPxcaHs5uFTPZybDcAhD9SMMhZFTFe2pump"
+            "token_symbol": "UNFAZED",
+            "token_name": "Unfazed",
+            "token_address": "EE2KUa4ALGKHsZR13VGu1dy6QeQbTSNQbmiSEfMYpump"
           },
           {
-            "token_symbol": "DONT",
-            "token_name": "DisclaimerCoin",
-            "token_address": "FbmmdcCGHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
+            "token_symbol": "Soul",
+            "token_name": "Soul.md",
+            "token_address": "p3wGjM9qoxnQ9BRL4mwvzbuFnbCzYxSz1pbCYgRpump"
           },
           {
-            "token_symbol": "RIP",
-            "token_name": "Something has been ruined",
-            "token_address": "6g5sDC4UDHNx2P56m2G1dMeHq7GzAs1b1vdrWnvpump"
+            "token_symbol": "BUNDLE",
+            "token_name": "a bundle confirms my idea",
+            "token_address": "FrScmHdTfXDBvyfJSMqTtXdWf1JA6aiCES2QbqXpump"
           },
           {
-            "token_symbol": "ONEPIECE",
-            "token_name": "The One Piece",
-            "token_address": "B4p8B62Ln6H8YsYmxvNVX1wDC6wJom4dqX8cXA8Ybonk"
+            "token_symbol": "BAN",
+            "token_name": "BAN",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+          },
+          {
+            "token_symbol": "BATHROOM",
+            "token_name": "Bathroom Coin",
+            "token_address": "ErbrU2TM7WXDwKevgTaJRLngVEoW9grVwrP7P7pYbonk"
           }
         ],
-        "leader_hint_token_address": "8AdsF2QXFA8QkFuQ9TrQW6nEV4E6yT4AwqgZ5cTpump",
-        "confidence_0_100": 72,
-        "confidence_rationale": "Strong retro meme lineage with clear 2010s-era references. High engagement from older meme communities and cross-platform adoption.",
+        "leader_hint_token_address": "AFkCcbhyxY36DFGvd9fbtXH4vjTggahrNSDjYYZKpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong community and social themes across multiple tokens, with high engagement on social media platforms. High market cap for several tokens indicates active community interest.",
         "leader_token": {
-          "token_symbol": "Canary",
-          "token_name": "canary in the coal mine",
-          "token_address": "EfN2shvb1pPxcaHs5uFTPZybDcAhD9SMMhZFTFe2pump",
-          "usd_market_cap": 28699.8
+          "token_symbol": "BATHROOM",
+          "token_name": "Bathroom Coin",
+          "token_address": "ErbrU2TM7WXDwKevgTaJRLngVEoW9grVwrP7P7pYbonk",
+          "usd_market_cap": 570742.31
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto and Finance Themed Tokens",
+        "description": "Tokens that leverage themes from the crypto and finance worlds, including references to trading, market dynamics, and financial instruments.",
+        "defining_signals": [
+          "Use of financial or trading terminology",
+          "References to market dynamics or trading strategies",
+          "Leveraging financial instruments or concepts",
+          "Community-driven narratives around finance",
+          "Tokens with finance-related names or imagery",
+          "High engagement on financial platforms"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "GOLD",
+            "token_name": "Goldy",
+            "token_address": "7jFLMqEGAde9g3Hm9UTRMaWXFiQ8XZ4YHak63iuepump"
+          },
+          {
+            "token_symbol": "GOLDMINE",
+            "token_name": "Goldmine",
+            "token_address": "GuyaHeMqHXThL95FKJgHhikRw7ueydAyWu39hBigpump"
+          },
+          {
+            "token_symbol": "SHOVEL",
+            "token_name": "The shovel",
+            "token_address": "HUpsFtNDwZGNFBFiLkAHXv8ZWvGS5cubVQ1CtGd3pump"
+          },
+          {
+            "token_symbol": "COPPER",
+            "token_name": "Copper",
+            "token_address": "7tnEjDwj9hCN1XGTk3NYFC8aP5yNwqBAARA2mzqwpump"
+          },
+          {
+            "token_symbol": "METAL",
+            "token_name": "Metals Inu",
+            "token_address": "3bbCsQMEZDrrjf6Ztku7YToCmDun93xt9RYYMa9KTpump"
+          },
+          {
+            "token_symbol": "GOLDINU",
+            "token_name": "gold inu",
+            "token_address": "ER8HgvjkEa4c3ToUTGZXAc3Vs3XKu3KGcncM8jeJUQ"
+          }
+        ],
+        "leader_hint_token_address": "7jFLMqEGAde9g3Hm9UTRRAWXFiQ8XZ4YHak63iuepump",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong thematic focus on crypto and finance, with multiple tokens emphasizing gold, mining, and financial instruments. High market cap for several tokens indicates active interest.",
+        "leader_token": {
+          "token_symbol": "Shovel",
+          "token_name": "The shovel",
+          "token_address": "HUpsFtNDwZGNFBFiLkAHXv8ZWvGS5cubVQ1CtGd3pump",
+          "usd_market_cap": 81295.29
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Penguin Memeconomy is emerging as a dominant force with strong community momentum, while Nostalgia-Driven Meme Revival is fading as newer penguin and AI-themed tokens gain traction. Political/Influencer Satire remains stable but faces competition from AI-Powered Utility tokens.",
+    "meta_rotation_note": "The 'Penguin Themed Memecoins' and 'Meme and Internet Culture Tokens' are currently the most active METAs, with strong community engagement and high market caps. 'AI and Automation Themed Tokens' are emerging as a new trend, showing increasing interest in decentralized and autonomous systems. 'Crypto and Finance Themed Tokens' are stable but showing signs of fading as newer, more community-driven tokens gain traction.",
     "meta_leaders": [
       {
-        "meta_name": "Political/Influencer Satire",
+        "meta_name": "Meme and Internet Culture Tokens",
         "leader_token": {
-          "token_symbol": "MELANIA",
-          "token_name": "Melania Meme",
-          "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
-          "usd_market_cap": 154986672.0
+          "token_symbol": "GIGA",
+          "token_name": "GIGACHAD",
+          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+          "usd_market_cap": 31774186.0
         }
       },
       {
-        "meta_name": "Meme Recontextualization",
+        "meta_name": "AI and Automation Themed Tokens",
         "leader_token": {
-          "token_symbol": "DONT",
-          "token_name": "DisclaimerCoin",
-          "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk",
-          "usd_market_cap": 7465574.87
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 3258386.88
         }
       },
       {
-        "meta_name": "AI-Powered Utility",
-        "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 1861377.16
-        }
-      },
-      {
-        "meta_name": "Penguin Memeconomy",
+        "meta_name": "Penguin Themed Memecoins",
         "leader_token": {
           "token_symbol": "BPENGU",
           "token_name": "The Black Penguin",
@@ -896,12 +937,21 @@
         }
       },
       {
-        "meta_name": "Nostalgia-Driven Meme Revival",
+        "meta_name": "Community and Social Themed Tokens",
         "leader_token": {
-          "token_symbol": "Canary",
-          "token_name": "canary in the coal mine",
-          "token_address": "EfN2shvb1pPxcaHs5uFTPZybDcAhD9SMMhZFTFe2pump",
-          "usd_market_cap": 28699.8
+          "token_symbol": "BATHROOM",
+          "token_name": "Bathroom Coin",
+          "token_address": "ErbrU2TM7WXDwKevgTaJRLngVEoW9grVwrP7P7pYbonk",
+          "usd_market_cap": 570742.31
+        }
+      },
+      {
+        "meta_name": "Crypto and Finance Themed Tokens",
+        "leader_token": {
+          "token_symbol": "Shovel",
+          "token_name": "The shovel",
+          "token_address": "HUpsFtNDwZGNFBFiLkAHXv8ZWvGS5cubVQ1CtGd3pump",
+          "usd_market_cap": 81295.29
         }
       }
     ]
