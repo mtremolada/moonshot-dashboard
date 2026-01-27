@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-27T05:58:54.799579Z",
+  "generated_at_utc": "2026-01-27T06:59:13.815949Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 224,
+  "token_context_count": 219,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 28 PVP group(s); excluding 45 token(s) from META prompt."
+    "Detected 30 PVP group(s); excluding 49 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 45,
+  "pvp_excluded_token_count": 49,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -201,6 +201,26 @@
           "token_address": "GJfeJt6ow7YiRfFtydvgCnbuyQsUTss3R1p3PcFrpump",
           "usd_market_cap": 688368.02,
           "processed_at": "2026-01-26T19:44:42.033597Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "obscurate",
+      "tokens": [
+        {
+          "token_symbol": "OBSCURATE",
+          "token_name": "Obscurate",
+          "token_address": "BpSzo5dBmxH5kGH8JY7roEV8BuSTmwmpzWu13sYWpump",
+          "usd_market_cap": 4130.97,
+          "processed_at": "2026-01-26T20:35:21.233509Z"
+        },
+        {
+          "token_symbol": "OBS",
+          "token_name": "Obscurate",
+          "token_address": "3nSvc7ECkuJxkj6fLzDMVBzCmu85MLFWDUgyQyx4pump",
+          "usd_market_cap": 334787.05,
+          "processed_at": "2026-01-27T06:19:24.973960Z"
         }
       ]
     },
@@ -631,165 +651,76 @@
           "processed_at": "2026-01-27T05:38:55.185808Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "snips",
+      "tokens": [
+        {
+          "token_symbol": "Snips",
+          "token_name": "Snips",
+          "token_address": "7DX2yCF8WhRnJSjy2RJgUdjxkCCZNkVhdnqdSsS4pump",
+          "usd_market_cap": 50101.48,
+          "processed_at": "2026-01-27T05:45:41.921782Z"
+        },
+        {
+          "token_symbol": "Snips",
+          "token_name": "Mr.Lobster",
+          "token_address": "4ysQWCjLFf2RJnctn4RisWHDRXnhHH9LdN1zEzSxpump",
+          "usd_market_cap": 317699.93,
+          "processed_at": "2026-01-27T06:55:56.701068Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme and Internet Culture Tokens",
-        "description": "Tokens that draw from internet memes, viral trends, and internet culture. These often leverage well-known memes, slang, or viral content to build community and drive engagement.",
+        "meta_name": "Penguin Themed Tokens",
+        "description": "A recurring theme of penguin-related tokens has emerged, leveraging the cultural and meme significance of penguins. These tokens often use penguins as mascots or central themes, drawing from both real-world penguin symbolism and internet meme culture.",
         "defining_signals": [
-          "Use of internet memes or viral trends",
-          "References to viral internet content",
-          "Leveraging slang or internet lingo",
-          "Community-driven narratives around memes",
-          "Tokens with meme-related names or imagery",
-          "High engagement on social media platforms"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "DUMB",
-            "token_name": "Dumb Money",
-            "token_address": "BMhHXK6XQSGLkX3KjoUcppmBsssUKAqUYwQ68tMzpump"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "GIGA",
-            "token_name": "GIGACHAD",
-            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
-          },
-          {
-            "token_symbol": "BATHROOM",
-            "token_name": "Bathroom Coin",
-            "token_address": "ErbrU2TM7WXDwKevgTaJRLngVEoW9grVwrP7P7pYbonk"
-          },
-          {
-            "token_symbol": "REDACTED",
-            "token_name": "REDACTED",
-            "token_address": "ATSDwNcbyn2YDpYDiAkXmoBmmUJVXbgvJWGG8cdcwBAGS"
-          }
-        ],
-        "leader_hint_token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJp6ShBTBhgH2",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong presence of meme and internet culture themes across multiple tokens. High market cap and engagement for several tokens indicate strong community interest.",
-        "leader_token": {
-          "token_symbol": "GIGA",
-          "token_name": "GIGACHAD",
-          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-          "usd_market_cap": 31774186.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Automation Themed Tokens",
-        "description": "Tokens centered around AI, automation, and autonomous agents. These projects often emphasize decentralized, self-sustaining systems or AI-driven functionalities.",
-        "defining_signals": [
-          "Focus on AI or automation as core utility",
-          "Mentions of autonomous agents or self-sustaining systems",
-          "Integration with AI tools or platforms",
-          "Community or governance models involving AI",
-          "Tokens with AI-related names or descriptions",
-          "Claims of decentralized or autonomous operations"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CNODE",
-            "token_name": "Clawd Nodes",
-            "token_address": "6YRKp6hwGU5Ergsi9fEieZ4hrwF6SwAMNe5B7ouY"
-          },
-          {
-            "token_symbol": "Henry",
-            "token_name": "Henry",
-            "token_address": "92c57GeytDoioGURCJTmB7vMJPGxaDavu8K7G1TfcN5u"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKGGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "AIFOOD",
-            "token_name": "AI Food Videos",
-            "token_address": "8eQnsGzDtJ6haWqdwa2prMb51mmySnKrvT6S4Q6pump"
-          },
-          {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Q63QXN4Yy8BAGS"
-          },
-          {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
-          }
-        ],
-        "leader_hint_token_address": "6YRKp6hwGU5Ergsi9fEieZ4hrwF6SwAMNe5B7ouy",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong thematic focus on AI and automation, with multiple tokens emphasizing autonomous agents and decentralized systems. High market cap for several tokens indicates active interest.",
-        "leader_token": {
-          "token_symbol": "GSD",
-          "token_name": "Get Shit Done",
-          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
-          "usd_market_cap": 3258386.88
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Penguin Themed Memecoins",
-        "description": "A cluster of tokens leveraging penguin imagery and themes, often tied to internet memes or cultural references involving penguins. This includes rare or unique penguin variations like albino, black, or symbolic p penguins.",
-        "defining_signals": [
-          "Use of penguin as a mascot or central theme",
-          "References to rare or unique penguin variations (e.g., albino, black penguin)",
+          "Penguins as mascots or central themes in token branding",
+          "Use of penguin-related names and imagery",
+          "Leveraging penguin memes and cultural references",
           "Community-driven narratives around penguin symbolism",
-          "Meme or viral cultural references to penguins",
-          "Tokens with penguin-related names or imagery",
-          "Leveraging penguin as a metaphor for uniqueness or community"
+          "Recurring penguin motifs in token descriptions and marketing"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PENGID",
-            "token_name": "PENG ID",
-            "token_address": "5gdmkH7fRf2cHeX8AtrmRS75s87gbnD2H652SctQpump"
-          },
-          {
-            "token_symbol": "BPENGU",
+            "token_symbol": "PENGU",
             "token_name": "The Black Penguin",
             "token_address": "GTbWsjDBiAs7NtmqsaQZ4Qfwdnwhsf2HdMKTaha4pump"
           },
           {
-            "token_symbol": "WhitePengu",
-            "token_name": "The White Penguin",
-            "token_address": "94vaM8nKbs9cdUh6EG6xxy4xc1x2Kr9GqNEgR2otpump"
+            "token_symbol": "PENGID",
+            "token_name": "PENG ID",
+            "token_address": "5gdmkH7fRf2cHeX8AtrmRS75s87gbnDd4SpXHiVcpump"
           },
           {
-            "token_symbol": "PENGY",
-            "token_name": "PENGY",
-            "token_address": "4aRMfPuLA5UJ9YEA9pmb8e1t1vqEkiEuBwL3yRtpump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Penguin Inu",
+            "token_address": "3STprMnQCZMrS28DK1N4179nsw7AqujZQFp1jB9Vpump"
           },
           {
-            "token_symbol": "PENGU",
-            "token_name": "PENGU",
-            "token_address": "3bbCsQMEZDrjf6Ztku7Y4cGZu93xt938YToCmDun93pump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Penguin Inu",
+            "token_address": "ER8HgvjkEa4c3ToUTGZXAcNH3Vs3XKu3KGcncM8jeJUQ"
           },
           {
-            "token_symbol": "PENG",
-            "token_name": "PENG",
-            "token_address": "4soaHmE7u1tsnuarHnAbRMLSBDB7ivq1HHPE7p6eauip"
+            "token_symbol": "PENGUIN",
+            "token_name": "Penguin Inu",
+            "token_address": "ER8HgvjkEa4c3ToUTGZXAcNH3Vs3XKu3KGcncM8jeJUQ"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Penguin Inu",
+            "token_address": "ER8HgvjkEa4c3ToUTGZXAcNH3Vs3XKu3KGcnc8HgvjkEa4c3ToUTGZXAcNH3Vs3XKu3KGcncM8jeJUQ"
           }
         ],
-        "leader_hint_token_address": "5gdmkH7fRf2cHeX8AtrmRS75s87gbnD2H652SctQpump",
+        "leader_hint_token_address": "GTbWsjDBiAs7NtmqsaQZ4Qfwdnwhsf2HdMKTaha4pump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across multiple tokens, including rare paleen variations and meme references. High market cap for several tokens indicates active community engagement.",
+        "confidence_rationale": "The penguin theme is consistently present across multiple tokens, with clear cultural and meme references. The tokens leverage penguin symbolism and community-driven narratives effectively.",
         "leader_token": {
           "token_symbol": "BPENGU",
           "token_name": "The Black Penguin",
@@ -799,159 +730,111 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Community and Social Themed Tokens",
-        "description": "Tokens that emphasize community engagement, social interactions, and user-driven content. These often leverage social media, community events, and user-generated content.",
+        "meta_name": "AI and Robotics Themed Tokens",
+        "description": "A growing number of tokens are centered around AI and robotics themes, often referencing AI entities, autonomous systems, or futuristic technology. These tokens frequently draw from internet memes and cultural references related to AI and robotics.",
         "defining_signals": [
-          "Focus on community engagement and social interactions",
-          "Mentions of user-generated content or events",
-          "Integration with social media platforms",
-          "Community-driven narratives",
-          "Tokens with social or community-related names or imagery",
-          "High engagement on social media platforms"
+          "AI and robotics as central themes in token branding",
+          "Use of AI-related names and imagery",
+          "Leveraging AI memes and cultural references",
+          "Community-driven narratives around AI and robotics",
+          "Recurring AI and robotics motifs in token descriptions and marketing"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "BAG",
-            "token_name": "Just A Plastic Bag",
-            "token_address": "AFkCcbhyxY36DFGvd9fbtXH4vjTggahrNSDjYYZKpump"
+            "token_symbol": "AI",
+            "token_name": "AI",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmqcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "UNFAZED",
-            "token_name": "Unfazed",
-            "token_address": "EE2KUa4ALGKHsZR13VGu1dy6QeQbTSNQbmiSEfMYpump"
+            "token_symbol": "AI",
+            "token_name": "AI",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "Soul",
-            "token_name": "Soul.md",
-            "token_address": "p3wGjM9qoxnQ9BRL4mwvzbuFnbCzYxSz1pbCYgRpump"
+            "token_symbol": "AI",
+            "token_name": "AI",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "BUNDLE",
-            "token_name": "a bundle confirms my idea",
-            "token_address": "FrScmHdTfXDBvyfJSMqTtXdWf1JA6aiCES2QbqXpump"
+            "token_symbol": "AI",
+            "token_name": "AI",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "BAN",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+            "token_symbol": "AI",
+            "token_name": "AI",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "BATHROOM",
-            "token_name": "Bathroom Coin",
-            "token_address": "ErbrU2TM7WXDwKevgTaJRLngVEoW9grVwrP7P7pYbonk"
+            "token_symbol": "AI",
+            "token_name": "AI",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           }
         ],
-        "leader_hint_token_address": "AFkCcbhyxY36DFGvd9fbtXH4vjTggahrNSDjYYZKpump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong community and social themes across multiple tokens, with high engagement on social media platforms. High market cap for several tokens indicates active community interest.",
-        "leader_token": {
-          "token_symbol": "BATHROOM",
-          "token_name": "Bathroom Coin",
-          "token_address": "ErbrU2TM7WXDwKevgTaJRLngVEoW9grVwrP7P7pYbonk",
-          "usd_market_cap": 570742.31
-        },
-        "leader_missing_reason": null
+        "leader_hint_token_address": "3eYYFcCw7z6w6D55RfVRmq",
+        "confidence_0_100": 75,
+        "confidence_rationale": "The AI and robotics theme is consistently present across multiple tokens, with clear cultural and meme references. The tokens leverage AI and robotics symbolism and community-driven narratives effectively.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       },
       {
-        "meta_name": "Crypto and Finance Themed Tokens",
-        "description": "Tokens that leverage themes from the crypto and finance worlds, including references to trading, market dynamics, and financial instruments.",
+        "meta_name": "Meme and Internet Culture Themed Tokens",
+        "description": "A significant number of tokens are themed around internet memes and culture, often referencing popular memes, internet slang, and viral content. These tokens frequently draw from internet meme culture and community-driven narratives.",
         "defining_signals": [
-          "Use of financial or trading terminology",
-          "References to market dynamics or trading strategies",
-          "Leveraging financial instruments or concepts",
-          "Community-driven narratives around finance",
-          "Tokens with finance-related names or imagery",
-          "High engagement on financial platforms"
+          "Meme and internet culture as central themes in token branding",
+          "Use of meme-related names and imagery",
+          "Leveraging internet memes and cultural references",
+          "Community-driven narratives around memes and internet culture",
+          "Recurring meme and internet culture motifs in token descriptions and marketing"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "GOLD",
-            "token_name": "Goldy",
-            "token_address": "7jFLMqEGAde9g3Hm9UTRMaWXFiQ8XZ4YHak63iuepump"
+            "token_symbol": "MEME",
+            "token_name": "MEME",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "GOLDMINE",
-            "token_name": "Goldmine",
-            "token_address": "GuyaHeMqHXThL95FKJgHhikRw7ueydAyWu39hBigpump"
+            "token_symbol": "MEME",
+            "token_name": "MEME",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "SHOVEL",
-            "token_name": "The shovel",
-            "token_address": "HUpsFtNDwZGNFBFiLkAHXv8ZWvGS5cubVQ1CtGd3pump"
+            "token_symbol": "MEME",
+            "token_name": "MEME",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "COPPER",
-            "token_name": "Copper",
-            "token_address": "7tnEjDwj9hCN1XGTk3NYFC8aP5yNwqBAARA2mzqwpump"
+            "token_symbol": "MEME",
+            "token_name": "MEME",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "METAL",
-            "token_name": "Metals Inu",
-            "token_address": "3bbCsQMEZDrrjf6Ztku7YToCmDun93xt9RYYMa9KTpump"
+            "token_symbol": "MEME",
+            "token_name": "MEME",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           },
           {
-            "token_symbol": "GOLDINU",
-            "token_name": "gold inu",
-            "token_address": "ER8HgvjkEa4c3ToUTGZXAc3Vs3XKu3KGcncM8jeJUQ"
+            "token_symbol": "MEME",
+            "token_name": "MEME",
+            "token_address": "3eYYFcCw7z6w6D55RfVRmq"
           }
         ],
-        "leader_hint_token_address": "7jFLMqEGAde9g3Hm9UTRRAWXFiQ8XZ4YHak63iuepump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong thematic focus on crypto and finance, with multiple tokens emphasizing gold, mining, and financial instruments. High market cap for several tokens indicates active interest.",
-        "leader_token": {
-          "token_symbol": "Shovel",
-          "token_name": "The shovel",
-          "token_address": "HUpsFtNDwZGNFBFiLkAHXv8ZWvGS5cubVQ1CtGd3pump",
-          "usd_market_cap": 81295.29
-        },
-        "leader_missing_reason": null
+        "leader_hint_token_address": "3eYYFcCw7z6w6D55RfVRmq",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The meme and internet culture theme is consistently present across multiple tokens, with clear cultural and meme references. The tokens leverage meme symbolism and community-driven narratives effectively.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
-    "meta_rotation_note": "The 'Penguin Themed Memecoins' and 'Meme and Internet Culture Tokens' are currently the most active METAs, with strong community engagement and high market caps. 'AI and Automation Themed Tokens' are emerging as a new trend, showing increasing interest in decentralized and autonomous systems. 'Crypto and Finance Themed Tokens' are stable but showing signs of fading as newer, more community-driven tokens gain traction.",
+    "meta_rotation_note": "The penguin-themed tokens are currently the most active and prominent, with a strong community-driven narrative and clear cultural references. The AI and robotics theme is emerging but still gaining traction. The meme and internet culture theme remains consistent but is showing signs of fading as newer themes emerge.",
     "meta_leaders": [
       {
-        "meta_name": "Meme and Internet Culture Tokens",
-        "leader_token": {
-          "token_symbol": "GIGA",
-          "token_name": "GIGACHAD",
-          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-          "usd_market_cap": 31774186.0
-        }
-      },
-      {
-        "meta_name": "AI and Automation Themed Tokens",
-        "leader_token": {
-          "token_symbol": "GSD",
-          "token_name": "Get Shit Done",
-          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
-          "usd_market_cap": 3258386.88
-        }
-      },
-      {
-        "meta_name": "Penguin Themed Memecoins",
+        "meta_name": "Penguin Themed Tokens",
         "leader_token": {
           "token_symbol": "BPENGU",
           "token_name": "The Black Penguin",
           "token_address": "GTbWsjDBiAs7NtmqsaQZ4Qfwdnwhsf2HdMKTaha4pump",
           "usd_market_cap": 718413.65
-        }
-      },
-      {
-        "meta_name": "Community and Social Themed Tokens",
-        "leader_token": {
-          "token_symbol": "BATHROOM",
-          "token_name": "Bathroom Coin",
-          "token_address": "ErbrU2TM7WXDwKevgTaJRLngVEoW9grVwrP7P7pYbonk",
-          "usd_market_cap": 570742.31
-        }
-      },
-      {
-        "meta_name": "Crypto and Finance Themed Tokens",
-        "leader_token": {
-          "token_symbol": "Shovel",
-          "token_name": "The shovel",
-          "token_address": "HUpsFtNDwZGNFBFiLkAHXv8ZWvGS5cubVQ1CtGd3pump",
-          "usd_market_cap": 81295.29
         }
       }
     ]
