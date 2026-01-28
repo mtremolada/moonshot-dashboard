@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-28T12:45:56.879070Z",
+  "generated_at_utc": "2026-01-28T13:46:23.524105Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 196,
+  "token_context_count": 199,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 46 PVP group(s); excluding 72 token(s) from META prompt."
+    "Detected 46 PVP group(s); excluding 71 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 72,
+  "pvp_excluded_token_count": 71,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -379,6 +379,26 @@
     },
     {
       "match_type": "token_name",
+      "match_value": "2 sticks of ram",
+      "tokens": [
+        {
+          "token_symbol": "Ram",
+          "token_name": "2 Sticks Of Ram",
+          "token_address": "9JuhoFkRaXiS2cjjypt2xqWAR9oDSkbz3UG1nMmWpump",
+          "usd_market_cap": 90617.86,
+          "processed_at": "2026-01-28T08:52:08.066866Z"
+        },
+        {
+          "token_symbol": "Ram",
+          "token_name": "2 Sticks of Ram",
+          "token_address": "DmGvYx7R4ZJnSocMauain4LXh3oA8kuDYavLoDLYpump",
+          "usd_market_cap": 345361.82,
+          "processed_at": "2026-01-28T12:49:47.076249Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
       "match_value": "barking puppy",
       "tokens": [
         {
@@ -394,26 +414,6 @@
           "token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump",
           "usd_market_cap": 2815960.1,
           "processed_at": "2026-01-28T12:02:48.548611Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "sol",
-      "tokens": [
-        {
-          "token_symbol": "SOL",
-          "token_name": "1 sol to make it all back",
-          "token_address": "J2Y4reSZNwsriKaVFqRvgZE6UA2WjUdd4QfM4F8rpump",
-          "usd_market_cap": 25801.86,
-          "processed_at": "2026-01-27T13:02:21.580886Z"
-        },
-        {
-          "token_symbol": "SOL",
-          "token_name": "Sol The Trophy Tomato",
-          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
-          "usd_market_cap": 4775386.15,
-          "processed_at": "2026-01-27T16:40:37.138023Z"
         }
       ]
     },
@@ -984,6 +984,13 @@
           "token_address": "G5grLASvz1xzgdh1c1GKy2q55mfuDDXhMQoXnDxWpump",
           "usd_market_cap": 490417.53,
           "processed_at": "2026-01-28T09:36:52.757457Z"
+        },
+        {
+          "token_symbol": "Ram",
+          "token_name": "2 Sticks of Ram",
+          "token_address": "DmGvYx7R4ZJnSocMauain4LXh3oA8kuDYavLoDLYpump",
+          "usd_market_cap": 345361.82,
+          "processed_at": "2026-01-28T12:49:47.076249Z"
         }
       ]
     },
@@ -1039,50 +1046,49 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Penguin Themed Tokens",
-        "description": "A recurring theme in the crypto space is the use of penguin imagery and narratives, often tied to viral internet memes or cultural references. This META includes tokens that leverage penguin-related themes, such as rare penguin sightings, penguin costumes in military contexts, or penguin symbolism in philosophical or absurd contexts.",
+        "meta_name": "Penguin Themed",
+        "description": "Tokens leveraging penguin imagery and cultural references to create community-driven projects. This theme is rooted in the popularity of penguin memes and characters, such as the 'Nietzschean Penguin' and 'Penguins of Madagascar', which have gained traction in internet culture.",
         "defining_signals": [
-          "Use of penguin imagery or references in token names or descriptions",
-          "Connection to viral penguin memes or cultural references",
-          "Narratives involving penguin symbolism (e.g., absurdity, camouflage, or existential themes)",
-          "Community-driven projects with penguin-themed branding",
-          "Tokens with penguin-related names or lore (e.g., 'Golden Penguin', 'Nietzschean Penguin')"
+          "Use of penguin imagery in branding and token names",
+          "Community-driven initiatives with penguin-related themes",
+          "Cultural references to penguin memes and characters",
+          "Integration with penguin-based games or narratives"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "pengold",
-            "token_name": "The Golden Penguin",
-            "token_address": "EKAyGysLLB1ciAJjTE7cagfnzFPqW63uGxt4DbPFpump"
-          },
           {
             "token_symbol": "PENGUIN",
             "token_name": "Nietzschean Penguin",
             "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "PENGUINS",
             "token_name": "Penguins of Madagascar",
-            "token_address": "26x6kFNrnpoUn9ZNBwuBw3HNv48PYYpffBxKPrzitpump"
+            "token_symbol": "PENGUINS",
+            "token_address": "26x6kFNrnpoUn9ZNBwuBw3HNv48PYpffBxKPrzitpump"
           },
           {
-            "token_symbol": "COPPERPENGUI",
-            "token_name": "Copper Penguin",
-            "token_address": "hsAgiiRGvqBD5GeZxed9iDKpvFpwiq7iL7REjsB8pump"
+            "token_name": "Penguin Strategy",
+            "token_symbol": "PSTRAT",
+            "token_address": "HV5BrcqNiyXdHoBhLzSL6b8TTHXCo4hewiTSp1xMpump"
           },
           {
-            "token_symbol": "Mountain",
-            "token_name": "The Mountain",
-            "token_address": "GASfLqDbE8c9w8mjKknxaHeDMmdy9usGwM1GwzVJpump"
+            "token_name": "Solana Penguin",
+            "token_symbol": "SolPenguin",
+            "token_address": "AUxGGnXceJrS9vUG3cKpxax61vpoRocMEvXAkVfipump"
           },
           {
-            "token_symbol": "BTP",
-            "token_name": "Be The Pengiun",
-            "token_address": "11TreVbyRG4mTdvBukBVcAKJSasFfmbQq4euVrbpump"
+            "token_name": "The Golden Penguin",
+            "token_symbol": "pengold",
+            "token_address": "EKAyGysLLB1ciAJjTE7cagfnzFPqW63uGxt4DbPFpump"
+          },
+          {
+            "token_name": "Decent White",
+            "token_symbol": "White",
+            "token_address": "DNEnzHLuJ1xW6V6itr5E4UVkmswJco6BjwNFBAyfpump"
           }
         ],
         "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
         "confidence_0_100": 85,
-        "confidence_rationale": "The penguin theme is strongly represented across multiple tokens, including 'The Golden Penguin', 'Nietzschean Penguin', and 'Penguins of Madagascar'. These tokens are community-driven and leverage viral penguin memes and cultural references, indicating a strong and recurring theme.",
+        "confidence_rationale": "The penguin theme is well-supported by multiple tokens with strong cultural references and community engagement.",
         "leader_token": {
           "token_symbol": "PENGUIN",
           "token_name": "Nietzschean Penguin",
@@ -1092,156 +1098,101 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Animal and Nature-Inspired Tokens",
-        "description": "This META includes tokens that draw inspiration from animals or natural phenomena. These tokens often use animal imagery or natural elements as part of their branding, lore, or community identity.",
+        "meta_name": "Animal Themed",
+        "description": "Tokens that use animal imagery and themes to create community-driven projects. This theme is characterized by tokens that leverage the popularity of animal memes and characters to attract community engagement and investment.",
         "defining_signals": [
-          "Use of animal imagery or references in token names or descriptions",
-          "Connection to natural elements or phenomena (e.g., penguins, whales, pandas)",
-          "Community-driven projects with animal-themed branding",
-          "Tokens with names or lore inspired by specific animals or natural events",
-          "Incorporation of animal symbolism (e.g., loyalty, strength, rarity)"
+          "Use of animal imagery in branding and token names",
+          "Community-driven initiatives with animal-related themes",
+          "Cultural references to animal memes and characters",
+          "Integration with animal-based games or narratives"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "pengold",
-            "token_name": "The Golden Penguin",
-            "token_address": "EKAyGysLLB1ciAJjTE7cagfnzFPqW63uGxt4DbPFpump"
+            "token_name": "Pandu Pandas",
+            "token_symbol": "PANDU",
+            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
           },
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_name": "Copper Inu",
+            "token_symbol": "COPER",
+            "token_address": "bXjAk9iL5ogR1u8RPh6GggAGAdjHEnP6GcueVsUpump"
           },
           {
-            "token_symbol": "PENGUINS",
-            "token_name": "Penguins of Madagascar",
-            "token_address": "26x6kFNrnpoUn9ZNBwuBw3HNv48PYpffBxKPrzitpump"
+            "token_name": "Giga Potato",
+            "token_symbol": "POTATO",
+            "token_address": "4soaHmE7u1tsnuarHnAbRMLSBDB7ivq1HHPE7p6eauip"
           },
           {
-            "token_symbol": "COPPERPENGUI",
-            "token_name": "Copper Penguin",
-            "token_address": "hsAgiiRGvqBD5GeZxed9iDKpvFpwiq7iL7REjsB8pump"
+            "token_name": "Cool Cat",
+            "token_symbol": "COOLCAT",
+            "token_address": "5bNAFkwnen23DwfMov4vsxW3EfZZB7qA8RT6AVQzpump"
           },
           {
-            "token_symbol": "BTP",
-            "token_name": "Be The Pengiun",
-            "token_address": "11TreVbyRG4mTdvBukBVcAKJSasFfmbQq4euVrbpump"
+            "token_name": "Copper Whale",
+            "token_symbol": "GOLDWHALE",
+            "token_address": "32K2etkyuZV1Z8LQDMB5KNBmMoSP8dcGKcJucpDPpump"
           },
           {
-            "token_symbol": "Mountain",
-            "token_name": "The Mountain",
-            "token_address": "GASfLqDbE8c9w8mjKknxaHeDMmdy9usGwM1GwzVJpump"
+            "token_name": "Testicular Torsion Wizard",
+            "token_symbol": "TESTICLE",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
           }
         ],
-        "leader_hint_token_address": "8Jx8aaHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The animal and nature theme is well-represented by tokens like 'The Golden Penguin', 'Nietzschean Penguin', and 'Penguins of Madagascar'. These tokens leverage animal imagery and natural symbolism, indicating a strong and recurring theme.",
+        "leader_hint_token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk",
+        "confidence_0_100": 70,
+        "confidence_rationale": "The animal-themed meta is supported by tokens with strong community engagement and cultural references to animal memes.",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 93827300.16
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 8803053.91
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme and Internet Culture",
-        "description": "This META includes tokens that are directly tied to internet memes, viral internet culture, or internet slang. These tokens often reference specific memes, internet trends, or viral content.",
+        "meta_name": "Meme Stock Inspiration",
+        "description": "Tokens inspired by the 2021 meme stock movement, particularly those referencing GameStop and other retail investor-driven events. This theme is characterized by tokens that leverage the cultural and financial impact of meme stocks to attract community and investment.",
         "defining_signals": [
-          "Reference to specific internet memes or viral content",
-          "Incorporation of internet slang or viral internet culture",
-          "Tokens with names or descriptions that reference specific memes or viral content",
-          "Community-driven projects with meme-themed branding",
-          "Tokens with names or lore inspired by internet culture"
+          "References to the 2021 meme stock movement",
+          "Community-driven investment strategies",
+          "Incorporation of retail investor narratives",
+          "Use of stock-related slang and terminology"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "GOAT",
-            "token_name": "Goatseus Maximus",
-            "token_address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump"
-          },
-          {
-            "token_symbol": "BALLOON",
-            "token_name": "PEPE Wif Balloon",
-            "token_address": "Dw4vQmiYJdpEaZuuWwgQHna28DawYGikBfwCDLMpump"
-          },
-          {
-            "token_symbol": "WMRW",
-            "token_name": "What Men Really Want",
-            "token_address": "fkYKxnfPMqaHMLmthg26xv46Ljb7PXNVGumFKZ2pump"
-          },
-          {
-            "token_symbol": "TWIN",
-            "token_name": "TWIN",
-            "token_address": "H6TWjaet2Qti5VkxakpVt2gK7tB9uVYqMczwK7V7pump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "PEANUT",
-            "token_name": "PEANUT",
-            "token_address": "9STxH3sUxos4T32s6CUEgDWmMQtCGdZeaKTsVFg2F9BW"
-          }
-        ],
-        "leader_hint_token_address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The meme and internet culture theme is well-represented by tokens like 'Goatseus Maximus', 'PEPE Wif Balloon', and 'Skeleton Banging Shield'. These tokens leverage internet memes and viral content, indicating a strong and recurring theme.",
-        "leader_token": {
-          "token_symbol": "GOAT",
-          "token_name": "Goatseus Maximus",
-          "token_address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
-          "usd_market_cap": 30181392.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Stock and Retail Investor Rebellion",
-        "description": "This META includes tokens that reference the 2021 meme stock phenomenon, where retail investors coordinated to challenge institutional investors. Tokens in this category often reference GameStop, AMC, or other meme stocks, and are tied to themes of retail investor power and rebellion against Wall Street.",
-        "defining_signals": [
-          "Reference to meme stocks like GameStop or AMC",
-          "Themes of retail investor rebellion or coordination",
-          "Incorporation of 'degen' or 'retail investor' jargon",
-          "Community-driven narratives around challenging institutional investors",
-          "Tokens with names or descriptions that reference the 2021 meme stock movement"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "GME",
             "token_name": "GameStop",
+            "token_symbol": "GME",
             "token_address": "8wXtPeU6557ETkp9WHFY1n1EcU6NxDvbAggHGsMYiHsB"
           },
           {
-            "token_symbol": "USdt",
-            "token_name": "Ultimate Supreme Degen Tiger",
-            "token_address": "AJ9UvocGKeuMNj7QtQfUTXgdnVKWMUzchwD7iZDGpump"
-          },
-          {
-            "token_symbol": "KITTY",
             "token_name": "Roaring Kitty",
+            "token_symbol": "KITTY",
             "token_address": "9XEDDKKvqB7hgx1efvuJbb5hF2rn3nENRZk6woNspump"
           },
           {
-            "token_symbol": "RML",
-            "token_name": "Rug Me Later",
-            "token_address": "7NG7HJxY5TZBk595JetCjqBTTxksw3rNLqo2gEDfUpump"
+            "token_name": "Melania and Brigitte",
+            "token_symbol": "MB",
+            "token_address": "AQDmpP3XvsFLJAWHva8sGYKdeXuyegdzTDGX7sEpump"
           },
           {
-            "token_symbol": "MCGA",
             "token_name": "Make Cut Great Again",
+            "token_symbol": "MCGA",
             "token_address": "KZAVAzu3nBwg2iFJw1ocr3RNo4eecLH1Zy6pM81pump"
           },
           {
-            "token_symbol": "TWIN",
-            "token_name": "TWIN",
-            "token_address": "H6TWjaet2Qti5VkxakpVt2gK7tB9uVYqMczwK7V7pump"
+            "token_name": "DisclaimerCoin",
+            "token_symbol": "DONT",
+            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
+          },
+          {
+            "token_name": "Useless Shit Dollar",
+            "token_symbol": "USD",
+            "token_address": "FB2zvg1MbTh7gFdTyZTmjzZ6Zwr16UUcQsSYi9m2pump"
           }
         ],
-        "leader_hint_token_address": "8wXtPeU6557ETkp9WhFY1n1EcU6NxDvbAggHGsMYiHsB",
+        "leader_hint_token_address": "8wXtPeU6557ETkp9WHFY1n1EcU6NxDvbAggHGsMYiHsB",
         "confidence_0_100": 75,
-        "confidence_rationale": "The meme stock and retail investor rebellion theme is well-represented by tokens like GME, Usdt, and KITTY. These tokens leverage the cultural memory of the 2021 meme stock movement and its associated jargon, indicating a strong and recurring theme.",
+        "confidence_rationale": "The meme stock theme is supported by tokens with strong community engagement and historical references to the 2021 movement.",
         "leader_token": {
           "token_symbol": "GME",
           "token_name": "GameStop",
@@ -1251,50 +1202,101 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Autonomous Systems",
-        "description": "This META includes tokens that are tied to AI-driven systems, autonomous agents, or AI-generated content. These tokens often reference AI capabilities, AI-generated content, or AI-driven development platforms.",
+        "meta_name": "Crypto Nostalgia",
+        "description": "Tokens that leverage nostalgia for early internet culture and classic memes. This theme is characterized by tokens that reference viral internet phenomena from the early 2000s and beyond, appealing to a sense of nostalgia among users.",
         "defining_signals": [
-          "Reference to AI-driven systems or autonomous agents",
-          "Incorporation of AI-generated content or AI-driven development",
-          "Tokens with names or descriptions that reference AI capabilities or AI-generated content",
-          "Community-driven projects with AI-themed branding",
-          "Tokens with names or lore inspired by AI or autonomous systems"
+          "References to early internet culture and memes",
+          "Use of nostalgic imagery and themes",
+          "Community engagement around retro internet references",
+          "Incorporation of classic meme formats and styles"
         ],
         "supporting_tokens": [
           {
+            "token_name": "Club Penguin",
+            "token_symbol": "CPENG",
+            "token_address": "258Po41aeXsh3jyqt5TqcJ4JSQe4rnSVd9wvcNPupump"
+          },
+          {
+            "token_name": "Keyboard Cat",
+            "token_symbol": "COOLCAT",
+            "token_address": "5bNAFkwnen23DwfMov4vsxW3EfZZB7qA8RT6AVQzpump"
+          },
+          {
+            "token_name": "Forever Alone",
+            "token_symbol": "ALONE",
+            "token_address": "8AdsF2QXFA8QkFuQ9TrQW6nEyM4E6yT4AwqgZ5cTpump"
+          },
+          {
+            "token_name": "Jigglypuff Kingdom",
+            "token_symbol": "JIGGLYPUFF",
+            "token_address": "AoKgjNMumZ2JjHFaGnrcKSnuTTRqrHWdKHhPPhzjpump"
+          },
+          {
+            "token_name": "Epic Face",
+            "token_symbol": "EPIC",
+            "token_address": "E3SDKLR8vmF8J5My2e1pnnX99f7qtwVZ1EBmfaW6pump"
+          },
+          {
+            "token_name": "The World Record Egg",
+            "token_symbol": "EGG",
+            "token_address": "29TWWr9Lk9wr4yhzNvJb7qgrmftTzvHgG1C5AKwspump"
+          }
+        ],
+        "leader_hint_token_address": "258Po41aeXsh3jyqt5TqcJ4JSQe4rnSVd9wvcNPupump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "The crypto nostalgia theme is supported by tokens with strong references to early internet culture and memes.",
+        "leader_token": {
+          "token_symbol": "EGG",
+          "token_name": "THE EGG",
+          "token_address": "29TWWr9Lk9wr4yhzNvJb7qgrmftTzvHgG1C5AKwspump",
+          "usd_market_cap": 2666328.97
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI and Robotics",
+        "description": "Tokens focused on AI and robotics, leveraging the growing interest in artificial intelligence and automation. This theme is characterized by tokens that highlight technological advancements and the potential of AI in various applications.",
+        "defining_signals": [
+          "Focus on artificial intelligence and robotics",
+          "Community interest in technological advancements",
+          "Integration with AI-driven applications",
+          "Use of AI-related terminology and concepts"
+        ],
+        "supporting_tokens": [
+          {
+            "token_name": "AI",
             "token_symbol": "AI",
-            "token_name": "artificial inu",
             "token_address": "YfZyoQ3eofpYWrCHUXske8iEeUyvsxiPKvkgvLQpump"
           },
           {
+            "token_name": "Clawdbot",
+            "token_symbol": "CLAWDBOT",
+            "token_address": "6bsMNB2q4HvXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+          },
+          {
+            "token_name": "EVA",
             "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
             "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
           },
           {
+            "token_name": "MIA",
+            "token_symbol": "MIA",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_name": "GSD",
             "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
             "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
           },
           {
-            "token_symbol": "CLAW",
-            "token_name": "Clawdbot",
-            "token_address": "gvJCMgzG3zRGdXFjLidc852abgLvzmaogE5JKy3BAGS"
-          },
-          {
-            "token_symbol": "SLASHBOT",
-            "token_name": "slashbot",
-            "token_address": "AtiFyHm6UMNLXCWJGLqhxSwvr3n3MgFKxppkKWUoBAGS"
-          },
-          {
-            "token_symbol": "PUMPCLAWD",
-            "token_name": "PumpClawd",
-            "token_address": "EmiEpmRGe9FpdreXzao3UV2mjCvG5v1wfhpR29kdpump"
+            "token_name": "COPPERPENGUI",
+            "token_symbol": "COPPERPENGUI",
+            "token_address": "hsAgiiRGvqBD5GeZxed9iDKpFpwiq7iL7REjsB8pump"
           }
         ],
-        "leader_hint_token_address": "YfZyoQ3eofpYWrCHUXske8iEeUyvsxiPkvkgvLQpump",
+        "leader_hint_token_address": "YfZyoQ3eofpYWrCHUXske8iEeUyvsxiPKvkgvLQpump",
         "confidence_0_100": 70,
-        "confidence_rationale": "The AI and autonomous systems theme is well-represented by tokens like 'artificial inu', 'Eva Everywhere', and 'Get Shit Done'. These tokens leverage AI-driven systems and autonomous agents, indicating a strong and recurring theme.",
+        "confidence_rationale": "The AI and robotics theme is supported by tokens with a strong focus on technological innovation and community interest.",
         "leader_token": {
           "token_symbol": "EVA",
           "token_name": "Eva Everywhere",
@@ -1304,10 +1306,10 @@
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Penguin Themed Tokens' and 'Meme and Internet Culture' METAs are currently the most active and prominent, with strong community engagement and recurring themes. The 'Meme Stock and Retail Investor Rebellion' META is also gaining traction, particularly with tokens referencing the 2021 meme stock movement. The 'AI and Autonomous Systems' META is emerging as a new trend, with tokens leveraging AI-driven systems and autonomous agents. The 'Animal and Nature-Inspired Tokens' META remains steady but is not showing significant growth at the moment.",
+    "meta_rotation_note": "The 'Penguin Themed' and 'Meme Stock Inspiration' METAs are currently emerging, showing strong community engagement and cultural references. The 'AI and Robotics' and 'Crypto Nostalgia' METAs are stable but showing signs of fading as newer themes gain traction. The 'Animal Themed' meta is gaining momentum with new tokens entering the market.",
     "meta_leaders": [
       {
-        "meta_name": "Penguin Themed Tokens",
+        "meta_name": "Penguin Themed",
         "leader_token": {
           "token_symbol": "PENGUIN",
           "token_name": "Nietzschean Penguin",
@@ -1316,25 +1318,16 @@
         }
       },
       {
-        "meta_name": "Animal and Nature-Inspired Tokens",
+        "meta_name": "Animal Themed",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 93827300.16
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 8803053.91
         }
       },
       {
-        "meta_name": "Meme and Internet Culture",
-        "leader_token": {
-          "token_symbol": "GOAT",
-          "token_name": "Goatseus Maximus",
-          "token_address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
-          "usd_market_cap": 30181392.0
-        }
-      },
-      {
-        "meta_name": "Meme Stock and Retail Investor Rebellion",
+        "meta_name": "Meme Stock Inspiration",
         "leader_token": {
           "token_symbol": "GME",
           "token_name": "GameStop",
@@ -1343,7 +1336,16 @@
         }
       },
       {
-        "meta_name": "AI and Autonomous Systems",
+        "meta_name": "Crypto Nostalgia",
+        "leader_token": {
+          "token_symbol": "EGG",
+          "token_name": "THE EGG",
+          "token_address": "29TWWr9Lk9wr4yhzNvJb7qgrmftTzvHgG1C5AKwspump",
+          "usd_market_cap": 2666328.97
+        }
+      },
+      {
+        "meta_name": "AI and Robotics",
         "leader_token": {
           "token_symbol": "EVA",
           "token_name": "Eva Everywhere",
