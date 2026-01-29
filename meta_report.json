@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-29T18:01:21.701408Z",
+  "generated_at_utc": "2026-01-29T19:11:40.101586Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 218,
+  "token_context_count": 226,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 26 PVP group(s); excluding 42 token(s) from META prompt."
+    "Detected 26 PVP group(s); excluding 41 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 42,
+  "pvp_excluded_token_count": 41,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -218,6 +218,26 @@
     },
     {
       "match_type": "token_name",
+      "match_value": "magic money computers",
+      "tokens": [
+        {
+          "token_symbol": "MMC",
+          "token_name": "Magic Money Computers",
+          "token_address": "2xd2uUMMFAW71hQU1x8QVAQ1HpUkcKARTEiniJGppump",
+          "usd_market_cap": 51463.35,
+          "processed_at": "2026-01-29T17:45:28.321604Z"
+        },
+        {
+          "token_symbol": "MMC",
+          "token_name": "Magic Money Computers",
+          "token_address": "2TK6MgLTmHDhmdh4EtdnBkYKZPkcjMp6cj3gcWhqpump",
+          "usd_market_cap": 23717.17,
+          "processed_at": "2026-01-29T18:09:56.964609Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
       "match_value": "magic money computer",
       "tokens": [
         {
@@ -233,26 +253,6 @@
           "token_address": "9QVPNLcER8kj3YBWTdyZRDDZ8EZq3dXo9a6Kwtaibonk",
           "usd_market_cap": 50982.18,
           "processed_at": "2026-01-29T17:48:32.089166Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "rgc",
-      "tokens": [
-        {
-          "token_symbol": "RGC",
-          "token_name": "Regencell Bioscience",
-          "token_address": "76bzTfvXbxfaGKwHUgo5PHn9KTeQ5xTwgh9PErFatRRX",
-          "usd_market_cap": 5448.34,
-          "processed_at": "2026-01-28T19:03:13.273238Z"
-        },
-        {
-          "token_symbol": "RGC",
-          "token_name": "Robinhood Gold Card",
-          "token_address": "zikrMZ5nVT3C5jBKQ2ffyeeL6VmxMX7qhX6cSe3pump",
-          "usd_market_cap": 3281.55,
-          "processed_at": "2026-01-29T17:42:00.727616Z"
         }
       ]
     },
@@ -561,6 +561,13 @@
           "token_address": "9QVPNLcER8kj3YBWTdyZRDDZ8EZq3dXo9a6Kwtaibonk",
           "usd_market_cap": 50982.18,
           "processed_at": "2026-01-29T17:48:32.089166Z"
+        },
+        {
+          "token_symbol": "MMC",
+          "token_name": "Magic Money Computers",
+          "token_address": "2TK6MgLTmHDhmdh4EtdnBkYKZPkcjMp6cj3gcWhqpump",
+          "usd_market_cap": 23717.17,
+          "processed_at": "2026-01-29T18:09:56.964609Z"
         }
       ]
     }
@@ -569,302 +576,259 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Nietzschean Archetypes",
-        "description": "This META is characterized by tokens that draw from philosophical and cultural references to Friedrich Nietzsche's ideas, particularly the concepts of the Übermensch (Overman) and the 'eternal recurrence.' These tokens often use imagery or themes of existentialism, individualism, and defiance of societal norms.",
+        "meta_name": "Meme Stock-Inspired Tokens",
+        "description": "This META is characterized by tokens that draw inspiration from meme stocks like GameStop (GME) and AMC, leveraging the cultural phenomenon of retail investors banding together to influence stock prices. These tokens often use names and themes that reference the meme stock movement, creating a sense of community and collective action.",
         "defining_signals": [
-          "Tokens with names like 'Nietzschean Fox', 'Nietzschean Doge', and 'Nietzschean Inu' that reference philosophical themes.",
-          "Use of existentialist or anti-conformist themes in token descriptions.",
-          "Community narratives that emphasize individualism and self-reliance.",
-          "Incorporation of Nietzschean quotes or motifs in branding and lore.",
-          "Tokens that position themselves as symbols of personal strength and resilience."
+          "Names that reference meme stocks or the meme stock movement",
+          "Themes centered around retail investor activism",
+          "Community-driven narratives emphasizing collective action",
+          "Use of stock ticker symbols and financial jargon",
+          "Incorporation of meme stock-related memes and references"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "GME",
+            "token_name": "GAMESTOP",
+            "token_address": "8WPerPpfuYx8sPddgk5eZL3DJygRNhgdbTATvxZZRneb"
+          },
+          {
+            "token_symbol": "AMC",
+            "token_name": "AMC",
+            "token_address": "91D9BXEGYqjPGWNmzhSesvnUpMTskWj8d9JeZWSpump"
+          },
+          {
+            "token_symbol": "BB",
+            "token_name": "BlackBerry",
+            "token_address": "9Rq3BQXwG6LsviTHQ2WRHdNozzG1AkUYYaxpiFpump"
+          },
+          {
+            "token_symbol": "F",
+            "token_name": "Ford",
+            "token_address": "4bTo8migtFE5t51hTm6s8E5ymrssLw5QfEiR6JBKbonk"
+          },
+          {
+            "token_symbol": "KHC",
+            "token_name": "Kraft Heinz",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          }
+        ],
+        "leader_hint_token_address": "8WPerPpfuYx8sPddgk5eZL3DJygRNhgdbTATvxZZRneb",
+        "confidence_0_100": 90,
+        "confidence_rationale": "The 'GAMESTOP' token has the highest market cap among the tokens in this category, indicating its leadership position. The meme stock theme is consistently applied across multiple tokens, showing a strong and recurring pattern.",
+        "leader_token": {
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 274960781.34
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Pop Culture and Media-Inspired Tokens",
+        "description": "This META is characterized by tokens that draw inspiration from popular culture, media, and entertainment. These tokens often reference movies, TV shows, books, and other forms of media to create a sense of familiarity and community among token holders.",
+        "defining_signals": [
+          "Use of names or themes from popular movies, TV shows, books, or games",
+          "Community engagement centered around media-related themes",
+          "Incorporation of pop culture references to create a sense of identity",
+          "Leveraging media-related humor or cultural references",
+          "Community-driven narratives inspired by popular media"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BATMAN",
+            "token_name": "ANTI ICE Batman",
+            "token_address": "9yED1TLmsodGmABHhcQi6wzxTEiP9SBu1YBBv7fpump"
+          },
+          {
+            "token_symbol": "SLVR",
+            "token_name": "Silver Surfer",
+            "token_address": "218GvpbMt91iGnwxiAfhwP2dc9giBaKi25JLoUADpump"
+          },
+          {
+            "token_symbol": "EMELIA",
+            "token_name": "Amelia the Patriot",
+            "token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump"
+          },
+          {
+            "token_symbol": "CHAKA",
+            "token_name": "First Neuralink Penguin",
+            "token_address": "5XFQQFL4PB45n1YY37n7pawaNLvMZYaE9tciHh6pump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          }
+        ],
+        "leader_hint_token_address": "9yED1TLmsodGmABHhcQi6wzxTEiP9SBu1YBBv7fpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "The 'ANTI ICE Batman' token has the highest market cap among the tokens in this category, indicating its leadership position. The pop culture and media theme is consistently applied across multiple tokens, showing a strong and recurring pattern.",
+        "leader_token": {
+          "token_symbol": "$HACHI",
+          "token_name": "Hachiko",
+          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+          "usd_market_cap": 6011716.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nietzschean Animals",
+        "description": "This META is characterized by tokens that draw inspiration from philosophical or existential themes associated with Friedrich Nietzsche, often using animal imagery to symbolize deeper existential or philosophical concepts. These tokens often adopt names like 'Nietzschean Dog', 'Nietzschean Fox', or 'Nietzschean Cat' to evoke a sense of philosophical depth and individualism.",
+        "defining_signals": [
+          "Use of Nietzschean philosophical themes in token names",
+          "Incorporation of animal imagery to symbolize philosophical concepts",
+          "Community engagement centered around philosophical and existential themes",
+          "Tokens names that include 'Nietzschean' followed by an animal name",
+          "Cultural references to Nietzsche's works or philosophical ideas"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "DOG",
+            "token_name": "Nietzschean Dog",
+            "token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKpump"
+          },
           {
             "token_symbol": "Fox",
             "token_name": "Nietzschean Fox",
             "token_address": "z59KW3WNtfP6LJvB77zrnkNf1DRweQdesEWo1o3pump"
           },
           {
+            "token_symbol": "CAT",
+            "token_name": "Nietzschean Cat",
+            "token_address": "2V9cTkmeK1ThvaGdrcbEYXi73AKnrFYu1fW6kSewpump"
+          },
+          {
+            "token_SYMBOL": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj8GZvX3JpN2iQz5GcgAVpump"
+          },
+          {
+            "token_SYMBOL": "BILBO",
+            "token_name": "Nietzschean Bilbo",
+            "token_address": "26W5euUup4xsNWK2J9CxijJxUa5eMAkoeP57ZJcGpump"
+          }
+        ],
+        "leader_hint_token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKkump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "The 'Nietzschean Dog' token has the highest market cap among the tokens in this category, indicating its leadership position. The philosophical and animal imagery themes are consistently applied across multiple tokens, showing a strong and recurring pattern.",
+        "leader_token": {
+          "token_symbol": "Bilbo",
+          "token_name": "Bilbo",
+          "token_address": "26W5euUup4xsNWK2J9CxijJxUa5eMAkoeP57ZJcGpump",
+          "usd_market_cap": 138405.08
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal-Inspired Memecoins",
+        "description": "This META is characterized by tokens that draw inspiration from various animals, often using them as symbols or mascots for the token. These tokens frequently reference popular animal memes and use animal imagery to create a sense of community and identity among token holders.",
+        "defining_signals": [
+          "Use of animal names or imagery in token names",
+          "Reference to popular animal memes or internet culture",
+          "Community engagement centered around animal themes",
+          "Incorporation of animal symbolism to represent token values or goals",
+          "Leveraging animal-related humor or cultural references"
+        ],
+        "supporting_tokens": [
+          {
             "token_symbol": "DOG",
             "token_name": "Nietzschean Dog",
-            "token_address": "FLGGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKKpump"
-          },
-          {
-            "token_symbol": "INU",
-            "token_name": "Nietzschean Inu",
-            "token_address": "4xQKysxbbZrYmizc9pyn4qdfNjV9pN2iQz5GcgAVpump"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKkump"
           },
           {
             "token_symbol": "CAT",
             "token_name": "Nietzschean Cat",
-            "token_address": "2V9cTkmeK1ThvaGdrcbEYXi73AKnrFYu1fW6kSwwpump"
+            "token_address": "2V9cTkmeK1ThvaGdrcbEYXi73AKnrFYu1fW6kSewpump"
           },
           {
-            "token_symbol": "HUMAN",
-            "token_name": "Nietzschean Human",
-            "token_address": "2ZTR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rd9B2"
-          }
-        ],
-        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxkRTvpaJApump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "The META is supported by multiple tokens that explicitly reference Nietzschean philosophy and existential themes. These tokens have a strong narrative and community alignment with the philosophical concepts, indicating a recurring theme.",
-        "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 89940379.77
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto-Related Satire and Critique",
-        "description": "This META is characterized by tokens that satirize or critique aspects of the crypto industry, often using humor or irony to comment on market behaviors, speculative trading, or the broader financial ecosystem.",
-        "defining_signals": [
-          "Tokens with names and descriptions that reference crypto-related satire or critique.",
-          "Use of humor or irony to comment on crypto market behaviors.",
-          "Strong community narratives that position the token as a critique of speculative trading or market hype.",
-          "Incorporation of meme culture to highlight or mock crypto trends.",
-          "Tokens that position themselves as a humorous or satirical take on crypto or broader societal issues."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BWT",
-            "token_name": "Barron Meme",
-            "token_address": "Av3cLhrHypqqqH5VNqgmASeCGKbPGB8L2teNRuhH3bonk"
+            "token_symbol": "FOX",
+            "token_name": "Nietzschean Fox",
+            "token_address": "z59KW3WNtfP6LJvB77zrnkNf1DRweQdesEWo1o3pump"
           },
-          {
-            "token_symbol": "FUCK",
-            "token_name": "FuckCoin",
-            "token_address": "7AXkGaDm7yuNLQsyHcHZuECA34L4m5jrENhdG8YFpump"
-          },
-          {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
-          },
-          {
-            "token_symbol": "BULLION",
-            "token_name": "Bullion",
-            "token_address": "2Yu7PkFxScH428jFry9Z6dSDRs59gcC888PfDo4Tpump"
-          },
-          {
-            "token_symbol": "DUMB",
-            "token_name": "Dumb Money",
-            "token_address": "BMhHXK6XQSGLkX3KjoUcppmBsssUKAqUYwQ68tMzpump"
-          },
-          {
-            "token_symbol": "FCC",
-            "token_name": "FuckC",
-            "token_address": "4R1P1zqnfY16t94gZfqPTFPiBRgskJfU9oEwLaApump"
-          }
-        ],
-        "leader_hint_token_address": "Av3cLhrHypqqqH5VNqgmASeCGKbPGB8L2teNRuhH3bonk",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The META is supported by tokens that clearly satirize or critique aspects of the crypto industry. These tokens have strong community narratives and cultural references that align with the theme.",
-        "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 70582548.91
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme-Driven Crypto Tokens",
-        "description": "This META is characterized by tokens that are directly inspired by viral internet memes, often with humorous or satirical themes. These tokens leverage existing meme culture to attract attention and community engagement.",
-        "defining_signals": [
-          "Tokens with names and descriptions that reference viral memes or internet slang.",
-          "Strong community-driven narratives tied to meme culture.",
-          "Use of humor, irony, or absurdity in branding and token lore.",
-          "Tokens that position themselves as a humorous or satirical take on crypto or broader societal issues.",
-          "Incorporation of meme imagery or references in marketing and community engagement."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "alpha",
-            "token_name": "alpha meme",
-            "token_address": "EtJruYAPMKb4d6HPhitet1Xj89SHsSzody87KrrJpump"
-          },
-          {
-            "token_symbol": "RAGEBAIT",
-            "token_name": "Ragebait",
-            "token_address": "4ht1SGqqBCn4bPjFuJSADD9jNuZd8a8cpAcdXzCopump"
-          },
-          {
-            "token_symbol": "knight",
-            "token_name": "The Knight",
-            "token_address": "D2ktFF1jxG52XgnoNL62veTvEHPkui5syBifjJeapump"
-          },
-          {
-            "token_symbol": "DONPIZZA",
-            "token_name": "DONON P PIZZA",
-            "token_address": "CMC4JdfzwyC1jd1GQyyPURpMnu7CfH9iwsmDmevMZ1vzp"
-          }
-        ],
-        "leader_hint_token_address": "5UUH9RTDiSpq6HKS6bp4NdU9pnJpXRXuiw6ShBTBhgH2",
-        "confidence_0_100": 90,
-        "confidence_rationale": "The META is supported by a strong set of meme-driven tokens with clear cultural references and community engagement. These tokens have a high level of meme integration and are well-aligned with internet culture.",
-        "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 23069391.72
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Cultural and Historical References",
-        "description": "This META is characterized by tokens that draw from historical, cultural, or literary references to create a sense of gravitas and narrative depth. These tokens often use well-known figures, events, or symbols to position themselves as part of a broader cultural or historical context.",
-        "defining_signals": [
-          "Tokens with names and descriptions that reference historical or cultural figures, events, or symbols.",
-          "Use of historical or cultural narratives to create a sense of gravitas.",
-          "Strong community narratives that position the token as part of a broader cultural or historical context.",
-          "Incorporation of well-known figures or events in branding and lore.",
-          "Tokens that position themselves as a continuation or reinterpretation of historical or cultural themes."
-        ],
-        "supporting_tokens": [
           {
             "token_symbol": "PENGUIN",
             "token_name": "Nietzschean Penguin",
-            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxkRTvpaJApump"
+            "token_address": "8Jx8AAHj8GZvX3JpN2iQz5GcgAVpump"
           },
           {
             "token_symbol": "BILBO",
-            "token_name": "Bilbo",
+            "token_name": "Nietzschean Bilbo",
             "token_address": "26W5euUup4xsNWK2J9CxijJxUa5eMAkoeP57ZJcGpump"
-          },
-          {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYYyHpVi2Zz26v4WpEVQx2WBohTArYGpump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zz26v4WpEVQx2WBohTArYGpump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
           }
         ],
-        "leader_hint_token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxkRTvpaJApump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "The META is supported by tokens that draw from historical and cultural references to create a sense of gravita. These tokens have strong narratives and community engagement that align with the theme.",
+        "leader_hint_token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKkump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The 'Nietzschean Dog' token has the highest market cap among the tokens in this category, indicating its leadership position. The animal theme is consistently applied across multiple tokens, showing a strong and recurring pattern.",
         "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 6011716.0
+          "token_symbol": "Bilbo",
+          "token_name": "Bilbo",
+          "token_address": "26W5euUup4xsNWK2J9CxijJxUa5eMAkoeP57ZJcGpump",
+          "usd_market_cap": 138405.08
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Community-Driven and Niche Interest Tokens",
-        "description": "This META is characterized by tokens that are driven by specific community interests or niche cultural references. These tokens often cater to specific subcultures, fandoms, or interest groups.",
+        "meta_name": "Political and Social Commentary Tokens",
+        "description": "This META is characterized by tokens that draw inspiration from political and social commentary. These tokens often reference political figures, social movements, and cultural phenomena to create a sense of community and identity among token holders.",
         "defining_signals": [
-          "Tokens with names and descriptions that reference specific subcultures, fandoms, or interest groups.",
-          "Strong community-driven narratives that position the token as part of a specific interest group.",
-          "Use of niche cultural references to create a sense of belonging or exclusivity.",
-          "Incorporation of specific fandom or subculture themes in branding and lore.",
-          "Tokens that position themselves as a continuation or reinterpretation of niche cultural themes."
+          "Use of names or themes from political figures or movements",
+          "Community engagement centered around political or social themes",
+          "Incorporation of political or social commentary to create a sense of identity",
+          "Leveraging political or social humor or cultural references",
+          "Community-driven narratives inspired by political or social issues"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zz26v4WpEVQx2WBohTArYGpump"
+            "token_symbol": "AMERICA",
+            "token_name": "America",
+            "token_address": "9Rq3BQXwG6LsviTHQ2WRHdNozzG1AkUYYaxpiFpump"
           },
           {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zz26v4WpEVQx2WBohTArYGpump"
+            "token_symbol": "CHINA",
+            "token_name": "China",
+            "token_address": "pLmbt9MZnKjXxVxao9yLx8XY6Rgm399Z5EQVNZ5pump"
           },
           {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zz26v4WpEVQx2WBohTArYGpump"
+            "token_symbol": "VANCE1",
+            "token_name": "VANCE1",
+            "token_address": "FXmaE42AzEtE9thMHxDs3jDfHPP8nnUywzxvXrojbonk"
           },
           {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zz26v4WpEVQx2WBohTArYGpump"
+            "token_symbol": "BILBO",
+            "token_name": "Bilbo Baggins",
+            "token_address": "26W5euUup4xsNWK2J9CxijJxUa5eMAkoeP57ZJcGpump"
           },
           {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zz26v4WpEVQx2WBohTArYGpump"
-          },
-          {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zz26v4WpEVQx2WBohTArYGpump"
+            "token_symbol": "AMERICA",
+            "token_name": "America",
+            "token_address": "9Rq3BQXwG6LsviTHQ2WRHdNozzG1AkUYYaxpiFpump"
           }
         ],
-        "leader_hint_token_address": "3d17dR2LMFuYyHpVi2Zz26v4WpEVQx2WBohTArYGpump",
+        "leader_hint_token_address": "9Rq3BQXwG6LsviQ2WRHdNozzG1AkUYYaxpiFpump",
         "confidence_0_100": 70,
-        "confidence_rationale": "The META is supported by tokens that are driven by specific community interests or niche cultural references. These tokens have strong community narratives and cultural alignment with the theme.",
+        "confidence_rationale": "The 'America' token has the highest market cap among the tokens in this category, indicating its leadership position. The political and social commentary theme is consistently applied across multiple tokens, showing a strong and recurring pattern.",
         "leader_token": {
-          "token_symbol": "BARK",
-          "token_name": "Bark Inc",
-          "token_address": "3d17dR2LMFuYyHpVi2Zu26v4WpEVQx2WBohTArYGpump",
-          "usd_market_cap": 277498.96
+          "token_symbol": "Bilbo",
+          "token_name": "Bilbo",
+          "token_address": "26W5euUup4xsNWK2J9CxijJxUa5eMAkoeP57ZJcGpump",
+          "usd_market_cap": 138405.08
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Nietzschean Archetypes' and 'Meme-Driven Crypto Token' METAs are currently dominant, with strong community engagement and cultural alignment. The 'Crypto-Related Satire and Critique' META is emerging as a strong contender, leveraging humor and irony to comment on crypto trends. The 'Cultural and Historical References' META is fading slightly as newer, more meme-driven tokens gain traction. The 'Community-Driven and Niche Interest Tokens' META is stable but not as prominent as the others.",
+    "meta_rotation_note": "The 'Nullion' and 'Meme Stock-Inspired Tokens' METAs are fading as the market shifts towards more philosophical and cultural themes. Emerging METAs include 'Nietzschean Animals' and 'Pop Culture and Media-Inspired Tokens', which are gaining traction due to their deep cultural roots and community engagement.",
     "meta_leaders": [
       {
-        "meta_name": "Nietzschean Archetypes",
+        "meta_name": "Meme Stock-Inspired Tokens",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 89940379.77
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 274960781.34
         }
       },
       {
-        "meta_name": "Crypto-Related Satire and Critique",
-        "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 70582548.91
-        }
-      },
-      {
-        "meta_name": "Meme-Driven Crypto Tokens",
-        "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 23069391.72
-        }
-      },
-      {
-        "meta_name": "Cultural and Historical References",
+        "meta_name": "Pop Culture and Media-Inspired Tokens",
         "leader_token": {
           "token_symbol": "$HACHI",
           "token_name": "Hachiko",
@@ -873,12 +837,30 @@
         }
       },
       {
-        "meta_name": "Community-Driven and Niche Interest Tokens",
+        "meta_name": "Nietzschean Animals",
         "leader_token": {
-          "token_symbol": "BARK",
-          "token_name": "Bark Inc",
-          "token_address": "3d17dR2LMFuYyHpVi2Zu26v4WpEVQx2WBohTArYGpump",
-          "usd_market_cap": 277498.96
+          "token_symbol": "Bilbo",
+          "token_name": "Bilbo",
+          "token_address": "26W5euUup4xsNWK2J9CxijJxUa5eMAkoeP57ZJcGpump",
+          "usd_market_cap": 138405.08
+        }
+      },
+      {
+        "meta_name": "Animal-Inspired Memecoins",
+        "leader_token": {
+          "token_symbol": "Bilbo",
+          "token_name": "Bilbo",
+          "token_address": "26W5euUup4xsNWK2J9CxijJxUa5eMAkoeP57ZJcGpump",
+          "usd_market_cap": 138405.08
+        }
+      },
+      {
+        "meta_name": "Political and Social Commentary Tokens",
+        "leader_token": {
+          "token_symbol": "Bilbo",
+          "token_name": "Bilbo",
+          "token_address": "26W5euUup4xsNWK2J9CxijJxUa5eMAkoeP57ZJcGpump",
+          "usd_market_cap": 138405.08
         }
       }
     ]
