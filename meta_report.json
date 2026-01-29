@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-29T16:00:16.713548Z",
+  "generated_at_utc": "2026-01-29T17:00:53.791659Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 228,
+  "token_context_count": 225,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 28 PVP group(s); excluding 44 token(s) from META prompt."
+    "Detected 27 PVP group(s); excluding 42 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 44,
+  "pvp_excluded_token_count": 42,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -253,26 +253,6 @@
           "token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump",
           "usd_market_cap": 13268372.08,
           "processed_at": "2026-01-29T12:04:12.833001Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "sol",
-      "tokens": [
-        {
-          "token_symbol": "SOL",
-          "token_name": "Sol The Trophy Tomato",
-          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
-          "usd_market_cap": 3026038.33,
-          "processed_at": "2026-01-28T16:57:49.664064Z"
-        },
-        {
-          "token_symbol": "sol",
-          "token_name": "solx402",
-          "token_address": "3nuJY1TsPzVpiXwbXCVVvAkP4Vvxy8W1Ka5D58xhpump",
-          "usd_market_cap": 9747.71,
-          "processed_at": "2026-01-28T23:08:29.570136Z"
         }
       ]
     },
@@ -602,25 +582,21 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Revival",
-        "description": "Tokens reviving classic internet memes from the 2000s to 2020s, leveraging nostalgia and established cultural references for community engagement.",
+        "meta_name": "Meme Culture Revival",
+        "description": "Tokens leveraging classic internet memes and cultural references to attract community engagement and virality. These tokens often repurpose well-known memes, slang, or viral content from the 2010s and 2020s into crypto narratives.",
         "defining_signals": [
-          "Leverage well-documented meme origins (e.g., Rickroll, Doge, Nietzschean themes)",
-          "Strong historical presence in meme archives (KnowYourMeme, Wikipedia)",
-          "Community-driven narratives with clear meme lineage",
-          "High engagement from existing meme communities",
-          "Clear cultural symbolism tied to established internet history"
+          "Repurposing of viral TikTok, Reddit, and 4chan memes",
+          "Use of established slang or phrases with historical internet roots",
+          "Community-driven narratives with meme-based branding",
+          "Leveraging nostalgia for early 2000s internet culture",
+          "Cross-platform meme adoption (TikTok, Instagram, X)",
+          "Strong social media presence with meme-centric content"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "RICKROLL",
-            "token_name": "RICKROLL",
-            "token_address": "Eu8qFQrtyRdTLmjn42vnuVCY26fsZPSbkbyVo31t4xF"
-          },
-          {
-            "token_symbol": "PIKA",
-            "token_name": "Pikachu Pokémon",
-            "token_address": "7DukaJEJ3y9hgZqd4zKP4cZakAybH5foQJVKBNEzpump"
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
             "token_symbol": "PENGUIN",
@@ -633,19 +609,24 @@
             "token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKKpump"
           },
           {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zu26v4WpEPQx2WBohTArYGpump"
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
           },
           {
             "token_symbol": "BONK",
-            "token_name": "BONK",
-            "token_address": "DezXAZ8z7PnrnRJjz3wZBoRgixCa6xjnB7YaB1pPB263"
+            "token_name": "Bonk",
+            "token_address": "DezXAX8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "PEPECASH",
+            "token_name": "PEPE CASH",
+            "token_address": "655MQLuAYMmTYasaDsQsd1hVQMZs8hvGx8KvNfsQF8o9"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wZBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong historical meme lineage with clear cultural references and active community engagement across multiple platforms.",
+        "leader_hint_token_address": "DezXAX8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong evidence of meme revival across multiple tokens with clear cultural roots in internet history and consistent community engagement patterns.",
         "leader_token": {
           "token_symbol": "PENGUIN",
           "token_name": "Nietzschean Penguin",
@@ -655,20 +636,90 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political Satire",
-        "description": "Tokens leveraging political figures, events, or ideologies as satirical or commentary-based memes.",
+        "meta_name": "Nostalgia for Gaming Culture",
+        "description": "Tokens drawing from retro gaming culture, including iconic characters references, game-specific memes, and nostalgia for classic games franchises. These tokens often leverage the emotional connection to gaming history to build community.",
         "defining_signals": [
-          "Direct references to political figures or events",
-          "Satirical or critical commentary on political issues",
-          "High engagement from political meme communities",
-          "Use of political imagery or rhetoric",
-          "Strong presence in political meme subcultures"
+          "References to iconic gaming characters or franchise",
+          "Use of retro gaming slang or inside jokes",
+          "Community engagement through gaming nostalgia",
+          "Leveraging viral gaming memes (e.g., 'Surprised Pikachu')",
+          "Cross-promotion with gaming communities",
+          "Strong ties to specific game titles or genres"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "BWT",
+            "token_symbol": "PIKA",
+            "token_name": "Pikachu Pokémon",
+            "token_address": "7DukaJEJ3y9hgZqd4zKP4cZakAybH5foQJVKBNEzpump"
+          },
+          {
+            "token_symbol": "CPENG",
+            "token_name": "Club Penguin",
+            "token_address": "258Po41aeXsh3jyqt5TqcJ4JSQe4rnSVd9wvcNPupump"
+          },
+          {
+            "token_symbol": "CHONKY",
+            "token_name": "Chonky Pikachu",
+            "token_address": "Ba8iDUTRFAqQc8DsX2Cq48u89kytz9P52hXVeRopump"
+          },
+          {
+            "token_symbol": "GOLDINU",
+            "token_name": "GOLDINU",
+            "token_address": "DJprRUh93Dm6GbDFjCdNmfPHQLASkFe3Z7tZvrNnpump"
+          },
+          {
+            "token_symbol": "POKEMON",
+            "token_name": "The One Piece",
+            "token_address": "B4p8B62Ln6H8YsYmxvNVX1wDC6wJom4dqX8cXA8Ybonk"
+          },
+          {
+            "token_symbol": "BONGO",
+            "token_name": "Bongo Cat",
+            "token_address": "7WnBxyVEGcHE3SBmgzoRghDvxDhfG6iwhSS7xsbDbonk"
+          }
+        ],
+        "leader_hint_token_address": "7DukaJEJ3y9hgZqd4zKP4cZakAybH5foQJVKBNEzpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong gaming nostalgia signals across multiple tokens with clear cultural roots in gaming history and consistent community engagement patterns.",
+        "leader_token": {
+          "token_symbol": "CPENG",
+          "token_name": "Club Penguin",
+          "token_address": "258Po41aeXsh3jyqt5TqcJ4JSQe4rnSVd9wvcNPupump",
+          "usd_market_cap": 922852.22
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political and Social Commentary",
+        "description": "Tokens that leverage political figures, social movements, or cultural commentary as their core narrative. These tokens often reflect current events or societal trends, using them as a foundation for community identity.",
+        "defining_signals": [
+          "References to political figures or movements",
+          "Use of social commentary or activism themes",
+          "Community engagement around political or social issues",
+          "Leveraging current events or political memes",
+          "Strong ties to specific political ideologies or causes",
+          "Cross-promotion with political or activist communities"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BARRON",
             "token_name": "Barron Meme",
-            "token_address": "Av3cLhrHypqqh5VNqgmASeCGKbPGB8L2teNRuhH3bonk"
+            "token_address": "Av3cLhrHypqqh5VNqgmASeCGGbPGB8L2teNRuhH3bonk"
+          },
+          {
+            "token_symbol": "PROTECT",
+            "token_name": "Protect the Children",
+            "token_address": "m7frzchzPTcPtJoBL3kyDwAuPwYRzR3o1Zobcaspump"
+          },
+          {
+            "token_symbol": "GME",
+            "token_name": "GAMESTOP",
+            "token_address": "8WPerPpYx8sPddgk5eZL3DJygRNhgdbTATvxZZRneb"
+          },
+          {
+            "token_symbol": "BARRON",
+            "token_name": "Barron Meme",
+            "token_address": "Av3cLhrHypqqh5VNqgmASeCGGbPGB8L2teNRuhH3bonk"
           },
           {
             "token_symbol": "AMELIA",
@@ -676,201 +727,81 @@
             "token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump"
           },
           {
-            "token_symbol": "PUPPY",
-            "token_name": "The Barking Puppy",
-            "token_address": "BHCgKK7dLMngMTewB23bxqPy9a3xW4ZsDh5TwbWwBAGS"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "DOG",
-            "token_name": "Nietzschean Dog",
-            "token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKKpump"
-          },
-          {
             "token_symbol": "BARK",
             "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zu26v4WWpEPQx2WBohTArYGpump"
+            "token_address": "3d17dR2LMFuYyHpVi2Zu26v4WpEVQx2WBohTArYGpump"
           }
         ],
-        "leader_hint_token_address": "Av3cLhrHYpqqh5VNqgmASeCGKbPGB8L2teNRuhH3bonk",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong political references with active engagement in political meme communities.",
+        "leader_hint_token_address": "Av3cLhrHypqqh5VNqgmASeCGGbPGB8L2teNRuhH3bonk",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong political and social commentary signals across multiple tokens with clear cultural roots in current events and consistent community engagement patterns.",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 89940379.77
+          "token_symbol": "AMELIA",
+          "token_name": "Amelia the Patriot",
+          "token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump",
+          "usd_market_cap": 712059.67
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Meme",
-        "description": "Tokens leveraging AI-generated content or AI-related themes for meme creation and community engagement.",
+        "meta_name": "AI and Tech Innovation",
+        "description": "Tokens centered around artificial intelligence, blockchain technology, and emerging tech concepts. These tokens often focus on the intersection of AI and blockchain, leveraging the hype around technological advancements.",
         "defining_signals": [
-          "Integration with AI tools for meme generation",
-          "Community-driven AI content creation",
-          "Focus on AI-generated art or narratives",
-          "High engagement from AI-focused crypto communities",
-          "Use of AI in tokenomics or governance"
+          "Focus on AI or blockchain technology",
+          "Use of tech jargon or concepts",
+          "Community engagement around tech innovation",
+          "Leveraging emerging tech trends",
+          "Strong ties to specific tech projects or platforms",
+          "Cross-promotion with tech communities"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "CLAWD",
             "token_name": "Clawd",
-            "token_address": "7ahcvAHVkB7eo95wDmnH4XZYzDkB9ggaprt55TWmpump"
-          },
-          {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
-          },
-          {
-            "token_symbol": "MTO",
-            "token_name": "Meowtakeover",
-            "token_address": "GtC43xtkGeLb7fWby7DEaY284GRkB3itDgRW7YPFpump"
-          },
-          {
-            "token_symbol": "BWT",
-            "token_name": "Barron Meme",
-            "token_address": "Av3cLhrHypqqh5VNqgmASeCGKbPGB8L2teNRuhH3bonk"
-          },
-          {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zu26v4WpEPQx2WBohTArYGpump"
-          }
-        ],
-        "leader_hint_token_address": "7ahcvAHVkB7eo95wDmnH4XZYzDkB9ggaprt55TWmpump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong AI integration with active community engagement in AI-focused crypto spaces.",
-        "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 51666566.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto Native Meme",
-        "description": "Tokens creating entirely new memes within the crypto ecosystem, often with no pre-existing cultural context outside of cryptocurrency.",
-        "defining_signals": [
-          "No verifiable non-crypto cultural origin",
-          "Community-driven creation with crypto-specific humor",
-          "Rapid adoption within crypto-native communities",
-          "High social media engagement on crypto platforms",
-          "Frequent use in on-chain memetic content"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbf8VJ2skB7obEw9qx2rKiJd6acFFNxNpump"
-          },
-          {
-            "token_symbol": "TESTICLE",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
-          },
-          {
-            "token_symbol": "FUCK",
-            "token_name": "fuckcoin",
-            "token_address": "7AXkGaDm7yuNLQsyHcHZuECA34L4mjrENhdG8YFpump"
-          },
-          {
-            "token_symbol": "BWT",
-            "token_name": "Barron Meme",
-            "token_address": "Av3cLhrHypqqh5VNqgmASeCGKbPGB8L2teNRuhH3bonk"
-          },
-          {
-            "token_symbol": "PUPPY",
-            "token_name": "The Barking Puppy",
-            "token_address": "BHCgKK7dLMngMTewB23bxqPy9a3xW4ZsDh5TwbWwBAGS"
-          },
-          {
-            "token_symbol": "GLIZZY",
-            "token_name": "Glizzy",
-            "token_address": "CDPPUj3vwmgU3hMHkowaoWdpjHJkzuyVNse3HHW3jupx"
-          }
-        ],
-        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong community adoption and rapid on-chain engagement, though with limited external cultural context.",
-        "leader_token": {
-          "token_symbol": "testicle",
-          "token_name": "testicle",
-          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
-          "usd_market_cap": 7431604.97
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia Revival",
-        "description": "Tokens leveraging retro pop culture references from the 1990s-2010s, often tied to gaming, media, or internet history.",
-        "defining_signals": [
-          "Clear historical pop culture references",
-          "Strong nostalgia-driven community engagement",
-          "Tie-ins to retro gaming or media properties",
-          "Active use in meme communities focused on retro content",
-          "High engagement from older internet demographics"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "EMERALD",
-            "token_name": "Pokémon",
-            "token_address": "FfQ1Tx33rc3fiG4xurr93NeAbmC9ozqU3rSAppHgpump"
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
             "token_symbol": "CLAWD",
             "token_name": "Clawd",
-            "token_address": "7ahcvAHVkB7eo95wDmnH4XZYzDkB9ggaprt55TWmpump"
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "CPENG",
-            "token_name": "Club Penguin",
-            "token_address": "258Po41aeXsh3jqt5TqcJ4JSQe4rnSVd9wvcNPupump"
+            "token_symbol": "CLAWD",
+            "token_name": "Clawd",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "BONGO",
-            "token_name": "Bongo Cat",
-            "token_address": "7WnBxyVEGgHE3SBmgzoRghDvxDhfG6iwhSS7xsbDbonk"
+            "token_symbol": "CLAWD",
+            "token_name": "Clawd",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "BARK",
-            "token_name": "Bark Inc",
-            "token_address": "3d17dR2LMFuYyHpVi2Zu26v4WppEPQx2WBohTArYGpump"
+            "token_symbol": "CLAWD",
+            "token_name": "Clawd",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "BONK",
-            "token_name": "BONK",
-            "token_address": "DezXAZ8z7PnrnRJjz3wZBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "CLAWD",
+            "token_name": "Clawd",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wZBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong historical pop culture references with active engagement from retro-focused communities.",
+        "leader_hint_token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong AI and tech innovation signals across multiple tokens with clear cultural roots in emerging technology and consistent community engagement patterns.",
         "leader_token": {
-          "token_symbol": "EMERALD",
-          "token_name": "Pokémon",
-          "token_address": "FfQ1Tx33rc3fiG4xurr93NeAbmC9ozqU3rSAppHgpump",
-          "usd_market_cap": 310175.08
+          "token_symbol": "clawd",
+          "token_name": "clawdbot",
+          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
+          "usd_market_cap": 147262.8
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Meme Revival and Nostalgia Revival are currently the strongest METAs, driven by established cultural references and strong community engagement. Crypto Native Meme is gaining traction with rapid on-chain adoption. Political Satire is emerging as a new theme with increasing engagement in niche communities. AI-Driven Meme is showing steady growth but faces challenges in mainstream adoption.",
+    "meta_rotation_note": "Meme Culture Revival is gaining momentum with increased community engagement and virality. Nostalgia for Gaming Culture remains stable but faces competition from AI and Tech Innovation themes. Political and Social Commentary is fading slightly as newer tech-focused themes emerge.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Revival",
+        "meta_name": "Meme Culture Revival",
         "leader_token": {
           "token_symbol": "PENGUIN",
           "token_name": "Nietzschean Penguin",
@@ -879,39 +810,30 @@
         }
       },
       {
-        "meta_name": "Political Satire",
+        "meta_name": "Nostalgia for Gaming Culture",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 89940379.77
+          "token_symbol": "CPENG",
+          "token_name": "Club Penguin",
+          "token_address": "258Po41aeXsh3jyqt5TqcJ4JSQe4rnSVd9wvcNPupump",
+          "usd_market_cap": 922852.22
         }
       },
       {
-        "meta_name": "AI-Driven Meme",
+        "meta_name": "Political and Social Commentary",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 51666566.0
+          "token_symbol": "AMELIA",
+          "token_name": "Amelia the Patriot",
+          "token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump",
+          "usd_market_cap": 712059.67
         }
       },
       {
-        "meta_name": "Crypto Native Meme",
+        "meta_name": "AI and Tech Innovation",
         "leader_token": {
-          "token_symbol": "testicle",
-          "token_name": "testicle",
-          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
-          "usd_market_cap": 7431604.97
-        }
-      },
-      {
-        "meta_name": "Nostalgia Revival",
-        "leader_token": {
-          "token_symbol": "EMERALD",
-          "token_name": "Pokémon",
-          "token_address": "FfQ1Tx33rc3fiG4xurr93NeAbmC9ozqU3rSAppHgpump",
-          "usd_market_cap": 310175.08
+          "token_symbol": "clawd",
+          "token_name": "clawdbot",
+          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
+          "usd_market_cap": 147262.8
         }
       }
     ]
