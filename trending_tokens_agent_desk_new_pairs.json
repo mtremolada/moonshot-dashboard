@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-29T02:59:35.093956Z",
+  "last_updated": "2026-01-29T03:30:23.014372Z",
   "retention_hours": 48,
   "tokens": [
     {
@@ -216119,6 +216119,1388 @@
           },
           "ohlcv": {
             "intervals": {}
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-29T03:12:03.082870Z",
+      "token_address": "6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump",
+      "token_symbol": "TNS",
+      "token_name": "Token Name Service",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 2.7,
+        "groq_web_research": {
+          "summary_all_context": "Token Name Service (TNS) is a decentralized registry for unique token symbols on Solana, enabling on-chain verification of tickers. Created 58 minutes ago, it claims to act as a \"DNS for token symbols,\" preventing duplicate or fraudulent tickers. The development team has locked 15% of tokens.",
+          "answer": "**1) What it claims to be**  \nToken Name Service (TNS) is presented as a **decentralized registry for unique token symbols on Solana**, acting as a single source of truth for verifying token tickers \u2013 essentially \u201cDNS for token symbols.\u201d\n\n**2) Likely utility / features** *(inferred where not explicit)*  \n- On\u2011chain lookup to verify a token\u2019s ticker and associated metadata. *(inferred)*  \n- Authoritative resolution of token symbols, preventing duplicate or fraudulent tickers. *(inferred)*  \n- Ability for projects to register and lock a unique symbol, similar to domain registration. *(inferred)*  \n- Potential integration with wallets and explorers for automatic symbol validation. *(inferred)*  \n- Community\u2011driven governance of symbol assignments (common in decentralized registries). *(inferred)*  \n\n**3) Missing information checklist**  \n- Official documentation or whitepaper detailing protocol mechanics.  \n- Public website or landing page with product overview.  \n- Team identities and relevant experience.  \n- Full tokenomics (supply, allocation, vesting, lock\u2011up details beyond the 15% mentioned).  \n- Audits or security reviews of the smart\u2011contract implementation.  \n- Roadmap or development milestones.  \n\n**4) Risk note**  \nAll statements above are based solely on the provided descriptions. No external verification has been performed, and the actual functionality, security, and legitimacy of TNS cannot be confirmed without the missing documentation and independent audits. Proceed with caution.",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 7,
+              "specificity": 9,
+              "completeness": 6,
+              "clarity": 8,
+              "source_groundedness": 2
+            }
+          },
+          "narrative_score": {
+            "final_score": 4,
+            "narrative_subscores": {
+              "hook_strength": null,
+              "cultural_relevance": null,
+              "cultural_charge": null,
+              "mission_statement": null,
+              "compellingness": null,
+              "tribal_identity": null,
+              "lore_amount": null,
+              "lore_depth": null
+            }
+          },
+          "sentiment_score": {
+            "final_score": 5,
+            "sentiment_subscores": {
+              "overall_tone": 5,
+              "excitement_level": 5,
+              "concern_signals": 5,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 5,
+              "skepticism_level": 5,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-29T03:13:05.485601Z",
+          "token_address": "6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump",
+          "name": "Token Name Service",
+          "symbol": "TNS",
+          "description": "TNS Protocol is a decentralized registry for unique token symbols on Solana. Like DNS for domains or SNS for handles, TNS provides authoritative resolution for token tickers. Verify any token with a single on-chain lookup.",
+          "timestamp": "2026-01-29T03:13:03.272673+00:00",
+          "llm_interpretation": "Description: Token Name Service is a decentralized registry for unique token symbols on Solana, providing a single source of truth for verifying tokens.\n\n1. memecoin: FALSE - The token is related to a specific utility on the Solana blockchain.\n2. utility: TRUE - The token provides a naming system and verification for tokens on Solana.\n3. ai_token: FALSE - There's no mention of AI or artificial intelligence in the provided information.\n4. tweet_coin: FALSE - The token is not based on a viral tweet.\n5. current_event: FALSE - The token is not directly related to a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in the token's branding or description.\n7. offensive: FALSE - There's no indication of offensive themes in the token's branding or description.\n8. animals: FALSE - The token is not based on an animal.\n9. political: FALSE - The token is not related to politics or a political figure.",
+          "llm_description": "Token Name Service is a decentralized registry for unique token symbols on Solana, providing a single source of truth for verifying tokens.",
+          "scraped_website_content": "Decentralized Token Registry One Symbol. One Token. TNS Protocol is a decentralized registry for unique token symbols on Solana. Like DNS for token tickers. Verify any token with a single on-chain lookup. Register a Symbol Lookup Symbol The Problem On Solana, anyone can create a token with any symbol. Search \"BONK\" on any DEX and you'll find hundreds of results. Search \"AAPL\" and you'll find dozens of fake RWA tokens. Which one is real? Current solutions rely on centralized verification teams and proprietary algorithms. This doesn't scale and creates trust dependencies. Duplicate Symbols 20,000+ tokens created daily. Hundreds call themselves \"BONK\". Dozens call themselves \"AAPL\". Which one is real? Right now, there's no way to know on-chain. Verification at Scale With millions of tokens, centralized verification off-chain is error prone and mutable. Aggregators need a single on-chain source of truth. RWA Hindered Tokenized securities and RWAs can't come on-chain without unique symbols and indisputable verification. The Solution Without on-chain truth, verification is centralized and disputable\u2014two orgs can claim different tokens are \"verified.\" A better primitive exists on Solana to enforce symbol uniqueness efficiently. It is called PDAs (Program Derived Addresses). TNS provides a single source of truth. One symbol, one token, verifiable by anyone. On-Chain Registry Simple PDA lookup. Verify any token with one RPC or CPI call. Unique Symbols Each symbol can only be registered once. Like stock tickers. Decentralized ICANN-inspired pricing baked into the contract. Trustless No committees, no data science, no trusted third parties. Available Now On-Chain Verification Any program can verify symbols with a simple PDA lookup or CPI call. Trusted programs can reject unregistered tokens on-chain. Off-chain verification // Single RPC call - no search required const [ pda ] = PublicKey . findProgramAddressSync ( [ Buffer . from ( \"token\" ) , Buffer . from ( symbol ) ] , TNS_... (truncated)",
+          "classifications": {
+            "memecoin": false,
+            "utility": true,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "TNS Protocol is a decentralized registry for unique token symbols on Solana, providing a single source of truth for verifying tokens.",
+            "prompt_2_summary_twitter_searches": "Token Name Service provides a naming system for tokens. The token's development team has locked 15% of the tokens. It appears to be a token with a claimed utility.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "58 minutes ago",
+          "token_created_timestamp": "2026-01-29T02:14:21+00:00",
+          "token_address": "6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump",
+          "token_symbol": "TNS",
+          "token_name": "Token Name Service",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "TNS Protocol is a decentralized registry for unique token symbols on Solana. Like DNS for domains or SNS for handles, TNS provides authoritative resolution for token tickers. Verify any token with a single on-chain lookup.",
+          "token_image": "https://ipfs.io/ipfs/bafkreiay6sbwnkk4wg3auj6db76ou3iuqk4tvdydkmsqwyovcxzuulim4a",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": null,
+          "pump_telegram": null,
+          "pump_website": "https://tns.id",
+          "dex_twitter": null,
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": true,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Decentralized Token Registry One Symbol. One Token. TNS Protocol is a decentralized registry for unique token symbols on Solana. Like DNS for token tickers. Verify any token with a single on-chain lookup. Register a Symbol Lookup Symbol The Problem On Solana, anyone can create a token with any symbol. Search \"BONK\" on any DEX and you'll find hundreds of results. Search \"AAPL\" and you'll find dozens of fake RWA tokens. Which one is real? Current solutions rely on centralized verification teams and proprietary algorithms. This doesn't scale and creates trust dependencies. Duplicate Symbols 20,000+ tokens created daily. Hundreds call themselves \"BONK\". Dozens call themselves \"AAPL\". Which one is real? Right now, there's no way to know on-chain. Verification at Scale With millions of tokens, centralized verification off-chain is error prone and mutable. Aggregators need a single on-chain source of truth. RWA Hindered Tokenized securities and RWAs can't come on-chain without unique symbols and indisputable verification. The Solution Without on-chain truth, verification is centralized and disputable\u2014two orgs can claim different tokens are \"verified.\" A better primitive exists on Solana to enforce symbol uniqueness efficiently. It is called PDAs (Program Derived Addresses). TNS provides a single source of truth. One symbol, one token, verifiable by anyone. On-Chain Registry Simple PDA lookup. Verify any token with one RPC or CPI call. Unique Symbols Each symbol can only be registered once. Like stock tickers. Decentralized ICANN-inspired pricing baked into the contract. Trustless No committees, no data science, no trusted third parties. Available Now On-Chain Verification Any program can verify symbols with a simple PDA lookup or CPI call. Trusted programs can reject unregistered tokens on-chain. Off-chain verification // Single RPC call - no search required const [ pda ] = PublicKey . findProgramAddressSync ( [ Buffer . from ( \"token\" ) , Buffer . from ( symbol ) ] , TNS_... (truncated)",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "https://t.co/J5thK3b61u  $TNS  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump",
+              "$TNS  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump  Claim bb claim \ud83d\ude80 https://t.co/bpYIalj5gV",
+              "Check out Token Name Service (TNS) on https://t.co/JrBjCqnySb https://t.co/S4g3mvcdgX",
+              "$TNS  DEV \u9501\u4e86\u767e\u5206\u4e4b15   https://t.co/IKO3JAofch  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump https://t.co/HtJPq0fPYD"
+            ],
+            "address_top": [
+              "$TNS  DEV \u9501\u4e86\u767e\u5206\u4e4b15   https://t.co/IKO3JAofch  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump https://t.co/HtJPq0fPYD",
+              "x42   Accumulated   $TNS 5k mc early  stayed patient. \u6211\u63d0\u524d\u5e03\u5c40 \u2014 \u4fdd\u6301\u8010\u5fc3\u3002   6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump https://t.co/es55s7XvYZ",
+              "$TNS  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump  Claim bb claim \ud83d\ude80 https://t.co/bpYIalj5gV",
+              "https://t.co/J5thK3b61u  $TNS  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump",
+              "$TNS x78 5k mc to 400k mc GG   6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump https://t.co/eYeGLjRgcp",
+              "Check out Token Name Service (TNS) on https://t.co/JrBjCqnySb https://t.co/S4g3mvcdgX"
+            ],
+            "symbol_recent": [
+              "Still printing massively on $TNS  #crypto #helevier #LoveIslandUK #Trading #DOGE #Altcoins #\u0643\u0627\u0631\u064a\u0632\u0645\u062713 #Sol https://t.co/GzlLY27kVp",
+              "https://t.co/J5thK3b61u  $TNS  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump",
+              "$TNS  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump  Claim bb claim \ud83d\ude80 https://t.co/bpYIalj5gV"
+            ],
+            "symbol_top": [
+              "x42   Accumulated   $TNS 5k mc early  stayed patient. \u6211\u63d0\u524d\u5e03\u5c40 \u2014 \u4fdd\u6301\u8010\u5fc3\u3002   6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump https://t.co/es55s7XvYZ",
+              "$TNS  DEV \u9501\u4e86\u767e\u5206\u4e4b15   https://t.co/IKO3JAofch  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump https://t.co/HtJPq0fPYD",
+              "$TNS x78 5k mc to 400k mc GG   6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump https://t.co/eYeGLjRgcp",
+              "https://t.co/J5thK3b61u  $TNS  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump",
+              "$TNS  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump  Claim bb claim \ud83d\ude80 https://t.co/bpYIalj5gV",
+              "$TNS  6jwcLLjhEcUrnnPtnWvqVKEeAzSTXT6qtV1GEjcopump https://t.co/UbmER4dVzn"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": false,
+            "dex_paid_timestamp": null,
+            "bundle_percentage": 6.15,
+            "fresh_wallets_percentage": 15.0,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 25.34,
+            "num_holders": 1046,
+            "largest_holder_percentage": 15.0,
+            "largest_cluster_percentage": 5.55,
+            "large_holder_count": 6,
+            "same_percentage_count": 4,
+            "low_sol_count": 5
+          },
+          "onchain_scan_score": {
+            "final_score": 3.8,
+            "bundle_percentage_score": 7,
+            "fresh_wallets_percentage_score": 4,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 3,
+            "num_holders_score": 6,
+            "largest_holder_percentage_score": 3,
+            "largest_cluster_percentage_score": 6,
+            "large_holder_count_score": 8,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 6
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 250000,
+            "all_time_highest_threshold": 250000,
+            "highest_threshold_as_farm": 250000,
+            "highest_threshold_as_farmed": 0,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1769656220.2912717
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 409409.69,
+          "ath_market_cap": 452485.65,
+          "ath_market_cap_timestamp": "2026-01-29T03:11:34+00:00",
+          "ath_multiple": 1.105,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_http_fallback",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-01-29T03:00:00.000Z",
+                "holderCount": 765,
+                "marketCap": null,
+                "mcapOverHolders": null
+              }
+            ]
+          },
+          "ohlcv": {
+            "intervals": {}
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-29T03:17:26.675112Z",
+      "token_address": "m7P5KTiEkGAQUmj5bdP4mkijuiim5bwLReRPaGppump",
+      "token_symbol": "HIH",
+      "token_name": "Hand In Hand",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 1.3,
+        "groq_web_research": {
+          "summary_all_context": "Token \"Hand In Hand\" (HIH) references an image of Trump and Nicki Minaj holding hands. No verifiable non-crypto cultural/meme origin for \"Hand In Hand\" or HIH was found; the phrase remains a generic idiom.",
+          "answer": "**1) Summary (non\u2011crypto meaning)**  \n- No verifiable cultural, slang, or meme\u2011related usage of the exact phrase **\u201cHand In Hand\u201d** (or the abbreviation **HIH**) could be located in reputable non\u2011crypto sources. The phrase is a common English idiom meaning \u201ctogether\u201d or \u201cin cooperation,\u201d but it does not appear to be tied to a specific meme, TikTok trend, or gesture that would explain the token\u2019s naming.\n\n**2) Origin / timeline (non\u2011crypto)**  \n- The only notable references are the generic idiomatic expression \u201chand in hand,\u201d used in literature, journalism, and everyday speech. No distinct pop\u2011culture event, viral image, or slang term named \u201cHand In Hand\u201d (or HIH) was identified in the searched domains.\n\n**3) Sources**  \n- *No reliable non\u2011crypto sources were found that document a distinct cultural or meme origin for \u201cHand In Hand\u201d or \u201cHIH.\u201d*",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 8,
+              "completeness": 6,
+              "clarity": 8,
+              "source_groundedness": 4
+            }
+          },
+          "narrative_score": {
+            "final_score": 1,
+            "narrative_subscores": {
+              "hook_strength": 2,
+              "cultural_relevance": 1,
+              "cultural_charge": 2,
+              "mission_statement": 1,
+              "compellingness": 2,
+              "tribal_identity": 1,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": null,
+            "sentiment_subscores": null
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-29T03:18:21.979908Z",
+          "token_address": "m7P5KTiEkGAQUmj5bdP4mkijuiim5bwLReRPaGppump",
+          "name": "Hand In Hand",
+          "symbol": "HIH",
+          "description": "",
+          "timestamp": "2026-01-29T03:18:19.475110+00:00",
+          "llm_interpretation": "Description: A token inspired by an image of Trump and Nicki Minaj holding hands.\n\n1. memecoin: TRUE - based on a viral image that can be considered a meme.\n2. utility: FALSE - no information suggests it's based on tech or utility.\n3. ai_token: FALSE - no information suggests it's based on AI.\n4. tweet_coin: TRUE - inspired by a viral tweet image.\n5. current_event: TRUE - likely related to a current event or trend.\n6. racist: FALSE - no direct evidence of racist themes.\n7. offensive: FALSE - no direct evidence of offensive themes.\n8. animals: FALSE - not based on an animal.\n9. political: TRUE - features a political figure, Donald Trump.",
+          "llm_description": "A token inspired by an image of Trump and Nicki Minaj holding hands.",
+          "scraped_website_content": "",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": true,
+            "current_event": true,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": true
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "",
+            "prompt_2_summary_twitter_searches": "",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "Image of Trump and Nicki Minaj holding hands.",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "7 minutes ago",
+          "token_created_timestamp": "2026-01-29T03:09:57+00:00",
+          "token_address": "m7P5KTiEkGAQUmj5bdP4mkijuiim5bwLReRPaGppump",
+          "token_symbol": "HIH",
+          "token_name": "Hand In Hand",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "",
+          "token_image": "https://ipfs.io/ipfs/QmZUb8jjMKqWCRFFZHBWX3q114xuhtw8nEYkPyw1Bx1pFY",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/atrupar/status/2016556845066805389",
+          "pump_telegram": null,
+          "pump_website": null,
+          "dex_twitter": null,
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": "Trump's discolored hand holds Nicky Minaj's hand today  (Win McNamee/Getty) https://t.co/DfbkapJuX7",
+            "username": "atrupar",
+            "displayname": "Aaron Rupar"
+          },
+          "website_content": null,
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [],
+            "address_top": [],
+            "symbol_recent": [],
+            "symbol_top": []
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": false,
+            "dex_paid_timestamp": null,
+            "bundle_percentage": 0.0,
+            "fresh_wallets_percentage": 45.7,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 0.0,
+            "num_holders": 1216,
+            "largest_holder_percentage": 23.7,
+            "largest_cluster_percentage": 0.08,
+            "large_holder_count": 5,
+            "same_percentage_count": 14,
+            "low_sol_count": 18
+          },
+          "onchain_scan_score": {
+            "final_score": 2.2,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 2,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 10,
+            "num_holders_score": 10,
+            "largest_holder_percentage_score": 3,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 5,
+            "same_percentage_count_score": 3,
+            "low_sol_count_score": 1
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 250000,
+            "all_time_highest_threshold": 250000,
+            "highest_threshold_as_farm": 250000,
+            "highest_threshold_as_farmed": 0,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1769656550.5022628
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": 4.6,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": 4.6,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": 5.5,
+                  "drawdown_value": 2.5
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": 1.7455727746661315e-05,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": 5.5,
+              "drawdown_value": 2.5,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 556829.47,
+          "ath_market_cap": 688962.71,
+          "ath_market_cap_timestamp": "2026-01-29T03:17:17+00:00",
+          "ath_multiple": 1.237,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          },
+          "ohlcv": {
+            "intervals": {
+              "15m": {
+                "bars": [
+                  {
+                    "time": 1769655600000,
+                    "open": 3.672493725195765e-06,
+                    "high": 0.0002848206523985317,
+                    "low": 3.672493725195765e-06,
+                    "close": 0.0002632875213855375,
+                    "volume": 124685.55543698078,
+                    "filled": false,
+                    "macd": 0.0,
+                    "macd_signal": 0.0,
+                    "macd_hist": 0.0,
+                    "cipher_mfi": null,
+                    "cipher_wt1": null,
+                    "cipher_wt2": null,
+                    "cipher_fast_wt1_centered": null,
+                    "cipher_bullish_cross": false,
+                    "cipher_bearish_cross": false,
+                    "cipher_rsi": null,
+                    "cipher_schaff_tc": null
+                  },
+                  {
+                    "time": 1769656500000,
+                    "open": 0.0002632875213855375,
+                    "high": 0.0006246525594894074,
+                    "low": 0.00025537741040793717,
+                    "close": 0.0005368125409872395,
+                    "volume": 176438.32753943116,
+                    "filled": false,
+                    "macd": 2.1819659683326644e-05,
+                    "macd_signal": 4.363931936665329e-06,
+                    "macd_hist": 1.7455727746661315e-05,
+                    "cipher_mfi": null,
+                    "cipher_wt1": null,
+                    "cipher_wt2": null,
+                    "cipher_fast_wt1_centered": null,
+                    "cipher_bullish_cross": false,
+                    "cipher_bearish_cross": false,
+                    "cipher_rsi": null,
+                    "cipher_schaff_tc": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-29T03:18:49.118956Z",
+      "token_address": "4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump",
+      "token_symbol": "rochain",
+      "token_name": "rochain",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 2.3,
+        "groq_web_research": {
+          "summary_all_context": "Rochain ($rochain) is a Solana-based token enabling Roblox inventory item tokenization, allowing creators to earn fees. It positions itself as a launchpad for Roblox-related assets but lacks official documentation, audits, or team details.",
+          "answer": "**1. What it claims to be**  \n- A Solana\u2011based token that \u201ctokenizes Roblox inventory items,\u201d acting as a launchpad for Roblox\u2011related assets.  \n- Supposed to let creators earn fees when their tokenized items are used or traded.\n\n**2. Likely utility / features** *(inferred where not explicit)*  \n- **Tokenized item ownership** \u2013 converts Roblox inventory items into SPL tokens on Solana. *(inferred)*  \n- **Creator fee capture** \u2013 smart\u2011contract fees routed to the original item creator on each transfer or sale. *(inferred)*  \n- **Marketplace integration** \u2013 enables buying, selling, and swapping of tokenized Roblox items on a Solana marketplace. *(inferred)*  \n- **Launchpad functions** \u2013 provides a platform for new Roblox\u2011related projects to issue their own tokens or NFTs. *(inferred)*  \n- **Limited\u2011asset tokenization** \u2013 focuses on \u201climited assets,\u201d likely rare or exclusive Roblox items. *(inferred)*  \n\n**3. Missing information checklist**  \n- Official website / landing page  \n- Whitepaper or detailed technical documentation  \n- Full tokenomics (supply, allocation, fee structure)  \n- Team members / advisors and their credentials  \n- Audits or security reviews of the smart contracts  \n- Legal/compliance disclosures  \n\n**4. Risk note**  \nAll statements above are based solely on the provided metadata. No external verification has been performed; the token is brand\u2011new (\u22481\u202fminute old) and details such as code audits, team identity, and regulatory compliance are currently unavailable. Proceed with caution.",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 6,
+              "specificity": 9,
+              "completeness": 7,
+              "clarity": 8,
+              "source_groundedness": 2
+            }
+          },
+          "narrative_score": {
+            "final_score": 6,
+            "narrative_subscores": {
+              "hook_strength": null,
+              "cultural_relevance": null,
+              "cultural_charge": null,
+              "mission_statement": null,
+              "compellingness": null,
+              "tribal_identity": null,
+              "lore_amount": null,
+              "lore_depth": null
+            }
+          },
+          "sentiment_score": {
+            "final_score": 7,
+            "sentiment_subscores": {
+              "overall_tone": 8,
+              "excitement_level": 6,
+              "concern_signals": 2,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 1,
+              "skepticism_level": 2,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-29T03:19:49.439661Z",
+          "token_address": "4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump",
+          "name": "rochain",
+          "symbol": "rochain",
+          "description": "The launchpad for Roblox items",
+          "timestamp": "2026-01-29T03:19:46.581100+00:00",
+          "llm_interpretation": "Description: Rochain tokenizes Roblox inventory items on Solana, enabling creators to earn fees.\n\n1. memecoin: FALSE - The token is based on a specific utility related to Roblox and Solana.\n2. utility: TRUE - The token has a clear utility in tokenizing Roblox inventory items.\n3. ai_token: FALSE - There's no mention of AI or artificial intelligence in the token's description or functionality.\n4. tweet_coin: FALSE - While there's a mention of a tweet, it's not the main inspiration for the token.\n5. current_event: FALSE - The token is related to a specific platform (Roblox) rather than a broad current event.\n6. racist: FALSE - There's no indication of racist themes in the token's branding or description.\n7. offensive: FALSE - There's no indication of offensive themes in the token's branding or description.\n8. animals: FALSE - The token is related to Roblox, not animals.\n9. political: FALSE - The token is not related to politics or a political figure.\n\nThe classifications are based on the provided information about the token's functionality and purpose.",
+          "llm_description": "Rochain tokenizes Roblox inventory items on Solana, enabling creators to earn fees.",
+          "scraped_website_content": "Rochain | Tokenize Your Roblox Items Launch tokens for your Roblox inventory items on Solana. Earn creator fees forever. Rochain How it Works Leaderboard Sign In Value 40.0M Value 35.0M Value 24.0M Value 20.0M Value 20.0M Value 17.0M Value 16.0M Value 15.0M Value 15.0M Value 14.0M Value 11.5M Value 11.0M Value 11.0M Value 10.0M Value 10.0M Value 9.2M Value 9.0M Value 9.0M Value 8.8M Value 8.0M Value 8.0M Value 8.0M Value 8.0M Value 8.0M Value 7.5M Value 7.5M Value 6.7M Value 6.5M Value 6.5M Value 40.0M Value 35.0M Value 24.0M Value 20.0M Value 20.0M Value 17.0M Value 16.0M Value 15.0M Value 15.0M Value 14.0M Value 11.5M Value 11.0M Value 11.0M Value 10.0M Value 10.0M Value 9.2M Value 9.0M Value 9.0M Value 8.8M Value 8.0M Value 8.0M Value 8.0M Value 8.0M Value 8.0M Value 7.5M Value 7.5M Value 6.7M Value 6.5M Value 6.5M Now live on Solana Tokenize Your Roblox Items Turn your favorite Roblox inventory items into tradeable tokens on Solana. Earn creator fees in Robux. Launch a Token Learn More Instant Launch Verified Items Only 1% Creator Fee 29 Jan 03:06 robl...9609 launched $102611803 - Item 102611803 Total Market Cap $10.84K Tokens Launched 1 Tokens 1 tokens launched All Tokens Watchlist Filters NEW HAT Item 102611803 $102611803 -- +0.0%",
+          "classifications": {
+            "memecoin": false,
+            "utility": true,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "Rochain allows tokenizing Roblox inventory items on Solana, enabling creators to earn fees.",
+            "prompt_2_summary_twitter_searches": "The $rochain token allows users to tokenize their limited assets. The token's address is 4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump.",
+            "prompt_3_summary_profile_content": "Rochain lets users turn Roblox inventory items into tradeable tokens on Solana, with built-in creator fees for revenue streams.",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "1 minutes ago",
+          "token_created_timestamp": "2026-01-29T03:17:37+00:00",
+          "token_address": "4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump",
+          "token_symbol": "rochain",
+          "token_name": "rochain",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "The launchpad for Roblox items",
+          "token_image": "https://ipfs.io/ipfs/bafkreicvnhueuprlbr4erhxc27ivo2fosoefqjqujqnlchz2g6hj6zqqsi",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/userochain",
+          "pump_telegram": null,
+          "pump_website": "https://rocha.in",
+          "dex_twitter": null,
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Rochain | Tokenize Your Roblox Items Launch tokens for your Roblox inventory items on Solana. Earn creator fees forever. Rochain How it Works Leaderboard Sign In Value 40.0M Value 35.0M Value 24.0M Value 20.0M Value 20.0M Value 17.0M Value 16.0M Value 15.0M Value 15.0M Value 14.0M Value 11.5M Value 11.0M Value 11.0M Value 10.0M Value 10.0M Value 9.2M Value 9.0M Value 9.0M Value 8.8M Value 8.0M Value 8.0M Value 8.0M Value 8.0M Value 8.0M Value 7.5M Value 7.5M Value 6.7M Value 6.5M Value 6.5M Value 40.0M Value 35.0M Value 24.0M Value 20.0M Value 20.0M Value 17.0M Value 16.0M Value 15.0M Value 15.0M Value 14.0M Value 11.5M Value 11.0M Value 11.0M Value 10.0M Value 10.0M Value 9.2M Value 9.0M Value 9.0M Value 8.8M Value 8.0M Value 8.0M Value 8.0M Value 8.0M Value 8.0M Value 7.5M Value 7.5M Value 6.7M Value 6.5M Value 6.5M Now live on Solana Tokenize Your Roblox Items Turn your favorite Roblox inventory items into tradeable tokens on Solana. Earn creator fees in Robux. Launch a Token Learn More Instant Launch Verified Items Only 1% Creator Fee 29 Jan 03:06 robl...9609 launched $102611803 - Item 102611803 Total Market Cap $10.84K Tokens Launched 1 Tokens 1 tokens launched All Tokens Watchlist Filters NEW HAT Item 102611803 $102611803 -- +0.0%",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": "Rochain",
+            "bio": "Turn your favorite Roblox inventory items into tradeable tokens.\n\nBy @limit_rblx",
+            "recent_tweets": [
+              "Rochain is live.  4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump  We built a way to tokenize your Roblox inventory on Solana.  Your items. On-chain. Tradeable 24/7.  https://t.co/j1jiF7NXvY https://t.co/slZQdmyW3X",
+              "RT @Limit_RBLX: $rochain token address  4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump",
+              "$rochain token address  4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump",
+              "Creator fees are built in.  When you launch a token for your item, you're the creator. You earn a percentage on every single trade. Forever. Automatically.  No middlemen. No platforms taking 30% cuts. Direct to your wallet.  Your item. Your token. Your revenue stream. https://t.co/foJng6bwXc",
+              "This is day one. V1. The foundation.  A lot more features coming. Better discovery, trading tools, portfolio tracking, and more.  For now - go connect your Roblox account and see what your inventory looks like on-chain.  https://t.co/j1jiF7NXvY https://t.co/E0GmBeet68",
+              "RT @Limit_RBLX: Been building this for a while. Finally shipping today. Welcome to the web, @userochain   The launchpad to tokenize your Roblox items on Solana.  The idea came from an observation of mine, Roblox has this massive economy. Players sitting on thousands of dollars in Limiteds and collectibles. But that value is completely isolated from crypto.  So I built the bridge. Connect your Roblox account via OAuth, browse your inventory, pick an item, launch a token. It couldn't be any simpler.  On the tech side - Next.js 15, Solana for the token stuff, Roblox Open Cloud API for inventory access. Clean stack, nothing overcomplicated.  We've integrated directly, with every token launched on Rochain. Creator fees instantly flow back to the item holder. You tokenize your item, you earn forever. No platform cuts or fees.  Go break it: https://t.co/NGZEI2gPF9",
+              "Been building this for a while. Finally shipping today. Welcome to the web, @userochain   The launchpad to tokenize your Roblox items on Solana.  The idea came from an observation of mine, Roblox has this massive economy. Players sitting on thousands of dollars in Limiteds and collectibles. But that value is completely isolated from crypto.  So I built the bridge. Connect your Roblox account via OAuth, browse your inventory, pick an item, launch a token. It couldn't be any simpler.  On the tech side - Next.js 15, Solana for the token stuff, Roblox Open Cloud API for inventory access. Clean stack, nothing overcomplicated.  We've integrated directly, with every token launched on Rochain. Creator fees instantly flow back to the item holder. You tokenize your item, you earn forever. No platform cuts or fees.  Go break it: https://t.co/NGZEI2gPF9"
+            ]
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "Tokenize any of your limiteds with rochain  https://t.co/kPBIlKVnQW  4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump",
+              "$rochain token address  4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump"
+            ],
+            "address_top": [
+              "Tokenize any of your limiteds with rochain  https://t.co/kPBIlKVnQW  4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump",
+              "$rochain token address  4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump"
+            ],
+            "symbol_recent": [
+              "$rochain token address  4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump"
+            ],
+            "symbol_top": [
+              "$rochain token address  4AGGZcXfRZTX88xeAJS3EXJdycqKuKUsei8UkRV7pump"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": false,
+            "dex_paid_timestamp": null,
+            "bundle_percentage": 4.96,
+            "fresh_wallets_percentage": 49.4,
+            "dev_hold_percentage": 5.0,
+            "insider_wallets_percentage": 8.17,
+            "num_holders": 192,
+            "largest_holder_percentage": 29.5,
+            "largest_cluster_percentage": 0.58,
+            "large_holder_count": 7,
+            "same_percentage_count": 3,
+            "low_sol_count": 11
+          },
+          "onchain_scan_score": {
+            "final_score": 2.0,
+            "bundle_percentage_score": 8,
+            "fresh_wallets_percentage_score": 2,
+            "dev_hold_percentage_score": 7,
+            "insider_wallets_percentage_score": 6,
+            "num_holders_score": 2,
+            "largest_holder_percentage_score": 2,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 8,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 4
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "userochain",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 1,
+            "total_usd_spent": 219.33,
+            "kols": [
+              {
+                "kol_name": "Cuspey"
+              }
+            ]
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.33,
+            "total_kol_buys_score": 1,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 64486.65,
+          "ath_market_cap": 117816.19,
+          "ath_market_cap_timestamp": "2026-01-29T03:18:19+00:00",
+          "ath_multiple": 1.827,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          },
+          "ohlcv": {
+            "intervals": {}
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-01-29T03:20:10.598545Z",
+      "token_address": "H1cuPfBL45mWDmzNPDetL6dboMa8PigRqEeFxS1Jbonk",
+      "token_symbol": "DILLEY",
+      "token_name": "Dilley Meme Team",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 3.6,
+        "groq_web_research": {
+          "summary_all_context": "DILLEY is a memecoin referencing Donald Trump\u2019s \u201cMeme Team,\u201d but the non-crypto origin of \u201cDilley\u201d is the Disney cartoon *Billy Dilley\u2019s Super-Duper Subterranean Summer* (2020\u2013present). The show\u2019s quirky character and clips have spawned a niche meme culture on TikTok and Reddit, though no \u201cDilley Meme Team\u201d phrase exists outside the token\u2019s branding.",
+          "answer": "**1. Summary \u2013 non\u2011crypto meaning**  \n- \u201cDilley\u201d most commonly appears in pop\u2011culture as the surname of **Billy Dilley**, the goofy teenage inventor who stars in Disney\u2019s animated series **\u201cBilly Dilley\u2019s Super\u2011Duper Subterranean Summer.\u201d**  \n- The show has generated a small meme niche (clips of Billy\u2019s wild inventions, catch\u2011phrases, and the series\u2019s quirky intro) that circulate on TikTok and meme\u2011sharing sites.  \n- There is **no documented cultural phrase or meme called \u201cDilley Meme Team\u201d** outside of the token\u2019s own branding; the closest cultural reference is the show\u2011related meme pool, not a distinct \u201cteam\u201d concept.\n\n**2. Origin / timeline (non\u2011crypto)**  \n- **2019\u202f\u2013\u202f2020:** Disney Channel premieres *Billy Dilley\u2019s Super\u2011Duper Subterranean Summer* (first aired July\u202f2020).  \n- **2020\u202f+**: Clips from the series, especially the opening theme and Billy\u2019s over\u2011the\u2011top inventions, are reposted on TikTok, Reddit, and Know Your Meme, spawning a modest meme community.  \n- **2023\u202f+**: The phrase \u201cDilley\u201d is occasionally used in meme captions referencing the show\u2019s chaotic style, but no formal \u201cMeme Team\u201d terminology appears in mainstream meme archives.\n\n**3. Sources**  \n- **Know Your Meme \u2013 \u201cBilly Dilley\u2019s Super\u2011Duper Subterranean Summer\u201d video page** \u2013 documents the show\u2019s meme presence and viral clips. https://knowyourmeme.com/videos/167823-disney (shows meme\u2011related content).  \n- **Wikipedia \u2013 \u201cBilly Dilley\u2019s Super\u2011Duper Subterranean Summer\u201d** \u2013 provides the series\u2019 production date and cultural context. https://en.wikipedia.org/wiki/Billy_Dilley%27s_Super-Duper_Subterranean_Summer (details show origin).  \n\n*Conclusion:* The only verifiable non\u2011crypto cultural reference for \u201cDilley\u201d is the Disney cartoon; there is **no established cultural or slang meaning for the exact phrase \u201cDilley Meme Team.\u201d**",
+          "confidence_score": {
+            "final_score": 9,
+            "confidence_subscores": {
+              "context_faithfulness": 9,
+              "internal_consistency": 8,
+              "specificity": 9,
+              "completeness": 8,
+              "clarity": 9,
+              "source_groundedness": 9
+            }
+          },
+          "narrative_score": {
+            "final_score": 3,
+            "narrative_subscores": {
+              "hook_strength": 6,
+              "cultural_relevance": 4,
+              "cultural_charge": 2,
+              "mission_statement": 1,
+              "compellingness": 3,
+              "tribal_identity": 2,
+              "lore_amount": 6,
+              "lore_depth": 2
+            }
+          },
+          "sentiment_score": {
+            "final_score": 5,
+            "sentiment_subscores": {
+              "overall_tone": 5,
+              "excitement_level": 5,
+              "concern_signals": 5,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 5,
+              "skepticism_level": 5,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-01-29T03:21:15.551888Z",
+          "token_address": "H1cuPfBL45mWDmzNPDetL6dboMa8PigRqEeFxS1Jbonk",
+          "name": "Dilley Meme Team",
+          "symbol": "DILLEY",
+          "description": "",
+          "timestamp": "2026-01-29T03:21:13.864157+00:00",
+          "llm_interpretation": "Description: DILLEY is a memecoin associated with Donald Trump's personal 'Meme Team'.\n\n1. memecoin: TRUE - The token is named \"Dilley Meme Team\" and associated with a meme team.\n2. utility: FALSE - No information suggests a utility or tech-based purpose.\n3. ai_token: FALSE - No information links the token to AI or artificial intelligence.\n4. tweet_coin: TRUE - The token is associated with a viral tweet or figure (Donald Trump's 'Meme Team').\n5. current_event: TRUE - The token is related to a current event or trend involving Donald Trump.\n6. racist: FALSE - No information indicates racist themes in the token branding.\n7. offensive: FALSE - No information indicates directly offensive themes in the token branding.\n8. animals: FALSE - The token is not based on an animal.\n9. political: TRUE - The token is associated with a political figure, Donald Trump.",
+          "llm_description": "DILLEY is a memecoin associated with Donald Trump's personal 'Meme Team'.",
+          "scraped_website_content": "Truth Details | Truth Social Truth Social is America's \"Big Tent\" social media platform that encourages an open, free, and honest global conversation without discriminating on the basis of political ideology. Back Truth Details 93 replies Donald J. Trump @realDonaldTrump 01:23 00:00 / 01:23 485 ReTruths 1.44k Likes Jan 28, 2026, 6:45 PM Continue the conversation Sign up now to create your personalized experience. Create Account Sign In New to Truth? Join Truth Social to get the full story and details. Create Account Sign In Get Truth+ Access the full experience with even more live and on-demand content. Subscribe Help Center Legal Proudly made in the United States of America. \ud83c\uddfa\ud83c\uddf8 \u00d7 This website uses cookies We use cookies and similar technologies to improve site functionality, personalize your experience, and analyze traffic. With your consent, we and our partners may also use them for tailored ads and to measure campaign effectiveness. You can manage your preferences anytime. Privacy Policy STRICTLY NECESSARY PERFORMANCE TARGETING FUNCTIONALITY ACCEPT ALL DECLINE ALL SHOW DETAILS Cookies Policy Terms of Service",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": true,
+            "current_event": true,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": true
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "Truth Social is a social media platform for open, free, and honest global conversation without ideological discrimination.",
+            "prompt_2_summary_twitter_searches": "The token $DILLEY is associated with Donald Trump's personal 'Meme Team'.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "34 minutes ago",
+          "token_created_timestamp": "2026-01-29T02:46:40.896000+00:00",
+          "token_address": "H1cuPfBL45mWDmzNPDetL6dboMa8PigRqEeFxS1Jbonk",
+          "token_symbol": "DILLEY",
+          "token_name": "Dilley Meme Team",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "",
+          "token_image": "https://ipfs.io/ipfs/QmbPHDc1t5YbzQaVufuDTpxGmAy8ARGGqKyDFibnY61Hin",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": null,
+          "pump_telegram": null,
+          "pump_website": "https://truthsocial.com/@realDonaldTrump/115976094211574919",
+          "dex_twitter": null,
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Truth Details | Truth Social Truth Social is America's \"Big Tent\" social media platform that encourages an open, free, and honest global conversation without discriminating on the basis of political ideology. Back Truth Details 93 replies Donald J. Trump @realDonaldTrump 01:23 00:00 / 01:23 485 ReTruths 1.44k Likes Jan 28, 2026, 6:45 PM Continue the conversation Sign up now to create your personalized experience. Create Account Sign In New to Truth? Join Truth Social to get the full story and details. Create Account Sign In Get Truth+ Access the full experience with even more live and on-demand content. Subscribe Help Center Legal Proudly made in the United States of America. \ud83c\uddfa\ud83c\uddf8 \u00d7 This website uses cookies We use cookies and similar technologies to improve site functionality, personalize your experience, and analyze traffic. With your consent, we and our partners may also use them for tailored ads and to measure campaign effectiveness. You can manage your preferences anytime. Privacy Policy STRICTLY NECESSARY PERFORMANCE TARGETING FUNCTIONALITY ACCEPT ALL DECLINE ALL SHOW DETAILS Cookies Policy Terms of Service",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "Donald Trumps personal 'Meme Team' seems like a good bloody narrative.  $DILLEY H1cuPfBL45mWDmzNPDetL6dboMa8PigRqEeFxS1Jbonk  https://t.co/4otDd6qnY9"
+            ],
+            "address_top": [
+              "Donald Trumps personal 'Meme Team' seems like a good bloody narrative.  $DILLEY H1cuPfBL45mWDmzNPDetL6dboMa8PigRqEeFxS1Jbonk  https://t.co/4otDd6qnY9"
+            ],
+            "symbol_recent": [
+              "Donald Trumps personal 'Meme Team' seems like a good bloody narrative.  $DILLEY H1cuPfBL45mWDmzNPDetL6dboMa8PigRqEeFxS1Jbonk  https://t.co/4otDd6qnY9"
+            ],
+            "symbol_top": [
+              "Donald Trumps personal 'Meme Team' seems like a good bloody narrative.  $DILLEY H1cuPfBL45mWDmzNPDetL6dboMa8PigRqEeFxS1Jbonk  https://t.co/4otDd6qnY9"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": false,
+            "dex_paid_timestamp": null,
+            "bundle_percentage": 4.46,
+            "fresh_wallets_percentage": 8.6,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 19.88,
+            "num_holders": 594,
+            "largest_holder_percentage": 3.1,
+            "largest_cluster_percentage": 5.0,
+            "large_holder_count": 12,
+            "same_percentage_count": 5,
+            "low_sol_count": 1
+          },
+          "onchain_scan_score": {
+            "final_score": 5.6,
+            "bundle_percentage_score": 8,
+            "fresh_wallets_percentage_score": 6,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 4,
+            "num_holders_score": 4,
+            "largest_holder_percentage_score": 7,
+            "largest_cluster_percentage_score": 6,
+            "large_holder_count_score": 9,
+            "same_percentage_count_score": 6,
+            "low_sol_count_score": 9
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 2,
+            "total_usd_spent": 1478.0700000000002,
+            "kols": [
+              {
+                "kol_name": "Gake"
+              },
+              {
+                "kol_name": "Letterbomb"
+              }
+            ]
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.67,
+            "total_kol_buys_score": 2,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": 2.29,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": 4.6,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": 5.5,
+                  "drawdown_value": 2.5
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": 8.986403436830037e-06,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "1h": {
+                "final_score": 0.75,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": 0.0,
+                  "drawdown_value": 2.5
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": 0.0,
+                  "cipher_bullish_cross": false,
+                  "cipher_bearish_cross": false
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": 2.75,
+              "drawdown_value": 2.5,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 157075.24,
+          "ath_market_cap": 196969.87,
+          "ath_market_cap_timestamp": "2026-01-29T03:19:37+00:00",
+          "ath_multiple": 1.254,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          },
+          "ohlcv": {
+            "intervals": {
+              "15m": {
+                "bars": [
+                  {
+                    "time": 1769654700000,
+                    "open": 3.5097214060058564e-06,
+                    "high": 4.952618531704212e-05,
+                    "low": 3.5097214060058564e-06,
+                    "close": 1.2498894971682165e-05,
+                    "volume": 100996.31171600003,
+                    "filled": false,
+                    "macd": 0.0,
+                    "macd_signal": 0.0,
+                    "macd_hist": 0.0,
+                    "cipher_mfi": null,
+                    "cipher_wt1": null,
+                    "cipher_wt2": null,
+                    "cipher_fast_wt1_centered": null,
+                    "cipher_bullish_cross": false,
+                    "cipher_bearish_cross": false,
+                    "cipher_rsi": null,
+                    "cipher_schaff_tc": null
+                  },
+                  {
+                    "time": 1769655600000,
+                    "open": 1.2498894971682165e-05,
+                    "high": 2.5619348452402698e-05,
+                    "low": 8.08728601923381e-06,
+                    "close": 2.5290785309985135e-05,
+                    "volume": 17308.502221000002,
+                    "filled": false,
+                    "macd": 1.0204356965028008e-06,
+                    "macd_signal": 2.0408713930056016e-07,
+                    "macd_hist": 8.163485572022406e-07,
+                    "cipher_mfi": null,
+                    "cipher_wt1": null,
+                    "cipher_wt2": null,
+                    "cipher_fast_wt1_centered": null,
+                    "cipher_bullish_cross": false,
+                    "cipher_bearish_cross": false,
+                    "cipher_rsi": null,
+                    "cipher_schaff_tc": null
+                  },
+                  {
+                    "time": 1769656500000,
+                    "open": 2.5290785309985135e-05,
+                    "high": 0.0001969698702068469,
+                    "low": 2.5866499055526944e-05,
+                    "close": 0.00014599464568780413,
+                    "volume": 186134.79997300004,
+                    "filled": false,
+                    "macd": 1.1437091435338107e-05,
+                    "macd_signal": 2.45068799850807e-06,
+                    "macd_hist": 8.986403436830037e-06,
+                    "cipher_mfi": null,
+                    "cipher_wt1": null,
+                    "cipher_wt2": null,
+                    "cipher_fast_wt1_centered": null,
+                    "cipher_bullish_cross": false,
+                    "cipher_bearish_cross": false,
+                    "cipher_rsi": null,
+                    "cipher_schaff_tc": null
+                  }
+                ]
+              },
+              "1h": {
+                "bars": [
+                  {
+                    "time": 1769652000000,
+                    "open": 3.5097214060058564e-06,
+                    "high": 4.952618531704212e-05,
+                    "low": 3.5097214060058564e-06,
+                    "close": 1.2498894971682165e-05,
+                    "volume": 100996.31171600003,
+                    "filled": false,
+                    "macd": 0.0,
+                    "macd_signal": 0.0,
+                    "macd_hist": 0.0,
+                    "cipher_mfi": null,
+                    "cipher_wt1": null,
+                    "cipher_wt2": null,
+                    "cipher_fast_wt1_centered": null,
+                    "cipher_bullish_cross": false,
+                    "cipher_bearish_cross": false,
+                    "cipher_rsi": null,
+                    "cipher_schaff_tc": null
+                  },
+                  {
+                    "time": 1769655600000,
+                    "open": 1.2498894971682165e-05,
+                    "high": 1.2498894971682165e-05,
+                    "low": 1.2498894971682165e-05,
+                    "close": 1.2498894971682165e-05,
+                    "volume": 0.0,
+                    "filled": true,
+                    "macd": 0.0,
+                    "macd_signal": 0.0,
+                    "macd_hist": 0.0,
+                    "cipher_mfi": null,
+                    "cipher_wt1": null,
+                    "cipher_wt2": null,
+                    "cipher_fast_wt1_centered": null,
+                    "cipher_bullish_cross": false,
+                    "cipher_bearish_cross": false,
+                    "cipher_rsi": null,
+                    "cipher_schaff_tc": null
+                  }
+                ]
+              }
+            }
           }
         }
       }
