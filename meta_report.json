@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-29T12:58:25.399876Z",
+  "generated_at_utc": "2026-01-29T13:59:10.973587Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
   "token_context_count": 240,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 29 PVP group(s); excluding 46 token(s) from META prompt."
+    "Detected 29 PVP group(s); excluding 45 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 46,
+  "pvp_excluded_token_count": 45,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -265,33 +265,6 @@
     },
     {
       "match_type": "token_symbol",
-      "match_value": "ram",
-      "tokens": [
-        {
-          "token_symbol": "Ram",
-          "token_name": "2 Sticks of Ram",
-          "token_address": "DmGvYx7R4ZJnSocMauain4LXh3oA8kuDYavLoDLYpump",
-          "usd_market_cap": 345361.82,
-          "processed_at": "2026-01-28T12:49:47.076249Z"
-        },
-        {
-          "token_symbol": "Ram",
-          "token_name": "Ram in Ram wif Ram",
-          "token_address": "FVnMibRucqp5shxz9jvnPQHiRB7vcGQPFUxqLtDwpump",
-          "usd_market_cap": 348258.27,
-          "processed_at": "2026-01-28T22:26:38.959755Z"
-        },
-        {
-          "token_symbol": "RAM",
-          "token_name": "Just A RAM Stick",
-          "token_address": "apyNybFiCvwaGf1MZ3GdipncwENR69StwJcJtsdpump",
-          "usd_market_cap": 7258.32,
-          "processed_at": "2026-01-29T02:58:22.328000Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
       "match_value": "ralph",
       "tokens": [
         {
@@ -526,6 +499,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "ram",
+      "tokens": [
+        {
+          "token_symbol": "Ram",
+          "token_name": "Ram in Ram wif Ram",
+          "token_address": "FVnMibRucqp5shxz9jvnPQHiRB7vcGQPFUxqLtDwpump",
+          "usd_market_cap": 348258.27,
+          "processed_at": "2026-01-28T22:26:38.959755Z"
+        },
+        {
+          "token_symbol": "RAM",
+          "token_name": "Just A RAM Stick",
+          "token_address": "apyNybFiCvwaGf1MZ3GdipncwENR69StwJcJtsdpump",
+          "usd_market_cap": 7258.32,
+          "processed_at": "2026-01-29T02:58:22.328000Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "donald",
       "tokens": [
         {
@@ -643,141 +636,45 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Coin Revival",
-        "description": "A resurgence of classic internet memes being repurposed as crypto tokens. This includes references to long-standing memes like 'Rickroll', 'Doge', and 'Pikachu', which have been rebranded into crypto projects. The revival is driven by nostalgia and the desire to leverage established meme culture for community engagement.",
+        "meta_name": "Utility and Innovation Tokens",
+        "description": "This meta is characterized by tokens that offer real-world utility or innovative features. Tokens like 'SOLSCRAPER' (DeFi lending), 'BARK' (pet-related services), and 'CLAWD' (AI agent management) are part of this trend. These tokens focus on providing tangible value and functionality to users.",
         "defining_signals": [
-          "Rebranding of classic memes into crypto tokens",
-          "Use of established meme culture for community engagement",
-          "Nostalgic appeal to older internet users",
-          "Inclusion of well-known meme characters like Rick Astley and Pikachu",
-          "Leveraging meme history for token narratives"
+          "Tokens with clear utility or innovative features",
+          "Focus on real-world applications and use cases",
+          "Strong technical or functional narratives",
+          "Tokens often tied to specific platforms or services",
+          "Community engagement through practical benefits"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "RICKROLL",
-            "token_name": "RICKROLL",
-            "token_address": "Eu8qFQrtyRdTLmjn42vnuVCY26fsZPSbkbyVo31t4xFJ"
-          },
-          {
-            "token_symbol": "DOGE",
-            "token_name": "Doge",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
-          },
-          {
-            "token_symbol": "PIKA",
-            "token_name": "Pikachu",
-            "token_address": "7DukaJEJ3y9hgZqd4zKP4cZakAybH5foQJVKBNEZpump"
-          },
-          {
-            "token_symbol": "PUP",
-            "token_name": "PUP",
-            "token_address": "7cXEvhvpgh9Cu82VB4EGAKpVJRPBrcHC3Yen8fePpump"
-          },
-          {
-            "token_symbol": "WTF",
-            "token_name": "WTF",
-            "token_address": "6aXUc1RP2nWJ6Fx99nXKGzHkA32CP2geDPmsqYRfpump"
-          }
-        ],
-        "leader_hint_token_address": "Eu8qFQrtyRdTLmjn42vnuVCY26fsZPSbkbyVo31t4xFJ",
-        "confidence_0_100": 85,
-        "confidence_rationale": "The revival of classic memes into crypto tokens is a well-documented trend with strong community engagement and historical meme references.",
-        "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 62051399.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgic Crypto NFTs",
-        "description": "A trend where tokens are inspired by nostalgic elements from pop culture, gaming, and internet history. This includes tokens like 'Pikachu', 'Club Penguin', and 'Nietzschean Fox', which tap into the emotional and cultural value of these references to attract a dedicated community.",
-        "defining_signals": [
-          "Inclusion of nostalgic pop culture references",
-          "Use of gaming and internet history for token narratives",
-          "Community-driven engagement based on shared nostalgia",
-          "Incorporation of historical meme characters and events",
-          "Leveraging of established cultural icons for token branding"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PIKA",
-            "token_name": "Bikachu",
-            "token_address": "7DukaJEJ3y9hgZqd4zKP4cZakAybH5foQJVKBNEZpump"
-          },
-          {
-            "token_symbol": "CPENG",
-            "token_name": "Club Penguin",
-            "token_address": "258Po41aeXsh3jyqt5TqcJ4JSQe4rnSVd9wvcNPupump"
-          },
-          {
-            "token_symbol": "FOX",
-            "token_name": "Nietzschean Fox",
-            "token_address": "z59KW3WNtfP6LJvB77zrnkNn1DRweQdesEWo1o3pump"
-          },
-          {
-            "token_symbol": "SPX",
-            "token_name": "SPX6900 (Wormhole)",
-            "token_address": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr"
-          },
-          {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
-          }
-        ],
-        "leader_hint_token_address": "7DukaJEJ3y9hgZqd4zKP4cZakAybH5foQJVKBNEZpump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "The use of nostalgic pop culture and gaming elements in token narratives is a strong and growing trend, supported by the emotional and cultural value these references hold.",
-        "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 62051399.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Tech Innovation Tokens",
-        "description": "Tokens that focus on AI and technological innovation, leveraging the growing interest in AI advancements. This includes tokens like 'Clawrl3000', 'AI Rig Complex', and 'Fcode AI', which highlight the potential of AI in various applications and attract tech-savvy investors.",
-        "defining_signals": [
-          "Focus on AI and technological innovation",
-          "Community engagement based on tech advancements",
-          "Incorporation of AI and tech narratives for token branding",
-          "Leveraging of current tech trends for token narratives",
-          "Creation of tokens that reflect the potential of AI and tech"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLAWRL",
-            "token_name": "Clawrl3000",
-            "token_address": "7ahcvAHVkB7eo95wDmnH4XZYzDkB9ggaprt55TWmpump"
-          },
-          {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
+            "token_name": "SOLSCRAPER",
+            "token_symbol": "SCRAPER",
             "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
           },
           {
-            "token_symbol": "FCOD",
-            "token_name": "Fcode AI",
-            "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro"
+            "token_name": "Bark Inc",
+            "token_symbol": "BARK",
+            "token_address": "3d17dR2LMFuYyHpVi2Zu26v4WpEVQx2WBohTArYGpump"
           },
           {
-            "token_symbol": "ZAP",
-            "token_name": "Zapzy",
-            "token_address": "zapzy5CRnuo8tVP7p4E1Ec6mc7XS43JHiiqv7FLniXa"
+            "token_name": "PumpClawd",
+            "token_symbol": "pumpclawd",
+            "token_address": "EmiEpmRGe9FpdreXzao3UV2mjCvG5v1wfhpR29kdpump"
           },
           {
-            "token_symbol": "ORGO",
-            "token_name": "Orgo",
-            "token_address": "G85CQEBqwsoe3qkb5oXXpdZFh7uhYXhDRsQAM4aJuBLV"
+            "token_name": "Clawd",
+            "token_symbol": "CLAWD",
+            "token_address": "7ahcvAHVkB7eo95wDmnH4XZYzDkB9ggaprt55TWmpump"
+          },
+          {
+            "token_name": "SOLSCRAPER",
+            "token_symbol": "SCRAPER",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
           }
         ],
-        "leader_hint_token_address": "7ahcvAHVkB7eo95wDmnH4XZYzDkB9ggaprt55TWmpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "The focus on AI and tech innovation in token narratives is a strong and growing trend, supported by the increasing interest in AI advancements and their potential applications.",
+        "leader_hint_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Utility and innovation tokens are gaining traction as the market matures. Tokens like 'SOLSCRAPER' and 'BARK' offer clear use cases and are likely to see continued growth.",
         "leader_token": {
           "token_symbol": "arc",
           "token_name": "AI Rig Complex",
@@ -787,76 +684,202 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political and Social Commentary Tokens",
-        "description": "Tokens that leverage political and social commentary to create community engagement. This includes tokens like 'Make Cut Great Again', 'Amelia the Patriot', and 'Bǐngwǔ', which use political figures, social issues, and historical references to attract attention and foster discussion.",
+        "meta_name": "Meme Coin Revival",
+        "description": "This meta is characterized by the resurgence of classic internet memes being repurposed as cryptocurrency tokens. Tokens like 'WOJAK' (based on the 'Feels Guy' meme), 'PENGUIN' (inspired by the Nietzschean Penguin meme), and 'SUPPORT' (linked to YouTube creators) are part of this trend. These tokens leverage nostalgia and existing meme culture to attract community engagement and virality.",
         "defining_signals": [
-          "Use of political figures and social issues in token narratives",
-          "Community engagement based on political and social commentary",
-          "Incorporation of historical and cultural references for token branding",
-          "Leveraging of current events and political movements for token narratives",
-          "Creation of tokens that reflect political ideologies and social movements"
+          "Repurposing of well-known internet memes as token names or themes",
+          "Strong community-driven narratives with meme-based branding",
+          "High social media engagement and viral potential",
+          "Tokens often have no prior non-crypto cultural origin beyond the meme itself",
+          "Leverage existing meme communities for adoption and virality"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MCGA",
-            "token_name": "Make Cut Great Again",
-            "token_address": "KZAVAzu3nB2iFJw1ocr3RNo4eecLH1Z6dM81pump"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "AMELIA",
-            "token_name": "Amelia the Patriot",
-            "token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump"
+            "token_name": "Nietzschean Penguin",
+            "token_symbol": "PENGUIN",
+            "token_address": "8Jx8AAHj86wbQgUTjguj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "Bǐngwǔ",
-            "token_name": "bǐngwǔ",
-            "token_address": "DMYNAp65mub3i7LRpBBdB66CgBAceLcQnv4gsWeCi6pump"
+            "token_name": "Child Support",
+            "token_symbol": "SUPPORT",
+            "token_address": "728YmiFiS7hGYBfhRbD32HKLkpraW9nYoeCr5TQvBAGS"
           },
           {
-            "token_symbol": "VANCE1",
-            "token_name": "VANCE1",
-            "token_address": "FXmaE42AzEtE9thMHxDs3jDfHPP8nnUywzxvXrojbonk"
+            "token_name": "Jokecoin",
+            "token_symbol": "Jokecoin",
+            "token_address": "FigcM1Gy1GyHa2gqE4aYtXAePKTqzNqAFxKYokSf8bonk"
           },
           {
-            "token_symbol": "BIRb",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMMMm2dU3iZpXYFTHT9Biio4F4gZCrwFFpKNwG"
+            "token_name": "The Hunger Games",
+            "token_symbol": "HUNGRY",
+            "token_address": "GfPk3VLt1VqRJBHzkHe12qxn6GPXJPi7hhqQe1X2glD1"
           }
         ],
-        "leader_hint_token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump",
-        "confidence_0_100": 72,
-        "confidence_rationale": "The use of political and social commentary in token narratives is a growing trend, supported by the increasing interest in tokens that reflect current events and social movements.",
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwD4pKBMr5rpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "The resurgence of classic memes as tokens is a strong and recurring theme in the crypto space. Tokens like 'WOJAK' and 'PENGUIN' have clear cultural origins and strong community engagement, indicating a high likelihood of continued growth.",
         "leader_token": {
-          "token_symbol": "AMELIA",
-          "token_name": "Amelia the Patriot",
-          "token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump",
-          "usd_market_cap": 712059.67
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 13350721.57
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme and Internet Culture Tokens",
+        "description": "This meta is characterized by tokens that directly reference internet culture, memes, and viral trends. Tokens like 'TESTICLE', 'Budi', and 'LICK' are part of this trend. These tokens often leverage the virality of internet culture to drive adoption and community engagement.",
+        "defining_signals": [
+          "Direct references to internet memes or viral trends",
+          "Strong virality and community engagement",
+          "Tokens often have no prior non-crypto cultural origin beyond the meme itself",
+          "Leverage existing meme communities for adoption and virality",
+          "Tokens often have humorous or absurd themes"
+        ],
+        "supporting_tokens": [
+          {
+            "token_name": "testicle",
+            "token_symbol": "testicle",
+            "token_address": "4TyZGqRLGVcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          },
+          {
+            "token_name": "budi",
+            "token_symbol": "budi",
+            "token_address": "6BEwGzkZTvDRMANQ4pb2qMSwuGz17RKkcJPRFoFrpump"
+          },
+          {
+            "token_name": "Lick",
+            "token_symbol": "LICK",
+            "token_address": "9yUotsMTuGL3YJ2skB7obEw9qx2rKiJd6acFFNxNpump"
+          },
+          {
+            "token_name": "Fartcoin",
+            "token_symbol": "FART",
+            "token_address": "None"
+          },
+          {
+            "token_name": "Nietzschean Dog",
+            "token_symbol": "DOG",
+            "token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKKpump"
+          }
+        ],
+        "leader_hint_token_address": "4TyZGqRLgVcHTGMcLBoPUmqYitMVojXinAmk8L8xpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Internet culture and meme-based tokens are a strong and recurring theme in the crypto space. Tokens like 'TESTICLE' and 'LICK' have clear cultural origins and strong community engagement.",
+        "leader_token": {
+          "token_symbol": "DOG",
+          "token_name": "Nietzschean Dog",
+          "token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKKpump",
+          "usd_market_cap": 317286.95
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia and Pop Culture Tokens",
+        "description": "This meta is characterized by tokens that draw from nostalgic or pop culture references, such as 'PIKA' (Pikachu), 'BARK' (Bark Inc), and 'CHAKA' (Neuralink Penguin). These tokens leverage the emotional connection people have with familiar characters or brands to drive adoption and community interest.",
+        "defining_signals": [
+          "Use of nostalgic or pop culture references as token themes",
+          "Strong emotional or sentimental appeal to existing fan bases",
+          "Tokens often tied to well-known characters or brands",
+          "Community engagement through shared nostalgia or fandom",
+          "Tokens often have clear cultural or brand associations"
+        ],
+        "supporting_tokens": [
+          {
+            "token_name": "Pikachu Pokémon",
+            "token_symbol": "PIKA",
+            "token_address": "7DukaJEJ3y9hgZqd4zKP4cakAybH5foQJVKBNEzpump"
+          },
+          {
+            "token_name": "Bark Inc",
+            "token_symbol": "Bark",
+            "token_address": "3d17dR2LMFuYyHpVi2Zu26v4WpEVQx2WBohTArYGpump"
+          },
+          {
+            "token_name": "First Neuralink Penguin",
+            "token_symbol": "CHAKA",
+            "token_address": "5XfQVFL4PB45n1YY37n7pawaNLvMZYaE9tciHc6pump"
+          },
+          {
+            "token_name": "Club Penguin",
+            "token_symbol": "CPENG",
+            "token_address": "258Po41aeXsh3jqt5TqcJ4JSQe4rnSVd9wvcNPupump"
+          },
+          {
+            "token_name": "Nietzschean Fox",
+            "token_symbol": "Fox",
+            "token_address": "z59KW3WNtfP6LJv77zrnkNn1DRweQdesEWo1o3pump"
+          }
+        ],
+        "leader_hint_token_address": "7DukaJEJ3y9hgZqd4zKP4cakAybH5foQJVKBNEzpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Nostalgia and pop culture references are powerful drivers of adoption in crypto. Tokens like 'PIKA' and 'CHAKA' have strong cultural associations and clear community engagement.",
+        "leader_token": {
+          "token_symbol": "Chaka",
+          "token_name": "First Neuralink Penguin",
+          "token_address": "5XfQVFL4PB45n1YY37n7pawaNLvMZYaE9tciHc6pump",
+          "usd_market_cap": 287864.12
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Creator Economy Tokens",
+        "description": "This meta is centered around tokens that support or represent content creators, YouTubers, and social media personalities. Tokens like 'SUPPORT' (for YouTube creators), 'RYAN' (for Ryanair), and 'BEN' (for Kevin Gill's dog) are part of this trend. These tokens aim to monetize and support creators directly through blockchain-based platforms.",
+        "defining_signals": [
+          "Direct association with content creators or social media personalities",
+          "Monetization of creator content through tokenization",
+          "Community-driven funding or support for creators",
+          "Tokens often tied to specific platforms or content types",
+          "Strong narrative around decentralizing support for creators"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "SUPPORT",
+            "token_name": "Child Support",
+            "token_address": "728YmiFiS7hGYBfhRbD32HKLkpraW9nYoeCr5TQvBAGS"
+          },
+          {
+            "token_name": "Ryanair",
+            "token_symbol": "RYAN",
+            "token_address": "5bbfHiDURmxCTJR7BjcumaoBsKRhtruUqw8FiJ5UM8My"
+          },
+          {
+            "token_name": "Kevin Gill Dog",
+            "token_symbol": "BEN",
+            "token_address": "FhfURy6oCFwMdkPrbF986RqAR3ooCzubjR77dGB6pump"
+          },
+          {
+            "token_name": "PumpClawd",
+            "token_symbol": "Pumpclawd",
+            "token_address": "EmiEpmRGe9FpdreXzao3UV2mjCvG5v1wfhpR29kdpump"
+          },
+          {
+            "token_name": "YouTube Creator Support",
+            "token_symbol": "YOUTUBE",
+            "token_address": "None"
+          }
+        ],
+        "leader_hint_token_address": "728YmiFiS7hGYBfhRbD32HKLkpraW9nYoeCr5TQvBAGS",
+        "confidence_0_100": 70,
+        "confidence_rationale": "The creator economy is a growing trend in crypto, with tokens like 'SUPPORT' and 'BEN' showing strong community engagement and clear use cases for content creators.",
+        "leader_token": {
+          "token_symbol": "BEN",
+          "token_name": "Kevin Gill Dog",
+          "token_address": "FhfURy6oCFwMdkPrbF986RqAR3ooCzubjR77dGB6pump",
+          "usd_market_cap": 43936.03
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Meme Coin Revival' and 'Nostalgic Crypto NFTs' METAs are currently gaining traction, driven by nostalgia and established meme culture. The 'Political and Social Commentary Tokens' and 'AI and Tech Innovation Tokens' are emerging as new trends, reflecting current events and technological advancements. Older METAs like 'Meme Coin Revival' are fading as newer, more specific themes take hold.",
+    "meta_rotation_note": "The 'Meme Coin Revival' and 'Internet Culture Tokens' metas are currently the most active and growing, driven by strong community engagement and virality. The 'Creator Economy Tokens' and 'Nostalgia and Pop Culture Tokens' are also showing steady growth. The 'Utility and Innovation Tokens' are emerging as a new trend, indicating a shift towards more functional and practical tokens.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Coin Revival",
-        "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 62051399.0
-        }
-      },
-      {
-        "meta_name": "Nostalgic Crypto NFTs",
-        "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 62051399.0
-        }
-      },
-      {
-        "meta_name": "AI and Tech Innovation Tokens",
+        "meta_name": "Utility and Innovation Tokens",
         "leader_token": {
           "token_symbol": "arc",
           "token_name": "AI Rig Complex",
@@ -865,12 +888,39 @@
         }
       },
       {
-        "meta_name": "Political and Social Commentary Tokens",
+        "meta_name": "Meme Coin Revival",
         "leader_token": {
-          "token_symbol": "AMELIA",
-          "token_name": "Amelia the Patriot",
-          "token_address": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump",
-          "usd_market_cap": 712059.67
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 13350721.57
+        }
+      },
+      {
+        "meta_name": "Meme and Internet Culture Tokens",
+        "leader_token": {
+          "token_symbol": "DOG",
+          "token_name": "Nietzschean Dog",
+          "token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKKpump",
+          "usd_market_cap": 317286.95
+        }
+      },
+      {
+        "meta_name": "Nostalgia and Pop Culture Tokens",
+        "leader_token": {
+          "token_symbol": "Chaka",
+          "token_name": "First Neuralink Penguin",
+          "token_address": "5XfQVFL4PB45n1YY37n7pawaNLvMZYaE9tciHc6pump",
+          "usd_market_cap": 287864.12
+        }
+      },
+      {
+        "meta_name": "Creator Economy Tokens",
+        "leader_token": {
+          "token_symbol": "BEN",
+          "token_name": "Kevin Gill Dog",
+          "token_address": "FhfURy6oCFwMdkPrbF986RqAR3ooCzubjR77dGB6pump",
+          "usd_market_cap": 43936.03
         }
       }
     ]
