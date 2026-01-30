@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-30T03:16:04.188738Z",
+  "generated_at_utc": "2026-01-30T04:16:28.090127Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 215,
+  "token_context_count": 219,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 21 PVP group(s); excluding 38 token(s) from META prompt."
+    "Detected 22 PVP group(s); excluding 41 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 38,
+  "pvp_excluded_token_count": 41,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -227,6 +227,33 @@
           "token_address": "C2zAPziadmtZHUi4M5J84K3RFLJF4CeYr8SivKuHpump",
           "usd_market_cap": 6241.14,
           "processed_at": "2026-01-30T03:01:08.885692Z"
+        },
+        {
+          "token_symbol": "ELON",
+          "token_name": "ELON",
+          "token_address": "6cQzq7aaar3fEhXFuAHjT1kca94AitdNp7BwEnxypump",
+          "usd_market_cap": 25072961.31,
+          "processed_at": "2026-01-30T03:37:40.910069Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "ur coin",
+      "tokens": [
+        {
+          "token_symbol": "UR",
+          "token_name": "UR COIN",
+          "token_address": "6khk2hHFTxU5fxSpSjuT7prSUSmWyBKAeyeFvTLBYRKd",
+          "usd_market_cap": 37664.75,
+          "processed_at": "2026-01-30T03:53:51.559783Z"
+        },
+        {
+          "token_symbol": "URCOIN",
+          "token_name": "UR COIN",
+          "token_address": "EXcmVv2jvQgAcSppHdxMQRWoiB9z94RiJ5hatS7Rpump",
+          "usd_market_cap": 59448.88,
+          "processed_at": "2026-01-30T04:08:47.909136Z"
         }
       ]
     },
@@ -477,6 +504,13 @@
           "token_address": "C2zAPziadmtZHUi4M5J84K3RFLJF4CeYr8SivKuHpump",
           "usd_market_cap": 6241.14,
           "processed_at": "2026-01-30T03:01:08.885692Z"
+        },
+        {
+          "token_symbol": "ELON",
+          "token_name": "ELON",
+          "token_address": "6cQzq7aaar3fEhXFuAHjT1kca94AitdNp7BwEnxypump",
+          "usd_market_cap": 25072961.31,
+          "processed_at": "2026-01-30T03:37:40.910069Z"
         }
       ]
     },
@@ -525,12 +559,12 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Cryptocurrency and Financial Memes",
-        "description": "Tokens referencing cryptocurrency and financial memes are gaining traction, leveraging the cultural resonance of these references.",
+        "meta_name": "Crypto Meme Animals",
+        "description": "Tokens leveraging animal-based memes and internet culture, often repurposing viral animal images or characters for crypto branding.",
         "defining_signals": [
-          "Tokens referencing cryptocurrency memes (e.g., 'BONK', 'Buttcoin') are prevalent.",
-          "Memes related to financial trends (e.g., 'Dumb Money', 'Billions') are being repurposed.",
-          "Tokens referencing cryptocurrency and financial culture (e.g., 'War', 'Copper Inu') are emerging."
+          "Use of animal imagery or names (e.g., Doge, Pikachu, Chonky)",
+          "Meme-based narratives tied to viral animal memes",
+          "Community-driven humor or absurdity around animal themes"
         ],
         "supporting_tokens": [
           {
@@ -539,176 +573,251 @@
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "DM",
-            "token_name": "Dumb Money",
-            "token_address": "BMhHXK6XQSGLkX3KjoUcppmBsssUKAqUYwQ68tMzpump"
-          },
-          {
-            "token_symbol": "COPPER",
-            "token_name": "Copper Inu",
-            "token_address": "61Wj56QGyyB966T7YsMzEAKRLcMvJpDbPzjkrCZc4Bi"
-          }
-        ],
-        "leader_hint_token_address": "DeXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 85,
-        "confidence_rationale": "The cryptocurrency and financial meme theme is well-represented with multiple tokens referencing cryptocurrency memes and financial trends, indicating a strong and recurring narrative.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 89448089035.88
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Cultural and Historical References",
-        "description": "Tokens referencing cultural and historical figures or events are gaining traction, leveraging the cultural resonance of these references.",
-        "defining_signals": [
-          "Tokens referencing historical figures (e.g., Hachiko, Ash Ketchum) are prevalent.",
-          "Memes related to historical events or cultural phenomena (e.g., 'The Hobbit', 'Moby-Dick') are being repurposed.",
-          "Tokens referencing cultural and historical narratives (e.g., 'The Prince', 'Hachiko') are emerging."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "BILBO",
-            "token_name": "Bilibgo",
-            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtyCdnUh8QP"
-          },
-          {
-            "token_symbol": "THEPRINCE",
-            "token_name": "Mords oftheRings",
-            "token_address": "A5AXcN5BEnFuseXdYEKm7CkAA4aKMkyv7reiXQVXpump"
-          }
-        ],
-        "leader_hint_token_address": "u95HN3DWvburbCBtT3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 75,
-        "confidence_rationale": "The cultural and historical reference theme is well-represented with multiple tokens referencing historical figures and events, indicating a strong and recurring narrative.",
-        "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 6011716.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Internet and Social Media Memes",
-        "description": "Tokens referencing internet and social media memes are gaining traction, leveraging the cultural resonance of these references.",
-        "defining_signals": [
-          "Tokens referencing internet memes (e.g., 'Rickroll', 'Doge', 'Tired Dad') are prevalent.",
-          "Memes related to social media trends (e.g., 'Boomer', 'Gay4Maye') are being repurposed.",
-          "Tokens referencing internet and social media culture (e.g., 'Ur Mom', 'Just a User') are emerging."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "RICKROLL",
-            "token_name": "RICKROLL",
-            "token_address": "Eu8qFQtyRdTLmjn42vndVVY26fsZPSbkbyVo31t4xFJ"
-          },
-          {
-            "token_symbol": "BOOMER",
-            "token_name": "Boomer",
-            "token_address": "4pLEbeSygPjQWPyVxGyYfmsJQxsV9hLzbMMRiXfYuzU"
-          },
-          {
-            "token_symbol": "USER",
-            "token_name": "Just a User",
-            "token_address": "9eppz2tFJRStziW3Hgjxu17BDAdpD2Jat4TxMHCRpump"
-          }
-        ],
-        "leader_hint_token_address": "Eu8qFqtyRdTLmjn42vnddY26fsZPSbkbyVo31t4xFJ",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The internet and social media meme theme is well-represented with multiple tokens referencing internet memes and social media trends, indicating a strong and recurring narrative.",
-        "leader_token": {
-          "token_symbol": "USER",
-          "token_name": "Just a user",
-          "token_address": "9eppz2tFJRStziW3Hgjxu17BDAdpD2Jat4TxMHCRpump",
-          "usd_market_cap": 1397858.9
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political Memes",
-        "description": "Tokens referencing political figures, ideologies, or events are gaining traction, leveraging the cultural resonance of political memes and narratives.",
-        "defining_signals": [
-          "Tokens referencing Donald Trump and his family members (e.g., Barron Trump) are prevalent.",
-          "Memes related to political slogans and ideologies (e.g., 'Make America Great Again') are being repurposed.",
-          "Tokens referencing political movements or figures (e.g., 'Barron Meme', 'Dilley Meme Team') are emerging."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BWT",
-            "token_name": "Barron Meme",
-            "token_address": "Av3cLhrHypqqh5VNqgmASeCGKbPGB8L2teNRuhH3bonk"
-          },
-          {
-            "token_symbol": "DILLEY",
-            "token_name": "Dilley Meme Team",
-            "token_address": "H1cuPfBL45mWDmzNPDetL6dboMa8PigRqEeFxS1Jbonk"
-          },
-          {
-            "token_symbol": "MEEK",
-            "token_name": "Machiavellianism",
-            "token_address": "A5AXcN5BEnFuseXdYEKm7CkAA4aKMkyv7reiXQVXpump"
-          }
-        ],
-        "leader_hint_token_address": "Av3cLhrHypqqh5VNqgmASeCGKbPGB8L2teNRuhH3bonk",
-        "confidence_0_100": 85,
-        "confidence_rationale": "The political meme theme is well-represented with multiple tokens referencing political figures and ideologies, indicating a strong and recurring narrative.",
-        "leader_token": {
-          "token_symbol": "BWT",
-          "token_name": "Barron Meme",
-          "token_address": "Av3cLhrHypqqh5VNqgmASeCGKbPGB8L2teNRuhH3bonk",
-          "usd_market_cap": 1264856.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Animal Memes",
-        "description": "Tokens referencing animal memes are gaining traction, leveraging the cultural resonance of animal-based humor and internet culture.",
-        "defining_signals": [
-          "Tokens referencing animal memes (e.g., Pepe the Frog, Doge, Pikachu) are prevalent.",
-          "Memes related to animal behavior or characteristics (e.g., 'Chonky Pikachu', 'Penguin Of War') are being repurposed.",
-          "Tokens referencing animal-based humor and internet culture (e.g., 'Copper Inu', 'Puppy') are emerging."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe Run",
-            "token_address": "BhSzjSaLEgm1M4WEVhuhgC7JTkihhG74AbTjwFUoTSKR"
-          },
-          {
-            "token_symbol": "CHONKACHU",
+            "token_symbol": "CHONKY",
             "token_name": "Chonky Pikachu",
             "token_address": "Ba8iDUTRFAqNc8DsXn2Cq48u89kytz9P52hXVeRopump"
           },
           {
+            "token_symbol": "COPPERINU",
+            "token_name": "copper inu",
+            "token_address": "61Wj56QgGyyB966T7YsMzEAKRLcMvJpDbPzjkrCZc4Bi"
+          },
+          {
+            "token_symbol": "DOG",
+            "token_name": "Nietzschean Dog",
+            "token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKKpump"
+          },
+          {
+            "token_symbol": "PIKA",
+            "token_name": "Pikachu Pokémon",
+            "token_address": "7DukaJEJ3y9hgZqd4zKP4cZakAybH5foQJVKBNEzpump"
+          },
+          {
             "token_symbol": "PUPPY",
             "token_name": "The Barking Puppy",
-            "token_address": "BHCgKK7dLMngMTewB23bxqPy9a3xW4ZsDh5TwbmBAGS"
+            "token_address": "6VwLzwEvaV1rMu7ko57YbwrNd4zcwGTSLnTrsKTnpump"
           }
         ],
-        "leader_hint_token_address": "BhSzjSaLEgm1M4WEVhuhgC7JTkihhG74AbTjwFUoTSKR",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The animal meme theme is well-represented with multiple tokens referencing animal-based humor and internet culture, indicating a strong and recurring narrative.",
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wZBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong meme-based animal themes with clear cultural references and community engagement.",
         "leader_token": {
-          "token_symbol": "RUNNER✅",
-          "token_name": "PEPE",
-          "token_address": "BhSzjSaLEgm1M4WEVhuhgC7JTkihhG74AbTjwFUoTSKR",
-          "usd_market_cap": 1036678.78
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 89448089035.88
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto and Finance Commentary",
+        "description": "Tokens referencing financial concepts, market dynamics, or investor sentiment, often with a satirical or critical tone.",
+        "defining_signals": [
+          "Use of financial concepts or market dynamics",
+          "Satirical or critical tone towards crypto or finance",
+          "Community-driven narratives around financial themes"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BOOMER",
+            "token_name": "Boomer",
+            "token_address": "4pLEbeSygPjERWPyZzGqV9hLzbMMRiXfYuzU"
+          },
+          {
+            "token_symbol": "DUMB",
+            "token_name": "Dumb Money",
+            "token_address": "BMhHXK6XQSGLkX3KjW3Z9dYzPjMAL8aBChKAUgbbonk"
+          },
+          {
+            "token_symbol": "GME",
+            "token_name": "GAMESTOP",
+            "token_address": "8WPerPpfuYX8sPddgk5e3DJygRNhgdbTATvxZZRneb"
+          },
+          {
+            "token_symbol": "HEDGE",
+            "token_name": "Hedge Coin",
+            "token_address": "J9KWZiGcN3d75oFZZPaoHt9mk2Hccggak7F2dJ1vpump"
+          },
+          {
+            "token_symbol": "MARS",
+            "token_name": "Mars Coin",
+            "token_address": "FFVXc1sKfnjeio54TdQ2nwBt8URnUCTKYbuY94mApump"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
+          }
+        ],
+        "leader_hint_token_address": "BMhHXK6XQSGLkX3KjW3Z9dYzPjMAL8aBChKAUgbbonk",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong financial commentary and market dynamics themes with community engagement and satirical tone.",
+        "leader_token": {
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 14079258.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto Meme and Humor",
+        "description": "Tokens leveraging humor, absurdity, or internet culture for community engagement, often with no clear non-crypto origin.",
+        "defining_signals": [
+          "Use of humor, absurdity, or internet culture",
+          "Community-driven meme-based narratives",
+          "No clear non-crypto origin for the token name or theme"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "AFK",
+            "token_name": "afk",
+            "token_address": "kMKX8hBaj3BTRBbeYix9c16EieBP5dih8DTSSwCpump"
+          },
+          {
+            "token_symbol": "AROLE",
+            "token_name": "Arsole",
+            "token_address": "3Yc2Vyfik4ByxW5rZ3jSfdNKNrtJU4iLyQQevMvspump"
+          },
+          {
+            "token_symbol": "BONK",
+            "token_name": "BONDUM",
+            "token_address": "84nGjHwSScH1wVHzQWgK6EzNmTX9FwPNY3BQBZjpump"
+          },
+          {
+            "token_symbol": "CUM",
+            "token_name": "Cummingtonite",
+            "token_address": "9KbgSh6XZaHiDBQE26tGTDuJuUZmVyvJGGabrE7fpump"
+          },
+          {
+            "token_symbol": "DILLEY",
+            "token_name": "Dilley Meme Team",
+            "token_address": "H1cuPfBL45mWDm54DetL6dboMa8PigRqEeFxS1Jbonk"
+          },
+          {
+            "token_symbol": "FASSET",
+            "token_name": "FASSET",
+            "token_address": "D8aW16oWcZwE2uTgPxNSZmxygqZP6FquDF7WhGjDsurg"
+          }
+        ],
+        "leader_hint_token_address": "kMKX8hBaj3BTRBbeYix9c16EieBP5dih8DTSSwCpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong humor and meme-based themes with community engagement and no clear non-crypto origin.",
+        "leader_token": {
+          "token_symbol": "CUM",
+          "token_name": "Cummingtonite",
+          "token_address": "9KbgSh6XZaHiDBQE26tGTDuJuUZmVyvJGGabrE7fpump",
+          "usd_market_cap": 2208949.15
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia and Pop Culture",
+        "description": "Tokens leveraging nostalgia for classic media, games, or pop culture references, often repurposinging iconic characters or franchise elements.",
+        "defining_signals": [
+          "References to classic media, games, or pop culture",
+          "Use of iconic characters or franchise elements",
+          "Community-driven nostalgia and meme-based narratives"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "EMERALD",
+            "token_name": "Pokémon",
+            "token_address": "FfQ1Tx33rc3fiG4xurr93NeAbmC9ozqU3rSAppHgpump"
+          },
+          {
+            "token_symbol": "ONEPIECE",
+            "token_name": "The One Piece",
+            "token_address": "B4p8B62Ln6H8YsYmJvNVX1wDC6wJom4dqX8cXA8Ybonk"
+          },
+          {
+            "token_symbol": "POKEMON",
+            "token_name": "Pokémon EMERALD",
+            "token_address": "FfQ1Tx33rc3fiG4xurr93NeAbmC9ozqU3rSAppHgpump"
+          },
+          {
+            "token_symbol": "RALE",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "YARANAIAKA",
+            "token_name": "Yaranaika",
+            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+          },
+          {
+            "token_symbol": "ZAUTH",
+            "token_name": "zauthx402",
+            "token_address": "DNhQZ1CE9qZ2FNrVhsCXwQJ2vZG8ufZkcYakTS5Jponk"
+          }
+        ],
+        "leader_hint_token_address": "FfQ1Tx33rc3fiG4xurr93NeAbmC9ozqU3rSAppHgpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong nostalgia and pop culture themes with community engagement and meme-based narratives.",
+        "leader_token": {
+          "token_symbol": "RALPH",
+          "token_name": "Ralph Wiggum",
+          "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS",
+          "usd_market_cap": 705354.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political and Social Commentary",
+        "description": "Tokens referencing political figures, ideologies, or social movements, often using controversial or satirical narratives.",
+        "defining_signals": [
+          "Incorporation of political figures or ideologies",
+          "Use of social commentary or satire",
+          "Community-driven narratives around political themes"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "AMELIAA",
+            "token_name": "Amelia the Patriot",
+            "token_address": "8TuHAfBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump"
+          },
+          {
+            "token_symbol": "BOOMER",
+            "token_name": "Boomer",
+            "token_address": "4pLEbeSygPjQWPyVxGyYmsJQxsV9hLzbMMRiXfYuzU"
+          },
+          {
+            "token_symbol": "DADS",
+            "token_name": "Tired Dad V2",
+            "token_address": "2Qtk2GjdpEru6xADcaYJYarMe1J2isHYkLWodypump"
+          },
+          {
+            "token_symbol": "FKCZ",
+            "token_name": "FuckCZ",
+            "token_address": "4R1P1zqnfYR16t94gZfqPTFPiBRgskJfU9oEwLaApump"
+          },
+          {
+            "token_symbol": "JUSTICE",
+            "token_name": "How to support America",
+            "token_address": "MXDcz2Jh2pqzHar8Pkadfsprm5nkEp9z4xU93Rkpump"
+          },
+          {
+            "token_symbol": "MARS",
+            "token_name": "Mars Coin",
+            "token_address": "FFVXXc1sKfnjeio54TdQ2nwBt8URnUCTKYbuY94mApump"
+          }
+        ],
+        "leader_hint_token_address": "4pLEbeSygPjERWPyZzGqV9hLzbMMRiXfuzU",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong political and social commentary themes with community engagement and meme-based narratives.",
+        "leader_token": {
+          "token_symbol": "FKCZ",
+          "token_name": "FuckCZ",
+          "token_address": "4R1P1zqnfYR16t94gZfqPTFPiBRgskJfU9oEwLaApump",
+          "usd_market_cap": 256486.08
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Political Memes' and 'Cryptocurrency and Financial Memes' themes are gaining strength, while 'Animal Memes' and 'Cultural and Historical References' are showing signs of fading. 'Internet and Social Media Memes' remain stable.",
+    "meta_rotation_note": "The 'Crypto Meme Animals' and 'Nostalgia and Pop Culture' METAs are gaining momentum with strong community engagement and meme-based narratives. 'Political and Social Commentary' is fading slightly as newer, more humorous and absurd themes take precedence. 'Crypto and Finance Commentary' remains stable with ongoing market sentiment discussions.",
     "meta_leaders": [
       {
-        "meta_name": "Cryptocurrency and Financial Memes",
+        "meta_name": "Crypto Meme Animals",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -717,39 +826,39 @@
         }
       },
       {
-        "meta_name": "Cultural and Historical References",
+        "meta_name": "Crypto and Finance Commentary",
         "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 6011716.0
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 14079258.0
         }
       },
       {
-        "meta_name": "Internet and Social Media Memes",
+        "meta_name": "Crypto Meme and Humor",
         "leader_token": {
-          "token_symbol": "USER",
-          "token_name": "Just a user",
-          "token_address": "9eppz2tFJRStziW3Hgjxu17BDAdpD2Jat4TxMHCRpump",
-          "usd_market_cap": 1397858.9
+          "token_symbol": "CUM",
+          "token_name": "Cummingtonite",
+          "token_address": "9KbgSh6XZaHiDBQE26tGTDuJuUZmVyvJGGabrE7fpump",
+          "usd_market_cap": 2208949.15
         }
       },
       {
-        "meta_name": "Political Memes",
+        "meta_name": "Nostalgia and Pop Culture",
         "leader_token": {
-          "token_symbol": "BWT",
-          "token_name": "Barron Meme",
-          "token_address": "Av3cLhrHypqqh5VNqgmASeCGKbPGB8L2teNRuhH3bonk",
-          "usd_market_cap": 1264856.0
+          "token_symbol": "RALPH",
+          "token_name": "Ralph Wiggum",
+          "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS",
+          "usd_market_cap": 705354.0
         }
       },
       {
-        "meta_name": "Animal Memes",
+        "meta_name": "Political and Social Commentary",
         "leader_token": {
-          "token_symbol": "RUNNER✅",
-          "token_name": "PEPE",
-          "token_address": "BhSzjSaLEgm1M4WEVhuhgC7JTkihhG74AbTjwFUoTSKR",
-          "usd_market_cap": 1036678.78
+          "token_symbol": "FKCZ",
+          "token_name": "FuckCZ",
+          "token_address": "4R1P1zqnfYR16t94gZfqPTFPiBRgskJfU9oEwLaApump",
+          "usd_market_cap": 256486.08
         }
       }
     ]
