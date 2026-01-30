@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-30T10:19:55.884744Z",
+  "generated_at_utc": "2026-01-30T11:20:30.435885Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 203,
+  "token_context_count": 198,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 23 PVP group(s); excluding 38 token(s) from META prompt."
+    "Detected 24 PVP group(s); excluding 40 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 38,
+  "pvp_excluded_token_count": 40,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -292,6 +292,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "sol",
+      "tokens": [
+        {
+          "token_symbol": "SOL",
+          "token_name": "Sol The Trophy Tomato",
+          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
+          "usd_market_cap": 3212021.61,
+          "processed_at": "2026-01-29T16:59:10.684291Z"
+        },
+        {
+          "token_symbol": "SOL",
+          "token_name": "Speed Of Light",
+          "token_address": "2z16cV9TH3Qm7X3DL5K6xUsTTjDaF3bHksTSRNeLpump",
+          "usd_market_cap": 3278.63,
+          "processed_at": "2026-01-30T10:28:23.665403Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "wojak",
       "tokens": [
         {
@@ -565,46 +585,36 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Rehash",
-        "description": "Tokens repurposing existing internet memes, often with no new cultural origin, to leverage nostalgia or humor for community engagement.",
+        "meta_name": "Crypto Meme Animals",
+        "description": "Tokens leveraging animal-themed memes with established internet or pop culture roots. These tokens often repurpose viral animal-related memes or characters into crypto narratives.",
         "defining_signals": [
-          "Leverage viral memes from 2010s-2020s (e.g., 'Doge', 'Rickroll', 'Bonk')",
-          "Names derived from established meme characters or phrases (e.g., 'Chonky Pikachu', 'Tired Dad')",
-          "No documented non-crypto cultural origin predating token launch",
-          "Community-driven narratives with no official documentation or team",
-          "Names often include 'Coin', 'Token', or 'Meme' to signal meme intent",
-          "High social media engagement but low utility beyond meme status"
+          "Animal-based meme origins (e.g., Pepe, Doge, Pikachu)",
+          "Community-driven branding around animal imagery",
+          "Leverage of viral animal memes from TikTok/Reddit/Instagram",
+          "Token names tied to specific animal characters (e.g., 'Pigeon Doctor', 'Chonky Pikachu')",
+          "Visual design centered around the animal theme",
+          "Meme history predating the token launch"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "PEPECASH",
+            "token_name": "PEpe cash",
+            "token_address": "655MQLuAYMfTYasaDsQsd1hVQMZs8hvGx8KvNfsQF8o9"
+          },
           {
             "token_symbol": "DOG",
             "token_name": "Nietzschean Dog",
             "token_address": "FLGhyMsFtr8mCFGaLuFhs7VNUqZgNaZ7YFkurPKKpump"
           },
           {
-            "token_symbol": "PIKA",
-            "token_name": "Chonky Pikachu",
-            "token_address": "Ba8iDUTRFAqNc8DsXn2Cq48u89kytz9P52hXVeRopump"
+            "token_symbol": "PIka",
+            "token_name": "Pikachu Pokémon",
+            "token_address": "7DukaJEJ3y9hgZqd4zKP4cZakAybH5foQJVKBNEzpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "CUM",
-            "token_name": "Cummingtonite",
-            "token_address": "9KbgSh6XZaHiDBQE26tGTDuJuUZmVyvJGGabrE7fpump"
-          },
-          {
-            "token_symbol": "PUP",
-            "token_name": "PUP",
-            "token_address": "7cXEvhvpgh9Cu82VB4EGAKpPJRPBrcHC3Yen8fePpump"
+            "token_symbol": "PIGEONN",
+            "token_name": "Pigeon Doctor",
+            "token_address": "GB8KtQfMChhYrCYtd5PoAB42kAdkHnuyAincSSmFpump"
           },
           {
             "token_symbol": "CHONK",
@@ -612,166 +622,38 @@
             "token_address": "Ba8iDUTRFAqNc8DsXn2Cq48u89kytz9P52hXVeRopump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "CUM",
-            "token_name": "Cummingtonite",
-            "token_address": "9KbgSh6XZaHiDBQE26tGTDuJuUZmVyvJGGabrE7fpump"
-          },
-          {
-            "token_symbol": "PUP",
-            "token_name": "PUP",
-            "token_address": "7cXEvhvpgh9Cu82VB4EGAKpPJRPBrcHC3Yen8fePpump"
-          },
-          {
-            "token_symbol": "CHONK",
-            "token_name": "Chonky Pikachu",
-            "token_address": "Ba8iDUTRFAqNc8DsXn2Cq48u89kytz9P52hXVeRopump"
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           }
         ],
-        "leader_hint_token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong pattern of meme-based tokens with no new cultural origin, leveraging nostalgia and humor for community engagement.",
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCx6xjnB7YaB1pPB263",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong meme lineage (Bonk, Doge, Pepe) with clear cultural roots and active community engagement.",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 20759057.0
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 89448089035.88
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Generational Commentary",
-        "description": "Tokens referencing generational divides or stereotypes, often with political or social commentary, leveraging existing cultural tensions for community engagement.",
+        "meta_name": "AI & Tech Innovation",
+        "description": "Tokens focused on AI, automation, and tech innovation, often leveraging the growing interest in AI and its impact on society.",
         "defining_signals": [
-          "Names referencing generational labels (e.g., 'Boomer', 'Gen Z', 'NEET')",
-          "Descriptions involving generational conflict or commentary",
-          "Lack of non-crypto cultural origin predating token launch",
-          "Community-driven narratives with no official documentation or team",
-          "Names often include generational slang or stereotypes",
-          "High social media engagement but low utility beyond meme status"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BOOMER",
-            "token_name": "Boomer",
-            "token_address": "4pLEbeSygPjQWSWPyVxGyFmsJQxsV9hLzbMMRiXfYuzU"
-          },
-          {
-            "token_symbol": "NEET",
-            "token_name": "NotInEmploymentEducationTraining",
-            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
-          },
-          {
-            "token_symbol": "DADS",
-            "token_name": "Tired Dad V2",
-            "token_address": "2Qtk2GjdpErU6xADcaYJYarMe1J2isHYujkLWodypump"
-          },
-          {
-            "token_symbol": "BOOMER",
-            "token_name": "Boomer",
-            "token_address": "4pLEbeSygPjQWSWPyVxGyFmsJQxsV9hLzbMMRiXfYuzU"
-          },
-          {
-            "token_symbol": "NEET",
-            "token_name": "NotInEmploymentEducationTraining",
-            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
-          },
-          {
-            "token_symbol": "DADS",
-            "token_name": "Tired Dad V2",
-            "token_address": "2Qtk2GjdpErU6xADcaYJYarMe1J2isHYujkLWodypump"
-          }
-        ],
-        "leader_hint_token_address": "4pLEbeSygPjQWSWPyVxGyFmsJQxsV9hLzbMMRiXfYuzU",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong pattern of generational commentary tokens leveraging existing cultural tensions for community engagement.",
-        "leader_token": {
-          "token_symbol": "neet",
-          "token_name": "NotInEmploymentEducationTraining",
-          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
-          "usd_market_cap": 9130187.87
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia",
-        "description": "Tokens referencing retro or nostalgic elements from pop culture, gaming, or media, often with no new cultural origin, to leverage nostalgia for community engagement.",
-        "defining_signals": [
-          "Names referencing retro or nostalgic elements (e.g., 'Pikachu', 'Minecraft', 'Satoshi')",
-          "Descriptions involving nostalgia or retro themes",
-          "Lack of non-crypto cultural origin predating token launch",
-          "Community-driven narratives with no official documentation or team",
-          "Names often include retro slang or stereotypes",
-          "High social media engagement but low utility beyond meme status"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PIKA",
-            "token_name": "Pikachu Pokémon",
-            "token_address": "7DukaJEJ3y9hgZqd4zKP4cCakAybH5foQJVKBNEzpump"
-          },
-          {
-            "token_symbol": "SAT",
-            "token_name": "Satoshi",
-            "token_address": "C6pPsozfVGuJmXHkke3GTkhPeuVkPfdvjZXTDGZ4pump"
-          },
-          {
-            "token_symbol": "MINE",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
-          },
-          {
-            "token_symbol": "PIKA",
-            "token_name": "Pikachu Pokémon",
-            "token_address": "7DukaJEJ3y9hgZqd4zKP4cCakAybH5foQJVKBNEzpump"
-          },
-          {
-            "token_symbol": "SAT",
-            "token_name": "Satoshi",
-            "token_address": "C6pPsozfVGuJmXHkke3GTkhPeuVkPfdvjZXTDGZ4pump"
-          },
-          {
-            "token_symbol": "MINE",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEWpump"
-          }
-        ],
-        "leader_hint_token_address": "7DukaJEJ3y9hgZqd4zKP4cCakAybH5foQJVKBNEzpump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong pattern of nostalgia-based tokens leveraging retro pop culture for community engagement.",
-        "leader_token": {
-          "token_symbol": "Grandma",
-          "token_name": "Minecraft Grandma Fund",
-          "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump",
-          "usd_market_cap": 1365097.8
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI Agent Utility",
-        "description": "Tokens tied to AI agents or autonomous systems, often with vague or speculative utility claims around automation, task execution, and on-chain governance.",
-        "defining_signals": [
-          "Names referencing AI or autonomous systems (e.g., 'Clawdbot', 'Mia Ko', 'Clippy')",
-          "Descriptions involving AI task execution, automation, or governance",
-          "Lack of official documentation or team details",
-          "Inferred utility around agent coordination, data processing, or on-chain governance",
-          "Names often include 'AI', 'Bot', or 'Agent' in token descriptions",
-          "High speculation around future use cases with no current implementation"
+          "AI/automation-related utility or narrative",
+          "Community-driven AI projects or tools",
+          "Leverage of AI-related memes or cultural trends",
+          "Token names tied to AI concepts (e.g., 'Clawdbot', 'Mia Ko')",
+          "Integration with AI platforms or ecosystems",
+          "Focus on decentralized AI or agent-based systems"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "CLAWD",
-            "token_name": "Clawdbot",
-            "token_address": "Hoi9Lo8s2PP7EM9mvv9bZjQ3aSB7ijyS238sTqQjbpump"
+            "token_name": "clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
             "token_symbol": "MIA",
@@ -779,116 +661,222 @@
             "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "CLIP",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVvKkGEgWPEo6pump"
+            "token_symbol": "JARVIS",
+            "token_name": "Moltbot Jarvis",
+            "token_address": "fMTnj2EHhXUwu8cWGjJ7NvzWey1irAiuQmintebpump"
           },
           {
-            "token_symbol": "CLA",
-            "token_name": "Clawrl3000",
-            "token_address": "7ahcvAHVkB7eo95wDmnH4AZYzDkB9ggaprt55TWmpump"
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGs"
           },
           {
-            "token_symbol": "GEN",
-            "token_name": "Genie",
-            "token_address": "AsqUgpheAnX2k2LZLr2PDDWgDqT1M5qZcaV39onGpump"
+            "token_symbol": "CLAUDEV",
+            "token_name": "Claudeputer V2",
+            "token_address": "BpiuTW5TnoBbiHfPsxy34hsTzn9pQ2VW3tnG4p3iBAGS"
           },
           {
-            "token_symbol": "CLA",
-            "token_name": "Clawdbot",
-            "token_address": "Hoi9Lo8s2PP7EM9mvv9bZjQ3aSB7ijyS238sTqQjbpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "CLIP",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVvKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "CLA",
-            "token_name": "Clawrl3000",
-            "token_address": "7ahcvAHVkB7eo95wDmnH4AZYzDkB9ggaprt55TWmpump"
-          },
-          {
-            "token_symbol": "GEN",
-            "token_name": "Genie",
-            "token_address": "AsqUgpheAnX2k2LZLr2PDDWgDqT1M5qZcaV39onGpump"
+            "token_symbol": "AI",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
           }
         ],
-        "leader_hint_token_address": "Hoi9Lo8s2PP7EM9mvv9bZjQ3aSB7ijyS238sTqQjbpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong pattern of AI agent-related tokens with speculative utility claims, though many lack clear documentation or implementation.",
+        "leader_hint_token_address": "fMTnj2EHhXUwu8cWGjJ7NvzWey1irAiuQmintebpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong AI/tech focus with active community engagement and growing interest in ai-driven projects.",
         "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 606083.79
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 49392982.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political Satire",
-        "description": "Tokens referencing political figures, events, or ideologies, often with satirical or critical intent, leveraging existing political discourse for community engagement.",
+        "meta_name": "Nostalgia & Retro Culture",
+        "description": "Tokens leveraging retro or nostalgic themes, often repurposing older internet memes, pop culture references, or historical figures.",
         "defining_signals": [
-          "Names referencing political figures or events (e.g., 'Trump', 'CZ', 'Cory')",
-          "Descriptions involving political commentary or satire",
-          "Lack of non-crypto cultural origin predating token launch",
-          "Community-driven narratives with no official documentation or team",
-          "Names often include political slang or stereotypes",
-          "High social media engagement but low utility beyond meme status"
+          "Retro or nostalgic themes (e.g., 90s, 2000s)",
+          "Leverage of older memes or pop culture references",
+          "Token names tied to historical figures or events",
+          "Community-driven nostalgia-based narratives",
+          "Visual design inspired by older aesthetics",
+          "Meme history predating the token launch"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "TRMP",
-            "token_name": "Trump Coin",
-            "token_address": "3UzssGgzzLi6xDvLsnq67yxfVxL1aR8nxzQZEBw8pump"
+            "token_symbol": "RKT",
+            "token_name": "Roaring Kitty",
+            "token_address": "BMrrWQPYVRbWqW3rkv33DF1GtDYt9iZ76S6jek5uZfir"
           },
           {
-            "token_symbol": "CZ",
-            "token_name": "FuckCZ",
-            "token_address": "4R1P1zqnfYR16t94gZfqPTFPiBRgskJfU9oEwLaApump"
+            "token_symbol": "CLIP",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEEo6pump"
           },
           {
-            "token_symbol": "CORY",
-            "token_name": "Cory coin",
-            "token_address": "HHmiBMqFQPsFPyEcfmrSsyxkZa7EJj15hZk4fU4Apump"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "TRMP",
-            "token_name": "Trump Coin",
-            "token_address": "3UzssGgzzLi6xDvLsnq67yxfVxL1aR8nxzQZEBw8pump"
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "CZ",
-            "token_name": "FuckCZ",
-            "token_address": "4R1P1zqnfYR16t94gZfqPTFPiBRgskJfU9oEwLaApump"
+            "token_symbol": "TURTLE",
+            "token_name": "The way of the turtle",
+            "token_address": "J5KXBRvVXDvdT9ARJSCkyZDPp3Cmu2QpidgFsKk5pump"
           },
           {
-            "token_symbol": "CORY",
-            "token_name": "Cory coin",
-            "token_address": "HHmiBMqFQPsFPyEcfmrSsyxkZa7EJj15hZk4fU4Apump"
+            "token_symbol": "GROK",
+            "token_name": "Grok Coin",
+            "token_address": "2uauFtUGYASTbpZvqebjKqYFxWLQmdeUbGRmHbxzpump"
           }
         ],
-        "leader_hint_token_address": "4R1P1zqnfYR16t94gZfqPTFPiBRgskJfU9oEwLaApump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong pattern of political satire tokens leveraging existing political discourse for community engagement.",
+        "leader_hint_token_address": "BMrrWQPYVRbWqW3rkv33DF1GtDYt9iZ76S6jek5uZfir",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong nostalgic meme lineage (Roaring Kitty, Clippy) with active community engagement and viral potential.",
         "leader_token": {
-          "token_symbol": "FKCZ",
-          "token_name": "FuckCZ",
-          "token_address": "4R1P1zqnfYR16t94gZfqPTFPiBRgskJfU9oEwLaApump",
-          "usd_market_cap": 256486.08
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 20759057.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Community & Identity",
+        "description": "Tokens centered around community identity, often leveraging internet subcultures, subgroups, or niche communities for engagement.",
+        "defining_signals": [
+          "Community-driven narratives",
+          "Leverage of internet subcultures or subgroups",
+          "Token names tied to specific communities or identities",
+          "Visual design reflecting community identity",
+          "Meme history predating the token launch",
+          "Active community engagement and social media presence"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BARBZ",
+            "token_name": "BARBZ",
+            "token_address": "D8amht4yzf2DtYUxNEsvg3xgw8u9M4u3dwUYa2qebbonk"
+          },
+          {
+            "token_symbol": "NEET",
+            "token_name": "NotInEmploymentEducationTraining",
+            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
+          },
+          {
+            "token_symbol": "DADS",
+            "token_name": "Tired Dad V2",
+            "token_address": "2Qtk2GjdpErU6xADcaYJYarMe1J2isHYujkLWodypump"
+          },
+          {
+            "token_symbol": "WIN",
+            "token_name": "You're only one win away",
+            "token_address": "6JUCiMKFPaYAbGgZyyYEMDDut7usLbsuNwhPuNDApump"
+          },
+          {
+            "token_symbol": "USER",
+            "token_name": "Just a user",
+            "token_address": "9eppz2tFJRStziW3Hgjxu17BDAdpD2Jat4TxMHCRpump"
+          },
+          {
+            "token_symbol": "MUSKIT",
+            "token_name": "Musk It",
+            "token_address": "9So52ugZh2BLBT3f7p61947q91uQh2DyvbfyMDeRpump"
+          }
+        ],
+        "leader_hint_token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong community identity focus with active engagement and viral potential.",
+        "leader_token": {
+          "token_symbol": "neet",
+          "token_name": "NotInEmploymentEducationTraining",
+          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+          "usd_market_cap": 9130187.87
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political & Cultural Commentary",
+        "description": "Tokens referencing political figures, movements, or cultural commentary, often leveraging existing memes or public sentiment for community engagement.",
+        "defining_signals": [
+          "Direct references to political figures (e.g., Trump, Musk)",
+          "Use of political slogans or movements (e.g., 'Make America Great Again')",
+          "Meme-based political commentary (e.g., 'Dilley Meme Team')",
+          "Community-driven narratives around political themes",
+          "Leverage of viral political memes from TikTok/Reddit",
+          "Token names tied to political events or figures"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "TRump",
+            "token_name": "Trump Coin",
+            "token_address": "3UzssGpzzLi6xDvLsnq67yxyVxL1aR8nxzQZEBw8pump"
+          },
+          {
+            "token_symbol": "DILLEY",
+            "token_name": "Dilley Meme Team",
+            "token_address": "H1cuPpBL45mWDmzNPDetL6dboMa8PigRqEeFxS1Jbonk"
+          },
+          {
+            "token_symbol": "JUSTice",
+            "token_name": "How to support America",
+            "token_address": "MXDcz2Jh2pqzHar8PkADfsprm5nkEp9z4xU93Rkpump"
+          },
+          {
+            "token_symbol": "MARS",
+            "token_name": "Mars Coin",
+            "token_address": "FFVXc1sKfnjeio54TdQ2nwBT8URnUCTKYbuY94mApump"
+          },
+          {
+            "token_symbol": "CZ",
+            "token_name": "FuckCZ",
+            "token_address": "4R1P1zqnfYR16t94gZfqPTFPiBRgskJfU9oEwLaApump"
+          },
+          {
+            "token_symbol": "BOOOMER",
+            "token_name": "Boomer",
+            "token_address": "4pLEbeSygPjQWSWPyVxGyFmsJQxsV9hLzbMMRiXfYuzU"
+          }
+        ],
+        "leader_hint_token_address": "3UzssGpzzLe6xDvLsnq67yxyVxL1aR8nxzQZEBw8pump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong political meme lineage (Trump, CZ) with active community engagement and viral potential.",
+        "leader_token": {
+          "token_symbol": "MARS",
+          "token_name": "Mars Coin",
+          "token_address": "FFVXc1sKfnjeio54TdQ2nwBT8URnUCTKYbuY94mApump",
+          "usd_market_cap": 268777.74
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Meme Rehash remains dominant with new tokens repurposing old memes. AI Agent Utility is emerging as speculation grows around autonomous systems. Generational Commentary and Political Satire are fading as newer tokens focus on AI and nostalgia.",
+    "meta_rotation_note": "Fading: AI & Tech Innovation is showing signs of fatigue with reduced new launches. Emerging: Community & Identity is gaining traction as a new dominant theme, with increased social media engagement and meme virality.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Rehash",
+        "meta_name": "Crypto Meme Animals",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 89448089035.88
+        }
+      },
+      {
+        "meta_name": "AI & Tech Innovation",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 49392982.0
+        }
+      },
+      {
+        "meta_name": "Nostalgia & Retro Culture",
         "leader_token": {
           "token_symbol": "TROLL",
           "token_name": "TROLL",
@@ -897,7 +885,7 @@
         }
       },
       {
-        "meta_name": "Generational Commentary",
+        "meta_name": "Community & Identity",
         "leader_token": {
           "token_symbol": "neet",
           "token_name": "NotInEmploymentEducationTraining",
@@ -906,30 +894,12 @@
         }
       },
       {
-        "meta_name": "Nostalgia",
+        "meta_name": "Political & Cultural Commentary",
         "leader_token": {
-          "token_symbol": "Grandma",
-          "token_name": "Minecraft Grandma Fund",
-          "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump",
-          "usd_market_cap": 1365097.8
-        }
-      },
-      {
-        "meta_name": "AI Agent Utility",
-        "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 606083.79
-        }
-      },
-      {
-        "meta_name": "Political Satire",
-        "leader_token": {
-          "token_symbol": "FKCZ",
-          "token_name": "FuckCZ",
-          "token_address": "4R1P1zqnfYR16t94gZfqPTFPiBRgskJfU9oEwLaApump",
-          "usd_market_cap": 256486.08
+          "token_symbol": "MARS",
+          "token_name": "Mars Coin",
+          "token_address": "FFVXc1sKfnjeio54TdQ2nwBT8URnUCTKYbuY94mApump",
+          "usd_market_cap": 268777.74
         }
       }
     ]
