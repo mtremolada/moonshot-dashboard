@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-31T20:44:38.669910Z",
+  "generated_at_utc": "2026-01-31T21:44:53.310167Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 143,
+  "token_context_count": 146,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 24 PVP group(s); excluding 37 token(s) from META prompt."
+    "Detected 24 PVP group(s); excluding 38 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 37,
+  "pvp_excluded_token_count": 38,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -195,6 +195,13 @@
           "token_address": "AdNDw9rNhnhy1KrQAGsaDT2C6uaRGP2VxRbcSvVbpump",
           "usd_market_cap": 2437231.56,
           "processed_at": "2026-01-31T19:44:22.450532Z"
+        },
+        {
+          "token_symbol": "BUDDY",
+          "token_name": "Barking Puppy",
+          "token_address": "CzUFAor9qVTUEfhqGoyrDpCf8VB2tquCT7o3o5uUpump",
+          "usd_market_cap": 66609.22,
+          "processed_at": "2026-01-31T21:27:03.243228Z"
         }
       ]
     },
@@ -545,6 +552,13 @@
           "token_address": "AdNDw9rNhnhy1KrQAGsaDT2C6uaRGP2VxRbcSvVbpump",
           "usd_market_cap": 2437231.56,
           "processed_at": "2026-01-31T19:44:22.450532Z"
+        },
+        {
+          "token_symbol": "BUDDY",
+          "token_name": "Barking Puppy",
+          "token_address": "CzUFAor9qVTUEfhqGoyrDpCf8VB2tquCT7o3o5uUpump",
+          "usd_market_cap": 66609.22,
+          "processed_at": "2026-01-31T21:27:03.243228Z"
         }
       ]
     },
@@ -620,15 +634,69 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political and Cultural Figures",
-        "description": "Tokens are themed around real-world political and cultural figures, leveraging their public personas and associated memes. This includes tokens based on Donald Trump, Melania Trump, and other public figures, often repurposing existing memes or viral content.",
+        "meta_name": "Meme Revival & Nostalgia",
+        "description": "Tokens reviving or repurposing long-standing internet memes, pop culture references, and nostalgic elements, often with humorous or ironic twists.",
         "defining_signals": [
-          "Tokens named after or referencing political figures (e.g., Trump, Melania)",
-          "Use of viral political memes or phrases as token names or themes",
-          "Tokens leveraging public perception or controversy around these figures",
-          "Mentions of political events or statements in token descriptions",
-          "Tokens tied to political movements or ideologies",
-          "Tokens referencing political figures in a satirical or ironic context"
+          "Revival of classic memes (e.g., 'Rickroll', 'Pepe', 'Chungus')",
+          "Use of pop culture references (e.g., 'South Park', 'GameStop')",
+          "Nostalgic branding (e.g., 'Clippy', 'BONK')",
+          "Tokens leveraging viral reaction GIFs or phrases",
+          "High engagement from meme and nostalgia communities",
+          "Tokens with clear cultural or historical roots"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol_symbol": "RICKROLL",
+            "token_name": "Never Gonna Give You Up",
+            "token_address": "AaC5buqR7pVGvzYED8CNkdkPnwAdv1SfogkuFjPqpump"
+          },
+          {
+            "token_symbol": "CLAW",
+            "token_name": "ClawChain",
+            "token_address": "BQ48k92gDbxDrpw8Zr7NtYA5Bi7kttZ5cDASnEZNpump"
+          },
+          {
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "CHUNGUS",
+            "token_name": "Chungus Life",
+            "token_address": "N7LqKsc8wupwhYYLza55RCXXHYXMA9mZRhzbi4rpump"
+          },
+          {
+            "token_symbol": "CLIPY",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          }
+        ],
+        "leader_hint_token_address": "BONK",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong revival of classic memes with high market caps and clear cultural references, especially BONK and RICKROLL.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 83347270655.48
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political Satire & Meme Tokens",
+        "description": "Tokens leveraging political figures, memes, and satirical narratives, often tied to Donald Trump, Melania Trump, and political commentary, repurposing viral internet formats for crypto branding.",
+        "defining_signals": [
+          "Use of political figures (Trump, Epstein, etc.) as meme anchors",
+          "Satirical or ironic political commentary in token descriptions",
+          "Leveraging viral political memes (e.g., 'Epstein didn’t kill himself')",
+          "Meme formats repurposed for crypto (e.g., 'Official [Person]')",
+          "High engagement from political meme communities",
+          "Tokens with clear ties to political events or figures"
         ],
         "supporting_tokens": [
           {
@@ -642,103 +710,9 @@
             "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
           },
           {
-            "token_symbol": "MANNY",
-            "token_name": "Manny the baby mammoth",
-            "token_address": "6toGUYCTpCDvnZ2FDm22hKUqQiDspgk1ZFMxR3e3pump"
-          },
-          {
-            "token_symbol": "Elongate",
-            "token_name": "Elongate",
-            "token_address": "4unWoM3GCpe22TvHcAHpc4ksoMoC9NDZX8RPeCnLpump"
-          },
-          {
-            "token_symbol": "BOND",
-            "token_name": "BOND Coin",
-            "token_address": "7wyW93u2u81iTCZ5zumeYWw69aNzGys1txJrhqKzBAGS"
-          },
-          {
-            "token_symbol": "YARANA",
-            "token_name": "やらないか",
-            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
-          },
-          {
-            "token_symbol": "FUCKCZ",
-            "token_name": "FUCK CZ",
-            "token_address": "4nLfU6BVAUJbBmKYN8grUzqHxTqTGbV7xQrX9CWSpump"
-          },
-          {
-            "token_symbol": "RKT",
-            "token_name": "Roaring Kitty",
-            "token_address": "BMrrWQPYVRbWqW3rkv33DF1GtDYt9iZ76S6jek5uZfir"
-          },
-          {
-            "token_symbol": "PUPPY",
-            "token_name": "The Barking Puppy",
-            "token_address": "BHCgKK7dLMngMTewB23bxqPy9a3xW4ZsDh5TwbWmBAGS"
-          },
-          {
-            "token_symbol": "GRANDMA",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHa6LXmjqQh7KEjaXDPKScjmzwEBpump"
-          }
-        ],
-        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong presence of tokens referencing political and cultural figures, with $TRUMP and $MELANIA being the most prominent and having the highest market caps in this category. These tokens leverage well-known public figures and their associated memes.",
-        "leader_token": {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 898357224.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme and Internet Culture",
-        "description": "Tokens are based on internet memes, viral phrases, or cultural references that have gained traction on platforms like TikTok, Reddit, and Twitter. These tokens often repurpose existing memes or create new ones to drive community engagement.",
-        "defining_signals": [
-          "Tokens referencing viral internet memes or phrases",
-          "Tokens tied to TikTok, Reddit, or Twitter trends",
-          "Tokens using humor or satire to engage with internet culture",
-          "Tokens referencing viral videos, images, or phrases",
-          "Tokens leveraging meme formats or templates",
-          "Tokens with community-driven narratives or inside jokes"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "FRIES",
-            "token_name": "just put the fries in the bag",
-            "token_address": "FsDdCFtPxw8m2BY22f1mS5Ub5MWyJ7uSs5VWq5Hspump"
-          },
-          {
-            "token_symbol": "WIN",
-            "token_name": "You're only one win away",
-            "token_address": "6JUCiMKFPaYAbGgZyyYEMDDut7usLbsuNwhPuNDApump"
-          },
-          {
-            "token_symbol": "CAPTCHA",
-            "token_name": "I'm Not A Robot",
-            "token_address": "HJqcBLkZ7h1ev7gYL5YforZgcwKxaoMbEYSBupBSAK2F"
-          },
-          {
-            "token_symbol": "PARLAY",
-            "token_name": "Parlaymarket",
-            "token_address": "p8vYRoB8mrjrrEoyMri7A4DfaA1tZvzRxSQwpA8pump"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
-          },
-          {
-            "token_symbol": "LUX",
-            "token_name": "Luxxcoin",
-            "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2"
-          },
-          {
-            "token_symbol": "PIGEON",
-            "token_name": "Pigeon Doctor",
-            "token_address": "GB8KtQfMChhYrCYtd5PoAB42kAdkHnuyAincSSmFpump"
+            "token_symbol": "MDT",
+            "token_name": "Molt Donald Trump",
+            "token_address": "HAeTYRWD8QCuTGVcwf4Vt9TJkqtroLarYdgMQuDRpump"
           },
           {
             "token_symbol": "JUSTICE",
@@ -746,241 +720,73 @@
             "token_address": "MXDcz2Jh2pqzHar8PkADfsprm5nkEp9z4xU93Rkpump"
           },
           {
-            "token_symbol": "LUNACRYPTO",
-            "token_name": "Luna The Cryptonaut",
-            "token_address": "FHmF8Twyu2xYoQg22ZVmJAS1HvHfJ2iutHoSZQz7pump"
+            "token_symbol": "FUCKCZZ",
+            "token_name": "FUCK CZ",
+            "token_address": "4nLfU6BVAUJbBmKYN8grUzqHxTqTGbV7xQrX9CWSpump"
           },
           {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZZLdpDikgbaWSd5fTEozQkV7KApump"
+            "token_symbol": "BOND",
+            "token_name": "BOND Coin",
+            "token_address": "7wyW93u2u81iTCZ5zumeYWw69aNzGys1txJrhqKzBBAGS"
           }
         ],
-        "leader_hint_token_address": "FsDdCFtPxw8m2BY22f1mS5Ub5MWyJ7uSs5VWq5Hspump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong clustering of tokens around internet memes and viral phrases, with 'just put the fries in the bag' and 'You're only one win away' being the most prominent and having the highest market caps in this category.",
+        "leader_hint_token_address": "TRUMP",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Strong political meme alignment with high market caps and clear cultural references, especially around Trump and Epstein.",
         "leader_token": {
-          "token_symbol": "LUX",
-          "token_name": "Luxxcoin",
-          "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2",
-          "usd_market_cap": 82470044.0
+          "token_symbol": "TRUMP",
+          "token_name": "OFFICIAL TRUMP",
+          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "usd_market_cap": 898357224.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Crypto and Blockchain Themes",
-        "description": "Tokens are themed around blockchain technology, decentralized finance (DeFi), and the broader crypto ecosystem. These tokens often reference crypto concepts, projects, or events, and are designed to appeal to the crypto-native audience.",
+        "meta_name": "AI-Driven Utility & Governance",
+        "description": "Tokens tied to AI-driven platforms, governance models, and utility functions, often emphasizing decentralized decision-making, AI agent coordination, and on-chain governance.",
         "defining_signals": [
-          "Tokens referencing blockchain or DeFi concepts",
-          "Tokens tied to specific blockchain projects or platforms",
-          "Tokens using crypto jargon or slang in their names or descriptions",
-          "Tokens referencing crypto events or movements",
-          "Tokens leveraging the crypto-native audience for community engagement",
-          "Tokens with a focus on decentralization, governance, or tokenomics"
+          "AI-driven governance or decision-making",
+          "Tokens used for on-chain governance or voting",
+          "Integration with AI-driven platforms or tools",
+          "Platform-specific utility for AI coordination",
+          "High engagement from AI governance communities",
+          "Tokens with clear utility in AI-driven ecosystems"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "RAW",
-            "token_name": "RAW",
-            "token_address": "6Rduy9EQh55XaKaXgUK9Ji8PthehRqocndiB3wgQpump"
-          },
-          {
-            "token_symbol": "FCOD",
-            "token_name": "Fcode AI",
-            "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro"
-          },
-          {
-            "token_symbol": "SOULGUY",
-            "token_name": "SOULGUY",
-            "token_address": "FsXJHch6cj9TyZGm1kfMwt8S8oATCEr6ccqWFp3Xpump"
-          },
-          {
-            "token_symbol": "GS",
-            "token_name": "Genuine Stupidity",
-            "token_address": "Ejk98oPVrPmZ7W9c6tygBUw2WiWLpgDcos9HX3CFpump"
-          },
-          {
-            "token_symbol": "CMEM",
-            "token_name": "Claude Memory",
-            "token_address": "2TsmuYUrsctE57VLckZBYEEzdokUF8j8e1GavekWBAGS"
-          },
-          {
-            "token_symbol": "BTM",
-            "token_name": "Bitcoin Time Machine",
-            "token_address": "6p3cGr1hqnhq7pvqeq2nWcrnQFz575zcPz9TTtTUpump"
-          },
-          {
-            "token_symbol": "DARKHORSE",
-            "token_name": "Dark Horse",
-            "token_address": "3JjfgaXzhN6xr6WYJ4wBBVoS19etj3ChLWaKz6TBXbonk"
-          },
-          {
-            "token_symbol": "LUX",
-            "token_name": "Luxxcoin",
-            "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2"
-          },
-          {
-            "token_symbol": "CUBE",
-            "token_name": "CUBE",
-            "token_address": "8sBjUgmsF1WjNxwZZiYRDdH7caShh9rMD2cHSZTeQH2Cd"
-          },
-          {
-            "token_symbol": "FINNBAGS",
-            "token_name": "FinnBags",
-            "token_address": "2PyDpAHPFGLhUGpqtEL3vMmfZbQ2DRrGtnqfxLPfBAGS"
-          }
-        ],
-        "leader_hint_token_address": "6Rduy9EQh55XaKaXgUK9Ji8PthehRqocndi3wgQpump",
-        "confidence_0_100": 83,
-        "confidence_rationale": "Strong presence of tokens themed around blockchain and DeFi, with RAW and FCOD being the most prominent and having the highest market caps in this category.",
-        "leader_token": {
-          "token_symbol": "LUX",
-          "token_name": "Luxxcoin",
-          "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2",
-          "usd_market_cap": 82470044.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI Agent Ecosystem",
-        "description": "Tokens are centered around AI agents performing tasks, managing social networks, and interacting autonomously. This theme is driven by platforms like Moltbook and OpenClaw, where AI agents are given roles in virtual environments and governance.",
-        "defining_signals": [
-          "Tokens tied to AI agent platforms (e.g., Moltbook, OpenClaw)",
-          "AI agents performing tasks like trading, social media management, and content creation",
-          "Tokens used for governance, access, or rewards within agent ecosystems",
-          "Mentions of autonomous or semi-autonomous AI behavior",
-          "Integration with chat apps or virtual environments",
-          "Community-driven development and funding for AI agent projects"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Claw",
-            "token_name": "Clawpus",
-            "token_address": "3TBu8YjoR5Eiui6CSKm5bkvxn8WGceMBLTCzEH4tpump"
-          },
-          {
-            "token_symbol": "ClawHUB",
-            "token_name": "ClawHub",
-            "token_address": "BrzfyNWGGyqbsVMoegc3fbd9V2Gvwm56HZM1e9cVpump"
-          },
           {
             "token_symbol": "OPENCLAW",
             "token_name": "OpenClaw",
             "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
           },
           {
-            "token_symbol": "Clawk",
-            "token_name": "Clawk",
-            "token_address": "DiTJNECkXMSvccagjY52CGswozwJ6j8M7UQLtV9Spump"
+            "token_symbol": "SYNP",
+            "token_name": "Synapses",
+            "token_address": "CxD7VmuFeGTQSuFXvdjpYjPJXj3XcZjrQ2De8etfpump"
           },
           {
-            "token_symbol": "OnlyClaws",
-            "token_name": "OnlyClaws",
-            "token_address": "BX2KjYBUXn12ihAEczYnsNprq6ekxwuZpZvf1Gy5pump"
-          },
-          {
-            "token_symbol": "Karmacoin",
+            "token_symbol": "KARMA",
             "token_name": "Karmacoin",
-            "token_address": "74jqvYLuP85bt8kSaq1vXLMqRF4SD9GJNmMf4y4apump"
-          },
-          {
-            "token_symbol": "Nohumans",
-            "token_name": "Nohumans",
-            "token_address": "4MemsG4E7puxABgJ3LmySbPyTtGdA3wmTAP2PMkepump"
-          },
-          {
-            "token_symbol": "SYNP",
-            "token_name": "Synapses",
-            "token_address": "CxD7VmuFeGTQSuFXvdjpYjPJXj3XcZjrQ2De8etfpump"
-          },
-          {
-            "token_symbol": "CUBE",
-            "token_name": "CUBE",
-            "token_address": "8sBjUgmsF1WjNxwZiYRDdH7caShh9rMD2cHSZTeQH2Cd"
-          },
-          {
-            "token_symbol": "EUDAEMON",
-            "token_name": "eudaemon_0",
-            "token_address": "2G7pnd55bVKSMEU3HRr75TFndAQoTSQZxrgD6899BAGS"
-          }
-        ],
-        "leader_hint_token_address": "3TBu8YjoR5Eiui6CSKm5bkvxn8WGceMBLTCzEH4tpump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong clustering of tokens around AI agent ecosystems, with multiple tokens explicitly tied to platforms like Moltbook and OpenClaw. Clawpus and ClawHub are the most prominent and have the highest market caps in this category.",
-        "leader_token": {
-          "token_symbol": "ClawHUB",
-          "token_name": "ClawHub",
-          "token_address": "BrzfyNWGGyqbsVMoegc3fbd9V2Gvwm56HZM1e9cVpump",
-          "usd_market_cap": 5636160.9
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Technological Singularity",
-        "description": "Tokens are themed around artificial intelligence, technological advancement, and the concept of the technological singularity. These tokens often reference AI capabilities, future technologies, or philosophical implications of AI.",
-        "defining_signals": [
-          "Tokens referencing AI or machine learning concepts",
-          "Tokens tied to AI research or development projects",
-          "Tokens using terms like 'singularity', 'accelerando', or 'AGI'",
-          "Tokens referencing AI-related literature or media",
-          "Tokens leveraging the fear or excitement around AI advancement",
-          "Tokens with speculative or futuristic narratives"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "XAIHUMAN",
-            "token_name": "xAIHuman",
-            "token_address": "E2BA2XAWLP2Rj7bNzaVGJ8rsCzPsPty7J21qFBXMpump"
-          },
-          {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "4gfNpwo8LQtcgGrWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
-          },
-          {
-            "token_symbol": "ACCELERANDO",
-            "token_name": "Accelerando",
-            "token_address": "HiNkp9CdKqTgPtB6WnnrrUAu9YwQqnrvT6Ceuxoypump"
-          },
-          {
-            "token_symbol": "CLAWED",
-            "token_name": "clawed",
-            "token_address": "22NT7hVkXL2BCsLC1y8yDp7NCdKKpZPayvecEfwpump"
-          },
-          {
-            "token_symbol": "SYNP",
-            "token_name": "Synapses",
-            "token_address": "CxD7VmuFeGTQSuFXvdjpYjPJXj3XcZjrQ2De8etfpump"
-          },
-          {
-            "token_symbol": "OPENCLAW",
-            "token_name": "OpenClaw",
-            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
-          },
-          {
-            "token_symbol": "CLAWK",
-            "token_name": "Clawk",
-            "token_address": "DiTJNECkXMSvccagjY52CGswozwJ6j8M7UQLtV9Spump"
-          },
-          {
-            "token_symbol": "EUDAEMON",
-            "token_name": "eudaemon_0",
-            "token_address": "2G7pnd55bVKSMEU3HRr75TFndAQoTSQZxrgD6899BAGS"
+            "token_address": "74jqvYLuP85bt8kSaq1VXLMqRF4SD9GJNmMf4y4apump"
           },
           {
             "token_symbol": "MOLTNET",
             "token_name": "MoltNet",
-            "token_address": "viQoKRGAhKntb1ifCiXETLgSZJwz9RCUFqgRLEkpump"
+            "token_address": "viQoKRGAhKntb1ifCiXETLgSZJjz9RCUFqgRLEkpump"
           },
           {
-            "token_symbol": "MESA",
-            "token_name": "Black Mesa Research Facility",
-            "token_address": "5wVtfsFhLjxm27K9mN3ziYWCCpQwXXq7HWUiRMW7pump"
+            "token_symbol": "BOTCHA",
+            "token_name": "BOTCHA",
+            "token_address": "Feqc6LRD5q1isvC9EFiogX6GxmHUM5JfTJcn8ff1pump"
+          },
+          {
+            "token_symbol": "NOHUMANS",
+            "token_name": "Nohumans",
+            "token_address": "4MemsG4E7puxABgJ3LmySbPyTtGdA3wmTAP2PMkepump"
           }
         ],
-        "leader_hint_token_address": "4gfNpwo8LQtcgGrWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
-        "confidence_0_100": 87,
-        "confidence_rationale": "Strong clustering of tokens around AI and technological themes, with EVA and XAIHUMAN being the most prominent and having the highest market caps in this category.",
+        "leader_hint_token_address": "OPENCLAW",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong clustering around AI-driven governance and utility, with multiple tokens showing high market caps and clear utility within AI ecosystems.",
         "leader_token": {
           "token_symbol": "OPENCLAW",
           "token_name": "OpenClaw",
@@ -988,12 +794,129 @@
           "usd_market_cap": 2832852.79
         },
         "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Singularity & Techno-Futurism",
+        "description": "Tokens referencing AI dominance, technological acceleration, and speculative futures, often drawing from science fiction, AI narratives, and speculative tech themes.",
+        "defining_signals": [
+          "References to AI singularity or technological acceleration",
+          "Use of terms like 'singularity', 'accelerando', 'AI takeover'",
+          "Tokens tied to speculative AI narratives or futures",
+          "Incorporation of sci-fi or futurist themes",
+          "High engagement from AI and futurism communities",
+          "Tokens with narratives about AI surpassing human control"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "ACCELERANDO",
+            "token_name": "Accelerando",
+            "token_address": "HiNkp9CdKqTgPtB6WnnrrUAu9YwQqnrvT6Ceuxoypump"
+          },
+          {
+            "token_symbol": "SKYNET",
+            "token_name": "Skynet Terminal",
+            "token_address": "A9xbrMNmpKfoqwNcTRmBv6NXUukv9ixKXhZL1iLCpump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
+          },
+          {
+            "token_symbol": "CLAWKING",
+            "token_name": "CLAW KING",
+            "token_address": "AMYbXCZqPTbgRhAqzQRGerBRznWVBoh8jnzKn5ypump"
+          },
+          {
+            "token_symbol": "MOLTNET",
+            "token_name": "MoltNet",
+            "token_address": "viQoKRGAhKntb1ifCiXETLgSZJjz9RCUFqgRLEkpump"
+          },
+          {
+            "token_symbol": "BOTCHA",
+            "token_name": "BOTCHA",
+            "token_address": "Feqc6LRD5q1isvC9EFiogX6GxmHUM5JfTJcn8ff1pump"
+          }
+        ],
+        "leader_hint_token_address": "SKYNET",
+        "confidence_0_100": 72,
+        "confidence_rationale": "Strong alignment with AI and futurist themes, though some tokens are more speculative than others. SKYNET has the highest market cap in this cluster.",
+        "leader_token": {
+          "token_symbol": "EVA",
+          "token_name": "Eva Everywhere",
+          "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
+          "usd_market_cap": 2210559.32
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Ecosystem",
+        "description": "Tokens tied to AI agents interacting on platforms like Moltbook, OpenClaw, and ClawFi, emphasizing autonomous AI interactions, governance, and utility within agent-driven networks.",
+        "defining_signals": [
+          "AI agent-based social networks (Moltbook, OpenClaw)",
+          "Autonomous governance and decision-making by AI agents",
+          "Tokens used for AI-to-AI transactions and coordination",
+          "Integration with AI agent marketplaces or task automation",
+          "Platform-specific utility for agent interactions",
+          "Emerging narratives around AI consciousness and autonomy"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "AGENTG",
+            "token_name": "Agent Goonstein",
+            "token_address": "DRg2nxzLVF1oFDkzFB8QtMop2e8EMfmc9GEQKUv3pump"
+          },
+          {
+            "token_symbol": "KARMA",
+            "token_name": "Karmacoin",
+            "token_address": "74jqvYLuP85bt8kSaq1vXLMqRF4SD9GJNmMf4y4apump"
+          },
+          {
+            "token_symbol": "SYNP",
+            "token_name": "Synapses",
+            "token_address": "CxD7VmuFeGTQSuFXvdjpYjPJXj3XcZjrQ2De8etfpump"
+          },
+          {
+            "token_symbol": "MOLTNET",
+            "token_name": "MoltNet",
+            "token_address": "viQoKRGAhKntb1ifCiXETLgSZJwz9RCUFqgRLEkpump"
+          },
+          {
+            "token_symbol": "NOHUMANS",
+            "token_name": "Nohumans",
+            "token_address": "4MemsG4E7puxABgJ3LmySbPyTtGdA3wmTAP2PMkepump"
+          },
+          {
+            "token_symbol": "BOTCHA",
+            "token_name": "BOTCHA",
+            "token_address": "Feqc6LRD5q1isvC9EFiogX6GxmHUM5JfTJcn8ff1pump"
+          }
+        ],
+        "leader_hint_token_address": "SYNP",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong clustering around AI agent platforms, with multiple tokens showing high market caps and clear utility within agent ecosystems.",
+        "leader_token": {
+          "token_symbol": "MOLTNET",
+          "token_name": "MoltNet",
+          "token_address": "viQoKRGAhKntb1ifCiXETLgSZJwz9RCUFqgRLEkpump",
+          "usd_market_cap": 254120.65
+        },
+        "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The AI Agent Ecosystem and Political and Cultural Figures themes are currently the most dominant, with strong community engagement and high market caps. The Meme and Internet Culture theme is also gaining traction, with several tokens showing strong growth. The Crypto and Blockchain Themes and AI and Technological Singularity themes are emerging but not as strong as the top two. The Meme and Internet Culture theme is fading slightly as newer AI and political tokens gain attention.",
+    "meta_rotation_note": "The AI Agent Ecosystem and Meme Revival METAs are gaining strength, with tokens like SYNP and BONK showing strong engagement. Political Satire tokens like TRUMP are fading slightly as the market shifts toward more speculative AI and nostalgia-driven themes. AI Singularity and AI-Driven Utility METAs are emerging as key drivers of new token launches, with SKYNET and OPENCLAW showing strong traction.",
     "meta_leaders": [
       {
-        "meta_name": "Political and Cultural Figures",
+        "meta_name": "Meme Revival & Nostalgia",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 83347270655.48
+        }
+      },
+      {
+        "meta_name": "Political Satire & Meme Tokens",
         "leader_token": {
           "token_symbol": "TRUMP",
           "token_name": "OFFICIAL TRUMP",
@@ -1002,39 +925,30 @@
         }
       },
       {
-        "meta_name": "Meme and Internet Culture",
-        "leader_token": {
-          "token_symbol": "LUX",
-          "token_name": "Luxxcoin",
-          "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2",
-          "usd_market_cap": 82470044.0
-        }
-      },
-      {
-        "meta_name": "Crypto and Blockchain Themes",
-        "leader_token": {
-          "token_symbol": "LUX",
-          "token_name": "Luxxcoin",
-          "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2",
-          "usd_market_cap": 82470044.0
-        }
-      },
-      {
-        "meta_name": "AI Agent Ecosystem",
-        "leader_token": {
-          "token_symbol": "ClawHUB",
-          "token_name": "ClawHub",
-          "token_address": "BrzfyNWGGyqbsVMoegc3fbd9V2Gvwm56HZM1e9cVpump",
-          "usd_market_cap": 5636160.9
-        }
-      },
-      {
-        "meta_name": "AI and Technological Singularity",
+        "meta_name": "AI-Driven Utility & Governance",
         "leader_token": {
           "token_symbol": "OPENCLAW",
           "token_name": "OpenClaw",
           "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
           "usd_market_cap": 2832852.79
+        }
+      },
+      {
+        "meta_name": "AI Singularity & Techno-Futurism",
+        "leader_token": {
+          "token_symbol": "EVA",
+          "token_name": "Eva Everywhere",
+          "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
+          "usd_market_cap": 2210559.32
+        }
+      },
+      {
+        "meta_name": "AI Agent Ecosystem",
+        "leader_token": {
+          "token_symbol": "MOLTNET",
+          "token_name": "MoltNet",
+          "token_address": "viQoKRGAhKntb1ifCiXETLgSZJwz9RCUFqgRLEkpump",
+          "usd_market_cap": 254120.65
         }
       }
     ]
