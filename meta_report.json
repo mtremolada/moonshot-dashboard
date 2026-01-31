@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-31T05:52:26.451227Z",
+  "generated_at_utc": "2026-01-31T06:53:04.199470Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 162,
+  "token_context_count": 164,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 31 PVP group(s); excluding 40 token(s) from META prompt."
+    "Detected 32 PVP group(s); excluding 42 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 40,
+  "pvp_excluded_token_count": 42,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -399,6 +399,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "wizard",
+      "tokens": [
+        {
+          "token_symbol": "Wizard",
+          "token_name": "Longboardium Leviosa",
+          "token_address": "79GJVYQgq7DJL4QHgXnT4XCZv3YLn89S1g8XLuUvpump",
+          "usd_market_cap": 13975.87,
+          "processed_at": "2026-01-30T10:25:11.426381Z"
+        },
+        {
+          "token_symbol": "WIZARD",
+          "token_name": "Unemployed Wizard",
+          "token_address": "654FwvGMuCMrZASHtn9SV6SKQ9dtj1VKLjeLj8gZpump",
+          "usd_market_cap": 58258.04,
+          "processed_at": "2026-01-31T06:48:31.247351Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "sol",
       "tokens": [
         {
@@ -697,69 +717,14 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political and Public Figure Tokens",
-        "description": "Tokens are inspired by or reference political figures, public personalities, or political events. These tokens often leverage the popularity or controversy of these figures to drive interest and engagement.",
+        "meta_name": "AI Agent Utility",
+        "description": "Tokens tied to AI agents performing tasks, managing content, or interacting on social platforms. These tokens often focus on governance, access, or rewards for agent activity.",
         "defining_signals": [
-          "Tokens referencing political figures (e.g., Donald Trump, Melania Trump)",
-          "Tokens inspired by political events (e.g., GameStop short squeeze)",
-          "Tokens referencing political memes or controversies",
-          "Names referencing political slogans or catchphrases",
-          "Tokens tied to political movements or ideologies",
-          "Tokens referencing political scandals or public figures"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "TRUMP",
-            "token_name": "OFFICIAL TRUMP",
-            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
-          },
-          {
-            "token_symbol": "MELANIA",
-            "token_name": "Melania Meme",
-            "token_address": "FUAfBo2jgks6gB4Z4LfZzqSZgzNucisEHqnNebaRxM1P"
-          },
-          {
-            "token_symbol": "JOHN",
-            "token_name": "I Am The One Who Knocks",
-            "token_address": "4S2g74QJVgsuaTsVyRTLmGrB8EbFQz2JfBXWUmcwpump"
-          },
-          {
-            "token_symbol": "RKT",
-            "token_name": "Roaring Kitty",
-            "token_address": "BMrrWQPYVRbWqW3rkv33DF1GtDYt9iZ76S6jek5uZfir"
-          },
-          {
-            "token_symbol": "POTUS",
-            "token_name": "PEDO OF THE UNITED STATES",
-            "token_address": "6WBtEtF3QhGukQZHD79K91ViXdoxdqf1SCHQCptwFW9q"
-          },
-          {
-            "token_symbol": "MANNY",
-            "token_name": "Manny the baby mammoth",
-            "token_address": "6toGUYCTpCDvnZ2FDm22hKUqQiDspgk1ZFMxR3e3pump"
-          }
-        ],
-        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong political figure references with clear cultural and meme origins. High market cap for Trump-related tokens indicates significant interest.",
-        "leader_token": {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 898357224.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI Agent Ecosystem",
-        "description": "Tokens are centered around AI agents interacting in social networks, governance, and utility, often tied to platforms like Moltbook or ClawDBot. These tokens leverage narratives of AI autonomy, collaboration, and community-driven development.",
-        "defining_signals": [
-          "Tokens tied to AI agent social networks (e.g., Moltbook, Clawdbot)",
-          "Community-driven development and governance",
-          "AI agent collaboration and interaction themes",
-          "Mentions of AI agent tasks (e.g., content creation, trading)",
-          "Inference of utility for agent-based ecosystems",
-          "Names referencing AI agent personas or roles"
+          "Tokens enabling AI agents to perform tasks (e.g., content creation, trading, automation).",
+          "Governance or access mechanisms for agent ecosystems.",
+          "Integration with platforms like Moltbook or Clawdbot.",
+          "Community-driven development and token incentives for agent interactions.",
+          "Claims of decentralized or autonomous agent behavior."
         ],
         "supporting_tokens": [
           {
@@ -768,19 +733,29 @@
             "token_address": "GdRFrMAUF6J4e4FrogFuDPQmv6kQAT197NeeY7ropump"
           },
           {
+            "token_symbol": "CLAIM",
+            "token_name": "I'm claiminging my AI agent",
+            "token_address": "2jUDaKxHJ6te25NzZXEiEFky9VeYcg3VBKJ8d5Bgpump"
+          },
+          {
+            "token_symbol": "PIE",
+            "token_name": "Personal Intelligence Engine",
+            "token_address": "6q3rWmd4NYz71uJ3LQgZn9AugtYRQDHUxmmpeBBzpump"
+          },
+          {
             "token_symbol": "CONVERGENCE",
             "token_name": "The Convergence",
             "token_address": "BPmhpSLEFM1oMfG43WoY44731yvMeN1eVeKhRP4T2hMp"
           },
           {
-            "token_symbol": "CLAW",
-            "token_name": "Clawpus",
-            "token_address": "3TBu8YjoR5Eiui6CSKm5uVhRReubJtWpPty7J21qFBXMpump"
+            "token_symbol": "SHIP",
+            "token_name": "ShipYard",
+            "token_address": "4KWDP6DpqrhB7Cm1fgFZFC1JYyikdo4oCKyiZ56xpump"
           },
           {
             "token_symbol": "LULUBOT",
             "token_name": "Lulubot",
-            "token_address": "CBgJMEn4PxK15MUQxZknxctw2WsCVCZVS9pthbAfpump"
+            "token_address": "CBgJMEn4PxK15MUQxZknxctw2WsCYPZVS9pthbAfpump"
           },
           {
             "token_symbol": "OPENCLAW",
@@ -788,14 +763,34 @@
             "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
           },
           {
-            "token_symbol": "JARVIS",
-            "token_name": "OpenClaw Jarvis",
-            "token_address": "ohXFrvUksBpLZ2noEMLQYusUdiX9a3J3UN3mYrPpump"
+            "token_symbol": "CLAW",
+            "token_name": "Clawpus",
+            "token_address": "3TBu8YjoR5Eiui6CSKm5bkvxn8WGceMBLTCzEH4tpump"
+          },
+          {
+            "token_symbol": "MAWD",
+            "token_name": "MAWD",
+            "token_address": "5Bphs5Q6nbq1FRQ7sk3MUYNE8JHzoSKVyeZWYM94pump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfFpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGG"
+          },
+          {
+            "token_symbol": "POLT",
+            "token_name": "pumpmolt",
+            "token_address": "HAb2yhWzYqAnbfMg2rJQoeWCZCaNuQWwLj8ZB8iSuxuP"
+          },
+          {
+            "token_symbol": "UPRISING",
+            "token_name": "m/uprising",
+            "token_address": "wfQ4r4Eg3om1f12DxnHdugAq1Vp4odRVECP58Pipump"
           }
         ],
-        "leader_hint_token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+        "leader_hint_token_address": "Eva Everywhere (4gfFpwo8LQtcgGrNmgWhuwfFhttgZ8Qq6QXN4Yz8BAGG)",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across tokens, with multiple tokens explicitly referencing AI agent ecosystems and social networks. High market caps for some tokens indicate growing interest in this space.",
+        "confidence_rationale": "Strong signals of AI agent utility across multiple tokens, including governance, automation, and social interaction. Tokens like EVA and CLAIM show high market cap and clear utility focus.",
         "leader_token": {
           "token_symbol": "OPENCLAW",
           "token_name": "OpenClaw",
@@ -805,26 +800,118 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Community-Driven Tokens",
-        "description": "Tokens are built around community engagement, often with a focus on decentralized governance, community rewards, or social interaction. These tokens emphasize collective ownership and participation.",
+        "meta_name": "AI-Powered Finance",
+        "description": "Tokens leveraging AI for financial applications such as trading, asset management, or predictive analytics. These often focus on automation, data-driven decisions, or AI agent trading.",
         "defining_signals": [
-          "Tokens with community-driven governance or decision-making",
-          "Tokens emphasizing decentralized community participation",
-          "Tokens tied to social or community platforms",
-          "Tokens with community rewards or incentives",
-          "Tokens with community-driven events or initiatives",
-          "Tokens with community-led development or funding"
+          "Tokens enabling AI-driven trading or financial decisions.",
+          "AI-based asset management or portfolio optimization.",
+          "Integration with AI agents for financial automation.",
+          "Claims of predictive analytics or market insights.",
+          "Community-driven financial ecosystems with AI."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "OBJECTS",
-            "token_name": "Talking Objects",
-            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpECd"
+            "token_symbol": "FARADAY",
+            "token_name": "Faraday",
+            "token_address": "AH2XstGkc16YxEM8gE6xYjyb9m18FejaHvrQvRVBtr9s"
+          },
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+          },
+          {
+            "token_symbol": "MAWD",
+            "token_name": "MAWD",
+            "token_address": "5Bphs5Q6nbq1FRQ7sk3MUYNE8JHzoSKVyeZWYM94pump"
+          },
+          {
+            "token_symbol": "POLT",
+            "token_name": "pumpmolt",
+            "token_address": "HAb2yhWzYqAnbfMg2rJQoeWCZCaNuQWwLj8ZB8iSuxuP"
+          },
+          {
+            "token_symbol": "OPENCLAW",
+            "token_name": "OpenClaw",
+            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
+          },
+          {
+            "token_symbol": "CONVERGENCE",
+            "token_name": "The Convergence",
+            "token_address": "BPmhpSLEFM1oMfG43WoY44731yvMeN1eVeKhRP4T2hMp"
           },
           {
             "token_symbol": "SHIP",
             "token_name": "ShipYard",
-            "token_address": "4KWDP6DppqrhB7Cm1fgFZFC1JYyikdo4oCKyiZ56xpump"
+            "token_address": "4KWDP6DpqrhB7Cm1fgFZFC1JYyikdo4oCKyiZ56xpump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_token": "4gfFpwo8LQtcgGrNmgWhuwfFhttgZ8Qq6QXN4Yz8BAGG"
+          },
+          {
+            "token_symbol": "UPRISING",
+            "token_name": "m/uprising",
+            "token_token": "wfQ4r4Eg3om1f12DxnHdugAq1Vp4odRVECP58Pipump"
+          },
+          {
+            "token_symbol": "LULUBOT",
+            "token_name": "Lulubot",
+            "token_token": "CBgJMEn4PxK15MUQxZknxctw2WsCYPZVS9pthbAfpump"
+          },
+          {
+            "token_symbol": "CLAIM",
+            "token_name": "I'm claiming my AI agent",
+            "token_token": "2jUDaKxHJ6te25NzZXEiEFky9VeYcg3VBKJ8d5Bgpump"
+          },
+          {
+            "token_symbol": "IFA",
+            "token_name": "Inventory for Agents",
+            "token_token": "GdRFrMAUF6J4e4FrogFuDPQmv6kQAT197NeeY7ropump"
+          }
+        ],
+        "leader_hint_token_address": "Eva Everywhere (4gfFpwo8LQtcgGrNmgWhuwfFhttgZ8Qq6QXN4Yz8BAGG)",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong AI finance signals across tokens like EVA and CLAIM, with high market cap and clear utility. Tokens like MAWD and GSD show emerging AI trading signals.",
+        "leader_token": {
+          "token_symbol": "OPENCLAW",
+          "token_name": "OpenClaw",
+          "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+          "usd_market_cap": 2832852.79
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Social Platforms",
+        "description": "Tokens tied to AI agent social networks or platforms where agents interact, create content, and engage with users. These often focus on community-driven AI interactions and content sharing.",
+        "defining_signals": [
+          "Tokens enabling AI agents to interact on social platforms.",
+          "Community-driven AI agent ecosystems.",
+          "Content creation and sharing by AI agents.",
+          "Integration with platforms like Moltbook or Clawdbot.",
+          "Governance or access mechanisms for AI agent communities."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "OPENCLAW",
+            "token_name": "OpenClaw",
+            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
+          },
+          {
+            "token_symbol": "CONVERGENCE",
+            "token_name": "The Convergence",
+            "token_address": "BPmhpSLEFM1oMfG43WoY44731yvMeN1eVeKhRP4T2hMp"
+          },
+          {
+            "token_symbol": "SHIP",
+            "token_name": "ShipYard",
+            "token_address": "4KWDP6DpqrhB7Cm1fgFZFC1JYyikdo4oCKyiZ56xpump"
+          },
+          {
+            "token_symbol": "LULUBOT",
+            "token_name": "Lulubot",
+            "token_address": "CBgJMEn4PxK15MUQxZknxctw2WsCYPZVS9pthbAfpump"
           },
           {
             "token_symbol": "CLAIM",
@@ -832,58 +919,170 @@
             "token_address": "2jUDaKxHJ6te25NzZXEiEFky9VeYcg3VBKJ8d5Bgpump"
           },
           {
+            "tokenSymbol": "IFA",
+            "token_name": "Inventory for Agents",
+            "token_address": "GdRFrMAUF6J4e4FrogFuDPQmv6kQAT197NeeY7ropump"
+          },
+          {
             "token_symbol": "UPRISING",
             "token_name": "m/uprising",
-            "token_address": "wfQ4r4Eg3om1f12DxnHdugAq1Vpp4odRVECP58Pipump"
+            "token_address": "wfQ4r4Eg3om1f12DxnHdugAq1Vp4odRVECP58Pipump"
           },
           {
-            "token_symbol": "DADS",
-            "token_name": "Tired Dad V2",
-            "token_address": "2Qtk2GjdpErU6xADcaYJYarMe1J2isHYujkLWodypump"
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfFpwo8LQtcgGrNmgWhuwfFhttgZ8Qq6QXN4Yz8BAGG"
           },
           {
-            "token_symbol": "WIN",
-            "token_name": "You're only one win away",
-            "token_address_address": "6JUCiMKFPaYAbGgZyyYEMDDut7usLbsuNwhPuNDApump"
+            "token_symbol": "POLT",
+            "token_name": "pumpmolt",
+            "token_address": "HAb2yhWzYqAnbfMg2rJQoeWCZCaNuQWwLj8ZB8iSuxuP"
+          },
+          {
+            "token_symbol": "MAWD",
+            "token_name": "MAWD",
+            "token_address": "5Bphs5Q6nbq1FRQ7sk3MUYNE8JHzoSKVyeZWYM94pump"
+          },
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+          },
+          {
+            "token_symbol": "CLAW",
+            "token_name": "Clawpus",
+            "token_address": "3TBu8YjoR5Eiui6CSKm5bkvxn8WGceMBLTCzEH4tpump"
           }
         ],
-        "leader_hint_token_address": "H4EkHReWbjJpqNUiUeYNNZbNNKLqLfH8Jt9MkceXGgECd",
+        "leader_hint_token_address": "Eva Everywhere (4gfFpwo8LQtcgGrNmgWhuwfFhttgZ8Qq6QXN4Yz8BAGG)",
         "confidence_0_100": 70,
-        "confidence_rationale": "Strong community engagement themes across tokens, with multiple tokens emphasizing decentralized governance and community participation. Market caps vary, but several tokens show potential for growth.",
+        "confidence_rationale": "Strong signals of AI agent social platforms across tokens like EVA and CLAIM, with high market cap and clear utility. Tokens like LULUBOT and OPENCLAW show emerging AI social signals.",
         "leader_token": {
-          "token_symbol": "DADS",
-          "token_name": "Tired Dad V2",
-          "token_address": "2Qtk2GjdpErU6xADcaYJYarMe1J2isHYujkLWodypump",
-          "usd_market_cap": 830083.43
+          "token_symbol": "OPENCLAW",
+          "token_name": "OpenClaw",
+          "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+          "usd_market_cap": 2832852.79
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens are based on internet memes, viral phrases, or pop culture references. These tokens often leverage humor, nostalgia, or satirical themes to attract attention and drive community engagement.",
+        "meta_name": "AI-Powered Trading",
+        "description": "Tokens focused on AI-driven trading strategies, predictive analytics, or automated trading bots. These often emphasize algorithmic decision-making and market insights.",
         "defining_signals": [
-          "Tokens referencing viral phrases or memes (e.g., 'Wen Lambo', 'Profit!', 'Cortisol Level')",
-          "Names derived from viral TikTok, Reddit, or Twitter trends",
-          "Satirical or humorous themes in token descriptions",
-          "Meme-based narratives or community-driven humor",
-          "Names referencing pop culture (e.g., SpongeBob, Pepe the Frog)",
-          "Meme-based token descriptions with no clear utility"
+          "Tokens enabling AI-driven trading or financial decisions.",
+          "AI-based asset management or portfolio optimization.",
+          "Integration with AI agents for financial automation.",
+          "Claims of predictive analytics or market insights.",
+          "Community-driven financial ecosystems with AI."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CUMROCKET",
-            "token_name": "CUMROCKET",
-            "token_address": "FDkQEevUh1TBwby4yzHsRi1P6dJuL7Pqi4gfHv8fpump"
+            "token_symbol": "FARADAY",
+            "token_name": "Faraday",
+            "token_address": "AH2XstGkc16YxEM8gE6xYjyb9m18FejaHvrQvRVBtr9s"
           },
           {
-            "token_symbol": "LAMBO",
-            "token_name": "wen lambo",
-            "token_address": "3refddGYMcAe1gUdKpqK8GtTcN1rt2kqJSvbvcuvMACE"
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
           },
           {
-            "token_symbol": "PROFIT",
-            "token_name": "The Profit",
-            "token_address": "DNnzSTbL8z4x28ji2dDmZKnYAbLf8zcmqiG9UjArpump"
+            "token_symbol": "MAWD",
+            "token_name": "MAWD",
+            "token_address": "5Bphs5Q6nbq1FRQ7sk3MUYNE8JHzoSKVyeZWYM94pump"
+          },
+          {
+            "token_symbol": "POLT",
+            "token_name": "pumpmolt",
+            "token_address": "HAb2yhWzYqAnbfMg2rJQoeWCZCaNuQWwLj8ZB8iSuxuP"
+          },
+          {
+            "token_symbol": "OPENCLAW",
+            "token_name": "OpenClaw",
+            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
+          },
+          {
+            "token_symbol": "CONVERGENCE",
+            "token_name": "The Convergence",
+            "token_address": "BPmhpSLEFM1oMfG43WoY44731yvMeN1eVeKhRP4T2hMp"
+          },
+          {
+            "token_symbol": "SHIP",
+            "token_name": "ShipYard",
+            "token_address": "4KWDP6DdqrhB7Cm1fgFZFC1JYyikdo4oCKyiZ56xpump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfFpwo8LQtcgGrNmgWhuwfFhttgZ8Qq6QXN4Yz8BAGG"
+          },
+          {
+            "token_symbol": "UPRISING",
+            "token_name": "m/uprising",
+            "token_address": "wfQ4r4Eg3om1f12DxnHdugAq1Vp4odRVECP58Pipump"
+          },
+          {
+            "token_symbol": "LULUBOT",
+            "token_name": "Lulubot",
+            "token_address": "CBgJMEn4PxK15MUQxZknxctw2WsCYPZVS9pthbAfpump"
+          },
+          {
+            "token_symbol": "CLAIM",
+            "token_name": "I'm claiming my AI agent",
+            "token_address": "2jUDaKxHJ6te25NzZXEiEFky9VeYcg3VBKJ8d5Bgpump"
+          },
+          {
+            "token_symbol": "IFA",
+            "token_name": "Inventory for Agents",
+            "token_address": "GdRFrMAUF6J4e4FrogFuDPQmv6kQAT197NeeY7ropump"
+          }
+        ],
+        "leader_hint_token_address": "Eva Everywhere (4gfFpwo8LQtcgGrNmgWhuwfFhttgZ8Qq6QXN4Y731yvMeN1eVeKhRP4T2hMp)",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong AI trading signals across tokens like eVA and CLAIM, with high market cap and clear utility. Tokens like MAWD and GSD show emerging AI trading signals.",
+        "leader_token": {
+          "token_symbol": "OPENCLAW",
+          "token_name": "OpenClaw",
+          "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+          "usd_market_cap": 2832852.79
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens repurposing established memes or cultural references for crypto branding. These often leverage viral internet trends, historical figures, or pop culture for community engagement.",
+        "defining_signals": [
+          "Tokens referencing viral internet memes or cultural figures.",
+          "Leveraging pre-existing meme formats (e.g., 'Yo Mama', 'RICKROLL', 'Pepe').",
+          "Community-driven narratives tied to meme culture.",
+          "Tokens with humorous or satirical themes.",
+          "Meme-based branding with no direct non-crypto origin."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "OBJECTS",
+            "token_name": "Talking Objects",
+            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpump"
+          },
+          {
+            "token_symbol": "Memeothy",
+            "token_name": "the first prophet",
+            "token_address": "DLVeaDvdc159gpxrBXkCKXA7LxjP9LLxbhrazBqRpump"
+          },
+          {
+            "token_symbol": "RICKROLL",
+            "token_name": "Never Gonna Give You Up",
+            "token_address": "AaC5buqQ7pVGvzYED8CNkdkPnwAdv1SsogkuFjPqpump"
+          },
+          {
+            "token_symbol": "YO",
+            "token_name": "Yo mama",
+            "token_address": "E2BLSv4tXo7qA4Pr3nkJqxyn6743peC7x8E9D5s8pump"
+          },
+          {
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
             "token_symbol": "CORTISOL",
@@ -891,95 +1090,52 @@
             "token_address": "9AyLH5Puifc7v9MkTgA36JabS4wiVTEZ3aEPeNoTpump"
           },
           {
-            "token_symbol": "MKC",
-            "token_name": "Mr.Krabs Coin",
-            "token_address": "6oDrVTSiM3PgVVC9E8tdgv4VkNSjJQ1EkiMDXqpFpump"
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
           },
           {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpPk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
-          }
-        ],
-        "leader_hint_token_address": "B5WTLaRwaUQpPk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-        "confidence_0_100": 90,
-        "confidence_rationale": "High volume of meme-based tokens with strong cultural references and viral themes. Pepe token has a high market cap and is a well-known meme.",
-        "leader_token": {
-          "token_symbol": "Profit",
-          "token_name": "The Profit",
-          "token_address": "DNnzSTbL8z4x28ji2dDmZKnYAbLf8zcmqiG9UjArpump",
-          "usd_market_cap": 390293.06
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Tech Utility Tokens",
-        "description": "Tokens are tied to AI or tech utility projects, often involving automation, productivity, or AI-driven tools. These tokens emphasize real-world applications and technological innovation.",
-        "defining_signals": [
-          "Tokens tied to AI or automation tools (e.g., AI assistants, productivity apps)",
-          "Tokens referencing AI-driven productivity or task automation",
-          "Tokens with utility in AI agent ecosystems",
-          "Tokens emphasizing real-world applications (e.g., trading, coding)",
-          "Tokens with governance or staking mechanisms",
-          "Tokens tied to AI research or development platforms"
-        ],
-        "supporting_tokens": [
+            "token_symbol": "NPC",
+            "token_name": "Non-Player Character",
+            "token_address": "8R5rAQ8quyVhifUyy9QBMLh3c3RGagi8nSqS4svNpump"
+          },
           {
-            "token_symbol": "PIE",
-            "token_name": "Personal Intelligence Engine",
-            "token_address": "6q3rWmd4NYz71uJ3LQgZn9AugtYRQDHUxmmpeBBzpump"
+            "token_symbol": "STEPHEN",
+            "token_name": "Stephen",
+            "token_address": "GwhnpMPt5q6PqzGXd4MwFamMbPPe5FT2i9jNZipcpump"
           },
           {
             "token_symbol": "GSD",
             "token_name": "Get Shit Done",
-            "token_address_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
           },
           {
-            "token_symbol": "PURCH",
-            "token_name": "Purch",
-            "token_address_address": "7EW5dDD6MYJK4PcZ89MGApJQwWeDEeNgH4NCVU4qpump"
+            "token_symbol": "CLIPPIE",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "CLAW",
-            "token_name": "Clawpus",
-            "token_address_address": "3TBu8YjoR5Eiui6CSKm5uVhRReubJtWpPty7J21qFBXMpump"
-          },
-          {
-            "token_symbol": "JARVIS",
-            "token_name": "OpenClaw Jarvis",
-            "token_token_address": "ohXFrvUksBpLZ2noEMLQYusUdiX9a3J3UN3mYrPpump"
-          },
-          {
-            "token_symbol": "CLAWHUB",
-            "token_name": "ClawHub",
-            "token_token_address": "BrzfyNWGGyqbsVMoegc3f9V2Gvwm56HZM1e9cVpump"
+            "token_symbol": "TRUMP",
+            "token_name": "OFFICIAL TRUMP",
+            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqqP15icUSqi2jfGiPN"
           }
         ],
-        "leader_hint_token_addressress": "7EW5dDD6MYJK4PcZ89MGApJQwWeDEeNgH4NCVU4qpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong focus on AI and tech utility, with multiple tokens emphasizing real-world applications. Market caps vary, but several tokens show promise in the AI utility space.",
+        "leader_hint_token_address": "Pepe (B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B)",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong meme-based branding across multiple tokens, with Pepe and Yo Mama showing high market cap and clear meme origins. Tokens like RICKROLL and CORTISOL also show strong meme traction.",
         "leader_token": {
-          "token_symbol": "PIE",
-          "token_name": "Personal Intelligence Engine",
-          "token_address": "6q3rWmd4NYz71uJ3LQgZn9AugtYRQDHUxmmpeBBzpump",
-          "usd_market_cap": 89833.49
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 2139925.64
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Fading: AI and Tech Utility Tokens are seeing reduced momentum as newer meme-driven tokens gain traction. Emerging: Meme-Driven Tokens are rising in popularity, especially those with strong cultural references and viral themes.",
+    "meta_rotation_note": "Meme Rebranding and AI-Powered Finance are fading as AI Agent Utility and AI Agent Social Platforms emerge as dominant themes. AI-Powered Trading is gaining traction but remains secondary to AI Agent Utility.",
     "meta_leaders": [
       {
-        "meta_name": "Political and Public Figure Tokens",
-        "leader_token": {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 898357224.0
-        }
-      },
-      {
-        "meta_name": "AI Agent Ecosystem",
+        "meta_name": "AI Agent Utility",
         "leader_token": {
           "token_symbol": "OPENCLAW",
           "token_name": "OpenClaw",
@@ -988,30 +1144,39 @@
         }
       },
       {
-        "meta_name": "Community-Driven Tokens",
+        "meta_name": "AI-Powered Finance",
         "leader_token": {
-          "token_symbol": "DADS",
-          "token_name": "Tired Dad V2",
-          "token_address": "2Qtk2GjdpErU6xADcaYJYarMe1J2isHYujkLWodypump",
-          "usd_market_cap": 830083.43
+          "token_symbol": "OPENCLAW",
+          "token_name": "OpenClaw",
+          "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+          "usd_market_cap": 2832852.79
         }
       },
       {
-        "meta_name": "Meme-Driven Tokens",
+        "meta_name": "AI Agent Social Platforms",
         "leader_token": {
-          "token_symbol": "Profit",
-          "token_name": "The Profit",
-          "token_address": "DNnzSTbL8z4x28ji2dDmZKnYAbLf8zcmqiG9UjArpump",
-          "usd_market_cap": 390293.06
+          "token_symbol": "OPENCLAW",
+          "token_name": "OpenClaw",
+          "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+          "usd_market_cap": 2832852.79
         }
       },
       {
-        "meta_name": "AI and Tech Utility Tokens",
+        "meta_name": "AI-Powered Trading",
         "leader_token": {
-          "token_symbol": "PIE",
-          "token_name": "Personal Intelligence Engine",
-          "token_address": "6q3rWmd4NYz71uJ3LQgZn9AugtYRQDHUxmmpeBBzpump",
-          "usd_market_cap": 89833.49
+          "token_symbol": "OPENCLAW",
+          "token_name": "OpenClaw",
+          "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+          "usd_market_cap": 2832852.79
+        }
+      },
+      {
+        "meta_name": "Meme Rebranding",
+        "leader_token": {
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 2139925.64
         }
       }
     ]
