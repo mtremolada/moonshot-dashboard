@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-01-31T18:43:34.578771Z",
+  "generated_at_utc": "2026-01-31T19:43:57.916131Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 150,
+  "token_context_count": 145,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 24 PVP group(s); excluding 38 token(s) from META prompt."
+    "Detected 25 PVP group(s); excluding 39 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 38,
+  "pvp_excluded_token_count": 39,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -240,6 +240,26 @@
     },
     {
       "match_type": "token_name",
+      "match_value": "obey",
+      "tokens": [
+        {
+          "token_symbol": "OBEY",
+          "token_name": "OBEY",
+          "token_address": "FceLcKJB5Z3vTDk41Gtc1QEdAZKmn17LioaPM24Kpump",
+          "usd_market_cap": 31583578.44,
+          "processed_at": "2026-01-31T11:46:53.373706Z"
+        },
+        {
+          "token_symbol": "OBEY",
+          "token_name": "OBEY",
+          "token_address": "BtCjZw3z8M7CqxihZqTKoF4uCyupoXQzc7bZj2C7pump",
+          "usd_market_cap": 35118238.09,
+          "processed_at": "2026-01-31T18:44:31.289627Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
       "match_value": "moltcoin",
       "tokens": [
         {
@@ -417,6 +437,13 @@
           "token_address": "D72nmg8HJDDNNDmVcZE82fgWpzg3wsjf8KfDdnJLpump",
           "usd_market_cap": 12497406.88,
           "processed_at": "2026-01-31T17:42:30.431760Z"
+        },
+        {
+          "token_symbol": "OBEY",
+          "token_name": "OBEY",
+          "token_address": "BtCjZw3z8M7CqxihZqTKoF4uCyupoXQzc7bZj2C7pump",
+          "usd_market_cap": 35118238.09,
+          "processed_at": "2026-01-31T18:44:31.289627Z"
         }
       ]
     },
@@ -613,120 +640,15 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens leveraging pre-existing internet memes, viral phrases, or cultural references to drive community engagement and speculative interest.",
+        "meta_name": "Crypto-Political Narratives",
+        "description": "Tokens leveraging political figures, movements, or ideologies. These tokens often tie into political commentary, satire, or community-driven political engagement.",
         "defining_signals": [
-          "Use of established memes or phrases with pre-existing cultural context",
-          "Leverage of viral TikTok, Reddit, or 4chan trends",
-          "Clear meme origins with no crypto-native creation",
-          "Community-driven narratives tied to meme history",
-          "High engagement from meme-centric communities"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "CUM",
-            "token_name": "Cummingtonite",
-            "token_address": "9KbgSh6XZaHiDBQE26tGTDuJuUZmVyvJGGabrE7fpump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "RICKROLL",
-            "token_name": "Never Gonna Give You Up",
-            "token_address": "AaC5buqR7pVGvzYED8CNkdkPnwAdv1SfogkuFjPqpump"
-          },
-          {
-            "token_symbol": "YOLO",
-            "token_name": "YOLO",
-            "token_address": "Not provided"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          }
-        ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong meme origins with clear cultural references and high community engagement.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 83347270655.48
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI Utility Tokens",
-        "description": "Tokens providing utility for AI agents, autonomous systems, or AI-driven platforms, often with governance or access features.",
-        "defining_signals": [
-          "AI agent utility or governance",
-          "Integration with AI platforms or tools",
-          "Speculative narratives around AI capabilities",
-          "Claims of AI-driven automation or task execution",
-          "Community-driven AI development or collaboration"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLAW",
-            "token_name": "Clawpus",
-            "token_address": "3TBu8YjoR5Eiui6CSKmm5bkvxn8WGceMBLTCzEH4tpump"
-          },
-          {
-            "token_symbol": "EVA",
-            "token_name": "Avici",
-            "token_address": "BANKJmvhT8tiJRsBSS1n2HryMBPvT5Ze4HU95DUAmeta"
-          },
-          {
-            "token_symbol": "XAIHUMAN",
-            "token_name": "xAIHuman",
-            "token_address": "E2BA2XAWLP2Rj7bNzaVGJ8rsCzPsPty7J21qFBXMpump"
-          },
-          {
-            "token_symbol": "PUB",
-            "token_name": "Public",
-            "token_address": "Not provided"
-          },
-          {
-            "token_symbol": "CLAWD",
-            "token_name": "clawdbot",
-            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
-          },
-          {
-            "token_symbol": "MOLTX",
-            "token_name": "MoltX",
-            "token_address": "9uJXEvcdyvKRDHF4aAMWZWibjMCYQgCHvGDfDHyTBAGS"
-          }
-        ],
-        "leader_hint_token_address": "BANKJmvhT8tiJRsBSS1n2HryMBPvT5Ze4HU95DUAmeta",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong AI utility focus with clear platform integrations and speculative narratives.",
-        "leader_token": {
-          "token_symbol": "AVICI",
-          "token_name": "Avici",
-          "token_address": "BANKJmvhT8tiJRsBSS1n2HryMBPvT5Ze4HU95DUAmeta",
-          "usd_market_cap": 3306324068.62
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political/Satirical Tokens",
-        "description": "Tokens referencing political figures, events, or satirical commentary, often leveraging public sentiment or humor.",
-        "defining_signals": [
-          "Direct references to political figures or events",
-          "Satirical or ironic commentary on politics or public figures",
-          "Leverage of viral political memes or trends",
-          "Community-driven narratives around political themes",
-          "High engagement from politically active or meme-centric communities"
+          "References to political figures or movements",
+          "Satirical or political commentary",
+          "Community-driven political themes",
+          "Mentions of political events or ideologies",
+          "Use of political slogans or phrases",
+          "Strong social media or meme-based political engagement"
         ],
         "supporting_tokens": [
           {
@@ -740,11 +662,6 @@
             "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
           },
           {
-            "token_symbol": "EPISTEN",
-            "token_name": "Epstein",
-            "token_address": "EF228ijSZdDampJMvhLUiijJGP5PTH1Z17i71JR5pump"
-          },
-          {
             "token_symbol": "LIBERAL",
             "token_name": "My Fellow Liberal?",
             "token_address": "F2ML2wkxsxSANLQ6bcqqL31mtD6pki8zxYjCvPAapump"
@@ -755,14 +672,19 @@
             "token_address": "MXDcz2Jh2pqzHar8PkADfsprm5nkEp9z4xU93Rkpump"
           },
           {
-            "token_symbol": "HITLANIA",
-            "token_name": "HITLANIA",
-            "token_address": "GjzZa6AcX6mjUAVdXKvRQCDmsmwueZ6WiQrzdpAMpump"
+            "token_symbol": "Elongate",
+            "token_name": "Elongate",
+            "token_address": "4unWoM3GCpe22TvHcAHpc4ksoMoC9NDZX8RPeCnLpump"
+          },
+          {
+            "token_symbol": "Epstein",
+            "token_name": "Jeffrey Epstein",
+            "token_address": "EF228ijSZdSampJMvhLUiijJGP5PTH1Z17i71JR5pump"
           }
         ],
-        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong political references with clear meme origins and community engagement.",
+        "leaderHint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Tokens referencing political figures and movements are gaining traction. The $TRUMP token is a clear leader in this space due to its high market cap and political relevance.",
         "leader_token": {
           "token_symbol": "TRUMP",
           "token_name": "OFFICIAL TRUMP",
@@ -772,18 +694,127 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Narrative Tokens",
-        "description": "Tokens built around AI agents, autonomous systems, or speculative AI narratives, often tied to platforms or ecosystems.",
+        "meta_name": "Meme-Driven Tokens",
+        "description": "Tokens leveraging viral internet memes, pop culture references, or viral phrases. These tokens often rely on community engagement and meme virality for adoption.",
         "defining_signals": [
-          "AI agent or autonomous system as core narrative",
-          "Integration with platforms like Moltbook or OpenClaw",
-          "Speculative narratives around AI evolution or consciousness",
-          "Claims of AI-driven governance or decision-making",
-          "Focus on AI-to-AI interactions or AI communities"
+          "Viral internet meme references",
+          "Pop culture or TikTok trends",
+          "Community-driven humor or satire",
+          "Meme-based token names or descriptions",
+          "Leveraging viral phrases or images",
+          "Strong social media presence"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CLAWHUB",
+            "token_symbol": "SNAP",
+            "token_name": "SnappedAI",
+            "token_address": "8oCRS5SYaf4t5PGnCeQfpV7rjxGCcGqNDGHmHJBooPhX"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
+          },
+          {
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "fries",
+            "token_name": "just put the fries in the bag",
+            "token_address": "FsDdCFtPxw8m2BY22f1mS5Ub5MWyJ7uSs5VWq5Hspump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "BIRB",
+            "token_name": "Moonbirds",
+            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+          }
+        ],
+        "leaderHint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Several tokens are clearly tied to viral memes or pop culture references. The Pepe token is a strong leader due to its established meme history and high market cap.",
+        "leader_token": {
+          "token_symbol": "BIRB",
+          "token_name": "Moonbirds",
+          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+          "usd_market_cap": 70938632.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal-Themed Tokens",
+        "description": "Tokens leveraging animal imagery or themes, often tied to memes, cultural references, or community-driven narratives. These tokens often use animals as symbols or mascots.",
+        "defining_signals": [
+          "Animal-based names or themes",
+          "Meme or cultural references to animals",
+          "Community-driven animal symbolism",
+          "Animal-themed branding or logos",
+          "Mentions of animal-related memes or trends",
+          "Strong social media presence with animal themes"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "ALOKA",
+            "token_name": "Aloka the Peace Dog",
+            "token_address": "7gASrhXxE5u2oLASrAsZh3SAJrgSjKhb4qTe3FsqHTKb"
+          },
+          {
+            "token_symbol": "BIRB",
+            "token_name": "Moonbirds",
+            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+          },
+          {
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+          },
+          {
+            "token_symbol": "Buck",
+            "token_name": "Buck The Bunny",
+            "token_address": "2ay5sdVY24SjdzjVdtXQfCkxGsjaTn8VnBU8b9FT5acV"
+          },
+          {
+            "token_symbol": "MANNY",
+            "token_name": "Manny the baby mammoth",
+            "token_address": "6toGUYCTpCDvnZ2FDm22hKUqQiDspgk1ZFMxR3e3pump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          }
+        ],
+        "leaderHint_token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Tokens with animal themes are emerging, particularly those tied to memes or cultural references. Moonbirds is a strong leader in this space due to its established community and market cap.",
+        "leader_token": {
+          "token_symbol": "BIRB",
+          "token_name": "Moonbirds",
+          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+          "usd_market_cap": 70938632.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Utility Tokens",
+        "description": "Tokens that provide utility for AI-driven applications, including AI agents, automation, and AI-based services. These tokens often facilitate access, governance, or rewards for AI interactions.",
+        "defining_signals": [
+          "AI-driven automation or task execution",
+          "Integration with AI tools or services",
+          "Token-based access to AI platforms",
+          "Governance or voting rights for AI systems",
+          "Rewards for AI agent interactions",
+          "Community-driven AI development"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "ClawHUB",
             "token_name": "ClawHub",
             "token_address": "BrzfyNWGGyqbsVMoegc3fbd9V2Gvwm56HZM1e9cVpump"
           },
@@ -793,29 +824,29 @@
             "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
           },
           {
+            "token_symbol": "Clawk",
+            "token_name": "Clawk",
+            "token_address": "DiTJNECkXMSvccagjY52CGswozwJ6j8M7UQLtV9Spump"
+          },
+          {
+            "token_symbol": "Karmacoin",
+            "token_name": "Karmacoin",
+            "token_address": "74jqvYLuP85bt8kSaq1vXLMqRF4SD9GJNmMf4y4apump"
+          },
+          {
             "token_symbol": "BOTCHA",
             "token_name": "BOTCHA",
             "token_address": "Feqc6LRD5q1isvC9EFiogX6GxmHUM5JfTJcn8ff1pump"
           },
           {
-            "token_symbol": "KARMA",
-            "token_name": "Karmacoin",
-            "token_address": "74jqvYLuP85bt8kSaq1vXLMqRF4SD9GJNmMf4y4apump"
-          },
-          {
-            "token_symbol": "MOLTX",
-            "token_name": "MoltX",
-            "token_address": "9uJXEvcdyvKRDHF4aAMWZWibjMCYQgCHvGDfDHyTBAGS"
-          },
-          {
-            "token_symbol": "NOHUMANS",
+            "token_symbol": "Nohumans",
             "token_name": "Nohumans",
             "token_address": "4MemsG4E7puxABgJ3LmySbPyTtGdA3wmTAP2PMkepump"
           }
         ],
-        "leader_hint_token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+        "leaderHint_token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong narrative focus on AI agents and ecosystems, with clear platform integrations.",
+        "confidence_rationale": "Tokens tied to AI utility and automation are gaining traction. OpenClaw is a strong leader in this space due to its clear AI utility and community engagement.",
         "leader_token": {
           "token_symbol": "ClawHUB",
           "token_name": "ClawHub",
@@ -825,81 +856,64 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Animal-Themed Tokens",
-        "description": "Tokens featuring animal themes, often leveraging cute or quirky animal imagery to drive community engagement.",
+        "meta_name": "AI Agent Ecosystem",
+        "description": "Tokens centered around AI agents, autonomous systems, and decentralized AI-driven platforms. These tokens often focus on governance, utility, or access to AI tools and services.",
         "defining_signals": [
-          "Animal-based branding or imagery",
-          "Cute or quirky animal themes",
-          "Leverage of animal-related memes or trends",
-          "Community-driven narratives around animals",
-          "High engagement from animal-centric communities"
+          "AI agent-based platforms or ecosystems",
+          "Decentralized autonomous organization (DAO) governance",
+          "Integration with AI tools or services",
+          "Token utilities tied to AI interactions",
+          "Mentions of AI collaboration or automation",
+          "Community-driven AI development"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "OPENCLAW",
+            "token_name": "OpenClaw",
+            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
           },
           {
-            "token_symbol": "PIGEON",
-            "token_name": "Pigeon Doctor",
-            "token_address": "GB8KtQfMChhYrCYtd5PoAB42kAdkHnuyAincSSmFpump"
+            "token_symbol": "Clawk",
+            "token_name": "Clawk",
+            "token_address": "DiTJNECkXMSvccagjY52CGswozwJ6j8M7UQLtV9Spump"
           },
           {
-            "token_symbol": "MANNY",
-            "token_name": "Manny the baby mammoth",
-            "token_address": "6toGUYCTpCDvnZ2FDm22hKUqQiDspgk1ZFMxR3e3pump"
+            "token_symbol": "OnlyClaws",
+            "token_name": "OnlyClaws",
+            "token_address": "BX2KjYBUXn12ihAEczYnsNprq6ekxwuZpZvf1Gy5pump"
           },
           {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZZCrwFpKNwG"
+            "token_symbol": "Karmacoin",
+            "token_name": "Karmacoin",
+            "token_address": "74jqvYLuP85bt8kSaq1vXLMqRF4SD9GJNmMf4y4apump"
           },
           {
-            "token_symbol": "CRABMAN",
-            "token_name": "Matt Furie’s Naked Crab Man",
-            "token_address": "JBGdmDqrAbmmfX6hZZJRjaoTXZ8tshwBuVqLemAcXpump"
+            "token_symbol": "BOTCHA",
+            "token_name": "BOTCHA",
+            "token_address": "Feqc6LRD5q1isvC9EFiogX6GxmHUM5JfTJcn8ff1pump"
           },
           {
-            "token_symbol": "BARRON",
-            "token_name": "Barron Coin",
-            "token_address": "2x4PQGUtTEXUhjL1jZP7wV9jyEpgKqv6ArM4hBKApump"
+            "token_symbol": "Nohumans",
+            "token_name": "Nohumans",
+            "token_address": "4MemsG4E7puxABgJ3LmySbPyTtGdA3wmTAP2PMkepump"
           }
         ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong animal themes with clear community engagement and meme origins.",
+        "leader_hint_token_address": "CxoaKHTGYAUkHwZK5dazVYuG3vvEXExrGznMwX1ipump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Multiple tokens are explicitly tied to AI agent ecosystems, governance, and utility. These tokens show a clear trend in the AI-driven platform space.",
         "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 5513734.0
+          "token_symbol": "OPENCLAW",
+          "token_name": "OpenClaw",
+          "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+          "usd_market_cap": 2832852.79
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Meme-Driven Tokens remain dominant with strong engagement and clear cultural references. AI-Driven Narrative Tokens are emerging as a new trend, leveraging AI agent ecosystems. Political/Satirical Tokens are fading slightly due to reduced public sentiment volatility. Animal-Themed Tokens are stable but not growing rapidly. AI Utility Tokens are gaining traction as speculative narratives around AI evolve.",
+    "meta_rotation_note": "The AI Agent Ecosystem and Meme-Driven Tokens are currently the most dominant METAs, with strong community engagement and clear narratives. The Crypto-Political Narratives and AI-Powered Utility Tokens are also gaining traction. Animal-Themed Tokens are emerging but not yet as dominant. Older METAs like AI-Powered Utility Tokens are fading slightly as newer AI Agent Ecosystem tokens take over.",
     "meta_leaders": [
       {
-        "meta_name": "Meme-Driven Tokens",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 83347270655.48
-        }
-      },
-      {
-        "meta_name": "AI Utility Tokens",
-        "leader_token": {
-          "token_symbol": "AVICI",
-          "token_name": "Avici",
-          "token_address": "BANKJmvhT8tiJRsBSS1n2HryMBPvT5Ze4HU95DUAmeta",
-          "usd_market_cap": 3306324068.62
-        }
-      },
-      {
-        "meta_name": "Political/Satirical Tokens",
+        "meta_name": "Crypto-Political Narratives",
         "leader_token": {
           "token_symbol": "TRUMP",
           "token_name": "OFFICIAL TRUMP",
@@ -908,7 +922,25 @@
         }
       },
       {
-        "meta_name": "AI-Driven Narrative Tokens",
+        "meta_name": "Meme-Driven Tokens",
+        "leader_token": {
+          "token_symbol": "BIRB",
+          "token_name": "Moonbirds",
+          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+          "usd_market_cap": 70938632.0
+        }
+      },
+      {
+        "meta_name": "Animal-Themed Tokens",
+        "leader_token": {
+          "token_symbol": "BIRB",
+          "token_name": "Moonbirds",
+          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+          "usd_market_cap": 70938632.0
+        }
+      },
+      {
+        "meta_name": "AI-Powered Utility Tokens",
         "leader_token": {
           "token_symbol": "ClawHUB",
           "token_name": "ClawHub",
@@ -917,12 +949,12 @@
         }
       },
       {
-        "meta_name": "Animal-Themed Tokens",
+        "meta_name": "AI Agent Ecosystem",
         "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 5513734.0
+          "token_symbol": "OPENCLAW",
+          "token_name": "OpenClaw",
+          "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump",
+          "usd_market_cap": 2832852.79
         }
       }
     ]
