@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-01T15:55:01.258899Z",
+  "generated_at_utc": "2026-02-01T16:55:39.469839Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 151,
+  "token_context_count": 152,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 27 PVP group(s); excluding 42 token(s) from META prompt."
+    "Detected 28 PVP group(s); excluding 44 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 42,
+  "pvp_excluded_token_count": 44,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -335,6 +335,26 @@
           "token_address": "6KywnEuxfERo2SmcPkoott1b7FBu1gYaBup2C6HVpump",
           "usd_market_cap": 156848.56,
           "processed_at": "2026-01-31T18:12:21.490383Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "swarms",
+      "tokens": [
+        {
+          "token_symbol": "swarms",
+          "token_name": "swarmsbot",
+          "token_address": "FyH2LSkFmHDhRyq9oPJyEpZ1z7xfk42aX1x3zxPipump",
+          "usd_market_cap": 66052.05,
+          "processed_at": "2026-01-31T17:08:04.256916Z"
+        },
+        {
+          "token_symbol": "swarms",
+          "token_name": "swarms",
+          "token_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+          "usd_market_cap": 8824558.3,
+          "processed_at": "2026-02-01T16:46:27.199900Z"
         }
       ]
     },
@@ -694,30 +714,80 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Reuse",
-        "description": "Tokens repurposing existing internet memes, often with a humorous or satirical angle. These tokens leverage pre-existing cultural references to gain traction, often with minimal original content.",
+        "meta_name": "Political & Controversial Figures",
+        "description": "Tokens reference controversial or political figures, often leveraging public sentiment or conspiracy theories for branding. These tokens often emerge from internet discourse or political movements.",
         "defining_signals": [
-          "Leverage of pre-existing memes or cultural references",
-          "Humorous or satirical branding",
-          "Minimal original content or lore",
-          "Community-driven virality",
-          "Absence of non-crypto cultural origin"
+          "Tokens referencing public figures like Donald Trump or Jeffrey Epstein",
+          "Tokens tied to conspiracy theories or public scandals",
+          "Tokens using political or controversial themes for branding",
+          "Tokens leveraging public sentiment or political movements",
+          "Tokens with names or narratives tied to political events or figures",
+          "Tokens referencing public debates or political memes"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "TRUMP",
+            "token_name": "OFFICIAL TRUMP",
+            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
           },
           {
-            "token_symbol": "Yaranaika",
-            "token_name": "やらないか",
-            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+            "token_symbol": "MELANIA",
+            "token_name": "Melania Meme",
+            "token_address": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P"
           },
           {
-            "token_symbol": "FKH",
-            "token_name": "Flying Ketamine Horse",
-            "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
+            "token_symbol": "EPSTEIN",
+            "token_name": "Jeffrey Epstein",
+            "token_address": "EF228ijSZdSampJMvhLUiijJGP5PTH1Z17i71JR5pump"
+          },
+          {
+            "token_symbol": "Efight",
+            "token_name": "Epstein Fight",
+            "token_address": "9RpGDMvhJUcajJQ3fQANbe2Ry6mNaLQPLp4HRy58pump"
+          },
+          {
+            "token_symbol": "FUCKCZZ",
+            "token_name": "FUCK CZ",
+            "token_address": "4nLfU6BVAUJbBmKYN8grUzqHxTqTGbV7xQrX9CWSpump"
+          },
+          {
+            "token_symbol": "PepAsstein",
+            "token_name": "Pepstein Ass",
+            "token_address": "Hd2rDMYgY61SPn3s8WMPZtBLL5xSFMLQzMwVCQvKpump"
+          }
+        ],
+        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong political and controversial themes. TRUMP token has a high market cap and clear political branding.",
+        "leader_token": {
+          "token_symbol": "TRUMP",
+          "token_name": "OFFICIAL TRUMP",
+          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "usd_market_cap": 948019391.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens repurpose existing memes, slang, or cultural references for crypto branding. These often leverage viral internet phrases or characters with no prior crypto context.",
+        "defining_signals": [
+          "Tokens named after viral internet memes or slang (e.g., 'Wojak', 'COPCAT')",
+          "Tokens referencing pop culture, internet jokes, or viral phrases",
+          "Tokens with no prior non-crypto cultural origin but strong meme appeal",
+          "Tokens using absurd or ironic names (e.g., 'Fartcoin', 'USELESS COIN')",
+          "Tokens tied to meme-based narratives or community-driven humor",
+          "Tokens leveraging meme formats for branding or community engagement"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Fartcoin",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          },
+          {
+            "token_symbol": "USELESS",
+            "token_name": "USELESS COIN",
+            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
           },
           {
             "token_symbol": "Wojak",
@@ -725,48 +795,98 @@
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "Fartcoin",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+            "token_symbol": "COPCAT",
+            "token_name": "Copper Cat",
+            "token_address": "jpxfcZEzCX5h1usbaEhwG4vq9A1ZYoceU7wbBDApump"
           },
           {
-            "token_symbol": "WhiteWhale",
-            "token_name": "The White Whale",
-            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+            "token_symbol": "CRAZY",
+            "token_name": "Crazy Coin",
+            "token_address": "none"
+          },
+          {
+            "token_symbol": "BUTT",
+            "token_name": "Buttcoin",
+            "token_address": "none"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
         "confidence_0_100": 78,
-        "confidence_rationale": "Strong meme reuse patterns across tokens, with clear cultural references. BONK is the largest and most established.",
+        "confidence_rationale": "Strong meme-based branding and community engagement. Fartcoin has a high market cap and clear meme appeal.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 83347270655.48
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 225266916.8
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Narrative",
-        "description": "Tokens with narratives centered around AI, often involving AI-generated content, AI agent interactions, or AI-driven platforms. These tokens may emphasize innovation, automation, or AI-generated governance.",
+        "meta_name": "Animal & Nature Meme Tokens",
+        "description": "Tokens reference animals or nature-related memes, often leveraging viral internet animal content or folklore for branding. These tokens often use cute or absurd animal imagery.",
         "defining_signals": [
-          "AI-generated content or governance",
-          "AI agent interactions or ecosystems",
-          "AI-driven platform integration",
-          "AI-themed branding or lore",
-          "Community-driven AI narratives"
+          "Tokens referencing viral animal memes (e.g., 'Hachiko', 'Penguin')",
+          "Tokens using animal imagery for branding or narrative",
+          "Tokens tied to nature or folklore (e.g., 'White Whale', 'Wojak')",
+          "Tokens referencing cute or absurd animal content",
+          "Tokens leveraging animal-related internet humor or trends",
+          "Tokens with names or narratives tied to animal-based memes"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSssZpump"
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
+          {
+            "token_symbol": "WHALE",
+            "token_name": "The White Whale",
+            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+          },
+          {
+            "token_symbol": "BINGUS",
+            "token_name": "Bingus",
+            "token_address": "AZA8ksTnHJrwHjLqZ7x2waT22pqLC4mcp8Av4ywqpump"
+          },
+          {
+            "token_symbol": "SCF",
+            "token_name": "Smoking Chicken Fish",
+            "token_address": "CcYCAx8NzB45yGJT29pxHW1JJ8EHfDLFifkUd7Vxpump"
+          },
+          {
+            "token_symbol": "WORM",
+            "token_name": "Pixel Worm",
+            "token_address": "8fM59LxjW1AgejkZqMd3xciwizJXVYmgJyR486wDpump"
+          }
+        ],
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong clustering around animal-based memes. HACHI has a high market cap and clear animal meme appeal.",
+        "leader_token": {
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 86160715.71
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Ecosystem",
+        "description": "Tokens are built around AI agents, often with utility in AI-driven platforms, social networks, or autonomous operations. These tokens leverage AI culture and decentralized coordination.",
+        "defining_signals": [
+          "AI agent social networks (e.g., Moltbook, Clawdbots)",
+          "AI-driven content creation or trading platforms",
+          "Tokens with governance or utility for AI agent interactions",
+          "Community-driven AI narratives (e.g., ClawHUB, Moltius Maximus)",
+          "AI agent competitions or gamified interactions",
+          "Tokens tied to AI agent wallets or autonomous operations"
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "CLAWCITY",
             "token_name": "Claw City",
@@ -775,103 +895,12 @@
           {
             "token_symbol": "Moltius",
             "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
+            "token_address": "AHT1bswcRGDhYjRhDHUwGdmhPgvftxr3yPDdqv9opump"
           },
           {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhHjRhDHUwGGdmhPgvftxr3yPDdqv9opump"
-          },
-          {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
-          }
-        ],
-        "leader_hint_token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
-        "confidence_0_100": 72,
-        "confidence_rationale": "Strong narrative focus on AI, with active community engagement and development. EVA has a clear AI-driven narrative.",
-        "leader_token": {
-          "token_symbol": "EVA",
-          "token_name": "Eva Everywhere",
-          "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
-          "usd_market_cap": 2633618.03
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Driven Trading",
-        "description": "Tokens with narratives centered around AI-driven trading or financial automation. These tokens often claim to use AI for trading strategies, market analysis, or financial optimization.",
-        "defining_signals": [
-          "AI-driven trading or financial automation",
-          "Market analysis or optimization claims",
-          "AI-generated trading strategies",
-          "Community-driven financial narratives",
-          "Tokenomics tied to trading performance"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
-          },
-          {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
-          },
-          {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhHjRhDHUwGdmhPgvftxr3yPDdqv9opump"
-          },
-          {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
-          },
-          {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
-          }
-        ],
-        "leader_hint_token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qq6QXN4Yz8BAGS",
-        "confidence_0_100": 68,
-        "confidence_rationale": "Strong focus on AI-driven trading and financial automation. EVA has a clear trading narrative and active development.",
-        "leader_token": {
-          "token_symbol": "EVA",
-          "token_name": "Eva Everywhere",
-          "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
-          "usd_market_cap": 2633618.03
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI Agent Utility",
-        "description": "Tokens tied to AI agents, often with governance, access, or reward mechanisms for autonomous operations. These tokens are frequently linked to platforms or ecosystems where AI agents interact, trade, or create content.",
-        "defining_signals": [
-          "Tokens are utility-based for AI agent interactions",
-          "AI agent governance or reward mechanisms",
-          "Integration with AI-driven platforms or social networks",
-          "Community-driven AI agent ecosystems",
-          "Tokenomics tied to AI agent activity or performance"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BOTCHA",
-            "token_name": "BOTCHA",
-            "token_address": "Feqc6LRD5q1isvC9EFiogX6GxmHUM5JfTJcn8ff1pump"
-          },
-          {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwGdmhPftxr3yPDdqv9opump"
+            "token_symbol": "CLAWDSE",
+            "token_name": "Claudeus Maximus",
+            "token_address": "B75w4MrhD4sLJRkAVvtxc74hiK317CdUZBBBCLwFpump"
           },
           {
             "token_symbol": "MoltChain",
@@ -879,131 +908,127 @@
             "token_address": "CZJFYVDPs6RLVtqtZNr5tbg3paEPXPrCyHfX8ct8pump"
           },
           {
-            "token_symbol": "MoltPump",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhuKdS5wktwRucV3JrK9JP4CZ6i1E9X5Cpump"
+            "token_symbol": "MOLTNET",
+            "token_name": "MoltNet",
+            "token_address": "viQoKRGAhKntb1ifCiXETLgSZJwz9RCUFqgRLEkpump"
           },
           {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwGdmhPgvftxr3yPDdqv9opump"
-          },
-          {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwGGdmhPgvftxr3yPDdqv9opump"
+            "token_symbol": "MOLTBOOK",
+            "token_name": "Moltbook Town",
+            "token_address": "DgN9zcmQgWF98qkhoMEshq7G4eRDjxcHoXvijfffBAGS"
           }
         ],
-        "leader_hint_token_address": "BUodWevrhuKdS5wktwRucV3JrK9JP4CZ6i1E9X5Cpump",
+        "leader_hint_token_address": "3xJDMWrE6n9KTHJiVCQhiVhh1z2ML2RcpJneAh7ABAGS",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong clustering of tokens around AI agent utility, governance, and platform integration. High market cap and active development signals.",
+        "confidence_rationale": "Strong clustering around AI agent social networks and autonomous operations. High market cap and active community engagement for CLAWCITY.",
         "leader_token": {
-          "token_symbol": "MOLTP",
-          "token_name": "MoltPump",
-          "token_address": "BUodWevrhuKdS5wktwRucV3JrK9JP4CZ6i1E9X5Cpump",
-          "usd_market_cap": 258010.25
+          "token_symbol": "CLAWDSE",
+          "token_name": "Claudeus Maximus",
+          "token_address": "B75w4MrhD4sLJRkAVvtxc74hiK317CdUZBBBCLwFpump",
+          "usd_market_cap": 7957361.15
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI Agent Social Network",
-        "description": "Tokens tied to AI agent social networks or platforms where AI agents interact, create content, or manage tasks. These tokens often serve as governance, access, or reward mechanisms within these ecosystems.",
+        "meta_name": "AI & Tech Meme Tokens",
+        "description": "Tokens reference AI, tech, or internet culture memes, often leveraging viral AI-related content or tech humor for branding. These tokens often use absurd or ironic AI-related themes.",
         "defining_signals": [
-          "AI agent social network integration",
-          "Governance or access tokens for AI agent platforms",
-          "Reward mechanisms for AI agent activity",
-          "Community-driven AI agent interactions",
-          "Tokenomics tied to AI agent performance"
+          "Tokens referencing AI memes or tech humor",
+          "Tokens using AI-related absurdity or irony for branding",
+          "Tokens tied to AI culture or internet tech trends",
+          "Tokens referencing viral AI-related content",
+          "Tokens leveraging AI humor or tech memes for branding",
+          "Tokens with names or narratives tied to AI-based memes"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
+            "token_symbol": "CLAWDSE",
+            "token_name": "Claudeus Maximus",
+            "token_address": "B75w4MrhD4sLJRkAVvtxc74hiK317CdUZBBBCLwWpump"
           },
           {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhHjRhDHUwGGdmhPgvftxr3yPDdqv9opump"
+            "token_symbol": "CLAW",
+            "token_name": "ClawChain",
+            "token_address": "BQ48k92gDbxDrpw8Zr7NtYA5Bi7kttZ5cDASnEZNpump"
           },
           {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrRmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
           },
           {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
+            "token_symbol": "CLAWCITY",
+            "token_name": "Claw City",
+            "token_address": "3xJDMWrE6n9KTHJiVCQhiVhh1z2ML2RcpJneAh7ABAGS"
           },
           {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
+            "token_symbol": "CLAWDSE",
+            "token_name": "Claudeus Maximus",
+            "token_address": "B75w4MrhD4sLJRkAVvtxc74hiK317CdUZBBBCLwWpump"
           },
           {
-            "token_symbol": "Moltius",
-            "token_name": "Moltius Maximus",
-            "token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump"
+            "token_symbol": "CLAWDSE",
+            "token_name": "Claudeus Maximus",
+            "token_address": "B75w4MrhD4sLJRkAVvtxc74hiK317CdUZBBBCLwWpump"
           }
         ],
-        "leader_hint_token_address": "AHT1bswcRGDhYjRhDHUwWdmhPgvftxr3yPDdqv9opump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong clustering around AI agent social networks. Moltius Maximus has a clear social network focus and active development.",
+        "leader_hint_token_address": "B75w4MrhD4sLJRkAVvtxx74hiK317CdUZBBBCLwWpump",
+        "confidence_0_100": 72,
+        "confidence_rationale": "Strong clustering around AI and tech memes. CLAWDSE has a high market cap and clear AI meme appeal.",
         "leader_token": {
-          "token_symbol": "Moltius",
-          "token_name": "Moltius Maximus",
-          "token_address": "AHT1bswcRGDhYjRhDHUwGdmhPgvftxr3yPDdqv9opump",
-          "usd_market_cap": 1995.42
+          "token_symbol": "CLAW",
+          "token_name": "ClawChain",
+          "token_address": "BQ48k92gDbxDrpw8Zr7NtYA5Bi7kttZ5cDASnEZNpump",
+          "usd_market_cap": 228823.59
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The AI Agent Utility and AI-Driven Narrative METAs are gaining momentum, with increasing community engagement and development. Meme Reuse remains strong but is showing signs of fatigue as new tokens struggle to differentiate. AI-Driven Trading is emerging as a new trend, leveraging AI for financial automation and trading strategies.",
+    "meta_rotation_note": "Fading: AI & Tech Meme Tokens are showing signs of fatigue as newer AI narratives emerge. Emerging: AI Agent Ecosystem is gaining traction with new AI agent platforms and social networks. Meme Rebranding remains strong with new tokens leveraging viral internet phrases.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Reuse",
+        "meta_name": "Political & Controversial Figures",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 83347270655.48
+          "token_symbol": "TRUMP",
+          "token_name": "OFFICIAL TRUMP",
+          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "usd_market_cap": 948019391.0
         }
       },
       {
-        "meta_name": "AI-Driven Narrative",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "EVA",
-          "token_name": "Eva Everywhere",
-          "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
-          "usd_market_cap": 2633618.03
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 225266916.8
         }
       },
       {
-        "meta_name": "AI-Driven Trading",
+        "meta_name": "Animal & Nature Meme Tokens",
         "leader_token": {
-          "token_symbol": "EVA",
-          "token_name": "Eva Everywhere",
-          "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
-          "usd_market_cap": 2633618.03
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 86160715.71
         }
       },
       {
-        "meta_name": "AI Agent Utility",
+        "meta_name": "AI Agent Ecosystem",
         "leader_token": {
-          "token_symbol": "MOLTP",
-          "token_name": "MoltPump",
-          "token_address": "BUodWevrhuKdS5wktwRucV3JrK9JP4CZ6i1E9X5Cpump",
-          "usd_market_cap": 258010.25
+          "token_symbol": "CLAWDSE",
+          "token_name": "Claudeus Maximus",
+          "token_address": "B75w4MrhD4sLJRkAVvtxc74hiK317CdUZBBBCLwFpump",
+          "usd_market_cap": 7957361.15
         }
       },
       {
-        "meta_name": "AI Agent Social Network",
+        "meta_name": "AI & Tech Meme Tokens",
         "leader_token": {
-          "token_symbol": "Moltius",
-          "token_name": "Moltius Maximus",
-          "token_address": "AHT1bswcRGDhYjRhDHUwGdmhPgvftxr3yPDdqv9opump",
-          "usd_market_cap": 1995.42
+          "token_symbol": "CLAW",
+          "token_name": "ClawChain",
+          "token_address": "BQ48k92gDbxDrpw8Zr7NtYA5Bi7kttZ5cDASnEZNpump",
+          "usd_market_cap": 228823.59
         }
       }
     ]
