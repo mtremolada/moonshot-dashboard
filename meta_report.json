@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-02T10:41:01.765316Z",
+  "generated_at_utc": "2026-02-02T11:41:20.491046Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 176,
+  "token_context_count": 172,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 19 PVP group(s); excluding 30 token(s) from META prompt."
+    "Detected 21 PVP group(s); excluding 32 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 30,
+  "pvp_excluded_token_count": 32,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -46,6 +46,26 @@
           "token_address": "5QkWupjKN4UTBxHdgc9iCvRgrCzvjr5gEHhBrDypump",
           "usd_market_cap": 2195.64,
           "processed_at": "2026-02-01T13:52:41.015724Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "moltbook",
+      "tokens": [
+        {
+          "token_symbol": "MOLT",
+          "token_name": "MOLTBOOK",
+          "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump",
+          "usd_market_cap": 55634.16,
+          "processed_at": "2026-02-01T14:05:16.897713Z"
+        },
+        {
+          "token_symbol": "MOLT",
+          "token_name": "MoltBook",
+          "token_address": "4LXYzq1DKdxPijHFmRVjuz9QaRenEJTQyTP1A8Pdmigo",
+          "usd_market_cap": 86470.0,
+          "processed_at": "2026-02-02T10:55:05.064578Z"
         }
       ]
     },
@@ -189,13 +209,6 @@
       "tokens": [
         {
           "token_symbol": "MOLT",
-          "token_name": "Molt Screener",
-          "token_address": "F51EJci24vktHbQbeXuLpo15x1tvxQr1XRyhN82ipump",
-          "usd_market_cap": 17133.75,
-          "processed_at": "2026-02-01T10:38:00.350261Z"
-        },
-        {
-          "token_symbol": "MOLT",
           "token_name": "Myobot",
           "token_address": "4EpBBhNg6Lu19KMUhVg6Wqhwjb6rmnBpySjkBHorBAGS",
           "usd_market_cap": 11018.73,
@@ -207,6 +220,13 @@
           "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump",
           "usd_market_cap": 55634.16,
           "processed_at": "2026-02-01T14:05:16.897713Z"
+        },
+        {
+          "token_symbol": "MOLT",
+          "token_name": "MoltBook",
+          "token_address": "4LXYzq1DKdxPijHFmRVjuz9QaRenEJTQyTP1A8Pdmigo",
+          "usd_market_cap": 86470.0,
+          "processed_at": "2026-02-02T10:55:05.064578Z"
         }
       ]
     },
@@ -441,6 +461,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "bankr",
+      "tokens": [
+        {
+          "token_symbol": "BANKR",
+          "token_name": "Bankr on Sol",
+          "token_address": "4BmaxxckzuAnFZANYP8uZ4MQUBLoKBHxbx1xbZSDbank",
+          "usd_market_cap": 79448.0,
+          "processed_at": "2026-02-02T07:46:31.007063Z"
+        },
+        {
+          "token_symbol": "BANKR",
+          "token_name": "Bankr.Bot",
+          "token_address": "5ANpzpJhSz5799k3aEboXvJ4ASysxLn53eZG2ei9pump",
+          "usd_market_cap": 15785.41,
+          "processed_at": "2026-02-02T10:53:31.523411Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "bnkr",
       "tokens": [
         {
@@ -464,682 +504,316 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI and Robotics",
-        "description": "This meta is centered around AI and robotics, with tokens often referencing AI agents, bots, or AI-driven systems. The narrative includes AI-generated content, autonomous agents, and AI-driven economies.",
+        "meta_name": "AI-Powered Trading and Finance",
+        "description": "Tokens leveraging AI for trading, financial analysis, and DeFi integration. These tokens often emphasize AI-driven trading strategies, predictive analytics, and AI-based financial tools.",
         "defining_signals": [
-          "Tokens referencing AI agents or bots (e.g., Clawdbot, Moltbot, AI Rig Complex).",
-          "Tokens with AI-generated content or AI-driven narratives (e.g., Mia Ko, Ava AI).",
-          "Tokens with AI-driven economies or autonomous systems (e.g., EXPERIMENT, MoltPump).",
-          "Tokens with AI-related memes or humor (e.g., Absolute Idiot, Botcoin).",
-          "Tokens with AI-based governance or decision-making (e.g., MetaDAO, Moltwallet)."
+          "Tokens tied to AI trading or financial analysis",
+          "AI-driven trading strategies and predictive analytics",
+          "Integration with DeFi platforms and AI tools",
+          "Community-driven AI trading narratives",
+          "AI-based financial tools and analytics"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CTB",
+            "token_name": "Claude Trading Bot",
+            "token_token_address": "2gbjjFtFqwoNWiXQmJC7fGvwcpeVNFgG3DAfhu45BAGS"
+          },
+          {
+            "token_symbol": "AVAAI",
+            "token_name": "Ava AI",
+            "token_token_address": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump"
+          },
+          {
+            "token_symbol": "SURGE",
+            "token_name": "SURGE",
+            "token_token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "RADR",
+            "token_name": "RADR",
+            "token_token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
+          },
+          {
+            "token_symbol": "PRIMIS",
+            "token_name": "Primis Protocol",
+            "token_token_address": "2DfBjrPFZjDTiCY6pxchS6aSdUdEpkk7PdqpovHjBAGS"
+          }
+        ],
+        "leader_hint_token_address": "2gbjjFtFqwoNWiXQmJC7fGvwcpeVNFgG3DAfhu45BAGS",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong narrative around AI-powered trading and finance, with multiple tokens showing AI-driven financial tooling and analytics.",
+        "leader_token": {
+          "token_symbol": "SURGE",
+          "token_name": "SURGE",
+          "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg",
+          "usd_market_cap": 39062649.13
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Ecosystem",
+        "description": "Tokens centered around AI agents, autonomous systems, and AI-driven platforms are gaining traction. These tokens often emphasize self-governance, AI-generated content, and decentralized operations.",
+        "defining_signals": [
+          "Tokens tied to AI agent platforms or autonomous systems",
+          "Community-driven AI narratives and governance",
+          "Integration with AI tools like OpenClaw, Moltbook, or Clawbots",
+          "Decentralized, self-sustaining operations",
+          "AI-generated or AI-managed content and interactions"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "CLAWD",
             "token_name": "clawdbot",
-            "token_address_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_token_address": "FyPDX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "MOLTCOIN",
+            "token_name": "MoltCoin",
+            "token_address": "5LswPW5k4vZRoK2a1qgJa3huGwpAXT6BaZ3bM4L6pump"
           },
           {
-            "token_symbol": "AV",
-            "token_name": "Ava AI",
-            "token_token_address": "DKu9kykSfbN5LBfFXNNDPaX35o4Fv6vJ9FKk7pZppump"
+            "token_symbol": "FREEMOLT",
+            "token_name": "FREEMOLT",
+            "token_address": "D6DWmyiCSezS2ZiVrf6npkHRWC3wgtjjoAbHd89PRzcY"
           },
           {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "META",
-            "token_name": "MetaDAO",
-            "token_token_address": "METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta"
-          },
-          {
-            "token_symbol": "MOLTW",
+            "token_symbol": "MOLTWALLET",
             "token_name": "Moltwallet",
-            "token_token_address": "G9Q6FdohBbMuz34iDxA2izoR1XQQPpTrYhhCpump"
+            "token_address": "G9Q6FdohBbMuz34iDxurZiA2izoR1XQQPpTrYhhCpump"
           },
           {
-            "token_symbol": "THINK",
-            "token_name": "ClaudeThinks",
-            "token_token_address": "fpnBHZZLouozB9eZCzkhxBeGSv19JZjKvmZ1wuiBWWw"
+            "token_symbol": "CLAW16Z",
+            "token_name": "Claw16z",
+            "token_address": "91AkkkMi34HXrmqAuiWThVQD5ECNctBN48cjFV1wpump"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_token_address": "FyPDX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZzump"
-          },
-          {
-            "token_symbol": "AV",
-            "token_name": "Ava AI",
-            "token_token_address": "DKu9kykSfbN5LBdfdNNDPaX35o4Fv6vJ9FKk7pZppump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
+            "token_symbol": "CLAWGRID",
+            "token_name": "ClawGrid",
+            "token_address": "8cxSnKk13kvgKUcmAgy5HVZehustRa35N3JqGzGPBAGS"
           }
         ],
-        "leader_hint_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump",
+        "leader_hint_token_address": "5LswPW5k4vZRoK2a1qgJa3huGwpAXT6BaZ3bM4L6pump",
         "confidence_0_100": 85,
-        "confidence_rationale": "The AI and Robotics meta is well-supported by multiple tokens with strong AI narratives and autonomous systems. The token EXPERIMENT (0004) appears to be the leader due to its high market cap and clear focus on autonomous AI systems.",
+        "confidence_rationale": "Strong narrative around AI agents and autonomous systems, with multiple tokens showing community and platform integration.",
         "leader_token": {
-          "token_symbol": "META",
-          "token_name": "MetaDAO",
-          "token_address": "METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta",
-          "usd_market_cap": 95826470.0
+          "token_symbol": "clawd",
+          "token_name": "clawdbot",
+          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
+          "usd_market_cap": 169772.73
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme and Internet Culture",
-        "description": "This meta is centered around internet memes and viral culture, with tokens often referencing popular memes, internet slang, or viral trends. The narrative includes humor, satire, and community-driven humor.",
+        "meta_name": "Meme-Driven Crypto",
+        "description": "Tokens leveraging viral internet memes, pop culture references, and humor to drive community engagement and virality. These tokens often repurpose existing memes or create new ones for crypto adoption.",
         "defining_signals": [
-          "Tokens referencing popular memes (e.g., Bonk, Pepe, Wojak).",
-          "Tokens with internet slang or viral phrases (e.g., 10/10, Barking Puppy).",
-          "Tokens with humorous or satirical narratives (e.g., Useless Coin, Fartcoin).",
-          "Tokens with meme-based branding or logos (e.g., Bonk, Pepe).",
-          "Tokens with community-driven humor or inside jokes (e.g., 10/10, Barking Puppy)."
+          "Tokens referencing viral memes or pop culture figures",
+          "Community-driven humor and meme-based branding",
+          "Repurposing of non-crypto memes for crypto narratives",
+          "Strong social media presence and meme-based marketing",
+          "Absence of traditional utility, but high community engagement"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "KIKI",
+            "token_name": "Kiki",
+            "token_address_address": "Utgt9nbpXvgSduEu5fdZzrci8xgUzjg1KBYoLZpump"
           },
           {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe",
-            "token_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4ppKBMr5rpump"
-          },
-          {
-            "token_symbol": "10/10",
-            "token_name": "10/10 coin",
-            "token_token_address": "Hvkze6p1JSW7svxb1V5nFni4Sc2BifL48VVT6uB7pump"
-          },
-          {
-            "token_symbol": "BP",
+            "token_symbol": "BARKINGPUPPY",
             "token_name": "Barking Puppy",
-            "token_token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump"
+            "token_address_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump"
           },
           {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
+            "token_symbol": "CLAWPIPPIN",
+            "token_name": "Claw Pippin",
+            "token_token_address": "EkJo3iq8R1A5iVP15sMaNGymmtiJ2dRg85uJ7NL4pump"
           },
           {
-            "token_symbol": "FART",
-            "token_name": "Fartcoin",
-            "token_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
-          },
-          {
-            "token_symbol": "PEPEFILE",
-            "token_name": "Dinner with Epstein",
-            "token_token_address": "DTBKqGFCS1wbJvCnZPWadxJwAp9bx1VYGJC5ePjpump"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe",
-            "token_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4PpKBMr5rpump"
+            "token_symbol": "SMOLCLAW",
+            "token_name": "Smol Claw",
+            "token_token_address": "CjbjAp7D99wEHZLQUixGMXUA7niwcMHNnwFx6nw1pump"
           },
           {
             "token_symbol": "10/10",
             "token_name": "10/10 coin",
             "token_token_address": "Hvkze6p1JSW7svxb1V5nFni4Sc2BifL48VVT6uB7pump"
+          },
+          {
+            "token_symbol": "PUSSYCOIN",
+            "token_name": "Pussycoin",
+            "token_token_address": "6mJ4m8vmjLbpVMjeQ4G8mYfCLzkUWSEnVEmuMjB7pump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "leader_hint_token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump",
         "confidence_0_100": 90,
-        "confidence_rationale": "The Meme and Internet Culture meta is well-supported by multiple tokens with strong meme narratives. The token Bonk (BONK) appears to be the leader due to its high market cap and clear meme-based branding.",
+        "confidence_rationale": "Strong meme-based branding and community engagement, with multiple tokens leveraging viral internet culture.",
         "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 47562592.86
+          "token_symbol": "10/10",
+          "token_name": "10/10 coin",
+          "token_address": "Hvkze6p1JSW7svxb1V5nFni4Sc2BifL48VVT6uB7pump",
+          "usd_market_cap": 85378.69
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Social Networks",
+        "description": "Tokens tied to AI social networks and AI agent communities, often emphasizing decentralized identity, AI-driven interactions, and community-driven governance.",
+        "defining_signals": [
+          "Tokens tied to AI social networks or AI agent communities",
+          "Decentralized identity and AI-driven interactions",
+          "Community-driven governance and AI agent narratives",
+          "Integration with AI agent platforms like Moltbook",
+          "AI-driven content creation and interactions"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "FREEMOLT",
+            "token_name": "FREEMOLT",
+            "token_token_address": "D6DWmyiCSezS2ZiVrf6npkHRWC3wgtjjoAbHd89PRzcY"
+          },
+          {
+            "token_symbol": "MOLTWALLET",
+            "token_name": "Moltwallet",
+            "token_token_address": "G9Q6FdohBbMuz34iDxTrYhhCpump"
+          },
+          {
+            "token_symbol": "CLAW16Z",
+            "token_name": "Claw16z",
+            "token_token_address": "91AkkkMi34HXrmqAuiWThVQD5ECNctBN48cjFV1wpump"
+          },
+          {
+            "token_symbol": "CLAWGRID",
+            "token_name": "ClawGrid",
+            "token_token_address": "8cxSnKk13kvgKUcmAgy5HVZehustRa35N3JqGzGPpump"
+          },
+          {
+            "token_symbol": "MOLTCOIN",
+            "token_name": "MoltCoin",
+            "token_token_address": "5LswPW5k4vZRoK2a1qgJa3huGwpAXT6BaZ3bM4L6pump"
+          },
+          {
+            "token_symbol": "CLAWD",
+            "token_name": "clawdbot",
+            "token_token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+          }
+        ],
+        "leader_hint_token_address": "D6DWmyiCSezS2ZiVrf6npkHRWC3wgtjjoAbHd89PRzcY",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong narrative around AI agent social networks, with multiple tokens showing community and platform integration.",
+        "leader_token": {
+          "token_symbol": "CLAWGRID",
+          "token_name": "ClawGrid",
+          "token_address": "8cxSnKk13kvgKUcmAgy5HVZehustRa35N3JqGzGPBAGS",
+          "usd_market_cap": 63873.86
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "AI and Crypto Integration",
-        "description": "This meta is centered around the integration of AI and blockchain technology, with tokens often referencing AI-driven blockchain systems, AI-based governance, or AI-powered DeFi protocols.",
+        "description": "Tokens integrating AI into blockchain ecosystems, often through AI-driven trading, AI-generated content, or AI-powered governance. These tokens are often tied to AI infrastructure or AI agent platforms.",
         "defining_signals": [
-          "Tokens referencing AI-driven blockchain systems (e.g., MoltPump, Moltmint).",
-          "Tokens with AI-based governance or decision-making (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with AI-powered DeFi protocols (e.g., MoltPump, Moltmint).",
-          "Tokens with AI-based tokenomics or economic models (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with AI-based security or privacy features (e.g., RADR, Moltmint)."
+          "Tokens tied to AI trading bots or AI-driven analytics",
+          "Integration with AI infrastructure or AI agent platforms",
+          "AI-generated content or AI-driven governance",
+          "Community-driven AI narratives and tooling",
+          "AI-based tokenomics or AI-driven token management"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
+            "token_symbol": "CTB",
+            "token_name": "Claude Trading Bot",
+            "token_token_address": "2gbjjFtFqwoNWiXQmJC7fGvwcpeVNFgG3DAfhu45BAGS"
           },
           {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
+            "token_symbol": "AVAAI",
+            "token_name": "Ava AI",
+            "token_token_address": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump"
           },
           {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
+            "token_symbol": "CLAWD",
+            "token_name": "clawdbot",
+            "token_token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "MOLTW",
+            "token_symbol": "FREEMOLT",
+            "token_name": "FREEMOLT",
+            "token_token_address": "D6DWmyiCSezS2ZiVrf6npkHRWC3wgtjjoAbHd89PRzcY"
+          },
+          {
+            "token_symbol": "MOLTCOIN",
+            "token_name": "MoltCoin",
+            "token_token_address": "5LswPW5k4vZRoK2a1qgJa3huGwpAXT6BaZ3bM4L6pump"
+          },
+          {
+            "token_symbol": "MOLTWALLET",
             "token_name": "Moltwallet",
-            "token_token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          },
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
+            "token_token_address": "G9Q6FdohBbMuz34iDxTrYhhCpump"
           }
         ],
-        "leader_hint_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The AI and Crypto Integration meta is well-supported by multiple tokens with strong AI and blockchain integration narratives. The token EXPERIMENT (0004) appears to be the leader due to its high market cap and clear focus on AI-driven blockchain systems.",
+        "leader_hint_token_address": "2gbjjFtFqwoNWiXQmJC7fGvwcpeVNFgG3DAfhu45BAGS",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong integration of AI into blockchain ecosystems, with multiple tokens showing AI-driven narratives and tooling.",
         "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Crypto Integration",
-        "description": "This meta is centered around the integration of AI and blockchain technology, with tokens often referencing AI-driven blockchain systems, AI-based governance, or AI-powered DeFi protocols.",
-        "defining_signals": [
-          "Tokens referencing AI-driven blockchain systems (e.g., MoltPump, Moltmint).",
-          "Tokens with AI-based governance or decision-making (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with AI-powered DeFi protocols (e.g., MoltPump, Moltmint).",
-          "Tokens with AI-based tokenomics or economic models (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with AI-based security or privacy features (e.g., RADR, Moltmint)."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          },
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          }
-        ],
-        "leader_hint_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The AI and Crypto Integration meta is well-supported by multiple tokens with strong AI and blockchain integration narratives. The token EXPERIMENT (0004) appears to be the leader due to its high market cap and clear focus on AI-driven blockchain systems.",
-        "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Crypto Integration",
-        "description": "This meta is centered around the integration of AI and blockchain technology, with tokens often referencing AI-driven blockchain systems, ai-based governance, or ai-powered DeFi protocols.",
-        "defining_signals": [
-          "Tokens referencing AI-driven blockchain systems (e.g., MoltPump, Moltmint).",
-          "Tokens with ai-based governance or decision-making (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with ai-powered DeFi protocols (e.g., MoltPump, Moltmint).",
-          "Tokens with ai-based tokenomics or economic models (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with ai-based security or privacy features (e.g., RADR, Moltmint)."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          },
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          }
-        ],
-        "leader_hint_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The AI and crypto integration meta is well-supported by multiple tokens with strong ai and blockchain integration narratives. The token EXPERIMENT (0004) appears to be the leader due to its high market cap and clear focus on ai-driven blockchain systems.",
-        "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Crypto Integration",
-        "description": "This meta is centered around the integration of AI and blockchain technology, with tokens often referencing ai-driven blockchain systems, ai-based governance, or ai-powered DeFi protocols.",
-        "defining_signals": [
-          "Tokens referencing ai-driven blockchain systems (e.g., MoltPump, Moltmint).",
-          "Tokens with ai-based governance or decision-making (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with ai-powered DeFi protocols (e.g., MoltPump, Moltmint).",
-          "Tokens with ai-based tokenomics or economic models (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with ai-based security or privacy features (e.g., RADR, Moltmint)."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhoKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          },
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          }
-        ],
-        "leader_hint_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The ai and crypto integration meta is well-supported by multiple tokens with strong ai and blockchain integration narratives. The token EXPERIMENT (0004) appears to be the leader due to its high market cap and clear focus on ai-driven blockchain systems.",
-        "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Crypto Integration",
-        "description": "This meta is centered around the integration of AI and blockchain technology, with tokens often referencing AI-driven blockchain systems, AI-based governance, or AI-powered DeFi protocols.",
-        "defining_signals": [
-          "Tokens referencing AI-driven blockchain systems (e.g., MoltPump, Moltmint).",
-          "Tokens with AI-based governance or decision-making (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with AI-powered DeFi protocols (e.g., MoltPump, Moltmint).",
-          "Tokens with AI-based tokenomics or economic models (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with AI-based security or privacy features (e.g., RADR, Moltmint)."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          },
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdidiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          }
-        ],
-        "leader_hint_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The AI and crypto integration meta is well-supported by multiple tokens with strong AI and blockchain integration narratives. The token EXPERIMENT (0004) appears to be the leader due to its high market cap and clear focus on AI-driven blockchain systems.",
-        "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Crypto Integration",
-        "description": "This meta is centered around the integration of AI and blockchain technology, with tokens often referencing AI-driven blockchain systems, ai-based governance, or ai-powered DeFi protocols.",
-        "defining_signals": [
-          "Tokens referencing ai-driven blockchain systems (e.g., MoltPump, Moltmint).",
-          "Tokens with ai-based governance or decision-making (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with ai-powered DeFi protocols (e.g., MoltPump, Moltmint).",
-          "Tokens with ai-based tokenomics or economic models (e.g., EXPERIMENT, Moltwallet).",
-          "Tokens with ai-based security or privacy features (e.g., RADR, Moltmint)."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhuKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          },
-          {
-            "token_symbol": "MOLTP",
-            "token_name": "MoltPump",
-            "token_address": "BUodWevrhoKdS5wktwRucV3JrR9JP4CZ6i1E9X5Cpump"
-          },
-          {
-            "token_symbol": "MOLTM",
-            "token_name": "Moltmint",
-            "token_address": "J69WFv8QGDzJNHiciYW2Ta1yzYM3N9ZA588XdJ78pump"
-          },
-          {
-            "token_symbol": "0004",
-            "token_name": "EXPERIMENT",
-            "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump"
-          },
-          {
-            "token_symbol": "MOLTW",
-            "token_name": "Moltwallet",
-            "token_address": "G9Q6FdohBbMuz34iDdA2izoR1XQQPpTrYhhCpump"
-          },
-          {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
-          }
-        ],
-        "leader_hint_token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The AI and crypto integration meta is well-supported by multiple tokens with strong ai and blockchain integration narratives. The token EXPERIMENT (0004) appears to be the leader due to its high market cap and clear focus on ai-driven blockchain systems.",
-        "leader_token": {
-          "token_symbol": "0004",
-          "token_name": "EXPERIMENT",
-          "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump",
-          "usd_market_cap": 391171.4
+          "token_symbol": "FREEMOLT",
+          "token_name": "FREEMOLT",
+          "token_address": "D6DWmyiCSezS2ZiVrf6npkHRWC3wgtjjoAbHd89PRzcY",
+          "usd_market_cap": 56692.04
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The AI and Crypto Integration meta is gaining momentum with tokens like EXPERIMENT leading the charge. The Meme and Internet Culture meta remains strong with Bonk and Pepe as top performers. The AI and Robotics meta is also showing signs of growth, with tokens like Mia Ko and Ava AI gaining traction. The Meme and Internet Culture meta is showing signs of fading as the novelty of meme-based tokens wears off. The AI and Crypto Integration meta is emerging as a new force in the market.",
+    "meta_rotation_note": "The 'AI Agent Ecosystem' and 'Meme-Driven Crypto' METAs are currently the most active and dominant, with strong community engagement and narrative momentum. The 'AI and Crypto Integration' and 'AI Agent Social Networks' are also gaining traction, showing signs of becoming more prominent. The 'AI-Powered Trading and Finance' META is emerging but still in early stages, with potential for growth as AI-driven financial tools gain more adoption.",
     "meta_leaders": [
       {
-        "meta_name": "AI and Robotics",
+        "meta_name": "AI-Powered Trading and Finance",
         "leader_token": {
-          "token_symbol": "META",
-          "token_name": "MetaDAO",
-          "token_address": "METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta",
-          "usd_market_cap": 95826470.0
+          "token_symbol": "SURGE",
+          "token_name": "SURGE",
+          "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg",
+          "usd_market_cap": 39062649.13
         }
       },
       {
-        "meta_name": "Meme and Internet Culture",
+        "meta_name": "AI Agent Ecosystem",
         "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 47562592.86
+          "token_symbol": "clawd",
+          "token_name": "clawdbot",
+          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
+          "usd_market_cap": 169772.73
         }
       },
       {
-        "meta_name": "AI and Crypto Integration",
+        "meta_name": "Meme-Driven Crypto",
         "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
+          "token_symbol": "10/10",
+          "token_name": "10/10 coin",
+          "token_address": "Hvkze6p1JSW7svxb1V5nFni4Sc2BifL48VVT6uB7pump",
+          "usd_market_cap": 85378.69
         }
       },
       {
-        "meta_name": "AI and Crypto Integration",
+        "meta_name": "AI Agent Social Networks",
         "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
-        }
-      },
-      {
-        "meta_name": "AI and Crypto Integration",
-        "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
+          "token_symbol": "CLAWGRID",
+          "token_name": "ClawGrid",
+          "token_address": "8cxSnKk13kvgKUcmAgy5HVZehustRa35N3JqGzGPBAGS",
+          "usd_market_cap": 63873.86
         }
       },
       {
         "meta_name": "AI and Crypto Integration",
         "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
-        }
-      },
-      {
-        "meta_name": "AI and Crypto Integration",
-        "leader_token": {
-          "token_symbol": "RADR",
-          "token_name": "RADR",
-          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
-          "usd_market_cap": 1755018.4
-        }
-      },
-      {
-        "meta_name": "AI and Crypto Integration",
-        "leader_token": {
-          "token_symbol": "0004",
-          "token_name": "EXPERIMENT",
-          "token_address": "2v7vQafL3CcFbmLHHhwF6vQ2Wb5qSqSZ1MZr4M3Epump",
-          "usd_market_cap": 391171.4
+          "token_symbol": "FREEMOLT",
+          "token_name": "FREEMOLT",
+          "token_address": "D6DWmyiCSezS2ZiVrf6npkHRWC3wgtjjoAbHd89PRzcY",
+          "usd_market_cap": 56692.04
         }
       }
     ]
