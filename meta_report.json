@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-03T21:08:31.536265Z",
+  "generated_at_utc": "2026-02-03T22:08:59.632684Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 181,
+  "token_context_count": 186,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 25 PVP group(s); excluding 42 token(s) from META prompt."
+    "Detected 24 PVP group(s); excluding 40 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 42,
+  "pvp_excluded_token_count": 40,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -167,26 +167,6 @@
           "token_address": "GUZsvBZkBfqa3s8Ys68EGLSaXQUNUyRToDHyj5TD4Bx",
           "usd_market_cap": 38294.22,
           "processed_at": "2026-02-03T16:25:19.762635Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "x",
-      "tokens": [
-        {
-          "token_symbol": "X",
-          "token_name": "XAI HOLDINGS LLC",
-          "token_address": "9EGX7GnrTpPN2MYSZNjW1vrcsfJ9epghmVxPrZWrpump",
-          "usd_market_cap": 39503.87,
-          "processed_at": "2026-02-02T22:01:37.527210Z"
-        },
-        {
-          "token_symbol": "X",
-          "token_name": "SpaceX",
-          "token_address": "8bMPXPGqccmsxEmr757fDSTw51H718aJbr1syQHjpump",
-          "usd_market_cap": 93117.25,
-          "processed_at": "2026-02-02T22:21:54.178184Z"
         }
       ]
     },
@@ -563,36 +543,116 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "NFT and Gaming-Related",
-        "description": "This META is characterized by tokens that are closely tied to NFTs, gaming, or virtual worlds. These tokens often leverage existing NFT communities or gaming ecosystems to drive adoption and engagement.",
+        "meta_name": "Elon Musk Ecosystem",
+        "description": "Tokens leveraging the cultural and business influence of Elon Musk and his ventures like SpaceX and xAI. These tokens often tie into the narrative of innovation, space exploration, and AI advancements.",
         "defining_signals": [
-          "Integration with NFT platforms or marketplaces",
-          "Leverage of gaming ecosystems or virtual worlds",
-          "Community-driven narratives with a focus on NFTs or gaming",
-          "Use of gaming-related themes or characters",
-          "Integration with blockchain-based games or virtual environments",
-          "Community-driven initiatives with a focus on NFTs or gaming"
+          "References to SpaceX, xAI, or Elon Musk's ventures",
+          "Narratives around space exploration and AI",
+          "Tokens with names like 'Musk Industries' or 'K2 Merger Sub 2'",
+          "Mentions of potential IPOs or equity proxies tied to Musk's companies",
+          "Utilization of Kardashev Scale or civilization-level concepts"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+            "token_symbol": "MUSK",
+            "token_name": "Musk Industries",
+            "token_address": "76pXijU1cGJP5bMQfQ3sJYK7EqqiqZfozpZQoArVpump"
           },
           {
-            "token_symbol": "KITTY",
-            "token_name": "Hello Kitty",
-            "token_address": "DFfPq2hHbJeunp1F6eNyuyvBHcPpnTqaawn2tAFUpump"
+            "token_symbol": "K2",
+            "token_name": "Kardashev II",
+            "token_address": "8aZEym6Uv5vuy2LQ9BYNSiSiiKS3JKJEhbiUgpQppump"
+          },
+          {
+            "token_symbol": "X",
+            "token_name": "SpaceX",
+            "token_address": "8bMPXPGqccmsxEmr757fDSTw51H718aJbr1syQHjpump"
+          },
+          {
+            "token_symbol": "ToTheStars",
+            "token_name": "SpaceX & xAI Together",
+            "token_address": "14DieZPb3JAQwAopBZF5GLGeykjT7A3pjee2muexpump"
+          },
+          {
+            "token_symbol": "BARRON",
+            "token_name": "Barron Coin",
+            "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump"
+          }
+        ],
+        "leader_hint_token_address": "8bMPXPGqccmsxEmr757fDSTw51H718aJbr1syQHjpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "The SpaceX token (X) has the highest market cap among this group and is directly tied to Elon Musk's ventures. It is also the most prominent token in this meta.",
+        "leader_token": {
+          "token_symbol": "BARRON",
+          "token_name": "Barron Coin",
+          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
+          "usd_market_cap": 136489163.36
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Culture and Internet Slang",
+        "description": "Tokens that derive their names and narratives from internet memes, slang, or viral content. These tokens often leverage humor, irony, or pop culture references to attract attention and community engagement.",
+        "defining_signals": [
+          "Names derived from viral internet memes or slang",
+          "Narratives that repurpose or reinterpret existing memes",
+          "Tokens with humorous or ironic descriptions",
+          "Use of internet slang or jargon in token names or descriptions",
+          "Community-driven branding with meme-like aesthetics"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "LOLITA",
+            "token_name": "Lolita Express",
+            "token_address": "dRpKt6fvjL3yb25gn3ZGGwkkwuAmkKM2EPAXufgpump"
+          },
+          {
+            "token_symbol": "BAN",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           },
           {
             "token_symbol": "PENGUIN",
             "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjG6GTTL5Ps3cqxKRTvpaJApump"
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "ORCA",
-            "token_name": "PENGUIN KILLER",
-            "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DW7HzLTePPhfzxFiRpump"
+            "token_symbol": "BDSM",
+            "token_name": "Buy Dip Sell Moon",
+            "token_address": "Ff8ShZ8t94Gp6RZpwPwHSbMND3hAxyyActuLbC3Ppump"
+          }
+        ],
+        "leader_hint_token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+        "confidence_0_100": 90,
+        "confidence_rationale": "The 'Comedian' token (BAN) has a strong meme-based narrative and is tied to a well-known internet meme. It has a significant market cap and is widely recognized in the community.",
+        "leader_token": {
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 70101201.17
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "NFT and Gaming",
+        "description": "Tokens that are closely tied to NFTs and gaming ecosystems. These tokens often leverage the popularity of gaming and digital collectibles to drive engagement and value.",
+        "defining_signals": [
+          "Tokens with NFT-related names or descriptions",
+          "Integration with gaming platforms or ecosystems",
+          "Narratives around digital collectibles or virtual assets",
+          "Community-driven NFT projects or games",
+          "Utilization of gaming slang or jargon"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
             "token_symbol": "MILADY",
@@ -602,155 +662,50 @@
           {
             "token_symbol": "MOONDOGE",
             "token_name": "MOONDOGE",
-            "token_address": "XV6vmbSJv7EhqMvzxT65yD28UD4DMAnqtVBkqKYpump"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_address": "XV6vmbv7EhqMvzxT65yD28UD4DMAnqtVBkqKY8pump"
           },
           {
             "token_symbol": "HACHI",
             "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjgjm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "BIRB",
+            "token_name": "Moonbirds",
+            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpknwG"
           }
         ],
-        "leader_hint_token_address": "DezXAX8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong integration with NFTs and gaming ecosystems across multiple tokens, with high engagement and market caps indicating active interest in NFT and gaming-related crypto projects.",
+        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "The 'Nietzschean Penguin' token has a strong NFT and gaming narrative and is tied to a well-known meme. It has a significant market cap and is widely recognized in the community.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 637436437.1
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 36719978.84
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "Political and Social Commentary",
-        "description": "This META is characterized by tokens that leverage political or social commentary as a core theme, often referencing political figures, social movements, or cultural phenomena. These tokens often aim to spark discussion or commentary on societal issues.",
+        "description": "Tokens that incorporate political or social commentary into their narratives. These tokens often leverage current events, political figures, or social movements to create a sense of relevance and community engagement.",
         "defining_signals": [
-          "References to political figures or movements",
-          "Use of social commentary or satire in token narratives",
-          "Incorporation of cultural or historical references to political events",
-          "Community-driven narratives with a focus on social issues",
-          "Tokens that reference political slogans or hashtags",
-          "Leverage of political or social memes for engagement"
+          "References to political figures or events",
+          "Narratives that critique or comment on social issues",
+          "Tokens with names or descriptions that allude to political movements",
+          "Utilization of political slang or jargon",
+          "Community-driven themes around political or social causes"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "BARRON",
-            "token_name": "Barron Coin",
-            "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump"
-          },
           {
             "token_symbol": "FLOTUS",
             "token_name": "OFFICIAL FIRST LADY OF THE US",
-            "token_address": "4eenUq6QSjcxwAGXj2roMnKv3JBY5Syt2nFZww1wpump"
-          },
-          {
-            "token_symbol": "MUSK",
-            "token_name": "Musk Industries",
-            "token_address": "76pXijU1cGJP5bMQfQ3sJYK7EqqiqZfozpZQoArVpump"
-          },
-          {
-            "token_symbol": "WAS",
-            "token_name": "White Anglo Saxon Protestant",
-            "token_address": "7jruGV3eVKBeoeDkMeELPso8g7b1hzKpo2JoARKnpump"
-          },
-          {
-            "token_symbol": "SCHWARTZES",
-            "token_name": "schwartzes",
-            "token_address": "7LrwQPbnZ2Kee2YDyV5AXRP6H3YgX4UEeZZ561J2pump"
-          },
-          {
-            "token_symbol": "JUSTICE",
-            "token_name": "Epstein Uncovered",
-            "token_address": "ANkPQZXwuej3uRyow4fmxNuZD3J4iJKLFDjhDPDpump"
-          },
-          {
-            "token_symbol": "BETC",
-            "token_name": "Buy The Children",
-            "token_address": "7p8hs6fZwTXvSYESdCdHgWCXVsVcxTrX1cs3Q4yNGpump"
-          },
-          {
-            "token_symbol": "Liberté?",
-            "token_name": "Liberté?",
-            "token_address": "61YY64JA42WANDmzj79hgaMnM3y3NKrNT22f3gzSpump"
-          },
-          {
-            "token_symbol": "PRich",
-            "token_name": "PRE-RICH",
-            "token_address": "Dob5TVKdisbwk1QSppADF8knxXtLR6DovxHGqaocpump"
-          },
-          {
-            "token_symbol": "21",
-            "token_name": "2131KOBUSHIDE",
-            "token_address": "4vGHdzcNrDf8XVE8H19Rqea86RULz7xi89ew1sSJpump"
-          },
-          {
-            "token_symbol": "Hitler",
-            "token_name": "Not wrong, Just early",
-            "token_address": "8WhwakwRPRhdPz7GFbSwwZd2uNoThSV1ok51ehhJpump"
-          },
-          {
-            "token_symbol": "BLOX",
-            "token_name": "ICEBLOX",
-            "token_address": "ALvaDzXmaVBgatYAvUND7QALVomoBsoNjuKQCRcRpump"
-          }
-        ],
-        "leader_hint_token_address": "4eenUq6QSjcxwAGXJ2roMnKv3JBY5Syt2nFZww1wpump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong political and social commentary themes across multiple tokens, with high engagement and market caps indicating active interest in politically or socially driven crypto projects.",
-        "leader_token": {
-          "token_symbol": "FLOTUS",
-          "token_name": "OFFICIAL FIRST LADY OF THE US",
-          "token_address": "4eenUq6QSjcxwAGXj2roMnKv3JBY5Syt2nFZww1wpump",
-          "usd_market_cap": 179365314.89
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme-Driven Crypto",
-        "description": "This META is characterized by tokens leveraging internet memes, viral phrases, or pop culture references to drive community engagement and speculative interest. These tokens often have no prior non-crypto cultural origin and are created specifically for the crypto space.",
-        "defining_signals": [
-          "Use of viral internet memes or phrases as the token's name or theme",
-          "Lack of verifiable non-crypto cultural origin for the token's name or concept",
-          "Community-driven narratives with no official documentation or team transparency",
-          "High engagement on social media and crypto platforms like Solana and pump.fun",
-          "Utilization of humor, satire, or dark themes to attract attention",
-          "Frequent association with trending topics or conspiracy theories"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "FROK",
-            "token_name": "FROK",
-            "token_address": "82nqVDkgwtb8FyLJ2KKGNsWmNeqmzw2tUwSMKnc3pump"
+            "token_address": "4eenUq6QSJcxwAGXj2roMnKv3JBY5Syt2nFZww1wpump"
           },
           {
             "token_symbol": "BARRON",
             "token_name": "Barron Coin",
-            "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump"
+            "token_address": "EBCgsdDFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump"
           },
           {
             "token_symbol": "BDSM",
@@ -758,276 +713,121 @@
             "token_address": "Ff8ShZ8t94Gp6RZpwPwHSbMND3hAxyyActuLbC3Ppump"
           },
           {
-            "token_symbol": "FUCK",
-            "token_name": "fuckcoin",
-            "token_address": "HA6skYz4TYcZNfxYfwQxt31co6yGBCxmi1gcBLYiXLfc"
-          },
-          {
-            "token_symbol": "DENT",
-            "token_name": "DEEZ NUTS",
-            "token_address": "DWSXaGq2mLNeYw685TAg3cx2bH5bVmHUxwwS7pgkpump"
-          },
-          {
-            "token_symbol": "THICCOIN",
-            "token_name": "Thiccoin",
-            "token_address": "H1ezn29FrF7Mn6XuRE2ipFnrZgZM2EMerSCJmjmapump"
-          },
-          {
-            "token_symbol": "GOY",
-            "token_name": "GOY",
-            "token_address": "FYtP5AiiB4eUjVA88EeZS73PDpi7RPLusdqtXizYpump"
-          },
-          {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "ORCA",
-            "token_name": "PENGUIN KILLER",
-            "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DW7HzLTePPhfzxFiRpump"
+            "token_symbol": "WASK",
+            "token_name": "Wokecraft",
+            "token_address": "6PcvESReqRNXbN9s17xVh5HEPYh1r6QowCAaed3pump"
           },
           {
             "token_symbol": "Wojak",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong evidence of recurring meme-based themes across multiple tokens, with high engagement and market caps indicating active community support.",
+        "leader_hint_token_address": "4eenUq6QSJcxwAGXj2roMnKv3JBY5Syt2nFZww1wpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "The 'FLOTUS' token has a strong political narrative and is tied to a well-known figure. It has a significant market cap and is widely recognized in the community.",
         "leader_token": {
-          "token_symbol": "BARRON",
-          "token_name": "Barron Coin",
-          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
-          "usd_market_cap": 136489163.36
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 9569825.14
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Community-Driven Projects",
-        "description": "This META is characterized by tokens that are driven by community initiatives and grassroots movements. These tokens often lack formal documentation or team transparency but rely on community engagement and social media presence to drive adoption.",
+        "meta_name": "AI and Automation",
+        "description": "Tokens that focus on AI-driven technologies, automation, and the integration of artificial intelligence into various applications. These tokens often highlight the potential of AI to revolutionize industries and improve efficiency.",
         "defining_signals": [
-          "Lack of official documentation or team transparency",
-          "Community-driven narratives with no clear roadmap",
-          "High engagement on social media and crypto platforms",
-          "Frequent use of community-driven initiatives or events",
-          "Lack of formal governance or technical documentation",
-          "Community-driven funding or charitable initiatives"
+          "Tokens with AI-related names or descriptions",
+          "Focus on automation, AI agents, or machine learning",
+          "Narratives around AI-driven productivity or decision-making",
+          "Integration with AI platforms or tools",
+          "Claims of enabling AI-based services or applications"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "FROK",
-            "token_name": "FROK",
-            "token_address": "82nqVDkgwtb8FyLJ2KKGNsWmNeqmzw2tUwSMKnc3pump"
-          },
-          {
-            "token_symbol": "BARRON",
-            "token_name": "Barron Coin",
-            "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump"
-          },
-          {
-            "token_symbol": "BDSM",
-            "token_name": "Buy Dip Sell Moon",
-            "token_address": "Ff8ShZ8t94Gg6RZpwPwHSbMND3hAxyyActuLbC3Ppump"
-          },
-          {
-            "token_symbol": "FUCK",
-            "token_name": "fuckcoin",
-            "token_address": "HA6skYz4TYcZNfxYfwQxt31co6yGBCxmi1gcBLYiXLfc"
-          },
-          {
-            "token_symbol": "DENT",
-            "token_name": "DEEZ NUTS",
-            "token_address": "DWSXaGq2mLNeYw685TAg3cx2bH5bVmHUxwwS7pgkpump"
-          },
-          {
-            "token_symbol": "THICCOIN",
-            "token_name": "Thiccoin",
-            "token_address": "H1ezn29FrF7Mn6XuRE2ipFnrZgZM2EMerSCJmjmapump"
-          },
-          {
-            "token_symbol": "GOY",
-            "token_name": "GOY",
-            "token_address": "FYtP5AiiB4eUjVA88EeZS73PDpi7RPLusdqtXizYpump"
-          },
-          {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "ORCA",
-            "token_name": "PENGUIN KILLER",
-            "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DW7HzLTePPhfzxFiRpump"
-          },
-          {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
-          }
-        ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong evidence of community-driven initiatives across multiple tokens, with high engagement and market caps indicating active community support.",
-        "leader_token": {
-          "token_symbol": "BARRON",
-          "token_name": "Barron Coin",
-          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
-          "usd_market_cap": 136489163.36
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Driven Utility",
-        "description": "This META is characterized by tokens that leverage AI as a core component of their utility, often involving AI agents, automation, or AI-generated content. These tokens are typically positioned as tools for productivity, automation, or AI-driven ecosystems.",
-        "defining_signals": [
-          "AI agents or AI-driven automation as a core feature",
-          "Token utility tied to AI-generated content or AI-assisted tasks",
-          "Integration with AI platforms or tools (e.g., Claude, Gemini)",
-          "Claims of AI-driven governance or decision-making",
-          "Focus on AI-generated art, music, or content creation",
-          "Community-driven AI initiatives or AI-based games"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "OPENCLAW",
-            "token_name": "OpenClaw",
-            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
-          },
-          {
-            "token_symbol": "JARVIS",
-            "token_name": "OpenClaw Jarvis",
-            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
-          },
-          {
-            "token_symbol": "THINK",
-            "token_name": "ClaudeThinks",
-            "token_address": "fpnBHZZLouozB9eZCzkhxBeGSv19JZjKvmZ1wuiBWWw"
-          },
           {
             "token_symbol": "FCOD",
             "token_name": "Fcode AI",
             "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro"
           },
           {
-            "token_symbol": "ORCA",
-            "token_name": "PENGUIN KILLER",
-            "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DW7HzLTePPhfzxFiRpump"
+            "token_symbol": "ORGO",
+            "token_name": "Orgo",
+            "token_address": "G85CQEBqwsoNe3qkb5oXXpdZFh7uhYXhDRsQAM4aJu"
           },
           {
-            "token_symbol": "SGL",
-            "token_name": "x402 Singularity Layer",
-            "token_address": "5c4HyD2rSShqnTsf5z3SaoD2H3GE452u2CUuYjviBAGS"
+            "token_symbol": "TWIN",
+            "token_name": "TWIN AI",
+            "token_address": "3cMkGbySPYnJALRhJzJjXsHbfWVEeLNX1iiiZg9hpump"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjgjm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "OPENCLAW",
+            "token_name": "OpenClaw",
+            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLlEBi3RGXedKTrRAGS"
-          },
-          {
-            "token_symbol": "RENTA",
-            "token_name": "rentahuman",
-            "token_address": "5MmQUFdPisppdVfjitL6hs492GyikCFnsBWYtuAqpump"
-          },
-          {
-            "token_symbol": "CLIPPY",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkK7KApump"
+            "token_symbol": "PAYAI",
+            "token_name": "PayAI",
+            "token_address": "PAYmo6moDF3Ro3X6bU2jwe2UdBnBhv8YjLgL1j4DxGu"
           }
         ],
-        "leader_hint_token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong focus on AI-driven utility across multiple tokens, with clear integration of AI tools and platforms. High engagement and market caps indicate active interest in AI-related crypto projects.",
+        "leader_hint_token_address": "G85CQEBqwSORe3qkb5oXXpdZFh7uhYXhDRsQAM4aJU",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The 'Orgo' token (ORGO) has a strong focus on AI and automation, with a clear narrative around AI-driven applications. It has a significant market cap and is well-positioned in the AI meta.",
         "leader_token": {
-          "token_symbol": "ORCA",
-          "token_name": "PENGUIN KILLER",
-          "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DW7HzLTePPhfzxFiRpump",
-          "usd_market_cap": 1975858.62
+          "token_symbol": "PAYAI",
+          "token_name": "PayAI",
+          "token_address": "PAYmo6moDF3Ro3X6bU2jwe2UdBnBhv8YjLgL1j4DxGu",
+          "usd_market_cap": 7753983.35
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Meme-Driven Crypto' and 'AI-Driven Utility' METAs are currently the most active, with strong engagement and market caps. The 'Political and Social Commentary' and 'NFT and Gaming-Related' METAs are also gaining traction. However, the 'Community-Driven Projects' META is showing signs of fading as newer, more specific themes emerge.",
+    "meta_rotation_note": "The 'Elon Musk Ecosystem' and 'Meme Culture and Internet Slang' METAs are currently the most active and influential, with strong community engagement and market presence. The 'AI and Automation' and 'Political and Social Commentary' METAs are emerging, showing signs of growing interest and adoption. The 'NFT and Gaming' META is fading slightly as newer tokens in the meme and AI categories gain traction.",
     "meta_leaders": [
       {
-        "meta_name": "NFT and Gaming-Related",
+        "meta_name": "Elon Musk Ecosystem",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 637436437.1
+          "token_symbol": "BARRON",
+          "token_name": "Barron Coin",
+          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
+          "usd_market_cap": 136489163.36
+        }
+      },
+      {
+        "meta_name": "Meme Culture and Internet Slang",
+        "leader_token": {
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 70101201.17
+        }
+      },
+      {
+        "meta_name": "NFT and Gaming",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 36719978.84
         }
       },
       {
         "meta_name": "Political and Social Commentary",
         "leader_token": {
-          "token_symbol": "FLOTUS",
-          "token_name": "OFFICIAL FIRST LADY OF THE US",
-          "token_address": "4eenUq6QSjcxwAGXj2roMnKv3JBY5Syt2nFZww1wpump",
-          "usd_market_cap": 179365314.89
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 9569825.14
         }
       },
       {
-        "meta_name": "Meme-Driven Crypto",
+        "meta_name": "AI and Automation",
         "leader_token": {
-          "token_symbol": "BARRON",
-          "token_name": "Barron Coin",
-          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
-          "usd_market_cap": 136489163.36
-        }
-      },
-      {
-        "meta_name": "Community-Driven Projects",
-        "leader_token": {
-          "token_symbol": "BARRON",
-          "token_name": "Barron Coin",
-          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
-          "usd_market_cap": 136489163.36
-        }
-      },
-      {
-        "meta_name": "AI-Driven Utility",
-        "leader_token": {
-          "token_symbol": "ORCA",
-          "token_name": "PENGUIN KILLER",
-          "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DW7HzLTePPhfzxFiRpump",
-          "usd_market_cap": 1975858.62
+          "token_symbol": "PAYAI",
+          "token_name": "PayAI",
+          "token_address": "PAYmo6moDF3Ro3X6bU2jwe2UdBnBhv8YjLgL1j4DxGu",
+          "usd_market_cap": 7753983.35
         }
       }
     ]
