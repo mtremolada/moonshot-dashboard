@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-03T19:07:14.025097Z",
+  "generated_at_utc": "2026-02-03T20:07:50.149218Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 179,
+  "token_context_count": 178,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 25 PVP group(s); excluding 40 token(s) from META prompt."
+    "Detected 26 PVP group(s); excluding 42 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 40,
+  "pvp_excluded_token_count": 42,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -493,6 +493,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "molt",
+      "tokens": [
+        {
+          "token_symbol": "MOLT",
+          "token_name": "Moltbook 0xB695559b26BB2c9703ef1935c37AeaE9526bab07",
+          "token_address": "5aBq62meCaFpR8yb2voGAjucDJZP3hvfekK5DduX8Yot",
+          "usd_market_cap": 849362049.0,
+          "processed_at": "2026-02-03T12:00:35.239139Z"
+        },
+        {
+          "token_symbol": "MOLT",
+          "token_name": "MOLTBOOK",
+          "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump",
+          "usd_market_cap": 10453.25,
+          "processed_at": "2026-02-03T19:47:31.137205Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "jew",
       "tokens": [
         {
@@ -556,300 +576,184 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Crypto-Political Satire",
-        "description": "Tokens leveraging political figures, ideologies, or events as a satirical or ironic commentary. These tokens often use political memes or references to build community and narrative, sometimes with a satirical or subversive tone.",
+        "meta_name": "Meme-Driven Finance",
+        "description": "Meme tokens continue to dominate new launches, with themes rooted in internet culture, historical references, and pop culture. These tokens often leverage humor, irony, or subversion of traditional finance concepts to attract community engagement.",
         "defining_signals": [
-          "Use of political figures or ideologies in branding",
-          "Satirical or ironic framing of political events",
-          "Community-driven narratives around political memes",
-          "Recontextualization of political slogans or terms",
-          "Leveraging political controversies or scandals"
+          "Meme-based branding or naming",
+          "Community-driven narratives",
+          "Satirical or ironic financial themes",
+          "Leveraging viral internet culture",
+          "High social media engagement"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BIRB",
+            "token_name": "Moonbirds",
+            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+          },
+          {
+            "token_symbol": "MONKI",
+            "token_name": "Monki Business",
+            "token_address": "G5YdwbcsDdkpbenp4qVgGskYacofB9L627SHVr8Upump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
+          },
+          {
+            "token_symbol": "BARRON",
+            "token_name": "Barron Coin",
+            "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump"
+          },
+          {
+            "token_symbol": "BDSM",
+            "token_name": "Buy Dip Sell Moon",
+            "token_address": "Ff8ShZ8t94Gp6RZpwPwHSbMND3hAxyyActuLbC3Ppump"
+          }
+        ],
+        "leader_hint_token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFppknwG",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Strong meme traction and consistent community engagement across multiple tokens.",
+        "leader_token": {
+          "token_symbol": "BARRON",
+          "token_name": "Barron Coin",
+          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
+          "usd_market_cap": 136489163.36
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto-Political Satire",
+        "description": "Tokens with political themes or satirical takes on current events are emerging, often leveraging political memes, historical references, or ideological narratives to attract attention and community support.",
+        "defining_signals": [
+          "Political or ideological themes",
+          "Satirical or satirical commentary",
+          "Historical or current event references",
+          "Community-driven political narratives",
+          "Meme-based political humor"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "BARRON",
-            "token_name": "BARRON",
-            "token_address": "pAA3VznTTnS22JERrJ2okMK3hFebbw8dEpWph6UCf6USA"
+            "token_name": "Barron Coin",
+            "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump"
           },
           {
-            "token_symbol": "FLOTUS",
-            "token_name": "OFFICIAL FIRST LADY OF THE US",
-            "token_address": "4eenUq6QSjcxwAGXj2roMnKv3JBY5Syt2nFZww1wpump"
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           },
           {
-            "token_symbol": "BANN",
-            "token_name": "BAN",
-            "token_address": "4BmaxxckzuAnFZANYP8uZ4MQUBLoKBHxbx1xbZSDbank"
+            "token_symbol": "BDSM",
+            "token_name": "Buy Dip Sell Moon",
+            "token_address": "Ff8ShZ8t94Gp6RZpwPwHSbMND3hAxyyActuLbC3Ppump"
           },
           {
-            "token_symbol": "BANN",
-            "token_name": "BAN",
-            "token_address": "4BmaxxckzuAnFZANYP8uZ4MQUBLoKBHxbx1xbZSDbank"
+            "token_symbol": "BLOX",
+            "token_name": "ICEBLOX",
+            "token_address": "ALvaDzXmaVBgatYAvUND7QALVomoBsoNjuKQCRcRpump"
           },
           {
-            "token_symbol": "BANN",
-            "token_name": "BAN",
-            "token_address": "4BmaxxckzuAnFZANYP8uZ4MQUBLoKBHxb1xbZSDbank"
+            "token_symbol": "BLOX",
+            "token_name": "ICEBLOX",
+            "token_address": "ALvaDzXmaVBgatYYAvUND7QALVomoBsoNjuKQCRcRpump"
           },
           {
-            "token_symbol": "BANN",
-            "token_name": "BANN",
-            "token_address": "4BmaxxckzuAnFZANYP8uZ4MQUBLoKBHxbx1xbZSDbank"
+            "token_symbol": "BLOX",
+            "token_name": "ICEBLOX",
+            "token_address": "ALvaDzXmaVBgatYYYYAvUND7QALVomoBsoNjuKQCRcRpump"
           }
         ],
-        "leader_hint_token_address": "4eenUq6QSjcxwAGXJ2roMnKv3JBY5Syt2nFZww1wpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong political meme integration with active community engagement and clear satirical narratives.",
+        "leader_hint_token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Emerging trend in political meme tokens, though still niche and fragmented.",
         "leader_token": {
-          "token_symbol": "FLOTUS",
-          "token_name": "OFFICIAL FIRST LADY OF THE US",
-          "token_address": "4eenUq6QSjcxwAGXj2roMnKv3JBY5Syt2nFZww1wpump",
-          "usd_market_cap": 179365314.89
+          "token_symbol": "BARRON",
+          "token_name": "Barron Coin",
+          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
+          "usd_market_cap": 136489163.36
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Powered Meme Tokens",
-        "description": "Tokens that blend AI utility with meme culture, often using AI-generated content or AI-driven narratives. These tokens position themselves as the next evolution of meme coins, leveraging both AI and internet humor.",
+        "meta_name": "AI-Powered Trading and Finance",
+        "description": "Tokens focused on AI-driven trading, predictive analytics, and financial automation are gaining attention. These projects often emphasize algorithmic trading, real-time market analysis, and decentralized financial tools.",
         "defining_signals": [
-          "AI-generated content as part of the token narrative",
-          "Meme-based branding with AI twist",
-          "Community-driven AI meme generation",
-          "Integration with AI platforms for meme creation",
-          "Use of AI to evolve the meme or token narrative"
+          "AI-driven trading or analytics",
+          "Algorithmic financial tools",
+          "Decentralized trading infrastructure",
+          "Predictive analytics or market insights",
+          "Integration with DeFi protocols"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "SURGE",
+            "token_name": "SURGE",
+            "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg"
+          },
+          {
+            "token_symbol": "PTERM",
+            "token_name": "Pigeon Terminal",
+            "token_address": "2LsTCDtTc4T3LBtBMQvhuDB1BgxfF5vhNBtrLVTyKWHm"
+          },
+          {
+            "token_symbol": "FUNDICO",
+            "token_name": "Fundico",
+            "token_address": "HSq9Ao7Sgkd1i8eNFboqMJSoAietFCRr3ubidJ7sBAGS"
+          },
+          {
+            "token_symbol": "PAYAI",
+            "token_name": "PayAI",
+            "token_address": "PAYmo6moDF3Ro3X6bU2jwe2UdBnBhv8YjLgL1j4DxGu"
           },
           {
             "token_symbol": "ORCA",
-            "token_name": "PENGUIN KILLER",
+            "token_name": "Penguin Killer",
             "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DW7HzLTePPhfzxFiRpump"
-          },
-          {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
-          },
-          {
-            "token_symbol": "MONKI",
-            "token_name": "Monki Business",
-            "token_address": "G5YdwbcsDdkpbenp4qVgGskYacofB9L627SHVr8Upump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
-          }
-        ],
-        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong meme culture integration with AI elements, active community engagement, and clear AI-driven narratives.",
-        "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 70865370.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Meme Tokens",
-        "description": "Tokens that blend AI utility with meme culture, often using AI-generated content or AI-driven narratives. These tokens position themselves as the next evolution of meme coins, leveraging both AI and internet humor.",
-        "defining_signals": [
-          "AI-generated content as part of the token narrative",
-          "Meme-based branding with AI twist",
-          "Community-driven AI meme generation",
-          "Integration with AI platforms for meme creation",
-          "Use of AI to evolve the meme or token narrative"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "ORCA",
-            "token_name": "PENGUIN KILLER",
-            "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DT7HzLTePPhfzxFiRpump"
-          },
-          {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
-          },
-          {
-            "token_symbol": "MONKI",
-            "token_name": "Monki Business",
-            "token_address": "G5YdwbcsDdkpbenp4qVgGskYacofB9L627SHVr8Upump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
-          }
-        ],
-        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong meme culture integration with AI elements, active community engagement, and clear AI-driven narratives.",
-        "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 70865370.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Meme Tokens",
-        "description": "Tokens that blend AI utility with meme culture, often using AI-generated content or AI-driven narratives. These tokens position themselves as the next evolution of meme coins, leveraging both AI and internet humor.",
-        "defining_signals": [
-          "AI-generated content as part of the token narrative",
-          "Meme-based branding with AI twist",
-          "Community-driven AI meme generation",
-          "Integration with AI platforms for meme creation",
-          "Use of AI to evolve the meme or token narrative"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "ORCA",
-            "token_name": "PENGUIN KILLER",
-            "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DT7HzLTePPhfzxFiRpump"
-          },
-          {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
-          },
-          {
-            "token_symbol": "MONki",
-            "token_name": "Monki Business",
-            "token_address": "G5YdwbcsDdkpbenp4qVgGskYacofB9L627SHVr8Upump"
-          },
-          {
-            "token_symbol": "RAaaaaH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
-          }
-        ],
-        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong meme culture integration with AI elements, active community engagement, and clear ai-driven narratives.",
-        "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 70865370.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Meme Tokens",
-        "description": "Tokens that blend AI utility with meme culture, often using AI-generated content or ai-driven narratives. These tokens position themselves as the next evolution of meme coins, leveraging both ai and internet humor.",
-        "defining_signals": [
-          "AI-generated content as part of the token narrative",
-          "Meme-based branding with ai twist",
-          "Community-driven ai meme generation",
-          "Integration with ai platforms for meme creation",
-          "Use of ai to evolve the meme or token narrative"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "ORCA",
-            "token_name": "PENGUIN KILLER",
-            "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DT7HzLTePPhfzxFiRpump"
-          },
-          {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
-          },
-          {
-            "token_symbol": "monki",
-            "token_name": "Monki Business",
-            "token_address": "G5Ydwb8Upump"
-          },
-          {
-            "token_symbol": "raaaaaH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
-          }
-        ],
-        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6gtTL5Ps3cqxKRTvpaJApump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong meme culture integration with ai elements, active community engagement, and clear ai-driven narratives.",
-        "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 70865370.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens leveraging AI as a core utility for tasks like automation, governance, and agent-based interactions. These tokens often position themselves as enablers for AI ecosystems, offering access to tools, governance, or staking.",
-        "defining_signals": [
-          "AI-native utility claims (e.g., agent deployment, task automation)",
-          "Integration with AI platforms or tools (e.g., Fcode, OpenClaw)",
-          "Tokenized access to AI services or governance",
-          "Claims of AI-driven yield generation or decision-making",
-          "Focus on AI agent collaboration or swarm intelligence"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
-          },
-          {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
           },
           {
             "token_symbol": "TWIN",
             "token_name": "TWIN AI",
-            "token_address": "3cMkGbySPYnJALRhJzJjXsHbfWVEeLNX1iiiZg9hpump"
+            "token_address": "3cMkGbySPYnJALRhJzJjXsHbfVEeLNX1iiiZg9hpump"
+          }
+        ],
+        "leader_hint_token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Growing interest in AI-driven financial tools and algorithmic trading.",
+        "leader_token": {
+          "token_symbol": "SURGE",
+          "token_name": "SURGE",
+          "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg",
+          "usd_market_cap": 41265147.62
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Utility",
+        "description": "Tokens leveraging AI agents for automation, governance, and task execution are gaining traction. These tokens often position themselves as enablers for decentralized AI ecosystems, with utility in governance, staking, or access to AI tools.",
+        "defining_signals": [
+          "AI agent-based utility models",
+          "Governance or staking for AI ecosystems",
+          "Cross-chain or multi-platform integration",
+          "Tokenized access to AI tools or services",
+          "Community-driven AI development"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "FCOD",
+            "token_name": "Fcode AI",
+            "token_address": "9NiHcbT8EohKJid1RdU3232tATmM1CvYemTeCP5iwro"
           },
           {
-            "token_symbol": "JARVIS",
-            "token_name": "OpenClaw Jarvis",
-            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
+            "token_symbol": "ORGO",
+            "token_name": "Orgo",
+            "token_address": "G85CQEBqwsoe3qkb5oXXpdZFh7uhYXhDRsQAM4aJuBLV"
           },
           {
             "token_symbol": "THINK",
@@ -857,201 +761,131 @@
             "token_address": "fpnBHZZLouozB9eZCzkhxBeGSv19JZjKvmZ1wuiBWWw"
           },
           {
+            "token_symbol": "JARVIS",
+            "token_name": "OpenClaw Jarvis",
+            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
+          },
+          {
             "token_symbol": "RENTA",
-            "token_name": "rentahuman",
-            "token_address": "5MxQUFdPisppdVfjitL6hs492GyikCFnsBWYtuAqpump"
+            "token_name": "Rentahuman",
+            "token_address": "5MmQUFdPisppdVfjitL6hs492GyikCFnsBWYtuAqpump"
+          },
+          {
+            "token_symbol": "HUMAN",
+            "token_name": "HumanAPI",
+            "token_address": "C8pioqpW4KktWb6mEsPt2fGh3z1EabQRNh6NN4uEpump"
           }
         ],
-        "leader_hint_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+        "leader_hint_token_address": "G85CQEBqwsoe3qkb5oXXpdZFh7uhYXhDRsQAM4aJuBLV",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong alignment with multiple AI utility claims, integration with AI platforms, and active community engagement.",
+        "confidence_rationale": "Strong alignment with AI agent narratives and growing interest in decentralized AI infrastructure.",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 46180915.91
+          "token_symbol": "ORGO",
+          "token_name": "Orgo",
+          "token_address": "G85CQEBqwsoe3qkb5oXXpdZFh7uhYXhDRsQAM4aJuBLV",
+          "usd_market_cap": 5832999.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Reclamation",
-        "description": "Tokens repurposing controversial or niche internet memes, often with a twist or reclamation angle. These tokens leverage existing cultural references to build community and narrative, sometimes with a satirical or subversive tone.",
+        "meta_name": "AI-Powered Social and Gaming",
+        "description": "Tokens integrating AI into social platforms and gaming environments are gaining traction. These projects often focus on AI-driven interactions, virtual worlds, and community-driven content creation.",
         "defining_signals": [
-          "Use of controversial or niche internet memes",
-          "Reclamation or subversion of existing cultural references",
-          "Satirical or ironic framing of the meme",
-          "Community-driven narratives around the meme",
-          "Historical or cultural recontextualization"
+          "AI-driven social interactions",
+          "Virtual world integration",
+          "Community-driven content creation",
+          "AI-powered gaming mechanics",
+          "Decentralized social platforms"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
-          },
-          {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "FUCK",
-            "token_name": "fuckcoin",
-            "token_address": "HiNkp9CdKqTgPtB6WnnrrUAu9YwQqnrvT6Ceuxoypump"
-          },
-          {
-            "token_symbol": "DENT",
-            "token_name": "DEEZ NUTS",
-            "token_address": "DWSXaGq2qLNeYw685TAg3cx2bH5bVmHUxwwS7pgkpump"
-          },
-          {
-            "token_symbol": "THIC",
-            "token_name": "Thiccoin",
-            "token_address": "H1ezn29FrF7Mn6XuRE2ipFnrZgZM2EMerSCJmjmapump"
-          },
-          {
-            "token_symbol": "BARRON",
-            "token_name": "BARRON",
-            "token_address": "pA3VznTTnS22JERJ2okMK3hFebbw8dEpWph6UCf6USA"
-          }
-        ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong community engagement and clear meme reclamation narratives, with active social media presence.",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 9569825.14
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Meme Tokens",
-        "description": "Tokens that blend AI utility with meme culture, often using AI-generated content or ai-driven narratives. These tokens position themselves as the next evolution of meme coins, leveraging both ai and internet humor.",
-        "defining_signals": [
-          "AI-generated content as part of the token narrative",
-          "Meme-based branding with ai twist",
-          "Community-driven ai meme generation",
-          "Integration with ai platforms for meme creation",
-          "Use of ai to evolve the meme or token narrative"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6gtTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "VOLTCORE",
+            "token_name": "Voltcore: The World",
+            "token_address": "Gpm4MP9rRMHzN1FRQP8xhayDfeoKoTG23RJvDATUpump"
           },
           {
             "token_symbol": "ORCA",
-            "token_name": "PENGUIN KILLER",
-            "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DT7HzLTePPhfzxFiRpump"
+            "token_name": "Penguin Killer",
+            "token_address": "Gu89jsuZDnwYsMpPV5J49Z5DW7HzLTePPhfzxFiRpump"
           },
           {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMM2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+            "token_symbol": "SPLAT",
+            "token_name": "Splatworld",
+            "token_address": "6wcPQWr9zQgzkaieGaWqfwZaZJMC7xWRtVPm8ZKWpump"
           },
           {
-            "token_symbol": "monki",
-            "token_name": "Monki Business",
-            "token_address": "G5YdwbcsDdkpbenp4qVgGskYacofB9L627SHVr8Upump"
+            "token_symbol": "MUSK",
+            "token_name": "Musk Industries",
+            "token_address": "76pXijU1cGJP5bMQfQ3sJYK7EqqiqZfozpZQoArVpump"
           },
           {
-            "token_symbol": "raaaaaH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+            "token_symbol": "BLOX",
+            "token_name": "ICEBLOX",
+            "token_address": "ALvaDzXmaVBgatYatYYAvUND7QALVomoBsoNjuKQCRcRpump"
           },
           {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
+            "token_symbol": "BLOX",
+            "token_name": "ICEBLOX",
+            "token_address": "ALvaDzXmaVBgatatatatYAvUND7QALVomoBsoNjuKQCRcRpump"
           }
         ],
-        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6gtTL5Ps3cqxKRTvpaJApump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong meme culture integration with ai elements, active community engagement, and clear ai-driven narratives.",
+        "leader_hint_token_address": "6wcPQWr9zQgzkaieGaWqfwZaZJMC7xWRtVPm8ZKWpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Growing interest in AI-driven social and gaming experiences.",
         "leader_token": {
-          "token_symbol": "Monki",
-          "token_name": "Monki Business",
-          "token_address": "G5YdwbcsDdkpbenp4qVgGskYacofB9L627SHVr8Upump",
-          "usd_market_cap": 249188.62
+          "token_symbol": "SPLAT",
+          "token_name": "Splatworld",
+          "token_address": "6wcPQWr9zQgzkaieGaWqfwZaZJMC7xWRtVPm8ZKWpump",
+          "usd_market_cap": 3007355.82
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'AI-Powered Utility' and 'Meme Reclamation' metas are currently gaining momentum, driven by strong community engagement and clear narratives. 'AI-Powered Meme Tokens' remain dominant but are showing signs of fragmentation as new AI-driven meme concepts emerge. 'Crypto-Political Satire' is fading as the novelty of political meme tokens wanes.",
+    "meta_rotation_note": "The 'AI Agent Utility' and 'Meme-Driven Finance' metas are currently dominant, with strong community engagement and clear narratives. 'Crypto-Political Satire' is emerging but remains fragmented. 'AI-Powered Trading and Finance' is gaining traction but faces competition from established DeFi projects. 'AI-Powered Social and Gaming' is showing potential but lacks mainstream adoption.",
     "meta_leaders": [
+      {
+        "meta_name": "Meme-Driven Finance",
+        "leader_token": {
+          "token_symbol": "BARRON",
+          "token_name": "Barron Coin",
+          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
+          "usd_market_cap": 136489163.36
+        }
+      },
       {
         "meta_name": "Crypto-Political Satire",
         "leader_token": {
-          "token_symbol": "FLOTUS",
-          "token_name": "OFFICIAL FIRST LADY OF THE US",
-          "token_address": "4eenUq6QSjcxwAGXj2roMnKv3JBY5Syt2nFZww1wpump",
-          "usd_market_cap": 179365314.89
+          "token_symbol": "BARRON",
+          "token_name": "Barron Coin",
+          "token_address": "EBCgsdKFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump",
+          "usd_market_cap": 136489163.36
         }
       },
       {
-        "meta_name": "AI-Powered Meme Tokens",
+        "meta_name": "AI-Powered Trading and Finance",
         "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 70865370.0
+          "token_symbol": "SURGE",
+          "token_name": "SURGE",
+          "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg",
+          "usd_market_cap": 41265147.62
         }
       },
       {
-        "meta_name": "AI-Powered Meme Tokens",
+        "meta_name": "AI Agent Utility",
         "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 70865370.0
+          "token_symbol": "ORGO",
+          "token_name": "Orgo",
+          "token_address": "G85CQEBqwsoe3qkb5oXXpdZFh7uhYXhDRsQAM4aJuBLV",
+          "usd_market_cap": 5832999.0
         }
       },
       {
-        "meta_name": "AI-Powered Meme Tokens",
+        "meta_name": "AI-Powered Social and Gaming",
         "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 70865370.0
-        }
-      },
-      {
-        "meta_name": "AI-Powered Meme Tokens",
-        "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 70865370.0
-        }
-      },
-      {
-        "meta_name": "AI-Powered Utility",
-        "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 46180915.91
-        }
-      },
-      {
-        "meta_name": "Meme Reclamation",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 9569825.14
-        }
-      },
-      {
-        "meta_name": "AI-Powered Meme Tokens",
-        "leader_token": {
-          "token_symbol": "Monki",
-          "token_name": "Monki Business",
-          "token_address": "G5YdwbcsDdkpbenp4qVgGskYacofB9L627SHVr8Upump",
-          "usd_market_cap": 249188.62
+          "token_symbol": "SPLAT",
+          "token_name": "Splatworld",
+          "token_address": "6wcPQWr9zQgzkaieGaWqfwZaZJMC7xWRtVPm8ZKWpump",
+          "usd_market_cap": 3007355.82
         }
       }
     ]
