@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-04T05:22:58.653379Z",
+  "generated_at_utc": "2026-02-04T06:23:36.123685Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 195,
+  "token_context_count": 193,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 25 PVP group(s); excluding 40 token(s) from META prompt."
+    "Detected 24 PVP group(s); excluding 39 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 40,
+  "pvp_excluded_token_count": 39,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -226,26 +226,6 @@
     },
     {
       "match_type": "token_symbol",
-      "match_value": "clawd",
-      "tokens": [
-        {
-          "token_symbol": "CLAWD",
-          "token_name": "ClawdPump",
-          "token_address": "3zGufed4u84yKL78j3BMznu21AzXG3fWfx1JpDsW6cEu",
-          "usd_market_cap": 3756.32,
-          "processed_at": "2026-02-03T06:19:16.565984Z"
-        },
-        {
-          "token_symbol": "clawd",
-          "token_name": "clawdbot",
-          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
-          "usd_market_cap": 141005.68,
-          "processed_at": "2026-02-03T15:57:07.532409Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
       "match_value": "grok",
       "tokens": [
         {
@@ -321,6 +301,13 @@
           "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump",
           "usd_market_cap": 10453.25,
           "processed_at": "2026-02-03T19:47:31.137205Z"
+        },
+        {
+          "token_symbol": "MOLT",
+          "token_name": "Moltcoin",
+          "token_address": "HfYHViPkKT1g5qhYYGLk7Y2HxeyS3bxM7RWaojD6pump",
+          "usd_market_cap": 18641.54,
+          "processed_at": "2026-02-04T06:20:10.460375Z"
         }
       ]
     },
@@ -598,156 +585,105 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Crypto Parody & Satire",
-        "description": "Tokens that parody or satirize crypto culture, often using humor, irony, or dark humor to create community-driven narratives.",
+        "meta_name": "AI-Powered Play-to-Earn Games",
+        "description": "Tokens are being launched around AI-powered play-to-earn games, where players can earn rewards through gameplay. These tokens often serve as in-game currency or governance mechanisms.",
         "defining_signals": [
-          "Tokens referencing crypto culture with a humorous or satirical twist",
-          "Use of crypto slang, memes, or viral phrases as the basis for token names",
-          "Names like 'Fartcoin', 'Asscoin', or 'DONT'",
-          "Themes of parody, irony, or dark humor",
-          "Tokens that reference memes with no direct real-world cultural origin"
+          "Tokens tied to play-to-earn games",
+          "Inference of in-game currency or governance",
+          "Mentions of idle mining or loot boxes",
+          "Community-driven narratives around game mechanics",
+          "Tokens with names like 'IdleMine' or 'Moltbook'",
+          "Mentions of battles or NFTs"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "FARTCOIN",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+            "token_symbol": "IDLE",
+            "token_name": "IdleMine",
+            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
           },
           {
-            "token_symbol": "ASSCOIN",
-            "token_name": "asscoin",
-            "token_address": "CWwQEk7PtczueUu5C2P1mvb3AhBKC1QiuzzfiUfVpump"
+            "token_symbol": "Moltbook",
+            "token_name": "Moltbook",
+            "token_address": "91CHYE842JUrSDUNQnv5kSLdnfU7DuEC7nw9cTzjpump"
           },
           {
-            "token_symbol": "DONT",
-            "token_name": "DisclaimerCoin",
-            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
+            "token_symbol": "PROMISED",
+            "token_name": "The Promised Coin",
+            "token_address": "6Y1tGH7bB16KZGM4pdkgqnpSH1QpDufsk2tAzyGkpump"
           },
           {
-            "token_symbol": "FUCK",
-            "token_name": "fuckcoin",
-            "token_address": "HA6skYz4TYcZNfxYfwQxt31co6yGBCxmi1gcBLYiXLfc"
+            "token_symbol": "ACT",
+            "token_name": "Act I : The AI Prophecy",
+            "token_address": "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump"
           },
           {
-            "token_symbol": "DENT",
-            "token_name": "DEEZ NUTS",
-            "token_address": "DWSXaGq2mLNeYw685TAg3cx2bH5bVmHUxwwS7pgkpump"
+            "token_symbol": "BIRB",
+            "token_name": "Moonbirds",
+            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
           },
           {
-            "token_symbol": "THICCOIN",
-            "token_name": "Thiccoin",
-            "token_address": "H1ezn29FrF7Mn6XuRE2ipFnrZgZM2EMerSCJmjmapump"
+            "token_symbol": "PETAH",
+            "token_name": "ピータ さん",
+            "token_address": "GDmSzyg3F3CqgusT4CcxhjaKKfaucN98L4EUePeqpump"
           }
         ],
-        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+        "leader_hint_token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
         "confidence_0_100": 70,
-        "confidence_rationale": "The 'Crypto Parody & Satire' META is supported by tokens that reference crypto culture with humorous or satirical twists. These tokens often leverage crypto slang and viral phrases, and several have notable market caps and clear cultural ties to crypto meme culture.",
+        "confidence_rationale": "Tokens are being launched around ai-powered play-to-earn games, with clear narratives and inferred utilities. These tokens are gaining traction due to the growing interest in gaming and decentralized economies.",
         "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 218743408.14
+          "token_symbol": "BIRB",
+          "token_name": "Moonbirds",
+          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+          "usd_market_cap": 87455334.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Parody & Satire",
-        "description": "Tokens that parody or satirize real-world entities, memes, or internet culture. These tokens often leverage humor, irony, or dark humor to create community-driven narratives.",
+        "meta_name": "AI Agent Ecosystems",
+        "description": "Tokens are being launched around AI agent ecosystems, where AI agents interact, perform tasks, and generate value. These tokens often serve as governance, utility, or reward mechanisms within these ecosystems.",
         "defining_signals": [
-          "Tokens referencing real-world entities with a humorous or satirical twist",
-          "Use of internet slang, memes, or viral phrases as the basis for token names",
-          "Names like 'Hitler', 'Naziijak', 'Wojakcoin', or 'DONT'",
-          "Themes of parody, irony, or dark humor",
-          "Tokens that reference memes with no direct real-world cultural origin"
+          "Tokens tied to AI agent platforms or ecosystems",
+          "Inference of governance or utility within AI agent systems",
+          "References to AI agents performing tasks autonomously",
+          "Community-driven narratives around AI agent capabilities",
+          "Tokens with names like 'Clawd' or 'Alchemist AI'",
+          "Mentions of AI agent interactions or self-evolution"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "HITLER",
-            "token_name": "Not wrong, Just early",
-            "token_address": "8WhwakwRPFhdPz7GFbSwwZd2uNoThSV1ok51ehhJpump"
+            "token_symbol": "Clawd",
+            "token_name": "Clawd",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "NAZIJAK",
-            "token_name": "Naziijak",
-            "token_address": "C6HB4R62NeXacwT4CAfohnCTJiaLhYfuQZNsbsqypump"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "DONT",
-            "token_name": "DisclaimerCoin",
-            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
-          },
-          {
-            "token_symbol": "CUBAN",
-            "token_name": "OFFICIAL CUBAN",
-            "token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump"
-          },
-          {
-            "token_symbol": "NaziPepe",
-            "token_name": "Nazi PePe Controversy",
-            "token_address": "2kJG8jaVLmxwpUqv91TwyvuJNoB4B8qwUeNoL3mNpump"
-          }
-        ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "The 'Meme Parody & Satire' META is supported by tokens that reference real-world entities with humorous or satirical twists. These tokens often leverage internet slang and viral phrases, and several have notable market caps and clear cultural ties to meme culture.",
-        "leader_token": {
-          "token_symbol": "CUBAN",
-          "token_name": "OFFICIAL CUBAN",
-          "token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump",
-          "usd_market_cap": 87685024.6
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI Agents & Automation",
-        "description": "Tokens centered around AI agents, autonomous systems, and automation. These tokens often describe utility for AI-driven tasks, governance, and decentralized operations.",
-        "defining_signals": [
-          "Tokens with AI agent or automation in their utility description",
-          "Mentions of AI-driven governance, task execution, or self-evolving systems",
-          "Names like 'Claw', 'AI69', 'Bot', or 'Agent'",
-          "Integration with platforms like xAI, OpenClaw, or AI-powered assistants",
-          "Themes of decentralization, automation, and autonomous systems"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "JARVIS",
-            "token_name": "OpenClaw Jarvis",
-            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
-          },
-          {
-            "token_symbol": "THINK",
-            "token_name": "ClaudeThinks",
-            "token_address": "fpnBHZZLouozB9eZCzkhxBeGSv19JZjKvmZ1wuiBWWw"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "ALCH",
+            "token_symbol": "ALch",
             "token_name": "Alchemist AI",
             "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "RENTA",
-            "token_name": "HumanAPI",
-            "token_address": "C8pioqpW4KktWb6mEsPt2fGh3z1EabQRNh6NN4uEpump"
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGG"
           },
           {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkSkbwuUHj1j7pump"
+            "token_symbol": "ACT",
+            "token_name": "Act I : The AI Prophecy",
+            "token_address": "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump"
+          },
+          {
+            "token_symbol": "AI",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "ZHC",
+            "token_name": "Zero-Human Company",
+            "token_address": "AWc8uws9nh7pYjFQ8FzxavmP8WTUPwmQZAvK2yAPBAGS"
           }
         ],
-        "leader_hint_token_address": "12veWoXCbbaeqppWx6x4ohwbHsv98gRLHh4FgMR3pump",
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
         "confidence_0_100": 80,
-        "confidence_rationale": "The 'AI Agents & Automation' META is supported by tokens that describe AI-driven systems, governance, and automation. These tokens often reference platforms like xAI and OpenClaw, and their narratives align with the broader trend of AI integration in crypto.",
+        "confidence_rationale": "Tokens are being launched around AI agent ecosystems, with clear narratives and inferred utilities. These tokens are gaining traction due to the growing interest in AI-driven automation and decentralized systems.",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -757,50 +693,321 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Space & AI Mergers",
-        "description": "Tokens referencing the potential merger of SpaceX and xAI, or other space-related ventures. These tokens often leverage the hype around Elon Musk's ventures and the future of space exploration.",
+        "meta_name": "AI-Driven Social and Economic Platforms",
+        "description": "Tokens are being launched around AI-driven social and economic platforms, where AI agents interact with users and each other to create value. These tokens often serve as governance or utility mechanisms within these platforms.",
         "defining_signals": [
-          "Tokens referencing SpaceX, xAI, or Elon Musk's ventures",
-          "Mentions of space exploration, AI, or future tech",
-          "Names like 'SpacexAI', 'K2', or 'Mooner'",
-          "Themes of space, AI, and future tech",
-          "Tokens with names like 'ToTheStars' or 'Merge'"
+          "Tokens tied to ai-driven social or economic platforms",
+          "Inference of governance or utility within ai-driven systems",
+          "Mentions of ai agents interacting with users",
+          "Community-driven narratives around ai-driven interactions",
+          "Tokens with names like 'Alchemist AI' or 'Eva Everywhere'",
+          "Mentions of self-evolution or autonomous actions"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "TOOSTARS",
-            "token_name": "SpaceX & xAI Together",
-            "token_address": "14DieZPb3JAQwAopBZF5GLGeykjT7A3pjee2muexpump"
+            "token_symbol": "alch",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "SPACEXAI",
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGG"
+          },
+          {
+            "token_symbol": "ACT",
+            "token_name": "Act I : The ai Prophecy",
+            "token_address": "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump"
+          },
+          {
+            "token_symbol": "AI",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqagMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "ZHC",
+            "token_name": "Zero-Human Company",
+            "token_address": "AWc8uws9nh7pYjFQ8FzxavmP8WTUPwmQZAvK2yApBAGS"
+          },
+          {
+            "token_symbol": "ACT",
+            "token_name": "Act I : The ai Prophecy",
+            "token_address": "GJAFwWjJ3vnTsrQVavjBVK2TYB1YtRCQXRDfDgUnpump"
+          }
+        ],
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens are being launched around ai-driven social and economic platforms, with clear narratives and inferred utilities. These tokens are gaining traction due to the growing interest in ai-driven automation and decentralized systems.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 80622500.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Content Creation and Distribution",
+        "description": "Tokens are being launched around ai-powered content creation and distribution platforms, where ai agents generate and distribute content. These tokens often serve as governance or utility mechanisms within these platforms.",
+        "defining_signals": [
+          "Tokens tied to ai-powered content creation or distribution",
+          "Inference of governance or utility within ai-powered systems",
+          "Mentions of ai agents generating or distributing content",
+          "Community-driven narratives around ai-powered content",
+          "Tokens with names like 'Alchemist AI' or 'Eva Everywhere'",
+          "Mentions of self-evolution or autonomous actions"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "alch",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGG"
+          },
+          {
+            "token_symbol": "ACT",
+            "token_name": "Act I : The ai Prophecy",
+            "token_address": "GJAFwWjJ3vnTsrQVavjBVK2TYB1YtRCQXRDfDgUnpump"
+          },
+          {
+            "token_symbol": "AI",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqagMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "ZHC",
+            "token_name": "Zero-Human Company",
+            "token_address": "AWc8uws9nh7pYjFQ8FzxavmP8WTUPwmQZAvK2yApBAGS"
+          },
+          {
+            "token_symbol": "ACT",
+            "token_name": "Act I : The ai Prophecy",
+            "token_address": "GJAFwWjJ3vnTsrQVavjBVK2TYB1YtRCQXRDfDgUnpump"
+          }
+        ],
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens are being launched around ai-powered content creation and distribution platforms, with clear narratives and inferred utilities. These tokens are gaining traction due to the growing interest in ai-driven automation and decentralized systems.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 80622500.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Financial Instruments",
+        "description": "Tokens are being launched around ai-powered financial instruments, where ai agents manage and optimize financial transactions. These tokens often serve as governance or utility mechanisms within these platforms.",
+        "defining_signals": [
+          "Tokens tied to ai-powered financial instruments",
+          "Inference of governance or utility within ai-powered systems",
+          "Mentions of ai agents managing or optimizing financial transactions",
+          "Community-driven narratives around ai-powered financial systems",
+          "Tokens with names like 'Alchemist AI' or 'Eva Everywhere'",
+          "Mentions of self-evolution or autonomous actions"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "alch",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhWhuwfFhttgZ8Qb6QXN4Yz8BAGG"
+          },
+          {
+            "token_symbol": "ACT",
+            "token_name": "Act I : The ai Prophecy",
+            "token_address": "GJAFwWjJ3vnTsrQVavjBVK2TYB1YtRCQXRDfDDgUnpump"
+          },
+          {
+            "token_symbol": "AI",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqagMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "ZHC",
+            "token_name": "Zero-Human Company",
+            "token_address": "AWc8uws9nh7pYjFQ8FzxavmP8WTUPwmQZAvK2yApBAGS"
+          },
+          {
+            "token_symbol": "ACT",
+            "token_name": "Act I The ai Propyssey",
+            "token_address": "GJAFwWjJ3vnTsrQVavjBVK2TYB1YtRCQXRDfDDgUnpump"
+          }
+        ],
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens are being launched around ai-powered financial instruments, with clear narratives and inferred utilities. These tokens are gaining traction due to the growing interest in ai-driven automation and decentralized systems.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 80622500.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Content Creation and Distribution",
+        "description": "Tokens are being launched around ai-powered content creation and distribution platforms, where ai agents generate and distribute content. These tokens often serve as governance or utility mechanisms within these platforms.",
+        "defining_signals": [
+          "Tokens tied to ai-powered content creation or distribution",
+          "Inference of governance or utility within ai-powered systems",
+          "Mentions of ai agents generating or distributing content",
+          "Community-driven narratives around ai-powered content",
+          "Tokens with names like 'Alchemist AI' or 'Eva Everywhere'",
+          "Mentions of self-evolution or autonomous actions"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "alch",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhWhuwfFhttgZ8Qb6QXXN4Yz8BAGG"
+          },
+          {
+            "token_symbol": "ACT",
+            "token_name": "Act I : The ai Prophecy",
+            "token_address": "GJAFwWjJ3vnTsrQVavjBVK2TYB1YtRCQXRDfDgUnpump"
+          },
+          {
+            "token_symbol": "AI",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqagGpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "ZHC",
+            "token_name": "Zero-Human Company",
+            "token_address": "AWc8uws9nh7pYjFQ8FzxavmP8WTUPwmQZAvK2yApBAGS"
+          },
+          {
+            "token_symbol": "ACT",
+            "token_name": "Act I The ai Odyssey",
+            "token_address": "GJAFwWjJ3vnTsrQvavjBvk2TYB1YRCQxxRDfDgUnpump"
+          }
+        ],
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens are being launched around ai-powered content creation and distribution platforms, with clear narratives and inferred utilities. These tokens are gaining traction due to the growing interest in ai-driven automation and decentralized systems.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 80622500.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto Parodies and Satirical Tokens",
+        "description": "Tokens are being created as parodies or satires of real-world events, figures, or other cryptocurrencies. These tokens often use humor or dark humor to create community-driven narratives.",
+        "defining_signals": [
+          "Tokens referencing real-world events or figures in a satirical way",
+          "Mentions of dark humor or satirical themes",
+          "Community-driven narratives around parodies",
+          "Tokens with names like 'Buy The Children' or 'Nazi Pepe'",
+          "Mentions of controversial or humorous themes",
+          "Tokens with names like 'Believe' or 'Dads'"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BuyTheChildren",
+            "token_name": "Buy The Children",
+            "token_address": "7p8hs6fZwTXvSYESCdHgWCXVsVcxTrX1cs3Q4yNGpump"
+          },
+          {
+            "token_symbol": "NaziPepe",
+            "token_name": "Nazi PePe Controversy",
+            "token_address": "2kJG8jaVLmxwpUqv91TwyvuJNoB4B8qwUeNoL3mNpump"
+          },
+          {
+            "token_symbol": "Believe",
+            "token_name": "Believe",
+            "token_address": "5wo6yoWJMJBdZUNUWYigbv8oYdECSBqCpa5pLBmQbonk"
+          },
+          {
+            "token_symbol": "DADS",
+            "token_name": "Tired Dad V2",
+            "token_address": "2Qtk2GjdpErU6xADcaYJYarMe1J2isHYujkLWodypump"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
+          },
+          {
+            "token_symbol": "BDSM",
+            "token_name": "Buy Dip Sell Moon",
+            "token_address": "Ff8ShZ8t94Gp6RZpwPwHSbMND3hAxyyActuLbC3Ppump"
+          }
+        ],
+        "leader_hint_token_address": "2kJG8jaVLmxwpUqv91TwyvuJNoB4B8qwUeNoL3mNpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens are being created as parodies or satires of real-world events, figures, or other cryptocurrencies. These tokens are gaining traction due to the dark humor and satirical themes they incorporate.",
+        "leader_token": {
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 18820891.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Elon Musk Mergers",
+        "description": "Tokens are capitalizing on the narrative around potential mergers or collaborations between Elon Musk's ventures, such as SpaceX and xAI. These tokens are often tied to speculative narratives about future business moves or technological advancements.",
+        "defining_signals": [
+          "References to Elon Musk's ventures (e.g., SpaceX, xAI)",
+          "Speculative narratives about mergers or IPOs",
+          "Mentions of X (formerly Twitter) or other Musk-related projects",
+          "High market cap growth in a short time frame",
+          "Community-driven hype around potential future events",
+          "Tokens with names like 'SpacexAI' or 'K2' referencing mergers"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "SpacexAI",
             "token_name": "SpacexAI",
             "token_address": "5hra56LQLssRojn1HVQqGiRUSLF1dm46xCtUYisFpump"
           },
           {
             "token_symbol": "K2",
             "token_name": "Kardashev II",
-            "token_address": "8aZEym6Uv5vuy2LQ9BYNSiSiiKS3JKJEhbiIUgpQppump"
+            "token_address": "8aZEym6Uv5vuy2LQ9BYNSiSiiKS3JKJEhbiUgpQppump"
           },
           {
-            "token_symbol": "MOONER",
-            "token_name": "Mooner",
-            "token_address": "DAu24iE5snKMc46QHVa7uHtEtjZ25Np1PcU8gop9pump"
+            "token_symbol": "XHL",
+            "token_name": "X Holdings Corp",
+            "token_address": "DmKmGphwhd589f1HeC57hQgM5uRbKh4GMKWkitmpump"
           },
           {
-            "token_symbol": "MERGE",
-            "token_name": "Merge",
-            "token_address": "TKdexq91NXjFiTxy5D2v4cpFnPGp9iQ8J62YZEWpump"
+            "token_symbol": "MOLTr",
+            "token_name": "Molt Reserves",
+            "token_address": "5CUEbXowkmBbrkvcU51CUkTjMRMe2M19BPT44aqMo1t"
           },
           {
-            "token_symbol": "XXX",
+            "token_symbol": "TOILET",
+            "token_name": "The Toilet",
+            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
+          },
+          {
+            "token_symbol": "XSPACE",
             "token_name": "XSpaceXXAI",
             "token_address": "JAQiNZw9t6Xqev4JLWMqpNGzZMp7ZVsxzQxdvaJPpump"
           }
         ],
-        "leader_hint_token_address": "14DieZPb3JAQwAopBZF5GLGeykjT7A3pjee2muexpump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "The 'Space & AI Mergers' META is supported by tokens referencing SpaceX, xAI, and Elon Musk's ventures. These tokens often leverage the hype around space exploration and AI, and several have notable market caps and clear cultural ties to the space and ai merger narrative.",
+        "leader_hint_token_address": "5hra56LQLssRojn1HVQqGiRUSLF1dm46xCtUYisFpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Multiple tokens are directly referencing Elon Musk's ventures and speculative narratives around mergers or IPOs. These tokens have shown significant market cap growth and are backed by active community engagement and social media hype.",
         "leader_token": {
           "token_symbol": "XXX",
           "token_name": "XSpaceXXAI",
@@ -810,81 +1017,73 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Epstein Files",
-        "description": "Tokens referencing Jeffrey Epstein and the associated conspiracy theories, legal cases, and leaked documents. These tokens often leverage dark humor and speculative narratives tied to Epstein's infamy.",
+        "meta_name": "Meme Tokens with Historical or Cultural References",
+        "description": "Tokens are being created that leverage historical or cultural references, often repurposing them into meme narratives. These tokens often draw from well-known historical figures, events, or cultural symbols to create community-driven narratives.",
         "defining_signals": [
-          "Direct references to Jeffrey Epstein or his island (Little Saint James)",
-          "Use of terms like 'Super Jew', 'Goy', or 'Schwartzes' from leaked emails",
-          "Mentions of conspiracy theories or 'Epstein didn’t kill himself' memes",
-          "Tokens with names like 'Epstein Delivery', 'Epstein Connection Tracker', or 'Epsteiny'",
-          "Themes of financial secrecy, elite manipulation, and dark humor"
+          "Tokens referencing historical figures or events",
+          "Mentions of cultural symbols or historical events",
+          "Community-driven narratives around historical or cultural references",
+          "Tokens with names like 'Epstein' or 'Naziijak'",
+          "Inference of dark humor or satirical themes",
+          "Tokens with names like 'Wojakcoin' or 'Nazi Pepe'"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "EPSTEINY",
-            "token_name": "epsteiny",
-            "token_address": "3ChGd9e9L7Rz8XfZ8eyWyqkG85awhyXpy4P5esFKpump"
+            "token_symbol": "Epstein",
+            "token_name": "Jeffrey Epstein",
+            "token_address": "EF228ijSZdSampJMvhLUUJGP5PTH1Z17i71JR5pump"
           },
           {
-            "token_symbol": "PDFDLV",
-            "token_name": "Epstein Delivery",
-            "token_address": "DdfbfQ1xE6xgND81i6WuisSXpPMhR7De54RdZm8Cpump"
+            "token_symbol": "Naziijak",
+            "token_name": "Naziijak",
+            "token_address": "C6HB4R62NeXacwT4CAfohnCTJiaLhYfuQZNsbsqypump"
           },
           {
-            "token_symbol": "JUSTICE",
-            "token_name": "Epstein Uncovered",
-            "token_address": "ANkPQZXuwuej3uRyow4fmxxNuZD3J4iJKLFDjhDPDpump"
+            "token_symbol": "Wojakcoin",
+            "token_name": "Wojakcoin",
+            "token_address": "J7PhYH81MtneKPJLAw6Rp4Y1aFqYmDfe42RvycE6pump"
           },
           {
-            "token_symbol": "SCHWARTZES",
-            "token_name": "schwartzes",
-            "token_address": "7LrwQPbnZ2Kee2YDyV5AXRP6H3YgX4UEeZZ561J2pump"
+            "token_symbol": "NaziPepe",
+            "token_name": "Nazi PePe Controversy",
+            "token_address": "2kJG8jaVLmxwpUqv91TwyvuJNoB4B8qwUeNoL3mNpump"
           },
           {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+            "token_symbol": "GoyWhale",
+            "token_name": "The Goy Whale",
+            "token_address": "9YBS49zbfsY8NyLVR8BCPsMZRkNWPCCZo9zzCS7aTpump"
           },
           {
-            "token_symbol": "Rothchild",
-            "token_name": "Rothchild Coin",
-            "token_address": "3aGcHSGDMFAYVt3stLzVGLzyq9ZEKXP1Xzs8yHmDpump"
+            "token_symbol": "BDSM",
+            "token_name": "Buy Dip Sell Moon",
+            "token_address": "Ff8ShZ8t94Gp6RZpwPwHSbMND3hAxyyActuLbC3Ppump"
           }
         ],
-        "leader_hint_token_address": "3ChGd9e9L7Rz8XfZ8eyWyqkG85awhyXpy4P5esFKpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "The 'Epstein Files' META is well-supported by multiple tokens referencing Jeffrey Epstein, leaked documents, and conspiracy theories. These tokens often leverage dark humor and speculative narratives, and several have notable market caps and clear cultural ties to the Epstein meme ecosystem.",
+        "leader_hint_token_address": "EF228ijSZdSampJMvhluJGP5PTH1Z17i71JR5pump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Tokens are leveraging historical or cultural references to create community-driven narratives. These tokens are gaining traction due to the dark humor and satirical themes they incorporate.",
         "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 6157620.03
+          "token_symbol": "NaziPepe",
+          "token_name": "Nazi PePe Controversy",
+          "token_address": "2kJG8jaVLmxwpUqv91TwyvuJNoB4B8qwUeNoL3mNpump",
+          "usd_market_cap": 2286984.36
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Epstein Files' and 'AI Agents & Automation' METAs are currently emerging, driven by dark humor and AI integration narratives. 'Meme Parody & Satire' and 'Crypto Parody & Satire' are fading slightly as newer, more specific themes like 'Space & AI Mergers' gain traction. The 'Space & AI Mergers' META is rising due to Elon Musk's ventures and the hype around SpaceX and xAI.",
+    "meta_rotation_note": "The 'Elon Musk Mergers' and 'AI Agent Ecosystems' metas are showing strong growth and are currently leading in terms of market cap and community engagement. The 'Meme Tokens with Historical or Cultural References' and 'Crypto Parodies and Satirical Tokens' are also gaining traction, but the 'AI-Powered Financial Instruments' and 'AI-Powered Content Creation and Distribution' metas are showing signs of fading as they are less active and have lower market cap growth.",
     "meta_leaders": [
       {
-        "meta_name": "Crypto Parody & Satire",
+        "meta_name": "AI-Powered Play-to-Earn Games",
         "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 218743408.14
+          "token_symbol": "BIRB",
+          "token_name": "Moonbirds",
+          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+          "usd_market_cap": 87455334.0
         }
       },
       {
-        "meta_name": "Meme Parody & Satire",
-        "leader_token": {
-          "token_symbol": "CUBAN",
-          "token_name": "OFFICIAL CUBAN",
-          "token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump",
-          "usd_market_cap": 87685024.6
-        }
-      },
-      {
-        "meta_name": "AI Agents & Automation",
+        "meta_name": "AI Agent Ecosystems",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -893,7 +1092,52 @@
         }
       },
       {
-        "meta_name": "Space & AI Mergers",
+        "meta_name": "AI-Driven Social and Economic Platforms",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 80622500.0
+        }
+      },
+      {
+        "meta_name": "AI-Powered Content Creation and Distribution",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 80622500.0
+        }
+      },
+      {
+        "meta_name": "AI-Powered Financial Instruments",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 80622500.0
+        }
+      },
+      {
+        "meta_name": "AI-Powered Content Creation and Distribution",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 80622500.0
+        }
+      },
+      {
+        "meta_name": "Crypto Parodies and Satirical Tokens",
+        "leader_token": {
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 18820891.0
+        }
+      },
+      {
+        "meta_name": "Elon Musk Mergers",
         "leader_token": {
           "token_symbol": "XXX",
           "token_name": "XSpaceXXAI",
@@ -902,12 +1146,12 @@
         }
       },
       {
-        "meta_name": "Epstein Files",
+        "meta_name": "Meme Tokens with Historical or Cultural References",
         "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 6157620.03
+          "token_symbol": "NaziPepe",
+          "token_name": "Nazi PePe Controversy",
+          "token_address": "2kJG8jaVLmxwpUqv91TwyvuJNoB4B8qwUeNoL3mNpump",
+          "usd_market_cap": 2286984.36
         }
       }
     ]
