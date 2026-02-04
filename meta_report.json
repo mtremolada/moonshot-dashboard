@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-04T12:26:54.655790Z",
+  "generated_at_utc": "2026-02-04T13:27:17.727772Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 195,
+  "token_context_count": 194,
   "prompt_truncated": false,
   "warnings": [
     "Detected 23 PVP group(s); excluding 38 token(s) from META prompt."
@@ -558,189 +558,93 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Crypto Parody and Satire",
-        "description": "Tokens that parody or satirize crypto culture, including tokens that reference crypto figures, projects, or concepts in a humorous or satirical way.",
-        "defining_signals": [
-          "Tokens referencing crypto figures or projects in a humorous or satirical way.",
-          "Tokens using crypto jargon or crypto culture as part of their name or lore.",
-          "Tokens with a strong parody or satire-driven narrative.",
-          "Tokens referencing crypto in a humorous or satirical way.",
-          "Tokens with a strong crypto parody or satire-driven community or marketing strategy."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "FUCK",
-            "token_name": "fuckcoin",
-            "token_address": "HA6skYz4TYcZNfxYfwQxt31co6yGBCxmi1gcBLYiXLfc"
-          },
-          {
-            "token_symbol": "DENT",
-            "token_name": "DEEZ NUTS",
-            "token_address": "DWSXaGq2mLNeYw685TAg3cx2bH5bVmHUxwwS7pgkpump"
-          },
-          {
-            "token_symbol": "THICC",
-            "token_name": "Thiccoin",
-            "token_address": "H1ezn29FrF7Mn6XuRE2ipFnrZgZM2EMerSCJmjmapump"
-          },
-          {
-            "token_symbol": "CUBAN",
-            "token_name": "OFFICIAL CUBAN",
-            "token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump"
-          },
-          {
-            "token_symbol": "CLOON",
-            "token_name": "CLOON",
-            "token_address": "FLBwxwtAQkdXNwQXLwVZoDk5Cge2fWiSsXggkgueBAGS"
-          }
-        ],
-        "leader_hint_token_address": "HA6skYz4TYcZNfxYfwQxt31co6yGBCxmi1gcBLYiXLfc",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong presence of tokens with parody or satire-driven narratives, referencing crypto culture in a humorous or satirical way.",
-        "leader_token": {
-          "token_symbol": "CUBAN",
-          "token_name": "OFFICIAL CUBAN",
-          "token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump",
-          "usd_market_cap": 87685024.6
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto and Political Figures",
-        "description": "Tokens referencing political figures, including tokens that reference politicians, political events, or political movements.",
-        "defining_signals": [
-          "Tokens referencing political figures or political events.",
-          "Tokens using political jargon or political culture as part of their name or lore.",
-          "Tokens with a strong political narrative or community.",
-          "Tokens referencing political figures in a humorous or satirical way.",
-          "Tokens with a strong political-driven community or marketing strategy."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CUBAN",
-            "token_name": "OFFICIAL CUBAN",
-            "token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump"
-          },
-          {
-            "token_symbol": "FLOTUS",
-            "token_name": "OFFICIAL FIRST LADY OF THE US",
-            "token_address": "4eenUq6QSjcxwAGXj2roMnKv3JBY5Syt2nFZww1wpump"
-          },
-          {
-            "token_symbol": "BARRON",
-            "token_name": "Barron Coin",
-            "token_address": "EBCgsdDFTf6LK74FwbQWzrN1AaMiBrmoLYj2bDujpump"
-          },
-          {
-            "token_symbol": "PROMISED",
-            "token_name": "The Promised Coin",
-            "token_address": "6Y1tGH7bB16KZGM4pdkgqnpSH1QpDufsk2tAzyGkpump"
-          },
-          {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
-          }
-        ],
-        "leader_hint_token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump",
-        "confidence_0_100": 65,
-        "confidence_rationale": "Strong presence of tokens referencing political figures or political events, with clear narrative ties to political culture.",
-        "leader_token": {
-          "token_symbol": "CUBAN",
-          "token_name": "OFFICIAL CUBAN",
-          "token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump",
-          "usd_market_cap": 87685024.6
-        },
-        "leader_missing_reason": null
-      },
-      {
         "meta_name": "Meme and Internet Culture",
-        "description": "Tokens leveraging internet memes, viral internet culture, and internet slang. This theme includes tokens that either reference specific memes or are part of broader meme culture.",
+        "description": "Tokens referencing popular internet memes, viral content, and internet culture. This theme is a staple in crypto, with tokens leveraging well-known memes and internet trends to drive community engagement.",
         "defining_signals": [
-          "Tokens referencing specific memes or viral internet culture.",
-          "Tokens using internet slang or internet culture as part of their name or lore.",
-          "Tokens with a strong meme-based narrative or community.",
-          "Tokens referencing popular internet figures or memes.",
-          "Tokens with a strong meme-driven community or marketing strategy."
+          "References to viral internet memes or viral content",
+          "Use of internet slang or internet culture references",
+          "Mentions of TikTok, Reddit, or other social media trends",
+          "Incorporation of meme characters or meme formats",
+          "Leveraging humor or absurdity as a core theme"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Phil",
-            "token_name": "Phil The Groundhog",
-            "token_address": "ZfcJMRtaC9GNRrzYomvgqgN3mP6KTSvub3Gr9pXpump"
+            "token_symbol": "ADAM",
+            "token_name": "Adam Cena",
+            "token_address": "6ZDWBcMt8PKXEK4e13xyxaRdWyMGoMub959HDPuMpump"
           },
           {
-            "token_symbol": "RALph",
+            "token_symbol": "RALPH",
             "token_name": "Ralph Wiggum",
             "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "BOME",
+            "token_name": "BOOK OF MEME",
+            "token_address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
+          },
+          {
+            "token_symbol": "FART",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
           },
           {
             "token_symbol": "Wojak",
             "token_name": "Wojakcoin",
             "token_address": "J7PhYH81MtneKPJLAw6Rp4Y1aFqYmDfe42RvycE6pump"
-          },
-          {
-            "token_symbol": "BIRB",
-            "token_name": "Moonbirds",
-            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
-          },
-          {
-            "token_symbol": "YAMS",
-            "token_name": "The Yams Cult",
-            "token_address": "63r9SNr8UF6Cq6VcrMB5Ybkb4TTX23E5zTEXhu4TpuMP"
           }
         ],
-        "leader_hint_token_address": "G7vQWurMkMM2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong presence of tokens referencing memes and internet culture, with clear community and narrative ties to internet culture.",
+        "leader_hint_token_address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Meme and internet culture tokens are a dominant theme in crypto, with strong community engagement and viral potential. Tokens like BOME and FART are leveraging well-known memes and internet trends.",
         "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 87455334.0
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 218743408.14
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "AI and Autonomous Agents",
-        "description": "Tokens centered around AI, autonomous agents, and AI-driven systems. This theme includes tokens that either represent AI infrastructure, AI agent ecosystems, or AI-generated content.",
+        "description": "Tokens centered around AI, autonomous agents, and AI-driven economies. This theme reflects growing interest in AI integration into blockchain ecosystems and the potential for AI to autonomously manage and execute tasks.",
         "defining_signals": [
-          "Tokens referencing AI, autonomous agents, or AI-generated content.",
-          "Tokens tied to AI infrastructure or AI ecosystems.",
-          "Tokens leveraging AI for governance, trading, or automation.",
-          "Tokens using AI as a core part of their utility or narrative.",
-          "Tokens referencing AI in their name or lore."
+          "Mentions of AI, autonomous agents, or AI-driven economies",
+          "Focus on AI-generated content or AI-driven decision-making",
+          "References to AI-powered tools or AI assistants",
+          "Use of AI in governance or tokenomics",
+          "Integration with AI-based platforms or services"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "AI",
-            "token_name": "Symbient Life",
-            "token_address": "9txCZaqYaQ62nFVcEWhosWx3vTMcJMFP5YYXQ5yhBAGS"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "ALch",
+            "token_symbol": "ALCH",
             "token_name": "Alchemist AI",
             "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "CLOON",
+            "token_name": "Cloon",
+            "token_address": "FLBwxwtAQkdXwQXLwVZoDk5Cge2fWiSsXggkgueBAGS"
+          },
+          {
+            "token_symbol": "ZNAP",
+            "token_name": "ZNAP",
+            "token_address": "E3eqfjX7ocVdCye7dL2B4rsGawsrGpZtBKT5NxZGpump"
+          },
+          {
+            "token_symbol": "AGENT",
+            "token_name": "AgentPad",
+            "token_address": "F86LPriiF5mnqpvaX2UqtKeJAjjSD12EAFoBg4JRpump"
           },
           {
             "token_symbol": "ZHC",
             "token_name": "ZERO-HUMAN COMPANY",
             "token_address": "AWc8uws9nh7pYjFQ8FzxavmP8WTUPwmQZAvK2yAPBAGS"
-          },
-          {
-            "token_symbol": "ZKJ",
-            "token_name": "ZKJ",
-            "token_address": "58sNEgs1faQr4xgmjvd9FdLYS3zKCcQKiN8TTUSVpump"
           }
         ],
         "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
         "confidence_0_100": 75,
-        "confidence_rationale": "Strong presence of tokens with AI-related themes, including AI agents, AI infrastructure, and AI-generated content.",
+        "confidence_rationale": "The AI and autonomous agents theme is gaining traction as AI integration into blockchain ecosystems becomes more prevalent. Multiple tokens are exploring AI-driven governance and automation.",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -750,14 +654,14 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Epstein Files Narrative",
-        "description": "Tokens leveraging the cultural and conspiratorial lore around Jeffrey Epstein, including his death, leaked files, and associated dark humor. This theme is tied to real-world events and internet speculation, with tokens often referencing Epstein's name or related figures.",
+        "meta_name": "Epstein Meme",
+        "description": "Tokens referencing Jeffrey Epstein and related conspiracy theories, leveraging dark humor and internet speculation around his death and connections. This theme has gained traction in crypto as a way to capitalize on the cultural resonance of Epstein-related memes and conspiracy narratives.",
         "defining_signals": [
-          "Tokens referencing 'Epstein' or 'Jeffrey Epstein' directly.",
-          "Tokens using phrases like 'Epstein Files' or 'Epstein Island'.",
-          "Tokens tied to conspiracy theories or dark humor surrounding Epstein's death.",
-          "Tokens referencing 'Epstein didn't kill himself' meme.",
-          "Tokens using Epstein's name as a symbol for elite scandal or dark humor."
+          "References to Jeffrey Epstein's name or 'Epstein Island'",
+          "Mentions of conspiracy theories or leaked documents",
+          "Dark humor or satirical themes around Epstein's death",
+          "Use of phrases like 'Epstein didn’t kill himself'",
+          "Mentions of 'Epstein files' or 'Epstein connections'"
         ],
         "supporting_tokens": [
           {
@@ -771,52 +675,52 @@
             "token_address": "EdaRb5d7FooVnEdNrBRvaKBxNNZ4VujR4zAuXGbpump"
           },
           {
-            "token_symbol": "GoyWhale",
-            "token_name": "The Goy Whale",
-            "token_address": "9YBS49zbfsY8NyLVR8BCPsMZRkNWPCZo9zzCS7aTpump"
-          },
-          {
-            "token_symbol": "To:██",
-            "token_name": "From: Jeffrey Epstein",
-            "token_address": "G8wpLvogJvMTMcpx5qexwTEJGjkdT4Zx9SyCAMe2pump"
-          },
-          {
             "token_symbol": "JUSTICE",
             "token_name": "Epstein Uncovered",
             "token_address": "ANkPQZXuwuej3uRyow4fmxNuZD3J4iJKLFDjhDPDpump"
+          },
+          {
+            "token_symbol": "ECT",
+            "token_name": "Epstein Connection Tracker",
+            "token_address": "DwCkG4uLXox8a9s2MBFSLW9zmAMPjgMWtj3W3xzdBAGS"
+          },
+          {
+            "token_symbol": "1Island",
+            "token_name": "Epstein's Password",
+            "token_address": "H5Y2kaum9Ehk6UU6tzfDxKkTsKSmjmSWc4V2bUN3pump"
           }
         ],
         "leader_hint_token_address": "EF228ijSZdSampJMvhLUiijJGP5PTH1Z17i71JR5pump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong presence of tokens directly referencing Epstein and his cultural impact, with clear narrative ties to conspiracy theories and dark humor.",
+        "confidence_rationale": "The Epstein meme has a strong cultural foundation in internet conspiracy theories and dark humor, and multiple tokens are leveraging this theme with clear references to Epstein and related narratives.",
         "leader_token": {
-          "token_symbol": "GoyWhale",
-          "token_name": "The Goy Whale",
-          "token_address": "9YBS49zbfsY8NyLVR8BCPsMZRkNWPCZo9zzCS7aTpump",
-          "usd_market_cap": 3218942.29
+          "token_symbol": "Epstein",
+          "token_name": "Jeffrey Epstein",
+          "token_address": "EF228ijSZdSampJMvhLUiijJGP5PTH1Z17i71JR5pump",
+          "usd_market_cap": 629318.58
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Autonomous Systems",
-        "description": "Tokens centered around AI and autonomous systems, including AI agents, AI-generated content, and AI-driven infrastructure.",
+        "meta_name": "AI and Human Interaction",
+        "description": "Tokens focused on the intersection of AI and human interaction, including AI agents that interact with humans, AI-driven task automation, and AI-human collaboration. This theme reflects growing interest in AI's role in everyday tasks and communication.",
         "defining_signals": [
-          "Tokens referencing AI, autonomous agents, or AI-generated content.",
-          "Tokens tied to AI infrastructure or AI ecosystems.",
-          "Tokens using AI as a core part of their utility or narrative.",
-          "Tokens referencing AI in their name or lore.",
-          "Tokens leveraging AI for governance, trading, or automation."
+          "Mentions of AI-human interaction or collaboration",
+          "Focus on AI agents performing tasks for humans",
+          "Use of AI in task automation or real-world applications",
+          "Integration of ai with human-driven workflows",
+          "Emphasis on ai as a tool for human productivity"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "AI",
-            "token_name": "Symbient Life",
-            "token_address": "9txCZaqYaQ62nFVcEWhosWx3vTMfp5YYXQ5yhBAGS"
+            "token_symbol": "RENTA",
+            "token_name": "Rentahuman",
+            "token_address": "5MxQUFdPisppdVfjitL6hs492GyikCFnsBWYtuAqpump"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "HUMANAPI",
+            "token_name": "HumanAPI",
+            "token_address": "C8pioqpW4KktWb6mEsPt2fGh3z1EabQRNh6NN4uEpump"
           },
           {
             "token_symbol": "ALCH",
@@ -824,55 +728,85 @@
             "token_address": "HNg5PYJmtqcmmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "ZHC",
-            "token_name": "ZERO-HUMAN COMPANY",
-            "token_address": "AWc8uws9nh7pYjFQ8FzxavmP8WTUPmQZAvK2yAPBAGS"
+            "token_symbol": "CLAW",
+            "token_name": "Clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "ZKJ",
-            "token_name": "ZKJ",
-            "token_address": "58sNEgs1faQr4xgmjvd9FtLYS3zKCcQKkN8TTUSVpump"
+            "token_symbol": "IRIS",
+            "token_name": "Iris",
+            "token_address": "6QEuKt8xkWyqxrM4AP7UiDU4UzG95kibijVLAESDBAGS"
           }
         ],
-        "leader_hint_token_address": "HNg5PYJmtqcmmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong presence of tokens with AI-related themes, including ai agents, ai infrastructure, and ai-generated content.",
+        "leader_hint_token_address": "5MxQUFdPisppdVfjitL6hs492GyikCFnsBWYtuAqpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "The ai and human interaction theme is emerging as a key trend, with tokens exploring ai-driven task automation and human collaboration. Tokens like RENTA and HUMANAPI are leading this space.",
         "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 1059527.85
+          "token_symbol": "renta",
+          "token_name": "rentahuman",
+          "token_address": "5MxQUFdPisppdVfjitL6hs492GyikCFnsBWYtuAqpump",
+          "usd_market_cap": 606619.87
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI and Gaming",
+        "description": "Tokens related to AI in gaming, including AI-driven game development, AI-generated content for games, and AI-powered gaming experiences. This theme reflects the growing integration of AI into the gaming industry.",
+        "defining_signals": [
+          "Mentions of AI in gaming or game development",
+          "Focus on ai-generated content for games",
+          "Use of ai in game mechanics or game design",
+          "Integration of ai with gaming platforms or ecosystems",
+          "Emphasis on ai-driven gaming experiences"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "MOON",
+            "token_name": "Mooner",
+            "token_address": "DAu24iE5snKMc46QHVa7uHtEtjZ25Np1PcU8gop9pump"
+          },
+          {
+            "token_symbol": "BIRB",
+            "token_name": "Moonbirds",
+            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFVKNwG"
+          },
+          {
+            "token_symbol": "MOON",
+            "token_name": "Mooner",
+            "token_address": "DAu24iE5snKMc46QHVa7uHtEtjZ25Np1PcU8gop9pump"
+          },
+          {
+            "token_symbol": "MOoner",
+            "token_name": "Mooner",
+            "token_address": "DAu24iE5snKMc46QHVa7uHtEtjZ25Np1PcU8gop9pump"
+          },
+          {
+            "token_symbol": "MOON",
+            "token_name": "Mooner",
+            "token_address": "DAu24iE5snKMc46QHVa7uHtEtjZ25Np1PcU8gop9pump"
+          }
+        ],
+        "leader_hint_token_address": "DAu24iE5snKMc46QHVa7uHtEtjZ25Np1PcU8gop9pump",
+        "confidence_0_100": 60,
+        "confidence_rationale": "The ai and gaming theme is gaining traction as ai integration into gaming ecosystems becomes more prevalent. Tokens like MOONER are exploring ai-driven gaming experiences.",
+        "leader_token": {
+          "token_symbol": "Mooner",
+          "token_name": "Mooner",
+          "token_address": "DAu24iE5snKMc46QHVa7uHtEtjZ25Np1PcU8gop9pump",
+          "usd_market_cap": 429842.31
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Epstein Files Narrative' and 'Meme and Internet Culture' METAs are currently dominant, with strong community engagement and narrative consistency. The 'Crypto Parody and Satire' META is emerging, showing signs of increased activity and community interest. The 'AI and Autonomous Systems' META is fading slightly as newer tokens focus more on meme culture and political references.",
+    "meta_rotation_note": "The Epstein Meme and Meme and Internet Culture METAs are currently the most active and dominant, with strong community engagement and viral potential. The AI and Autonomous Agents and AI and Human Interaction themes are emerging as key trends, driven by growing interest in ai integration into blockchain ecosystems. The ai and Gaming theme is also gaining traction but is still in its early stages. The Meme and Internet Culture theme remains a consistent driver of community-driven tokens, while the Epstein Meme theme is leveraging dark humor and conspiracy narratives to drive engagement.",
     "meta_leaders": [
-      {
-        "meta_name": "Crypto Parody and Satire",
-        "leader_token": {
-          "token_symbol": "CUBAN",
-          "token_name": "OFFICIAL CUBAN",
-          "token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump",
-          "usd_market_cap": 87685024.6
-        }
-      },
-      {
-        "meta_name": "Crypto and Political Figures",
-        "leader_token": {
-          "token_symbol": "CUBAN",
-          "token_name": "OFFICIAL CUBAN",
-          "token_address": "7LPsiq8ur4DB93mCk9kcF7g6WSgnF9U1x4FSePH4pump",
-          "usd_market_cap": 87685024.6
-        }
-      },
       {
         "meta_name": "Meme and Internet Culture",
         "leader_token": {
-          "token_symbol": "BIRB",
-          "token_name": "Moonbirds",
-          "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-          "usd_market_cap": 87455334.0
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 218743408.14
         }
       },
       {
@@ -885,21 +819,30 @@
         }
       },
       {
-        "meta_name": "Epstein Files Narrative",
+        "meta_name": "Epstein Meme",
         "leader_token": {
-          "token_symbol": "GoyWhale",
-          "token_name": "The Goy Whale",
-          "token_address": "9YBS49zbfsY8NyLVR8BCPsMZRkNWPCZo9zzCS7aTpump",
-          "usd_market_cap": 3218942.29
+          "token_symbol": "Epstein",
+          "token_name": "Jeffrey Epstein",
+          "token_address": "EF228ijSZdSampJMvhLUiijJGP5PTH1Z17i71JR5pump",
+          "usd_market_cap": 629318.58
         }
       },
       {
-        "meta_name": "AI and Autonomous Systems",
+        "meta_name": "AI and Human Interaction",
         "leader_token": {
-          "token_symbol": "Mia",
-          "token_name": "Mia Ko",
-          "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-          "usd_market_cap": 1059527.85
+          "token_symbol": "renta",
+          "token_name": "rentahuman",
+          "token_address": "5MxQUFdPisppdVfjitL6hs492GyikCFnsBWYtuAqpump",
+          "usd_market_cap": 606619.87
+        }
+      },
+      {
+        "meta_name": "AI and Gaming",
+        "leader_token": {
+          "token_symbol": "Mooner",
+          "token_name": "Mooner",
+          "token_address": "DAu24iE5snKMc46QHVa7uHtEtjZ25Np1PcU8gop9pump",
+          "usd_market_cap": 429842.31
         }
       }
     ]
