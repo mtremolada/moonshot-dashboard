@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-05T09:28:10.262329Z",
+  "generated_at_utc": "2026-02-05T10:28:37.898338Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
   "token_context_count": 166,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 23 PVP group(s); excluding 33 token(s) from META prompt."
+    "Detected 25 PVP group(s); excluding 37 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 33,
+  "pvp_excluded_token_count": 37,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -193,6 +193,26 @@
           "token_address": "7dQRfjqYZ7JA2dRTYa2g4RtbYF6uRGhp6eve7VtzJTUG",
           "usd_market_cap": 7418.05,
           "processed_at": "2026-02-05T08:12:19.117175Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "bit gold",
+      "tokens": [
+        {
+          "token_symbol": "BTG",
+          "token_name": "Bit Gold",
+          "token_address": "9q95SAgjDWGi359se2KfHb8b8zMztGb7fySm3Dx6pump",
+          "usd_market_cap": 258462.13,
+          "processed_at": "2026-02-05T09:54:47.447317Z"
+        },
+        {
+          "token_symbol": "bitgold",
+          "token_name": "Bit Gold",
+          "token_address": "DvLDv3N7zahyQaahQnaKhVehtRAVoU49eBXwjDPfpump",
+          "usd_market_cap": 23440.88,
+          "processed_at": "2026-02-05T10:06:59.268377Z"
         }
       ]
     },
@@ -493,6 +513,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "vdr",
+      "tokens": [
+        {
+          "token_symbol": "VDR",
+          "token_name": "Vodra",
+          "token_address": "5a6LTLwdMJBY2JDLjw8B1w4JwFRdZszGF9W56ZzrriS1",
+          "usd_market_cap": 9755600.0,
+          "processed_at": "2026-02-05T04:00:00.070055Z"
+        },
+        {
+          "token_symbol": "VDR",
+          "token_name": "Vanguard Digital Reserve",
+          "token_address": "VDRcRcMWJM7exwHfVUau1WqAawLXR8tNF2sJP7PaMyg",
+          "usd_market_cap": 18709448.0,
+          "processed_at": "2026-02-05T10:03:40.117524Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "molt",
       "tokens": [
         {
@@ -516,69 +556,26 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens that leverage internet memes or viral internet culture as their core theme. These are often community-driven and rely on humor, nostalgia, or internet culture for adoption.",
+        "meta_name": "AI-Powered Tokens",
+        "description": "Tokens leveraging AI for autonomous trading, decision-making, or content generation are gaining traction. These tokens often tie into AI agent ecosystems, prediction markets, or AI-driven analytics platforms.",
         "defining_signals": [
-          "Tokens referencing viral memes or internet culture",
-          "Names or descriptions that tie to popular memes or internet trends",
-          "Tokens with humorous or ironic branding",
-          "Tokens referencing characters or phrases from memes",
-          "Tokens with a strong community-driven narrative"
+          "AI trading agents or autonomous agents",
+          "AI-generated content or decision-making",
+          "Integration with AI tools like Grok or LLMs",
+          "AI-based prediction or forecasting",
+          "AI-driven governance or swarm intelligence"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+            "token_symbol": "LYN",
+            "token_name": "Lyn",
+            "token_address": "3hFEAFfPBgquhPcuQYJWufENYg9pjMDvgEEsv4jxpump"
           },
-          {
-            "token_symbol": "JellyJelly",
-            "token_name": "jelly-my-jelly",
-            "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "DONT",
-            "token_name": "DisclaimerCoin",
-            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "Ban",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
-          }
-        ],
-        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Meme-driven tokens are a dominant trend in the crypto space, with multiple tokens referencing popular memes like Pepe, Bonk, and TROLL. These tokens are often community-driven and rely on humor and internet culture for adoption.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 604028494.61
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Future Tech Tokens",
-        "description": "Tokens that focus on artificial intelligence, future technology, or decentralized AI systems. These tokens often leverage the growing interest in AI and its potential to disrupt traditional industries.",
-        "defining_signals": [
-          "Tokens referencing AI, machine learning, or future tech",
-          "Tokens with narratives around decentralized AI or autonomous agents",
-          "Tokens that claim to enable AI-driven trading or decision-making",
-          "Tokens with futuristic or tech-forward branding",
-          "Tokens that reference AI research or development"
-        ],
-        "supporting_tokens": [
           {
             "token_symbol": "ALCH",
             "token_name": "Alchemist AI",
@@ -590,29 +587,19 @@
             "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
           },
           {
-            "token_symbol": "LYN",
-            "token_name": "Lyn",
-            "token_address": "3hFEAFfPBgquhPcuQYJWufENYg9pjMDvgEEsv4jxpump"
-          },
-          {
             "token_symbol": "PREDICT",
             "token_name": "Predictly",
-            "token_address": "8rQoBz7E1XMERMmLzXgTBVmSef6WWgtnVFhCEXbqpump"
+            "token_address": "8rQoBz7E1XMERKmLzXgTBVmSef6WWgTnVFhCEXbqpump"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_token": "FyPDDfqX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZppump"
-          },
-          {
-            "token_symbol": "AI",
-            "token_name": "AI",
-            "token_token": "none"
+            "token_symbol": "MILADY.AI",
+            "token_name": "Milady.AI",
+            "token_address": "Byb8WojwPWthyMm8iwtcd9CQhcZjnjQmhTRi5GN7BAGG"
           }
         ],
-        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "AI and future tech tokens are gaining traction as the crypto space explores decentralized AI and autonomous systems. Tokens like Alchemist AI and Eva Everywhere are part of this emerging trend.",
+        "leader_hint_token_address": "ALCH",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong AI integration, active community, and clear utility in AI-driven trading and decision-making.",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -622,67 +609,173 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Historical and Cultural References",
-        "description": "Tokens that draw inspiration from historical events, cultural figures, or historical narratives. These tokens often leverage the emotional or symbolic weight of historical events or figures.",
+        "meta_name": "Meme-Driven Tokens",
+        "description": "Tokens leveraging viral internet memes or cultural references to drive community engagement and speculative interest. These often tie into established meme formats or repurpose existing cultural symbols for crypto narratives.",
         "defining_signals": [
-          "Tokens referencing historical events or figures",
-          "Tokens with narratives around historical or cultural symbolism",
-          "Tokens that reference historical movements or ideologies",
-          "Tokens with names or descriptions that tie to historical events",
-          "Tokens that reference historical artifacts or cultural symbols"
+          "Use of viral internet memes or reaction images",
+          "Community-driven narratives with meme-based branding",
+          "Repurposing of existing cultural references or internet slang",
+          "Meme-based token names or descriptions",
+          "Strong social media presence and meme-based marketing"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "JEMINI",
-            "token_name": "Jeffrey Epstein AI",
-            "token_token": "or9xKfcGLxwuKiiU44fHYCdNNSiB2HRh4espkzapump"
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "ET",
-            "token_name": "Epstein Talks",
-            "token_token": "E7JLPbQX76Nv1DuNdnhzmKo7JBsF7J6RjpaxzjDGpump"
+            "token_symbol": "JELLYJELLY",
+            "token_name": "jelly-my-jelly",
+            "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_token": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "LONGBOI",
+            "token_name": "LONGBOI",
+            "token_address": "csSughp9qsFJVYpSr8RX1yze1wREVhXZHwvrQftpump"
           },
           {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_token": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
           },
           {
-            "token_symbol": "TULSA",
-            "token_name": "Black Wallstreet ✊🏾",
-            "token_token": "8TVr3U85V3Uazkxd5DJbmzdUWaxhQdEGNNGJ7eNTpump"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "HIST",
-            "token_name": "History",
-            "token_token": "none"
+            "token_symbol": "DONT",
+            "token_name": "DisclaimerCoin",
+            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
           }
         ],
-        "leader_hint_token_address": "or9xKfcGLxwuKiiU44fHYCdNNSiB2HRh4espkzapump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Tokens referencing historical events or cultural figures are gaining traction as investors seek to connect with broader narratives beyond pure speculation.",
+        "leader_hint_token_address": "PEPE",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Strong meme heritage, high community engagement, and consistent on-chain activity.",
         "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 18243414.0
+          "token_symbol": "jellyjelly",
+          "token_name": "jelly-my-jelly",
+          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+          "usd_market_cap": 59869728.06
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Elon Musk Themed Tokens",
-        "description": "Tokens inspired by Elon Musk and his ventures, such as SpaceX, xAI, and Grok. These tokens often leverage Musk's public persona and the cultural fascination with his projects.",
+        "meta_name": "AI-Powered Prediction Markets",
+        "description": "Tokens leveraging AI for prediction market analytics, forecasting, or decentralized betting. These tokens often integrate AI models to assess probabilities, identify inefficiencies, or automate trading.",
         "defining_signals": [
-          "Tokens referencing SpaceX, xAI, or Grok",
-          "Names or descriptions that tie to Elon Musk's public statements or ventures",
-          "Mentions of 'to the stars' or 'interplanetary future'",
-          "Tokens with futuristic or space-themed branding",
-          "Tokens that reference 'Mars' or 'AI' in their narrative"
+          "AI-driven prediction analytics",
+          "Integration with prediction market platforms",
+          "AI-based forecasting or risk modeling",
+          "Token-based incentives for accurate predictions",
+          "AI-driven market-making or arbitrage"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "RAIN",
+            "token_name": "Rainmaker",
+            "token_address": "3iC63FgnB7EhcPaiSaC51UkVweeBDkququ17SaRyy2pump"
+          },
+          {
+            "token_symbol": "PREDICT",
+            "token_name": "Predictly",
+            "token_address": "8rQQoBz7E1XMERKmLzXgTBVmSef6WWgTnVFhCEXbqpump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPyX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "LYN",
+            "token_name": "Lyn",
+            "token_address": "3hFEAFfPBgquhPcuQYJWufENYg9pjMDvgEEsv4jxpump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPyX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGgNmgWeFhttgZ8Qb6QXN4Yz8BAGS"
+          }
+        ],
+        "leader_hint_token_address": "RAIN",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong AI integration with prediction market utility, but still emerging in the broader market.",
+        "leader_token": {
+          "token_symbol": "LYN",
+          "token_name": "Lyn",
+          "token_address": "3hFEAFfPBgquhPcuQYJWufENYg9pjMDvgEEsv4jxpump",
+          "usd_market_cap": 122622.1
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent EEcosystems",
+        "description": "Tokens focused on AI agent ecosystems, where autonomous agents interact, trade, or collaborate. These tokens often support agent-based marketplaces, autonomous trading, or AI-driven governance models.",
+        "defining_signals": [
+          "AI agent-based marketplaces or platforms",
+          "Autonomous agent interactions or trading",
+          "Agent-driven governance or decision-making",
+          "Integration with AI agent frameworks or protocols",
+          "Token-based incentives for agent activity"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "MOLTCRO",
+            "token_name": "MoltHub",
+            "token_address": "GwDwaDP5FfkhhZVwQeCSDBsDBYvnbHqYnaAJQFg2pump"
+          },
+          {
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGgWBCqC"
+          },
+          {
+            "token_symbol": "PREDICT",
+            "token_name": "Predictly",
+            "token_address": "8rQoBz7E1XMERKmLzXgTBVmSef6WWgTnVFhCEXbqpump"
+          },
+          {
+            "token_symbol": "CLAWDBUILD",
+            "token_name": "clawdbuilds",
+            "token_token_address": "Fby5esHDb5cWuXH1pGQnN2kgVvfQVWt8RYDXGsNupump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_token_address": "FyPDX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_token_address": "4gfNpwo8LQtcgGgNmgWhFhttgZ8Qb6QXN4Yz8BAGS"
+          }
+        ],
+        "leader_hint_token_address": "BLOWFISH",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Growing interest in AI agent ecosystems and autonomous trading, with several tokens showing strong on-chain activity.",
+        "leader_token": {
+          "token_symbol": "$PREDICT",
+          "token_name": "Predictly",
+          "token_address": "8rQoBz7E1XMERKmLzXgTBVmSef6WWgTnVFhCEXbqpump",
+          "usd_market_cap": 107758.27
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Space & AI Synergy",
+        "description": "Tokens leveraging the synergy between space exploration and artificial intelligence, often tied to Elon Musk’s ventures like SpaceX and xAI. These tokens often use themes of interplanetary expansion, AI-driven space tech, or futuristic AI ecosystems.",
+        "defining_signals": [
+          "Tie-ins to SpaceX, xAI, or Elon Musk’s ventures",
+          "Themes of space exploration or AI-driven space tech",
+          "Mentions of AI-driven space infrastructure or colonization",
+          "Use of futuristic or sci-fi narratives",
+          "Integration with AI and space-related projects"
         ],
         "supporting_tokens": [
           {
@@ -691,109 +784,47 @@
             "token_address": "JAQiNZw9t6Xqev4JLWMqpNGzZMp7ZVsxzQxdvaJPpump"
           },
           {
-            "token_symbol": "SpacexAI",
-            "token_name": "SpacexAI",
-            "token_address": "5hra56LQLssRojn1HVQqGiUSLF1dm46xCtUYisFpump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
-          },
-          {
-            "token_symbol": "ToTheStars",
-            "token_name": "SpaceX & xAI Together",
-            "token_address": "14DieZPb3JAQwAopBZF5GLGeykjT7A3pjee2muexpump"
-          },
-          {
             "token_symbol": "XHL",
             "token_name": "X Holdings Corp",
-            "token_address": "DmKmGphwhd589f1HeC57hQgM5uRbKh4GMKWkitmpump"
+            "token_address_address": "DmKmGphwhd589f1HeC57hQgM5uRbKh4GMKWkitmpump"
           },
           {
-            "token_symbol": "XAI",
-            "token_name": "xAI",
-            "token_address": "none"
+            "token_symbol": "TO THE STARS",
+            "token_name": "ToTheStars",
+            "token_address_address": "14DieZPb3JAQwAopBZF5GLGeykjT7A3pjee2muexpump"
+          },
+          {
+            "token_symbol": "SPACEXAI",
+            "token_name": "SpacexAI",
+            "token_address_address": "5hra56LQLssRojn1HVQqGiRUSLF1dm46xCtUYisFpump"
+          },
+          {
+            "token_symbol": "XAIHOLDING",
+            "token_name": "X Holding Corp",
+            "token_bbb": "BZHKobbV36jmWnoS6vJyTeJvkgRkiM5jAsGKvQ9pump"
+          },
+          {
+            "token_symbol": "ELON",
+            "token_name": "Elon Coin",
+            "token_bbb": "2akXpuyFXAVN5YofZppZMfBp2Vvognpmv9NooBMuHpump"
           }
         ],
-        "leader_hint_token_address": "5hra56LQLssRojn1HVQqGiUSLF1dm46xCtUYisFpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Multiple tokens reference Elon Musk's ventures and public persona, including SpaceX, xAI, and Grok. These tokens are part of a broader cultural fascination with Musk's projects and influence in the crypto space.",
+        "leader_hint_token_addressbb": "XXX",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong narrative alignment with Elon Musk’s ventures and growing interest in space-AI integration.",
         "leader_token": {
-          "token_symbol": "TOILET",
-          "token_name": "The Toilet",
-          "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS",
-          "usd_market_cap": 2517339.73
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto Whales and Market Manipulation",
-        "description": "Tokens that reference or are inspired by large crypto market participants, often known as 'whales'. These tokens may also reference market manipulation or speculative trading strategies.",
-        "defining_signals": [
-          "Tokens referencing 'whales' or large market participants",
-          "Tokens with narratives around market manipulation or speculative trading",
-          "Tokens referencing 'pump' or 'dump' strategies",
-          "Tokens with names or descriptions that suggest market influence",
-          "Tokens that reference 'trading' or 'market' in their descriptions"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BIGTROUT",
-            "token_name": "The Big Trout",
-            "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG"
-          },
-          {
-            "token_symbol": "WARD",
-            "token_name": "Warden Protocol",
-            "token_token": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
-          },
-          {
-            "token_symbol": "BOME",
-            "token_name": "BOOK OF MEME",
-            "token_token": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
-          },
-          {
-            "token_symbol": "PUMP",
-            "token_name": "Pump",
-            "token_token": "none"
-          },
-          {
-            "token_symbol": "DUMP",
-            "token_name": "Dump",
-            "token_token": "none"
-          },
-          {
-            "token_symbol": "WHALE",
-            "token_name": "Whale",
-            "token_token": "none"
-          }
-        ],
-        "leader_hint_token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Tokens referencing 'whales' or market manipulation are part of a growing trend in the crypto space, as traders and investors look to capitalize on speculative strategies.",
-        "leader_token": {
-          "token_symbol": "BigTrout",
-          "token_name": "The Big Trout",
-          "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG",
-          "usd_market_cap": 106702.7
+          "token_symbol": "XXX",
+          "token_name": "XSpaceXXAI",
+          "token_address": "JAQiNZw9t6Xqev4JLWMqpNGzZMp7ZVsxzQxdvaJPpump",
+          "usd_market_cap": 1922.91
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Elon Musk Themed Tokens' and 'Meme-Driven Tokens' are currently the most active and dominant METAs. 'AI and Future Tech Tokens' are emerging as a strong contender, while 'Historical and Cultural References' and 'Crypto Whales and Market Manipulation' are also gaining traction. The 'Meme-Driven Tokens' meta appears to be fading slightly as newer AI and future tech tokens gain attention.",
+    "meta_rotation_note": "The 'AI-Powered Tokens' and 'Meme-Driven Tokens' are currently the most active METAs, with strong on-chain engagement and community growth. 'Space & AI Synergy' is gaining momentum as it aligns with broader narratives around Elon Musk and xAI. 'AI Agent Ecosystems' is emerging as a new trend, with several tokens showing early signs of adoption. 'AI-Powered Prediction Markets' is still in the early stages but has potential for growth as AI analytics become more integrated into DeFi.",
     "meta_leaders": [
       {
-        "meta_name": "Meme-Driven Tokens",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 604028494.61
-        }
-      },
-      {
-        "meta_name": "AI and Future Tech Tokens",
+        "meta_name": "AI-Powered Tokens",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -802,30 +833,39 @@
         }
       },
       {
-        "meta_name": "Historical and Cultural References",
+        "meta_name": "Meme-Driven Tokens",
         "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 18243414.0
+          "token_symbol": "jellyjelly",
+          "token_name": "jelly-my-jelly",
+          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+          "usd_market_cap": 59869728.06
         }
       },
       {
-        "meta_name": "Elon Musk Themed Tokens",
+        "meta_name": "AI-Powered Prediction Markets",
         "leader_token": {
-          "token_symbol": "TOILET",
-          "token_name": "The Toilet",
-          "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS",
-          "usd_market_cap": 2517339.73
+          "token_symbol": "LYN",
+          "token_name": "Lyn",
+          "token_address": "3hFEAFfPBgquhPcuQYJWufENYg9pjMDvgEEsv4jxpump",
+          "usd_market_cap": 122622.1
         }
       },
       {
-        "meta_name": "Crypto Whales and Market Manipulation",
+        "meta_name": "AI Agent EEcosystems",
         "leader_token": {
-          "token_symbol": "BigTrout",
-          "token_name": "The Big Trout",
-          "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG",
-          "usd_market_cap": 106702.7
+          "token_symbol": "$PREDICT",
+          "token_name": "Predictly",
+          "token_address": "8rQoBz7E1XMERKmLzXgTBVmSef6WWgTnVFhCEXbqpump",
+          "usd_market_cap": 107758.27
+        }
+      },
+      {
+        "meta_name": "Space & AI Synergy",
+        "leader_token": {
+          "token_symbol": "XXX",
+          "token_name": "XSpaceXXAI",
+          "token_address": "JAQiNZw9t6Xqev4JLWMqpNGzZMp7ZVsxzQxdvaJPpump",
+          "usd_market_cap": 1922.91
         }
       }
     ]
