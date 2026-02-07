@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-07T13:53:59.443687Z",
+  "generated_at_utc": "2026-02-07T14:54:45.525273Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 138,
+  "token_context_count": 140,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 8 PVP group(s); excluding 12 token(s) from META prompt."
+    "Detected 10 PVP group(s); excluding 14 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 12,
+  "pvp_excluded_token_count": 14,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -46,6 +46,26 @@
           "token_address": "63ZWe7ZRTK6poAE4QBVaoxBAzTEtC3JbzU5UhtCpump",
           "usd_market_cap": 1824.76,
           "processed_at": "2026-02-06T18:03:45.707924Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "the white pepe",
+      "tokens": [
+        {
+          "token_symbol": "WhitePepe",
+          "token_name": "The White Pepe",
+          "token_address": "3N9GyaUrt4UUdivvKfkSUiFX2qggzFFM31QQfPrApump",
+          "usd_market_cap": 5582294.96,
+          "processed_at": "2026-02-07T00:23:29.502124Z"
+        },
+        {
+          "token_symbol": "WhitePepe",
+          "token_name": "The White Pepe",
+          "token_address": "EF8twdD4FTWL7JjALHi74LoobmE98zros62KDjRhpump",
+          "usd_market_cap": 3034826.26,
+          "processed_at": "2026-02-07T14:01:09.530086Z"
         }
       ]
     },
@@ -151,6 +171,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "whitepepe",
+      "tokens": [
+        {
+          "token_symbol": "WhitePepe",
+          "token_name": "The White Pepe",
+          "token_address": "3N9GyaUrt4UUdivvKfkSUiFX2qggzFFM31QQfPrApump",
+          "usd_market_cap": 5582294.96,
+          "processed_at": "2026-02-07T00:23:29.502124Z"
+        },
+        {
+          "token_symbol": "WhitePepe",
+          "token_name": "The White Pepe",
+          "token_address": "EF8twdD4FTWL7JjALHi74LoobmE98zros62KDjRhpump",
+          "usd_market_cap": 3034826.26,
+          "processed_at": "2026-02-07T14:01:09.530086Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "fukurashi",
       "tokens": [
         {
@@ -174,43 +214,51 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI-Powered Utility",
-        "description": "Tokens leveraging AI as a core utility or narrative, often emphasizing automation, intelligence, or decentralized decision-making.",
+        "meta_name": "AI-Powered Trading and Finance",
+        "description": "Tokens focused on AI-driven trading, financial automation, or DeFi integration. These tokens often emphasize profit-sharing, automated trading, or AI-driven financial strategies.",
         "defining_signals": [
-          "AI-based trading, automation, or decision-making features",
-          "Integration with AI agents or machine learning models",
-          "Claims of autonomous or self-improving systems"
+          "AI-driven trading or financial strategies as a core feature",
+          "Profit-sharing or revenue-generating models",
+          "Integration with DeFi or financial platforms",
+          "Claims of automated or autonomous financial operations",
+          "Community-driven financial initiatives or governance",
+          "Lack of official documentation but strong speculative narrative"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "NFAi",
-            "token_name": "Athena Labs",
-            "token_address": "CYQuuo6GDdC6ZM67nARtKvi4CpFLwUvcXPyudRe2surg"
-          },
-          {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
-          },
           {
             "token_symbol": "ALCH",
             "token_name": "Alchemist AI",
             "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "SETTLE",
-            "token_name": "settle.sh",
-            "token_address": "AaKff33nGVoBptLwsVMypLjd3r5k52RDGKByaPphpump"
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
           },
           {
-            "token_symbol": "HaaS",
-            "token_name": "Human as a Service",
-            "token_address": "FdvzVZzuSo4vhpkHUVSKDFxqkCzezcweGeeV4Uppump"
+            "token_symbol": "CORTISOL",
+            "token_name": "Cortisol Level",
+            "token_address": "9AyLH5Puifc7v9MkTgA36JabS4wiVTEZ3aEPeNoTpump"
+          },
+          {
+            "token_symbol": "IDLE",
+            "token_name": "IdleMine",
+            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
+          },
+          {
+            "token_symbol": "VDR",
+            "token_name": "Vanguard Digital Reserve",
+            "token_address": "VDRcRcMWJM7exwHfVUau1WqAawLXR8tNF2sJP7PaMyg"
+          },
+          {
+            "token_symbol": "DCA",
+            "token_name": "DOLLAR COST AVERAGE",
+            "token_address": "AXQyzYRdk6ebp3VdwSNNNFR5Ssm5rMVTP84EEg98pump"
           }
         ],
-        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong AI utility themes with recurring narratives around automation and intelligence.",
+        "leaderHint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 73,
+        "confidence_rationale": "Strong AI trading and finance narrative in tokens like Alchemist AI and Get Shit Done, with clear integration into DeFi and financial strategies. Tokens like Vanguard Digital Reserve also show similar patterns, leveraging AI for financial operations.",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -220,150 +268,69 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Utility and Governance",
-        "description": "Tokens emphasizing real-world utility or governance features, often tied to decentralized platforms or services.",
+        "meta_name": "AI-Driven Meme Creation",
+        "description": "Tokens leveraging AI-generated content, memes, or art to drive community engagement. These tokens often tie their value to viral AI-generated trends or meme templates.",
         "defining_signals": [
-          "Claims of real-world utility or governance features",
-          "Integration with decentralized platforms or services",
-          "Community-driven governance or decision-making"
+          "AI-generated content as a core theme or utility",
+          "Meme or art creation as a community-driven activity",
+          "Integration with platforms for meme or art distribution",
+          "Focus on viral or trending AI-generated content",
+          "Community participation in AI-driven meme creation",
+          "Lack of direct utility but strong meme potential"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
           },
           {
-            "token_symbol": "SHARK",
-            "token_name": "SharkPool",
-            "token_address": "6CRayr4GnspC1GUDLs693oPk7AoDSXLXSx9kskgupump"
+            "token_symbol": "Caricature",
+            "token_name": "Ai Caricature",
+            "token_address": "sDLRYc96bWkJCVgRaR8FTvokw2iSg8bSQrHR7vHpump"
           },
           {
-            "token_symbol": "BLOXX",
-            "token_name": "BloxAPI",
-            "token_address": "B1rGc4HM4Q6q4nU78ADM7fGguxqiasH53fh6ViDXpump"
+            "token_symbol": "BIRB",
+            "token_name": "Moonbirds",
+            "token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwwG"
           },
           {
-            "token_symbol": "AVICI",
-            "token_name": "Avici",
-            "token_address": "BANKJmvhT8tiJRsBSS1n2HryMBPvT5Ze4HU95DUAmeta"
+            "token_symbol": "MEW",
+            "token_name": "cat in a dogs world",
+            "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5"
           },
           {
-            "token_symbol": "SIGIL",
-            "token_name": "SIGIL Protocol",
-            "token_address": "4jja37YHJWuGBHMicmHXFUENa7DpD7JcUUS47C4QBAGB"
+            "token_symbol": "BOME",
+            "token_name": "BOOK OF MEME",
+            "token_address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
+          },
+          {
+            "token_symbol": "YIELDCAT",
+            "token_name": "YIELDCAT",
+            "token_address": "Ai23uAiuL7N8seY6FqWyHJycRkpn3fXMuvPw14WPs1Gw"
           }
         ],
-        "leader_hint_token_address": "BANKJmvhT8tiJRsBSS1n2HryMBPvT5Ze4HU95DUAmeta",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong utility and governance themes with recurring narratives around decentralized platforms and services.",
+        "leaderHint_token_address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFFpKNwGG",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Strong AI meme creation narrative in tokens like Ai Caricature and Moonbirds, with clear integration into meme culture. Tokens like BOOK OF MEME also show strong community engagement and viral potential.",
         "leader_token": {
-          "token_symbol": "AVICI",
-          "token_name": "Avici",
-          "token_address": "BANKJmvhT8tiJRsBSS1n2HryMBPvT5Ze4HU95DUAmeta",
-          "usd_market_cap": 17431790.73
+          "token_symbol": "MEW",
+          "token_name": "cat in a dogs world",
+          "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
+          "usd_market_cap": 55114177.29
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Reclamation",
-        "description": "Tokens repurposing controversial or niche internet memes, often with a humorous or ironic twist, to build community and drive engagement.",
+        "meta_name": "Crypto Native Meme Creation",
+        "description": "Tokens that originate from or are closely tied to the crypto community itself, often with no direct non-crypto cultural origin. These tokens are typically created to capitalize on crypto-specific humor, slang, or inside jokes.",
         "defining_signals": [
-          "Use of culturally controversial or niche internet slang or imagery",
-          "Recontextualization of historical or political figures for humor or satire",
-          "Community-driven branding with shock-value or edgy themes"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
-          },
-          {
-            "token_symbol": "BIDAN",
-            "token_name": "Biden Clone",
-            "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump"
-          },
-          {
-            "token_symbol": "SANCHEZ",
-            "token_name": "Dirty Sanchez",
-            "token_address": "DpSnQzW6NZF7PaT94QkjFd75tXtbL4epr5zupcRtpump"
-          },
-          {
-            "token_symbol": "TIT",
-            "token_name": "TITCOIN",
-            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGvmTueu8LPfGaj7jpump"
-          },
-          {
-            "token_symbol": "BFC",
-            "token_name": "Black Fried Chicken",
-            "token_address": "7S8d5pBVXJdrRcYGxnYKHieAQ5zh1vxuxK1anttopump"
-          }
-        ],
-        "leader_hint_token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong meme reclamation themes with clear cultural references and shock-value branding.",
-        "leader_token": {
-          "token_symbol": "Bidan",
-          "token_name": "Biden Clone",
-          "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump",
-          "usd_market_cap": 6069368.08
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Pop Culture",
-        "description": "Tokens leveraging nostalgia for pop culture icons, characters, or historical figures to build community and cultural resonance.",
-        "defining_signals": [
-          "References to iconic pop culture characters or media",
-          "Leveraging historical or cultural nostalgia for branding",
-          "Community-driven themes around beloved or iconic figures"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Balzak",
-            "token_name": "Balzak",
-            "token_address": "E6cLvYyKQ2KV6hzspCDt6wQ8GTLGBxqBwySWYhbMpump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "BOBBY",
-            "token_name": "Greyfriars Bobby",
-            "token_address": "mXM8bDGm4biAkxQ94zcybeUdfBr8PNCCP6ydMYDpump"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong pop culture and nostalgia themes with clear cultural references and community engagement.",
-        "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 6010994.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto Native Meme",
-        "description": "Tokens with names or themes that are entirely crypto-native, often created to capitalize on in-jokes or internal crypto culture.",
-        "defining_signals": [
-          "Names or themes with no pre-existing cultural or meme references",
-          "Leveraging crypto-specific humor or jargon",
-          "Community-driven branding with no external cultural origin"
+          "No verifiable non-crypto cultural origin",
+          "Created specifically for crypto community engagement",
+          "Use of crypto-specific slang or humor",
+          "Community-driven meme creation without external cultural roots",
+          "Lack of pre-existing meme or cultural reference",
+          "Strong speculative narrative but weak external cultural ties"
         ],
         "supporting_tokens": [
           {
@@ -377,37 +344,204 @@
             "token_address": "EW7cWbNmTgL7PLQNiJ6tBVC62SJzJXa2pFYJjDPPpump"
           },
           {
-            "token_symbol": "1",
-            "token_name": "1 coin can change your life",
-            "token_address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk"
+            "token_symbol": "anonymous",
+            "token_name": "anonymous",
+            "token_address": "APCwYR7NjV9ZMk2Lx86p9ZQQaeCCDd44DJG1MJbWppump"
           },
           {
-            "token_symbol": "Puhcoin",
-            "token_name": "Puhcoin",
-            "token_address": "64pr2aGR9nk6cdY52NQwZadd6bp5RMqgP7ax1z5epump"
+            "token_symbol": "PonzILIO",
+            "token_name": "Ponzilio",
+            "token_address": "L84NryNjZWNDmBDVy5bYNGwgyxxoFExZmo3Qnohderp"
           },
           {
-            "token_symbol": "Coin",
-            "token_name": "Coin",
-            "token_address": "zDhCPQhQC8GPV2N6n8tMBcWBQehYkMHBuBZMzy3pump"
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
+          },
+          {
+            "token_symbol": "BOME",
+            "token_name": "BOOK OF MEME",
+            "token_address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
           }
         ],
-        "leader_hint_token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong crypto-native themes with no external cultural references and community-driven branding.",
+        "leaderHint_token_address": "FbmmdcCYHL7WETG89xtWmmNFMzQAaQ8Zs9NXVbimibonk",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong evidence of crypto-native meme creation in tokens like DisclaimerCoin and Bad At Trading, with no direct non-crypto cultural roots. Tokens like Ponzilio and WAR also show similar patterns, leveraging crypto-specific humor and slang.",
         "leader_token": {
-          "token_symbol": "1",
-          "token_name": "1 coin can change your life",
-          "token_address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk",
-          "usd_market_cap": 3899663.15
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 30383645.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Historical or Cultural Nostalgia",
+        "description": "Tokens leveraging historical figures, events, or cultural icons to build community and narrative. These tokens often tie their value to the emotional or cultural significance of the referenced figure or event.",
+        "defining_signals": [
+          "Reference to historical figures or events",
+          "Use of cultural icons or folklore as a narrative driver",
+          "Community-driven storytelling around historical or cultural themes",
+          "Lack of direct crypto origin but strong historical or cultural roots",
+          "Emotional or symbolic value tied to the referenced figure/event",
+          "Community engagement through historical or cultural themes"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "BOBBY",
+            "token_name": "Greyfriars Bobby",
+            "token_address": "mXM8bDGm4biAkxQ94zcybeUdfBr8PNCCP6ydMYDpump"
+          },
+          {
+            "token_symbol": "TRUMPY",
+            "token_name": "Trumpy Trout",
+            "token_address": "7CtqBgCFRVAaDpUuNkvWgCjcTe3LRux1pReny4Axpump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "MUSHU",
+            "token_name": "Mushu",
+            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+          },
+          {
+            "token_symbol": "SINCLAIR",
+            "token_name": "Baby Sinclair",
+            "token_address": "8MdkXe5G77xaMheVQxLqAYV8e2m2Dfc5ZbuXup2epump"
+          }
+        ],
+        "leaderHint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong historical and cultural nostalgia in tokens like Hachiko and Greyfriars Bobby, with clear emotional and cultural significance. Tokens like Trumpy Trout and Mushu also show similar patterns, leveraging historical or cultural figures for community engagement.",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 20997822.86
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Reclamation",
+        "description": "Tokens repurposing controversial or niche internet terms, often with a humorous or ironic twist, to create community-driven narratives. These tokens leverage existing cultural references to build identity and engagement.",
+        "defining_signals": [
+          "Use of terms with historical or controversial connotations (e.g., 'Goyim', 'SANCHEZ')",
+          "Recontextualization of shock-value or edgy slang for crypto branding",
+          "Community-driven narratives built around rebranded or reclaimed terms",
+          "Lack of direct crypto origin but strong meme or slang roots",
+          "Self-deprecating or ironic themes tied to the term's original meaning",
+          "Emergence of tokens with no prior cultural context but rapid meme adoption"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Goyim",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+          },
+          {
+            "token_symbol": "SANCHEZ",
+            "token_name": "Dirty Sanchez",
+            "token_address": "DpSnQzW6NZF7PaT94QkjFd75tXtbL4epr5zupcRtpump"
+          },
+          {
+            "token_symbol": "testicle",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "BFC",
+            "token_name": "Black Fried Chicken",
+            "token_address": "7S8d5pBVXJdrRcYGxnYKHieAQ5zh1vxuxK1anttopump"
+          },
+          {
+            "token_symbol": "Dihcoin",
+            "token_name": "Dihcoin",
+            "token_address": "FfoMHGyQnvgFu3sh2dDt2CNYDTPxvwdPU35aeNoGpump"
+          },
+          {
+            "token_symbol": "TIT",
+            "token_name": "TITCOIN",
+            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGgvTueu8LPfGaj7jpump"
+          }
+        ],
+        "leader_hint_token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong evidence of meme reclamation in tokens like Goyim and SANCHEZ, with clear cultural roots and community-driven narratives. Tokens like Dihcoin and TITCOIN also show similar patterns, leveraging shock value and slang for crypto branding.",
+        "leader_token": {
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 4334793.98
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Utility",
+        "description": "Tokens centered around AI agents, autonomous trading, or AI-driven platforms. These tokens often emphasize automation, intelligence, and integration with DeFi or gaming ecosystems.",
+        "defining_signals": [
+          "AI agent or autonomous trading as a core feature",
+          "Integration with DeFi or gaming platforms",
+          "Claims of profit-sharing or revenue generation via AI",
+          "Focus on AI-generated content or decision-making",
+          "Community-driven AI initiatives or governance",
+          "Lack of official documentation but strong speculative narrative"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "NFAi",
+            "token_name": "Athena Labs",
+            "token_address": "CYQuuo6GDdC6ZM67nARtKvi4CpFLwUvcXPyudRe2surg"
+          },
+          {
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
+          },
+          {
+            "token_symbol": "CYPHO",
+            "token_name": "Cypho AI",
+            "token_address": "9oLue5DWZWHpRbEHdz1fNShFW7qN1pYYVR6vjPKspump"
+          },
+          {
+            "token_symbol": "OPAL",
+            "token_name": "Opal",
+            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
+          },
+          {
+            "token_symbol": "HaaS",
+            "token_name": "Human as a Service",
+            "token_address": "FdvzVZzuSo4vhpkHUVSKDFxqkCzezcweGuV4Uppump"
+          },
+          {
+            "token_symbol": "SIGIL",
+            "token_name": "SIGIL Protocol",
+            "token_address": "4jja37YHJWuGBHMicmHXFUENa7DpD7JcUUS47C4QBAGS"
+          }
+        ],
+        "leader_hint_token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong AI narrative in tokens like Eva Everywhere and Cypho AI, with clear utility claims and integration with DeFi or AI ecosystems. High market caps and speculative interest indicate this is a growing trend.",
+        "leader_token": {
+          "token_symbol": "EVA",
+          "token_name": "Eva Everywhere",
+          "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
+          "usd_market_cap": 866122.53
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Meme Reclamation and AI-Powered Utility are gaining traction as new tokens leverage controversial or niche internet memes and AI-based narratives. Nostalgia and Pop Culture remains strong but is showing signs of saturation. Crypto Native Meme is emerging as a distinct category with increasing community-driven branding. Utility and Governance is fading slightly as newer tokens focus more on meme-based narratives.",
+    "meta_rotation_note": "Meme Reclamation and AI-Powered Utility are currently the most dominant METAs, with strong community engagement and narrative traction. Historical/Cultural Nostalgia is also gaining momentum, particularly with tokens like Hachiko and Greyfriars Bobby. Crypto Native Meme Creation is fading slightly as newer AI and AI-driven meme creation tokens gain more attention. AI-Powered Trading and Finance is emerging as a strong contender, with increasing speculative interest and integration into DeFi ecosystems.",
     "meta_leaders": [
       {
-        "meta_name": "AI-Powered Utility",
+        "meta_name": "AI-Powered Trading and Finance",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -416,39 +550,48 @@
         }
       },
       {
-        "meta_name": "Utility and Governance",
+        "meta_name": "AI-Driven Meme Creation",
         "leader_token": {
-          "token_symbol": "AVICI",
-          "token_name": "Avici",
-          "token_address": "BANKJmvhT8tiJRsBSS1n2HryMBPvT5Ze4HU95DUAmeta",
-          "usd_market_cap": 17431790.73
+          "token_symbol": "MEW",
+          "token_name": "cat in a dogs world",
+          "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
+          "usd_market_cap": 55114177.29
+        }
+      },
+      {
+        "meta_name": "Crypto Native Meme Creation",
+        "leader_token": {
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 30383645.0
+        }
+      },
+      {
+        "meta_name": "Historical or Cultural Nostalgia",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 20997822.86
         }
       },
       {
         "meta_name": "Meme Reclamation",
         "leader_token": {
-          "token_symbol": "Bidan",
-          "token_name": "Biden Clone",
-          "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump",
-          "usd_market_cap": 6069368.08
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 4334793.98
         }
       },
       {
-        "meta_name": "Nostalgia and Pop Culture",
+        "meta_name": "AI-Powered Utility",
         "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 6010994.0
-        }
-      },
-      {
-        "meta_name": "Crypto Native Meme",
-        "leader_token": {
-          "token_symbol": "1",
-          "token_name": "1 coin can change your life",
-          "token_address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk",
-          "usd_market_cap": 3899663.15
+          "token_symbol": "EVA",
+          "token_name": "Eva Everywhere",
+          "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS",
+          "usd_market_cap": 866122.53
         }
       }
     ]
