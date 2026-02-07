@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-07T02:58:21.035740Z",
+  "generated_at_utc": "2026-02-07T03:58:52.611821Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 142,
+  "token_context_count": 136,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 10 PVP group(s); excluding 14 token(s) from META prompt."
+    "Detected 8 PVP group(s); excluding 12 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 14,
+  "pvp_excluded_token_count": 12,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "pepe",
-      "tokens": [
-        {
-          "token_symbol": "PEPE",
-          "token_name": "Pepe",
-          "token_address": "6vXFKgRiE7uZLfQrRXMqMey3cewR5HV7p18WjU1Zpump",
-          "usd_market_cap": 2204.02,
-          "processed_at": "2026-02-06T03:20:13.076788Z"
-        },
-        {
-          "token_symbol": "Pepe",
-          "token_name": "Pepe",
-          "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-          "usd_market_cap": 201889.88,
-          "processed_at": "2026-02-06T05:10:12.946116Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "trumprx",
@@ -66,26 +46,6 @@
           "token_address": "63ZWe7ZRTK6poAE4QBVaoxBAzTEtC3JbzU5UhtCpump",
           "usd_market_cap": 1824.76,
           "processed_at": "2026-02-06T18:03:45.707924Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "pepe",
-      "tokens": [
-        {
-          "token_symbol": "PEPE",
-          "token_name": "Pepe",
-          "token_address": "6vXFKgRiE7uZLfQrRXMqMey3cewR5HV7p18WjU1Zpump",
-          "usd_market_cap": 2204.02,
-          "processed_at": "2026-02-06T03:20:13.076788Z"
-        },
-        {
-          "token_symbol": "Pepe",
-          "token_name": "Pepe",
-          "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-          "usd_market_cap": 201889.88,
-          "processed_at": "2026-02-06T05:10:12.946116Z"
         }
       ]
     },
@@ -214,157 +174,16 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal Meme Coins",
-        "description": "Tokens inspired by popular animal memes and internet culture, often leveraging cute or iconic animals like dogs, cats, and cows. These tokens frequently tie into broader meme communities and have viral potential.",
+        "meta_name": "AI and Tech Meme Tokens",
+        "description": "Tokens inspired by AI, technology, or internet culture, often with a humorous or ironic twist. These tokens leverage the public's familiarity with these themes and their associated memes or cultural references.",
         "defining_signals": [
-          "Use of animal names or references in token names (e.g., Dog, Cat, Cow)",
-          "Meme-based narratives tied to viral animal content",
-          "Strong community engagement on platforms like TikTok and Reddit"
+          "Tokens reference AI, technology, or internet culture.",
+          "Names often combine tech themes with crypto jargon.",
+          "Tokens may reference viral tech memes or internet culture.",
+          "Tokens often have a humorous or ironic theme.",
+          "Tokens are often community-driven and lack formal documentation."
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "DOG",
-            "token_name": "The Crypto Dog",
-            "token_address": "21CnrFRqvEVkQZUTFmTXjcsJTLZhRY51ohoaCPwRpump"
-          },
-          {
-            "token_symbol": "COW",
-            "token_name": "PerpetualCow.hl",
-            "token_address": "FWoGYRhR6YagBSqncPSdn43GHNikSPw1ggrGzyM3H5rE"
-          },
-          {
-            "token_symbol": "MEW",
-            "token_name": "cat in a dogs world",
-            "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          }
-        ],
-        "leader_hint_token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
-        "confidence_0_100": 90,
-        "confidence_rationale": "MEW has strong meme traction and a clear viral narrative. DOG and COW also show strong community engagement.",
-        "leader_token": {
-          "token_symbol": "MEW",
-          "token_name": "cat in a dogs world",
-          "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
-          "usd_market_cap": 55114177.29
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Cultural Icon Meme Coins",
-        "description": "Tokens inspired by cultural icons, including fictional characters, historical figures, and pop culture references. These tokens often leverage nostalgia and widespread recognition for community engagement.",
-        "defining_signals": [
-          "Use of cultural icons in token names (e.g., Hachiko, Long Boi, Calvin)",
-          "Meme-based narratives tied to viral cultural references",
-          "Strong community engagement on platforms like TikTok and Reddit"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "BOI",
-            "token_name": "LONGBOI",
-            "token_address": "csSughp9qsFJVYpSr8RX1yze1wREVhXZHwvrQftpump"
-          },
-          {
-            "token_symbol": "CALVIN",
-            "token_name": "Calvin in the Cabal",
-            "token_address": "Axo7inGzj9dhTH4R4LHxC3kxuRq7uxhiuxLqqLZeBAGS"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "PETAH",
-            "token_name": "ピータさん",
-            "token_address": "GDmSzyg3F3CqgusT4CcxhjaKKfaucN98L4EUePeqpump"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 80,
-        "confidence_rationale": "HACHI has a strong cultural narrative and community. BOI and CALVIN also show strong engagement.",
-        "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 6010994.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Retro Meme Coins",
-        "description": "Tokens inspired by retro and nostalgic themes, often leveraging older internet memes, pop culture references, and historical events to create community engagement.",
-        "defining_signals": [
-          "Use of retro or nostalgic themes in token names (e.g., Clippy, Balzak, Sinclair)",
-          "Meme-based narratives tied to viral retro content",
-          "Strong community engagement on platforms like TikTok and Reddit"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "Balzak",
-            "token_name": "Balzak",
-            "token_address": "E6cLvYyKQ2KV6hzspCDt6wQ8GTLGBxqBwySWYhbMpump"
-          },
-          {
-            "token_symbol": "Sinclair",
-            "token_name": "Baby Sinclair",
-            "token_address": "8MdkXe5G77xaMheVQxLqAYV8e2m2Dfc5ZbuXup2epump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "PETAH",
-            "token_name": "ピータさん",
-            "token_address": "GDmSzyg3F3CqgusT4CcxhjaKKfaucN98L4EUePeqpump"
-          }
-        ],
-        "leader_hint_token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Clippy has strong nostalgic traction. Balzak and Sinclair also show strong community engagement.",
-        "leader_token": {
-          "token_symbol": "PETAH",
-          "token_name": "ピータさん",
-          "token_address": "GDmSzyg3F3CqgusT4CcxhjaKKfaucN98L4EUePeqpump",
-          "usd_market_cap": 1428311.43
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Automation Meme Coins",
-        "description": "Tokens inspired by AI and automation themes, often leveraging the growing interest in AI agents and their potential impact on society and the economy.",
-        "defining_signals": [
-          "Use of AI-related terms in token names (e.g., AI, OPAL, JARvis)",
-          "Meme-based narratives tied to AI advancements and automation",
-          "Strong community engagement on platforms like TikTok and Reddit"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "AI",
-            "token_name": "ai.com",
-            "token_address": "J7CSmbyCco1Mz4AhCvmPRrCbXesXYxDwaZCuvpEYpump"
-          },
           {
             "token_symbol": "OPAL",
             "token_name": "Opal",
@@ -376,45 +195,105 @@
             "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
           },
           {
-            "token_symbol": "CYPHO",
-            "token_name": "Cypho AI",
-            "token_address": "9oLue5DWZWHpRbEHdz1fNShFW7qN1pYYVR6vjPKspump"
+            "token_symbol": "ECC",
+            "token_name": "Everything Claude Code",
+            "token_address": "5pXCgix5omo4SLU6f2JcGUGhxMBih6PxcF6RfabsBAGS"
           },
           {
-            "token_symbol": "EVA",
-            "token_name": "Eva Everywhere",
-            "token_address": "4gfFpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGG"
+            "token_symbol": "NFAi",
+            "token_name": "Athena Labs",
+            "token_address": "CYQuuo6GDdC6ZM67nARtKvi4CpFLwUvcXPyudRe2surg"
+          },
+          {
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
           }
         ],
-        "leader_hint_token_address": "J7CSmbyCco1Mz4AhCvmPRrCbXesXYxDwaZCuvpEYpump",
+        "leader_hint_token_token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump",
         "confidence_0_100": 75,
-        "confidence_rationale": "AI has strong AI narrative traction. OPAL and JARVIS also show strong community engagement.",
+        "confidence_rationale": "Opal is a well-known AI-related meme with a strong presence in the crypto space. Other tokens like OpenClaw Jarvis and Everything Claude Code also show strong cultural resonance and community engagement.",
         "leader_token": {
-          "token_symbol": "JARVIS",
-          "token_name": "OpenClaw Jarvis",
-          "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump",
-          "usd_market_cap": 786760.81
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 151166560.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political Figure Meme Coins",
-        "description": "Tokens leveraging the cultural and meme presence of prominent political figures, especially Donald Trump and Joe Biden. These tokens often use initials or direct references to political narratives and conspiracy theories.",
+        "meta_name": "Meme Character Tokens",
+        "description": "Tokens based on viral internet characters or memes, often with a humorous or ironic twist. These tokens leverage cultural references to characters or phrases that have gained popularity on platforms like TikTok, Reddit, and Twitter.",
         "defining_signals": [
-          "Use of initials or names of political figures (e.g., DJT, Bidan)",
-          "Meme-based narratives tied to political events or conspiracies",
-          "High engagement on social media platforms like TikTok and X"
+          "Tokens reference viral characters or memes (e.g., Pepe, Doge, Wojak).",
+          "Names often combine pop culture with crypto jargon (e.g., PepeTrump, WhitePepe).",
+          "Tokens are community-driven and often lack formal documentation.",
+          "Names are typically short, catchy, and easy to remember.",
+          "Tokens often have a humorous or ironic theme."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "DJT",
-            "token_name": "DJT",
-            "token_address": "5RyJc3qaLiankt4vFtAKwyWHYL3VKUkLmm14Bwkmpump"
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "WhitePepe",
+            "token_name": "The White Pepe",
+            "token_address": "3N9GyaUrt4UUdivvKfkSUiFX2qgggFFM31QQfPrApump"
+          },
+          {
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "DOG",
+            "token_name": "The Crypto Dog",
+            "token_address": "21CnrFRqvEVkQZUTFmTXjcsJTLZhRY51ohoaCPwRpump"
+          },
+          {
+            "token_symbol": "SPECTRUMBOY",
+            "token_name": "Spectrum Boy",
+            "token_address": "6VGe7oP6g349LCN3XUQFqhoUFwqiEYUVsS4knppVpump"
+          }
+        ],
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Pepe is a well-established meme with a long history in internet culture, and it has a strong presence in the crypto space. Other tokens like WhitePepe and Wojak also show strong cultural resonance and community engagement.",
+        "leader_token": {
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 9483501.29
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political Figure Tokens",
+        "description": "Tokens inspired by or referencing political figures, often with a satirical or ironic twist. These tokens leverage the public's familiarity with these figures and their associated memes or controversies.",
+        "defining_signals": [
+          "Tokens reference political figures (e.g., Donald Trump, Joe Biden).",
+          "Names often combine political figures with crypto jargon (e.g., PepeTrump, Bidan).",
+          "Tokens often have a satirical or ironic theme.",
+          "Tokens may reference conspiracy theories or viral political memes.",
+          "Tokens are often community-driven and lack formal documentation."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "$PTRUMP",
+            "token_name": "PepeTrump",
+            "token_address": "Gk2kRrwNMBU4Dn9JhC1Dks8G5X9nqi4ZE5jMvK6bdgEd"
           },
           {
             "token_symbol": "Bidan",
             "token_name": "Biden Clone",
-            "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njjQ86134GF41MJYpump"
+            "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump"
+          },
+          {
+            "token_symbol": "TRUMPY",
+            "token_name": "Trumpy Trout",
+            "token_address": "7CtqBgCFRVAaDpUuNkvWgCjcTe3LRux1pReny4Axpump"
           },
           {
             "token_symbol": "MAXWELL",
@@ -425,38 +304,147 @@
             "token_symbol": "Jemini",
             "token_name": "Jeffrey Epstein AI",
             "token_address": "or9xKfcGLxwuKiiU44fHYCdNNSiB2HRh4espkzapump"
-          },
-          {
-            "token_symbol": "FRAMING",
-            "token_name": "The Great Framing",
-            "token_address": "8y6K7TNDt1LEMcBioUQH64Ty5HwKjDHyKdC2FcxUpump"
           }
         ],
-        "leader_hint_token_address": "5RyJc3qaLiankt4vFtAKwyWHYL3VKUkLmm14Bwkmpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "DJT has a clear meme origin and strong social media presence. Bidan and Maxwell also show strong political meme ties.",
+        "leader_hint_token_address": "Gk2kRrwNMBU4Dn9JhC1Dks8G5X9nqi4ZE5jJvK6bdgEd",
+        "confidence_0_100": 75,
+        "confidence_rationale": "PepeTrump is a well-known token with a strong community and cultural resonance. Other tokens like Bidan and Trumpy Trout also show strong political references and community engagement.",
         "leader_token": {
-          "token_symbol": "MAXWELL",
-          "token_name": "Ghislaine Maxwell",
-          "token_address": "94bNSrvqmSYiRswujKDrFwYj34tvKSPWX3yFPFiapump",
-          "usd_market_cap": 120309.41
+          "token_symbol": "Bidan",
+          "token_name": "Biden Clone",
+          "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump",
+          "usd_market_cap": 6069368.08
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal Meme Tokens",
+        "description": "Tokens inspired by animals or animal-related memes, often with a humorous or ironic twist. These tokens leverage the public's familiarity with these animals and their associated memes or cultural references.",
+        "defining_signals": [
+          "Tokens reference animals or animal-related memes (e.g., Doge, Shiba Inu, Rainbow Fish).",
+          "Names often combine animals with crypto jargon (e.g., Doge, Rainbow Fish).",
+          "Tokens often have a humorous or ironic theme.",
+          "Tokens may reference viral animal memes or internet culture.",
+          "Tokens are often community-driven and lack formal documentation."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "DOG",
+            "token_name": "The Crypto Dog",
+            "token_address": "21CnrFRqvEVkQZUTFmTXjcsJTLZhRY51ohoaCPwRpump"
+          },
+          {
+            "token_symbol": "rainbowfish",
+            "token_name": "rainbowfish",
+            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
+          },
+          {
+            "token_symbol": "COPPERINU",
+            "token_name": "copper inu",
+            "token_address": "61Wj56QgGyyB966T7YsMzEAKRLcMvJpDbPzjkrCZc4Bi"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "SPECTRUMBOY",
+            "token_name": "Spectrum Boy",
+            "token_address": "6VGe7oP6g349LCN3XUQFqhoUFwqiEYUVsS4knppVpump"
+          }
+        ],
+        "leader_hint_token_address": "21CnrFRqvEVkQZUTFmTXjcsJTLZhRY51ohoaCPwRpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The Crypto Dog is a well-established meme with a long history in internet culture, and it has a strong presence in the crypto space. Other tokens like Rainbow Fish and Copper Inu also show strong cultural resonance and community engagement.",
+        "leader_token": {
+          "token_symbol": "$HACHI",
+          "token_name": "Hachiko",
+          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+          "usd_market_cap": 6010994.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Cultural Reference Tokens",
+        "description": "Tokens inspired by cultural references, historical events, or literary works. These tokens leverage the public's familiarity with these references and their associated memes or cultural significance.",
+        "defining_signals": [
+          "Tokens reference cultural references, historical events, or literary works.",
+          "Names often combine cultural references with crypto jargon.",
+          "Tokens may reference viral cultural memes or internet culture.",
+          "Tokens often have a humorous or ironic theme.",
+          "Tokens are often community-driven and lack formal documentation."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "METATOWEL",
+            "token_name": "MetaTowel",
+            "token_address": "CtsDk7Mo1wwhxhQp6zqB2oHEFXPEHhgjTBE8VvcUpump"
+          },
+          {
+            "token_symbol": "BOBBY",
+            "token_name": "Greyfriars Bobby",
+            "token_address": "mXM8bDGm4biAkxQ94zcybeUdfBr8PNCCP6ydMYDpump"
+          },
+          {
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+          },
+          {
+            "token_symbol": "BALZAK",
+            "token_name": "Balzak",
+            "token_address": "E6cLvYyKQ2KV6hzspCDt6wQ8GTLGBxqBwySWYhbMpump"
+          },
+          {
+            "token_symbol": "SPECTRUMBOY",
+            "token_name": "Spectrum Boy",
+            "token_address": "6VGe7oP6g349LCN3XUQFqhoUFwqiEYUVsS4knppVpump"
+          }
+        ],
+        "leader_hint_token_address": "CtsDk7Mo1wwhxhQp6zqB2oHEFXPEHhgjTBE8VvcUpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "MetaTowel is a well-known cultural reference with a strong presence in internet culture. Greyfriars Bobby and Kabuto also show strong cultural resonance and community engagement.",
+        "leader_token": {
+          "token_symbol": "KABUTO",
+          "token_name": "Kabuto",
+          "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
+          "usd_market_cap": 1545048.01
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "Political Figure Meme Coins and Animal Meme Coins are currently fading as newer AI and Automation Meme Coins and Nostalgia Meme Coins are emerging. Cultural Icon Meme Coins remain stable but are showing signs of plateauing.",
+    "meta_rotation_note": "Meme Character Tokens and Political Figure Tokens are currently fading as their novelty wears off and community engagement declines. Emerging are AI and Tech Meme Tokens and Cultural Reference Tokens, which are gaining traction due to their alignment with current trends in AI and internet culture.",
     "meta_leaders": [
       {
-        "meta_name": "Animal Meme Coins",
+        "meta_name": "AI and Tech Meme Tokens",
         "leader_token": {
-          "token_symbol": "MEW",
-          "token_name": "cat in a dogs world",
-          "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
-          "usd_market_cap": 55114177.29
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 151166560.0
         }
       },
       {
-        "meta_name": "Cultural Icon Meme Coins",
+        "meta_name": "Meme Character Tokens",
+        "leader_token": {
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 9483501.29
+        }
+      },
+      {
+        "meta_name": "Political Figure Tokens",
+        "leader_token": {
+          "token_symbol": "Bidan",
+          "token_name": "Biden Clone",
+          "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump",
+          "usd_market_cap": 6069368.08
+        }
+      },
+      {
+        "meta_name": "Animal Meme Tokens",
         "leader_token": {
           "token_symbol": "$HACHI",
           "token_name": "Hachiko",
@@ -465,30 +453,12 @@
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Meme Coins",
+        "meta_name": "Cultural Reference Tokens",
         "leader_token": {
-          "token_symbol": "PETAH",
-          "token_name": "ピータさん",
-          "token_address": "GDmSzyg3F3CqgusT4CcxhjaKKfaucN98L4EUePeqpump",
-          "usd_market_cap": 1428311.43
-        }
-      },
-      {
-        "meta_name": "AI and Automation Meme Coins",
-        "leader_token": {
-          "token_symbol": "JARVIS",
-          "token_name": "OpenClaw Jarvis",
-          "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump",
-          "usd_market_cap": 786760.81
-        }
-      },
-      {
-        "meta_name": "Political Figure Meme Coins",
-        "leader_token": {
-          "token_symbol": "MAXWELL",
-          "token_name": "Ghislaine Maxwell",
-          "token_address": "94bNSrvqmSYiRswujKDrFwYj34tvKSPWX3yFPFiapump",
-          "usd_market_cap": 120309.41
+          "token_symbol": "KABUTO",
+          "token_name": "Kabuto",
+          "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
+          "usd_market_cap": 1545048.01
         }
       }
     ]
