@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-08T09:04:59.371088Z",
+  "generated_at_utc": "2026-02-08T10:05:34.664169Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 141,
+  "token_context_count": 139,
   "prompt_truncated": false,
   "warnings": [
     "Detected 15 PVP group(s); excluding 18 token(s) from META prompt."
@@ -314,26 +314,78 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Animal Revival",
-        "description": "Tokens leveraging iconic or viral animal memes, often repurposed for crypto branding. These include historical memes like Pepe the Frog, or internet sensations like the Black Whale or the 'Pigeon Doctor'.",
+        "meta_name": "Animal Meme Tokens",
+        "description": "Tokens inspired by viral animal memes or internet phenomena, often using animals as symbols for humor or community identity. These tokens are typically community-driven and leverage the emotional resonance of animals in internet culture.",
         "defining_signals": [
-          "Repetition of animal-based meme names (e.g., Whale, Trout, Penguin)",
-          "Cultural references to viral animal memes (e.g., Black Whale, Pigeon Doctor)",
-          "Community-driven narratives around animal symbolism (e.g., 'gentle connections' for Pippin)",
-          "Use of animal imagery in token descriptions or branding",
-          "Leveraging historical or pop culture animal references (e.g., Kabuto, Hachiko)",
-          "Meme-based humor or absurdity tied to animal themes (e.g., 'Trout' as a predator/bait duality)"
+          "Tokens based on viral animal memes (e.g., Black Whale, Black Bear, Trout).",
+          "Community-driven branding with animal-centric themes.",
+          "Use of animals as symbols for humor or emotional resonance.",
+          "Absence of traditional financial utility, focusing on cultural identity.",
+          "Inclusion of visual or textual references to the meme’s original context."
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "BlackWhale",
+            "token_name": "The Black Whale",
+            "token_address": "8y45AJzCUBSZL1UDFQRzCKovQBLQFudBrpPeg5yNpump"
+          },
+          {
+            "token_symbol": "BlackBear",
+            "token_name": "The Black Bear",
+            "token_address": "54n4J8NLMCtNhcbUbTsoskQqkYfw8Vr5vefKHeqNpump"
+          },
+          {
+            "token_symbol": "BlackCock",
+            "token_name": "The Black Cock",
+            "token_address": "EXS6mYTtQewyaVoQhtXmkYU5CQyhMyxA2exUkV54pump"
+          },
+          {
+            "token_symbol": "BlackSwan",
+            "token_name": "The Black Swan",
+            "token_address": "FzLMPzqz9Ybn26qRzPKDKwsLV6Kpvugh31jF7T7npump"
+          },
           {
             "token_symbol": "WhiteWhale",
             "token_name": "The White Whale",
             "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
           },
           {
-            "token_symbol": "BlackWhale",
-            "token_name": "The Black Whale",
-            "token_address": "8y45AJzCUBSZL1UDFQRzCKovQBLQFudBrpPeg5yNpump"
+            "token_symbol": "WhiteWolf",
+            "token_name": "The White Wolf",
+            "token_address": "5YaMNTrBFCudhkTiFmuK1Ms8NA7L83PMucu4zCG7pump"
+          }
+        ],
+        "leader_hint_token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong presence of animal-based memes with clear cultural origins and active community engagement.",
+        "leader_token": {
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 132651812.64
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Anime and Pop Culture Tokens",
+        "description": "Tokens inspired by popular anime characters or pop culture references, often leveraging the global fanbase of these characters for community-driven branding. These tokens typically have no direct financial utility but rely on cultural resonance.",
+        "defining_signals": [
+          "Tokens based on popular anime characters (e.g., Misaka, Pikachu, Clippy).",
+          "Community-driven branding with anime or pop culture themes.",
+          "Use of characters as symbols for humor or emotional resonance.",
+          "Absence of traditional financial utility, focusing on cultural identity.",
+          "Inclusion of visual or textual references to the character’s original context."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "MISAKA",
+            "token_name": "Misaka",
+            "token_address": "4e2DhohUAJ9EbrLey3rVVgFQzLCAeeBirSbdhqrh9snX"
+          },
+          {
+            "token_symbol": "PIKACHU",
+            "token_name": "Pikachu Illustrator",
+            "token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump"
           },
           {
             "token_symbol": "PENGUIN",
@@ -341,83 +393,110 @@
             "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "PpeBAMA",
-            "token_name": "ApeBama",
-            "token_address": "NopK9qESRHrP7b8TSPmgVbpWpovHUk49KDnhGPm8Mub"
+            "token_symbol": "SINCLAIR",
+            "token_name": "Baby Sinclair",
+            "token_address": "8MdkXe5G77xaMheVQxLqAYV8e2m2Dfc5ZbuXup2epump"
           },
           {
-            "token_symbol": "Pigeon",
-            "token_name": "Pigeon Doctor",
-            "token_address": "GB8KtQfMChhYrCYtd5PoAB42kAdkHnuyAincSSmFpump"
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBBcqC"
           },
+          {
+            "token_symbol": "BQC",
+            "token_name": "BBQCoin",
+            "token_address": "Bv2AYefUcEe8StuRAAsvGLyeB8fkqVeEUVvYAiPApump"
+          }
+        ],
+        "leader_hint_token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong presence of anime and pop culture references with active community engagement.",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 19524981.05
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia and Retro Meme Tokens",
+        "description": "Tokens inspired by retro internet culture, video games, or historical references, often leveraging nostalgia for community-driven branding. These tokens typically have no direct financial utility but rely on cultural resonance.",
+        "defining_signals": [
+          "Tokens based on retro internet culture or video games.",
+          "Community-driven branding with nostalgia themes.",
+          "Use of historical or retro references as symbols for humor or emotional resonance.",
+          "Absence of traditional financial utility, focusing on cultural identity.",
+          "Inclusion of visual or textual references to the retro context."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+          },
+          {
+            "token_symbol": "COW",
+            "token_name": "COW COIN",
+            "token_address": "GVENy9WjH1DEr7Fi1czk1nLTmgHXm8wT5j6FC9K6pump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZZLdpDikgbaWSd5fTEozQkV7KApump"
+          },
+          {
+            "token_symbol": "JERRY",
+            "token_name": "Jerry",
+            "token_address": "GDfGT63UDSVsgJsjH2kEq1BJSYBkFbbaeEk9UYUxpump"
+          },
+          {
+            "token_symbol": "PONKE",
+            "token_name": "Ponke",
+            "token_address": "5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC"
+          },
+          {
+            "token_symbol": "SINCLAIR",
+            "token_name": "Baby Sinclair",
+            "token_address": "8MdkXe5G77xaMheVQxLqAYV8e2m2Dfc5ZbuXup2epump"
+          }
+        ],
+        "leader_hint_token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Strong presence of retro and nostalgia-based tokens with active community engagement.",
+        "leader_token": {
+          "token_symbol": "PONKE",
+          "token_name": "PONKE",
+          "token_address": "5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC",
+          "usd_market_cap": 18576069.08
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Character Tokens",
+        "description": "Tokens based on viral internet characters or memes, often repurposed for crypto branding. These tokens leverage the cultural familiarity of characters like Pepe the Frog, Wojak, and others to create community-driven narratives.",
+        "defining_signals": [
+          "Use of well-known meme characters (e.g., Pepe, Wojak, Clippy).",
+          "Tokens with origins in internet culture or imageboards.",
+          "Community-driven branding and social media promotion.",
+          "Absence of traditional financial utility, focusing on cultural identity.",
+          "Inclusion of visual or textual references to the meme’s original context."
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "Pepe",
             "token_name": "Pepe",
             "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "TROUT",
-            "token_name": "THE TROUT",
-            "token_address": "GQBoctt6DWs1iVYknuFzvvQqfkqiCsFJsUemzbbQpump"
-          },
-          {
-            "token_symbol": "SmallTrout",
-            "token_name": "THE SMALL TROUT",
-            "token_address": "HqqPGygmCnXNAFisQ8ux78VGX8kwvpRRf9ebctGSpump"
-          }
-        ],
-        "leader_hint_token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong recurring theme with multiple tokens leveraging animal-based memes, including whales, penguins, and penguins, all with clear cultural references and community engagement.",
-        "leader_token": {
-          "token_symbol": "WhiteWhale",
-          "token_name": "The White Whale",
-          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-          "usd_market_cap": 132651812.64
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Internet Meme Revival",
-        "description": "Tokens leveraging classic or viral internet memes, often repurposed for crypto branding. These include historical memes like 'Wojak', 'Feels Guy', or 'Trollface', or newer viral trends.",
-        "defining_signals": [
-          "Repetition of meme-based names patterns (e.g., 'Wojak', 'Trollface', 'Feels Guy')",
-          "Leveraging viral internet memes for branding (e.g., 'Troll', 'Wojak')",
-          "Community-driven narratives around memes (e.g., 'Wojak', 'Trollface')",
-          "Use of meme-based humor or absurdity (e.g., 'Wojak', 'Trollface')",
-          "Meme-based descriptions or branding (e.g., 'Wojak', 'Trollface')",
-          "Leveraging historical memes for crypto branding (e.g., 'Wojak', 'Trollface')"
-        ],
-        "supporting_tokens": [
-          {
             "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "TIT",
-            "token_name": "TITCOIN",
-            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGvmTueu8LPfGaj7jpump"
-          },
-          {
-            "token_symbol": "TIT",
-            "token_name": "TITCOIN",
-            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGvmTueu8LPfGaj7jpump"
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
             "token_symbol": "TROLL",
@@ -425,34 +504,19 @@
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4PpKBMr5rpump"
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "TIT",
-            "token_name": "TITCOIN",
-            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGvmTueu8LPfGaj7jpump"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "TIT",
-            "token_name": "TITCOIN",
-            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGvmTueu8LPfGaj7jpump"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4PpKBMr5rpump",
-        "confidence_0_100": 89,
-        "confidence_rationale": "Strong internet meme revival theme with recurring tokens referencing classic memes like 'Wojak' and 'Trollface'. Tokens like 'Wojak' and 'Troll' show clear community engagement and meme-based humor.",
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong presence of meme characters with clear cultural origins and active community engagement.",
         "leader_token": {
           "token_symbol": "TROLL",
           "token_name": "TROLL",
@@ -462,179 +526,25 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
-        "description": "Tokens leveraging nostalgia for older media, technology, or cultural references. These often include references to 80s/90s pop culture, retro tech, or classic games.",
+        "meta_name": "Political and Celebrity Meme Tokens",
+        "description": "Tokens inspired by political figures, celebrities, or internet personas, often leveraging the controversy or popularity of these figures for community-driven branding. These tokens typically have no direct financial utility but rely on cultural resonance.",
         "defining_signals": [
-          "Use of retro or nostalgic references (e.g., 'Clippy', 'Kabuto', 'Hachiko')",
-          "Leveraging nostalgia for older media or technology (e.g., 'Clippy', 'Kabuto')",
-          "Community-driven narratives around retro culture (e.g., 'Clippy', 'Kabuto')",
-          "Meme-based humor tied to retro references (e.g., 'Clippy', 'Kabuto')",
-          "Use of retro imagery or branding (e.g., 'Clippy', 'Kabuto')",
-          "Leveraging historical or pop culture nostalgia for crypto branding (e.g., 'Clippy', 'Kabuto')"
+          "Tokens based on political figures or celebrities (e.g., Trump, Biden, Elon).",
+          "Community-driven branding with political or celebrity themes.",
+          "Use of figures as symbols for humor or emotional resonance.",
+          "Absence of traditional financial utility, focusing on cultural identity.",
+          "Inclusion of visual or textual references to the figure’s original context."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "BQC",
+            "token_name": "BBQCoin",
+            "token_address": "Bv2AYefUcEe8StuRAAsvGLyeB8fkqVeEUVvYAiPApump"
           },
           {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVooKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          }
-        ],
-        "leader_hint_token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-        "confidence_0_100": 87,
-        "confidence_rationale": "Strong nostalgia and retro culture theme with recurring tokens referencing retro tech and pop culture. Tokens like 'Clippy' and 'Kabuto' show clear community engagement and meme-based humor.",
-        "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 5581518.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Anime and Pop Culture Crossovers",
-        "description": "Tokens inspired by anime, manga, or broader pop culture references. These often leverage iconic characters, phrases, or themes from popular media to create a sense of familiarity and community.",
-        "defining_signals": [
-          "Use of anime/manga characters or phrases (e.g., 'Misaka', 'Pippin', 'Kabuto')",
-          "Incorporation of pop culture references (e.g., 'Ralph Wiggum', 'Wojak')",
-          "Leveraging iconic media or characters for branding (e.g., 'Pippin', 'Kabuto')",
-          "Community-driven narratives around pop culture (e.g., 'Pippin's Face', 'Ralph Wiggum')",
-          "Meme-based humor tied to anime or pop culture (e.g., 'Wojak', 'Ralph Wiggum')",
-          "Use of pop culture in token descriptions or branding (e.g., 'Pippin', 'Kabuto')"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MISAKA",
-            "token_name": "Misaka",
-            "token_address": "4e2DhohUAJ9EbrLey3rVVgFQzLCAeeBirSbdhqrh9snX"
-          },
-          {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgvSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4ppKBMr5rpump"
-          },
-          {
-            "token_symbol": "MISAKA",
-            "token_name": "Misaka",
-            "token_address": "4e2DhohUAJ9EbrLey3rVVgFQzLCAeeBirSbdhqrh9snX"
-          },
-          {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPpApump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4PpKBMr5rpump"
-          }
-        ],
-        "leader_hint_token_address": "4e2DhohUAJ9EbrLey3rVVgFQzLCAeeBirSbdhqrh9snX",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong anime and pop culture crossover theme with recurring tokens referencing anime characters and pop culture. Tokens like 'Misaka' and 'Pippin' show clear community engagement and meme-based humor.",
-        "leader_token": {
-          "token_symbol": "KABUTO",
-          "token_name": "Kabuto",
-          "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
-          "usd_market_cap": 1492854.03
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political and Cultural Satire",
-        "description": "Tokens referencing political figures, ideologies, or cultural phenomena through satire or parody. These often leverage real-world events, personalities, or ideologies to create a humorous or critical narrative.",
-        "defining_signals": [
-          "Use of political figures or ideologies in token names (e.g., Trump, Biden, Obama)",
-          "Incorporation of political memes or conspiracy theories (e.g., 'Bidan', 'Rizzentime')",
-          "Satirical or ironic descriptions (e.g., 'Forever Elone', 'Trumpawe')",
-          "Leveraging real-world political events or figures (e.g., 'Biden Clone', 'ObamaPredator')",
-          "Meme-based humor tied to political or ideological themes (e.g., 'Chud', 'Goyim')",
-          "Community-driven narratives around political or cultural figures (e.g., 'Rizzentime', 'TrumpeSwan')"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "TrumpeSwan",
-            "token_name": "TrumpeSwan",
-            "token_address": "8q96A4hmV5YZ9YypN8EHx76ySrRuwUmS8XUHmduGpump"
-          },
-          {
-            "token_symbol": "Bidan",
+            "token_symbol": "BIDAN",
             "token_name": "Biden Clone",
             "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump"
-          },
-          {
-            "token_symbol": "RIZZENTINE",
-            "token_name": "Rizzentime",
-            "token_address": "9yRYJT3Lq2Kq2ZheqLcZayKx4ZnARjr7na1cS32Zpump"
           },
           {
             "token_symbol": "ELONE",
@@ -642,52 +552,37 @@
             "token_address": "3UocqNkvrKqN8FNbQSfBk9vSkq1xPanMTYQFc6DMpump"
           },
           {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+            "token_symbol": "TRUMPAWE",
+            "token_name": "Trumpawe",
+            "token_address": "Y5k4ypJToQvE7pLPGdUpE5ZWxGDZkkqffV7Vjy8pump"
           },
           {
-            "token_symbol": "TrumpeSwan",
-            "token_name": "TrumpeSwan",
-            "token_address": "8q96A4hmV5YZ9YypN8EHx76ySrRuwUmS8XUHmduGpump"
+            "token_symbol": "BEALL",
+            "token_name": "Matt Beall",
+            "token_address": "57vzP47LVnpjuPmzRMPogyDGc5gdhtBYcD1dWy8Ppump"
           },
           {
-            "token_symbol": "ObamaPredator",
-            "token_name": "ObamaPredatorCandyLootBoxDrone",
-            "token_address": "CPHwzr7p7UcpoASiNCJghq7ZK4VtYHiWbwYGm8EVLw2q"
-          },
-          {
-            "token_symbol": "TrumpeSwan",
-            "token_name": "TrumpeSwan",
-            "token_address": "8q96A4hmV5YZ9YypN8EHx76ySrRuwUmS8XUHmduGpump"
-          },
-          {
-            "token_symbol": "RIZZENTINE",
-            "token_name": "Rizzentime",
-            "token_address": "9yRYJT3Lq2Kq2ZheqLcZayKx4ZnARjr7na1cS32Zpump"
-          },
-          {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+            "token_symbol": "BUTIN",
+            "token_name": "Putin",
+            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGvmTueu8LPfGAj7jpump"
           }
         ],
-        "leader_hint_token_address": "8q96A4hmV5YZ9YypN8EHx76ySrRuwUmS8XUHmduGpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong political and cultural satire theme with recurring tokens referencing political figures and ideologies. Tokens like 'TrumpeSwan' and 'Bidan' show clear community engagement and meme-based humor.",
+        "leader_hint_token_address": "Y5k4ypJToQvE7pLPGdUpE5ZWxGDZkkqffV7Vjy8pump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong presence of political and celebrity references with active community engagement.",
         "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 941818.43
+          "token_symbol": "TRUMPAWE",
+          "token_name": "Trumpawe",
+          "token_address": "Y5k4ypJToQvE7pLPGdUpE5ZWxGDZkkqffV7Vjy8pump",
+          "usd_market_cap": 2457464.68
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Meme Animal Revival' and 'Political and Cultural Satire' METAs are currently the strongest, with consistent community engagement and clear cultural references. 'Anime and Pop Culture Crossovers' is also gaining traction, especially with tokens referencing iconic characters. 'Internet Meme Revival' remains strong but is showing signs of fragmentation as new tokens emerge. 'Nostalgia and Retro Culture' is emerging as a new theme, leveraging retro tech and pop culture references.",
+    "meta_rotation_note": "Meme Character Tokens and Animal Meme Tokens are currently dominant, with strong community engagement and cultural resonance. Political and Celebrity Meme Tokens are emerging but face regulatory and sentiment risks. Nostalgia and Retro Meme Tokens are fading slightly as newer meme formats gain traction.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Animal Revival",
+        "meta_name": "Animal Meme Tokens",
         "leader_token": {
           "token_symbol": "WhiteWhale",
           "token_name": "The White Whale",
@@ -696,7 +591,25 @@
         }
       },
       {
-        "meta_name": "Internet Meme Revival",
+        "meta_name": "Anime and Pop Culture Tokens",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 19524981.05
+        }
+      },
+      {
+        "meta_name": "Nostalgia and Retro Meme Tokens",
+        "leader_token": {
+          "token_symbol": "PONKE",
+          "token_name": "PONKE",
+          "token_address": "5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC",
+          "usd_market_cap": 18576069.08
+        }
+      },
+      {
+        "meta_name": "Meme Character Tokens",
         "leader_token": {
           "token_symbol": "TROLL",
           "token_name": "TROLL",
@@ -705,30 +618,12 @@
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
+        "meta_name": "Political and Celebrity Meme Tokens",
         "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 5581518.0
-        }
-      },
-      {
-        "meta_name": "Anime and Pop Culture Crossovers",
-        "leader_token": {
-          "token_symbol": "KABUTO",
-          "token_name": "Kabuto",
-          "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
-          "usd_market_cap": 1492854.03
-        }
-      },
-      {
-        "meta_name": "Political and Cultural Satire",
-        "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 941818.43
+          "token_symbol": "TRUMPAWE",
+          "token_name": "Trumpawe",
+          "token_address": "Y5k4ypJToQvE7pLPGdUpE5ZWxGDZkkqffV7Vjy8pump",
+          "usd_market_cap": 2457464.68
         }
       }
     ]
