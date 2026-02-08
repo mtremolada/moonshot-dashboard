@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-08T02:00:32.632939Z",
+  "generated_at_utc": "2026-02-08T03:01:13.040030Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 135,
+  "token_context_count": 140,
   "prompt_truncated": false,
   "warnings": [
     "Detected 15 PVP group(s); excluding 22 token(s) from META prompt."
@@ -314,14 +314,63 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Coin Revival",
-        "description": "Tokens leveraging classic internet memes, often with roots in early 2000s or 2010s, are seeing a resurgence. These include references to Pepe the Frog, Doge, and other iconic meme figures. The revival is driven by nostalgia and the meme's established cultural footprint.",
+        "meta_name": "Cultural & Historical References",
+        "description": "Tokens are drawing from historical, literary, or cultural references to create a sense of depth or gravitas. These often include references to mythology, literature, or historical events.",
         "defining_signals": [
-          "Classic meme references (e.g., Pepe, Doge, Cheems)",
-          "High market caps relative to newer tokens",
-          "Community-driven narratives with established meme histories",
-          "Strong presence on platforms like Reddit and Discord",
-          "Use of established meme art or character designs"
+          "Use of historical or literary references (e.g., 'White Whale', 'Black Swan', 'Nietzschean Penguin').",
+          "Leverage of folklore or mythology (e.g., 'Mushu', 'Black Bear', 'White Wolf').",
+          "Incorporation of cultural archetypes (e.g., 'Ralph Wiggum', 'Hachiko', 'Mikoto Misaka')."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "WHITEWHALE",
+            "token_name": "The White Whale",
+            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+          },
+          {
+            "token_symbol": "BLACKSWAN",
+            "token_name": "The Black Swan",
+            "token_address": "FzLMPzqz9Ybn26qRzPKDKwsLV6Kpvugh31jF7T7npump"
+          },
+          {
+            "token_symbol": "MUSHU",
+            "token_name": "Mushu",
+            "token_address": "5Jr9hGGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wppump"
+          },
+          {
+            "token_symbol": "BLACKBEAR",
+            "token_name": "The Black Bear",
+            "token_address": "54n4J8NLMCtNhcbUbTsoskQqkYfw8Vr5vefHeqNppump"
+          },
+          {
+            "token_symbol": "WHITEWOLF",
+            "token_name": "The White Wolf",
+            "token_address": "5YaMNTrRFCudhkTiFmuK1Ms8NA7L83PMucu4zCG7pump"
+          },
+          {
+            "token_symbol": "NietzscheanPenguin",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          }
+        ],
+        "leader_hint_token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "This META is emerging as tokens increasingly adopt historical and cultural themes to differentiate themselves. 'The White Whale' is a strong leader due to its high market cap and cultural relevance.",
+        "leader_token": {
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 132651812.64
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens are leveraging established internet memes or cultural references to rebrand themselves as crypto-native assets. These include characters, phrases, or concepts that have already gained traction in non-crypto spaces but are now being repurposed for crypto communities.",
+        "defining_signals": [
+          "Use of established meme characters (e.g., Pepe, Wojak, Clippy).",
+          "Adoption of viral TikTok/Reddit memes (e.g., 'Tralalero', 'Black Whale', 'ObamaPredatorCandyLootBoxDrone').",
+          "Recontextualization of historical or pop culture references (e.g., 'Mikoto Misaka', 'Hachiko', 'Ralph Wiggum')."
         ],
         "supporting_tokens": [
           {
@@ -330,277 +379,200 @@
             "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "Buttcoin",
-            "token_name": "Buttcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
+          {
+            "token_symbol": "MISAKA",
+            "token_name": "Misaka",
+            "token_address": "4e2DhohUAJ9EbrLey3rVVgFQzLCAeeBirSbdhqrh9snX"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "RALEPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          }
+        ],
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 92,
+        "confidence_rationale": "This META is strong due to the sheer number of tokens leveraging established memes and cultural references. The Pepe token is the most prominent and has the highest market cap in this category.",
+        "leader_token": {
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 8903527.81
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Shock Value & Edgy Humor",
+        "description": "Tokens are using provocative or edgy names and themes to attract attention and generate FOMO. These often include slang, sexual innuendo, or controversial themes to stand out in a crowded market.",
+        "defining_signals": [
+          "Use of explicit or provocative language in token names (e.g., 'MFERS', 'TIT', 'Wog').",
+          "Leverage of sexual or taboo themes (e.g., 'boob', 'Dirty Sanchez', 'Rizzentine').",
+          "Shock value as a primary marketing strategy."
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "MFERS",
             "token_name": "MegaFuckingEpicRetardSender",
             "token_address": "oV3S9ftSafcsUM5tVz8aD9x8eY9YhbtzQgAWLLCpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+            "token_symbol": "TIT",
+            "token_name": "TITCOIN",
+            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGvmTueu8LPfGaj7jpump"
           },
           {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "SANCHEZ",
+            "token_name": "Dirty Sanchez",
+            "token_address": "DpSnQzW6NZF7PaT94QkjFd75tXtbL4epr5zupcRtpump"
+          },
+          {
+            "token_symbol": "WOG",
+            "token_name": "Wog",
+            "token_address": "7EVVXu9A3cxhu2DYJtWQGrQs9u2mMf3pzrMf9w4Dpump"
+          },
+          {
+            "token_symbol": "RIZZENTINE",
+            "token_name": "RIZZENTINE",
+            "token_address": "9yRYJT3Lq2Kq2ZheqLcZayKx4ZnARjr7na1cS32Zpump"
+          },
+          {
+            "token_symbol": "boob",
+            "token_name": "boob",
+            "token_address": "9zqre5sRRdFvKqyTyvEd1jcKDRF4g47s7mZSGUnQpump"
           }
         ],
-        "leader_hint_token_address": "DezXAX8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Bonk is a well-established meme coin with a large market cap and a strong community. Its revival is supported by its cultural roots in the Cheems/Doge meme and the Team Fortress 2 'Bonk!' sound effect.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 563355249.51
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Anime and Pop Culture References",
-        "description": "Tokens are increasingly drawing from anime and pop culture, leveraging iconic characters and narratives to build community and engagement. This includes references to *One Piece*, *Mulan*, and *Pokémon*.",
-        "defining_signals": [
-          "Direct references to anime or pop culture characters (e.g., Pikachu, Mushu)",
-          "Use of iconic catchphrases or imagery from popular media",
-          "Community engagement centered around shared fandoms",
-          "High social media activity on platforms like TikTok and X",
-          "Strong visual branding tied to the referenced media"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Pikachu Illustrator",
-            "token_name": "Pikachu Illustrator",
-            "token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump"
-          },
-          {
-            "token_symbol": "Mushu",
-            "token_name": "Mushu",
-            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
-          },
-          {
-            "token_symbol": "Mia Ko",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "Kabuto",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "Ralph Wiggum",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          }
-        ],
-        "leader_hint_token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump",
+        "leader_hint_token_address": "oV3S9ftSafcsUM5tVz8aD9x8eY9YhbtzQgAWLLCpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Pikachu Illustrator has a strong cultural foundation in Pokémon lore and has been amplified by Logan Paul's high-profile auction. Its market cap and social media presence indicate strong community engagement.",
+        "confidence_rationale": "This META is gaining traction due to the novelty and attention-grabbing nature of these tokens. 'MFERS' has a strong shock value and is one of the most active in this category.",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 185981488.64
+          "token_symbol": "boob",
+          "token_name": "boob",
+          "token_address": "9zqre5sRRdFvKqyTyvEd1jcKDRF4g47s7mZSGUnQpump",
+          "usd_market_cap": 4056700.6
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Animal and Nature Meme Tokens",
-        "description": "Tokens are increasingly referencing animals and nature, often with a humorous or surreal twist. These include references to whales, bears, and other creatures, often reimagined in meme form.",
+        "meta_name": "AI & Future Tech",
+        "description": "Tokens are leveraging AI, robotics, and future tech themes to position themselves as the next big thing in crypto. These tokens often claim to be at the forefront of innovation, even if their utility is speculative.",
         "defining_signals": [
-          "References to animals or nature (e.g., Black Whale, Black Bear, Trout)",
-          "Use of animal imagery or characteristics in branding",
-          "Community engagement around shared animal memes or themes",
-          "Strong visual identity tied to the referenced animal",
-          "High social media activity on platforms like TikTok and Reddit"
+          "AI agent or robotics-related themes (e.g., 'AI Rig Complex', 'SIGIL Protocol', 'Eva Everywhere').",
+          "Claims of future tech integration (e.g., 'Meme Liquid', 'AI Rig Complex', 'JARVIS').",
+          "Use of futuristic or sci-fi terminology in token descriptions."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "The Black Whale",
-            "token_name": "The Black Whale",
-            "token_address": "8y45AJzCUBSZL1UDFQRzCKovQBLQFudBrpPeg5yNpump"
-          },
-          {
-            "token_symbol": "The Black Bear",
-            "token_name": "The Black Bear",
-            "token_address": "54n4J8NLMCtNhcbUbTsoskQqkQfw8Vr5vefKHeqNpump"
-          },
-          {
-            "token_symbol": "The Big Trout",
-            "token_name": "The Big Trout",
-            "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG"
-          },
-          {
-            "token_symbol": "The White Whale",
-            "token_name": "The White Whale",
-            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
-          },
-          {
-            "token_symbol": "The Wallstreet Monkey",
-            "token_name": "The Wallstreet Monkey",
-            "token_address": "3fDcKYmmRvkt1bx48amTCXaRMn7FTZch41YK4hpcpump"
-          },
-          {
-            "token_symbol": "The Skeleton Banging Shield",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZZLdpDikgbaWSd5fTEozQkV7KApump"
-          }
-        ],
-        "leader_hint_token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "The White Whale has a strong cultural foundation in Melville's *Moby-Dick* and has been amplified by a viral *Re:Zero* fan-art meme. Its market cap and community engagement suggest it is a leading token in this meta.",
-        "leader_token": {
-          "token_symbol": "WhiteWhale",
-          "token_name": "The White Whale",
-          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-          "usd_market_cap": 132651812.64
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Tech Meme Tokens",
-        "description": "Tokens are leveraging AI and tech themes, often with a humorous or satirical angle. These include references to AI agents, AI-generated art, and other tech-related memes.",
-        "defining_signals": [
-          "References to AI or tech themes (e.g., AI Rig Complex, AI Rig)",
-          "Use of AI-generated art or content in branding",
-          "Community engagement around AI and tech trends",
-          "Strong presence on platforms like Reddit and Discord",
-          "High social media activity on platforms like TikTok and X"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "AI Rig Complex",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "SIGIL Protocol",
+            "token_symbol": "SIGIL",
             "token_name": "SIGIL Protocol",
             "token_address": "4jja37YHJWuGBHMicmHXFUENa7DpD7JcUUS47C4QBAGS"
           },
           {
-            "token_symbol": "Mia Ko",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSssZpump"
+            "token_symbol": "EVA",
+            "token_name": "Eva Everywhere",
+            "token_address": "4gfNpwo8LQtcgGrNmgWhuwfFhttgZ8Qb6QXN4Yz8BAGS"
           },
           {
-            "token_symbol": "Opus The Trencher",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+            "token_symbol": "JARVIS",
+            "token_name": "OpenClaw Jarvis",
+            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
           },
           {
-            "token_symbol": "Hachiko",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "AI",
+            "token_name": "ai.com",
+            "token_address": "J7CSmbyCco1Mz4AhCvmPRrCbXesXYxDwaZCuvpEYpump"
           },
           {
-            "token_symbol": "JesterGoon",
-            "token_name": "Jestergooning",
-            "token_address": "9gPMDSwfwtByWSgBxGCpFJE3q91ap58e3VFMprshpump"
+            "token_symbol": "OPAL",
+            "token_name": "Opal",
+            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
+          },
+          {
+            "token_symbol": "LUMEN",
+            "token_name": "LUMEN",
+            "token_address": "EKPWiLk5fwTNZVeL5PrKSFDjdJrvRkvoPafVT54ppump"
           }
         ],
-        "leader_hint_token_address": "61V8vBBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "AI Rig Complex has a strong narrative around AI infrastructure and has seen significant social media traction. Its market cap and engagement suggest it is a leading token in this meta.",
+        "leader_hint_token_address": "4jja37YHJWuGBHMicmHXFUENa7DpD7JcUUS47C4QBAGS",
+        "confidence_0_100": 80,
+        "confidence_rationale": "This META is growing as more tokens adopt AI and future tech themes. 'SIGIL Protocol' is a strong leader due to its high market cap and focus on AI identity.",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 56688447.74
+          "token_symbol": "LUMEN",
+          "token_name": "LUMEN",
+          "token_address": "EKPWiLk5fwTNZVeL5PrKSFDjdJrvRkvoPafVT54ppump",
+          "usd_market_cap": 1019220.72
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political and Conspiracy Meme Tokens",
-        "description": "Tokens are emerging that leverage political figures, conspiracy theories, and controversial topics to build narratives. These include references to Joe Biden, Epstein, and other high-profile individuals or events.",
+        "meta_name": "Niche Communities & Subcultures",
+        "description": "Tokens are targeting niche communities or subcultures, often leveraging internet subcultures, gaming, or specific meme communities to build a dedicated following.",
         "defining_signals": [
-          "References to political figures or conspiracy theories (e.g., Biden Clone, Epstein Files)",
-          "Use of controversial or edgy themes to attract attention",
-          "Strong presence on platforms like X and Reddit",
-          "Community engagement around speculative or conspiratorial narratives",
-          "High volatility and speculative trading activity"
+          "Targeting niche communities (e.g., 'Punk Fling Playcoin', 'Tralalero', 'Comedian').",
+          "Use of subcultural references (e.g., 'Wog', 'Goyim', 'Rizzentine').",
+          "Community-driven narratives with strong tribal identity."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Bidan",
-            "token_name": "Biden Clone",
-            "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump"
+            "token_symbol": "FLNGPUNK",
+            "token_name": "Punk Fling Playcoin",
+            "token_address": "UmwNzhGAnbMQDuE1MMxnUf7GQp17NEDEUVFgdKdPLAY"
           },
           {
-            "token_symbol": "littlestjeff1",
-            "token_name": "littlestjeff1",
-            "token_address": "GdEgAfoBp4r66SWLK68fG7Ueun8xNyaKJDzpwnc9yewx"
+            "token_symbol": "TRALALA",
+            "token_name": "Tralaliritos",
+            "token_address": "89muFzE1VpotYQfKk7xsuEbhgxRLyinmsELGTCSLpump"
           },
           {
-            "token_symbol": "Unredacted",
-            "token_name": "Unredacted",
-            "token_address": "F71ozUqabJhqVfS6bdp1eGUa7bbTnQJbtvbtvvqyRpump"
+            "token_symbol": "COMEDIAN",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKuu5WAYkwrCUx9wDnSpump"
           },
           {
-            "token_symbol": "Trumpy Trout",
-            "token_name": "Trumpy Trout",
-            "token_address": "7CtqBgCFRVAaDpUuNkvWgCjcTe3LRux1pReny4Axpump"
+            "token_symbol": "GOYIM",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
           },
           {
-            "token_symbol": "Rizzentine",
-            "token_name": "Rizzentine",
+            "token_symbol": "WOG",
+            "token_name": "Wog",
+            "token_address": "7EVVXu9A3cxhu2DYJtWQGrQs9u2mMf3pzrMf9w4Dpump"
+          },
+          {
+            "token_symbol": "RIZZENTINE",
+            "token_name": "RIZZENTINE",
             "token_address": "9yRYJT3Lq2Kq2ZheqLcZayKx4ZnARjr7na1cS32Zpump"
-          },
-          {
-            "token_symbol": "ObamaPredatorCandyLootBoxDrone",
-            "token_name": "ObamaPredatorCandyLootBoxDrone",
-            "token_address": "CPHwzr7p7UcpoASiNCJghq7ZK4VtYHiWbwYGm8EVLw2q"
           }
         ],
-        "leader_hint_token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Biden Clone has a strong narrative tied to a popular conspiracy theory and has seen significant social media traction. Its market cap and engagement suggest it is a leading token in this meta.",
+        "leader_hint_token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "This META is gaining traction as niche communities become more influential in crypto. 'Comedian' is a strong leader due to its cultural significance and high market cap.",
         "leader_token": {
-          "token_symbol": "Bidan",
-          "token_name": "Biden Clone",
-          "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump",
-          "usd_market_cap": 6069368.08
+          "token_symbol": "Goyim",
+          "token_name": "Goyim",
+          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+          "usd_market_cap": 941818.43
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The Meme Coin Revival and Anime/Pop Culture Metas are gaining strength, driven by nostalgia and strong community engagement. The Political/Conspiracy and Animal/Nature Metas are also showing resilience. The AI/Tech Meta is emerging as a new trend, but it is still gaining traction. The older 'Shitcoin' and 'Random Meme' Metas are fading as the market shifts toward more structured and culturally rich narratives.",
+    "meta_rotation_note": "The 'Meme Rebranding' and 'Shock Value & Edgy Humor' METAs are currently the most dominant, with high engagement and market caps. 'AI & Future Tech' is emerging as a strong contender, while 'Cultural & Historical References' and 'Niche Communities & Subcultures' are gaining traction. 'Meme Rebranding' is fading slightly as new tokens shift toward AI and niche themes.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Coin Revival",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 563355249.51
-        }
-      },
-      {
-        "meta_name": "Anime and Pop Culture References",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 185981488.64
-        }
-      },
-      {
-        "meta_name": "Animal and Nature Meme Tokens",
+        "meta_name": "Cultural & Historical References",
         "leader_token": {
           "token_symbol": "WhiteWhale",
           "token_name": "The White Whale",
@@ -609,21 +581,39 @@
         }
       },
       {
-        "meta_name": "AI and Tech Meme Tokens",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 56688447.74
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 8903527.81
         }
       },
       {
-        "meta_name": "Political and Conspiracy Meme Tokens",
+        "meta_name": "Shock Value & Edgy Humor",
         "leader_token": {
-          "token_symbol": "Bidan",
-          "token_name": "Biden Clone",
-          "token_address": "AkZfKts6aUBw4cAKCmsDQWp8njyQ86134GF41MJYpump",
-          "usd_market_cap": 6069368.08
+          "token_symbol": "boob",
+          "token_name": "boob",
+          "token_address": "9zqre5sRRdFvKqyTyvEd1jcKDRF4g47s7mZSGUnQpump",
+          "usd_market_cap": 4056700.6
+        }
+      },
+      {
+        "meta_name": "AI & Future Tech",
+        "leader_token": {
+          "token_symbol": "LUMEN",
+          "token_name": "LUMEN",
+          "token_address": "EKPWiLk5fwTNZVeL5PrKSFDjdJrvRkvoPafVT54ppump",
+          "usd_market_cap": 1019220.72
+        }
+      },
+      {
+        "meta_name": "Niche Communities & Subcultures",
+        "leader_token": {
+          "token_symbol": "Goyim",
+          "token_name": "Goyim",
+          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+          "usd_market_cap": 941818.43
         }
       }
     ]
