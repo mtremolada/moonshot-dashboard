@@ -1,32 +1,18 @@
 {
-  "generated_at_utc": "2026-02-09T18:11:19.029089Z",
+  "generated_at_utc": "2026-02-09T19:12:09.488469Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 109,
+  "token_context_count": 107,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 7 PVP group(s); excluding 11 token(s) from META prompt."
+    "Detected 6 PVP group(s); excluding 9 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 11,
+  "pvp_excluded_token_count": 9,
   "pvp_report": [
     {
       "match_type": "token_name",
       "match_value": "fartcoin",
       "tokens": [
-        {
-          "token_symbol": "FRT",
-          "token_name": "FARTCOIN",
-          "token_address": "CCBQzwc2Jp2Zs9PCLogdKBes8h9eHJUbeLUAckijpump",
-          "usd_market_cap": 193855.13,
-          "processed_at": "2026-02-08T18:16:14.335780Z"
-        },
-        {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 198149429.15,
-          "processed_at": "2026-02-08T18:48:53.216944Z"
-        },
         {
           "token_symbol": "FART",
           "token_name": "Fartcoin",
@@ -80,26 +66,6 @@
           "token_address": "EbDxfwY4z7ScqHxuS6ScRott3SuE2HrYY623Wk88pump",
           "usd_market_cap": 1625.07,
           "processed_at": "2026-02-09T07:54:00.041309Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "frt",
-      "tokens": [
-        {
-          "token_symbol": "FRT",
-          "token_name": "FARTCOIN",
-          "token_address": "CCBQzwc2Jp2Zs9PCLogdKBes8h9eHJUbeLUAckijpump",
-          "usd_market_cap": 193855.13,
-          "processed_at": "2026-02-08T18:16:14.335780Z"
-        },
-        {
-          "token_symbol": "FRT",
-          "token_name": "FartCoin",
-          "token_address": "DtzVi6264rhaSDyxhWGJw8SS6yUFJ6UaSiyow3depump",
-          "usd_market_cap": 74224.69,
-          "processed_at": "2026-02-08T21:10:15.663816Z"
         }
       ]
     },
@@ -175,23 +141,70 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Shiba Inu Meme Revival",
-        "description": "Tokens leveraging the Shiba Inu meme, originally popularized by Cheems and Bonk, are seeing renewed interest. These tokens often tie into viral dog-related internet culture and nostalgia.",
+        "meta_name": "Crypto Satire",
+        "description": "Tokens mocking crypto culture, slang, or speculative behavior through ironic or self-aware branding.",
         "defining_signals": [
-          "References to Shiba Inu or dog-related memes in token names or descriptions",
-          "Leverages nostalgia from early 2010s meme culture",
-          "Strong community engagement with dog-centric themes"
+          "Use of crypto jargon or slang as a joke",
+          "Self-deprecating or ironic branding",
+          "Satirical take on crypto narratives (e.g., 'shitcoin', 'rekt')",
+          "Meme-based irony or absurdity in token name/mission"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "SHT",
+            "token_name": "ShitCoin",
+            "token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump"
           },
           {
-            "token_symbol": "SAN",
-            "token_name": "San Chan",
-            "token_address": "GQz5ThKHNcuAvMKA8rCPSdoFUoApk9Fi8qB9m3Gqpump"
+            "token_symbol": "REKT",
+            "token_name": "Rektio",
+            "token_address": "CgghGMyu1cnSxP1GnZ5aurLrTbCQvH6vjABgZHMApump"
+          },
+          {
+            "token_symbol": "USELESS",
+            "token_name": "USELESS COIN",
+            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
+          },
+          {
+            "token_symbol": "DEPORT",
+            "token_name": "DEPORT BAD BUNNY",
+            "token_address": "Hq4KMyusWiB4P9ZbrRUuvrtgdYjwhHuZ46khTMxCpump"
+          }
+        ],
+        "leader_hint_token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong thematic consistency in satirical branding and crypto jargon usage. Tokens like Useless Coin and Rektio are clear examples of this meta.",
+        "leader_token": {
+          "token_symbol": "USELESS",
+          "token_name": "USELESS COIN",
+          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+          "usd_market_cap": 33719602.2
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Rehash",
+        "description": "Tokens repurposing existing internet memes, often with no new cultural context, to capitalize on nostalgia or virality.",
+        "defining_signals": [
+          "Leverage viral non-crypto memes (e.g., 'Pepe', 'Clippy', 'Hachiko')",
+          "Meme origins predate token launch by years or decades",
+          "Token narratives mirror meme’s original context or visual identity",
+          "No new cultural evolution beyond the original meme"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpK7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
             "token_symbol": "HACHI",
@@ -199,55 +212,56 @@
             "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "testicle",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Bonk has the highest market cap and is the most well-known token in this category, with a strong historical and cultural foundation.",
+        "leader_hint_token_address": "B5WTLaRwaUQpP7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong meme roots with Pepe and Clippy, plus clear cultural references in Hachiko and Nietzschean Penguin. These tokens are leveraging well-established memes with high virality potential.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 550938131.15
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 28077089.61
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Utility Tokens",
-        "description": "Tokens leveraging AI as a core utility or narrative are gaining traction. These tokens often focus on AI agents, trading, or content generation, with a strong emphasis on future utility.",
+        "meta_name": "AI-Driven Utility",
+        "description": "Tokens tied to AI infrastructure, agent ecosystems, or AI-generated content, often with speculative utility claims.",
         "defining_signals": [
-          "AI agent or AI-driven utility as a core feature",
-          "Focus on automation, trading, or content generation",
-          "Strong narrative around future utility and scalability"
+          "AI-related utility (e.g., agent coordination, content generation)",
+          "Claims of AI-driven governance or automation",
+          "Ties to AI research, training, or decentralized AI platforms",
+          "Mentions of AI agent interactions or self-improving systems"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "NFAi",
-            "token_name": "Athena Labs",
-            "token_address": "CYQuuo6GDdC6ZM67nARtKvi4CpFLwUvcXPyudRe2surg"
+            "token_symbol": "AI",
+            "token_name": "ai.com",
+            "token_address": "J7CSmbyCco1Mz4AhCvmPRrCbXesXYxDwaZCuvpEYpump"
           },
           {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+            "token_symbol": "ANICLAW",
+            "token_name": "Aniclaw",
+            "token_address": "3oXdBSBhP7RFgB8hnveBKbhcwK6csiCCLftbg7XXrYWh"
           },
           {
-            "token_symbol": "BLOWFISH",
-            "token_name": "Blowfish",
-            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
+            "token_symbol": "JARVIS",
+            "token_name": "OpenClaw Jarvis",
+            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
           },
           {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+            "token_symbol": "OPAL",
+            "token_name": "Opal",
+            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
           },
           {
             "token_symbol": "SOLPRISM",
@@ -255,70 +269,67 @@
             "token_address": "8fZjyDPme2aYmujuxJjKAk3hAGHCgggrHUJFv9roC8cNN"
           }
         ],
-        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6s9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Alchemist AI has a clear utility narrative and a growing market cap, making it a strong leader in this category.",
+        "leader_hint_token_address": "J7CSmbyCco1Mz4AhCvmPRrCbXesXYxDwaZCuvpEYpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong focus on AI infrastructure and agent coordination, with multiple tokens making overlapping claims about decentralized AI and automation.",
         "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 75141836.0
+          "token_symbol": "OPAL",
+          "token_name": "Opal",
+          "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump",
+          "usd_market_cap": 1369583.28
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Nostalgic Internet Meme Tokens",
-        "description": "Tokens leveraging nostalgia from early internet memes, such as Wojak, Clippy, and others, are gaining traction. These tokens often tie into viral or long-standing internet culture.",
+        "meta_name": "Anime/Pop Culture Crossovers",
+        "description": "Tokens leveraging characters, stories, or themes from anime, gaming, or pop culture to build community and narrative.",
         "defining_signals": [
-          "Leverage nostalgia from early internet memes",
-          "Strong cultural references to pre-crypto internet culture",
-          "Community-driven with strong meme-based engagement"
+          "Tie to anime, manga, or gaming IP",
+          "Use of iconic characters or tropes (e.g., 'Ralph Wiggum', 'Kabuto')",
+          "Community-driven narratives around pop culture",
+          "Token names or themes directly referencing media"
         ],
-        "supporting_tokens": [
+        "supportinging_tokens": [
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "KARYNA",
+            "token_name": "Karyna Fund",
+            "token_address": "3GKvD6Fbj19HKnKdJJboMSZM1Mt9MZeehPGcq1DHBAGS"
           },
           {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+            "token_symbol": "SINCLAIR",
+            "token_name": "Baby Sinclair",
+            "token_address": "8MdkXe5G77xaMheVQxLqAYV8e2m2Dfc5ZbuXup2epump"
           },
           {
-            "token_symbol": "JESTERGOON",
-            "token_name": "Jestergooning",
-            "token_address": "9gPMDSwfwtByWSgBxGCpFJE3q91ap58e3VFMprshpump"
+            "token_symbol": "PIKACHU",
+            "token_name": "Pikachu Illustrator",
+            "token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Clippy has a strong nostalgic appeal and a growing community, making it a likely leader in this category.",
-        "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 16903812.36
-        },
-        "leader_missing_reason": null
+        "leader_hint_token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong pop culture references with clear community appeal, especially around Pikachu and Ralph Wiggum. These tokens are leveraging well-known IP for narrative and community building.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       },
       {
-        "meta_name": "Crypto-Specific Meme Tokens",
-        "description": "Tokens that originated solely within the crypto space, often with no pre-existing cultural or meme context outside of cryptocurrency. These tokens rely on crypto-native humor and slang.",
+        "meta_name": "AI-Generated Meme Fusion",
+        "description": "Tokens built around AI-generated memes or internet trends, often with absurd or surreal themes.",
         "defining_signals": [
-          "No pre-existing cultural or meme context outside of crypto",
-          "Leverage crypto-native humor and slang",
-          "Strong community-driven narratives"
+          "AI-generated meme or concept as the core narrative",
+          "Absurd or surreal meme themes (e.g., 'Flying Ketamine Horse', 'AI Caricature')",
+          "Meme origins tied to AI tools like Sora or Midjourney",
+          "Community-driven meme evolution"
         ],
         "supportinging_tokens": [
           {
@@ -327,101 +338,60 @@
             "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
           },
           {
-            "token_symbol": "oora",
-            "token_name": "oora",
-            "token_address": "Cck21qHq33rezTeuQbPSvULXF2vLUTMErJwbPdUGpump"
+            "token_symbol": "CARICATURE",
+            "token_name": "Ai Caricature",
+            "token_address": "sDLRYc96bWkJCVgRaR8FTvokw2iSg8bSQrHR7vHpump"
           },
           {
-            "token_symbol": "testicle",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+            "token_symbol": "TRALALA",
+            "token_name": "Tralaliritos",
+            "token_address": "89muFzE1VpotYQfKm7xsuEbhgxRLyinmsELGTCSLpump"
           },
           {
-            "token_symbol": "SOULGUY",
-            "token_name": "SOULGUY",
-            "token_address": "FsXJHch6cj9TyZGm1kfMwt8S8oATCEr6ccqWFp3Xpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          }
-        ],
-        "leader_hint_token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk",
-        "confidence_0_100": 65,
-        "confidence_rationale": "Flying Ketamine Horse has a strong community and a unique crypto-native narrative, making it a likely leader in this category.",
-        "leader_token": null,
-        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
-      },
-      {
-        "meta_name": "Japanese Internet Culture Tokens",
-        "description": "Tokens leveraging Japanese internet culture, including memes, phrases, and cultural references, are gaining traction. These tokens often tie into viral Japanese internet trends.",
-        "defining_signals": [
-          "Leverage Japanese internet culture and memes",
-          "Strong cultural references to Japanese internet trends",
-          "Community-driven with strong meme-based engagement"
-        ],
-        "supportinging_tokens": [
-          {
-            "token_symbol": "Yaranaika",
+            "token_symbol": "YARANAIA",
             "token_name": "やらないか",
             "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
           },
           {
-            "token_symbol": "円娯楽",
-            "token_name": "100円娯楽",
-            "token_address": "F2z2en3zHBDrUF73iY5wAPfCJL1kMRJHpAZQf6mTpump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "ICEBEAR",
-            "token_name": "White Polar Bear",
-            "token_address": "86WM5NBUtRWTHULKrspS1TdzVFAcZ9buXsGRAiFDpump"
-          },
-          {
-            "token_symbol": "KARYNA",
-            "token_name": "Karyna Fund",
-            "token_address": "3GKvD6Fbj19HKnKdJJboMSZM1Mt9MZeehPGcq1DHBAGS"
+            "token_symbol": "ZOHAR",
+            "token_name": "Zohar",
+            "token_address": "3UDH4Hg8bfZWRkm969B2Bihw1YSBGvfmo8VBFMjypump"
           }
         ],
-        "leader_hint_token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Yaranaika has a strong cultural foundation and a growing community, making it a likely leader in this category.",
+        "leader_hint_token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Strong AI meme themes with surreal and absurd narratives. Tokens like Flying Ketamine Horse and AI Caricature are pushing the boundaries of meme-based crypto projects.",
         "leader_token": null,
         "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
-    "meta_rotation_note": "The Shiba Inu Meme Revival and AI-Driven Utility Tokens are currently the most dominant METAs, with strong community engagement and market cap growth. Nostalgic Internet Meme Tokens and Japanese Internet Culture Tokens are emerging but still gaining traction. Crypto-Specific Meme Tokens are fading slightly as newer, more culturally rooted tokens gain attention.",
+    "meta_rotation_note": "Meme Rehash remains dominant due to its strong cultural roots and viral potential. AI-Driven Utility is gaining traction as AI becomes more central to crypto narratives. Crypto Satire is fading slightly as the market matures, but still holds a niche. Anime/Pop Culture Crossovers are stable but not growing rapidly. AI-Generated Meme Fusion is emerging as a new, experimental meta with high potential for virality.",
     "meta_leaders": [
       {
-        "meta_name": "Shiba Inu Meme Revival",
+        "meta_name": "Crypto Satire",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 550938131.15
+          "token_symbol": "USELESS",
+          "token_name": "USELESS COIN",
+          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+          "usd_market_cap": 33719602.2
         }
       },
       {
-        "meta_name": "AI-Driven Utility Tokens",
+        "meta_name": "Meme Rehash",
         "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 75141836.0
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 28077089.61
         }
       },
       {
-        "meta_name": "Nostalgic Internet Meme Tokens",
+        "meta_name": "AI-Driven Utility",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 16903812.36
+          "token_symbol": "OPAL",
+          "token_name": "Opal",
+          "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump",
+          "usd_market_cap": 1369583.28
         }
       }
     ]
