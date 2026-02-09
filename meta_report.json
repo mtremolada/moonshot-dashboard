@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-09T00:11:40.786003Z",
+  "generated_at_utc": "2026-02-09T01:11:57.776510Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 121,
+  "token_context_count": 120,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 13 PVP group(s); excluding 18 token(s) from META prompt."
+    "Detected 11 PVP group(s); excluding 16 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 18,
+  "pvp_excluded_token_count": 16,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "the white pepe",
-      "tokens": [
-        {
-          "token_symbol": "WhitePepe",
-          "token_name": "The White Pepe",
-          "token_address": "3N9GyaUrt4UUdivvKfkSUiFX2qggzFFM31QQfPrApump",
-          "usd_market_cap": 1648.42,
-          "processed_at": "2026-02-08T00:24:43.662496Z"
-        },
-        {
-          "token_symbol": "WhitePepe",
-          "token_name": "The White Pepe",
-          "token_address": "EF8twdD4FTWL7JjALHi74LoobmE98zros62KDjRhpump",
-          "usd_market_cap": 1652.73,
-          "processed_at": "2026-02-08T14:02:24.092996Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "frame mogged",
@@ -140,26 +120,6 @@
           "token_address": "D5oZbn3L59Qnh51Ad7MoiXsgSeeZ69dWFmPNjSmh32ta",
           "usd_market_cap": 22858.29,
           "processed_at": "2026-02-08T23:31:26.948257Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "whitepepe",
-      "tokens": [
-        {
-          "token_symbol": "WhitePepe",
-          "token_name": "The White Pepe",
-          "token_address": "3N9GyaUrt4UUdivvKfkSUiFX2qggzFFM31QQfPrApump",
-          "usd_market_cap": 1648.42,
-          "processed_at": "2026-02-08T00:24:43.662496Z"
-        },
-        {
-          "token_symbol": "WhitePepe",
-          "token_name": "The White Pepe",
-          "token_address": "EF8twdD4FTWL7JjALHi74LoobmE98zros62KDjRhpump",
-          "usd_market_cap": 1652.73,
-          "processed_at": "2026-02-08T14:02:24.092996Z"
         }
       ]
     },
@@ -288,64 +248,18 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal-Themed Tokens",
-        "description": "Tokens that use animals as central themes or mascots. These tokens often leverage the popularity of animal memes, cute or iconic animal imagery, or animal-related humor to build community and drive engagement.",
+        "meta_name": "AI & Tech Meme Tokens",
+        "description": "Tokens referencing AI, tech, or developer culture, often with humorous or satirical takes on the industry.",
         "defining_signals": [
-          "Animal mascot or theme",
-          "Use of animal-related humor or meme culture",
-          "Community-driven animal-based narratives"
+          "Meme or slang references tied to AI, coding, or tech culture.",
+          "Community-driven narratives around AI or developer humor.",
+          "Token names or descriptions referencing AI projects, memes, or jokes."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PONKE",
-            "token_name": "PONKE",
-            "token_address": "5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC"
-          },
-          {
-            "token_symbol": "COW",
-            "token_name": "COW COIN",
-            "token_address": "GVENy9WjH1DEr7Fi1czk1nLTmgHXm8wT5j6FC9K6pump"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "SAN",
-            "token_name": "San Chan",
-            "token_address": "GQz5ThKHNcuAvMKA8rCPSdoFUoApk9Fi8qB9m3Gqpump"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          }
-        ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong meme and community engagement around animal themes.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 550938131.15
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Driven Crypto Tokens",
-        "description": "Tokens leveraging AI as a core theme, either through AI-powered platforms, agents, or meme-inspired AI culture. These tokens often focus on AI development, integration, or community-driven AI narratives.",
-        "defining_signals": [
-          "AI agent integration for tasks or governance",
-          "AI-generated content or meme culture references",
-          "Community-driven AI development or experimentation"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "LUMEN",
-            "token_name": "LUMEN",
-            "token_address": "EKPWiLk5fwTNZVeL5PrKSFDjdJrvRkvoPafVT54ppump"
+            "token_symbol": "ECC",
+            "token_name": "Everything Claude Code",
+            "token_address": "5pXCgix5omo4SLU6f2JcGUGhxMBih6PxcF6RfabsBAGS"
           },
           {
             "token_symbol": "ALCH",
@@ -358,19 +272,19 @@
             "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
           },
           {
-            "token_symbol": "MOLT",
-            "token_name": "MOLTBOOK",
-            "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump"
+            "token_symbol": "CLAW",
+            "token_name": "Clawd",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "ANICLAW",
-            "token_name": "Aniclaw",
-            "token_address": "3oXdBSBhP7RFgB8hnveBKbhcwK6csiCCLftbg7XXrYWh"
+            "token_symbol": "GEM",
+            "token_name": "Gem",
+            "token_address": "4fLNZoggjyPKxUVkniy3ua8Vzad6ScCALiYkGjt5pump"
           }
         ],
         "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong AI integration, community focus, and cross-platform utility.",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong AI and tech meme culture with clear community engagement. Alchemist AI has a clear narrative and utility focus.",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -380,23 +294,110 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme-Based Tokens with Cultural Origins",
-        "description": "Tokens that derive their names and narratives from pre-existing internet memes, pop culture references, or viral content. These tokens often leverage nostalgia or humor from established memes to build community and drive engagement.",
+        "meta_name": "Crypto-Adjacent Meme Tokens",
+        "description": "Tokens that reference crypto culture, slang, or projects, often with a humorous or satirical twist.",
         "defining_signals": [
-          "Direct reference to a known meme or cultural figure",
-          "Viral or trending meme origin",
-          "Community-driven humor or parody"
+          "References to crypto-specific slang (e.g., 'shitcoin', 'rekt', 'ape').",
+          "Meme origins from crypto forums, Reddit, or Twitter.",
+          "Community-driven narratives with crypto humor or satire."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "BIRDY",
-            "token_name": "Brainy Birdy",
-            "token_address": "AhSWdW3DSb99PC4h2G7aYB8dZfpu2bq45ATp7K2Kpump"
+            "token_symbol": "SHT",
+            "token_name": "ShitCoin",
+            "token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump"
           },
           {
-            "token_symbol": "PETAH",
-            "token_name": "ピータさん",
-            "token_address": "GDmSzyg3F3CqgusT4CcxhjaKKfaucN98L4EUePeqpump"
+            "token_symbol": "APEBAMA",
+            "token_name": "APEBAMA",
+            "token_address": "NopK9qESRHrP7b8TSPmgVbpWpovHUk49KDnhGPm8Mub"
+          },
+          {
+            "token_symbol": "BQC",
+            "token_name": "BBQCoin",
+            "token_address": "Bv2AYefUcEe8StuRAAsvGLyeB8fkqVeEUVvYAiPApump"
+          },
+          {
+            "token_symbol": "BUTT",
+            "token_name": "Buttcoin",
+            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
+          },
+          {
+            "token_symbol": "TIT",
+            "token_name": "TITCOIN",
+            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGvmTueu8LPfGaj7jpump"
+          }
+        ],
+        "leader_hint_token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong crypto culture and slang references. 'Shitcoin' is a well-established term in crypto communities, and the token has a clear meme origin.",
+        "leader_token": {
+          "token_symbol": "Buttcoin",
+          "token_name": "Buttcoin",
+          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+          "usd_market_cap": 34071375.58
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Anime & Pop Culture Meme Coins",
+        "description": "Tokens inspired by anime characters, memes, or pop culture references, often leveraging nostalgia or internet fame of the original IP.",
+        "defining_signals": [
+          "Direct references to anime characters or their traits (e.g., Pepe the Frog, Pikachu).",
+          "Meme origins from anime, manga, or related internet communities.",
+          "Community-driven narratives tied to the character’s lore or fanbase."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "PIKACHU",
+            "token_name": "Pikachu Illustrator",
+            "token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump"
+          },
+          {
+            "token_symbol": "MISAKA",
+            "token_name": "Misaka",
+            "token_address": "4e2DhohUAJ9EbrLey3rVVgFQzLCAeeBirSbdhqrh9snX"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          }
+        ],
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Strong cultural and meme roots in anime and internet communities. Pepe and Pikachu are particularly iconic, with Pepe having the highest market cap and engagement.",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 28077089.61
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Internet Meme & Slang Tokens",
+        "description": "Tokens built around viral internet memes, slang, or phrases that have gained traction on platforms like TikTok, Reddit, or Twitter.",
+        "defining_signals": [
+          "Meme or slang references with clear pre-crypto origins (e.g., 'tralala', 'claw', 'rekt').",
+          "Tie-ins to viral TikTok trends or viral videos.",
+          "Community-driven narratives with meme-based humor or absurdity."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "tralala",
+            "token_name": "Tralaliritos",
+            "token_address": "89muFzE1VpotYQfKm7xsuEbhgxRLyinmsELGTCSLpump"
           },
           {
             "token_symbol": "RUNNERS",
@@ -404,36 +405,41 @@
             "token_address": "2QFVbAbE62K9v2Rs7hDyq5qHMHad6G2GQPweGAXHpump"
           },
           {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+            "token_symbol": "clawd",
+            "token_name": "clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+            "token_symbol": "REKT",
+            "token_name": "Rektio",
+            "token_address": "CgghGMyu1cnSxP1GnZ5aurLrTbCQvH6vjABgZHMApump"
+          },
+          {
+            "token_symbol": "TOILET",
+            "token_name": "The Toilet",
+            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
           }
         ],
-        "leader_hint_token_address": "AhSWdW3DSb99PC4h2G7aYB8dZfpu2bq45ATp7K2Kpump",
+        "leader_hint_token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS",
         "confidence_0_100": 80,
-        "confidence_rationale": "Strong meme roots and community engagement.",
+        "confidence_rationale": "Strong meme and slang roots with clear viral internet origins. The 'Skibidi Toilet' meme is particularly popular and has driven engagement.",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 16903812.36
+          "token_symbol": "TOILET",
+          "token_name": "The Toilet",
+          "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS",
+          "usd_market_cap": 1083212.06
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political and Celebrity-Inspired Tokens",
-        "description": "Tokens inspired by political figures, celebrities, or public personas. These tokens often leverage the cultural or media presence of these individuals to attract attention and community interest.",
+        "meta_name": "Political Meme Coins",
+        "description": "Tokens leveraging political figures or conspiracy theories, often tied to public discourse or viral narratives around political personalities.",
         "defining_signals": [
-          "Reference to a public figure or celebrity",
-          "Utilization of political or cultural controversy",
-          "Meme or parody of a public figure"
+          "References to political figures (e.g., Biden, Trump) or their alleged clones/impersonators.",
+          "Conspiracy theory narratives tied to elections or public figures.",
+          "Meme origins from QAnon, TikTok, or mainstream media coverage of political events."
         ],
-        "supporting_tokens": [
+        "supportinging_tokens": [
           {
             "token_symbol": "Bidan",
             "token_name": "Biden Clone",
@@ -450,9 +456,9 @@
             "token_address": "3JES3sUd5Cwavf7myDfMn3x58qE6WyXq1YbY9ftupump"
           },
           {
-            "token_symbol": "DIAPRIO",
-            "token_name": "Leonardo Dicaprio Memes",
-            "token_address": "454WMY7tfXm4ZSLwxiRj7zDGP4CwbECyx2zpodSypump"
+            "token_symbol": "OBAMAPE",
+            "token_name": "President Obamape",
+            "token_address": "FMeLfJm6B7TxSPXcQCbPtW4hJVzSZhskJaM92dMbpump"
           },
           {
             "token_symbol": "KARYNA",
@@ -461,76 +467,16 @@
           }
         ],
         "leader_hint_token_address": "Y5k4ypJToQvE7pLPGdUpE5ZWxGDZkkqffV7Vjy8pump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "High media and cultural relevance of referenced figures.",
-        "leader_token": {
-          "token_symbol": "TRUMPAWE",
-          "token_name": "Trumpawe",
-          "token_address": "Y5k4ypJToQvE7pLPGdUpE5ZWxGDZkkqffV7Vjy8pump",
-          "usd_market_cap": 2457464.68
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto-Native Meme Tokens",
-        "description": "Tokens that originate from or are heavily influenced by crypto-specific memes, slang, or inside jokes. These tokens often thrive on the humor and culture unique to the crypto community.",
-        "defining_signals": [
-          "Use of crypto-specific slang or inside jokes",
-          "Community-driven meme culture within crypto",
-          "Leverage of crypto-native humor or references"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "SHT",
-            "token_name": "ShitCoin",
-            "token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump"
-          },
-          {
-            "token_symbol": "GEM",
-            "token_name": "GEM",
-            "token_address": "4fLNZoggjyPKxUVkniy3ua8Vzad6ScCALiYkGjt5pump"
-          },
-          {
-            "token_symbol": "GEM",
-            "token_name": "GEM",
-            "token_address": "4fLNZoggjyPKxUVkniy3ua8Vzad6ScCALiYkGjt5pump"
-          },
-          {
-            "token_symbol": "GEM",
-            "token_name": "GEM",
-            "token_address": "4fLNZoggjyPKxUVkniy3ua8Vzad6ScCALiYkGjt5pump"
-          },
-          {
-            "token_symbol": "GEM",
-            "token_name": "GEM",
-            "token_address": "4fLNZoggjyPKxUVkniy3ua8Vzad6ScCALiYkGjt5pump"
-          }
-        ],
-        "leader_hint_token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump",
-        "confidence_0_100": 65,
-        "confidence_rationale": "Strong crypto-native meme culture and community engagement.",
-        "leader_token": {
-          "token_symbol": "SHT",
-          "token_name": "ShitCoin",
-          "token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump",
-          "usd_market_cap": 256752.77
-        },
-        "leader_missing_reason": null
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong political meme narratives with clear ties to public figures and conspiracy discourse. Trump and Biden references are particularly prominent and have high engagement.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
-    "meta_rotation_note": "The 'AI-Driven Crypto Tokens' and 'Meme-Based Tokens with Cultural Origins' are currently the strongest and most active METAs, with high community engagement and clear cultural roots. 'Political and Celebrity-Inspired Tokens' are fading slightly due to reduced media attention on the referenced figures. 'Crypto-Native Meme Tokens' are emerging as a strong contender, leveraging humor and inside jokes unique to the crypto community.",
+    "meta_rotation_note": "The 'Political Meme Coins' and 'Anime & Pop Culture Meme Coins' METAs are currently emerging, driven by public discourse and nostalgia. The 'Internet Meme & Slang Tokens' and 'Crypto-Adjacent Meme Tokens' are fading slightly as newer, more niche meme tokens gain traction. The 'AI & Tech Meme Tokens' are stable but not yet dominant.",
     "meta_leaders": [
       {
-        "meta_name": "Animal-Themed Tokens",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 550938131.15
-        }
-      },
-      {
-        "meta_name": "AI-Driven Crypto Tokens",
+        "meta_name": "AI & Tech Meme Tokens",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -539,30 +485,30 @@
         }
       },
       {
-        "meta_name": "Meme-Based Tokens with Cultural Origins",
+        "meta_name": "Crypto-Adjacent Meme Tokens",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 16903812.36
+          "token_symbol": "Buttcoin",
+          "token_name": "Buttcoin",
+          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+          "usd_market_cap": 34071375.58
         }
       },
       {
-        "meta_name": "Political and Celebrity-Inspired Tokens",
+        "meta_name": "Anime & Pop Culture Meme Coins",
         "leader_token": {
-          "token_symbol": "TRUMPAWE",
-          "token_name": "Trumpawe",
-          "token_address": "Y5k4ypJToQvE7pLPGdUpE5ZWxGDZkkqffV7Vjy8pump",
-          "usd_market_cap": 2457464.68
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 28077089.61
         }
       },
       {
-        "meta_name": "Crypto-Native Meme Tokens",
+        "meta_name": "Internet Meme & Slang Tokens",
         "leader_token": {
-          "token_symbol": "SHT",
-          "token_name": "ShitCoin",
-          "token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump",
-          "usd_market_cap": 256752.77
+          "token_symbol": "TOILET",
+          "token_name": "The Toilet",
+          "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS",
+          "usd_market_cap": 1083212.06
         }
       }
     ]
