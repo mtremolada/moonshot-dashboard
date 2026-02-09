@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-09T08:15:51.062806Z",
+  "generated_at_utc": "2026-02-09T09:16:11.147827Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 115,
+  "token_context_count": 116,
   "prompt_truncated": false,
   "warnings": [
     "Detected 7 PVP group(s); excluding 11 token(s) from META prompt."
@@ -175,12 +175,58 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI-Driven Utility Tokens",
-        "description": "Tokens focused on AI agent development, task automation, and decentralized AI ecosystems. These projects often claim to leverage AI for trading, research, and governance, though many lack detailed documentation.",
+        "meta_name": "Meme Reclamation",
+        "description": "Tokens repurposing established internet memes or cultural references for crypto branding. These often leverage pre-existing meme popularity to drive community engagement.",
         "defining_signals": [
-          "AI agent development or integration",
-          "Claims of autonomous trading or research",
-          "Decentralized governance or task execution"
+          "Use of well-known memes (e.g., Doge, Pepe, Wojak)",
+          "Clear cultural origin in non-crypto internet culture",
+          "Community-driven narratives around the meme"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "DOGE",
+            "token_name": "Department of Gov Efficiency",
+            "token_address": "9TY6DUg1VSssYH5tFE95qoq5hnAGFak4w3cn72sJNCoV"
+          },
+          {
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpPk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "RAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_hint_token_address": "B5WTLaRwaUQpPk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Pepe has a strong, established meme presence with multiple iterations across platforms. The token directly leverages the meme's cultural ubiquity.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 550938131.15
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Driven Financial Instruments",
+        "description": "Tokens claiming to integrate AI for financial operations, including trading, prediction markets, or automated yield generation.",
+        "defining_signals": [
+          "AI-based trading or prediction claims",
+          "Algorithmic yield generation mechanisms",
+          "Integration with financial data sources"
         ],
         "supporting_tokens": [
           {
@@ -189,96 +235,9 @@
             "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
           },
           {
-            "token_symbol": "OPAL",
-            "token_name": "Opal",
-            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
-          },
-          {
-            "token_symbol": "HaaS",
-            "token_name": "Human as a Service",
-            "token_address": "FdvzVZzuSo4vhpkHUVSKDFxqkCzezcweGUeV4Uppump"
-          },
-          {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
-          },
-          {
             "token_symbol": "NFAi",
             "token_name": "Athena Labs",
             "token_address": "CYQuuo6GDdC6ZM67nARtKvi4CpFLwUvcXPyudRe2surg"
-          }
-        ],
-        "leader_hint_token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-        "confidence_0_100": 78,
-        "confidence_rationale": "c8ntinuum has the highest market cap among AI-driven utility tokens and is positioned as a cross-chain protocol, indicating strong leadership potential.",
-        "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 382564918.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "NFT and Collectible-Driven Tokens",
-        "description": "Tokens centered around NFTs, collectibles, and gacha-style mechanics. These tokens often tie into trading card games, virtual worlds, or community-driven collectibles.",
-        "defining_signals": [
-          "NFT-based tokenization",
-          "Gacha-style mechanics or randomized rewards",
-          "Community-driven collectibles"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "SAN",
-            "token_name": "San Chan",
-            "token_address": "GQz5ThKHNcuAvMKA8rCPSdoFUoApk9Fi8qB9m3Gqpump"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          }
-        ],
-        "leader_hint_token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Collector Crypt has the highest market cap among NFT and collectible-driven tokens and is positioned as a utility token for trading card tokenization.",
-        "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 28077089.61
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Trading and Prediction Tokens",
-        "description": "Tokens focused on AI-driven trading, prediction markets, and financial forecasting. These tokens often claim to use AI for market analysis, trading signals, or prediction outcomes.",
-        "defining_signals": [
-          "AI-driven trading or prediction",
-          "Integration with prediction markets",
-          "Claims of market intelligence or forecasting"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "METHOD",
-            "token_name": "THE METHOD",
-            "token_address": "7njk7on8EEnF8Mgj7p4Z8sYSQ7NLUujhG3UnmTCypump"
           },
           {
             "token_symbol": "TRUTH",
@@ -286,50 +245,50 @@
             "token_address": "TnRB4KE9dorzMT31ecyw58kC2jSFqr3ZUTJ2hp6pump"
           },
           {
-            "token_symbol": "JESUS",
-            "token_name": "Jesuscoin",
-            "token_address": "3JES3sUd5Cwavf7myDfMn3x58qE6WyXq1YbY9ftupump"
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
           },
           {
             "token_symbol": "WAR",
             "token_name": "WAR",
             "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
           }
         ],
-        "leader_hint_token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+        "leader_hint_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
         "confidence_0_100": 70,
-        "confidence_rationale": "WAR has the highest market cap among AI-powered trading and prediction tokens and is positioned as a resistance narrative against USD, indicating strong community interest.",
+        "confidence_rationale": "Solana Mobile has the most concrete claims about AI integration and ecosystem development.",
         "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 27734097.0
+          "token_symbol": "CTM",
+          "token_name": "c8ntinuum",
+          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+          "usd_market_cap": 382564918.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "OpenClaw AI Integration",
-        "description": "Tokens leveraging the OpenClaw AI framework for autonomous tasks, token creation, and integration with platforms like Pump.fun. These tokens often lack official documentation but emphasize AI-driven functionality.",
+        "meta_name": "AI Utility Integration",
+        "description": "Tokens positioning themselves as infrastructure or tools for AI agents, often with claims of enabling autonomous operations, task execution, or data generation.",
         "defining_signals": [
-          "Integration with OpenClaw AI agents",
-          "Claims of autonomous token creation or economic system bridging",
-          "Absence of official documentation or team details"
+          "AI agent functionality in tokenomics",
+          "Claims of autonomous task execution",
+          "Integration with AI development platforms"
         ],
-        "supportinging_tokens": [
+        "supporting_tokens": [
+          {
+            "token_symbol": "HAAA",
+            "token_name": "Human as a Service",
+            "token_address": "FdvzVZzuSo4vhpkHUVSKDFxqkCzezcweGUeV4Uppump"
+          },
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
           {
             "token_symbol": "JARVIS",
             "token_name": "OpenClaw Jarvis",
             "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
-          },
-          {
-            "token_symbol": "ANICLAW",
-            "token_name": "Aniclaw",
-            "token_address": "3oXdBSBhP7RFgB8hnveBKbhcwK6csiCCLftbg7XXrYYWh"
           },
           {
             "token_symbol": "REALCLAW",
@@ -337,68 +296,128 @@
             "token_address": "Gpae2TCtJm9foGfCPM4FiA7g2jYeWVhBwXE7WZbupump"
           },
           {
-            "token_symbol": "CLAWEB",
-            "token_name": "Claweb",
-            "token_address": "Kjfbsbp182yfhECYJG1fHxHXqfY2xCwKVR67oyCpump"
-          },
-          {
-            "token_symbol": "MOLT",
-            "token_name": "MOLTBOOK",
-            "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump"
+            "token_symbol": "OPAL",
+            "token_name": "Opal",
+            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
           }
         ],
-        "leader_hint_token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Multiple tokens explicitly reference OpenClaw AI integration, with JARVIS being the most prominent and having the highest market cap among the group.",
-        "leader_token": null,
-        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
+        "leader_hint_token_address": "ALCH",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Alchemist AI has the largest market cap among this group and makes the most comprehensive claims about AI integration, though documentation is sparse.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 75141836.0
+        },
+        "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme-Driven Crypto Tokens",
-        "description": "Tokens leveraging viral internet memes, pop culture references, and internet slang to drive community engagement and speculative interest. These tokens often have no prior non-crypto cultural origin but are repurposed for crypto branding.",
+        "meta_name": "Cultural Artifact NFTs",
+        "description": "Tokens tied to rare collectibles, historical items, or culturally significant objects, often leveraging their scarcity or media attention for value propositions.",
         "defining_signals": [
-          "Reference to viral memes or pop culture figures",
-          "Absence of non-crypto cultural origin",
-          "Community-driven branding and humor"
+          "Association with rare physical collectibles",
+          "Media coverage of the artifact",
+          "Scarcity-based value narratives"
         ],
-        "supportinging_tokens": [
+        "supporting_tokens": [
           {
-            "token_symbol": "CHUD",
-            "token_name": "The Life of a Chud",
-            "token_address": "EoP9nKZMtTFTWVjkJVJEQQXAgWoFZwgVgoKspkrVpump"
+            "token_symbol": "PIKACHU",
+            "token_name": "Pikachu Illustrator",
+            "token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump"
           },
           {
-            "token_symbol": "TIT",
-            "token_name": "TITCOIN",
-            "token_address": "9u7mRVAkwzbCvzpmeVDtZSkBGvmTueu8LPfGaj7jpump"
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
           },
           {
-            "token_symbol": "REKT",
-            "token_name": "Rektio",
-            "token_address": "CgghGMyu1cnSxP1GnZ5aurLrTbCQvH6vjABgZHMApump"
+            "token_symbol": "BAN",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
           },
           {
-            "token_symbol": "DICAPRIO",
-            "token_name": "Leonardo Dicaprio Memes",
-            "token_address": "454WMY7tfXm4ZSLwxiRj7zDGP4CwbECyx2zpodSypump"
+            "token_symbol": "RAVEN",
+            "token_name": "The Wallstreet Monkey",
+            "token_address": "3fDcKYmmRvkt1bx48amTCXaRMn7FTZch41YK4hpcpump"
           },
           {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "JESUS",
+            "token_name": "Jesuscoin",
+            "token_address": "3JES3sUd5Cwavf7myDfMn3x58qE6WyXq1YbY9ftupump"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Wojak is a well-established meme with strong cultural roots and a high market cap, making it a central token in this meme-driven meta.",
-        "leader_token": null,
-        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
+        "leader_hint_token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Pikachu Illustrator has the strongest cultural foundation with verifiable media coverage and historical significance.",
+        "leader_token": {
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 74560300.09
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Niche Community Tokens",
+        "description": "Tokens built around specific subcultures, internet communities, or interest groups, often with strong community-driven narratives.",
+        "defining_signals": [
+          "Tie-ins to specific online communities",
+          "Community-driven governance or events",
+          "Niche cultural references"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "SAN",
+            "token_name": "San Chan",
+            "token_address": "GQz5ThKHNcuAvMKA8rCPSdoFUoApk9Fi8qB9m3Gqpump"
+          },
+          {
+            "token_symbol": "YARANAIAKA",
+            "token_name": "Yaranaika",
+            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "TOILET",
+            "token_name": "The Toilet",
+            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
+          },
+          {
+            "token_symbol": "SINCLAIR",
+            "token_name": "Baby Sinclair",
+            "token_address": "8MdkXe5G77xaMheVQxLqAYV8e2m2Dfc5ZbuEup2epump"
+          }
+        ],
+        "leader_hint_token_address": "GQz5ThKHNcuAvMKA8rCPSdoFUoApk9Fi8qB9m3Gqpump",
+        "confidence_0_100": 65,
+        "confidence_rationale": "San Chan has the strongest community presence and cultural narrative with clear meme origins.",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 28077089.61
+        },
+        "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The OpenClaw AI Integration and Meme-Driven Crypto Tokens metas are currently dominant, with strong community engagement and high market caps. The AI-Driven Utility Tokens meta is emerging as more projects focus on AI agent development and automation. The NFT and Collectible-Driven Tokens meta is fading slightly as newer AI and meme-based tokens gain traction.",
+    "meta_rotation_note": "Meme Reclamation remains dominant due to Pepe's sustained popularity and new meme integrations. AI Utility Integration is emerging as more tokens focus on agent-based operations. Cultural Artifact NFTs are fading as newer collectible narratives emerge. Niche Community Tokens are gaining traction with specific interest groups.",
     "meta_leaders": [
       {
-        "meta_name": "AI-Driven Utility Tokens",
+        "meta_name": "Meme Reclamation",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 550938131.15
+        }
+      },
+      {
+        "meta_name": "AI-Driven Financial Instruments",
         "leader_token": {
           "token_symbol": "CTM",
           "token_name": "c8ntinuum",
@@ -407,21 +426,30 @@
         }
       },
       {
-        "meta_name": "NFT and Collectible-Driven Tokens",
+        "meta_name": "AI Utility Integration",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 75141836.0
+        }
+      },
+      {
+        "meta_name": "Cultural Artifact NFTs",
+        "leader_token": {
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 74560300.09
+        }
+      },
+      {
+        "meta_name": "Niche Community Tokens",
         "leader_token": {
           "token_symbol": "PENGUIN",
           "token_name": "Nietzschean Penguin",
           "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
           "usd_market_cap": 28077089.61
-        }
-      },
-      {
-        "meta_name": "AI-Powered Trading and Prediction Tokens",
-        "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 27734097.0
         }
       }
     ]
