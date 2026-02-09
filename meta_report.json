@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-09T04:13:38.124938Z",
+  "generated_at_utc": "2026-02-09T05:14:09.638294Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 120,
+  "token_context_count": 115,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 8 PVP group(s); excluding 13 token(s) from META prompt."
+    "Detected 7 PVP group(s); excluding 11 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 13,
+  "pvp_excluded_token_count": 11,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -80,26 +80,6 @@
           "token_address": "D5oZbn3L59Qnh51Ad7MoiXsgSeeZ69dWFmPNjSmh32ta",
           "usd_market_cap": 22858.29,
           "processed_at": "2026-02-08T23:31:26.948257Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "winston",
-      "tokens": [
-        {
-          "token_symbol": "Winston",
-          "token_name": "Winston The Corgi",
-          "token_address": "Asw6suZuRhwH3UUTWpGToG68zHZkysSvc8PxYh5kbonk",
-          "usd_market_cap": 56791.19,
-          "processed_at": "2026-02-08T04:13:57.998893Z"
-        },
-        {
-          "token_symbol": "Winston",
-          "token_name": "For Winston",
-          "token_address": "BC3zyoe7SKn2fFLhg9egEKXoyB6yvgnX95CqYxxapump",
-          "usd_market_cap": 156871.06,
-          "processed_at": "2026-02-08T16:04:51.689651Z"
         }
       ]
     },
@@ -195,110 +175,73 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Revival",
-        "description": "Tokens are based on pre-existing internet memes, often with strong cultural roots and viral histories. These tokens leverage the nostalgia and community engagement of established memes to drive adoption.",
+        "meta_name": "AI-Powered GameFi",
+        "description": "Tokens integrating AI into gaming ecosystems, including play-to-earn models, AI-driven game mechanics, and decentralized gaming infrastructure.",
         "defining_signals": [
-          "Tokens referencing viral memes with documented non-crypto origins",
-          "Use of meme characters or phrases with established internet presence",
-          "Community-driven narratives tied to meme culture"
+          "AI integration in game mechanics",
+          "Play-to-earn or play-to-earn models",
+          "Decentralized gaming infrastructure",
+          "Claims of AI-driven game development",
+          "Community-driven game economies"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+            "token_symbol": "IDLE",
+            "token_name": "IdleMine",
+            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
           },
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "DOG",
-            "token_name": "The Crypto Dog",
-            "token_address": "21CnrFRqvEVkQZUTFmTXjcsJTLZhRY51ohoaCPwRpump"
+            "token_symbol": "CARDS",
+            "token_name": "Collector Crypt",
+            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
           },
           {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "BQC",
+            "token_name": "BBQCoin",
+            "token_address": "Bv2AYefUcEe8StuRAAsvGLyeB8fkqVeEUVvYAiPApump"
+          },
+          {
+            "token_symbol": "MOLT",
+            "token_name": "MOLTBOOK",
+            "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump"
+          }
+        ],
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Growing cluster of AI gaming tokens, clear play-to-earn mechanics, and community-driven game economies.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 82913675.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia-Driven Memes",
+        "description": "Tokens leveraging retro or long-standing internet memes, often with roots in early 2000s internet culture. These projects tap into established meme histories and community nostalgia.",
+        "defining_signals": [
+          "Meme origins in 2000s or earlier",
+          "Strong ties to early internet culture (e.g., 4chan, MS Paint)",
+          "Nostalgic rebranding of classic memes",
+          "Community-driven revival of older meme formats",
+          "Clear historical meme lineage"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CLIPY",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
             "token_symbol": "TROLL",
             "token_name": "TROLL",
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          }
-        ],
-        "leader_hint_token_address": "PEPE",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Pepe is a well-established meme with a strong community and cross-platform presence, making it a clear leader in this category.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 550938131.15
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Japanese Internet Culture",
-        "description": "Tokens reference Japanese internet culture, including memes, pop culture, and viral trends. These tokens often leverage the popularity of Japanese media and internet phenomena.",
-        "defining_signals": [
-          "Tokens referencing Japanese internet memes or pop culture",
-          "Use of Japanese terms or cultural references",
-          "Community engagement with Japanese internet trends"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "21",
-            "token_name": "2131KOBUSHIDE",
-            "token_address": "4vGHdzcNrDf8XVE8H19Rqea86RULz7xi89ew1sSJpump"
-          },
-          {
-            "token_symbol": "MISAKA",
-            "token_name": "Misaka",
-            "token_address": "4e2DhohUAJ9EbrLey3rVVgFQzLCAeeBirSbdhqrh9snX"
-          },
-          {
-            "token_symbol": "SAN",
-            "token_name": "San Chan",
-            "token_address": "GQz5ThKHNcuAvMKA8rCPSdoFUoApk9Fi8qB9m3Gqpump"
-          },
-          {
-            "token_symbol": "YARANAIA",
-            "token_name": "やらないか",
-            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cKxKRTvpaJApump"
-          }
-        ],
-        "leader_hint_token_address": "MISAKA",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong cultural references and community engagement with Japanese internet trends, though some tokens are niche.",
-        "leader_token": {
-          "token_symbol": "SAN",
-          "token_name": "San Chan",
-          "token_address": "GQz5ThKHNcuAvMKA8rCPSdoFUoApk9Fi8qB9m3Gqpump",
-          "usd_market_cap": 1766086.06
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgic and Retro Culture",
-        "description": "Tokens reference retro or nostalgic elements, such as classic video games, old internet memes, or historical figures. These tokens often appeal to older internet users and those with a strong connection to past internet culture.",
-        "defining_signals": [
-          "Tokens referencing classic internet memes or retro culture",
-          "Use of nostalgic elements or historical references",
-          "Community engagement with retro internet or pop culture"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLIPPY",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
             "token_symbol": "RAAAAAH",
@@ -306,96 +249,100 @@
             "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "MOLLIE",
+            "token_name": "MOLLIE THE ASCII CRAB",
+            "token_address": "7BhC2WvpNrLk3q7aBRJFg228bma3nw3iyh1pWgcEpump"
+          },
+          {
+            "token_symbol": "SINCLAIR",
+            "token_name": "Baby Sinclair",
+            "token_address": "8MdkXe5G77xaMheVQxLqAYV8e2m2Dfc5ZbuXup2epump"
+          }
+        ],
+        "leader_hint_token_address": "GKjA1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Clear historical meme roots across multiple tokens, strong community nostalgia, and consistent retro branding.",
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 16903812.36
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Driven Infrastructure",
+        "description": "Tokens focused on building or enabling AI infrastructure, including development tools, training data, and decentralized AI ecosystems. These projects often emphasize technical innovation and real-world applications.",
+        "defining_signals": [
+          "AI development platform integration",
+          "Focus on training data or model optimization",
+          "Decentralized infrastructure for AI operations",
+          "Claims of first-mover advantage in AI tooling",
+          "Hackathon or institutional validation"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "OPAL",
+            "token_name": "Opal",
+            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
+          },
+          {
+            "token_symbol": "GROKBUILD",
+            "token_name": "Grok Build",
+            "token_address": "2YdBtHkaFrzNuBjyHMnhsTrf353VLHkuw7BV64Zr9o3d"
           },
           {
             "token_symbol": "GSD",
             "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pV9WVaAduKrLcEBi3RGXedKTrBAGS"
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUu9wDnSpump"
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
+          },
+          {
+            "token_symbol": "SOLPRISM",
+            "token_name": "SOLPRISM",
+            "token_address": "8fZjyDPme2aYmujuxJjKAk3hAGHCgggrHUJFv9roC8cN"
           }
         ],
-        "leader_hint_token_address": "CLIPPY",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong nostalgic elements with clear community engagement, though some tokens are niche or speculative.",
-        "leader_token": {
-          "token_symbol": "Clippy",
-          "token_name": "Clippy",
-          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-          "usd_market_cap": 744335.61
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political and Cultural Commentary",
-        "description": "Tokens reference political figures, events, or cultural commentary, often with a satirical or critical tone. These tokens leverage public sentiment and media coverage to drive engagement.",
-        "defining_signals": [
-          "Tokens referencing political figures or events",
-          "Satirical or critical descriptions tied to public discourse",
-          "Use of viral political memes or hashtags"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "APEBAMA",
-            "token_name": "APEBAMA",
-            "token_address": "NopK9qESRHrP7b8TSPmgVbpWpovHUk49KDnhGPm8Mub"
-          },
-          {
-            "token_symbol": "TRUMPAWE",
-            "token_name": "Trumpawe",
-            "token_address": "Y5k4ypJToQvE7pLPGdUpE5ZWxGDZkkqffV7Vjy8pump"
-          },
-          {
-            "token_symbol": "DEPORT",
-            "token_name": "DEPORT BAD BUNNY",
-            "token_address": "Hq4KMyusWiB4P9ZbrRUuvrtgdYjwhHuZ46khTMxCpump"
-          },
-          {
-            "token_symbol": "KARYNA",
-            "token_name": "Karyna Fund",
-            "token_address": "3GKvD6Fbj19HKnKdJJboMSZM1Mt9MZeehPGcq1DHBAGS"
-          },
-          {
-            "token_symbol": "WOOF",
-            "token_name": "WoW Gold",
-            "token_address": "6YdDyLQ5RnKpjcVFCKVe8GURVxFsAVhXwArW9wrRpump"
-          }
-        ],
-        "leader_hint_token_address": "APEBAMA",
+        "leader_hint_token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump",
         "confidence_0_100": 75,
-        "confidence_rationale": "Strong political and cultural references with clear community engagement, though some tokens are niche or speculative.",
+        "confidence_rationale": "Strong technical focus across multiple tokens, clear AI infrastructure claims, and some institutional validation.",
         "leader_token": {
-          "token_symbol": "KARYNA",
-          "token_name": "Karyna Fund",
-          "token_address": "3GKvD6Fbj19HKnKdJJboMSZM1Mt9MZeehPGcq1DHBAGS",
-          "usd_market_cap": 379117.85
+          "token_symbol": "OPAL",
+          "token_name": "Opal",
+          "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump",
+          "usd_market_cap": 1786460.77
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI Agent Ecosystem",
-        "description": "Tokens are centered around AI agents performing autonomous tasks, such as research, content creation, and trading. These tokens often integrate with platforms like OpenClaw and Moltbook, emphasizing decentralized coordination and AI-driven workflows.",
+        "meta_name": "AI Agent Integration",
+        "description": "Tokens leveraging AI agent ecosystems for autonomous tasks, trading, or content creation. These projects often integrate with platforms like OpenClaw and emphasize decentralized, AI-driven operations.",
         "defining_signals": [
-          "Tokens tied to AI agent platforms or tools (e.g., OpenClaw, Moltbook)",
-          "Descriptions referencing autonomous AI agents or workflows",
-          "Integration with AI-driven social or productivity ecosystems"
+          "AI agent-based tokenomics",
+          "Integration with OpenClaw or similar AI agent platforms",
+          "Decentralized autonomous operations (DAO-like structures)",
+          "Claims of self-learning or autonomous trading capabilities",
+          "Focus on task automation or content generation via AI agents"
         ],
         "supportinging_tokens": [
-          {
-            "token_symbol": "CLAWD",
-            "token_name": "clawdbot",
-            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
-          },
           {
             "token_symbol": "JARVIS",
             "token_name": "OpenClaw Jarvis",
             "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
+          },
+          {
+            "token_symbol": "ANICLAW",
+            "token_name": "Aniclaw",
+            "token_address": "3oXdBSBhP7RFgB8hnveBKbhcwK6csiCCLftbg7XXrYWh"
+          },
+          {
+            "token_symbol": "CLAWEB",
+            "token_name": "Claweb",
+            "token_address": "Kjfbsbp182yfhECYJG1fHxHXqfY2xCwKVR67oyCpump"
           },
           {
             "token_symbol": "REALCLAW",
@@ -403,59 +350,88 @@
             "token_address": "Gpae2TCtJm9foGfCPM4FiA7g2jYeWVhBwXE7WZbupump"
           },
           {
-            "token_symbol": "MOLT",
-            "token_name": "MOLTBOOK",
-            "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+            "token_symbol": "NFAi",
+            "token_name": "Athena Labs",
+            "token_address": "CYQuuo6GDdC6ZM67nARtKvi4CpFLwUvcXPyudRe2surg"
           }
         ],
-        "leader_hint_token_address": "JARVIS",
+        "leader_hint_token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across multiple tokens, with clear integration into AI agent ecosystems and decentralized workflows.",
+        "confidence_rationale": "Strong clustering around AI agent integration, clear OpenClaw ties, and multiple tokens with similar autonomous operation claims.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
+      },
+      {
+        "meta_name": "Meme Reclamation",
+        "description": "Tokens repurposing established internet memes or cultural references for crypto branding. These often leverage nostalgia or viral content from platforms like TikTok, Reddit, or 4chan.",
+        "defining_signals": [
+          "Leverage of pre-existing memes or viral content",
+          "Nostalgic or ironic rebranding of cultural touchstones",
+          "Strong ties to TikTok/Instagram/X meme trends",
+          "Use of iconic characters or phrases with established meme histories",
+          "Community-driven narratives around viral internet phenomena"
+        ],
+        "supportinging_tokens": [
+          {
+            "token_symbol": "COW",
+            "token_name": "COW COIN",
+            "token_address": "GVENy9WjH1DEr7Fi1czk1nLTmgHXm8wT5j6FC9K6pump"
+          },
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+          },
+          {
+            "token_symbol": "DOGE",
+            "token_name": "Department of Gov Efficiency",
+            "token_address": "9TY6DUg1VSssY5tFE95qoq5hnAGFak4w3cn72sJNCoV"
+          }
+        ],
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Clear meme lineage across multiple tokens, strong viral internet presence, and consistent rebranding of cultural references.",
         "leader_token": null,
         "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
-    "meta_rotation_note": "The 'AI Agent Ecosystem' and 'Meme Revival' METAs are currently the most active and dominant, with strong community engagement and clear thematic consistency. The 'Political and Cultural Commentary' and 'Japanese Internet Culture' METAs are emerging but still niche. The 'Nostalgic and Retro Culture' META is fading slightly as newer AI and meme-based tokens gain traction.",
+    "meta_rotation_note": "The 'AI Agent Integration' and 'Meme Reclamation' METAs are showing strongest momentum with clear community adoption and viral narratives. 'AI-Driven Infrastructure' is emerging as technical validation increases. 'Nostalgia-Driven Memes' remains stable but faces competition from newer meme formats. 'AI-Powered GameFi' is gaining traction but needs more real-world adoption to solidify.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Revival",
+        "meta_name": "AI-Powered GameFi",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 550938131.15
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 82913675.0
         }
       },
       {
-        "meta_name": "Japanese Internet Culture",
+        "meta_name": "Nostalgia-Driven Memes",
         "leader_token": {
-          "token_symbol": "SAN",
-          "token_name": "San Chan",
-          "token_address": "GQz5ThKHNcuAvMKA8rCPSdoFUoApk9Fi8qB9m3Gqpump",
-          "usd_market_cap": 1766086.06
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 16903812.36
         }
       },
       {
-        "meta_name": "Nostalgic and Retro Culture",
+        "meta_name": "AI-Driven Infrastructure",
         "leader_token": {
-          "token_symbol": "Clippy",
-          "token_name": "Clippy",
-          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-          "usd_market_cap": 744335.61
-        }
-      },
-      {
-        "meta_name": "Political and Cultural Commentary",
-        "leader_token": {
-          "token_symbol": "KARYNA",
-          "token_name": "Karyna Fund",
-          "token_address": "3GKvD6Fbj19HKnKdJJboMSZM1Mt9MZeehPGcq1DHBAGS",
-          "usd_market_cap": 379117.85
+          "token_symbol": "OPAL",
+          "token_name": "Opal",
+          "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump",
+          "usd_market_cap": 1786460.77
         }
       }
     ]
