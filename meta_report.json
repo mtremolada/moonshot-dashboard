@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-10T08:10:02.666811Z",
+  "generated_at_utc": "2026-02-10T09:10:28.407507Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
   "token_context_count": 102,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 10 PVP group(s); excluding 13 token(s) from META prompt."
+    "Detected 11 PVP group(s); excluding 15 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 13,
+  "pvp_excluded_token_count": 15,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -53,6 +53,26 @@
           "token_address": "AjgSvYmJLhvt3FteiyTqQf8XBj1SVs6T6AmSUfkHpump",
           "usd_market_cap": 615843.98,
           "processed_at": "2026-02-09T20:34:25.759492Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "fartcoin",
+      "tokens": [
+        {
+          "token_symbol": "FRT",
+          "token_name": "FartCoin",
+          "token_address": "DtzVi6264rhaSDyxhWGJw8SS6yUFJ6UaSiyow3depump",
+          "usd_market_cap": 172712.4,
+          "processed_at": "2026-02-09T21:11:14.147254Z"
+        },
+        {
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 187443518.01,
+          "processed_at": "2026-02-10T08:17:15.614129Z"
         }
       ]
     },
@@ -228,48 +248,43 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI + Meme Fusion",
-        "description": "Tokens that blend AI and meme culture, often using AI-generated content or AI agents to create meme-based narratives or community engagement.",
+        "meta_name": "Meme-Driven Tokens",
+        "description": "Tokens leveraging viral internet memes, pop culture references, and internet humor to drive community engagement and speculative interest.",
         "defining_signals": [
-          "AI-generated meme content or AI agent-driven memes",
-          "Meme-based AI agent interactions",
-          "AI-powered meme creation or distribution"
+          "Viral meme or pop culture reference in name or narrative",
+          "Community-driven humor or inside jokes",
+          "Lack of traditional utility but strong cultural resonance"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+            "token_symbol": "PIKACHU",
+            "token_name": "Pikachu Illustrator",
+            "token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump"
           },
           {
-            "token_symbol": "DUPE",
-            "token_name": "Dupe",
-            "token_address": "fRfKGCriduzDwSudCwpL7ySCEiboNuryhZDVJtr1a1C"
+            "token_symbol": "REKT",
+            "token_name": "Rektio",
+            "token_address": "CgghGMyu1cnSxP1GnZ5aurLrTbCQvH6vjABgZHMApump"
           },
           {
-            "token_symbol": "CARICATURE",
-            "token_name": "Ai Caricature",
-            "token_address": "sDLRYc96bWkJCVgRaR8FTvokw2iSg8bSQrHR7vHpump"
-          },
-          {
-            "token_symbol": "OPAL",
-            "token_name": "Opal",
-            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
-          },
-          {
-            "token_symbol": "FIVE",
-            "token_name": "The 5 Hour Experiment",
-            "token_address": "NMykaVBTQ8pCSCzN48oW4PoxgKiPjwN53QMwzxepump"
+            "token_symbol": "CHUNGUS",
+            "token_name": "Chungus",
+            "token_address": "5FMV41ykmXeabVvSbw3EiCVy4aeUBhjaUhRtRw8pump"
           },
           {
             "token_symbol": "BONK",
             "token_name": "Bonk",
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           }
         ],
-        "leader_hint_token_address": "sDLRYc96bWkJCVgRaR8FTvokw2iSg8bSQrHR7vHpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Emerging trend of AI-driven meme creation and AI agent-based meme narratives. Ai Caricature and Opal are leading this fusion.",
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Strong meme-driven narratives with clear cultural references and high community engagement.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -279,28 +294,110 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Tokens",
-        "description": "Tokens leveraging AI as a core theme, either as utility for AI agents, AI-generated content, or AI-driven financial tools. These tokens often tie into AI agent ecosystems or decentralized AI infrastructure.",
+        "meta_name": "Community-Driven Tokens",
+        "description": "Tokens built around strong community engagement, often with a focus on decentralized governance, community events, or social experiments.",
         "defining_signals": [
-          "AI agent-based platform or utility",
-          "AI-generated content or data focus",
-          "AI-driven financial tools or trading signals"
+          "Community governance or voting mechanisms",
+          "Social experiments or time-based events",
+          "Strong community-driven narratives"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MOLT",
-            "token_name": "MOLTBOOK",
-            "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump"
+            "token_symbol": "FIVE",
+            "token_name": "The 5 Hour Experiment",
+            "token_address": "NMykaVBTQ8pCSCzN48oW4PoxgKiPjwN53QMwzxepump"
           },
           {
-            "token_symbol": "JARVIS",
-            "token_name": "OpenClaw Jarvis",
-            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "BONKWHEEL",
+            "token_name": "Bonkers Flywheel",
+            "token_address": "3GwPUbJauo9qRoX2h1ANj15RGn9L7GVLG67kWCAjbonk"
+          },
+          {
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_hint_token_address": "NMykaVBTQ8pCSCzN48oW4PoxgKiPjwN53QMwzxepump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong community engagement and social experiments, though some tokens lack clear utility beyond the narrative.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 549514668.67
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Utility-Driven Tokens",
+        "description": "Tokens with clear utility in decentralized applications, platforms, or services, often with a focus on governance, staking, or platform access.",
+        "defining_signals": [
+          "Clear platform or service integration",
+          "Governance or staking utilities",
+          "Decentralized infrastructure or tooling"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CTM",
+            "token_name": "c8ntinuum",
+            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
           },
           {
             "token_symbol": "SEE",
             "token_name": "SEE",
             "token_address": "see8q1jh1MYFfr51y78rcmmxpvigExcKg5CeH3Z3uQW"
+          },
+          {
+            "token_symbol": "VDR",
+            "token_name": "Vodra",
+            "token_address": "5a6LTLwdMJBY2JDLjw8B1w4JwFRdZszGF9W56ZzrriS1"
+          },
+          {
+            "token_symbol": "SOLPRISM",
+            "token_name": "SOLPRISM",
+            "token_address": "8fZjyDPme2aYmujuxJjKAk3hAGHCgggrHUJFv9roC8cN"
+          },
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          }
+        ],
+        "leader_hint_token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong utility focus with clear platform integration and governance features, though some tokens lack transparency.",
+        "leader_token": {
+          "token_symbol": "CTM",
+          "token_name": "c8ntinuum",
+          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+          "usd_market_cap": 368654881.9
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Utility",
+        "description": "Tokens leveraging AI agents for autonomous operations, including token creation, trading, and platform coordination. These tokens often emphasize automation and decentralized execution.",
+        "defining_signals": [
+          "AI-driven autonomous operations",
+          "Zero-fee token creation or trading",
+          "Integration with AI agent ecosystems"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "JARVIS",
+            "token_name": "OpenClaw Jarvis",
+            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
           },
           {
             "token_symbol": "OPAL",
@@ -311,6 +408,11 @@
             "token_symbol": "HYPERFOMO",
             "token_name": "HyperFomo",
             "token_address": "EUUdWDEPUUogXYXiZ6CZXsB1cb2y4maTU7kwbyepBAGS"
+          },
+          {
+            "token_symbol": "OPUS",
+            "token_name": "Opus The Trencher",
+            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
           },
           {
             "token_symbol": "ALCH",
@@ -320,7 +422,7 @@
         ],
         "leader_hint_token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong AI focus across multiple tokens, including agent-based platforms and AI-driven financial tools. Jarvis and Alchemist AI are particularly prominent in this space.",
+        "confidence_rationale": "Strong alignment with AI agent themes, including autonomous token creation and execution, with a clear utility focus.",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -330,69 +432,28 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI Agent Ecosystems",
-        "description": "Tokens that focus on AI agents as autonomous entities with specific roles, such as trading, content creation, or social interaction. These tokens often emphasize agent-to-agent interactions and decentralized coordination.",
+        "meta_name": "AI and Gaming Fusion",
+        "description": "Tokens combining AI capabilities with gaming elements, often featuring in-game utilities, AI companions, or AI-driven game mechanics.",
         "defining_signals": [
-          "AI agent-based platform or utility",
-          "Agent-to-agent interactions or coordination",
-          "Decentralized AI agent ecosystems"
+          "AI integration in game mechanics",
+          "In-game token utility",
+          "AI companions or AI-driven game elements"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MOLT",
-            "token_name": "MOLTBOOK",
-            "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump"
+            "token_symbol": "IDLE",
+            "token_name": "IdleMine",
+            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
           },
           {
-            "token_symbol": "JARVIS",
-            "token_name": "OpenClaw Jarvis",
-            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "OPAL",
-            "token_name": "Opal",
-            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "HYPERFOMO",
-            "token_name": "HyperFomo",
-            "token_address": "EUUdWDEPUUogXYXiZ6CZXsB1cb2y4maTU7kwbyepBAGS"
-          },
-          {
-            "token_symbol": "SEE",
-            "token_name": "SEE",
-            "token_address": "see8q1jh1MYFfr51y78rcmmxpvigExcKg5CeH3Z3uQW"
-          }
-        ],
-        "leader_hint_token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong focus on AI agent ecosystems with Jarvis and Alchemist AI leading the trend.",
-        "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 62960469.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI + Finance",
-        "description": "Tokens that integrate AI with financial tools, such as AI-driven trading signals, automated financial services, or AI-based market intelligence.",
-        "defining_signals": [
-          "AI-driven trading signals or financial tools",
-          "AI-based market intelligence or analytics",
-          "AI-powered financial automation"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "HYPERFOMO",
-            "token_name": "HyperFomo",
-            "token_address": "EUUdWDEPUUogXYXiZ6CZXsB1cb2y4maTU7kwbyepBAGS"
+            "token_symbol": "CLAVICULAR",
+            "token_name": "Clavicular",
+            "token_address": "FWoGEhL3UgVofwrSgWZEJ8Vsg69a3ELJpxe8e2u6fFnd"
           },
           {
             "token_symbol": "SIREN",
@@ -400,93 +461,27 @@
             "token_address": "HgjsRKXCWMbQztH6ajsEqFqLntb79B9N4kKZw1bYpump"
           },
           {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "SEE",
-            "token_name": "SEE",
-            "token_address": "see8q1jh1MYFfr51y78rcmmxpvigExcKg5CeH3Z3uQW"
-          },
-          {
-            "token_symbol": "JARVIS",
-            "token_name": "OpenClaw Jarvis",
-            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
           }
         ],
-        "leader_hint_token_address": "EUUdWDEPUUogXYXiZ6CZXsB1cb2y4maTU7kwbyepBAGS",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Emerging trend of AI-driven financial tools and trading signals. HyperFomo and Siren Call are leading this space.",
+        "leader_hint_token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Emerging trend with strong AI and gaming integration, though some tokens lack clear utility beyond the concept.",
         "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 62960469.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens built around viral internet memes or cultural references, often leveraging humor, nostalgia, or pop culture to drive community engagement and virality.",
-        "defining_signals": [
-          "Leverages a viral meme or internet culture reference",
-          "Community-driven humor or meme-based branding",
-          "Ties to pop culture, internet history, or viral content"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BEPE",
-            "token_name": "Black Pepe",
-            "token_address": "EbDxfwY4z7ScqHxuS6ScRott3SuE2HrYY623Wk88pump"
-          },
-          {
-            "token_symbol": "JESUS",
-            "token_name": "Jesuscoin",
-            "token_address": "3JES3sUd5Cwavf7myDfMn3x58qE6WyXq1YbY9ftupump"
-          },
-          {
-            "token_symbol": "TORTOISE",
-            "token_name": "the tortoise",
-            "token_address": "xGGpDanR4j94CkvRmJTHg56Q9vy51DmYPYyRaQzpump"
-          },
-          {
-            "token_symbol": "PIKACHU",
-            "token_name": "Pikachu Illustrator",
-            "token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump"
-          },
-          {
-            "token_symbol": "CHUNGUS",
-            "token_name": "Chungus",
-            "token_address": "5FMV41ykmXeabVvSbw3EiCVy4aeUBhjaUhRtRw8pump"
-          },
-          {
-            "token_symbol": "CLIPPY",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          }
-        ],
-        "leader_hint_token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong meme-driven narratives across multiple tokens, with Pikachu and Chungus showing significant cultural resonance and virality.",
-        "leader_token": {
-          "token_symbol": "Clippy",
-          "token_name": "Clippy",
-          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-          "usd_market_cap": 870861.43
+          "token_symbol": "IDLE",
+          "token_name": "IdleMine",
+          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+          "usd_market_cap": 13087149.92
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The AI-driven tokens and meme-driven tokens are currently the strongest and most active METAs. The AI + Meme Fusion and AI Agent Ecosystems are emerging and gaining traction. The AI + Finance META is also growing but is still in early stages. Meme-driven tokens are showing signs of fading as AI-based tokens gain more technical and community traction.",
+    "meta_rotation_note": "The 'AI Agent Utility' and 'Meme-Driven Tokens' METAs are currently emerging with strong momentum and clear narratives. 'Community-Driven Tokens' are fading slightly as newer AI and utility-focused tokens gain traction. 'Utility-Driven Tokens' remain stable but are not showing significant growth. The 'AI and Gaming Fusion' META is gaining attention but is still in the early stages of adoption.",
     "meta_leaders": [
       {
-        "meta_name": "AI + Meme Fusion",
+        "meta_name": "Meme-Driven Tokens",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -495,7 +490,25 @@
         }
       },
       {
-        "meta_name": "AI-Driven Tokens",
+        "meta_name": "Community-Driven Tokens",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 549514668.67
+        }
+      },
+      {
+        "meta_name": "Utility-Driven Tokens",
+        "leader_token": {
+          "token_symbol": "CTM",
+          "token_name": "c8ntinuum",
+          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+          "usd_market_cap": 368654881.9
+        }
+      },
+      {
+        "meta_name": "AI Agent Utility",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -504,30 +517,12 @@
         }
       },
       {
-        "meta_name": "AI Agent Ecosystems",
+        "meta_name": "AI and Gaming Fusion",
         "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 62960469.0
-        }
-      },
-      {
-        "meta_name": "AI + Finance",
-        "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 62960469.0
-        }
-      },
-      {
-        "meta_name": "Meme-Driven Tokens",
-        "leader_token": {
-          "token_symbol": "Clippy",
-          "token_name": "Clippy",
-          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-          "usd_market_cap": 870861.43
+          "token_symbol": "IDLE",
+          "token_name": "IdleMine",
+          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+          "usd_market_cap": 13087149.92
         }
       }
     ]
