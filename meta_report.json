@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-10T01:15:41.986172Z",
+  "generated_at_utc": "2026-02-10T02:07:33.984332Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 106,
+  "token_context_count": 100,
   "prompt_truncated": false,
   "warnings": [
     "Detected 10 PVP group(s); excluding 11 token(s) from META prompt."
   ],
   "pvp_excluded_token_count": 11,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "mooncoin",
-      "tokens": [
-        {
-          "token_symbol": "MOON",
-          "token_name": "MoonCoin",
-          "token_address": "BajjXstDxnijNVJyHAjEQHBU6FnTW795En3CUm3Fpump",
-          "usd_market_cap": 57848.52,
-          "processed_at": "2026-02-09T01:43:39.993651Z"
-        },
-        {
-          "token_symbol": "MOON",
-          "token_name": "MOONCOIN",
-          "token_address": "8vVHBmASTSFAYEFNQg3qxQQJQ5vBoAVRWYsdgEahpump",
-          "usd_market_cap": 143392.37,
-          "processed_at": "2026-02-09T21:04:47.863684Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "pepe",
@@ -46,6 +26,26 @@
           "token_address": "7SfX2BdeAedsTtdar53b9B8o6h25Yb8hxmUMycbFbonk",
           "usd_market_cap": 5931.26,
           "processed_at": "2026-02-09T21:22:52.979602Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "subway queen",
+      "tokens": [
+        {
+          "token_symbol": "SUBWAY",
+          "token_name": "Subway Queen",
+          "token_address": "561XxnuBCvPdoJC1a7zJDuBqqcQwZ2rEsaAd1eM1pump",
+          "usd_market_cap": 258886.39,
+          "processed_at": "2026-02-09T05:40:43.672448Z"
+        },
+        {
+          "token_symbol": "SUBWAY",
+          "token_name": "Subway Queen",
+          "token_address": "5Z9uaT6cxa22RgJ3An6iBCcJccEK5xovoY5z1VLepump",
+          "usd_market_cap": 3627465.57,
+          "processed_at": "2026-02-10T01:42:09.512638Z"
         }
       ]
     },
@@ -118,26 +118,6 @@
     },
     {
       "match_type": "token_symbol",
-      "match_value": "moon",
-      "tokens": [
-        {
-          "token_symbol": "MOON",
-          "token_name": "MoonCoin",
-          "token_address": "BajjXstDxnijNVJyHAjEQHBU6FnTW795En3CUm3Fpump",
-          "usd_market_cap": 57848.52,
-          "processed_at": "2026-02-09T01:43:39.993651Z"
-        },
-        {
-          "token_symbol": "MOON",
-          "token_name": "MOONCOIN",
-          "token_address": "8vVHBmASTSFAYEFNQg3qxQQJQ5vBoAVRWYsdgEahpump",
-          "usd_market_cap": 143392.37,
-          "processed_at": "2026-02-09T21:04:47.863684Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
       "match_value": "pepe",
       "tokens": [
         {
@@ -153,6 +133,26 @@
           "token_address": "7SfX2BdeAedsTtdar53b9B8o6h25Yb8hxmUMycbFbonk",
           "usd_market_cap": 5931.26,
           "processed_at": "2026-02-09T21:22:52.979602Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "subway",
+      "tokens": [
+        {
+          "token_symbol": "SUBWAY",
+          "token_name": "Subway Queen",
+          "token_address": "561XxnuBCvPdoJC1a7zJDuBqqcQwZ2rEsaAd1eM1pump",
+          "usd_market_cap": 258886.39,
+          "processed_at": "2026-02-09T05:40:43.672448Z"
+        },
+        {
+          "token_symbol": "SUBWAY",
+          "token_name": "Subway Queen",
+          "token_address": "5Z9uaT6cxa22RgJ3An6iBCcJccEK5xovoY5z1VLepump",
+          "usd_market_cap": 3627465.57,
+          "processed_at": "2026-02-10T01:42:09.512638Z"
         }
       ]
     },
@@ -228,110 +228,45 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI Meme Tokens",
-        "description": "Tokens leveraging AI-related memes and concepts, often tied to generative AI, AGI, or AI agent culture. These tokens capitalize on the growing fascination with AI and its role in internet culture.",
+        "meta_name": "Prediction and Gambling Tokens",
+        "description": "Tokens that focus on prediction markets and gambling, allowing users to bet on outcomes and events. These tokens often leverage decentralized platforms and smart contracts to ensure transparency and fairness.",
         "defining_signals": [
-          "AI-generated content or AI agent themes in token descriptions",
-          "Use of AI-related slang or jargon in branding",
-          "Ties to viral AI trends like AI-generated art, AI memes, or AI agent personas"
+          "Decentralized prediction markets",
+          "Gambling and betting functionalities",
+          "Smart contract-based betting platforms",
+          "Community-driven betting and prediction",
+          "Integration with blockchain for transparency"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "AI",
-            "token_name": "ai.com",
-            "token_address": "J7CSmbyCco1Mz4AhCvmPRrCbXesXYxDwaZCuvpEYpump"
+            "token_symbol": "TRUTH",
+            "token_name": "Truthcoin",
+            "token_address": "TnRB4KE9dorzMT31ecyw58kC2jSFqr3ZUTJ2hp6pump"
           },
           {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+            "token_symbol": "AGENCY",
+            "token_name": "the agency",
+            "token_address": "JCVrPumKaVwis4q43CzJ3yEqUqjCdPNL3Ya9ebWQpump"
           },
           {
-            "token_symbol": "OPAL",
-            "token_name": "Opal",
-            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           },
           {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+            "token_symbol": "JESUS",
+            "token_name": "Jesuscoin",
+            "token_address": "3JES3sUd5Cwavf7myDfMn3x58qE6WyXq1YbY9ftupump"
           },
           {
-            "token_symbol": "SEE",
-            "token_name": "SEE",
-            "token_address": "see8q1jh1MYFfr51y78rcmmxpvigExcKg5CeH3Z3uQW"
-          }
-        ],
-        "leader_hint_token_address": "J7CSmbyCco1Mz4AhCvmPRrCbXesXYxDwaZCuvpEYpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong alignment with AI trends and viral AI memes, supported by multiple tokens with similar themes.",
-        "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 75141836.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Pop Culture Meme Tokens",
-        "description": "Tokens that leverage pop culture references, such as movies, TV shows, or viral internet personalities, to create meme-based branding. These tokens often tie into well-known cultural figures or events.",
-        "defining_signals": [
-          "Use of pop culture references in token names or descriptions",
-          "Incorporation of viral internet personalities or memes from pop culture",
-          "Leveraging of well-known cultural figures or events for branding"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "COMEDIAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+            "token_symbol": "FIVE",
+            "token_name": "The 5 Hour Experiment",
+            "token_address": "NMykaVBTQ8pCSCzN48oW4PoxgKiPjwN53QMwzxepump"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "LARRY",
-            "token_name": "larry",
-            "token_address": "3jLFYspjX1zNgLRStxcdkyuSMZKbke5EmocpMeDimX9M"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          }
-        ],
-        "leader_hint_token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong pop culture references with clear cultural origins and multiple tokens leveraging similar themes.",
-        "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 74560300.09
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto Slang Meme Tokens",
-        "description": "Tokens that repurpose crypto-specific slang or jargon as part of their branding. These tokens often use terms that have become part of the crypto lexicon and are rebranded for meme or community-driven purposes.",
-        "defining_signals": [
-          "Use of crypto slang like 'shitcoin', 'rekt', 'FOMO', or 'HODL' in branding",
-          "Reclamation of derogatory or humorous crypto terms as part of the token’s identity",
-          "Leveraging of crypto culture and community inside jokes or lingo"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "SHT",
-            "token_name": "ShitCoin",
-            "token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump"
+            "token_symbol": "HYPERFOMO",
+            "token_name": "HyperFomo",
+            "token_address": "EUUdWDEPUUogXYXiZ6CZXsB1cb2y4maTU7kwbyepBAGS"
           },
           {
             "token_symbol": "REKT",
@@ -339,129 +274,347 @@
             "token_address": "CgghGMyu1cnSxP1GnZ5aurLrTbCQvH6vjABgZHMApump"
           },
           {
-            "token_symbol": "FRT",
-            "token_name": "FartCoin",
-            "token_address": "DtzVi6264rhaSDyxhWGJw8SS6yUFJ6UaSiyow3depump"
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "HYPERFOMO",
-            "token_name": "HyperFomo",
-            "token_address": "EUUdWDEPUUogXYXiZ6CZXsB1cb2y4maTU7kwbyepBAGS"
+            "token_symbol": "USEFUL",
+            "token_name": "USEFUL COIN",
+            "token_address": "D67BSPqECWv8GEozzFT4KCMtT9aFkswK5fC3oeBBbonk"
           }
         ],
-        "leader_hint_token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong use of crypto-specific slang and community jargon, with multiple tokens adopting similar branding strategies.",
+        "leader_hint_token_address": "TRUTH",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong community engagement and clear utility in prediction markets.",
         "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 33719602.2
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 549514668.67
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Nostalgia Meme Tokens",
-        "description": "Tokens that reference or repurpose nostalgic internet memes, pop culture references, or retro internet culture. These tokens often tie into viral content from the 2000s or 2010s, repurposed for crypto communities.",
+        "meta_name": "Meme Tokens with Cultural References",
+        "description": "Tokens that derive their value and community engagement from cultural references, internet memes, and pop culture. These tokens often leverage nostalgia, humor, and viral content to attract attention.",
         "defining_signals": [
-          "Use of retro internet memes or viral content from the 2000s/2010s",
-          "Incorporation of pop culture references from older media or internet culture",
-          "Leveraging of viral content that predates the token but has been revived in crypto context"
+          "Leverage of viral internet memes or pop culture references",
+          "Community-driven humor and viral content",
+          "Nostalgic or satirical themes",
+          "Strong social media presence and community engagement",
+          "Use of iconic characters or phrases from popular culture"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CLIP",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "Ban",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
           },
           {
-            "token_symbol": "CHUNGUS",
-            "token_name": "Chungus",
-            "token_address": "5FMV41ykmXeabVvSbw3EiCVy4aeUBhjaUhRtRw8pump"
+            "token_symbol": "TRUMPAWE",
+            "token_name": "Trumpawe",
+            "token_address": "Y5k4ypJToQvE7pLPGdUpE5ZWxGDZkkqffV7Vjy8pump"
           },
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "WhiteWolf",
+            "token_name": "The White Wolf",
+            "token_address": "5YaMNTrBFCudhkTiFmuK1Ms8NA7L83PMucu4zCG7pump"
           },
           {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+            "token_symbol": "LUX",
+            "token_name": "Luxxcoin",
+            "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2"
           },
           {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          }
-        ],
-        "leader_hint_token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong nostalgic meme references with clear cultural origins and multiple tokens leveraging similar themes.",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 12488743.89
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Absurd Humor Meme Tokens",
-        "description": "Tokens that use absurd, surreal, or chaotic humor as part of their branding. These tokens often rely on internet humor, surrealism, or absurdity to create a unique identity.",
-        "defining_signals": [
-          "Use of absurd or surreal humor in token branding",
-          "Incorporation of chaotic or nonsensical themes in token descriptions",
-          "Leveraging of internet humor or absurdity for meme-based branding"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "TRALALA",
-            "token_name": "Tralaliritos",
-            "token_address": "89muFzE1VpotYQfKm7xsuEbhgxRLyinmsELGTCSLpump"
+            "token_symbol": "ZOHAR",
+            "token_name": "Zohar",
+            "token_address": "3UDH4Hg8bfZWRkm969B2Bihw1YSBGvfmo8VBFMjypump"
           },
           {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+            "token_symbol": "Sinclair",
+            "token_name": "Baby Sinclair",
+            "token_address": "8MdkXe5G77xaMheVQxLqAYV8e2m2Dfc5ZbuXup2epump"
+          },
+          {
+            "token_symbol": "MOLLIE",
+            "token_name": "MOLLIE THE ASCII CRAB",
+            "token_address": "7BhC2WvpNrLk3q7aBRJFg228bma3nw3iyh1pWgcEpump"
           },
           {
             "token_symbol": "Pigeon",
             "token_name": "level941",
-            "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump"
+            "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXjkhqZrA9Gpump"
           },
           {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
+            "token_symbol": "PIKACHU",
+            "token_name": "Pikachu Illustrator",
+            "token_address": "G29ZhPoZdHGAFdHBQBdzb4N2oQUCB28VW5XfAtGVpump"
           },
           {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+            "token_symbol": "tortoise",
+            "token_name": "the tortoise",
+            "token_address": "xGGpDanR4j94CkvRmJTHg56Q9vy51DmYPYyRaQzpump"
           }
         ],
-        "leader_hint_token_address": "89muFzE1VpotYQfKm7xsuEbhgxRLyinmsELGTCSLpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong use of absurd humor and surreal themes, with multiple tokens adopting similar branding strategies.",
+        "leader_hint_token_address": "Ban",
+        "confidence_0_100": 90,
+        "confidence_rationale": "High market cap and strong cultural reference to a well-known meme.",
         "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 2217707.55
+          "token_symbol": "LUX",
+          "token_name": "Luxxcoin",
+          "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2",
+          "usd_market_cap": 83084258.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Tokens",
+        "description": "Tokens leveraging AI for various functionalities, including trading, content creation, and social interaction. These tokens often highlight AI-driven automation and decentralized AI ecosystems.",
+        "defining_signals": [
+          "AI-driven trading or predictive analytics",
+          "AI-generated content or virtual characters",
+          "Decentralized AI agent ecosystems",
+          "AI-based prediction markets or social platforms",
+          "AI-driven tokenomics or governance models"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "MOLT",
+            "token_name": "MOLTBOOK",
+            "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump"
+          },
+          {
+            "token_symbol": "JARVIS",
+            "token_name": "OpenClaw Jarvis",
+            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
+          },
+          {
+            "token_symbol": "OPAL",
+            "token_name": "Opal",
+            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
+          },
+          {
+            "token_symbol": "DUPE",
+            "token_name": "Dupe",
+            "token_address": "fRfKGCriduzDwSudCwpL7ySCEiboNuryhZDVJtr1a1C"
+          },
+          {
+            "token_symbol": "CLAVICULAR",
+            "token_name": "Clavicular",
+            "token_address": "FWoGEhL3UgVofwrSgWZEJ8Vsg69a3ELJpxe8e2u6fFnd"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "SOLPRISM",
+            "token_name": "SOLPRISM",
+            "token_address": "8fZjyDPme2aYmujuxJjKAk3hAGHCgggrHUJFv9roC8cN"
+          },
+          {
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
+          }
+        ],
+        "leader_hint_token_address": "ALCH",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong market cap and clear AI utility in a growing sector.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 75141836.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Utility Tokens with AI Integration",
+        "description": "Tokens that integrate AI into their core functionality, offering services like automated trading, content creation, and data analysis. These tokens often focus on providing practical applications for AI in various industries.",
+        "defining_signals": [
+          "AI-driven trading or investment strategies",
+          "AI-generated content or virtual assistants",
+          "AI-powered data analysis and insights",
+          "Integration with AI tools for automation",
+          "AI-based governance or decision-making"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "MOLT",
+            "token_name": "MOLTBOOK",
+            "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYvpump"
+          },
+          {
+            "token_symbol": "JARVIS",
+            "token_name": "OpenClaw Jarvis",
+            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
+          },
+          {
+            "token_symbol": "OPAL",
+            "token_name": "Opal",
+            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
+          },
+          {
+            "token_symbol": "DUPE",
+            "token_name": "Dupe",
+            "token_address": "fRfKGCriduzDwSudCwpL7ySCEiboNuryhZDVJtr1a1C"
+          },
+          {
+            "token_symbol": "CLAVICULAR",
+            "token_name": "Clavicular",
+            "token_address": "FWoGEhL3UgVofwrSgWZEJ8Vsg69a3ELJpxe8e2u6fFnd"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "SOLPRISM",
+            "token_name": "SOLPRISM",
+            "token_address": "8fZjyDPme2aYmujuxJjKAk3hAGHCgggrHUJFv9roC8cN"
+          },
+          {
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxBcqC"
+          }
+        ],
+        "leader_hint_token_address": "ALCH",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong market cap and clear AI utility in a growing sector.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 75141836.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI and Gaming Tokens",
+        "description": "Tokens that integrate AI into gaming experiences, offering AI-driven characters, game mechanics, and interactive elements. These tokens often focus on enhancing player engagement through AI innovations.",
+        "defining_signals": [
+          "AI-driven game characters and narratives",
+          "AI-generated game content and environments",
+          "AI-enhanced player interactions and experiences",
+          "Integration of AI for game analytics and optimization",
+          "AI-based game economies and tokenomics"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "MOLT",
+            "token_name": "MOLTBOOK",
+            "token_address": "71fT7EaE44wnKwkBHoRzgP3rx4oCJ8YvPGQHEdYYvpump"
+          },
+          {
+            "token_symbol": "JARVIS",
+            "token_name": "OpenClaw Jarvis",
+            "token_address": "12veWoXCbbaEQppWx6x4ohwbHsv98gRLHh4FgMR3pump"
+          },
+          {
+            "token_symbol": "OPAL",
+            "token_name": "Opal",
+            "token_address": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump"
+          },
+          {
+            "token_symbol": "DUPE",
+            "token_name": "Dupe",
+            "token_address": "fRfKGCriduzDwSSudCwpL7ySCEiboNuryhZDVJtr1a1C"
+          },
+          {
+            "token_symbol": "CLAVICULAR",
+            "token_name": "Clavicular",
+            "token_address": "FWoGEhL3UgVofwrSgWZEJ8Vsg69a3ELJpxe8e2u6fFnd"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "SOLPRISM",
+            "token_name": "SOLPRISM",
+            "token_address": "8fZjyDPme2aYmujuxJjKAk3hAGHCgggrHUJFv9roC8cN"
+          },
+          {
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxBcqC"
+          }
+        ],
+        "leader_hint_token_address": "ALCH",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong market cap and clear AI utility in a growing sector.",
+        "leader_token": {
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 75141836.0
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'AI Meme Tokens' and 'Nostalgia Meme Tokens' are currently the strongest and most active METAs, with high engagement and clear cultural references. 'Crypto Slang Meme Tokens' are also gaining traction as they leverage well-known community jargon. 'Pop Culture Meme Tokens' are stable but not as dominant as the others. 'Absurd Humor Meme Tokens' are emerging but still niche. The fading METAs include tokens that rely on obscure or newly created references without strong cultural backing.",
+    "meta_rotation_note": "The 'AI-Powered Tokens' and 'Meme Tokens with Cultural References' are currently the most active METAs, driven by strong community engagement and market cap. 'Prediction and Gambling Tokens' are showing increased activity due to the rise in decentralized betting platforms. 'Utility Tokens with AI Integration' are gaining traction as AI becomes more integrated into blockchain applications. 'AI and Gaming Tokens' are emerging as a new META, leveraging AI to enhance gaming experiences. Older METAs like 'Meme Tokens with Cultural References' are fading slightly as new AI-driven tokens gain prominence.",
     "meta_leaders": [
       {
-        "meta_name": "AI Meme Tokens",
+        "meta_name": "Prediction and Gambling Tokens",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 549514668.67
+        }
+      },
+      {
+        "meta_name": "Meme Tokens with Cultural References",
+        "leader_token": {
+          "token_symbol": "LUX",
+          "token_name": "Luxxcoin",
+          "token_address": "3bSGpKYPut6RXDxp41nvb2GM7eR4kEmJExFFHoYkW3w2",
+          "usd_market_cap": 83084258.0
+        }
+      },
+      {
+        "meta_name": "AI-Powered Tokens",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
@@ -470,39 +623,21 @@
         }
       },
       {
-        "meta_name": "Pop Culture Meme Tokens",
+        "meta_name": "Utility Tokens with AI Integration",
         "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 74560300.09
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 75141836.0
         }
       },
       {
-        "meta_name": "Crypto Slang Meme Tokens",
+        "meta_name": "AI and Gaming Tokens",
         "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 33719602.2
-        }
-      },
-      {
-        "meta_name": "Nostalgia Meme Tokens",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 12488743.89
-        }
-      },
-      {
-        "meta_name": "Absurd Humor Meme Tokens",
-        "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 2217707.55
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 75141836.0
         }
       }
     ]
