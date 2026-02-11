@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-11T06:22:18.465017Z",
+  "generated_at_utc": "2026-02-11T07:22:58.024326Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 121,
+  "token_context_count": 123,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 4 PVP group(s); excluding 8 token(s) from META prompt."
+    "Detected 3 PVP group(s); excluding 6 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 8,
+  "pvp_excluded_token_count": 6,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -26,26 +26,6 @@
           "token_address": "eYk9kfDbVwUg22KMxHA5UvJ4nqAx9txEXZc2QKipump",
           "usd_market_cap": 1517.91,
           "processed_at": "2026-02-11T02:31:17.241061Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "ken",
-      "tokens": [
-        {
-          "token_symbol": "KEN",
-          "token_name": "Ken Allen",
-          "token_address": "cz51ZCejLXjfpCNytS7Z5MtFJZVxiRD1rH8i8mYpump",
-          "usd_market_cap": 58131.42,
-          "processed_at": "2026-02-10T06:25:31.898425Z"
-        },
-        {
-          "token_symbol": "Ken",
-          "token_name": "The Peaceful Orangutan",
-          "token_address": "o9SWUMQSJfoS6uBQKYXz7RTFDFAf1wTUskWiYDQpump",
-          "usd_market_cap": 49895.48,
-          "processed_at": "2026-02-10T16:26:57.134163Z"
         }
       ]
     },
@@ -108,23 +88,18 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Animal Tokens",
-        "description": "Tokens based on popular internet animals or characters that have become cultural memes, such as Pepe the Frog, Doge, and Shiba Inu. These tokens leverage the pre-existing cultural resonance of these characters to drive community engagement and speculative interest.",
+        "meta_name": "Meme Animal Revival",
+        "description": "A recurring theme where tokens are based on internet animal memes that have been revived or repurposed in the crypto space. These tokens often leverage nostalgia and viral cultural references tied to specific animal characters or traits.",
         "defining_signals": [
-          "Use of iconic internet animals or characters (e.g., Pepe, Doge, Shiba Inu)",
-          "Strong cultural meme roots predating the token launch",
-          "Community-driven narratives with viral potential"
+          "Tokens based on iconic internet animal memes (e.g., Doge, Pepe, Shiba Inu).",
+          "Meme characters with historical internet presence (2000s–2020s) being repurposed for crypto.",
+          "Strong visual identity tied to the meme animal (e.g., Pepe the Frog, Shiba Inu)."
         ],
         "supporting_tokens": [
           {
             "token_symbol": "Pepe",
             "token_name": "Pepe",
             "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
-          },
-          {
-            "token_symbol": "DOG",
-            "token_name": "The Crypto Dog",
-            "token_address": "21CnrFRqvEVkQZUTFmTXjcsJTLZhRY51ohoaCPwRpump"
           },
           {
             "token_symbol": "COPPERINU",
@@ -137,19 +112,19 @@
             "token_address": "EKgUuSq2ucFYwaoGfwz3sUpqDepky2vSfpr7jCEGpump"
           },
           {
+            "token_symbol": "GIGA",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
+          },
+          {
             "token_symbol": "Bonk",
             "token_name": "Bonk",
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
         "confidence_0_100": 92,
-        "confidence_rationale": "This meta is well-established with multiple tokens leveraging iconic meme animals. Bonk and Pepe have strong cultural roots and high market caps, indicating strong community and speculative interest.",
+        "confidence_rationale": "Pepe is one of the most iconic and widely recognized meme animals in internet history, with a strong presence in crypto. Copper Inu and Cooper Inu are direct derivatives of the Shiba Inu meme, which has been consistently popular in crypto. GIGACHAD and Bonk also leverage well-established animal memes.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -159,177 +134,14 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Cultural and Historical References",
-        "description": "Tokens referencing historical events, cultural symbols, or folklore, such as '聚宝盆', 'Hachiko', or 'The White Whale'. These tokens often have deep cultural roots and can appeal to a broad audience interested in history or mythology.",
+        "meta_name": "Philosophical or Abstract Concept Meme",
+        "description": "Tokens that are based on philosophical or abstract concepts that have been turned into memes. These tokens often leverage the depth or irony of the original concept to create a unique narrative.",
         "defining_signals": [
-          "References to historical events or cultural symbols",
-          "Deep cultural or mythological roots",
-          "Appeal to a broad audience interested in history or mythology"
+          "Tokens referencing philosophical or abstract memes (e.g., Nietzschean Bear, Ghost Elephant).",
+          "Memes based on existential or abstract ideas (e.g., nihilism, existentialism).",
+          "Tokens that use abstract or symbolic imagery to convey a deeper meaning."
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "聚宝盆",
-            "token_name": "聚宝盆",
-            "token_address": "FkyZ2T4um6f6ndxoEYWMDEYf4uptWVdDDqHGedKz4hot"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "WHITEWHALE",
-            "token_name": "The White Whale",
-            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
-          },
-          {
-            "token_symbol": "GIRAFFES",
-            "token_name": "The Giraffes",
-            "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "KURT",
-            "token_name": "Justice for Kurt Cobain",
-            "token_address": "FNgpdgr4z5GrdAerJhHQrT2tRAjXrR98t1TFd67Tpump"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 80,
-        "confidence_rationale": "This meta is driven by cultural and historical references, which have broad appeal. Tokens like Hachiko and The White Whale have strong cultural roots and are gaining traction.",
-        "leader_token": {
-          "token_symbol": "WhiteWhale",
-          "token_name": "The White Whale",
-          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-          "usd_market_cap": 65503405.99
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Niche Internet Meme Tokens",
-        "description": "Tokens based on obscure or niche internet memes, such as 'Flork of Cows', 'Ghost Elephant', or 'RAAAAAH'. These tokens often have a small but dedicated community and are driven by specific subcultures or internet communities.",
-        "defining_signals": [
-          "References to obscure or niche internet memes",
-          "Community-driven with limited mainstream appeal",
-          "Strong presence in specific online communities (e.g., 4chan, Reddit)"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Flork",
-            "token_name": "Flork",
-            "token_address": "8WFLEGsNYVEkcGfdihZBztufJVMJXJNjpmuDgijypump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "Zhdun",
-            "token_name": "The one who waits",
-            "token_address": "2cmRLAb93k44jxxwhtyVVsfggfei6qBbujEcA5vKKpump"
-          },
-          {
-            "token_symbol": "Elephant",
-            "token_name": "The Ghost Elephant",
-            "token_address": "BAfCyAUQhSeYUebeD9kbDSixsSoBmNy78M3KaEaF6rwJ"
-          },
-          {
-            "token_symbol": "ELEPHANTS",
-            "token_name": "Ghost Elephants",
-            "token_address": "8mRJKrweb64srPFVMQjVv3mzKwvfohNRT6yDGn19pump"
-          },
-          {
-            "token_symbol": "GIGA",
-            "token_name": "GIGACHAD",
-            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
-          }
-        ],
-        "leader_hint_token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "This meta is driven by niche internet communities and has a strong presence in subcultures. Tokens like RAAAAAH and Flork have clear cultural roots and dedicated followings.",
-        "leader_token": {
-          "token_symbol": "GIGA",
-          "token_name": "GIGACHAD",
-          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-          "usd_market_cap": 22799263.08
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political and Pop Culture Figure Tokens",
-        "description": "Tokens referencing political figures, celebrities, or pop culture icons, such as Donald Trump, Elon Musk, or historical figures. These tokens often capitalize on the popularity or controversy surrounding these figures.",
-        "defining_signals": [
-          "References to political figures or celebrities",
-          "Leverages controversy or popularity for engagement",
-          "Strong presence in social media and news cycles"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "TRUMP87",
-            "token_name": "TRUMP87",
-            "token_address": "CYpUvS5f8EM8g8VhSaZr8HHh4bojcG9htcqFrZqupump"
-          },
-          {
-            "token_symbol": "LIONTRUMP",
-            "token_name": "The Lion Trump",
-            "token_address": "8eJScVzkzVWHj3MGPY6NCsAord9KcJneauQ6sZzFpump"
-          },
-          {
-            "token_symbol": "MAM",
-            "token_name": "Moon And Mars",
-            "token_address": "B78C5Ds7DrbxF3iab7wvfpYG8vA6o64oGPidr46Ypump"
-          },
-          {
-            "token_symbol": "CHUD",
-            "token_name": "The Life of a Chud",
-            "token_address": "EoP9nKZZMtTFTWVjkJVJEQQXAgWoFZwgVgoKspkrVpump"
-          },
-          {
-            "token_symbol": "WIN",
-            "token_name": "Always Win",
-            "token_address": "sCjWXG8z5nEDaN8jJxWUvvFCoed9jprJH3zL35Tpump"
-          },
-          {
-            "token_symbol": "NEET",
-            "token_name": "NotInEmploymentEducationTraining",
-            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
-          }
-        ],
-        "leader_hint_token_address": "B78C5Ds7DrbxF3iab7wvfpYG8vA6o64oGPidr46Ypump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "This meta is driven by the popularity and controversy of political and pop culture figures. Tokens like MAM and LIONTRUMP have strong narratives and are tied to current events or public figures.",
-        "leader_token": {
-          "token_symbol": "neet",
-          "token_name": "NotInEmploymentEducationTraining",
-          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
-          "usd_market_cap": 7100863.5
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Utility and Concept-Based Tokens",
-        "description": "Tokens based on abstract concepts or utility-driven narratives, such as 'The Optimist', 'The Runner', or 'The Whale'. These tokens often have philosophical or metaphorical themes and may appeal to more mature or intellectually curious investors.",
-        "defining_signals": [
-          "Abstract or philosophical themes",
-          "Concept-driven narratives (e.g., optimism, perseverance)",
-          "Appeal to more mature or intellectually curious investors"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "OPTIMIST",
-            "token_name": "The Optimist",
-            "token_address": "3fErhMNmdMEzjosA8Tbs594VgSy7923s4LprAMYRTFYv"
-          },
-          {
-            "token_symbol": "RUNNER",
-            "token_name": "The Runner",
-            "token_address": "AHSpic8vG22rZnrAKNyADMBTQLH964QnBS3dUAdkpump"
-          },
           {
             "token_symbol": "BEAR",
             "token_name": "Nietzschean Bear",
@@ -338,7 +150,7 @@
           {
             "token_symbol": "PENGUIN",
             "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjG6GTTL5Ps3cqxKRTvpaJApump"
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
             "token_symbol": "LEAP",
@@ -349,24 +161,213 @@
             "token_symbol": "SNAIL",
             "token_name": "The Immortal Snail",
             "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
+          },
+          {
+            "token_symbol": "OPUS",
+            "token_name": "Opus The Trencher",
+            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
           }
         ],
-        "leader_hint_token_address": "3fErhMNmdMEzjosA8Tbs594VgSy7923s4LprAMYRTFYv",
-        "confidence_0_100": 75,
-        "confidence_rationale": "This meta is driven by abstract and philosophical themes, appealing to a more mature audience. Tokens like The Optimist and The Runner have strong conceptual narratives and are gaining traction.",
+        "leader_hint_token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Nietzschean Penguin is a well-known meme with philosophical roots. The Leap of Faith and Immortal Snail are abstract concepts that have been meme-ified. Opus The Trencher and Nietzschean Bear also leverage philosophical or abstract imagery.",
         "leader_token": {
-          "token_symbol": "BEAR",
-          "token_name": "Nietzschean Bear",
-          "token_address": "8H9RDAUyYNMr6Y6nsBb8bBV45XnpW9VQfCKFbyfhpump",
-          "usd_market_cap": 1132045.32
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 22062582.79
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgic Internet Culture",
+        "description": "Tokens that draw from older internet culture, including memes, characters, and phrases that have been repurposed for crypto. These tokens often tap into nostalgia and the resurgence of retro internet humor.",
+        "defining_signals": [
+          "Tokens referencing 2000s–2010s internet memes or characters.",
+          "Meme origins tied to early internet culture (e.g., 4chan, MS Paint, early Reddit).",
+          "Use of retro slang or phrases that have been revived in crypto."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "FLORK",
+            "token_name": "Flork",
+            "token_address": "8WFLEGsNYVEkcGfdihZBztufJVMJXJNjpmuDgijypump"
+          }
+        ],
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Wojak is a foundational meme from the 2000s that has seen a resurgence in crypto. Clippy is a nostalgic Microsoft Office character with a strong meme history. Ralph Wiggum and Troll Face are also classic internet references. Flork is based on a 2010s MS Paint comic, which has been revived in crypto.",
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15488377.6
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Niche or Emerging Internet Culture",
+        "description": "Tokens that are based on niche or emerging internet culture, including subcultures, subreddits, or emerging memes that have not yet reached mainstream popularity. These tokens often cater to specific communities or subcultures.",
+        "defining_signals": [
+          "Tokens referencing niche internet subcultures or subreddits.",
+          "Memes based on emerging or lesser-known internet trends.",
+          "Tokens that cater to specific communities or subcultures (e.g., gaming, anime, niche humor)."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "GROYPER",
+            "token_name": "Groyper",
+            "token_address": "3o1wwbz79Vcajvv9cayE2evhQbhqapw4osV4pt6Xdbonk"
+          },
+          {
+            "token_symbol": "Goyim",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+          },
+          {
+            "token_symbol": "BallsDeep",
+            "token_name": "BallsDeep",
+            "token_address": "vHuyCuEGewLpphvWnTdGZ32osKHPAeimLsA8aajpump"
+          },
+          {
+            "token_symbol": "testicle",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "BONKWHEEL",
+            "token_name": "Bonkers Flywheel",
+            "token_address": "3GwPUbJauo9qRoX2h1ANj15RGn9L7GVLG67kWCAjbonk"
+          }
+        ],
+        "leader_hint_token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Groyper is a meme with roots in alt-right culture. Goyim is a niche internet term that has been repurposed. BallsDeep and Testicle are based on niche humor or slang. Bonkers Flywheel is an emerging meme with limited mainstream exposure.",
+        "leader_token": {
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 4701338.44
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Viral Video or Event Meme",
+        "description": "Tokens that are based on viral videos or events that have become internet memes. These tokens often capitalize on the popularity of specific viral moments or stories that have gained traction on platforms like TikTok, YouTube, or X.",
+        "defining_signals": [
+          "Tokens referencing viral videos or events (e.g., Leo the tortoise, Subway Queen).",
+          "Memes based on trending social media content (e.g., TikTok, X).",
+          "Tokens that leverage the emotional or humorous impact of the original event."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "LEO",
+            "token_name": "the unexpected runner",
+            "token_address": "HrypEy7ua5edjeQiEZJdBiqbpWcLKzVN9XwTwi47pump"
+          },
+          {
+            "token_symbol": "SUBWAY",
+            "token_name": "Subway Queen",
+            "token_address": "5Z9uaT6cxa22RgJ3An6iBCcJccEK5xovoY5z1VLepump"
+          },
+          {
+            "token_symbol": "ViceCity",
+            "token_name": "Real Life GTA",
+            "token_address": "8pWajFjrhFyxEXP5wDBsJdtRCZiGdSYWfjn5Akyvpump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          },
+          {
+            "token_symbol": "WIN",
+            "token_name": "Always Win",
+            "token_address": "sCjWXG8z5nEDaN8jJxWUvvFCoed9jprJH3zL35Tpump"
+          }
+        ],
+        "leader_hint_token_address": "5Z9uaT6cxa22RgJ3An6iBCcJccEK5xovoY5z1VLepump",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Subway Queen is based on a viral TikTok video with strong media coverage. ViceCity references a viral real-life event that mirrored a video game. Skeleton Banging Shield and Always Win are based on viral TikTok/X memes. Leo the Tortoise is also a viral video that has been repurposed.",
+        "leader_token": {
+          "token_symbol": "ViceCity",
+          "token_name": "Real Life GTA",
+          "token_address": "8pWajFjrhFyxEXP5wDBsJdtRCZiGdSYWfjn5Akyvpump",
+          "usd_market_cap": 1611288.22
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Cultural Figure or Event Meme",
+        "description": "Tokens that are based on real-life or fictional cultural figures, events, or stories that have been turned into memes. These tokens often leverage the emotional or symbolic weight of the original figure or event.",
+        "defining_signals": [
+          "Tokens referencing real-life cultural figures (e.g., Hachiko, Kurt Cobain).",
+          "Memes based on historical or fictional events (e.g., Noah’s Ark, Titanic).",
+          "Tokens that repurpose cultural symbols (e.g., religious, mythological, or historical)."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "$HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "KURT",
+            "token_name": "Justice for Kurt Cobain",
+            "token_address": "FNgpdgr4z5GrdAerJhHQrT2tRAjXrR98t1TFd67Tpump"
+          },
+          {
+            "token_symbol": "NOAH",
+            "token_name": "The Great Ark",
+            "token_address": "Ao1eFZtmEe8XkgdcZ6a3gBWgGorAS1MYWUPrKFZJpump"
+          },
+          {
+            "token_symbol": "Jesus",
+            "token_name": "Walk Of Faith",
+            "token_address": "A5bZrzHQXCuwXxU9PB6SSA8WS3uRrti8XcywhDuppump"
+          },
+          {
+            "token_symbol": "TOTO",
+            "token_name": "Toto",
+            "token_address": "8DyYXHPhxEiyTHVbg6phXoWmd3C2LQnxdgzcmDDQpump"
+          }
+        ],
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjGGm587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Hachiko is a well-known cultural symbol of loyalty, which has been repurposed in crypto. Kurt Cobain is a cultural icon with a strong meme presence. Noah’s Ark is a historical and religious reference that has been meme-ified. Jesus and Toto also leverage cultural and emotional narratives.",
+        "leader_token": {
+          "token_symbol": "KURT",
+          "token_name": "Justice for Kurt Cobain",
+          "token_address": "FNgpdgr4z5GrdAerJhHQrT2tRAjXrR98t1TFd67Tpump",
+          "usd_market_cap": 280504.22
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Meme Animal Tokens' meta remains dominant due to the strong cultural roots and high market caps of tokens like Bonk and Pepe. However, the 'Niche Internet Meme Tokens' meta is gaining traction as niche communities drive engagement. The 'Political and Pop Culture Figure Tokens' meta is fading slightly as public interest in these figures wanes. The 'Utility and Concept-Based Tokens' and 'Cultural and Historical References' metas are emerging as more investors seek tokens with deeper narratives and broader appeal.",
+    "meta_rotation_note": "The 'Meme Animal Revival' and 'Nostalgic Internet Culture' METAs are currently the strongest, with high market caps and strong community engagement. 'Cultural Figure or Event Meme' and 'Viral Video or Event Meme' are also gaining traction, as they leverage real-world narratives and viral content. 'Philosophical or Abstract Concept Meme' is fading slightly as newer, more emotionally resonant tokens emerge. 'Niche or Emerging Internet Culture' is emerging as a new trend, driven by subcultures and niche humor.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Animal Tokens",
+        "meta_name": "Meme Animal Revival",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -375,39 +376,48 @@
         }
       },
       {
-        "meta_name": "Cultural and Historical References",
+        "meta_name": "Philosophical or Abstract Concept Meme",
         "leader_token": {
-          "token_symbol": "WhiteWhale",
-          "token_name": "The White Whale",
-          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-          "usd_market_cap": 65503405.99
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 22062582.79
         }
       },
       {
-        "meta_name": "Niche Internet Meme Tokens",
+        "meta_name": "Nostalgic Internet Culture",
         "leader_token": {
-          "token_symbol": "GIGA",
-          "token_name": "GIGACHAD",
-          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-          "usd_market_cap": 22799263.08
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15488377.6
         }
       },
       {
-        "meta_name": "Political and Pop Culture Figure Tokens",
+        "meta_name": "Niche or Emerging Internet Culture",
         "leader_token": {
-          "token_symbol": "neet",
-          "token_name": "NotInEmploymentEducationTraining",
-          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
-          "usd_market_cap": 7100863.5
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 4701338.44
         }
       },
       {
-        "meta_name": "Utility and Concept-Based Tokens",
+        "meta_name": "Viral Video or Event Meme",
         "leader_token": {
-          "token_symbol": "BEAR",
-          "token_name": "Nietzschean Bear",
-          "token_address": "8H9RDAUyYNMr6Y6nsBb8bBV45XnpW9VQfCKFbyfhpump",
-          "usd_market_cap": 1132045.32
+          "token_symbol": "ViceCity",
+          "token_name": "Real Life GTA",
+          "token_address": "8pWajFjrhFyxEXP5wDBsJdtRCZiGdSYWfjn5Akyvpump",
+          "usd_market_cap": 1611288.22
+        }
+      },
+      {
+        "meta_name": "Cultural Figure or Event Meme",
+        "leader_token": {
+          "token_symbol": "KURT",
+          "token_name": "Justice for Kurt Cobain",
+          "token_address": "FNgpdgr4z5GrdAerJhHQrT2tRAjXrR98t1TFd67Tpump",
+          "usd_market_cap": 280504.22
         }
       }
     ]
