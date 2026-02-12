@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-12T13:30:00.374520Z",
+  "generated_at_utc": "2026-02-12T14:30:32.788323Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 109,
+  "token_context_count": 110,
   "prompt_truncated": false,
   "warnings": [
     "Detected 6 PVP group(s); excluding 8 token(s) from META prompt."
@@ -134,12 +134,104 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal Meme Tokens",
-        "description": "Tokens leveraging animal-based memes and internet culture, often repurposing existing viral themes or fictional characters for crypto branding.",
+        "meta_name": "AI and Tech-Driven Tokens",
+        "description": "Tokens centered around AI, blockchain, or tech innovation, often emphasizing decentralized infrastructure, AI agents, or futuristic applications.",
         "defining_signals": [
-          "Use of animals as central meme or narrative figures (e.g., giraffes, elephants, penguins).",
-          "Ties to viral or niche internet memes involving animals (e.g., 'The Immortal Snail', 'The White Whale').",
-          "Leverage of cultural or historical animal references (e.g., Hachiko, Noah’s Ark)."
+          "Tokens tied to AI infrastructure or agents (e.g., 'CIGOL', 'ARC').",
+          "Leveraging blockchain innovation (e.g., 'SKR', 'PumpFun').",
+          "Focusing on decentralized finance or governance (e.g., 'DUPE', 'BFS')."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CIGOL",
+            "token_name": "cigoL",
+            "token_address": "25EDYHRPkywy4X8aE1s6iNTztGRbsaRMMwBEerompump"
+          },
+          {
+            "token_symbol": "arc",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+          },
+          {
+            "token_symbol": "DUPE",
+            "token_name": "Dupe",
+            "token_address": "fRfKjKGCriduzDwSudCwpL7ySCEiboNuryhZDVJtr1a1C"
+          },
+          {
+            "token_symbol": "BFS",
+            "token_name": "BFS",
+            "token_address": "2k8yZaJjf61unHriuqdmvbxe7CUhEYML5kVJDbcotKjU"
+          }
+        ],
+        "leader_hint_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+        "confidence_0_100": 83,
+        "confidence_rationale": "Strong alignment with current trends in AI and blockchain integration, with tokens like 'SKR' and 'CIGOL' gaining traction.",
+        "leader_token": {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 159913743.71
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto-Folklore and Mythical Tokens",
+        "description": "Tokens drawing from folklore, mythology, or fictional lore, often repurposing legendary or symbolic figures into crypto narratives.",
+        "defining_signals": [
+          "Tokens referencing folklore (e.g., 'Ghost Elephant', 'White Giraffe').",
+          "Use of mythical or symbolic figures (e.g., 'Hachiko', 'The White Whale').",
+          "Leveraging fictional characters or events (e.g., 'The Great Ark', 'John Kiriakou')."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Elephant",
+            "token_name": "The Ghost Elephant",
+            "token_address": "BAfCyAUQhSeYUebeD9kbDSixsSoBmNy78M3KaEaF6rwJ"
+          },
+          {
+            "token_symbol": "ELEPHANTS",
+            "token_name": "Ghost Elephants",
+            "token_address": "8mRJKrweb64srPFVMQjVv3mzKwvfohNRT6yDGn19pump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "WhiteWhale",
+            "token_name": "The White Whale",
+            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+          },
+          {
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
+          }
+        ],
+        "leader_hint_token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong cultural and historical roots for mythic references, with tokens like 'The White Whale' and 'Hachiko' having clear literary or folk origins.",
+        "leader_token": {
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 93261208.14
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal Meme Tokens",
+        "description": "Tokens leveraging animal-based internet memes and cultural references, often repurposing established meme characters or real-world animals into crypto narratives.",
+        "defining_signals": [
+          "Use of animals like giraffes, penguins, and sharks with established meme histories.",
+          "Tokens referencing fictional or symbolic animals (e.g., 'Ghost Elephant', 'Nietzschean Penguin').",
+          "Leveraging animal-related internet phenomena (e.g., 'Pepe the Frog', 'Doge')."
         ],
         "supporting_tokens": [
           {
@@ -148,14 +240,9 @@
             "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
           },
           {
-            "token_symbol": "SNAIL",
-            "token_name": "The Immortal Snail",
-            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
-          },
-          {
-            "token_symbol": "WhiteWhale",
-            "token_name": "The White Whale",
-            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+            "token_symbol": "HAL",
+            "token_name": "Hal The Giraffe",
+            "token_address": "CvTMSEB9RzHPhB1CgE7PAkszomozDv3JJNz28sDbpump"
           },
           {
             "token_symbol": "PENGUIN",
@@ -166,129 +253,83 @@
             "token_symbol": "SHARK",
             "token_name": "Greenland Shark",
             "token_address": "63Z3Q7JX3SBGDiiwqqnPTVvHcuUk6ixkzsYQbKzhpump"
+          },
+          {
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           }
         ],
-        "leader_hint_token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong cultural ties to established memes (e.g., 'The White Whale') and recurring animal-based narratives across multiple tokens.",
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong historical and ongoing cultural presence of animal-based memes in crypto, with multiple tokens leveraging established narratives like Pepe, Doge, and penguin existentialism.",
         "leader_token": {
-          "token_symbol": "WhiteWhale",
-          "token_name": "The White Whale",
-          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-          "usd_market_cap": 93261208.14
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 17850296.35
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Crypto-Influenced Meme Reboots",
-        "description": "Tokens repurposing existing internet memes or cultural references that have been rebranded or reinterpreted for crypto use, often with no prior crypto context.",
+        "meta_name": "Internet Meme and Subculture Tokens",
+        "description": "Tokens inspired by internet subcultures, niche memes, or viral content, often tied to specific online communities or inside jokes.",
         "defining_signals": [
-          "Meme or phrase with pre-existing cultural context but no prior crypto usage.",
-          "Rebranding of a meme for crypto-specific narratives (e.g., 'Hachiko', 'The Immortal Snail').",
-          "Lack of direct crypto origin but strong meme-based identity."
+          "Tokens referencing niche internet subcultures (e.g., 'Wojak', 'Clippy', 'Doge').",
+          "Leveraging viral internet phenomena (e.g., 'Skibidi Toilet', 'Duct Tape Banana').",
+          "Use of internet slang or meme formats (e.g., 'Delusional Optimism', 'BallsDeep')."
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "SNAIL",
-            "token_name": "The Immortal Snail",
-            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGS"
-          },
           {
             "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong meme roots and consistent rebranding for crypto use, with clear cultural references.",
-        "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 14937433.97
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto-Driven Niche Internet Culture",
-        "description": "Tokens inspired by niche internet subcultures or subreddits, often leveraging inside jokes, subcultural slang, or specific meme communities.",
-        "defining_signals": [
-          "Use of niche internet slang or subcultural references (e.g., 'BallsDeep', 'Delusional Optimism').",
-          "Ties to specific meme formats or communities (e.g., 'Skibidi Toilet', 'Coyote Ugly').",
-          "Lack of mainstream cultural context but strong presence in subcultures."
-        ],
-        "supporting_tokens": [
+            "token_symbol": "CLIPPY",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "TOILET",
+            "token_name": "The Toilet",
+            "token_address": "8xHAL531iDVW9S2xVFFEr1Yz71rR7RL7qPWGgBAGS"
+          },
           {
             "token_symbol": "BallsDeep",
             "token_name": "BallsDeep",
             "token_address": "vHuyCuEGewLpphvWnTdGZ32osKHPAeimLsA8aajpump"
           },
           {
-            "token_symbol": "TOILET",
-            "token_name": "The Toilet",
-            "token_address": "8xHAL531iDVW9S2xsrWAFFEr1Yz71rR7RL7qPWGgBAGG"
-          },
-          {
-            "token_symbol": "delusional",
+            "token_symbol": "Delusional",
             "token_name": "Delusional Optimism",
             "token_address": "6KmwvVo8gDUVAnoAftMuyUTojfx6xtgm2xkHp2ixpump"
-          },
-          {
-            "token_symbol": "Pigeon",
-            "token_name": "level941",
-            "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump"
-          },
-          {
-            "token_symbol": "testicle",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
           }
         ],
-        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong ties to niche internet culture and subcultural references, with consistent use across multiple tokens.",
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong ties to established internet memes and subcultures, with tokens like 'Wojak' and 'Clippy' having clear cultural origins and ongoing relevance.",
         "leader_token": {
-          "token_symbol": "testicle",
-          "token_name": "testicle",
-          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
-          "usd_market_cap": 5245239.23
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 9856732.17
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Crypto-Religious or Philosophical Narratives",
-        "description": "Tokens leveraging religious, philosophical, or spiritual themes, often repurposing historical or literary references for crypto branding.",
+        "meta_name": "Political and Social Commentary Tokens",
+        "description": "Tokens that leverage political figures, social movements, or controversial events to create narratives or community identity.",
         "defining_signals": [
-          "Use of religious or philosophical concepts (e.g., 'Walk of Faith', 'Nietzschean Penguin').",
-          "Incorporation of historical or literary figures (e.g., Pope Francis, Hachiko).",
-          "Memeification of religious or philosophical ideas for crypto narratives."
+          "Tokens referencing political figures (e.g., 'Lion Trump', 'POPE').",
+          "Leveraging social movements or ideologies (e.g., 'Conspiracy Theorist', 'Meme Lives Matter').",
+          "Using controversial or polarizing themes (e.g., 'Armpitcoin', 'Goyim')."
         ],
-        "supportinging_tokens": [
+        "supporting_tokens": [
           {
-            "token_symbol": "Jesus",
-            "token_name": "Walk Of Faith",
-            "token_address": "A5bZrzHQXCuwXxU9PB6SSA8WS3uRrti8XcywhDuppump"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "LIONTRUMP",
+            "token_name": "The Lion Trump",
+            "token_address": "8eJScVzkzVWHj3MGPY6NCsAord9KcJneauQ6sZzFpump"
           },
           {
             "token_symbol": "POPE",
@@ -296,68 +337,46 @@
             "token_address": "AJnGakTTKJF2BAe6trx1zCWCedcqMVBRXGYPB8sapump"
           },
           {
-            "token_symbol": "CIGOL",
-            "token_name": "cigoL",
-            "token_address": "25EDYHRPkywy4X8aE1s6iNTztGRbsaRMMwBEerompump"
-          },
-          {
             "token_symbol": "Theorist",
             "token_name": "Conspiracy Theorist",
             "token_address": "GL8PT5BvAfY598JW14q9pXGFRhyT2HawagMQZJmXpump"
+          },
+          {
+            "token_symbol": "MLM",
+            "token_name": "Meme Lives Matter",
+            "token_address": "8ckfBhNvEDA62udk4YGNbSYcd5wvmQDjhY6kAYsgpump"
+          },
+          {
+            "token_symbol": "Goyim",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
           }
         ],
-        "leader_hint_token_address": "AJnGakTTKJF2BAe6trx1zCWCedcqMVBRXGYPB8sapump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong philosophical and religious themes, with consistent use across tokens.",
-        "leader_token": null,
-        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
-      },
-      {
-        "meta_name": "AI and Tech-Driven Crypto Projects",
-        "description": "Tokens centered around AI, tech innovation, or blockchain infrastructure, often leveraging futuristic or speculative narratives.",
-        "defining_signals": [
-          "Focus on AI, blockchain infrastructure, or tech innovation.",
-          "Use of speculative or futuristic themes (e.g., 'AI Rig Complex', 'Alchemist AI').",
-          "Community-driven or developer-centric utility."
-        ],
-        "supportinging_tokens": [
-          {
-            "token_symbol": "arc",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "SOLPRISM",
-            "token_name": "SOLPRISM",
-            "token_address": "8fZjyDPme2aYmujuxJjKAk3hAGHCgggrHUJFv9roC8cN"
-          },
-          {
-            "token_symbol": "EFM",
-            "token_name": "ECLIPSE",
-            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          }
-        ],
-        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong focus on AI and tech innovation, with recurring themes across multiple tokens.",
-        "leader_token": null,
-        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
+        "leader_hint_token_address": "GL8PT5BvAfY598JW14q9pXGFRhyT2HawagMQZJmXpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Growing interest in politically and socially charged tokens, especially those tied to conspiracy theories and meme activism.",
+        "leader_token": {
+          "token_symbol": "Goyim",
+          "token_name": "Goyim",
+          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+          "usd_market_cap": 3181905.72
+        },
+        "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Animal Meme Tokens' and 'Crypto-Influenced Meme Reboots' METAs are gaining traction due to their strong cultural and meme-based narratives. 'Crypto-Driven Niche Internet Culture' is fading slightly as newer tokens focus on broader meme appeal. 'AI and Tech-Driven Crypto Projects' are emerging as a new trend, driven by speculative interest in AI and blockchain integration.",
+    "meta_rotation_note": "The 'Animal Meme Tokens' and 'Internet Meme and Subculture Tokens' are currently the strongest and most active METAs, with high community engagement and cultural resonance. 'Political and Social Commentary Tokens' are emerging as a new trend, especially with tokens like 'Theorist' and 'MLm' gaining traction. 'Crypto-Folklore and Mythical Tokens' are fading slightly due to a lack of new cultural content, while 'AI and Tech-Driven Tokens' are stabilizing as interest in blockchain infrastructure grows.",
     "meta_leaders": [
       {
-        "meta_name": "Animal Meme Tokens",
+        "meta_name": "AI and Tech-Driven Tokens",
+        "leader_token": {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 159913743.71
+        }
+      },
+      {
+        "meta_name": "Crypto-Folklore and Mythical Tokens",
         "leader_token": {
           "token_symbol": "WhiteWhale",
           "token_name": "The White Whale",
@@ -366,21 +385,30 @@
         }
       },
       {
-        "meta_name": "Crypto-Influenced Meme Reboots",
+        "meta_name": "Animal Meme Tokens",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 14937433.97
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 17850296.35
         }
       },
       {
-        "meta_name": "Crypto-Driven Niche Internet Culture",
+        "meta_name": "Internet Meme and Subculture Tokens",
         "leader_token": {
-          "token_symbol": "testicle",
-          "token_name": "testicle",
-          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
-          "usd_market_cap": 5245239.23
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 9856732.17
+        }
+      },
+      {
+        "meta_name": "Political and Social Commentary Tokens",
+        "leader_token": {
+          "token_symbol": "Goyim",
+          "token_name": "Goyim",
+          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+          "usd_market_cap": 3181905.72
         }
       }
     ]
