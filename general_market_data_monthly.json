@@ -2,7 +2,7 @@
     "meta": {
         "retention_days": 30,
         "timezone": "America/Los_Angeles",
-        "last_updated_utc": "2026-02-12T22:34:31.983821+00:00"
+        "last_updated_utc": "2026-02-12T23:34:59.405595+00:00"
     },
     "snapshots": [
         {
@@ -8649,22 +8649,22 @@
         },
         {
             "day": "2026-02-12",
-            "generated_at_local": "2026-02-12T14:34:29.761799-08:00",
+            "generated_at_local": "2026-02-12T15:34:57.151457-08:00",
             "timezone": "America/Los_Angeles",
             "snapshot": {
                 "meta": {
-                    "generated_at_local": "2026-02-12T14:34:29.761799-08:00",
-                    "generated_at_utc": "2026-02-12T22:34:29.761799+00:00",
+                    "generated_at_local": "2026-02-12T15:34:57.151457-08:00",
+                    "generated_at_utc": "2026-02-12T23:34:57.151457+00:00",
                     "timezone": "America/Los_Angeles",
                     "version": "2.0"
                 },
                 "fear_greed": {
                     "stocks": {
-                        "value": 36.8176470588235,
-                        "rating": "fear",
-                        "timestamp": "2026-02-12T22:14:20+00:00",
+                        "value": null,
+                        "rating": null,
+                        "timestamp": null,
                         "source": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
-                        "error": null
+                        "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
                     },
                     "crypto": {
                         "value": 5.0,
@@ -8693,24 +8693,24 @@
                     },
                     "Gold": {
                         "symbol": "GC=F",
-                        "change_pct_1d": -2.567241,
-                        "last_close": 4941.39990234375,
+                        "change_pct_1d": -2.583011,
+                        "last_close": 4940.60009765625,
                         "prev_close": 5071.60009765625,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
                     },
                     "Bitcoin": {
                         "symbol": "BTC-USD",
-                        "change_pct_1d": -1.671656,
-                        "last_close": 65872.09375,
+                        "change_pct_1d": -0.960143,
+                        "last_close": 66348.75,
                         "prev_close": 66991.96875,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
                     },
                     "Ethereum": {
                         "symbol": "ETH-USD",
-                        "change_pct_1d": -0.630323,
-                        "last_close": 1928.38916015625,
+                        "change_pct_1d": 0.364647,
+                        "last_close": 1947.69775390625,
                         "prev_close": 1940.621337890625,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
@@ -8725,8 +8725,8 @@
                     },
                     "DXY": {
                         "symbol": "DX-Y.NYB",
-                        "change_pct_1d": 0.097079,
-                        "last_close": 96.92400360107422,
+                        "change_pct_1d": 0.093975,
+                        "last_close": 96.9209976196289,
                         "prev_close": 96.83000183105469,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
@@ -8741,8 +8741,8 @@
                     },
                     "WTI": {
                         "symbol": "CL=F",
-                        "change_pct_1d": -2.661299,
-                        "last_close": 62.90999984741211,
+                        "change_pct_1d": -2.692245,
+                        "last_close": 62.88999938964844,
                         "prev_close": 64.62999725341797,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
@@ -8812,16 +8812,16 @@
                     "iwm_minus_spy_pct": -0.49700900000000003
                 },
                 "crypto_global": {
-                    "total_mcap_usd": 2335521323829.539,
-                    "mcap_change_24h_pct": -1.5147280265085297,
-                    "btc_dominance_pct": 56.40715828398005,
+                    "total_mcap_usd": 2351969061531.074,
+                    "mcap_change_24h_pct": -0.33745461161255025,
+                    "btc_dominance_pct": 56.41534270866752,
                     "source": "https://api.coingecko.com/api/v3/global",
                     "error": null
                 },
                 "defi": {
                     "tvl": {
-                        "total_defi_tvl_usd": 94183455307.56052,
-                        "solana_tvl_usd": 6242261686.440415,
+                        "total_defi_tvl_usd": 94375845091.69305,
+                        "solana_tvl_usd": 6253470771.573956,
                         "source": "https://api.llama.fi/v2/chains",
                         "error": null
                     }
@@ -8849,10 +8849,10 @@
                             {
                                 "venue": "Raydium",
                                 "matched_name": "Raydium AMM",
-                                "total24h": 213700098.0,
+                                "total24h": 205188327.0,
                                 "total7d": 2184628916.0,
                                 "total30d": 9802258517.0,
-                                "share_pct_24h": 5.619737861791096,
+                                "share_pct_24h": 5.395901175672237,
                                 "share_pct_7d": 6.965238040900071,
                                 "share_pct_30d": 7.680122839357565,
                                 "error": null
@@ -8860,10 +8860,10 @@
                             {
                                 "venue": "Meteora",
                                 "matched_name": "Meteora DAMM V1",
-                                "total24h": 8459752.0,
+                                "total24h": 8951664.0,
                                 "total7d": 164432030.0,
                                 "total30d": 528272738.0,
-                                "share_pct_24h": 0.22246872631646125,
+                                "share_pct_24h": 0.23540468899004588,
                                 "share_pct_7d": 0.5242575625133864,
                                 "share_pct_30d": 0.4139045622483203,
                                 "error": null
@@ -8884,7 +8884,7 @@
                             },
                             {
                                 "name": "Orca DEX",
-                                "total24h": 257625293.0
+                                "total24h": 251105501.0
                             },
                             {
                                 "name": "AlphaQ",
@@ -8901,14 +8901,14 @@
                     }
                 },
                 "sp500_total_market_cap": {
-                    "total_mcap_usd": 62050000000000.0,
-                    "raw": "$62.05T",
+                    "total_mcap_usd": 62010000000000.0,
+                    "raw": "$62.01T",
                     "source": "https://www.slickcharts.com/sp500",
                     "error": null
                 },
                 "gold_market_cap": {
-                    "total_mcap_usd": 34357000000000.0,
-                    "raw": "$34.357 T",
+                    "total_mcap_usd": 34354999999999.996,
+                    "raw": "$34.355 T",
                     "source": "https://companiesmarketcap.com/gold/marketcap/",
                     "error": null
                 },
@@ -8919,12 +8919,12 @@
                     "error": null
                 },
                 "bitcoin_halving": {
-                    "current_height": 936287,
+                    "current_height": 936294,
                     "next_halving_height": 1050000,
-                    "blocks_remaining": 113713,
+                    "blocks_remaining": 113706,
                     "assumed_seconds_per_block": 600,
-                    "estimated_datetime_utc": "2028-04-12T14:44:30.912471+00:00",
-                    "estimated_datetime_local": "2028-04-12T07:44:30.912471-07:00",
+                    "estimated_datetime_utc": "2028-04-12T14:34:58.274206+00:00",
+                    "estimated_datetime_local": "2028-04-12T07:34:58.274206-07:00",
                     "source": "https://blockstream.info/api/blocks/tip/height",
                     "error": null
                 },
