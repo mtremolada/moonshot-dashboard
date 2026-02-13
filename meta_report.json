@@ -1,14 +1,34 @@
 {
-  "generated_at_utc": "2026-02-13T21:37:30.952239Z",
+  "generated_at_utc": "2026-02-13T22:37:54.888630Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
   "token_context_count": 80,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 2 PVP group(s); excluding 4 token(s) from META prompt."
+    "Detected 4 PVP group(s); excluding 6 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 4,
+  "pvp_excluded_token_count": 6,
   "pvp_report": [
+    {
+      "match_type": "token_name",
+      "match_value": "linh mai",
+      "tokens": [
+        {
+          "token_symbol": "LinhMai",
+          "token_name": "Linh Mai",
+          "token_address": "CJWLJ4H329oii6iWVxcZ65xnibutsNvRtMCb1HGqpump",
+          "usd_market_cap": 258782.49,
+          "processed_at": "2026-02-13T19:01:20.333088Z"
+        },
+        {
+          "token_symbol": "LinhMai",
+          "token_name": "Linh Mai",
+          "token_address": "AhU5zEZLieEpP3bhvsjmWqWJScX7pDsFs6XPc9FGbonk",
+          "usd_market_cap": 339241.06,
+          "processed_at": "2026-02-13T22:18:11.386383Z"
+        }
+      ]
+    },
     {
       "match_type": "token_symbol",
       "match_value": "penguin",
@@ -48,18 +68,176 @@
           "processed_at": "2026-02-13T06:59:46.954611Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "linhmai",
+      "tokens": [
+        {
+          "token_symbol": "LinhMai",
+          "token_name": "Linh Mai",
+          "token_address": "CJWLJ4H329oii6iWVxcZ65xnibutsNvRtMCb1HGqpump",
+          "usd_market_cap": 258782.49,
+          "processed_at": "2026-02-13T19:01:20.333088Z"
+        },
+        {
+          "token_symbol": "LinhMai",
+          "token_name": "Linh Mai",
+          "token_address": "AhU5zEZLieEpP3bhvsjmWqWJScX7pDsFs6XPc9FGbonk",
+          "usd_market_cap": 339241.06,
+          "processed_at": "2026-02-13T22:18:11.386383Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Revival",
-        "description": "Tokens repurposing established internet memes, often with long-standing cultural roots, to create community-driven narratives. These tokens leverage nostalgia and existing meme popularity to drive engagement.",
+        "meta_name": "Social Commentary",
+        "description": "Tokens that use humor or irony to comment on societal issues, politics, or internet culture. These often reflect current events or cultural shifts.",
         "defining_signals": [
-          "Tokens based on pre-existing memes with clear non-crypto origins (e.g., Wojak, Pepe, Craig Tucker).",
-          "Tokens referencing viral internet characters or phrases that gained traction before crypto adoption.",
-          "Tokens with cultural or historical roots that have been repurposed for crypto use."
+          "Satirical or ironic narratives tied to current events or internet culture.",
+          "Use of controversial or polarizing themes.",
+          "Community-driven memes with political or social undertones."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "GOYIM",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+          },
+          {
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
+          },
+          {
+            "token_symbol": "CHUD",
+            "token_name": "The Life of a Chud",
+            "token_address": "EoP9nKZMtTFTWVjkJVJEQQXAgWoFZwgVgoKspkrVpump"
+          },
+          {
+            "token_symbol": "BAN",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+          },
+          {
+            "token_symbol": "TESTICLE",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          }
+        ],
+        "leader_hint_token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+        "confidence_0_100": 68,
+        "confidence_rationale": "Strong social commentary themes with growing community engagement and meme-based narratives.",
+        "leader_token": {
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 91809758.15
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Cultural Symbolism",
+        "description": "Tokens drawing from historical or cultural symbols, repurposing them for modern narratives. These often tie to themes of loyalty, perseverance, or rebellion.",
+        "defining_signals": [
+          "Use of culturally significant symbols (e.g., Hachiko, White Whale).",
+          "Narratives tied to historical or mythological figures.",
+          "Community-driven storytelling with symbolic resonance."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "WHITEWHALE",
+            "token_name": "The White Whale",
+            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+          },
+          {
+            "token_symbol": "BINGWU",
+            "token_name": "bǐngwǔ",
+            "token_address": "DMYNp65mub3i7LRpBdB66CgBAceLcQnv4gsWeCi6pump"
+          },
+          {
+            "token_symbol": "GIRAFFES",
+            "token_name": "The Giraffes",
+            "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
+          },
+          {
+            "token_symbol": "SNAIL",
+            "token_name": "The Immortal Snail",
+            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
+          }
+        ],
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong cultural narratives with historical depth, and growing community adoption.",
+        "leader_token": {
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 83793388.83
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI & Digital Life",
+        "description": "Tokens centered around artificial intelligence, digital existence, and the future of online interaction. These often emphasize innovation, decentralization, and AI-driven utility.",
+        "defining_signals": [
+          "AI-related themes in token descriptions or use cases.",
+          "Focus on digital life, virtual worlds, or AI-generated content.",
+          "Integration with AI tools or platforms."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "ONLINE",
+            "token_name": "forever online",
+            "token_address": "F4N3MndkdhiG5Ppyg2qz7tw51jEY6CkMDT4fCRX8bonk"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "CLIP",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          }
+        ],
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Growing interest in AI and digital life, with tokens exploring AI utility and virtual existence.",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 75123297.71
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Revival",
+        "description": "Tokens repurposing established internet memes, often with historical roots in gaming, pop culture, or viral content. These tokens leverage nostalgia and existing meme traction to build community and drive engagement.",
+        "defining_signals": [
+          "Leverage pre-existing memes with clear cultural origins (e.g., Wojak, Pepe, Craig Tucker).",
+          "Strong viral history on platforms like 4chan, Reddit, or TikTok.",
+          "Community-driven narratives with meme-based identities."
         ],
         "supporting_tokens": [
           {
@@ -78,337 +256,78 @@
             "token_address": "5qdq1seaN46EMr4qUQkTcjnwy4d11nEtcNtWj45Apump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "CLIPPY",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "SNAIL",
-            "token_name": "The Immortal Snail",
-            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
-          },
-          {
             "token_symbol": "GIRAFFES",
             "token_name": "The Giraffes",
             "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+            "token_symbol": "SNAIL",
+            "token_name": "The Immortal Snail",
+            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
+          }
+        ],
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong historical meme roots, active community engagement, and consistent cross-platform presence.",
+        "leader_token": {
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 10326868.72
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia & Retro Culture",
+        "description": "Tokens drawing from retro or nostalgic elements, often referencing older media, games, or internet culture. These tokens tap into a sense of familiarity and shared history.",
+        "defining_signals": [
+          "References to retro games, media, or internet culture.",
+          "Use of vintage aesthetics or themes.",
+          "Community-driven nostalgia-based engagement."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CLIP",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "SKULL",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          },
+          {
+            "token_symbol": "RUNNER",
+            "token_name": "The Wild Stallion",
+            "token_address": "72qDUjZisehaMKgTsMWp6n2ubiXHvMooNXvHGvJApump"
           },
           {
             "token_symbol": "MIA",
             "token_name": "Mia Ko",
             "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          }
-        ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong historical meme roots, widespread internet recognition, and consistent token usage across multiple platforms.",
-        "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 91809758.15
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Driven Tokens",
-        "description": "Tokens leveraging AI as a core theme or utility, either through AI-generated content, AI-based governance, or AI-powered applications. These tokens often emphasize innovation and future tech.",
-        "defining_signals": [
-          "Tokens with AI-generated narratives or content (e.g., PsyopAnime, Crustafarianism).",
-          "Tokens tied to AI-powered platforms or tools (e.g., Alchemist AI, ARC).",
-          "Tokens using AI as a central theme for utility or governance."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
           },
           {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "EFM",
-            "token_name": "ECLIPSE",
-            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
-          },
-          {
-            "token_symbol": "PSYOP",
-            "token_name": "PsyopAnime",
-            "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump"
-          },
-          {
-            "token_symbol": "CRUST",
-            "token_name": "Crustafarianism",
-            "token_address": "HkBWJJiaUW5Kod4HpHWZiGD9PQVipmMiPDgiRPcNpump"
-          },
-          {
-            "token_symbol": "MEW",
-            "token_name": "cat in a dogs world",
-            "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          },
-          {
-            "token_symbol": "MNERBTC",
-            "token_name": "BTCMINEE",
-            "token_address": "BpXC63A61NpEafaDP2rbqCPfBFPQbaANKDKL6HgFpump"
-          },
-          {
-            "token_symbol": "BLOWFISH",
-            "token_name": "Blowfish",
-            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
-          },
-          {
-            "token_symbol": "FKH",
-            "token_name": "Flying Ketamine Horse",
-            "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
-          }
-        ],
-        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong focus on AI as a core theme, with clear utility or narrative around AI innovation.",
-        "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 75123297.71
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Retro Themes",
-        "description": "Tokens drawing from retro or nostalgic themes, often referencing older media, games, or cultural artifacts. These tokens often appeal to users with a sense of nostalgia or a desire for retro aesthetics.",
-        "defining_signals": [
-          "Tokens inspired by retro games or media (e.g., Minecraft Grandma Fund, Skeleton Banging Shield).",
-          "Tokens referencing older internet culture (e.g., Clippy, RATHBUN).",
-          "Tokens with a retro or vintage aesthetic or narrative."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLIPPY",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "Grandma",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
-          },
-          {
-            "token_symbol": "RUNNER",
-            "token_name": "The Wild Stallion",
-            "token_address": "72qDUjZisehaMKgTsMWp6n2ubiXHvMooNXvHGvJApump"
-          },
-          {
-            "token_symbol": "SNAIL",
-            "token_name": "The Immortal Snail",
-            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
-          },
-          {
-            "token_symbol": "GIRAFFES",
-            "token_name": "The Giraffes",
-            "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
-          },
-          {
-            "token_symbol": "CRY",
-            "token_name": "Sad Bunny",
-            "token_address": "9CaWKwDJPFTrkJuk5dj1Vyc2TBse9CjQFmomVGkrpump"
-          },
-          {
-            "token_symbol": "RAALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "CIA",
-            "token_name": "John Kiriakou",
-            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
-          },
-          {
-            "token_symbol": "MEW",
-            "token_name": "cat in a dogs world",
-            "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5"
+            "token_symbol": "PREGUNTALE",
+            "token_name": "Preguntale",
+            "token_address": "57KoEZXm2mJwFqbB7fvcgZmmjc9mivFmKhXA45H3pump"
           }
         ],
         "leader_hint_token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong nostalgic appeal, with clear retro references and community engagement around older internet or pop culture.",
+        "confidence_0_100": 72,
+        "confidence_rationale": "Strong retro and nostalgia themes with active community engagement and meme-based narratives.",
         "leader_token": {
-          "token_symbol": "MEW",
-          "token_name": "cat in a dogs world",
-          "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
-          "usd_market_cap": 54001954.1
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Utility and Play-to-Earn",
-        "description": "Tokens with clear utility or play-to-earn mechanics, often tied to gaming or interactive platforms. These tokens focus on real-world utility, rewards, or engagement.",
-        "defining_signals": [
-          "Tokens with clear utility (e.g., IDLE, Clash).",
-          "Tokens tied to play-to-earn mechanics (e.g., IDLE, Clash).",
-          "Tokens with clear in-game or platform-based utility."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
-          },
-          {
-            "token_symbol": "CLASH",
-            "token_name": "GeorgePlaysClashRoyale",
-            "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump"
-          },
-          {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
-          },
-          {
-            "token_symbol": "BLOWFISH",
-            "token_name": "Blowfish",
-            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
-          },
-          {
-            "token_symbol": "FKH",
-            "token_name": "Flying Ketamine Horse",
-            "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          },
-          {
-            "token_symbol": "MNERBTC",
-            "token_name": "BTCMINEE",
-            "token_address": "BpXC63A61NpEafaDP2rbqCPfBFPQbaANKDKL6HgFpump"
-          },
-          {
-            "token_symbol": "MEW",
-            "token_name": "cat in a dogs world",
-            "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5"
-          },
-          {
-            "token_symbol": "BLOWFISH",
-            "token_name": "Blowfish",
-            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
-          },
-          {
-            "token_symbol": "FKH",
-            "token_name": "Flying Ketamine Horse",
-            "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "MEW",
-          "token_name": "cat in a dogs world",
-          "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
-          "usd_market_cap": 54001954.1
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Cultural Figure Tokens",
-        "description": "Tokens inspired by real-world cultural icons, historical figures, or pop culture entities. These tokens often leverage the emotional or symbolic weight of these figures to create a narrative or community.",
-        "defining_signals": [
-          "Tokens referencing historical or cultural figures (e.g., Hachiko, Brownie Mary).",
-          "Tokens inspired by pop culture characters or events (e.g., Craig Tucker, Linh Mai).",
-          "Tokens drawing from real-life events or figures with emotional resonance (e.g., Minecraft Grandma Fund)."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "RATHBUN",
-            "token_name": "MJ Rathbun",
-            "token_address": "Bq9D4BbhVR4kL1qSdsYpQ5JM59q2LzUYzv7zFA1epump"
-          },
-          {
-            "token_symbol": "LinhMai",
-            "token_name": "Linh Mai",
-            "token_address": "CJWLJ4H329oii6iWVxcZ65xnibutsNvRtMCb1HGqpump"
-          },
-          {
-            "token_symbol": "Grandma",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
-          },
-          {
-            "token_symbol": "CIA",
-            "token_name": "John Kiriakou",
-            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "RUNNER",
-            "token_name": "The Wild Stallion",
-            "token_address": "72qDUjZisehaMKgTsMWp6n2ubiXHvMooNXvHGvJApump"
-          },
-          {
-            "token_symbol": "SNAIL",
-            "token_name": "The Immortal Snail",
-            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
-          },
-          {
-            "token_symbol": "GIRAFFES",
-            "token_name": "The Giraffes",
-            "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
-          },
-          {
-            "token_symbol": "CRY",
-            "token_name": "Sad Bunny",
-            "token_address": "9CaWKwDJPFTrkJuk5dj1Vyc2TBse9CjQFmomVGkrpump"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong cultural and emotional narratives, with clear real-world references and community engagement.",
-        "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 4229695.0
+          "token_symbol": "Clippy",
+          "token_name": "Clippy",
+          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
+          "usd_market_cap": 848087.46
         },
         "leader_missing_reason": null
       }
     ],
+    "meta_rotation_note": "The 'Meme Revival' and 'Cultural Symbolism' METAs are currently the strongest, with consistent community engagement and historical depth. 'AI & Digital Life' is emerging as a new trend, driven by interest in AI and virtual existence. 'Social Commentary' is fading slightly as newer, more community-driven themes gain traction.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Revival",
+        "meta_name": "Social Commentary",
         "leader_token": {
           "token_symbol": "Ban",
           "token_name": "Comedian",
@@ -417,7 +336,16 @@
         }
       },
       {
-        "meta_name": "AI-Driven Tokens",
+        "meta_name": "Cultural Symbolism",
+        "leader_token": {
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 83793388.83
+        }
+      },
+      {
+        "meta_name": "AI & Digital Life",
         "leader_token": {
           "token_symbol": "arc",
           "token_name": "AI Rig Complex",
@@ -426,30 +354,21 @@
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Themes",
+        "meta_name": "Meme Revival",
         "leader_token": {
-          "token_symbol": "MEW",
-          "token_name": "cat in a dogs world",
-          "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
-          "usd_market_cap": 54001954.1
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 10326868.72
         }
       },
       {
-        "meta_name": "Utility and Play-to-Earn",
+        "meta_name": "Nostalgia & Retro Culture",
         "leader_token": {
-          "token_symbol": "MEW",
-          "token_name": "cat in a dogs world",
-          "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
-          "usd_market_cap": 54001954.1
-        }
-      },
-      {
-        "meta_name": "Cultural Figure Tokens",
-        "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 4229695.0
+          "token_symbol": "Clippy",
+          "token_name": "Clippy",
+          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
+          "usd_market_cap": 848087.46
         }
       }
     ]
