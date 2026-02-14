@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-14T22:31:54.708797Z",
+  "generated_at_utc": "2026-02-14T23:32:28.939021Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 99,
+  "token_context_count": 103,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 6 PVP group(s); excluding 6 token(s) from META prompt."
+    "Detected 8 PVP group(s); excluding 8 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 6,
+  "pvp_excluded_token_count": 8,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -70,6 +70,26 @@
       ]
     },
     {
+      "match_type": "token_name",
+      "match_value": "melon musk",
+      "tokens": [
+        {
+          "token_symbol": "MELON",
+          "token_name": "MELON MUSK",
+          "token_address": "9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+          "usd_market_cap": 263187.56,
+          "processed_at": "2026-02-14T20:01:13.210774Z"
+        },
+        {
+          "token_symbol": "Melon",
+          "token_name": "Melon Musk",
+          "token_address": "BgrDq6Us2WRTJ29ku19Fb1QEgbHTKo976npsUSTEpump",
+          "usd_market_cap": 252605.95,
+          "processed_at": "2026-02-14T23:21:45.494566Z"
+        }
+      ]
+    },
+    {
       "match_type": "token_symbol",
       "match_value": "pope",
       "tokens": [
@@ -128,24 +148,44 @@
           "processed_at": "2026-02-14T22:19:28.148477Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "melon",
+      "tokens": [
+        {
+          "token_symbol": "MELON",
+          "token_name": "MELON MUSK",
+          "token_address": "9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+          "usd_market_cap": 263187.56,
+          "processed_at": "2026-02-14T20:01:13.210774Z"
+        },
+        {
+          "token_symbol": "Melon",
+          "token_name": "Melon Musk",
+          "token_address": "BgrDq6Us2WRTJ29ku19Fb1QEgbHTKo976npsUSTEpump",
+          "usd_market_cap": 252605.95,
+          "processed_at": "2026-02-14T23:21:45.494566Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Internet Meme Culture",
-        "description": "Tokens built around viral internet memes, often repurposing existing cultural references for crypto communities. These tokens leverage nostalgia, humor, and internet slang to attract attention.",
+        "meta_name": "Meme Reboot",
+        "description": "This META involves tokens repurposing or rebooting existing internet memes, often with a humorous or ironic twist. These tokens leverage nostalgia or cultural familiarity from older memes to attract attention and community engagement.",
         "defining_signals": [
-          "Names or themes tied to viral internet memes (e.g., Pepe the Frog, Wojak, Clippy)",
-          "Leverage of viral TikTok, Reddit, or meme culture for branding",
-          "Absurd or humorous narratives with no direct real-world cultural origin"
+          "Tokens reference well-known memes or characters (e.g., Clippy, Wojak, Pepe, Clippy).",
+          "Meme themes are adapted with new, crypto-specific narratives or humor.",
+          "Tokens often lack original non-crypto cultural context but are deeply rooted in meme culture."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
             "token_symbol": "WOJAK",
@@ -153,14 +193,14 @@
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
             "token_symbol": "PENGUIN",
             "token_name": "Nietzschean Penguin",
             "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
             "token_symbol": "testicle",
@@ -169,8 +209,8 @@
           }
         ],
         "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Strong meme roots with clear cultural references and high community engagement, especially around Pepe and Clippy.",
+        "confidence_0_100": 85,
+        "confidence_ractionale": "Bonk has a strong cultural foundation as a well-known meme and is one of the larger tokens in this category, indicating its leadership potential.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -180,28 +220,23 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Tech Nostalgia",
-        "description": "Tokens referencing AI, coding, or tech culture, often with a nostalgic or ironic twist. These tokens tap into the growing fascination with AI and the internet’s history with tech memes.",
+        "meta_name": "AI and Digital Culture",
         "defining_signals": [
-          "Names or themes tied to AI, coding, or tech culture (e.g., BFS, Clippy, JESTERMAXXING)",
-          "Leverage of nostalgia for early internet or tech history",
-          "Incorporation of coding jargon or AI-related humor"
+          "Tokens are inspired by AI characters, systems, or concepts.",
+          "Themes include AI agents, AI-generated content, or AI-driven narratives.",
+          "Tokens often have speculative or futuristic utility tied to AI."
         ],
+        "description": "This META is centered around tokens inspired by AI culture, including AI characters, AI-generated content, and AI-driven narratives. These tokens often reflect the growing influence of AI in digital culture and its intersection with crypto.",
         "supporting_tokens": [
           {
-            "token_symbol": "BFS",
-            "token_name": "BFS",
-            "token_address": "2k8yZaJjf61unHriuqdmvbxe7CUhEYML5kVJDbcotKjU"
+            "token_symbol": "Mia",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "JESTERMAXXING",
-            "token_name": "JESTERMAXXING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
+            "token_symbol": "EFM",
+            "token_name": "ECLIPSE",
+            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
           },
           {
             "token_symbol": "AGI",
@@ -209,137 +244,50 @@
             "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
           },
           {
-            "token_symbol": "CTM",
-            "token_name": "c8ntinuum",
-            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+          },
+          {
+            "token_symbol": "MOLTCUPID",
+            "token_name": "MoltCupid",
+            "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwvZZpump"
           }
         ],
-        "leader_hint_token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong AI and tech culture references with growing interest in AI-related tokens and nostalgic tech memes.",
-        "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 384252847.64
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Absurd and Shock-Value Humor",
-        "description": "Tokens built around absurd, edgy, or shock-value humor. These tokens often use body humor, low-effort jokes, or controversial themes to stand out in the crowded meme coin space.",
-        "defining_signals": [
-          "Names or themes tied to absurd or edgy humor (e.g., testicle, Fartcoin, Brainlet Juice)",
-          "Use of body humor or controversial themes",
-          "Leverage of low-effort or shock-value internet culture"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "testicle",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
-          },
-          {
-            "token_symbol": "Fartcoin",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
-          },
-          {
-            "token_symbol": "BrainJuice",
-            "token_name": "Brainlet Juice",
-            "token_address": "BQrwYPnpRSzsNgxfERYRpH8yLEZ9SjWnSLhzrAnipump"
-          },
-          {
-            "token_symbol": "FEB14",
-            "token_name": "Fondle Every Boobs",
-            "token_address": "E4kM3zXBTWHTtAjyPQJoXet7VYiKNBGYqtUSa4oSpump"
-          },
-          {
-            "token_symbol": "PEPEBISMOL",
-            "token_name": "Pepe Bismol",
-            "token_address": "HbYgynsDksniFLXNa3BkCTiaEBzQMW5oty4FhTHPpump"
-          }
-        ],
-        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong shock-value and absurd humor themes with growing community interest in edgy meme coins.",
-        "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 193676040.6
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Animal and Nature Symbolism",
-        "description": "Tokens using animals or nature as symbols for community identity or thematic storytelling. These tokens often draw from folklore, mythology, or viral animal-related memes.",
-        "defining_signals": [
-          "Names or themes tied to animals or nature (e.g., Giraffes, Penguins, Snails)",
-          "Leverage of folklore or mythology for branding",
-          "Use of viral animal memes or viral animal-related content"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "GIRAFFES",
-            "token_name": "The Giraffes",
-            "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "SNAIL",
-            "token_name": "The Immortal Snail",
-            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "MAMAN",
-            "token_name": "ママン",
-            "token_address": "G8fSP7xigLVxA5qyFiTQg7cs6jPsqYDWwqzJVJ6ppump"
-          }
-        ],
-        "leader_hint_token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump",
+        "leader_hint_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
         "confidence_0_100": 75,
-        "confidence_rationale": "Strong animal symbolism with cultural and meme roots, especially around penguins and giraffes.",
+        "confidence_ractionale": "Seeker (SKR) has a broad utility scope and is part of a larger ecosystem, making it a likely leader in this category.",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 20309175.34
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 134683858.48
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political Satire",
-        "description": "Tokens referencing political figures or events, often with a satirical or anti-establishment tone. These tokens leverage real-world political memes and cultural commentary to drive community engagement.",
+        "meta_name": "Political and Satirical Commentary",
+        "description": "This META involves tokens that use political or satirical themes to engage with current events or cultural commentary. These tokens often reflect a humorous or critical take on politics, media, or social issues.",
         "defining_signals": [
-          "Names or themes tied to political figures (e.g., Donald Trump, Mary Jane Rathbun)",
-          "Meme-based narratives with anti-establishment or protest themes",
-          "Historical or cultural references to political activism or satire"
+          "Tokens reference political figures or events (e.g., Donald Trump, Mary Jane Rathbun).",
+          "Tokens use satire or parody to comment on political or social issues.",
+          "Tokens often have a humorous or ironic tone."
         ],
         "supporting_tokens": [
           {
             "token_symbol": "TRUMPO",
             "token_name": "PRESIDENTE DONALDO TRUMPO",
-            "token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump"
+            "token_address": "9cYYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump"
           },
           {
-            "token_symbol": "RATHBUN",
-            "token_name": "MJ Rathbun",
-            "token_address": "Bq9D4BbhVR4kL1qSdsYpQ5JM59q2LzUYzv7zFA1epump"
+            "token_symbol": "GoyMogged",
+            "token_name": "GoyMogged",
+            "token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump"
           },
           {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+            "token_symbol": "Ban",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
           },
           {
             "token_symbol": "CIA",
@@ -347,27 +295,119 @@
             "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
           },
           {
-            "token_symbol": "TRUMP3",
-            "token_name": "Trump3",
-            "token_address": "48224SakAA6AtvWwHHBmLy8NYMdyeysLz34Gwp8wpump"
+            "token_symbol": "SAS",
+            "token_name": "Stephen A. Smith",
+            "token_address": "oYvNBpJAg279XZzb8JFZBx7NyGU9Nxqi3Q9piXGpump"
           }
         ],
-        "leader_hint_token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong political meme roots and active community engagement, especially around Donald Trump and cannabis activism themes.",
+        "leader_hint_token_address": "9cYYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump",
+        "confidence_0_100": 65,
+        "confidence_ractionale": "TRUMPO has a strong political and satirical angle, making it a likely leader in this category.",
         "leader_token": {
-          "token_symbol": "TRUMPO",
-          "token_name": "PRESIDENTE DONALDO TRUMPO",
-          "token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump",
-          "usd_market_cap": 2025557.61
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 92554389.75
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Cultural and Historical Nostalgia",
+        "description": "This META involves tokens drawing inspiration from historical figures, cultural symbols, or historical events. These tokens often aim to evoke a sense of legacy or cultural significance.",
+        "defining_signals": [
+          "Tokens reference historical figures or events (e.g., Hachiko, Mary Jane Rathbun).",
+          "Tokens use cultural symbols or folklore (e.g., Kabuto, The Black Sheep).",
+          "Tokens often have a narrative that ties them to a historical or cultural legacy."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "$HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+          },
+          {
+            "token_symbol": "ME",
+            "token_name": "The Black Sheep is NOT",
+            "token_address": "9JvYwGHnPj1DFwqWwo4Uut9hjBsJSFPAPTowuSmepump"
+          },
+          {
+            "token_symbol": "Goyim",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          }
+        ],
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 70,
+        "confidence_ractionale": "Hachiko has a strong historical and cultural narrative, making it a likely leader in this category.",
+        "leader_token": {
+          "token_symbol": "$HACHI",
+          "token_name": "Hachiko",
+          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+          "usd_market_cap": 5628784.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Niche and Community-Driven",
+        "description": "This META involves tokens that are driven by niche communities or subcultures. These tokens often have a strong community focus and are built around specific interests or inside jokes.",
+        "defining_signals": [
+          "Tokens are inspired by niche internet communities or subcultures.",
+          "Tokens often have a strong community-driven narrative.",
+          "Tokens may reference obscure memes, inside jokes, or specific subcultures."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Yaranaika",
+            "token_name": "やらないか",
+            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+          },
+          {
+            "token_symbol": "Goyim",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+          },
+          {
+            "token_symbol": "GoyMogged",
+            "token_name": "GoyMogged",
+            "token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump"
+          },
+          {
+            "token_symbol": "Maman",
+            "token_name": "ママン",
+            "token_address": "G8fSP7xigLVxA5qyFiTQg7cs6jPsqYDWwqzJVJ6ppump"
+          },
+          {
+            "token_symbol": "JESTER",
+            "token_name": "JESTERMAXXING",
+            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
+          }
+        ],
+        "leader_hint_token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump",
+        "confidence_0_100": 60,
+        "confidence_ractionale": "GoyMogged has a strong niche community angle and is part of a growing trend in crypto meme culture.",
+        "leader_token": {
+          "token_symbol": "Goyim",
+          "token_name": "Goyim",
+          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+          "usd_market_cap": 1873538.48
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Political Satire' and 'Internet Meme Culture' METAs are currently the strongest, with high engagement and clear cultural roots. 'AI and Tech Nostalgia' is emerging as a strong contender due to growing interest in AI-related tokens. 'Absurd and Shock-Value Humor' is gaining traction but remains volatile. 'Animal and Nature Symbolism' is fading slightly as newer, edgier themes take over.",
+    "meta_rotation_note": "The 'Meme Reboot' and 'AI and Digital Culture' METAs are currently emerging, with strong community engagement and cultural resonance. The 'Cultural and Historical Nostalgia' and 'Political and Satirical Commentary' METAs are stable but showing signs of fading as newer, more dynamic themes gain traction. The 'Niche and Community-Driven' META is also emerging, driven by the growing influence of subcultures and internet communities in crypto.",
     "meta_leaders": [
       {
-        "meta_name": "Internet Meme Culture",
+        "meta_name": "Meme Reboot",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -376,39 +416,39 @@
         }
       },
       {
-        "meta_name": "AI and Tech Nostalgia",
+        "meta_name": "AI and Digital Culture",
         "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 384252847.64
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 134683858.48
         }
       },
       {
-        "meta_name": "Absurd and Shock-Value Humor",
+        "meta_name": "Political and Satirical Commentary",
         "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 193676040.6
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 92554389.75
         }
       },
       {
-        "meta_name": "Animal and Nature Symbolism",
+        "meta_name": "Cultural and Historical Nostalgia",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 20309175.34
+          "token_symbol": "$HACHI",
+          "token_name": "Hachiko",
+          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+          "usd_market_cap": 5628784.0
         }
       },
       {
-        "meta_name": "Political Satire",
+        "meta_name": "Niche and Community-Driven",
         "leader_token": {
-          "token_symbol": "TRUMPO",
-          "token_name": "PRESIDENTE DONALDO TRUMPO",
-          "token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump",
-          "usd_market_cap": 2025557.61
+          "token_symbol": "Goyim",
+          "token_name": "Goyim",
+          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+          "usd_market_cap": 1873538.48
         }
       }
     ]
