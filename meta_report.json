@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-14T07:23:29.453860Z",
+  "generated_at_utc": "2026-02-14T08:24:00.719924Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
   "token_context_count": 82,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 6 PVP group(s); excluding 8 token(s) from META prompt."
+    "Detected 5 PVP group(s); excluding 6 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 8,
+  "pvp_excluded_token_count": 6,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -46,26 +46,6 @@
           "token_address": "AhU5zEZLieEpP3bhvsjmWqWJScX7pDsFs6XPc9FGbonk",
           "usd_market_cap": 339241.06,
           "processed_at": "2026-02-13T22:18:11.386383Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "sol",
-      "tokens": [
-        {
-          "token_symbol": "SOL",
-          "token_name": "Selling On Losses",
-          "token_address": "sHHf4KfhcHnEj2UkQBj97oQaodF2XGcdjdpSrRRpump",
-          "usd_market_cap": 3137.08,
-          "processed_at": "2026-02-13T06:59:46.954611Z"
-        },
-        {
-          "token_symbol": "SOL",
-          "token_name": "Sol The Trophy Tomato",
-          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
-          "usd_market_cap": 2317291.93,
-          "processed_at": "2026-02-14T05:52:20.429067Z"
         }
       ]
     },
@@ -134,18 +114,33 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal Symbolism",
-        "description": "Tokens using animals as central themes, often with cultural or symbolic significance. These tokens often draw from established animal memes or folklore.",
+        "meta_name": "Viral Animal Meme Tokens",
+        "description": "Tokens inspired by viral animal memes or real-life animal figures, leveraging their cultural resonance for community and market appeal.",
         "defining_signals": [
-          "Use of animals as central symbols or mascots",
-          "Cultural or symbolic significance tied to the animal (e.g., loyalty, resilience)",
-          "Meme or folklore roots in the animal's representation"
+          "Tokens based on real-life viral animals (e.g., Moo Deng, Sad Bunny)",
+          "Meme references to iconic animals (e.g., Pepe the Frog, Clippy, Hachiko)",
+          "Tokens using animal imagery for humor or emotional symbolism (e.g., Hoodrat, Jestermaxxing)"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "GIRAFFES",
-            "token_name": "The Giraffes",
-            "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
+            "token_symbol": "MNERBTC",
+            "token_name": "BTCMINEE",
+            "token_address": "BpXC63A61NpEafaDP2rbqCPfBFPQbaANKDKL6HgFpump"
+          },
+          {
+            "token_symbol": "CRY",
+            "token_name": "Sad Bunny",
+            "token_address": "9CaWKwDJPFTrkJuk5dj1Vyc2TBse9CjQFmomVGkrpump"
+          },
+          {
+            "token_symbol": "MOODENG",
+            "token_name": "Moo Deng",
+            "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
+          },
+          {
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
             "token_symbol": "HACHI",
@@ -153,29 +148,14 @@
             "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "DUCK",
-            "token_name": "Plastic Duck",
-            "token_address": "AW3DCa4kTF5Z7LSs2SpKchUbUYm4tuJhV42JNTgApump"
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "SNAIL",
-            "token_name": "The Immortal Snail",
-            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
-          },
-          {
-            "token_symbol": "FARTCOIN",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
-          },
-          {
-            "token_symbol": "TESTICLE",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+            "token_symbol": "BP",
+            "token_name": "Barking Puppy",
+            "token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump"
           },
           {
             "token_symbol": "MEW",
@@ -183,121 +163,222 @@
             "token_address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5"
           },
           {
-            "token_symbol": "BUTT",
-            "token_name": "Buttcoin",
-            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
+            "token_symbol": "GIRAFFES",
+            "token_name": "The Giraffes",
+            "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
           },
           {
-            "token_symbol": "PREGUNTALE",
-            "token_name": "Preguntale",
-            "token_address": "57KoEZXm2mJwFqbB7fvcgZmmjc9mivFmKhXA45H3pump"
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+          },
+          {
+            "token_symbol": "HOODRAT",
+            "token_name": "hoodrat",
+            "token_address": "58ExX8TFqiDqUpr1ZGiAhhiUsKfT14gwTFykLoVCpump"
+          },
+          {
+            "token_symbol": "JESTER",
+            "token_name": "JESTERMAXXING",
+            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
           }
         ],
-        "leader_hint_token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "GIRAFFES has strong cultural symbolism and a viral origin story. Other tokens like HACHI and DUCK also show strong meme traction.",
+        "leader_hint_token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong cultural resonance from real-life viral animals and iconic meme animals, with multiple tokens showing clear meme-based naming and community engagement.",
         "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 179723215.84
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 567949703.21
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Character Revival",
-        "description": "Tokens reviving internet meme characters or cultural figures from pop culture, often with established meme histories. These tokens leverage nostalgia and existing meme traction.",
+        "meta_name": "Meme-Driven Utility Tokens",
+        "description": "Tokens that blend meme culture with utility, often leveraging viral internet trends or cultural references for both community and functional purposes.",
         "defining_signals": [
-          "Reference to well-known meme characters or pop culture figures with documented meme history",
-          "Strong cultural resonance from prior meme usage (e.g., TikTok, Reddit, 4chan)",
-          "Community-driven narratives with existing fanbases"
+          "Tokens with clear meme origins but also utility (e.g., Clash, IdleMine)",
+          "Tokens leveraging meme culture for community-driven utility (e.g., Collector Crypt, PsyopAnime)",
+          "Tokens with meme-based narratives and real-world applications (e.g., OpenClaw, Seedance 2.0)"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CRAIG",
-            "token_name": "Craig Tucker",
-            "token_address": "5qdq1seaN46EMr4qUQkTcjnwy4d11nEtcNtWj45Apump"
+            "token_symbol": "CLASH",
+            "token_name": "GeorgePlaysClashRoyale",
+            "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump"
           },
+          {
+            "token_symbol": "IDLE",
+            "token_name": "IdleMine",
+            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
+          },
+          {
+            "token_symbol": "CARDS",
+            "token_name": "Collector Crypt",
+            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+          },
+          {
+            "token_symbol": "SEEDANCE",
+            "token_name": "Seedance 2.0",
+            "token_address": "vg22WXeS483q1vsNgPwuE4iWdVbhVEw3MqSXTJNpump"
+          },
+          {
+            "token_symbol": "OPENCLAW",
+            "token_name": "OpenClaw",
+            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
+          },
+          {
+            "token_symbol": "PSYOPANIME",
+            "token_name": "PsyopAnime",
+            "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump"
+          },
+          {
+            "token_symbol": "BULK",
+            "token_name": "bulk",
+            "token_address": "F4TJfiMVi7zFGRJj4FVC1Zuj7fdCo6skKa4SnAU4pump"
+          },
+          {
+            "token_symbol": "ME",
+            "token_name": "The Black Sheep is NOT",
+            "token_address": "9JvYwGHnPj1DFwqWwo4Uut9hjBsJSFPAPTowuSmepump"
+          },
+          {
+            "token_symbol": "USELESS",
+            "token_name": "USELESS COIN",
+            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
+          },
+          {
+            "token_symbol": "CRUST",
+            "token_name": "Crustafarianism",
+            "token_address": "HkBWJJiaUW5Kod4HpHWZiGD9PQVipmMiPDgiRPcNpump"
+          },
+          {
+            "token_symbol": "BULK",
+            "token_name": "bulk",
+            "token_address": "F4TJfiMVi7zFGRJj4FVC1Zuj7fdCo6skKa4SnAU4pump"
+          }
+        ],
+        "leader_hint_token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong blend of meme culture and utility, with tokens showing clear community and functional purpose.",
+        "leader_token": {
+          "token_symbol": "Clash",
+          "token_name": "GeorgePlaysClashRoyale",
+          "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump",
+          "usd_market_cap": 42507681.14
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Absurd / Niche Humor Tokens",
+        "description": "Tokens built around absurd, niche, or hyper-specific humor, often with no clear cultural origin outside of crypto.",
+        "defining_signals": [
+          "Tokens referencing hyper-specific or absurd phrases (e.g., 'WordSlop', 'GoyMogged')",
+          "Tokens with no clear non-crypto cultural origin but strong meme potential",
+          "Tokens using absurd or niche humor (e.g., 'Fondle Every Boobs', 'Flying Ketamine Horse')"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "WORDSLOP",
+            "token_name": "wordslop",
+            "token_address": "9iUoUXwvbhFruwsbW9yAtY2edwJ5uYSgBq6q1VyVpump"
+          },
+          {
+            "token_symbol": "GoyMogged",
+            "token_name": "GoyMogged",
+            "token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump"
+          },
+          {
+            "token_symbol": "FEB14",
+            "token_name": "Fondle Every Boobs",
+            "token_address": "E4kM3zXBTWHTtAjyPQJoXet7VYiKNBGYqtUSa4oSpump"
+          },
+          {
+            "token_symbol": "FKH",
+            "token_name": "Flying Ketamine Horse",
+            "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
+          },
+          {
+            "token_symbol": "TESTICLE",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "Goyim",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+          },
+          {
+            "token_symbol": "4o",
+            "token_name": "#keep4o",
+            "token_address": "DbPuddy9DLFPabrHCS33sHgdtL61Fh2165D9or7Dpump"
+          },
+          {
+            "token_symbol": "BUSHES",
+            "token_name": "bush campers",
+            "token_address": "5oVa1UTbRAyhN8Qe3EXbVNsxNJw4kV5KkFmDRgzdpump"
+          },
+          {
+            "token_symbol": "HIPOTATOMUS",
+            "token_name": "hipotatomus",
+            "token_address": "29bL1Q9TFrzsC9anSxEUpavg6GAKcwEVfQDccnZkhipo"
+          },
+          {
+            "token_symbol": "FEB14",
+            "token_name": "Fondle Every Boobs",
+            "token_address": "E4kM3zXBTWHTtAjyPQJoXet7VYiKNBGYqtUSa4oSpump"
+          },
+          {
+            "token_symbol": "GoyMogged",
+            "token_name": "GoyMogged",
+            "token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump"
+          },
+          {
+            "token_symbol": "TESTICLE",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          }
+        ],
+        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong niche humor appeal, but limited cultural reach outside of crypto. Tokens rely on shock value and absurdity.",
+        "leader_token": {
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 6008300.34
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Internet Persona / Figure Tokens",
+        "description": "Tokens inspired by internet personalities, fictional characters, or public figures, often leveraging their existing meme or cultural presence.",
+        "defining_signals": [
+          "Tokens referencing real or fictional characters (e.g., Ralph Wiggum, Stephen A. Smith, Will Smith)",
+          "Tokens using public figures for humor or satire (e.g., Donald Trump, Bad Bunny)",
+          "Tokens tied to internet personas or fictional agents (e.g., MJ Rathbun, Clippy)"
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "RALPH",
             "token_name": "Ralph Wiggum",
             "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "SAS",
+            "token_name": "Stephen A. Smith",
+            "token_address": "oYvNBpJAg279XZzb8JFZBx7NyGU9Nxqi3Q9piXGpump"
           },
           {
-            "token_symbol": "CLIPPY",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
-          },
-          {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "BFS",
-            "token_name": "BFS",
-            "token_address": "2k8yZaJjf61unHriuqdmvbxe7CUhEYML5kVJDbcotKjU"
-          }
-        ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong historical meme traction for Wojak, with global adoption and a large existing fanbase. High market cap and consistent cultural references.",
-        "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 134683858.48
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Niche Internet Slang",
-        "description": "Tokens leveraging niche internet slang or hyper-specific meme phrases that have gained traction in subcultures or online communities.",
-        "defining_signals": [
-          "Use of niche slang or hyper-specific meme phrases",
-          "Origin in subcultures or online communities (e.g., Discord, Reddit)",
-          "Strong community-driven adoption"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "GAYM",
-            "token_name": "GoyMogged",
-            "token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump"
-          },
-          {
-            "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
-          },
-          {
-            "token_symbol": "CIA",
-            "token_name": "John Kiriakou",
-            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
+            "token_symbol": "TRUMPO",
+            "token_name": "PRESIDENTE DONALDO TRUMPO",
+            "token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump"
           },
           {
             "token_symbol": "SPAGHETTI",
@@ -305,71 +386,94 @@
             "token_address": "DPQgF4hw8Lup6eKaCDvMxkq8CdXpNTacABKNUkB4pump"
           },
           {
-            "token_symbol": "4O",
-            "token_name": "#keep4o",
-            "token_address": "DbPuddy9DLFPabrHCS33sHgdtL61Fh2165D9or7Dpump"
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
           },
           {
-            "token_symbol": "CRAIG",
-            "token_name": "Craig Tucker",
-            "token_address": "5qdq1seaN46EMr4qUQkTcjnwy4d11nEtcNtWj45Apump"
+            "token_symbol": "MNERBTC",
+            "token_name": "BTCMINEE",
+            "token_address": "BpXC63A61NpEafaDP2rbqCPfBFPQbaANKDKL6HgFpump"
           },
           {
-            "token_symbol": "CRAIG",
-            "token_name": "Craig Tucker",
-            "token_address": "5qdq1seaN46EMr4qUQkTcjnwy4d11nEtcNtWj45Apump"
+            "token_symbol": "RATHBUN",
+            "token_name": "MJ Rathbun",
+            "token_address": "Bq9D4BbhVR4kL1qSdsYpQ5JM59q2LzUYzv7zFA1epump"
           },
           {
-            "token_symbol": "CRAIG",
-            "token_name": "Craig Tucker",
-            "token_address": "5qdq1seaN46EMr4qUQkTcjnwy4d11nEtcNtWj45Apump"
+            "token_symbol": "CLIPPY",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "CRAIG",
-            "token_name": "Craig Tucker",
-            "token_address": "5qdq1seaN46EMr4qUQkTcjnwy4d11nEtcNtWj45Apump"
+            "token_symbol": "CRY",
+            "token_name": "Sad Bunny",
+            "token_address": "9CaWKwDJPFTrkJuk5dj1Vyc2TBse9CjQFmomVGkrpump"
           },
           {
-            "token_symbol": "CRAIG",
-            "token_name": "Craig Tucker",
-            "token_address": "5qdq1seaN46EMr4qUQkTcjnwy4d11nEtcNtWj45Apump"
+            "token_symbol": "SPAGHETTI",
+            "token_name": "Will Smith eating spaghetti",
+            "token_address": "DPQgF4hw8Lup6eKaCDvMxkq8CdXpNTacABKNUkB4pump"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "SAS",
+            "token_name": "Stephen A. Smith",
+            "token_address": "oYvNBpJAg279XZzb8JFZBx7NyGU9Nxqi3Q9piXGpump"
           }
         ],
+        "leader_hint_token_address": "DPQgF4hw8Lup6eKaCDvMxkq8CdXpNTacABKNUkB4pump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong cultural presence of internet personalities and fictional characters, with tokens leveraging their meme status and community engagement.",
         "leader_token": {
-          "token_symbol": "CRAIG",
-          "token_name": "Craig Tucker",
-          "token_address": "5qdq1seaN46EMr4qUQkTcjnwy4d11nEtcNtWj45Apump",
-          "usd_market_cap": 455786.11
+          "token_symbol": "TRUMPO",
+          "token_name": "PRESIDENTE DONALDO TRUMPO",
+          "token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump",
+          "usd_market_cap": 2025557.61
         },
         "leader_missing_reason": null
       }
     ],
+    "meta_rotation_note": "The 'Viral Animal Meme Tokens' and 'Internet Persona / Figure Tokens' are emerging as dominant themes, driven by strong cultural resonance and community engagement. 'Absurd / Niche Humor Tokens' are fading due to limited cultural reach and reliance on shock value. 'Meme-Driven Utility Tokens' remain stable, showing a balance between meme appeal and functional use cases.",
     "meta_leaders": [
       {
-        "meta_name": "Animal Symbolism",
+        "meta_name": "Viral Animal Meme Tokens",
         "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 179723215.84
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 567949703.21
         }
       },
       {
-        "meta_name": "Meme Character Revival",
+        "meta_name": "Meme-Driven Utility Tokens",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 134683858.48
+          "token_symbol": "Clash",
+          "token_name": "GeorgePlaysClashRoyale",
+          "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump",
+          "usd_market_cap": 42507681.14
         }
       },
       {
-        "meta_name": "Niche Internet Slang",
+        "meta_name": "Absurd / Niche Humor Tokens",
         "leader_token": {
-          "token_symbol": "CRAIG",
-          "token_name": "Craig Tucker",
-          "token_address": "5qdq1seaN46EMr4qUQkTcjnwy4d11nEtcNtWj45Apump",
-          "usd_market_cap": 455786.11
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 6008300.34
+        }
+      },
+      {
+        "meta_name": "Internet Persona / Figure Tokens",
+        "leader_token": {
+          "token_symbol": "TRUMPO",
+          "token_name": "PRESIDENTE DONALDO TRUMPO",
+          "token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump",
+          "usd_market_cap": 2025557.61
         }
       }
     ]
