@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-14T17:29:00.508822Z",
+  "generated_at_utc": "2026-02-14T18:29:37.227664Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 90,
+  "token_context_count": 94,
   "prompt_truncated": false,
   "warnings": [
     "Detected 6 PVP group(s); excluding 6 token(s) from META prompt."
@@ -134,23 +134,69 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Coin Revival",
-        "description": "A resurgence of meme-based tokens leveraging well-known internet memes, characters, or cultural references to drive community engagement and virality.",
+        "meta_name": "Nostalgia and Pop Culture",
+        "description": "Tokens that draw from historical pop culture, literature, or media to create a sense of familiarity and emotional connection. These tokens often reference characters, stories, or cultural touchstones from the past.",
         "defining_signals": [
-          "Tokens referencing iconic memes like Bonk, Wojak, and Pepe.",
-          "Use of culturally embedded characters (e.g., Ralph Wiggum, Clippy, Hachiko).",
-          "Meme-based narratives with no direct utility but strong community appeal."
+          "Tokens referencing pop culture characters (e.g., Ralph Wiggum, Hachiko).",
+          "Leverage of historical or literary references (e.g., Pippin, Nietzschean Penguin).",
+          "Community-driven narratives tied to well-known figures or stories."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          }
+        ],
+        "leader_hint_token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong cultural resonance and community engagement with nostalgic and pop culture references.",
+        "leader_token": {
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 616760013.89
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Coin Revival",
+        "description": "A recurring theme of tokens leveraging established internet memes or cultural references to drive community engagement and virality. These tokens often lack utility but thrive on humor, nostalgia, or absurdity.",
+        "defining_signals": [
+          "Tokens referencing well-known memes (e.g., Wojak, Clippy, Pepe).",
+          "Absurd or ironic names tied to internet slang or viral phrases.",
+          "Lack of traditional utility or project documentation."
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
             "token_symbol": "Pepe",
@@ -158,24 +204,19 @@
             "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "CLIPPY",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "Fartcoin",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
         "confidence_0_100": 92,
-        "confidence_rationale": "Bonk has the highest market cap and is a well-established meme coin with strong cultural roots in the Team Fortress 2 and Cheems memes.",
+        "confidence_rationale": "Strong presence of meme-based tokens with clear cultural references and community-driven narratives.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -185,28 +226,23 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Utility Tokens",
-        "description": "Tokens leveraging AI integration for utility, governance, or community engagement, often tied to AI agents, NFTs, or decentralized platforms.",
+        "meta_name": "Community-Driven Governance",
+        "description": "Tokens that emphasize decentralized governance, community voting, or participatory decision-making. These tokens often have mechanisms for token holders to influence project direction or policy.",
         "defining_signals": [
-          "Tokens with AI integration in governance, NFTs, or platform mechanics.",
-          "AI-based prediction, debate, or content creation as core features.",
-          "Community-driven AI initiatives or token-based AI agent ecosystems."
+          "Tokens with governance or voting mechanisms.",
+          "Community-driven initiatives or decentralized decision-making.",
+          "Incentives for active participation (e.g., staking, voting)."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
           },
           {
-            "token_symbol": "MOLTCOURT",
-            "token_name": "MoltCourt",
-            "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
-          },
-          {
-            "token_symbol": "SEEDANCE",
-            "token_name": "Seedance 2.0",
-            "token_address": "vg22WXeS483q1vsNgPwuE4iWdVbhVEw3MqSXTJNpump"
+            "token_symbol": "CARDS",
+            "token_name": "Collector Crypt",
+            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
           },
           {
             "token_symbol": "EFM",
@@ -214,19 +250,19 @@
             "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
           },
           {
-            "token_symbol": "MOLTCUPID",
-            "token_name": "MoltCupid",
-            "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwvZZpump"
+            "token_symbol": "MOLTCOURT",
+            "token_name": "MoltCourt",
+            "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
           },
           {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+            "token_symbol": "AGI",
+            "token_name": "Agentripe",
+            "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
           }
         ],
         "leader_hint_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Seeker has the highest market cap among this group and is tied to a broader mobile ecosystem with AI integration.",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Emerging trend in decentralized governance and community participation, with several tokens implementing these features.",
         "leader_token": {
           "token_symbol": "SKR",
           "token_name": "Seeker",
@@ -236,75 +272,60 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Nostalgia-Driven Tokens",
-        "description": "Tokens leveraging nostalgia for pop culture, historical figures, or retro internet culture to attract sentiment-driven investors.",
+        "meta_name": "AI-Driven Utility",
+        "description": "Tokens that integrate AI into their core functionality, either as a utility layer, governance mechanism, or content generation tool. These tokens often focus on AI agent interactions, data processing, or decentralized AI infrastructure.",
         "defining_signals": [
-          "Tokens referencing historical figures, pop culture icons, or retro internet memes.",
-          "Strong narrative around legacy, cultural memory, or historical significance.",
-          "Community-driven sentiment and emotional appeal."
+          "Tokens referencing AI agents, AI-generated content, or AI-driven governance.",
+          "Integration with AI platforms or tools (e.g., Seedance, AI Rig Complex).",
+          "Focus on decentralized AI infrastructure or AI-based marketplaces."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "RATHBUN",
-            "token_name": "MJ Rathbun",
-            "token_address": "Bq9D4BbhVR4kL1qSdsYpQ5JM59q2LzUYzv7zFA1epump"
+            "token_symbol": "Seedance",
+            "token_name": "Seedance 2.0",
+            "token_address": "vg22WXeS483q1vsNgPwuE4iWdVbhVEw3MqSXTJNpump"
           },
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "arc",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+            "token_symbol": "MOLTCOURT",
+            "token_name": "MoltCourt",
+            "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
           },
           {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+            "token_symbol": "AGI",
+            "token_name": "Agentripe",
+            "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
           },
           {
-            "token_symbol": "CIA",
-            "token_name": "John Kiriakou",
-            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+            "token_symbol": "EFM",
+            "token_name": "ECLIPSE",
+            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
           }
         ],
-        "leader_hint_token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "The Comedian token has a strong cultural reference to a viral art piece and is well-known in meme circles.",
+        "leader_hint_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Growing interest in AI integration across multiple tokens, with clear utility and community engagement.",
         "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 92554389.75
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 79876545.64
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Play-to-Earn & Gaming Tokens",
-        "description": "Tokens tied to gaming platforms, prediction markets, or play-to-earn mechanics, often with utility in-game or for staking.",
+        "meta_name": "AI-Powered Gaming",
+        "description": "Tokens that integrate AI into gaming ecosystems, either as part of game mechanics, AI-generated content, or AI-driven player interactions. These tokens often focus on play-to-earn models or AI-enhanced gameplay.",
         "defining_signals": [
-          "Tokens with in-game utility or staking mechanics.",
-          "Integration with gaming platforms or prediction markets.",
-          "Community-driven tournaments or leaderboard systems."
+          "Tokens tied to AI-enhanced gaming platforms or mechanics.",
+          "Play-to-earn models with AI integration.",
+          "AI-generated content or AI-driven player interactions."
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "Clash",
-            "token_name": "GeorgePlaysClashRoyale",
-            "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump"
-          },
-          {
-            "token_symbol": "DASH",
-            "token_name": "dashgame",
-            "token_address": "8rf4KYYJaK5jDd5NaQhFtLsB4Zxa5hynz1jjW1xWpump"
-          },
           {
             "token_symbol": "IDLE",
             "token_name": "IdleMine",
@@ -316,81 +337,44 @@
             "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
           },
           {
-            "token_symbol": "PANDU",
-            "token_name": "Pandu Pandas",
-            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+            "token_symbol": "dash",
+            "token_name": "dashgame",
+            "token_address": "8rf4KYYJaK5jDd5NaQhFtLsB4Zxa5hynz1jjW1xWpump"
           },
           {
-            "token_symbol": "PERPZ",
-            "token_name": "Perpz",
-            "token_address": "BCG4MBb279NJnJh9iFGooKbKzihymv7gVuEUtcdzpump"
+            "token_symbol": "MOLTCOURT",
+            "token_name": "MoltCourt",
+            "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
+          },
+          {
+            "token_symbol": "CRABS",
+            "token_name": "Molt Crabs",
+            "token_address": "HYhnRdn7nridbDUUcRsd3JtmvMCyKrVDew52CWGtpump"
           }
         ],
         "leader_hint_token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-        "confidence_0_100": 80,
-        "confidence_rationale": "IdleMine has the highest market cap and is a well-known play-to-earn token with clear utility in gameplay.",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Growing interest in AI-powered gaming, with several tokens exploring this space.",
         "leader_token": {
-          "token_symbol": "Clash",
-          "token_name": "GeorgePlaysClashRoyale",
-          "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump",
-          "usd_market_cap": 42507681.14
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Anti-Establishment & Satire Tokens",
-        "description": "Tokens with themes of rebellion, anti-establishment sentiment, or satire, often tied to political or social commentary.",
-        "defining_signals": [
-          "Tokens referencing political figures, anti-establishment movements, or satirical themes.",
-          "Strong community-driven narratives with a focus on resistance or mockery of institutions.",
-          "Meme-based tokens with a clear anti-conformity or anti-establishment angle."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "TRUMPO",
-            "token_name": "PRESIDENTE DONALDO TRUMPO",
-            "token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump"
-          },
-          {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
-          },
-          {
-            "token_symbol": "FEB14",
-            "token_name": "Fondle Every Boobs",
-            "token_address": "E4kM3zXBTWHTtAjyPQJoXet7VYiKNBGYqtUSa4oSpump"
-          },
-          {
-            "token_symbol": "TESTICLE",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
-          },
-          {
-            "token_symbol": "ME",
-            "token_name": "The Black Sheep is NOT",
-            "token_address": "9JvYwGHnPj1DFwqWwo4Uut9hjBsJSFPAPTowuSmepump"
-          },
-          {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
-          }
-        ],
-        "leader_hint_token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "TRUMPO has a strong satirical angle and is tied to a well-known political figure, making it a clear leader in this category.",
-        "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 36236483.0
+          "token_symbol": "IDLE",
+          "token_name": "IdleMine",
+          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+          "usd_market_cap": 12602693.28
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The Meme Coin Revival and AI-Driven Utility Tokens are currently the strongest and most active METAs, with growing community engagement and market cap. Nostalgia-Driven Tokens are emerging as a strong contender due to their emotional appeal and cultural resonance. Play-to-Earn and Anti-Establishment Tokens are fading slightly as newer, more utility-focused tokens gain traction.",
+    "meta_rotation_note": "The 'Meme Coin Revival' and 'AI-Driven Utility' METAs are gaining momentum, while 'Nostalgia and Pop Culture' and 'Community-Driven Governance' are showing signs of fading. Newer themes like 'AI-Powered Gaming' are emerging as a result of increased interest in AI integration within gaming ecosystems.",
     "meta_leaders": [
+      {
+        "meta_name": "Nostalgia and Pop Culture",
+        "leader_token": {
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 616760013.89
+        }
+      },
       {
         "meta_name": "Meme Coin Revival",
         "leader_token": {
@@ -401,7 +385,7 @@
         }
       },
       {
-        "meta_name": "AI-Driven Utility Tokens",
+        "meta_name": "Community-Driven Governance",
         "leader_token": {
           "token_symbol": "SKR",
           "token_name": "Seeker",
@@ -410,30 +394,21 @@
         }
       },
       {
-        "meta_name": "Nostalgia-Driven Tokens",
+        "meta_name": "AI-Driven Utility",
         "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 92554389.75
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 79876545.64
         }
       },
       {
-        "meta_name": "Play-to-Earn & Gaming Tokens",
+        "meta_name": "AI-Powered Gaming",
         "leader_token": {
-          "token_symbol": "Clash",
-          "token_name": "GeorgePlaysClashRoyale",
-          "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump",
-          "usd_market_cap": 42507681.14
-        }
-      },
-      {
-        "meta_name": "Anti-Establishment & Satire Tokens",
-        "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 36236483.0
+          "token_symbol": "IDLE",
+          "token_name": "IdleMine",
+          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+          "usd_market_cap": 12602693.28
         }
       }
     ]
