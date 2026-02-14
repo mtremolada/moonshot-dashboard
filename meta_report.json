@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-14T15:27:44.090851Z",
+  "generated_at_utc": "2026-02-14T16:28:26.209430Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 86,
+  "token_context_count": 88,
   "prompt_truncated": false,
   "warnings": [
     "Detected 7 PVP group(s); excluding 8 token(s) from META prompt."
@@ -154,23 +154,69 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Coin Revival",
-        "description": "A resurgence of classic meme tokens with strong cultural roots, such as Bonk, Pepe, and Wojak. These tokens leverage well-established internet memes and characters for community-driven value.",
+        "meta_name": "Community-Driven and Niche Culture",
+        "description": "Tokens that are driven by niche communities or subcultures, often leveraging specific internet subcultures, memes, or inside jokes. These tokens thrive on tight-knit communities and shared cultural references.",
         "defining_signals": [
-          "Strong cultural or meme-based origins outside of crypto",
-          "High community engagement and viral potential",
-          "Leverage of established meme formats or characters"
+          "Tokens referencing niche internet subcultures like '4o' and 'Goyim'.",
+          "Use of inside jokes or subcultural references, such as 'Yaranaika' and 'Pippin'.",
+          "Community-driven narratives and tokenomics."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "4o",
+            "token_name": "#keep4o",
+            "token_address": "DbPuddy9DLFPabrHCS33sHgdtL61Fh2165D9or7Dpump"
+          },
+          {
+            "token_symbol": "Goyim",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+          },
+          {
+            "token_symbol": "Yaranaika",
+            "token_name": "やらないか",
+            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+          },
+          {
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+          },
+          {
+            "token_symbol": "bushes",
+            "token_name": "bush campers",
+            "token_address": "5oVa1UTbRAyhN8Qe3EXbVNsxNJw4kV5KkFmDRgzdpump"
+          },
+          {
+            "token_symbol": "RATHBUN",
+            "token_name": "MJ Rathbun",
+            "token_address": "Bq9D4BbhVR4kL1qSdsYpQ5JM59q2LzUYzv7zFA1epump"
+          }
+        ],
+        "leader_hint_token_address": "DbPuddy9DLFPabrHCS33sHgdtL61Fh2165D9or7Dpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "4o has a strong community-driven narrative and is tied to a well-known AI-related meme, making it a leader in this meta.",
+        "leader_token": {
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 616760013.89
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Coin Revival",
+        "description": "A resurgence of meme-based tokens leveraging established internet culture, historical references, and pop culture figures. These tokens often repurpose well-known memes, characters, or phrases to create community-driven value.",
+        "defining_signals": [
+          "Tokens referencing iconic memes like 'Bonk', 'Wojak', and 'Trollface'.",
+          "Use of pop culture figures like 'Pepe the Frog', 'Minecraft Grandma', and 'Stephen A. Smith'.",
+          "Leveraging historical or literary references such as 'Moby Dick' (White Whale) and 'Hachiko'."
         ],
         "supporting_tokens": [
           {
             "token_symbol": "Bonk",
             "token_name": "Bonk",
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
             "token_symbol": "WOJAK",
@@ -183,14 +229,24 @@
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "WhiteWhale",
+            "token_name": "The White Whale",
+            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           }
         ],
         "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
         "confidence_0_100": 92,
-        "confidence_rationale": "Bonk has a strong cultural foundation and high market cap, indicating leadership in the meme coin revival.",
+        "confidence_rationale": "Bonk has the highest market cap among meme tokens and is deeply rooted in a well-established meme with broad cultural recognition.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -200,64 +256,69 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Future Tech",
-        "description": "Tokens focused on AI integration and future technology, such as Seedance 2.0 and AI Rig Complex. These tokens often emphasize innovation and utility in emerging tech fields.",
+        "meta_name": "Anti-Establishment and Satire",
+        "description": "Tokens that use satire, anti-establishment themes, or political commentary to drive community engagement. These tokens often reference real-world events, figures, or ideologies in a humorous or critical manner.",
         "defining_signals": [
-          "Integration of AI or future technology",
-          "Focus on innovation and utility",
-          "Community-driven development and experimentation"
+          "Tokens referencing political figures or events like 'TRUMPO' and 'John Kiriakou'.",
+          "Satirical or anti-establishment themes in token names and descriptions.",
+          "Use of internet slang or niche humor, such as 'GoyMogged' and 'Fartcoin'."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Seedance",
-            "token_name": "Seedance 2.0",
-            "token_address": "vg22WXeS483q1vsNgPwuE4iWdVbhVEw3MqSXTJNpump"
+            "token_symbol": "TRUMPO",
+            "token_name": "PRESIDENTE DONALDO TRUMPO",
+            "token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump"
           },
           {
-            "token_symbol": "arc",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+            "token_symbol": "GoyMogged",
+            "token_name": "GoyMogged",
+            "token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump"
           },
           {
-            "token_symbol": "BLOWFISH",
-            "token_name": "Blowfish",
-            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
+            "token_symbol": "Fartcoin",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
           },
           {
-            "token_symbol": "EFM",
-            "token_name": "ECLIPSE",
-            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
+            "token_symbol": "FEB14",
+            "token_name": "Fondle Every Boobs",
+            "token_address": "E4kM3zXBTWHTtAjyPQJoXet7VYiKNBGYqtUSa4oSpump"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           }
         ],
-        "leader_hint_token_address": "vg22WXeS483q1vsNgPwuE4iWdVbhVEw3MqSXTJNpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Seedance 2.0 has a clear focus on AI and has generated significant interest despite legal challenges.",
+        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Fartcoin has a strong satirical angle and a clear anti-establishment theme, making it a leader in this meta.",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 79876545.64
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 193676040.6
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Utility and Gaming",
-        "description": "Tokens with clear utility in gaming and utility applications, such as Clash and IdleMine. These tokens often provide in-game benefits or real-world utility.",
+        "meta_name": "Gaming and Prediction Markets",
+        "description": "Tokens that are closely tied to gaming platforms or prediction markets, often enabling in-game purchases, staking, or betting. These tokens leverage the growing popularity of blockchain-based gaming and sports prediction.",
         "defining_signals": [
-          "Clear utility in gaming or real-world applications",
-          "Community-driven development and engagement",
-          "Integration with existing platforms or ecosystems"
+          "Tokens tied to gaming platforms like 'dashgame' and 'IdleMine'.",
+          "Prediction market tokens such as 'Polyshot' and 'Clash'.",
+          "Staking and tournament participation features."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Clash",
-            "token_name": "GeorgePlaysClashRoyale",
-            "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump"
+            "token_symbol": "dash",
+            "token_name": "dashgame",
+            "token_address": "8rf4KYYJaK5jDd5NaQhFtLsB4Zxa5hynz1jjW1xWpump"
           },
           {
             "token_symbol": "IDLE",
@@ -265,24 +326,29 @@
             "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
           },
           {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+            "token_symbol": "SHOT",
+            "token_name": "polyshot",
+            "token_address": "DfG1tCihhgE6CYknSGUr7EwhWSmXCk5xJ983kh2npump"
           },
           {
-            "token_symbol": "OPENCLAW",
-            "token_name": "OpenClaw",
-            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
+            "token_symbol": "Clash",
+            "token_name": "GeorgePlaysClashRoyale",
+            "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump"
           },
           {
             "token_symbol": "PERPZ",
             "token_name": "Perpz",
             "token_address": "BCG4MBb279NJnJh9iFGooKbKzihymv7gVuEUtcdzpump"
+          },
+          {
+            "token_symbol": "BLOWFISH",
+            "token_name": "Blowfish",
+            "token_address": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC"
           }
         ],
         "leader_hint_token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump",
         "confidence_0_100": 80,
-        "confidence_rationale": "Clash has a clear utility in gaming and has been around for a significant period, indicating strong community support.",
+        "confidence_rationale": "Clash has a clear gaming utility and is tied to a well-known game, making it a strong contender in this meta.",
         "leader_token": {
           "token_symbol": "Clash",
           "token_name": "GeorgePlaysClashRoyale",
@@ -292,54 +358,68 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Niche and Nostalgia",
-        "description": "Tokens that leverage niche internet culture or nostalgia, such as Kabuto and Yaranaika. These tokens often have a strong cultural or historical basis.",
+        "meta_name": "AI and NFT Integration",
+        "description": "Tokens that integrate AI and NFTs into their core utility, often creating platforms for AI-generated content, NFT-based ownership, or AI-driven interactions. These tokens leverage the growing intersection of AI and blockchain technology.",
         "defining_signals": [
-          "Leverage of niche internet culture or nostalgia",
-          "Strong cultural or historical basis",
-          "Community-driven development and engagement"
+          "Tokens tied to AI-generated content or AI companions like 'Mia' and 'Seedance 2.0'.",
+          "NFT-based ownership or utility, such as 'Collector Crypt' and 'PsyopAnime'.",
+          "AI-driven interactions or governance, as seen in 'MoltCourt' and 'MoltCupid'."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+            "token_symbol": "Mia",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "Yaranaika",
-            "token_name": "やらないか",
-            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+            "token_symbol": "SEEDANCE",
+            "token_name": "Seedance 2.0",
+            "token_address": "vg22WXeS483q1vsNgPwuE4iWdVbhVEw3MqSXTJNpump"
           },
           {
-            "token_symbol": "GIRAFFES",
-            "token_name": "The Giraffes",
-            "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
+            "token_symbol": "PANDU",
+            "token_name": "Pandu Pandas",
+            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
           },
           {
-            "token_symbol": "SNAIL",
-            "token_name": "The Immortal Snail",
-            "token_address": "EEFCwoo9AkhBrdxho3wzETPhtQ3qsWUcyaThDxqkpump"
+            "token_symbol": "MOLTCOURT",
+            "token_name": "MoltCourt",
+            "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
           },
           {
-            "token_symbol": "fish",
-            "token_name": "rainbowfish",
-            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
+            "token_symbol": "MOLTCUPID",
+            "token_name": "MoltCupid",
+            "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwvZZpump"
+          },
+          {
+            "token_symbol": "CARDS",
+            "token_name": "Collector Crypt",
+            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
           }
         ],
-        "leader_hint_token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Kabuto has a strong cultural and historical basis, making it a leader in the niche and nostalgia meta.",
+        "leader_hint_token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Pandu Pandas has a clear NFT-based utility and a defined community-driven approach, making it a strong leader in this meta.",
         "leader_token": {
-          "token_symbol": "KABUTO",
-          "token_name": "Kabuto",
-          "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
-          "usd_market_cap": 1727115.16
+          "token_symbol": "CARDS",
+          "token_name": "Collector Crypt",
+          "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+          "usd_market_cap": 11105282.0
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The Meme Coin Revival is gaining strength, while the AI and Future Tech meta is showing signs of fatigue. The Utility and Gaming meta is stable, and the Niche and Nostalgia meta is emerging with new tokens leveraging cultural and historical references.",
+    "meta_rotation_note": "The Meme Coin Revival and AI/NFT Integration METAs are gaining strength as they leverage established cultural references and emerging tech. The Gaming and Prediction Markets meta is stable but faces competition from newer, more community-driven tokens. The Anti-Establishment and Satire meta is fading slightly as the novelty of political and satirical tokens wears off. The Community-Driven and Niche Culture meta is emerging as a strong contender, driven by tight-knit communities and unique cultural references.",
     "meta_leaders": [
+      {
+        "meta_name": "Community-Driven and Niche Culture",
+        "leader_token": {
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 616760013.89
+        }
+      },
       {
         "meta_name": "Meme Coin Revival",
         "leader_token": {
@@ -350,16 +430,16 @@
         }
       },
       {
-        "meta_name": "AI and Future Tech",
+        "meta_name": "Anti-Establishment and Satire",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 79876545.64
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 193676040.6
         }
       },
       {
-        "meta_name": "Utility and Gaming",
+        "meta_name": "Gaming and Prediction Markets",
         "leader_token": {
           "token_symbol": "Clash",
           "token_name": "GeorgePlaysClashRoyale",
@@ -368,12 +448,12 @@
         }
       },
       {
-        "meta_name": "Niche and Nostalgia",
+        "meta_name": "AI and NFT Integration",
         "leader_token": {
-          "token_symbol": "KABUTO",
-          "token_name": "Kabuto",
-          "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
-          "usd_market_cap": 1727115.16
+          "token_symbol": "CARDS",
+          "token_name": "Collector Crypt",
+          "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+          "usd_market_cap": 11105282.0
         }
       }
     ]
