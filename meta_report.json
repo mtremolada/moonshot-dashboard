@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-14T11:25:16.131561Z",
+  "generated_at_utc": "2026-02-14T12:25:44.749200Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 86,
+  "token_context_count": 84,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 5 PVP group(s); excluding 7 token(s) from META prompt."
+    "Detected 7 PVP group(s); excluding 9 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 7,
+  "pvp_excluded_token_count": 9,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -53,6 +53,26 @@
           "token_address": "AhU5zEZLieEpP3bhvsjmWqWJScX7pDsFs6XPc9FGbonk",
           "usd_market_cap": 339241.06,
           "processed_at": "2026-02-13T22:18:11.386383Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "trump2",
+      "tokens": [
+        {
+          "token_symbol": "TRUMP2",
+          "token_name": "trump2",
+          "token_address": "HxYvKPgKLCHT7ZLVZrjJNTW91wVSQFmwyjnm2Psdpump",
+          "usd_market_cap": 1647844.9,
+          "processed_at": "2026-02-14T04:21:26.475213Z"
+        },
+        {
+          "token_symbol": "TRUMP2",
+          "token_name": "trump2",
+          "token_address": "HcMJPKYQGrk7umsg6Ea5XfxFprqPSPa9u1RA1xeUpump",
+          "usd_market_cap": 1737312.86,
+          "processed_at": "2026-02-14T11:36:56.540306Z"
         }
       ]
     },
@@ -122,6 +142,26 @@
           "processed_at": "2026-02-13T22:18:11.386383Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "trump2",
+      "tokens": [
+        {
+          "token_symbol": "TRUMP2",
+          "token_name": "trump2",
+          "token_address": "HxYvKPgKLCHT7ZLVZrjJNTW91wVSQFmwyjnm2Psdpump",
+          "usd_market_cap": 1647844.9,
+          "processed_at": "2026-02-14T04:21:26.475213Z"
+        },
+        {
+          "token_symbol": "TRUMP2",
+          "token_name": "trump2",
+          "token_address": "HcMJPKYQGrk7umsg6Ea5XfxFprqPSPa9u1RA1xeUpump",
+          "usd_market_cap": 1737312.86,
+          "processed_at": "2026-02-14T11:36:56.540306Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
@@ -129,11 +169,11 @@
     "top_metas": [
       {
         "meta_name": "Meme Coin Revival",
-        "description": "A resurgence of meme coins leveraging established internet memes, such as Pepe the Frog, Clippy, and TROLL, which have strong cultural roots and are being repurposed for crypto narratives.",
+        "description": "A resurgence of meme-based tokens leveraging established internet memes and pop culture references, often with a humorous or ironic twist. These tokens are typically community-driven and capitalize on viral content.",
         "defining_signals": [
-          "Tokens based on well-known memes with pre-existing cultural significance",
-          "High community engagement and viral potential",
-          "Strong visual or narrative identity tied to the meme"
+          "Tokens referencing well-known memes (e.g., Pepe, Clippy, Wojak)",
+          "Community-driven tokens with no official documentation or team",
+          "Leveraging nostalgia or humor from internet culture"
         ],
         "supporting_tokens": [
           {
@@ -147,12 +187,7 @@
             "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "Wojak",
+            "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
@@ -160,11 +195,16 @@
             "token_symbol": "Bonk",
             "token_name": "Bonk",
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           }
         ],
         "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Pepe has a strong cultural foundation and high community engagement, making it a clear leader in the Meme Coin Revival meta.",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Pepe is a well-established meme with a strong community and historical significance in internet culture, making it a likely leader in this meta.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -174,58 +214,58 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Utility and Functionality Tokens",
-        "description": "Tokens that offer real-world utility or functionality, such as payment solutions, gaming platforms, and AI integrations, which are gaining traction due to their practical applications.",
+        "meta_name": "Animal-Themed Tokens",
+        "description": "Tokens inspired by animals, often leveraging their symbolic meanings or cultural associations. These tokens frequently draw from folklore, pop culture, or internet memes related to the animals.",
         "defining_signals": [
-          "Tokens with clear utility or functionality",
-          "Integration with real-world applications or services",
-          "High potential for adoption and usage"
+          "Tokens referencing animals (e.g., Giraffes, Hachiko, Clippy)",
+          "Cultural or symbolic associations with the animal",
+          "Community-driven with no official documentation"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CTM",
-            "token_name": "c8ntinuum",
-            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
+            "token_symbol": "GIRAFFES",
+            "token_name": "The Giraffes",
+            "token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump"
           },
           {
-            "token_symbol": "VICPAY",
-            "token_name": "VICTORUM",
-            "token_address": "HTJKotaFtAmc66UuWHqxnr6Z3tdMWWEn5mP6X69SLKYB"
+            "token_symbol": "$HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "Clash",
-            "token_name": "GeorgePlaysClashRoyale",
-            "token_address": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump"
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
-            "token_symbol": "obscura",
-            "token_name": "OBSCURA",
-            "token_address": "ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump"
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "BULK",
-            "token_name": "bulk",
-            "token_address": "F4TJfiMVi7zFGRJj4FVC1Zuj7fdCo6skKa4SnAU4pump"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           }
         ],
-        "leader_hint_token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-        "confidence_0_100": 88,
-        "confidence_rationale": "c8ntinuum has a strong utility proposition and high potential for adoption, making it a leading token in the Utility and Functionality Tokens meta.",
+        "leader_hint_token_address": "GbqbsRyBHVPHEv7xLEsikXmdpPPiApLTJesDBbL5pump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "The GIRAFFES token has a strong cultural and symbolic association with resilience and stability, making it a likely leader in this meta.",
         "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 372555572.96
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 10899181.23
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "Celebrity and Pop Culture References",
-        "description": "Tokens inspired by celebrities and pop culture figures, such as Will Smith, Bad Bunny, and Stephen A. Smith, leveraging their fame and existing fanbases to drive interest and adoption.",
+        "description": "Tokens inspired by celebrities, pop culture figures, or fictional characters. These tokens often capitalize on the popularity and cultural impact of the referenced individuals or characters.",
         "defining_signals": [
-          "Tokens referencing well-known celebrities or pop culture icons",
-          "Strong narrative or meme potential tied to the celebrity",
-          "High social media engagement and fanbase support"
+          "Tokens referencing celebrities or fictional characters (e.g., Will Smith, Bad Bunny, Stephen A. Smith)",
+          "Leveraging viral moments or cultural impact",
+          "Community-driven with no official documentation"
         ],
         "supporting_tokens": [
           {
@@ -234,85 +274,39 @@
             "token_address": "DPQgF4hw8Lup6eKaCDvMxkq8CdXpNTacABKNUkB4pump"
           },
           {
+            "token_symbol": "bushes",
+            "token_name": "bush campers",
+            "token_address": "5oVa1UTbRAyhN8Qe3EXbVNsxNJw4kV5KkFmDRgzdpump"
+          },
+          {
             "token_symbol": "CRY",
             "token_name": "Sad Bunny",
             "token_address": "9CaWKwDJPFTrkJuk5dj1Vyc2TBse9CjQFmomVGkrpump"
           },
           {
-            "token_symbol": "SAS",
-            "token_name": "Stephen A. Smith",
-            "token_address": "oYvNBpJAg279XZzb8JFZBx7NyGU9Nxqi3Q9piXGpump"
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "Moo Deng",
-            "token_name": "Moo Deng",
-            "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+            "token_symbol": "MNERBTC",
+            "token_name": "BTCMINEE",
+            "token_address": "BpXC63A61NpEafaDP2rbqCPfBFPQbaANKDKL6HgFpump"
           }
         ],
-        "leader_hint_token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Moo Deng has a strong viral narrative and high social media engagement, making it a leading token in the Celebrity and Pop Culture References meta.",
+        "leader_hint_token_address": "DPQgF4hw8Lup6eKaCDvMxkq8CdXpNTacABKNUkB4pump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The Will Smith eating spaghetti token has a strong viral moment and cultural impact, making it a likely leader in this meta.",
         "leader_token": {
-          "token_symbol": "MOODENG",
-          "token_name": "Moo Deng",
-          "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
-          "usd_market_cap": 51500443.02
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Niche and Subculture References",
-        "description": "Tokens inspired by niche internet subcultures and subreddits, such as 'GoyMogged' and 'Goyim', which tap into specific communities and their inside jokes or memes.",
-        "defining_signals": [
-          "Tokens referencing niche internet subcultures or subreddits",
-          "Strong community-driven narratives",
-          "High engagement within specific online communities"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "GoyMogged",
-            "token_name": "GoyMogged",
-            "token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump"
-          },
-          {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
-          },
-          {
-            "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
-          },
-          {
-            "token_symbol": "hoodrat",
-            "token_name": "hoodrat",
-            "token_address": "58ExX8TFqiDqUpr1ZGiAhhiUsKfT14gwTFykLoVCpump"
-          },
-          {
-            "token_symbol": "4o",
-            "token_name": "#keep4o",
-            "token_address": "DbPuddy9DLFPabrHCS33sHgdtL61Fh2165D9or7Dpump"
-          }
-        ],
-        "leader_hint_token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "GoyMogged has a strong niche community and high engagement, making it a leading token in the Niche and Subculture References meta.",
-        "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 1873538.48
+          "token_symbol": "bushes",
+          "token_name": "bush campers",
+          "token_address": "5oVa1UTbRAyhN8Qe3EXbVNsxNJw4kV5KkFmDRgzdpump",
+          "usd_market_cap": 3363455.23
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The Meme Coin Revival and Utility and Functionality Tokens are currently emerging as dominant METAs, driven by strong community engagement and practical applications. The Celebrity and Pop Culture References meta is also gaining traction due to the viral nature of the tokens. The Niche and Subculture References meta is fading slightly as broader, more accessible themes gain more traction.",
+    "meta_rotation_note": "The Meme Coin Revival meta is gaining strength as more tokens leverage established internet memes. The Animal-Themed Tokens meta is also emerging, driven by the symbolic and cultural associations of animals. The Celebrity and Pop Culture References meta is showing signs of fading as newer tokens focus more on community-driven and meme-based themes.",
     "meta_leaders": [
       {
         "meta_name": "Meme Coin Revival",
@@ -324,30 +318,21 @@
         }
       },
       {
-        "meta_name": "Utility and Functionality Tokens",
+        "meta_name": "Animal-Themed Tokens",
         "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 372555572.96
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 10899181.23
         }
       },
       {
         "meta_name": "Celebrity and Pop Culture References",
         "leader_token": {
-          "token_symbol": "MOODENG",
-          "token_name": "Moo Deng",
-          "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
-          "usd_market_cap": 51500443.02
-        }
-      },
-      {
-        "meta_name": "Niche and Subculture References",
-        "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 1873538.48
+          "token_symbol": "bushes",
+          "token_name": "bush campers",
+          "token_address": "5oVa1UTbRAyhN8Qe3EXbVNsxNJw4kV5KkFmDRgzdpump",
+          "usd_market_cap": 3363455.23
         }
       }
     ]
