@@ -1,329 +1,7 @@
 {
-  "last_updated": "2026-02-14T19:32:11.958863Z",
+  "last_updated": "2026-02-14T20:19:56.168745Z",
   "retention_hours": 24,
   "tokens": [
-    {
-      "processed_at": "2026-02-13T19:41:51.812765Z",
-      "token_address": "ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump",
-      "token_symbol": "obscura",
-      "token_name": "OBSCURA",
-      "first_time_seen": false,
-      "times_seen_before": 1,
-      "full_token_details": {
-        "aggregate_score": 2.8,
-        "groq_web_research": {
-          "summary_all_context": "Obscura (obscura) is a Solana-first privacy-focused messaging app using client-side encryption and Phantom wallets for identity. Messages are encrypted on-device, with backend relaying only ciphertext. The token was launched 1 day ago with no website or socials.",
-          "answer": "**1. What it claims to be**  \n- A Solana\u2011first private messenger called **Obscura** (symbol\u202fobscura).  \n- Messages are encrypted on the user\u2019s device; only the intended recipient can decrypt them.  \n- Wallets (e.g., Phantom) act as the user\u2019s identity.  \n- The backend merely relays ciphertext; it never sees plaintext.\n\n**2. Likely utility / features** *(inferred where not explicitly stated)*  \n- **On\u2011device (client\u2011side) end\u2011to\u2011end encryption** \u2013 explicitly described.  \n- **Wallet\u2011based identity & authentication** \u2013 Phantom wallet integration is mentioned.  \n- **Solana network for message routing / timestamping** \u2013 \u201cSolana\u2011first\u201d implies use of Solana for ordering or proof of delivery. *(inferred)*  \n- **Zero\u2011knowledge storage** \u2013 backend only stores ciphertext blobs; no plaintext is retained. *(inferred)*  \n- **Potential token\u2011driven incentives** (e.g., paying for relay bandwidth or rewarding validators) \u2013 typical for utility tokens on Solana, but not confirmed. *(inferred)*  \n\n**3. Missing information checklist**  \n- Official documentation / whitepaper  \n- Public website or app download link  \n- Detailed tokenomics (supply, distribution, utility of the OBSCURA token)  \n- Team biographies and advisory board  \n- Security audits of the encryption implementation and smart contracts  \n- Roadmap and governance model  \n\n**4. Risk note**  \nAll statements above are based solely on the supplied metadata. No external verification has been performed, and the actual functionality, security, and token economics may differ from the inferred description. Use caution and seek primary sources before any investment or usage.",
-          "confidence_score": {
-            "final_score": 7,
-            "confidence_subscores": {
-              "context_faithfulness": 8,
-              "internal_consistency": 9,
-              "specificity": 9,
-              "completeness": 7,
-              "clarity": 8,
-              "source_groundedness": 2
-            }
-          },
-          "narrative_score": {
-            "final_score": 4,
-            "narrative_subscores": {
-              "hook_strength": null,
-              "cultural_relevance": null,
-              "cultural_charge": null,
-              "mission_statement": null,
-              "compellingness": null,
-              "tribal_identity": null,
-              "lore_amount": null,
-              "lore_depth": null
-            }
-          },
-          "sentiment_score": {
-            "final_score": 7,
-            "sentiment_subscores": {
-              "overall_tone": 8,
-              "excitement_level": 4,
-              "concern_signals": 2,
-              "engagement_quality": 5,
-              "community_trust": 6,
-              "fomo_indicators": 1,
-              "skepticism_level": 2,
-              "organic_feel": 8
-            }
-          }
-        },
-        "llm_interpretation": {
-          "created_at": "2026-02-13T19:43:01.761517Z",
-          "token_address": "ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump",
-          "name": "OBSCURA",
-          "symbol": "obscura",
-          "description": "Solana-first private messenger. Phantom identity + client-side encryption. Backend only relays ciphertext.",
-          "timestamp": "2026-02-13T19:42:59.977727+00:00",
-          "llm_interpretation": "Description: Obscura is a private messaging app using wallet-native encryption for secure communication.\n\n1. memecoin: FALSE - The token is based on a private messaging app, not a meme.\n2. utility: TRUE - The token is based on a private messaging app with a specific utility.\n3. ai_token: FALSE - There is no mention of AI or artificial intelligence in the token's description.\n4. tweet_coin: FALSE - The token is not based on a viral tweet.\n5. current_event: FALSE - The token is not based on a current event or trend.\n6. racist: FALSE - There is no indication of racist themes in the token's branding.\n7. offensive: FALSE - There is no indication of offensive themes in the token's branding.\n8. animals: FALSE - The token is not based on an animal.\n9. political: FALSE - The token is not based on politics or a political figure.",
-          "llm_description": "Obscura is a private messaging app where messages are encrypted on-device, wallets serve as identity, and only recipients can decrypt messages.",
-          "scraped_website_content": "About Privacy Mods FAQ Go to app About Privacy Mode FAQ Go to app Private messaging Wallet-native Private messaging Wallet-native No phone numbers. No accounts. No compromises. Go to app Go to app Servers shouldn't be trusted. They should be irrelevant. Most apps ask you to trust their infrastructure. We don't. Your messages are encrypted on your device and stay encrypted everywhere else. Private by design - not by policy. We don't rely on \"we promise we won't read your messages.\" We build it so we can't. Servers shouldn't be trusted. They should be irrelevant. Most apps ask you to trust their infrastructure. We don't. Your messages are encrypted on your device and stay encrypted everywhere else. Private by design - not by policy. We don't rely on \"we promise we won't read your messages.\" We build it so we can't. Simple flow. Serious cryptography. You connect your wallet, your device creates a messaging key, and every message is encrypted before it leaves your screen. Our backend only delivers encrypted blobs \u2014 it never sees plaintext. Connect Phantom Your wallet becomes your identity. No phone number. No email. No accounts to leak. Create your messaging key (on-device) On first use, your device generates a dedicated messaging encryption keypair. The public key is linked to your wallet address. The private key stays on your device and is never uploaded. Encrypt \u2192 Send When you send a message, your client encrypts it locally using the recipient's public key. Only encrypted blobs leave your device \u2014 unreadable to everyone except the intended recipient. Receive \u2192 Decrypt When a message arrives, your device decrypts it locally using your private key. Only you can open it \u2014 not us, not our servers, not any third party. Simple flow. Serious cryptography. You connect your wallet, your device creates a messaging key, and every message is encrypted before it leaves your screen. Our backend only delivers encrypted blobs \u2014 it never sees plaintext. Connect Phantom Your wallet b... (truncated)",
-          "classifications": {
-            "memecoin": false,
-            "utility": true,
-            "ai_token": false,
-            "tweet_coin": false,
-            "current_event": false,
-            "racist": false,
-            "offensive": false,
-            "animals": false,
-            "political": false
-          },
-          "prompt_summaries": {
-            "prompt_1_summary_website_content": "Private messaging app using wallet-native encryption, where messages are encrypted on-device and remain encrypted throughout transmission.",
-            "prompt_2_summary_twitter_searches": "Obscura is a token focused on privacy, with an emphasis on secure communication through ciphertext blobs and routing timestamps, ensuring users' words, keys, and conversations remain private.",
-            "prompt_3_summary_profile_content": "Obscura is a private messenger using Phantom identity and client-side encryption, where users' wallets serve as identity and key, and only the recipient can decrypt messages.",
-            "prompt_4_summary_main_tweet": "",
-            "prompt_5_summary_twitter_community_recent_posts": ""
-          }
-        },
-        "llm_staged_data": {
-          "created": "1 days ago",
-          "token_created_timestamp": "2026-02-12T08:42:39+00:00",
-          "token_address": "ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump",
-          "token_symbol": "obscura",
-          "token_name": "OBSCURA",
-          "first_time_seen": false,
-          "times_seen_before": 1,
-          "token_description": "Solana-first private messenger. Phantom identity + client-side encryption. Backend only relays ciphertext.",
-          "token_image": "https://ipfs.io/ipfs/bafkreicevxj6hlxy7kfvy3y2xqztj5jxjsnykpwb4nc7nzazowg56fyaha",
-          "token_twitter": null,
-          "token_website": null,
-          "pump_twitter": "https://x.com/obscuraprivate",
-          "pump_telegram": null,
-          "pump_website": "https://www.obscura.now/",
-          "dex_twitter": "https://x.com/obscuraprivate",
-          "dex_telegram": null,
-          "dex_discord": null,
-          "dex_website": "https://www.obscura.now/",
-          "is_currently_live": false,
-          "community_takeover": false,
-          "community_takeover_payment_time": null,
-          "community_takeover_time_ago": "N/A",
-          "main_tweet": {
-            "text": null,
-            "username": null,
-            "displayname": null
-          },
-          "website_content": "About Privacy Mods FAQ Go to app About Privacy Mode FAQ Go to app Private messaging Wallet-native Private messaging Wallet-native No phone numbers. No accounts. No compromises. Go to app Go to app Servers shouldn't be trusted. They should be irrelevant. Most apps ask you to trust their infrastructure. We don't. Your messages are encrypted on your device and stay encrypted everywhere else. Private by design - not by policy. We don't rely on \"we promise we won't read your messages.\" We build it so we can't. Servers shouldn't be trusted. They should be irrelevant. Most apps ask you to trust their infrastructure. We don't. Your messages are encrypted on your device and stay encrypted everywhere else. Private by design - not by policy. We don't rely on \"we promise we won't read your messages.\" We build it so we can't. Simple flow. Serious cryptography. You connect your wallet, your device creates a messaging key, and every message is encrypted before it leaves your screen. Our backend only delivers encrypted blobs \u2014 it never sees plaintext. Connect Phantom Your wallet becomes your identity. No phone number. No email. No accounts to leak. Create your messaging key (on-device) On first use, your device generates a dedicated messaging encryption keypair. The public key is linked to your wallet address. The private key stays on your device and is never uploaded. Encrypt \u2192 Send When you send a message, your client encrypts it locally using the recipient's public key. Only encrypted blobs leave your device \u2014 unreadable to everyone except the intended recipient. Receive \u2192 Decrypt When a message arrives, your device decrypts it locally using your private key. Only you can open it \u2014 not us, not our servers, not any third party. Simple flow. Serious cryptography. You connect your wallet, your device creates a messaging key, and every message is encrypted before it leaves your screen. Our backend only delivers encrypted blobs \u2014 it never sees plaintext. Connect Phantom Your wallet b... (truncated)",
-          "twitter_community_content": null,
-          "twitter_profile": {
-            "displayname": "Obscura",
-            "bio": "Solana-first private messenger. Phantom identity + client-side encryption. Backend only relays ciphertext.",
-            "recent_tweets": [
-              "$obscura is live.   CA: ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump  Building in Public for the @Pumpfun Hackathon  The messaging lives and dies fully within your wallet. The only thing that touches the outside internet are undecipherable blobs of data which point to nowhere and entail nothing. Your words. Your keys. Your privacy.",
-              "POV: the Obscura server \ud83d\udc40 No text, no attachments, no conversations. Just ciphertext blobs and routing timestamps. That\u2019s it. Your words. Your keys. Your privacy.  Building in Public .@Pumpfun https://t.co/crvCpdMhUP",
-              "@Pumpfun .@a1lon9 \ud83e\uddd0",
-              "First milestone reached: 500+ users have tried Obscura \ud83d\udfe0  People are connecting wallets, sending real messages, and breaking things faster than we can simulate internally - exactly what we wanted.  To celebrate (and get better feedback) we\u2019re running a small contest:  \u2022 2 people who send the most interesting improvement idea to the dev wallet \u2192 $100 each \u2022 2 random people who message the dev wallet in the next 24h \u2192 $100 each  Just open Obscura and write to the dev account: 4pDesDYFZf4vJ4jEX7t92dxxtAWQ5GvfHfxRsBG1acuU 24 hours starts now!  Building in public @Pumpfun",
-              "Obscura is a messenger where privacy isn\u2019t a setting, it\u2019s the default.  Instead of accounts and phone numbers, you use your wallet. That\u2019s your identity and your key. No signup forms, no personal info trail - just \u201cconnect wallet \u2192 you have an inbox.\u201d Every message you send is encrypted on your device and stored as unreadable data that only the recipient can turn back into words. We don\u2019t \u201cchoose not\u201d to read your messages - it\u2019s designed so we literally can\u2019t. Imagine a pile of locked boxes where only you and the person you wrote to have the keys. That\u2019s what our database looks like.  If that\u2019s the kind of messaging you want to exist, you can already use it.  Check bio for links.",
-              "You can talk a lot about privacy. But it\u2019s usually enough to see once how it actually works. Or you can try it yourself now. \ud83d\udc47 https://t.co/oPzEx4lEAZ",
-              "https://t.co/dNBsmJmQtU",
-              "Security bounty \u2014 $10,000                                                                                                                                                       We know you can't read another user's messages in Obscura.                              Mathematically, architecturally, cryptographically \u2014 it's not possible. The server never sees plaintext. Period.    Prove us wrong.    Scope:   \u2022 https://t.co/4aRLEwGZct production app   \u2022 protocol / API / storage / routing layer   \u2022 no phishing, malware, or social engineering    Show us a real, reproducible case where message content becomes accessible to someone other than the intended recipient \u2014 without compromising the user's device \u2014 and the $10k is yours.    Details & submission: DM or comment with a write-up + steps to reproduce.   We built Obscura so this bounty never gets claimed.",
-              "@Pumpfun https://t.co/8guDkC2kVd",
-              "You CHOOSE to get spied on.  You can simply CHOOSE to use fully secure and private messaging.  Messaging that utilizes the truly secure and decentralized capabilities of the Solana network.  DO NOT compromise.  DO NOT falter.",
-              "Long ago I discovered the ultimate privacy hack to encrypted communication:  Every app gets spied on no matter what.  Signal, Telegram, Whatsapp, Session literally everything.  It doesn't matter.   Durov gets arrested in France because he won't give up the information to Europe, but his family is fine and free in Russia?  Telegram = Russia Signal = America Wechat = China  But the secret is that you can choose which government you want to spy on you.  As a European I only use Chinese apps and devices. Huawei and Wechat.   If I hypothetically want to do bad things in Europe over these chat apps China won't care.   Perhaps they will even encourage it.  Choose the government that supports you. Totalitarian surveillance government arbitrage.",
-              "Most apps want your phone number, email, and a profile. Obscura doesn\u2019t want any of that.  You log in with your crypto wallet - that\u2019s it. Your wallet becomes your private doorway into an encrypted inbox. No extra identity to manage, nothing to leak, nothing to SIM swap.  We\u2019re trying to shift from \u201ctrust this company\u201d to \u201ctrust the math.\u201d Messages are stored as ciphertext that only the intended recipient can ever decode. It\u2019s privacy you can prove, not just privacy you\u2019re promised.  Long term, we see Obscura as an invisible messaging layer you can plug into anything that speaks wallets and keys - not just another chat app in a folder.  You can already play with the first version here \ud83d\udc47",
-              "https://t.co/W6IRRwLXRS",
-              "We\u2019re launching Obscura - a wallet-native messenger. Obscura is built around a simple idea: your wallet isn\u2019t just for signing transactions, it should also be your inbox. You connect Phantom and get a private, encrypted place to talk - no account creation, no phone, no email. https://t.co/fZyWTdzByt",
-              "MVP focus is on making this feel like a normal messenger, not a crypto science project: clean UI, fast message delivery, Phantom sign-in, and encryption that \u201cjust happens\u201d in the background.",
-              "\u2757\ufe0fThe end of the thread If you want to see what \u201cDMs for wallets\u201d actually feels like in practice, you can try the MVP here: https://t.co/W6IRRwLXRS"
-            ]
-          },
-          "twitter_search_texts": {
-            "address_recent": [
-              "ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump  Aped some at 300k, little gamble.",
-              "Gamble on $OBSCURA  ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump https://t.co/NpJIBR7SU2"
-            ],
-            "address_top": [
-              "ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump  Aped some at 300k, little gamble.",
-              "Gamble on $OBSCURA  ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump https://t.co/NpJIBR7SU2",
-              "$OBSCURA  ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump  #Solana #Memecoin https://t.co/Gm8g2OXWWp",
-              "Look into $obscura looks interesting  ADT7AFn9cZJhHRPpVPhD1auwP7bTT125dvxikaBVpump"
-            ],
-            "symbol_recent": [
-              "POV: the Obscura server \ud83d\udc40 No text, no attachments, no conversations. Just ciphertext blobs and routing timestamps. That\u2019s it. Your words. Your keys. Your privacy.  Building in Public .@Pumpfun https://t.co/crvCpdMhUP",
-              "$Obscura been ranging, but that\u2019s usually where the real moves start. https://t.co/MZrODdmFkB keeps the conviction strong. https://t.co/v4MwaWQ8uR"
-            ],
-            "symbol_top": []
-          }
-        },
-        "risk_analysis": {
-          "onchain_scan": {
-            "dex_paid": true,
-            "dex_paid_timestamp": "2026-02-12 20:09:05",
-            "bundle_percentage": 0.0,
-            "fresh_wallets_percentage": 24.5,
-            "dev_hold_percentage": 10.0,
-            "insider_wallets_percentage": 8.64,
-            "num_holders": 525,
-            "largest_holder_percentage": 10.0,
-            "largest_cluster_percentage": 0.0,
-            "large_holder_count": 4,
-            "same_percentage_count": 12,
-            "low_sol_count": 17
-          },
-          "onchain_scan_score": {
-            "final_score": 4.0,
-            "bundle_percentage_score": 10,
-            "fresh_wallets_percentage_score": 4,
-            "dev_hold_percentage_score": 6,
-            "insider_wallets_percentage_score": 6,
-            "num_holders_score": 4,
-            "largest_holder_percentage_score": 4,
-            "largest_cluster_percentage_score": 10,
-            "large_holder_count_score": 5,
-            "same_percentage_count_score": 4,
-            "low_sol_count_score": 1
-          },
-          "graduated_tokens_thresholds": {
-            "highest_threshold": 250000,
-            "all_time_highest_threshold": 250000,
-            "highest_threshold_as_farm": 250000,
-            "highest_threshold_as_farmed": 0,
-            "highest_threshold_as_no_farm_detected": 0,
-            "farm_status": "FARM",
-            "ever_failed_criteria": true,
-            "last_scanned": 1771011350.9887905
-          },
-          "social_scan": {
-            "handle_reuse": {
-              "handle": "obscuraprivate",
-              "reused": false,
-              "account_count": 0,
-              "accounts": [],
-              "message": "No account history found for this handle."
-            }
-          }
-        },
-        "alpha_analysis": {
-          "kol_buys": {
-            "total_kol_buys": 0,
-            "total_usd_spent": 0.0,
-            "kols": []
-          },
-          "trending_ranks": {
-            "axiom": null,
-            "dexscreener": null,
-            "moby": null,
-            "pumpfun_found": false,
-            "trending_found": false,
-            "twitter_trending_found": false
-          },
-          "moby": {
-            "whale_count_h24": null,
-            "whale_trades_count_h24": null,
-            "whale_net_flow_usd_h24": null,
-            "whale_net_supply_percent_h24": null,
-            "whale_holder_retention_percent_h24": null
-          },
-          "twitter_trending": {
-            "mentions_total": null,
-            "accounts": []
-          },
-          "alpha_score": {
-            "final_score": 0.0,
-            "total_kol_buys_score": 0,
-            "trending_ranks_score": 0.0,
-            "twitter_trending_score": 0
-          }
-        },
-        "technical_analysis": {
-          "ta_buy_score": {
-            "final_score": null,
-            "timeframe_scores": {
-              "15m": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "1h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "4h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "24h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              }
-            },
-            "subscores": {
-              "oversold": null,
-              "momentum_shift": null,
-              "drawdown_value": null,
-              "holder_trend": null
-            }
-          },
-          "usd_market_cap": 365506.38,
-          "ath_market_cap": 387107.74,
-          "ath_market_cap_timestamp": "2026-02-13T15:56:53+00:00",
-          "ath_multiple": 1.059,
-          "backup_ath_market_cap": null,
-          "backup_ath_market_cap_timestamp": null,
-          "holderscan_data": {
-            "source": null,
-            "holderscan_history": []
-          }
-        }
-      }
-    },
     {
       "processed_at": "2026-02-13T20:46:19.200822Z",
       "token_address": "ANVWi3AAkjXRnesAMtAQNRPcrhSnKKbQwsRVe7xpump",
@@ -120828,6 +120506,650 @@
                 "mcapOverHolders": 601.3123359580047
               }
             ]
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-14T20:01:13.210774Z",
+      "token_address": "9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+      "token_symbol": "MELON",
+      "token_name": "MELON MUSK",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 3.6,
+        "groq_web_research": {
+          "summary_all_context": "\"Melon Musk\" ($MELON) is a newly launched meme token referencing Elon Musk, but no verifiable non-crypto cultural origin for the term \"Melon Musk\" exists. Web searches found no pre-existing meme, slang, or narrative outside crypto contexts.",
+          "answer": "**Summary**  \n- No verifiable cultural, slang, or meme origin for the phrase **\u201cMelon Musk\u201d** could be located in non\u2011crypto sources.  \n- Searches of major meme\u2011tracking sites (Know Your Meme), mainstream media archives, and slang\u2011definition sites return only generic references to Elon\u202fMusk, not a distinct \u201cMelon\u202fMusk\u201d narrative.\n\n**Origin / Timeline**  \n- Attempts to locate a pre\u2011crypto \u201cMelon\u202fMusk\u201d meme (e.g., Twitter/TikTok posts, Reddit threads, news coverage) turned up empty.  \n- The only related material is the well\u2011documented \u201cElon\u202fMusk\u201d meme ecosystem; no separate \u201cMelon\u202fMusk\u201d entry appears in any cultural\u2011origin database.\n\n**Sources**  \n- **Know Your Meme search for \u201cMelon Musk\u201d** \u2013 shows no dedicated entry; only generic Elon\u202fMusk results. https://knowyourmeme.com/search?q=Melon+Musk (search page with zero hits).  \n- **Know Your Meme \u2013 Elon Musk page** \u2013 extensive coverage of Elon\u2011related memes but no mention of \u201cMelon Musk.\u201d https://knowyourmeme.com/memes/people/elon-musk (confirms absence).  \n\n*Conclusion: A verifiable non\u2011crypto cultural origin for \u201cMelon\u202fMusk\u201d could not be found.*",
+          "confidence_score": {
+            "final_score": 8,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 9,
+              "completeness": 8,
+              "clarity": 8,
+              "source_groundedness": 9
+            }
+          },
+          "narrative_score": {
+            "final_score": 1,
+            "narrative_subscores": {
+              "hook_strength": 2,
+              "cultural_relevance": 1,
+              "cultural_charge": 2,
+              "mission_statement": 1,
+              "compellingness": 2,
+              "tribal_identity": 2,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": 8,
+            "sentiment_subscores": {
+              "overall_tone": 8,
+              "excitement_level": 9,
+              "concern_signals": 2,
+              "engagement_quality": 8,
+              "community_trust": 6,
+              "fomo_indicators": 4,
+              "skepticism_level": 3,
+              "organic_feel": 7
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-14T20:02:18.748153Z",
+          "token_address": "9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+          "name": "MELON MUSK",
+          "symbol": "MELON",
+          "description": "",
+          "timestamp": "2026-02-14T20:02:17.041273+00:00",
+          "llm_interpretation": "Description: A meme token inspired by a viral tweet narrative called \"Melon Musk\" related to Elon Musk.\n\n1. memecoin: TRUE - The token is described as a meme token with a strong online presence.\n2. utility: FALSE - There's no mention of the token being based on tech or utility.\n3. ai_token: FALSE - There's no mention of the token being related to AI or artificial intelligence.\n4. tweet_coin: TRUE - The token is associated with a viral tweet narrative.\n5. current_event: TRUE - The token is related to a current online trend or narrative.\n6. racist: FALSE - There's no indication of racist themes in the token branding.\n7. offensive: FALSE - There's no indication of offensive themes in the token branding.\n8. animals: FALSE - The token is not based on an animal.\n9. political: FALSE - While related to a public figure, Elon Musk, it's not directly based on politics.",
+          "llm_description": "A meme token inspired by a viral tweet narrative called \"Melon Musk\" related to Elon Musk.",
+          "scraped_website_content": "",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": true,
+            "current_event": true,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "",
+            "prompt_2_summary_twitter_searches": "$MELON is a token associated with a viral tweet narrative called \"Melon Musk\" related to Elon Musk. It's a meme token with a strong online presence.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": "Melon Musk is a token that has gone viral on social media platform X, garnering significant views and interaction from large pages and users. It shares similarities with other tokens like Boden and Tremp."
+          }
+        },
+        "llm_staged_data": {
+          "created": "5 hours ago",
+          "token_created_timestamp": "2026-02-14T14:20:25+00:00",
+          "token_address": "9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+          "token_symbol": "MELON",
+          "token_name": "MELON MUSK",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "",
+          "token_image": "https://ipfs.io/ipfs/QmRu8X3oaK4SKLvPuG1y3Ahy6baeRZMNGAPhANQi2aYkuC",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": null,
+          "pump_telegram": null,
+          "pump_website": null,
+          "dex_twitter": "https://x.com/i/communities/2022689872058700016",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": null,
+          "twitter_community_content": {
+            "url": "https://x.com/i/communities/2022689872058700016",
+            "community_id": "2022689872058700016",
+            "recent_posts": [
+              "There is a tweet going very viral on X, gaining over 1.1M views in 10 hours, with 350k new views within the last hour. Grok, Elon Musk\u2019s platform, gave it the name \u201cMelon Musk.\u201d\n\nSimilar narratives like Boden and Tremp did nearly a billion in 2024.\n\nWith big pages interacting and",
+              "next person to interact",
+              "in",
+              "2,000,000 views",
+              "1M to nearly 1.7M views in 1 hour!",
+              "just saw like 30 people trying to PVP 100k coin, level of greediness right now is hilarious \n\nmeanwhile Melon broke 4,000,000 views\n\ni asked @grok name like 5 times already\n\nand do it as well before leaving your comments!"
+            ]
+          },
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "$MELON musk issss livvvvvee https://t.co/CthyOOWm87",
+              "Trenchers when they see a token with a Elon Musk tweet narrative https://t.co/2OxqFZtTWU",
+              "Melon Musk  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+              "Strong bounce on $MELON now consolidating around the 192K MC resistance.  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump https://t.co/E7z9Zixok1",
+              "@djcows \ud83d\ude02",
+              "There is a tweet going very viral on X, gaining over 1.1M views in 10 hours, with 350k new views within the last hour. Grok, Elon Musk\u2019s platform, gave it the name \u201cMelon Musk.\u201d  Similar narratives like Boden and Tremp did nearly a billion in 2024.  With big pages interacting and virality expanding, this image should get over 10M views within the next day or two.  $MELON \u2014 9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+              "Imagine elon engaging to this \ud83d\ude02\ud83e\udd23  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump https://t.co/dFMgPuxe0n",
+              "Change his PFP soon 100% - $Melon Musk \ud83d\ude02\ud83d\ude02\ud83d\ude02 how ugly he  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+              "i hope one day Elon sees my drawing https://t.co/eZ465S1SOO",
+              "I have a dream  $MELON  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+              "i have a dream https://t.co/JdV7aOzh64",
+              "This is funny \ud83d\ude80\ud83d\ude80\ud83d\ude80  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump https://t.co/onPAWvO7dr",
+              "@djcows \ud83d\ude02",
+              "prepare ur bags guys  fake 9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump  OG 7BqAGqScXoLDtSbSnupDA7i7fUu2asCcPe6MRPVSpump"
+            ],
+            "address_top": [
+              "9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump  https://t.co/HGuoOmmmy2  Come here bro @slingoorio \ud83e\udd42",
+              "Imagine elon engaging to this \ud83d\ude02\ud83e\udd23  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump https://t.co/dFMgPuxe0n",
+              "This is funny \ud83d\ude80\ud83d\ude80\ud83d\ude80  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump https://t.co/onPAWvO7dr",
+              "9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump OG VIDEO WITH TICKER FROM A YEAR AGO",
+              "@djcows \ud83d\ude02",
+              "Strong bounce on $MELON now consolidating around the 192K MC resistance.  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump https://t.co/E7z9Zixok1",
+              "I have a dream  $MELON  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+              "i have a dream https://t.co/JdV7aOzh64"
+            ],
+            "symbol_recent": [
+              "$MELON musk issss livvvvvee https://t.co/CthyOOWm87",
+              "let the $MELON roll https://t.co/fonfctPxvS"
+            ],
+            "symbol_top": [
+              "$melon musk",
+              "Some wise words from $Melon Musk https://t.co/DyKTv42qEa",
+              "200K \u2705 $MELON https://t.co/ByggFEtf9C",
+              "@djcows \ud83d\ude02",
+              "$MELON  9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump  Gambled a little , heard good things coming, probably some Xs at least",
+              "$melon is more than just bait  its a worldwide known elon meme  higher https://t.co/2mdcHgk0qA",
+              "The 10k shitters dont move if this one doesnt have motion  Bid the one with motion  $melon",
+              "This is the one that got motion  $melon",
+              "There is a tweet going very viral on X, gaining over 1.1M views in 10 hours, with 350k new views within the last hour. Grok, Elon Musk\u2019s platform, gave it the name \u201cMelon Musk.\u201d  Similar narratives like Boden and Tremp did nearly a billion in 2024.  With big pages interacting and virality expanding, this image should get over 10M views within the next day or two.  $MELON \u2014 9y4nMHKQCMgjHE1UU1pbhykRXG5Xp75Y6B4MxdZapump",
+              "$melon higher",
+              "@djcows \ud83d\ude02"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-02-14 15:15:24",
+            "bundle_percentage": 5.37,
+            "fresh_wallets_percentage": 3.0,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 5.9,
+            "num_holders": 1078,
+            "largest_holder_percentage": 2.8,
+            "largest_cluster_percentage": 3.87,
+            "large_holder_count": 8,
+            "same_percentage_count": 4,
+            "low_sol_count": 10
+          },
+          "onchain_scan_score": {
+            "final_score": 6.8,
+            "bundle_percentage_score": 7,
+            "fresh_wallets_percentage_score": 8,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 7,
+            "num_holders_score": 6,
+            "largest_holder_percentage_score": 9,
+            "largest_cluster_percentage_score": 7,
+            "large_holder_count_score": 10,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 4
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 250000,
+            "all_time_highest_threshold": 250000,
+            "highest_threshold_as_farm": 100000,
+            "highest_threshold_as_farmed": 250000,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARMED",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771099157.2130268
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": 0.0
+            }
+          },
+          "usd_market_cap": 263187.56,
+          "ath_market_cap": 278260.36,
+          "ath_market_cap_timestamp": "2026-02-14T18:26:41+00:00",
+          "ath_multiple": 1.057,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_http_fallback",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-02-14T20:00:00.000Z",
+                "holderCount": 1081,
+                "marketCap": 268599.59202515864,
+                "mcapOverHolders": 248.47325811763056
+              },
+              {
+                "updatedAt": "2026-02-14T19:00:00.000Z",
+                "holderCount": 941,
+                "marketCap": 168199.74452208367,
+                "mcapOverHolders": 178.74574338159795
+              },
+              {
+                "updatedAt": "2026-02-14T18:00:00.000Z",
+                "holderCount": 666,
+                "marketCap": 104399.84142750023,
+                "mcapOverHolders": 156.75651865991026
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-14T20:18:40.897113Z",
+      "token_address": "HbYgynsDksniFLXNa3BkCTiaEBzQMW5oty4FhTHPpump",
+      "token_symbol": "pepebismol",
+      "token_name": "Pepe Bismol",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 2.1,
+        "groq_web_research": {
+          "summary_all_context": "Pepe Bismol is a newly created memecoin (4 minutes old) combining \"Pepe the Frog\" and \"Pepto-Bismol,\" positioning itself as a \"cure for jeets\" in crypto. Web searches found no non-crypto cultural reference for the exact phrase; it appears to be a novel crypto play on existing meme and brand elements.",
+          "answer": "**Summary**  \n- No verifiable non\u2011crypto cultural reference for the phrase **\u201cPepe Bismol\u201d** (or \u201cPepe Bismol\u201d) could be located.  \n- The name appears to be a mash\u2011up of the internet meme character **Pepe the Frog** and the over\u2011the\u2011counter medicine brand **Pepto\u2011Bismol**, but no established slang, meme, TikTok trend, or other cultural usage exists outside of crypto\u2011related contexts.\n\n**Origin / Timeline**  \n- Searches of major meme\u2011culture and general\u2011interest sites (Know Your Meme, Wikipedia, The Verge, Mashable, NY\u202fTimes, BBC, Vox) return results only for **Pepe the Frog** and **Pepto\u2011Bismol** individually.  \n- No articles, forum threads, or social\u2011media posts were found that explain \u201cPepe Bismol\u201d as a standalone meme, phrase, or cultural gesture prior to its appearance in the newly created token description.\n\n**Sources**  \n- *No non\u2011crypto sources found* \u2013 exhaustive searches on the specified domains returned zero hits for \u201cPepe Bismol\u201d or \u201cpepebismol\u201d without crypto\u2011related keywords.  \n\n*Conclusion:* The term \u201cPepe Bismol\u201d has no documented cultural or non\u2011crypto origin; it is likely a novel, token\u2011specific wordplay rather than an established meme or slang.",
+          "confidence_score": {
+            "final_score": 5,
+            "confidence_subscores": {
+              "context_faithfulness": 1,
+              "internal_consistency": 8,
+              "specificity": 9,
+              "completeness": 6,
+              "clarity": 8,
+              "source_groundedness": 1
+            }
+          },
+          "narrative_score": {
+            "final_score": 2,
+            "narrative_subscores": {
+              "hook_strength": 2,
+              "cultural_relevance": 2,
+              "cultural_charge": 3,
+              "mission_statement": 1,
+              "compellingness": 2,
+              "tribal_identity": 2,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": null,
+            "sentiment_subscores": null
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-14T20:19:33.651892Z",
+          "token_address": "HbYgynsDksniFLXNa3BkCTiaEBzQMW5oty4FhTHPpump",
+          "name": "Pepe Bismol",
+          "symbol": "pepebismol",
+          "description": "Pepe Bismol is the cure for jeets",
+          "timestamp": "2026-02-14T20:19:32.443160+00:00",
+          "llm_interpretation": "Description: Pepe Bismol is a memecoin offering relief from crypto-related issues, playing on the \"Pepe\" meme.\n\n1. memecoin: TRUE - based on the \"Pepe\" meme, a well-known internet meme.\n2. utility: FALSE - no clear utility mentioned, just relief from crypto issues.\n3. ai_token: FALSE - no mention of AI or artificial intelligence.\n4. tweet_coin: FALSE - no indication that a viral tweet inspired the token.\n5. current_event: FALSE - not directly related to a current event or trend.\n6. racist: FALSE - no racist themes apparent in the token branding.\n7. offensive: FALSE - while \"jeetery\" and \"rugburn\" might be related to crypto slang, the tone is more humorous than offensive.\n8. animals: FALSE - \"Pepe\" is a frog character, but the token is more about the meme than the animal itself.\n9. political: FALSE - no apparent connection to politics or a political figure.\n\nLet me know if this is what you're looking for!",
+          "llm_description": "Pepe Bismol is a memecoin offering relief from various crypto-related issues like jeetery, rugburn, and upset wallet.",
+          "scraped_website_content": "Error scraping website: HTTPSConnectionPool(host='pepebismol.club', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000017A17BA36E0>: Failed to resolve 'pepebismol.club' ([Errno 11001] getaddrinfo failed)\"))",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "No summary available due to website scraping error.",
+            "prompt_2_summary_twitter_searches": "",
+            "prompt_3_summary_profile_content": "Pepe Bismol offers relief from various crypto-related issues including jeetery, rugburn, and upset wallet.",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "4 minutes ago",
+          "token_created_timestamp": "2026-02-14T20:14:37+00:00",
+          "token_address": "HbYgynsDksniFLXNa3BkCTiaEBzQMW5oty4FhTHPpump",
+          "token_symbol": "pepebismol",
+          "token_name": "Pepe Bismol",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "Pepe Bismol is the cure for jeets",
+          "token_image": "https://cf-ipfs.com/ipfs/QmcnPDF5i6b39zVFKydDqnprTDiWTtRStphpWBKuzbSFTS",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://twitter.com/ThePepeBismol",
+          "pump_telegram": "https://t.me/PepeBismolPortal",
+          "pump_website": "https://pepebismol.club/",
+          "dex_twitter": null,
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Error scraping website: HTTPSConnectionPool(host='pepebismol.club', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000017A17BA36E0>: Failed to resolve 'pepebismol.club' ([Errno 11001] getaddrinfo failed)\"))",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": "pepe bismol",
+            "bio": "the cure for jeetery\u2122\ufe0f | not fda approved |\nfast relief from farmers, rugburn, cryptogestion, upset wallet & jeetarhea\nhttps://t.co/Qg2nmQ3ZFp",
+            "recent_tweets": [
+              "pepebismol is now live! CA | DDQAcnpuVhkLvvuuwrUamsiEyVjUr9cacYdmNFpLKako https://t.co/LVmYV5GvKY"
+            ]
+          },
+          "twitter_search_texts": {
+            "address_recent": [],
+            "address_top": [],
+            "symbol_recent": [],
+            "symbol_top": []
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": false,
+            "dex_paid_timestamp": null,
+            "bundle_percentage": 0.74,
+            "fresh_wallets_percentage": 18.2,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 0.0,
+            "num_holders": 798,
+            "largest_holder_percentage": 1.0,
+            "largest_cluster_percentage": 0.01,
+            "large_holder_count": 0,
+            "same_percentage_count": 11,
+            "low_sol_count": 19
+          },
+          "onchain_scan_score": {
+            "final_score": 3.4,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 4,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 10,
+            "num_holders_score": 4,
+            "largest_holder_percentage_score": 6,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 1,
+            "same_percentage_count_score": 4,
+            "low_sol_count_score": 1
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 1000000,
+            "all_time_highest_threshold": 1000000,
+            "highest_threshold_as_farm": 1000000,
+            "highest_threshold_as_farmed": 0,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771100214.5951743
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "ThePepeBismol",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 3457659.52,
+          "ath_market_cap": 3649738.03,
+          "ath_market_cap_timestamp": "2026-02-14T20:16:07+00:00",
+          "ath_multiple": 1.056,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
           }
         }
       }
