@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-15T06:25:41.765827Z",
+  "generated_at_utc": "2026-02-15T07:26:15.068342Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 103,
+  "token_context_count": 105,
   "prompt_truncated": false,
   "warnings": [
     "Detected 11 PVP group(s); excluding 14 token(s) from META prompt."
@@ -262,12 +262,104 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal Meme Tokens",
-        "description": "Tokens centered around animal-based memes or characters, often with humorous or anthropomorphic themes. These tokens leverage the popularity of animal memes in internet culture.",
+        "meta_name": "Crypto Meme Revival",
+        "description": "This META is characterized by tokens repurposing long-standing internet memes, viral images, or cultural references from outside crypto and adapting them into crypto narratives. These tokens often leverage nostalgia or widespread recognition of the meme to drive community engagement.",
         "defining_signals": [
-          "Tokens referencing animals or animal-related memes",
-          "Humorous or anthropomorphic animal themes",
-          "Community-driven narratives around specific animals"
+          "Tokens referencing well-known memes like Wojak, Clippy, or Popcat.",
+          "Tokens using cultural references that predate crypto and have a strong internet presence.",
+          "Tokens with a clear meme or meme-based narrative that predates the token."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "CLIPY",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "POPCAT",
+            "token_name": "POPCAT",
+            "token_address": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          }
+        ],
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Wojak is a foundational meme in internet culture, and its revival in crypto is well-documented. The token has a large market cap and strong community engagement.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 623091746.67
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto Whales and Memes",
+        "description": "This META is centered around tokens that reference or are inspired by crypto whales, large market participants, or whale-related memes. These tokens often use whale imagery or narratives to symbolize power, influence, or community-driven movements.",
+        "defining_signals": [
+          "Tokens referencing crypto whales or whale behavior.",
+          "Tokens using whale imagery or metaphors in their branding.",
+          "Tokens with narratives around whale activity or whale-driven market moves."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "JUICEWHALE",
+            "token_name": "The Juice Whale",
+            "token_address": "4yRSDGC5zjkF8nHg3CqR2SNvYUQSmPeo5QBvmVs9pump"
+          },
+          {
+            "token_symbol": "BIGTROUT",
+            "token_name": "The Big Trout",
+            "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG"
+          },
+          {
+            "token_symbol": "WHITEWHALE",
+            "token_name": "The White Whale",
+            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+          },
+          {
+            "token_symbol": "GoyMogged",
+            "token_name": "GoyMogged",
+            "token_address": "B1L28F4jYrotyAXTLDj8E5LEM9ZXmkFeLm6BbP7Fpump"
+          },
+          {
+            "token_symbol": "PUMPID",
+            "token_name": "Valentinesmaxxing Romancegooner",
+            "token_address": "5fFzyj6Mc7A2ECT7ae18YvTT7d6JoPiY8KWoqXzXpump"
+          }
+        ],
+        "leader_hint_token_address": "4yRSDGC5zjkF8nHg3CqR2SNvYUQSmPeo5QBvmVs9pump",
+        "confidence_0_100": 78,
+        "confidence_rationale": "The Juice Whale token has a strong whale narrative and is part of a broader whale-themed trend in crypto memes.",
+        "leader_token": {
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 89126118.47
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto Whimsy and Absurdity",
+        "description": "This META is characterized by tokens with absurd, whimsical, or surreal themes that often defy traditional logic or utility. These tokens often rely on humor, surrealism, or internet absurdity to drive engagement.",
+        "defining_signals": [
+          "Tokens with absurd or surreal themes.",
+          "Tokens referencing internet absurdity or humor.",
+          "Tokens with no clear utility but strong community-driven narratives."
         ],
         "supporting_tokens": [
           {
@@ -276,9 +368,14 @@
             "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump"
           },
           {
-            "token_symbol": "Moo Deng",
-            "token_name": "Moo Deng",
-            "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
+            "token_symbol": "BrainJuice",
+            "token_name": "Brainlet Juice",
+            "token_address": "BQrwYPnpRSzsNgxfERYRpH8yLEZ9SjWnSLhzrAnipump"
+          },
+          {
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
           },
           {
             "token_symbol": "Punch",
@@ -286,223 +383,117 @@
             "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
-            "token_symbol": "DOODi",
-            "token_name": "DOODiPALS",
-            "token_address": "3iCJnnDYFT4RrPs7vMzw21sfVfy4br1xWmJioz7FGJUR"
-          },
-          {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+            "token_symbol": "spaghetti",
+            "token_name": "Will Smith eating spaghetti",
+            "token_address": "DPQgF4hw8Lup6eKaCDvMxkq8CdXpNTacABKNUkB4pump"
           }
         ],
-        "leader_hint_token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong animal meme presence with multiple tokens showing similar themes and community engagement.",
+        "leader_hint_token_address": "4fFWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Pigeon has a strong internet meme foundation and is part of a broader trend of absurd crypto tokens.",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 726611995.51
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 3006899.7
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Crypto Meme Revival",
-        "description": "Tokens repurposing long-standing internet memes, often from 2000s to 2010s, for community-driven crypto projects. These tokens leverage nostalgia and cultural familiarity to attract attention.",
+        "meta_name": "AI and NFTs",
+        "description": "This META is defined by tokens that integrate AI and NFTs, often involving AI-generated art, AI companions, or AI-driven NFT ecosystems. These tokens often leverage the intersection of AI and NFTs to create unique utility or community engagement.",
         "defining_signals": [
-          "Use of iconic memes like Wojak, Trollface, and Pepe the Frog",
-          "Tokens with cultural roots in early 2000s internet culture",
-          "Community-driven narratives with meme-based branding"
+          "Tokens involving AI-generated NFTs or AI companions.",
+          "Tokens with AI-driven NFT ecosystems or marketplaces.",
+          "Tokens using AI for NFT creation or curation."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+            "token_symbol": "PANDU",
+            "token_name": "Pandu Pandas",
+            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
           },
           {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "MOLTCOURT",
+            "token_name": "MoltCourt",
+            "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+            "token_symbol": "MOLTCUPID",
+            "token_name": "MoltCupid",
+            "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwvZZpump"
           },
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "AGI",
+            "token_name": "Agentripe",
+            "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "UNSYS",
+            "token_name": "Uncertain Systems",
+            "token_address": "Dza3Bey5tvyYiPgcGRKoXKU6rNrdoNrWNVmjqePcpump"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong historical meme roots and active community engagement across multiple tokens.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 623091746.67
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Community-Driven Meme Tokens",
-        "description": "Tokens built around community-driven narratives, often with no prior cultural origin outside of crypto. These tokens thrive on community engagement and meme culture.",
-        "defining_signals": [
-          "No verifiable non-crypto cultural origin",
-          "Strong community-driven narratives",
-          "Meme-based branding and marketing"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "WordSlop",
-            "token_name": "wordslop",
-            "token_address": "9iUoUXwvbhFruwsbW9yAtY2edwJ5uYSgBq6q1VyVpump"
-          },
-          {
-            "token_symbol": "JUICEWHALE",
-            "token_name": "The Juice Whale",
-            "token_address": "4yRSDGC5zjkF8nHg3CqR2SNvYUQSmPeo5QBvmVs9pump"
-          },
-          {
-            "token_symbol": "VALJUICE",
-            "token_name": "Valentine Juice",
-            "token_address": "51V5RwSnBM85279gki8eTobibWXztzWT3rzed1acpump"
-          },
-          {
-            "token_symbol": "Whalentine",
-            "token_name": "Whalentine",
-            "token_address": "Fr7vfUAWgmg84L3VuHKiyzTJx3x3V6xU5pn9328Wpump"
-          },
-          {
-            "token_symbol": "PumpID",
-            "token_name": "Valentinesmaxxing Romancegooner",
-            "token_address": "5fFzyj6Mc7A2ECT7ae18YvTT7d6JoPiY8KWoqXzXpump"
-          }
-        ],
-        "leader_hint_token_address": "9iUoUXwvbhFruwsbW9yAtY2edwJ5uYSgBq6q1VyVpump",
+        "leader_hint_token_address": "4NGbB4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk",
         "confidence_0_100": 80,
-        "confidence_rationale": "Strong community engagement and meme-based branding, with multiple tokens showing similar community-driven themes.",
+        "confidence_rationale": "Pandu Pandas has a clear AI-NFT integration and is part of a growing trend in the space.",
         "leader_token": {
-          "token_symbol": "PUMPID",
-          "token_name": "Valentinesmaxxing Romancegooner",
-          "token_address": "5fFzyj6Mc7A2ECT7ae18YvTT7d6JoPiY8KWoqXzXpump",
-          "usd_market_cap": 7740597.6
+          "token_symbol": "PANDU",
+          "token_name": "Pandu Pandas",
+          "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk",
+          "usd_market_cap": 919658.4
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Meme Projects",
-        "description": "Tokens leveraging AI-generated content, AI agents, or AI-based platforms for community interaction, often with a humorous or satirical twist. These projects blend AI innovation with meme culture.",
+        "meta_name": "AI-Driven Narrative",
+        "description": "This META is defined by tokens that leverage AI in their narrative or utility, often positioning themselves as tools for AI agents, AI-generated content, or AI-driven governance. These tokens often tie into broader AI trends and community interest in AI innovation.",
         "defining_signals": [
-          "AI-generated content or AI agent integration",
-          "AI-based meme creation or interaction",
-          "Community-driven AI narratives"
+          "Tokens with AI-related utility or governance.",
+          "Tokens referencing AI agents or AI-generated content.",
+          "Tokens with narratives around AI collaboration or AI-driven ecosystems."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "MoltCourt",
-            "token_name": "MoltCourt",
-            "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
-          },
-          {
-            "token_symbol": "MoltCupid",
-            "token_name": "MoltCupid",
-            "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwvZZpump"
-          },
-          {
-            "token_symbol": "Agentripe",
+            "token_symbol": "AGI",
             "token_name": "Agentripe",
             "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
           },
           {
-            "token_symbol": "PsyopAnime",
-            "token_name": "PsyopAnime",
-            "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump"
-          },
-          {
-            "token_symbol": "Crustafarianism",
-            "token_name": "Crustafarianism",
-            "token_address": "HkBWJJiaUW5Kod4HpHWZiGD9PQVipmMiPDgiRPcNpump"
-          }
-        ],
-        "leader_hint_token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong AI integration and community interaction, with multiple tokens showing similar AI-driven themes.",
-        "leader_token": {
-          "token_symbol": "PsyopAnime",
-          "token_name": "PsyopAnime",
-          "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump",
-          "usd_market_cap": 6612122.41
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Crypto Fusion",
-        "description": "Tokens leveraging AI in their core utility, such as AI agents, AI-generated content, or AI-driven trading. These tokens often focus on AI innovation within the crypto space.",
-        "defining_signals": [
-          "AI-based utility or governance",
-          "AI-generated content or trading signals",
-          "Integration with AI platforms or agents"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Agentripe",
-            "token_name": "Agentripe",
-            "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
-          },
-          {
-            "token_symbol": "MoltCourt",
+            "token_symbol": "MOLTCOURT",
             "token_name": "MoltCourt",
             "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
           },
           {
-            "token_symbol": "MoltCupid",
+            "token_symbol": "MOLTCUPID",
             "token_name": "MoltCupid",
             "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwvZZpump"
           },
           {
-            "token_symbol": "PsyopAnime",
-            "token_name": "PsyopAnime",
-            "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump"
+            "token_symbol": "UNSYS",
+            "token_name": "Uncertain Systems",
+            "token_address": "Dza3Bey5tvyYiPgcGRKoXKU6rNrdoNrWNVmjqePcpump"
           },
           {
-            "token_symbol": "Opus The Trencher",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pV3GNtYV8dHfkPBsdyjVekSTpump"
           }
         ],
         "leader_hint_token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump",
-        "confidence_0_100": 83,
-        "confidence_rationale": "Strong integration of AI in token utility and community engagement, with multiple tokens showing similar AI-driven themes.",
+        "confidence_0_100": 85,
+        "confidence_rationale": "The AGI token has a clear AI narrative and is backed by notable figures. The AI-driven narrative is gaining traction in the crypto space.",
         "leader_token": {
-          "token_symbol": "PsyopAnime",
-          "token_name": "PsyopAnime",
-          "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump",
-          "usd_market_cap": 6612122.41
+          "token_symbol": "UNSYS",
+          "token_name": "Uncertain Systems",
+          "token_address": "Dza3Bey5tvyYiPgcGRKoXKU6rNrdoNrWNVmjqePcpump",
+          "usd_market_cap": 268112.98
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The 'Crypto Meme Revival' and 'AI-Driven Meme Projects' METAs are gaining strength due to their strong historical roots and innovative AI integration. The 'Community-Driven Meme Tokens' META is fading slightly as newer AI and AI-integrated tokens capture more attention. The 'Animal Meme Tokens' META remains stable but is showing signs of plateauing as novelty wears off.",
+    "meta_rotation_note": "The 'Crypto Meme Revival' and 'AI-Driven Narrative' METAs are gaining strength as they leverage well-established memes and AI trends. The 'Crypto Whimsy and Absurdity' META is fading slightly as the market shifts toward more structured narratives. The 'AI and NFTs' META is emerging as a strong contender due to the growing intersection of AI and NFTs in crypto.",
     "meta_leaders": [
-      {
-        "meta_name": "Animal Meme Tokens",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 726611995.51
-        }
-      },
       {
         "meta_name": "Crypto Meme Revival",
         "leader_token": {
@@ -513,30 +504,39 @@
         }
       },
       {
-        "meta_name": "Community-Driven Meme Tokens",
+        "meta_name": "Crypto Whales and Memes",
         "leader_token": {
-          "token_symbol": "PUMPID",
-          "token_name": "Valentinesmaxxing Romancegooner",
-          "token_address": "5fFzyj6Mc7A2ECT7ae18YvTT7d6JoPiY8KWoqXzXpump",
-          "usd_market_cap": 7740597.6
+          "token_symbol": "WhiteWhale",
+          "token_name": "The White Whale",
+          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
+          "usd_market_cap": 89126118.47
         }
       },
       {
-        "meta_name": "AI-Driven Meme Projects",
+        "meta_name": "Crypto Whimsy and Absurdity",
         "leader_token": {
-          "token_symbol": "PsyopAnime",
-          "token_name": "PsyopAnime",
-          "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump",
-          "usd_market_cap": 6612122.41
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 3006899.7
         }
       },
       {
-        "meta_name": "AI and Crypto Fusion",
+        "meta_name": "AI and NFTs",
         "leader_token": {
-          "token_symbol": "PsyopAnime",
-          "token_name": "PsyopAnime",
-          "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump",
-          "usd_market_cap": 6612122.41
+          "token_symbol": "PANDU",
+          "token_name": "Pandu Pandas",
+          "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk",
+          "usd_market_cap": 919658.4
+        }
+      },
+      {
+        "meta_name": "AI-Driven Narrative",
+        "leader_token": {
+          "token_symbol": "UNSYS",
+          "token_name": "Uncertain Systems",
+          "token_address": "Dza3Bey5tvyYiPgcGRKoXKU6rNrdoNrWNVmjqePcpump",
+          "usd_market_cap": 268112.98
         }
       }
     ]
