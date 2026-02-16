@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-16T12:58:42.675572Z",
+  "generated_at_utc": "2026-02-16T13:58:57.139967Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 116,
+  "token_context_count": 115,
   "prompt_truncated": false,
   "warnings": [
     "Detected 7 PVP group(s); excluding 13 token(s) from META prompt."
@@ -224,12 +224,58 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI and Autonomous Agents",
-        "description": "Tokens centered around AI-driven systems, autonomous agents, or AI ecosystems. These tokens often focus on governance, utility, or staking within AI-based platforms or marketplaces.",
+        "meta_name": "Meme Rehashes",
+        "description": "Tokens repurposing existing internet memes, pop culture references, or viral content to create crypto narratives. These often leverage nostalgia or established meme formats for community engagement.",
         "defining_signals": [
-          "Tokens with AI, autonomous agents, or machine learning in their description.",
-          "Focus on governance, utility, or staking within AI ecosystems.",
-          "Mentions of AI-driven platforms, marketplaces, or agent interactions."
+          "Use of pre-existing memes or cultural references (e.g., Pepe the Frog, Wojak, Pepto-Bismol)",
+          "Lack of verifiable non-crypto cultural origin for the name or concept",
+          "Community-driven branding with meme-centric themes"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "PEPEBISMOL",
+            "token_name": "Pepe Bismol",
+            "token_address": "HbYkCTiaEBzQMW5oty4FhTHPpump"
+          },
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "CLIP",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          }
+        ],
+        "leader_hint_token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong overlap with established meme formats and consistent naming patterns across tokens.",
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15039051.93
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Utility-Driven Meme Tokens",
+        "description": "Tokens that blend meme culture with utility features like governance, staking, or AI integration. These aim to balance community appeal with functional on-chain use cases.",
+        "defining_signals": [
+          "Meme branding with clear utility components (e.g., staking, AI agents)",
+          "Inclusion of governance or platform-specific functions",
+          "Community-driven development with on-chain mechanics"
         ],
         "supporting_tokens": [
           {
@@ -238,55 +284,55 @@
             "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
           },
           {
-            "token_symbol": "SAMMY",
-            "token_name": "Sammy Jankis",
-            "token_address": "Aky34UtF4mvmACgYyhhiYLZAvSSwSJtx5wi49d9JXjGK"
+            "token_symbol": "RADR",
+            "token_name": "RADR",
+            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
           },
           {
-            "token_symbol": "MOLTCOURT",
-            "token_name": "MoltCourt",
-            "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
+            "token_symbol": "MUSE",
+            "token_name": "MUS3",
+            "token_address": "43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump"
           },
           {
-            "token_symbol": "MOLTCUPID",
-            "token_name": "MoltCupid",
-            "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwvZZpump"
+            "token_symbol": "ZORA",
+            "token_name": "ZORA",
+            "token_address": "soKqZS9pASwBNS46G388nhK7XVtPaTyReffXEd3zora"
           },
           {
-            "token_symbol": "CRABS",
-            "token_name": "Molt Crabs",
-            "token_address": "HYhnRdn7nridbDUUcRsd3JtmvMCyKrVDew52CWGtpump"
+            "token_symbol": "FAP",
+            "token_name": "sFAP",
+            "token_address": "GLaKjoyTiHu7Y3PCkyWSCg852pFyNXTequRJS9yCsFAP"
           }
         ],
         "leader_hint_token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "AGI is the most prominent token in this category, with a clear focus on AI agent infrastructure and utility.",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Balanced meme and utility features with growing on-chain adoption.",
         "leader_token": {
-          "token_symbol": "Crabs",
-          "token_name": "Molt Crabs",
-          "token_address": "HYhnRdn7nridbDUUcRsd3JtmvMCyKrVDew52CWGtpump",
-          "usd_market_cap": 193945.17
+          "token_symbol": "RADR",
+          "token_name": "RADR",
+          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
+          "usd_market_cap": 810422.96
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Cultural Figures and Internet Personalities",
-        "description": "Tokens inspired by or referencing well-known cultural figures, internet personalities, or public figures. These tokens often capitalize on the fame or notoriety of the individual to drive interest.",
+        "meta_name": "Cultural Figures & Controversies",
+        "description": "Tokens referencing public figures, controversial topics, or internet personas, often with satirical or ironic undertones. These leverage the notoriety or polarizing nature of the subject for attention.",
         "defining_signals": [
-          "Tokens referencing celebrities, public figures, or internet personalities.",
-          "Use of names or themes associated with famous individuals.",
-          "Leveraging the cultural or notoriety of the referenced figure."
+          "Direct references to public figures (e.g., Elon Musk, Jeffrey Epstein)",
+          "Use of controversial or polarizing themes",
+          "Absence of non-crypto cultural origin for the reference"
         ],
-        "supporting_tokens": [
+        "supportinging_tokens": [
           {
-            "token_symbol": "ZYZZ",
-            "token_name": "Zyzz",
-            "token_address": "7nxyHFTB4BzZveSQV1EWrFqxPsK318oiSnXbC8knhefw"
+            "token_symbol": "ELON",
+            "token_name": "Elon Coin",
+            "token_address": "2akXpuyFXAVN5YofZpZMfBp2Vxognpmv9NooBMuHpump"
           },
           {
-            "token_symbol": "CIA",
-            "token_name": "John Kiriakou",
-            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
+            "token_symbol": "EPSTEIN",
+            "token_name": "Epstein Slop",
+            "token_address": "DwEnox9H1VZFPpp3UNYcZeNWPs8mvHiPrhjDKrD1pump"
           },
           {
             "token_symbol": "LAZAR",
@@ -294,124 +340,81 @@
             "token_address": "DSpXz11Fqk2TzpYLNfCqoKiaQhynpEWhFKh2hTDGpump"
           },
           {
-            "token_symbol": "PIMP",
-            "token_name": "Pim Neill",
-            "token_address": "3uVKEAvcbKUPnUp2ppR7r8LnWoqi2mx8rwar5UmSpump"
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
           },
           {
-            "token_symbol": "SUGERDADDY",
-            "token_name": "Suger Daddy",
-            "token_address": "BvdBaCZEFkSE5ApnFf9KmMp3jWfAsGGQJnPajckpump"
+            "token_symbol": "GOSU",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
           }
         ],
-        "leader_token": {
-          "token_symbol": "CIA",
-          "token_name": "John Kiriakou",
-          "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump",
-          "usd_market_cap": 157928.4
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Valentine's Day Themed",
-        "description": "A cluster of tokens leveraging the cultural significance of Valentine's Day, often incorporating romantic or relationship-themed narratives. These tokens capitalize on seasonal interest and meme potential around love, couples, and affection.",
-        "defining_signals": [
-          "Tokens with names or descriptions referencing Valentine's Day, love, or couples.",
-          "Themes of romance, affection, or relationship dynamics.",
-          "Meme or viral content tied to February 14th or romantic gestures."
-        ],
-        "supportinging_tokens": [
-          {
-            "token_symbol": "VALJUICE",
-            "token_name": "Valentine Juice",
-            "token_address": "51V5RwSnBM85279gki8eTobibWXztzWT3rzed1acpump"
-          },
-          {
-            "token_symbol": "COUPLES",
-            "token_name": "Happy Valentine's Day",
-            "token_address": "M3deWmRDMZxA85dFa4UvjvqMzGeAjqYALQqxEbmpump"
-          },
-          {
-            "token_symbol": "FEB14",
-            "token_name": "Fondle Every Boobs",
-            "token_address": "Ts8rhodMwqYgCxJcLcBD2YWDL5jNSyD6wjLTSzVpump"
-          },
-          {
-            "token_symbol": "PUMPID",
-            "token_name": "Valentinesmaxxing Romancegooner",
-            "token_address": "5fFzyj6Mc7A2ECT7ae18YvTT7d6JoPiY8KWoqXzXpump"
-          },
-          {
-            "token_symbol": "JUICE",
-            "token_name": "Pixelated Juice",
-            "token_address": "GGpLqLxLxnbxC31r5dd4hjH7hi7JJBj9HUQoZNVpump"
-          }
-        ],
-        "leader_hint_token_address": "51V5RwSnBM85279gki8eTobibWXztzWT3rzed1acpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "VALJUICE has the highest market cap among this group and is directly themed around Valentine's Day, making it the most prominent token in this category.",
+        "leader_hint_token_address": "2akXpuyFXAVN5YofZpZMfBp2Vvognpmv9NooBMuHpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong public figure references with clear cultural resonance, though some tokens lack broader community adoption.",
         "leader_token": null,
         "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       },
       {
-        "meta_name": "Meme Culture Revival",
-        "description": "Tokens drawing from established internet memes, often repurposing them for crypto narratives. These tokens leverage nostalgia and cultural familiarity to attract communities already engaged with the original meme.",
+        "meta_name": "Animal Meme Tokens",
+        "description": "Tokens centered around animals, often combining cute or edgy imagery with internet meme culture. These frequently use anthropomorphized animals or viral animal-related content as branding.",
         "defining_signals": [
-          "Tokens referencing well-known memes or internet culture.",
-          "Use of established meme formats or characters.",
-          "Leveraging viral content from platforms like TikTok, Reddit, or KnowYourMeme."
+          "Animal-centric names or themes (e.g., Moo Deng, Punch, Mochi Panda)",
+          "Use of viral animal-related content or memes",
+          "Community-driven branding with animal imagery"
         ],
         "supportinging_tokens": [
           {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+            "token_symbol": "MOODENG",
+            "token_name": "Moo Deng",
+            "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
           },
           {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "MOCHI",
+            "token_name": "Mochi Panda",
+            "token_address": "8yyBAFFfCA4fKw1Ai1SExtSf6DmVckGGDT8XgHUopump"
           },
           {
-            "token_symbol": "PEPEBISMOL",
-            "token_name": "Pepe Bismol",
-            "token_address": "HbYgynsDksniFLXNa3BkCTiaEBzQMW5oty4FhTHPpump"
+            "token_symbol": "HAMSTER",
+            "token_name": "The Aristocratic Warrior",
+            "token_address": "DD4jtnKdyPakShSx1JRwHu7Sk1UouM6Yn9vwtQJGpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+            "token_symbol": "CAMPBELL",
+            "token_name": "CAMPBELL CATS",
+            "token_address": "EqsJxXXR9kdCUvuXBY4hadqs89AwbyRHgxnvPm8Xpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 90,
-        "confidence_rationale": "BONK has a strong market cap and is directly tied to a widely recognized meme, making it the most influential token in this category.",
+        "leader_hint_token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong viral animal meme ties and consistent naming patterns across tokens.",
         "leader_token": null,
         "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "AI and Autonomous Agents",
+        "meta_name": "Meme Rehashes",
         "leader_token": {
-          "token_symbol": "Crabs",
-          "token_name": "Molt Crabs",
-          "token_address": "HYhnRdn7nridbDUUcRsd3JtmvMCyKrVDew52CWGtpump",
-          "usd_market_cap": 193945.17
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15039051.93
         }
       },
       {
-        "meta_name": "Cultural Figures and Internet Personalities",
+        "meta_name": "Utility-Driven Meme Tokens",
         "leader_token": {
-          "token_symbol": "CIA",
-          "token_name": "John Kiriakou",
-          "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump",
-          "usd_market_cap": 157928.4
+          "token_symbol": "RADR",
+          "token_name": "RADR",
+          "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk",
+          "usd_market_cap": 810422.96
         }
       }
     ]
