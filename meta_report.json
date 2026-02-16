@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-16T15:59:38.916732Z",
+  "generated_at_utc": "2026-02-16T17:00:14.127819Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 113,
+  "token_context_count": 117,
   "prompt_truncated": false,
   "warnings": [
     "Detected 7 PVP group(s); excluding 13 token(s) from META prompt."
@@ -224,12 +224,12 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political Satire",
-        "description": "Tokens using political themes or satirical takes on current events, often leveraging right-wing or anti-establishment narratives.",
+        "meta_name": "Political/Social Commentary",
+        "description": "Tokens using political, social, or ideological themes to frame their narratives, often referencing real-world events, movements, or figures.",
         "defining_signals": [
-          "References to political figures or movements (e.g., 'BRITAIN', 'Trump3')",
-          "Use of patriotic or nationalist themes (e.g., 'HERO')",
-          "Satirical takes on political issues (e.g., '8B People vs 3,096 Billionaires')"
+          "Direct references to political figures (e.g., Trump, Epstein)",
+          "Themes of resistance or rebellion against systems (e.g., WAR, 8B)",
+          "Cultural or national identity narratives (e.g., BRITAIN, CAMPBELL)"
         ],
         "supporting_tokens": [
           {
@@ -238,29 +238,16 @@
             "token_address": "7tNviT7hyPL8ZBxd68rMZ12TMDyUXmeSpHQruzLepump"
           },
           {
-            "token_symbol": "TRUMP3",
-            "token_name": "Trump3",
-            "token_address": "48224SakAA6AtvWwHHBmLy8NYMdyeysLz34Gwp8wpump"
-          },
-          {
-            "token_symbol": "HERO",
-            "token_name": "The American Hero",
-            "token_address": "D5Ad8kKr7Sx2ZTCnquRSsakFc4VBvs41kBRKq13qpump"
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           },
           {
             "token_symbol": "8B",
             "token_name": "8B People vs 3,096 Billionaires",
             "token_address": "HyXpFTmpocvNEvg8rLpxUesn3wB8WBiwjNLzfaScpump"
-          },
-          {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           }
         ],
-        "leader_hint_token_address": "7tNviT7hyPL8ZBxd68rMZ12TMDyUXmeSpHQruzLepump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Clear political themes across multiple tokens, though some have weaker cultural ties.",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
@@ -270,23 +257,23 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Rehashing",
-        "description": "Tokens repurposing existing internet memes or cultural references for crypto branding. These often leverage nostalgia or viral content to attract attention.",
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens repurposing existing internet memes, pop culture references, or viral phrases for crypto branding. These often leverage nostalgia or established cultural hooks without creating new narratives.",
         "defining_signals": [
-          "Use of established memes (e.g., Pepe the Frog, Clippy, Wojak)",
-          "Leveraging viral internet figures or phrases (e.g., 'Nietzschean Penguin', 'Mochi Panda')",
-          "Repurposing pop culture references (e.g., 'Bob Lazar', 'Mulan's Mushu')"
+          "Use of well-known memes (e.g., Pepe the Frog, Troll Face, Wojak)",
+          "Leverage of historical internet figures or viral moments (e.g., Hachiko, Punch the Orangutan)",
+          "Repurposing of non-crypto slang or phrases into token names (e.g., 'Mog', 'Looksmaxxing')"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Pepebismol",
-            "token_name": "Pepe Bismol",
-            "token_address": "HbYYgynsDksniFLXNa3BkCTiaEBzQMW5oty4FhTHPpump"
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
             "token_symbol": "WOJAK",
@@ -294,120 +281,122 @@
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "MOODENG",
+            "token_name": "Moo Deng",
+            "token_address": "ED5nyyWEzpPPiWimP8vY7sD7TD3LAt3Q3gRTWHzPJBY"
+          },
+          {
+            "token_symbol": "MUSHU",
+            "token_name": "Mushu",
+            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+          },
+          {
+            "token_symbol": "CLAW",
+            "token_name": "Mog Coin",
+            "token_address": "4MdtwK7ezBemvAWsW32HuvVD7o7j89Y3poYwJpWopump"
+          },
+          {
             "token_symbol": "PENGUIN",
             "token_name": "Nietzschean Penguin",
             "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "MUSHU",
-            "token_name": "Mushu",
-            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+            "token_symbol": "BUTT",
+            "token_name": "Buttcoin",
+            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong evidence of meme repurposing across multiple tokens with clear cultural references and viral history.",
+        "leader_hint_token_address": "ED5nyyWEzpPPiWimP8vV7sD7TD3LAt3Q3gRTWHzPJBY",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong cultural ties to viral non-crypto content, consistent naming patterns, and high market caps for several tokens indicate this is a dominant and well-established meta.",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 16045900.4
+          "token_symbol": "Buttcoin",
+          "token_name": "Buttcoin",
+          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+          "usd_market_cap": 17858518.05
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Nostalgia and Pop Culture",
-        "description": "Tokens leveraging nostalgia or pop culture references, often from older media or internet history.",
+        "meta_name": "AI-Powered Utility",
+        "description": "Tokens positioning themselves as infrastructure or tools for AI agents, often emphasizing on-chain automation, governance, or data processing capabilities.",
         "defining_signals": [
-          "References to older media (e.g., 'RALPH', 'MUSHU')",
-          "Use of nostalgic internet culture (e.g., 'Clippy', 'Wojak')",
-          "Leveraging pop culture figures (e.g., 'Zyzz', 'Mia Ko')"
+          "Focus on AI agent infrastructure (e.g., identity, escrow, memory systems)",
+          "Claims of utility in decentralized AI ecosystems (e.g., Agentripe, ClawVault)",
+          "Integration with Solana or other blockchain-based AI frameworks"
         ],
-        "supporting_tokens": [
+        "supportinging_tokens": [
           {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+            "token_symbol": "AGI",
+            "token_name": "Agentripe",
+            "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
           },
           {
-            "token_symbol": "MUSHU",
-            "token_name": "Mushu",
-            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+            "token_symbol": "CLAWVAULT",
+            "token_name": "ClawVault",
+            "token_address": "5Fjr82MTB8mvxzi9FYtvrUsPiDGE2M29w3dDcjpump"
           },
           {
-            "token_symbol": "Zyzz",
-            "token_name": "Zyzz",
-            "token_address": "7nxyHFTB4BzZveSQV1EWrFqxPsK318oiSnXbC8knhefw"
+            "token_symbol": "MUSE",
+            "token_name": "MUS3",
+            "token_address": "43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump"
           },
           {
-            "token_symbol": "Mia",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "USEFUL",
+            "token_name": "USEFUL COIN",
+            "token_address": "D67BSPqECWv8GEozzFT4KCMtT9aFkswK5fC3oeBBbonk"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "MUSHU",
-          "token_name": "Mushu",
-          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
-          "usd_market_cap": 16033272.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Tech Utility",
-        "description": "Tokens focused on AI integration, utility, or tech infrastructure, often with speculative or futuristic narratives.",
-        "defining_signals": [
-          "AI-related utility (e.g., 'GSD', 'Muse')",
-          "Tech infrastructure focus (e.g., 'FLOE', 'RADR')",
-          "Speculative future tech narratives (e.g., 'OpenClaw', 'UNSYS')"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+            "token_symbol": "BOOTSTRAP",
+            "token_name": "Bootstrap",
+            "token_address": "2wP76beSJ8NB8bgFEkZkQCGtWErxqkxTYEGjx9jYpump"
           },
           {
-            "token_symbol": "RADR",
-            "token_name": "RADR",
-            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
+            "token_symbol": "SAMMY",
+            "token_name": "Sammy Jankis",
+            "token_address": "Aky34UtF4mvmACgYyhhiYLZAvSSwSJtx5wi49d9JXjGK"
           },
           {
-            "token_symbol": "FLOE",
-            "token_name": "Floe",
-            "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump"
-          },
-          {
-            "token_symbol": "UNSYS",
-            "token_name": "Uncertain Systems",
-            "token_address": "Dza3Bey5tvyYiPgcGRKoXKU6rNrdoNrWNVmjqePcpump"
-          },
-          {
-            "token_symbol": "OpenClaw",
+            "token_symbol": "OPENCLAW",
             "token_name": "OpenClaw",
             "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "PSYOP",
+            "token_name": "PsyopAnime",
+            "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump"
+          },
+          {
+            "token_symbol": "JESTER",
+            "token_name": "JESTERMAXXING",
+            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
           }
         ],
-        "leader_hint_token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong focus on AI and tech utility with clear project descriptions and market traction.",
-        "leader_token": {
-          "token_symbol": "UNSYS",
-          "token_name": "Uncertain Systems",
-          "token_address": "Dza3Bey5tvyYiPgcGRKoXKU6rNrdoNrWNVmjqePcpump",
-          "usd_market_cap": 1482934.84
-        },
-        "leader_missing_reason": null
+        "leader_hint_token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Growing interest in AI infrastructure and agent-based systems, with multiple tokens targeting specific AI use cases and leveraging Solana's ecosystem.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Political Satire",
+        "meta_name": "Political/Social Commentary",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
@@ -416,30 +405,12 @@
         }
       },
       {
-        "meta_name": "Meme Rehashing",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 16045900.4
-        }
-      },
-      {
-        "meta_name": "Nostalgia and Pop Culture",
-        "leader_token": {
-          "token_symbol": "MUSHU",
-          "token_name": "Mushu",
-          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
-          "usd_market_cap": 16033272.0
-        }
-      },
-      {
-        "meta_name": "AI and Tech Utility",
-        "leader_token": {
-          "token_symbol": "UNSYS",
-          "token_name": "Uncertain Systems",
-          "token_address": "Dza3Bey5tvyYiPgcGRKoXKU6rNrdoNrWNVmjqePcpump",
-          "usd_market_cap": 1482934.84
+          "token_symbol": "Buttcoin",
+          "token_name": "Buttcoin",
+          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+          "usd_market_cap": 17858518.05
         }
       }
     ]
