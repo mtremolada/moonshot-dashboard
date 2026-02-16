@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-16T04:36:25.992897Z",
+  "generated_at_utc": "2026-02-16T05:36:48.985900Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 124,
+  "token_context_count": 121,
   "prompt_truncated": false,
   "warnings": [
     "Detected 8 PVP group(s); excluding 13 token(s) from META prompt."
@@ -244,29 +244,74 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Revival",
-        "description": "Tokens are leveraging the revival of classic memes and internet culture for community engagement and virality. These tokens often draw from long-standing memes with roots in early 2000s internet culture, such as Pepe the Frog, Wojak, and Clippy.",
+        "meta_name": "Animal Meme Tokens",
+        "description": "Tokens are leveraging animal-based memes and viral internet figures, such as Moo Deng, Punch, and Hachiko, to create community-driven projects. These tokens often draw from viral animal content and repurpose it for crypto audiences.",
         "defining_signals": [
-          "Tokens based on iconic 2000s/2010s internet memes (e.g., Pepe, Wojak, Clippy).",
-          "Meme revival is tied to nostalgia-driven communities and social media traction.",
-          "Tokens often have a finite supply and community-driven governance.",
-          "Meme-based branding is central to the token’s identity and marketing."
+          "Use of viral animal figures (e.g., Moo Deng, Punch, Hachiko)",
+          "Community-driven narratives with animal-based themes",
+          "Historical roots in viral animal content with recent crypto repackaging"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+            "token_symbol": "MOODENG",
+            "token_name": "Moo Deng",
+            "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
           },
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "MUSHU",
+            "token_name": "Mushu",
+            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+          },
+          {
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+          }
+        ],
+        "leader_hint_token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Moo Deng has a strong viral presence and a large community, making it a strong leader in this category.",
+        "leader_token": {
+          "token_symbol": "MOODENG",
+          "token_name": "Moo Deng",
+          "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+          "usd_market_cap": 56383445.23
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Character Revival",
+        "description": "Tokens are leveraging the revival of iconic internet memes and characters, such as Wojak, Pepe, and Ralph Wiggum, to create community-driven projects. These tokens often draw from long-standing meme culture and repackage it for crypto audiences.",
+        "defining_signals": [
+          "Use of well-known meme characters (e.g., Wojak, Pepe, Ralph Wiggum)",
+          "Community-driven narratives with meme-based themes",
+          "Historical roots in internet culture (2000s–2010s) with recent crypto repackaging"
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
             "token_symbol": "TROLL",
@@ -274,46 +319,40 @@
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           }
         ],
         "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Pepe has a strong historical meme presence and is widely recognized in crypto and internet culture. Other tokens in this category are either derivatives or offshoots of this revival.",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Pepe has a long-standing meme history and a large community, making it a strong leader in this category.",
         "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 96777408.67
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 16712015.97
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Future Tech",
-        "description": "Tokens are centered around AI, blockchain integration, and futuristic tech concepts. These tokens often leverage AI agents, decentralized systems, and speculative tech narratives to attract interest from the tech-savvy and speculative investor base.",
+        "meta_name": "AI and Tech Meme Tokens",
+        "description": "Tokens are leveraging AI and tech-related memes and concepts, such as AI agents, AI-generated content, and AI memes, to create community-driven projects. These tokens often draw from the growing interest in AI and its impact on culture.",
         "defining_signals": [
-          "Tokens tied to AI agents, AI-generated content, or AI-driven platforms.",
-          "Futuristic branding with terms like 'AI Rig Complex', 'MoltCourt', or 'Agentripe'.",
-          "Strong emphasis on decentralized governance and blockchain integration.",
-          "Tokens often have speculative narratives or utility tied to emerging tech."
+          "Use of AI-related themes (e.g., AI agents, AI-generated content)",
+          "Community-driven narratives with tech-based themes",
+          "Historical roots in AI culture and memes with recent crypto repackaging"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "arc",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
           {
             "token_symbol": "AGI",
             "token_name": "Agentripe",
             "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
+          },
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
           },
           {
             "token_symbol": "MOLTCOURT",
@@ -321,80 +360,42 @@
             "token_address": "uAJnmywQv5vdViZ7YhCMzNzxZKbfPS9eaHQVqnwpump"
           },
           {
-            "token_symbol": "SEEDANCE",
-            "token_name": "Seedance 2.0",
-            "token_address": "vg22WXeS483q1vsNgPwuE4iWdVbhVEw3MqSXTJNNpump"
-          }
-        ],
-        "leader_hint_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "AI Rig Complex has a clear focus on AI infrastructure and is backed by a broader narrative of AI integration with blockchain. Other tokens in this category are either niche or newly launched.",
-        "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 79758780.52
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Retro Culture",
-        "description": "Tokens are inspired by retro culture, including references to old games, movies, and internet nostalgia. These tokens often appeal to older demographics or those with a strong connection to the past.",
-        "defining_signals": [
-          "Tokens referencing retro games, movies, or internet culture (e.g., Vine, Pokémon, Minecraft).",
-          "Tokens with a strong nostalgic appeal to older internet users or gamers.",
-          "Tokens often use retro aesthetics or themes in branding and community engagement.",
-          "Community engagement is driven by shared nostalgia and cultural memory."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "VINE",
-            "token_name": "Vine Coin",
-            "token_address": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump"
-          },
-          {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
-          },
-          {
-            "token_symbol": "Grandma",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
+            "token_symbol": "MOLTCUPID",
+            "token_name": "MoltCupid",
+            "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwwvZZpump"
           }
         ],
         "leader_token": {
-          "token_symbol": "VINE",
-          "token_name": "Vine Coin",
-          "token_address": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
-          "usd_market_cap": 21033202.41
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 1314227.22
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "Cultural and Historical Figures",
-        "description": "Tokens are inspired by real-world cultural, historical, or pop culture figures. These tokens often leverage the public's familiarity with these figures to create a sense of community and shared identity.",
+        "description": "Tokens are leveraging cultural and historical figures, such as Bob Lazar, Jeffrey Epstein, and Elon Musk, to create community-driven projects. These tokens often draw from controversial or widely recognized figures and repurpose them for crypto audiences.",
         "defining_signals": [
-          "Tokens based on real-world figures like Hachiko, Bob Lazar, or historical events.",
-          "Tokens with narratives tied to cultural or historical significance.",
-          "Tokens often use the figure’s legacy or story as a central theme.",
-          "Community engagement is often driven by the figure’s cultural impact."
+          "Use of controversial or widely recognized figures (e.g., Bob Lazar, Jeffrey Epstein, Elon Musk)",
+          "Community-driven narratives with historical or cultural themes",
+          "Historical roots in real-world events or figures with recent crypto repackaging"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
           {
             "token_symbol": "LAZAR",
             "token_name": "Bob Lazar",
             "token_address": "DSpXz11Fqk2TzpYLNfCqoKiaQhynpEWhFKh2hTDGpump"
           },
           {
-            "token_symbol": "Zyzz",
-            "token_name": "Zyzz",
-            "token_address": "7nxyHFTB4BzZveSQV1EWrFqxPsK318oiSnXbC8knhefw"
+            "token_symbol": "EPJUICE",
+            "token_name": "Epstein Juice",
+            "token_address": "GCgLRfeuX2FjdpqLqNN1y9ZbZcBp3EJhkUX5STGtpump"
+          },
+          {
+            "token_symbol": "ELON",
+            "token_name": "Elon Coin",
+            "token_address": "2akXpuyFXAVN5YofZpZMfBp2Vxognpmv9NooBMuHpump"
           },
           {
             "token_symbol": "CIA",
@@ -402,58 +403,58 @@
             "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
           },
           {
-            "token_symbol": "MUSHU",
-            "token_name": "Mushu",
-            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+            "token_symbol": "Zyzz",
+            "token_name": "Zyzz",
+            "token_address": "7nxyHFTB4BzZveSQV1EWrFqxPsK318oiSnXbC8knhefw"
           }
         ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Hachiko is a well-known historical figure with strong cultural resonance in Japan and globally. Other tokens in this category are either niche or newly launched.",
+        "leader_hint_token_address": "2akXpuyFXAVN5YofZpZMfBp2Vxognpmv9NooBMuHpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Elon Coin has a strong cultural presence and a large community, making it a strong leader in this category.",
         "leader_token": {
-          "token_symbol": "MUSHU",
-          "token_name": "Mushu",
-          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
-          "usd_market_cap": 20689408.0
+          "token_symbol": "ELON",
+          "token_name": "Elon Coin",
+          "token_address": "2akXpuyFXAVN5YofZpZMfBp2Vxognpmv9NooBMuHpump",
+          "usd_market_cap": 957312.28
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Revival",
+        "meta_name": "Animal Meme Tokens",
         "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 96777408.67
+          "token_symbol": "MOODENG",
+          "token_name": "Moo Deng",
+          "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+          "usd_market_cap": 56383445.23
         }
       },
       {
-        "meta_name": "AI and Future Tech",
+        "meta_name": "Meme Character Revival",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 79758780.52
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 16712015.97
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
+        "meta_name": "AI and Tech Meme Tokens",
         "leader_token": {
-          "token_symbol": "VINE",
-          "token_name": "Vine Coin",
-          "token_address": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
-          "usd_market_cap": 21033202.41
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 1314227.22
         }
       },
       {
         "meta_name": "Cultural and Historical Figures",
         "leader_token": {
-          "token_symbol": "MUSHU",
-          "token_name": "Mushu",
-          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
-          "usd_market_cap": 20689408.0
+          "token_symbol": "ELON",
+          "token_name": "Elon Coin",
+          "token_address": "2akXpuyFXAVN5YofZpZMfBp2Vxognpmv9NooBMuHpump",
+          "usd_market_cap": 957312.28
         }
       }
     ]
