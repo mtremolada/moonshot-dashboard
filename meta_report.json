@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-16T07:57:26.460540Z",
+  "generated_at_utc": "2026-02-16T08:57:47.258072Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 117,
+  "token_context_count": 116,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 10 PVP group(s); excluding 18 token(s) from META prompt."
+    "Detected 8 PVP group(s); excluding 16 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 18,
+  "pvp_excluded_token_count": 16,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "mog coin",
-      "tokens": [
-        {
-          "token_symbol": "Mog",
-          "token_name": "Mog Coin",
-          "token_address": "26VfKb7jjtdEdvfovoBijScoZmJbWWasFZkgfUD5w7cy",
-          "usd_market_cap": 74194235.0,
-          "processed_at": "2026-02-15T08:02:14.906583Z"
-        },
-        {
-          "token_symbol": "MOG",
-          "token_name": "Mog Coin",
-          "token_address": "4MdtwK7ezBemvAWsW32HuvVD7o7j89Y3poYwJpWopump",
-          "usd_market_cap": 263025.18,
-          "processed_at": "2026-02-16T04:34:34.548205Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "barking puppy",
@@ -148,26 +128,6 @@
           "token_address": "HT5q49HrHF6RLjV6a9LTbUstwmSck5tckW89xuV2pump",
           "usd_market_cap": 5652604.68,
           "processed_at": "2026-02-16T06:56:07.055377Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "mog",
-      "tokens": [
-        {
-          "token_symbol": "Mog",
-          "token_name": "Mog Coin",
-          "token_address": "26VfKb7jjtdEdvfovoBijScoZmJbWWasFZkgfUD5w7cy",
-          "usd_market_cap": 74194235.0,
-          "processed_at": "2026-02-15T08:02:14.906583Z"
-        },
-        {
-          "token_symbol": "MOG",
-          "token_name": "Mog Coin",
-          "token_address": "4MdtwK7ezBemvAWsW32HuvVD7o7j89Y3poYwJpWopump",
-          "usd_market_cap": 263025.18,
-          "processed_at": "2026-02-16T04:34:34.548205Z"
         }
       ]
     },
@@ -298,148 +258,115 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Cultural & Historical References",
-        "description": "This META is defined by tokens that draw from real-world cultural, historical, or pop culture references. These tokens often leverage nostalgia or public interest in historical figures, events, or media.",
-        "defining_signals": [
-          "Tokens referencing historical figures, events, or cultural phenomena.",
-          "Use of real-world cultural narratives or historical events as a foundation.",
-          "Tokens inspired by pop culture, folklore, or historical symbolism."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "MUSHU",
-            "token_name": "Mushu",
-            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
-          },
-          {
-            "token_symbol": "HAMSTER",
-            "token_name": "The Aristocratic Warrior",
-            "token_address": "DD4jtnKdyPakShSx1JRwHu7Sk1UouM6Yn9vwtQJGpump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "LAZAR",
-            "token_name": "Bob Lazar",
-            "token_address": "DSpXz11Fqk2TzpYLNfCqoKiaQhynpEWhFKh2hTDGpump"
-          },
-          {
-            "token_symbol": "3301",
-            "token_name": "1231507051321",
-            "token_address": "6RLKHhdsTwWqz7kRkdigL4488sNYJAYJR3589zjLpump"
-          }
-        ],
-        "leader_hint_token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Mushu has a strong cultural foundation and historical significance, making it a likely leader in this category.",
-        "leader_token": {
-          "token_symbol": "MUSHU",
-          "token_name": "Mushu",
-          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
-          "usd_market_cap": 20689408.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Community-Driven Meme Tokens",
-        "description": "This META is characterized by tokens that are heavily community-driven, often with no clear utility but strong social media presence and community engagement.",
-        "defining_signals": [
-          "Tokens with no clear utility but strong community engagement.",
-          "Tokens created with a focus on humor, internet culture, or meme-based narratives.",
-          "Tokens with active Discord communities or social media presence."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Pigeon",
-            "token_name": "level941",
-            "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump"
-          },
-          {
-            "token_symbol": "B",
-            "token_name": "B",
-            "token_address": "6PMuLSPRz9ae2xPDn5Dc3zH3kDtmE7tTyL8XQKmEbonk"
-          },
-          {
-            "token_symbol": "HAIL",
-            "token_name": "Hail Mary",
-            "token_address": "CZV1Z24oDCDodMUA5saUfDy7T2kE7YxSid2JEbDopump"
-          },
-          {
-            "token_symbol": "PW",
-            "token_name": "Psych Ward",
-            "token_address": "DjXYs7rtZAYj6YBTmniXrdLKNA2wdopRojckFmuLpump"
-          },
-          {
-            "token_symbol": "CT",
-            "token_name": "Crypto Twitter",
-            "token_address": "GxVDTgM2BsAK7nRTP3krtDjbSYL2jRAEnqM4oUCApump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "Pigeon",
-          "token_name": "level941",
-          "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump",
-          "usd_market_cap": 455409.08
-        },
-        "leader_missing_reason": null
-      },
-      {
         "meta_name": "Crypto Meme Revival",
-        "description": "This META is characterized by tokens reviving or repurposing older internet memes, often with a humorous or ironic twist. These tokens leverage nostalgia and established meme culture to attract communities.",
+        "description": "A recurring theme where tokens repurpose or revive older internet memes, often from the 2000s–2010s, to create new crypto narratives. These tokens leverage nostalgia and established meme culture to attract communities.",
         "defining_signals": [
-          "Tokens referencing long-standing memes like 'Pepe the Frog', 'Wojak', or 'Trollface'.",
-          "Use of meme culture with a historical or ironic twist.",
-          "Tokens tied to viral internet figures or events (e.g., Zyzz, Hachiko)."
+          "Use of established memes (e.g., Wojak, Clippy, Pepe the Frog)",
+          "Meme origins predating the token launch by several years",
+          "Community-driven narratives built around meme culture"
         ],
-        "supportinging_tokens": [
-          {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
-          },
+        "supporting_tokens": [
           {
             "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
+            "token_symbol": "CLIPPI",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "PEPE",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "BOME",
+            "token_name": "BOOK OF MEME",
+            "token_address": "ukHH6c7mMmiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
+          },
+          {
             "token_symbol": "TROLL",
             "token_name": "TROLL",
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
+          }
+        ],
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong historical meme roots and active community engagement across multiple tokens.",
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15039051.93
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Cultural Figure Meme Tokens",
+        "description": "Tokens that reference real-world cultural figures, celebrities, or public figures, often using their names or personas to create humorous or ironic narratives.",
+        "defining_signals": [
+          "Use of celebrity or public figure names or personas",
+          "Meme culture built around the figure’s public image",
+          "Community engagement through humor or satire"
+        ],
+        "supporting_tokens": [
           {
-            "token_symbol": "ZYZZ",
+            "token_symbol": "ZYZ",
             "token_name": "Zyzz",
             "token_address": "7nxyHFTB4BzZveSQV1EWrFqxPsK318oiSnXbC8knhefw"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
+          },
+          {
+            "token_symbol": "ELON",
+            "token_name": "Elon Coin",
+            "token_address": "2akXpuyFXAVN5YofZpZMfBp2Vxognpmv9NooBMuHpump"
+          },
+          {
+            "token_symbol": "LARAZ",
+            "token_name": "Bob Lazar",
+            "token_address": "DSpXz11Fqk2TzpYLNfCqoKiaQhynpEWhFKh2hTDGpump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           }
         ],
-        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Pepe is a well-established meme with a large community and historical significance, making it a strong leader in this category.",
-        "leader_token": null,
-        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
+        "leader_hint_token_address": "7nxyHFTB4BzZveSQV1EWrFqxPsK318oiSnXbC8knhefw",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong cultural figure references and active community engagement.",
+        "leader_token": {
+          "token_symbol": "ELON",
+          "token_name": "Elon Coin",
+          "token_address": "2akXpuyFXAVN5YofZpZMfBp2Vxognpmv9NooBMuHpump",
+          "usd_market_cap": 957312.28
+        },
+        "leader_missing_reason": null
       },
       {
-        "meta_name": "AI & Agent Culture",
-        "description": "This META is centered around tokens tied to AI, autonomous agents, and AI-driven ecosystems. These tokens often focus on utility, governance, and integration with AI systems.",
+        "meta_name": "AI and Tech Meme Tokens",
+        "description": "Tokens that leverage AI, AI agents, or tech-related themes to create narratives around innovation, automation, or future tech. These tokens often tie into broader AI hype and meme culture.",
         "defining_signals": [
-          "Tokens tied to AI agents, autonomous systems, or AI-driven platforms.",
-          "Focus on governance, utility, or integration with AI ecosystems.",
-          "Tokens referencing AI collaboration, identity, or trust systems."
+          "Use of AI or tech-related themes in token branding",
+          "Narratives around AI agents, automation, or future tech",
+          "Community engagement focused on tech innovation"
         ],
-        "supportinging_tokens": [
+        "supporting_tokens": [
           {
             "token_symbol": "AGI",
             "token_name": "Agentripe",
             "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
+          },
+          {
+            "token_symbol": "CLAWD",
+            "token_name": "clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
             "token_symbol": "MOLTCOURT",
@@ -452,40 +379,90 @@
             "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwvZZpump"
           },
           {
-            "token_symbol": "CRABs",
+            "token_symbol": "CRAB",
             "token_name": "Molt Crabs",
             "token_address": "HYhnRdn7nridbDUUcRsd3JtmvMCyKrVDew52CWGtpump"
-          },
-          {
-            "token_symbol": "SAMMY",
-            "token_name": "Sammy Jankis",
-            "token_address": "Aky34UtF4mvmACgYyhhiYLZAvSSwSJtx5wi49d9JXjGK"
           }
         ],
         "leader_hint_token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Agentripe is a strong candidate due to its clear focus on AI agent infrastructure and its potential for broader adoption in the AI ecosystem.",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong AI and tech themes with growing community interest.",
+        "leader_token": {
+          "token_symbol": "Crabs",
+          "token_name": "Molt Crabs",
+          "token_address": "HYhnRdn7nridbDUUcRsd3JtmvMCyKrVDew52CWGtpump",
+          "usd_market_cap": 193945.17
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal Meme Tokens",
+        "description": "Tokens that use animal imagery or references to create humorous or viral narratives. These tokens often draw from viral animal videos, memes, or real-life viral animals like Moo Deng.",
+        "defining_signals": [
+          "Use of animal names or imagery in token branding",
+          "Leverage viral animal videos or memes as cultural hooks",
+          "Community engagement centered around animal-related humor"
+        ],
+        "supportinging_tokens": [
+          {
+            "token_symbol": "MOODENG",
+            "token_name": "Moo Deng",
+            "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
+          },
+          {
+            "token_symbol": "HAMSTER",
+            "token_name": "The Aristocratic Warrior",
+            "token_address": "DD4jtnKdyPakShSx1JRwHu7Sk1UouM6Y9vwtQJGpump"
+          },
+          {
+            "token_symbol": "MUSHU",
+            "token_name": "Mushu",
+            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+          },
+          {
+            "token_symbol": "MOCO",
+            "token_name": "Mochi Panda",
+            "token_address": "8yyBAFFfCA4fKw1Ai1SExtSf6DmVckGGDT8XgHUopump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          }
+        ],
+        "leader_hint_token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong viral animal meme origins and high community engagement.",
         "leader_token": null,
         "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Cultural & Historical References",
+        "meta_name": "Crypto Meme Revival",
         "leader_token": {
-          "token_symbol": "MUSHU",
-          "token_name": "Mushu",
-          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
-          "usd_market_cap": 20689408.0
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15039051.93
         }
       },
       {
-        "meta_name": "Community-Driven Meme Tokens",
+        "meta_name": "Cultural Figure Meme Tokens",
         "leader_token": {
-          "token_symbol": "Pigeon",
-          "token_name": "level941",
-          "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump",
-          "usd_market_cap": 455409.08
+          "token_symbol": "ELON",
+          "token_name": "Elon Coin",
+          "token_address": "2akXpuyFXAVN5YofZpZMfBp2Vxognpmv9NooBMuHpump",
+          "usd_market_cap": 957312.28
+        }
+      },
+      {
+        "meta_name": "AI and Tech Meme Tokens",
+        "leader_token": {
+          "token_symbol": "Crabs",
+          "token_name": "Molt Crabs",
+          "token_address": "HYhnRdn7nridbDUUcRsd3JtmvMCyKrVDew52CWGtpump",
+          "usd_market_cap": 193945.17
         }
       }
     ]
