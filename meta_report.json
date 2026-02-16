@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-16T02:34:51.509865Z",
+  "generated_at_utc": "2026-02-16T03:35:44.901129Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 124,
+  "token_context_count": 123,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 8 PVP group(s); excluding 13 token(s) from META prompt."
+    "Detected 8 PVP group(s); excluding 14 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 13,
+  "pvp_excluded_token_count": 14,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -67,6 +67,13 @@
           "token_address": "A211pJ1J7CkXaYDQMWzFGqVrc8UK8A8fMoALq9dspump",
           "usd_market_cap": 4123.5,
           "processed_at": "2026-02-16T01:59:31.088909Z"
+        },
+        {
+          "token_symbol": "TRUMP2",
+          "token_name": "trump2",
+          "token_address": "BySPuRz3gNh4WYWWH8KxFzKcEc73YuubHKMPzHrppump",
+          "usd_market_cap": 5336413.46,
+          "processed_at": "2026-02-16T03:20:54.692794Z"
         }
       ]
     },
@@ -182,6 +189,13 @@
           "token_address": "A211pJ1J7CkXaYDQMWzFGqVrc8UK8A8fMoALq9dspump",
           "usd_market_cap": 4123.5,
           "processed_at": "2026-02-16T01:59:31.088909Z"
+        },
+        {
+          "token_symbol": "TRUMP2",
+          "token_name": "trump2",
+          "token_address": "BySPuRz3gNh4WYWWH8KxFzKcEc73YuubHKMPzHrppump",
+          "usd_market_cap": 5336413.46,
+          "processed_at": "2026-02-16T03:20:54.692794Z"
         }
       ]
     },
@@ -244,12 +258,13 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Revival",
-        "description": "Tokens reviving older internet memes or cultural references, often with humorous or ironic twists, to tap into nostalgia and existing meme communities.",
+        "meta_name": "Meme-Driven Utility",
+        "description": "Tokens are combining meme culture with utility, often offering in-game features, governance, or AI integration to provide real-world value.",
         "defining_signals": [
-          "Use of well-known memes or characters from past internet culture.",
-          "Leveraging historical meme origins for branding or community engagement.",
-          "Incorporating viral phrases or images from older meme cycles."
+          "Tokens with meme-based branding but also tangible utility (e.g., gaming, AI, NFTs)",
+          "Tokens tied to in-game economies or AI tools",
+          "Tokens with community-driven governance or social features",
+          "Tokens leveraging meme culture to drive engagement and adoption"
         ],
         "supporting_tokens": [
           {
@@ -258,29 +273,21 @@
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+            "token_symbol": "CARDS",
+            "token_name": "Collector Crypt",
+            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
           },
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "CLIPPY",
-            "token_name": "Clippy",
-            "token_address": "GKjA1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "PSYOPANIME",
+            "token_name": "PsyopAnime",
+            "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Strong historical meme roots, widespread cultural recognition, and active community engagement across multiple tokens.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -291,11 +298,12 @@
       },
       {
         "meta_name": "AI and Future Tech",
-        "description": "Tokens centered around artificial intelligence, future tech, or speculative advancements, often using futuristic or sci-fi themes to attract interest.",
+        "description": "Tokens are leveraging AI, blockchain, and futuristic tech themes to position themselves as forward-thinking projects with real-world applications.",
         "defining_signals": [
-          "Names or descriptions referencing AI, machine learning, or future tech.",
-          "Incorporation of speculative or science fiction elements.",
-          "Focus on decentralized AI or blockchain-based AI applications."
+          "Tokens tied to AI agents, NFTs, or blockchain-based tools",
+          "Tokens with utility in AI-generated content, gaming, or data processing",
+          "Tokens referencing decentralized AI ecosystems or future tech concepts",
+          "Tokens with narratives around innovation and disruption"
         ],
         "supporting_tokens": [
           {
@@ -309,9 +317,9 @@
             "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump"
           },
           {
-            "token_symbol": "EFM",
-            "token_name": "ECLIPSE",
-            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
+            "token_symbol": "SEEDANCE",
+            "token_name": "Seedance 2.0",
+            "token_address": "vg22WXeS483q1vsNgPwuE4iWdVbhVEw3MqSXTJNpump"
           },
           {
             "token_symbol": "AGI",
@@ -319,118 +327,120 @@
             "token_address": "Ec64vZRywN6cz9Tw3tgVMPnoAQJvFD5bqZ23oTfrpump"
           },
           {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+            "token_symbol": "CTM",
+            "token_name": "c8ntinuum",
+            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
           }
         ],
-        "leader_hint_token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Growing interest in AI and future tech, with multiple tokens leveraging speculative narratives and community-driven hype.",
-        "leader_token": {
-          "token_symbol": "PsyopAnime",
-          "token_name": "PsyopAnime",
-          "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump",
-          "usd_market_cap": 6612122.41
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto Whale Narratives",
-        "description": "Tokens leveraging the persona or actions of influential figures or whales in the crypto space, often tied to predictive behavior or market influence.",
-        "defining_signals": [
-          "Names or descriptions referencing well-known crypto personalities or whales.",
-          "Narratives around market predictions or large trades.",
-          "Community-driven lore or myths around specific individuals."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BIGTROUT",
-            "token_name": "The Big Trout",
-            "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG"
-          },
-          {
-            "token_symbol": "SAS",
-            "token_name": "Stephen A. Smith",
-            "token_address": "oYvNBpJAg279XZzb8JFZBx7NyGU9Nxqi3Q9piXGpump"
-          },
-          {
-            "token_symbol": "TRUMPO",
-            "token_name": "PRESIDENTE DONALDO TRUMPO",
-            "token_address": "9cYAk8CKD1Wb5ZFB3Q5RMkbczVTj84JDrQ1eWHE7pump"
-          },
-          {
-            "token_symbol": "CIA",
-            "token_name": "John Kiriakou",
-            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
-          },
-          {
-            "token_symbol": "SHT",
-            "token_name": "ShitCoin",
-            "token_address": "2NGBAfNMXBU85gjqYutA39b6BCBG5i5MZ4Jvjtdcpump"
-          }
-        ],
-        "leader_hint_token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong narrative around whale behavior and market influence, with community-driven myths and lore.",
-        "leader_token": {
-          "token_symbol": "BigTrout",
-          "token_name": "The Big Trout",
-          "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG",
-          "usd_market_cap": 1763621.07
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Valentine's Day Themed",
-        "description": "Tokens leveraging the cultural and commercial significance of Valentine's Day, often using romantic or relationship-related themes to attract attention and community engagement.",
-        "defining_signals": [
-          "Names or descriptions referencing romantic relationships or gift-giving traditions.",
-          "Launches timed around February 14 or related holidays.",
-          "Use of phrases like 'Happy Valentine's Day' or 'love' in branding."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "COUPLES",
-            "token_name": "Happy Valentine's Day",
-            "token_address": "M3deWmRDMZxA85dFa4UvjvqMzGeAjqYALALQqxEbmpump"
-          },
-          {
-            "token_symbol": "VALJUICE",
-            "token_name": "Valentine Juice",
-            "token_address": "51V5RwSnBM85279gki8eTobibWXztzWT3rzed1acpump"
-          },
-          {
-            "token_symbol": "MOLTCUPID",
-            "token_name": "MoltCupid",
-            "token_address": "1377ZxcXjZv9f8rEDT68sJu1rSK6XH1C5pbjwvZZpump"
-          },
-          {
-            "token_symbol": "CSO",
-            "token_name": "Condom Shortage Olympics",
-            "token_address": "gj4pB2QL1VoDw96Tsz2DtFKFMsKowjcT4WC71USpump"
-          },
-          {
-            "token_symbol": "PUMPID",
-            "token_name": "Valentinesmaxxing Romancegooner",
-            "token_address": "5fFzyj6Mc7A2ECT7ae18YvTT7d6JoPiY8KWoqXzXpump"
-          }
-        ],
-        "leader_hint_token_address": "M3deWmRDMZxA85dFa4UvjvqMzGeAjqYALQqxEbmpump",
+        "leader_hint_token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic alignment with Valentine's Day, multiple tokens launched around the same time, and clear cultural references to the holiday.",
+        "confidence_rationale": "CTM (c8ntinuum) has a high market cap and a strong narrative around cross-chain interoperability, indicating strong interest in future tech.",
         "leader_token": {
-          "token_symbol": "VALJUICE",
-          "token_name": "Valentine Juice",
-          "token_address": "51V5RwSnBM85279gki8eTobibWXztzWT3rzed1acpump",
-          "usd_market_cap": 2615.13
+          "token_symbol": "CTM",
+          "token_name": "c8ntinuum",
+          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+          "usd_market_cap": 369060744.16
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Revival",
+        "description": "Tokens are repurposing classic internet memes and characters for crypto branding, leveraging nostalgia and established meme culture to drive community engagement.",
+        "defining_signals": [
+          "Use of iconic meme characters like Pepe, Wojak, and Clippy",
+          "References to long-standing internet memes with documented histories (e.g., 2000s–2010s)",
+          "Community-driven narratives built around meme culture and digital nostalgia",
+          "Tokens often tied to viral image macros or character-based humor"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "MUSHU",
+            "token_name": "Mushu",
+            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+          }
+        ],
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Pepe and Wojak have strong historical meme roots and high market caps, indicating strong community adoption and cultural relevance.",
+        "leader_token": {
+          "token_symbol": "MUSHU",
+          "token_name": "Mushu",
+          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
+          "usd_market_cap": 20689408.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Cultural Character Tokens",
+        "description": "Tokens are leveraging real-world cultural figures, fictional characters, and historical icons to create narratives that resonate with broader audiences.",
+        "defining_signals": [
+          "Tokens based on well-known fictional characters (e.g., Ralph Wiggum, Hachiko, Punch)",
+          "Tokens referencing historical or mythological figures (e.g., Mushu, Hachiko)",
+          "Tokens drawing from pop culture (e.g., Minecraft Grandma, The Aristocratic Hamster)",
+          "Tokens with narratives tied to folklore or historical events"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjG587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "HAMSTER",
+            "token_name": "The Aristocratic Warrior",
+            "token_address": "DD4jtnKdyPakShSx1JRwHu7Sk1UouM6Yn9vwtQJGpump"
+          },
+          {
+            "token_symbol": "MUSHU",
+            "token_name": "Mushu",
+            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+          }
+        ],
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjg587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Hachiko has a strong historical and cultural narrative, while Ralph Wiggum and Punch have strong pop culture ties, indicating broad appeal and community engagement.",
+        "leader_token": {
+          "token_symbol": "MUSHU",
+          "token_name": "Mushu",
+          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
+          "usd_market_cap": 20689408.0
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Revival",
+        "meta_name": "Meme-Driven Utility",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -441,28 +451,28 @@
       {
         "meta_name": "AI and Future Tech",
         "leader_token": {
-          "token_symbol": "PsyopAnime",
-          "token_name": "PsyopAnime",
-          "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump",
-          "usd_market_cap": 6612122.41
+          "token_symbol": "CTM",
+          "token_name": "c8ntinuum",
+          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+          "usd_market_cap": 369060744.16
         }
       },
       {
-        "meta_name": "Crypto Whale Narratives",
+        "meta_name": "Meme Revival",
         "leader_token": {
-          "token_symbol": "BigTrout",
-          "token_name": "The Big Trout",
-          "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG",
-          "usd_market_cap": 1763621.07
+          "token_symbol": "MUSHU",
+          "token_name": "Mushu",
+          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
+          "usd_market_cap": 20689408.0
         }
       },
       {
-        "meta_name": "Valentine's Day Themed",
+        "meta_name": "Cultural Character Tokens",
         "leader_token": {
-          "token_symbol": "VALJUICE",
-          "token_name": "Valentine Juice",
-          "token_address": "51V5RwSnBM85279gki8eTobibWXztzWT3rzed1acpump",
-          "usd_market_cap": 2615.13
+          "token_symbol": "MUSHU",
+          "token_name": "Mushu",
+          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
+          "usd_market_cap": 20689408.0
         }
       }
     ]
