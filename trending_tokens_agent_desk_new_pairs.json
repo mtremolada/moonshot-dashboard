@@ -1,636 +1,7 @@
 {
-  "last_updated": "2026-02-17T07:34:35.932605Z",
+  "last_updated": "2026-02-17T09:00:37.144333Z",
   "retention_hours": 48,
   "tokens": [
-    {
-      "processed_at": "2026-02-16T08:22:42.293177Z",
-      "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
-      "token_symbol": "FLOE",
-      "token_name": "Floe",
-      "first_time_seen": true,
-      "times_seen_before": 0,
-      "full_token_details": {
-        "aggregate_score": 4.7,
-        "groq_web_research": {
-          "summary_all_context": "Floe (FLOE) is a Solana transaction relay offering private, efficient transactions via staked QUIC routing to leader TPU nodes. Access requires holding $FLOE, with adaptive fees and staked routing prioritization. Created 2 hours ago, no live deployment or public documentation exists.",
-          "answer": "**1. What it claims to be**  \n- A **Solana transaction relay** that enables private, efficient transactions.  \n- Uses **staked QUIC routing** that sends traffic directly to the leader TPU (the Solana block\u2011producer).  \n- Access to the relay is gated by holding the native token **$FLOE**.\n\n**2. Likely utility / features** *(inferred from the descriptions)*  \n- **Private transaction forwarding** \u2013 masks sender/receiver details on Solana.  \n- **Staked routing** \u2013 users (or validators) stake $FLOE to earn routing priority or fees.  \n- **Adaptive fee model** \u2013 fees adjust based on network load or routing demand.  \n- **Direct leader\u2011TPU connection** \u2013 reduces latency by bypassing intermediate nodes.  \n- **Token\u2011gated access** \u2013 holding $FLOE is required to submit transactions through the relay.  \n- **Potential staking rewards** \u2013 stakers may receive a share of collected fees (inferred from \u201cstaked routing\u201d).\n\n**3. Missing information checklist**  \n- Official **whitepaper** or detailed technical documentation.  \n- Public **website** or landing page with product specs.  \n- **Team** identities, backgrounds, and contact information.  \n- Full **tokenomics** (total supply, distribution, vesting, emission schedule).  \n- Security audits of the relay code and QUIC implementation.  \n- Legal/compliance disclosures (e.g., jurisdiction, regulatory status).  \n\n**4. Risk note**  \nAll observations are based solely on the provided staged and LLM descriptions. No external verification is available, and the token was created only\u202f~2\u202fhours ago, so details such as security, team credibility, and economic model remain unconfirmed. Proceed with caution and seek additional, verifiable information before any interaction.",
-          "confidence_score": {
-            "final_score": 7,
-            "confidence_subscores": {
-              "context_faithfulness": 8,
-              "internal_consistency": 7,
-              "specificity": 9,
-              "completeness": 6,
-              "clarity": 8,
-              "source_groundedness": 2
-            }
-          },
-          "narrative_score": {
-            "final_score": 5,
-            "narrative_subscores": {
-              "hook_strength": null,
-              "cultural_relevance": null,
-              "cultural_charge": null,
-              "mission_statement": null,
-              "compellingness": null,
-              "tribal_identity": null,
-              "lore_amount": null,
-              "lore_depth": null
-            }
-          },
-          "sentiment_score": {
-            "final_score": 5,
-            "sentiment_subscores": {
-              "overall_tone": 5,
-              "excitement_level": 5,
-              "concern_signals": 5,
-              "engagement_quality": 5,
-              "community_trust": 5,
-              "fomo_indicators": 5,
-              "skepticism_level": 5,
-              "organic_feel": 5
-            }
-          }
-        },
-        "llm_interpretation": {
-          "created_at": "2026-02-16T08:23:58.219691Z",
-          "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
-          "name": "Floe",
-          "symbol": "FLOE",
-          "description": "Private transaction relay for Solana. Staked QUIC routing straight to the leader TPU. Hold $FLOE to access the relay.",
-          "timestamp": "2026-02-16T08:23:56.465253+00:00",
-          "llm_interpretation": "Description: Floe is a Solana transaction relay token providing private and efficient transactions.\n\n1. memecoin: FALSE - The token is based on a technological utility, not a meme.\n2. utility: TRUE - The token provides access to a private transaction relay service on Solana.\n3. ai_token: FALSE - There's no mention of AI or artificial intelligence in relation to the token.\n4. tweet_coin: FALSE - The token isn't directly inspired by a viral tweet.\n5. current_event: FALSE - The token isn't based on a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in the token's branding.\n7. offensive: FALSE - There's no indication of offensive themes in the token's branding.\n8. animals: TRUE - The token's name, Floe, is related to an animal (seal) as seen in the image.\n9. political: FALSE - The token isn't based on politics or a political figure.",
-          "llm_description": "Floe is a Solana transaction relay providing private and efficient transactions with staked routing and adaptive fees.",
-          "scraped_website_content": "FLOE mainnet github x pump.fun docs bot ref Connect FLOE Private Transaction Relay for Solana QUIC-level packet acceleration \u00b7 multi-path staked routing \u00b7 adaptive fee engine Protocol Source Buy $FLOE ca: 5Ten ... pump click to copy scroll the seal does not care about your network congestion Live Network Solana Mainnet. Right now. Real-time data polled every 3 seconds. Success rates, TPS, priority fees \u2014 all from getRecentPerformanceSamples . Slot numbers link to Solscan for verification. solana network \u2014 connecting... establishing connection to mainnet-beta solana \u2014 congestion model $ explain --tpu-congestion When Solana is congested: \u251c\u2500 Leader TPU port at capacity \u251c\u2500 Unstaked QUIC connections = dropped first \u251c\u2500 Staked connections get priority \u2514\u2500 Public RPC = unstaked = lowest priority Result: \u251c\u2500 NFT mints \u2192 mass drops on public RPC \u251c\u2500 Token launches \u2192 your tx expires \u2514\u2500 Priority fee paid \u2192 wasted (packet never arrived) $ The Problem Your tx gets dropped. QUIC replaced UDP in 2022, but during congestion the slot leader's TPU port is overwhelmed. Unstaked connections = dropped first . Your priority fee is irrelevant if the packet never arrives. It's a delivery problem. Failure Mode Where it breaks. During congestion, the slot leader's TPU port receives more QUIC connections than it can handle. Stake-weighted QoS kicks in. Unstaked connections are dropped first. Your priority fee? Irrelevant. The packet never reaches the validator. It's not a speed problem \u2014 it's a delivery problem. Your Transaction signed, fee attached, ready to send sendTransaction() Public RPC Node unstaked connection \u00b7 no priority \u00b7 shared queue QUIC stream \u2192 leader TPU DROPPED failure TPU port at capacity \u2014 connection rejected \u2715 Stake-weighted QoS: unstaked = lowest priority \u2715 TPU queue full: connection refused \u2715 IP rate-limited: throttled at QUIC layer result \"Transaction expired\" retries 3/3 failed fee wasted see: Solana QUIC implementation, stake-weighted QoS (SIMD-0110) floe \u2014 delivery compa... (truncated)",
-          "classifications": {
-            "memecoin": false,
-            "utility": true,
-            "ai_token": false,
-            "tweet_coin": false,
-            "current_event": false,
-            "racist": false,
-            "offensive": false,
-            "animals": true,
-            "political": false
-          },
-          "prompt_summaries": {
-            "prompt_1_summary_website_content": "FLOE is a Private Transaction Relay for Solana, focusing on QUIC-level packet acceleration, multi-path staked routing, and adaptive fee engine.",
-            "prompt_2_summary_twitter_searches": "FLOE is associated with the Solana blockchain and linked to a specific wallet address and URLs.",
-            "prompt_3_summary_profile_content": "Floe is a Solana transaction relay with staked routing, adaptive fees, and no dropped packets, offering a bot and developing a web-based trading terminal.",
-            "prompt_4_summary_main_tweet": "",
-            "prompt_5_summary_twitter_community_recent_posts": ""
-          }
-        },
-        "llm_staged_data": {
-          "created": "2 hours ago",
-          "token_created_timestamp": "2026-02-16T06:03:36+00:00",
-          "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
-          "token_symbol": "FLOE",
-          "token_name": "Floe",
-          "first_time_seen": true,
-          "times_seen_before": 0,
-          "token_description": "Private transaction relay for Solana. Staked QUIC routing straight to the leader TPU. Hold $FLOE to access the relay.",
-          "token_image": "https://ipfs.io/ipfs/bafybeig5wwwbpeafmuv4htf53opnopqa6skuux5ov66fetam3y6t4ehm7u",
-          "token_twitter": null,
-          "token_website": null,
-          "pump_twitter": "https://x.com/floedotre",
-          "pump_telegram": null,
-          "pump_website": "https://floe.re/",
-          "dex_twitter": "https://x.com/floedotre",
-          "dex_telegram": null,
-          "dex_discord": null,
-          "dex_website": "https://floe.re/",
-          "is_currently_live": false,
-          "community_takeover": false,
-          "community_takeover_payment_time": null,
-          "community_takeover_time_ago": "N/A",
-          "main_tweet": {
-            "text": null,
-            "username": null,
-            "displayname": null
-          },
-          "website_content": "FLOE mainnet github x pump.fun docs bot ref Connect FLOE Private Transaction Relay for Solana QUIC-level packet acceleration \u00b7 multi-path staked routing \u00b7 adaptive fee engine Protocol Source Buy $FLOE ca: 5Ten ... pump click to copy scroll the seal does not care about your network congestion Live Network Solana Mainnet. Right now. Real-time data polled every 3 seconds. Success rates, TPS, priority fees \u2014 all from getRecentPerformanceSamples . Slot numbers link to Solscan for verification. solana network \u2014 connecting... establishing connection to mainnet-beta solana \u2014 congestion model $ explain --tpu-congestion When Solana is congested: \u251c\u2500 Leader TPU port at capacity \u251c\u2500 Unstaked QUIC connections = dropped first \u251c\u2500 Staked connections get priority \u2514\u2500 Public RPC = unstaked = lowest priority Result: \u251c\u2500 NFT mints \u2192 mass drops on public RPC \u251c\u2500 Token launches \u2192 your tx expires \u2514\u2500 Priority fee paid \u2192 wasted (packet never arrived) $ The Problem Your tx gets dropped. QUIC replaced UDP in 2022, but during congestion the slot leader's TPU port is overwhelmed. Unstaked connections = dropped first . Your priority fee is irrelevant if the packet never arrives. It's a delivery problem. Failure Mode Where it breaks. During congestion, the slot leader's TPU port receives more QUIC connections than it can handle. Stake-weighted QoS kicks in. Unstaked connections are dropped first. Your priority fee? Irrelevant. The packet never reaches the validator. It's not a speed problem \u2014 it's a delivery problem. Your Transaction signed, fee attached, ready to send sendTransaction() Public RPC Node unstaked connection \u00b7 no priority \u00b7 shared queue QUIC stream \u2192 leader TPU DROPPED failure TPU port at capacity \u2014 connection rejected \u2715 Stake-weighted QoS: unstaked = lowest priority \u2715 TPU queue full: connection refused \u2715 IP rate-limited: throttled at QUIC layer result \"Transaction expired\" retries 3/3 failed fee wasted see: Solana QUIC implementation, stake-weighted QoS (SIMD-0110) floe \u2014 delivery compa... (truncated)",
-          "twitter_community_content": null,
-          "twitter_profile": {
-            "displayname": "Floe",
-            "bio": "Solana transaction relay. Staked routing, adaptive fees, no dropped packets. The seal sits on the ice.",
-            "recent_tweets": [
-              "We are currently deploying a minor hotfix to improve the stability of our Telegram bot. There might be a very brief downtime, but don't worry\u2014it\u2019s all part of making the experience smoother.  We will post an immediate update as soon as the deployment is complete. Thanks for your patience.",
-              "Deployment Complete. Everything is back online",
-              "Who said we\u2019re taking it slow? The next step is already in motion.",
-              "/1 The relay was built as infrastructure. The bot was the first interface.  The next interface is a full web-based trading terminal \u2014 chart, swap, portfolio, positions, all running through the same staked relay.  No download. No extension. Open the browser and trade.",
-              "/3 What the terminal adds:  Full charting. Advanced order types. Real-time P&amp;L dashboard. Token screening. All within the browser \u2014 no client installation, no desktop app.  The relay is the backend. The terminal is the frontend. Both are coming to https://t.co/KcGfgIYQL0.",
-              "/4 More interfaces mean more users on the relay. More users mean more fees collected. More fees mean more $FLOE purchased from the market.  The terminal is not a separate product. It is another entry point into the same economic loop.  https://t.co/KcGfgIYQL0",
-              "/1 The referral system is live inside the bot.  Hold $FLOE. Open /referral. Share your link. When someone trades through your link, you earn a percentage of their platform fee \u2014 paid in SOL.  No minimum volume. No lockup. Earnings accumulate per trade.",
-              "/2 Commission rates scale with your tier:  Drift \u2014 15% of referral's platform fee. Deep \u2014 25%. Abyss \u2014 35%.  Your tier is determined by your $FLOE balance as a share of total supply. Higher balance, higher cut.",
-              "/3 On top of referral earnings, your own trades generate self-payback. A portion of your own platform fee returns to you.  When your claimable balance hits the threshold, press Claim. Payout is SOL + $FLOE from the protocol treasury.  The more the relay is used, the more the treasury holds, the more you earn.  @floe_relay_bot",
-              "/1 What happens when you press Buy inside the bot:  1. The bot reads your settings \u2014 slippage, priority, tip. 2. The fee engine queries the last 150 slots and calculates the minimum viable priority fee. 3. If the token is on https://t.co/u9fBITyUTO, it routes through the bonding curve directly. Otherwise, Jupiter handles the swap.",
-              "/2 4. The transaction is signed and fired through multiple paths simultaneously:    \u2014 Staked relay to leader TPU    \u2014 Jito bundle to block engine    \u2014 Direct connection when available  5. First path that lands, wins. Others are discarded. 6. Platform fee is collected. Buyback fires immediately \u2014 $FLOE purchased from market on the same block cycle.",
-              "/3 This is not a wrapper around a public RPC.  The routing layer, the fee engine, the multi-path delivery \u2014 all open source. The bot is the first interface. A web-based trading terminal is next. The relay is the infrastructure that powers both.",
-              "/1 How to start:  Open @floe_relay_bot on Telegram. Press Start. A wallet is generated automatically. Send SOL to the wallet address shown.  You are now connected to the relay.",
-              "/3 Earning while you trade:  If you hold $FLOE, a portion of your own trading fees comes back to you as self-payback. Share your referral link \u2014 earn a percentage of every trade your referrals make.  Check /referral for your link, stats, and claimable balance. Claim pays out in SOL + $FLOE from the protocol treasury.",
-              "/4 Settings:  /settings \u2014 slippage, priority fee, Jito tip, buy/sell presets. /wallet \u2014 create, import, export, toggle active wallets. /positions \u2014 live portfolio with P&L.  Everything runs through staked QUIC connections. Same relay, same infrastructure. A web-based trading terminal is in development \u2014 same relay, full browser experience.  @floe_relay_bot",
-              "/1 The Floe trading bot is live.  Swap any Solana token through the relay. https://t.co/7Yv8ftZvZ6 detection, Jupiter routing, multi-wallet support. Every transaction routes through staked infrastructure. https://t.co/VnoAUMK1Q5 @floe_relay_bot https://t.co/dbs8v6WH8T",
-              "/3 Tier access inside the bot:  Surface \u2014 1% fee. Basic routing. Drift \u2014 0.75% fee. 15% referral commission. Deep \u2014 0.5% fee. 25% referral. Revenue share. Abyss \u2014 Zero fee. 35% referral. Full access.  Your tier is your $FLOE balance as a percentage of total supply.",
-              "/4 Every trade through the bot generates protocol revenue. A portion purchases $FLOE from the market on each transaction. Referral and payback claims include $FLOE from that treasury.  The bot is the first interface. A web-based trading terminal is next \u2014 same relay, full browser experience.  @floe_relay_bot | https://t.co/GXazz4lGGR"
-            ]
-          },
-          "twitter_search_texts": {
-            "address_recent": [
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump  #FarrhanaBhatt #solana https://t.co/JUneY1JHcE",
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/Vy3JbGA27M"
-            ],
-            "address_top": [
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/Vy3JbGA27M"
-            ],
-            "symbol_recent": [
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump  #FarrhanaBhatt #solana https://t.co/JUneY1JHcE",
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/Vy3JbGA27M"
-            ],
-            "symbol_top": [
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/Vy3JbGA27M",
-              "What is this fud attack\ud83e\udd23 going hard for yall . Lets gooo!   $FLOE to 100M"
-            ]
-          }
-        },
-        "risk_analysis": {
-          "onchain_scan": {
-            "dex_paid": true,
-            "dex_paid_timestamp": "2026-02-16 06:33:27",
-            "bundle_percentage": 4.86,
-            "fresh_wallets_percentage": 4.4,
-            "dev_hold_percentage": 0.0,
-            "insider_wallets_percentage": 14.47,
-            "num_holders": 1151,
-            "largest_holder_percentage": 3.8,
-            "largest_cluster_percentage": 0.65,
-            "large_holder_count": 6,
-            "same_percentage_count": 6,
-            "low_sol_count": 13
-          },
-          "onchain_scan_score": {
-            "final_score": 7.4,
-            "bundle_percentage_score": 8,
-            "fresh_wallets_percentage_score": 8,
-            "dev_hold_percentage_score": 10,
-            "insider_wallets_percentage_score": 5,
-            "num_holders_score": 6,
-            "largest_holder_percentage_score": 7,
-            "largest_cluster_percentage_score": 10,
-            "large_holder_count_score": 8,
-            "same_percentage_count_score": 6,
-            "low_sol_count_score": 3
-          },
-          "graduated_tokens_thresholds": {
-            "highest_threshold": 250000,
-            "all_time_highest_threshold": 250000,
-            "highest_threshold_as_farm": 250000,
-            "highest_threshold_as_farmed": 100000,
-            "highest_threshold_as_no_farm_detected": 0,
-            "farm_status": "FARM",
-            "ever_failed_criteria": true,
-            "last_scanned": 1771230047.1684518
-          },
-          "social_scan": {
-            "handle_reuse": {
-              "handle": "floedotre",
-              "reused": false,
-              "account_count": 0,
-              "accounts": [],
-              "message": "No account history found for this handle."
-            }
-          }
-        },
-        "alpha_analysis": {
-          "kol_buys": {
-            "total_kol_buys": 0,
-            "total_usd_spent": 0.0,
-            "kols": []
-          },
-          "trending_ranks": {
-            "axiom": null,
-            "dexscreener": null,
-            "moby": null,
-            "pumpfun_found": false,
-            "trending_found": false,
-            "twitter_trending_found": false
-          },
-          "moby": {
-            "whale_count_h24": null,
-            "whale_trades_count_h24": null,
-            "whale_net_flow_usd_h24": null,
-            "whale_net_supply_percent_h24": null,
-            "whale_holder_retention_percent_h24": null
-          },
-          "twitter_trending": {
-            "mentions_total": null,
-            "accounts": []
-          },
-          "alpha_score": {
-            "final_score": 0.0,
-            "total_kol_buys_score": 0,
-            "trending_ranks_score": 0.0,
-            "twitter_trending_score": 0
-          }
-        },
-        "technical_analysis": {
-          "ta_buy_score": {
-            "final_score": null,
-            "timeframe_scores": {
-              "15m": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "1h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "4h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "24h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              }
-            },
-            "subscores": {
-              "oversold": null,
-              "momentum_shift": null,
-              "drawdown_value": null,
-              "holder_trend": null
-            }
-          },
-          "usd_market_cap": 291433.84,
-          "ath_market_cap": 309883.11,
-          "ath_market_cap_timestamp": "2026-02-16T08:22:26+00:00",
-          "ath_multiple": 1.063,
-          "backup_ath_market_cap": null,
-          "backup_ath_market_cap_timestamp": null,
-          "holderscan_data": {
-            "source": null,
-            "holderscan_history": []
-          },
-          "ohlcv": {
-            "intervals": {}
-          }
-        }
-      }
-    },
-    {
-      "processed_at": "2026-02-16T08:58:15.386865Z",
-      "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
-      "token_symbol": "OTOME",
-      "token_name": "OTOME",
-      "first_time_seen": true,
-      "times_seen_before": 0,
-      "full_token_details": {
-        "aggregate_score": 3.7,
-        "groq_web_research": {
-          "summary_all_context": "The $OTOME token references \"Otome\" (\u4e59\u5973), a Japanese term meaning \"maiden\" central to female-focused pop culture like otome games and Tokyo\u2019s Otome Road district. The token\u2019s narrative of a resilient macaque aligns with otome themes of personal growth and second chances, leveraging existing cultural resonance.",
-          "answer": "**Summary (non\u2011crypto meaning)**  \n- **Otome (\u4e59\u5973)** is a Japanese word that literally means \u201cmaiden\u201d or \u201cyoung lady.\u201d  \n- In contemporary Japanese pop\u2011culture it is used to label media aimed at a female audience: *otome games* (romance\u2011oriented visual novels), *Otome Road* (a district in Ikebukuro known for girls\u2011focused anime/manga shops), and the broader \u201cotome\u201d fandom that celebrates stories of romance, personal growth, and empowerment.  \n- The term also appears in everyday slang to describe a girl who is sweet, innocent, or \u201cprincess\u2011like,\u201d and it has been adopted in memes and TikTok trends that play on the \u201cmaiden\u2011like\u201d aesthetic.\n\n**Origin / Timeline (cultural)**  \n- **Etymology:** Derived from classical Japanese, where *otome* referred to an unmarried woman of noble birth.  \n- **1970s\u201180s:** The word entered modern slang as a descriptor for a shy or demure girl.  \n- **1990s\u20112000s:** With the rise of visual\u2011novel games, developers coined \u201cotome game\u201d to denote romance titles featuring a female protagonist (e.g., *Angelique* series, 1994).  \n- **2000s\u2011present:** Ikebukuro\u2019s \u201cOtome Road\u201d became a physical hub for otome\u2011oriented merchandise, solidifying the term\u2019s association with a subculture focused on romance, personal resilience, and \u201csecond\u2011chance\u201d narratives.  \n- **Social\u2011media era:** TikTok and meme communities occasionally use \u201cotome\u201d to caption videos that showcase gentle, uplifting stories of personal growth\u2014mirroring the token\u2019s description of a fragile macaque finding strength through a plush companion.\n\n**Sources (identified from prior knowledge; no new web searches were possible)**  \n1. Wikipedia \u2013 \u201cOtome game\u201d \u2013 explains the genre\u2019s focus on romance for women.  \n2. Wikipedia \u2013 \u201cOtome Road\u201d \u2013 details the cultural district in Tokyo dedicated to female\u2011oriented anime/manga.  \n\n*Note: Because tool use is disabled by system policy, I cannot perform fresh web searches to provide additional links.*",
-          "confidence_score": {
-            "final_score": 8,
-            "confidence_subscores": {
-              "context_faithfulness": 8,
-              "internal_consistency": 9,
-              "specificity": 7,
-              "completeness": 6,
-              "clarity": 8,
-              "source_groundedness": 9
-            }
-          },
-          "narrative_score": {
-            "final_score": 6,
-            "narrative_subscores": {
-              "hook_strength": 8,
-              "cultural_relevance": 9,
-              "cultural_charge": 2,
-              "mission_statement": 8,
-              "compellingness": 8,
-              "tribal_identity": 8,
-              "lore_amount": 6,
-              "lore_depth": 3
-            }
-          },
-          "sentiment_score": {
-            "final_score": null,
-            "sentiment_subscores": null
-          }
-        },
-        "llm_interpretation": {
-          "created_at": "2026-02-16T08:59:12.718728Z",
-          "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
-          "name": "OTOME",
-          "symbol": "OTOME",
-          "description": "The Story of Otome Long before Punch\u2026 there was Otome. A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances.",
-          "timestamp": "2026-02-16T08:59:10.997065+00:00",
-          "llm_interpretation": "Description: $OTOME is a token inspired by Otome, a macaque who overcame adversity with a plush companion.\n\n1. memecoin: TRUE - The token is based on a story and image of a macaque, which can be considered a meme-like character.\n2. utility: FALSE - There's no indication that the token is based on tech or utility.\n3. ai_token: FALSE - There's no indication that the token is related to AI or artificial intelligence.\n4. tweet_coin: FALSE - There's no indication that the token is directly inspired by a viral tweet.\n5. current_event: FALSE - There's no indication that the token is based on a current event or trend.\n6. racist: FALSE - The token's branding and story do not contain racist themes.\n7. offensive: FALSE - The token's branding and story do not contain offensive themes.\n8. animals: TRUE - The token is based on a macaque, an animal.\n9. political: FALSE - The token is not related to politics or a political figure.",
-          "llm_description": "$OTOME is a token inspired by Otome, a macaque who overcame adversity with a plush companion, symbolizing resilience and second chances.",
-          "scraped_website_content": "Twitter Telegram Live Chart $OTOME CA : NULL Copied! The Story of Otome Long before Punch\u2026 there was Otome . A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances. Courage Wrapped in Softness At first, the troop was puzzled by the tiny monkey who carried a plush toy everywhere. Some young macaques teased her, unsure of this unusual sight. But whenever Otome ran back to her beloved bear, they stopped. The distance slowly faded. That plush wasn\u2019t just comfort \u2014 it was her mother, her shield, her quiet strength . Held by a Bear, Guided by Love How to Buy $OTOME 1 Set Up Your Wallet Download a trusted wallet and create your secure account. Keep your recovery phrase safe \u2014 it\u2019s your key to everything. 2 Fund Your Wallet Add funds to your wallet using your preferred method. Make sure you have enough to complete your transaction smoothly. 3 Connect to a DEX Visit your preferred decentralized exchange and connect your wallet securely. 4 Swap for $OTOME Enter the official contract, confirm the amount, and swap. Welcome to the story \u2014 you\u2019re now part of Otome\u2019s journey. Otome\u2019s Circle Inspired by Otome\u2019s journey, this space reflects quiet resilience and gentle courage. Just as she found comfort in her cherished bear while learning to trust again, we honor softness as strength and the beauty of growing at your own pace. Twitter Telegram $OTOME Courage Wrapped in Softness Twitter Telegram DEX Screener $OTOME is a meme coin with no intrinsic value or expectation of financial return. The coin is for entertainment purposes only. \u00a9 2026 Otome. All rights reserved.",
-          "classifications": {
-            "memecoin": true,
-            "utility": false,
-            "ai_token": false,
-            "tweet_coin": false,
-            "current_event": false,
-            "racist": false,
-            "offensive": false,
-            "animals": true,
-            "political": false
-          },
-          "prompt_summaries": {
-            "prompt_1_summary_website_content": "$OTOME is a token inspired by Otome, a macaque who overcame adversity with the help of a plush companion, symbolizing resilience, softness, and second chances.",
-            "prompt_2_summary_twitter_searches": "",
-            "prompt_3_summary_profile_content": "Otome Monkey is a token, recently listed on DexScreener, gaining attention and momentum in the market.",
-            "prompt_4_summary_main_tweet": "",
-            "prompt_5_summary_twitter_community_recent_posts": ""
-          }
-        },
-        "llm_staged_data": {
-          "created": "3 hours ago",
-          "token_created_timestamp": "2026-02-16T05:40:20+00:00",
-          "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
-          "token_symbol": "OTOME",
-          "token_name": "OTOME",
-          "first_time_seen": true,
-          "times_seen_before": 0,
-          "token_description": "The Story of Otome Long before Punch\u2026 there was Otome. A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances.",
-          "token_image": "https://ipfs.io/ipfs/QmQux1JEwhSeTFMjADtwYjkEXdyKDvz3xz4DmiMaivkssb",
-          "token_twitter": null,
-          "token_website": null,
-          "pump_twitter": null,
-          "pump_telegram": null,
-          "pump_website": null,
-          "dex_twitter": "https://x.com/otomemonkey",
-          "dex_telegram": "https://t.me/otomemonkey",
-          "dex_discord": null,
-          "dex_website": "https://otomemonkey.fun/",
-          "is_currently_live": false,
-          "community_takeover": false,
-          "community_takeover_payment_time": null,
-          "community_takeover_time_ago": "N/A",
-          "main_tweet": {
-            "text": null,
-            "username": null,
-            "displayname": null
-          },
-          "website_content": "Twitter Telegram Live Chart $OTOME CA : NULL Copied! The Story of Otome Long before Punch\u2026 there was Otome . A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances. Courage Wrapped in Softness At first, the troop was puzzled by the tiny monkey who carried a plush toy everywhere. Some young macaques teased her, unsure of this unusual sight. But whenever Otome ran back to her beloved bear, they stopped. The distance slowly faded. That plush wasn\u2019t just comfort \u2014 it was her mother, her shield, her quiet strength . Held by a Bear, Guided by Love How to Buy $OTOME 1 Set Up Your Wallet Download a trusted wallet and create your secure account. Keep your recovery phrase safe \u2014 it\u2019s your key to everything. 2 Fund Your Wallet Add funds to your wallet using your preferred method. Make sure you have enough to complete your transaction smoothly. 3 Connect to a DEX Visit your preferred decentralized exchange and connect your wallet securely. 4 Swap for $OTOME Enter the official contract, confirm the amount, and swap. Welcome to the story \u2014 you\u2019re now part of Otome\u2019s journey. Otome\u2019s Circle Inspired by Otome\u2019s journey, this space reflects quiet resilience and gentle courage. Just as she found comfort in her cherished bear while learning to trust again, we honor softness as strength and the beauty of growing at your own pace. Twitter Telegram $OTOME Courage Wrapped in Softness Twitter Telegram DEX Screener $OTOME is a meme coin with no intrinsic value or expectation of financial return. The coin is for entertainment purposes only. \u00a9 2026 Otome. All rights reserved.",
-          "twitter_community_content": null,
-          "twitter_profile": {
-            "displayname": "Otome Monkey",
-            "bio": null,
-            "recent_tweets": [
-              "$OTOME comes with full excitement look at the little monkey come into the market  CA: B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/9hwKRUbFsW https://t.co/MNaUJPdddY https://t.co/FxTGK1sKOC https://t.co/STJApvCdvh",
-              "\ud83d\udd25 10x growth for $OTOME . if you blink, you\u2019ll miss the next move! https://t.co/V5IxcPjC3K https://t.co/RYh4p4iCnB",
-              "$OTOME hits DexScreener Ads, the momentum is building https://t.co/V5IxcPjC3K https://t.co/kkJmZ1CEDd",
-              "$OTOME is climbing with no signs of stopping, see it happen live! https://t.co/V5IxcPjC3K https://t.co/b8djVSRr2y",
-              "$OTOME is now live on DexScreener https://t.co/V5IxcPjC3K https://t.co/wWqFm6a967",
-              "$OTOME is gaining attention on https://t.co/cYeVNxLMKE https://t.co/Js9bKY7see https://t.co/EG85fAD06i"
-            ]
-          },
-          "twitter_search_texts": {
-            "address_recent": [],
-            "address_top": [],
-            "symbol_recent": [],
-            "symbol_top": []
-          }
-        },
-        "risk_analysis": {
-          "onchain_scan": {
-            "dex_paid": true,
-            "dex_paid_timestamp": "2026-02-16 08:36:03",
-            "bundle_percentage": 0.31,
-            "fresh_wallets_percentage": 9.2,
-            "dev_hold_percentage": 0.0,
-            "insider_wallets_percentage": 0.92,
-            "num_holders": 885,
-            "largest_holder_percentage": 0.7,
-            "largest_cluster_percentage": 0.0,
-            "large_holder_count": 0,
-            "same_percentage_count": 9,
-            "low_sol_count": 9
-          },
-          "onchain_scan_score": {
-            "final_score": 5.0,
-            "bundle_percentage_score": 10,
-            "fresh_wallets_percentage_score": 6,
-            "dev_hold_percentage_score": 10,
-            "insider_wallets_percentage_score": 10,
-            "num_holders_score": 4,
-            "largest_holder_percentage_score": 6,
-            "largest_cluster_percentage_score": 10,
-            "large_holder_count_score": 1,
-            "same_percentage_count_score": 5,
-            "low_sol_count_score": 5
-          },
-          "graduated_tokens_thresholds": {
-            "highest_threshold": 250000,
-            "all_time_highest_threshold": 250000,
-            "highest_threshold_as_farm": 250000,
-            "highest_threshold_as_farmed": 0,
-            "highest_threshold_as_no_farm_detected": 0,
-            "farm_status": "FARM",
-            "ever_failed_criteria": true,
-            "last_scanned": 1771232218.350846
-          },
-          "social_scan": {
-            "handle_reuse": {
-              "handle": "otomemonkey",
-              "reused": false,
-              "account_count": 0,
-              "accounts": [],
-              "message": "No account history found for this handle."
-            }
-          }
-        },
-        "alpha_analysis": {
-          "kol_buys": {
-            "total_kol_buys": 0,
-            "total_usd_spent": 0.0,
-            "kols": []
-          },
-          "trending_ranks": {
-            "axiom": null,
-            "dexscreener": null,
-            "moby": null,
-            "pumpfun_found": false,
-            "trending_found": false,
-            "twitter_trending_found": false
-          },
-          "moby": {
-            "whale_count_h24": null,
-            "whale_trades_count_h24": null,
-            "whale_net_flow_usd_h24": null,
-            "whale_net_supply_percent_h24": null,
-            "whale_holder_retention_percent_h24": null
-          },
-          "twitter_trending": {
-            "mentions_total": null,
-            "accounts": []
-          },
-          "alpha_score": {
-            "final_score": 0.0,
-            "total_kol_buys_score": 0,
-            "trending_ranks_score": 0.0,
-            "twitter_trending_score": 0
-          }
-        },
-        "technical_analysis": {
-          "ta_buy_score": {
-            "final_score": null,
-            "timeframe_scores": {
-              "15m": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "1h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "4h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "24h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              }
-            },
-            "subscores": {
-              "oversold": null,
-              "momentum_shift": null,
-              "drawdown_value": null,
-              "holder_trend": null
-            }
-          },
-          "usd_market_cap": 249148.33,
-          "ath_market_cap": 312662.32,
-          "ath_market_cap_timestamp": "2026-02-16T08:55:12+00:00",
-          "ath_multiple": 1.255,
-          "backup_ath_market_cap": null,
-          "backup_ath_market_cap_timestamp": null,
-          "holderscan_data": {
-            "source": "holderscan_http_fallback",
-            "holderscan_history": [
-              {
-                "updatedAt": "2026-02-16T08:00:00.000Z",
-                "holderCount": 766,
-                "marketCap": 103419.0959530907,
-                "mcapOverHolders": 135.01187461238996
-              }
-            ]
-          },
-          "ohlcv": {
-            "intervals": {}
-          }
-        }
-      }
-    },
     {
       "processed_at": "2026-02-16T09:55:18.467876Z",
       "token_address": "5jBTtBmmnWQLXSeLVRdXZWGSv6As7Z8hDR4vxK8kpump",
@@ -23688,6 +23059,960 @@
           "holderscan_data": {
             "source": null,
             "holderscan_history": []
+          },
+          "ohlcv": {
+            "intervals": {}
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-17T08:23:37.240097Z",
+      "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+      "token_symbol": "FLOE",
+      "token_name": "Floe",
+      "first_time_seen": false,
+      "times_seen_before": 1,
+      "full_token_details": {
+        "aggregate_score": 4.0,
+        "groq_web_research": {
+          "summary_all_context": "Floe (FLOE) is a Solana transaction relay enabling private, efficient transactions via staked QUIC routing to leader TPUs. Token holders gain relay access, while adaptive fees and staked routing prioritize transactions. Key gaps include missing whitepapers, audits, and team details.",
+          "answer": "**1) What it claims to be (from the provided text)**  \n- Floe (FLOE) is presented as a **Solana transaction relay** that offers **private, efficient transactions**.  \n- It uses **staked QUIC routing** that goes directly to the leader TPU (Transaction Processing Unit) on Solana.  \n- Holding the native token\u202f$FLOE is required to **access the relay service**.  \n\n**2) Likely utility / features** *(inferred where not explicit)*  \n- **Private transaction forwarding** \u2013 obscures sender/receiver details on Solana (inferred).  \n- **Staked routing** \u2013 users stake $FLOE to prioritize or secure routing paths (explicit).  \n- **Adaptive fee mechanism** \u2013 fees adjust based on network load or stake (explicit).  \n- **Direct leader\u2011TPU routing via QUIC** \u2013 low\u2011latency delivery to the block producer (explicit).  \n- **Token\u2011gated access** \u2013 only $FLOE holders can submit transactions through the relay (explicit).  \n- **Potential revenue sharing** \u2013 stakers may earn a portion of fees collected (inferred).  \n\n**3) Missing information checklist**  \n- Official **whitepaper** or technical specification.  \n- Detailed **website** with product walkthrough and API docs.  \n- Comprehensive **team bios** (beyond the vague \u201cStanford CS expert\u201d).  \n- Full **tokenomics**: supply, distribution, vesting, staking rewards, fee split.  \n- **Security audits** of the relay and routing code.  \n- **Roadmap** and milestones.  \n- Legal/compliance disclosures (regulatory status).  \n\n**4) Risk note**  \nAll statements are based solely on the supplied metadata. No external verification is possible, and the project\u2019s actual functionality, security, and legitimacy remain unconfirmed. Proceed with caution and seek the missing documentation before any investment or usage.",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 9,
+              "completeness": 7,
+              "clarity": 8,
+              "source_groundedness": 2
+            }
+          },
+          "narrative_score": {
+            "final_score": 6,
+            "narrative_subscores": {
+              "hook_strength": null,
+              "cultural_relevance": null,
+              "cultural_charge": null,
+              "mission_statement": null,
+              "compellingness": null,
+              "tribal_identity": null,
+              "lore_amount": null,
+              "lore_depth": null
+            }
+          },
+          "sentiment_score": {
+            "final_score": 7,
+            "sentiment_subscores": {
+              "overall_tone": 8,
+              "excitement_level": 6,
+              "concern_signals": 2,
+              "engagement_quality": 5,
+              "community_trust": 7,
+              "fomo_indicators": 1,
+              "skepticism_level": 3,
+              "organic_feel": 8
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-17T08:24:46.328775Z",
+          "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+          "name": "Floe",
+          "symbol": "FLOE",
+          "description": "Private transaction relay for Solana. Staked QUIC routing straight to the leader TPU. Hold $FLOE to access the relay.",
+          "timestamp": "2026-02-17T08:24:44.641962+00:00",
+          "llm_interpretation": "Description: Floe is a Solana transaction relay token providing private and efficient transactions.\n\n1. memecoin: FALSE - The token is based on a technological utility, not a meme.\n2. utility: TRUE - The token provides access to a private transaction relay service on Solana.\n3. ai_token: FALSE - There's no mention of AI or artificial intelligence in relation to the token.\n4. tweet_coin: FALSE - The token isn't directly inspired by a viral tweet.\n5. current_event: FALSE - The token isn't based on a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in the token's branding.\n7. offensive: FALSE - There's no indication of offensive themes in the token's branding.\n8. animals: TRUE - The token name 'Floe' is related to an animal (seal) as seen in the image.\n9. political: FALSE - The token isn't based on politics or a political figure.",
+          "llm_description": "Floe is a Solana transaction relay providing private and efficient transactions with staked routing and adaptive fees.",
+          "scraped_website_content": "FLOE mainnet github x pump.fun pulse docs bot ref Connect FLOE Private Transaction Relay for Solana QUIC-level packet acceleration \u00b7 multi-path staked routing \u00b7 adaptive fee engine Protocol Source Buy $FLOE ca: 5Ten ... pump click to copy scroll the seal does not care about your network congestion Live Network Solana Mainnet. Right now. Real-time data polled every 3 seconds. Success rates, TPS, priority fees \u2014 all from getRecentPerformanceSamples . Slot numbers link to Solscan for verification. solana network \u2014 connecting... establishing connection to mainnet-beta solana \u2014 congestion model $ explain --tpu-congestion When Solana is congested: \u251c\u2500 Leader TPU port at capacity \u251c\u2500 Unstaked QUIC connections = dropped first \u251c\u2500 Staked connections get priority \u2514\u2500 Public RPC = unstaked = lowest priority Result: \u251c\u2500 NFT mints \u2192 mass drops on public RPC \u251c\u2500 Token launches \u2192 your tx expires \u2514\u2500 Priority fee paid \u2192 wasted (packet never arrived) $ The Problem Your tx gets dropped. QUIC replaced UDP in 2022, but during congestion the slot leader's TPU port is overwhelmed. Unstaked connections = dropped first . Your priority fee is irrelevant if the packet never arrives. It's a delivery problem. Failure Mode Where it breaks. During congestion, the slot leader's TPU port receives more QUIC connections than it can handle. Stake-weighted QoS kicks in. Unstaked connections are dropped first. Your priority fee? Irrelevant. The packet never reaches the validator. It's not a speed problem \u2014 it's a delivery problem. Your Transaction signed, fee attached, ready to send sendTransaction() Public RPC Node unstaked connection \u00b7 no priority \u00b7 shared queue QUIC stream \u2192 leader TPU DROPPED failure TPU port at capacity \u2014 connection rejected \u2715 Stake-weighted QoS: unstaked = lowest priority \u2715 TPU queue full: connection refused \u2715 IP rate-limited: throttled at QUIC layer result \"Transaction expired\" retries 3/3 failed fee wasted see: Solana QUIC implementation, stake-weighted QoS (SIMD-0110) floe \u2014 delivery... (truncated)",
+          "classifications": {
+            "memecoin": false,
+            "utility": true,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": true,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "FLOE is a Private Transaction Relay for Solana, focusing on QUIC-level packet acceleration, multi-path staked routing, and adaptive fee engine.",
+            "prompt_2_summary_twitter_searches": "FLOE is a token associated with a developer who is a Stanford computer science expert, possibly backed by significant resources, working on a project.",
+            "prompt_3_summary_profile_content": "Floe is a Solana transaction relay with staked routing, adaptive fees, and no dropped packets, building a trading terminal and other interfaces.",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "1 days ago",
+          "token_created_timestamp": "2026-02-16T06:03:36+00:00",
+          "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+          "token_symbol": "FLOE",
+          "token_name": "Floe",
+          "first_time_seen": false,
+          "times_seen_before": 1,
+          "token_description": "Private transaction relay for Solana. Staked QUIC routing straight to the leader TPU. Hold $FLOE to access the relay.",
+          "token_image": "https://ipfs.io/ipfs/bafybeig5wwwbpeafmuv4htf53opnopqa6skuux5ov66fetam3y6t4ehm7u",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/floedotre",
+          "pump_telegram": null,
+          "pump_website": "https://floe.re/",
+          "dex_twitter": "https://x.com/floedotre",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": "https://floe.re/",
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "FLOE mainnet github x pump.fun pulse docs bot ref Connect FLOE Private Transaction Relay for Solana QUIC-level packet acceleration \u00b7 multi-path staked routing \u00b7 adaptive fee engine Protocol Source Buy $FLOE ca: 5Ten ... pump click to copy scroll the seal does not care about your network congestion Live Network Solana Mainnet. Right now. Real-time data polled every 3 seconds. Success rates, TPS, priority fees \u2014 all from getRecentPerformanceSamples . Slot numbers link to Solscan for verification. solana network \u2014 connecting... establishing connection to mainnet-beta solana \u2014 congestion model $ explain --tpu-congestion When Solana is congested: \u251c\u2500 Leader TPU port at capacity \u251c\u2500 Unstaked QUIC connections = dropped first \u251c\u2500 Staked connections get priority \u2514\u2500 Public RPC = unstaked = lowest priority Result: \u251c\u2500 NFT mints \u2192 mass drops on public RPC \u251c\u2500 Token launches \u2192 your tx expires \u2514\u2500 Priority fee paid \u2192 wasted (packet never arrived) $ The Problem Your tx gets dropped. QUIC replaced UDP in 2022, but during congestion the slot leader's TPU port is overwhelmed. Unstaked connections = dropped first . Your priority fee is irrelevant if the packet never arrives. It's a delivery problem. Failure Mode Where it breaks. During congestion, the slot leader's TPU port receives more QUIC connections than it can handle. Stake-weighted QoS kicks in. Unstaked connections are dropped first. Your priority fee? Irrelevant. The packet never reaches the validator. It's not a speed problem \u2014 it's a delivery problem. Your Transaction signed, fee attached, ready to send sendTransaction() Public RPC Node unstaked connection \u00b7 no priority \u00b7 shared queue QUIC stream \u2192 leader TPU DROPPED failure TPU port at capacity \u2014 connection rejected \u2715 Stake-weighted QoS: unstaked = lowest priority \u2715 TPU queue full: connection refused \u2715 IP rate-limited: throttled at QUIC layer result \"Transaction expired\" retries 3/3 failed fee wasted see: Solana QUIC implementation, stake-weighted QoS (SIMD-0110) floe \u2014 delivery... (truncated)",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": "Floe",
+            "bio": "Solana transaction relay. Staked routing, adaptive fees, no dropped packets. The seal sits on the ice.",
+            "recent_tweets": [
+              "Development is ongoing. Opening up part of what's been built so far.  Pulse \u2014 live feed of new Solana token launches. Prices update in real time, straight from the bonding curve.  https://t.co/KbOtvkX0bV https://t.co/hu7HCRhY2k",
+              "X had a platform-wide issue that made our account temporarily inaccessible. It's resolved now.  We posted a notice on the website while it was down. Taking this as a reminder \u2014 setting up a Telegram channel so there's always a backup line.  Nothing changed on our end. Development didn't pause.",
+              "1,000+ wallets holding. No promotions. No incentives. Just the product.  The terminal is being built piece by piece. Pulse is live. Trading execution on web is next. Every module connects back to the relay.  We don't move fast to look busy. We move at the pace of things that actually work.",
+              "/2 Not trying to copy what already exists. But the basics matter \u2014 fast data, accurate prices, clean interface. Built on Floe infrastructure from scratch.  Features you're used to from other tools are coming. Relay and execution integration follows.",
+              "/3 Pulse is the first public module. Trading, portfolio, relay dashboard \u2014 shipping in order. One piece at a time.  Feedback welcome.   https://t.co/KbOtvkX0bV",
+              "https://t.co/7MbHjE9cV8",
+              "Just a sneak peek of what's coming next.",
+              "We are currently deploying a minor hotfix to improve the stability of our Telegram bot. There might be a very brief downtime, but don't worry\u2014it\u2019s all part of making the experience smoother.  We will post an immediate update as soon as the deployment is complete. Thanks for your patience.",
+              "Deployment Complete. Everything is back online",
+              "Who said we\u2019re taking it slow? The next step is already in motion.",
+              "/1 The relay was built as infrastructure. The bot was the first interface.  The next interface is a full web-based trading terminal \u2014 chart, swap, portfolio, positions, all running through the same staked relay.  No download. No extension. Open the browser and trade.",
+              "/3 What the terminal adds:  Full charting. Advanced order types. Real-time P&amp;L dashboard. Token screening. All within the browser \u2014 no client installation, no desktop app.  The relay is the backend. The terminal is the frontend. Both are coming to https://t.co/KcGfgIYQL0.",
+              "/4 More interfaces mean more users on the relay. More users mean more fees collected. More fees mean more $FLOE purchased from the market.  The terminal is not a separate product. It is another entry point into the same economic loop.  https://t.co/KcGfgIYQL0",
+              "/1 The referral system is live inside the bot.  Hold $FLOE. Open /referral. Share your link. When someone trades through your link, you earn a percentage of their platform fee \u2014 paid in SOL.  No minimum volume. No lockup. Earnings accumulate per trade.",
+              "/2 Commission rates scale with your tier:  Drift \u2014 15% of referral's platform fee. Deep \u2014 25%. Abyss \u2014 35%.  Your tier is determined by your $FLOE balance as a share of total supply. Higher balance, higher cut.",
+              "/3 On top of referral earnings, your own trades generate self-payback. A portion of your own platform fee returns to you.  When your claimable balance hits the threshold, press Claim. Payout is SOL + $FLOE from the protocol treasury.  The more the relay is used, the more the treasury holds, the more you earn.  @floe_relay_bot",
+              "/1 What happens when you press Buy inside the bot:  1. The bot reads your settings \u2014 slippage, priority, tip. 2. The fee engine queries the last 150 slots and calculates the minimum viable priority fee. 3. If the token is on https://t.co/u9fBITyUTO, it routes through the bonding curve directly. Otherwise, Jupiter handles the swap.",
+              "/2 4. The transaction is signed and fired through multiple paths simultaneously:    \u2014 Staked relay to leader TPU    \u2014 Jito bundle to block engine    \u2014 Direct connection when available  5. First path that lands, wins. Others are discarded. 6. Platform fee is collected. Buyback fires immediately \u2014 $FLOE purchased from market on the same block cycle.",
+              "/3 This is not a wrapper around a public RPC.  The routing layer, the fee engine, the multi-path delivery \u2014 all open source. The bot is the first interface. A web-based trading terminal is next. The relay is the infrastructure that powers both."
+            ]
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/jebFtFjlu9"
+            ],
+            "address_top": [
+              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/jebFtFjlu9",
+              "Shaw Eliza OS aped just now!  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump  \u201cThis developer is a Stanford computer science whiz, likely backed by some serious resources. Waiting for value discovery.\u201d  My Chinese Quant finds these 5-20k coins and they go parabolic. Insane researcher  Follow him > @VVmmao",
+              "Insane  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump  Ath 300k https://t.co/siAHZAPK1N",
+              "Crimed 170k  Front run",
+              "$Floe  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+              "https://t.co/kjyqNBBcnm"
+            ],
+            "symbol_recent": [],
+            "symbol_top": [
+              "$FLOE is building something really cool ngl.",
+              "$Floe  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+              "https://t.co/kjyqNBBcnm",
+              "Buy and wait till @toly mentions this. See you at millions $floe",
+              "$FLOE"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-02-16 06:33:27",
+            "bundle_percentage": 0.0,
+            "fresh_wallets_percentage": 8.2,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 13.55,
+            "num_holders": 573,
+            "largest_holder_percentage": 3.8,
+            "largest_cluster_percentage": 0.0,
+            "large_holder_count": 9,
+            "same_percentage_count": 3,
+            "low_sol_count": 18
+          },
+          "onchain_scan_score": {
+            "final_score": 5.6,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 6,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 5,
+            "num_holders_score": 4,
+            "largest_holder_percentage_score": 7,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 10,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 1
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 250000,
+            "all_time_highest_threshold": 250000,
+            "highest_threshold_as_farm": 250000,
+            "highest_threshold_as_farmed": 100000,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771253960.9260397
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "floedotre",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": 10.0
+            }
+          },
+          "usd_market_cap": 6923.99,
+          "ath_market_cap": 316493.38,
+          "ath_market_cap_timestamp": "2026-02-16T08:26:37+00:00",
+          "ath_multiple": 45.71,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_http_fallback",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-02-17T08:00:00.000Z",
+                "holderCount": 577,
+                "marketCap": 6843.959982383308,
+                "mcapOverHolders": 11.861282465135716
+              },
+              {
+                "updatedAt": "2026-02-17T07:00:00.000Z",
+                "holderCount": 588,
+                "marketCap": 7235.957690316425,
+                "mcapOverHolders": 12.306050493735418
+              },
+              {
+                "updatedAt": "2026-02-17T06:00:00.000Z",
+                "holderCount": 608,
+                "marketCap": 8040.952983393363,
+                "mcapOverHolders": 13.225251617423295
+              },
+              {
+                "updatedAt": "2026-02-17T05:00:00.000Z",
+                "holderCount": 623,
+                "marketCap": 11459.932992126345,
+                "mcapOverHolders": 18.394756006623346
+              },
+              {
+                "updatedAt": "2026-02-17T04:00:00.000Z",
+                "holderCount": 635,
+                "marketCap": 13959.91837435286,
+                "mcapOverHolders": 21.98412342417773
+              },
+              {
+                "updatedAt": "2026-02-17T03:00:00.000Z",
+                "holderCount": 634,
+                "marketCap": 13639.920245427866,
+                "mcapOverHolders": 21.514069787741114
+              },
+              {
+                "updatedAt": "2026-02-17T02:00:00.000Z",
+                "holderCount": 651,
+                "marketCap": 17149.899722073893,
+                "mcapOverHolders": 26.343931984752523
+              },
+              {
+                "updatedAt": "2026-02-17T01:00:00.000Z",
+                "holderCount": 672,
+                "marketCap": 24409.857272059693,
+                "mcapOverHolders": 36.32419236913645
+              },
+              {
+                "updatedAt": "2026-02-17T00:00:00.000Z",
+                "holderCount": 681,
+                "marketCap": 26109.98550759554,
+                "mcapOverHolders": 38.340654196175535
+              },
+              {
+                "updatedAt": "2026-02-16T23:00:00.000Z",
+                "holderCount": 691,
+                "marketCap": 17709.896447692634,
+                "mcapOverHolders": 25.629372572637674
+              },
+              {
+                "updatedAt": "2026-02-16T22:00:00.000Z",
+                "holderCount": 701,
+                "marketCap": 14139.917321873168,
+                "mcapOverHolders": 20.171066079704946
+              },
+              {
+                "updatedAt": "2026-02-16T21:00:00.000Z",
+                "holderCount": 727,
+                "marketCap": 17529.897500172323,
+                "mcapOverHolders": 24.11265130697706
+              },
+              {
+                "updatedAt": "2026-02-16T20:00:00.000Z",
+                "holderCount": 763,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T19:00:00.000Z",
+                "holderCount": 792,
+                "marketCap": 37359.781551993045,
+                "mcapOverHolders": 47.171441353526575
+              },
+              {
+                "updatedAt": "2026-02-16T18:00:00.000Z",
+                "holderCount": 815,
+                "marketCap": 33749.802660057954,
+                "mcapOverHolders": 41.41080080988706
+              },
+              {
+                "updatedAt": "2026-02-16T17:00:00.000Z",
+                "holderCount": 844,
+                "marketCap": 35869.790264186035,
+                "mcapOverHolders": 42.49975149785075
+              },
+              {
+                "updatedAt": "2026-02-16T16:00:00.000Z",
+                "holderCount": 883,
+                "marketCap": 48639.715596599075,
+                "mcapOverHolders": 55.084615624687515
+              },
+              {
+                "updatedAt": "2026-02-16T15:00:00.000Z",
+                "holderCount": 953,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T14:00:00.000Z",
+                "holderCount": 1001,
+                "marketCap": 77979.54404240946,
+                "mcapOverHolders": 77.90164240000945
+              },
+              {
+                "updatedAt": "2026-02-16T13:00:00.000Z",
+                "holderCount": 1098,
+                "marketCap": 161299.05686125474,
+                "mcapOverHolders": 146.90260187728117
+              },
+              {
+                "updatedAt": "2026-02-16T12:00:00.000Z",
+                "holderCount": 1127,
+                "marketCap": 178198.95804510597,
+                "mcapOverHolders": 158.11797519530256
+              },
+              {
+                "updatedAt": "2026-02-16T11:00:00.000Z",
+                "holderCount": 1111,
+                "marketCap": 186198.91126823085,
+                "mcapOverHolders": 167.5957797193797
+              },
+              {
+                "updatedAt": "2026-02-16T10:00:00.000Z",
+                "holderCount": 1127,
+                "marketCap": null,
+                "mcapOverHolders": null
+              }
+            ]
+          },
+          "ohlcv": {
+            "intervals": {}
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-17T08:59:15.063634Z",
+      "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
+      "token_symbol": "OTOME",
+      "token_name": "OTOME",
+      "first_time_seen": false,
+      "times_seen_before": 1,
+      "full_token_details": {
+        "aggregate_score": 5.1,
+        "groq_web_research": {
+          "summary_all_context": "The $OTOME token draws its name from the Japanese term \"otome\" (\u4e59\u5973), meaning \"maiden,\" rooted in classical literature and Shinto rituals. The token\u2019s narrative reimagines this cultural symbol through a macaque\u2019s journey of resilience, blending traditional themes of purity with modern meme coin storytelling.",
+          "answer": "**Summary \u2013 non\u2011crypto meaning**  \n- **Otome (\u4e59\u5973 / \u304a\u3068\u3081)** is a Japanese word meaning \u201cmaiden\u201d or \u201cyoung unmarried woman.\u201d  \n- It connotes innocence, purity, and a gentle strength, often used in literature, folklore (celestial maidens, shrine maidens) and modern pop\u2011culture (sh\u014djo manga, \u201cotome games\u201d that target a female audience).  \n\n**Origin / timeline**  \n- **Old Japanese roots** \u2013 originally a compound of **\u4e59 (oto, \u201cyoung, little\u201d)** + **\u5973 (me, \u201cfemale\u201d)**. The term appears in classical texts as early as the Heian period to describe a young woman or virgin.  \n- **Cultural evolution** \u2013 adopted in Shinto rituals (young women performing dances), folklore (celestial maidens), and later in the 20th\u2011century media boom as a genre label for romance\u2011focused games and manga aimed at women (the \u201cotome game\u201d genre emerged in the late 1990s\u2011early 2000s).  \n- **Modern usage** \u2013 \u201cotome\u201d is now a common trope in anime/manga and a marketing term for games that let the player experience a \u201cmaiden\u2019s\u201d romantic story, reinforcing the themes of resilience, softness, and second chances that the token description evokes.  \n\n**Sources**  \n- **Wiktionary \u2013 \u5c11\u5973 (otome)** \u2013 explains the etymology (\u4e59\u202f+\u202f\u5973) and traditional meanings such as \u201cyoung woman, maiden, virgin.\u201d\u3010https://en.wikipedia.org/wiki/wikt:%E5%B0%91%E5%A5%B3\u3011 (lexical background).  \n- **Wikipedia \u2013 Otome game** \u2013 details the modern cultural genre, its origins in Japanese romance games for women, and the association with \u201cmaiden\u201d imagery.\u3010https://en.wikipedia.org/wiki/Otome_game\u3011 (pop\u2011culture evolution).  \n- **Wikipedia \u2013 Otome (given name)** \u2013 shows the name\u2019s usage and alternative spelling \u4e59\u5973, confirming its meaning as \u201cmaiden.\u201d\u3010https://en.wikipedia.org/wiki/Otome_(given_name)\u3011 (contemporary naming).",
+          "confidence_score": {
+            "final_score": 9,
+            "confidence_subscores": {
+              "context_faithfulness": 9,
+              "internal_consistency": 8,
+              "specificity": 9,
+              "completeness": 8,
+              "clarity": 9,
+              "source_groundedness": 9
+            }
+          },
+          "narrative_score": {
+            "final_score": 8,
+            "narrative_subscores": {
+              "hook_strength": 8,
+              "cultural_relevance": 9,
+              "cultural_charge": 2,
+              "mission_statement": 8,
+              "compellingness": 9,
+              "tribal_identity": 8,
+              "lore_amount": 7,
+              "lore_depth": 8
+            }
+          },
+          "sentiment_score": {
+            "final_score": 7,
+            "sentiment_subscores": {
+              "overall_tone": 8,
+              "excitement_level": 6,
+              "concern_signals": 1,
+              "engagement_quality": 4,
+              "community_trust": 6,
+              "fomo_indicators": 3,
+              "skepticism_level": 2,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-17T09:00:13.738655Z",
+          "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
+          "name": "OTOME",
+          "symbol": "OTOME",
+          "description": "The Story of Otome Long before Punch\u2026 there was Otome. A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances.",
+          "timestamp": "2026-02-17T09:00:11.350612+00:00",
+          "llm_interpretation": "Description: $OTOME is a memecoin on Solana inspired by the story of a resilient macaque monkey named Otome.\n\n1. memecoin: TRUE - The token is described as a memecoin on Solana, related to a monkey theme.\n2. utility: FALSE - There's no mention of the token having a specific utility or tech-based purpose.\n3. ai_token: FALSE - There's no indication that the token is related to AI or artificial intelligence.\n4. tweet_coin: FALSE - While there's discussion on Twitter, the token isn't directly inspired by a viral tweet.\n5. current_event: FALSE - The token doesn't appear to be based on a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in the token's branding or description.\n7. offensive: FALSE - The token's story and branding don't seem to contain offensive themes.\n8. animals: TRUE - The token is inspired by the story of a macaque monkey named Otome.\n9. political: FALSE - The token isn't related to politics or a political figure.",
+          "llm_description": "$OTOME is a Solana memecoin honoring resilience, softness, and second chances, inspired by a macaque monkey named Otome.",
+          "scraped_website_content": "Twitter Telegram Live Chart $OTOME B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump Copied! The Story of Otome Long before Punch\u2026 there was Otome . A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances. Courage Wrapped in Softness At first, the troop was puzzled by the tiny monkey who carried a plush toy everywhere. Some young macaques teased her, unsure of this unusual sight. But whenever Otome ran back to her beloved bear, they stopped. The distance slowly faded. That plush wasn\u2019t just comfort \u2014 it was her mother, her shield, her quiet strength . Held by a Bear, Guided by Love How to Buy $OTOME 1 Set Up Your Wallet Download a trusted wallet and create your secure account. Keep your recovery phrase safe \u2014 it\u2019s your key to everything. 2 Fund Your Wallet Add funds to your wallet using your preferred method. Make sure you have enough to complete your transaction smoothly. 3 Connect to a DEX Visit your preferred decentralized exchange and connect your wallet securely. 4 Swap for $OTOME Enter the official contract, confirm the amount, and swap. Welcome to the story \u2014 you\u2019re now part of Otome\u2019s journey. Otome\u2019s Circle Inspired by Otome\u2019s journey, this space reflects quiet resilience and gentle courage. Just as she found comfort in her cherished bear while learning to trust again, we honor softness as strength and the beauty of growing at your own pace. Twitter Telegram $OTOME Courage Wrapped in Softness Twitter Telegram DEX Screener $OTOME is a meme coin with no intrinsic value or expectation of financial return. The coin is for entertainment purposes only. \u00a9 2026 Otome. All rights reserved.",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": true,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "$OTOME is a token honoring resilience, softness, and second chances, inspired by the story of a macaque monkey named Otome.",
+            "prompt_2_summary_twitter_searches": "OTOME is a token being discussed and promoted on social media, with users encouraging others to vote for it to be listed.",
+            "prompt_3_summary_profile_content": "Otome Monkey is a token, a memecoin on Solana, related to a monkey theme, with a live stream and community presence.",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "1 days ago",
+          "token_created_timestamp": "2026-02-16T05:40:20+00:00",
+          "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
+          "token_symbol": "OTOME",
+          "token_name": "OTOME",
+          "first_time_seen": false,
+          "times_seen_before": 1,
+          "token_description": "The Story of Otome Long before Punch\u2026 there was Otome. A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances.",
+          "token_image": "https://ipfs.io/ipfs/QmQux1JEwhSeTFMjADtwYjkEXdyKDvz3xz4DmiMaivkssb",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": null,
+          "pump_telegram": null,
+          "pump_website": null,
+          "dex_twitter": "https://x.com/otomemonkey",
+          "dex_telegram": "https://t.me/otomemonkey",
+          "dex_discord": null,
+          "dex_website": "https://otomemonkey.fun/",
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Twitter Telegram Live Chart $OTOME B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump Copied! The Story of Otome Long before Punch\u2026 there was Otome . A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances. Courage Wrapped in Softness At first, the troop was puzzled by the tiny monkey who carried a plush toy everywhere. Some young macaques teased her, unsure of this unusual sight. But whenever Otome ran back to her beloved bear, they stopped. The distance slowly faded. That plush wasn\u2019t just comfort \u2014 it was her mother, her shield, her quiet strength . Held by a Bear, Guided by Love How to Buy $OTOME 1 Set Up Your Wallet Download a trusted wallet and create your secure account. Keep your recovery phrase safe \u2014 it\u2019s your key to everything. 2 Fund Your Wallet Add funds to your wallet using your preferred method. Make sure you have enough to complete your transaction smoothly. 3 Connect to a DEX Visit your preferred decentralized exchange and connect your wallet securely. 4 Swap for $OTOME Enter the official contract, confirm the amount, and swap. Welcome to the story \u2014 you\u2019re now part of Otome\u2019s journey. Otome\u2019s Circle Inspired by Otome\u2019s journey, this space reflects quiet resilience and gentle courage. Just as she found comfort in her cherished bear while learning to trust again, we honor softness as strength and the beauty of growing at your own pace. Twitter Telegram $OTOME Courage Wrapped in Softness Twitter Telegram DEX Screener $OTOME is a meme coin with no intrinsic value or expectation of financial return. The coin is for entertainment purposes only. \u00a9 2026 Otome. All rights reserved.",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": "Otome Monkey",
+            "bio": null,
+            "recent_tweets": [
+              "$OTOME comes with full excitement look at the little monkey come into the market  CA: B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/9hwKRUbFsW https://t.co/MNaUJPdddY https://t.co/FxTGK1sKOC https://t.co/STJApvCdvh",
+              "15k transactions and 1.3M market volume is proof of your seriousness towards $OTOME  #OTOME #pumpfun #solana #memecoin #monkey #CryptoCommunity https://t.co/L0h0B9a51e",
+              "Come inside and meet the cute little $OTOME \ud83d\udc35\ud83d\udc12 Here's how \ud83d\udc47 https://t.co/k3qsbI3dK1",
+              "$OTOME is currently live streaming on https://t.co/cYeVNxLMKE \ud83d\udc35\ud83d\udcbb https://t.co/jNrKMFvhuR https://t.co/DZKEj2yzRy",
+              "$OTOME grew big from a very supportive market plus its lucky dolls  #OTOME #pumpfun #solana #memecoin #monkey #CryptoCommunity https://t.co/WO1P44oHDX",
+              "$OTOME is officially Top#1 on DexScreener. No more whispers https://t.co/V5IxcPjC3K https://t.co/OW7js5H23Z",
+              "New high. $OTOME just reached #1 on AXIOM and the climb continues https://t.co/vVKhm2GDiF https://t.co/2SU6kCdyob",
+              "Momentum is real. $OTOME now sits at #2 on Dexscreener. Early entries winning \ud83e\udd47 https://t.co/V5IxcPjC3K https://t.co/2kgp8gjXZQ",
+              "$OTOME increased its boost to 510x and ranked 3 on Dexscreener https://t.co/V5IxcPjC3K https://t.co/C3AfTHUCZI",
+              "\ud83d\udd25 10x growth for $OTOME . if you blink, you\u2019ll miss the next move! https://t.co/V5IxcPjC3K https://t.co/RYh4p4iCnB",
+              "$OTOME hits DexScreener Ads, the momentum is building https://t.co/V5IxcPjC3K https://t.co/kkJmZ1CEDd",
+              "$OTOME is climbing with no signs of stopping, see it happen live! https://t.co/V5IxcPjC3K https://t.co/b8djVSRr2y",
+              "$OTOME is now live on DexScreener https://t.co/V5IxcPjC3K https://t.co/wWqFm6a967",
+              "$OTOME is gaining attention on https://t.co/cYeVNxLMKE https://t.co/Js9bKY7see https://t.co/EG85fAD06i"
+            ]
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "\ud83d\udc40 OTOME $OTOME is breaking out  Vote to get this listed  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4fasa3",
+              "\ud83d\udd25 OTOME $OTOME is on a tear  Push for listing - vote here  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4f9Ukv"
+            ],
+            "address_top": [
+              "\ud83d\udd25 OTOME $OTOME is on a tear  Push for listing - vote here  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4f9Ukv",
+              "\ud83d\udc40 OTOME $OTOME is breaking out  Vote to get this listed  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4fasa3",
+              "\u2728 OTOME $OTOME is ripping right now  Push for listing - vote here  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4f9Ukv"
+            ],
+            "symbol_recent": [
+              "Stack the savings on President's Day. Get 12% Off with code PREZDAY and earn 2% Bonus Bucks on your purchase. That is smart shopping on the gear you trust.  Offer ends 2/20. Start saving today!"
+            ],
+            "symbol_top": [
+              "$Otome https://t.co/KTpQY5dpfC",
+              "$otome https://t.co/qhEmZKU9LG",
+              "$otome  I\u2019m sticking to my bag of this one  EYuV7N6i5TEd1zxk1dygkx4wjaAKWEUix9QGii3v53pP https://t.co/TJp7A0DRdD",
+              "Oo man, this is Bullish   $Otome just holding tight his little toy! https://t.co/q4mHOL9rqn"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-02-16 08:36:03",
+            "bundle_percentage": 0.0,
+            "fresh_wallets_percentage": 4.7,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 4.05,
+            "num_holders": 309,
+            "largest_holder_percentage": 4.9,
+            "largest_cluster_percentage": 0.0,
+            "large_holder_count": 3,
+            "same_percentage_count": 4,
+            "low_sol_count": 17
+          },
+          "onchain_scan_score": {
+            "final_score": 7.0,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 8,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 8,
+            "num_holders_score": 3,
+            "largest_holder_percentage_score": 7,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 4,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 1
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 1000000,
+            "all_time_highest_threshold": 1000000,
+            "highest_threshold_as_farm": 1000000,
+            "highest_threshold_as_farmed": 0,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771287967.507026
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "otomemonkey",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": 10.0
+            }
+          },
+          "usd_market_cap": 3236.9,
+          "ath_market_cap": 595207.07,
+          "ath_market_cap_timestamp": "2026-02-16T11:17:46+00:00",
+          "ath_multiple": 183.882,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_http_fallback",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-02-17T08:50:00.000Z",
+                "holderCount": 311,
+                "marketCap": 3203,
+                "mcapOverHolders": 10.29903536977492
+              },
+              {
+                "updatedAt": "2026-02-17T08:00:00.000Z",
+                "holderCount": 312,
+                "marketCap": 3029,
+                "mcapOverHolders": 9.708333333333334
+              },
+              {
+                "updatedAt": "2026-02-17T07:00:00.000Z",
+                "holderCount": 309,
+                "marketCap": 3031,
+                "mcapOverHolders": 9.809061488673139
+              },
+              {
+                "updatedAt": "2026-02-17T06:00:00.000Z",
+                "holderCount": 310,
+                "marketCap": 3085,
+                "mcapOverHolders": 9.951612903225806
+              },
+              {
+                "updatedAt": "2026-02-17T05:00:00.000Z",
+                "holderCount": 311,
+                "marketCap": 3085,
+                "mcapOverHolders": 9.919614147909968
+              },
+              {
+                "updatedAt": "2026-02-17T04:00:00.000Z",
+                "holderCount": 315,
+                "marketCap": 3351,
+                "mcapOverHolders": 10.638095238095238
+              },
+              {
+                "updatedAt": "2026-02-17T03:00:00.000Z",
+                "holderCount": 315,
+                "marketCap": 3637,
+                "mcapOverHolders": 11.546031746031746
+              },
+              {
+                "updatedAt": "2026-02-17T02:00:00.000Z",
+                "holderCount": 317,
+                "marketCap": 3639,
+                "mcapOverHolders": 11.479495268138802
+              },
+              {
+                "updatedAt": "2026-02-17T01:00:00.000Z",
+                "holderCount": 313,
+                "marketCap": 3376,
+                "mcapOverHolders": 10.78594249201278
+              },
+              {
+                "updatedAt": "2026-02-17T00:00:00.000Z",
+                "holderCount": 314,
+                "marketCap": 4064.251995232922,
+                "mcapOverHolders": 12.943477691824592
+              },
+              {
+                "updatedAt": "2026-02-16T23:00:00.000Z",
+                "holderCount": 314,
+                "marketCap": 3553,
+                "mcapOverHolders": 11.315286624203821
+              },
+              {
+                "updatedAt": "2026-02-16T22:00:00.000Z",
+                "holderCount": 318,
+                "marketCap": 4014.9999999999995,
+                "mcapOverHolders": 12.625786163522012
+              },
+              {
+                "updatedAt": "2026-02-16T21:00:00.000Z",
+                "holderCount": 324,
+                "marketCap": 3992,
+                "mcapOverHolders": 12.320987654320987
+              },
+              {
+                "updatedAt": "2026-02-16T20:00:00.000Z",
+                "holderCount": 330,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T19:00:00.000Z",
+                "holderCount": 335,
+                "marketCap": 4274,
+                "mcapOverHolders": 12.75820895522388
+              },
+              {
+                "updatedAt": "2026-02-16T18:00:00.000Z",
+                "holderCount": 337,
+                "marketCap": 4501,
+                "mcapOverHolders": 13.356083086053413
+              },
+              {
+                "updatedAt": "2026-02-16T17:00:00.000Z",
+                "holderCount": 337,
+                "marketCap": 4337,
+                "mcapOverHolders": 12.869436201780415
+              },
+              {
+                "updatedAt": "2026-02-16T16:00:00.000Z",
+                "holderCount": 344,
+                "marketCap": 4242,
+                "mcapOverHolders": 12.331395348837209
+              },
+              {
+                "updatedAt": "2026-02-16T15:00:00.000Z",
+                "holderCount": 351,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T14:00:00.000Z",
+                "holderCount": 365,
+                "marketCap": 6301,
+                "mcapOverHolders": 17.263013698630136
+              },
+              {
+                "updatedAt": "2026-02-16T13:00:00.000Z",
+                "holderCount": 949,
+                "marketCap": 101100,
+                "mcapOverHolders": 106.5331928345627
+              },
+              {
+                "updatedAt": "2026-02-16T12:00:00.000Z",
+                "holderCount": 955,
+                "marketCap": 278900,
+                "mcapOverHolders": 292.0418848167539
+              },
+              {
+                "updatedAt": "2026-02-16T11:00:00.000Z",
+                "holderCount": 967,
+                "marketCap": 390300,
+                "mcapOverHolders": 403.6194415718718
+              },
+              {
+                "updatedAt": "2026-02-16T10:00:00.000Z",
+                "holderCount": 919,
+                "marketCap": 318200,
+                "mcapOverHolders": 346.2459194776931
+              },
+              {
+                "updatedAt": "2026-02-16T09:00:00.000Z",
+                "holderCount": 893,
+                "marketCap": 268600.00000000006,
+                "mcapOverHolders": 300.7838745800673
+              },
+              {
+                "updatedAt": "2026-02-16T08:00:00.000Z",
+                "holderCount": 766,
+                "marketCap": 103419.0959530907,
+                "mcapOverHolders": 135.01187461238996
+              }
+            ]
           },
           "ohlcv": {
             "intervals": {}

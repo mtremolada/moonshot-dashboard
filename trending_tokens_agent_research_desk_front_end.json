@@ -1,630 +1,7 @@
 {
-  "last_updated": "2026-02-17T07:34:36.026680Z",
+  "last_updated": "2026-02-17T09:00:37.238383Z",
   "retention_hours": 24,
   "tokens": [
-    {
-      "processed_at": "2026-02-16T08:22:42.293177Z",
-      "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
-      "token_symbol": "FLOE",
-      "token_name": "Floe",
-      "first_time_seen": true,
-      "times_seen_before": 0,
-      "full_token_details": {
-        "aggregate_score": 4.7,
-        "groq_web_research": {
-          "summary_all_context": "Floe (FLOE) is a Solana transaction relay offering private, efficient transactions via staked QUIC routing to leader TPU nodes. Access requires holding $FLOE, with adaptive fees and staked routing prioritization. Created 2 hours ago, no live deployment or public documentation exists.",
-          "answer": "**1. What it claims to be**  \n- A **Solana transaction relay** that enables private, efficient transactions.  \n- Uses **staked QUIC routing** that sends traffic directly to the leader TPU (the Solana block\u2011producer).  \n- Access to the relay is gated by holding the native token **$FLOE**.\n\n**2. Likely utility / features** *(inferred from the descriptions)*  \n- **Private transaction forwarding** \u2013 masks sender/receiver details on Solana.  \n- **Staked routing** \u2013 users (or validators) stake $FLOE to earn routing priority or fees.  \n- **Adaptive fee model** \u2013 fees adjust based on network load or routing demand.  \n- **Direct leader\u2011TPU connection** \u2013 reduces latency by bypassing intermediate nodes.  \n- **Token\u2011gated access** \u2013 holding $FLOE is required to submit transactions through the relay.  \n- **Potential staking rewards** \u2013 stakers may receive a share of collected fees (inferred from \u201cstaked routing\u201d).\n\n**3. Missing information checklist**  \n- Official **whitepaper** or detailed technical documentation.  \n- Public **website** or landing page with product specs.  \n- **Team** identities, backgrounds, and contact information.  \n- Full **tokenomics** (total supply, distribution, vesting, emission schedule).  \n- Security audits of the relay code and QUIC implementation.  \n- Legal/compliance disclosures (e.g., jurisdiction, regulatory status).  \n\n**4. Risk note**  \nAll observations are based solely on the provided staged and LLM descriptions. No external verification is available, and the token was created only\u202f~2\u202fhours ago, so details such as security, team credibility, and economic model remain unconfirmed. Proceed with caution and seek additional, verifiable information before any interaction.",
-          "confidence_score": {
-            "final_score": 7,
-            "confidence_subscores": {
-              "context_faithfulness": 8,
-              "internal_consistency": 7,
-              "specificity": 9,
-              "completeness": 6,
-              "clarity": 8,
-              "source_groundedness": 2
-            }
-          },
-          "narrative_score": {
-            "final_score": 5,
-            "narrative_subscores": {
-              "hook_strength": null,
-              "cultural_relevance": null,
-              "cultural_charge": null,
-              "mission_statement": null,
-              "compellingness": null,
-              "tribal_identity": null,
-              "lore_amount": null,
-              "lore_depth": null
-            }
-          },
-          "sentiment_score": {
-            "final_score": 5,
-            "sentiment_subscores": {
-              "overall_tone": 5,
-              "excitement_level": 5,
-              "concern_signals": 5,
-              "engagement_quality": 5,
-              "community_trust": 5,
-              "fomo_indicators": 5,
-              "skepticism_level": 5,
-              "organic_feel": 5
-            }
-          }
-        },
-        "llm_interpretation": {
-          "created_at": "2026-02-16T08:23:58.219691Z",
-          "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
-          "name": "Floe",
-          "symbol": "FLOE",
-          "description": "Private transaction relay for Solana. Staked QUIC routing straight to the leader TPU. Hold $FLOE to access the relay.",
-          "timestamp": "2026-02-16T08:23:56.465253+00:00",
-          "llm_interpretation": "Description: Floe is a Solana transaction relay token providing private and efficient transactions.\n\n1. memecoin: FALSE - The token is based on a technological utility, not a meme.\n2. utility: TRUE - The token provides access to a private transaction relay service on Solana.\n3. ai_token: FALSE - There's no mention of AI or artificial intelligence in relation to the token.\n4. tweet_coin: FALSE - The token isn't directly inspired by a viral tweet.\n5. current_event: FALSE - The token isn't based on a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in the token's branding.\n7. offensive: FALSE - There's no indication of offensive themes in the token's branding.\n8. animals: TRUE - The token's name, Floe, is related to an animal (seal) as seen in the image.\n9. political: FALSE - The token isn't based on politics or a political figure.",
-          "llm_description": "Floe is a Solana transaction relay providing private and efficient transactions with staked routing and adaptive fees.",
-          "scraped_website_content": "FLOE mainnet github x pump.fun docs bot ref Connect FLOE Private Transaction Relay for Solana QUIC-level packet acceleration \u00b7 multi-path staked routing \u00b7 adaptive fee engine Protocol Source Buy $FLOE ca: 5Ten ... pump click to copy scroll the seal does not care about your network congestion Live Network Solana Mainnet. Right now. Real-time data polled every 3 seconds. Success rates, TPS, priority fees \u2014 all from getRecentPerformanceSamples . Slot numbers link to Solscan for verification. solana network \u2014 connecting... establishing connection to mainnet-beta solana \u2014 congestion model $ explain --tpu-congestion When Solana is congested: \u251c\u2500 Leader TPU port at capacity \u251c\u2500 Unstaked QUIC connections = dropped first \u251c\u2500 Staked connections get priority \u2514\u2500 Public RPC = unstaked = lowest priority Result: \u251c\u2500 NFT mints \u2192 mass drops on public RPC \u251c\u2500 Token launches \u2192 your tx expires \u2514\u2500 Priority fee paid \u2192 wasted (packet never arrived) $ The Problem Your tx gets dropped. QUIC replaced UDP in 2022, but during congestion the slot leader's TPU port is overwhelmed. Unstaked connections = dropped first . Your priority fee is irrelevant if the packet never arrives. It's a delivery problem. Failure Mode Where it breaks. During congestion, the slot leader's TPU port receives more QUIC connections than it can handle. Stake-weighted QoS kicks in. Unstaked connections are dropped first. Your priority fee? Irrelevant. The packet never reaches the validator. It's not a speed problem \u2014 it's a delivery problem. Your Transaction signed, fee attached, ready to send sendTransaction() Public RPC Node unstaked connection \u00b7 no priority \u00b7 shared queue QUIC stream \u2192 leader TPU DROPPED failure TPU port at capacity \u2014 connection rejected \u2715 Stake-weighted QoS: unstaked = lowest priority \u2715 TPU queue full: connection refused \u2715 IP rate-limited: throttled at QUIC layer result \"Transaction expired\" retries 3/3 failed fee wasted see: Solana QUIC implementation, stake-weighted QoS (SIMD-0110) floe \u2014 delivery compa... (truncated)",
-          "classifications": {
-            "memecoin": false,
-            "utility": true,
-            "ai_token": false,
-            "tweet_coin": false,
-            "current_event": false,
-            "racist": false,
-            "offensive": false,
-            "animals": true,
-            "political": false
-          },
-          "prompt_summaries": {
-            "prompt_1_summary_website_content": "FLOE is a Private Transaction Relay for Solana, focusing on QUIC-level packet acceleration, multi-path staked routing, and adaptive fee engine.",
-            "prompt_2_summary_twitter_searches": "FLOE is associated with the Solana blockchain and linked to a specific wallet address and URLs.",
-            "prompt_3_summary_profile_content": "Floe is a Solana transaction relay with staked routing, adaptive fees, and no dropped packets, offering a bot and developing a web-based trading terminal.",
-            "prompt_4_summary_main_tweet": "",
-            "prompt_5_summary_twitter_community_recent_posts": ""
-          }
-        },
-        "llm_staged_data": {
-          "created": "2 hours ago",
-          "token_created_timestamp": "2026-02-16T06:03:36+00:00",
-          "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
-          "token_symbol": "FLOE",
-          "token_name": "Floe",
-          "first_time_seen": true,
-          "times_seen_before": 0,
-          "token_description": "Private transaction relay for Solana. Staked QUIC routing straight to the leader TPU. Hold $FLOE to access the relay.",
-          "token_image": "https://ipfs.io/ipfs/bafybeig5wwwbpeafmuv4htf53opnopqa6skuux5ov66fetam3y6t4ehm7u",
-          "token_twitter": null,
-          "token_website": null,
-          "pump_twitter": "https://x.com/floedotre",
-          "pump_telegram": null,
-          "pump_website": "https://floe.re/",
-          "dex_twitter": "https://x.com/floedotre",
-          "dex_telegram": null,
-          "dex_discord": null,
-          "dex_website": "https://floe.re/",
-          "is_currently_live": false,
-          "community_takeover": false,
-          "community_takeover_payment_time": null,
-          "community_takeover_time_ago": "N/A",
-          "main_tweet": {
-            "text": null,
-            "username": null,
-            "displayname": null
-          },
-          "website_content": "FLOE mainnet github x pump.fun docs bot ref Connect FLOE Private Transaction Relay for Solana QUIC-level packet acceleration \u00b7 multi-path staked routing \u00b7 adaptive fee engine Protocol Source Buy $FLOE ca: 5Ten ... pump click to copy scroll the seal does not care about your network congestion Live Network Solana Mainnet. Right now. Real-time data polled every 3 seconds. Success rates, TPS, priority fees \u2014 all from getRecentPerformanceSamples . Slot numbers link to Solscan for verification. solana network \u2014 connecting... establishing connection to mainnet-beta solana \u2014 congestion model $ explain --tpu-congestion When Solana is congested: \u251c\u2500 Leader TPU port at capacity \u251c\u2500 Unstaked QUIC connections = dropped first \u251c\u2500 Staked connections get priority \u2514\u2500 Public RPC = unstaked = lowest priority Result: \u251c\u2500 NFT mints \u2192 mass drops on public RPC \u251c\u2500 Token launches \u2192 your tx expires \u2514\u2500 Priority fee paid \u2192 wasted (packet never arrived) $ The Problem Your tx gets dropped. QUIC replaced UDP in 2022, but during congestion the slot leader's TPU port is overwhelmed. Unstaked connections = dropped first . Your priority fee is irrelevant if the packet never arrives. It's a delivery problem. Failure Mode Where it breaks. During congestion, the slot leader's TPU port receives more QUIC connections than it can handle. Stake-weighted QoS kicks in. Unstaked connections are dropped first. Your priority fee? Irrelevant. The packet never reaches the validator. It's not a speed problem \u2014 it's a delivery problem. Your Transaction signed, fee attached, ready to send sendTransaction() Public RPC Node unstaked connection \u00b7 no priority \u00b7 shared queue QUIC stream \u2192 leader TPU DROPPED failure TPU port at capacity \u2014 connection rejected \u2715 Stake-weighted QoS: unstaked = lowest priority \u2715 TPU queue full: connection refused \u2715 IP rate-limited: throttled at QUIC layer result \"Transaction expired\" retries 3/3 failed fee wasted see: Solana QUIC implementation, stake-weighted QoS (SIMD-0110) floe \u2014 delivery compa... (truncated)",
-          "twitter_community_content": null,
-          "twitter_profile": {
-            "displayname": "Floe",
-            "bio": "Solana transaction relay. Staked routing, adaptive fees, no dropped packets. The seal sits on the ice.",
-            "recent_tweets": [
-              "We are currently deploying a minor hotfix to improve the stability of our Telegram bot. There might be a very brief downtime, but don't worry\u2014it\u2019s all part of making the experience smoother.  We will post an immediate update as soon as the deployment is complete. Thanks for your patience.",
-              "Deployment Complete. Everything is back online",
-              "Who said we\u2019re taking it slow? The next step is already in motion.",
-              "/1 The relay was built as infrastructure. The bot was the first interface.  The next interface is a full web-based trading terminal \u2014 chart, swap, portfolio, positions, all running through the same staked relay.  No download. No extension. Open the browser and trade.",
-              "/3 What the terminal adds:  Full charting. Advanced order types. Real-time P&amp;L dashboard. Token screening. All within the browser \u2014 no client installation, no desktop app.  The relay is the backend. The terminal is the frontend. Both are coming to https://t.co/KcGfgIYQL0.",
-              "/4 More interfaces mean more users on the relay. More users mean more fees collected. More fees mean more $FLOE purchased from the market.  The terminal is not a separate product. It is another entry point into the same economic loop.  https://t.co/KcGfgIYQL0",
-              "/1 The referral system is live inside the bot.  Hold $FLOE. Open /referral. Share your link. When someone trades through your link, you earn a percentage of their platform fee \u2014 paid in SOL.  No minimum volume. No lockup. Earnings accumulate per trade.",
-              "/2 Commission rates scale with your tier:  Drift \u2014 15% of referral's platform fee. Deep \u2014 25%. Abyss \u2014 35%.  Your tier is determined by your $FLOE balance as a share of total supply. Higher balance, higher cut.",
-              "/3 On top of referral earnings, your own trades generate self-payback. A portion of your own platform fee returns to you.  When your claimable balance hits the threshold, press Claim. Payout is SOL + $FLOE from the protocol treasury.  The more the relay is used, the more the treasury holds, the more you earn.  @floe_relay_bot",
-              "/1 What happens when you press Buy inside the bot:  1. The bot reads your settings \u2014 slippage, priority, tip. 2. The fee engine queries the last 150 slots and calculates the minimum viable priority fee. 3. If the token is on https://t.co/u9fBITyUTO, it routes through the bonding curve directly. Otherwise, Jupiter handles the swap.",
-              "/2 4. The transaction is signed and fired through multiple paths simultaneously:    \u2014 Staked relay to leader TPU    \u2014 Jito bundle to block engine    \u2014 Direct connection when available  5. First path that lands, wins. Others are discarded. 6. Platform fee is collected. Buyback fires immediately \u2014 $FLOE purchased from market on the same block cycle.",
-              "/3 This is not a wrapper around a public RPC.  The routing layer, the fee engine, the multi-path delivery \u2014 all open source. The bot is the first interface. A web-based trading terminal is next. The relay is the infrastructure that powers both.",
-              "/1 How to start:  Open @floe_relay_bot on Telegram. Press Start. A wallet is generated automatically. Send SOL to the wallet address shown.  You are now connected to the relay.",
-              "/3 Earning while you trade:  If you hold $FLOE, a portion of your own trading fees comes back to you as self-payback. Share your referral link \u2014 earn a percentage of every trade your referrals make.  Check /referral for your link, stats, and claimable balance. Claim pays out in SOL + $FLOE from the protocol treasury.",
-              "/4 Settings:  /settings \u2014 slippage, priority fee, Jito tip, buy/sell presets. /wallet \u2014 create, import, export, toggle active wallets. /positions \u2014 live portfolio with P&L.  Everything runs through staked QUIC connections. Same relay, same infrastructure. A web-based trading terminal is in development \u2014 same relay, full browser experience.  @floe_relay_bot",
-              "/1 The Floe trading bot is live.  Swap any Solana token through the relay. https://t.co/7Yv8ftZvZ6 detection, Jupiter routing, multi-wallet support. Every transaction routes through staked infrastructure. https://t.co/VnoAUMK1Q5 @floe_relay_bot https://t.co/dbs8v6WH8T",
-              "/3 Tier access inside the bot:  Surface \u2014 1% fee. Basic routing. Drift \u2014 0.75% fee. 15% referral commission. Deep \u2014 0.5% fee. 25% referral. Revenue share. Abyss \u2014 Zero fee. 35% referral. Full access.  Your tier is your $FLOE balance as a percentage of total supply.",
-              "/4 Every trade through the bot generates protocol revenue. A portion purchases $FLOE from the market on each transaction. Referral and payback claims include $FLOE from that treasury.  The bot is the first interface. A web-based trading terminal is next \u2014 same relay, full browser experience.  @floe_relay_bot | https://t.co/GXazz4lGGR"
-            ]
-          },
-          "twitter_search_texts": {
-            "address_recent": [
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump  #FarrhanaBhatt #solana https://t.co/JUneY1JHcE",
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/Vy3JbGA27M"
-            ],
-            "address_top": [
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/Vy3JbGA27M"
-            ],
-            "symbol_recent": [
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump  #FarrhanaBhatt #solana https://t.co/JUneY1JHcE",
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/Vy3JbGA27M"
-            ],
-            "symbol_top": [
-              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/Vy3JbGA27M",
-              "What is this fud attack\ud83e\udd23 going hard for yall . Lets gooo!   $FLOE to 100M"
-            ]
-          }
-        },
-        "risk_analysis": {
-          "onchain_scan": {
-            "dex_paid": true,
-            "dex_paid_timestamp": "2026-02-16 06:33:27",
-            "bundle_percentage": 4.86,
-            "fresh_wallets_percentage": 4.4,
-            "dev_hold_percentage": 0.0,
-            "insider_wallets_percentage": 14.47,
-            "num_holders": 1151,
-            "largest_holder_percentage": 3.8,
-            "largest_cluster_percentage": 0.65,
-            "large_holder_count": 6,
-            "same_percentage_count": 6,
-            "low_sol_count": 13
-          },
-          "onchain_scan_score": {
-            "final_score": 7.4,
-            "bundle_percentage_score": 8,
-            "fresh_wallets_percentage_score": 8,
-            "dev_hold_percentage_score": 10,
-            "insider_wallets_percentage_score": 5,
-            "num_holders_score": 6,
-            "largest_holder_percentage_score": 7,
-            "largest_cluster_percentage_score": 10,
-            "large_holder_count_score": 8,
-            "same_percentage_count_score": 6,
-            "low_sol_count_score": 3
-          },
-          "graduated_tokens_thresholds": {
-            "highest_threshold": 250000,
-            "all_time_highest_threshold": 250000,
-            "highest_threshold_as_farm": 250000,
-            "highest_threshold_as_farmed": 100000,
-            "highest_threshold_as_no_farm_detected": 0,
-            "farm_status": "FARM",
-            "ever_failed_criteria": true,
-            "last_scanned": 1771230047.1684518
-          },
-          "social_scan": {
-            "handle_reuse": {
-              "handle": "floedotre",
-              "reused": false,
-              "account_count": 0,
-              "accounts": [],
-              "message": "No account history found for this handle."
-            }
-          }
-        },
-        "alpha_analysis": {
-          "kol_buys": {
-            "total_kol_buys": 0,
-            "total_usd_spent": 0.0,
-            "kols": []
-          },
-          "trending_ranks": {
-            "axiom": null,
-            "dexscreener": null,
-            "moby": null,
-            "pumpfun_found": false,
-            "trending_found": false,
-            "twitter_trending_found": false
-          },
-          "moby": {
-            "whale_count_h24": null,
-            "whale_trades_count_h24": null,
-            "whale_net_flow_usd_h24": null,
-            "whale_net_supply_percent_h24": null,
-            "whale_holder_retention_percent_h24": null
-          },
-          "twitter_trending": {
-            "mentions_total": null,
-            "accounts": []
-          },
-          "alpha_score": {
-            "final_score": 0.0,
-            "total_kol_buys_score": 0,
-            "trending_ranks_score": 0.0,
-            "twitter_trending_score": 0
-          }
-        },
-        "technical_analysis": {
-          "ta_buy_score": {
-            "final_score": null,
-            "timeframe_scores": {
-              "15m": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "1h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "4h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "24h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              }
-            },
-            "subscores": {
-              "oversold": null,
-              "momentum_shift": null,
-              "drawdown_value": null,
-              "holder_trend": null
-            }
-          },
-          "usd_market_cap": 291433.84,
-          "ath_market_cap": 309883.11,
-          "ath_market_cap_timestamp": "2026-02-16T08:22:26+00:00",
-          "ath_multiple": 1.063,
-          "backup_ath_market_cap": null,
-          "backup_ath_market_cap_timestamp": null,
-          "holderscan_data": {
-            "source": null,
-            "holderscan_history": []
-          }
-        }
-      }
-    },
-    {
-      "processed_at": "2026-02-16T08:58:15.386865Z",
-      "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
-      "token_symbol": "OTOME",
-      "token_name": "OTOME",
-      "first_time_seen": true,
-      "times_seen_before": 0,
-      "full_token_details": {
-        "aggregate_score": 3.7,
-        "groq_web_research": {
-          "summary_all_context": "The $OTOME token references \"Otome\" (\u4e59\u5973), a Japanese term meaning \"maiden\" central to female-focused pop culture like otome games and Tokyo\u2019s Otome Road district. The token\u2019s narrative of a resilient macaque aligns with otome themes of personal growth and second chances, leveraging existing cultural resonance.",
-          "answer": "**Summary (non\u2011crypto meaning)**  \n- **Otome (\u4e59\u5973)** is a Japanese word that literally means \u201cmaiden\u201d or \u201cyoung lady.\u201d  \n- In contemporary Japanese pop\u2011culture it is used to label media aimed at a female audience: *otome games* (romance\u2011oriented visual novels), *Otome Road* (a district in Ikebukuro known for girls\u2011focused anime/manga shops), and the broader \u201cotome\u201d fandom that celebrates stories of romance, personal growth, and empowerment.  \n- The term also appears in everyday slang to describe a girl who is sweet, innocent, or \u201cprincess\u2011like,\u201d and it has been adopted in memes and TikTok trends that play on the \u201cmaiden\u2011like\u201d aesthetic.\n\n**Origin / Timeline (cultural)**  \n- **Etymology:** Derived from classical Japanese, where *otome* referred to an unmarried woman of noble birth.  \n- **1970s\u201180s:** The word entered modern slang as a descriptor for a shy or demure girl.  \n- **1990s\u20112000s:** With the rise of visual\u2011novel games, developers coined \u201cotome game\u201d to denote romance titles featuring a female protagonist (e.g., *Angelique* series, 1994).  \n- **2000s\u2011present:** Ikebukuro\u2019s \u201cOtome Road\u201d became a physical hub for otome\u2011oriented merchandise, solidifying the term\u2019s association with a subculture focused on romance, personal resilience, and \u201csecond\u2011chance\u201d narratives.  \n- **Social\u2011media era:** TikTok and meme communities occasionally use \u201cotome\u201d to caption videos that showcase gentle, uplifting stories of personal growth\u2014mirroring the token\u2019s description of a fragile macaque finding strength through a plush companion.\n\n**Sources (identified from prior knowledge; no new web searches were possible)**  \n1. Wikipedia \u2013 \u201cOtome game\u201d \u2013 explains the genre\u2019s focus on romance for women.  \n2. Wikipedia \u2013 \u201cOtome Road\u201d \u2013 details the cultural district in Tokyo dedicated to female\u2011oriented anime/manga.  \n\n*Note: Because tool use is disabled by system policy, I cannot perform fresh web searches to provide additional links.*",
-          "confidence_score": {
-            "final_score": 8,
-            "confidence_subscores": {
-              "context_faithfulness": 8,
-              "internal_consistency": 9,
-              "specificity": 7,
-              "completeness": 6,
-              "clarity": 8,
-              "source_groundedness": 9
-            }
-          },
-          "narrative_score": {
-            "final_score": 6,
-            "narrative_subscores": {
-              "hook_strength": 8,
-              "cultural_relevance": 9,
-              "cultural_charge": 2,
-              "mission_statement": 8,
-              "compellingness": 8,
-              "tribal_identity": 8,
-              "lore_amount": 6,
-              "lore_depth": 3
-            }
-          },
-          "sentiment_score": {
-            "final_score": null,
-            "sentiment_subscores": null
-          }
-        },
-        "llm_interpretation": {
-          "created_at": "2026-02-16T08:59:12.718728Z",
-          "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
-          "name": "OTOME",
-          "symbol": "OTOME",
-          "description": "The Story of Otome Long before Punch\u2026 there was Otome. A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances.",
-          "timestamp": "2026-02-16T08:59:10.997065+00:00",
-          "llm_interpretation": "Description: $OTOME is a token inspired by Otome, a macaque who overcame adversity with a plush companion.\n\n1. memecoin: TRUE - The token is based on a story and image of a macaque, which can be considered a meme-like character.\n2. utility: FALSE - There's no indication that the token is based on tech or utility.\n3. ai_token: FALSE - There's no indication that the token is related to AI or artificial intelligence.\n4. tweet_coin: FALSE - There's no indication that the token is directly inspired by a viral tweet.\n5. current_event: FALSE - There's no indication that the token is based on a current event or trend.\n6. racist: FALSE - The token's branding and story do not contain racist themes.\n7. offensive: FALSE - The token's branding and story do not contain offensive themes.\n8. animals: TRUE - The token is based on a macaque, an animal.\n9. political: FALSE - The token is not related to politics or a political figure.",
-          "llm_description": "$OTOME is a token inspired by Otome, a macaque who overcame adversity with a plush companion, symbolizing resilience and second chances.",
-          "scraped_website_content": "Twitter Telegram Live Chart $OTOME CA : NULL Copied! The Story of Otome Long before Punch\u2026 there was Otome . A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances. Courage Wrapped in Softness At first, the troop was puzzled by the tiny monkey who carried a plush toy everywhere. Some young macaques teased her, unsure of this unusual sight. But whenever Otome ran back to her beloved bear, they stopped. The distance slowly faded. That plush wasn\u2019t just comfort \u2014 it was her mother, her shield, her quiet strength . Held by a Bear, Guided by Love How to Buy $OTOME 1 Set Up Your Wallet Download a trusted wallet and create your secure account. Keep your recovery phrase safe \u2014 it\u2019s your key to everything. 2 Fund Your Wallet Add funds to your wallet using your preferred method. Make sure you have enough to complete your transaction smoothly. 3 Connect to a DEX Visit your preferred decentralized exchange and connect your wallet securely. 4 Swap for $OTOME Enter the official contract, confirm the amount, and swap. Welcome to the story \u2014 you\u2019re now part of Otome\u2019s journey. Otome\u2019s Circle Inspired by Otome\u2019s journey, this space reflects quiet resilience and gentle courage. Just as she found comfort in her cherished bear while learning to trust again, we honor softness as strength and the beauty of growing at your own pace. Twitter Telegram $OTOME Courage Wrapped in Softness Twitter Telegram DEX Screener $OTOME is a meme coin with no intrinsic value or expectation of financial return. The coin is for entertainment purposes only. \u00a9 2026 Otome. All rights reserved.",
-          "classifications": {
-            "memecoin": true,
-            "utility": false,
-            "ai_token": false,
-            "tweet_coin": false,
-            "current_event": false,
-            "racist": false,
-            "offensive": false,
-            "animals": true,
-            "political": false
-          },
-          "prompt_summaries": {
-            "prompt_1_summary_website_content": "$OTOME is a token inspired by Otome, a macaque who overcame adversity with the help of a plush companion, symbolizing resilience, softness, and second chances.",
-            "prompt_2_summary_twitter_searches": "",
-            "prompt_3_summary_profile_content": "Otome Monkey is a token, recently listed on DexScreener, gaining attention and momentum in the market.",
-            "prompt_4_summary_main_tweet": "",
-            "prompt_5_summary_twitter_community_recent_posts": ""
-          }
-        },
-        "llm_staged_data": {
-          "created": "3 hours ago",
-          "token_created_timestamp": "2026-02-16T05:40:20+00:00",
-          "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
-          "token_symbol": "OTOME",
-          "token_name": "OTOME",
-          "first_time_seen": true,
-          "times_seen_before": 0,
-          "token_description": "The Story of Otome Long before Punch\u2026 there was Otome. A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances.",
-          "token_image": "https://ipfs.io/ipfs/QmQux1JEwhSeTFMjADtwYjkEXdyKDvz3xz4DmiMaivkssb",
-          "token_twitter": null,
-          "token_website": null,
-          "pump_twitter": null,
-          "pump_telegram": null,
-          "pump_website": null,
-          "dex_twitter": "https://x.com/otomemonkey",
-          "dex_telegram": "https://t.me/otomemonkey",
-          "dex_discord": null,
-          "dex_website": "https://otomemonkey.fun/",
-          "is_currently_live": false,
-          "community_takeover": false,
-          "community_takeover_payment_time": null,
-          "community_takeover_time_ago": "N/A",
-          "main_tweet": {
-            "text": null,
-            "username": null,
-            "displayname": null
-          },
-          "website_content": "Twitter Telegram Live Chart $OTOME CA : NULL Copied! The Story of Otome Long before Punch\u2026 there was Otome . A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances. Courage Wrapped in Softness At first, the troop was puzzled by the tiny monkey who carried a plush toy everywhere. Some young macaques teased her, unsure of this unusual sight. But whenever Otome ran back to her beloved bear, they stopped. The distance slowly faded. That plush wasn\u2019t just comfort \u2014 it was her mother, her shield, her quiet strength . Held by a Bear, Guided by Love How to Buy $OTOME 1 Set Up Your Wallet Download a trusted wallet and create your secure account. Keep your recovery phrase safe \u2014 it\u2019s your key to everything. 2 Fund Your Wallet Add funds to your wallet using your preferred method. Make sure you have enough to complete your transaction smoothly. 3 Connect to a DEX Visit your preferred decentralized exchange and connect your wallet securely. 4 Swap for $OTOME Enter the official contract, confirm the amount, and swap. Welcome to the story \u2014 you\u2019re now part of Otome\u2019s journey. Otome\u2019s Circle Inspired by Otome\u2019s journey, this space reflects quiet resilience and gentle courage. Just as she found comfort in her cherished bear while learning to trust again, we honor softness as strength and the beauty of growing at your own pace. Twitter Telegram $OTOME Courage Wrapped in Softness Twitter Telegram DEX Screener $OTOME is a meme coin with no intrinsic value or expectation of financial return. The coin is for entertainment purposes only. \u00a9 2026 Otome. All rights reserved.",
-          "twitter_community_content": null,
-          "twitter_profile": {
-            "displayname": "Otome Monkey",
-            "bio": null,
-            "recent_tweets": [
-              "$OTOME comes with full excitement look at the little monkey come into the market  CA: B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/9hwKRUbFsW https://t.co/MNaUJPdddY https://t.co/FxTGK1sKOC https://t.co/STJApvCdvh",
-              "\ud83d\udd25 10x growth for $OTOME . if you blink, you\u2019ll miss the next move! https://t.co/V5IxcPjC3K https://t.co/RYh4p4iCnB",
-              "$OTOME hits DexScreener Ads, the momentum is building https://t.co/V5IxcPjC3K https://t.co/kkJmZ1CEDd",
-              "$OTOME is climbing with no signs of stopping, see it happen live! https://t.co/V5IxcPjC3K https://t.co/b8djVSRr2y",
-              "$OTOME is now live on DexScreener https://t.co/V5IxcPjC3K https://t.co/wWqFm6a967",
-              "$OTOME is gaining attention on https://t.co/cYeVNxLMKE https://t.co/Js9bKY7see https://t.co/EG85fAD06i"
-            ]
-          },
-          "twitter_search_texts": {
-            "address_recent": [],
-            "address_top": [],
-            "symbol_recent": [],
-            "symbol_top": []
-          }
-        },
-        "risk_analysis": {
-          "onchain_scan": {
-            "dex_paid": true,
-            "dex_paid_timestamp": "2026-02-16 08:36:03",
-            "bundle_percentage": 0.31,
-            "fresh_wallets_percentage": 9.2,
-            "dev_hold_percentage": 0.0,
-            "insider_wallets_percentage": 0.92,
-            "num_holders": 885,
-            "largest_holder_percentage": 0.7,
-            "largest_cluster_percentage": 0.0,
-            "large_holder_count": 0,
-            "same_percentage_count": 9,
-            "low_sol_count": 9
-          },
-          "onchain_scan_score": {
-            "final_score": 5.0,
-            "bundle_percentage_score": 10,
-            "fresh_wallets_percentage_score": 6,
-            "dev_hold_percentage_score": 10,
-            "insider_wallets_percentage_score": 10,
-            "num_holders_score": 4,
-            "largest_holder_percentage_score": 6,
-            "largest_cluster_percentage_score": 10,
-            "large_holder_count_score": 1,
-            "same_percentage_count_score": 5,
-            "low_sol_count_score": 5
-          },
-          "graduated_tokens_thresholds": {
-            "highest_threshold": 250000,
-            "all_time_highest_threshold": 250000,
-            "highest_threshold_as_farm": 250000,
-            "highest_threshold_as_farmed": 0,
-            "highest_threshold_as_no_farm_detected": 0,
-            "farm_status": "FARM",
-            "ever_failed_criteria": true,
-            "last_scanned": 1771232218.350846
-          },
-          "social_scan": {
-            "handle_reuse": {
-              "handle": "otomemonkey",
-              "reused": false,
-              "account_count": 0,
-              "accounts": [],
-              "message": "No account history found for this handle."
-            }
-          }
-        },
-        "alpha_analysis": {
-          "kol_buys": {
-            "total_kol_buys": 0,
-            "total_usd_spent": 0.0,
-            "kols": []
-          },
-          "trending_ranks": {
-            "axiom": null,
-            "dexscreener": null,
-            "moby": null,
-            "pumpfun_found": false,
-            "trending_found": false,
-            "twitter_trending_found": false
-          },
-          "moby": {
-            "whale_count_h24": null,
-            "whale_trades_count_h24": null,
-            "whale_net_flow_usd_h24": null,
-            "whale_net_supply_percent_h24": null,
-            "whale_holder_retention_percent_h24": null
-          },
-          "twitter_trending": {
-            "mentions_total": null,
-            "accounts": []
-          },
-          "alpha_score": {
-            "final_score": 0.0,
-            "total_kol_buys_score": 0,
-            "trending_ranks_score": 0.0,
-            "twitter_trending_score": 0
-          }
-        },
-        "technical_analysis": {
-          "ta_buy_score": {
-            "final_score": null,
-            "timeframe_scores": {
-              "15m": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "1h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "4h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "24h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              }
-            },
-            "subscores": {
-              "oversold": null,
-              "momentum_shift": null,
-              "drawdown_value": null,
-              "holder_trend": null
-            }
-          },
-          "usd_market_cap": 249148.33,
-          "ath_market_cap": 312662.32,
-          "ath_market_cap_timestamp": "2026-02-16T08:55:12+00:00",
-          "ath_multiple": 1.255,
-          "backup_ath_market_cap": null,
-          "backup_ath_market_cap_timestamp": null,
-          "holderscan_data": {
-            "source": "holderscan_http_fallback",
-            "holderscan_history": [
-              {
-                "updatedAt": "2026-02-16T08:00:00.000Z",
-                "holderCount": 766,
-                "marketCap": 103419.0959530907,
-                "mcapOverHolders": 135.01187461238996
-              }
-            ]
-          }
-        }
-      }
-    },
     {
       "processed_at": "2026-02-16T09:34:35.152328Z",
       "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
@@ -125599,6 +124976,2702 @@
           "holderscan_data": {
             "source": null,
             "holderscan_history": []
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-17T08:23:37.240097Z",
+      "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+      "token_symbol": "FLOE",
+      "token_name": "Floe",
+      "first_time_seen": false,
+      "times_seen_before": 1,
+      "full_token_details": {
+        "aggregate_score": 4.0,
+        "groq_web_research": {
+          "summary_all_context": "Floe (FLOE) is a Solana transaction relay enabling private, efficient transactions via staked QUIC routing to leader TPUs. Token holders gain relay access, while adaptive fees and staked routing prioritize transactions. Key gaps include missing whitepapers, audits, and team details.",
+          "answer": "**1) What it claims to be (from the provided text)**  \n- Floe (FLOE) is presented as a **Solana transaction relay** that offers **private, efficient transactions**.  \n- It uses **staked QUIC routing** that goes directly to the leader TPU (Transaction Processing Unit) on Solana.  \n- Holding the native token\u202f$FLOE is required to **access the relay service**.  \n\n**2) Likely utility / features** *(inferred where not explicit)*  \n- **Private transaction forwarding** \u2013 obscures sender/receiver details on Solana (inferred).  \n- **Staked routing** \u2013 users stake $FLOE to prioritize or secure routing paths (explicit).  \n- **Adaptive fee mechanism** \u2013 fees adjust based on network load or stake (explicit).  \n- **Direct leader\u2011TPU routing via QUIC** \u2013 low\u2011latency delivery to the block producer (explicit).  \n- **Token\u2011gated access** \u2013 only $FLOE holders can submit transactions through the relay (explicit).  \n- **Potential revenue sharing** \u2013 stakers may earn a portion of fees collected (inferred).  \n\n**3) Missing information checklist**  \n- Official **whitepaper** or technical specification.  \n- Detailed **website** with product walkthrough and API docs.  \n- Comprehensive **team bios** (beyond the vague \u201cStanford CS expert\u201d).  \n- Full **tokenomics**: supply, distribution, vesting, staking rewards, fee split.  \n- **Security audits** of the relay and routing code.  \n- **Roadmap** and milestones.  \n- Legal/compliance disclosures (regulatory status).  \n\n**4) Risk note**  \nAll statements are based solely on the supplied metadata. No external verification is possible, and the project\u2019s actual functionality, security, and legitimacy remain unconfirmed. Proceed with caution and seek the missing documentation before any investment or usage.",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 9,
+              "completeness": 7,
+              "clarity": 8,
+              "source_groundedness": 2
+            }
+          },
+          "narrative_score": {
+            "final_score": 6,
+            "narrative_subscores": {
+              "hook_strength": null,
+              "cultural_relevance": null,
+              "cultural_charge": null,
+              "mission_statement": null,
+              "compellingness": null,
+              "tribal_identity": null,
+              "lore_amount": null,
+              "lore_depth": null
+            }
+          },
+          "sentiment_score": {
+            "final_score": 7,
+            "sentiment_subscores": {
+              "overall_tone": 8,
+              "excitement_level": 6,
+              "concern_signals": 2,
+              "engagement_quality": 5,
+              "community_trust": 7,
+              "fomo_indicators": 1,
+              "skepticism_level": 3,
+              "organic_feel": 8
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-17T08:24:46.328775Z",
+          "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+          "name": "Floe",
+          "symbol": "FLOE",
+          "description": "Private transaction relay for Solana. Staked QUIC routing straight to the leader TPU. Hold $FLOE to access the relay.",
+          "timestamp": "2026-02-17T08:24:44.641962+00:00",
+          "llm_interpretation": "Description: Floe is a Solana transaction relay token providing private and efficient transactions.\n\n1. memecoin: FALSE - The token is based on a technological utility, not a meme.\n2. utility: TRUE - The token provides access to a private transaction relay service on Solana.\n3. ai_token: FALSE - There's no mention of AI or artificial intelligence in relation to the token.\n4. tweet_coin: FALSE - The token isn't directly inspired by a viral tweet.\n5. current_event: FALSE - The token isn't based on a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in the token's branding.\n7. offensive: FALSE - There's no indication of offensive themes in the token's branding.\n8. animals: TRUE - The token name 'Floe' is related to an animal (seal) as seen in the image.\n9. political: FALSE - The token isn't based on politics or a political figure.",
+          "llm_description": "Floe is a Solana transaction relay providing private and efficient transactions with staked routing and adaptive fees.",
+          "scraped_website_content": "FLOE mainnet github x pump.fun pulse docs bot ref Connect FLOE Private Transaction Relay for Solana QUIC-level packet acceleration \u00b7 multi-path staked routing \u00b7 adaptive fee engine Protocol Source Buy $FLOE ca: 5Ten ... pump click to copy scroll the seal does not care about your network congestion Live Network Solana Mainnet. Right now. Real-time data polled every 3 seconds. Success rates, TPS, priority fees \u2014 all from getRecentPerformanceSamples . Slot numbers link to Solscan for verification. solana network \u2014 connecting... establishing connection to mainnet-beta solana \u2014 congestion model $ explain --tpu-congestion When Solana is congested: \u251c\u2500 Leader TPU port at capacity \u251c\u2500 Unstaked QUIC connections = dropped first \u251c\u2500 Staked connections get priority \u2514\u2500 Public RPC = unstaked = lowest priority Result: \u251c\u2500 NFT mints \u2192 mass drops on public RPC \u251c\u2500 Token launches \u2192 your tx expires \u2514\u2500 Priority fee paid \u2192 wasted (packet never arrived) $ The Problem Your tx gets dropped. QUIC replaced UDP in 2022, but during congestion the slot leader's TPU port is overwhelmed. Unstaked connections = dropped first . Your priority fee is irrelevant if the packet never arrives. It's a delivery problem. Failure Mode Where it breaks. During congestion, the slot leader's TPU port receives more QUIC connections than it can handle. Stake-weighted QoS kicks in. Unstaked connections are dropped first. Your priority fee? Irrelevant. The packet never reaches the validator. It's not a speed problem \u2014 it's a delivery problem. Your Transaction signed, fee attached, ready to send sendTransaction() Public RPC Node unstaked connection \u00b7 no priority \u00b7 shared queue QUIC stream \u2192 leader TPU DROPPED failure TPU port at capacity \u2014 connection rejected \u2715 Stake-weighted QoS: unstaked = lowest priority \u2715 TPU queue full: connection refused \u2715 IP rate-limited: throttled at QUIC layer result \"Transaction expired\" retries 3/3 failed fee wasted see: Solana QUIC implementation, stake-weighted QoS (SIMD-0110) floe \u2014 delivery... (truncated)",
+          "classifications": {
+            "memecoin": false,
+            "utility": true,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": true,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "FLOE is a Private Transaction Relay for Solana, focusing on QUIC-level packet acceleration, multi-path staked routing, and adaptive fee engine.",
+            "prompt_2_summary_twitter_searches": "FLOE is a token associated with a developer who is a Stanford computer science expert, possibly backed by significant resources, working on a project.",
+            "prompt_3_summary_profile_content": "Floe is a Solana transaction relay with staked routing, adaptive fees, and no dropped packets, building a trading terminal and other interfaces.",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "1 days ago",
+          "token_created_timestamp": "2026-02-16T06:03:36+00:00",
+          "token_address": "5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+          "token_symbol": "FLOE",
+          "token_name": "Floe",
+          "first_time_seen": false,
+          "times_seen_before": 1,
+          "token_description": "Private transaction relay for Solana. Staked QUIC routing straight to the leader TPU. Hold $FLOE to access the relay.",
+          "token_image": "https://ipfs.io/ipfs/bafybeig5wwwbpeafmuv4htf53opnopqa6skuux5ov66fetam3y6t4ehm7u",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/floedotre",
+          "pump_telegram": null,
+          "pump_website": "https://floe.re/",
+          "dex_twitter": "https://x.com/floedotre",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": "https://floe.re/",
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "FLOE mainnet github x pump.fun pulse docs bot ref Connect FLOE Private Transaction Relay for Solana QUIC-level packet acceleration \u00b7 multi-path staked routing \u00b7 adaptive fee engine Protocol Source Buy $FLOE ca: 5Ten ... pump click to copy scroll the seal does not care about your network congestion Live Network Solana Mainnet. Right now. Real-time data polled every 3 seconds. Success rates, TPS, priority fees \u2014 all from getRecentPerformanceSamples . Slot numbers link to Solscan for verification. solana network \u2014 connecting... establishing connection to mainnet-beta solana \u2014 congestion model $ explain --tpu-congestion When Solana is congested: \u251c\u2500 Leader TPU port at capacity \u251c\u2500 Unstaked QUIC connections = dropped first \u251c\u2500 Staked connections get priority \u2514\u2500 Public RPC = unstaked = lowest priority Result: \u251c\u2500 NFT mints \u2192 mass drops on public RPC \u251c\u2500 Token launches \u2192 your tx expires \u2514\u2500 Priority fee paid \u2192 wasted (packet never arrived) $ The Problem Your tx gets dropped. QUIC replaced UDP in 2022, but during congestion the slot leader's TPU port is overwhelmed. Unstaked connections = dropped first . Your priority fee is irrelevant if the packet never arrives. It's a delivery problem. Failure Mode Where it breaks. During congestion, the slot leader's TPU port receives more QUIC connections than it can handle. Stake-weighted QoS kicks in. Unstaked connections are dropped first. Your priority fee? Irrelevant. The packet never reaches the validator. It's not a speed problem \u2014 it's a delivery problem. Your Transaction signed, fee attached, ready to send sendTransaction() Public RPC Node unstaked connection \u00b7 no priority \u00b7 shared queue QUIC stream \u2192 leader TPU DROPPED failure TPU port at capacity \u2014 connection rejected \u2715 Stake-weighted QoS: unstaked = lowest priority \u2715 TPU queue full: connection refused \u2715 IP rate-limited: throttled at QUIC layer result \"Transaction expired\" retries 3/3 failed fee wasted see: Solana QUIC implementation, stake-weighted QoS (SIMD-0110) floe \u2014 delivery... (truncated)",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": "Floe",
+            "bio": "Solana transaction relay. Staked routing, adaptive fees, no dropped packets. The seal sits on the ice.",
+            "recent_tweets": [
+              "Development is ongoing. Opening up part of what's been built so far.  Pulse \u2014 live feed of new Solana token launches. Prices update in real time, straight from the bonding curve.  https://t.co/KbOtvkX0bV https://t.co/hu7HCRhY2k",
+              "X had a platform-wide issue that made our account temporarily inaccessible. It's resolved now.  We posted a notice on the website while it was down. Taking this as a reminder \u2014 setting up a Telegram channel so there's always a backup line.  Nothing changed on our end. Development didn't pause.",
+              "1,000+ wallets holding. No promotions. No incentives. Just the product.  The terminal is being built piece by piece. Pulse is live. Trading execution on web is next. Every module connects back to the relay.  We don't move fast to look busy. We move at the pace of things that actually work.",
+              "/2 Not trying to copy what already exists. But the basics matter \u2014 fast data, accurate prices, clean interface. Built on Floe infrastructure from scratch.  Features you're used to from other tools are coming. Relay and execution integration follows.",
+              "/3 Pulse is the first public module. Trading, portfolio, relay dashboard \u2014 shipping in order. One piece at a time.  Feedback welcome.   https://t.co/KbOtvkX0bV",
+              "https://t.co/7MbHjE9cV8",
+              "Just a sneak peek of what's coming next.",
+              "We are currently deploying a minor hotfix to improve the stability of our Telegram bot. There might be a very brief downtime, but don't worry\u2014it\u2019s all part of making the experience smoother.  We will post an immediate update as soon as the deployment is complete. Thanks for your patience.",
+              "Deployment Complete. Everything is back online",
+              "Who said we\u2019re taking it slow? The next step is already in motion.",
+              "/1 The relay was built as infrastructure. The bot was the first interface.  The next interface is a full web-based trading terminal \u2014 chart, swap, portfolio, positions, all running through the same staked relay.  No download. No extension. Open the browser and trade.",
+              "/3 What the terminal adds:  Full charting. Advanced order types. Real-time P&amp;L dashboard. Token screening. All within the browser \u2014 no client installation, no desktop app.  The relay is the backend. The terminal is the frontend. Both are coming to https://t.co/KcGfgIYQL0.",
+              "/4 More interfaces mean more users on the relay. More users mean more fees collected. More fees mean more $FLOE purchased from the market.  The terminal is not a separate product. It is another entry point into the same economic loop.  https://t.co/KcGfgIYQL0",
+              "/1 The referral system is live inside the bot.  Hold $FLOE. Open /referral. Share your link. When someone trades through your link, you earn a percentage of their platform fee \u2014 paid in SOL.  No minimum volume. No lockup. Earnings accumulate per trade.",
+              "/2 Commission rates scale with your tier:  Drift \u2014 15% of referral's platform fee. Deep \u2014 25%. Abyss \u2014 35%.  Your tier is determined by your $FLOE balance as a share of total supply. Higher balance, higher cut.",
+              "/3 On top of referral earnings, your own trades generate self-payback. A portion of your own platform fee returns to you.  When your claimable balance hits the threshold, press Claim. Payout is SOL + $FLOE from the protocol treasury.  The more the relay is used, the more the treasury holds, the more you earn.  @floe_relay_bot",
+              "/1 What happens when you press Buy inside the bot:  1. The bot reads your settings \u2014 slippage, priority, tip. 2. The fee engine queries the last 150 slots and calculates the minimum viable priority fee. 3. If the token is on https://t.co/u9fBITyUTO, it routes through the bonding curve directly. Otherwise, Jupiter handles the swap.",
+              "/2 4. The transaction is signed and fired through multiple paths simultaneously:    \u2014 Staked relay to leader TPU    \u2014 Jito bundle to block engine    \u2014 Direct connection when available  5. First path that lands, wins. Others are discarded. 6. Platform fee is collected. Buyback fires immediately \u2014 $FLOE purchased from market on the same block cycle.",
+              "/3 This is not a wrapper around a public RPC.  The routing layer, the fee engine, the multi-path delivery \u2014 all open source. The bot is the first interface. A web-based trading terminal is next. The relay is the infrastructure that powers both."
+            ]
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/jebFtFjlu9"
+            ],
+            "address_top": [
+              "$FLOE  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump https://t.co/jebFtFjlu9",
+              "Shaw Eliza OS aped just now!  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump  \u201cThis developer is a Stanford computer science whiz, likely backed by some serious resources. Waiting for value discovery.\u201d  My Chinese Quant finds these 5-20k coins and they go parabolic. Insane researcher  Follow him > @VVmmao",
+              "Insane  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump  Ath 300k https://t.co/siAHZAPK1N",
+              "Crimed 170k  Front run",
+              "$Floe  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+              "https://t.co/kjyqNBBcnm"
+            ],
+            "symbol_recent": [],
+            "symbol_top": [
+              "$FLOE is building something really cool ngl.",
+              "$Floe  5Ten9jHmfmUA7VeRStwVKfycFRRm8yu94c4rXmgppump",
+              "https://t.co/kjyqNBBcnm",
+              "Buy and wait till @toly mentions this. See you at millions $floe",
+              "$FLOE"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-02-16 06:33:27",
+            "bundle_percentage": 0.0,
+            "fresh_wallets_percentage": 8.2,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 13.55,
+            "num_holders": 573,
+            "largest_holder_percentage": 3.8,
+            "largest_cluster_percentage": 0.0,
+            "large_holder_count": 9,
+            "same_percentage_count": 3,
+            "low_sol_count": 18
+          },
+          "onchain_scan_score": {
+            "final_score": 5.6,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 6,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 5,
+            "num_holders_score": 4,
+            "largest_holder_percentage_score": 7,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 10,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 1
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 250000,
+            "all_time_highest_threshold": 250000,
+            "highest_threshold_as_farm": 250000,
+            "highest_threshold_as_farmed": 100000,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771253960.9260397
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "floedotre",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": 10.0
+            }
+          },
+          "usd_market_cap": 6923.99,
+          "ath_market_cap": 316493.38,
+          "ath_market_cap_timestamp": "2026-02-16T08:26:37+00:00",
+          "ath_multiple": 45.71,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_http_fallback",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-02-17T08:00:00.000Z",
+                "holderCount": 577,
+                "marketCap": 6843.959982383308,
+                "mcapOverHolders": 11.861282465135716
+              },
+              {
+                "updatedAt": "2026-02-17T07:00:00.000Z",
+                "holderCount": 588,
+                "marketCap": 7235.957690316425,
+                "mcapOverHolders": 12.306050493735418
+              },
+              {
+                "updatedAt": "2026-02-17T06:00:00.000Z",
+                "holderCount": 608,
+                "marketCap": 8040.952983393363,
+                "mcapOverHolders": 13.225251617423295
+              },
+              {
+                "updatedAt": "2026-02-17T05:00:00.000Z",
+                "holderCount": 623,
+                "marketCap": 11459.932992126345,
+                "mcapOverHolders": 18.394756006623346
+              },
+              {
+                "updatedAt": "2026-02-17T04:00:00.000Z",
+                "holderCount": 635,
+                "marketCap": 13959.91837435286,
+                "mcapOverHolders": 21.98412342417773
+              },
+              {
+                "updatedAt": "2026-02-17T03:00:00.000Z",
+                "holderCount": 634,
+                "marketCap": 13639.920245427866,
+                "mcapOverHolders": 21.514069787741114
+              },
+              {
+                "updatedAt": "2026-02-17T02:00:00.000Z",
+                "holderCount": 651,
+                "marketCap": 17149.899722073893,
+                "mcapOverHolders": 26.343931984752523
+              },
+              {
+                "updatedAt": "2026-02-17T01:00:00.000Z",
+                "holderCount": 672,
+                "marketCap": 24409.857272059693,
+                "mcapOverHolders": 36.32419236913645
+              },
+              {
+                "updatedAt": "2026-02-17T00:00:00.000Z",
+                "holderCount": 681,
+                "marketCap": 26109.98550759554,
+                "mcapOverHolders": 38.340654196175535
+              },
+              {
+                "updatedAt": "2026-02-16T23:00:00.000Z",
+                "holderCount": 691,
+                "marketCap": 17709.896447692634,
+                "mcapOverHolders": 25.629372572637674
+              },
+              {
+                "updatedAt": "2026-02-16T22:00:00.000Z",
+                "holderCount": 701,
+                "marketCap": 14139.917321873168,
+                "mcapOverHolders": 20.171066079704946
+              },
+              {
+                "updatedAt": "2026-02-16T21:00:00.000Z",
+                "holderCount": 727,
+                "marketCap": 17529.897500172323,
+                "mcapOverHolders": 24.11265130697706
+              },
+              {
+                "updatedAt": "2026-02-16T20:00:00.000Z",
+                "holderCount": 763,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T19:00:00.000Z",
+                "holderCount": 792,
+                "marketCap": 37359.781551993045,
+                "mcapOverHolders": 47.171441353526575
+              },
+              {
+                "updatedAt": "2026-02-16T18:00:00.000Z",
+                "holderCount": 815,
+                "marketCap": 33749.802660057954,
+                "mcapOverHolders": 41.41080080988706
+              },
+              {
+                "updatedAt": "2026-02-16T17:00:00.000Z",
+                "holderCount": 844,
+                "marketCap": 35869.790264186035,
+                "mcapOverHolders": 42.49975149785075
+              },
+              {
+                "updatedAt": "2026-02-16T16:00:00.000Z",
+                "holderCount": 883,
+                "marketCap": 48639.715596599075,
+                "mcapOverHolders": 55.084615624687515
+              },
+              {
+                "updatedAt": "2026-02-16T15:00:00.000Z",
+                "holderCount": 953,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T14:00:00.000Z",
+                "holderCount": 1001,
+                "marketCap": 77979.54404240946,
+                "mcapOverHolders": 77.90164240000945
+              },
+              {
+                "updatedAt": "2026-02-16T13:00:00.000Z",
+                "holderCount": 1098,
+                "marketCap": 161299.05686125474,
+                "mcapOverHolders": 146.90260187728117
+              },
+              {
+                "updatedAt": "2026-02-16T12:00:00.000Z",
+                "holderCount": 1127,
+                "marketCap": 178198.95804510597,
+                "mcapOverHolders": 158.11797519530256
+              },
+              {
+                "updatedAt": "2026-02-16T11:00:00.000Z",
+                "holderCount": 1111,
+                "marketCap": 186198.91126823085,
+                "mcapOverHolders": 167.5957797193797
+              },
+              {
+                "updatedAt": "2026-02-16T10:00:00.000Z",
+                "holderCount": 1127,
+                "marketCap": null,
+                "mcapOverHolders": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-17T08:40:01.958938Z",
+      "token_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+      "token_symbol": "RAY",
+      "token_name": "Raydium",
+      "first_time_seen": false,
+      "times_seen_before": 2,
+      "full_token_details": {
+        "aggregate_score": 5.2,
+        "groq_web_research": {
+          "summary_all_context": "Raydium (RAY) is an automated market maker (AMM) and liquidity provider on Solana\u2019s Serum DEX, offering on-chain liquidity to Serum\u2019s central limit orderbook. It positions itself as a bridge for projects expanding to Solana/Serum and aims to lead DeFi adoption via partnerships and ecosystem growth. Key gaps include missing whitepapers, audits, and team details.",
+          "answer": "**1. What it claims to be**  \nRaydium (RAY) is presented as an automated market maker (AMM) and liquidity\u2011provider protocol built on Solana that integrates directly with the Serum decentralized exchange (DEX). It positions itself as a bridge for projects expanding onto Solana/Serum and as a foundational DeFi layer for the ecosystem.\n\n**2. Likely utility / features** *(inferred where not explicit)*  \n- **On\u2011chain AMM liquidity** for Serum\u2019s central limit order\u2011book (explicit).  \n- **Liquidity provision incentives** for LPs who earn fees and access Serum\u2019s full order flow (inferred).  \n- **Cross\u2011protocol bridge** enabling other projects to launch on Solana/Serum via Raydium\u2019s infrastructure (inferred).  \n- **Governance token (RAY)** used for protocol voting, fee discounts, or staking rewards (inferred).  \n- **Yield\u2011earning products** such as farms or vaults built on top of the AMM (inferred).  \n\n**3. Missing information checklist**  \n- Official whitepaper / technical documentation.  \n- Detailed tokenomics (supply, distribution, emission schedule).  \n- Website URL and core UI/UX walkthrough.  \n- Team members, advisors, and their backgrounds.  \n- Audits or security reports.  \n- Roadmap and milestone timeline.  \n\n**4. Risk note**  \nAll statements above are derived solely from the supplied descriptions. No external verification has been performed; actual functionality, security, and token economics may differ. Investors should conduct independent due diligence before any engagement.",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 9,
+              "completeness": 7,
+              "clarity": 8,
+              "source_groundedness": 2
+            }
+          },
+          "narrative_score": {
+            "final_score": 6,
+            "narrative_subscores": {
+              "hook_strength": null,
+              "cultural_relevance": null,
+              "cultural_charge": null,
+              "mission_statement": null,
+              "compellingness": null,
+              "tribal_identity": null,
+              "lore_amount": null,
+              "lore_depth": null
+            }
+          },
+          "sentiment_score": {
+            "final_score": 6,
+            "sentiment_subscores": {
+              "overall_tone": 7,
+              "excitement_level": 4,
+              "concern_signals": 2,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 2,
+              "skepticism_level": 3,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-17T08:42:00.188353Z",
+          "token_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+          "name": "Raydium",
+          "symbol": "RAY",
+          "description": "Raydium is an automated market maker (AMM) and liquidity provider built on the Solana blockchain for the Serum decentralized exchange (DEX). Raydium has a first-mover advantage as an AMM within Serum and will be an integral part of bringing new and existing projects and protocols into the ecosystem. The protocol will act as a bridge for projects looking to expand to Solana and Serum, and in the process Raydium and the RAY token will become a foundation for enabling further development with partners, its own platform, and the ecosystem as a whole.\r \r Unlike any other AMMs, Raydium provides on-chain liquidity to a central limit orderbook, meaning that Raydium LPs get access to the entire orderflow and liquidity of Serum.\r \r Long term, Raydium aims to capture and maintain a leadership position among AMMs and liquidity providers on Serum, while leveraging the power of Solana to drive the evolution of decentralized finance (DeFi) and emerge as a leading protocol in the space alongside our partners and the community.\"",
+          "timestamp": "2026-02-17T08:41:59.089462+00:00",
+          "llm_interpretation": "Description: Raydium is an automated market maker and liquidity provider on the Solana blockchain for the Serum decentralized exchange.\n\n1. memecoin: FALSE - Raydium is based on tech and utility, not a meme.\n2. utility: TRUE - Raydium is a token based on tech and utility, providing on-chain liquidity to a central limit orderbook.\n3. ai_token: FALSE - There's no mention of AI or artificial intelligence related to Raydium.\n4. tweet_coin: FALSE - Raydium is not based on a viral tweet.\n5. current_event: FALSE - Raydium is not directly based on a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in Raydium's branding.\n7. offensive: FALSE - There's no indication of offensive themes in Raydium's branding.\n8. animals: FALSE - Raydium is not based on an animal.\n9. political: FALSE - Raydium is not based on politics or a political figure.",
+          "llm_description": "Raydium is a decentralized collection of blockchain-enabled smart contracts and tools for interacting with digital assets on the Solana blockchain.",
+          "scraped_website_content": "Swap Raydium Swap Liquidity Portfolio Perpetuals Launchlab More Connect Wallet Buy 0.5% From 0 Max 50% SOL ~$0 To 0 Max 50% RAY ~$0 Connect Wallet RAY / SOL Swap Raydium Disclaimer This website-hosted user interface (this \"Interface\") is an open source frontend software portal to the Raydium protocol, a decentralized and community-driven collection of blockchain-enabled smart contracts and tools (the \"Raydium Protocol\"). This Interface and the Raydium Protocol are made available by the Raydium Holding Foundation, however all transactions conducted on the protocol are run by related permissionless smart contracts. As the Interface is open-sourced and the Raydium Protocol and its related smart contracts are accessible by any user, entity or third party, there are a number of third party web and mobile user-interfaces that allow for interaction with the Raydium Protocol. THIS INTERFACE AND THE RAYDIUM PROTOCOL ARE PROVIDED \"AS IS\", AT YOUR OWN RISK, AND WITHOUT WARRANTIES OF ANY KIND. The Raydium Holding Foundation does not provide, own, or control the Raydium Protocol or any transactions conducted on the protocol or via related smart contracts. By using or accessing this Interface or the Raydium Protocol and related smart contracts, you agree that no developer or entity involved in creating, deploying or maintaining this Interface or the Raydium Protocol will be liable for any claims or damages whatsoever associated with your use, inability to use, or your interaction with other users of, this Interface or the Raydium Protocol, including any direct, indirect, incidental, special, exemplary, punitive or consequential damages, or loss of profits, digital assets, tokens, or anything else of value. The Raydium Protocol is not available to residents of Belarus, the Central African Republic, The Democratic Republic of Congo, the Democratic People's Republic of Korea, the Crimea, Donetsk People's Republic, and Luhansk People's Republic regions of Ukraine, Cuba, Iran, Libya, ... (truncated)",
+          "classifications": {
+            "memecoin": false,
+            "utility": true,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "Raydium is a decentralized, community-driven collection of blockchain-enabled smart contracts and tools for interacting with digital assets.",
+            "prompt_2_summary_twitter_searches": "Raydium is a token, denoted as $RAY, that has been experiencing consolidation and building a reversal base after a deep correction, holding near a 350 million market capitalization.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "1835 days ago",
+          "token_created_timestamp": "2021-02-08T05:47:07+00:00",
+          "token_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+          "token_symbol": "RAY",
+          "token_name": "Raydium",
+          "first_time_seen": false,
+          "times_seen_before": 2,
+          "token_description": "Raydium is an automated market maker (AMM) and liquidity provider built on the Solana blockchain for the Serum decentralized exchange (DEX). Raydium has a first-mover advantage as an AMM within Serum and will be an integral part of bringing new and existing projects and protocols into the ecosystem. The protocol will act as a bridge for projects looking to expand to Solana and Serum, and in the process Raydium and the RAY token will become a foundation for enabling further development with partners, its own platform, and the ecosystem as a whole.\r \r Unlike any other AMMs, Raydium provides on-chain liquidity to a central limit orderbook, meaning that Raydium LPs get access to the entire orderflow and liquidity of Serum.\r \r Long term, Raydium aims to capture and maintain a leadership position among AMMs and liquidity providers on Serum, while leveraging the power of Solana to drive the evolution of decentralized finance (DeFi) and emerge as a leading protocol in the space alongside our partners and the community.\"",
+          "token_image": "https://coin-images.coingecko.com/coins/images/13928/small/PSigc4ie_400x400.jpg?1696513668",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "raydiumprotocol",
+          "pump_telegram": "raydiumprotocol",
+          "pump_website": "https://raydium.io/",
+          "dex_twitter": "https://x.com/raydiumprotocol",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Swap Raydium Swap Liquidity Portfolio Perpetuals Launchlab More Connect Wallet Buy 0.5% From 0 Max 50% SOL ~$0 To 0 Max 50% RAY ~$0 Connect Wallet RAY / SOL Swap Raydium Disclaimer This website-hosted user interface (this \"Interface\") is an open source frontend software portal to the Raydium protocol, a decentralized and community-driven collection of blockchain-enabled smart contracts and tools (the \"Raydium Protocol\"). This Interface and the Raydium Protocol are made available by the Raydium Holding Foundation, however all transactions conducted on the protocol are run by related permissionless smart contracts. As the Interface is open-sourced and the Raydium Protocol and its related smart contracts are accessible by any user, entity or third party, there are a number of third party web and mobile user-interfaces that allow for interaction with the Raydium Protocol. THIS INTERFACE AND THE RAYDIUM PROTOCOL ARE PROVIDED \"AS IS\", AT YOUR OWN RISK, AND WITHOUT WARRANTIES OF ANY KIND. The Raydium Holding Foundation does not provide, own, or control the Raydium Protocol or any transactions conducted on the protocol or via related smart contracts. By using or accessing this Interface or the Raydium Protocol and related smart contracts, you agree that no developer or entity involved in creating, deploying or maintaining this Interface or the Raydium Protocol will be liable for any claims or damages whatsoever associated with your use, inability to use, or your interaction with other users of, this Interface or the Raydium Protocol, including any direct, indirect, incidental, special, exemplary, punitive or consequential damages, or loss of profits, digital assets, tokens, or anything else of value. The Raydium Protocol is not available to residents of Belarus, the Central African Republic, The Democratic Republic of Congo, the Democratic People's Republic of Korea, the Crimea, Donetsk People's Republic, and Luhansk People's Republic regions of Ukraine, Cuba, Iran, Libya, ... (truncated)",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "Consolidation forming on $RAY after a deep correction, holding near 350M MC.  Coin: $RAY (Raydium)  4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R https://t.co/cgMh7oBsah"
+            ],
+            "address_top": [
+              "Consolidation forming on $RAY after a deep correction, holding near 350M MC.  Coin: $RAY (Raydium)  4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R https://t.co/cgMh7oBsah"
+            ],
+            "symbol_recent": [
+              "The market is busy with fear\u2026 while $RAY is quietly building a reversal base.  The breakout here won\u2019t be an ordinary move.  Some will buy after +100% and then say, \u201cIt was obvious.\u201d  Bookmark this.  #btc #eth #bnb #sol #xrp #crypto https://t.co/3zrSEeUYFj",
+              "$RAY Here we go https://t.co/h0r4T6Ku0c"
+            ],
+            "symbol_top": [
+              "$JTO sepertinya menarik \ud83e\udd14",
+              "Raydium $RAY up \ud83d\ude80 https://t.co/LeqaVLMc0P",
+              "The market is busy with fear\u2026 while $RAY is quietly building a reversal base.  The breakout here won\u2019t be an ordinary move.  Some will buy after +100% and then say, \u201cIt was obvious.\u201d  Bookmark this.  #btc #eth #bnb #sol #xrp #crypto https://t.co/3zrSEeUYFj",
+              "Observe the reaction, not the event.",
+              "Stack the savings on President's Day. Get 12% Off with code PREZDAY and earn 2% Bonus Bucks on your purchase. That is smart shopping on the gear you trust.  Offer ends 2/20. Start saving today!"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2025-03-19 00:29:03",
+            "bundle_percentage": 0.0,
+            "fresh_wallets_percentage": 0.9,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 0.0,
+            "num_holders": 0,
+            "largest_holder_percentage": 25.0,
+            "largest_cluster_percentage": 9.06,
+            "large_holder_count": 11,
+            "same_percentage_count": 3,
+            "low_sol_count": 12
+          },
+          "onchain_scan_score": {
+            "final_score": 8.0,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 10,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 10,
+            "num_holders_score": 0,
+            "largest_holder_percentage_score": 2,
+            "largest_cluster_percentage_score": 5,
+            "large_holder_count_score": 9,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 4
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": null,
+            "all_time_highest_threshold": null,
+            "highest_threshold_as_farm": null,
+            "highest_threshold_as_farmed": null,
+            "highest_threshold_as_no_farm_detected": null,
+            "farm_status": null,
+            "ever_failed_criteria": null,
+            "last_scanned": null
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "raydiumprotocol",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": true,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": 0.0
+            }
+          },
+          "usd_market_cap": 196046701.63,
+          "ath_market_cap": 393718025.33,
+          "ath_market_cap_timestamp": "2026-02-02T23:08:39+00:00",
+          "ath_multiple": 2.008,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_data",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-02-17T08:00:00.000Z",
+                "holderCount": 252464,
+                "marketCap": 394215952.481616,
+                "mcapOverHolders": 1561.4739229419483
+              },
+              {
+                "updatedAt": "2026-02-17T04:30:00.000Z",
+                "holderCount": 252434,
+                "marketCap": 380895970.9814629,
+                "mcapOverHolders": 1508.8932987690362
+              },
+              {
+                "updatedAt": "2026-02-17T01:30:00.000Z",
+                "holderCount": 252609,
+                "marketCap": 375845477.99598813,
+                "mcapOverHolders": 1487.8546607444237
+              },
+              {
+                "updatedAt": "2026-02-16T23:00:00.000Z",
+                "holderCount": 252406,
+                "marketCap": 523530772.8789362,
+                "mcapOverHolders": 2074.1613625624436
+              },
+              {
+                "updatedAt": "2026-02-16T19:30:00.000Z",
+                "holderCount": 252401,
+                "marketCap": 343544522.8581167,
+                "mcapOverHolders": 1361.1060291287147
+              },
+              {
+                "updatedAt": "2026-02-16T16:30:00.000Z",
+                "holderCount": 252400,
+                "marketCap": 340714026.7893342,
+                "mcapOverHolders": 1349.8970950449057
+              },
+              {
+                "updatedAt": "2026-02-16T13:00:00.000Z",
+                "holderCount": 252399,
+                "marketCap": 354422507.74990845,
+                "mcapOverHolders": 1404.2151821120863
+              },
+              {
+                "updatedAt": "2026-02-16T10:50:00.000Z",
+                "holderCount": 252414,
+                "marketCap": 348484015.9977569,
+                "mcapOverHolders": 1380.6049426646578
+              },
+              {
+                "updatedAt": "2026-02-16T08:00:00.000Z",
+                "holderCount": 252421,
+                "marketCap": 345986519.4664781,
+                "mcapOverHolders": 1370.6724855161738
+              },
+              {
+                "updatedAt": "2026-02-16T04:40:00.000Z",
+                "holderCount": 252544,
+                "marketCap": 343933022.3185379,
+                "mcapOverHolders": 1361.8736628806778
+              },
+              {
+                "updatedAt": "2026-02-16T01:40:00.000Z",
+                "holderCount": 252602,
+                "marketCap": 344210521.93312436,
+                "mcapOverHolders": 1362.6595273716136
+              },
+              {
+                "updatedAt": "2026-02-15T22:30:00.000Z",
+                "holderCount": 252399,
+                "marketCap": 345542520.08313966,
+                "mcapOverHolders": 1369.0328411885137
+              },
+              {
+                "updatedAt": "2026-02-15T20:00:00.000Z",
+                "holderCount": 252406,
+                "marketCap": 340769526.7122514,
+                "mcapOverHolders": 1350.0848898689073
+              },
+              {
+                "updatedAt": "2026-02-15T17:00:00.000Z",
+                "holderCount": 252400,
+                "marketCap": 350981512.52903557,
+                "mcapOverHolders": 1390.576515566702
+              },
+              {
+                "updatedAt": "2026-02-15T13:30:00.000Z",
+                "holderCount": 252403,
+                "marketCap": 353090509.59989315,
+                "mcapOverHolders": 1398.9156610654118
+              },
+              {
+                "updatedAt": "2026-02-15T11:00:00.000Z",
+                "holderCount": 252413,
+                "marketCap": 364689993.4896099,
+                "mcapOverHolders": 1444.8146232151669
+              },
+              {
+                "updatedAt": "2026-02-15T08:00:00.000Z",
+                "holderCount": 252420,
+                "marketCap": 373181481.6959575,
+                "mcapOverHolders": 1478.4148708341554
+              },
+              {
+                "updatedAt": "2026-02-15T05:00:00.000Z",
+                "holderCount": 252424,
+                "marketCap": 366576990.8687982,
+                "mcapOverHolders": 1452.2271688460614
+              },
+              {
+                "updatedAt": "2026-02-15T01:50:00.000Z",
+                "holderCount": 252563,
+                "marketCap": 365355992.5646175,
+                "mcapOverHolders": 1446.5934937604382
+              },
+              {
+                "updatedAt": "2026-02-14T22:40:00.000Z",
+                "holderCount": 252426,
+                "marketCap": 371904983.4688595,
+                "mcapOverHolders": 1473.322809333664
+              },
+              {
+                "updatedAt": "2026-02-14T19:10:00.000Z",
+                "holderCount": 252421,
+                "marketCap": 362969495.87917346,
+                "mcapOverHolders": 1437.9528481353511
+              },
+              {
+                "updatedAt": "2026-02-14T16:40:00.000Z",
+                "holderCount": 252422,
+                "marketCap": 355366006.4395026,
+                "mcapOverHolders": 1407.8250169933785
+              },
+              {
+                "updatedAt": "2026-02-14T13:40:00.000Z",
+                "holderCount": 252423,
+                "marketCap": 350093513.76235867,
+                "mcapOverHolders": 1386.9319109683297
+              },
+              {
+                "updatedAt": "2026-02-14T11:00:00.000Z",
+                "holderCount": 252436,
+                "marketCap": 351980511.1415471,
+                "mcapOverHolders": 1394.3356381084595
+              },
+              {
+                "updatedAt": "2026-02-14T08:00:00.000Z",
+                "holderCount": 252424,
+                "marketCap": 347929016.76858383,
+                "mcapOverHolders": 1378.351570249199
+              },
+              {
+                "updatedAt": "2026-02-14T04:20:00.000Z",
+                "holderCount": 252520,
+                "marketCap": 350593013.0686144,
+                "mcapOverHolders": 1388.3772099976811
+              },
+              {
+                "updatedAt": "2026-02-14T01:40:00.000Z",
+                "holderCount": 252618,
+                "marketCap": 347207517.77065885,
+                "mcapOverHolders": 1374.4369671625095
+              },
+              {
+                "updatedAt": "2026-02-13T22:50:00.000Z",
+                "holderCount": 252434,
+                "marketCap": 347429517.4623281,
+                "mcapOverHolders": 1376.3182355084025
+              },
+              {
+                "updatedAt": "2026-02-13T20:00:00.000Z",
+                "holderCount": 252442,
+                "marketCap": 345709019.85189164,
+                "mcapOverHolders": 1369.459201923181
+              },
+              {
+                "updatedAt": "2026-02-13T17:00:00.000Z",
+                "holderCount": 252469,
+                "marketCap": 421355414.7881781,
+                "mcapOverHolders": 1668.9392154608213
+              },
+              {
+                "updatedAt": "2026-02-13T13:50:00.000Z",
+                "holderCount": 252458,
+                "marketCap": 325562547.83290994,
+                "mcapOverHolders": 1289.5711280011326
+              },
+              {
+                "updatedAt": "2026-02-13T11:00:00.000Z",
+                "holderCount": 252466,
+                "marketCap": 328393043.9016925,
+                "mcapOverHolders": 1300.7416598737752
+              },
+              {
+                "updatedAt": "2026-02-13T08:00:00.000Z",
+                "holderCount": 252472,
+                "marketCap": 324286049.605812,
+                "mcapOverHolders": 1284.4436199095821
+              },
+              {
+                "updatedAt": "2026-02-13T04:50:00.000Z",
+                "holderCount": 252692,
+                "marketCap": 324785548.9120678,
+                "mcapOverHolders": 1285.302063033526
+              },
+              {
+                "updatedAt": "2026-02-13T01:50:00.000Z",
+                "holderCount": 252472,
+                "marketCap": 328171044.2100233,
+                "mcapOverHolders": 1299.831443526503
+              },
+              {
+                "updatedAt": "2026-02-12T22:50:00.000Z",
+                "holderCount": 252465,
+                "marketCap": 324175049.75997734,
+                "mcapOverHolders": 1284.0395688906476
+              },
+              {
+                "updatedAt": "2026-02-12T19:40:00.000Z",
+                "holderCount": 252459,
+                "marketCap": 327671544.9037676,
+                "mcapOverHolders": 1297.9198400681598
+              },
+              {
+                "updatedAt": "2026-02-12T16:10:00.000Z",
+                "holderCount": 252442,
+                "marketCap": 327116545.6745945,
+                "mcapOverHolders": 1295.808723091223
+              },
+              {
+                "updatedAt": "2026-02-12T12:50:00.000Z",
+                "holderCount": 252440,
+                "marketCap": 337384031.41429585,
+                "mcapOverHolders": 1336.4919640876876
+              },
+              {
+                "updatedAt": "2026-02-12T10:40:00.000Z",
+                "holderCount": 252440,
+                "marketCap": 333665536.57883644,
+                "mcapOverHolders": 1321.7617516195392
+              },
+              {
+                "updatedAt": "2026-02-12T07:50:00.000Z",
+                "holderCount": 252438,
+                "marketCap": 326894545.98292524,
+                "mcapOverHolders": 1294.949833158737
+              },
+              {
+                "updatedAt": "2026-02-12T05:00:00.000Z",
+                "holderCount": 252434,
+                "marketCap": 324230549.6828947,
+                "mcapOverHolders": 1284.4171137124742
+              },
+              {
+                "updatedAt": "2026-02-12T02:00:00.000Z",
+                "holderCount": 252563,
+                "marketCap": 318680557.3911642,
+                "mcapOverHolders": 1261.78639543862
+              },
+              {
+                "updatedAt": "2026-02-11T22:30:00.000Z",
+                "holderCount": 252442,
+                "marketCap": 321566553.382864,
+                "mcapOverHolders": 1273.8235055294444
+              },
+              {
+                "updatedAt": "2026-02-11T19:30:00.000Z",
+                "holderCount": 252450,
+                "marketCap": 314906562.63278747,
+                "mcapOverHolders": 1247.4017137365317
+              },
+              {
+                "updatedAt": "2026-02-11T16:40:00.000Z",
+                "holderCount": 252443,
+                "marketCap": 307025573.5785302,
+                "mcapOverHolders": 1216.2174177082754
+              },
+              {
+                "updatedAt": "2026-02-11T13:50:00.000Z",
+                "holderCount": 252438,
+                "marketCap": 315184062.24737394,
+                "mcapOverHolders": 1248.5602890506736
+              },
+              {
+                "updatedAt": "2026-02-11T11:00:00.000Z",
+                "holderCount": 252432,
+                "marketCap": 581639192.1733544,
+                "mcapOverHolders": 2304.1420745917885
+              },
+              {
+                "updatedAt": "2026-02-11T07:40:00.000Z",
+                "holderCount": 252432,
+                "marketCap": 312242566.3327568,
+                "mcapOverHolders": 1236.9373388982253
+              },
+              {
+                "updatedAt": "2026-02-11T04:50:00.000Z",
+                "holderCount": 252431,
+                "marketCap": 330002541.6662944,
+                "mcapOverHolders": 1307.2980009043833
+              },
+              {
+                "updatedAt": "2026-02-11T02:00:00.000Z",
+                "holderCount": 252431,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-10T23:00:00.000Z",
+                "holderCount": 252451,
+                "marketCap": 321233553.84536016,
+                "mcapOverHolders": 1272.4590270799488
+              },
+              {
+                "updatedAt": "2026-02-10T19:30:00.000Z",
+                "holderCount": 252448,
+                "marketCap": 320401055.0016006,
+                "mcapOverHolders": 1269.1764442641677
+              },
+              {
+                "updatedAt": "2026-02-10T17:00:00.000Z",
+                "holderCount": 252444,
+                "marketCap": 338605029.71847653,
+                "mcapOverHolders": 1341.3074967853327
+              },
+              {
+                "updatedAt": "2026-02-10T13:50:00.000Z",
+                "holderCount": 252453,
+                "marketCap": 326950045.90584254,
+                "mcapOverHolders": 1295.0927337201085
+              },
+              {
+                "updatedAt": "2026-02-10T10:50:00.000Z",
+                "holderCount": 252437,
+                "marketCap": 341546525.6330937,
+                "mcapOverHolders": 1352.9970869289912
+              },
+              {
+                "updatedAt": "2026-02-10T07:50:00.000Z",
+                "holderCount": 252442,
+                "marketCap": 422798412.784028,
+                "mcapOverHolders": 1674.8338738562838
+              },
+              {
+                "updatedAt": "2026-02-10T04:30:00.000Z",
+                "holderCount": 252621,
+                "marketCap": 330724040.6642193,
+                "mcapOverHolders": 1309.1708158237807
+              },
+              {
+                "updatedAt": "2026-02-10T02:00:00.000Z",
+                "holderCount": 252617,
+                "marketCap": 336995531.95387477,
+                "mcapOverHolders": 1334.0176312515578
+              },
+              {
+                "updatedAt": "2026-02-09T22:20:00.000Z",
+                "holderCount": 252411,
+                "marketCap": 337328531.49137855,
+                "mcapOverHolders": 1336.4256371211181
+              },
+              {
+                "updatedAt": "2026-02-09T20:00:00.000Z",
+                "holderCount": 252399,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-09T16:50:00.000Z",
+                "holderCount": 252403,
+                "marketCap": 334831034.9600998,
+                "mcapOverHolders": 1326.5731190203753
+              },
+              {
+                "updatedAt": "2026-02-09T13:20:00.000Z",
+                "holderCount": 252389,
+                "marketCap": 323176051.1474659,
+                "mcapOverHolders": 1280.4680518860405
+              },
+              {
+                "updatedAt": "2026-02-09T11:00:00.000Z",
+                "holderCount": 252384,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-09T08:00:00.000Z",
+                "holderCount": 252377,
+                "marketCap": 332333538.42882115,
+                "mcapOverHolders": 1316.8138872750733
+              },
+              {
+                "updatedAt": "2026-02-09T04:50:00.000Z",
+                "holderCount": 252366,
+                "marketCap": 336884532.10804015,
+                "mcapOverHolders": 1334.9045913793466
+              },
+              {
+                "updatedAt": "2026-02-09T02:00:00.000Z",
+                "holderCount": 252359,
+                "marketCap": 334664535.19134796,
+                "mcapOverHolders": 1326.1446399428908
+              },
+              {
+                "updatedAt": "2026-02-08T22:50:00.000Z",
+                "holderCount": 252364,
+                "marketCap": 339215528.87056696,
+                "mcapOverHolders": 1344.1518159110133
+              },
+              {
+                "updatedAt": "2026-02-08T20:00:00.000Z",
+                "holderCount": 252366,
+                "marketCap": 344099522.08728975,
+                "mcapOverHolders": 1363.4939813100407
+              },
+              {
+                "updatedAt": "2026-02-08T17:00:00.000Z",
+                "holderCount": 252361,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-08T13:50:00.000Z",
+                "holderCount": 252359,
+                "marketCap": 340381027.25183034,
+                "mcapOverHolders": 1348.7968618191953
+              },
+              {
+                "updatedAt": "2026-02-08T11:00:00.000Z",
+                "holderCount": 252346,
+                "marketCap": 337384031.41429585,
+                "mcapOverHolders": 1336.9898132496487
+              },
+              {
+                "updatedAt": "2026-02-08T08:00:00.000Z",
+                "holderCount": 252345,
+                "marketCap": 336329532.8788671,
+                "mcapOverHolders": 1332.8163144855935
+              },
+              {
+                "updatedAt": "2026-02-08T05:00:00.000Z",
+                "holderCount": 252340,
+                "marketCap": 335386034.1892729,
+                "mcapOverHolders": 1329.1037258828283
+              },
+              {
+                "updatedAt": "2026-02-08T02:00:00.000Z",
+                "holderCount": 252340,
+                "marketCap": 337717030.95179975,
+                "mcapOverHolders": 1338.341249709914
+              },
+              {
+                "updatedAt": "2026-02-07T23:00:00.000Z",
+                "holderCount": 252362,
+                "marketCap": 340325527.328913,
+                "mcapOverHolders": 1348.5609058769267
+              },
+              {
+                "updatedAt": "2026-02-07T19:40:00.000Z",
+                "holderCount": 252373,
+                "marketCap": 346153019.2352301,
+                "mcapOverHolders": 1371.5929169730125
+              },
+              {
+                "updatedAt": "2026-02-07T16:50:00.000Z",
+                "holderCount": 252380,
+                "marketCap": 338105530.41222084,
+                "mcapOverHolders": 1339.668477740791
+              },
+              {
+                "updatedAt": "2026-02-07T14:00:00.000Z",
+                "holderCount": 252362,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-07T10:50:00.000Z",
+                "holderCount": 252356,
+                "marketCap": 327727044.8266849,
+                "mcapOverHolders": 1298.6695177712631
+              },
+              {
+                "updatedAt": "2026-02-07T08:00:00.000Z",
+                "holderCount": 252369,
+                "marketCap": 331667539.3538135,
+                "mcapOverHolders": 1314.2166405295957
+              },
+              {
+                "updatedAt": "2026-02-07T04:50:00.000Z",
+                "holderCount": 252367,
+                "marketCap": 343267023.2435302,
+                "mcapOverHolders": 1360.189815798144
+              },
+              {
+                "updatedAt": "2026-02-07T02:00:00.000Z",
+                "holderCount": 252349,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-06T23:00:00.000Z",
+                "holderCount": 252352,
+                "marketCap": 356143005.36034495,
+                "mcapOverHolders": 1411.2945622002003
+              },
+              {
+                "updatedAt": "2026-02-06T19:30:00.000Z",
+                "holderCount": 252356,
+                "marketCap": 346652518.5414858,
+                "mcapOverHolders": 1373.6646584249465
+              },
+              {
+                "updatedAt": "2026-02-06T17:00:00.000Z",
+                "holderCount": 252353,
+                "marketCap": 345431520.23730505,
+                "mcapOverHolders": 1368.8425350097089
+              },
+              {
+                "updatedAt": "2026-02-06T13:40:00.000Z",
+                "holderCount": 252354,
+                "marketCap": 331057040.2017231,
+                "mcapOverHolders": 1311.8755407155152
+              },
+              {
+                "updatedAt": "2026-02-06T10:40:00.000Z",
+                "holderCount": 252343,
+                "marketCap": 325673547.67874455,
+                "mcapOverHolders": 1290.598699701377
+              },
+              {
+                "updatedAt": "2026-02-06T07:50:00.000Z",
+                "holderCount": 252370,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-06T05:00:00.000Z",
+                "holderCount": 252370,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-06T02:00:00.000Z",
+                "holderCount": 252419,
+                "marketCap": 388721460.1128028,
+                "mcapOverHolders": 1539.9849461126255
+              },
+              {
+                "updatedAt": "2026-02-05T23:00:00.000Z",
+                "holderCount": 252352,
+                "marketCap": 323009551.37871397,
+                "mcapOverHolders": 1279.9960031175262
+              },
+              {
+                "updatedAt": "2026-02-05T20:00:00.000Z",
+                "holderCount": 252362,
+                "marketCap": 328781543.36211365,
+                "mcapOverHolders": 1302.8171569495948
+              },
+              {
+                "updatedAt": "2026-02-05T17:00:00.000Z",
+                "holderCount": 252444,
+                "marketCap": 342545524.2456052,
+                "mcapOverHolders": 1356.916877587129
+              },
+              {
+                "updatedAt": "2026-02-05T14:00:00.000Z",
+                "holderCount": 252453,
+                "marketCap": 360527499.2708119,
+                "mcapOverHolders": 1428.0975043703656
+              },
+              {
+                "updatedAt": "2026-02-05T10:50:00.000Z",
+                "holderCount": 252466,
+                "marketCap": 364800993.33544445,
+                "mcapOverHolders": 1444.9509769055812
+              },
+              {
+                "updatedAt": "2026-02-05T07:50:00.000Z",
+                "holderCount": 252473,
+                "marketCap": 376011977.76474,
+                "mcapOverHolders": 1489.3156011325568
+              },
+              {
+                "updatedAt": "2026-02-05T05:00:00.000Z",
+                "holderCount": 252463,
+                "marketCap": 391496456.25866807,
+                "mcapOverHolders": 1550.70824738147
+              },
+              {
+                "updatedAt": "2026-02-05T01:10:00.000Z",
+                "holderCount": 252653,
+                "marketCap": 410588429.74222094,
+                "mcapOverHolders": 1625.1080721076771
+              },
+              {
+                "updatedAt": "2026-02-04T22:50:00.000Z",
+                "holderCount": 252451,
+                "marketCap": 359528500.6583005,
+                "mcapOverHolders": 1424.1516201492586
+              },
+              {
+                "updatedAt": "2026-02-04T19:50:00.000Z",
+                "holderCount": 252448,
+                "marketCap": 373014981.92720556,
+                "mcapOverHolders": 1477.5913531784984
+              },
+              {
+                "updatedAt": "2026-02-04T16:50:00.000Z",
+                "holderCount": 252437,
+                "marketCap": 357697003.20202947,
+                "mcapOverHolders": 1416.9753372208886
+              },
+              {
+                "updatedAt": "2026-02-04T14:00:00.000Z",
+                "holderCount": 252428,
+                "marketCap": 367908989.01881355,
+                "mcapOverHolders": 1457.4809015593103
+              },
+              {
+                "updatedAt": "2026-02-04T10:40:00.000Z",
+                "holderCount": 252426,
+                "marketCap": 378398474.4501841,
+                "mcapOverHolders": 1499.0471443123297
+              },
+              {
+                "updatedAt": "2026-02-04T08:00:00.000Z",
+                "holderCount": 252436,
+                "marketCap": 377454975.76058996,
+                "mcapOverHolders": 1495.2501852374066
+              },
+              {
+                "updatedAt": "2026-02-04T05:00:00.000Z",
+                "holderCount": 252605,
+                "marketCap": 383448967.4356588,
+                "mcapOverHolders": 1517.9785334243536
+              },
+              {
+                "updatedAt": "2026-02-04T01:30:00.000Z",
+                "holderCount": 252596,
+                "marketCap": 389831458.57114893,
+                "mcapOverHolders": 1543.3002049563293
+              },
+              {
+                "updatedAt": "2026-02-03T22:40:00.000Z",
+                "holderCount": 252463,
+                "marketCap": 382505468.74606466,
+                "mcapOverHolders": 1515.0951574926412
+              },
+              {
+                "updatedAt": "2026-02-03T20:00:00.000Z",
+                "holderCount": 252469,
+                "marketCap": 376955476.4543342,
+                "mcapOverHolders": 1493.0762844322835
+              },
+              {
+                "updatedAt": "2026-02-03T16:30:00.000Z",
+                "holderCount": 252489,
+                "marketCap": 381728469.8252224,
+                "mcapOverHolders": 1511.8617833855035
+              },
+              {
+                "updatedAt": "2026-02-03T14:00:00.000Z",
+                "holderCount": 252471,
+                "marketCap": 388721460.1128028,
+                "mcapOverHolders": 1539.6677642691748
+              },
+              {
+                "updatedAt": "2026-02-03T11:00:00.000Z",
+                "holderCount": 252474,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-03T07:10:00.000Z",
+                "holderCount": 252493,
+                "marketCap": 393771953.09827757,
+                "mcapOverHolders": 1559.5361182221984
+              },
+              {
+                "updatedAt": "2026-02-03T05:00:00.000Z",
+                "holderCount": 252498,
+                "marketCap": 390996956.9524123,
+                "mcapOverHolders": 1548.5150652773975
+              },
+              {
+                "updatedAt": "2026-02-03T01:50:00.000Z",
+                "holderCount": 252479,
+                "marketCap": 388443960.4982163,
+                "mcapOverHolders": 1538.519878873951
+              },
+              {
+                "updatedAt": "2026-02-02T23:00:00.000Z",
+                "holderCount": 252467,
+                "marketCap": 810298874.59265,
+                "mcapOverHolders": 3209.523916363921
+              },
+              {
+                "updatedAt": "2026-02-02T20:00:00.000Z",
+                "holderCount": 252461,
+                "marketCap": 397823447.4712408,
+                "mcapOverHolders": 1575.781793905755
+              },
+              {
+                "updatedAt": "2026-02-02T17:00:00.000Z",
+                "holderCount": 252491,
+                "marketCap": 404205938.6067308,
+                "mcapOverHolders": 1600.8726592501548
+              },
+              {
+                "updatedAt": "2026-02-02T14:00:00.000Z",
+                "holderCount": 252483,
+                "marketCap": 397268448.24206775,
+                "mcapOverHolders": 1573.446324077533
+              },
+              {
+                "updatedAt": "2026-02-02T10:40:00.000Z",
+                "holderCount": 252495,
+                "marketCap": 396768948.935812,
+                "mcapOverHolders": 1571.3932907020417
+              },
+              {
+                "updatedAt": "2026-02-02T07:50:00.000Z",
+                "holderCount": 252485,
+                "marketCap": 396657949.08997744,
+                "mcapOverHolders": 1571.0158983305046
+              },
+              {
+                "updatedAt": "2026-02-02T05:00:00.000Z",
+                "holderCount": 252485,
+                "marketCap": 378786973.91060525,
+                "mcapOverHolders": 1500.2355542333416
+              },
+              {
+                "updatedAt": "2026-02-02T01:50:00.000Z",
+                "holderCount": 251683,
+                "marketCap": 396324949.55247355,
+                "mcapOverHolders": 1574.6989250464812
+              },
+              {
+                "updatedAt": "2026-02-01T22:10:00.000Z",
+                "holderCount": 250852,
+                "marketCap": 394493452.0962025,
+                "mcapOverHolders": 1572.6143387184575
+              },
+              {
+                "updatedAt": "2026-02-01T20:00:00.000Z",
+                "holderCount": 250808,
+                "marketCap": 396491449.3212255,
+                "mcapOverHolders": 1580.8564691765237
+              },
+              {
+                "updatedAt": "2026-02-01T17:00:00.000Z",
+                "holderCount": 250860,
+                "marketCap": 393660953.252443,
+                "mcapOverHolders": 1569.2456081178466
+              },
+              {
+                "updatedAt": "2026-02-01T14:00:00.000Z",
+                "holderCount": 250845,
+                "marketCap": 409866930.744296,
+                "mcapOverHolders": 1633.9449889146526
+              },
+              {
+                "updatedAt": "2026-02-01T11:00:00.000Z",
+                "holderCount": 250850,
+                "marketCap": 401597442.22961754,
+                "mcapOverHolders": 1600.9465506462727
+              },
+              {
+                "updatedAt": "2026-02-01T08:00:00.000Z",
+                "holderCount": 250835,
+                "marketCap": 407091934.59843075,
+                "mcapOverHolders": 1622.947095096102
+              },
+              {
+                "updatedAt": "2026-02-01T05:00:00.000Z",
+                "holderCount": 250811,
+                "marketCap": 421410914.71109533,
+                "mcapOverHolders": 1680.1931123877953
+              },
+              {
+                "updatedAt": "2026-02-01T02:00:00.000Z",
+                "holderCount": 250807,
+                "marketCap": 421521914.55692995,
+                "mcapOverHolders": 1680.662479743109
+              },
+              {
+                "updatedAt": "2026-01-31T23:00:00.000Z",
+                "holderCount": 250814,
+                "marketCap": 413807425.27142465,
+                "mcapOverHolders": 1649.8577642054456
+              },
+              {
+                "updatedAt": "2026-01-31T20:00:00.000Z",
+                "holderCount": 250811,
+                "marketCap": 409700430.975544,
+                "mcapOverHolders": 1633.5026413336893
+              },
+              {
+                "updatedAt": "2026-01-31T17:00:00.000Z",
+                "holderCount": 250805,
+                "marketCap": 459150862.2948626,
+                "mcapOverHolders": 1830.708567591805
+              },
+              {
+                "updatedAt": "2026-01-31T14:00:00.000Z",
+                "holderCount": 250838,
+                "marketCap": 483237828.84097296,
+                "mcapOverHolders": 1926.4937084531568
+              },
+              {
+                "updatedAt": "2026-01-31T11:00:00.000Z",
+                "holderCount": 250849,
+                "marketCap": 493338814.8119224,
+                "mcapOverHolders": 1966.676426104638
+              },
+              {
+                "updatedAt": "2026-01-31T08:00:00.000Z",
+                "holderCount": 250925,
+                "marketCap": 502385302.2474431,
+                "mcapOverHolders": 2002.1333157216025
+              },
+              {
+                "updatedAt": "2026-01-31T05:00:00.000Z",
+                "holderCount": 250922,
+                "marketCap": 507491295.1558351,
+                "mcapOverHolders": 2022.5061778394684
+              },
+              {
+                "updatedAt": "2026-01-31T02:00:00.000Z",
+                "holderCount": 250927,
+                "marketCap": 504716299.00996983,
+                "mcapOverHolders": 2011.4068992574328
+              },
+              {
+                "updatedAt": "2026-01-30T23:00:00.000Z",
+                "holderCount": 250809,
+                "marketCap": 508989793.0746023,
+                "mcapOverHolders": 2029.3920595935645
+              },
+              {
+                "updatedAt": "2026-01-30T20:00:00.000Z",
+                "holderCount": 250831,
+                "marketCap": 515427784.1330097,
+                "mcapOverHolders": 2054.8807130418872
+              },
+              {
+                "updatedAt": "2026-01-30T17:00:00.000Z",
+                "holderCount": 250837,
+                "marketCap": 511320789.8371291,
+                "mcapOverHolders": 2038.4584006232299
+              },
+              {
+                "updatedAt": "2026-01-30T14:00:00.000Z",
+                "holderCount": 250822,
+                "marketCap": 509267292.68918884,
+                "mcapOverHolders": 2030.3932377908989
+              },
+              {
+                "updatedAt": "2026-01-30T11:00:00.000Z",
+                "holderCount": 250825,
+                "marketCap": 505548797.8537294,
+                "mcapOverHolders": 2015.5438965562819
+              },
+              {
+                "updatedAt": "2026-01-30T08:00:00.000Z",
+                "holderCount": 250154,
+                "marketCap": 509433792.4579408,
+                "mcapOverHolders": 2036.4806977219666
+              },
+              {
+                "updatedAt": "2026-01-30T05:00:00.000Z",
+                "holderCount": 249608,
+                "marketCap": 507657794.924587,
+                "mcapOverHolders": 2033.8202097872945
+              },
+              {
+                "updatedAt": "2026-01-30T02:00:00.000Z",
+                "holderCount": 249772,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-29T23:00:00.000Z",
+                "holderCount": 249612,
+                "marketCap": 526194769.1789668,
+                "mcapOverHolders": 2108.0507715132558
+              },
+              {
+                "updatedAt": "2026-01-29T20:00:00.000Z",
+                "holderCount": 249628,
+                "marketCap": 517148281.7434461,
+                "mcapOverHolders": 2071.675780535221
+              },
+              {
+                "updatedAt": "2026-01-29T17:00:00.000Z",
+                "holderCount": 249634,
+                "marketCap": 526527768.7164706,
+                "mcapOverHolders": 2109.198942117142
+              },
+              {
+                "updatedAt": "2026-01-29T14:00:00.000Z",
+                "holderCount": 249655,
+                "marketCap": 546896240.4271215,
+                "mcapOverHolders": 2190.60800074952
+              },
+              {
+                "updatedAt": "2026-01-29T11:00:00.000Z",
+                "holderCount": 249685,
+                "marketCap": 954598674.1776425,
+                "mcapOverHolders": 3823.211943759707
+              },
+              {
+                "updatedAt": "2026-01-29T08:00:00.000Z",
+                "holderCount": 249814,
+                "marketCap": 548783237.8063098,
+                "mcapOverHolders": 2196.7673461307604
+              },
+              {
+                "updatedAt": "2026-01-29T05:00:00.000Z",
+                "holderCount": 249811,
+                "marketCap": 544010244.4354216,
+                "mcapOverHolders": 2177.6873093475533
+              },
+              {
+                "updatedAt": "2026-01-29T01:50:00.000Z",
+                "holderCount": 249805,
+                "marketCap": 688199044.1745795,
+                "mcapOverHolders": 2754.945033824701
+              },
+              {
+                "updatedAt": "2026-01-28T23:00:00.000Z",
+                "holderCount": 249653,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-28T20:00:00.000Z",
+                "holderCount": 249649,
+                "marketCap": 567764211.444028,
+                "mcapOverHolders": 2274.249892625358
+              },
+              {
+                "updatedAt": "2026-01-28T17:00:00.000Z",
+                "holderCount": 249675,
+                "marketCap": 568874209.9023741,
+                "mcapOverHolders": 2278.458836096422
+              },
+              {
+                "updatedAt": "2026-01-28T14:00:00.000Z",
+                "holderCount": 249679,
+                "marketCap": 571649206.0482395,
+                "mcapOverHolders": 2289.5365891734564
+              },
+              {
+                "updatedAt": "2026-01-28T11:00:00.000Z",
+                "holderCount": 249665,
+                "marketCap": 546840740.5042042,
+                "mcapOverHolders": 2190.2979612849385
+              },
+              {
+                "updatedAt": "2026-01-28T08:00:00.000Z",
+                "holderCount": 249812,
+                "marketCap": 559772222.5439361,
+                "mcapOverHolders": 2240.7739521877897
+              },
+              {
+                "updatedAt": "2026-01-28T05:00:00.000Z",
+                "holderCount": 249842,
+                "marketCap": 553778230.8688673,
+                "mcapOverHolders": 2216.513760171898
+              },
+              {
+                "updatedAt": "2026-01-28T02:00:00.000Z",
+                "holderCount": 249845,
+                "marketCap": 560105222.0814401,
+                "mcapOverHolders": 2241.810811028598
+              },
+              {
+                "updatedAt": "2026-01-27T23:00:00.000Z",
+                "holderCount": 249691,
+                "marketCap": 558939723.7001767,
+                "mcapOverHolders": 2238.5257125814574
+              },
+              {
+                "updatedAt": "2026-01-27T20:00:00.000Z",
+                "holderCount": 249682,
+                "marketCap": 545564242.2771062,
+                "mcapOverHolders": 2185.0363353269604
+              },
+              {
+                "updatedAt": "2026-01-27T17:00:00.000Z",
+                "holderCount": 249696,
+                "marketCap": 545342242.585437,
+                "mcapOverHolders": 2184.024744430976
+              },
+              {
+                "updatedAt": "2026-01-27T14:00:00.000Z",
+                "holderCount": 249728,
+                "marketCap": 530912262.62693775,
+                "mcapOverHolders": 2125.96209726958
+              },
+              {
+                "updatedAt": "2026-01-27T11:00:00.000Z",
+                "holderCount": 249734,
+                "marketCap": 535907255.6894952,
+                "mcapOverHolders": 2145.9122734168964
+              },
+              {
+                "updatedAt": "2026-01-27T08:00:00.000Z",
+                "holderCount": 249732,
+                "marketCap": 544842743.2791812,
+                "mcapOverHolders": 2181.709765985862
+              },
+              {
+                "updatedAt": "2026-01-27T05:00:00.000Z",
+                "holderCount": 249866,
+                "marketCap": 545952741.7375274,
+                "mcapOverHolders": 2184.982117365017
+              },
+              {
+                "updatedAt": "2026-01-27T02:00:00.000Z",
+                "holderCount": 249870,
+                "marketCap": 546174741.4291965,
+                "mcapOverHolders": 2185.835600228905
+              },
+              {
+                "updatedAt": "2026-01-26T23:00:00.000Z",
+                "holderCount": 249736,
+                "marketCap": 557885225.1647478,
+                "mcapOverHolders": 2233.8998989522847
+              },
+              {
+                "updatedAt": "2026-01-26T20:00:00.000Z",
+                "holderCount": 249744,
+                "marketCap": 542289746.8249851,
+                "mcapOverHolders": 2171.382482962494
+              },
+              {
+                "updatedAt": "2026-01-26T17:00:00.000Z",
+                "holderCount": 249755,
+                "marketCap": 428847904.3820143,
+                "mcapOverHolders": 1717.0743503914407
+              },
+              {
+                "updatedAt": "2026-01-26T14:00:00.000Z",
+                "holderCount": 249760,
+                "marketCap": 539514750.67912,
+                "mcapOverHolders": 2160.1327301374117
+              },
+              {
+                "updatedAt": "2026-01-26T11:00:00.000Z",
+                "holderCount": 249756,
+                "marketCap": 610499152.0903529,
+                "mcapOverHolders": 2444.3823255111106
+              },
+              {
+                "updatedAt": "2026-01-26T08:00:00.000Z",
+                "holderCount": 249761,
+                "marketCap": 541179748.366639,
+                "mcapOverHolders": 2166.7904451321024
+              },
+              {
+                "updatedAt": "2026-01-26T05:00:00.000Z",
+                "holderCount": 249876,
+                "marketCap": 535241256.6144875,
+                "mcapOverHolders": 2142.027472084104
+              },
+              {
+                "updatedAt": "2026-01-26T02:00:00.000Z",
+                "holderCount": 249869,
+                "marketCap": 552501732.6417693,
+                "mcapOverHolders": 2211.165581331695
+              },
+              {
+                "updatedAt": "2026-01-25T23:00:00.000Z",
+                "holderCount": 249737,
+                "marketCap": 654899090.4241966,
+                "mcapOverHolders": 2622.355079240147
+              },
+              {
+                "updatedAt": "2026-01-25T20:00:00.000Z",
+                "holderCount": 249740,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-25T17:00:00.000Z",
+                "holderCount": 249751,
+                "marketCap": 543288745.4374967,
+                "mcapOverHolders": 2175.321602065644
+              },
+              {
+                "updatedAt": "2026-01-25T14:00:00.000Z",
+                "holderCount": 249742,
+                "marketCap": 561659219.9231246,
+                "mcapOverHolders": 2248.9578041463774
+              },
+              {
+                "updatedAt": "2026-01-25T11:00:00.000Z",
+                "holderCount": 249742,
+                "marketCap": 561659219.9231246,
+                "mcapOverHolders": 2248.9578041463774
+              },
+              {
+                "updatedAt": "2026-01-25T08:00:00.000Z",
+                "holderCount": 249749,
+                "marketCap": 555942727.8626422,
+                "mcapOverHolders": 2226.005821295149
+              },
+              {
+                "updatedAt": "2026-01-25T05:00:00.000Z",
+                "holderCount": 249840,
+                "marketCap": 559494722.9293497,
+                "mcapOverHolders": 2239.4121154713002
+              },
+              {
+                "updatedAt": "2026-01-25T02:00:00.000Z",
+                "holderCount": 249865,
+                "marketCap": 564989215.2981628,
+                "mcapOverHolders": 2261.17789725717
+              },
+              {
+                "updatedAt": "2026-01-24T23:00:00.000Z",
+                "holderCount": 249742,
+                "marketCap": 556608726.9376498,
+                "mcapOverHolders": 2228.7349622316224
+              },
+              {
+                "updatedAt": "2026-01-24T20:00:00.000Z",
+                "holderCount": 249749,
+                "marketCap": 554333230.0980403,
+                "mcapOverHolders": 2219.561359997599
+              },
+              {
+                "updatedAt": "2026-01-24T17:00:00.000Z",
+                "holderCount": 249753,
+                "marketCap": 556442227.1688979,
+                "mcapOverHolders": 2227.9701431770504
+              },
+              {
+                "updatedAt": "2026-01-24T14:00:00.000Z",
+                "holderCount": 249760,
+                "marketCap": 557996225.0105824,
+                "mcapOverHolders": 2234.129664520269
+              },
+              {
+                "updatedAt": "2026-01-24T11:00:00.000Z",
+                "holderCount": 249762,
+                "marketCap": 559272723.2376806,
+                "mcapOverHolders": 2239.2226328972406
+              },
+              {
+                "updatedAt": "2026-01-24T07:40:00.000Z",
+                "holderCount": 249761,
+                "marketCap": 561104220.6939515,
+                "mcapOverHolders": 2246.5645985320025
+              },
+              {
+                "updatedAt": "2026-01-24T05:00:00.000Z",
+                "holderCount": 249857,
+                "marketCap": 563324217.6106436,
+                "mcapOverHolders": 2254.586493917095
+              },
+              {
+                "updatedAt": "2026-01-24T02:00:00.000Z",
+                "holderCount": 249857,
+                "marketCap": 558495724.3168381,
+                "mcapOverHolders": 2235.2614668263773
+              },
+              {
+                "updatedAt": "2026-01-23T22:50:00.000Z",
+                "holderCount": 249749,
+                "marketCap": 558551224.2397555,
+                "mcapOverHolders": 2236.4502930532476
+              },
+              {
+                "updatedAt": "2026-01-23T20:00:00.000Z",
+                "holderCount": 249748,
+                "marketCap": 563879216.8398168,
+                "mcapOverHolders": 2257.79272242347
+              },
+              {
+                "updatedAt": "2026-01-23T17:00:00.000Z",
+                "holderCount": 249753,
+                "marketCap": 572204205.2774125,
+                "mcapOverHolders": 2291.080408553301
+              },
+              {
+                "updatedAt": "2026-01-23T13:40:00.000Z",
+                "holderCount": 249744,
+                "marketCap": 559661222.6981015,
+                "mcapOverHolders": 2240.9396129560732
+              },
+              {
+                "updatedAt": "2026-01-23T11:00:00.000Z",
+                "holderCount": 249743,
+                "marketCap": 560049722.1585228,
+                "mcapOverHolders": 2242.5041829341476
+              },
+              {
+                "updatedAt": "2026-01-23T07:50:00.000Z",
+                "holderCount": 249742,
+                "marketCap": 568319210.6732011,
+                "mcapOverHolders": 2275.62528799001
+              },
+              {
+                "updatedAt": "2026-01-23T05:00:00.000Z",
+                "holderCount": 249842,
+                "marketCap": 1071148512.3039826,
+                "mcapOverHolders": 4287.303625106998
+              },
+              {
+                "updatedAt": "2026-01-23T02:00:00.000Z",
+                "holderCount": 249837,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-22T23:00:00.000Z",
+                "holderCount": 249735,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-22T20:00:00.000Z",
+                "holderCount": 249736,
+                "marketCap": 572204205.2774125,
+                "mcapOverHolders": 2291.236366712899
+              },
+              {
+                "updatedAt": "2026-01-22T17:00:00.000Z",
+                "holderCount": 249743,
+                "marketCap": 532133260.9311184,
+                "mcapOverHolders": 2130.723427407849
+              },
+              {
+                "updatedAt": "2026-01-22T14:00:00.000Z",
+                "holderCount": 249733,
+                "marketCap": 569984208.3607203,
+                "mcapOverHolders": 2282.3744093120263
+              },
+              {
+                "updatedAt": "2026-01-22T11:00:00.000Z",
+                "holderCount": 249720,
+                "marketCap": 577199198.33997,
+                "mcapOverHolders": 2311.385545170471
+              },
+              {
+                "updatedAt": "2026-01-22T08:00:00.000Z",
+                "holderCount": 249719,
+                "marketCap": 589409181.381777,
+                "mcapOverHolders": 2360.2896911399494
+              },
+              {
+                "updatedAt": "2026-01-22T05:00:00.000Z",
+                "holderCount": 249722,
+                "marketCap": 579419195.2566621,
+                "mcapOverHolders": 2320.2569067069066
+              },
+              {
+                "updatedAt": "2026-01-22T02:00:00.000Z",
+                "holderCount": 249734,
+                "marketCap": 591074179.0692961,
+                "mcapOverHolders": 2366.815007445106
+              },
+              {
+                "updatedAt": "2026-01-21T23:00:00.000Z",
+                "holderCount": 249712,
+                "marketCap": 579419195.2566621,
+                "mcapOverHolders": 2320.349824023924
+              },
+              {
+                "updatedAt": "2026-01-21T20:00:00.000Z",
+                "holderCount": 249704,
+                "marketCap": 573869202.9649316,
+                "mcapOverHolders": 2298.197878147453
+              },
+              {
+                "updatedAt": "2026-01-21T17:00:00.000Z",
+                "holderCount": 249708,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-21T14:00:00.000Z",
+                "holderCount": 249708,
+                "marketCap": 539736750.3707892,
+                "mcapOverHolders": 2161.4716003123217
+              },
+              {
+                "updatedAt": "2026-01-21T11:00:00.000Z",
+                "holderCount": 249702,
+                "marketCap": 550448235.493829,
+                "mcapOverHolders": 2204.420611344038
+              },
+              {
+                "updatedAt": "2026-01-21T08:00:00.000Z",
+                "holderCount": 249715,
+                "marketCap": 557663225.4730786,
+                "mcapOverHolders": 2233.198748465565
+              },
+              {
+                "updatedAt": "2026-01-21T05:00:00.000Z",
+                "holderCount": 249830,
+                "marketCap": 551835733.5667616,
+                "mcapOverHolders": 2208.844948832252
+              },
+              {
+                "updatedAt": "2026-01-21T01:40:00.000Z",
+                "holderCount": 249831,
+                "marketCap": 552002233.3355136,
+                "mcapOverHolders": 2209.5025570706343
+              },
+              {
+                "updatedAt": "2026-01-20T23:00:00.000Z",
+                "holderCount": 249727,
+                "marketCap": 538460252.1436912,
+                "mcapOverHolders": 2156.1955741417273
+              },
+              {
+                "updatedAt": "2026-01-20T20:00:00.000Z",
+                "holderCount": 249719,
+                "marketCap": 539514750.67912,
+                "mcapOverHolders": 2160.4873905434506
+              },
+              {
+                "updatedAt": "2026-01-20T17:00:00.000Z",
+                "holderCount": 249716,
+                "marketCap": 543954744.5125043,
+                "mcapOverHolders": 2178.293519488156
+              },
+              {
+                "updatedAt": "2026-01-20T14:00:00.000Z",
+                "holderCount": 249717,
+                "marketCap": 585524186.7775656,
+                "mcapOverHolders": 2344.7510052482035
+              },
+              {
+                "updatedAt": "2026-01-20T11:00:00.000Z",
+                "holderCount": 249707,
+                "marketCap": 554777229.4813788,
+                "mcapOverHolders": 2221.712765286431
+              },
+              {
+                "updatedAt": "2026-01-20T08:00:00.000Z",
+                "holderCount": 249705,
+                "marketCap": 570539207.5898933,
+                "mcapOverHolders": 2284.8529568486547
+              },
+              {
+                "updatedAt": "2026-01-20T05:00:00.000Z",
+                "holderCount": 249718,
+                "marketCap": 574979201.4232777,
+                "mcapOverHolders": 2302.514041531959
+              },
+              {
+                "updatedAt": "2026-01-20T02:00:00.000Z",
+                "holderCount": 249727,
+                "marketCap": 577199198.33997,
+                "mcapOverHolders": 2311.3207556250227
+              },
+              {
+                "updatedAt": "2026-01-19T23:00:00.000Z",
+                "holderCount": 249729,
+                "marketCap": 573314203.7357585,
+                "mcapOverHolders": 2295.7454029598425
+              },
+              {
+                "updatedAt": "2026-01-19T20:00:00.000Z",
+                "holderCount": 249731,
+                "marketCap": 577754197.5691428,
+                "mcapOverHolders": 2313.5061228647737
+              },
+              {
+                "updatedAt": "2026-01-19T17:00:00.000Z",
+                "holderCount": 249737,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-01-19T14:00:00.000Z",
+                "holderCount": 249749,
+                "marketCap": 887998766.6768769,
+                "mcapOverHolders": 3555.564853820744
+              },
+              {
+                "updatedAt": "2026-01-19T11:00:00.000Z",
+                "holderCount": 249750,
+                "marketCap": 573314203.7357585,
+                "mcapOverHolders": 2295.5523673103444
+              },
+              {
+                "updatedAt": "2026-01-19T08:00:00.000Z",
+                "holderCount": 249752,
+                "marketCap": 577199198.33997,
+                "mcapOverHolders": 2311.0893940387664
+              },
+              {
+                "updatedAt": "2026-01-19T05:00:00.000Z",
+                "holderCount": 249743,
+                "marketCap": 574424202.1941047,
+                "mcapOverHolders": 2300.061271763792
+              },
+              {
+                "updatedAt": "2026-01-19T02:00:00.000Z",
+                "holderCount": 249739,
+                "marketCap": 562214219.1522976,
+                "mcapOverHolders": 2251.2071368600723
+              },
+              {
+                "updatedAt": "2026-01-18T23:00:00.000Z",
+                "holderCount": 249695,
+                "marketCap": 627149128.9655441,
+                "mcapOverHolders": 2511.6607419673765
+              },
+              {
+                "updatedAt": "2026-01-18T20:00:00.000Z",
+                "holderCount": 249696,
+                "marketCap": 621599136.6738138,
+                "mcapOverHolders": 2489.4236858973063
+              },
+              {
+                "updatedAt": "2026-01-18T17:00:00.000Z",
+                "holderCount": 249692,
+                "marketCap": 616049144.3820834,
+                "mcapOverHolders": 2467.2362125421855
+              },
+              {
+                "updatedAt": "2026-01-18T14:00:00.000Z",
+                "holderCount": 249680,
+                "marketCap": 621599136.6738138,
+                "mcapOverHolders": 2489.583213208162
+              },
+              {
+                "updatedAt": "2026-01-18T11:00:00.000Z",
+                "holderCount": 249665,
+                "marketCap": 616049144.3820834,
+                "mcapOverHolders": 2467.503031590665
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-17T08:59:15.063634Z",
+      "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
+      "token_symbol": "OTOME",
+      "token_name": "OTOME",
+      "first_time_seen": false,
+      "times_seen_before": 1,
+      "full_token_details": {
+        "aggregate_score": 5.1,
+        "groq_web_research": {
+          "summary_all_context": "The $OTOME token draws its name from the Japanese term \"otome\" (\u4e59\u5973), meaning \"maiden,\" rooted in classical literature and Shinto rituals. The token\u2019s narrative reimagines this cultural symbol through a macaque\u2019s journey of resilience, blending traditional themes of purity with modern meme coin storytelling.",
+          "answer": "**Summary \u2013 non\u2011crypto meaning**  \n- **Otome (\u4e59\u5973 / \u304a\u3068\u3081)** is a Japanese word meaning \u201cmaiden\u201d or \u201cyoung unmarried woman.\u201d  \n- It connotes innocence, purity, and a gentle strength, often used in literature, folklore (celestial maidens, shrine maidens) and modern pop\u2011culture (sh\u014djo manga, \u201cotome games\u201d that target a female audience).  \n\n**Origin / timeline**  \n- **Old Japanese roots** \u2013 originally a compound of **\u4e59 (oto, \u201cyoung, little\u201d)** + **\u5973 (me, \u201cfemale\u201d)**. The term appears in classical texts as early as the Heian period to describe a young woman or virgin.  \n- **Cultural evolution** \u2013 adopted in Shinto rituals (young women performing dances), folklore (celestial maidens), and later in the 20th\u2011century media boom as a genre label for romance\u2011focused games and manga aimed at women (the \u201cotome game\u201d genre emerged in the late 1990s\u2011early 2000s).  \n- **Modern usage** \u2013 \u201cotome\u201d is now a common trope in anime/manga and a marketing term for games that let the player experience a \u201cmaiden\u2019s\u201d romantic story, reinforcing the themes of resilience, softness, and second chances that the token description evokes.  \n\n**Sources**  \n- **Wiktionary \u2013 \u5c11\u5973 (otome)** \u2013 explains the etymology (\u4e59\u202f+\u202f\u5973) and traditional meanings such as \u201cyoung woman, maiden, virgin.\u201d\u3010https://en.wikipedia.org/wiki/wikt:%E5%B0%91%E5%A5%B3\u3011 (lexical background).  \n- **Wikipedia \u2013 Otome game** \u2013 details the modern cultural genre, its origins in Japanese romance games for women, and the association with \u201cmaiden\u201d imagery.\u3010https://en.wikipedia.org/wiki/Otome_game\u3011 (pop\u2011culture evolution).  \n- **Wikipedia \u2013 Otome (given name)** \u2013 shows the name\u2019s usage and alternative spelling \u4e59\u5973, confirming its meaning as \u201cmaiden.\u201d\u3010https://en.wikipedia.org/wiki/Otome_(given_name)\u3011 (contemporary naming).",
+          "confidence_score": {
+            "final_score": 9,
+            "confidence_subscores": {
+              "context_faithfulness": 9,
+              "internal_consistency": 8,
+              "specificity": 9,
+              "completeness": 8,
+              "clarity": 9,
+              "source_groundedness": 9
+            }
+          },
+          "narrative_score": {
+            "final_score": 8,
+            "narrative_subscores": {
+              "hook_strength": 8,
+              "cultural_relevance": 9,
+              "cultural_charge": 2,
+              "mission_statement": 8,
+              "compellingness": 9,
+              "tribal_identity": 8,
+              "lore_amount": 7,
+              "lore_depth": 8
+            }
+          },
+          "sentiment_score": {
+            "final_score": 7,
+            "sentiment_subscores": {
+              "overall_tone": 8,
+              "excitement_level": 6,
+              "concern_signals": 1,
+              "engagement_quality": 4,
+              "community_trust": 6,
+              "fomo_indicators": 3,
+              "skepticism_level": 2,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-17T09:00:13.738655Z",
+          "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
+          "name": "OTOME",
+          "symbol": "OTOME",
+          "description": "The Story of Otome Long before Punch\u2026 there was Otome. A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances.",
+          "timestamp": "2026-02-17T09:00:11.350612+00:00",
+          "llm_interpretation": "Description: $OTOME is a memecoin on Solana inspired by the story of a resilient macaque monkey named Otome.\n\n1. memecoin: TRUE - The token is described as a memecoin on Solana, related to a monkey theme.\n2. utility: FALSE - There's no mention of the token having a specific utility or tech-based purpose.\n3. ai_token: FALSE - There's no indication that the token is related to AI or artificial intelligence.\n4. tweet_coin: FALSE - While there's discussion on Twitter, the token isn't directly inspired by a viral tweet.\n5. current_event: FALSE - The token doesn't appear to be based on a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in the token's branding or description.\n7. offensive: FALSE - The token's story and branding don't seem to contain offensive themes.\n8. animals: TRUE - The token is inspired by the story of a macaque monkey named Otome.\n9. political: FALSE - The token isn't related to politics or a political figure.",
+          "llm_description": "$OTOME is a Solana memecoin honoring resilience, softness, and second chances, inspired by a macaque monkey named Otome.",
+          "scraped_website_content": "Twitter Telegram Live Chart $OTOME B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump Copied! The Story of Otome Long before Punch\u2026 there was Otome . A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances. Courage Wrapped in Softness At first, the troop was puzzled by the tiny monkey who carried a plush toy everywhere. Some young macaques teased her, unsure of this unusual sight. But whenever Otome ran back to her beloved bear, they stopped. The distance slowly faded. That plush wasn\u2019t just comfort \u2014 it was her mother, her shield, her quiet strength . Held by a Bear, Guided by Love How to Buy $OTOME 1 Set Up Your Wallet Download a trusted wallet and create your secure account. Keep your recovery phrase safe \u2014 it\u2019s your key to everything. 2 Fund Your Wallet Add funds to your wallet using your preferred method. Make sure you have enough to complete your transaction smoothly. 3 Connect to a DEX Visit your preferred decentralized exchange and connect your wallet securely. 4 Swap for $OTOME Enter the official contract, confirm the amount, and swap. Welcome to the story \u2014 you\u2019re now part of Otome\u2019s journey. Otome\u2019s Circle Inspired by Otome\u2019s journey, this space reflects quiet resilience and gentle courage. Just as she found comfort in her cherished bear while learning to trust again, we honor softness as strength and the beauty of growing at your own pace. Twitter Telegram $OTOME Courage Wrapped in Softness Twitter Telegram DEX Screener $OTOME is a meme coin with no intrinsic value or expectation of financial return. The coin is for entertainment purposes only. \u00a9 2026 Otome. All rights reserved.",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": false,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": true,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "$OTOME is a token honoring resilience, softness, and second chances, inspired by the story of a macaque monkey named Otome.",
+            "prompt_2_summary_twitter_searches": "OTOME is a token being discussed and promoted on social media, with users encouraging others to vote for it to be listed.",
+            "prompt_3_summary_profile_content": "Otome Monkey is a token, a memecoin on Solana, related to a monkey theme, with a live stream and community presence.",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "1 days ago",
+          "token_created_timestamp": "2026-02-16T05:40:20+00:00",
+          "token_address": "B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump",
+          "token_symbol": "OTOME",
+          "token_name": "OTOME",
+          "first_time_seen": false,
+          "times_seen_before": 1,
+          "token_description": "The Story of Otome Long before Punch\u2026 there was Otome. A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances.",
+          "token_image": "https://ipfs.io/ipfs/QmQux1JEwhSeTFMjADtwYjkEXdyKDvz3xz4DmiMaivkssb",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": null,
+          "pump_telegram": null,
+          "pump_website": null,
+          "dex_twitter": "https://x.com/otomemonkey",
+          "dex_telegram": "https://t.me/otomemonkey",
+          "dex_discord": null,
+          "dex_website": "https://otomemonkey.fun/",
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Twitter Telegram Live Chart $OTOME B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump Copied! The Story of Otome Long before Punch\u2026 there was Otome . A fragile macaque who began life alone, she found comfort in a simple plush companion and the gentle care that helped her trust again. Step by step, she grew stronger and rejoined her troop. $OTOME honors resilience, softness, and the quiet power of second chances. Courage Wrapped in Softness At first, the troop was puzzled by the tiny monkey who carried a plush toy everywhere. Some young macaques teased her, unsure of this unusual sight. But whenever Otome ran back to her beloved bear, they stopped. The distance slowly faded. That plush wasn\u2019t just comfort \u2014 it was her mother, her shield, her quiet strength . Held by a Bear, Guided by Love How to Buy $OTOME 1 Set Up Your Wallet Download a trusted wallet and create your secure account. Keep your recovery phrase safe \u2014 it\u2019s your key to everything. 2 Fund Your Wallet Add funds to your wallet using your preferred method. Make sure you have enough to complete your transaction smoothly. 3 Connect to a DEX Visit your preferred decentralized exchange and connect your wallet securely. 4 Swap for $OTOME Enter the official contract, confirm the amount, and swap. Welcome to the story \u2014 you\u2019re now part of Otome\u2019s journey. Otome\u2019s Circle Inspired by Otome\u2019s journey, this space reflects quiet resilience and gentle courage. Just as she found comfort in her cherished bear while learning to trust again, we honor softness as strength and the beauty of growing at your own pace. Twitter Telegram $OTOME Courage Wrapped in Softness Twitter Telegram DEX Screener $OTOME is a meme coin with no intrinsic value or expectation of financial return. The coin is for entertainment purposes only. \u00a9 2026 Otome. All rights reserved.",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": "Otome Monkey",
+            "bio": null,
+            "recent_tweets": [
+              "$OTOME comes with full excitement look at the little monkey come into the market  CA: B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/9hwKRUbFsW https://t.co/MNaUJPdddY https://t.co/FxTGK1sKOC https://t.co/STJApvCdvh",
+              "15k transactions and 1.3M market volume is proof of your seriousness towards $OTOME  #OTOME #pumpfun #solana #memecoin #monkey #CryptoCommunity https://t.co/L0h0B9a51e",
+              "Come inside and meet the cute little $OTOME \ud83d\udc35\ud83d\udc12 Here's how \ud83d\udc47 https://t.co/k3qsbI3dK1",
+              "$OTOME is currently live streaming on https://t.co/cYeVNxLMKE \ud83d\udc35\ud83d\udcbb https://t.co/jNrKMFvhuR https://t.co/DZKEj2yzRy",
+              "$OTOME grew big from a very supportive market plus its lucky dolls  #OTOME #pumpfun #solana #memecoin #monkey #CryptoCommunity https://t.co/WO1P44oHDX",
+              "$OTOME is officially Top#1 on DexScreener. No more whispers https://t.co/V5IxcPjC3K https://t.co/OW7js5H23Z",
+              "New high. $OTOME just reached #1 on AXIOM and the climb continues https://t.co/vVKhm2GDiF https://t.co/2SU6kCdyob",
+              "Momentum is real. $OTOME now sits at #2 on Dexscreener. Early entries winning \ud83e\udd47 https://t.co/V5IxcPjC3K https://t.co/2kgp8gjXZQ",
+              "$OTOME increased its boost to 510x and ranked 3 on Dexscreener https://t.co/V5IxcPjC3K https://t.co/C3AfTHUCZI",
+              "\ud83d\udd25 10x growth for $OTOME . if you blink, you\u2019ll miss the next move! https://t.co/V5IxcPjC3K https://t.co/RYh4p4iCnB",
+              "$OTOME hits DexScreener Ads, the momentum is building https://t.co/V5IxcPjC3K https://t.co/kkJmZ1CEDd",
+              "$OTOME is climbing with no signs of stopping, see it happen live! https://t.co/V5IxcPjC3K https://t.co/b8djVSRr2y",
+              "$OTOME is now live on DexScreener https://t.co/V5IxcPjC3K https://t.co/wWqFm6a967",
+              "$OTOME is gaining attention on https://t.co/cYeVNxLMKE https://t.co/Js9bKY7see https://t.co/EG85fAD06i"
+            ]
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "\ud83d\udc40 OTOME $OTOME is breaking out  Vote to get this listed  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4fasa3",
+              "\ud83d\udd25 OTOME $OTOME is on a tear  Push for listing - vote here  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4f9Ukv"
+            ],
+            "address_top": [
+              "\ud83d\udd25 OTOME $OTOME is on a tear  Push for listing - vote here  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4f9Ukv",
+              "\ud83d\udc40 OTOME $OTOME is breaking out  Vote to get this listed  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4fasa3",
+              "\u2728 OTOME $OTOME is ripping right now  Push for listing - vote here  B4xWTLmWUK5G69uvMuGEmfmsixJ4Uh84pwVKG5xQpump  https://t.co/CHse4f9Ukv"
+            ],
+            "symbol_recent": [
+              "Stack the savings on President's Day. Get 12% Off with code PREZDAY and earn 2% Bonus Bucks on your purchase. That is smart shopping on the gear you trust.  Offer ends 2/20. Start saving today!"
+            ],
+            "symbol_top": [
+              "$Otome https://t.co/KTpQY5dpfC",
+              "$otome https://t.co/qhEmZKU9LG",
+              "$otome  I\u2019m sticking to my bag of this one  EYuV7N6i5TEd1zxk1dygkx4wjaAKWEUix9QGii3v53pP https://t.co/TJp7A0DRdD",
+              "Oo man, this is Bullish   $Otome just holding tight his little toy! https://t.co/q4mHOL9rqn"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-02-16 08:36:03",
+            "bundle_percentage": 0.0,
+            "fresh_wallets_percentage": 4.7,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 4.05,
+            "num_holders": 309,
+            "largest_holder_percentage": 4.9,
+            "largest_cluster_percentage": 0.0,
+            "large_holder_count": 3,
+            "same_percentage_count": 4,
+            "low_sol_count": 17
+          },
+          "onchain_scan_score": {
+            "final_score": 7.0,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 8,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 8,
+            "num_holders_score": 3,
+            "largest_holder_percentage_score": 7,
+            "largest_cluster_percentage_score": 10,
+            "large_holder_count_score": 4,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 1
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 1000000,
+            "all_time_highest_threshold": 1000000,
+            "highest_threshold_as_farm": 1000000,
+            "highest_threshold_as_farmed": 0,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771287967.507026
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "otomemonkey",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": 10.0
+            }
+          },
+          "usd_market_cap": 3236.9,
+          "ath_market_cap": 595207.07,
+          "ath_market_cap_timestamp": "2026-02-16T11:17:46+00:00",
+          "ath_multiple": 183.882,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_http_fallback",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-02-17T08:50:00.000Z",
+                "holderCount": 311,
+                "marketCap": 3203,
+                "mcapOverHolders": 10.29903536977492
+              },
+              {
+                "updatedAt": "2026-02-17T08:00:00.000Z",
+                "holderCount": 312,
+                "marketCap": 3029,
+                "mcapOverHolders": 9.708333333333334
+              },
+              {
+                "updatedAt": "2026-02-17T07:00:00.000Z",
+                "holderCount": 309,
+                "marketCap": 3031,
+                "mcapOverHolders": 9.809061488673139
+              },
+              {
+                "updatedAt": "2026-02-17T06:00:00.000Z",
+                "holderCount": 310,
+                "marketCap": 3085,
+                "mcapOverHolders": 9.951612903225806
+              },
+              {
+                "updatedAt": "2026-02-17T05:00:00.000Z",
+                "holderCount": 311,
+                "marketCap": 3085,
+                "mcapOverHolders": 9.919614147909968
+              },
+              {
+                "updatedAt": "2026-02-17T04:00:00.000Z",
+                "holderCount": 315,
+                "marketCap": 3351,
+                "mcapOverHolders": 10.638095238095238
+              },
+              {
+                "updatedAt": "2026-02-17T03:00:00.000Z",
+                "holderCount": 315,
+                "marketCap": 3637,
+                "mcapOverHolders": 11.546031746031746
+              },
+              {
+                "updatedAt": "2026-02-17T02:00:00.000Z",
+                "holderCount": 317,
+                "marketCap": 3639,
+                "mcapOverHolders": 11.479495268138802
+              },
+              {
+                "updatedAt": "2026-02-17T01:00:00.000Z",
+                "holderCount": 313,
+                "marketCap": 3376,
+                "mcapOverHolders": 10.78594249201278
+              },
+              {
+                "updatedAt": "2026-02-17T00:00:00.000Z",
+                "holderCount": 314,
+                "marketCap": 4064.251995232922,
+                "mcapOverHolders": 12.943477691824592
+              },
+              {
+                "updatedAt": "2026-02-16T23:00:00.000Z",
+                "holderCount": 314,
+                "marketCap": 3553,
+                "mcapOverHolders": 11.315286624203821
+              },
+              {
+                "updatedAt": "2026-02-16T22:00:00.000Z",
+                "holderCount": 318,
+                "marketCap": 4014.9999999999995,
+                "mcapOverHolders": 12.625786163522012
+              },
+              {
+                "updatedAt": "2026-02-16T21:00:00.000Z",
+                "holderCount": 324,
+                "marketCap": 3992,
+                "mcapOverHolders": 12.320987654320987
+              },
+              {
+                "updatedAt": "2026-02-16T20:00:00.000Z",
+                "holderCount": 330,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T19:00:00.000Z",
+                "holderCount": 335,
+                "marketCap": 4274,
+                "mcapOverHolders": 12.75820895522388
+              },
+              {
+                "updatedAt": "2026-02-16T18:00:00.000Z",
+                "holderCount": 337,
+                "marketCap": 4501,
+                "mcapOverHolders": 13.356083086053413
+              },
+              {
+                "updatedAt": "2026-02-16T17:00:00.000Z",
+                "holderCount": 337,
+                "marketCap": 4337,
+                "mcapOverHolders": 12.869436201780415
+              },
+              {
+                "updatedAt": "2026-02-16T16:00:00.000Z",
+                "holderCount": 344,
+                "marketCap": 4242,
+                "mcapOverHolders": 12.331395348837209
+              },
+              {
+                "updatedAt": "2026-02-16T15:00:00.000Z",
+                "holderCount": 351,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T14:00:00.000Z",
+                "holderCount": 365,
+                "marketCap": 6301,
+                "mcapOverHolders": 17.263013698630136
+              },
+              {
+                "updatedAt": "2026-02-16T13:00:00.000Z",
+                "holderCount": 949,
+                "marketCap": 101100,
+                "mcapOverHolders": 106.5331928345627
+              },
+              {
+                "updatedAt": "2026-02-16T12:00:00.000Z",
+                "holderCount": 955,
+                "marketCap": 278900,
+                "mcapOverHolders": 292.0418848167539
+              },
+              {
+                "updatedAt": "2026-02-16T11:00:00.000Z",
+                "holderCount": 967,
+                "marketCap": 390300,
+                "mcapOverHolders": 403.6194415718718
+              },
+              {
+                "updatedAt": "2026-02-16T10:00:00.000Z",
+                "holderCount": 919,
+                "marketCap": 318200,
+                "mcapOverHolders": 346.2459194776931
+              },
+              {
+                "updatedAt": "2026-02-16T09:00:00.000Z",
+                "holderCount": 893,
+                "marketCap": 268600.00000000006,
+                "mcapOverHolders": 300.7838745800673
+              },
+              {
+                "updatedAt": "2026-02-16T08:00:00.000Z",
+                "holderCount": 766,
+                "marketCap": 103419.0959530907,
+                "mcapOverHolders": 135.01187461238996
+              }
+            ]
           }
         }
       }
