@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-17T21:05:16.835828Z",
+  "generated_at_utc": "2026-02-17T22:05:47.054086Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 124,
+  "token_context_count": 127,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 15 PVP group(s); excluding 21 token(s) from META prompt."
+    "Detected 15 PVP group(s); excluding 22 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 21,
+  "pvp_excluded_token_count": 22,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "trump3",
-      "tokens": [
-        {
-          "token_symbol": "trump3",
-          "token_name": "trump3",
-          "token_address": "9ZNPsahqRruAgdMi9tSsibHG8XBXA8EimTA5jHA3pump",
-          "usd_market_cap": 3894834.78,
-          "processed_at": "2026-02-16T21:04:09.163823Z"
-        },
-        {
-          "token_symbol": "Trump3",
-          "token_name": "Trump3",
-          "token_address": "DwfK8oRjfQvnPt4MRmU9hepbZjRgcqdVErqYTuh7pump",
-          "usd_market_cap": 4426421.25,
-          "processed_at": "2026-02-16T21:58:31.769893Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "hunter trump",
@@ -160,26 +140,33 @@
           "token_address": "5dJevoHabbfHJ71w1HP1erxZoD1Phb8itUQmcKiHpump",
           "usd_market_cap": 254849.11,
           "processed_at": "2026-02-17T20:51:12.587240Z"
+        },
+        {
+          "token_symbol": "KIMCHI",
+          "token_name": "Kimchi",
+          "token_address": "FznKk7WQzcf7hhkxtFnEyF5yFTanLsrAZdwZuiJQpump",
+          "usd_market_cap": 335375.02,
+          "processed_at": "2026-02-17T21:37:58.892849Z"
         }
       ]
     },
     {
-      "match_type": "token_symbol",
+      "match_type": "token_name",
       "match_value": "trump3",
       "tokens": [
         {
           "token_symbol": "trump3",
           "token_name": "trump3",
           "token_address": "9ZNPsahqRruAgdMi9tSsibHG8XBXA8EimTA5jHA3pump",
-          "usd_market_cap": 3894834.78,
-          "processed_at": "2026-02-16T21:04:09.163823Z"
+          "usd_market_cap": 1632.17,
+          "processed_at": "2026-02-17T21:04:37.600617Z"
         },
         {
           "token_symbol": "Trump3",
           "token_name": "Trump3",
           "token_address": "DwfK8oRjfQvnPt4MRmU9hepbZjRgcqdVErqYTuh7pump",
-          "usd_market_cap": 4426421.25,
-          "processed_at": "2026-02-16T21:58:31.769893Z"
+          "usd_market_cap": 1623.8,
+          "processed_at": "2026-02-17T21:59:54.521311Z"
         }
       ]
     },
@@ -341,6 +328,33 @@
           "token_address": "5dJevoHabbfHJ71w1HP1erxZoD1Phb8itUQmcKiHpump",
           "usd_market_cap": 254849.11,
           "processed_at": "2026-02-17T20:51:12.587240Z"
+        },
+        {
+          "token_symbol": "KIMCHI",
+          "token_name": "Kimchi",
+          "token_address": "FznKk7WQzcf7hhkxtFnEyF5yFTanLsrAZdwZuiJQpump",
+          "usd_market_cap": 335375.02,
+          "processed_at": "2026-02-17T21:37:58.892849Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "trump3",
+      "tokens": [
+        {
+          "token_symbol": "trump3",
+          "token_name": "trump3",
+          "token_address": "9ZNPsahqRruAgdMi9tSsibHG8XBXA8EimTA5jHA3pump",
+          "usd_market_cap": 1632.17,
+          "processed_at": "2026-02-17T21:04:37.600617Z"
+        },
+        {
+          "token_symbol": "Trump3",
+          "token_name": "Trump3",
+          "token_address": "DwfK8oRjfQvnPt4MRmU9hepbZjRgcqdVErqYTuh7pump",
+          "usd_market_cap": 1623.8,
+          "processed_at": "2026-02-17T21:59:54.521311Z"
         }
       ]
     }
@@ -349,102 +363,126 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Cultural & Historical References",
-        "description": "Tokens drawing from historical events, folklore, or cultural symbols. These often tie into broader narratives of identity, mythology, or national heritage.",
+        "meta_name": "Crypto Satire & Parody",
+        "description": "Tokens that satirize crypto culture, financial systems, or broader societal issues. These often use irony or absurdity to critique or mock the industry or broader themes like wealth inequality.",
         "defining_signals": [
-          "Use of historical figures (e.g., Bob Lazar, Hachiko)",
-          "Incorporation of folklore or mythology (e.g., 'Fire Horse', 'Mushu')",
-          "Leverage of national or regional cultural symbols (e.g., 'Tortas', 'Jester')"
+          "Satirical takes on crypto phenomena (e.g., 'Bitcoin 2.0', 'Useless Coin')",
+          "Mocking of wealth inequality (e.g., '8B People vs 3,096 Billionaires')",
+          "Parody of financial systems (e.g., 'Ponzi Coin', 'Cashback')",
+          "Absurd or ironic naming (e.g., 'Fartcoin', 'TrollPunch')",
+          "Repackaging of real-world events (e.g., 'Epstein Files', 'George Floyd Punch')"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "LAZAR",
-            "token_name": "Bob Lazar",
-            "token_address": "DSpXz11Fqk2TzpYLNfCqoKiaQhynpEWhFKh2hTDGpump"
+            "token_symbol": "BTC2",
+            "token_name": "Bitcoin 2.0",
+            "token_address": "78KiD7Y4rWuKQeyfnue9ayYNTzqxXvv2DK4bBj8Wbonk"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGM587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "USELESS",
+            "token_name": "USELESS COIN",
+            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
           },
           {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+            "token_symbol": "8B",
+            "token_name": "8B People vs 3,096 Billionaires",
+            "token_address": "HyXpFTmpocvNEvg8rLpxUesn3wB8WBiwjNLzfaScpump"
           },
           {
-            "token_symbol": "MUSHU",
-            "token_name": "Mushu",
-            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+            "token_symbol": "FARTCOIN",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          },
+          {
+            "token_symbol": "PONZI",
+            "token_name": "ponzi coin",
+            "token_address": "EseP24yJ4MGZtsEfUA3NtWyBEZhmeMEJZZDJPfeGVLUTs"
+          },
+          {
+            "token_symbol": "CASH",
+            "token_name": "Cashback",
+            "token_address": "7KEdt8JYScnDDMm1JAEjEaS5cyCXUgqAVNhsXANSoek5"
           }
         ],
+        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqQQBq8HHM13kCyYcdQbgpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong satirical themes with clear cultural and financial critique, and viral meme potential.",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 642465729.05
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 194961364.32
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI & Tech-Driven Utility",
+        "description": "Tokens emphasizing AI, automation, or blockchain-based utility. These often position themselves as next-gen platforms or tools for decentralized AI, DeFi, or on-chain governance.",
+        "defining_signals": [
+          "AI/ML integration (e.g., 'Lunar', 'AI Rig Complex')",
+          "On-chain governance or automation (e.g., 'ClawVault', 'AgentPocket')",
+          "DeFi or staking mechanics (e.g., 'Reflex Protocol', 'Cashback')",
+          "AI-native platforms (e.g., 'hey.lol', 'MUS3')",
+          "Tokenized infrastructure (e.g., 'SpectrumCoin', 'OpenClaw')"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "LUNAR",
+            "token_name": "Lunar",
+            "token_address": "7sShzRXuv4Z19QdmJffJTnL6r2PC8EPTQ8aUndQipump"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "APOCKET",
+            "token_name": "AgentPocket",
+            "token_address": "uDVChrsuYffrvc8EHFiC46GcV8goWD5abDKMXrHpump"
+          },
+          {
+            "token_symbol": "HEY",
+            "token_name": "hey.lol",
+            "token_address": "HEYKwDJRoSsiLNQ9F9bZFKo7yxum1WbTFCgiHTX5h6tb"
+          },
+          {
+            "token_symbol": "SPC",
+            "token_name": "SpectrumCoin",
+            "token_address": "Bi4i1q6oUp1VskhYqWbdNaEhiwzGKf8ynNZLmY87pump"
+          },
+          {
+            "token_symbol": "OPENCLAW",
+            "token_name": "OpenClaw",
+            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
+          }
+        ],
+        "leader_hint_token_address": "HEYKwDJRoSsiLNQ9F9bZFKo7yxum1WbTFCgiHTX5h6tb",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong focus on AI and utility, with clear positioning in emerging tech trends.",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 76374496.68
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "Meme Rebranding",
-        "description": "Tokens repurposing existing internet memes, pop culture references, or historical figures for crypto branding. These often leverage viral or nostalgic cultural touchpoints to attract attention and community engagement.",
+        "description": "Tokens repurposing existing internet memes, pop culture references, or historical figures for crypto branding. These tokens leverage nostalgia, humor, or cultural resonance to attract community attention.",
         "defining_signals": [
-          "Use of established memes (e.g., 'Nani?', 'Wojak', 'The Lion King')",
-          "Repackaging of cultural figures or historical events (e.g., Bob Lazar, Hachiko, Elon Musk)",
-          "Leveraging viral TikTok/Reddit trends (e.g., 'Looksmaxxing', 'Punch the Macaque')"
+          "Use of established memes (e.g., 'Remember who you are', 'Epstein Slop', 'Wojak')",
+          "Rebranding of cultural figures (e.g., 'Trump', 'Elon', 'Mulan')",
+          "Leveraging viral TikTok/Reddit trends (e.g., 'Looksmaxxing', 'Jestermaxxing')",
+          "Repackaging of historical or folklore references (e.g., 'Hachiko', 'Bob Lazar')",
+          "Meme-based humor or absurdity (e.g., 'Fartcoin', 'Punch’s Father')"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "NANI",
-            "token_name": "naniXBT",
-            "token_address": "BVFGj2ww3sz1Mc2MgFQqkDfjmLVmTQD7MU6NVvS6pump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "ELON",
-            "token_name": "Elon Coin",
-            "token_address": "2akXpuyFXAVN5YofofZpZMfBp2Vxognpmv9NooBMuHpump"
-          }
-        ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong cultural roots in the Wojak meme, which has been a foundational internet meme for over a decade and is widely recognized across platforms.",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 10049018.16
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political & Satirical Figures",
-        "description": "Tokens referencing political figures, controversial events, or satirical interpretations of public figures. These often leverage the polarizing nature of politics or public personas for community engagement.",
-        "defining_signals": [
-          "Direct references to Donald Trump, Elon Musk, or other high-profile figures",
-          "Use of political events or scandals (e.g., Epstein, Trump, Biden)",
-          "Satirical or meme-based rebranding of political narratives"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "TRUMPO",
-            "token_name": "PRESIDENTE DONALDO TRUMPO",
-            "token_address": "5rGKc5gaj3ams34duHkJKEJP3frsEe9RtoJdcADpump"
+            "token_symbol": "remember",
+            "token_name": "who you are.",
+            "token_address": "CYfwS1vQfMtJgU8woviDXKhqPPkzoNzRxrPGQiRHpump"
           },
           {
             "token_symbol": "Epstein",
@@ -452,87 +490,55 @@
             "token_address": "DwEnox9H1VZFPpp3UNYcZeNWPs8mvHiPrhjDKrD1pump"
           },
           {
-            "token_symbol": "DONALDMINAJ",
-            "token_name": "Donald Minaj",
-            "token_address": "82Rcst6dXxCCYSEoAjN9efebNG6yog9bx8LvqQz6pump"
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
             "token_symbol": "TRUMP",
             "token_name": "Presidents’ Day",
-            "token_address": "Fpae3M5DmAxSn6KL39oxYzmi3PJx2Eh2JRCWjKfBump"
+            "token_address": "Fpae3M5DmAxSn6KL39oxYzmi3PJx2Eh2JRCWjKfBpump"
           },
           {
-            "token_symbol": "HOTUS",
-            "token_name": "Hunter Of The U.S.",
-            "token_address": "AwjrxReqLBVC6ozN5XLqkgrweveuL7T6pKQBz3Lpump"
+            "token_symbol": "ELON",
+            "token_name": "Elon Coin",
+            "token_address": "2akXpuyFXAVN5YofZpZMfBp2Vxognpmv9NooBMuHpump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGGm587z8suK3ec6cwQwgZNLbWKyp"
           }
         ],
-        "leader_hint_token_address": "5rGKc5gaj3ams34duHkJKEJP3frsEe9RtoJdcADpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Donald Trump-related tokens have a consistent and polarizing cultural footprint, especially in meme and political discourse, making them a strong and recurring theme.",
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong meme-based branding with clear cultural references and viral potential.",
         "leader_token": {
-          "token_symbol": "DONALDMINAJ",
-          "token_name": "Donald Minaj",
-          "token_address": "82Rcst6dXxCCYSEoAjN9efebNG6yog9bx8LvqQz6pump",
-          "usd_market_cap": 3786380.34
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Looksmaxxing & Self-Optimization",
-        "description": "Tokens centered around the 'looksmaxxing' and 'maxxing' culture, which focuses on self-improvement, aesthetics, and social dominance. These tokens often tie into broader themes of 'gigachad' mentality and online identity.",
-        "defining_signals": [
-          "Direct use of 'maxxing' or 'looksmaxxing' in token names or themes",
-          "Incorporation of 'jestermaxxing' or 'self-optimization' as cultural references",
-          "Ties to 'gigachad' or 'incel' subculture themes"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "maxxing",
-            "token_name": "maxxing",
-            "token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump"
-          },
-          {
-            "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
-          },
-          {
-            "token_symbol": "Clav",
-            "token_name": "Clavicular",
-            "token_address": "DcoeiMpqBG23AU8Z8ribhGwr9PJenNh9bWXVpa1mpump"
-          },
-          {
-            "token_symbol": "WEALTHMOG",
-            "token_name": "Wealth Mogging",
-            "token_address": "84CYQkyJwj2ywLQ25KZmJWUqYn3Vv568yyLNzLKQpump"
-          },
-          {
-            "token_symbol": "PUMP",
-            "token_name": "The Pumpfun Flywheel",
-            "token_address": "Bs2RsPYeUMi5kPzHteyE4dQPe84EL47Ww2zxixeUf4jD"
-          }
-        ],
-        "leader_hint_token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "The 'maxxing' meme has a clear cultural lineage and is widely recognized in online forums and social media, making it a strong and consistent theme.",
-        "leader_token": {
-          "token_symbol": "maxxing",
-          "token_name": "maxxing",
-          "token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump",
-          "usd_market_cap": 2113279.64
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 10049018.16
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Cultural & Historical References",
+        "meta_name": "Crypto Satire & Parody",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 642465729.05
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 194961364.32
+        }
+      },
+      {
+        "meta_name": "AI & Tech-Driven Utility",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 76374496.68
         }
       },
       {
@@ -542,24 +548,6 @@
           "token_name": "Wojak",
           "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
           "usd_market_cap": 10049018.16
-        }
-      },
-      {
-        "meta_name": "Political & Satirical Figures",
-        "leader_token": {
-          "token_symbol": "DONALDMINAJ",
-          "token_name": "Donald Minaj",
-          "token_address": "82Rcst6dXxCCYSEoAjN9efebNG6yog9bx8LvqQz6pump",
-          "usd_market_cap": 3786380.34
-        }
-      },
-      {
-        "meta_name": "Looksmaxxing & Self-Optimization",
-        "leader_token": {
-          "token_symbol": "maxxing",
-          "token_name": "maxxing",
-          "token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump",
-          "usd_market_cap": 2113279.64
         }
       }
     ]
