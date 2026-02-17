@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-17T02:05:24.455115Z",
+  "generated_at_utc": "2026-02-17T02:56:01.122410Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 118,
+  "token_context_count": 117,
   "prompt_truncated": false,
   "warnings": [
     "Detected 9 PVP group(s); excluding 13 token(s) from META prompt."
@@ -236,74 +236,28 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Character Revival",
-        "description": "Tokens reviving iconic internet memes and pop culture characters, leveraging nostalgia and established cultural references to drive community engagement.",
+        "meta_name": "Animal Meme Revival",
+        "description": "Tokens centered around viral animal memes or real-world animal celebrities, often with a humorous or sentimental angle.",
         "defining_signals": [
-          "Use of well-known meme characters (e.g., Pepe, Wojak, Clippy)",
-          "Leverage of established meme histories (e.g., 2000s MS Paint, 2010s TikTok revivals)",
-          "Community-driven narratives tied to character lore"
+          "References to viral animal videos or memes (e.g., Moo Deng, Punch, Mochi Panda).",
+          "Use of real-world animal celebrities or viral pet stories.",
+          "Community-driven narratives around animal cuteness or humor."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          }
-        ],
-        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Pepe has a strong historical meme presence and is widely recognized across platforms. Other tokens like Wojak and Clippy also have significant cultural footprints.",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 686179419.83
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Animal and Nature Meme Culture",
-        "description": "Tokens centered around animals or nature-related memes, often with humorous or anthropomorphic elements, leveraging viral animal content and nature-related internet trends.",
-        "defining_signals": [
-          "Use of animals or nature elements (e.g., pandas, hippos, monkeys)",
-          "Leverage of viral animal-related memes (e.g., Moo Deng, Punch the Monkey)",
-          "Humorous or anthropomorphic characterizations"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Mochi",
-            "token_name": "Mochi Panda",
-            "token_address": "8yyBAFFfCA4fKw1Ai1SExtSf6DmVckGGDT8XgHUopump"
-          },
-          {
-            "token_symbol": "MOODENG",
+            "token_symbol": "MOO",
             "token_name": "Moo Deng",
             "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
           },
           {
-            "token_symbol": "Punch",
+            "token_symbol": "PUNCH",
             "token_name": "パンチ",
             "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "MOCHI",
+            "token_name": "Mochi Panda",
+            "token_address": "8yyBAFFfCA4fKw1Ai1SExtSf6DmVckGGDT8XgHUopump"
           },
           {
             "token_symbol": "CHIMP",
@@ -316,9 +270,6 @@
             "token_address": "DD4jtnKdyPakShSx1JRwHu7Sk1UouM6Yn9vwtQJGpump"
           }
         ],
-        "leader_hint_token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Moo Deng has strong viral traction from the viral baby hippo. Mochi Panda and Punch also have clear cultural references and are gaining attention.",
         "leader_token": {
           "token_symbol": "MOODENG",
           "token_name": "Moo Deng",
@@ -328,16 +279,67 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political and Social Commentary",
-        "description": "Tokens using political figures, social issues, or controversial topics as their narrative, often with satirical or critical undertones.",
+        "meta_name": "Meme Revival",
+        "description": "Tokens reviving classic internet memes from the 2000s–2010s, leveraging nostalgia and established cultural references for community engagement.",
         "defining_signals": [
-          "References to political figures (e.g., Donald Trump, Barron Trump)",
-          "Use of controversial or polarizing themes (e.g., 'Libtard', 'War')",
-          "Satirical or critical framing of societal issues"
+          "Use of well-known meme characters or phrases (e.g., Pepe, Trollface, Wojak).",
+          "Historical meme origins (e.g., 2005–2010) with documented internet meme lineage.",
+          "Community-driven narratives emphasizing meme history and continuity."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Barron2",
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "CLIP",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "RAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Pepe and Trollface are among the most iconic and enduring memes in internet history, with strong community engagement and historical meme revival trends.",
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15039051.93
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political Satire",
+        "description": "Tokens using political figures, events, or ideologies as satirical or ironic commentary, often with a right-leaning or meme-based slant.",
+        "defining_signals": [
+          "References to political figures (e.g., Donald Trump, Barron Trump).",
+          "Use of political memes or slurs (e.g., 'Libtard', 'Trumpius Maximus').",
+          "Community-driven narratives around political events or ideologies."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "TRUMPO",
+            "token_name": "PRESIDENTE DONALDO TRUMPO",
+            "token_address": "5rGKc5gaj3ams34duHkJKEJP3frsEe9RtoJdcADpump"
+          },
+          {
+            "token_symbol": "BARRON2",
             "token_name": "barron2",
             "token_address": "Apuszvz62jtxXL7MHpmSCy9WQatacBdXo1ybTpohpump"
           },
@@ -347,83 +349,72 @@
             "token_address": "BrLt31pz3XtT54yacHJJFNzGvkz5uy8Xd6WnnCkYpump"
           },
           {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
-          },
-          {
-            "token_symbol": "8B",
-            "token_name": "8B People vs 3,096 Billionaires",
-            "token_address": "HyXpFTmpocvNEvg8rLpxUesn3wB8WBiwjNLzfaScpump"
-          },
-          {
             "token_symbol": "Dogs",
             "token_name": "DONT TREAD ON ME",
             "token_address": "bDz6NVehx5mr8E1e5d2c8ZAqjDe7DQWZeEKPpyvdogs"
+          },
+          {
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
           }
         ],
-        "leader_hint_token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-        "confidence_0_100": 75,
-        "confidence_rationale": "WAR has a clear cultural alignment with existing memes and a strong narrative around financial systems. Other tokens like Barron2 and Libtard are also gaining traction in political meme spaces.",
+        "leader_hint_token_address": "5rGKc5gaj3ams34duHkJKEJP3frsEe9RtoJdcADpump",
+        "confidence_0_100": 72,
+        "confidence_rationale": "TRUMPO has strong political meme roots and a clear right-leaning narrative, making it a central figure in this meta.",
         "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 27580990.0
+          "token_symbol": "Barron2",
+          "token_name": "barron2",
+          "token_address": "Apuszvz62jtxXL7MHpmSCy9WQatacBdXo1ybTpohpump",
+          "usd_market_cap": 3839351.19
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
-        "description": "Tokens drawing from retro or nostalgic elements, often referencing older internet culture, media, or historical figures to create a sense of familiarity and community.",
+        "meta_name": "Cultural Icon Rebranding",
+        "description": "Tokens rebranding real-world cultural icons (historical figures, fictional characters, or viral internet personalities) into crypto narratives.",
         "defining_signals": [
-          "References to older internet culture (e.g., 2000s MS Paint, 2010s forums)",
-          "Use of historical or retro elements (e.g., 1980s, 1990s)",
-          "Leverage of nostalgia-driven narratives"
+          "Direct references to well-known cultural figures (e.g., Hachiko, Mushu, Ralph Wiggum).",
+          "Leveraging existing cultural narratives or media (e.g., films, books, TV shows).",
+          "Community-driven storytelling around the icon’s legacy."
         ],
-        "supporting_tokens": [
+        "supportinging_tokens": [
           {
-            "token_symbol": "3301",
-            "token_name": "1231507051321",
-            "token_address": "6RLKHhdsTwWqz7kRkdigL4488sNYJAYJR3589zjLpump"
+            "token_symbol": "$HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "CICADA",
-            "token_name": "Cicada 3301",
-            "token_address": "6RLKHhdsTwWqz7kRkdigL4488sNYJAYJR3589zjLpump"
+            "token_symbol": "MUSHU",
+            "token_name": "Mushu",
+            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
           },
           {
-            "token_symbol": "Zyzz",
-            "token_name": "Zyzz",
-            "token_address": "7nxyHFTB4BzZveSQV1EWrFqxPsK318oiSnXbC8knhefw"
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
           },
           {
             "token_symbol": "KABUTO",
             "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+            "token_address": "A9E2AopuG56LWYYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
           }
         ],
-        "leader_token": {
-          "token_symbol": "KABUTO",
-          "token_name": "Kabuto",
-          "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
-          "usd_market_cap": 1361648.45
-        },
-        "leader_missing_reason": null
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Hachiko is a globally recognized cultural icon with strong emotional resonance, making it a prime candidate for rebranding into crypto.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Character Revival",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 686179419.83
-        }
-      },
-      {
-        "meta_name": "Animal and Nature Meme Culture",
+        "meta_name": "Animal Meme Revival",
         "leader_token": {
           "token_symbol": "MOODENG",
           "token_name": "Moo Deng",
@@ -432,21 +423,21 @@
         }
       },
       {
-        "meta_name": "Political and Social Commentary",
+        "meta_name": "Meme Revival",
         "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 27580990.0
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15039051.93
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
+        "meta_name": "Political Satire",
         "leader_token": {
-          "token_symbol": "KABUTO",
-          "token_name": "Kabuto",
-          "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
-          "usd_market_cap": 1361648.45
+          "token_symbol": "Barron2",
+          "token_name": "barron2",
+          "token_address": "Apuszvz62jtxXL7MHpmSCy9WQatacBdXo1ybTpohpump",
+          "usd_market_cap": 3839351.19
         }
       }
     ]
