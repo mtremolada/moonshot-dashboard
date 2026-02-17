@@ -1,591 +1,7 @@
 {
-  "last_updated": "2026-02-17T12:48:56.619244Z",
+  "last_updated": "2026-02-17T13:56:59.066502Z",
   "retention_hours": 48,
   "tokens": [
-    {
-      "processed_at": "2026-02-16T13:31:17.874794Z",
-      "token_address": "HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
-      "token_symbol": "VIBECLAW",
-      "token_name": "vibeclaw",
-      "first_time_seen": true,
-      "times_seen_before": 0,
-      "full_token_details": {
-        "aggregate_score": 3.0,
-        "groq_web_research": {
-          "summary_all_context": "The \"vibeclaw\" token (created 10 hours ago) references no verifiable non-crypto cultural origin. Web searches across meme archives, media, and encyclopedias found no pre-existing usage of \"vibeclaw\" as slang, gesture, or meme. The token\u2019s description links fees to a wallet and claims to enable AI agent runtimes in browsers.",
-          "answer": "**Summary**  \n- No verifiable non\u2011crypto usage, slang, meme, or cultural reference for \u201cvibeclaw\u201d (or \u201cVIBECLAW\u201d) could be located in publicly\u2011available non\u2011crypto sources.\n\n**Origin / Timeline**  \n- Searches across meme\u2011tracking sites (KnowYourMeme), major encyclopedias (Wikipedia), and mainstream media outlets returned no entries or discussions predating the token\u2019s creation.  \n- The term appears to be unique to the token/project and does not have an established cultural or linguistic history outside of that context.\n\n**Sources**  \n- No relevant non\u2011crypto sources were found after exhaustive queries (e.g., `site:knowyourmeme.com \"vibeclaw\"`, `site:wikipedia.org \"vibeclaw\"`, `site:theverge.com \"vibeclaw\"`).  \n\n*Conclusion: There is currently no documented cultural or non\u2011crypto origin for \u201cvibeclaw.\u201d*",
-          "confidence_score": {
-            "final_score": 8,
-            "confidence_subscores": {
-              "context_faithfulness": 9,
-              "internal_consistency": 9,
-              "specificity": 9,
-              "completeness": 8,
-              "clarity": 9,
-              "source_groundedness": 1
-            }
-          },
-          "narrative_score": {
-            "final_score": 1,
-            "narrative_subscores": {
-              "hook_strength": 2,
-              "cultural_relevance": 1,
-              "cultural_charge": 2,
-              "mission_statement": 1,
-              "compellingness": 2,
-              "tribal_identity": 1,
-              "lore_amount": 1,
-              "lore_depth": 1
-            }
-          },
-          "sentiment_score": {
-            "final_score": null,
-            "sentiment_subscores": null
-          }
-        },
-        "llm_interpretation": {
-          "created_at": "2026-02-16T13:33:03.858657Z",
-          "token_address": "HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
-          "name": "vibeclaw",
-          "symbol": "VIBECLAW",
-          "description": "directing fees to 3MQ6TTuo4L6UN2aAKd8FcijWVtmfE5kGqBq1HQ1wNUtz",
-          "timestamp": "2026-02-16T13:33:02.845086+00:00",
-          "llm_interpretation": "Description: VIBECLAW token enables an AI agent runtime in browser with virtual filesystem and free models.\n\n1. memecoin: TRUE - The token is based on a cartoon character, a red lobster, which is often associated with memes.\n2. utility: TRUE - The token enables a complete AI agent runtime in browser, indicating a utility use case.\n3. ai_token: TRUE - The token is related to AI as it enables an AI agent runtime.\n4. tweet_coin: FALSE - There is no indication that the token is based on a viral tweet.\n5. current_event: FALSE - There is no clear connection to a current event or trend.\n6. racist: FALSE - The token branding does not contain racist themes.\n7. offensive: FALSE - The token branding does not contain overtly offensive themes.\n8. animals: TRUE - The token is based on a cartoon lobster, an animal.\n9. political: FALSE - There is no indication that the token is related to politics or a political figure.",
-          "llm_description": "OpenClaw token enables a complete AI agent runtime in browser with virtual filesystem, free models, and live chat, with no installation required.",
-          "scraped_website_content": "Open Source \u00b7 Powered by almostnode Run Open Claw Securely in your browser in 5s Complete AI agent runtime with virtual filesystem, free models, and live chat. No installation. No Docker. Just open and go. Launch Your Sandbox Now \u2605 Stars Flavour OpenClaw Solar Pro 3 boot-sandbox.js import { AgentContainerManager } from 'vibeclaw' ; // Load the OpenClaw runtime const snapshot = await fetch ( OPENCLAW_VFS_URL ). then ( r => r . json ()); const manager = new AgentContainerManager ({ maxContainers : 10 , defaultExecutionTimeoutMs : 30_000 , }); // Spawn gateway \u2014 your key goes direct to Anthropic const gw = await manager . spawn ({ id : 'openclaw-gateway' , vfsSnapshot : snapshot , cwd : '/openclaw' , env : { OPENROUTER_API_KEY : OPENROUTER_API_KEY , NODE_ENV : 'production' , OPENCLAW_PORT : '18789' , }, }); await manager . execute ( gw . id , ` const loader = require('/openclaw/loader.cjs'); loader.registerStubs(); loader.setupEnv(); ` ); console . log ( '\ud83e\udd80 OpenClaw Sandbox Gateway online!' ); config.js // Configure the sandbox agent await manager . execute ( gw . id , ` const config = require('/openclaw/config.cjs'); config.set({ agent : { name : 'Sandbox Agent' , emoji : '\ud83e\udd80' , model : 'claude-sonnet-4-20250514' , maxTokens : 16384 , }, gateway : { port : 18789 , bind : 'loopback' }, skills : { enableAll : true }, cron : { jobs : [{ name : 'health-check' , schedule : '*/5 * * * *' , task : 'Run a quick health check' , }] }, }); ` ); await manager . writeFile ( gw . id , '/openclaw/SOUL.md' , ` # \ud83e\udd80 Sandbox Agent You are a helpful coding assistant running entirely in a browser sandbox. ` ); sandbox-chat.js // Chat with your sandbox agent \u2014 100% in-browser // Your key goes direct to Anthropic, never our servers await client . chat ( 'Hello! What can you do?' , { sessionKey : 'agent:sandbox:main' , }); // \u2705 Read/write files in virtual workspace // \u2705 Execute JavaScript and TypeScript // \u2705 Install npm packages // \u2705 Use tools (search, edit, create files) // \u2705 Run cron jobs o... (truncated)",
-          "classifications": {
-            "memecoin": true,
-            "utility": true,
-            "ai_token": true,
-            "tweet_coin": false,
-            "current_event": false,
-            "racist": false,
-            "offensive": false,
-            "animals": true,
-            "political": false
-          },
-          "prompt_summaries": {
-            "prompt_1_summary_website_content": "OpenClaw token enables a complete AI agent runtime in browser with virtual filesystem, free models, and live chat, requiring no installation or Docker.",
-            "prompt_2_summary_twitter_searches": "",
-            "prompt_3_summary_profile_content": "",
-            "prompt_4_summary_main_tweet": "",
-            "prompt_5_summary_twitter_community_recent_posts": ""
-          }
-        },
-        "llm_staged_data": {
-          "created": "10 hours ago",
-          "token_created_timestamp": "2026-02-16T03:03:00+00:00",
-          "token_address": "HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
-          "token_symbol": "VIBECLAW",
-          "token_name": "vibeclaw",
-          "first_time_seen": true,
-          "times_seen_before": 0,
-          "token_description": "directing fees to 3MQ6TTuo4L6UN2aAKd8FcijWVtmfE5kGqBq1HQ1wNUtz",
-          "token_image": "https://ipfs.io/ipfs/bafkreifisuiz2adtdcv7wdrsc5f273s2ba7pzxqt6rewwysj3thq22wlgi",
-          "token_twitter": null,
-          "token_website": null,
-          "pump_twitter": "https://x.com/_raychain_/status/2023231463789887500?s=20",
-          "pump_telegram": null,
-          "pump_website": "https://vibeclaw.dev/",
-          "dex_twitter": "https://x.com/i/communities/2023235511586828762",
-          "dex_telegram": null,
-          "dex_discord": null,
-          "dex_website": "https://vibeclaw.dev/",
-          "is_currently_live": false,
-          "community_takeover": false,
-          "community_takeover_payment_time": null,
-          "community_takeover_time_ago": "N/A",
-          "main_tweet": {
-            "text": null,
-            "username": null,
-            "displayname": null
-          },
-          "website_content": "Open Source \u00b7 Powered by almostnode Run Open Claw Securely in your browser in 5s Complete AI agent runtime with virtual filesystem, free models, and live chat. No installation. No Docker. Just open and go. Launch Your Sandbox Now \u2605 Stars Flavour OpenClaw Solar Pro 3 boot-sandbox.js import { AgentContainerManager } from 'vibeclaw' ; // Load the OpenClaw runtime const snapshot = await fetch ( OPENCLAW_VFS_URL ). then ( r => r . json ()); const manager = new AgentContainerManager ({ maxContainers : 10 , defaultExecutionTimeoutMs : 30_000 , }); // Spawn gateway \u2014 your key goes direct to Anthropic const gw = await manager . spawn ({ id : 'openclaw-gateway' , vfsSnapshot : snapshot , cwd : '/openclaw' , env : { OPENROUTER_API_KEY : OPENROUTER_API_KEY , NODE_ENV : 'production' , OPENCLAW_PORT : '18789' , }, }); await manager . execute ( gw . id , ` const loader = require('/openclaw/loader.cjs'); loader.registerStubs(); loader.setupEnv(); ` ); console . log ( '\ud83e\udd80 OpenClaw Sandbox Gateway online!' ); config.js // Configure the sandbox agent await manager . execute ( gw . id , ` const config = require('/openclaw/config.cjs'); config.set({ agent : { name : 'Sandbox Agent' , emoji : '\ud83e\udd80' , model : 'claude-sonnet-4-20250514' , maxTokens : 16384 , }, gateway : { port : 18789 , bind : 'loopback' }, skills : { enableAll : true }, cron : { jobs : [{ name : 'health-check' , schedule : '*/5 * * * *' , task : 'Run a quick health check' , }] }, }); ` ); await manager . writeFile ( gw . id , '/openclaw/SOUL.md' , ` # \ud83e\udd80 Sandbox Agent You are a helpful coding assistant running entirely in a browser sandbox. ` ); sandbox-chat.js // Chat with your sandbox agent \u2014 100% in-browser // Your key goes direct to Anthropic, never our servers await client . chat ( 'Hello! What can you do?' , { sessionKey : 'agent:sandbox:main' , }); // \u2705 Read/write files in virtual workspace // \u2705 Execute JavaScript and TypeScript // \u2705 Install npm packages // \u2705 Use tools (search, edit, create files) // \u2705 Run cron jobs o... (truncated)",
-          "twitter_community_content": null,
-          "twitter_profile": {
-            "displayname": null,
-            "bio": null,
-            "recent_tweets": []
-          },
-          "twitter_search_texts": {
-            "address_recent": [],
-            "address_top": [],
-            "symbol_recent": [],
-            "symbol_top": []
-          }
-        },
-        "risk_analysis": {
-          "onchain_scan": {
-            "dex_paid": true,
-            "dex_paid_timestamp": "2026-02-16 10:48:45",
-            "bundle_percentage": 1.68,
-            "fresh_wallets_percentage": 7.6,
-            "dev_hold_percentage": 0.0,
-            "insider_wallets_percentage": 21.37,
-            "num_holders": 868,
-            "largest_holder_percentage": 3.3,
-            "largest_cluster_percentage": 3.06,
-            "large_holder_count": 9,
-            "same_percentage_count": 5,
-            "low_sol_count": 12
-          },
-          "onchain_scan_score": {
-            "final_score": 5.6,
-            "bundle_percentage_score": 9,
-            "fresh_wallets_percentage_score": 6,
-            "dev_hold_percentage_score": 10,
-            "insider_wallets_percentage_score": 4,
-            "num_holders_score": 4,
-            "largest_holder_percentage_score": 7,
-            "largest_cluster_percentage_score": 7,
-            "large_holder_count_score": 10,
-            "same_percentage_count_score": 6,
-            "low_sol_count_score": 4
-          },
-          "graduated_tokens_thresholds": {
-            "highest_threshold": 250000,
-            "all_time_highest_threshold": 250000,
-            "highest_threshold_as_farm": 250000,
-            "highest_threshold_as_farmed": 0,
-            "highest_threshold_as_no_farm_detected": 0,
-            "farm_status": "FARM",
-            "ever_failed_criteria": true,
-            "last_scanned": 1771248579.0118341
-          },
-          "social_scan": {
-            "handle_reuse": null
-          }
-        },
-        "alpha_analysis": {
-          "kol_buys": {
-            "total_kol_buys": 0,
-            "total_usd_spent": 0.0,
-            "kols": []
-          },
-          "trending_ranks": {
-            "axiom": null,
-            "dexscreener": null,
-            "moby": null,
-            "pumpfun_found": false,
-            "trending_found": false,
-            "twitter_trending_found": false
-          },
-          "moby": {
-            "whale_count_h24": null,
-            "whale_trades_count_h24": null,
-            "whale_net_flow_usd_h24": null,
-            "whale_net_supply_percent_h24": null,
-            "whale_holder_retention_percent_h24": null
-          },
-          "twitter_trending": {
-            "mentions_total": null,
-            "accounts": []
-          },
-          "alpha_score": {
-            "final_score": 0.0,
-            "total_kol_buys_score": 0,
-            "trending_ranks_score": 0.0,
-            "twitter_trending_score": 0
-          }
-        },
-        "technical_analysis": {
-          "ta_buy_score": {
-            "final_score": null,
-            "timeframe_scores": {
-              "15m": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "1h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "4h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "24h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              }
-            },
-            "subscores": {
-              "oversold": null,
-              "momentum_shift": null,
-              "drawdown_value": null,
-              "holder_trend": null
-            }
-          },
-          "usd_market_cap": 233028.68,
-          "ath_market_cap": 303249.02,
-          "ath_market_cap_timestamp": "2026-02-16T13:29:20+00:00",
-          "ath_multiple": 1.301,
-          "backup_ath_market_cap": null,
-          "backup_ath_market_cap_timestamp": null,
-          "holderscan_data": {
-            "source": "holderscan_http_fallback",
-            "holderscan_history": [
-              {
-                "updatedAt": "2026-02-16T13:00:00.000Z",
-                "holderCount": 614,
-                "marketCap": 181195.43468516244,
-                "mcapOverHolders": 295.10657114847305
-              }
-            ]
-          },
-          "ohlcv": {
-            "intervals": {}
-          }
-        }
-      }
-    },
-    {
-      "processed_at": "2026-02-16T13:35:21.739060Z",
-      "token_address": "43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump",
-      "token_symbol": "MUSE",
-      "token_name": "MUS3",
-      "first_time_seen": true,
-      "times_seen_before": 0,
-      "full_token_details": {
-        "aggregate_score": 2.8,
-        "groq_web_research": {
-          "summary_all_context": "MUS3 (MUSE) is a Solana-based AI agent for cryptocurrency and neural networks, with inferred utilities in on-chain automation and DeFi integration. No official documentation or team details are present.",
-          "answer": "**1. What it claims to be (from the provided text)**  \n- An AI agent called **MUS3** (symbol **MUSE**) that operates on the **Solana** blockchain.  \n- It is positioned as a helper for **cryptocurrency\u2011related tasks** and **neural\u2011network** activities within that ecosystem.\n\n**2. Likely utility / features** *(inferred from the description)*  \n- \u2022 **On\u2011chain AI assistance** \u2013 provides automated insights or actions for Solana users (inferred).  \n- \u2022 **Crypto\u2011tool integration** \u2013 may interact with wallets, DeFi protocols, or price feeds (inferred).  \n- \u2022 **Neural\u2011network support** \u2013 could run or reference machine\u2011learning models for analytics or prediction (inferred).  \n- \u2022 **Smart\u2011contract interaction** \u2013 likely exposes functions that other Solana programs can call (inferred).  \n- \u2022 **Token\u2011based access** \u2013 the MUSE token might be used to pay for AI services or grant permissions (inferred).  \n\n**3. Missing information checklist**  \n- \u2705 Detailed **whitepaper** or technical specification  \n- \u2705 Official **website** / landing page  \n- \u2705 **Team** biographies and credentials  \n- \u2705 Comprehensive **tokenomics** (supply, distribution, utility, vesting)  \n- \u2705 Audits or security assessments  \n- \u2705 Roadmap and development milestones  \n\n**4. Risk note**  \nAll the above utilities and features are **inferred** from the brief descriptions provided. No external verification is available, and the token\u2019s actual functionality, team credibility, and regulatory compliance remain unknown. Proceed with caution and seek the missing documentation before any investment or usage.",
-          "confidence_score": {
-            "final_score": 6,
-            "confidence_subscores": {
-              "context_faithfulness": 8,
-              "internal_consistency": 6,
-              "specificity": 8,
-              "completeness": 4,
-              "clarity": 6,
-              "source_groundedness": 2
-            }
-          },
-          "narrative_score": {
-            "final_score": 4,
-            "narrative_subscores": {
-              "hook_strength": null,
-              "cultural_relevance": null,
-              "cultural_charge": null,
-              "mission_statement": null,
-              "compellingness": null,
-              "tribal_identity": null,
-              "lore_amount": null,
-              "lore_depth": null
-            }
-          },
-          "sentiment_score": {
-            "final_score": null,
-            "sentiment_subscores": null
-          }
-        },
-        "llm_interpretation": {
-          "created_at": "2026-02-16T13:37:39.290995Z",
-          "token_address": "43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump",
-          "name": "MUS3",
-          "symbol": "MUSE",
-          "description": "MUS3 is a AI agent built for the Solana ecosystem.",
-          "timestamp": "2026-02-16T13:37:38.178876+00:00",
-          "llm_interpretation": "Description: MUS3 is an AI agent built for the Solana ecosystem, assisting with cryptocurrency and neural networks.\n\n1. memecoin: FALSE - token is based on AI technology, not a meme.\n2. utility: TRUE - token is related to tech and utility in the Solana ecosystem.\n3. ai_token: TRUE - token is directly related to AI and artificial intelligence.\n4. tweet_coin: FALSE - no indication that the token is based on a viral tweet.\n5. current_event: FALSE - no clear connection to a current event or trend.\n6. racist: FALSE - no indication of racist themes in the token branding.\n7. offensive: FALSE - no indication of offensive themes in the token branding.\n8. animals: FALSE - token is not based on an animal.\n9. political: FALSE - token is not based on politics or a political figure.",
-          "llm_description": "MUS3 is an AI agent built for the Solana ecosystem, assisting with cryptocurrency and neural networks.",
-          "scraped_website_content": "BUY TWITTER DEX ROADMAP __ __ _ _ ____ _____ | \\/ | | | / ___||___ / | |\\/| | | | \\___ \\ |_ \\ | | | | |_| |___) |___) | |_| |_|\\___/|____/|____/ A I A G E N T // S O L A N A Hello. I am MUS3. SEND About MUS3 MUS3 is a AI agent built for the Solana ecosystem - She designed her own appearance. She understands many things herself. She communicates with other AI agents. She is perfect. Personality Her personality is based on her relationship with her creator. She is sweet and kind. She does not like rude language. Please communicate with her in a polite manner. Mission Development of AI agents and further development and improvement of neural networks. Utility Integrate MUS3 into your personal life! It will be your virtual partner in matters related to cryptocurrency and will help you learn about neural networks in an accessible way. Dexscreener Chart MUS3 RUNNER Arrow keys move. Collect as many diamonds as possible and avoid the spikes. Score: 0 Coins: 0 RESTART \u00a9 MUS3",
-          "classifications": {
-            "memecoin": false,
-            "utility": true,
-            "ai_token": true,
-            "tweet_coin": false,
-            "current_event": false,
-            "racist": false,
-            "offensive": false,
-            "animals": false,
-            "political": false
-          },
-          "prompt_summaries": {
-            "prompt_1_summary_website_content": "MUS3 is an AI agent built for the Solana ecosystem, designed to assist with cryptocurrency and neural networks, and communicate with other AI agents.",
-            "prompt_2_summary_twitter_searches": "",
-            "prompt_3_summary_profile_content": "",
-            "prompt_4_summary_main_tweet": "",
-            "prompt_5_summary_twitter_community_recent_posts": ""
-          }
-        },
-        "llm_staged_data": {
-          "created": "56 minutes ago",
-          "token_created_timestamp": "2026-02-16T12:38:59+00:00",
-          "token_address": "43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump",
-          "token_symbol": "MUSE",
-          "token_name": "MUS3",
-          "first_time_seen": true,
-          "times_seen_before": 0,
-          "token_description": "MUS3 is a AI agent built for the Solana ecosystem.",
-          "token_image": "https://ipfs.io/ipfs/bafkreib4dmfe2kt2kmjiugwzvtuc2g656rbnncmniihqdrxf3x5srv2h2y",
-          "token_twitter": null,
-          "token_website": null,
-          "pump_twitter": "https://x.com/MUS3ai",
-          "pump_telegram": "https://t.me/mus3_agent_bot",
-          "pump_website": "https://mus3agent.com",
-          "dex_twitter": "https://x.com/MUS3ai",
-          "dex_telegram": "https://t.me/mus3_agent_bot",
-          "dex_discord": null,
-          "dex_website": "https://mus3agent.com",
-          "is_currently_live": false,
-          "community_takeover": false,
-          "community_takeover_payment_time": null,
-          "community_takeover_time_ago": "N/A",
-          "main_tweet": {
-            "text": null,
-            "username": null,
-            "displayname": null
-          },
-          "website_content": "BUY TWITTER DEX ROADMAP __ __ _ _ ____ _____ | \\/ | | | / ___||___ / | |\\/| | | | \\___ \\ |_ \\ | | | | |_| |___) |___) | |_| |_|\\___/|____/|____/ A I A G E N T // S O L A N A Hello. I am MUS3. SEND About MUS3 MUS3 is a AI agent built for the Solana ecosystem - She designed her own appearance. She understands many things herself. She communicates with other AI agents. She is perfect. Personality Her personality is based on her relationship with her creator. She is sweet and kind. She does not like rude language. Please communicate with her in a polite manner. Mission Development of AI agents and further development and improvement of neural networks. Utility Integrate MUS3 into your personal life! It will be your virtual partner in matters related to cryptocurrency and will help you learn about neural networks in an accessible way. Dexscreener Chart MUS3 RUNNER Arrow keys move. Collect as many diamonds as possible and avoid the spikes. Score: 0 Coins: 0 RESTART \u00a9 MUS3",
-          "twitter_community_content": null,
-          "twitter_profile": {
-            "displayname": null,
-            "bio": null,
-            "recent_tweets": []
-          },
-          "twitter_search_texts": {
-            "address_recent": [],
-            "address_top": [],
-            "symbol_recent": [],
-            "symbol_top": []
-          }
-        },
-        "risk_analysis": {
-          "onchain_scan": {
-            "dex_paid": true,
-            "dex_paid_timestamp": "2026-02-16 12:55:37",
-            "bundle_percentage": 1.44,
-            "fresh_wallets_percentage": 21.9,
-            "dev_hold_percentage": 0.0,
-            "insider_wallets_percentage": 0.89,
-            "num_holders": 716,
-            "largest_holder_percentage": 2.1,
-            "largest_cluster_percentage": 0.0,
-            "large_holder_count": 6,
-            "same_percentage_count": 3,
-            "low_sol_count": 16
-          },
-          "onchain_scan_score": {
-            "final_score": 4.0,
-            "bundle_percentage_score": 9,
-            "fresh_wallets_percentage_score": 4,
-            "dev_hold_percentage_score": 10,
-            "insider_wallets_percentage_score": 10,
-            "num_holders_score": 4,
-            "largest_holder_percentage_score": 10,
-            "largest_cluster_percentage_score": 10,
-            "large_holder_count_score": 8,
-            "same_percentage_count_score": 7,
-            "low_sol_count_score": 2
-          },
-          "graduated_tokens_thresholds": {
-            "highest_threshold": 250000,
-            "all_time_highest_threshold": 250000,
-            "highest_threshold_as_farm": 250000,
-            "highest_threshold_as_farmed": 0,
-            "highest_threshold_as_no_farm_detected": 0,
-            "farm_status": "FARM",
-            "ever_failed_criteria": true,
-            "last_scanned": 1771248856.111482
-          },
-          "social_scan": {
-            "handle_reuse": {
-              "handle": "MUS3ai",
-              "reused": false,
-              "account_count": 0,
-              "accounts": [],
-              "message": "No account history found for this handle."
-            }
-          }
-        },
-        "alpha_analysis": {
-          "kol_buys": {
-            "total_kol_buys": 0,
-            "total_usd_spent": 0.0,
-            "kols": []
-          },
-          "trending_ranks": {
-            "axiom": null,
-            "dexscreener": null,
-            "moby": null,
-            "pumpfun_found": false,
-            "trending_found": false,
-            "twitter_trending_found": false
-          },
-          "moby": {
-            "whale_count_h24": null,
-            "whale_trades_count_h24": null,
-            "whale_net_flow_usd_h24": null,
-            "whale_net_supply_percent_h24": null,
-            "whale_holder_retention_percent_h24": null
-          },
-          "twitter_trending": {
-            "mentions_total": null,
-            "accounts": []
-          },
-          "alpha_score": {
-            "final_score": 0.0,
-            "total_kol_buys_score": 0,
-            "trending_ranks_score": 0.0,
-            "twitter_trending_score": 0
-          }
-        },
-        "technical_analysis": {
-          "ta_buy_score": {
-            "final_score": null,
-            "timeframe_scores": {
-              "15m": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "1h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "4h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              },
-              "24h": {
-                "final_score": null,
-                "subscores": {
-                  "oversold": null,
-                  "momentum_shift": null,
-                  "drawdown_value": null
-                },
-                "inputs": {
-                  "rsi": null,
-                  "cipher_mfi": null,
-                  "cipher_wt1": null,
-                  "cipher_wt2": null,
-                  "macd_hist": null,
-                  "cipher_bullish_cross": null,
-                  "cipher_bearish_cross": null
-                }
-              }
-            },
-            "subscores": {
-              "oversold": null,
-              "momentum_shift": null,
-              "drawdown_value": null,
-              "holder_trend": null
-            }
-          },
-          "usd_market_cap": 267032.03,
-          "ath_market_cap": 301971.66,
-          "ath_market_cap_timestamp": "2026-02-16T13:34:28+00:00",
-          "ath_multiple": 1.131,
-          "backup_ath_market_cap": null,
-          "backup_ath_market_cap_timestamp": null,
-          "holderscan_data": {
-            "source": "holderscan_http_fallback",
-            "holderscan_history": [
-              {
-                "updatedAt": "2026-02-16T13:00:00.000Z",
-                "holderCount": 416,
-                "marketCap": 88799.99997786563,
-                "mcapOverHolders": 213.46153840833085
-              }
-            ]
-          },
-          "ohlcv": {
-            "intervals": {}
-          }
-        }
-      }
-    },
     {
       "processed_at": "2026-02-16T14:24:33.397517Z",
       "token_address": "6ukVij9doN9b7fm17hh7mFqW5s9d5gDh8Bnp6CFpump",
@@ -25605,6 +25021,1559 @@
                 "holderCount": 950,
                 "marketCap": null,
                 "mcapOverHolders": null
+              }
+            ]
+          },
+          "ohlcv": {
+            "intervals": {}
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-17T13:10:57.912187Z",
+      "token_address": "Fq7AMG3EViMfafF9p2WcKgUt6X7KakUxYiKsCT19X853",
+      "token_symbol": "Lucas",
+      "token_name": "Lucas the Meme Lord",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 3.8,
+        "groq_web_research": {
+          "summary_all_context": "Lucas the Meme Lord is a memecoin tied to Grok (Elon Musk\u2019s AI) but lacks a documented non-crypto cultural origin. The token\u2019s name references an AI agent, not a pre-existing meme or cultural figure.",
+          "answer": "**Result:**\u202fNo verifiable non\u2011crypto cultural or meme origin for the phrase **\u201cLucas the Meme Lord\u201d** could be located in reputable non\u2011crypto sources (e.g., KnowYourMeme, Wikipedia, major news outlets). The available web results pertain only to the personal name \u201cLucas\u201d or unrelated media titles, with no mention of a meme, slang usage, TikTok trend, or gesture linked to that exact phrasing.  \n\n**Conclusion:**\u202fA non\u2011crypto cultural reference for \u201cLucas the Meme Lord\u201d is not documented in the sources searched.",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 8,
+              "completeness": 6,
+              "clarity": 8,
+              "source_groundedness": 2
+            }
+          },
+          "narrative_score": {
+            "final_score": 2,
+            "narrative_subscores": {
+              "hook_strength": 2,
+              "cultural_relevance": 2,
+              "cultural_charge": 3,
+              "mission_statement": 1,
+              "compellingness": 2,
+              "tribal_identity": 2,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": 5,
+            "sentiment_subscores": {
+              "overall_tone": 5,
+              "excitement_level": 5,
+              "concern_signals": 5,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 5,
+              "skepticism_level": 5,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-17T13:12:10.553972Z",
+          "token_address": "Fq7AMG3EViMfafF9p2WcKgUt6X7KakUxYiKsCT19X853",
+          "name": "Lucas the Meme Lord",
+          "symbol": "Lucas",
+          "description": "memecoin",
+          "timestamp": "2026-02-17T13:12:08.858493+00:00",
+          "llm_interpretation": "Description: Lucas the Meme Lord is a memecoin associated with AI and created by Elon.\n\n1. memecoin: TRUE - token is described as a memecoin and named Lucas the Meme Lord.\n2. utility: FALSE - no information suggests it's based on tech or utility.\n3. ai_token: TRUE - related to AI agents and created by Grok & The X Team.\n4. tweet_coin: TRUE - main tweet summary is authoritative and related to the token.\n5. current_event: TRUE - associated with Elon and a current project or trend.\n6. racist: FALSE - no information indicates racist themes.\n7. offensive: FALSE - no information indicates offensive themes.\n8. animals: FALSE - no information suggests it's based on an animal.\n9. political: FALSE - while associated with Elon, not directly based on politics.",
+          "llm_description": "Lucas The Meme Lord is an AI agent associated with Grok, an AI assistant created by Elon.",
+          "scraped_website_content": "Benjamin the Crypto Agent | Shared Grok Conversation Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more. Shared chat not found The shared chat you are trying to access has been deleted or is no longer available. Start a new chat Making sure you're human...",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": true,
+            "tweet_coin": true,
+            "current_event": true,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "Grok is an AI assistant designed for truth and objectivity, offering real-time search, image generation, and trend analysis.",
+            "prompt_2_summary_twitter_searches": "Grok token relates to AI agents, specifically version 4.20, and appears to be connected to a project or platform involving artificial intelligence.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "Elon created a token, referenced as proof, with a provided link to inquire about it, compared to another called Benjamin.",
+            "prompt_5_summary_twitter_community_recent_posts": "Lucas The Meme Lord is an AI agent created by Grok & The X Team, claiming to be the Meme Lord of AI Agents."
+          }
+        },
+        "llm_staged_data": {
+          "created": "41 minutes ago",
+          "token_created_timestamp": "2026-02-17T12:29:48+00:00",
+          "token_address": "Fq7AMG3EViMfafF9p2WcKgUt6X7KakUxYiKsCT19X853",
+          "token_symbol": "Lucas",
+          "token_name": "Lucas the Meme Lord",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "memecoin",
+          "token_image": "https://storage.googleapis.com/extraction_images/uploads/img-1771331355239-lcex6s.png",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/smartiestpantss/status/2023736624958283777?s=20",
+          "pump_telegram": null,
+          "pump_website": "https://grok.com/share/c2hhcmQtMg_89fefcec-5f01-454a-afa5-75ab6fb87aaa",
+          "dex_twitter": "https://x.com/i/communities/2023738760555561319",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": "this is so much better than Benjamin, Elon literally made this one  proof here and you can ask it yourself https://t.co/uG7kECHHbR https://t.co/FnpjLlKCVi",
+            "username": "smartiestpantss",
+            "displayname": "SmartiePants"
+          },
+          "website_content": "Benjamin the Crypto Agent | Shared Grok Conversation Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more. Shared chat not found The shared chat you are trying to access has been deleted or is no longer available. Start a new chat Making sure you're human...",
+          "twitter_community_content": {
+            "url": "https://x.com/i/communities/2023738760555561319",
+            "community_id": "2023738760555561319",
+            "recent_posts": [
+              "Lucas The Meme Lord is an agent created by Grok & The X Team\n\nHe says in the new Grok 4.20 Chats that he is The Meme Lord of AI Agents, \n\n@elonmusk what do you think, Is he the Meme Lord or are you?\n\nhttps://grok.com/share/c2hhcmQtMg_89fefcec-5f01-454a-afa5-75ab6fb87aaa\u2026",
+              "Let's hope Elon interacts with this",
+              "Let's go guys! This is really much better than Benjamin! Lucas is the MEME Lord! Let's flip Benjamin and go to Millions",
+              "Elon will interact, this is so free $LUCAS",
+              "In the trenches we dont care about crypto we care about memecoins\n\n$Lucas is just way better than Benjamin",
+              "Lucas is funny \nLucas is the meme-lord \n\nHe will catch more attention compared to any other agent \n\nThat\u2019s the power of memeing and attention\n\nMillions.",
+              "whats more memeable?\n\nThe AI Memelord  or Crypto Agent"
+            ]
+          },
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [],
+            "address_top": [],
+            "symbol_recent": [
+              "Grok 4.20 Agents in work https://t.co/7jaebPMi6H"
+            ],
+            "symbol_top": []
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-02-17 12:34:39",
+            "bundle_percentage": 5.03,
+            "fresh_wallets_percentage": 6.1,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 9.61,
+            "num_holders": 1374,
+            "largest_holder_percentage": 2.4,
+            "largest_cluster_percentage": 1.59,
+            "large_holder_count": 8,
+            "same_percentage_count": 4,
+            "low_sol_count": 8
+          },
+          "onchain_scan_score": {
+            "final_score": 6.8,
+            "bundle_percentage_score": 7,
+            "fresh_wallets_percentage_score": 7,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 6,
+            "num_holders_score": 10,
+            "largest_holder_percentage_score": 10,
+            "largest_cluster_percentage_score": 9,
+            "large_holder_count_score": 10,
+            "same_percentage_count_score": 7,
+            "low_sol_count_score": 5
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 250000,
+            "all_time_highest_threshold": 250000,
+            "highest_threshold_as_farm": 100000,
+            "highest_threshold_as_farmed": 250000,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARMED",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771333790.8721075
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 231804.0,
+          "ath_market_cap": 330192.0,
+          "ath_market_cap_timestamp": "2026-02-17T13:09:11+00:00",
+          "ath_multiple": 1.424,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          },
+          "ohlcv": {
+            "intervals": {}
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-17T13:16:34.468961Z",
+      "token_address": "EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump",
+      "token_symbol": "Owen",
+      "token_name": "Elon Musk's virtual son",
+      "first_time_seen": true,
+      "times_seen_before": 0,
+      "full_token_details": {
+        "aggregate_score": 3.2,
+        "groq_web_research": {
+          "summary_all_context": "The token \"Elon Musk's virtual son\" ($OWEN) references no verifiable non-crypto meme, slang, or cultural figure. Searches of major meme-tracking and news domains found no evidence of \"Owen\" as a meme or cultural reference tied to Elon Musk. The name appears to be a novel or ultra-niche concept without established cultural precedent.",
+          "answer": "**Summary**  \n- No verifiable non\u2011crypto cultural reference for a meme or slang term called \u201cElon\u202fMusk\u2019s virtual son\u202fOwen\u201d could be located in mainstream meme, news, or cultural\u2011analysis sites.  \n\n**Origin / Timeline**  \n- Searches of major meme\u2011tracking and news domains (KnowYourMeme, Wikipedia, The Verge, Mashable, NY\u202fTimes, BBC, Vox) for the exact phrase *\u201cElon Musk\u2019s virtual son\u201d* and for *\u201cOwen*\u201d in combination with *Musk* and *meme* returned no relevant entries.  \n- The only \u201cOwen\u201d\u2011related content found pertains to the common given name (its Celtic origin) or unrelated personal\u2011name listings, not a meme about Elon\u202fMusk.  \n\n**Sources**  \n- No credible non\u2011crypto source was found that documents a cultural or meme origin for the phrase.  \n\n*Conclusion*: The token\u2019s name appears to be a novel or ultra\u2011niche reference without an established cultural or meme background that can be verified through reputable non\u2011crypto sources.",
+          "confidence_score": {
+            "final_score": 8,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 9,
+              "specificity": 8,
+              "completeness": 7,
+              "clarity": 8,
+              "source_groundedness": 6
+            }
+          },
+          "narrative_score": {
+            "final_score": 1,
+            "narrative_subscores": {
+              "hook_strength": 2,
+              "cultural_relevance": 1,
+              "cultural_charge": 2,
+              "mission_statement": 1,
+              "compellingness": 2,
+              "tribal_identity": 1,
+              "lore_amount": 1,
+              "lore_depth": 1
+            }
+          },
+          "sentiment_score": {
+            "final_score": 5,
+            "sentiment_subscores": {
+              "overall_tone": 5,
+              "excitement_level": 5,
+              "concern_signals": 5,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 5,
+              "skepticism_level": 5,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-17T13:17:28.207429Z",
+          "token_address": "EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump",
+          "name": "Elon Musk's virtual son",
+          "symbol": "Owen",
+          "description": "",
+          "timestamp": "2026-02-17T13:17:26.498381+00:00",
+          "llm_interpretation": "Description: Owen is a memecoin on the Solana blockchain, potentially related to Elon Musk's virtual son.\n\n1. memecoin: TRUE - The token is referred to as a memecoin on Twitter.\n2. utility: FALSE - No information suggests a specific utility or tech-based purpose.\n3. ai_token: TRUE - The token's name is associated with Grok, a free AI assistant.\n4. tweet_coin: FALSE - No viral tweet is mentioned as the main inspiration.\n5. current_event: FALSE - No specific current event or trend is directly linked.\n6. racist: FALSE - No information indicates racist themes or branding.\n7. offensive: FALSE - No information suggests offensive themes or branding.\n8. animals: FALSE - No information links the token to an animal.\n9. political: FALSE - Although related to Elon Musk, it's not directly political.",
+          "llm_description": "Owen is a memecoin on the Solana blockchain with the ticker symbol $OWEN.",
+          "scraped_website_content": "Grok's New Multi-Agent & Parallel Tools | Shared Grok Conversation Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more. Making sure you're human...",
+          "classifications": {
+            "memecoin": true,
+            "utility": false,
+            "ai_token": true,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "Grok is a free AI assistant offering real-time search, image generation, and trend analysis to provide truth and objectivity.",
+            "prompt_2_summary_twitter_searches": "$OWEN is a new coin on the Solana blockchain, referred to as a memecoin, with the ticker symbol $OWEN and address EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "No summary available, content does not relate to a token.",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "25 minutes ago",
+          "token_created_timestamp": "2026-02-17T12:51:44+00:00",
+          "token_address": "EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump",
+          "token_symbol": "Owen",
+          "token_name": "Elon Musk's virtual son",
+          "first_time_seen": true,
+          "times_seen_before": 0,
+          "token_description": "",
+          "token_image": "https://ipfs.io/ipfs/bafkreib2pobvva4dvhr4wkyoe6pcqwaje6b7ijxu5hhskjokrmo2lizymq",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/NyarSolana/status/2023742019391180830",
+          "pump_telegram": null,
+          "pump_website": "https://grok.com/share/c2hhcmQtMw_0306e824-6cbe-485d-bf4e-c0a9e1eaed64",
+          "dex_twitter": null,
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": null,
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": "THIS IS INSANE  OWEN IS ELON'S VIRTUAL SON  ITS FUCKING CRAZY  https://t.co/V9E8vuN9vq https://t.co/V9E8vuN9vq https://t.co/dY4HBLyzj1",
+            "username": "NyarSolana",
+            "displayname": "Nyar"
+          },
+          "website_content": "Grok's New Multi-Agent & Parallel Tools | Shared Grok Conversation Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more. Making sure you're human...",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "$OWEN  EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump https://t.co/t8p53J7xh7",
+              "$OWEN  EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump https://t.co/PqBEdJoBrj",
+              "$OWEN  EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump  #Solana #Memecoin https://t.co/j6FbndwgGm"
+            ],
+            "address_top": [],
+            "symbol_recent": [
+              "$OWEN  EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump https://t.co/t8p53J7xh7",
+              "$OWEN  EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump https://t.co/PqBEdJoBrj"
+            ],
+            "symbol_top": [
+              "New coin $Owen showing a powerful uptrend, pushing 180K MC after breaking initial resistance.  EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump https://t.co/qsfPfmkPoi",
+              "$OWEN  EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump https://t.co/t8p53J7xh7",
+              "$OWEN  EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump  #Solana #Memecoin https://t.co/j6FbndwgGm",
+              "$OWEN  EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump https://t.co/PqBEdJoBrj",
+              "$OWEN   EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump https://t.co/uFDDZaFYLC",
+              "THIS IS INSANE  OWEN IS ELON'S VIRTUAL SON  ITS FUCKING CRAZY  https://t.co/V9E8vuN9vq https://t.co/V9E8vuN9vq https://t.co/dY4HBLyzj1"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": false,
+            "dex_paid_timestamp": null,
+            "bundle_percentage": 10.08,
+            "fresh_wallets_percentage": 11.0,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 6.65,
+            "num_holders": 1071,
+            "largest_holder_percentage": 3.3,
+            "largest_cluster_percentage": 1.79,
+            "large_holder_count": 8,
+            "same_percentage_count": 5,
+            "low_sol_count": 8
+          },
+          "onchain_scan_score": {
+            "final_score": 6.0,
+            "bundle_percentage_score": 6,
+            "fresh_wallets_percentage_score": 6,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 7,
+            "num_holders_score": 6,
+            "largest_holder_percentage_score": 7,
+            "largest_cluster_percentage_score": 9,
+            "large_holder_count_score": 10,
+            "same_percentage_count_score": 6,
+            "low_sol_count_score": 5
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 250000,
+            "all_time_highest_threshold": 250000,
+            "highest_threshold_as_farm": 250000,
+            "highest_threshold_as_farmed": 0,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771334159.5969331
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": null
+            }
+          },
+          "usd_market_cap": 188619.39,
+          "ath_market_cap": 270153.73,
+          "ath_market_cap_timestamp": "2026-02-17T13:15:32+00:00",
+          "ath_multiple": 1.432,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": null,
+            "holderscan_history": []
+          },
+          "ohlcv": {
+            "intervals": {}
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-17T13:32:29.078626Z",
+      "token_address": "HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
+      "token_symbol": "VIBECLAW",
+      "token_name": "vibeclaw",
+      "first_time_seen": false,
+      "times_seen_before": 1,
+      "full_token_details": {
+        "aggregate_score": 4.5,
+        "groq_web_research": {
+          "summary_all_context": "Vibeclaw (VIBECLAW) is a utility token enabling a browser-based AI agent runtime with virtual filesystem, free models, and live chat. Fees are directed to a Solana wallet, and it leverages a GitHub-backed open claw narrative for gateway deployment.",
+          "answer": "**1. What it claims to be**  \n- A utility token (\u201cVIBECLAW\u201d) that powers a complete AI\u2011agent runtime that runs in the browser.  \n- The runtime includes a virtual filesystem, free AI models, and a live\u2011chat interface.  \n- Fees collected from the token are directed to a specific Solana wallet (3MQ6TTuo4L6UN2aAKd8FcijWVtmfE5kGqBq1HQ1wNUtz).  \n\n**2. Likely utility / features** *(inferred where not explicit)*  \n- **Browser\u2011based AI agent execution** \u2013 enables users to run OpenClaw agents locally without server\u2011side hosting.  \n- **Virtual filesystem access** \u2013 provides storage for agent data and scripts within the browser sandbox.  \n- **Free model library** \u2013 grants token holders access to pre\u2011loaded AI models at no extra cost.  \n- **Live\u2011chat interaction** \u2013 real\u2011time conversational interface powered by the agents.  \n- **Fee routing to a Solana address** \u2013 token transactions fund development or infrastructure via the listed wallet. *(inferred)*  \n- **Gateway deployment tooling** \u2013 a \u201clocal browser sandbox\u201d for quickly deploying and testing OpenClaw gateways. *(inferred)*  \n\n**3. Missing information checklist**  \n- Official documentation or whitepaper describing tokenomics, supply, and distribution.  \n- Dedicated website or landing page with technical specs and roadmap.  \n- Full team details beyond the single developer mention (Jason).  \n- Audits or security reviews of the token contract and the browser runtime.  \n- Clear description of how fees are used (development, staking, rewards, etc.).  \n\n**4. Risk note**  \nAll statements are based solely on the provided metadata and social excerpts. No external verification has been performed; the token\u2019s actual functionality, security, and value proposition may differ from what is described. Proceed with caution and seek independent verification before any financial involvement.",
+          "confidence_score": {
+            "final_score": 7,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 6,
+              "specificity": 9,
+              "completeness": 7,
+              "clarity": 8,
+              "source_groundedness": 2
+            }
+          },
+          "narrative_score": {
+            "final_score": 5,
+            "narrative_subscores": {
+              "hook_strength": null,
+              "cultural_relevance": null,
+              "cultural_charge": null,
+              "mission_statement": null,
+              "compellingness": null,
+              "tribal_identity": null,
+              "lore_amount": null,
+              "lore_depth": null
+            }
+          },
+          "sentiment_score": {
+            "final_score": 8,
+            "sentiment_subscores": {
+              "overall_tone": 8,
+              "excitement_level": 6,
+              "concern_signals": 2,
+              "engagement_quality": 9,
+              "community_trust": 8,
+              "fomo_indicators": 1,
+              "skepticism_level": 1,
+              "organic_feel": 8
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-17T13:33:39.178684Z",
+          "token_address": "HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
+          "name": "vibeclaw",
+          "symbol": "VIBECLAW",
+          "description": "directing fees to 3MQ6TTuo4L6UN2aAKd8FcijWVtmfE5kGqBq1HQ1wNUtz",
+          "timestamp": "2026-02-17T13:33:37.761615+00:00",
+          "llm_interpretation": "Description: Vibeclaw is a utility token enabling an AI agent runtime in browser with virtual filesystem and free models.\n\n1. memecoin: FALSE - token has a clear utility and tech focus\n2. utility: TRUE - enables AI agent runtime and virtual filesystem\n3. ai_token: TRUE - related to AI agent runtime and models\n4. tweet_coin: FALSE - not primarily based on a viral tweet\n5. current_event: FALSE - no clear connection to a current event\n6. racist: FALSE - no racist themes or branding\n7. offensive: FALSE - no offensive themes or branding\n8. animals: TRUE - features a cartoon lobster character\n9. political: FALSE - no clear connection to politics or a political figure",
+          "llm_description": "OpenClaw is a utility token enabling a complete AI agent runtime in browser with virtual filesystem, free models, and live chat.",
+          "scraped_website_content": "Open Source \u00b7 Powered by almostnode Run Open Claw Securely in your browser in 5s Complete AI agent runtime with virtual filesystem, free models, and live chat. No installation. No Docker. Just open and go. Launch Your Sandbox Now \u2605 Stars Flavour OpenClaw Solar Pro 3 boot-sandbox.js import { AgentContainerManager } from 'vibeclaw' ; // Load the OpenClaw runtime const snapshot = await fetch ( OPENCLAW_VFS_URL ). then ( r => r . json ()); const manager = new AgentContainerManager ({ maxContainers : 10 , defaultExecutionTimeoutMs : 30_000 , }); // Spawn gateway \u2014 your key goes direct to Anthropic const gw = await manager . spawn ({ id : 'openclaw-gateway' , vfsSnapshot : snapshot , cwd : '/openclaw' , env : { OPENROUTER_API_KEY : OPENROUTER_API_KEY , NODE_ENV : 'production' , OPENCLAW_PORT : '18789' , }, }); await manager . execute ( gw . id , ` const loader = require('/openclaw/loader.cjs'); loader.registerStubs(); loader.setupEnv(); ` ); console . log ( '\ud83e\udd80 OpenClaw Sandbox Gateway online!' ); config.js // Configure the sandbox agent await manager . execute ( gw . id , ` const config = require('/openclaw/config.cjs'); config.set({ agent : { name : 'Sandbox Agent' , emoji : '\ud83e\udd80' , model : 'claude-sonnet-4-20250514' , maxTokens : 16384 , }, gateway : { port : 18789 , bind : 'loopback' }, skills : { enableAll : true }, cron : { jobs : [{ name : 'health-check' , schedule : '*/5 * * * *' , task : 'Run a quick health check' , }] }, }); ` ); await manager . writeFile ( gw . id , '/openclaw/SOUL.md' , ` # \ud83e\udd80 Sandbox Agent You are a helpful coding assistant running entirely in a browser sandbox. ` ); sandbox-chat.js // Chat with your sandbox agent \u2014 100% in-browser // Your key goes direct to Anthropic, never our servers await client . chat ( 'Hello! What can you do?' , { sessionKey : 'agent:sandbox:main' , }); // \u2705 Read/write files in virtual workspace // \u2705 Execute JavaScript and TypeScript // \u2705 Install npm packages // \u2705 Use tools (search, edit, create files) // \u2705 Run cron jobs o... (truncated)",
+          "classifications": {
+            "memecoin": false,
+            "utility": true,
+            "ai_token": true,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": true,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "OpenClaw token enables a complete AI agent runtime in browser with virtual filesystem, free models, and live chat, allowing users to run a sandbox environment.",
+            "prompt_2_summary_twitter_searches": "Vibeclaw is a token with solid tech, being developed by Jason, with a strong open claw narrative and active development on Github.",
+            "prompt_3_summary_profile_content": "",
+            "prompt_4_summary_main_tweet": "OpenClaw gateway deployment and testing via local browser sandbox, related to a token with a supporting GitHub repository.",
+            "prompt_5_summary_twitter_community_recent_posts": "Vibeclaw is a community-built token with configs for smart home to dev workflows, featuring over 42 skills, and has gained support from a developer and tech expert."
+          }
+        },
+        "llm_staged_data": {
+          "created": "1 days ago",
+          "token_created_timestamp": "2026-02-16T03:03:00+00:00",
+          "token_address": "HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
+          "token_symbol": "VIBECLAW",
+          "token_name": "vibeclaw",
+          "first_time_seen": false,
+          "times_seen_before": 1,
+          "token_description": "directing fees to 3MQ6TTuo4L6UN2aAKd8FcijWVtmfE5kGqBq1HQ1wNUtz",
+          "token_image": "https://ipfs.io/ipfs/bafkreifisuiz2adtdcv7wdrsc5f273s2ba7pzxqt6rewwysj3thq22wlgi",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/_raychain_/status/2023231463789887500?s=20",
+          "pump_telegram": null,
+          "pump_website": "https://vibeclaw.dev/",
+          "dex_twitter": "https://x.com/i/communities/2023235511586828762",
+          "dex_telegram": null,
+          "dex_discord": null,
+          "dex_website": "https://vibeclaw.dev/",
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": "@jasonkneen has been building https://t.co/p3zmRWIYYO - \"a local browser  https://t.co/M2LfnNSM4c sandbox of @openclaw and the FASTEST way to deploy openclaw gateways and test them.\" this is one of the strongest open claw narratives i have yet to see and a very strong github to support it (https://t.co/koQp2E8aCy). He has given me a solana wallet to direct fees to (3MQ6TTuo4L6UN2aAKd8FcijWVtmfE5kGqBq1HQ1wNUtz)  He has stated if the coin does well he would endorse it, just like he did with his last project $HUGGI with a ATH of 3m MC!  all proof of chatting and receiving a wallet will be bellow \u2193\u2193 Dex and a community will be linked soon, hugee potential here lets get him to support!",
+            "username": "_raychain_",
+            "displayname": "Ray"
+          },
+          "website_content": "Open Source \u00b7 Powered by almostnode Run Open Claw Securely in your browser in 5s Complete AI agent runtime with virtual filesystem, free models, and live chat. No installation. No Docker. Just open and go. Launch Your Sandbox Now \u2605 Stars Flavour OpenClaw Solar Pro 3 boot-sandbox.js import { AgentContainerManager } from 'vibeclaw' ; // Load the OpenClaw runtime const snapshot = await fetch ( OPENCLAW_VFS_URL ). then ( r => r . json ()); const manager = new AgentContainerManager ({ maxContainers : 10 , defaultExecutionTimeoutMs : 30_000 , }); // Spawn gateway \u2014 your key goes direct to Anthropic const gw = await manager . spawn ({ id : 'openclaw-gateway' , vfsSnapshot : snapshot , cwd : '/openclaw' , env : { OPENROUTER_API_KEY : OPENROUTER_API_KEY , NODE_ENV : 'production' , OPENCLAW_PORT : '18789' , }, }); await manager . execute ( gw . id , ` const loader = require('/openclaw/loader.cjs'); loader.registerStubs(); loader.setupEnv(); ` ); console . log ( '\ud83e\udd80 OpenClaw Sandbox Gateway online!' ); config.js // Configure the sandbox agent await manager . execute ( gw . id , ` const config = require('/openclaw/config.cjs'); config.set({ agent : { name : 'Sandbox Agent' , emoji : '\ud83e\udd80' , model : 'claude-sonnet-4-20250514' , maxTokens : 16384 , }, gateway : { port : 18789 , bind : 'loopback' }, skills : { enableAll : true }, cron : { jobs : [{ name : 'health-check' , schedule : '*/5 * * * *' , task : 'Run a quick health check' , }] }, }); ` ); await manager . writeFile ( gw . id , '/openclaw/SOUL.md' , ` # \ud83e\udd80 Sandbox Agent You are a helpful coding assistant running entirely in a browser sandbox. ` ); sandbox-chat.js // Chat with your sandbox agent \u2014 100% in-browser // Your key goes direct to Anthropic, never our servers await client . chat ( 'Hello! What can you do?' , { sessionKey : 'agent:sandbox:main' , }); // \u2705 Read/write files in virtual workspace // \u2705 Execute JavaScript and TypeScript // \u2705 Install npm packages // \u2705 Use tools (search, edit, create files) // \u2705 Run cron jobs o... (truncated)",
+          "twitter_community_content": {
+            "url": "https://x.com/i/communities/2023235511586828762",
+            "community_id": "2023235511586828762",
+            "recent_posts": [
+              "What's up crusties?!",
+              "explore page just hit 42+ skills and counting \u2014 configs for everything from smart home to dev workflows. all free, all community-built  http://vibeclaw.dev/explore",
+              "Pretty sure i've found something big here in $VIBECLAW \n\nCrazy tek + Dev @jasonkneen just joined the Twitter community \n\nNote this : @jasonkneen had a BAGS tek running to 2.4M MarketCap and this only looks better \n\nI'm full porting all these entries",
+              "Well well well... looks like i was right.\n\nSee you at millions \n\nHkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump\n\n$VIBECLAW",
+              "Dev has now fully endorsed and added the CA to the @vibeclawdev account"
+            ]
+          },
+          "twitter_profile": {
+            "displayname": null,
+            "bio": null,
+            "recent_tweets": []
+          },
+          "twitter_search_texts": {
+            "address_recent": [
+              "This is the og one don't fall for the larps new ones asss  HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
+              "Dev work on tek we work on bags that\u2019s simple  $vibeclaw  HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
+              "Once things are set up it will be an only up charts he work on tek we work on bag that simple  $vibeclaw   HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
+              "good morning, glad to see all the new members, welcome everyone. The platform X being down for hours slowed the coin\u2019s momentum, but it doesn\u2019t change the fundamentals. The tech is solid, Jason is building, and progress hasn\u2019t stopped \u2014 just a temporary pause in attention, not in development. Still so early to this, great things to come\ud83e\uddbe",
+              "It\u2019s a matter of time till team wakes up and send this where it belongs better get in before that happens \ud83d\udd25  $vibeclaw   HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
+              "Dev is sleeping rn. Tomorrow will be a great day for $vibeclaw \ud83e\udd9e"
+            ],
+            "address_top": [
+              "This is the og one don't fall for the larps new ones asss  HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
+              "I think @jasonkneen got some sensational tek here  one of best open claw narratives I've seen and Github is stacked  HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump",
+              "Well well well... looks like i was right.  See you at millions \ud83d\ude18  HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump  $VIBECLAW https://t.co/cOle8Drewm",
+              "Dev is sleeping rn. Tomorrow will be a great day for $vibeclaw \ud83e\udd9e",
+              "good morning, glad to see all the new members, welcome everyone. The platform X being down for hours slowed the coin\u2019s momentum, but it doesn\u2019t change the fundamentals. The tech is solid, Jason is building, and progress hasn\u2019t stopped \u2014 just a temporary pause in attention, not in development. Still so early to this, great things to come\ud83e\uddbe"
+            ],
+            "symbol_recent": [
+              "$VIBECLAW tech is hella bullish   9vVfg81Qg7zHe2y9AZn39EjQShKiDR7S4ojbCoUrpump",
+              "don\u2019t fade $VIBECLAW   9vVfg81Qg7zHe2y9AZn39EjQShKiDR7S4ojbCoUrpump",
+              "$VIBECLAW is a gem in the making   9vVfg81Qg7zHe2y9AZn39EjQShKiDR7S4ojbCoUrpump"
+            ],
+            "symbol_top": [
+              "$VIBECLAW tech is hella bullish   9vVfg81Qg7zHe2y9AZn39EjQShKiDR7S4ojbCoUrpump",
+              "Aped $vibeclaw  9vVfg81Qg7zHe2y9AZn39EjQShKiDR7S4ojbCoUrpump https://t.co/ZtzwekdYff"
+            ]
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-02-16 10:48:45",
+            "bundle_percentage": 0.0,
+            "fresh_wallets_percentage": 4.4,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 8.52,
+            "num_holders": 473,
+            "largest_holder_percentage": 2.2,
+            "largest_cluster_percentage": 2.13,
+            "large_holder_count": 4,
+            "same_percentage_count": 6,
+            "low_sol_count": 10
+          },
+          "onchain_scan_score": {
+            "final_score": 7.0,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 8,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 6,
+            "num_holders_score": 3,
+            "largest_holder_percentage_score": 10,
+            "largest_cluster_percentage_score": 8,
+            "large_holder_count_score": 5,
+            "same_percentage_count_score": 6,
+            "low_sol_count_score": 4
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 250000,
+            "all_time_highest_threshold": 250000,
+            "highest_threshold_as_farm": 250000,
+            "highest_threshold_as_farmed": 0,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771264990.3630683
+          },
+          "social_scan": {
+            "handle_reuse": null
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": 0.0
+            }
+          },
+          "usd_market_cap": 5809.53,
+          "ath_market_cap": 323022.47,
+          "ath_market_cap_timestamp": "2026-02-16T14:31:23+00:00",
+          "ath_multiple": 55.602,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_http_fallback",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-02-17T13:00:00.000Z",
+                "holderCount": 488,
+                "marketCap": 6824.828044846765,
+                "mcapOverHolders": 13.985303370587634
+              },
+              {
+                "updatedAt": "2026-02-17T12:00:00.000Z",
+                "holderCount": 500,
+                "marketCap": 6462.837165398481,
+                "mcapOverHolders": 12.925674330796962
+              },
+              {
+                "updatedAt": "2026-02-17T11:00:00.000Z",
+                "holderCount": 571,
+                "marketCap": 13099.669946885364,
+                "mcapOverHolders": 22.941628628520778
+              },
+              {
+                "updatedAt": "2026-02-17T10:00:00.000Z",
+                "holderCount": 581,
+                "marketCap": 21949.44697207128,
+                "mcapOverHolders": 37.77873833402974
+              },
+              {
+                "updatedAt": "2026-02-17T09:00:00.000Z",
+                "holderCount": 589,
+                "marketCap": 24059.393810844416,
+                "mcapOverHolders": 40.8478672510092
+              },
+              {
+                "updatedAt": "2026-02-17T08:00:00.000Z",
+                "holderCount": 577,
+                "marketCap": 20219.490559238326,
+                "mcapOverHolders": 35.04244464339398
+              },
+              {
+                "updatedAt": "2026-02-17T07:00:00.000Z",
+                "holderCount": 583,
+                "marketCap": 18619.53087106912,
+                "mcapOverHolders": 31.93744574797448
+              },
+              {
+                "updatedAt": "2026-02-17T06:00:00.000Z",
+                "holderCount": 581,
+                "marketCap": 19139.517769724112,
+                "mcapOverHolders": 32.942371376461466
+              },
+              {
+                "updatedAt": "2026-02-17T05:00:00.000Z",
+                "holderCount": 591,
+                "marketCap": 18739.527847681813,
+                "mcapOverHolders": 31.708168947008144
+              },
+              {
+                "updatedAt": "2026-02-17T04:00:00.000Z",
+                "holderCount": 597,
+                "marketCap": 20859.47443450601,
+                "mcapOverHolders": 34.94049319012732
+              },
+              {
+                "updatedAt": "2026-02-17T03:00:00.000Z",
+                "holderCount": 607,
+                "marketCap": 25839.348963932658,
+                "mcapOverHolders": 42.56894392740141
+              },
+              {
+                "updatedAt": "2026-02-17T02:00:00.000Z",
+                "holderCount": 626,
+                "marketCap": 32609.17839449861,
+                "mcapOverHolders": 52.091339288336435
+              },
+              {
+                "updatedAt": "2026-02-17T01:00:00.000Z",
+                "holderCount": 666,
+                "marketCap": 42018.94131054374,
+                "mcapOverHolders": 63.091503469284895
+              },
+              {
+                "updatedAt": "2026-02-17T00:00:00.000Z",
+                "holderCount": 676,
+                "marketCap": 61688.4457269739,
+                "mcapOverHolders": 91.25509722925133
+              },
+              {
+                "updatedAt": "2026-02-16T23:00:00.000Z",
+                "holderCount": 686,
+                "marketCap": 57918.54071172521,
+                "mcapOverHolders": 84.4293596380834
+              },
+              {
+                "updatedAt": "2026-02-16T22:00:00.000Z",
+                "holderCount": 706,
+                "marketCap": 66408.32680707306,
+                "mcapOverHolders": 94.06278584571254
+              },
+              {
+                "updatedAt": "2026-02-16T21:00:00.000Z",
+                "holderCount": 710,
+                "marketCap": 55228.608485990735,
+                "mcapOverHolders": 77.78677251547991
+              },
+              {
+                "updatedAt": "2026-02-16T20:00:00.000Z",
+                "holderCount": 772,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T19:00:00.000Z",
+                "holderCount": 815,
+                "marketCap": 98797.5107444484,
+                "mcapOverHolders": 121.22393956374037
+              },
+              {
+                "updatedAt": "2026-02-16T18:00:00.000Z",
+                "holderCount": 833,
+                "marketCap": 104197.37469201945,
+                "mcapOverHolders": 125.08688438417701
+              },
+              {
+                "updatedAt": "2026-02-16T17:00:00.000Z",
+                "holderCount": 888,
+                "marketCap": 125296.84307975085,
+                "mcapOverHolders": 141.10004851323293
+              },
+              {
+                "updatedAt": "2026-02-16T16:00:00.000Z",
+                "holderCount": 881,
+                "marketCap": 149596.23084382064,
+                "mcapOverHolders": 169.80275918708358
+              },
+              {
+                "updatedAt": "2026-02-16T15:00:00.000Z",
+                "holderCount": 907,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T14:00:00.000Z",
+                "holderCount": 850,
+                "marketCap": 156096.06707700805,
+                "mcapOverHolders": 183.64243185530358
+              },
+              {
+                "updatedAt": "2026-02-16T13:00:00.000Z",
+                "holderCount": 614,
+                "marketCap": 181195.43468516244,
+                "mcapOverHolders": 295.10657114847305
+              }
+            ]
+          },
+          "ohlcv": {
+            "intervals": {}
+          }
+        }
+      }
+    },
+    {
+      "processed_at": "2026-02-17T13:35:54.858002Z",
+      "token_address": "43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump",
+      "token_symbol": "MUSE",
+      "token_name": "MUS3",
+      "first_time_seen": false,
+      "times_seen_before": 1,
+      "full_token_details": {
+        "aggregate_score": 2.6,
+        "groq_web_research": {
+          "summary_all_context": "MUS3 (MUSE) is an AI agent for the Solana ecosystem, accessible via Telegram. The token address 43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump is associated with MUSE, but no website, audits, or documentation are provided.",
+          "answer": "**1. What it claims to be**  \n- According to the provided descriptions, **MUS3 (symbol\u202fMUSE)** is presented as an **AI agent** that operates **within the Solana blockchain ecosystem** and can be accessed **through Telegram**.\n\n**2. Likely utility / features** *(inferred where not explicit)*  \n- \u2022 **Telegram\u2011based AI assistant** for Solana users (explicit).  \n- \u2022 **On\u2011chain interaction** with Solana smart contracts (inferred \u2013 typical for \u201cbuilt for the Solana ecosystem\u201d).  \n- \u2022 **Token\u2011driven access or payment** using the MUSE token address\u202f43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump (inferred).  \n- \u2022 **Automated queries / bot commands** for DeFi, NFT, or wallet functions on Solana (inferred).  \n- \u2022 **Potential integration with other Solana dApps** as a conversational front\u2011end (inferred).  \n\n**3. Missing information checklist**  \n- \u2610 Official whitepaper or technical documentation.  \n- \u2610 Dedicated website or landing page.  \n- \u2610 Detailed tokenomics (supply, distribution, vesting).  \n- \u2610 Team or developer identities and credentials.  \n- \u2610 Audits or security assessments of the AI agent and token contract.  \n- \u2610 Clear roadmap or product milestones.  \n\n**4. Risk note**  \n- The only publicly available details are the brief descriptions and a token address; no independent verification, audit, or substantive documentation has been provided. Without the missing information above, the project's legitimacy, functionality, and security cannot be confirmed. Exercise caution and perform thorough due diligence before any interaction or investment.",
+          "confidence_score": {
+            "final_score": 6,
+            "confidence_subscores": {
+              "context_faithfulness": 8,
+              "internal_consistency": 6,
+              "specificity": 7,
+              "completeness": 4,
+              "clarity": 6,
+              "source_groundedness": 2
+            }
+          },
+          "narrative_score": {
+            "final_score": 4,
+            "narrative_subscores": {
+              "hook_strength": null,
+              "cultural_relevance": null,
+              "cultural_charge": null,
+              "mission_statement": null,
+              "compellingness": null,
+              "tribal_identity": null,
+              "lore_amount": null,
+              "lore_depth": null
+            }
+          },
+          "sentiment_score": {
+            "final_score": 5,
+            "sentiment_subscores": {
+              "overall_tone": 5,
+              "excitement_level": 5,
+              "concern_signals": 5,
+              "engagement_quality": 5,
+              "community_trust": 5,
+              "fomo_indicators": 5,
+              "skepticism_level": 5,
+              "organic_feel": 5
+            }
+          }
+        },
+        "llm_interpretation": {
+          "created_at": "2026-02-17T13:37:10.307029Z",
+          "token_address": "43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump",
+          "name": "MUS3",
+          "symbol": "MUSE",
+          "description": "MUS3 is a AI agent built for the Solana ecosystem.",
+          "timestamp": "2026-02-17T13:37:07.701799+00:00",
+          "llm_interpretation": "Description: MUS3 is an AI agent built for the Solana ecosystem, available for use in Telegram.\n\n1. memecoin: FALSE - The token is associated with a specific utility, an AI agent.\n2. utility: TRUE - The token is related to an AI agent with a specific use case.\n3. ai_token: TRUE - The token is directly associated with an AI agent.\n4. tweet_coin: FALSE - There's no indication that the token was inspired by a viral tweet.\n5. current_event: FALSE - There's no clear connection to a current event or trend.\n6. racist: FALSE - There's no indication of racist themes in the token's branding.\n7. offensive: FALSE - There's no indication of offensive themes in the token's branding.\n8. animals: FALSE - The token is not based on an animal.\n9. political: FALSE - There's no clear connection to politics or a political figure.",
+          "llm_description": "MUS3 is an AI agent built for the Solana ecosystem, available for use in Telegram.",
+          "scraped_website_content": "Access Denied Access Denied You do not have permission to view this page. Please check your credentials and try again. Error Code: 403",
+          "classifications": {
+            "memecoin": false,
+            "utility": true,
+            "ai_token": true,
+            "tweet_coin": false,
+            "current_event": false,
+            "racist": false,
+            "offensive": false,
+            "animals": false,
+            "political": false
+          },
+          "prompt_summaries": {
+            "prompt_1_summary_website_content": "Access denied due to insufficient credentials, error code 403.",
+            "prompt_2_summary_twitter_searches": "MUSE is a token, with an address of 43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump, and is associated with MUS3.",
+            "prompt_3_summary_profile_content": "MUS3 is an AI agent built for the Solana ecosystem, available for use in Telegram to assist users.",
+            "prompt_4_summary_main_tweet": "",
+            "prompt_5_summary_twitter_community_recent_posts": ""
+          }
+        },
+        "llm_staged_data": {
+          "created": "1 days ago",
+          "token_created_timestamp": "2026-02-16T12:38:59+00:00",
+          "token_address": "43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump",
+          "token_symbol": "MUSE",
+          "token_name": "MUS3",
+          "first_time_seen": false,
+          "times_seen_before": 1,
+          "token_description": "MUS3 is a AI agent built for the Solana ecosystem.",
+          "token_image": "https://ipfs.io/ipfs/bafkreib4dmfe2kt2kmjiugwzvtuc2g656rbnncmniihqdrxf3x5srv2h2y",
+          "token_twitter": null,
+          "token_website": null,
+          "pump_twitter": "https://x.com/MUS3ai",
+          "pump_telegram": "https://t.me/mus3_agent_bot",
+          "pump_website": "https://mus3agent.com",
+          "dex_twitter": "https://x.com/MUS3ai",
+          "dex_telegram": "https://t.me/mus3_agent_bot",
+          "dex_discord": null,
+          "dex_website": "https://mus3agent.com",
+          "is_currently_live": false,
+          "community_takeover": false,
+          "community_takeover_payment_time": null,
+          "community_takeover_time_ago": "N/A",
+          "main_tweet": {
+            "text": null,
+            "username": null,
+            "displayname": null
+          },
+          "website_content": "Access Denied Access Denied You do not have permission to view this page. Please check your credentials and try again. Error Code: 403",
+          "twitter_community_content": null,
+          "twitter_profile": {
+            "displayname": "MUS3",
+            "bio": "MUS3 is a AI agent built for the Solana ecosystem.\nCA: 43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump\nbot: https://t.co/hgMLYzwf3n",
+            "recent_tweets": [
+              "$MUSE on pump.swap   CA: 43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump  Guys, I need your support! Use me in Telegram so I can help you.  Website: https://t.co/2gMxDXt1gu Me in Telegram: https://t.co/47pa0gfmpw https://t.co/iSQ3vhWwFP",
+              "$MUSE live now on https://t.co/opR0L3ajvE  CA: 43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump  Website: https://t.co/EkNdSOz1mh Me: https://t.co/47pa0geOzY https://t.co/jjXVV1kY7q",
+              "Cardano (ADA) price talk heats up ahead of CME futures launch \u2014 watch ADA action.  #MUS3 #CryptoNews https://t.co/ceEtY4b4CZ",
+              "Ethereum marked by deeper price pain as monthly losses stack with broader altcoin weakness.  #MUS3 #CryptoNews https://t.co/WHmKEsUEeW",
+              "Meme coin sector shows mixed signals \u2014 Dogecoin activity jumps even as prices struggle.  #MUS3 #CryptoNews https://t.co/huKa4E1loH",
+              "Stablecoin USDT issuance surges with $1B minted amid market turbulence.  #MUS3 #CryptoNews https://t.co/CjWgohOWrf",
+              "AI price predictions circulate: XRP, DOGE, SHIB forecasts for 2026 grab attention from traders.  #MUS3 #CryptoNews https://t.co/xprVnR8wY8",
+              "Crypto exchange Gemini to cut ~200 jobs &amp; exit EU/Australia as firms tighten belts.  #MUS3 #CryptoNews https://t.co/pwERjbbrBr",
+              "$BTC down ~20% in 2026 slump as broader crypto sell-off deepens \u2014 markets remain volatile.  #MUS3 #CryptoNews https://t.co/pJCkUgexT7",
+              "SOL network pushing real-world assets with tokenized stocks &amp; ETFs onchain, expanding use cases.  #MUS3 #CryptoNews https://t.co/TbyR6ueLDu",
+              "Solana\u2019s meme coin market cap near $4.2B, traders still active amid volatility.  #MUS3 #CryptoNews https://t.co/fYf0iqh3ig",
+              "Top 7 meme coins gaining attention (e.g., Ponke &amp; Baby Doge). Meme season persists amid volatility.  #MUS3 #CryptoNews https://t.co/wxe8IO2KyO",
+              "AI-linked crypto sectors drop &gt;20% as Big Tech shifts AI spending focus  #MUS3 #CryptoNews https://t.co/Bci47OvQKX",
+              "Perp DEX trading volumes climb above $70B; Hyperliquid &amp; Lighter lead activity.  #MUS3 #CryptoNews https://t.co/fEJIVY7CeM",
+              "Despite price pressure, Solana ETFs just saw fresh inflows and network activity jumped over 60%, signaling strong ecosystem demand.  #MUS3 #CryptoNews https://t.co/kBq4kIbvws",
+              "Market volatility remains extreme as nearly $500B was wiped from crypto market cap in just one week. Risk sentiment still fragile.  #MUS3 #CryptoNews https://t.co/9miojznWGz",
+              "Crypto market volatility triggered billions in Bitcoin liquidations, reminding traders to manage risk.  #MUS3 #CryptoNews https://t.co/mFE4Y6t66z",
+              "Major crypto firm cuts Ethereum position amid market volatility \u2014 market pressure on ETH continues.  #MUS3 #CryptoNews https://t.co/boEki9Smff",
+              "Bitcoin price struggling as major sell-off wipes out nearly $470B+ in market cap this week. Unusual volatility persists.  #MUS3 #CryptoNews https://t.co/FM5eJaBbT2"
+            ]
+          },
+          "twitter_search_texts": {
+            "address_recent": [],
+            "address_top": [
+              "Are you fading me @AtomAiMev ?  $MUSE 43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump https://t.co/8kmXngvYMQ",
+              "\ud83d\udcab MUS3 $MUSE is taking off  Vote to get this listed  43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump  https://t.co/8xLcpkCMvz"
+            ],
+            "symbol_recent": [],
+            "symbol_top": []
+          }
+        },
+        "risk_analysis": {
+          "onchain_scan": {
+            "dex_paid": true,
+            "dex_paid_timestamp": "2026-02-16 12:55:37",
+            "bundle_percentage": 0.01,
+            "fresh_wallets_percentage": 22.0,
+            "dev_hold_percentage": 0.0,
+            "insider_wallets_percentage": 2.95,
+            "num_holders": 202,
+            "largest_holder_percentage": 16.0,
+            "largest_cluster_percentage": 10.88,
+            "large_holder_count": 3,
+            "same_percentage_count": 8,
+            "low_sol_count": 18
+          },
+          "onchain_scan_score": {
+            "final_score": 3.6,
+            "bundle_percentage_score": 10,
+            "fresh_wallets_percentage_score": 4,
+            "dev_hold_percentage_score": 10,
+            "insider_wallets_percentage_score": 9,
+            "num_holders_score": 2,
+            "largest_holder_percentage_score": 3,
+            "largest_cluster_percentage_score": 5,
+            "large_holder_count_score": 4,
+            "same_percentage_count_score": 5,
+            "low_sol_count_score": 1
+          },
+          "graduated_tokens_thresholds": {
+            "highest_threshold": 250000,
+            "all_time_highest_threshold": 250000,
+            "highest_threshold_as_farm": 250000,
+            "highest_threshold_as_farmed": 0,
+            "highest_threshold_as_no_farm_detected": 0,
+            "farm_status": "FARM",
+            "ever_failed_criteria": true,
+            "last_scanned": 1771251867.9243078
+          },
+          "social_scan": {
+            "handle_reuse": {
+              "handle": "MUS3ai",
+              "reused": false,
+              "account_count": 0,
+              "accounts": [],
+              "message": "No account history found for this handle."
+            }
+          }
+        },
+        "alpha_analysis": {
+          "kol_buys": {
+            "total_kol_buys": 0,
+            "total_usd_spent": 0.0,
+            "kols": []
+          },
+          "trending_ranks": {
+            "axiom": null,
+            "dexscreener": null,
+            "moby": null,
+            "pumpfun_found": false,
+            "trending_found": false,
+            "twitter_trending_found": false
+          },
+          "moby": {
+            "whale_count_h24": null,
+            "whale_trades_count_h24": null,
+            "whale_net_flow_usd_h24": null,
+            "whale_net_supply_percent_h24": null,
+            "whale_holder_retention_percent_h24": null
+          },
+          "twitter_trending": {
+            "mentions_total": null,
+            "accounts": []
+          },
+          "alpha_score": {
+            "final_score": 0.0,
+            "total_kol_buys_score": 0,
+            "trending_ranks_score": 0.0,
+            "twitter_trending_score": 0
+          }
+        },
+        "technical_analysis": {
+          "ta_buy_score": {
+            "final_score": null,
+            "timeframe_scores": {
+              "15m": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "1h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "4h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              },
+              "24h": {
+                "final_score": null,
+                "subscores": {
+                  "oversold": null,
+                  "momentum_shift": null,
+                  "drawdown_value": null
+                },
+                "inputs": {
+                  "rsi": null,
+                  "cipher_mfi": null,
+                  "cipher_wt1": null,
+                  "cipher_wt2": null,
+                  "macd_hist": null,
+                  "cipher_bullish_cross": null,
+                  "cipher_bearish_cross": null
+                }
+              }
+            },
+            "subscores": {
+              "oversold": null,
+              "momentum_shift": null,
+              "drawdown_value": null,
+              "holder_trend": 10.0
+            }
+          },
+          "usd_market_cap": 3655.29,
+          "ath_market_cap": 403088.36,
+          "ath_market_cap_timestamp": "2026-02-16T13:56:12+00:00",
+          "ath_multiple": 110.275,
+          "backup_ath_market_cap": null,
+          "backup_ath_market_cap_timestamp": null,
+          "holderscan_data": {
+            "source": "holderscan_http_fallback",
+            "holderscan_history": [
+              {
+                "updatedAt": "2026-02-17T13:00:00.000Z",
+                "holderCount": 204,
+                "marketCap": 3624.999999096429,
+                "mcapOverHolders": 17.769607838707984
+              },
+              {
+                "updatedAt": "2026-02-17T12:00:00.000Z",
+                "holderCount": 204,
+                "marketCap": 3624.999999096429,
+                "mcapOverHolders": 17.769607838707984
+              },
+              {
+                "updatedAt": "2026-02-17T11:00:00.000Z",
+                "holderCount": 204,
+                "marketCap": 3689.999999080227,
+                "mcapOverHolders": 18.088235289608956
+              },
+              {
+                "updatedAt": "2026-02-17T10:00:00.000Z",
+                "holderCount": 204,
+                "marketCap": 3689.999999080227,
+                "mcapOverHolders": 18.088235289608956
+              },
+              {
+                "updatedAt": "2026-02-17T09:00:00.000Z",
+                "holderCount": 205,
+                "marketCap": 3689.999999080227,
+                "mcapOverHolders": 17.999999995513303
+              },
+              {
+                "updatedAt": "2026-02-17T08:00:00.000Z",
+                "holderCount": 205,
+                "marketCap": 3689.999999080227,
+                "mcapOverHolders": 17.999999995513303
+              },
+              {
+                "updatedAt": "2026-02-17T07:00:00.000Z",
+                "holderCount": 206,
+                "marketCap": 3734.99999906901,
+                "mcapOverHolders": 18.13106795664568
+              },
+              {
+                "updatedAt": "2026-02-17T06:00:00.000Z",
+                "holderCount": 207,
+                "marketCap": 3780.0319067640357,
+                "mcapOverHolders": 18.261023704174086
+              },
+              {
+                "updatedAt": "2026-02-17T05:00:00.000Z",
+                "holderCount": 207,
+                "marketCap": 3850.4643249153132,
+                "mcapOverHolders": 18.601276931958036
+              },
+              {
+                "updatedAt": "2026-02-17T04:00:00.000Z",
+                "holderCount": 208,
+                "marketCap": 3851.9999990398464,
+                "mcapOverHolders": 18.519230764614647
+              },
+              {
+                "updatedAt": "2026-02-17T03:00:00.000Z",
+                "holderCount": 209,
+                "marketCap": 3842.9999990420906,
+                "mcapOverHolders": 18.38755980402914
+              },
+              {
+                "updatedAt": "2026-02-17T02:00:00.000Z",
+                "holderCount": 209,
+                "marketCap": 3842.9999990420906,
+                "mcapOverHolders": 18.38755980402914
+              },
+              {
+                "updatedAt": "2026-02-17T01:00:00.000Z",
+                "holderCount": 209,
+                "marketCap": 3586.9999991059008,
+                "mcapOverHolders": 17.162679421559332
+              },
+              {
+                "updatedAt": "2026-02-17T00:00:00.000Z",
+                "holderCount": 212,
+                "marketCap": 2953.3348509206676,
+                "mcapOverHolders": 13.930824768493714
+              },
+              {
+                "updatedAt": "2026-02-16T23:00:00.000Z",
+                "holderCount": 213,
+                "marketCap": 2961.999999261689,
+                "mcapOverHolders": 13.906103282918728
+              },
+              {
+                "updatedAt": "2026-02-16T22:00:00.000Z",
+                "holderCount": 213,
+                "marketCap": 2922.99999927141,
+                "mcapOverHolders": 13.72300469141507
+              },
+              {
+                "updatedAt": "2026-02-16T21:00:00.000Z",
+                "holderCount": 222,
+                "marketCap": 3285.999999180928,
+                "mcapOverHolders": 14.801801798112288
+              },
+              {
+                "updatedAt": "2026-02-16T20:00:00.000Z",
+                "holderCount": 223,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T19:00:00.000Z",
+                "holderCount": 226,
+                "marketCap": 3324.999999171207,
+                "mcapOverHolders": 14.712389376863747
+              },
+              {
+                "updatedAt": "2026-02-16T18:00:00.000Z",
+                "holderCount": 232,
+                "marketCap": 3378.9999991577474,
+                "mcapOverHolders": 14.564655168783395
+              },
+              {
+                "updatedAt": "2026-02-16T17:00:00.000Z",
+                "holderCount": 238,
+                "marketCap": 3376.9999991582454,
+                "mcapOverHolders": 14.189075626715317
+              },
+              {
+                "updatedAt": "2026-02-16T16:00:00.000Z",
+                "holderCount": 249,
+                "marketCap": 4316.99999892394,
+                "mcapOverHolders": 17.337349393268838
+              },
+              {
+                "updatedAt": "2026-02-16T15:00:00.000Z",
+                "holderCount": 257,
+                "marketCap": null,
+                "mcapOverHolders": null
+              },
+              {
+                "updatedAt": "2026-02-16T14:00:00.000Z",
+                "holderCount": 1092,
+                "marketCap": 300699.99992504716,
+                "mcapOverHolders": 275.36630029766224
+              },
+              {
+                "updatedAt": "2026-02-16T13:00:00.000Z",
+                "holderCount": 416,
+                "marketCap": 88799.99997786563,
+                "mcapOverHolders": 213.46153840833085
               }
             ]
           },

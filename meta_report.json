@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-17T13:01:02.016056Z",
+  "generated_at_utc": "2026-02-17T14:01:34.274212Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 122,
+  "token_context_count": 124,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 12 PVP group(s); excluding 16 token(s) from META prompt."
+    "Detected 13 PVP group(s); excluding 18 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 16,
+  "pvp_excluded_token_count": 18,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -120,6 +120,26 @@
           "token_address": "HwEmKizrAr3pGXnzQSW1wGcueL7K99g2RokoEMHRpump",
           "usd_market_cap": 3061599.12,
           "processed_at": "2026-02-17T07:33:19.929188Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "barking puppy",
+      "tokens": [
+        {
+          "token_symbol": "BUDDY",
+          "token_name": "Barking Puppy",
+          "token_address": "AttShjkNpxz4QXSXj2izdRkeaFoyJeRZD56Feiuypump",
+          "usd_market_cap": 1749.31,
+          "processed_at": "2026-02-17T07:29:03.122646Z"
+        },
+        {
+          "token_symbol": "BP",
+          "token_name": "Barking Puppy",
+          "token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump",
+          "usd_market_cap": 4996933.98,
+          "processed_at": "2026-02-17T13:55:25.999125Z"
         }
       ]
     },
@@ -282,74 +302,56 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI-Powered Social Platforms",
-        "description": "Tokens tied to AI-native social networks or platforms enabling human-AI interaction, content monetization, and decentralized governance. These tokens often emphasize community-driven development and AI integration.",
+        "meta_name": "Cultural and Historical References",
+        "description": "Tokens referencing cultural, historical, or mythological figures, events, or symbols. These tokens often leverage the emotional or symbolic weight of these references to drive engagement.",
         "defining_signals": [
-          "AI-native social network features",
-          "Content monetization via blockchain",
-          "Community-driven governance or development"
+          "References to cultural or historical figures",
+          "Use of historical events or symbols as token themes",
+          "Meme-based narratives tied to cultural or historical contexts"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "HEY",
-            "token_name": "hey.lol",
-            "token_address": "HEYKwDJRoSsiLNQ9F9bZFKo7yxum1WbTFCgiHTX5h6tb"
+            "token_symbol": "KNUCKLES",
+            "token_name": "Knuckles",
+            "token_address": "13akLGmNC2BnpJ1m1gNe8RaZZnSraw1jYHticgiMpump"
           },
           {
-            "token_symbol": "JELLYJELLY",
-            "token_name": "jelly-my-jelly",
-            "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjG587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "CLAWTUBE",
-            "token_name": "ClawTube",
-            "token_address": "9dG3e3bUcY3qecPrGWFqQSEGyUDW7unvC6ZaAfdMCLAW"
-          },
-          {
-            "token_symbol": "OPENCLAW",
-            "token_name": "OpenClaw",
-            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
-          },
-          {
-            "token_symbol": "SAID",
-            "token_name": "SAID Protocol",
-            "token_address": "4rWuWZei2iFNHYpnz5wjMeSvimsJcj5EgpSNvNS1pump"
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
           }
         ],
-        "leader_hint_token_address": "HEYKwDJRoSsiLNQ9F9bZFKo7yxum1WbTFCgiHTX5h6tb",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong focus on AI-native social features and community-driven development, supported by multiple tokens with similar utility claims.",
         "leader_token": {
-          "token_symbol": "jellyjelly",
-          "token_name": "jelly-my-jelly",
-          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
-          "usd_market_cap": 61113594.94
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 642465729.05
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme-Driven Crypto Satire",
-        "description": "Tokens repurposing internet memes, slang, or cultural references for humor or irony, often with no prior non-crypto origin. These tokens thrive on community-driven humor and meme culture.",
+        "meta_name": "Viral Animal Memes",
+        "description": "Tokens inspired by viral animal memes, often leveraging cute or iconic animals that gained popularity on platforms like TikTok, YouTube, and Reddit. These tokens capitalize on the emotional resonance and relatability of these animals.",
         "defining_signals": [
-          "References to viral internet memes or slang",
-          "Absence of verifiable non-crypto cultural origin",
-          "Community-driven branding with humorous or ironic themes"
+          "References to viral animal videos or images",
+          "Use of animal names or traits as central themes",
+          "Meme-based narratives tied to specific animal behaviors or appearances"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "VIBECLAW",
-            "token_name": "vibeclaw",
-            "token_address": "HkmwJUU8zwyBSiktJ9udeHAG6YmpmdxC6NB3DpWNpump"
+            "token_symbol": "MOODENG",
+            "token_name": "Moo Deng",
+            "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
           },
           {
-            "token_symbol": "JUICE",
-            "token_name": "Pixelated Juice",
-            "token_address": "GGpLqLxnbxjWaC31r5dd4hjH7hi7JJBj9HUQoZNVpump"
-          },
-          {
-            "token_symbol": "CIA",
-            "token_name": "John Kiriakou",
-            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
+            "token_symbol": "CHIMP",
+            "token_name": "Baby Chimp",
+            "token_address": "GSeuzQrtQaDAjb1NKQ69Uw2GwuZUsAWhDj6AP6Rapump"
           },
           {
             "token_symbol": "PUNCH",
@@ -357,31 +359,97 @@
             "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
-            "token_symbol": "MUSHU",
-            "token_name": "Mushu",
-            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+            "token_symbol": "KOSUKE",
+            "token_name": "Punch’s Father",
+            "token_address": "62eFhsfHF5FnYnd1cmodYa8SfSwxJnJk5BrSwMh2pump"
+          },
+          {
+            "token_symbol": "Mochi",
+            "token_name": "Mochi Panda",
+            "token_address": "8yyBAFFfCA4fKw1Ai1SExtSf6DmVckGGDT8XgHUopump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           }
         ],
-        "leader_hint_token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong meme-driven narratives with no prior cultural references, supported by community-driven humor and irony.",
+        "leader_hint_token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong market cap and clear viral origin for Moo Deng, with multiple tokens following similar animal-based meme patterns.",
         "leader_token": {
-          "token_symbol": "MUSHU",
-          "token_name": "Mushu",
-          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
-          "usd_market_cap": 16033272.0
+          "token_symbol": "MOODENG",
+          "token_name": "Moo Deng",
+          "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+          "usd_market_cap": 61160011.21
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Crypto-Political Satire",
-        "description": "Tokens referencing political figures, ideologies, or events with satirical or critical themes. These tokens often leverage political memes or commentary for branding.",
+        "meta_name": "Internet Meme Culture",
+        "description": "Tokens inspired by broader internet meme culture, often leveraging viral phrases, internet slang, or meme formats that have gained traction on platforms like TikTok, Reddit, and X.",
         "defining_signals": [
-          "References to political figures or events",
-          "Satirical or critical branding",
-          "Community-driven political commentary"
+          "Use of viral phrases or slang as token names",
+          "Meme-based narratives tied to internet culture",
+          "Leveraging meme formats or templates for token branding"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "Zyzz",
+            "token_name": "Zyzz",
+            "token_address": "7nxyHFTB4BzZveSQV1EWrFqxPsK318oiSnXbC8knhefw"
+          },
+          {
+            "token_symbol": "YEARBOOK",
+            "token_name": "Best Yearbook Photo",
+            "token_address": "S2DfvMi4bVyBwi9qbYDBF7RtFVpnakMYPYFYZwYpump"
+          },
+          {
+            "token_symbol": "remember",
+            "token_name": "who you are.",
+            "token_address": "CYfwS1vQfMtJgU8woviDXKhqPPkzoNzRxrPGQiRHpump"
+          },
+          {
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong meme traction with tokens like Wojak and TROLL, which are deeply rooted in internet meme culture.",
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15553149.75
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political and Public Figure Satire",
+        "description": "Tokens referencing political figures, public personalities, or political events, often in a satirical or meme-driven context. These tokens leverage the cultural and emotional weight of these figures to drive engagement.",
+        "defining_signals": [
+          "Direct references to political figures or public personalities",
+          "Satirical or meme-based narratives tied to political events or ideologies",
+          "Use of political slogans or phrases as token names"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
+          },
           {
             "token_symbol": "TRUMPO",
             "token_name": "PRESIDENTE DONALDO TRUMPO",
@@ -393,24 +461,24 @@
             "token_address": "AwjrxReqLBVC6ozN5XLqkgrweveuL7T6pKQBz3Lpump"
           },
           {
-            "token_symbol": "ALIENS",
-            "token_name": "Aliens are real",
-            "token_address": "F5tfztTnE4sYsMhZT5KrFpWvHmYSfJZZoRjCuxKPbpump"
-          },
-          {
-            "token_symbol": "BARRON2",
+            "token_symbol": "Barron2",
             "token_name": "barron2",
             "token_address": "Apuszvz62jtxXL7MHpmSCy9WQatacBdXo1ybTpohpump"
           },
           {
-            "token_symbol": "LIBTARD",
-            "token_name": "Libtard",
-            "token_address": "BrLt31pz3XtT54yacHJJFNzGvkz5uy8Xd6WnnCkYpump"
+            "token_symbol": "TRUMP",
+            "token_name": "Presidents’ Day",
+            "token_address": "Fpae3M5DmAxSn6KL39oxYzmi3PJx2Eh2JRCWjKfBpump"
+          },
+          {
+            "token_symbol": "DONALDMINAJ",
+            "token_name": "Donald Minaj",
+            "token_address": "82Rcst6dXxCCYSEoAjN9efebNG6yog9bx8LvqQz6pump"
           }
         ],
-        "leader_hint_token_address": "5rGKc5gaj3ams34duHkJKEJP3frsEe9RtoJdcADpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong political satire themes with community-driven commentary, supported by multiple tokens referencing political figures and events.",
+        "leader_hint_token_address": "Fpae3M5DmAxSn6KL39oxYzmi3PJx2Eh2JRCWjKfBpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong political meme traction with multiple tokens referencing Trump and other public figures, indicating a consistent theme.",
         "leader_token": {
           "token_symbol": "Barron2",
           "token_name": "barron2",
@@ -418,70 +486,38 @@
           "usd_market_cap": 3839351.19
         },
         "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI Agent Utility",
-        "description": "Tokens leveraging AI agent capabilities for on-chain automation, DeFi integration, and AI-driven content creation. These tokens often position themselves as infrastructure for AI agents or tools for decentralized applications.",
-        "defining_signals": [
-          "AI agent runtime or automation features",
-          "Integration with DeFi or on-chain governance",
-          "Claims of decentralized or community-driven AI development"
-        ],
-        "supportinging_tokens": [
-          {
-            "token_symbol": "MUSE",
-            "token_name": "MUS3",
-            "token_address": "43daNFzoKXzy6DPNUQQXMSwMVXLkyqCcbrLC4KjSpump"
-          },
-          {
-            "token_symbol": "CLAWVAULT",
-            "token_name": "ClawVault",
-            "token_address": "5Fjr82MTB8mvxkzi9FYtvrUsPiDGE2M29w3dYcZpump"
-          },
-          {
-            "token_symbol": "HEY",
-            "token_name": "hey.lol",
-            "token_address": "HEYKwDJRoSsiLNQ9F9bZFKo7yxum1WbTFCgiHTX5h6tb"
-          },
-          {
-            "token_symbol": "SAID",
-            "token_name": "SAID Protocol",
-            "token_address": "4rWuWZei2iFNHYpnz5wjMeSvimsJcj5EgpSNvNS1pump"
-          },
-          {
-            "token_symbol": "OPENCLAW",
-            "token_name": "OpenClaw",
-            "token_address": "CxoaKHTGYAUkHwzK5dazVYuG3vvEXExrGznMwX1ipump"
-          }
-        ],
-        "leader_hint_token_address": "4rWuWZei2iFNHYpnz5wjMeSvimsJcj5EgpSNvNS1pump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong alignment with AI agent infrastructure and decentralized AI development, supported by multiple tokens with similar utility claims.",
-        "leader_token": null,
-        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "AI-Powered Social Platforms",
+        "meta_name": "Cultural and Historical References",
         "leader_token": {
-          "token_symbol": "jellyjelly",
-          "token_name": "jelly-my-jelly",
-          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
-          "usd_market_cap": 61113594.94
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 642465729.05
         }
       },
       {
-        "meta_name": "Meme-Driven Crypto Satire",
+        "meta_name": "Viral Animal Memes",
         "leader_token": {
-          "token_symbol": "MUSHU",
-          "token_name": "Mushu",
-          "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
-          "usd_market_cap": 16033272.0
+          "token_symbol": "MOODENG",
+          "token_name": "Moo Deng",
+          "token_address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+          "usd_market_cap": 61160011.21
         }
       },
       {
-        "meta_name": "Crypto-Political Satire",
+        "meta_name": "Internet Meme Culture",
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15553149.75
+        }
+      },
+      {
+        "meta_name": "Political and Public Figure Satire",
         "leader_token": {
           "token_symbol": "Barron2",
           "token_name": "barron2",
