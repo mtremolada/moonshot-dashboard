@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-18T19:05:55.228543Z",
+  "generated_at_utc": "2026-02-18T20:06:31.269773Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 123,
+  "token_context_count": 120,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 11 PVP group(s); excluding 16 token(s) from META prompt."
+    "Detected 12 PVP group(s); excluding 18 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 16,
+  "pvp_excluded_token_count": 18,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -270,34 +270,105 @@
           "processed_at": "2026-02-18T04:22:44.694311Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "sol",
+      "tokens": [
+        {
+          "token_symbol": "SOL",
+          "token_name": "Sol The Trophy Tomato",
+          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
+          "usd_market_cap": 1876681.53,
+          "processed_at": "2026-02-18T05:55:19.006255Z"
+        },
+        {
+          "token_symbol": "SOL",
+          "token_name": "Sol Agent",
+          "token_address": "2dJyyDkEFD4BzzvER9qN5uphMXJzGNN26HhQVp3Tpump",
+          "usd_market_cap": 2416.9,
+          "processed_at": "2026-02-18T19:44:18.944857Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Cultural & Historical Meme",
-        "description": "Tokens inspired by cultural or historical memes, often repurposing well-known references or folklore for crypto audiences.",
+        "meta_name": "Anime & Japanese Culture",
+        "description": "Tokens leveraging Japanese anime, manga, and internet culture for branding and community engagement.",
         "defining_signals": [
-          "Use of cultural or historical references in token names or themes.",
-          "Meme-based narratives tied to historical events or folklore.",
-          "Community-driven branding with cultural/historical themes."
+          "Names and themes rooted in Japanese anime or internet culture.",
+          "Meme origins tied to Japanese characters, phrases, or viral content.",
+          "Use of Japanese language or cultural references in branding."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "YARANA",
+            "token_symbol": "Yaranaika",
             "token_name": "やらないか",
             "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
           },
           {
-            "token_symbol": "BISHI",
-            "token_name": "The Fire Horse",
-            "token_address": "bZKyoQvoDCzDfJe28258o4TDUpgzjMHp2Vfid8vpump"
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
           },
           {
-            "token_symbol": "WHITEWHALE",
-            "token_name": "The White Whale",
-            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+          },
+          {
+            "token_symbol": "98",
+            "token_name": "Owen",
+            "token_address": "EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump"
+          },
+          {
+            "token_symbol": "丙午",
+            "token_name": "bǐngwǔ",
+            "token_address": "DMYNp65mub3i7LRpBdB66CgBAceLcQnv4gsWeCi6pump"
+          }
+        ],
+        "leader_hint_token_address": "Yaranaika",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Strong cultural roots in Japanese internet and anime culture with consistent meme references.",
+        "leader_token": {
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 461336637.42
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Internet Meme Revival",
+        "description": "Tokens repurposing older internet memes or phrases that have resurfaced in crypto culture.",
+        "defining_signals": [
+          "Names and themes based on older memes or phrases (e.g., '67', 'DONT', 'HODL').",
+          "Meme origins traceable to early 2000s or 2010s internet culture.",
+          "Use of nostalgic or retro meme formats for branding."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "67",
+            "token_name": "The Official 67 Coin",
+            "token_address": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump"
+          },
+          {
+            "token_symbol": "DONT",
+            "token_name": "DisclaimerCoin",
+            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
+          },
+          {
+            "token_symbol": "HODL",
+            "token_name": "HODL",
+            "token_address": "CpRogNQW2M8y6B1YvqaMJ8uU7RxjwyzgYV3CCC5Epump"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           },
           {
             "token_symbol": "NANI",
@@ -305,27 +376,76 @@
             "token_address": "BVFGj2ww3sz1Mc2MgFQqkDfjmLVmTQD7MU6NVvS6pump"
           }
         ],
+        "leader_hint_token_address": "67",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong meme revival with consistent naming and historical meme references.",
         "leader_token": {
-          "token_symbol": "WhiteWhale",
-          "token_name": "The White Whale",
-          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-          "usd_market_cap": 67130374.19
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 28967339.0
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Animal Culture",
+        "description": "Tokens leveraging viral animal memes, often repurposing cute, iconic, or anthropomorphized animals for branding.",
+        "defining_signals": [
+          "Names and themes centered around animals (e.g., dogs, cats, pandas).",
+          "Meme origins tied to viral animal content on platforms like TikTok, YouTube, and Reddit.",
+          "Use of animal imagery or traits as central to the token’s branding."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Dogs",
+            "token_name": "DONT TREAD ON ME",
+            "token_address": "bDz6NVehx5mr8E1e5d2c8ZAqjDe7DQWZeEKPpyvdogs"
+          },
+          {
+            "token_symbol": "Prune",
+            "token_name": "Relaxed Capybara",
+            "token_address": "D1hT51sDxPVkQzaJTMxSQQQhKt92MdmzSyqqREqGpump"
+          },
+          {
+            "token_symbol": "MEOW",
+            "token_name": "meowtakeover",
+            "token_address": "7Lbe787dJ4bxpPiEWLb9R9VnQsMiET6Gbacxedm3pump"
+          },
+          {
+            "token_symbol": "CHIMP",
+            "token_name": "Baby Chimp",
+            "token_address": "FrFm6kEhe3miN1Mb9Ep8rhqFSwvaoxFG2QetK4dNpump"
+          },
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          }
+        ],
+        "leader_hint_token_address": "Dogs",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong meme roots in animal culture with consistent naming and viral content references.",
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 9783048.6
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "Political Satire",
-        "description": "Tokens referencing political figures, ideologies, or events with a satirical or meme-driven twist. These tokens often leverage real-world political narratives and repackage them for crypto audiences.",
+        "description": "Tokens referencing political figures and events through satire and meme culture, often repurposing real-world narratives for crypto branding.",
         "defining_signals": [
-          "Use of political figures (e.g., Donald Trump, Barack Obama) in token names or themes.",
-          "Incorporation of political slang or pejoratives (e.g., 'Libtard', 'TRUMP2').",
-          "Meme-based narratives tied to political events or ideologies."
+          "Use of real-world political figures (e.g., Donald Trump, Barack Obama) in token names and descriptions.",
+          "Meme origins tied to political commentary or parody.",
+          "Names that blend political references with internet slang or viral content."
         ],
-        "supporting_tokens": [
+        "supportinging_tokens": [
           {
-            "token_symbol": "BARRON2",
-            "token_name": "barron2",
-            "token_address": "Apuszvz62jtxXL7MHpmSCy9WQatacBdXo1ybTpohpump"
+            "token_symbol": "GOBAMA",
+            "token_name": "Ryan Gosling is Obama",
+            "token_address": "DAM9FkN7nzYaFR9igsZLHi6jBnqNVqpqYikNDGZDpump"
           },
           {
             "token_symbol": "TRUMP2",
@@ -333,13 +453,8 @@
             "token_address": "8TnbbiNsrpbF63jt56RyRj7EQfrZd45dpa2U92Wkpump"
           },
           {
-            "token_symbol": "GOBAMA",
-            "token_name": "Ryan Gosling is Obama",
-            "token_address": "DAM9FkN7nzYaFR9igsZLHi6jBnqNVqpqYikNDGZDpump"
-          },
-          {
             "token_symbol": "TRUMPO",
-            "token_name": "PRESIDENTE DONALDO TRUMPO",
+            "token_name": "PRESIDENTE DONALD TRUMPO",
             "token_address": "5rGKc5gaj3ams34duHkJKEJP3frsEe9RtoJdcADpump"
           },
           {
@@ -354,136 +469,29 @@
           }
         ],
         "leader_hint_token_address": "TRUMP2",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong political meme narratives and high market caps for tokens like TRUMP2 and GOBAMA indicate a dominant political satire theme.",
-        "leader_token": {
-          "token_symbol": "TRUMP2",
-          "token_name": "Trump 2",
-          "token_address": "8TnbbiNsrpbF63jt56RyRj7EQfrZd45dpa2U92Wkpump",
-          "usd_market_cap": 30051407.92
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Animal Culture",
-        "description": "Tokens inspired by viral animal memes, often leveraging cute or quirky animal imagery to create community-driven projects.",
-        "defining_signals": [
-          "Use of animal characters (e.g., dogs, cats, capybaras) in token names or themes.",
-          "Meme-based narratives tied to viral animal content.",
-          "Community-driven branding with animal-centric themes."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "KNUCKLES",
-            "token_name": "Knuckles",
-            "token_address": "13akLGmNC2BnpJ1m1gNe8RaZZnSraw1jYHticgiMpump"
-          },
-          {
-            "token_symbol": "CHIMP",
-            "token_name": "Baby Chimp",
-            "token_address": "FrFm6kEhe3miN1Mb9Ep8rhqFSwvaoxFG2QetK4dNpump"
-          },
-          {
-            "token_symbol": "PRUNE",
-            "token_name": "Relaxed Capybara",
-            "token_address": "D1hT51sDxPVkQzaJTMxSQQQhKt92MdmzSyqqREqGpump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "PUNCH",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          },
-          {
-            "token_symbol": "MEOW",
-            "token_name": "meowtakeover",
-            "token_address": "7Lbe787dJ4bxpPiEWLb9R9VnQsMiET6Gbacxedm3pump"
-          }
-        ],
-        "leader_hint_token_address": "KNUCKLES",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong meme animal themes with high engagement and market caps for tokens like KNUCKLES and PUNCH.",
-        "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 9783048.6
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI & Tech Meme",
-        "description": "Tokens leveraging AI, robotics, or tech-related memes, often with a humorous or satirical twist.",
-        "defining_signals": [
-          "Use of AI or robotics in token names or themes.",
-          "Meme-based narratives tied to AI or tech culture.",
-          "Community-driven branding with AI/tech-centric themes."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "AUTOMATON",
-            "token_name": "The Automaton",
-            "token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump"
-          },
-          {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrTrBAGS"
-          },
-          {
-            "token_symbol": "WUBOT",
-            "token_name": "Chinese Kungfu Robots",
-            "token_address": "GrA4ngchYK1x91Rb1Ro1yd4nEsJA3Kz4Z59qMRPzpump"
-          },
-          {
-            "token_symbol": "G2E",
-            "token_name": "Gamble 2 Earn",
-            "token_address": "HbG69DSx1GKH4A61W5VWZ1P5HMfdLxGCaWm1APbxpump"
-          },
-          {
-            "token_symbol": "LISA",
-            "token_name": "Lisa Loop()",
-            "token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump"
-          },
-          {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAAwo1dmBGHsyhzodcPqnEVpump"
-          }
-        ],
-        "leader_hint_token_address": "GSD",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong AI/tech meme narratives with high engagement and market caps for tokens like GSD and AUTOMATON.",
-        "leader_token": {
-          "token_symbol": "G2E",
-          "token_name": "Gamble 2 Earn",
-          "token_address": "HbG69DSx1GKH4A61W5VWZ1P5HMfdLxGCaWm1APbxpump",
-          "usd_market_cap": 3833770.86
-        },
-        "leader_missing_reason": null
+        "confidence_rationale": "Strong meme roots in political satire and consistent token naming patterns across multiple tokens.",
+        "leader_token": null,
+        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Cultural & Historical Meme",
+        "meta_name": "Anime & Japanese Culture",
         "leader_token": {
-          "token_symbol": "WhiteWhale",
-          "token_name": "The White Whale",
-          "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump",
-          "usd_market_cap": 67130374.19
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 461336637.42
         }
       },
       {
-        "meta_name": "Political Satire",
+        "meta_name": "Internet Meme Revival",
         "leader_token": {
-          "token_symbol": "TRUMP2",
-          "token_name": "Trump 2",
-          "token_address": "8TnbbiNsrpbF63jt56RyRj7EQfrZd45dpa2U92Wkpump",
-          "usd_market_cap": 30051407.92
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 28967339.0
         }
       },
       {
@@ -493,15 +501,6 @@
           "token_name": "パンチ",
           "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
           "usd_market_cap": 9783048.6
-        }
-      },
-      {
-        "meta_name": "AI & Tech Meme",
-        "leader_token": {
-          "token_symbol": "G2E",
-          "token_name": "Gamble 2 Earn",
-          "token_address": "HbG69DSx1GKH4A61W5VWZ1P5HMfdLxGCaWm1APbxpump",
-          "usd_market_cap": 3833770.86
         }
       }
     ]
