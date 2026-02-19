@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-19T07:12:19.537527Z",
+  "generated_at_utc": "2026-02-19T08:12:33.353018Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
   "token_context_count": 102,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 7 PVP group(s); excluding 11 token(s) from META prompt."
+    "Detected 5 PVP group(s); excluding 9 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 11,
+  "pvp_excluded_token_count": 9,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "trumpius maximus",
-      "tokens": [
-        {
-          "token_symbol": "TRUMPIUS",
-          "token_name": "Trumpius Maximus",
-          "token_address": "HwEmKizrAr3pGXnzQSW1wGcueL7K99g2RokoEMHRpump",
-          "usd_market_cap": 1515.8,
-          "processed_at": "2026-02-18T07:34:39.734407Z"
-        },
-        {
-          "token_symbol": "TRUMPIUS",
-          "token_name": "Trumpius Maximus",
-          "token_address": "65fA7KgYKdAYv7gb3nQ7iqTjHyHZcUf2bFz9T5kMpump",
-          "usd_market_cap": 2051.81,
-          "processed_at": "2026-02-18T20:59:27.339719Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "kimchi",
@@ -73,26 +53,6 @@
           "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
           "usd_market_cap": 7306145.02,
           "processed_at": "2026-02-19T05:49:52.901699Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "trumpius",
-      "tokens": [
-        {
-          "token_symbol": "TRUMPIUS",
-          "token_name": "Trumpius Maximus",
-          "token_address": "HwEmKizrAr3pGXnzQSW1wGcueL7K99g2RokoEMHRpump",
-          "usd_market_cap": 1515.8,
-          "processed_at": "2026-02-18T07:34:39.734407Z"
-        },
-        {
-          "token_symbol": "TRUMPIUS",
-          "token_name": "Trumpius Maximus",
-          "token_address": "65fA7KgYKdAYv7gb3nQ7iqTjHyHZcUf2bFz9T5kMpump",
-          "usd_market_cap": 2051.81,
-          "processed_at": "2026-02-18T20:59:27.339719Z"
         }
       ]
     },
@@ -182,115 +142,23 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI and Robotics",
-        "description": "Tokens focused on AI development, robotics, or futuristic tech. These tokens often tie into AI-driven platforms, robotics research, or AI-powered applications.",
+        "meta_name": "Utility & Governance",
+        "description": "Tokens offering governance rights, staking rewards, or utility within a decentralized platform or ecosystem. These tokens often tie into DeFi, NFTs, or DAOs.",
         "defining_signals": [
-          "AI development or research",
-          "Robotics or automation themes",
-          "Futuristic tech narratives"
+          "Governance or voting rights",
+          "Staking or yield-generating features",
+          "Integration with DeFi or NFT platforms"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "G1",
-            "token_name": "Chinese Kung Fu Robot Unitree G1",
-            "token_address": "6KQz2SaWaNFTvPcYGkcuF75BPYSANSws9YAAb1dvpump"
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
           },
           {
-            "token_symbol": "WUBOT",
-            "token_name": "Chinese Kungfu Robots",
-            "token_address": "GrA4ngchYK1x91Rb1Ro1yd4nEsJA3Kz4Z59qMRPzpump"
-          },
-          {
-            "token_symbol": "CTM",
-            "token_name": "c8ntinuum",
-            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
-          },
-          {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pV7VaAduKrLcEBi3RGXedKTrBAGS"
-          }
-        ],
-        "leader_hint_token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Strong alignment with AI and robotics trends, but still niche compared to broader meme or utility tokens.",
-        "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 358131280.56
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Community-Driven Utility",
-        "description": "Tokens that emphasize decentralized governance, community rewards, or shared ownership. These tokens often distribute value back to holders through staking, trading fees, or governance rights.",
-        "defining_signals": [
-          "Community-based governance",
-          "Rewards for holders",
-          "Shared ownership or profit-sharing"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PiggyBank",
-            "token_name": "PiggyBank",
-            "token_address": "EjA6GZtnynrGWuWndcY1C4nxpvfj7uh54b1q49DWpump"
-          },
-          {
-            "token_symbol": "HODL",
-            "token_name": "HODL",
-            "token_address": "CpRogNQW2M8y6B1YvqaMJ8uU7RxjwyzgYV3CCC5Epump"
-          },
-          {
-            "token_symbol": "USEFUL",
-            "token_name": "Useful Coin",
-            "token_address": "GfcamyTLfr9ehsXwYZD2zLf9UqEJBuSNoDfmfy3Lpump"
-          },
-          {
-            "token_symbol": "TANDEM",
-            "token_name": "Tandem Wallet",
-            "token_address": "8naeAc6qBpZZmesBtJB34TwX55MhVR8bBUMs4JayUpump"
-          },
-          {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
-          }
-        ],
-        "leader_hint_token_address": "EjA6GZtnynrGWuWndcY1C4nxpvfj7uh54b1q49DWpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Growing interest in community-driven models, with clear utility and holder incentives.",
-        "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 29559366.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens built around viral internet memes, pop culture references, or internet slang. These tokens often leverage humor, nostalgia, or cultural trends to attract retail investors.",
-        "defining_signals": [
-          "Leverage of viral memes or internet culture",
-          "Strong community-driven narratives",
-          "Use of pop culture or internet slang"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Drippin",
-            "token_name": "Drippin",
-            "token_address": "CnELrdRNAifHB4UFK9RPpEYWL8JykucXEfEwbNPNpump"
-          },
-          {
-            "token_symbol": "NANI",
-            "token_name": "naniXBT",
-            "token_address": "BVFGj2ww3sz1Mc2MgFQqkDfjmLVmTQD7MU6NVvS6pump"
+            "token_symbol": "SURGE",
+            "token_name": "SURGE",
+            "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg"
           },
           {
             "token_symbol": "Pumpwheel",
@@ -298,36 +166,107 @@
             "token_address": "Bs2RsPYeUMi5kPzHteyE4dQPe84EL47Ww2zxixeUf4jD"
           },
           {
-            "token_symbol": "PANDU",
-            "token_name": "Pandu Pandas",
-            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+            "token_symbol": "HODL",
+            "token_name": "HODL",
+            "token_address": "CpRogNQW2M8y6B1YvqaMJ8uU7RxjwyzgYV3CCC5Epump"
+          },
+          {
+            "token_symbol": "TANDEM",
+            "token_name": "Tandem Wallet",
+            "token_address": "8naeAc6qBpZmesBtJB34TwX55MhVR8bBUMs4JayUpump"
+          },
+          {
+            "token_symbol": "CARDS",
+            "token_name": "Collector Crypt",
+            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+          }
+        ],
+        "leader_hint_token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Tokens with clear utility and governance features are gaining traction. SURGE and Pumpwheel show strong community and utility-driven narratives.",
+        "leader_token": {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 122194909.22
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens leveraging existing internet memes, pop culture references, or viral content to create a sense of familiarity and community. These tokens often repurpose established memes or cultural figures to build a narrative.",
+        "defining_signals": [
+          "Use of well-known memes or cultural references (e.g., 'nani', 'Pepe', 'trollface')",
+          "Leverage of viral TikTok or YouTube content as a naming or branding source",
+          "Incorporation of pop culture figures or characters (e.g., 'Hachiko', 'Ralph Wiggum')"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "NANI",
+            "token_name": "naniXBT",
+            "token_address": "BVFGj2ww3sz1Mc2MgFQqkDfjmLVmTQD7MU6NVvS6pump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
             "token_symbol": "HACHI",
             "token_name": "Hachiko",
             "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "RAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          },
+          {
+            "token_symbol": "Grandma",
+            "token_name": "Minecraft Grandma Fund",
+            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
           }
         ],
-        "leader_hint_token_address": "CnELrdRNAifHB4UFK9RPpEYWL8JykucXEfEwbNPNpump",
-        "confidence_0_100": 90,
-        "confidence_rationale": "High volume of tokens with meme-based narratives, strong retail interest, and viral potential.",
+        "leader_hint_token_address": "BVFGj2ww3sz1Mc2MgFQqkDfjmLVmTQD7MU6NVvS6pump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong presence of meme-based tokens with clear cultural references and viral content. Tokens like NANI and TROLL have strong community engagement and recognizable meme origins.",
         "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 4937938.0
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 16085185.96
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Powered Agents",
-        "description": "Tokens centered around AI-driven agents, autonomous systems, or AI ecosystems. These tokens often leverage AI for trading, governance, or utility within a decentralized framework.",
+        "meta_name": "AI & Automation",
+        "description": "Tokens centered around AI-driven tools, autonomous agents, and automation in DeFi or Web3 ecosystems. These tokens often focus on AI-generated content, trading bots, or agent-based interactions.",
         "defining_signals": [
-          "AI agent-based utility",
-          "Autonomous trading or governance",
-          "Integration with AI ecosystems"
+          "Integration with AI agents or autonomous systems",
+          "Focus on automation in DeFi or trading",
+          "Use of AI for content generation or decision-making"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+          },
+          {
+            "token_symbol": "LISA",
+            "token_name": "Lisa Loop()",
+            "token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump"
+          },
+          {
+            "token_symbol": "automaton",
+            "token_name": "The Automaton",
+            "token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump"
+          },
           {
             "token_symbol": "APocket",
             "token_name": "AgentPocket",
@@ -336,27 +275,17 @@
           {
             "token_symbol": "Benjamin",
             "token_name": "Benjamin the Crypto Agent",
-            "token_address": "DpQSHmXgoofPNAUdp46Z21pLX8gfviavSgQQ7wZ8pump"
+            "token_address": "DpQQSHmXgoofPNAUdp46Z21pL8gfviavSgQQ7wZ8pump"
           },
           {
-            "token_symbol": "LISA",
-            "token_name": "Lisa Loop()",
-            "token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump"
-          },
-          {
-            "token_symbol": "GAS",
-            "token_name": "GAS",
-            "token_address": "25E8X8fPnT9AdU1nA78snybnzVxkDvv5rK663Ngrpump"
-          },
-          {
-            "token_symbol": "automaton",
-            "token_name": "The Automaton",
-            "token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump"
+            "token_symbol": "G2E",
+            "token_name": "Gamble 2 Earn",
+            "token_address": "HbG69DSx1GKH4A61W5VWZ1P5HMfdLxGCaWm1APbxpump"
           }
         ],
-        "leader_hint_token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across tokens, with clear AI utility and community adoption.",
+        "leader_hint_token_address": "8116V1BW9zaXUM6pVvWVaAduKrLcEBi3RGXedKTrBAGS",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Growing interest in AI-driven tools and autonomous agents. Tokens like GSD and Lisa Loop() show strong technical narratives and community traction.",
         "leader_token": {
           "token_symbol": "automaton",
           "token_name": "The Automaton",
@@ -364,43 +293,71 @@
           "usd_market_cap": 1555802.34
         },
         "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI & Crypto Integration",
+        "description": "Tokens that integrate AI capabilities into crypto ecosystems, such as AI trading agents, AI-generated content, or AI-driven analytics. These tokens often leverage AI for enhanced functionality.",
+        "defining_signals": [
+          "AI-driven trading or analytics",
+          "AI-generated content or tools",
+          "Integration with AI platforms or models"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVvWVaAduKrLcEBi3RGXedKTrBAGS"
+          },
+          {
+            "token_symbol": "LISA",
+            "token_name": "Lisa Loop()",
+            "token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "LISA",
+          "token_name": "Lisa Loop()",
+          "token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump",
+          "usd_market_cap": 245450.95
+        },
+        "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "AI and Robotics",
+        "meta_name": "Utility & Governance",
         "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 358131280.56
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 122194909.22
         }
       },
       {
-        "meta_name": "Community-Driven Utility",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 29559366.0
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 16085185.96
         }
       },
       {
-        "meta_name": "Meme-Driven Tokens",
-        "leader_token": {
-          "token_symbol": "$HACHI",
-          "token_name": "Hachiko",
-          "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-          "usd_market_cap": 4937938.0
-        }
-      },
-      {
-        "meta_name": "AI-Powered Agents",
+        "meta_name": "AI & Automation",
         "leader_token": {
           "token_symbol": "automaton",
           "token_name": "The Automaton",
           "token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump",
           "usd_market_cap": 1555802.34
+        }
+      },
+      {
+        "meta_name": "AI & Crypto Integration",
+        "leader_token": {
+          "token_symbol": "LISA",
+          "token_name": "Lisa Loop()",
+          "token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump",
+          "usd_market_cap": 245450.95
         }
       }
     ]
