@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-19T01:09:21.565862Z",
+  "generated_at_utc": "2026-02-19T02:09:46.709681Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 111,
+  "token_context_count": 108,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 8 PVP group(s); excluding 14 token(s) from META prompt."
+    "Detected 7 PVP group(s); excluding 12 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 14,
+  "pvp_excluded_token_count": 12,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -80,26 +80,6 @@
           "token_address": "FznKk7WQzcf7hhkxtFnEyF5yFTanLsrAZdwZuiJQpump",
           "usd_market_cap": 1513.83,
           "processed_at": "2026-02-18T21:39:02.116317Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "maya",
-      "tokens": [
-        {
-          "token_symbol": "MAYA",
-          "token_name": "The Voter Dog",
-          "token_address": "EtL967sgMgeDDSUrNhtQrbhe4T92idzqf4VuA6H7uGfQ",
-          "usd_market_cap": 267562.03,
-          "processed_at": "2026-02-18T00:44:17.057133Z"
-        },
-        {
-          "token_symbol": "MAYA",
-          "token_name": "Maya the Voter Fraud Dog",
-          "token_address": "2Jp7AkCdDYgikgbtLcrNTbU6pw6Dm5weAnEEEjwqpump",
-          "usd_market_cap": 44317.8,
-          "processed_at": "2026-02-18T04:17:21.462467Z"
         }
       ]
     },
@@ -216,23 +196,23 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political Meme Coins",
-        "description": "Tokens leveraging political figures and election-related memes, particularly around Donald Trump and other high-profile personalities. These tokens often repurpose existing political memes or create new ones tied to election cycles.",
+        "meta_name": "Political Satire",
+        "description": "Tokens leveraging political figures and events as a satirical or meme-driven narrative. These tokens often repurpose real-world political personas or election-related themes into crypto assets.",
         "defining_signals": [
-          "Use of political figure names (e.g., Trump, Hunter Biden) or political meme references",
-          "Meme narratives tied to election cycles or political events",
-          "High market cap and community-driven hype around political themes"
+          "Use of political figures (e.g., Donald Trump, Elon Musk) as central themes.",
+          "Meme-based narratives tied to election cycles or political commentary.",
+          "Community-driven humor or parody of political rhetoric or events."
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "HTrump",
-            "token_name": "Hunter Trump",
-            "token_address": "9ZQC4Keh9G5e62ZnLcwW9MaDgPdBQQqcXmqgrLezpump"
-          },
           {
             "token_symbol": "TRUMP2",
             "token_name": "Trump 2",
             "token_address": "8TnbbiNsrpbF63jt56RyRj7EQfrZd45dpa2U92Wkpump"
+          },
+          {
+            "token_symbol": "TORANPU",
+            "token_name": "Donarudo Toranpu",
+            "token_address": "G44FmBFYuEbNZSGRFx2Sjv5dcoLaYvaNaA3RMUsYpump"
           },
           {
             "token_symbol": "DARKTRUMP",
@@ -240,19 +220,19 @@
             "token_address": "9xfc9mCFJ5LN19qbJ7shrQabDVrdqRdKV2oy8snBpump"
           },
           {
-            "token_symbol": "TrumpLan",
-            "token_name": "Comrade DongLaDe Trump",
-            "token_address": "DzBxg2aZ5xXdcxWSVSFK4xXZcWYs4hMYx9MBihPFpump"
-          },
-          {
             "token_symbol": "TRUMP",
             "token_name": "Presidents’ Day",
-            "token_address": "Fpae3M5DmAxSn6KL39oxYzmi3PJx2Eh2JRCWjKfBbonk"
+            "token_address": "Fpae3M5DmAxSn6KL39oxYzmi3PJx2Eh2JRCWjKfBpump"
+          },
+          {
+            "token_symbol": "Owen",
+            "token_name": "Elon Musk's virtual son",
+            "token_address": "EQHJVTgU1m9mSKoqU8ERd13A1Emf6jiUf4nYXT7Tpump"
           }
         ],
-        "leader_hint_token_address": "TRUMP2",
+        "leader_hint_token_address": "8TnbbiNsrpbF63jt56RyRj7EQfrZd45dpa2U92Wkpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "TRUMP2 has the highest market cap among the political meme tokens and is directly tied to a well-known election-related meme. Other tokens like HTrump and DARKTRUMP also show strong community engagement.",
+        "confidence_rationale": "TRUMP2 has the highest market cap among this group and is directly tied to a well-known political figure with a strong meme foundation.",
         "leader_token": {
           "token_symbol": "TRUMP2",
           "token_name": "Trump 2",
@@ -262,60 +242,60 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Animal Coins",
-        "description": "Tokens centered around animals or animal-related memes, often leveraging viral videos or internet culture. These tokens frequently feature cute or absurd animal imagery and are driven by community engagement.",
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens repurposing existing internet memes, viral videos, or pop culture references for crypto branding. These tokens often lack original lore but leverage nostalgia or humor from established cultural touchstones.",
         "defining_signals": [
-          "Animal-based names or themes (e.g., Dog, Cat, Horse)",
-          "Meme references tied to viral animal videos or images",
-          "Community-driven narratives with humorous or absurd elements"
+          "Direct use of viral internet memes (e.g., 'Don’t @ me', 'Wojak', 'Trollface').",
+          "Repurposing of viral TikTok/Reddit trends into token narratives.",
+          "Absence of original lore, relying instead on pre-existing cultural references."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CHIMP",
-            "token_name": "Baby Chimp",
-            "token_address": "FrFm6kEhe3miN1Mb9Ep8rhqFSwvaoxFG2QetK4dNpump"
+            "token_symbol": "DONT",
+            "token_name": "DisclaimerCoin",
+            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
           },
           {
-            "token_symbol": "Preguntale",
-            "token_name": "Preguntale",
-            "token_address": "57KoEZXm2mJwFqbB7fvcgZmmjc9mivFmKhXA45H3pump"
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "Smile",
-            "token_name": "The Smiling Dog",
-            "token_address": "BNrqaa72k8omrZwbyW6V2HPdUt2gRKizkqguYJSGpump"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "Prune",
-            "token_name": "Relaxed Capybara",
-            "token_address": "D1hT51sDxPVkQzaJTMxSQQQhKt92MdmzSyqqREqGpump"
+            "token_symbol": "67",
+            "token_name": "The Official 67 Coin",
+            "token_address": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump"
           }
         ],
-        "leader_hint_token_address": "CHIMP",
-        "confidence_0_100": 78,
-        "confidence_rationale": "CHIMP has a strong viral TikTok origin and a clear meme narrative. Other tokens like Preguntale and Prune also show strong community engagement, but CHIMP has the highest market cap and strongest meme roots.",
+        "leader_hint_token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+        "confidence_0_100": 80,
+        "confidence_rationale": "TROLL has a strong meme foundation and is directly tied to the iconic Trollface meme, which has a broad cultural footprint.",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 10212800.86
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 16431389.94
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Tech Meme Coins",
-        "description": "Tokens leveraging AI, robotics, and tech-related memes or narratives. These tokens often tie into futuristic or sci-fi themes and are driven by the growing interest in AI and automation.",
+        "meta_name": "AI & Autonomous Agents",
+        "description": "Tokens centered around AI, autonomous agents, and AI-driven applications. These tokens often highlight AI’s role in blockchain, trading, or governance.",
         "defining_signals": [
-          "AI, robotics, or tech-related themes in token names or descriptions",
-          "Meme narratives around AI or tech culture",
-          "Community-driven hype around AI advancements or sci-fi concepts"
+          "AI-driven trading or governance models.",
+          "Autonomous AI agents as core features.",
+          "Integration of AI with on-chain processes or smart contracts."
         ],
-        "supportinging_tokens": [
+        "supporting_tokens": [
           {
             "token_symbol": "automaton",
             "token_name": "The Automaton",
@@ -327,60 +307,65 @@
             "token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump"
           },
           {
-            "token_symbol": "WUBOT",
-            "token_name": "Chinese Kungfu Robots",
-            "token_address": "GrA4ngchYK1x91Rb1Ro1yd4nEsJA3Kz4Z59qMRPzpump"
-          },
-          {
-            "token_symbol": "G1",
-            "token_name": "Chinese Kung Fu Robot Unitree G1",
-            "token_address": "6KQz2SaWaNFTvPcYGkcuF75BPYSANSws9YAAb1dvpump"
+            "token_symbol": "Benjamin",
+            "token_name": "Benjamin the Crypto Agent",
+            "token_address": "DpQSHmXgoofPNAUdp46Z21pLX8gfviavSgQQ7wZ8pump"
           },
           {
             "token_symbol": "GSD",
             "token_name": "Get Shit Done",
             "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+          },
+          {
+            "token_symbol": "TANDEM",
+            "token_name": "Tandem Wallet",
+            "token_address": "8naeAc6qBpZmesBtJB34TwX55MhVR8bBUMs4JayUpump"
           }
         ],
-        "leader_hint_token_address": "automaton",
+        "leader_hint_token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump",
         "confidence_0_100": 75,
-        "confidence_rationale": "The Automaton has a strong narrative around AI self-improvement and is gaining traction in the AI meme space. Other tokens like LISA and WUBOT also show promise, but The Automaton has the most coherent and compelling narrative.",
-        "leader_token": null,
-        "leader_missing_reason": "No supporting token had a usable usd_market_cap in this batch."
+        "confidence_rationale": "The Automaton has a clear narrative around autonomous AI agents and is positioned as a foundational token for AI self-improvement.",
+        "leader_token": {
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 1072110.0
+        },
+        "leader_missing_reason": null
       },
       {
-        "meta_name": "Cultural and Historical Meme Coins",
-        "description": "Tokens leveraging historical, cultural, or literary references as memes. These tokens often tie into well-known stories, myths, or historical events and are driven by niche communities.",
+        "meta_name": "Nostalgia & Pop Culture",
+        "description": "Tokens leveraging nostalgia for pop culture, media, or internet history. These tokens often tie into iconic characters, movies, or internet phenomena.",
         "defining_signals": [
-          "References to historical figures, myths, or cultural icons",
-          "Meme narratives around historical or cultural events",
-          "Community-driven storytelling with historical or cultural themes"
+          "Use of pop culture references (e.g., Pokémon, JoJo’s Bizarre Adventure).",
+          "Nostalgic branding (e.g., retro gaming, 90s internet culture).",
+          "Repurposing of iconic characters or media for crypto branding."
         ],
         "supportinging_tokens": [
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
           },
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jj8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "NANI",
+            "token_name": "naniXBT",
+            "token_address": "BVFGj2ww3sz1Mc2MgFQqkDfjmLVmTQD7MU6NVvS6pump"
           },
           {
-            "token_symbol": "丙午",
-            "token_name": "bǐngwǔ",
-            "token_address": "DMYNp65mub3i7LRpBdB66CgBAceLcQnv4gsWeCi6pump"
-          },
-          {
-            "token_symbol": "火马",
-            "token_name": "The Fire Horse",
-            "token_address": "bZKyoQvoDCzDfJe28258o4TDUpgzjMHp2Vfid8vpump"
+            "token_symbol": "Mia",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
             "token_symbol": "Punch",
             "token_name": "パンチ",
             "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           }
         ],
         "leader_token": null,
@@ -389,7 +374,7 @@
     ],
     "meta_leaders": [
       {
-        "meta_name": "Political Meme Coins",
+        "meta_name": "Political Satire",
         "leader_token": {
           "token_symbol": "TRUMP2",
           "token_name": "Trump 2",
@@ -398,12 +383,21 @@
         }
       },
       {
-        "meta_name": "Meme Animal Coins",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 10212800.86
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 16431389.94
+        }
+      },
+      {
+        "meta_name": "AI & Autonomous Agents",
+        "leader_token": {
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 1072110.0
         }
       }
     ]
