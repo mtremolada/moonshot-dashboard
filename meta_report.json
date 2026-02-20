@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-20T14:17:43.698719Z",
+  "generated_at_utc": "2026-02-20T15:08:17.825900Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 73,
+  "token_context_count": 72,
   "prompt_truncated": false,
   "warnings": [
     "Detected 2 PVP group(s); excluding 2 token(s) from META prompt."
@@ -54,14 +54,14 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Internet Meme Tokens",
-        "description": "Tokens leveraging viral internet memes, iconic characters, or reaction culture. These often repurpose existing meme formats (e.g., Pepe, Bonk) or revive niche internet archetypes (e.g., Clippy, Wojak).",
+        "meta_name": "Internet Meme Revival",
+        "description": "Tokens leveraging pre-existing internet memes, often with historical roots in forums, imageboards, or viral videos. These tokens capitalize on established cultural references rather than creating new narratives.",
         "defining_signals": [
-          "Use of pre-existing meme characters (Pepe, Bonk)",
-          "Community-driven narrative around absurdity or humor",
-          "Tie-ins to viral TikTok/Reddit/X trends",
-          "Self-aware 'meme coin' branding",
-          "Lack of technical utility beyond cultural resonance"
+          "References to 2000s/2010s meme origins (e.g., 4chan, Reddit)",
+          "Use of iconic meme characters (Pepe, Wojak, Clippy)",
+          "Direct ties to viral image macros or phrases",
+          "Reclamation of memes co-opted by extremist communities",
+          "Meme evolution across platforms (TikTok, X, Discord)"
         ],
         "supporting_tokens": [
           {
@@ -70,29 +70,29 @@
             "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
             "token_symbol": "Bonk",
             "token_name": "Bonk",
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
             "token_symbol": "TROLL",
             "token_name": "TROLL",
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
         "confidence_0_100": 92,
-        "confidence_rationale": "Bonk has the highest market cap ($539M) and is tied to a well-established meme with cross-platform virality.",
+        "confidence_rationale": "Pepe and Bonk have significant historical meme traction, while Wojak/Clippy show strong cultural continuity. TROLL's 2008 origins demonstrate meme longevity.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -102,14 +102,14 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Animal/Creature Meme Tokens",
-        "description": "Tokens centered around anthropomorphized animals or mythical creatures with emotional resonance. These often leverage real-life viral stories (e.g., Punch the macaque) or symbolic animal archetypes (e.g., Hachiko).",
+        "meta_name": "Animal Symbolism",
+        "description": "Tokens using animals as central motifs, often combining real-world animal stories with internet meme culture. These tokens frequently leverage emotional narratives about wildlife or anthropomorphic characters.",
         "defining_signals": [
-          "Real-life animal rescue/affection stories",
-          "Symbolic animal traits (loyalty, cuteness, absurdity)",
-          "Memeification of animal behavior",
-          "Cross-cultural animal symbolism",
-          "Visual-centric branding"
+          "References to real animals with viral stories (pandas, penguins)",
+          "Use of animal traits as metaphor (loyalty, resilience)",
+          "Combination of cute/adorable with 'small but mighty' themes",
+          "Cross-cultural animal symbolism (Japanese macaque, German penguin)",
+          "Anthropomorphic character development"
         ],
         "supporting_tokens": [
           {
@@ -133,47 +133,37 @@
             "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
           },
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
           }
         ],
         "leader_hint_token_address": "865GVDdESzXiNvygSUt7yFeJLrXDyn5UpGNfYuxfpump",
         "confidence_0_100": 88,
-        "confidence_rationale": "HENRY ($829K) leverages a 2023 viral TikTok story with strong emotional appeal and cross-cultural resonance.",
+        "confidence_rationale": "HENRY's viral penguin story has clear emotional resonance. HACHI's loyalty narrative has cross-cultural appeal. Punch's macaque story shows strong emotional engagement.",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 9692162.4
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 477414353.64
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Self-Improvement/Maxxing Subculture",
-        "description": "Tokens repurposing optimization, self-improvement, or hyper-optimization subcultures. These often blend internet slang (e.g., 'maxxing') with performative self-betterment narratives.",
+        "meta_name": "Self-Improvement Subculture",
+        "description": "Tokens tapping into niche self-optimization communities, often with roots in internet forums. These tokens blend productivity culture with meme-like self-deprecation or hyper-optimization themes.",
         "defining_signals": [
-          "Use of 'maxxing' derivatives in token names",
-          "References to niche self-improvement forums",
-          "Absurdist takes on optimization (e.g., 'jestermaxxing')",
-          "Tie-ins to looksmaxxing/incel culture",
-          "Self-deprecating humor around optimization"
+          "References to looksmaxxing/looksmaxing subculture",
+          "Use of 'maxxing' suffix in token names",
+          "Focus on personal optimization as both goal and joke",
+          "Incorporation of incel forum terminology",
+          "Satirical takes on productivity culture"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "maxxing",
             "token_name": "maxxing",
             "token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump"
-          },
-          {
-            "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
-          },
-          {
-            "token_symbol": "TEST",
-            "token_name": "Test",
-            "token_address": "HdvZF538TerjMWc1cmtWVKUaGkS8d77sGH5QaDCCpump"
           }
         ],
         "leader_token": {
@@ -187,7 +177,7 @@
     ],
     "meta_leaders": [
       {
-        "meta_name": "Internet Meme Tokens",
+        "meta_name": "Internet Meme Revival",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -196,16 +186,16 @@
         }
       },
       {
-        "meta_name": "Animal/Creature Meme Tokens",
+        "meta_name": "Animal Symbolism",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 9692162.4
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 477414353.64
         }
       },
       {
-        "meta_name": "Self-Improvement/Maxxing Subculture",
+        "meta_name": "Self-Improvement Subculture",
         "leader_token": {
           "token_symbol": "maxxing",
           "token_name": "maxxing",
