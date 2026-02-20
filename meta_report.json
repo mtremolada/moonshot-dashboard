@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-20T02:10:56.122378Z",
+  "generated_at_utc": "2026-02-20T03:11:45.815321Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 82,
+  "token_context_count": 77,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 6 PVP group(s); excluding 6 token(s) from META prompt."
+    "Detected 4 PVP group(s); excluding 4 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 6,
+  "pvp_excluded_token_count": 4,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "wojak",
-      "tokens": [
-        {
-          "token_symbol": "Wojak",
-          "token_name": "Wojak",
-          "token_address": "GSj51VrcUB1EfqnhT3L8GFEXpCLeYNedzb2bjEzYpump",
-          "usd_market_cap": 3049.35,
-          "processed_at": "2026-02-19T02:47:13.180812Z"
-        },
-        {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 7306145.02,
-          "processed_at": "2026-02-19T05:49:52.901699Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "unknown",
@@ -66,26 +46,6 @@
           "token_address": "CpRogNQW2M8y6B1YvqaMJ8uU7RxjwyzgYV3CCC5Epump",
           "usd_market_cap": 170515.94,
           "processed_at": "2026-02-20T01:23:43.046499Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "wojak",
-      "tokens": [
-        {
-          "token_symbol": "Wojak",
-          "token_name": "Wojak",
-          "token_address": "GSj51VrcUB1EfqnhT3L8GFEXpCLeYNedzb2bjEzYpump",
-          "usd_market_cap": 3049.35,
-          "processed_at": "2026-02-19T02:47:13.180812Z"
-        },
-        {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 7306145.02,
-          "processed_at": "2026-02-19T05:49:52.901699Z"
         }
       ]
     },
@@ -134,12 +94,12 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Based Internet Culture",
-        "description": "Tokens leveraging pre-2024 viral memes with established cultural resonance, often repurposed for crypto virality.",
+        "meta_name": "Classic Internet Memes",
+        "description": "Tokens leveraging iconic internet memes with established cultural virality, such as Pepe the Frog, TROLL, and Clippy. These tokens capitalize on nostalgia and pre-existing meme communities.",
         "defining_signals": [
-          "References to viral internet memes (e.g., Pepe, Clippy, Trollface)",
-          "Pre-2024 meme origins with crypto repackaging",
-          "Community-driven virality via TikTok/X/Reddit"
+          "Meme origins in 2000s-2010s internet culture",
+          "Strong visual/identity ties to viral meme templates",
+          "High social media engagement from existing meme communities"
         ],
         "supporting_tokens": [
           {
@@ -163,14 +123,14 @@
             "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
         "confidence_0_100": 92,
-        "confidence_rationale": "Bonk ($552M) dominates with gaming meme roots; Pepe ($271K) leverages 2000s meme; Clippy ($807K) taps nostalgia.",
+        "confidence_rationale": "Pepe has $27M market cap and foundational meme status. Bonk ($552M) and TROLL ($16M) show strong community engagement.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -180,32 +140,78 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political Figure Satire",
-        "description": "Tokens mocking or repackaging political figures/events, often with anti-establishment or absurdist themes.",
+        "meta_name": "Cultural/ Historical References",
+        "description": "Tokens repurposing historical figures, folklore, or pop culture icons into crypto narratives. These include penguins, samurai helmets, and viral animal stories.",
         "defining_signals": [
-          "Direct references to Donald Trump or political movements",
-          "Absurdist or satirical framing of real-world events",
-          "Emerging from 2024 election cycle narratives"
+          "Leverage of non-crypto cultural heritage",
+          "Symbolic ties to folklore/legend",
+          "Viral animal/personal stories"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "TrumpLan",
-            "token_name": "Comrade DongLaDe Trump",
-            "token_address": "DzBxg2aZ5xXdcxWSVSFK4xXZcWYs4hMYx9MBihPFpump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           }
         ],
         "leader_token": {
-          "token_symbol": "TrumpLan",
-          "token_name": "Comrade DongLaDe Trump",
-          "token_address": "DzBxg2aZ5xXdcxWSVSFK4xXZcWYs4hMYx9MBihPFpump",
-          "usd_market_cap": 1491.72
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 8551433.64
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Utility Ecosystems",
+        "description": "Tokens building AI-driven platforms for gaming, companionship, and productivity. These projects emphasize real-world utility through AI integration.",
+        "defining_signals": [
+          "AI-focused use cases (gaming, companionship, automation)",
+          "Tokenized access to AI services",
+          "Cross-platform integration with Web3"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "LISA",
+            "token_name": "Lisa Loop()",
+            "token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump"
+          },
+          {
+            "token_symbol": "Mia",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+          },
+          {
+            "token_symbol": "AI",
+            "token_name": "Artificial Inu",
+            "token_address": "33UijYM5rwaBZAtpZa3vuLLZhfhyj1zh1wacJC4qbonk"
+          },
+          {
+            "token_symbol": "clawd",
+            "token_name": "clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+          }
+        ],
+        "leader_hint_token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Lisa Loop has $24.5M market cap and clear AI utility. Mia Ko ($245K) and GSD ($1.1M) show emerging traction.",
+        "leader_token": {
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 1162954.82
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme-Based Internet Culture",
+        "meta_name": "Classic Internet Memes",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -214,12 +220,21 @@
         }
       },
       {
-        "meta_name": "Political Figure Satire",
+        "meta_name": "Cultural/ Historical References",
         "leader_token": {
-          "token_symbol": "TrumpLan",
-          "token_name": "Comrade DongLaDe Trump",
-          "token_address": "DzBxg2aZ5xXdcxWSVSFK4xXZcWYs4hMYx9MBihPFpump",
-          "usd_market_cap": 1491.72
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 8551433.64
+        }
+      },
+      {
+        "meta_name": "AI Utility Ecosystems",
+        "leader_token": {
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 1162954.82
         }
       }
     ]
