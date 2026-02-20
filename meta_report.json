@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-20T06:03:27.870907Z",
+  "generated_at_utc": "2026-02-20T07:13:55.774860Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 75,
+  "token_context_count": 77,
   "prompt_truncated": false,
   "warnings": [
     "Detected 4 PVP group(s); excluding 4 token(s) from META prompt."
@@ -94,67 +94,31 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Based Crypto Tokens",
-        "description": "Tokens leveraging viral internet memes, slang, or cultural references to drive community engagement and speculative interest.",
+        "meta_name": "Meme Animal",
+        "description": "Tokens leveraging anthropomorphic or symbolic animal memes, often tied to viral stories or cultural archetypes.",
         "defining_signals": [
-          "Leverage pre-existing internet memes (e.g., Bonk, Wojak)",
-          "Use of slang or subculture terminology (e.g., Maxxing, Jestermaxxing)",
-          "Tie-ins to viral TikTok/Reddit trends (e.g., Drippin, Barking Puppy)"
+          "Animal-centric meme origins (e.g., dogs, pandas, penguins)",
+          "Viral animal-related narratives (e.g., Punch the macaque, Henry the penguin)",
+          "Cultural symbolism (e.g., loyalty in Hachiko, existential themes in Nietzschean Penguin)"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "BP",
+            "token_name": "Barking Puppy",
+            "token_address": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump"
           },
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+            "token_symbol": "HENRY",
+            "token_name": "World's Tiniest Penguin",
+            "token_address": "865GVDdESzXiNvygSUt7yFeJLrXDyn5UpGNfYuxfpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          }
-        ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Strong market caps and clear meme lineage (e.g., Bonk’s $539M cap). Tokens like Wojak and Pepe directly tie to global internet culture.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 539147538.52
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Animal/Nature-Inspired Tokens",
-        "description": "Tokens using animal or nature-based symbols to create emotional resonance or cultural storytelling.",
-        "defining_signals": [
-          "Leverage real-world animal stories (e.g., Punch the macaque)",
-          "Symbolic use of nature (e.g., Hachiko’s loyalty)",
-          "Cultural mythological ties (e.g., Kabuto’s samurai helmet reference)"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Kabuto",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "HACHI",
+            "token_symbol": "$HACHI",
             "token_name": "Hachiko",
             "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
@@ -162,13 +126,11 @@
             "token_symbol": "PANDU",
             "token_name": "Pandu Pandas",
             "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
-          },
-          {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           }
         ],
+        "leader_hint_token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong overlap in animal-centric narratives and viral stories, with Punch ($9.69M) and Hachiko ($4.85M) as top performers.",
         "leader_token": {
           "token_symbol": "Punch",
           "token_name": "パンチ",
@@ -176,25 +138,71 @@
           "usd_market_cap": 9692162.4
         },
         "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Internet Slang",
+        "description": "Tokens repurposing niche internet slang or subcultural jargon into crypto narratives.",
+        "defining_signals": [
+          "Derivation from incel forums, 4chan, or TikTok slang (e.g., 'maxxing', 'jestermaxxing')",
+          "Recontextualization of niche terms (e.g., 'NEET', 'CHUD')",
+          "Meme suffixes or prefixes (e.g., 'drippin', 'meowtakeover')"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "maxxing",
+            "token_name": "maxxing",
+            "token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump"
+          },
+          {
+            "token_symbol": "JESTER",
+            "token_name": "JESTERMAXXING",
+            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
+          },
+          {
+            "token_symbol": "Drippin",
+            "token_name": "Drippin",
+            "token_address": "CnELrdRNAifHB4UFK9RPpEYWL8JykucXEfEwbNPNpump"
+          },
+          {
+            "token_symbol": "CHUD",
+            "token_name": "CHUD",
+            "token_address": "AmSQu3NZTSKqTu5bTsfKimiBwEpfzT46RqzC5Apnbonk"
+          },
+          {
+            "token_symbol": "MEOW",
+            "token_name": "meowtakeover",
+            "token_address": "7Lbe787dJ4bxpPiEWLb9R9VnQsMiET6Gbacxedm3pump"
+          }
+        ],
+        "leader_hint_token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "High density of subcultural terms and meme suffixes, with Maxxing ($2.19M) and Jestermaxxing ($118K) showing strong engagement.",
+        "leader_token": {
+          "token_symbol": "CHUD",
+          "token_name": "CHUD",
+          "token_address": "AmSQu3NZTSKqTu5bTsfKimiBwEpfzT46RqzC5Apnbonk",
+          "usd_market_cap": 2435875.0
+        },
+        "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme-Based Crypto Tokens",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 539147538.52
-        }
-      },
-      {
-        "meta_name": "Animal/Nature-Inspired Tokens",
+        "meta_name": "Meme Animal",
         "leader_token": {
           "token_symbol": "Punch",
           "token_name": "パンチ",
           "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
           "usd_market_cap": 9692162.4
+        }
+      },
+      {
+        "meta_name": "Internet Slang",
+        "leader_token": {
+          "token_symbol": "CHUD",
+          "token_name": "CHUD",
+          "token_address": "AmSQu3NZTSKqTu5bTsfKimiBwEpfzT46RqzC5Apnbonk",
+          "usd_market_cap": 2435875.0
         }
       }
     ]
