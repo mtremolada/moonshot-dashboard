@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-20T13:17:17.093131Z",
+  "generated_at_utc": "2026-02-20T14:17:43.698719Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 75,
+  "token_context_count": 73,
   "prompt_truncated": false,
   "warnings": [
     "Detected 2 PVP group(s); excluding 2 token(s) from META prompt."
@@ -54,19 +54,64 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens leveraging viral internet memes, animal-centric humor, or absurd cultural references to drive community engagement. These often originate from TikTok, Reddit, or X trends with strong visual/absurdity appeal.",
+        "meta_name": "Internet Meme Tokens",
+        "description": "Tokens leveraging viral internet memes, iconic characters, or reaction culture. These often repurpose existing meme formats (e.g., Pepe, Bonk) or revive niche internet archetypes (e.g., Clippy, Wojak).",
         "defining_signals": [
-          "Viral animal/creature narratives (Punch, Oranmama)",
-          "Absurd internet slang revival (Jestermaxxing, Maxxing)",
-          "Nostalgic meme character reclamation (Pepe, Clippy)"
+          "Use of pre-existing meme characters (Pepe, Bonk)",
+          "Community-driven narrative around absurdity or humor",
+          "Tie-ins to viral TikTok/Reddit/X trends",
+          "Self-aware 'meme coin' branding",
+          "Lack of technical utility beyond cultural resonance"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
+          {
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          }
+        ],
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Bonk has the highest market cap ($539M) and is tied to a well-established meme with cross-platform virality.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 539147538.52
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal/Creature Meme Tokens",
+        "description": "Tokens centered around anthropomorphized animals or mythical creatures with emotional resonance. These often leverage real-life viral stories (e.g., Punch the macaque) or symbolic animal archetypes (e.g., Hachiko).",
+        "defining_signals": [
+          "Real-life animal rescue/affection stories",
+          "Symbolic animal traits (loyalty, cuteness, absurdity)",
+          "Memeification of animal behavior",
+          "Cross-cultural animal symbolism",
+          "Visual-centric branding"
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "Punch",
             "token_name": "パンチ",
@@ -78,77 +123,71 @@
             "token_address": "865GVDdESzXiNvygSUt7yFeJLrXDyn5UpGNfYuxfpump"
           },
           {
-            "token_symbol": "ORANMAMA",
-            "token_name": "オランママ",
-            "token_address": "29JU4mA9A66F6GLkdGUwL3rKdBpL8Mw6VZZHb8t8pump"
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "PANDU",
+            "token_name": "Pandu Pandas",
+            "token_address": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           }
         ],
-        "leader_hint_token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong viral narratives with cross-platform cultural reach (TikTok/X/Reddit), multiple tokens with $10M+ market caps, and clear meme lineage to pre-existing internet phenomena.",
+        "leader_hint_token_address": "865GVDdESzXiNvygSUt7yFeJLrXDyn5UpGNfYuxfpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "HENRY ($829K) leverages a 2023 viral TikTok story with strong emotional appeal and cross-cultural resonance.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 539147538.52
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 9692162.4
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Integrated Utility",
-        "description": "Tokens positioning themselves as infrastructure for AI ecosystems, including analytics platforms, AI memory chips, or crypto-native AI agents. Often emphasize technical utility over pure speculation.",
+        "meta_name": "Self-Improvement/Maxxing Subculture",
+        "description": "Tokens repurposing optimization, self-improvement, or hyper-optimization subcultures. These often blend internet slang (e.g., 'maxxing') with performative self-betterment narratives.",
         "defining_signals": [
-          "AI analytics/fundraising integration (SURGE)",
-          "AI memory chip claims (TOTO)",
-          "AI identity protocols (SIGIL)"
+          "Use of 'maxxing' derivatives in token names",
+          "References to niche self-improvement forums",
+          "Absurdist takes on optimization (e.g., 'jestermaxxing')",
+          "Tie-ins to looksmaxxing/incel culture",
+          "Self-deprecating humor around optimization"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "SURGE",
-            "token_name": "SURGE",
-            "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg"
+            "token_symbol": "maxxing",
+            "token_name": "maxxing",
+            "token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump"
           },
           {
-            "token_symbol": "SIGIL",
-            "token_name": "SIGIL Protocol",
-            "token_address": "4jja37YHJWuGBHMicmHXFUENa7DpD7JcUUS47C4QBAGS"
+            "token_symbol": "JESTER",
+            "token_name": "JESTERMAXXING",
+            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
           },
           {
-            "token_symbol": "TOTO",
-            "token_name": "Toto",
-            "token_address": "6jfRbgs3B1KrhohSZ7KbhJckHZektQs1rRUSwWeZpump"
-          },
-          {
-            "token_symbol": "GAS",
-            "token_name": "GAS",
-            "token_address": "25E8X8fPnT9AdU1nA78snybnzVxkDvv5rK663Ngrpump"
-          },
-          {
-            "token_symbol": "CTM",
-            "token_name": "c8ntinuum",
-            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
+            "token_symbol": "TEST",
+            "token_name": "Test",
+            "token_address": "HdvZF538TerjMWc1cmtWVKUaGkS8d77sGH5QaDCCpump"
           }
         ],
-        "leader_hint_token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong technical positioning with multiple tokens claiming AI infrastructure roles, though many lack live products. SURGE's $18M market cap and multi-chain focus gives it current leadership.",
         "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 361027132.35
+          "token_symbol": "maxxing",
+          "token_name": "maxxing",
+          "token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump",
+          "usd_market_cap": 2192928.57
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme-Driven Tokens",
+        "meta_name": "Internet Meme Tokens",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -157,12 +196,21 @@
         }
       },
       {
-        "meta_name": "AI-Integrated Utility",
+        "meta_name": "Animal/Creature Meme Tokens",
         "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 361027132.35
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 9692162.4
+        }
+      },
+      {
+        "meta_name": "Self-Improvement/Maxxing Subculture",
+        "leader_token": {
+          "token_symbol": "maxxing",
+          "token_name": "maxxing",
+          "token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump",
+          "usd_market_cap": 2192928.57
         }
       }
     ]
