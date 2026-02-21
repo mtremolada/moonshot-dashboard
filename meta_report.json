@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-02-21T13:21:33.349352Z",
+  "generated_at_utc": "2026-02-21T14:22:07.972923Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
   "token_context_count": 67,
@@ -94,12 +94,63 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens leveraging viral internet memes or cultural references to drive community engagement and speculative interest. These tokens often draw from established meme formats, characters, or phrases that have gained traction on platforms like TikTok, Reddit, and Know Your Meme.",
+        "meta_name": "Animal-Inspired Tokens",
+        "description": "This META is centered around tokens inspired by animals, often leveraging their symbolic or cultural significance. These tokens are frequently tied to viral animal-related content or real-world cultural icons.",
         "defining_signals": [
-          "Use of recognizable meme characters or phrases (e.g., Pepe, Wojak, Hachiko).",
-          "Strong cultural or historical references to internet memes or viral content.",
-          "Community-driven narratives with clear meme origins and widespread recognition."
+          "Tokens referencing real-world animals with cultural or symbolic meaning (e.g., Hachiko, Rainbow Fish).",
+          "Tokens inspired by viral animal-related content (e.g., Minecraft Grandma Fund, Lobstar).",
+          "Tokens using animal names or imagery for community or identity purposes (e.g., Bonk, Lobstarism)."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "fish",
+            "token_name": "rainbowfish",
+            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
+          },
+          {
+            "token_symbol": "Lobstar",
+            "token_name": "Lobstar",
+            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
+          },
+          {
+            "token_symbol": "Lobstarism",
+            "token_name": "Lobstarism",
+            "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump"
+          },
+          {
+            "token_symbol": "Grandma",
+            "token_name": "Minecraft Grandma Fund",
+            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
+          },
+          {
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          }
+        ],
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Animal-themed tokens are consistently emerging with strong community engagement and viral appeal.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 564249117.13
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Resurgence",
+        "description": "This META is characterized by tokens leveraging well-established internet memes or cultural references that have been repurposed for crypto. These tokens often draw from viral content that predates the token itself, creating a nostalgic or ironic appeal.",
+        "defining_signals": [
+          "Tokens based on established memes (e.g., Pepe, Wojak, Trollface).",
+          "Cultural references with clear pre-crypto origins (e.g., Hachiko, Nietzschean Penguin).",
+          "Meme-based narratives tied to viral internet content (e.g., Skeleton Banging Shield, Rainbow Fish)."
         ],
         "supporting_tokens": [
           {
@@ -113,171 +164,115 @@
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
             "token_symbol": "TROLL",
             "token_name": "TROLL",
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          }
-        ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 95,
-        "confidence_rationale": "Bonk is a high-market-cap token with strong meme roots and widespread cultural recognition, making it a clear leader in this category.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 564249117.13
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Tech-Driven Tokens",
-        "description": "Tokens that leverage AI, automation, or tech innovation as a core theme. These tokens often position themselves as the future of decentralized systems, using AI-driven tools or narratives to attract developers and early adopters.",
-        "defining_signals": [
-          "Integration of AI, automation, or machine learning in tokenomics or use cases.",
-          "Focus on decentralized or autonomous systems (e.g., AI agents, AI music studios).",
-          "Community-driven innovation with a focus on future tech."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "arc",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
           },
           {
-            "token_symbol": "automaton",
-            "token_name": "The Automaton",
-            "token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump"
-          },
-          {
-            "token_symbol": "EFM",
-            "token_name": "ECLIPSE",
-            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
-          },
-          {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
             "token_symbol": "Clippy",
             "token_name": "Clippy",
             "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
           }
         ],
-        "leader_hint_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Seeker has a clear utility focus and a large market cap, making it a strong leader in the AI and tech-driven category.",
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong cultural roots and widespread meme recognition across multiple tokens indicate a dominant and recurring theme.",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 113334049.29
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 17343543.22
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Cultural Symbolism Tokens",
-        "description": "Tokens that derive their value from cultural or historical symbols, often repurposing them for crypto narratives. These tokens leverage the emotional or symbolic weight of their names to attract attention and community support.",
+        "meta_name": "Nostalgia and Retro Culture",
+        "description": "This META is defined by tokens that draw from retro or nostalgic cultural references, often leveraging older internet memes, pop culture, or historical figures. These tokens appeal to a sense of familiarity and shared memory.",
         "defining_signals": [
-          "Names or themes rooted in historical, literary, or cultural symbols (e.g., Hachiko, ZORA).",
-          "Use of names with layered meanings or multiple cultural references.",
-          "Community narratives that tie the token to broader themes like loyalty, resilience, or existentialism."
+          "Tokens referencing older memes or internet culture (e.g., Ayy LMAO, Clippy).",
+          "Tokens inspired by retro pop culture (e.g., Ralph Wiggum, Minecraft Grandma Fund).",
+          "Tokens based on historical or nostalgic figures (e.g., Hachiko, Nietzschean Penguin)."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "AyyLMAO",
+            "token_name": "Ayy LMAO",
+            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
           },
           {
-            "token_symbol": "ZORA",
-            "token_name": "ZORA",
-            "token_address": "soKqZS9pASwBNS46G388nhK7XVtPaTyReffXEd3zora"
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "Lobstar",
-            "token_name": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Hachiko has a strong cultural narrative and emotional resonance, making it a central figure in this category.",
-        "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 11226551.66
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Community and Charity Tokens",
-        "description": "Tokens that emphasize community-driven initiatives, charity, or social impact. These tokens often tie their value to real-world causes or community engagement, leveraging emotional appeal to drive adoption.",
-        "defining_signals": [
-          "Community-driven narratives with charitable or social impact goals.",
-          "Use of real-world events or causes (e.g., Minecraft Grandma Fund).",
-          "Tokenomics that include buybacks, donations, or community airdrops."
-        ],
-        "supporting_tokens": [
           {
             "token_symbol": "Grandma",
             "token_name": "Minecraft Grandma Fund",
             "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
           },
           {
-            "token_symbol": "PsyopAnime",
-            "token_name": "PsyopAnime",
-            "token_address": "2nP9yKQNSGQy851iyawDvBkzkK2R2aqKArQCKc2gpump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "Djungelskog",
-            "token_name": "Ikea Orangutan",
-            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
-          },
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          }
+        ],
+        "leader_hint_token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Retro and nostalgic themes are gaining traction as they resonate with older internet users and meme culture.",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 8581380.12
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Community-Driven Tokens",
+        "description": "This META is characterized by tokens that emphasize community ownership, participation, and governance. These tokens often lack traditional utility but thrive on grassroots support and shared identity.",
+        "defining_signals": [
+          "Tokens with community-centric missions (e.g., Lobstarism, PsyopAnime).",
+          "Tokens with buybacks, airdrops, or donations tied to community goals (e.g., SOLPUMP, Grandma).",
+          "Tokens with no clear utility but strong community engagement (e.g., JESTERMAXXING, Lobstarism)."
+        ],
+        "supporting_tokens": [
           {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
-          },
-          {
-            "token_symbol": "SOLPUMP",
-            "token_name": "SOLPUMP",
-            "token_address": "3VW31dwix6k2EdzhDgZ2zB15J7FbHYQwAUqXgktRcJEX"
+            "token_symbol": "Lobstarism",
+            "token_name": "Lobstarism",
+            "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump"
           }
         ],
         "leader_token": {
-          "token_symbol": "CARDS",
-          "token_name": "Collector Crypt",
-          "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
-          "usd_market_cap": 10705802.0
+          "token_symbol": "Lobstarism",
+          "token_name": "Lobstarism",
+          "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump",
+          "usd_market_cap": 453851.69
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme-Driven Tokens",
+        "meta_name": "Animal-Inspired Tokens",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -286,30 +281,30 @@
         }
       },
       {
-        "meta_name": "AI and Tech-Driven Tokens",
+        "meta_name": "Meme Resurgence",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 113334049.29
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 17343543.22
         }
       },
       {
-        "meta_name": "Cultural Symbolism Tokens",
+        "meta_name": "Nostalgia and Retro Culture",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 11226551.66
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 8581380.12
         }
       },
       {
-        "meta_name": "Community and Charity Tokens",
+        "meta_name": "Community-Driven Tokens",
         "leader_token": {
-          "token_symbol": "CARDS",
-          "token_name": "Collector Crypt",
-          "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
-          "usd_market_cap": 10705802.0
+          "token_symbol": "Lobstarism",
+          "token_name": "Lobstarism",
+          "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump",
+          "usd_market_cap": 453851.69
         }
       }
     ]
