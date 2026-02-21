@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-21T05:16:26.804731Z",
+  "generated_at_utc": "2026-02-21T06:17:03.151741Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 70,
+  "token_context_count": 67,
   "prompt_truncated": false,
   "warnings": [
     "Detected 4 PVP group(s); excluding 6 token(s) from META prompt."
@@ -35,17 +35,17 @@
       "tokens": [
         {
           "token_symbol": "SOL",
-          "token_name": "Sol The Trophy Tomato",
-          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
-          "usd_market_cap": 1525777.11,
-          "processed_at": "2026-02-20T05:57:02.606306Z"
-        },
-        {
-          "token_symbol": "SOL",
           "token_name": "Solcoin [2014]",
           "token_address": "24xkN3eXTZyhevY3XXYLqjECFAqkv5Nf3w9NTdWVpump",
           "usd_market_cap": 17945.4,
           "processed_at": "2026-02-20T19:08:22.122335Z"
+        },
+        {
+          "token_symbol": "SOL",
+          "token_name": "Sol The Trophy Tomato",
+          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
+          "usd_market_cap": 1465494.16,
+          "processed_at": "2026-02-21T05:57:16.067350Z"
         }
       ]
     },
@@ -94,148 +94,75 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Culture Revival",
-        "description": "Tokens drawing from long-standing internet memes and pop culture references are gaining traction, leveraging nostalgia and viral history to attract communities.",
+        "meta_name": "Cultural Symbolism",
+        "description": "Tokens drawing from historical, literary, or symbolic references to create a narrative. These tokens often use well-known cultural or historical figures, events, or symbols to build identity.",
         "defining_signals": [
-          "Use of established memes like Wojak, Clippy, and Bonk",
-          "Historical meme origins (2000s–2010s) with modern crypto repurposing",
-          "Strong community engagement on platforms like TikTok, Reddit, and X"
+          "Tokens referencing historical or literary figures (e.g., Hachiko, Nietzschean Penguin).",
+          "Tokens using symbolic imagery or concepts (e.g., 'White Whale', 'Golden Dome').",
+          "Tokens with narratives tied to broader cultural or philosophical themes."
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "WHITEWHALE",
+            "token_name": "The White Whale",
+            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+          },
+          {
+            "token_symbol": "DOME",
+            "token_name": "Golden Dome Reserve",
+            "token_address": "8nvuWbvxrabbkEThNoiDMM44nVfP1JuEuVNNCwqQpVTd"
+          },
+          {
+            "token_symbol": "BAN",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+          }
+        ],
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong cultural and historical references with clear symbolic narratives, though some tokens lack direct crypto adoption.",
+        "leader_token": {
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 130877008.03
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens repurposing existing internet memes or cultural references for crypto branding. These tokens leverage well-known memes or cultural touchstones to create community and drive engagement.",
+        "defining_signals": [
+          "Tokens referencing viral memes like 'Ayy LMAO', 'Wojak', 'Trollface', and 'Clippy'.",
+          "Tokens using established meme formats or characters with clear non-crypto origins.",
+          "Tokens with narratives that align with the original meme's cultural context.",
+          "Tokens that originated from well-documented meme histories (e.g., 2000s, 2010s)."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "AyyLMAO",
+            "token_name": "Ayy LMAO",
+            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
+          },
           {
             "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "BFS",
-            "token_name": "BFS",
-            "token_address": "2k8yZaJjf61unHriuqdmvbxe7CUhEYML5kVJDbcotKjU"
-          },
-          {
-            "token_symbol": "testicle",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
-          },
-          {
-            "token_symbol": "DONT",
-            "token_name": "DisclaimerCoin",
-            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
-          }
-        ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Wojak has a strong historical meme presence and is widely recognized across multiple platforms, making it a central figure in this revival.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 564249117.13
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Tech Innovation",
-        "description": "Tokens are increasingly centered around AI, blockchain innovation, and tech-driven narratives, appealing to investors interested in the future of technology.",
-        "defining_signals": [
-          "AI-focused utility (e.g., AI Rig Complex, AI companion tokens)",
-          "Blockchain innovation (e.g., decentralized app stores, privacy-focused tokens)",
-          "Integration with gaming and NFT ecosystems"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "Mia",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "ECLIPSE",
-            "token_name": "ECLIPSE",
-            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
-          },
-          {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
-          },
-          {
-            "token_symbol": "GHOST",
-            "token_name": "GhostwareOS",
-            "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST"
-          },
-          {
-            "token_symbol": "CTM",
-            "token_name": "c8ntinuum",
-            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
-          }
-        ],
-        "leader_hint_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Seeker (SKR) has a clear utility proposition and a growing community, making it a strong leader in the AI and tech innovation space.",
-        "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 369849187.02
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Cultural and Historical References",
-        "description": "Tokens are drawing from historical, literary, and cultural references to create unique identities and narratives, appealing to a broad audience with diverse interests.",
-        "defining_signals": [
-          "Use of historical figures and events (e.g., Hachiko, Nietzschean Penguin)",
-          "Cultural symbols (e.g., Chinese sexagenary cycles, UFOs)",
-          "Literary and philosophical themes (e.g., 'White Whale' from Moby-Dick)"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "bǐngwǔ",
-            "token_name": "bǐngwǔ",
-            "token_address": "DMYNp65mub3i7LRpBdB66CgBAceLcQnv4gsWeCi6pump"
-          },
-          {
-            "token_symbol": "Nietzschean Penguin",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 9263597.59
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Retro Culture",
-        "description": "Tokens are leveraging retro and nostalgic themes, drawing from 90s/2000s pop culture, video games, and internet history to create emotional connections with users.",
-        "defining_signals": [
-          "Reference to retro games (e.g., Minecraft, Skyrim)",
-          "Use of retro internet culture (e.g., MS Paint, early 2000s memes)",
-          "Community-driven nostalgia (e.g., 'Grandma' token)"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Grandma",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
             "token_symbol": "Clippy",
@@ -246,11 +173,37 @@
             "token_symbol": "RAAAAAH",
             "token_name": "Skeleton Banging Shield",
             "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong meme origins and cultural references across multiple tokens, with clear historical roots and community engagement.",
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 17343543.22
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI and Automation",
+        "description": "Tokens centered around AI, automation, or AI-driven ecosystems. These tokens often focus on utility, governance, or access to AI tools and platforms.",
+        "defining_signals": [
+          "Tokens tied to AI agents or AI-driven platforms (e.g., LISA, Automaton).",
+          "Tokens offering AI-based services or tools (e.g., OPUS, JESTERMAXXING).",
+          "Tokens leveraging AI for community or governance (e.g., LISA, Automaton)."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "LISA",
+            "token_name": "Lisa Loop()",
+            "token_address": "EehwFP4EDzfXkz4Sz4wzHd4ydCJ2V7vCMEsh43iopump"
           },
           {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+            "token_symbol": "OPUS",
+            "token_name": "Opus The Trencher",
+            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
           },
           {
             "token_symbol": "JESTER",
@@ -258,58 +211,106 @@
             "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
           },
           {
-            "token_symbol": "Lobstar",
-            "token_name": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
+            "token_symbol": "AUTOMATON",
+            "token_name": "The Automaton",
+            "token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump"
+          },
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
           }
         ],
-        "leader_hint_token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "The Minecraft Grandma Fund has a strong emotional and nostalgic appeal, backed by real-world media coverage and a viral origin story.",
+        "leader_hint_token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Growing interest in AI-driven tools and platforms, with several tokens offering unique AI-based services.",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 2134956.16
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 1115052.15
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Community and Social",
+        "description": "Tokens centered around community engagement, social interaction, or social media trends. These tokens often leverage viral social media content or community-driven initiatives.",
+        "defining_signals": [
+          "Tokens tied to social media trends (e.g., 'House', 'GETUP').",
+          "Tokens referencing viral TikTok/X challenges or formats.",
+          "Tokens with community-driven narratives or events."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "HOUSE",
+            "token_name": "what's inside that house",
+            "token_address": "84yCF7hyUuRNAra9BjFHVDpnRdGXmfsV2emyZwLjpump"
+          },
+          {
+            "token_symbol": "GETUP",
+            "token_name": "Get up.",
+            "token_address": "FyrXA1skpDbgZpT8rZ9TWxGPYmvn4eUocJh6bmNapump"
+          },
+          {
+            "token_symbol": "GOODBOY",
+            "token_name": "GOOD BOY",
+            "token_address": "6REwPqkyCLF2h5gy24Xpwi2tvgZDBABLbZcfEmj5bonk"
+          },
+          {
+            "token_symbol": "MEOW",
+            "token_name": "meowtakeover",
+            "token_address": "7Lbe787dJ4bxpPiEWLb9R9VnQsMiET6Gbacxedm3pump"
+          },
+          {
+            "token_symbol": "CLAWD",
+            "token_name": "clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "house",
+          "token_name": "what's inside that house",
+          "token_address": "84yCF7hyUuRNAra9BjFHVDpnRdGXmfsV2emyZwLjpump",
+          "usd_market_cap": 792302.98
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Culture Revival",
+        "meta_name": "Cultural Symbolism",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 564249117.13
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 130877008.03
         }
       },
       {
-        "meta_name": "AI and Tech Innovation",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 369849187.02
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 17343543.22
         }
       },
       {
-        "meta_name": "Cultural and Historical References",
+        "meta_name": "AI and Automation",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 9263597.59
+          "token_symbol": "GSD",
+          "token_name": "Get Shit Done",
+          "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+          "usd_market_cap": 1115052.15
         }
       },
       {
-        "meta_name": "Nostalgia and Retro Culture",
+        "meta_name": "Community and Social",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 2134956.16
+          "token_symbol": "house",
+          "token_name": "what's inside that house",
+          "token_address": "84yCF7hyUuRNAra9BjFHVDpnRdGXmfsV2emyZwLjpump",
+          "usd_market_cap": 792302.98
         }
       }
     ]
