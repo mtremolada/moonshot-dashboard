@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-21T17:24:07.868781Z",
+  "generated_at_utc": "2026-02-21T18:24:50.096441Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 64,
+  "token_context_count": 65,
   "prompt_truncated": false,
   "warnings": [
     "Detected 4 PVP group(s); excluding 6 token(s) from META prompt."
@@ -95,59 +95,69 @@
     "top_metas": [
       {
         "meta_name": "Meme Culture Revival",
-        "description": "Tokens are leveraging long-standing internet memes and cultural references to build community and drive engagement. These tokens often repurpose well-known memes or characters from gaming, pop culture, or internet history into crypto narratives.",
+        "description": "Tokens are leveraging long-standing internet memes and cultural references to build community and drive engagement. These tokens often repurpose established memes from the 2000s and 2010s, such as 'Pepe the Frog', 'Wojak', and 'Clippy', to create a sense of nostalgia and familiarity.",
         "defining_signals": [
-          "Tokens based on established memes (e.g., Wojak, Clippy, TROLL, Bonk)",
-          "Strong ties to pre-existing cultural or internet references",
-          "Community-driven narratives with meme-based branding",
-          "High engagement on social platforms like TikTok, Reddit, and Know Your Meme"
+          "Use of established internet memes with pre-2015 origins",
+          "Visual or thematic references to well-known meme characters or formats",
+          "Community-driven narratives around humor, nostalgia, or satire",
+          "Tokens often lack utility beyond meme-based branding",
+          "High social media engagement tied to meme culture"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
           {
             "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
             "token_symbol": "Clippy",
+            "token_name": "Clippy",
             "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
+            "token_symbol": "AyyLMAO",
+            "token_name": "Ayy LMAO",
+            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
+          },
+          {
             "token_symbol": "Bonk",
+            "token_name": "Bonk",
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "RAAAAAH",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "Punch",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          },
-          {
-            "token_symbol": "jellyjelly",
-            "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+            "token_symbol": "testicle",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
           },
           {
             "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
             "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "Ban",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+            "token_symbol": "Grandma",
+            "token_name": "Minecraft Grandma Fund",
+            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
+          },
+          {
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
         "confidence_0_100": 92,
-        "confidence_rationale": "Strong meme culture foundation with multiple tokens leveraging well-known and viral internet references. High engagement and community activity across platforms.",
+        "confidence_rationale": "Bonk is a high-market-cap token with strong meme roots and widespread community engagement, making it a clear leader in this meta.",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -157,111 +167,100 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI and Future Tech Themes",
-        "description": "Tokens are centered around AI, automation, and future tech concepts. These tokens often position themselves as enablers or participants in the next wave of technological innovation, especially in AI, blockchain, and decentralized systems.",
+        "meta_name": "Niche Internet Culture",
+        "description": "Tokens are drawing from niche internet subcultures and specific viral moments, such as Japanese internet memes, gaming references, and obscure cultural phenomena. These tokens often cater to specific communities and leverage their unique identities for community bonding.",
         "defining_signals": [
-          "Tokens with AI, automation, or future-tech themes (e.g., ARC, IDLE, Automaton)",
-          "Narratives involving AI-driven tools, autonomous systems, or decentralized futures",
-          "Strong technical or speculative language in descriptions",
-          "Focus on innovation and disruption in traditional systems"
+          "References to niche internet subcultures or specific viral moments",
+          "Use of culturally specific references (e.g., Japanese, gaming, or meme-based)",
+          "Community-driven narratives with strong identity markers",
+          "Tokens often lack broader mainstream appeal",
+          "High engagement within specific online communities"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "arc",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+            "token_symbol": "Yaranaika",
+            "token_name": "やらないか",
+            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
           },
           {
-            "token_symbol": "IDLE",
-            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
+            "token_symbol": "Lobstarism",
+            "token_name": "Lobstarism",
+            "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump"
           },
           {
-            "token_symbol": "automaton",
-            "token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump"
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
-            "token_symbol": "AI",
-            "token_address": "33UijYM5rwaBZAtpZa3vuLLZhfhyj1zh1wacJC4qbonk"
+            "token_symbol": "jellyjelly",
+            "token_name": "jelly-my-jelly",
+            "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
           },
           {
-            "token_symbol": "OPUS",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+            "token_symbol": "Lobstar",
+            "token_name": "Lobstar",
+            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
           },
           {
-            "token_symbol": "SKR",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+            "token_symbol": "BigTrout",
+            "token_name": "The Big Trout",
+            "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG"
           },
           {
-            "token_symbol": "EFM",
-            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
+            "token_symbol": "Djungelskog",
+            "token_name": "Ikea Orangutan",
+            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
+          },
+          {
+            "token_symbol": "oora",
+            "token_name": "oora",
+            "token_address": "Cck21qHq33rezTeuQbPSvULXF2vLUTMErJwbPdUGpump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
           }
         ],
+        "leader_hint_token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Jellyjelly has a strong viral meme origin and is well-known in niche internet culture, making it a likely leader in this meta.",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 113334049.29
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 492761075.5
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Animal and Character IP Tokens",
-        "description": "Tokens are leveraging popular animals or fictional characters from media, games, or internet culture. These tokens often tie into existing IP or viral stories involving animals or characters, creating a sense of nostalgia or novelty.",
+        "meta_name": "Sociopolitical and Cultural Commentary",
+        "description": "Tokens are using sociopolitical themes and cultural commentary to engage users. These tokens often reflect broader societal issues, such as work-life balance, government transparency, and cultural identity, and are often used as a form of digital protest or commentary.",
         "defining_signals": [
-          "Tokens based on animals or fictional characters (e.g., Hachiko, Lobstar, Mia, RALPH)",
-          "Narratives tied to real-world or fictional stories of the character/animal",
-          "Community-driven IP-based branding",
-          "Strong visual identity and meme potential"
+          "Themes related to sociopolitical issues or cultural commentary",
+          "Use of tokens to represent or comment on specific societal issues",
+          "Community-driven narratives with a focus on identity or protest",
+          "Tokens often have a clear message or mission tied to the theme",
+          "High engagement from users interested in the specific issue"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
-          },
-          {
-            "token_symbol": "Mia",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "BigTrout",
-            "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG"
-          },
-          {
-            "token_symbol": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
-          },
-          {
-            "token_symbol": "Grandma",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "Djungelskog",
-            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
+            "token_symbol": "neet",
+            "token_name": "NotInEmploymentEducationTraining",
+            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
           }
         ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong IP-based narratives with recognizable characters or animals. These tokens often leverage nostalgia and visual appeal to attract communities.",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 11226551.66
+          "token_symbol": "neet",
+          "token_name": "NotInEmploymentEducationTraining",
+          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+          "usd_market_cap": 12900075.6
         },
         "leader_missing_reason": null
       }
@@ -277,21 +276,21 @@
         }
       },
       {
-        "meta_name": "AI and Future Tech Themes",
+        "meta_name": "Niche Internet Culture",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 113334049.29
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 492761075.5
         }
       },
       {
-        "meta_name": "Animal and Character IP Tokens",
+        "meta_name": "Sociopolitical and Cultural Commentary",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 11226551.66
+          "token_symbol": "neet",
+          "token_name": "NotInEmploymentEducationTraining",
+          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+          "usd_market_cap": 12900075.6
         }
       }
     ]
