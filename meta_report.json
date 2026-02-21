@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-21T02:14:14.631798Z",
+  "generated_at_utc": "2026-02-21T03:15:00.994347Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 70,
+  "token_context_count": 72,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 6 PVP group(s); excluding 8 token(s) from META prompt."
+    "Detected 4 PVP group(s); excluding 6 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 8,
+  "pvp_excluded_token_count": 6,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "hodl",
-      "tokens": [
-        {
-          "token_symbol": "HODL",
-          "token_name": "HODL",
-          "token_address": "CpRogNQW2M8y6B1YvqaMJ8uU7RxjwyzgYV3CCC5Epump",
-          "usd_market_cap": 170515.94,
-          "processed_at": "2026-02-20T01:23:43.046499Z"
-        },
-        {
-          "token_symbol": "HODL",
-          "token_name": "HODL",
-          "token_address": "Hh3oTaqDCKKfdBgsQEvxp9sUwyNf8x9qmKqEMLBWpump",
-          "usd_market_cap": 2394543.74,
-          "processed_at": "2026-02-20T17:33:51.148580Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "mac mini",
@@ -46,26 +26,6 @@
           "token_address": "2QKrBtNECja4cJygxA7igwqxahs93GNmuQ2We2stpump",
           "usd_market_cap": 145188.43,
           "processed_at": "2026-02-20T23:08:26.868280Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "hodl",
-      "tokens": [
-        {
-          "token_symbol": "HODL",
-          "token_name": "HODL",
-          "token_address": "CpRogNQW2M8y6B1YvqaMJ8uU7RxjwyzgYV3CCC5Epump",
-          "usd_market_cap": 170515.94,
-          "processed_at": "2026-02-20T01:23:43.046499Z"
-        },
-        {
-          "token_symbol": "HODL",
-          "token_name": "HODL",
-          "token_address": "Hh3oTaqDCKKfdBgsQEvxp9sUwyNf8x9qmKqEMLBWpump",
-          "usd_market_cap": 2394543.74,
-          "processed_at": "2026-02-20T17:33:51.148580Z"
         }
       ]
     },
@@ -134,23 +94,52 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Nostalgia-Driven Crypto",
-        "description": "Tokens leveraging retro or vintage internet culture, often repurposing early 2000s or 2010s internet phenomena into crypto narratives. These tokens tap into generational nostalgia and digital heritage.",
+        "meta_name": "Bonk Ecosystem",
+        "description": "Tokens leveraging the 'Bonk' meme, rooted in a 2016 Shiba Inu image and a 2007 Team Fortress 2 voice line. The meme evolved through 2019 Twitter/Reddit revivals, becoming a viral 'cartoon hit on the head' gag. Tokens in this META either directly reference the meme or piggyback on its community.",
         "defining_signals": [
-          "Reference to early 2000s internet culture",
-          "Use of retro aesthetics or concepts",
-          "Nostalgic reinterpretation of older memes",
-          "Strong generational resonance",
-          "Clear historical lineage in non-crypto culture"
+          "Direct use of 'Bonk' in token name/symbol",
+          "Community-driven meme culture with historical roots",
+          "Cross-platform virality (Twitter, Reddit, TikTok)"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "Wojak",
+            "token_symbol": "ONLINE",
+            "token_name": "forever online",
+            "token_address": "28bdSbHZ2vkKc4AiCwDYdX73g97tqN1tBaJdUBmqbonk"
+          }
+        ],
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 95,
+        "confidence_rationale": "Bonk has a massive market cap ($539M) and clear meme lineage. ONLINE explicitly references the Bonk community, indicating a cohesive ecosystem.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 539147538.52
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Retro Internet Memes",
+        "description": "Tokens repurposing 2000s-2010s internet memes (e.g., Wojak, Trollface, Clippy). These tokens leverage nostalgia for early internet culture, often with minimal new context beyond the original meme's premise.",
+        "defining_signals": [
+          "MS Paint/ASCII art origins",
+          "Pre-2015 meme revival",
+          "Minimal narrative beyond meme reference"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
@@ -160,199 +149,45 @@
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
-          },
-          {
-            "token_symbol": "Yaranaika",
-            "token_name": "やらないか",
-            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
-          }
-        ],
-        "leader_hint_token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Clippy has the strongest nostalgic appeal and historical significance among this group, with a clear connection to early 2000s software culture.",
-        "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 124758511.4
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Social Commentary Tokens",
-        "description": "Tokens using crypto as a medium for social or political commentary, often with clear ideological stances or critiques of existing systems. These tokens often have strong narrative frameworks.",
-        "defining_signals": [
-          "Explicit ideological stance in token narrative",
-          "Critique of existing systems (financial, social, etc.)",
-          "Strong narrative framework beyond just meme value",
-          "Community-driven social commentary",
-          "Clear mission or purpose beyond financial speculation"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
-          },
-          {
-            "token_symbol": "FREEDOM",
-            "token_name": "The Infinite Runner",
-            "token_address": "9jNLLxoBuXBmyPYxgRtAXAKqagRia3LxUv2j73gVQs7X"
-          },
-          {
-            "token_symbol": "NEET",
-            "token_name": "NotInEmploymentEducationTraining",
-            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
-          },
-          {
-            "token_symbol": "ALIENS",
-            "token_name": "Aliens are real",
-            "token_address": "F5tfztTnE4sYsMhZT5KrFpWvHmYSfJZoRjCuxKPbpump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 27426652.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Cultural Symbol Reclamation",
-        "description": "Tokens repurposing culturally significant symbols or stories into crypto narratives, often with historical or emotional resonance. These tokens leverage existing cultural weight rather than creating new IP.",
-        "defining_signals": [
-          "Use of culturally significant symbols (e.g., Hachiko, Nietzschean Penguin)",
-          "Emotional or historical resonance in the source material",
-          "Clear narrative connection to non-crypto cultural references",
-          "Symbolic meaning that transcends the token itself",
-          "Community-driven reinterpretation of the original symbol"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "$HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "DONT",
-            "token_name": "DisclaimerCoin",
-            "token_address": "FbmmdcCYHL7WETG89xtWmNFMzQAaQ8Zs9NXVbimibonk"
-          },
-          {
-            "token_symbol": "ORANMAMA",
-            "token_name": "オランママ",
-            "token_address": "29JU4mA9A66F6GLkdGUwL3rKdBpL8Mw6VZZHb8t8pump"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Hachiko has the strongest cultural resonance and emotional weight among this group, with a clear historical narrative that transcends the token itself.",
-        "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 9263597.59
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Animal Revival",
-        "description": "Tokens leveraging iconic internet animal memes, often with historical roots in early 2000s or 2010s internet culture. These tokens repurpose well-known characters into crypto narratives.",
-        "defining_signals": [
-          "Use of established animal meme characters (e.g., Pepe, Clippy, Wojak)",
-          "Historical meme lineage predating crypto adoption",
-          "Strong visual identity tied to original meme",
-          "Community-driven cultural references",
-          "Absence of new or original IP"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
-          },
-          {
             "token_symbol": "Clippy",
             "token_name": "Clippy",
             "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "testicle",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
           }
         ],
         "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Pepe has the highest market cap in this category and is the most established meme in the batch, with clear historical meme lineage and strong community engagement.",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Pepe ($271K MC) and Wojak ($9.1M MC) dominate the meme category. Their historical roots and broad cultural recognition solidify this META.",
         "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 9104399.4
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 17207711.7
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Nostalgia-Driven Crypto",
+        "meta_name": "Bonk Ecosystem",
         "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 124758511.4
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 539147538.52
         }
       },
       {
-        "meta_name": "Social Commentary Tokens",
+        "meta_name": "Retro Internet Memes",
         "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 27426652.0
-        }
-      },
-      {
-        "meta_name": "Cultural Symbol Reclamation",
-        "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 9263597.59
-        }
-      },
-      {
-        "meta_name": "Meme Animal Revival",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 9104399.4
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 17207711.7
         }
       }
     ]
