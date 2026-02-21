@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-21T19:25:34.588410Z",
+  "generated_at_utc": "2026-02-21T20:26:15.218120Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 65,
+  "token_context_count": 68,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 4 PVP group(s); excluding 6 token(s) from META prompt."
+    "Detected 3 PVP group(s); excluding 4 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 6,
+  "pvp_excluded_token_count": 4,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -31,46 +31,6 @@
     },
     {
       "match_type": "token_symbol",
-      "match_value": "sol",
-      "tokens": [
-        {
-          "token_symbol": "SOL",
-          "token_name": "Solcoin [2014]",
-          "token_address": "24xkN3eXTZyhevY3XXYLqjECFAqkv5Nf3w9NTdWVpump",
-          "usd_market_cap": 17945.4,
-          "processed_at": "2026-02-20T19:08:22.122335Z"
-        },
-        {
-          "token_symbol": "SOL",
-          "token_name": "Sol The Trophy Tomato",
-          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
-          "usd_market_cap": 1465494.16,
-          "processed_at": "2026-02-21T05:57:16.067350Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "kimchi",
-      "tokens": [
-        {
-          "token_symbol": "KIMCHI",
-          "token_name": "Kimchi",
-          "token_address": "HaUXAdAWWUkb2WTmh8z1TdaEmZkYjnQnmC6tHUdTAHvi",
-          "usd_market_cap": 367899.42,
-          "processed_at": "2026-02-20T19:41:11.789771Z"
-        },
-        {
-          "token_symbol": "KIMCHI",
-          "token_name": "Kimchicoin",
-          "token_address": "AWpD39myXc7emw5M9cMCofkbo92x5FKWdGHWYpZFdoge",
-          "usd_market_cap": 1926247.0,
-          "processed_at": "2026-02-20T23:10:41.307590Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
       "match_value": "macmini",
       "tokens": [
         {
@@ -88,70 +48,92 @@
           "processed_at": "2026-02-20T23:08:26.868280Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "kimchi",
+      "tokens": [
+        {
+          "token_symbol": "KIMCHI",
+          "token_name": "Kimchicoin",
+          "token_address": "AWpD39myXc7emw5M9cMCofkbo92x5FKWdGHWYpZFdoge",
+          "usd_market_cap": 1926247.0,
+          "processed_at": "2026-02-20T23:10:41.307590Z"
+        },
+        {
+          "token_symbol": "KIMCHI",
+          "token_name": "Kimchi",
+          "token_address": "HaUXAdAWWUkb2WTmh8z1TdaEmZkYjnQnmC6tHUdTAHvi",
+          "usd_market_cap": 306229.7,
+          "processed_at": "2026-02-21T19:41:47.850763Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens leveraging viral internet memes and cultural references to drive community engagement and speculative interest. These tokens often have no utility beyond the meme itself and rely on social media traction.",
+        "meta_name": "Political and Social Commentary",
+        "description": "Tokens referencing political figures, events, or social commentary, often leveraging existing cultural or political memes to drive engagement.",
         "defining_signals": [
-          "Leverage pre-existing memes (e.g., 'White Whale', 'Ayy LMAO', 'Bonk')",
-          "Strong cultural or internet meme origins (e.g., TikTok, Reddit, 4chan)",
-          "Community-driven branding and humor"
+          "References to political figures or events",
+          "Use of political memes or commentary",
+          "Community-driven political or social themes",
+          "Visuals or names tied to political or social movements"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "WhiteWhale",
-            "token_name": "The White Whale",
-            "token_address": "a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump"
+            "token_symbol": "TRUMP",
+            "token_name": "OFFICIAL TRUMP",
+            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
           },
           {
-            "token_symbol": "AyyLMAO",
-            "token_name": "Ayy LMAO",
-            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
+            "token_symbol": "GOODBOY",
+            "token_name": "GOOD BOY",
+            "token_address": "6REwPqkyCLF2h5gy24Xpwi2tvgZDBABLbZcfEmj5bonk"
           },
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "NICE",
+            "token_name": "NICE",
+            "token_address": "7fj85y28pKMndm4So66Szkb5GMGfLHFEkwsZdDx2pump"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+            "token_symbol": "ARREST",
+            "token_name": "Epstein Arrest Counter",
+            "token_address": "AY4xgLR8bGCgrVi1poZV3S5qjo7WbKhceeQofbCxvK2R"
           },
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "Aliens",
+            "token_name": "Aliens are real",
+            "token_address": "F5tfztTnE4sYsMhZT5KrFpWvHmYSfJZoRjCuxKPbpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 95,
-        "confidence_rationale": "Bonk has a strong meme history and high market cap, indicating it's a leader in this category.",
+        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong political and social themes with high market caps and community engagement around political figures and events.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 564249117.13
+          "token_symbol": "TRUMP",
+          "token_name": "OFFICIAL TRUMP",
+          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "usd_market_cap": 810559597.42
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Cultural and Historical References",
-        "description": "Tokens drawing from historical, cultural, or literary references to create a sense of depth and meaning. These tokens often tie into broader themes like loyalty, legacy, or historical events.",
+        "meta_name": "Animal-Themed Memes",
+        "description": "Tokens based on animal-related memes or characters, often leveraging cute or quirky animal imagery to create community and drive engagement.",
         "defining_signals": [
-          "Cultural or historical references (e.g., 'Hachiko', 'Pippin', 'Kabuto')",
-          "Symbolism tied to historical events or figures",
-          "Community-driven narratives around legacy or tradition"
+          "Animal-themed branding or imagery",
+          "Meme culture tied to specific animals",
+          "Community-driven animal-related humor",
+          "Visuals featuring animals in meme formats"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
             "token_symbol": "Pippin",
@@ -159,14 +141,14 @@
             "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
           },
           {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+            "token_symbol": "BigTrout",
+            "token_name": "The Big Trout",
+            "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG"
           },
           {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+            "token_symbol": "testicle",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
           },
           {
             "token_symbol": "PENGUIN",
@@ -174,78 +156,31 @@
             "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           }
         ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Hachiko has a strong cultural narrative and a relatively high market cap, making it a likely leader in this category.",
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong animal meme culture with multiple tokens showing high market caps and community engagement.",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 492761075.5
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 564249117.13
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Utility and Functionality Tokens",
-        "description": "Tokens that claim to offer real-world utility or functionality beyond being a meme. These projects often focus on decentralized finance (DeFi), gaming, or other blockchain-based applications.",
+        "meta_name": "AI-Driven Projects",
+        "description": "Tokens centered around AI integration, either as AI-themed memes or utility tokens for AI-driven platforms. These tokens often emphasize innovation in AI development or AI-based applications.",
         "defining_signals": [
-          "Claims of real-world utility (e.g., 'SolCex', 'IdleMine', 'CARDS')",
-          "Integration with DeFi or gaming ecosystems",
-          "Focus on cross-chain or multi-chain functionality"
+          "AI-related branding or utility",
+          "Focus on AI development or integration",
+          "Use of AI in tokenomics or platform features",
+          "Community-driven AI initiatives"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "SOLCEX",
-            "token_name": "SolCex",
-            "token_address": "AMjzRn1TBQwQfNAjHFeBb7uGbbqbJB7FzXAnGgdFPk6K"
-          },
-          {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
-          },
-          {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
-          },
-          {
-            "token_symbol": "CTM",
-            "token_name": "c8ntinuum",
-            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
-          },
-          {
-            "token_symbol": "SURGE",
-            "token_name": "SURGE",
-            "token_address": "3z2tRjNuQjoq6UDcw4zyEPD1Eb5KXMPYb4GWFzVT1DPg"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 369849187.02
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Tech-Driven Tokens",
-        "description": "Tokens centered around AI, automation, and tech innovation. These projects often promise utility or functionality tied to AI development, automation, or blockchain integration.",
-        "defining_signals": [
-          "AI or automation-related themes (e.g., 'ARC', 'Automaton', 'AI Rig Complex')",
-          "Claims of utility or functionality (e.g., AI-driven trading, on-chain identity)",
-          "Focus on decentralized or autonomous systems"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "arc",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "Automaton",
-            "token_name": "The Automaton",
-            "token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump"
+            "token_symbol": "AI",
+            "token_name": "Artificial Inu",
+            "token_address": "33UijYM5rwaBZAtpZa3vuLLZhfhyj1zh1wacJC4qbonk"
           },
           {
             "token_symbol": "OPUS",
@@ -253,31 +188,92 @@
             "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
           },
           {
-            "token_symbol": "GSD",
-            "token_name": "Get Shit Done",
-            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS"
+            "token_symbol": "automaton",
+            "token_name": "The Automaton",
+            "token_address": "oBeMrKMEqaLN8hYeuTiHDx91MXTP5zrsuKnhS2Spump"
           },
           {
-            "token_symbol": "AI",
-            "token_name": "Artificial Inu",
-            "token_address": "33UijYM5rwaBZAtpZa3vuLLZhfhyj1zh1wacJC4qbonk"
+            "token_symbol": "EFM",
+            "token_name": "ECLIPSE",
+            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
+          },
+          {
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
           }
         ],
-        "leader_hint_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+        "leader_hint_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
         "confidence_0_100": 85,
-        "confidence_rationale": "ARC has a strong narrative around AI and a relatively high market cap, making it a likely leader in this category.",
+        "confidence_rationale": "Strong AI integration themes with multiple tokens showing utility and community interest in AI-driven platforms.",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 74061138.71
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 113334049.29
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens repurposing established memes or cultural references for crypto branding. These tokens leverage pre-existing internet humor or viral content to create community and drive engagement.",
+        "defining_signals": [
+          "Use of well-known memes (e.g., Wojak, Trollface, Clippy) as branding",
+          "Lack of original non-crypto cultural origin",
+          "Community-driven meme culture as core theme",
+          "Visuals directly tied to meme imagery"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "jellyjelly",
+            "token_name": "jelly-my-jelly",
+            "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
+          }
+        ],
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong meme culture ties with established internet history and high market caps for several tokens in this category.",
+        "leader_token": {
+          "token_symbol": "jellyjelly",
+          "token_name": "jelly-my-jelly",
+          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+          "usd_market_cap": 66105568.44
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme-Driven Tokens",
+        "meta_name": "Political and Social Commentary",
+        "leader_token": {
+          "token_symbol": "TRUMP",
+          "token_name": "OFFICIAL TRUMP",
+          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "usd_market_cap": 810559597.42
+        }
+      },
+      {
+        "meta_name": "Animal-Themed Memes",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -286,30 +282,21 @@
         }
       },
       {
-        "meta_name": "Cultural and Historical References",
+        "meta_name": "AI-Driven Projects",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 492761075.5
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 113334049.29
         }
       },
       {
-        "meta_name": "Utility and Functionality Tokens",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 369849187.02
-        }
-      },
-      {
-        "meta_name": "AI and Tech-Driven Tokens",
-        "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 74061138.71
+          "token_symbol": "jellyjelly",
+          "token_name": "jelly-my-jelly",
+          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+          "usd_market_cap": 66105568.44
         }
       }
     ]
