@@ -1,14 +1,34 @@
 {
-  "generated_at_utc": "2026-02-22T18:46:38.051015Z",
+  "generated_at_utc": "2026-02-22T19:41:23.351368Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 65,
+  "token_context_count": 68,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 1 PVP group(s); excluding 2 token(s) from META prompt."
+    "Detected 3 PVP group(s); excluding 4 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 2,
+  "pvp_excluded_token_count": 4,
   "pvp_report": [
+    {
+      "match_type": "token_name",
+      "match_value": "tetanus coin",
+      "tokens": [
+        {
+          "token_symbol": "tetanus",
+          "token_name": "tetanus coin",
+          "token_address": "7Gf9g87UqU5nxiruoCLGSdjD7mpq98gUEFjuPNFDpump",
+          "usd_market_cap": 249435.52,
+          "processed_at": "2026-02-22T18:51:01.862784Z"
+        },
+        {
+          "token_symbol": "tetanus",
+          "token_name": "tetanus coin",
+          "token_address": "3C1Jytbip1koL3pYAozw8ZxgHErVJMijj48JUuG6pump",
+          "usd_market_cap": 94083.9,
+          "processed_at": "2026-02-22T19:07:26.672025Z"
+        }
+      ]
+    },
     {
       "match_type": "token_symbol",
       "match_value": "kimchi",
@@ -28,19 +48,38 @@
           "processed_at": "2026-02-22T17:42:29.448082Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "tetanus",
+      "tokens": [
+        {
+          "token_symbol": "tetanus",
+          "token_name": "tetanus coin",
+          "token_address": "7Gf9g87UqU5nxiruoCLGSdjD7mpq98gUEFjuPNFDpump",
+          "usd_market_cap": 249435.52,
+          "processed_at": "2026-02-22T18:51:01.862784Z"
+        },
+        {
+          "token_symbol": "tetanus",
+          "token_name": "tetanus coin",
+          "token_address": "3C1Jytbip1koL3pYAozw8ZxgHErVJMijj48JUuG6pump",
+          "usd_market_cap": 94083.9,
+          "processed_at": "2026-02-22T19:07:26.672025Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Cultural Icon Rebranding",
-        "description": "Tokens that rebrand or repurpose well-known cultural icons, characters, or historical figures into crypto narratives. These tokens often tie into broader internet trends or pop culture references.",
+        "meta_name": "Cultural Symbol",
+        "description": "This META includes tokens that are based on real-world cultural symbols, historical figures, or iconic characters. These tokens often tie their narratives to broader themes like loyalty, identity, or historical significance.",
         "defining_signals": [
-          "Tokens based on real-world cultural icons (e.g., Hachiko, Ralph Wiggum)",
-          "Strong narrative around the cultural figure or icon",
-          "Meme or viral internet origin for the character",
-          "Community-driven storytelling and fan engagement"
+          "Tokens referencing historical or cultural figures (e.g., Hachiko, Punch).",
+          "Tokens with narratives tied to real-world events or symbols.",
+          "Tokens leveraging the emotional or symbolic weight of cultural icons."
         ],
         "supporting_tokens": [
           {
@@ -49,104 +88,56 @@
             "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
             "token_symbol": "PUNCH",
             "token_name": "パンチ",
             "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
           },
           {
-            "token_symbol": "ALIENS",
-            "token_name": "Aliens are real",
-            "token_address": "F5tfztTnE4sYsMhZT5KrFpWvHmYSfJZoRjCuxKPbpump"
-          },
-          {
-            "token_symbol": "BIGTROUT",
+            "token_symbol": "BigTrout",
             "token_name": "The Big Trout",
             "token_address": "EKwF2HD6X4rHHr4322EJeK9QBGkqhpHZQSanSUmWkecG"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong cultural references and viral internet origins indicate a consistent theme of rebranding cultural icons into crypto narratives.",
-        "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 130088038.12
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Culture Revival",
-        "description": "A recurring theme where tokens are based on long-standing internet memes, often with roots in 2000s to 2010s internet culture. These tokens leverage nostalgia and established meme formats to attract community and speculative interest.",
-        "defining_signals": [
-          "Tokens based on established memes (e.g., Wojak, TROLL, RAAAAH)",
-          "Clear cultural or historical meme origins outside of crypto",
-          "Use of iconic imagery or phrases tied to internet history",
-          "Community-driven narratives with meme-based humor or satire"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
           },
           {
             "token_symbol": "PENGUIN",
             "token_name": "Nietzschean Penguin",
             "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "CLIP",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "PEPE",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong meme roots, high community engagement, and multiple tokens with similar themes indicate a strong and recurring narrative.",
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 88,
+        "confidence_rationale": "$HACHI has a strong cultural narrative and is one of the most recognizable tokens in this category.",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 16224545.45
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 619447826.08
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Utility-Driven Meme Coins",
-        "description": "Tokens that attempt to blend meme culture with utility, often by offering governance, staking, or platform access. These tokens aim to balance community-driven hype with functional use cases.",
+        "meta_name": "Utility-Driven Meme",
+        "description": "This META includes tokens that blend meme appeal with utility, often positioning themselves as both community-driven and functionally useful. These tokens may offer governance, staking, or other on-chain benefits while still leveraging meme culture.",
         "defining_signals": [
-          "Meme-based branding with utility claims",
-          "Governance or staking features tied to token ownership",
-          "Community-driven development or platform integration",
-          "Lack of clear documentation or team transparency"
+          "Tokens that combine meme themes with on-chain utility (e.g., staking, governance).",
+          "Tokens with clear utility narratives alongside meme appeal.",
+          "Tokens that position themselves as both community and functionally driven."
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "SITH",
+            "token_name": "S.I.T.H",
+            "token_address": "8kdJpwc8KqsbXtqq6h9dekwJhUttMBPD2MK7ViM4Qpump"
+          },
+          {
+            "token_symbol": "PAW",
+            "token_name": "OpenPaw Token",
+            "token_address": "FvLHiKeQwW9NxEwg3AWYbWApaV1AZc1t6zkuda334NHE"
+          },
           {
             "token_symbol": "GHOST",
             "token_name": "GhostwareOS",
@@ -156,35 +147,80 @@
             "token_symbol": "CARDS",
             "token_name": "Collector Crypt",
             "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+          },
+          {
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
           }
         ],
         "leader_token": {
-          "token_symbol": "CARDS",
-          "token_name": "Collector Crypt",
-          "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
-          "usd_market_cap": 11039571.0
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 108079061.67
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Crypto-Native Meme Creation",
-        "description": "Tokens that are entirely crypto-native, with no pre-existing cultural or meme references. These tokens are often created to capitalize on the viral nature of crypto communities and speculative FOMO.",
+        "meta_name": "Meme Revival",
+        "description": "This META is characterized by tokens reviving older internet memes, often with roots in 2000s or 2010s internet culture. These tokens leverage nostalgia and established meme popularity to attract attention and community engagement.",
         "defining_signals": [
-          "No verifiable non-crypto meme or cultural origin",
-          "Names and themes are unique to the crypto space",
-          "Highly speculative and community-driven narratives",
-          "Lack of external media or cultural context"
+          "Tokens based on established memes with clear historical roots (e.g., Pepe, Wojak, Clippy).",
+          "Meme themes that originated outside of crypto and gained traction in mainstream internet culture.",
+          "Tokens referencing viral characters or phrases from gaming, Reddit, or TikTok."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "LPPP",
-            "token_name": "Larry Pink's Pool Party",
-            "token_address": "44sHXMkPeciUpqhecfCysVs7RcaxeM24VPMauQouBREV"
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "Lobstarism",
-            "token_name": "Lobstarism",
-            "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "TRENCH",
+            "token_name": "Trenches Game",
+            "token_address": "BzyKa1FGjs2EUpu3GGDibY4xdygn5evAiRboKmETpump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          }
+        ],
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Pepe has a strong historical meme presence and is one of the most recognized meme tokens in the space.",
+        "leader_token": {
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 7106502.39
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto-Native Meme",
+        "description": "This META consists of tokens that are entirely crypto-native, with no clear pre-existing meme or cultural reference outside of the crypto ecosystem. These tokens often rely on community-driven humor, absurdity, or inside jokes to gain traction.",
+        "defining_signals": [
+          "Tokens with names or themes that appear to originate solely within the crypto space.",
+          "Absence of verifiable non-crypto meme or cultural references.",
+          "Tokens with humorous or absurd themes that are not tied to mainstream internet culture."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "testicle",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
           },
           {
             "token_symbol": "FKH",
@@ -197,63 +233,63 @@
             "token_address": "Cck21qHq33rezTeuQbPSvULXF2vLUTMErJwbPdUGpump"
           },
           {
+            "token_symbol": "Lobstarism",
+            "token_name": "Lobstarism",
+            "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump"
+          },
+          {
             "token_symbol": "OPUS",
             "token_name": "Opus The Trencher",
             "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          },
-          {
-            "token_symbol": "Lobstar",
-            "token_name": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
           }
         ],
-        "leader_hint_token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
+        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "These tokens are entirely crypto-native and have no external cultural references, indicating a strong and emerging trend in speculative meme creation.",
+        "confidence_rationale": "$TESTICLE has a strong community-driven meme appeal and is one of the more prominent tokens in this category.",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 3640756.0
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 3048030.03
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Cultural Icon Rebranding",
+        "meta_name": "Cultural Symbol",
         "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 130088038.12
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 619447826.08
         }
       },
       {
-        "meta_name": "Meme Culture Revival",
+        "meta_name": "Utility-Driven Meme",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 16224545.45
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 108079061.67
         }
       },
       {
-        "meta_name": "Utility-Driven Meme Coins",
+        "meta_name": "Meme Revival",
         "leader_token": {
-          "token_symbol": "CARDS",
-          "token_name": "Collector Crypt",
-          "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
-          "usd_market_cap": 11039571.0
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 7106502.39
         }
       },
       {
-        "meta_name": "Crypto-Native Meme Creation",
+        "meta_name": "Crypto-Native Meme",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 3640756.0
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 3048030.03
         }
       }
     ]
