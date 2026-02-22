@@ -1,35 +1,52 @@
 {
-  "generated_at_utc": "2026-02-22T16:53:03.278333Z",
+  "generated_at_utc": "2026-02-22T17:45:44.755266Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 13,
+  "token_context_count": 40,
   "prompt_truncated": false,
-  "warnings": [],
-  "pvp_excluded_token_count": 0,
-  "pvp_report": [],
+  "warnings": [
+    "Detected 1 PVP group(s); excluding 2 token(s) from META prompt."
+  ],
+  "pvp_excluded_token_count": 2,
+  "pvp_report": [
+    {
+      "match_type": "token_symbol",
+      "match_value": "kimchi",
+      "tokens": [
+        {
+          "token_symbol": "KIMCHI",
+          "token_name": "Kimchi",
+          "token_address": "HaUXAdAWWUkb2WTmh8z1TdaEmZkYjnQnmC6tHUdTAHvi",
+          "usd_market_cap": 306229.7,
+          "processed_at": "2026-02-21T19:41:47.850763Z"
+        },
+        {
+          "token_symbol": "KIMCHI",
+          "token_name": "Kimchicoin",
+          "token_address": "AWpD39myXc7emw5M9cMCofkbo92x5FKWdGHWYpZFdoge",
+          "usd_market_cap": 1527928.0,
+          "processed_at": "2026-02-22T17:42:29.448082Z"
+        }
+      ]
+    }
+  ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Revival",
-        "description": "This META is characterized by tokens that revive or reference older internet memes, often from the 2010s, and repurpose them for crypto culture. These tokens leverage nostalgia and existing meme popularity to attract attention and community engagement.",
+        "meta_name": "Political Meme Coins",
+        "description": "Tokens leveraging political figures or political commentary, often tied to Donald Trump or political satire. These tokens are driven by internet culture and political discourse.",
         "defining_signals": [
-          "Tokens named after or referencing well-known memes (e.g., Ayy LMAO, Larry Pink's Pool Party)",
-          "Meme origins traceable to 2010s internet culture",
-          "Inclusion of meme imagery or phrases in token branding",
-          "Community-driven humor and meme-based marketing",
-          "Absence of non-crypto cultural references outside of meme context"
+          "Reference to Donald Trump or political satire",
+          "Meme-based narratives with political undertones",
+          "High market cap and viral social media traction",
+          "Names derived from political memes or phrases"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "AyyLMAO",
-            "token_name": "Ayy LMAO",
-            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
-          },
-          {
-            "token_symbol": "LPPP",
-            "token_name": "Larry Pink's Pool Party",
-            "token_address": "44sHXMkPeciUpqhecfCysVs7RcaxeM24VPMauQouBREV"
+            "token_symbol": "TRUMP",
+            "token_name": "OFFICIAL TRUMP",
+            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
           },
           {
             "token_symbol": "GOODBOY",
@@ -37,24 +54,24 @@
             "token_address": "6REwPqkyCLF2h5gy24Xpwi2tvgZDBABLbZcfEmj5bonk"
           },
           {
-            "token_symbol": "TRUMP",
-            "token_name": "OFFICIAL TRUMP",
-            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
-            "token_symbol": "testicle",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+            "token_symbol": "BAN",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
           },
           {
-            "token_symbol": "HODL",
-            "token_name": "HODL",
-            "token_address": "Hh3oTaqDCKKfdBgsQEvxp9sUwyNf8x9qmKqEMLBWpump"
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           }
         ],
-        "leader_hint_token_address": "TRUMP",
+        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
         "confidence_0_100": 92,
-        "confidence_rationale": "The $TRUMP token has the highest market cap among the batch and is a well-known meme with strong cultural roots and a clear revival strategy.",
+        "confidence_rationale": "TRUMP has the highest market cap among the group and is directly tied to a well-known political figure and meme, indicating strong leadership in this category.",
         "leader_token": {
           "token_symbol": "TRUMP",
           "token_name": "OFFICIAL TRUMP",
@@ -64,62 +81,57 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Cultural Identity & Subculture Themes",
-        "description": "This META includes tokens that represent or critique specific subcultures or societal groups. These tokens often use the language, symbols, or ideologies of these groups to create a sense of identity and belonging among holders.",
+        "meta_name": "Cultural and Historical Meme Tokens",
+        "description": "Tokens inspired by historical or cultural figures, events, or stories. These tokens often leverage nostalgia or reverence for historical narratives to build community and value.",
         "defining_signals": [
-          "Tokens referencing subcultural identities (e.g., NEET, Kimchi)",
-          "Use of slang or terminology from specific subcultures",
-          "Themes of rebellion or critique of mainstream norms",
-          "Community-driven ethos and identity markers",
-          "Inclusion of cultural or societal commentary in token narratives"
+          "Names or themes based on historical or cultural figures",
+          "Strong narrative around cultural or historical significance",
+          "Community engagement around shared cultural identity",
+          "Meme-like branding with historical references"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "neet",
+            "token_symbol": "PIPPIN",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "NEET",
             "token_name": "NotInEmploymentEducationTraining",
             "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
           },
           {
-            "token_symbol": "KIMCHI",
-            "token_name": "Kimchi",
-            "token_address": "HaUXAdAWWUkb2WTmh8z1TdaEmZkYjnQnmC6tHUdTAHvi"
-          },
-          {
-            "token_symbol": "testicle",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
-          },
-          {
-            "token_symbol": "Lobstarism",
-            "token_name": "Lobstarism",
-            "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump"
-          },
-          {
-            "token_symbol": "ChiefPussy",
-            "token_name": "Tibanne Thecat",
-            "token_address": "DRtvTCzfiKGhCVREmBbZdN9sB8PHeq9KdRZ3VmFhpump"
+            "token_symbol": "DJUNGELSKOG",
+            "token_name": "Ikea Orangutan",
+            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
           }
         ],
-        "leader_hint_token_address": "neet",
-        "confidence_0_100": 85,
-        "confidence_rationale": "The $neet token has a strong subcultural identity and a clear narrative around disengagement from traditional systems, making it a central figure in this META.",
         "leader_token": {
-          "token_symbol": "neet",
-          "token_name": "NotInEmploymentEducationTraining",
-          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
-          "usd_market_cap": 14503172.72
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 619447826.08
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Utility & Infrastructure Innovation",
-        "description": "This META is defined by tokens that position themselves as enablers of new blockchain infrastructure or utility. These tokens often focus on technical innovation, governance, or decentralized services, aiming to solve real-world problems or improve existing systems.",
+        "meta_name": "Utility-Driven Tokens with Meme Overtones",
+        "description": "Tokens that blend utility features with meme-like branding. These tokens often have real-world applications but are marketed with meme-like themes to attract attention.",
         "defining_signals": [
-          "Tokens with clear utility or infrastructure use cases",
-          "Claims of governance, revenue-sharing, or decentralized execution",
-          "Integration with existing blockchain ecosystems (e.g., Solana)",
-          "Focus on technical innovation or privacy",
-          "Lack of meme or subcultural references"
+          "Meme branding with real-world utility",
+          "Claims of decentralized governance or ecosystem features",
+          "High market cap and active on-chain usage",
+          "Lack of clear non-crypto meme origin but strong branding"
         ],
         "supporting_tokens": [
           {
@@ -136,24 +148,80 @@
             "token_symbol": "GHOST",
             "token_name": "GhostwareOS",
             "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST"
+          },
+          {
+            "token_symbol": "OPUS",
+            "token_name": "Opus The Trencher",
+            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           }
         ],
-        "leader_hint_token_address": "GHOST",
-        "confidence_0_100": 78,
-        "confidence_rationale": "$GHOST has a clear focus on privacy and infrastructure, with a relatively high market cap and a unique value proposition in the Solana ecosystem.",
+        "leader_hint_token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
+        "confidence_0_100": 80,
+        "confidence_rationale": "GHOST has a strong market cap and clear utility claims, making it a likely leader in the utility-meme hybrid category.",
         "leader_token": {
-          "token_symbol": "GHOST",
-          "token_name": "GhostwareOS",
-          "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
-          "usd_market_cap": 4393760.0
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 41031986.41
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Absurd and Niche Meme Tokens",
+        "description": "Tokens built around niche or absurd internet memes, often with no clear non-crypto origin. These tokens thrive on internet culture and humor, often with surreal or chaotic themes.",
+        "defining_signals": [
+          "Names derived from obscure or absurd internet memes",
+          "No clear non-crypto cultural origin",
+          "Highly speculative and meme-driven",
+          "Strong community engagement on platforms like TikTok and Reddit"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "TESTICLE",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "AYYLMAO",
+            "token_name": "Ayy LMAO",
+            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
+          },
+          {
+            "token_symbol": "FKH",
+            "token_name": "Flying Ketamine Horse",
+            "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
+          },
+          {
+            "token_symbol": "YARANAIKA",
+            "token_name": "やらないか",
+            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+          },
+          {
+            "token_symbol": "OORA",
+            "token_name": "oora",
+            "token_address": "Cck21qHq33rezTeuQbPSvULXF2vLUTMErJwbPdUGpump"
+          }
+        ],
+        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "TESTICLE has a strong market cap and is tied to a well-known internet meme, making it a likely leader in this category.",
+        "leader_token": {
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 3048030.03
         },
         "leader_missing_reason": null
       }
     ],
-    "meta_rotation_note": "The Meme Revival META is currently the strongest, with tokens like $TRUMP and $AyyLMAO gaining traction due to their cultural resonance and nostalgia. The Cultural Identity & Subculture Themes META is emerging, particularly with tokens like $neet and $KIMCHI that reflect niche identities. The Utility & Infrastructure Innovation META is fading in comparison but remains relevant for technically-focused investors.",
     "meta_leaders": [
       {
-        "meta_name": "Meme Revival",
+        "meta_name": "Political Meme Coins",
         "leader_token": {
           "token_symbol": "TRUMP",
           "token_name": "OFFICIAL TRUMP",
@@ -162,21 +230,30 @@
         }
       },
       {
-        "meta_name": "Cultural Identity & Subculture Themes",
+        "meta_name": "Cultural and Historical Meme Tokens",
         "leader_token": {
-          "token_symbol": "neet",
-          "token_name": "NotInEmploymentEducationTraining",
-          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
-          "usd_market_cap": 14503172.72
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 619447826.08
         }
       },
       {
-        "meta_name": "Utility & Infrastructure Innovation",
+        "meta_name": "Utility-Driven Tokens with Meme Overtones",
         "leader_token": {
-          "token_symbol": "GHOST",
-          "token_name": "GhostwareOS",
-          "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
-          "usd_market_cap": 4393760.0
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 41031986.41
+        }
+      },
+      {
+        "meta_name": "Absurd and Niche Meme Tokens",
+        "leader_token": {
+          "token_symbol": "testicle",
+          "token_name": "testicle",
+          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+          "usd_market_cap": 3048030.03
         }
       }
     ]
