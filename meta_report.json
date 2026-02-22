@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-22T17:45:44.755266Z",
+  "generated_at_utc": "2026-02-22T18:35:54.661432Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 40,
+  "token_context_count": 64,
   "prompt_truncated": false,
   "warnings": [
     "Detected 1 PVP group(s); excluding 2 token(s) from META prompt."
@@ -34,24 +34,34 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political Meme Coins",
-        "description": "Tokens leveraging political figures or political commentary, often tied to Donald Trump or political satire. These tokens are driven by internet culture and political discourse.",
+        "meta_name": "Meme Revival",
+        "description": "Tokens leveraging pre-existing internet memes, often from 2000s or 2010s, to create community-driven value. These tokens often tie to viral images, phrases, or characters that have been repurposed in crypto.",
         "defining_signals": [
-          "Reference to Donald Trump or political satire",
-          "Meme-based narratives with political undertones",
-          "High market cap and viral social media traction",
-          "Names derived from political memes or phrases"
+          "Tokens based on established memes with clear cultural roots (e.g., Pepe, Wojak, Clippy).",
+          "Names and symbols directly referencing viral internet memes or characters.",
+          "Community-driven narratives with no clear utility beyond meme culture.",
+          "High social media engagement and meme-based marketing."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "TRUMP",
-            "token_name": "OFFICIAL TRUMP",
-            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
           },
           {
-            "token_symbol": "GOODBOY",
-            "token_name": "GOOD BOY",
-            "token_address": "6REwPqkyCLF2h5gy24Xpwi2tvgZDBABLbZcfEmj5bonk"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
           },
           {
             "token_symbol": "RALPH",
@@ -59,110 +69,34 @@
             "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
-          },
-          {
             "token_symbol": "HACHI",
             "token_name": "Hachiko",
             "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "AyyLMAO",
+            "token_name": "Ayy LMAO",
+            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
+          },
+          {
+            "token_symbol": "testicle",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "HODL",
+            "token_name": "HODL",
+            "token_address": "Hh3oTaqDCKKfdBgsQEvxp9sUwyNf8x9qmKqEMLBWpump"
           }
         ],
-        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+        "leader_hint_token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
         "confidence_0_100": 92,
-        "confidence_rationale": "TRUMP has the highest market cap among the group and is directly tied to a well-known political figure and meme, indicating strong leadership in this category.",
-        "leader_token": {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 810559597.42
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Cultural and Historical Meme Tokens",
-        "description": "Tokens inspired by historical or cultural figures, events, or stories. These tokens often leverage nostalgia or reverence for historical narratives to build community and value.",
-        "defining_signals": [
-          "Names or themes based on historical or cultural figures",
-          "Strong narrative around cultural or historical significance",
-          "Community engagement around shared cultural identity",
-          "Meme-like branding with historical references"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PIPPIN",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "PUNCH",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          },
-          {
-            "token_symbol": "NEET",
-            "token_name": "NotInEmploymentEducationTraining",
-            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
-          },
-          {
-            "token_symbol": "DJUNGELSKOG",
-            "token_name": "Ikea Orangutan",
-            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 619447826.08
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Utility-Driven Tokens with Meme Overtones",
-        "description": "Tokens that blend utility features with meme-like branding. These tokens often have real-world applications but are marketed with meme-like themes to attract attention.",
-        "defining_signals": [
-          "Meme branding with real-world utility",
-          "Claims of decentralized governance or ecosystem features",
-          "High market cap and active on-chain usage",
-          "Lack of clear non-crypto meme origin but strong branding"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "SITH",
-            "token_name": "S.I.T.H",
-            "token_address": "8kdJpwc8KqsbXtq6h9dekwJhUttMBPD2MK7ViM4Qpump"
-          },
-          {
-            "token_symbol": "PAW",
-            "token_name": "OpenPaw Token",
-            "token_address": "FvLHiKeQwW9NxEwg3AWYbWApaV1AZc1t6zkuda334NHE"
-          },
-          {
-            "token_symbol": "GHOST",
-            "token_name": "GhostwareOS",
-            "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          },
-          {
-            "token_symbol": "PUNCH",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          }
-        ],
-        "leader_hint_token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
-        "confidence_0_100": 80,
-        "confidence_rationale": "GHOST has a strong market cap and clear utility claims, making it a likely leader in the utility-meme hybrid category.",
+        "confidence_rationale": "Pepe is one of the most iconic and widely recognized meme tokens, with a long-standing cultural legacy and high market cap. It consistently drives engagement and community activity.",
         "leader_token": {
           "token_symbol": "Punch",
           "token_name": "パンチ",
@@ -172,24 +106,39 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Absurd and Niche Meme Tokens",
-        "description": "Tokens built around niche or absurd internet memes, often with no clear non-crypto origin. These tokens thrive on internet culture and humor, often with surreal or chaotic themes.",
+        "meta_name": "Crypto-Native Meme",
+        "description": "Tokens that originate or gain traction solely within the crypto ecosystem, often with no clear pre-existing cultural or meme reference outside of crypto. These tokens are typically community-driven and rely on in-jokes or crypto-specific humor.",
         "defining_signals": [
-          "Names derived from obscure or absurd internet memes",
-          "No clear non-crypto cultural origin",
-          "Highly speculative and meme-driven",
-          "Strong community engagement on platforms like TikTok and Reddit"
+          "Names and symbols with no clear non-crypto cultural or meme origin.",
+          "Community-driven narratives with no external cultural references.",
+          "High engagement on crypto-native platforms like Telegram, Discord, and Twitter/X.",
+          "Lack of formal documentation or team transparency."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "TESTICLE",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+            "token_symbol": "GOODBOY",
+            "token_name": "GOOD BOY",
+            "token_address": "6REwPqkyCLF2h5gy24Xpwi2tvgZDBABLbZcfEmj5bonk"
           },
           {
-            "token_symbol": "AYYLMAO",
-            "token_name": "Ayy LMAO",
-            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
+            "token_symbol": "Lobstar",
+            "token_name": "Lobstar",
+            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
+          },
+          {
+            "token_symbol": "fish",
+            "token_name": "rainbowfish",
+            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
+          },
+          {
+            "token_symbol": "LPPP",
+            "token_name": "Larry Pink's Pool Party",
+            "token_address": "44sHXMkPeciUpqhecfCysVs7RcaxeM24VPMauQouBREV"
+          },
+          {
+            "token_symbol": "Tastecoin",
+            "token_name": "Tastecoin",
+            "token_address": "4oERTdtSCns3Zrxv2HJ8fw6Y6rticaRcu8GVGTgXpump"
           },
           {
             "token_symbol": "FKH",
@@ -197,49 +146,75 @@
             "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
           },
           {
-            "token_symbol": "YARANAIKA",
-            "token_name": "やらないか",
-            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
-          },
-          {
-            "token_symbol": "OORA",
+            "token_symbol": "oora",
             "token_name": "oora",
             "token_address": "Cck21qHq33rezTeuQbPSvULXF2vLUTMErJwbPdUGpump"
+          },
+          {
+            "token_symbol": "OPUS",
+            "token_name": "Opus The Trencher",
+            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+          },
+          {
+            "token_symbol": "ZORA",
+            "token_name": "ZORA",
+            "token_address": "soKqZS9pASwBNS46G388nhK7XVtPaTyReffXEd3zora"
+          },
+          {
+            "token_symbol": "USELESS",
+            "token_name": "USELESS COIN",
+            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
           }
         ],
-        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+        "leader_hint_token_address": "44sHXMkPeciUpqhecfCysVs7RcaxeM24VPMauQouBREV",
         "confidence_0_100": 85,
-        "confidence_rationale": "TESTICLE has a strong market cap and is tied to a well-known internet meme, making it a likely leader in this category.",
+        "confidence_rationale": "Larry Pink's Pool Party (LPPP) has a unique name and narrative with no external cultural roots, and it has a decent market cap and community engagement.",
         "leader_token": {
-          "token_symbol": "testicle",
-          "token_name": "testicle",
-          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
-          "usd_market_cap": 3048030.03
+          "token_symbol": "USELESS",
+          "token_name": "USELESS COIN",
+          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+          "usd_market_cap": 36443547.54
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal Meme",
+        "description": "Tokens based on animal-related memes or characters, often with a humorous or absurd twist. These tokens often leverage the popularity of animal memes across social media platforms.",
+        "defining_signals": [
+          "Tokens based on animal-related memes or characters.",
+          "Names and symbols referencing animals or animal-related humor.",
+          "Community-driven narratives with no clear utility beyond meme culture.",
+          "High social media engagement and meme-based marketing."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "Djungelskog",
+            "token_name": "Ikea Orangutan",
+            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
+          },
+          {
+            "token_symbol": "KABUTO",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 7126048.3
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Political Meme Coins",
-        "leader_token": {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 810559597.42
-        }
-      },
-      {
-        "meta_name": "Cultural and Historical Meme Tokens",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 619447826.08
-        }
-      },
-      {
-        "meta_name": "Utility-Driven Tokens with Meme Overtones",
+        "meta_name": "Meme Revival",
         "leader_token": {
           "token_symbol": "Punch",
           "token_name": "パンチ",
@@ -248,12 +223,21 @@
         }
       },
       {
-        "meta_name": "Absurd and Niche Meme Tokens",
+        "meta_name": "Crypto-Native Meme",
         "leader_token": {
-          "token_symbol": "testicle",
-          "token_name": "testicle",
-          "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
-          "usd_market_cap": 3048030.03
+          "token_symbol": "USELESS",
+          "token_name": "USELESS COIN",
+          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+          "usd_market_cap": 36443547.54
+        }
+      },
+      {
+        "meta_name": "Animal Meme",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 7126048.3
         }
       }
     ]
