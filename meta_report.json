@@ -1,93 +1,54 @@
 {
-  "generated_at_utc": "2026-02-21T21:16:44.245726Z",
+  "generated_at_utc": "2026-02-22T16:45:53.477892Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 67,
+  "token_context_count": 11,
   "prompt_truncated": false,
-  "warnings": [
-    "Detected 3 PVP group(s); excluding 4 token(s) from META prompt."
-  ],
-  "pvp_excluded_token_count": 4,
-  "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "mac mini",
-      "tokens": [
-        {
-          "token_symbol": "MACMINI",
-          "token_name": "Mac Mini",
-          "token_address": "xGQ48SWHrnEv9dqVZ2UYrcxEPi6eNX8mSXT4gPPuJZZ",
-          "usd_market_cap": 110982.69,
-          "processed_at": "2026-02-20T22:12:56.443803Z"
-        },
-        {
-          "token_symbol": "MACMINI",
-          "token_name": "Mac mini",
-          "token_address": "2QKrBtNECja4cJygxA7igwqxahs93GNmuQ2We2stpump",
-          "usd_market_cap": 145188.43,
-          "processed_at": "2026-02-20T23:08:26.868280Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "macmini",
-      "tokens": [
-        {
-          "token_symbol": "MACMINI",
-          "token_name": "Mac Mini",
-          "token_address": "xGQ48SWHrnEv9dqVZ2UYrcxEPi6eNX8mSXT4gPPuJZZ",
-          "usd_market_cap": 110982.69,
-          "processed_at": "2026-02-20T22:12:56.443803Z"
-        },
-        {
-          "token_symbol": "MACMINI",
-          "token_name": "Mac mini",
-          "token_address": "2QKrBtNECja4cJygxA7igwqxahs93GNmuQ2We2stpump",
-          "usd_market_cap": 145188.43,
-          "processed_at": "2026-02-20T23:08:26.868280Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "kimchi",
-      "tokens": [
-        {
-          "token_symbol": "KIMCHI",
-          "token_name": "Kimchicoin",
-          "token_address": "AWpD39myXc7emw5M9cMCofkbo92x5FKWdGHWYpZFdoge",
-          "usd_market_cap": 1926247.0,
-          "processed_at": "2026-02-20T23:10:41.307590Z"
-        },
-        {
-          "token_symbol": "KIMCHI",
-          "token_name": "Kimchi",
-          "token_address": "HaUXAdAWWUkb2WTmh8z1TdaEmZkYjnQnmC6tHUdTAHvi",
-          "usd_market_cap": 306229.7,
-          "processed_at": "2026-02-21T19:41:47.850763Z"
-        }
-      ]
-    }
-  ],
+  "warnings": [],
+  "pvp_excluded_token_count": 0,
+  "pvp_report": [],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political/Satirical Meme Tokens",
-        "description": "Tokens leveraging political figures, events, or satirical commentary as core branding elements.",
+        "meta_name": "Meme Revival",
+        "description": "This META involves tokens that revive or capitalize on pre-existing internet memes or slang, often with a humorous or nostalgic angle. These tokens leverage the cultural familiarity of the meme to attract attention and community engagement.",
         "defining_signals": [
-          "Direct references to political figures (e.g., Trump, Obama)",
-          "Satirical takes on institutional systems (e.g., WAR, SPX6900)",
-          "Meme-based financial commentary (e.g., 'useless' themes)"
+          "Use of well-known internet memes or phrases with established cultural roots.",
+          "Token names and symbols directly reference viral or historical meme content.",
+          "Community-driven narratives that emphasize humor or nostalgia.",
+          "Absence of non-crypto cultural origins for the token name."
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "HODL",
+            "token_name": "HODL",
+            "token_address": "Hh3oTaqDCKKfdBgsQEvxp9sUwyNf8x9qmKqEMLBWpump"
+          },
           {
             "token_symbol": "TRUMP",
             "token_name": "OFFICIAL TRUMP",
             "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
+          },
+          {
+            "token_symbol": "GOODBOY",
+            "token_name": "GOOD BOY",
+            "token_address": "6REwPqkyCLF2h5gy24Xpwi2tvgZDBABLbZcfEmj5bonk"
+          },
+          {
+            "token_symbol": "AyyLMAO",
+            "token_name": "Ayy LMAO",
+            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
+          },
+          {
+            "token_symbol": "neet",
+            "token_name": "NotInEmploymentEducationTraining",
+            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
           }
         ],
+        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+        "confidence_0_100": 85,
+        "confidence_rationale": "The $TRUMP token has the highest market cap among the batch and is clearly leveraging a well-known meme with strong cultural and political resonance. Other tokens like HODL and AyyLMAO also show strong meme revival signals.",
         "leader_token": {
           "token_symbol": "TRUMP",
           "token_name": "OFFICIAL TRUMP",
@@ -97,101 +58,84 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Animal-Themed Meme Tokens",
-        "description": "Tokens leveraging viral animal-centric internet memes and real-world animal stories, often tied to viral videos or conservation narratives.",
+        "meta_name": "Cultural Niche Identity",
+        "description": "This META is characterized by tokens that align with specific cultural or subcultural identities, often using niche terminology or community-driven themes to foster a sense of belonging and exclusivity.",
         "defining_signals": [
-          "References to viral animal memes (e.g., dancing kittens, cuddling zoo animals)",
-          "Conservation or anthropomorphic storytelling in token narratives",
-          "Use of real-world animal cultural icons (e.g., Hachiko, Punch the macaque)"
+          "Use of culturally or subculturally significant terms or phrases.",
+          "Tokens that reference or align with specific internet subcultures or ideologies.",
+          "Community-driven narratives that emphasize identity or rebellion.",
+          "Absence of mainstream cultural references."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+            "token_symbol": "neet",
+            "token_name": "NotInEmploymentEducationTraining",
+            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
           },
           {
-            "token_symbol": "Djungelskog",
-            "token_name": "Ikea Orangutan",
-            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
+            "token_symbol": "KIMCHI",
+            "token_name": "Kimchi",
+            "token_address": "HaUXAdAWWUkb2WTmh8z1TdaEmZkYjnQnmC6tHUdTAHvi"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "MEOW",
-            "token_name": "meowtakeover",
-            "token_address": "7Lbe787dJ4bxpPiEWLb9R9VnQsMiET6Gbacxedm3pump"
-          },
-          {
-            "token_symbol": "Aliens",
-            "token_name": "Aliens are real",
-            "token_address": "F5tfztTnE4sYsMhZT5KrFpWvHmYSfJZoRjCuxKPbpump"
+            "token_symbol": "ChiefPussy",
+            "token_name": "Tibanne Thecat",
+            "token_address": "DRtvTCzfiKGhCVREmBbZdN9sB8PHeq9KdRZ3VmFhpump"
           }
         ],
-        "leader_hint_token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong viral animal meme ties (Punch, MEOW) and real-world cultural references (Hachiko) dominate this batch with clear narrative cohesion.",
+        "leader_hint_token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "The 'neet' token has the highest market cap among this group and represents a strong cultural niche identity. It aligns with internet subculture themes and has a clear ideological angle.",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 35843655.33
+          "token_symbol": "neet",
+          "token_name": "NotInEmploymentEducationTraining",
+          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+          "usd_market_cap": 14503172.72
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Classic Internet Meme Revival",
-        "description": "Tokens repurposing 2000s-2010s internet memes into crypto narratives, often with nostalgic or ironic twists.",
+        "meta_name": "Utility-Driven Innovation",
+        "description": "This META includes tokens that emphasize real-world utility or technological innovation, often positioning themselves as solutions to existing problems in the blockchain or DeFi space.",
         "defining_signals": [
-          "MS Paint/early 2000s meme origins (e.g., Wojak, Clippy)",
-          "Nostalgic references to defunct internet culture",
-          "Visual/verbal callbacks to pre-crypto meme formats"
+          "Focus on utility, governance, or infrastructure.",
+          "Claims of enabling new features or services.",
+          "Mentions of on-chain execution, privacy, or decentralized systems.",
+          "Absence of meme or cultural references."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "SITH",
+            "token_name": "S.I.T.H",
+            "token_address": "8kdJpwc8KqsbXtq6h9dekwJhUttMBPD2MK7ViM4Qpump"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "PAW",
+            "token_name": "OpenPaw Token",
+            "token_address": "FvLHiKeQwW9NxEwg3AWYbWApaV1AZc1t6zkuda334NHE"
           },
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+            "token_symbol": "GHOST",
+            "token_name": "GhostwareOS",
+            "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Wojak's 2009 origin and Clippy's 1997 legacy show strong cross-generational meme appeal, with multiple tokens in this category.",
+        "leader_hint_token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
+        "confidence_0_100": 65,
+        "confidence_rationale": "The GHOST token has the highest market cap among this group and emphasizes privacy and utility, which are strong signals of a utility-driven narrative. SITH and PAW also show similar innovation-focused themes.",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 17343543.22
+          "token_symbol": "GHOST",
+          "token_name": "GhostwareOS",
+          "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
+          "usd_market_cap": 4393760.0
         },
         "leader_missing_reason": null
       }
     ],
+    "meta_rotation_note": "The Meme Revival META remains dominant, with strong community engagement and cultural resonance. The Cultural Niche Identity META is gaining traction, especially among subcultures and identity-driven communities. The Utility-Driven Innovation META is emerging as investors seek tokens with real-world applications and infrastructure value.",
     "meta_leaders": [
       {
-        "meta_name": "Political/Satirical Meme Tokens",
+        "meta_name": "Meme Revival",
         "leader_token": {
           "token_symbol": "TRUMP",
           "token_name": "OFFICIAL TRUMP",
@@ -200,21 +144,21 @@
         }
       },
       {
-        "meta_name": "Animal-Themed Meme Tokens",
+        "meta_name": "Cultural Niche Identity",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 35843655.33
+          "token_symbol": "neet",
+          "token_name": "NotInEmploymentEducationTraining",
+          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+          "usd_market_cap": 14503172.72
         }
       },
       {
-        "meta_name": "Classic Internet Meme Revival",
+        "meta_name": "Utility-Driven Innovation",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 17343543.22
+          "token_symbol": "GHOST",
+          "token_name": "GhostwareOS",
+          "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
+          "usd_market_cap": 4393760.0
         }
       }
     ]
