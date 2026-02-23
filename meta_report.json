@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-23T07:35:28.965793Z",
+  "generated_at_utc": "2026-02-23T08:45:59.578430Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 90,
+  "token_context_count": 92,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 8 PVP group(s); excluding 13 token(s) from META prompt."
+    "Detected 9 PVP group(s); excluding 15 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 13,
+  "pvp_excluded_token_count": 15,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -53,6 +53,26 @@
           "token_address": "GB1o16CBhZHJopR24fdzVYhDpCmwtx34tprsFwFmpump",
           "usd_market_cap": 5344352.61,
           "processed_at": "2026-02-23T07:14:55.306205Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "moss y. gravel",
+      "tokens": [
+        {
+          "token_symbol": "MOSS",
+          "token_name": "Moss Y. Gravel",
+          "token_address": "9HrdTe7wh6qrqQnVGHGKeUvvumiwDAj1B2vsrc7TmwqY",
+          "usd_market_cap": 313330.1,
+          "processed_at": "2026-02-23T06:11:27.562989Z"
+        },
+        {
+          "token_symbol": "GOLEM",
+          "token_name": "Moss Y. Gravel",
+          "token_address": "3LmH79u9NH5AjYxEBAyJtWkCZD875zCqPzvhELaUpump",
+          "usd_market_cap": 305736.88,
+          "processed_at": "2026-02-23T07:46:40.800780Z"
         }
       ]
     },
@@ -188,43 +208,222 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Driven Memecoins",
-        "description": "Tokens leveraging viral internet memes, slang, or pop culture references to drive community engagement and speculative interest. These often repurpose existing memes without prior non-crypto origins.",
+        "meta_name": "Political and Pop Culture Figures",
+        "description": "Tokens are inspired by political figures, celebrities, or pop culture icons. These tokens often leverage the public persona or meme status of these individuals to drive interest.",
         "defining_signals": [
-          "Viral meme or internet slang as core narrative",
-          "Absurd or chaotic naming conventions (e.g., 'Punch Poop', 'Wojak')",
-          "No verifiable pre-crypto cultural origin",
-          "High social media reactivity (TikTok/Reddit/X) in token summaries"
+          "Tokens are named after or inspired by political figures or celebrities.",
+          "Themes often involve satire, parody, or commentary on public figures.",
+          "Tokens may have no direct cultural origin outside of the public figure’s persona."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "TRUMP",
+            "token_name": "OFFICIAL TRUMP",
+            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
           },
+          {
+            "token_symbol": "El Trumpo",
+            "token_name": "Donaldo El Trumpo",
+            "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
+          },
+          {
+            "token_symbol": "Mia",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "Ralph",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "MB",
+            "token_name": "Mom Bonnie",
+            "token_address": "TZgGuV7gipbUMyymauyh5VdHM6umwMiFycrmxmipump"
+          },
+          {
+            "token_symbol": "Trumpstein",
+            "token_name": "Trumpstein Files",
+            "token_address": "4j8iBw5REwPjDLGuSgwFc3pfSQ6vVic1RraQQzg4pump"
+          }
+        ],
+        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+        "confidence_0_100": 85,
+        "confidence_rationale": "The $TRUMP token is the most prominent in this category, with a high market cap and strong community engagement. It has a clear cultural reference and meme origin.",
+        "leader_token": {
+          "token_symbol": "TRUMP",
+          "token_name": "OFFICIAL TRUMP",
+          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "usd_market_cap": 787713404.99
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto Meme Animals",
+        "description": "A recurring theme in the token batch is the use of animals as meme characters, often with absurd or humorous traits. These tokens leverage viral internet culture around specific animals to drive community engagement and speculative interest.",
+        "defining_signals": [
+          "Tokens use animals as central meme figures (e.g., lobster, penguin, macaque).",
+          "Names and themes are derived from viral internet memes or viral animal-related content.",
+          "Tokens often have no pre-existing cultural or non-crypto origin beyond the meme."
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "Lobstar",
             "token_name": "Lobstar",
             "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "PunchDoll",
+            "token_name": "Punch Doll",
+            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
+          },
+          {
+            "token_symbol": "Octopus",
+            "token_name": "Alien of the Ocean",
+            "token_address": "6nqWXftWqfavN17QvgXjFZW8BrDx174AtX3DGon9pump"
+          },
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          }
+        ],
+        "leader_hint_token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Lobstar has a high market cap and is the most established token in the animal meme category. It has a clear meme origin and strong community engagement.",
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 41031986.41
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Internet Slang and Niche Culture",
+        "description": "Tokens are built around niche internet slang or cultural references that have gained traction in specific online communities. These tokens often repurpose obscure or hyper-specific phrases into crypto-native themes.",
+        "defining_signals": [
+          "Tokens reference obscure or hyper-specific internet slang or phrases.",
+          "Names are derived from niche internet culture or subcultures.",
+          "Tokens often have no verifiable pre-crypto cultural origin beyond the internet."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "testicle",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "maxxing",
+            "token_name": "maxxing",
+            "token_address": "32CdQdBUxbCsLy5AUHWmyidfwhgGUr9N573NBUrDpump"
+          },
+          {
+            "token_symbol": "Yaranaika",
+            "token_name": "やらないか",
+            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+          },
+          {
+            "token_symbol": "GOODBOY",
+            "token_name": "GOOD BOY",
+            "token_address": "6REwPqkyCLF2h5gy24Xpwi2tvgZDBABLbZcfEmj5bonk"
+          },
+          {
+            "token_symbol": "NEET",
+            "token_name": "NotInEmploymentEducationTraining",
+            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Testicle has a strong market cap and is one of the most established tokens in the slang-based meme category. It has a clear cultural reference and community.",
+        "leader_token": {
+          "token_symbol": "neet",
+          "token_name": "NotInEmploymentEducationTraining",
+          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+          "usd_market_cap": 18520977.12
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Utility and NFT-Related Tokens",
+        "description": "Tokens are built around utility or NFT-related themes, often with vague or speculative descriptions. These tokens may claim to offer real-world applications or NFT integration but lack concrete details.",
+        "defining_signals": [
+          "Tokens claim to offer utility or NFT-related features.",
+          "Descriptions are often vague or speculative.",
+          "Tokens may lack official documentation or team transparency."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CARDS",
+            "token_name": "Collector Crypt",
+            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+          },
+          {
+            "token_symbol": "IDLE",
+            "token_name": "IdleMine",
+            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
           }
         ],
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 538928474.85
+          "token_symbol": "IDLE",
+          "token_name": "IdleMine",
+          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+          "usd_market_cap": 12173028.76
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme-Driven Memecoins",
+        "meta_name": "Political and Pop Culture Figures",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 538928474.85
+          "token_symbol": "TRUMP",
+          "token_name": "OFFICIAL TRUMP",
+          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "usd_market_cap": 787713404.99
+        }
+      },
+      {
+        "meta_name": "Crypto Meme Animals",
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 41031986.41
+        }
+      },
+      {
+        "meta_name": "Internet Slang and Niche Culture",
+        "leader_token": {
+          "token_symbol": "neet",
+          "token_name": "NotInEmploymentEducationTraining",
+          "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+          "usd_market_cap": 18520977.12
+        }
+      },
+      {
+        "meta_name": "Utility and NFT-Related Tokens",
+        "leader_token": {
+          "token_symbol": "IDLE",
+          "token_name": "IdleMine",
+          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+          "usd_market_cap": 12173028.76
         }
       }
     ]
