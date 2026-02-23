@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-23T22:53:28.629228Z",
+  "generated_at_utc": "2026-02-23T23:53:37.796107Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 103,
+  "token_context_count": 101,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 11 PVP group(s); excluding 16 token(s) from META prompt."
+    "Detected 12 PVP group(s); excluding 17 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 16,
+  "pvp_excluded_token_count": 17,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -80,6 +80,13 @@
           "token_address": "3LmH79u9NH5AjYxEBAyJtWkCZD875zCqPzvhELaUpump",
           "usd_market_cap": 305736.88,
           "processed_at": "2026-02-23T07:46:40.800780Z"
+        },
+        {
+          "token_symbol": "MOSS",
+          "token_name": "Moss Y. Gravel",
+          "token_address": "FGiXuZTn46bA1BeMoY4dtF2txqn3aHgCohtM78vjtAq",
+          "usd_market_cap": 1901982.22,
+          "processed_at": "2026-02-23T22:57:07.854797Z"
         }
       ]
     },
@@ -199,6 +206,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "moss",
+      "tokens": [
+        {
+          "token_symbol": "MOSS",
+          "token_name": "Moss Y. Gravel",
+          "token_address": "9HrdTe7wh6qrqQnVGHGKeUvvumiwDAj1B2vsrc7TmwqY",
+          "usd_market_cap": 313330.1,
+          "processed_at": "2026-02-23T06:11:27.562989Z"
+        },
+        {
+          "token_symbol": "MOSS",
+          "token_name": "Moss Y. Gravel",
+          "token_address": "FGiXuZTn46bA1BeMoY4dtF2txqn3aHgCohtM78vjtAq",
+          "usd_market_cap": 1901982.22,
+          "processed_at": "2026-02-23T22:57:07.854797Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "sol",
       "tokens": [
         {
@@ -262,18 +289,18 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal Meme Tokens",
-        "description": "Tokens inspired by viral internet memes featuring animals, often leveraging emotional or humorous narratives tied to real-life or fictional creatures. These tokens capitalize on the emotional resonance of animals in internet culture.",
+        "meta_name": "Meme Revival",
+        "description": "Tokens leveraging pre-existing internet memes from the 2010s to 2020s, repackaged for crypto communities. These tokens often reference viral images, phrases, or characters that have faded in mainstream culture but are being revived with new narratives.",
         "defining_signals": [
-          "Meme narratives centered around real or fictional animals",
-          "Viral stories or viral videos of animals as inspiration",
-          "Emotional or humorous themes tied to the animal's behavior or situation"
+          "Tokens based on viral images or phrases from 2010s/2020s internet culture",
+          "Meme references with no direct crypto origin but strong historical meme presence",
+          "Community-driven narratives that recontextualize old memes for crypto audiences"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PunchDoll",
-            "token_name": "Punch Doll",
-            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
             "token_symbol": "Punch",
@@ -281,9 +308,29 @@
             "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
-            "token_symbol": "Clouded",
-            "token_name": "Clouded Leopard",
-            "token_address": "CPbWHnV52sVgnp2oMnb3rnfbR1hqZ6ZDXAgWiDN6pump"
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "Cocainu",
+            "token_name": "Cocainu",
+            "token_address": "75eb5QWNaVsZfe2r2NKdw58g1WJPGHaHCKcQWwjkpump"
+          },
+          {
+            "token_symbol": "Hachiko",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
             "token_symbol": "Grape-kun",
@@ -291,121 +338,44 @@
             "token_address": "9UEAfyEUXc9PyQboo67HKYpiJm4Rb4TQMGRiVccepump"
           },
           {
-            "token_symbol": "Hachiko",
-            "token_name": "$HACHI",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "AyyLMAO",
+            "token_name": "Ayy LMAO",
+            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
+          },
+          {
+            "token_symbol": "PunchDoll",
+            "token_name": "Punch Doll",
+            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
+          },
+          {
+            "token_symbol": "BOME",
+            "token_name": "BOOK OF MEME",
+            "token_address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
+          },
+          {
+            "token_symbol": "PUNCHBACK",
+            "token_name": "Revenge Of The Punch",
+            "token_address": "FpJKGvJFyixJWQjbjYh6AuxDVQgQMTcUWptz8byCpump"
           }
         ],
-        "leader_hint_token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong narrative ties to viral animal stories, consistent meme themes, and emotional engagement.",
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Bonk has the highest market cap among this group and is based on a well-established meme with multiple pre-crypto iterations. The pattern of reviving old memes is consistent across many tokens in this category.",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 25793026.73
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 523944460.51
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Play-to-Earn and Gaming Tokens",
-        "description": "Tokens tied to gaming or play-to-earn mechanics, often leveraging idle gameplay, NFTs, or competitive elements. These tokens capitalize on the growing gaming and Web3 overlap.",
+        "meta_name": "Political Satire",
+        "description": "Tokens using political figures or events as satirical or ironic references, often with no direct crypto context. These tokens typically leverage conspiracy theories, election cycles, or political scandals for community engagement.",
         "defining_signals": [
-          "In-game rewards or idle mechanics",
-          "NFT or token-based progression",
-          "Competitive or community-driven gameplay"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
-          },
-          {
-            "token_symbol": "MSTR",
-            "token_name": "Michael Strategy",
-            "token_address": "BTCWcZWYLsB6Gskei8oqQqwkUQJWFT1oeXXTk6dveXwk"
-          },
-          {
-            "token_symbol": "T1",
-            "token_name": "Trump Mobile",
-            "token_address": "GVxxcKzLE9AK5HhmDBMYnzD6jTvSYuG9LEY2wJUdpump"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          },
-          {
-            "token_symbol": "Mia",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          }
-        ],
-        "leader_hint_token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-        "confidence_0_100": 68,
-        "confidence_rationale": "Strong gaming and idle mechanics, consistent play-to-earn themes, and community engagement.",
-        "leader_token": {
-          "token_symbol": "IDLE",
-          "token_name": "IdleMine",
-          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-          "usd_market_cap": 11910988.45
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Cultural Meme Tokens",
-        "description": "Tokens that draw from long-standing cultural memes, historical events, or folklore, repurposing them for crypto narratives. These tokens often blend nostalgia with modern internet culture.",
-        "defining_signals": [
-          "Memes rooted in historical or cultural events",
-          "Leveraging folklore or traditional narratives",
-          "Nostalgic or symbolic themes"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "bǐngwǔ",
-            "token_name": "bǐngwǔ",
-            "token_address": "DMYNp65mub3i7LRpBdB66CgBAceLcQnv4gsWeCi6pump"
-          },
-          {
-            "token_symbol": "Hachiko",
-            "token_name": "$HACHI",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "Tahlequah",
-            "token_name": "The Aeneas Orca",
-            "token_address": "7QaHVrA5r2PJr63ABAzQXZ6iSU4ogcoMNyJU9zG7pump"
-          },
-          {
-            "token_symbol": "Kabuto",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 72,
-        "confidence_rationale": "Strong cultural and historical references, consistent meme themes, and symbolic narratives.",
-        "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 6009251.13
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto Parody Tokens",
-        "description": "Tokens that parody or satirize real-world events, figures, or concepts, often leveraging absurd humor or political commentary. These tokens thrive on internet culture and meme-based humor.",
-        "defining_signals": [
-          "Parody of real-world events, figures, or concepts",
-          "Absurd or satirical themes",
-          "Leveraging political or cultural commentary"
+          "Tokens referencing political figures (Trump, Epstein, etc.)",
+          "Meme narratives based on conspiracy theories or political scandals",
+          "Absence of non-crypto cultural origin for the referenced terms"
         ],
         "supporting_tokens": [
           {
@@ -419,68 +389,85 @@
             "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
           },
           {
-            "token_symbol": "MB",
-            "token_name": "Mom Bonnie",
-            "token_address": "TZgGuV7gipbUMyymauyh5VdHM6umwMiFycrmxmipump"
+            "token_symbol": "T1",
+            "token_name": "Trump Mobile",
+            "token_address": "GVxxcKzLE9AK5HhmDBMYnzD6jTvSYuG9LEY2wJUdpump"
           },
           {
-            "token_symbol": "Tastecoin",
-            "token_name": "Tastecoin",
-            "token_address": "4oERTdtSCns3Zrxv2HJ8fw6Y6rticaRcu8GVGTgXpump"
+            "token_symbol": "Aliens",
+            "token_name": "Aliens are real",
+            "token_address": "F5tfztTnE4sYsMhZT5KrFpWvHmYSfJZoRjCuxKPbpump"
           },
           {
-            "token_symbol": "PunchPoop",
-            "token_name": "punch poop",
-            "token_address": "EfomysDKEQ6C4CL1nzT7vb44e31HukARtgbGFdLfpump"
+            "token_symbol": "CTO",
+            "token_name": "Cartel Take Over",
+            "token_address": "BKQucpTXB2d67jSNXMznSTj2iNLVtyga9JW86QoWpump"
+          },
+          {
+            "token_symbol": "LOBCHURCH",
+            "token_name": "Lobstar Church",
+            "token_address": "5WP4ChKfNg2MpajUz3uAiRdiavf5Ptd6ZeLh1qAVpump"
+          },
+          {
+            "token_symbol": "Tahlequah",
+            "token_name": "The Aeneas Orca",
+            "token_address": "7QaHVrA5r2PJr63ABAzQXZ6iSU4ogcoMNyJU9zG7pump"
+          },
+          {
+            "token_symbol": "Lobstarism",
+            "token_name": "Lobstarism",
+            "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump"
+          },
+          {
+            "token_symbol": "Lobstar",
+            "token_name": "Lobstar",
+            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
+          },
+          {
+            "token_symbol": "LobstoneW.",
+            "token_name": "Wilde Lil Bro",
+            "token_address": "BqAcSTs7bZRqKSMrf3WzasFBAN5t7s7hyTGtesPPpump"
+          },
+          {
+            "token_symbol": "ELOB",
+            "token_name": "Elob Musker",
+            "token_address": "4FoKkvjz2VUtjJ3k7X5SQs7aBnk4hkkyDsFKZsDGpump"
+          },
+          {
+            "token_symbol": "LOC",
+            "token_name": "Leader Of Cartel",
+            "token_address": "am2X9BUTc2KoqoAyb7vkSrqUWWhpbP2e2JXjygwpump"
           }
         ],
-        "leader_hint_token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Strong political and cultural references, consistent parody themes, and viral potential.",
+        "leader_hint_token_address": "4j8iBw5REwPjDLGuSgwFc3pfSQ6vVic1RraQQzg4pump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Trumpstein has the strongest narrative and highest market cap among this group. The pattern of using political figures in crypto memes is well-established and continues to attract attention.",
         "leader_token": {
-          "token_symbol": "El Trumpo",
-          "token_name": "Donaldo El Trumpo",
-          "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
-          "usd_market_cap": 4378090.86
+          "token_symbol": "Lobstar",
+          "token_name": "Lobstar",
+          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
+          "usd_market_cap": 10036768.24
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Animal Meme Tokens",
+        "meta_name": "Meme Revival",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 25793026.73
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 523944460.51
         }
       },
       {
-        "meta_name": "Play-to-Earn and Gaming Tokens",
+        "meta_name": "Political Satire",
         "leader_token": {
-          "token_symbol": "IDLE",
-          "token_name": "IdleMine",
-          "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
-          "usd_market_cap": 11910988.45
-        }
-      },
-      {
-        "meta_name": "Cultural Meme Tokens",
-        "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 6009251.13
-        }
-      },
-      {
-        "meta_name": "Crypto Parody Tokens",
-        "leader_token": {
-          "token_symbol": "El Trumpo",
-          "token_name": "Donaldo El Trumpo",
-          "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
-          "usd_market_cap": 4378090.86
+          "token_symbol": "Lobstar",
+          "token_name": "Lobstar",
+          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
+          "usd_market_cap": 10036768.24
         }
       }
     ]
