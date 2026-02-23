@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-23T13:48:41.513515Z",
+  "generated_at_utc": "2026-02-23T14:49:20.951500Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 103,
+  "token_context_count": 104,
   "prompt_truncated": false,
   "warnings": [
     "Detected 9 PVP group(s); excluding 15 token(s) from META prompt."
@@ -208,17 +208,29 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political & Celebrity Meme Tokens",
-        "description": "Tokens leveraging political figures, celebrities, or public personas in meme form. This includes tokens like Trumpstein, Trump Mobile, and Official Trump, which capitalize on political meme culture and celebrity influence.",
+        "meta_name": "Political and Celebrity Meme Tokens",
+        "description": "Tokens inspired by political figures, celebrities, or internet personas, often using memes or satirical themes. These tokens leverage the popularity of the individual or meme for community engagement.",
         "defining_signals": [
-          "Use of political figures or celebrities in token branding",
-          "Meme-based narratives around public figures",
-          "Community-driven political or celebrity-related humor",
-          "Cross-promotion with other political/celebrity meme tokens",
-          "High social media engagement tied to public figure references",
-          "Emergence of tokens around major political events or trends"
+          "References to political figures or celebrities",
+          "Meme-based narratives with satirical or humorous elements",
+          "Community-driven themes with viral potential"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "TRUMP",
+            "token_name": "OFFICIAL TRUMP",
+            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
+          },
+          {
+            "token_symbol": "El Trumpo",
+            "token_name": "Donaldo El Trumpo",
+            "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
+          },
+          {
+            "token_symbol": "MB",
+            "token_name": "Mom Bonnie",
+            "token_address": "TZgGuV7gipbUMyymauyh5VdHM6umwMiFycrmxmipump"
+          },
           {
             "token_symbol": "Trumpstein",
             "token_name": "Trumpstein Files",
@@ -228,26 +240,11 @@
             "token_symbol": "T1",
             "token_name": "Trump Mobile",
             "token_address": "GVxxcKzLE9AK5HhmDBMYnzD6jTvSYuG9LEY2wJUdpump"
-          },
-          {
-            "token_symbol": "El Trumpo",
-            "token_name": "Donaldo El Trumpo",
-            "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
-          },
-          {
-            "token_symbol": "TRUMP",
-            "token_name": "OFFICIAL TRUMP",
-            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
-          },
-          {
-            "token_symbol": "MOM",
-            "token_name": "Mom Bonnie",
-            "token_address": "TZgGuV7gipbUMyymauyh5VdHM6umwMiFycrmxmipump"
           }
         ],
         "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-        "confidence_0_100": 78,
-        "confidence_rationale": "The $TRUMP token has the highest market cap in this category and has been around the longest, showing sustained interest in political meme tokens. Newer tokens like El Trumpo and Trump Mobile are emerging but have lower market caps.",
+        "confidence_0_100": 75,
+        "confidence_rationale": "The $TRUMP token is the most prominent in this meta, with multiple related tokens and a strong community following. The meta is well-supported by other political and celebrity-themed tokens with similar meme-driven appeal.",
         "leader_token": {
           "token_symbol": "TRUMP",
           "token_name": "OFFICIAL TRUMP",
@@ -258,14 +255,11 @@
       },
       {
         "meta_name": "Animal Meme Tokens",
-        "description": "Tokens inspired by viral animal memes, often featuring real or fictional animals with emotional or symbolic narratives. This includes tokens like Punch, Ikea Orangutan, and Clouded Leopard, which leverage animal-related internet culture.",
+        "description": "Tokens based on viral animal memes or real-life animal stories, often leveraging their emotional or humorous appeal. These tokens include references to real animals, internet-famous animals, or fictional creatures.",
         "defining_signals": [
-          "Use of real or fictional animals in token branding",
-          "Narratives centered around animal behavior or symbolism",
-          "Viral animal-related internet memes as inspiration",
-          "Community-driven storytelling around the animal theme",
-          "Cross-promotion with other animal meme tokens",
-          "High social media engagement tied to animal imagery"
+          "Animal-based names or descriptions",
+          "Meme or viral story origins tied to animals",
+          "Community-driven themes with emotional or humorous narratives"
         ],
         "supporting_tokens": [
           {
@@ -274,9 +268,14 @@
             "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
-            "token_symbol": "Djungelskog",
-            "token_name": "Ikea Orangutan",
-            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
+            "token_symbol": "PunchDoll",
+            "token_name": "Punch Doll",
+            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
+          },
+          {
+            "token_symbol": "PunchBack",
+            "token_name": "Revenge Of The Punch",
+            "token_address": "FpJKGvJFyixJWQjbjYh6AuxDVQgQMTcUWptz8byCpump"
           },
           {
             "token_symbol": "Octopus",
@@ -284,19 +283,14 @@
             "token_address": "6nqWXftWqfavN17QvgXjFZW8BrDx174AtX3DGon9pump"
           },
           {
-            "token_symbol": "PunchDoll",
-            "token_name": "Punch Doll",
-            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
-          },
-          {
-            "token_symbol": "Clouded Leopard",
-            "token_name": "Clouded Leopard",
-            "token_address": "CPbWHnV52sVgnp2oMnb3rnfbR1hqZ6ZDXAgWiDN6pump"
+            "token_symbol": "Ikea Orangutan",
+            "token_name": "Ikea Orangutan",
+            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
           }
         ],
         "leader_hint_token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Punch has the strongest narrative and market cap among animal meme tokens, with multiple related tokens emerging around the animal meme theme. The category shows consistent growth with new animal-themed tokens entering the market.",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Punch is the most prominent token in this meta, with multiple related tokens and a strong narrative rooted in a viral animal story. The meta is well-supported by other animal-themed tokens with similar meme-driven appeal.",
         "leader_token": {
           "token_symbol": "Punch",
           "token_name": "パンチ",
@@ -306,26 +300,18 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Lobster Memeconomy",
-        "description": "A recurring theme of lobster-themed tokens leveraging the 'lobster' meme archetype, often with cartoonish or absurd character designs. This includes tokens like Lobstar, Lobstarism, and Crustacean, which draw from internet humor and meme culture.",
+        "meta_name": "Lobster Meme Derivatives",
+        "description": "Tokens inspired by the 'Lobstar' meme and its variations, often featuring lobster or crustacean themes. These tokens leverage the popularity of the original Lobstar meme and extend it into new narratives.",
         "defining_signals": [
-          "Use of lobster or crustacean imagery in token branding",
-          "Meme-based narratives with no verifiable non-crypto origins",
-          "Community-driven hype and social media virality",
-          "Absurd or humorous character designs",
-          "Cross-promotion between similar tokens",
-          "High market cap growth in short timeframes"
+          "Lobster or crustacean imagery in token names or descriptions",
+          "Meme-based narratives with no clear non-crypto origin",
+          "Community-driven themes with playful or absurd elements"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "Lobstar",
             "token_name": "Lobstar",
             "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
-          },
-          {
-            "token_symbol": "Lobstarism",
-            "token_name": "Lobstarism",
-            "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump"
           },
           {
             "token_symbol": "LOBCHURCH",
@@ -338,32 +324,34 @@
             "token_address": "6woPkNsWGZmXQnacxQ1owoPicibS6KEmNMxQhatApump"
           },
           {
-            "token_symbol": "ROSCLAW",
-            "token_name": "RosClaw",
-            "token_address": "BVdMM5Fd7MxcTExnokXZzmCtiLvd2Es5zZQqRLNmrzSy"
+            "token_symbol": "LobstoneW.",
+            "token_name": "Wilde Lil Bro",
+            "token_address": "BqAcSTs7bZRqKSMrf3WzasFBAN5t7s7hyTGtesPPpump"
+          },
+          {
+            "token_symbol": "Lobstarism",
+            "token_name": "Lobstarism",
+            "token_address": "HmV9Y1hr8KrKzJtW44QbgTVSW5XH4cv7gp1VNBzTpump"
           }
         ],
         "leader_hint_token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Lobster-themed tokens show strong community engagement and cross-promotion. Lobstar has the highest market cap in this group and is the most established, with multiple related tokens emerging around it.",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Lobstar is the foundational token in this meta, with multiple derivatives and thematic extensions. The meta is well-established with clear meme lineage and active community engagement.",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 3640756.0
+          "token_symbol": "LobstoneW.",
+          "token_name": "Wilde Lil Bro",
+          "token_address": "BqAcSTs7bZRqKSMrf3WzasFBAN5t7s7hyTGtesPPpump",
+          "usd_market_cap": 4532355.32
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Absurd & Nonsensical Meme Tokens",
-        "description": "Tokens with intentionally absurd or nonsensical themes, often leveraging internet humor, surrealism, or chaotic narratives. This includes tokens like Testicle, Rainbowfish, and Buttcoin, which thrive on internet absurdity.",
+        "meta_name": "Absurd and Nonsensical Meme Tokens",
+        "description": "Tokens with intentionally absurd, nonsensical, or surreal themes, often leveraging internet humor or surrealism. These tokens typically have no clear non-crypto origin and thrive on humor or randomness.",
         "defining_signals": [
-          "Use of absurd or surreal themes in token branding",
-          "Nonsensical or chaotic narratives",
-          "Leveraging internet humor and meme culture",
-          "Community-driven absurdity and humor",
-          "Cross-promotion with other absurd meme tokens",
-          "High social media engagement around absurd themes"
+          "Absurd or surreal themes in token names or descriptions",
+          "No clear non-crypto cultural origin",
+          "Community-driven humor or randomness"
         ],
         "supporting_tokens": [
           {
@@ -372,9 +360,24 @@
             "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
           },
           {
-            "token_symbol": "fish",
-            "token_name": "rainbowfish",
-            "token_address": "CmgJ1PobhUqBB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
+            "token_symbol": "FKH",
+            "token_name": "Flying Ketamine Horse",
+            "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
+          },
+          {
+            "token_symbol": "PENIS",
+            "token_name": "peniscoin",
+            "token_address": "CoiGnrdd2nmc9NPdwxHcSxCZ23AvsFDmyb8CwfiJpump"
+          },
+          {
+            "token_symbol": "TOILET",
+            "token_name": "Toilet Wif Hat",
+            "token_address": "FhhdnEM8s9FxC5S2vaedxCrCUdd4XYFz5Zj1NbsHuUNq"
+          },
+          {
+            "token_symbol": "punchPoop",
+            "token_name": "punch poop",
+            "token_address": "EfomysDKEQ6C4CL1nzT7vb44e31HukARtgbGFdLfpump"
           }
         ],
         "leader_token": {
@@ -388,7 +391,7 @@
     ],
     "meta_leaders": [
       {
-        "meta_name": "Political & Celebrity Meme Tokens",
+        "meta_name": "Political and Celebrity Meme Tokens",
         "leader_token": {
           "token_symbol": "TRUMP",
           "token_name": "OFFICIAL TRUMP",
@@ -406,16 +409,16 @@
         }
       },
       {
-        "meta_name": "Lobster Memeconomy",
+        "meta_name": "Lobster Meme Derivatives",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 3640756.0
+          "token_symbol": "LobstoneW.",
+          "token_name": "Wilde Lil Bro",
+          "token_address": "BqAcSTs7bZRqKSMrf3WzasFBAN5t7s7hyTGtesPPpump",
+          "usd_market_cap": 4532355.32
         }
       },
       {
-        "meta_name": "Absurd & Nonsensical Meme Tokens",
+        "meta_name": "Absurd and Nonsensical Meme Tokens",
         "leader_token": {
           "token_symbol": "testicle",
           "token_name": "testicle",
