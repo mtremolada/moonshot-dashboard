@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-23T20:52:40.976414Z",
+  "generated_at_utc": "2026-02-23T21:53:14.655224Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 98,
+  "token_context_count": 102,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 9 PVP group(s); excluding 13 token(s) from META prompt."
+    "Detected 11 PVP group(s); excluding 15 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 13,
+  "pvp_excluded_token_count": 15,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -93,6 +93,26 @@
           "token_address": "89zUaXTdFc2kkvMS9MbPL78x368UviTHQ9yVKYTLpump",
           "usd_market_cap": 220606.36,
           "processed_at": "2026-02-23T17:01:28.599543Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "dog saved by grok",
+      "tokens": [
+        {
+          "token_symbol": "LIA",
+          "token_name": "Dog saved by Grok",
+          "token_address": "79dGFnR8XUusyDiK3n8yZ6FXhJjWLFgzdsi2SkUpump",
+          "usd_market_cap": 308427.93,
+          "processed_at": "2026-02-23T20:10:32.046999Z"
+        },
+        {
+          "token_symbol": "LIA",
+          "token_name": "Dog saved by Grok",
+          "token_address": "9vrGoRZuoaPpGYPuid1EmYKYnYdeRnDgi3wER4tcpump",
+          "usd_market_cap": 235510.16,
+          "processed_at": "2026-02-23T21:40:49.251465Z"
         }
       ]
     },
@@ -202,153 +222,38 @@
           "processed_at": "2026-02-23T17:01:28.599543Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "lia",
+      "tokens": [
+        {
+          "token_symbol": "LIA",
+          "token_name": "Dog saved by Grok",
+          "token_address": "79dGFnR8XUusyDiK3n8yZ6FXhJjWLFgzdsi2SkUpump",
+          "usd_market_cap": 308427.93,
+          "processed_at": "2026-02-23T20:10:32.046999Z"
+        },
+        {
+          "token_symbol": "LIA",
+          "token_name": "Dog saved by Grok",
+          "token_address": "9vrGoRZuoaPpGYPuid1EmYKYnYdeRnDgi3wER4tcpump",
+          "usd_market_cap": 235510.16,
+          "processed_at": "2026-02-23T21:40:49.251465Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Crypto-Community Meme",
-        "description": "This META involves tokens that are created and driven by specific online communities or subcultures. These tokens often have a strong community-driven narrative and are used to represent or fundraise for a particular group or cause.",
+        "meta_name": "Political Meme Satire",
+        "description": "Tokens referencing political figures or events through satirical or ironic naming, often leveraging existing meme culture around politics. These tokens thrive on the humor and controversy of political discourse.",
         "defining_signals": [
-          "Tokens with community-driven narratives (e.g., 'LARP', 'NEET', 'Minecraft Grandma Fund')",
-          "Use of community-specific slang or inside jokes",
-          "Tokens with charitable or community-focused goals"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "LARP",
-            "token_name": "Live Action Roleplay",
-            "token_address": "EygStH4gHv1h4E8w4raYv6NGsrDiij3nbfCc26iTpump"
-          },
-          {
-            "token_symbol": "NEET",
-            "token_name": "NotInEmploymentEducationTraining",
-            "token_address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump"
-          },
-          {
-            "token_symbol": "Grandma",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
-          },
-          {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "BOME",
-            "token_name": "BOOK OF MEME",
-            "token_address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 732417953.02
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto Meme Revival",
-        "description": "This META is characterized by tokens that revive or repurpose older internet memes or cultural references, often with a crypto twist. These tokens leverage nostalgia and familiarity from pre-crypto internet culture to attract attention and community.",
-        "defining_signals": [
-          "Use of established meme characters or phrases (e.g., 'Bonk', 'Pepe', 'Trollface')",
-          "References to viral internet trends from 2010s or earlier",
-          "Tokens with no original meme origin but repurpose existing cultural artifacts"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
-          },
-          {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "HODL",
-            "token_name": "HODL",
-            "token_address": "Hh3oTaqDCKKfdBgsQEvxp9sUwyNf8x9qmKqEMLBWpump"
-          }
-        ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Bonk is a well-established meme with strong cultural roots and a large existing community, making it a clear leader in this category.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 523944460.51
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto-Animal Meme",
-        "description": "This META involves tokens inspired by animals that have become internet memes. These tokens often feature anthropomorphic or symbolic representations of animals, leveraging their cultural resonance for community engagement.",
-        "defining_signals": [
-          "Tokens inspired by viral animal memes (e.g., 'Punch', 'Grape-kun', 'Hachiko')",
-          "Use of animal imagery as a central theme",
-          "Leverage of emotional or symbolic associations with the animal"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          },
-          {
-            "token_symbol": "grape-kun",
-            "token_name": "grape-kun",
-            "token_address": "9UEAfyEUXc9PyQboo67HKYpiJm4Rb4TQMGRiVccepump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "PunchDoll",
-            "token_name": "Punch Doll",
-            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
-          },
-          {
-            "token_symbol": "PUNCHBACK",
-            "token_name": "Revenge Of The Punch",
-            "token_address": "FpJKGvJFyixJWQjbjYh6AuxDVQgQMTcUWptz8byCpump"
-          }
-        ],
-        "leader_hint_token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Punch has strong emotional resonance due to the viral story of the macaque and its teddy bear, making it a central figure in this category.",
-        "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 25793026.73
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political and Conspiracy Meme",
-        "description": "This META is characterized by tokens that reference political figures, events, or conspiracy theories. These tokens often leverage the controversy or intrigue surrounding these topics to generate interest and community engagement.",
-        "defining_signals": [
-          "Tokens referencing political figures (e.g., 'Trumpstein', 'MSTR')",
-          "Use of conspiracy theories or controversial narratives",
-          "Leverage of political memes or hashtags"
+          "Names referencing political figures or events with clear meme or satirical intent",
+          "Lack of non-crypto cultural origin but strong meme traction",
+          "Use of political themes in token branding or lore"
         ],
         "supporting_tokens": [
           {
@@ -357,59 +262,185 @@
             "token_address": "4j8iBw5REwPjDLGuSgwFc3pfSQ6vVic1RraQQzg4pump"
           },
           {
-            "token_symbol": "MSTR",
-            "token_name": "Michael Strategy",
-            "token_address": "BTCWcZWYLsB6Gskei8oqQqwkUQJWFT1oeXXTk6dveXwk"
-          },
-          {
             "token_symbol": "El Trumpo",
             "token_name": "Donaldo El Trumpo",
             "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
           },
           {
-            "token_symbol": "LOC",
-            "token_name": "Leader Of Cartel",
-            "token_address": "am2X9BUTc2KoqoAyb7vkSrqUWWhpbP2e2JXjygwpump"
+            "token_symbol": "WLFI",
+            "token_name": "World Liberty Financial",
+            "token_address": "WLFinEv6ypjkczcS83FZqFpgFZYwQXutRbxGe7oC16g"
           },
           {
-            "token_symbol": "CTO",
-            "token_name": "Cartel Take Over",
-            "token_address": "BKQucpTXB2d67jSNXMznSTj2iNLVtyga9JW86QoWpump"
+            "token_symbol": "GME",
+            "token_name": "GameStop Coin",
+            "token_address": "AjjRMozsBb4RBQZZL2G1dCPpwghVZkbmhnkjdfySpump"
+          },
+          {
+            "token_symbol": "T1",
+            "token_name": "Trump Mobile",
+            "token_address": "GVxxcKzLE9AK5HhmDBMYnzD6jTvSYuG9LEY2wJUdpump"
           }
         ],
-        "leader_hint_token_address": "4j8iBw5REwPjDLGuSgwFc3pfSQ6vVic1RraQQzg4pump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Trumpstein Files has a strong narrative around a well-known political figure and conspiracy theory, making it a central token in this category.",
+        "leader_hint_token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Political meme tokens are gaining traction due to the polarizing nature of their themes and the existing meme culture surrounding these figures.",
         "leader_token": {
-          "token_symbol": "El Trumpo",
-          "token_name": "Donaldo El Trumpo",
-          "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
-          "usd_market_cap": 4378090.86
+          "token_symbol": "WLFI",
+          "token_name": "World Liberty Financial",
+          "token_address": "WLFinEv6ypjkczcS83FZqFpgFZYwQXutRbxGe7oC16g",
+          "usd_market_cap": 3016215827.7
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Animal Revival",
+        "description": "Tokens inspired by viral animal memes, often leveraging emotional or humorous narratives tied to real-world animal stories. These tokens capitalize on the emotional resonance of viral animal content and repurpose it into crypto branding.",
+        "defining_signals": [
+          "Tokens based on real or fictional animal characters with viral online presence",
+          "Emotional narratives (e.g., loneliness, loyalty, or struggle) tied to the animal",
+          "Meme-based branding with no prior crypto context but strong internet culture roots"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "PunchDoll",
+            "token_name": "Punch Doll",
+            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
+          },
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "Grape-kun",
+            "token_name": "grape-kun",
+            "token_address": "9UEAfyEUXc9PyQboo67HKYpiJm4Rb4TQMGRiVccepump"
+          },
+          {
+            "token_symbol": "Hachiko",
+            "token_name": "$HACHI",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "Clouded Leopard",
+            "token_name": "Clouded Leopard",
+            "token_address": "CPbWHnV52sVgnp2oMnb3rnfbR1hqZ6ZDXAgWiDN6pump"
+          }
+        ],
+        "leader_hint_token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong narrative and emotional appeal, with multiple tokens leveraging viral animal stories and meme culture.",
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25793026.73
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Cultural Nostalgia and Pop Culture",
+        "description": "Tokens inspired by or referencing pop culture, historical events, or internet nostalgia. These tokens often repurpose well-known characters, phrases, or events into crypto branding.",
+        "defining_signals": [
+          "Names or themes referencing pop culture, historical events, or internet nostalgia",
+          "Strong cultural or meme roots outside of crypto",
+          "Repurposing of well-known characters or phrases into crypto branding"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "Pepe",
+            "token_name": "Pepe",
+            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+          },
+          {
+            "token_symbol": "Troll",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "Gizmo",
+            "token_name": "Gizmo",
+            "token_address": "8HGer4vRWZMu5MUYU7ACPb4uanKgBewaXJZscLagpump"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15504561.74
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Absurd Humor and Taboo",
+        "description": "Tokens that leverage absurd or taboo humor, often referencing bodily functions or controversial topics. These tokens thrive on shock value and the ability to push boundaries in meme culture.",
+        "defining_signals": [
+          "Names referencing bodily functions or controversial topics",
+          "Absurd or irreverent branding",
+          "Strong meme culture roots in internet humor"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "testicle",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
+          },
+          {
+            "token_symbol": "PENIS",
+            "token_name": "peniscoin",
+            "token_address": "CoiGnrdd2nmc9NPdwxHcSxCZ23AvsFDmyb8CwfiJpump"
+          },
+          {
+            "token_symbol": "Buttcoin",
+            "token_name": "Buttcoin",
+            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
+          },
+          {
+            "token_symbol": "TOILET",
+            "token_name": "Toilet Wif Hat",
+            "token_address": "FhhdnEM8s9FxC5S2vaedxCrCUdd4XYFz5Zj1NbsHuUNq"
+          },
+          {
+            "token_symbol": "punchPoop",
+            "token_name": "punch poop",
+            "token_address": "FHxxkimYyvG4MMBXjRuRpNUJdxnQbFk3kziNMxDppump"
+          }
+        ],
+        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+        "confidence_0_100": 78,
+        "confidence_rationale": "Absurd humor tokens are popular in crypto due to their shock value and meme appeal, especially in communities that thrive on irreverent content.",
+        "leader_token": {
+          "token_symbol": "Buttcoin",
+          "token_name": "Buttcoin",
+          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+          "usd_market_cap": 14851955.56
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Crypto-Community Meme",
+        "meta_name": "Political Meme Satire",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 732417953.02
+          "token_symbol": "WLFI",
+          "token_name": "World Liberty Financial",
+          "token_address": "WLFinEv6ypjkczcS83FZqFpgFZYwQXutRbxGe7oC16g",
+          "usd_market_cap": 3016215827.7
         }
       },
       {
-        "meta_name": "Crypto Meme Revival",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 523944460.51
-        }
-      },
-      {
-        "meta_name": "Crypto-Animal Meme",
+        "meta_name": "Meme Animal Revival",
         "leader_token": {
           "token_symbol": "Punch",
           "token_name": "パンチ",
@@ -418,12 +449,21 @@
         }
       },
       {
-        "meta_name": "Political and Conspiracy Meme",
+        "meta_name": "Cultural Nostalgia and Pop Culture",
         "leader_token": {
-          "token_symbol": "El Trumpo",
-          "token_name": "Donaldo El Trumpo",
-          "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
-          "usd_market_cap": 4378090.86
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 15504561.74
+        }
+      },
+      {
+        "meta_name": "Absurd Humor and Taboo",
+        "leader_token": {
+          "token_symbol": "Buttcoin",
+          "token_name": "Buttcoin",
+          "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+          "usd_market_cap": 14851955.56
         }
       }
     ]
