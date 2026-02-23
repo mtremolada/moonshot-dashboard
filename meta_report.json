@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-23T18:51:25.613012Z",
+  "generated_at_utc": "2026-02-23T19:52:05.859933Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 92,
+  "token_context_count": 95,
   "prompt_truncated": false,
   "warnings": [
     "Detected 11 PVP group(s); excluding 17 token(s) from META prompt."
@@ -16,23 +16,23 @@
         {
           "token_symbol": "tetanus",
           "token_name": "tetanus coin",
+          "token_address": "57DJjQKmMAZzaaa1rq2qbGJKuiEZnsL4MaGhCzUvpump",
+          "usd_market_cap": 241505.21,
+          "processed_at": "2026-02-23T03:19:23.848626Z"
+        },
+        {
+          "token_symbol": "tetanus",
+          "token_name": "tetanus coin",
           "token_address": "7Gf9g87UqU5nxiruoCLGSdjD7mpq98gUEFjuPNFDpump",
-          "usd_market_cap": 249435.52,
-          "processed_at": "2026-02-22T18:51:01.862784Z"
+          "usd_market_cap": 181289.11,
+          "processed_at": "2026-02-23T18:51:34.783749Z"
         },
         {
           "token_symbol": "tetanus",
           "token_name": "tetanus coin",
           "token_address": "3C1Jytbip1koL3pYAozw8ZxgHErVJMijj48JUuG6pump",
-          "usd_market_cap": 94083.9,
-          "processed_at": "2026-02-22T19:07:26.672025Z"
-        },
-        {
-          "token_symbol": "tetanus",
-          "token_name": "tetanus coin",
-          "token_address": "57DJjQKmMAZzaaa1rq2qbGJKuiEZnsL4MaGhCzUvpump",
-          "usd_market_cap": 241505.21,
-          "processed_at": "2026-02-23T03:19:23.848626Z"
+          "usd_market_cap": 4176.0,
+          "processed_at": "2026-02-23T19:08:08.661690Z"
         }
       ]
     },
@@ -98,33 +98,6 @@
     },
     {
       "match_type": "token_symbol",
-      "match_value": "tetanus",
-      "tokens": [
-        {
-          "token_symbol": "tetanus",
-          "token_name": "tetanus coin",
-          "token_address": "7Gf9g87UqU5nxiruoCLGSdjD7mpq98gUEFjuPNFDpump",
-          "usd_market_cap": 249435.52,
-          "processed_at": "2026-02-22T18:51:01.862784Z"
-        },
-        {
-          "token_symbol": "tetanus",
-          "token_name": "tetanus coin",
-          "token_address": "3C1Jytbip1koL3pYAozw8ZxgHErVJMijj48JUuG6pump",
-          "usd_market_cap": 94083.9,
-          "processed_at": "2026-02-22T19:07:26.672025Z"
-        },
-        {
-          "token_symbol": "tetanus",
-          "token_name": "tetanus coin",
-          "token_address": "57DJjQKmMAZzaaa1rq2qbGJKuiEZnsL4MaGhCzUvpump",
-          "usd_market_cap": 241505.21,
-          "processed_at": "2026-02-23T03:19:23.848626Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
       "match_value": "kimchi",
       "tokens": [
         {
@@ -160,6 +133,33 @@
           "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B",
           "usd_market_cap": 245701.84,
           "processed_at": "2026-02-23T18:01:30.869550Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "tetanus",
+      "tokens": [
+        {
+          "token_symbol": "tetanus",
+          "token_name": "tetanus coin",
+          "token_address": "57DJjQKmMAZzaaa1rq2qbGJKuiEZnsL4MaGhCzUvpump",
+          "usd_market_cap": 241505.21,
+          "processed_at": "2026-02-23T03:19:23.848626Z"
+        },
+        {
+          "token_symbol": "tetanus",
+          "token_name": "tetanus coin",
+          "token_address": "7Gf9g87UqU5nxiruoCLGSdjD7mpq98gUEFjuPNFDpump",
+          "usd_market_cap": 181289.11,
+          "processed_at": "2026-02-23T18:51:34.783749Z"
+        },
+        {
+          "token_symbol": "tetanus",
+          "token_name": "tetanus coin",
+          "token_address": "3C1Jytbip1koL3pYAozw8ZxgHErVJMijj48JUuG6pump",
+          "usd_market_cap": 4176.0,
+          "processed_at": "2026-02-23T19:08:08.661690Z"
         }
       ]
     },
@@ -248,12 +248,58 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal-Themed Tokens",
-        "description": "Tokens inspired by animals or animal-related memes are emerging as a distinct theme. These tokens often use animal imagery to create a relatable or humorous identity, drawing from existing internet culture.",
+        "meta_name": "Meme-Driven Meme Coins",
+        "description": "Tokens that are based on viral internet memes, often with no prior non-crypto cultural origin. These tokens leverage humor, absurdity, or internet culture to drive community engagement.",
         "defining_signals": [
-          "Names or descriptions referencing specific animals or animal behaviors",
-          "Meme origins tied to animal-related content (e.g., TikTok videos)",
-          "Community engagement centered around animal symbolism"
+          "Names or descriptions referencing viral memes (e.g., 'Ayy LMAO', 'Punch', 'Skibidi Toilet')",
+          "Absurd or humorous branding with no clear real-world utility",
+          "Strong social media presence or community-driven narratives"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "AyyLMAO",
+            "token_name": "Ayy LMAO",
+            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
+          },
+          {
+            "token_symbol": "PunchDoll",
+            "token_name": "Punch Doll",
+            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
+          },
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "punchPoop",
+            "token_name": "punch poop",
+            "token_address": "EfomysDKEQ6C4CL1nzT7vb44e31HukARtgbGFdLfpump"
+          },
+          {
+            "token_symbol": "punchDance",
+            "token_name": "punch dance",
+            "token_address": "FHxxkimYyvG4MMBXjRuRpNUJdxnQbFk3kziNMxDppump"
+          }
+        ],
+        "leader_hint_token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Strong meme-based naming and community engagement. 'Punch Doll' has a clear viral meme origin and high market cap.",
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25793026.73
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal Meme Tokens",
+        "description": "Tokens that are inspired by viral animal memes or internet-famous animals. These tokens often use animal imagery or stories to create a relatable and humorous identity.",
+        "defining_signals": [
+          "Names or descriptions referencing internet-famous animals (e.g., Punch, Moo Deng, Hachiko)",
+          "Use of animal imagery in branding or token lore",
+          "Community-driven narratives around the animal"
         ],
         "supporting_tokens": [
           {
@@ -262,9 +308,14 @@
             "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
           },
           {
-            "token_symbol": "Octopus",
-            "token_name": "Alien of the Ocean",
-            "token_address": "6nqWXftWqfavN17QvgXjFZW8BrDx174AtX3DGon9pump"
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
             "token_symbol": "Clouded Leopard",
@@ -272,34 +323,29 @@
             "token_address": "CPbWHnV52sVgnp2oMnb3rnfbR1hqZ6ZDXAgWiDN6pump"
           },
           {
-            "token_symbol": "Hachiko",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "Tahlequah",
+            "token_name": "The Aeneas Orca",
+            "token_address": "7QaHVrA5r2PJr63ABAzQXZ6iSU4ogcoMNyJU9zG7pump"
           }
         ],
-        "leader_hint_token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump",
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
         "confidence_0_100": 80,
-        "confidence_rationale": "Several tokens use animal themes, and 'Punch Doll' has a clear narrative and viral potential.",
+        "confidence_rationale": "Strong animal meme references and community engagement. 'Hachiko' has a well-known cultural story and high market cap.",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 6009251.13
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25793026.73
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "Cartel Themed Tokens",
-        "description": "A recurring theme in new token launches is the use of cartel-related themes, often referencing Mexican drug cartels or using slang associated with organized crime. These tokens leverage the cultural and meme associations of cartel imagery to attract attention.",
+        "description": "A recurring theme of tokens referencing Mexican cartels, drug culture, or related slang. These tokens often leverage the cultural notoriety of cartels for meme-based branding.",
         "defining_signals": [
-          "Use of cartel-related names like 'Cartel Take Over' or 'Leader Of Cartel'",
-          "References to real-world cartel figures or slang",
-          "Meme-based narratives around cartel dominance or rebellion"
+          "Names or descriptions referencing Mexican cartels (e.g., Jalisco New Generation, El Meme)",
+          "Use of slang or terms like 'cocaine', 'cartel', or 'leader of cartel'",
+          "Lack of non-crypto cultural origin but strong meme or meme-adjacent appeal"
         ],
         "supporting_tokens": [
           {
@@ -318,34 +364,34 @@
             "token_address": "am2X9BUTc2KoqoAyb7vkSrqUWWhpbP2e2JXjygwpump"
           },
           {
-            "token_symbol": "Trumpstein",
-            "token_name": "Trumpstein Files",
-            "token_address": "4j8iBw5REwPjDLGuSgwFc3pfSQ6vVic1RraQQzg4pump"
+            "token_symbol": "Lobstar",
+            "token_name": "Lobstar",
+            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
           },
           {
-            "token_symbol": "El Trumpo",
-            "token_name": "Donaldo El Trumpo",
-            "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
+            "token_symbol": "LOBCHURCH",
+            "token_name": "Lobstar Church",
+            "token_address": "5WP4ChKfNg2MpajUz3uAiRdiavf5Ptd6ZeLh1qAVpump"
           }
         ],
-        "leader_hint_token_address": "BKQucpTXB2d67jSNXMznSTj2iNLVtyga9JW86QoWpump",
+        "leader_hint_token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Multiple tokens use cartel-related themes, and 'Cartel Take Over' has a clear narrative and market presence.",
+        "confidence_rationale": "Multiple tokens with cartel-related themes and strong meme appeal. 'Lobstar' has the highest market cap and is part of a broader Lobstar ecosystem.",
         "leader_token": {
-          "token_symbol": "El Trumpo",
-          "token_name": "Donaldo El Trumpo",
-          "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
-          "usd_market_cap": 4378090.86
+          "token_symbol": "Lobstar",
+          "token_name": "Lobstar",
+          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
+          "usd_market_cap": 10036768.24
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Political or Controversial Figure Tokens",
-        "description": "Tokens referencing political figures or controversial topics are gaining traction. These tokens often leverage the polarizing nature of the subject to generate interest and community engagement.",
+        "meta_name": "Political Meme Tokens",
+        "description": "Tokens that are inspired by political memes or figures, often using humor or satire to engage communities.",
         "defining_signals": [
-          "Names or descriptions referencing political figures or events",
-          "Meme origins tied to political commentary or satire",
-          "Community engagement centered around political themes"
+          "Names or descriptions referencing political figures or events (e.g., Trump, Epstein, GameStop)",
+          "Use of political slang or hashtags (e.g., 'Gamestonk', 'El Trumpo')",
+          "Strong meme-based narratives with no clear real-world utility"
         ],
         "supporting_tokens": [
           {
@@ -357,6 +403,11 @@
             "token_symbol": "El Trumpo",
             "token_name": "Donaldo El Trumpo",
             "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
+          },
+          {
+            "token_symbol": "GME",
+            "token_name": "GameStop Coin",
+            "token_address": "AjjRMozsBb4RBQZZL2G1dCPpwghVZkbmhnkjdfySpump"
           },
           {
             "token_symbol": "T1",
@@ -364,14 +415,9 @@
             "token_address": "GVxxcKzLE9AK5HhmDBMYnzD6jTvSYuG9LEY2wJUdpump"
           },
           {
-            "token_symbol": "Trumpstein",
-            "token_name": "Trumpstein Files",
-            "token_address": "4j8iBw5REwPjDLGuSgwFc3pfSQ6vVic1RraQQzg4pump"
-          },
-          {
-            "token_symbol": "El Trumpo",
-            "token_name": "Donaldo El Trumpo",
-            "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
+            "token_symbol": "MSTR",
+            "token_name": "Michael Strategy",
+            "token_address": "BTCWcZWYLsB6Gskei8oqQqwkUQJWFT1oeXXTk6dveXwk"
           }
         ],
         "leader_token": {
@@ -379,91 +425,45 @@
           "token_name": "Donaldo El Trumpo",
           "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
           "usd_market_cap": 4378090.86
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme-Based Tokens",
-        "description": "A significant portion of the tokens are based on internet memes, often leveraging viral TikTok trends or historical memes. These tokens capitalize on the emotional or humorous resonance of the meme to drive community engagement.",
-        "defining_signals": [
-          "Names derived from viral TikTok or internet memes",
-          "Use of meme imagery or phrases in token descriptions",
-          "Community-driven narratives tied to meme culture"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PUNCHBACK",
-            "token_name": "Revenge Of The Punch",
-            "token_address": "FpJKGvJFyixJWQjbjYh6AuxDVQgQMTcUWptz8byCpump"
-          },
-          {
-            "token_symbol": "AyyLMAO",
-            "token_name": "Ayy LMAO",
-            "token_address": "5JP1Loni4DtDgvHupQAzcRXQtsWnWWVibdsD4igVpump"
-          },
-          {
-            "token_symbol": "punchPoop",
-            "token_name": "punch poop",
-            "token_address": "EfomysDKEQ6C4CL1nzT7vb44e31HukARtgbGFdLfpump"
-          },
-          {
-            "token_symbol": "punchDance",
-            "token_name": "punch dance",
-            "token_address": "FHxxkimYyvG4MMBXjRuRpNUJdxnQbFk3kziNMxDppump"
-          },
-          {
-            "token_symbol": "TOILET",
-            "token_name": "Toilet Wif Hat",
-            "token_address": "FhhdnEM8s9FxC5S2vaedxCrCUdd4XYFz5Zj1NbsHuUNq"
-          }
-        ],
-        "leader_hint_token_address": "FpJKGvJFyixJWQjbjYh6AuxDVQgQMTcUWptz8byCpump",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Multiple tokens are clearly meme-based, and 'Revenge Of The Punch' has a strong narrative and recent viral potential.",
-        "leader_token": {
-          "token_symbol": "punchPoop",
-          "token_name": "punch poop",
-          "token_address": "EfomysDKEQ6C4CL1nzT7vb44e31HukARtgbGFdLfpump",
-          "usd_market_cap": 262162.95
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Animal-Themed Tokens",
+        "meta_name": "Meme-Driven Meme Coins",
         "leader_token": {
-          "token_symbol": "PENGUIN",
-          "token_name": "Nietzschean Penguin",
-          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
-          "usd_market_cap": 6009251.13
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25793026.73
+        }
+      },
+      {
+        "meta_name": "Animal Meme Tokens",
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25793026.73
         }
       },
       {
         "meta_name": "Cartel Themed Tokens",
         "leader_token": {
-          "token_symbol": "El Trumpo",
-          "token_name": "Donaldo El Trumpo",
-          "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
-          "usd_market_cap": 4378090.86
+          "token_symbol": "Lobstar",
+          "token_name": "Lobstar",
+          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
+          "usd_market_cap": 10036768.24
         }
       },
       {
-        "meta_name": "Political or Controversial Figure Tokens",
+        "meta_name": "Political Meme Tokens",
         "leader_token": {
           "token_symbol": "El Trumpo",
           "token_name": "Donaldo El Trumpo",
           "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump",
           "usd_market_cap": 4378090.86
-        }
-      },
-      {
-        "meta_name": "Meme-Based Tokens",
-        "leader_token": {
-          "token_symbol": "punchPoop",
-          "token_name": "punch poop",
-          "token_address": "EfomysDKEQ6C4CL1nzT7vb44e31HukARtgbGFdLfpump",
-          "usd_market_cap": 262162.95
         }
       }
     ]
