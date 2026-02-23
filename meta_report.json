@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-23T06:45:06.918634Z",
+  "generated_at_utc": "2026-02-23T07:35:28.965793Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 93,
+  "token_context_count": 90,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 4 PVP group(s); excluding 7 token(s) from META prompt."
+    "Detected 8 PVP group(s); excluding 13 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 7,
+  "pvp_excluded_token_count": 13,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -37,6 +37,26 @@
       ]
     },
     {
+      "match_type": "token_name",
+      "match_value": "too much winning",
+      "tokens": [
+        {
+          "token_symbol": "TRUMP47",
+          "token_name": "Too Much Winning",
+          "token_address": "y3bqe3vHYQzkpRYD12oWpQkaYGGCjE1Jnu6zFrYpump",
+          "usd_market_cap": 5002904.85,
+          "processed_at": "2026-02-23T04:03:52.058505Z"
+        },
+        {
+          "token_symbol": "TRUMP47",
+          "token_name": "Too Much Winning",
+          "token_address": "GB1o16CBhZHJopR24fdzVYhDpCmwtx34tprsFwFmpump",
+          "usd_market_cap": 5344352.61,
+          "processed_at": "2026-02-23T07:14:55.306205Z"
+        }
+      ]
+    },
+    {
       "match_type": "token_symbol",
       "match_value": "kimchi",
       "tokens": [
@@ -53,6 +73,46 @@
           "token_address": "HaUXAdAWWUkb2WTmh8z1TdaEmZkYjnQnmC6tHUdTAHvi",
           "usd_market_cap": 359075.23,
           "processed_at": "2026-02-22T19:43:07.437769Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "sol",
+      "tokens": [
+        {
+          "token_symbol": "SOL",
+          "token_name": "Sol The Trophy Tomato",
+          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
+          "usd_market_cap": 1362233.45,
+          "processed_at": "2026-02-22T17:55:44.450355Z"
+        },
+        {
+          "token_symbol": "SOL",
+          "token_name": "SOLCOIN",
+          "token_address": "3KkFGkRuMyyqk8ps9RuhiSg3gUz6WJUhd1uGt3fGpump",
+          "usd_market_cap": 2700.2,
+          "processed_at": "2026-02-23T07:27:05.854219Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "clawd",
+      "tokens": [
+        {
+          "token_symbol": "clawd",
+          "token_name": "clawdbot",
+          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
+          "usd_market_cap": 88611.46,
+          "processed_at": "2026-02-22T17:58:14.922120Z"
+        },
+        {
+          "token_symbol": "CLAWD",
+          "token_name": "Claude ai's mascot",
+          "token_address": "5FgqedC1evcyhbFw2qkVrpfJknh1x19KpXnyJP5KeVpR",
+          "usd_market_cap": 11830.49,
+          "processed_at": "2026-02-23T07:28:06.962006Z"
         }
       ]
     },
@@ -102,231 +162,69 @@
           "processed_at": "2026-02-23T03:19:23.848626Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "trump47",
+      "tokens": [
+        {
+          "token_symbol": "TRUMP47",
+          "token_name": "Too Much Winning",
+          "token_address": "y3bqe3vHYQzkpRYD12oWpQkaYGGCjE1Jnu6zFrYpump",
+          "usd_market_cap": 5002904.85,
+          "processed_at": "2026-02-23T04:03:52.058505Z"
+        },
+        {
+          "token_symbol": "TRUMP47",
+          "token_name": "Too Much Winning",
+          "token_address": "GB1o16CBhZHJopR24fdzVYhDpCmwtx34tprsFwFmpump",
+          "usd_market_cap": 5344352.61,
+          "processed_at": "2026-02-23T07:14:55.306205Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Political and Celebrity Meme Tokens",
-        "description": "Tokens referencing political figures, celebrities, or internet personas, often leveraging their cultural or meme presence.",
+        "meta_name": "Meme-Driven Memecoins",
+        "description": "Tokens leveraging viral internet memes, slang, or pop culture references to drive community engagement and speculative interest. These often repurpose existing memes without prior non-crypto origins.",
         "defining_signals": [
-          "Names or themes referencing political figures or celebrities",
-          "Leverage of viral memes or internet personas tied to these figures",
-          "Strong community or meme-driven engagement around the referenced figure"
+          "Viral meme or internet slang as core narrative",
+          "Absurd or chaotic naming conventions (e.g., 'Punch Poop', 'Wojak')",
+          "No verifiable pre-crypto cultural origin",
+          "High social media reactivity (TikTok/Reddit/X) in token summaries"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "TRUMP",
-            "token_name": "OFFICIAL TRUMP",
-            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "T1",
-            "token_name": "Trump Mobile",
-            "token_address": "GVxxcKzLE9AK5HhmDBMYnzD6jTvSYuG9LEY2wJUdpump"
-          },
-          {
-            "token_symbol": "TRUMP47",
-            "token_name": "Too Much Winning",
-            "token_address": "y3bqe3vHYQzkpRYD12oWpQkaYGGCjE1Jnu6zFrYpump"
-          },
-          {
-            "token_symbol": "El Trumpo",
-            "token_name": "Donaldo El Trumpo",
-            "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
-          },
-          {
-            "token_symbol": "MB",
-            "token_name": "Mom Bonnie",
-            "token_address": "TZgGuV7gipbUMyymauyh5VdHM6umwMiFycrmxmipump"
+            "token_symbol": "Lobstar",
+            "token_name": "Lobstar",
+            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
           }
         ],
-        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-        "confidence_0_100": 88,
-        "confidence_rationale": "$TRUMP has the highest market cap and is tied to a well-known political meme. Other tokens like El Trumpo and Mom Bonnie show strong community engagement.",
         "leader_token": {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 787713404.99
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Animal-Themed Meme Tokens",
-        "description": "Tokens referencing animals or animal-related characters, often leveraging viral internet memes or pop culture references.",
-        "defining_signals": [
-          "Names or themes centered around specific animals or animal archetypes",
-          "Leverage of viral animal-related memes or internet culture",
-          "Strong visual or narrative connection to the referenced animal"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          },
-          {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "Leopard",
-            "token_name": "Clouded Leopard",
-            "token_address": "CPbWHnV52sVgnp2oMnb3rnfbR1hqZ6ZDXAgWiDN6pump"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
-          }
-        ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Hachiko has the highest market cap in this group and is tied to a well-known cultural icon. Other tokens like Punch and Pippin also show strong meme traction.",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 619447826.08
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto-Native Meme Tokens",
-        "description": "Tokens with no pre-existing cultural or meme references outside of crypto, often created to capitalize on in-community humor or trends.",
-        "defining_signals": [
-          "No verifiable non-crypto cultural or meme origin",
-          "Names or themes that are entirely crypto-specific or derivative of other tokens",
-          "Lack of historical or mainstream media references outside of crypto context"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Tastecoin",
-            "token_name": "Tastecoin",
-            "token_address": "4oERTdtSCns3Zrxv2HJ8fw6Y6rticaRcu8GVGTgXpump"
-          },
-          {
-            "token_symbol": "FKH",
-            "token_name": "Flying Ketamine Horse",
-            "token_address": "BCXpjsHYmgVpRKdv4EQv1RARhYagnnwPkJjYbvM6bonk"
-          },
-          {
-            "token_symbol": "oora",
-            "token_name": "oora",
-            "token_address": "Cck21qHq33rezTeuQbPSvULXF2vLUTMErJwbPdUGpump"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          },
-          {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
-          }
-        ],
-        "leader_hint_token_address": "4oERTdtSCns3Zrxv2HJ8fw6Y6rticaRcu8GVGTgXpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong evidence of crypto-native origin with no external cultural references. Tastecoin has the highest market cap among this group.",
-        "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 108079061.67
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Retro Meme Tokens",
-        "description": "Tokens referencing retro or nostalgic internet memes, often leveraging older viral content or cultural references.",
-        "defining_signals": [
-          "Names or themes tied to older internet memes or retro culture",
-          "Leverage of nostalgia-driven engagement from older meme communities",
-          "Strong visual or narrative connection to the referenced retro meme"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "PUNCHBACK",
-            "token_name": "Revenge Of The Punch",
-            "token_address": "FpJKGvJFyixJWQjbjYh6AuxDVQgQMTcUWptz8byCpump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "TRENCH",
-            "token_name": "Trenches Game",
-            "token_address": "BzyKa1FGjs2EUpu3GGDibY4xdygn5evAiRboKmETpump"
-          }
-        ],
-        "leader_hint_token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Clippy has the highest market cap and is tied to a well-known retro meme. Other tokens like Wojak and RAAAAAH also show strong nostalgic appeal.",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 7106502.39
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 538928474.85
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Political and Celebrity Meme Tokens",
+        "meta_name": "Meme-Driven Memecoins",
         "leader_token": {
-          "token_symbol": "TRUMP",
-          "token_name": "OFFICIAL TRUMP",
-          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-          "usd_market_cap": 787713404.99
-        }
-      },
-      {
-        "meta_name": "Animal-Themed Meme Tokens",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 619447826.08
-        }
-      },
-      {
-        "meta_name": "Crypto-Native Meme Tokens",
-        "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 108079061.67
-        }
-      },
-      {
-        "meta_name": "Nostalgia and Retro Meme Tokens",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 7106502.39
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 538928474.85
         }
       }
     ]
