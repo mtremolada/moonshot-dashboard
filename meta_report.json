@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-23T05:44:41.148002Z",
+  "generated_at_utc": "2026-02-23T06:45:06.918634Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 89,
+  "token_context_count": 93,
   "prompt_truncated": false,
   "warnings": [
     "Detected 4 PVP group(s); excluding 7 token(s) from META prompt."
@@ -108,15 +108,104 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Crypto-Native Meme Tokens",
-        "description": "Tokens with names and themes that originated purely within the crypto ecosystem, lacking pre-existing cultural or meme references. These tokens often leverage humor, absurdity, or novelty to attract speculative interest.",
+        "meta_name": "Political and Celebrity Meme Tokens",
+        "description": "Tokens referencing political figures, celebrities, or internet personas, often leveraging their cultural or meme presence.",
         "defining_signals": [
-          "No verifiable non-crypto cultural or meme origin found",
-          "Names are either entirely new or repurposed without prior meme context",
-          "Lack of mainstream media or internet meme history outside of crypto",
-          "Highly speculative with no clear utility beyond community-driven hype",
-          "Often created by developers with a history of launching similar tokens",
-          "Names are intentionally absurd or nonsensical to stand out in the crowded crypto space"
+          "Names or themes referencing political figures or celebrities",
+          "Leverage of viral memes or internet personas tied to these figures",
+          "Strong community or meme-driven engagement around the referenced figure"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "TRUMP",
+            "token_name": "OFFICIAL TRUMP",
+            "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
+          },
+          {
+            "token_symbol": "T1",
+            "token_name": "Trump Mobile",
+            "token_address": "GVxxcKzLE9AK5HhmDBMYnzD6jTvSYuG9LEY2wJUdpump"
+          },
+          {
+            "token_symbol": "TRUMP47",
+            "token_name": "Too Much Winning",
+            "token_address": "y3bqe3vHYQzkpRYD12oWpQkaYGGCjE1Jnu6zFrYpump"
+          },
+          {
+            "token_symbol": "El Trumpo",
+            "token_name": "Donaldo El Trumpo",
+            "token_address": "D7J3RWmrhHuLdiCJVuTh9bd863nnzDSR7fJwXFPxpump"
+          },
+          {
+            "token_symbol": "MB",
+            "token_name": "Mom Bonnie",
+            "token_address": "TZgGuV7gipbUMyymauyh5VdHM6umwMiFycrmxmipump"
+          }
+        ],
+        "leader_hint_token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+        "confidence_0_100": 88,
+        "confidence_rationale": "$TRUMP has the highest market cap and is tied to a well-known political meme. Other tokens like El Trumpo and Mom Bonnie show strong community engagement.",
+        "leader_token": {
+          "token_symbol": "TRUMP",
+          "token_name": "OFFICIAL TRUMP",
+          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "usd_market_cap": 787713404.99
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal-Themed Meme Tokens",
+        "description": "Tokens referencing animals or animal-related characters, often leveraging viral internet memes or pop culture references.",
+        "defining_signals": [
+          "Names or themes centered around specific animals or animal archetypes",
+          "Leverage of viral animal-related memes or internet culture",
+          "Strong visual or narrative connection to the referenced animal"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+          },
+          {
+            "token_symbol": "Leopard",
+            "token_name": "Clouded Leopard",
+            "token_address": "CPbWHnV52sVgnp2oMnb3rnfbR1hqZ6ZDXAgWiDN6pump"
+          },
+          {
+            "token_symbol": "BAN",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+          }
+        ],
+        "leader_hint_token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Hachiko has the highest market cap in this group and is tied to a well-known cultural icon. Other tokens like Punch and Pippin also show strong meme traction.",
+        "leader_token": {
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 619447826.08
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Crypto-Native Meme Tokens",
+        "description": "Tokens with no pre-existing cultural or meme references outside of crypto, often created to capitalize on in-community humor or trends.",
+        "defining_signals": [
+          "No verifiable non-crypto cultural or meme origin",
+          "Names or themes that are entirely crypto-specific or derivative of other tokens",
+          "Lack of historical or mainstream media references outside of crypto context"
         ],
         "supporting_tokens": [
           {
@@ -135,98 +224,50 @@
             "token_address": "Cck21qHq33rezTeuQbPSvULXF2vLUTMErJwbPdUGpump"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          },
-          {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "Ban",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
-          },
-          {
-            "token_symbol": "SOLCEX",
-            "token_name": "SolCex",
-            "token_address": "AMjzRn1TBQwQfNAjHFeBb7uGbbqbJB7FzXAnGgdFPk6K"
-          },
-          {
-            "token_symbol": "IDLE",
-            "token_name": "IdleMine",
-            "token_address": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT"
-          },
-          {
-            "token_symbol": "HNT",
-            "token_name": "Helium Network Token",
-            "token_address": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux"
-          }
-        ],
-        "leader_hint_token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong evidence of crypto-native origin with no external cultural references. High market cap and recent creation date suggest it's part of a broader speculative wave.",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 619447826.08
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Character Tokens",
-        "description": "Tokens inspired by viral internet memes featuring specific characters or phrases. These tokens often repurpose well-known memes into crypto narratives, leveraging existing cultural familiarity for community engagement.",
-        "defining_signals": [
-          "Clear reference to a viral internet meme with a character or phrase",
-          "Meme has a documented history of virality on platforms like TikTok, Reddit, or X",
-          "Token narrative aligns with the meme’s cultural context or humor",
-          "Names are often direct references to the meme’s title or key phrase",
-          "Community engagement is driven by meme culture and fan art",
-          "Tokens often include variations or derivatives of the original meme"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Lobstar",
-            "token_name": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "Yaranaika",
-            "token_name": "やらないか",
-            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
-          },
-          {
             "token_symbol": "OPUS",
             "token_name": "Opus The Trencher",
             "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
           },
           {
-            "token_symbol": "PunchDoll",
-            "token_name": "Punch Doll",
-            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+          }
+        ],
+        "leader_hint_token_address": "4oERTdtSCns3Zrxv2HJ8fw6Y6rticaRcu8GVGTgXpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong evidence of crypto-native origin with no external cultural references. Tastecoin has the highest market cap among this group.",
+        "leader_token": {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 108079061.67
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia and Retro Meme Tokens",
+        "description": "Tokens referencing retro or nostalgic internet memes, often leveraging older viral content or cultural references.",
+        "defining_signals": [
+          "Names or themes tied to older internet memes or retro culture",
+          "Leverage of nostalgia-driven engagement from older meme communities",
+          "Strong visual or narrative connection to the referenced retro meme"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+            "token_symbol": "PUNCHBACK",
+            "token_name": "Revenge Of The Punch",
+            "token_address": "FpJKGvJFyixJWQjbjYh6AuxDVQgQMTcUWptz8byCpump"
           },
           {
             "token_symbol": "RAAAAAH",
@@ -234,62 +275,35 @@
             "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
           },
           {
-            "token_symbol": "Grandma",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
-          },
-          {
-            "token_symbol": "Mia",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "TRENCH",
+            "token_name": "Trenches Game",
+            "token_address": "BzyKa1FGjs2EUpu3GGDibY4xdygn5evAiRboKmETpump"
           }
         ],
-        "leader_hint_token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong meme character references with documented viral history. High engagement and market cap suggest this is a dominant theme.",
+        "leader_hint_token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Clippy has the highest market cap and is tied to a well-known retro meme. Other tokens like Wojak and RAAAAAH also show strong nostalgic appeal.",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 41031986.41
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Animal-Themed Tokens",
-        "description": "Tokens centered around animals, either as literal references or as part of a meme. These tokens often capitalize on the popularity of animal-related content on social media and the internet.",
-        "defining_signals": [
-          "Names or themes directly reference animals",
-          "Tokens often include cute or anthropomorphic animal imagery",
-          "Meme or cultural references involving animals are common",
-          "Tokens may be inspired by viral animal videos or images",
-          "Community engagement often revolves around animal-related humor or sentiment",
-          "Tokens may be part of broader animal-themed meme trends"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Djungelskog",
-            "token_name": "Ikea Orangutan",
-            "token_address": "5UA32VJrb9ifsvv7y9AhHDPoADTWFDEHbTr4fVPHpump"
-          },
-          {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 41031986.41
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 7106502.39
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Crypto-Native Meme Tokens",
+        "meta_name": "Political and Celebrity Meme Tokens",
+        "leader_token": {
+          "token_symbol": "TRUMP",
+          "token_name": "OFFICIAL TRUMP",
+          "token_address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "usd_market_cap": 787713404.99
+        }
+      },
+      {
+        "meta_name": "Animal-Themed Meme Tokens",
         "leader_token": {
           "token_symbol": "pippin",
           "token_name": "Pippin",
@@ -298,21 +312,21 @@
         }
       },
       {
-        "meta_name": "Meme Character Tokens",
+        "meta_name": "Crypto-Native Meme Tokens",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 41031986.41
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 108079061.67
         }
       },
       {
-        "meta_name": "Animal-Themed Tokens",
+        "meta_name": "Nostalgia and Retro Meme Tokens",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 41031986.41
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 7106502.39
         }
       }
     ]
