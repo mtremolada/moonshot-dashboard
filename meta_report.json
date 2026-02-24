@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-24T04:54:49.612328Z",
+  "generated_at_utc": "2026-02-24T05:55:33.130507Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 106,
+  "token_context_count": 108,
   "prompt_truncated": false,
   "warnings": [
     "Detected 13 PVP group(s); excluding 19 token(s) from META prompt."
@@ -132,26 +132,6 @@
     },
     {
       "match_type": "token_symbol",
-      "match_value": "nolimit",
-      "tokens": [
-        {
-          "token_symbol": "NoLimit",
-          "token_name": "NoLimitGains",
-          "token_address": "4nURS6qxY9bCEhramG2VZfnphJZyzis5EE86w5qLpump",
-          "usd_market_cap": 239981.79,
-          "processed_at": "2026-02-23T05:50:08.232138Z"
-        },
-        {
-          "token_symbol": "NoLimit",
-          "token_name": "NoLimit",
-          "token_address": "6fC29w55f26ne7aaTH3Apqu6DWrgKk3oHmaRnd5Hpump",
-          "usd_market_cap": 164332.56,
-          "processed_at": "2026-02-23T17:29:21.686131Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
       "match_value": "moss",
       "tokens": [
         {
@@ -259,6 +239,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "nolimit",
+      "tokens": [
+        {
+          "token_symbol": "NoLimit",
+          "token_name": "NoLimit",
+          "token_address": "6fC29w55f26ne7aaTH3Apqu6DWrgKk3oHmaRnd5Hpump",
+          "usd_market_cap": 164332.56,
+          "processed_at": "2026-02-23T17:29:21.686131Z"
+        },
+        {
+          "token_symbol": "NoLimit",
+          "token_name": "NoLimitGains",
+          "token_address": "4nURS6qxY9bCEhramG2VZfnphJZyzis5EE86w5qLpump",
+          "usd_market_cap": 1004066.81,
+          "processed_at": "2026-02-24T05:50:52.581821Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "tetanus",
       "tokens": [
         {
@@ -309,28 +309,120 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Revival",
-        "description": "Tokens repurposing established internet memes or cultural references for crypto branding. These tokens leverage nostalgia and viral history to attract attention.",
+        "meta_name": "Crypto-Parody",
+        "description": "Tokens that parody or satirize crypto culture itself, often using absurd or ironic themes. These tokens thrive on humor and irony within the crypto space.",
         "defining_signals": [
-          "Use of pre-existing memes or cultural references (e.g., Wojak, Pepe, Bonk).",
-          "Clear historical or viral internet origin of the meme or phrase.",
-          "Community-driven narratives that tie the token to the meme's legacy."
+          "Satirical or ironic naming conventions",
+          "Direct parody of crypto jargon or behaviors",
+          "Absurd or exaggerated utility claims"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "USELESS",
+            "token_name": "USELESS COIN",
+            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
           },
           {
-            "token_symbol": "Pepe",
-            "token_name": "Pepe",
-            "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+            "token_symbol": "Buttcoin",
+            "token_name": "Buttcoin",
+            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
           },
           {
-            "token_symbol": "Bonk",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+            "token_symbol": "Fartcoin",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          },
+          {
+            "token_symbol": "PENIS",
+            "token_name": "peniscoin",
+            "token_address": "CoiGnrdd2nmc9NPdwxHcSxCZ23AvsFDmyb8CwfiJpump"
+          },
+          {
+            "token_symbol": "neeb",
+            "token_name": "NotInEmploymentEducationButtcoin",
+            "token_address": "DHH3xjsxUwsrwMnw5iAtnmuvbjQYa2QarFZvPgtWpump"
+          }
+        ],
+        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong satirical themes and community-driven humor, with clear crypto parody roots.",
+        "leader_token": {
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 141069531.51
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Driven Utility",
+        "description": "Tokens centered around AI integration, often claiming to offer AI-powered tools, trading agents, or autonomous systems. These tokens leverage the growing interest in AI and its potential applications.",
+        "defining_signals": [
+          "Claims of AI-powered tools or agents",
+          "Focus on automation or predictive analytics",
+          "Integration with AI platforms or models"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Gizmo",
+            "token_name": "Gizmo",
+            "token_address": "8HGer4vRWZMu5MUYU7ACPb4uanKgBewaXJZscLagpump"
+          },
+          {
+            "token_symbol": "SKR",
+            "token_name": "Seeker",
+            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+          },
+          {
+            "token_symbol": "Clawbook",
+            "token_name": "Clawbook",
+            "token_address": "2NAFvpV5GWk5ikGsaonNq3gwQZoKyYKbGGYWo3Anpump"
+          },
+          {
+            "token_symbol": "RADR",
+            "token_name": "RADR",
+            "token_address": "CzFvsLdUazabdiu9TYXujj4EY495fG7VgJJ3vQs6bonk"
+          },
+          {
+            "token_symbol": "EFM",
+            "token_name": "ECLIPSE",
+            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
+          }
+        ],
+        "leader_hint_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong focus on AI utility and integration with emerging tech, backed by active community and project claims.",
+        "leader_token": {
+          "token_symbol": "SKR",
+          "token_name": "Seeker",
+          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "usd_market_cap": 106636743.11
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Revival",
+        "description": "Tokens reviving older internet memes or cultural references, often with a crypto twist. These tokens leverage nostalgia and existing meme traction for community engagement.",
+        "defining_signals": [
+          "Reference to established memes with pre-2020 origins",
+          "Use of viral phrases or characters with documented meme history",
+          "Leverage of nostalgia-driven narratives or pop culture references"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "PunchDoll",
+            "token_name": "Punch Doll",
+            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
           },
           {
             "token_symbol": "GIGA",
@@ -341,136 +433,32 @@
             "token_symbol": "TROLL",
             "token_name": "TROLL",
             "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong historical meme roots and active community engagement.",
+        "leader_hint_token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong historical meme roots with clear cultural references and active community engagement.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 523944460.51
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25793026.73
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Crypto-Parody",
-        "description": "Tokens that parody or satirize crypto culture, often using absurd or ironic themes to mock the industry's trends and behaviors.",
+        "meta_name": "Nostalgia Revival",
+        "description": "Tokens that revive retro or historical references, often drawing from pop culture, gaming, or internet history. These tokens tap into nostalgia for past eras or icons.",
         "defining_signals": [
-          "Absurd or ironic names and themes (e.g., Buttcoin, Testicle, Useless Coin).",
-          "Direct references to crypto jargon or meme culture (e.g., HODL, WAGMI).",
-          "Lack of serious utility or real-world application."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Buttcoin",
-            "token_name": "Buttcoin",
-            "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump"
-          },
-          {
-            "token_symbol": "testicle",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
-          },
-          {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
-          },
-          {
-            "token_symbol": "HODL",
-            "token_name": "HODL",
-            "token_address": "Hh3oTaqDCKKfdBgsQEvxp9sUwyNf8x9qmKqEMLBWpump"
-          },
-          {
-            "token_symbol": "Fartcoin",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
-          },
-          {
-            "token_symbol": "TASTECOIN",
-            "token_name": "Tastecoin",
-            "token_address": "4oERTdtSCns3Zrxv2HJ8fw6Y6rticaRcu8GVGTgXpump"
-          }
-        ],
-        "leader_hint_token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "High engagement with absurd themes and strong meme appeal.",
-        "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 141069531.51
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI and Tech Meme",
-        "description": "Tokens leveraging AI and tech themes, often with humorous or ironic takes on AI, tech, or future trends.",
-        "defining_signals": [
-          "Use of AI or tech-related names or themes (e.g., Clippy, SKR, AI Rig Complex).",
-          "Incorporation of AI or tech jargon or references.",
-          "Community-driven narratives around AI or tech."
+          "Reference to retro gaming or pop culture",
+          "Use of historical or iconic imagery",
+          "Leverage of nostalgia-driven themes"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "Clippy",
             "token_name": "Clippy",
             "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
-          },
-          {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 106636743.11
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Animal Meme Tokens",
-        "description": "Tokens centered around animal imagery, often leveraging viral animal-related memes or internet sensations to attract attention.",
-        "defining_signals": [
-          "Use of animal-related imagery or names (e.g., Lobstar, Punch, Rainbow Fish).",
-          "Ties to viral animal memes or internet sensations (e.g., Punch-kun, Rainbow Fish).",
-          "Community-driven narratives around the animal theme."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Lobstar",
-            "token_name": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
-          },
-          {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          },
-          {
-            "token_symbol": "fish",
-            "token_name": "rainbowfish",
-            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
-          },
-          {
-            "token_symbol": "PunchDoll",
-            "token_name": "Punch Doll",
-            "token_address": "338r5zyhWDAEFZaJy73JADFKLLtuG12AQv3WSgiJpump"
           },
           {
             "token_symbol": "Kabuto",
@@ -478,14 +466,24 @@
             "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
           },
           {
-            "token_symbol": "Grape-kun",
-            "token_name": "grape-kun",
-            "token_address": "9UEAfyEUXc9PyQboo67HKYpiJm4Rb4TQMGRiVccepump"
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          },
+          {
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           }
         ],
-        "leader_hint_token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong visual appeal and viral animal themes driving engagement.",
+        "leader_hint_token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong retro and pop culture references with clear community engagement and historical appeal.",
         "leader_token": {
           "token_symbol": "Punch",
           "token_name": "パンチ",
@@ -497,15 +495,6 @@
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Revival",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 523944460.51
-        }
-      },
-      {
         "meta_name": "Crypto-Parody",
         "leader_token": {
           "token_symbol": "Fartcoin",
@@ -515,7 +504,7 @@
         }
       },
       {
-        "meta_name": "AI and Tech Meme",
+        "meta_name": "AI-Driven Utility",
         "leader_token": {
           "token_symbol": "SKR",
           "token_name": "Seeker",
@@ -524,7 +513,16 @@
         }
       },
       {
-        "meta_name": "Animal Meme Tokens",
+        "meta_name": "Meme Revival",
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25793026.73
+        }
+      },
+      {
+        "meta_name": "Nostalgia Revival",
         "leader_token": {
           "token_symbol": "Punch",
           "token_name": "パンチ",
