@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-25T22:14:26.315466Z",
+  "generated_at_utc": "2026-02-25T23:05:00.100691Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 143,
+  "token_context_count": 137,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 19 PVP group(s); excluding 26 token(s) from META prompt."
+    "Detected 18 PVP group(s); excluding 24 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 26,
+  "pvp_excluded_token_count": 24,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -153,26 +153,6 @@
           "token_address": "CjCi8UzLTTRZEbap3VYggkggY97n2DicmSc1vrsJpump",
           "usd_market_cap": 4223816.54,
           "processed_at": "2026-02-25T19:49:08.966151Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "agenc",
-      "tokens": [
-        {
-          "token_symbol": "AGENC",
-          "token_name": "agenc.tech",
-          "token_address": "DHj4ECcakYKxWHaFGm5QyY9TNEQRoWr4JYdTjSG1pump",
-          "usd_market_cap": 71612.47,
-          "processed_at": "2026-02-24T22:18:17.850935Z"
-        },
-        {
-          "token_symbol": "AgenC",
-          "token_name": "AgenC",
-          "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
-          "usd_market_cap": 811448.15,
-          "processed_at": "2026-02-24T23:51:14.752821Z"
         }
       ]
     },
@@ -415,87 +395,67 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Rebranding",
-        "description": "Tokens repurposing existing internet memes, pop culture references, or viral content into crypto-native branding, often with no prior crypto context.",
+        "meta_name": "Meme Origin Tokens",
+        "description": "Tokens that reference or repurpose established internet memes, viral videos, or cultural references with pre-existing non-crypto origins.",
         "defining_signals": [
-          "Tokens referencing viral memes, internet culture, or pop culture figures",
-          "No prior crypto context for the meme or name",
-          "Community-driven branding with meme-based narratives",
-          "Leveraging meme virality for community engagement",
-          "Absence of traditional financial or technical utility"
+          "Tokens referencing viral memes, videos, or internet culture",
+          "Tokens with clear cultural or meme-based naming (e.g., 'Rage Guy', 'Clippy')",
+          "Tokens leveraging meme history or internet folklore",
+          "Tokens with meme-based narratives or visual motifs",
+          "Tokens referencing viral TikTok, Reddit, or 4chan content"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "ELONGATE",
-            "token_name": "elongate",
-            "token_address": "6bZCyJ4kybyTjPpfFXgFRHzAjTLYBGpqHgn7oPJmELcg"
-          },
-          {
-            "token_symbol": "TRUMP47",
-            "token_name": "Too Much Winning",
-            "token_address": "GDb9K8VEJGdqR7dGJ4XLRNeBzH4MuPrDrpUa98WJpump"
-          },
-          {
-            "token_symbol": "GIGA",
-            "token_name": "GIGACHAD",
-            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
-          },
-          {
-            "token_symbol": "OGCAT",
-            "token_name": "OG Catcoin",
-            "token_address": "AKJPwaT3mbhHQxLc6BtQoMnQv2GT8prutfBWARaupump"
-          },
-          {
-            "token_symbol": "FSC",
-            "token_name": "Flying Spinning Cat",
-            "token_address": "BPJivqTmLmLDjfSn71gp8XaFYDXxNUuM85pMEWAcpump"
-          },
-          {
-            "token_symbol": "MISCHA",
-            "token_name": "Mischa And Ball",
-            "token_address": "DP4xbVobKwwduidtV2y8nH5QurnUZDkh9nmbtxRAxpump"
-          },
-          {
-            "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
-          },
           {
             "token_symbol": "RAGE",
             "token_name": "Rage Guy",
             "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
           },
           {
-            "token_symbol": "CHICKEN",
-            "token_name": "Retarded Chicken",
-            "token_address": "DjXHhPisqgFses21rzVJZkVGQS21kPViM8qJ69Lrpump"
+            "token_symbol": "CLIP",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "PUNCHBF",
-            "token_name": "Punch Best Friends",
-            "token_address": "8qMFktkVQrkWVaCV1RayyXhsVYQrT7k34MU5GYGJpump"
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "ALIENS",
+            "token_name": "Aliens are real",
+            "token_address": "F5tfztTnE4sYsMhZT5KrFpWvHmYSfJZoRjCuxKPbpump"
           }
         ],
-        "leader_hint_token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong meme-based branding across tokens, with clear cultural references and community engagement. Several tokens have high market caps and active social media presence.",
+        "leader_hint_token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong meme-based narratives with clear cultural origins. High market cap for Rage Guy and consistent meme-driven themes across tokens.",
         "leader_token": {
-          "token_symbol": "GIGA",
-          "token_name": "GIGACHAD",
-          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-          "usd_market_cap": 19984797.54
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25212144.4
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "AI Agent Coins",
-        "description": "Tokens tied to AI agents, autonomous systems, or ai-based infrastructure, often leveraging on-chain memory, governance, or utility for ai operations.",
+        "description": "Tokens tied to AI agents, autonomous systems, or AI-driven infrastructure. These tokens often leverage AI as a core utility or theme.",
         "defining_signals": [
-          "Tokens with AI agent or ai-driven infrastructure as a core theme",
-          "On-chain memory or persistent ai behavior",
-          "AI agent governance or utility for ecosystem tasks",
-          "Community-driven ai agent development or deployment",
-          "Integration with ai trading, data, or automation functions"
+          "Tokens with AI agent functionality or AI-driven infrastructure",
+          "Mentions of AI memory, on-chain execution, or autonomous trading",
+          "Leverage of AI agent ecosystems or AI coordination protocols",
+          "Tokens with AI-generated content or AI-based governance",
+          "AI agent deployment or AI task automation as a core theme"
         ],
         "supporting_tokens": [
           {
@@ -504,19 +464,9 @@
             "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump"
           },
           {
-            "token_symbol": "GARY",
-            "token_name": "The Silverback Report",
-            "token_address": "DmBr5GFwhQPSExE8ETm4ATzsqC9wKZud5ideSpg1pump"
-          },
-          {
             "token_symbol": "DATACLAW",
             "token_name": "DataClaw",
             "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
-          },
-          {
-            "token_symbol": "UNICLAW",
-            "token_name": "UniClaw",
-            "token_address": "jXxd5UcLeN8mjRShtzVTA3r31H86DjpcNF8BMuRpump"
           },
           {
             "token_symbol": "GIZMO",
@@ -524,19 +474,9 @@
             "token_address": "8HGer4vRWZMu5MUYU7ACPb4uanKgBewaXJZscLagpump"
           },
           {
-            "token_symbol": "ZOE",
-            "token_name": "Zoe",
-            "token_address": "5QhQE7yRMgYHzs7Vq3y2Wnc2SAkMwLYrQc4RHNipump"
-          },
-          {
             "token_symbol": "MIA",
             "token_name": "Mia Ko",
             "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "KREDO",
-            "token_name": "Kredo",
-            "token_address": "GqtnXK2QfXKDLqWjyphQf77ZpZxVrt19mMqQ7S9ipump"
           },
           {
             "token_symbol": "ELDRIC",
@@ -544,84 +484,141 @@
             "token_address": "CQjkDZGt2NecGAeZm91epep4zSZohoAkCn1QqWd7pump"
           },
           {
-            "token_symbol": "GHOST",
-            "token_name": "GhostwareOS",
-            "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST"
+            "token_symbol": "X84",
+            "token_name": "x84",
+            "token_address": "CgfbHaxt72vLRrxneUU8SA5G9KZErvSXiCRoYgoCpump"
           }
         ],
         "leader_hint_token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong thematic consistency across multiple tokens, including AI agent utility, on-chain memory, and governance. High market caps and active community engagement in several tokens.",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong thematic consistency across tokens, with clear AI agent infrastructure, memory, and coordination themes. High market cap for DataClaw and CLUDE indicates strong community traction.",
         "leader_token": {
-          "token_symbol": "GHOST",
-          "token_name": "GhostwareOS",
-          "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
-          "usd_market_cap": 3783830.0
+          "token_symbol": "Clude",
+          "token_name": "CLUDE",
+          "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump",
+          "usd_market_cap": 1221331.69
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI Infrastructure & Utility",
-        "description": "Tokens focused on AI infrastructure, data management, and utility for AI ecosystems, often with on-chain governance or decentralized AI coordination.",
+        "meta_name": "Crypto Nostalgia",
+        "description": "Tokens leveraging nostalgia for older internet culture, pop culture, or historical references. These tokens often reference 2000s-era internet culture, retro gaming, or classic memes.",
         "defining_signals": [
-          "Tokens with AI infrastructure or data utility as a core theme",
-          "On-chain governance for AI systems",
-          "Decentralized AI coordination or collaboration",
-          "Integration with AI data, models, or compute resources",
-          "Community-driven AI development or deployment"
+          "Tokens referencing retro internet culture or 2000s-era memes",
+          "Tokens with pop culture or historical references",
+          "Tokens leveraging nostalgia for older internet trends",
+          "Tokens with retro gaming or 2000s-era internet motifs",
+          "Tokens referencing classic memes or viral content from the 2000s"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "DM",
-            "token_name": "DARKMATTER",
-            "token_address": "5DxioZwEeAKpBaYC5veTHArKE55qRDSmb5RZ6VwApump"
+            "token_symbol": "CLIP",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "Clippy",
+          "token_name": "Clippy",
+          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
+          "usd_market_cap": 544077.77
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Infrastructure",
+        "description": "Tokens focused on AI agent coordination, infrastructure, or ecosystems. These tokens often serve as governance, utility, or incentive mechanisms for AI agent platforms.",
+        "defining_signals": [
+          "Tokens enabling AI agent coordination or execution",
+          "Tokens with AI agent governance or staking mechanisms",
+          "Tokens tied to AI agent marketplaces or task execution",
+          "Tokens leveraging AI agent identity or on-chain execution",
+          "Tokens with AI agent deployment or AI agent infrastructure"
+        ],
+        "supporting_tokens": [
           {
             "token_symbol": "DATACLAW",
             "token_name": "DataClaw",
             "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
           },
           {
-            "token_symbol": "UNICLAW",
-            "token_name": "UniClaw",
-            "token_address": "jXxd5UcLeNe8mjRShtzVTA3r31H86DjpcNF8BMuRpump"
+            "token_symbol": "CLUS",
+            "token_name": "CLUS",
+            "token_address": "none"
+          },
+          {
+            "token_symbol": "GIZMO",
+            "token_name": "Gizmo",
+            "token_address": "8HGer4vRWZMu5MUYU7ACPb4uanKgBewaXJZscLagpump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "X84",
+            "token_name": "x84",
+            "token_address": "CgfbHaxt72vLRrxneUU8SA5G9KZErvSXiCRoYgoCpump"
+          },
+          {
+            "token_symbol": "CLUS",
+            "token_name": "CLUS",
+            "token_address": "none"
           }
         ],
+        "leader_hint_token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong thematic consistency across tokens, with clear AI agent infrastructure and coordination themes. High market cap for DataClaw and strong community engagement.",
         "leader_token": {
-          "token_symbol": "DM",
-          "token_name": "DARKMATTER",
-          "token_address": "5DxioZwEeAKpBaYC5veTHArKE55qRDSmb5RZ6VwApump",
-          "usd_market_cap": 403189.06
+          "token_symbol": "DATACLAW",
+          "token_name": "DataClaw",
+          "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump",
+          "usd_market_cap": 337319.96
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Rebranding",
+        "meta_name": "Meme Origin Tokens",
         "leader_token": {
-          "token_symbol": "GIGA",
-          "token_name": "GIGACHAD",
-          "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
-          "usd_market_cap": 19984797.54
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25212144.4
         }
       },
       {
         "meta_name": "AI Agent Coins",
         "leader_token": {
-          "token_symbol": "GHOST",
-          "token_name": "GhostwareOS",
-          "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
-          "usd_market_cap": 3783830.0
+          "token_symbol": "Clude",
+          "token_name": "CLUDE",
+          "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump",
+          "usd_market_cap": 1221331.69
         }
       },
       {
-        "meta_name": "AI Infrastructure & Utility",
+        "meta_name": "Crypto Nostalgia",
         "leader_token": {
-          "token_symbol": "DM",
-          "token_name": "DARKMATTER",
-          "token_address": "5DxioZwEeAKpBaYC5veTHArKE55qRDSmb5RZ6VwApump",
-          "usd_market_cap": 403189.06
+          "token_symbol": "Clippy",
+          "token_name": "Clippy",
+          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
+          "usd_market_cap": 544077.77
+        }
+      },
+      {
+        "meta_name": "AI Agent Infrastructure",
+        "leader_token": {
+          "token_symbol": "DATACLAW",
+          "token_name": "DataClaw",
+          "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump",
+          "usd_market_cap": 337319.96
         }
       }
     ]
