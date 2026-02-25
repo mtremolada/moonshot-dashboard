@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-25T18:12:17.846169Z",
+  "generated_at_utc": "2026-02-25T19:12:48.108584Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 146,
+  "token_context_count": 148,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 16 PVP group(s); excluding 23 token(s) from META prompt."
+    "Detected 17 PVP group(s); excluding 25 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 23,
+  "pvp_excluded_token_count": 25,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -153,6 +153,26 @@
           "token_address": "9vrGoRZuoaPpGYPuid1EmYKYnYdeRnDgi3wER4tcpump",
           "usd_market_cap": 1787.06,
           "processed_at": "2026-02-24T21:43:00.763027Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "gme",
+      "tokens": [
+        {
+          "token_symbol": "GME",
+          "token_name": "GameStop Coin",
+          "token_address": "GEdSvqHPpWR67nwM3LWjk28uAkv6xJEHzTaMh8mRpump",
+          "usd_market_cap": 5414023.43,
+          "processed_at": "2026-02-24T20:50:04.693946Z"
+        },
+        {
+          "token_symbol": "GME",
+          "token_name": "GameStop",
+          "token_address": "8wXtPeU6557ETkp9WHFY1n1EcU6NxDvbAggHGsMYiHsB",
+          "usd_market_cap": 4919059.36,
+          "processed_at": "2026-02-25T18:19:45.370110Z"
         }
       ]
     },
@@ -362,55 +382,36 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Culture Revival",
-        "description": "Tokens are based on pre-existing internet memes, often with viral histories on platforms like TikTok, Reddit, and 4chan. These tokens leverage nostalgia and humor for community engagement.",
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens leveraging established internet memes or cultural references for branding, often with humorous or ironic twists. These tokens typically repurpose viral images, phrases, or characters from non-crypto contexts.",
         "defining_signals": [
-          "Leverage of viral internet memes or phrases",
-          "Tie-ins to viral TikTok or Reddit trends",
-          "Use of meme-based imagery or character references",
-          "Community-driven humor or inside jokes",
-          "References to 2010s–2020s meme culture"
+          "Repurposing of viral internet memes (e.g., 'bonk', 'wojak', 'clippy')",
+          "Use of recognizable meme imagery or phrases",
+          "Leveraging nostalgia or humor for branding",
+          "Community-driven narratives with meme-based themes",
+          "Absence of pre-existing crypto context for the meme",
+          "High social media engagement and viral potential"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "Grandma",
-            "token_name": "Minecraft Grandma Fund",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "BBBY",
-            "token_name": "Bed Bath & Beyond",
-            "token_address": "GXw1mnsaC7mk7K7JyVZWT6VTzPciq2M8gV5183D8VT9g"
+            "token_symbol": "CLIPPIE",
+            "token_name": "Clippy",
+            "token_address": "GKjje1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "motion",
-            "token_name": "White boy motion",
-            "token_address": "4yDSFNMitxy6waXPTkPyyVvbbQSiqe7zD1VxnzEypump"
-          },
-          {
-            "token_symbol": "jellyjelly",
-            "token_name": "jelly-my-jelly",
-            "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
-          },
-          {
-            "token_symbol": "ALIENS",
-            "token_name": "Aliens are real",
-            "token_address": "F5tfztTnE4sYsMhZT5KrFpWvHmYSfJZoRjCuxKPbpump"
-          },
-          {
-            "token_symbol": "PEACE",
-            "token_name": "Peace and Quiet",
-            "token_address": "73qWYYtJCNmbPbQuVMyAMPXH7Kmmx6okupT8J2W4pump"
-          },
-          {
-            "token_symbol": "GME",
-            "token_name": "GameStop Coin",
-            "token_address": "GEdSvqHPpWR67nwM3LWWjk28uAkv6xJEHzTaMh8mRpump"
+            "token_symbol": "GIGA",
+            "token_name": "GIGACHAD",
+            "token_address": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9"
           },
           {
             "token_symbol": "BINGUS",
@@ -418,47 +419,94 @@
             "token_address": "ABc1BqTSZEwZZoZr6kJUyUCMQTTxWSh18DyK5GM4Spump"
           },
           {
-            "token_symbol": "GAY-I",
-            "token_name": "gay AI",
-            "token_address": "DsyhdEMj2F8321mQX6Gx8iwpyvcehVGHQpgYJQQBpump"
+            "token_symbol": "PUNCH",
+            "token_name": "Punch-kun パンチくん",
+            "token_address": "EXrBNZPC9z8pGgTJFPLRJqvEVoqaPteQMkSgRQfWpump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZZLdpDikgbaWSd5fTEozQkV7KApump"
+          },
+          {
+            "token_symbol": "HEMEN",
+            "token_name": "He-Man",
+            "token_address": "6wbUiw3VhJLj1kyb7vVwiWNJJNGyLDSXK7aQCzapump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGmm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "TESTICLE",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
           }
         ],
-        "leader_hint_token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Strong meme-based narratives with clear cultural origins. High market caps for several tokens indicate strong community adoption and engagement.",
+        "leader_hint_token_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong meme-based branding across multiple tokens. High social media engagement and viral potential. BONK is the most established meme token in this category.",
         "leader_token": {
-          "token_symbol": "jellyjelly",
-          "token_name": "jelly-my-jelly",
-          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
-          "usd_market_cap": 62662359.54
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 575285093.67
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI Agent Ecosystem",
-        "description": "Tokens are centered around AI agents, autonomous systems, and on-chain AI infrastructure. These tokens often leverage AI for trading, governance, or content creation.",
+        "meta_name": "AI-Powered Finance",
+        "description": "Tokens leveraging AI for financial applications like trading, yield generation, and predictive analytics. These projects often emphasize automation, data-driven decisions, and algorithmic trading strategies.",
         "defining_signals": [
-          "AI-driven trading or decision-making",
-          "On-chain AI agent deployment",
-          "Integration with AI infrastructure (e.g., OpenClaw, Clawdbot)",
-          "Autonomous or self-evolving AI systems",
-          "Tokenomics tied to AI-generated content or services"
+          "AI-driven trading or yield generation",
+          "Algorithmic price prediction or market analysis",
+          "Integration with DeFi protocols",
+          "Automated portfolio management",
+          "On-chain data processing",
+          "Community governance for AI models"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "SPX",
+            "token_name": "SPX6900 (Wormhole)",
+            "token_address": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr"
+          },
+          {
+            "token_symbol": "GHOST",
+            "token_name": "GhostwareOS",
+            "token_address": "BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "SPX",
+          "token_name": "SPX6900 (Wormhole)",
+          "token_address": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr",
+          "usd_market_cap": 269411752.38
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Utility",
+        "description": "Tokens tied to AI agents performing autonomous tasks like trading, data fetching, and governance. These projects often emphasize on-chain memory, automation, and decentralized coordination.",
+        "defining_signals": [
+          "AI agent functionality (e.g., trading, data fetching, governance)",
+          "On-chain memory or persistent state",
+          "Decentralized coordination or swarm intelligence",
+          "Gasless or automated execution",
+          "Integration with Solana or other blockchain ecosystems",
+          "Community-driven governance via token holders"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CLUD",
+            "token_name": "Clude",
+            "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump"
+          },
           {
             "token_symbol": "CLAW",
             "token_name": "clawpump.tech",
             "token_address": "739dnZEG4yaBWFsY8L8ZwrfhGG6dhtCSercW8Umspump"
-          },
-          {
-            "token_symbol": "SENTIENTS",
-            "token_name": "Sentients",
-            "token_address": "AMdJ6RwzR36JsnvGJuKWt89Q7JdPEFxxegQSMNLUpump"
-          },
-          {
-            "token_symbol": "nanoclaw",
-            "token_name": "nanoclaw",
-            "token_address": "AMg3mkZXNf8Aw8Eu8NCh92DWk7Qahi1jtXc3SDPiqBqU"
           },
           {
             "token_symbol": "DATACLAW",
@@ -466,7 +514,7 @@
             "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
           },
           {
-            "token_symbol": "UniClaw",
+            "token_symbol": "UNICLAW",
             "token_name": "UniClaw",
             "token_address": "jXxd5UcLeN8mjRShtzVTA3r31H86DjpcNF8BMuRpump"
           },
@@ -476,99 +524,69 @@
             "token_address": "BVdMM5Fd7MxcTExnokXZzmCtiLvd2Es5zZQqRLNmrzSy"
           },
           {
-            "token_symbol": "ROOT",
-            "token_name": "Root Access",
-            "token_address": "zVbziYCZ7Vs26WjTHVUcTweocTM9rrqfjbSrLSspump"
-          },
-          {
             "token_symbol": "GIZMO",
             "token_name": "Gizmo",
             "token_address": "8HGer4vRWZMu5MUYU7ACPb4uanKgBewaXJZscLagpump"
           },
           {
-            "token_symbol": "ZOE",
-            "token_name": "Zoe",
-            "token_address": "5QhQE7yRMgYHzs7Vq3y2Wnc2SAkMwLYrQc4RHNipump"
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "Lobstar",
-            "token_name": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
-          }
-        ],
-        "leader_hint_token_address": "739dnZEG4yaBWFsY8L8ZwGG6dhtCSercW8Umspump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across tokens, with multiple tokens referencing AI agents and on-chain AI infrastructure. High market caps for several tokens indicate active community and capital interest.",
-        "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 4608339.28
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Powered Finance (Agentic Finance)",
-        "description": "Tokens are tied to AI-driven financial systems, including AI agents for trading, governance, and autonomous financial decision-making. These tokens often emphasize automation and decentralized finance.",
-        "defining_signals": [
-          "AI-based trading or financial decision-making",
-          "Autonomous financial agents",
-          "On-chain governance by AI",
-          "Tokenomics tied to AI-driven financial models",
-          "Integration with DeFi and automated trading"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "NOMISTAKE",
-            "token_name": "Claude Made Me a Millionaire",
-            "token_address": "5R6Uq1vGRgV8xQdgGpFrcAK6BZCFjggNUNYnnf8aKZFN"
-          },
-          {
-            "token_symbol": "CLAW",
-            "token_name": "clawpump.tech",
-            "token_address": "739dnZEG4yaBWFsY8L8ZwrfhGG6dhtCSercW8Umspump"
+            "token_symbol": "SPAWNR",
+            "token_name": "SPAWNR",
+            "token_address": "AbWvW7TCJqB9i68acdyNiPZSKmdzWPRgF8g9npPwpump"
           },
           {
             "token_symbol": "SENTIENTS",
             "token_name": "Sentients",
-            "token_address": "AMdJ6RwzR36JsnvGJuKWt89Q7JdPEFxxegQSMNLUpump"
+            "token_address": "AMdJ6Rw36JsnvGJuKWt89Q7JdPEFxxegQSMNLUpump"
+          },
+          {
+            "token_symbol": "PMPR",
+            "token_name": "PmprBot",
+            "token_address": "AX9D7Nqtu3enaeL4ELxoagsNV7AyEQEhK2ziwiyJpump"
           }
         ],
+        "leader_hint_token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong clustering around AI agent functionality, on-chain memory, and decentralized coordination. High market cap for CLUD and active community engagement in multiple tokens.",
         "leader_token": {
-          "token_symbol": "CLAW",
-          "token_name": "clawpump.tech",
-          "token_address": "739dnZEG4yaBWFsY8L8ZwrfhGG6dhtCSercW8Umspump",
-          "usd_market_cap": 180719.49
+          "token_symbol": "Clude",
+          "token_name": "CLUDE",
+          "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump",
+          "usd_market_cap": 1221331.69
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Culture Revival",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "jellyjelly",
-          "token_name": "jelly-my-jelly",
-          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
-          "usd_market_cap": 62662359.54
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 575285093.67
         }
       },
       {
-        "meta_name": "AI Agent Ecosystem",
+        "meta_name": "AI-Powered Finance",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 4608339.28
+          "token_symbol": "SPX",
+          "token_name": "SPX6900 (Wormhole)",
+          "token_address": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr",
+          "usd_market_cap": 269411752.38
         }
       },
       {
-        "meta_name": "AI-Powered Finance (Agentic Finance)",
+        "meta_name": "AI Agent Utility",
         "leader_token": {
-          "token_symbol": "CLAW",
-          "token_name": "clawpump.tech",
-          "token_address": "739dnZEG4yaBWFsY8L8ZwrfhGG6dhtCSercW8Umspump",
-          "usd_market_cap": 180719.49
+          "token_symbol": "Clude",
+          "token_name": "CLUDE",
+          "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump",
+          "usd_market_cap": 1221331.69
         }
       }
     ]
