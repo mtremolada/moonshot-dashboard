@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-26T01:16:08.147167Z",
+  "generated_at_utc": "2026-02-26T02:16:39.349241Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 143,
+  "token_context_count": 140,
   "prompt_truncated": false,
   "warnings": [
     "Detected 18 PVP group(s); excluding 24 token(s) from META prompt."
   ],
   "pvp_excluded_token_count": 24,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "final stop gamestop",
-      "tokens": [
-        {
-          "token_symbol": "GameStop",
-          "token_name": "Final Stop GameStop",
-          "token_address": "H4F6SXc3ss82ZABZopieaBdj3qQsJJpWj5PTDz4Tpump",
-          "usd_market_cap": 7802360.7,
-          "processed_at": "2026-02-25T01:17:12.934149Z"
-        },
-        {
-          "token_symbol": "GameStop",
-          "token_name": "Final Stop GameStop",
-          "token_address": "8qnigEij67UBLjMgbZFDnGkkdwhSkoWCKquETq4qpump",
-          "usd_market_cap": 1608.13,
-          "processed_at": "2026-02-26T00:59:13.143149Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "crabster",
@@ -157,22 +137,22 @@
       ]
     },
     {
-      "match_type": "token_symbol",
-      "match_value": "gamestop",
+      "match_type": "token_name",
+      "match_value": "final stop gamestop",
       "tokens": [
-        {
-          "token_symbol": "GameStop",
-          "token_name": "Final Stop GameStop",
-          "token_address": "H4F6SXc3ss82ZABZopieaBdj3qQsJJpWj5PTDz4Tpump",
-          "usd_market_cap": 7802360.7,
-          "processed_at": "2026-02-25T01:17:12.934149Z"
-        },
         {
           "token_symbol": "GameStop",
           "token_name": "Final Stop GameStop",
           "token_address": "8qnigEij67UBLjMgbZFDnGkkdwhSkoWCKquETq4qpump",
           "usd_market_cap": 1608.13,
           "processed_at": "2026-02-26T00:59:13.143149Z"
+        },
+        {
+          "token_symbol": "GameStop",
+          "token_name": "Final Stop GameStop",
+          "token_address": "H4F6SXc3ss82ZABZopieaBdj3qQsJJpWj5PTDz4Tpump",
+          "usd_market_cap": 1673.67,
+          "processed_at": "2026-02-26T01:18:23.256176Z"
         }
       ]
     },
@@ -389,31 +369,69 @@
           "processed_at": "2026-02-25T20:50:02.408554Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "gamestop",
+      "tokens": [
+        {
+          "token_symbol": "GameStop",
+          "token_name": "Final Stop GameStop",
+          "token_address": "8qnigEij67UBLjMgbZFDnGkkdwhSkoWCKquETq4qpump",
+          "usd_market_cap": 1608.13,
+          "processed_at": "2026-02-26T00:59:13.143149Z"
+        },
+        {
+          "token_symbol": "GameStop",
+          "token_name": "Final Stop GameStop",
+          "token_address": "H4F6SXc3ss82ZABZopieaBdj3qQsJJpWj5PTDz4Tpump",
+          "usd_market_cap": 1673.67,
+          "processed_at": "2026-02-26T01:18:23.256176Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Animals",
-        "description": "Tokens inspired by viral animal memes, often leveraging cute or quirky animal imagery to build community and virality.",
+        "meta_name": "MemeFi Tokens",
+        "description": "Tokens leveraging internet memes or cultural references for community-driven growth, often with humorous or satirical themes.",
         "defining_signals": [
-          "Tokens referencing viral animal memes or internet-famous animals",
-          "Use of cute or quirky animal imagery in branding or lore",
-          "Community-driven narratives around animal companionship or cuteness",
-          "Mentions of viral videos or social media trends involving animals",
-          "Tokens with mascots or avatars based on real or fictional animals"
+          "Tokens referencing viral memes (e.g., 'bonk', 'clawd', 'troll face')",
+          "Community-driven narratives with no prior crypto context",
+          "Use of internet slang or pop culture references as token names"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
           {
             "token_symbol": "CLAWD",
             "token_name": "clawdbot",
             "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
+            "token_symbol": "TROLL",
+            "token_name": "Troll face Casie",
+            "token_address": "EYwqEjzynXR22qBvBRppAmXBoS7j2KnkkQG4dCfupump"
+          },
+          {
+            "token_symbol": "COMMIT",
+            "token_name": "Commited",
+            "token_address": "J1NpMGAb2gRg3u3pM1RUpqRKCcTig1mbroZeEzwzpump"
+          },
+          {
             "token_symbol": "PUNCH",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+            "token_name": "Punch-kun パンチくん",
+            "token_address": "EXrBNZPC9z8pGgTJFPLRJqvEVoqaPteQMkSgRQfWpump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
           },
           {
             "token_symbol": "RAINY",
@@ -426,67 +444,83 @@
             "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
-            "token_symbol": "PIPPIN",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+            "token_symbol": "TESTICLE",
+            "token_name": "testicle",
+            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
           },
           {
-            "token_symbol": "BINGUS",
-            "token_name": "Bingus",
-            "token_address": "ABc1BqTSZEwZoZr6kJUyUCMQTTxWSh18DyK5GM4Spump"
-          },
-          {
-            "token_symbol": "COURAGE",
-            "token_name": "The Cowardly Dog",
-            "token_address": "BVX8KkocUyrenxuF58jhhr4tT5mVnqfiF3ncybtepump"
-          },
-          {
-            "token_symbol": "RAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "PUNCHBF",
-            "token_name": "Punch Best Friends",
-            "token_address": "8qMFktkVQrkWVaCV1RayyXhsVYQrT7k34MU5GYGJpump"
-          },
-          {
-            "token_symbol": "DODOBONYA",
-            "token_name": "Stand With Dodobonya",
-            "token_address": "BzW55BCUM9Uq3QPaXjdJk5xu7Fhbu5vHp4Dipfppump"
+            "token_symbol": "ALIENS",
+            "token_name": "Aliens are real",
+            "token_address": "F5tfztTnE4sYsMhZT5KrFpWvHmYSfJZoRjCuxKPbpump"
           }
         ],
-        "leader_hint_token_address": "CLAWD",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong visual and narrative appeal, consistent meme-driven themes, and community engagement around animal-centric tokens.",
+        "leader_hint_token_address": "DezXAX8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Strong meme-driven narratives with clear cultural references. Bonk is a well-established meme token with high market cap, indicating leadership.",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 773053584.53
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 575285093.67
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Infrastructure & Interoperability",
+        "description": "Tokens focused on blockchain interoperability, AI infrastructure, or decentralized systems for AI coordination.",
+        "defining_signals": [
+          "Tokens enabling cross-chain communication or interoperability",
+          "AI infrastructure or agent coordination platforms",
+          "Zero-knowledge proofs, on-chain memory, or decentralized AI execution"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CLUS",
+            "token_name": "CLUS",
+            "token_address": "CQjkDZGt2NecGAeZm91epep4zSZohoAkCn1QqWd7pump"
+          },
+          {
+            "token_symbol": "CTM",
+            "token_name": "c8ntinuum",
+            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "AGENC",
+            "token_name": "AgenC",
+            "token_address": "5yC9BM8KUsJTPbWPLfA2n8qH1s9V8DQ3Vcw1G6Jdpump"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "CTM",
+          "token_name": "c8ntinuum",
+          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+          "usd_market_cap": 371985077.4
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "AI Agent Coins",
-        "description": "Tokens tied to AI agents, autonomous systems, or ai-driven infrastructure, often leveraging open-source or experimental ai frameworks.",
+        "description": "Tokens tied to autonomous AI agents or AI-driven ecosystems, often leveraging on-chain memory, governance, or task execution.",
         "defining_signals": [
-          "Tokens with AI agent or ai-driven infrastructure narratives",
-          "Mentions of open-source or experimental ai frameworks",
-          "Focus on on-chain memory, autonomous trading, or task execution",
-          "Integration with ai agent platforms like OpenClaw or Zapperfi",
-          "Community-driven or speculative growth in ai agent ecosystems"
+          "Tokens with AI agent functionality (e.g., trading, data fetching, governance)",
+          "Mentions of on-chain memory or persistent AI behavior",
+          "Integration with AI infrastructure like OpenClaw or Zapperfi"
         ],
         "supporting_tokens": [
           {
             "token_symbol": "CLUS",
             "token_name": "CLUD",
-            "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump"
+            "token_address": "CQjkDZGt2NecGAeZm91epep4zSZohoAkCn1QqWd7pump"
           },
           {
-            "token_symbol": "DATACLAW",
-            "token_name": "DataClaw",
-            "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
+            "token_symbol": "UNICLAW",
+            "token_name": "UniClaw",
+            "token_address": "jXxd5UcLeN8mjRShtzVTA3r31H86DjpcNF8BMuRpump"
           },
           {
             "token_symbol": "GIZMO",
@@ -496,7 +530,17 @@
           {
             "token_symbol": "ZOE",
             "token_name": "Zoe",
-            "token_address": "5QhQE7yRMgYHzs7Vq3y2Wnc2SAkMwLYrQc4RHNipump"
+            "token_address": "5QhZ87yRMgYHzs7Vq3y2Wnc2SAkMwLYrQc4RHNipump"
+          },
+          {
+            "token_symbol": "DATACLAW",
+            "token_name": "DataClaw",
+            "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
+          },
+          {
+            "token_symbol": "ROOT",
+            "token_name": "Root Access",
+            "token_address": "zVbziYC7Vs26WjTHVUcTweocTM9rrqfjbSrLSspump"
           },
           {
             "token_symbol": "LOBSTAR",
@@ -504,19 +548,9 @@
             "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
           },
           {
-            "token_symbol": "UNICLAW",
-            "token_name": "UniClaw",
-            "token_address": "jXxd5UcLeN8mjRShtzVTA3r31H86DjpcNF8BMuRpump"
-          },
-          {
-            "token_symbol": "YOE",
-            "token_name": "Yoe",
-            "token_address": "Cck21qH33rezTeuQbPSvULXF2vLUTMErJwbPdUGpump"
-          },
-          {
-            "token_symbol": "X84",
-            "token_name": "x84",
-            "token_address": "CgfbHaxt72vLRrxneUU8SA5G9KZErvSXiCRoYgoCpump"
+            "token_symbol": "KREDO",
+            "token_name": "Kredo",
+            "token_address": "GqtnXK2QfXKDLqWjyphQf77ZpPxVrt19mZMQ7S9ipump"
           },
           {
             "token_symbol": "AGENC",
@@ -524,14 +558,14 @@
             "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
           },
           {
-            "token_symbol": "ZUMI",
-            "token_name": "Zumi",
-            "token_address": "Hohm3gYHSrqisLnjC9sX28PnJ5p67AXAqqmNvoQrKgnM"
+            "token_symbol": "CLUS",
+            "token_name": "CLUS",
+            "token_address": "CQjkDZGt2NecGAeZm91epep4zSZohoAkCn1QqWd7pump"
           }
         ],
-        "leader_hint_token_address": "CLUS",
+        "leader_hint_token_address": "jXxd5UcLeN8mjRShtzVTA3r31H86DjpcNF8BMuRpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across tokens, growing community interest in AI agent ecosystems, and clear technical narratives.",
+        "confidence_rationale": "Strong clustering around AI agent themes, with multiple tokens referencing OpenClaw, Zapperfi, and AI-driven infrastructure. High market caps for UniClaw and DataClaw indicate leadership.",
         "leader_token": {
           "token_symbol": "Lobstar",
           "token_name": "Lobstar",
@@ -539,56 +573,25 @@
           "usd_market_cap": 4608339.28
         },
         "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto Nostalgia",
-        "description": "Tokens referencing retro internet culture, classic memes, or pop culture from the early 2000s to 2010s, often leveraging nostalgia for virality.",
-        "defining_signals": [
-          "Tokens referencing early 2000s memes or pop culture",
-          "Use of retro aesthetics or references to early internet culture",
-          "Mentions of classic memes like 'Bork Bork Bork' or 'Feels Guy'",
-          "Community-driven nostalgia for early 2000s internet trends",
-          "Tokens with retro branding or themes tied to early 2000s media"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLIPPI",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "RAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "RAINY",
-            "token_name": "rainbowfish",
-            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
-          },
-          {
-            "token_symbol": "BORK",
-            "token_name": "bork",
-            "token_address": "FF4K7RZZuH2h5JQfTspFGKNf9bQqRBDTp1YQFAL6Ppump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "Clippy",
-          "token_name": "Clippy",
-          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-          "usd_market_cap": 544077.77
-        },
-        "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Animals",
+        "meta_name": "MemeFi Tokens",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 773053584.53
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 575285093.67
+        }
+      },
+      {
+        "meta_name": "AI Infrastructure & Interoperability",
+        "leader_token": {
+          "token_symbol": "CTM",
+          "token_name": "c8ntinuum",
+          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+          "usd_market_cap": 371985077.4
         }
       },
       {
@@ -598,15 +601,6 @@
           "token_name": "Lobstar",
           "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
           "usd_market_cap": 4608339.28
-        }
-      },
-      {
-        "meta_name": "Crypto Nostalgia",
-        "leader_token": {
-          "token_symbol": "Clippy",
-          "token_name": "Clippy",
-          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-          "usd_market_cap": 544077.77
         }
       }
     ]
