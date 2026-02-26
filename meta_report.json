@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-26T05:18:15.519667Z",
+  "generated_at_utc": "2026-02-26T06:18:35.968325Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 149,
+  "token_context_count": 148,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 19 PVP group(s); excluding 26 token(s) from META prompt."
+    "Detected 21 PVP group(s); excluding 28 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 26,
+  "pvp_excluded_token_count": 28,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -93,6 +93,26 @@
           "token_address": "FKmE18umq2tLxHES3UfDqzVuprC9BSoLPMDid3ihpump",
           "usd_market_cap": 101657.93,
           "processed_at": "2026-02-26T00:40:04.801597Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "jane street",
+      "tokens": [
+        {
+          "token_symbol": "JaneStreet",
+          "token_name": "Jane Street",
+          "token_address": "3xCDZSUV2Z2mjKJBajQ5BCXsSpmhQgrKPQi8QC5Bpump",
+          "usd_market_cap": 74282.14,
+          "processed_at": "2026-02-25T18:15:45.167972Z"
+        },
+        {
+          "token_symbol": "JaneStreet",
+          "token_name": "Jane Street",
+          "token_address": "BhFhSiozXfoRCxq2DsCH55QaJ4kyY4ia3epfSPFEpump",
+          "usd_market_cap": 4007282.39,
+          "processed_at": "2026-02-26T05:20:59.236349Z"
         }
       ]
     },
@@ -312,6 +332,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "janestreet",
+      "tokens": [
+        {
+          "token_symbol": "JaneStreet",
+          "token_name": "Jane Street",
+          "token_address": "3xCDZSUV2Z2mjKJBajQ5BCXsSpmhQgrKPQi8QC5Bpump",
+          "usd_market_cap": 74282.14,
+          "processed_at": "2026-02-25T18:15:45.167972Z"
+        },
+        {
+          "token_symbol": "JaneStreet",
+          "token_name": "Jane Street",
+          "token_address": "BhFhSiozXfoRCxq2DsCH55QaJ4kyY4ia3epfSPFEpump",
+          "usd_market_cap": 4007282.39,
+          "processed_at": "2026-02-26T05:20:59.236349Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "gme",
       "tokens": [
         {
@@ -415,21 +455,126 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI Agent Coins",
-        "description": "Tokens tied to AI agents, autonomous systems, or AI-driven infrastructure. These tokens often leverage AI for trading, governance, or data processing, and are frequently associated with platforms like OpenClaw or Zapperfi.",
+        "meta_name": "Meme-Driven Tokens",
+        "description": "Tokens that leverage internet memes, viral phrases, or cultural references to drive community engagement and speculative interest.",
         "defining_signals": [
-          "AI agent or autonomous system as a core utility",
-          "Integration with OpenClaw or Zapperfi",
-          "Claims of on-chain memory or decision-making capabilities",
-          "Focus on automation, trading, or data fetching",
-          "Mentions of AI governance or staking",
-          "Lack of official documentation but high community-driven traction"
+          "Names and themes tied to viral internet memes",
+          "Community-driven narratives with no prior non-crypto cultural origin",
+          "High engagement on social platforms like TikTok, Reddit, and X",
+          "Use of humor, absurdity, or irony in branding",
+          "Lack of technical documentation but strong social media presence"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "CLUS",
-            "token_name": "CLUS",
-            "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump"
+            "token_symbol": "CHICKEN",
+            "token_name": "Retarded Chicken",
+            "token_address": "DjXHhPisqgFses21rzVJZkVGQS21kPViM8qJ69Lrpump"
+          },
+          {
+            "token_symbol": "JESTER",
+            "token_name": "JESTERMAXXING",
+            "token_address": "6WdHhp7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "BUTT",
+            "token_name": "Buttcoin",
+            "token_address": "Cm6fNnMk7NfzStP9CZZpsQA2v3jjzbcYGAxdJySmHpump"
+          },
+          {
+            "token_symbol": "FART",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          },
+          {
+            "token_symbol": "RAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Strong meme traction with viral themes and community-driven narratives.",
+        "leader_token": {
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 166067395.86
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Driven Trading and Finance",
+        "description": "Tokens that focus on AI-driven trading, portfolio management, and financial automation. These tokens often leverage AI for predictive analytics and market execution.",
+        "defining_signals": [
+          "AI-based trading bots or portfolio management tools",
+          "Integration with on-chain financial data",
+          "Claims of automated profit generation",
+          "Focus on algorithmic trading and market prediction",
+          "Tokenomics tied to AI model performance or governance"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "GIZMO",
+            "token_name": "Gizmo",
+            "token_address": "8HGer4vRWZMu5MUYU7ACPb4uanKgBewaXJZscLagpump"
+          },
+          {
+            "token_symbol": "OPUS",
+            "token_name": "Opus The Trencher",
+            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+          },
+          {
+            "token_symbol": "FLEX",
+            "token_name": "Flex",
+            "token_address": "Dk8Mz9SVyhFEVDtpeoP8tZABqwTBhHVvta83q8Ujpump"
+          },
+          {
+            "token_symbol": "GSD",
+            "token_name": "Get Shit Done",
+            "token_address": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGG"
+          },
+          {
+            "token_symbol": "MACRO",
+            "token_name": "Macro Strategy",
+            "token_address": "AnvacL8c4PDLyrQ92bbhfxMYtnckRja3dj6p6Yzepump"
+          },
+          {
+            "token_symbol": "LOOK",
+            "token_name": "LOOK",
+            "token_address": "9223LqDuoJXyhCtvi54DUQPGS8Xf29kUEQRr7Sfhmoon"
+          }
+        ],
+        "leader_hint_token_address": "8HGer4vRWZMu5MUYU7ACPb4uanKgBewaXJZscLagpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Emerging trend with strong technical claims and growing community interest.",
+        "leader_token": {
+          "token_symbol": "LOOK",
+          "token_name": "LOOK",
+          "token_address": "9223LqDuoJXyhCtvi54DUQPGS8Xf29kUEQRr7Sfhmoon",
+          "usd_market_cap": 4331764.68
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Ecosystem",
+        "description": "Tokens are centered around AI agents, autonomous systems, and decentralized infrastructure. These tokens often leverage AI for automation, data processing, and governance.",
+        "defining_signals": [
+          "Focus on AI agent coordination and automation",
+          "Integration with OpenClaw or similar AI frameworks",
+          "Tokenomics tied to AI model governance or data incentivization",
+          "Community-driven AI development or task execution",
+          "Claims of on-chain AI agent deployment and interaction"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "DATACLAW",
+            "token_name": "DataClaw",
+            "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
           },
           {
             "token_symbol": "UNICLAW",
@@ -438,18 +583,8 @@
           },
           {
             "token_symbol": "ROOT",
-            "token_name": "Root Access",
-            "token_address": "zVbziYCZ7Vs26WjTHVUcTweocTM9rrqfjbSrLSspump"
-          },
-          {
-            "token_symbol": "DATACLAW",
-            "token_name": "DataClaw",
-            "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
-          },
-          {
-            "token_symbol": "ROSCLAW",
-            "token_name": "RosClaw",
-            "token_address": "BVdMM5Fd7MxcTExnokXZzmCtiLvd2Es5zZQqRLNmrzSy"
+            "token_name": "Rage Guy",
+            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
           },
           {
             "token_symbol": "ZOE",
@@ -457,149 +592,98 @@
             "token_address": "5QhQE7yRMgYHzs7Vq3y2Wnc2SAkMwLYrQc4RHNipump"
           },
           {
-            "token_symbol": "LOBSTAR",
-            "token_name": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
+            "token_symbol": "STORJ",
+            "token_name": "Storj",
+            "token_address": "Fh5AWzhcPFYmNzKvBdWxZSF7pgPsAZv2Nya1B9Ycpump"
           },
           {
             "token_symbol": "CLAWD",
             "token_name": "clawdbot",
             "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
-          },
-          {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "AGEN",
-            "token_name": "AgenC",
-            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
-          },
-          {
-            "token_symbol": "FUNG",
-            "token_name": "Fungi",
-            "token_address": "ExRvSw8ixmrLXim9mEs35H4z2jFHEc8Z9dB4Ej3pump"
-          },
-          {
-            "token_symbol": "GIZ",
-            "token_name": "Gizmo",
-            "token_address": "8HGer4vRWZMu5MUYU7ACPb4uanKgBewaXJZscLagpump"
           }
         ],
-        "leader_hint_token_address": "5yC9BM8KUsJTPbWPLfA2n8qH1s9V8DQ3Vcw1G6Jdpump",
+        "leader_hint_token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong clustering around AI agent themes, multiple tokens with similar utility claims, and recurring mentions of OpenClaw and Zapperfi. High market caps for several tokens in this category.",
+        "confidence_rationale": "Strong focus on AI infrastructure and agent coordination with clear utility and community traction.",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 4608339.28
+          "token_symbol": "RAGE",
+          "token_name": "Rage Guy",
+          "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen",
+          "usd_market_cap": 695437.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "MemeFi Tokens",
-        "description": "Tokens leveraging internet memes, viral phrases, or pop culture references to create community-driven value. These tokens often lack traditional utility but thrive on cultural resonance and social media engagement.",
+        "meta_name": "AI Agent Infrastructure",
+        "description": "Tokens focused on building infrastructure for AI agents, including decentralized networks, data access, and governance.",
         "defining_signals": [
-          "Direct references to viral internet memes or phrases",
-          "Community-driven narratives or inside jokes",
-          "Absence of traditional utility or documentation",
-          "High social media engagement or viral content",
-          "Use of humor, absurdity, or niche internet culture",
-          "No clear technical or financial infrastructure"
+          "Decentralized infrastructure for AI agents",
+          "Data access and incentivization for AI models",
+          "Governance and coordination for AI agent ecosystems",
+          "Integration with open-source AI frameworks",
+          "Claims of on-chain AI agent deployment and interaction"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "RETARDS",
-            "token_name": "CRYPTOMAXXING",
-            "token_address": "kkAjN1Gnuq3AkfCTotuLaadLUFWs7VujivmF7Xwpump"
+            "token_symbol": "DATACLAW",
+            "token_name": "DataClaw",
+            "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
           },
           {
-            "token_symbol": "CHICKEN",
-            "token_name": "Retarded Chicken",
-            "token_address": "DjXHhPisqgFses21rzVJZkVGQS21kPViM8qJ69Lrpump"
+            "token_symbol": "UNICLAW",
+            "token_name": "UniClaw",
+            "token_address": "jXxd5UcLeN8mjRShtzVTA3r31H86DjpcNF8BMuRpump"
           },
           {
-            "token_symbol": "NIRE",
-            "token_name": "NotInRetardEducation",
-            "token_address": "7nePAcJhg88s1KFJptgaBvzYgHaUDzddgU65Etvtpump"
-          },
-          {
-            "token_symbol": "MISCHA",
-            "token_name": "Mischa And Ball",
-            "token_address": "DP4xbVobKwduidtV2y8nH5QurnUZDkh9nmbtxRAxpump"
-          },
-          {
-            "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
-          },
-          {
-            "token_symbol": "COMMIT",
-            "token_name": "Commited",
-            "token_address": "J1NpMGAb2gRg3u3pM1RUpUpqRKCcTig1mbroZeEzwzpump"
-          },
-          {
-            "token_symbol_name": "PunchBF",
-            "token_name": "Punch Best Friends",
-            "token_address": "8qMFktkVQrkWVaCV1RayyXhsVYQrT7k34MU5GYGJpump"
-          },
-          {
-            "token_symbol": "SMART",
-            "token_name": "SMART COIN",
-            "token_address": "HqQABQMXDZsYke2PRrwDN37nw1xLfAmDQNZVJ61bpump"
-          },
-          {
-            "token_symbol": "CAPYSIM",
-            "token_name": "Capybara Simulator Playcoin",
-            "token_address": "LWPihkg8SWDiAzG5TXAsgQuJeSZ3cXem1VStNX8PLAY"
-          },
-          {
-            "token_symbol": "DAYONE",
-            "token_name": "Day 1 Of Vibe Coding",
-            "token_address": "ms97nsMAyZ8ciFjdNBw6fML4Hq8ppdn2Wf4CqnNpump"
-          },
-          {
-            "token_symbol": "ONSALE",
-            "token_name": "Bitcoin OnSale",
-            "token_address": "hPUUCaHfsTaTaVL4UrBbHrBp5iemXfvYb573i5Hpump"
-          },
-          {
-            "token_symbol": "GORK420",
-            "token_name": "gork420",
-            "token_address": "DnZp4XFUhFPvKRqQnbKNz56g1mPsF7cvp3x6LPXapump"
+            "token_symbol": "ROOT",
+            "token_name": "Rage Guy",
+            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
           }
         ],
-        "leader_hint_token_address": "kkAjN1Gnuq3AkfCTotuLaadLUFWs7VujivmF7Xwpump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong meme-driven narratives, recurring themes of absurdity and humor, and consistent community engagement across tokens. Several tokens have high market caps and clear meme origins.",
         "leader_token": {
-          "token_symbol": "DAYONE",
-          "token_name": "Day 1 Of Vibe Coding",
-          "token_address": "ms97nsMAyZ8ciFjdNBw6fML4Hq8ppdn2Wf4CqnNpump",
-          "usd_market_cap": 368585.77
+          "token_symbol": "RAGE",
+          "token_name": "Rage Guy",
+          "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen",
+          "usd_market_cap": 695437.0
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "AI Agent Coins",
+        "meta_name": "Meme-Driven Tokens",
         "leader_token": {
-          "token_symbol": "Lobstar",
-          "token_name": "Lobstar",
-          "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump",
-          "usd_market_cap": 4608339.28
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 166067395.86
         }
       },
       {
-        "meta_name": "MemeFi Tokens",
+        "meta_name": "AI-Driven Trading and Finance",
         "leader_token": {
-          "token_symbol": "DAYONE",
-          "token_name": "Day 1 Of Vibe Coding",
-          "token_address": "ms97nsMAyZ8ciFjdNBw6fML4Hq8ppdn2Wf4CqnNpump",
-          "usd_market_cap": 368585.77
+          "token_symbol": "LOOK",
+          "token_name": "LOOK",
+          "token_address": "9223LqDuoJXyhCtvi54DUQPGS8Xf29kUEQRr7Sfhmoon",
+          "usd_market_cap": 4331764.68
+        }
+      },
+      {
+        "meta_name": "AI Agent Ecosystem",
+        "leader_token": {
+          "token_symbol": "RAGE",
+          "token_name": "Rage Guy",
+          "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen",
+          "usd_market_cap": 695437.0
+        }
+      },
+      {
+        "meta_name": "AI Agent Infrastructure",
+        "leader_token": {
+          "token_symbol": "RAGE",
+          "token_name": "Rage Guy",
+          "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen",
+          "usd_market_cap": 695437.0
         }
       }
     ]
