@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-26T20:26:30.743155Z",
+  "generated_at_utc": "2026-02-26T21:27:13.486813Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 146,
+  "token_context_count": 143,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 19 PVP group(s); excluding 22 token(s) from META prompt."
+    "Detected 18 PVP group(s); excluding 20 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 22,
+  "pvp_excluded_token_count": 20,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -166,26 +166,6 @@
           "token_address": "CjCi8UzLTTRZEbap3VYggkggY97n2DicmSc1vrsJpump",
           "usd_market_cap": 1579.4,
           "processed_at": "2026-02-26T19:50:27.078584Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "amrit",
-      "tokens": [
-        {
-          "token_symbol": "AMRIT",
-          "token_name": "Amrit",
-          "token_address": "9GSwzJht7dzbaWRyEHqkbMYBdGoATJQucF7koM6Hpump",
-          "usd_market_cap": 15828.75,
-          "processed_at": "2026-02-25T20:46:48.765131Z"
-        },
-        {
-          "token_symbol": "AMRIT",
-          "token_name": "Amrit's Agent",
-          "token_address": "7ujjyjw6CV1rQhwgzvWG7GCfjr2uAkM5qcMfEDfBpump",
-          "usd_market_cap": 120313.06,
-          "processed_at": "2026-02-25T20:50:02.408554Z"
         }
       ]
     },
@@ -394,123 +374,93 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Driven Memecoins",
-        "description": "Tokens leveraging viral internet memes, slang, or pop culture references to drive community engagement and speculative interest. These tokens often lack traditional utility but thrive on cultural resonance and social media momentum.",
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens repurposing viral internet memes, characters, or phrases for crypto branding. These tokens leverage existing cultural narratives to create instant recognition and community engagement.",
         "defining_signals": [
-          "Use of viral memes or internet slang as core branding",
-          "Strong presence on platforms like TikTok, Reddit, or X",
-          "Community-driven narratives with minimal official documentation",
-          "High volatility and speculative trading behavior",
-          "Absence of verifiable non-crypto cultural origins",
-          "Token names and symbols directly tied to meme formats"
+          "Use of viral memes or characters (e.g., 'Wojak', 'Nietzschean Penguin', 'Skeleton Banging Shield')",
+          "Lack of pre-crypto cultural origin for the token name or theme",
+          "Community-driven narratives with meme-based humor or relatability"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "TROLL",
-            "token_name": "TROLL",
-            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
-          },
-          {
-            "token_symbol": "FOMO",
-            "token_name": "FOMO",
-            "token_address": "Huh3G975pLP3WTXKDnsaCTu7enAoFsHMFJCbFLeNpump"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "WET",
-            "token_name": "HumidiFi Token",
-            "token_address": "WETZjtprkDMCcUuPi9PfWnowMRZkiGGHDb9rABuRZ2U"
-          },
-          {
-            "token_symbol": "CIA",
-            "token_name": "John Kiriakou",
-            "token_address": "2tkoGDwxfhGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
             "token_symbol": "PUNCH",
-            "token_name": "Punch2",
-            "token_address": "BhHtSuc3tcyuq8x813oKZtYKx5kb787eY69d4TNhpump"
-          }
-        ],
-        "leader_hint_token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong meme-based tokens like TROLL and BONK dominate with clear cultural ties and high community engagement.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 530821727.38
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "NFT and Gaming-Linked Tokens",
-        "description": "Tokens tied to NFTs, gaming, or virtual experiences, often leveraging nostalgia, collectibles, or in-game economies. These tokens frequently reference real-world or digital games, characters, or virtual worlds.",
-        "defining_signals": [
-          "NFT-based or collectible themes",
-          "Gaming or virtual world references",
-          "Community-driven virtual experiences",
-          "Tokenomics tied to in-game assets or rewards",
-          "Strong social media presence with game-related content",
-          "Lack of traditional financial infrastructure"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CARDS",
-            "token_name": "Collector Crypt",
-            "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp"
+            "token_name": "Punch",
+            "token_address": "9WAtjhoZarUXXRKckq6GJtgXSSUB4CzhanEgtKJepump"
           },
           {
-            "token_symbol": "HIRU",
-            "token_name": "HIRULE",
-            "token_address": "2fbUeP5n2WxgSXuKoaj6Sa8nsvbbJH46AMoB6smWpump"
-          },
-          {
-            "token_symbol": "KABU",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          },
-          {
-            "token_symbol": "PUNC",
-            "token_name": "Punch-kun",
+            "token_symbol": "PUNCH-ku",
+            "token_name": "Punch-kun パンチくん",
             "token_address": "EXrBNZPC9z8pGgTJFPLRJqvEVoqaPteQMkSgRQfWpump"
           },
           {
-            "token_symbol": "GRIF",
-            "token_name": "test griffain.com",
-            "token_address": "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP"
+            "token_symbol": "PUNCH2",
+            "token_name": "パンチ 2",
+            "token_address": "BhHtSuc3tcyuq8x813oKZZtYKx5kb787eY69d4TNhpump"
           },
           {
-            "token_symbol": "GRAN",
-            "token_name": "Grandma",
-            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
+            "token_symbol": "PUNCHBF",
+            "token_name": "Punch Best Friends",
+            "token_address": "8qMFktkVQrkWVaCV1RayyXhsVYQrT7k34MU5GYGJpump"
+          },
+          {
+            "token_symbol": "PUNCHWIF",
+            "token_name": "punchwifhat",
+            "token_address": "Bxuk1hENin2SRWKuK8wMCtbTEeDg67kkBW7N4Rzgpump"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "Punch",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "PUNCH-ku",
+            "token_name": "Punch-kun パンチくん",
+            "token_address": "EXrBNZPC9z8pGgTJFPLLJqvEVoqaPteQMkSgRQfWpump"
+          },
+          {
+            "token_symbol": "PUNCHBF",
+            "token_name": "Punch Best Friends",
+            "token_address": "8qMFktkVQrkWVaCV1RayyXhsVYQrT7k34MU5GYgJpump"
+          },
+          {
+            "token_symbol": "PUNCHWIF",
+            "token_name": "punchwifhat",
+            "token_address": "Bxuk1hENin2SRWKuK8wMCtbTEeDg67kkBW7N4Rzgpump"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "Punch",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "PUNCH-ku",
+            "token_name": "Punch-kun パンチくん",
+            "token_address": "EXrBNZPC9z8pGgTJFPLLJqvEVoqaPteQMkSgRQfWpump"
           }
         ],
-        "leader_hint_token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Collector Crypt and Kabuto show strong NFT and gaming ties with clear community engagement and speculative demand.",
+        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong meme-based narratives with clear cultural roots and community adoption.",
         "leader_token": {
-          "token_symbol": "CARDS",
-          "token_name": "Collector Crypt",
-          "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
-          "usd_market_cap": 9275967.0
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 17095997.64
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI Agent Utility Tokens",
-        "description": "Tokens focused on enabling or governing AI agents, often emphasizing automation, task execution, and decentralized coordination. These tokens are typically built on Solana and leverage AI infrastructure for on-chain operations.",
+        "meta_name": "AI Agent Utility",
+        "description": "Tokens leveraging AI agent capabilities for on-chain tasks, governance, and automation. These tokens often position themselves as tools for decentralized AI coordination and execution.",
         "defining_signals": [
-          "Integration with AI agent frameworks or platforms",
-          "Claims of autonomous execution or coordination",
-          "On-chain governance or task delegation",
-          "Tokenomics tied to AI activity or staking",
-          "Lack of traditional financial utility",
-          "Strong developer or technical community focus"
+          "AI agent-based governance or task execution",
+          "On-chain automation or coordination",
+          "Tokenomics tied to AI agent interactions"
         ],
         "supporting_tokens": [
           {
@@ -519,19 +469,39 @@
             "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
           },
           {
-            "token_symbol": "CONV",
-            "token_name": "Conviction",
-            "token_address": "8CQzwGeY56Wkjvsx5SmGybtWBnQwGgxjMV2PPATzpump"
-          },
-          {
             "token_symbol": "FUNG",
             "token_name": "Fungi",
             "token_address": "ExRvSw8ixmrLXim9mEs35H4z2jFHEc8Z9dB4Ej3pump"
           },
           {
-            "token_symbol": "ROSC",
-            "token_name": "RosClaw",
-            "token_address": "BVdMM5Fd7MxcTExnokXZzmCtiLvd2Es5zZQqRLNmrzSy"
+            "token_symbol": "CONV",
+            "token_name": "Conviction",
+            "token_address": "8CQzwGeY56Wkjvsx5SmGybtWBnQwGgxjMV2PPATzpump"
+          },
+          {
+            "token_symbol": "KEEF",
+            "token_name": "AGENT Keef",
+            "token_address": "BfbbiwubeghyQbnosCbj9LM9A56yV4K8vYiGdEtqpump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "PRAE",
+            "token_name": "Praetor",
+            "token_address": "iSsVuaMVDuSsSQ7Vn27VdrgYWNV5VwCfKhmchMopump"
+          },
+          {
+            "token_symbol": "DATACL",
+            "token_name": "DataClaw",
+            "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
+          },
+          {
+            "token_symbol": "BOURNE",
+            "token_name": "Bourne AI",
+            "token_address": "8EspkvTJnCgxokFckrB96ws59vQKbvEnQSVF73p8pump"
           },
           {
             "token_symbol": "CLAW",
@@ -539,84 +509,50 @@
             "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
-            "token_symbol": "KEEF",
-            "token_name": "AGENT Keef",
-            "token_address": "BfbbiwubeghyQbnosCbj9LM9A56yV4K8vYiGdEtqpump"
+            "token_symbol": "UNICL",
+            "token_name": "UniClaw",
+            "token_address": "jXxd5UcLeN8mjRShtzVTA3r31H86DjpcNF8BMuRpump"
+          },
+          {
+            "token_symbol": "AGEN",
+            "token_name": "AgenC",
+            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
+          },
+          {
+            "token_symbol": "FUNG",
+            "token_name": "Fungi",
+            "token_address": "ExRvSw8ixmrLXim9mEs35H4z2jFHEc8Z9dB4Ej3pump"
           }
         ],
         "leader_hint_token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "AgenC and Conviction show strong technical foundations and active AI agent ecosystems, with clear utility in decentralized coordination.",
+        "confidence_rationale": "Strong focus on AI agent utility with clear on-chain automation and coordination themes.",
         "leader_token": {
           "token_symbol": "AgenC",
           "token_name": "AgenC",
           "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
           "usd_market_cap": 1768957.62
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "DeFi and Financial Innovation Tokens",
-        "description": "Tokens experimenting with novel financial models, including yield generation, lending, or tokenomics. These tokens often emphasize decentralized finance (DeFi) and on-chain financial services.",
-        "defining_signals": [
-          "Innovative tokenomics or financial models",
-          "On-chain lending or yield generation",
-          "Integration with DeFi protocols",
-          "Claims of financial sovereignty or privacy",
-          "Strong developer or technical community focus",
-          "Lack of traditional financial infrastructure"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "ATTN",
-            "token_name": "attn markets",
-            "token_address": "FVGdJQVzAdKr8ZH7ahyhp4cvDszX3N8QYGSdzueopump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "attn",
-          "token_name": "attn markets",
-          "token_address": "FVGdJQVzAdKr8ZH7ahyhp4cvDszX3N8QYGSdzueopump",
-          "usd_market_cap": 579238.09
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme-Driven Memecoins",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 530821727.38
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 17095997.64
         }
       },
       {
-        "meta_name": "NFT and Gaming-Linked Tokens",
-        "leader_token": {
-          "token_symbol": "CARDS",
-          "token_name": "Collector Crypt",
-          "token_address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
-          "usd_market_cap": 9275967.0
-        }
-      },
-      {
-        "meta_name": "AI Agent Utility Tokens",
+        "meta_name": "AI Agent Utility",
         "leader_token": {
           "token_symbol": "AgenC",
           "token_name": "AgenC",
           "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
           "usd_market_cap": 1768957.62
-        }
-      },
-      {
-        "meta_name": "DeFi and Financial Innovation Tokens",
-        "leader_token": {
-          "token_symbol": "attn",
-          "token_name": "attn markets",
-          "token_address": "FVGdJQVzAdKr8ZH7ahyhp4cvDszX3N8QYGSdzueopump",
-          "usd_market_cap": 579238.09
         }
       }
     ]
