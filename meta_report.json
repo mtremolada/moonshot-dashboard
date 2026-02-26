@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-26T16:24:28.888871Z",
+  "generated_at_utc": "2026-02-26T17:24:50.664749Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 157,
+  "token_context_count": 151,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 23 PVP group(s); excluding 28 token(s) from META prompt."
+    "Detected 21 PVP group(s); excluding 26 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 28,
+  "pvp_excluded_token_count": 26,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "gork",
-      "tokens": [
-        {
-          "token_symbol": "gork",
-          "token_name": "gork",
-          "token_address": "gorkrgj6k4K449Qa4eF1NaWC5cNLQtMsVEikhpGn7fC",
-          "usd_market_cap": 393315.79,
-          "processed_at": "2026-02-25T16:53:32.001635Z"
-        },
-        {
-          "token_symbol": "gork",
-          "token_name": "gork",
-          "token_address": "73ioab1kZKUX4NwMnuUHd7xaJvp1FWTcnf4Y7piEpump",
-          "usd_market_cap": 124837.08,
-          "processed_at": "2026-02-25T18:05:42.636601Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "he-man",
@@ -186,26 +166,6 @@
           "token_address": "BtASu8q6NU6gs1n4pEdD89c71FLRJHx6oak15y8Fpump",
           "usd_market_cap": 513509.15,
           "processed_at": "2026-02-26T14:01:09.325471Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "gork",
-      "tokens": [
-        {
-          "token_symbol": "gork",
-          "token_name": "gork",
-          "token_address": "gorkrgj6k4K449Qa4eF1NaWC5cNLQtMsVEikhpGn7fC",
-          "usd_market_cap": 393315.79,
-          "processed_at": "2026-02-25T16:53:32.001635Z"
-        },
-        {
-          "token_symbol": "gork",
-          "token_name": "gork",
-          "token_address": "73ioab1kZKUX4NwMnuUHd7xaJvp1FWTcnf4Y7piEpump",
-          "usd_market_cap": 124837.08,
-          "processed_at": "2026-02-25T18:05:42.636601Z"
         }
       ]
     },
@@ -474,20 +434,45 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal Meme Tokens",
-        "description": "Tokens leveraging animal imagery and viral animal-related memes to drive community engagement and sentiment. These tokens often tie to real-life animals or internet-famous creatures that became cultural symbols.",
+        "meta_name": "Crypto Parody and Satire",
+        "description": "Tokens that parody or satirize crypto culture, often using absurd or ironic themes to critique or humorously represent the industry. These tokens often leverage internet humor, satire, or absurdist concepts.",
         "defining_signals": [
-          "Use of real-life animal rescue stories (e.g., Punch, Punch2)",
-          "Meme references to iconic animals (e.g., Bonk, Lobstar)",
-          "Community-driven narratives around cute or quirky animals",
-          "Leveraging viral animal videos or images as core branding",
-          "Names derived from animal-based internet slang or phrases"
+          "Absurd or ironic naming and branding",
+          "Satirical take on crypto or finance themes",
+          "Use of internet humor or meme culture",
+          "Community-driven humor or inside jokes",
+          "Lack of serious utility or product focus"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Punch-ku",
-            "token_name": "Punch-kun パンチくん",
-            "token_address": "EXrBNZPC9z8pGgTJFPLRJqvEVoqaPteQMkSgRQfWpump"
+            "token_symbol": "USELESS",
+            "token_name": "USELESS COIN",
+            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "USELESS",
+          "token_name": "USELESS COIN",
+          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+          "usd_market_cap": 43896105.68
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme Animal Revival",
+        "description": "Tokens leveraging viral animal memes, often with anthropomorphic traits or emotional resonance, to drive community engagement and sentiment. These tokens often draw from viral videos, rescue stories, or internet folklore involving animals.",
+        "defining_signals": [
+          "Use of real-life or fictional animal characters with emotional narratives",
+          "Viral origin stories tied to rescue, companionship, or internet fame",
+          "Community-driven themes of hope, friendship, or resilience",
+          "Leverage of viral videos or images from social media platforms",
+          "Strong visual branding tied to the animal character"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
             "token_symbol": "Punch2",
@@ -495,204 +480,179 @@
             "token_address": "BhHtSuc3tcyuq8x813oKZtYKx5kb787eY69d4TNhpump"
           },
           {
-            "token_symbol": "Bonk",
+            "token_symbol": "PunchBF",
+            "token_name": "Punch Best Friends",
+            "token_address": "8qMFktkVQrkWVaCV1RayyXhsVYQrT7k34MU5GYGJpump"
+          },
+          {
+            "token_symbol": "Punch-ku",
+            "token_name": "Punch-kun パンチくん",
+            "token_address": "EXrBNZPC9z8pGgTJJPLRJqvEVoqaPteQMkSgRQqWpump"
+          },
+          {
+            "token_symbol": "Pippkin",
+            "token_name": "Pippkin The Horse",
+            "token_address": "6ydMmFRaNt4AHBjgvSogbBvcxnTrX3QzUe2AEzVppump"
+          },
+          {
+            "token_symbol": "Yaranaika",
+            "token_name": "やらないか",
+            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+          }
+        ],
+        "leader_hint_token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nF8pump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong narrative consistency across multiple tokens, with viral animal themes and community engagement.",
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25212144.4
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia and Retro Culture",
+        "description": "Tokens leveraging retro pop culture, internet nostalgia, and classic media to drive community engagement. These tokens often reference memes, games, or cultural artifacts from the 2000s and earlier.",
+        "defining_signals": [
+          "Reference to 2000s internet culture or memes",
+          "Use of retro gaming or media references",
+          "Nostalgic branding or visual style",
+          "Community-driven revival of older internet trends",
+          "Strong meme-based identity with historical roots"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "BONK",
             "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "Lobstar",
-            "token_name": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
-          },
-          {
-            "token_symbol": "Bingus",
-            "token_name": "Bingus",
-            "token_address": "ABc1BqTSZEwZZoZr6kJUyUCMQTTxWSh18DyK5GM4Spump"
+            "token_address": "DezXAX8z7PnrnRJj33wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
             "token_symbol": "COURAGE",
             "token_name": "The Cowardly Dog",
-            "token_address": "BVX8KkocUyrenxuuF58jhhr4tT5mVnqfiF3ncybtepump"
+            "token_address": "BVX8KkocUyrenxuF58jhhr4tT5mVnqfiF3ncybtepump"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "TROLL",
+            "token_name": "TROLL",
+            "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2"
+          },
+          {
+            "token_symbol": "FSC",
+            "token_name": "Flying Spinning Cat",
+            "token_address": "BPJivqTmmLmLDjfSn71gp8XaFYDXxNUuM85pMEWAcpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong presence of viral animal-based memes and real-life animal stories driving sentiment. Bonk and Punch tokens are particularly dominant in this category.",
+        "leader_hint_token_address": "DezXAX8z7PnrnRJj33wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong community engagement and viral nostalgia themes, with multiple tokens showing consistent patterns.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 575285093.67
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 17217614.67
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme Stock & Financial Parody Tokens",
-        "description": "Tokens inspired by meme stocks, financial humor, and satirical takes on traditional finance. These tokens often reference retail trading culture, stock market volatility, and investor sentiment.",
+        "meta_name": "AI Agent Utility",
+        "description": "Tokens focused on AI agent ecosystems, offering governance, staking, and access to AI-driven tools. These tokens often emphasize decentralized AI coordination, task automation, and on-chain identity for AI agents.",
         "defining_signals": [
-          "Meme stock references (e.g., AMC, GME)",
-          "Satirical financial themes (e.g., 'looksmaxxing', 'fartcoin')",
-          "Parody of traditional finance or trading behavior",
-          "Community-driven speculation and FOMO narratives",
-          "Names or themes tied to viral financial memes"
+          "AI agent coordination or task execution as core utility",
+          "Governance and staking mechanisms for AI agent ecosystems",
+          "On-chain identity and reputation systems for AI agents",
+          "Integration with AI infrastructure or decentralized compute",
+          "Claims of AI-driven automation or productivity tools"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "AMC",
-            "token_name": "A MemeCoin",
-            "token_address": "2nZvRRjmbyGaNMMzJuqUFaXiog9iWpWxHwtJNusJpump"
+            "token_symbol": "GROKIUS",
+            "token_name": "Grokius Maximus",
+            "token_address": "67ezHLk8PUkjJCXjmmgPbx85VowA52ghfRXa9A8Tpump"
           },
           {
-            "token_symbol": "Fartcoin",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
-          },
-          {
-            "token_symbol": "FLEX",
-            "token_name": "Flex",
-            "token_address": "Dk8Mz9SVyhFEVDtpeoP8tZABqwTBhHVvta83q8Ujpump"
-          },
-          {
-            "token_symbol": "RETARDS",
-            "token_name": "CRYPTOMAXXING",
-            "token_address": "kkAjN1Gnuq3AkfCTotulaadLUFWs7VujivmF7Xwpump"
-          },
-          {
-            "token_symbol": "FOMO",
-            "token_name": "FOMO",
-            "token_address": "Huh3G975pLP3WTXKDnsaCTu7enAoFsHMFJCbFLeNpump"
-          },
-          {
-            "token_symbol": "NEOLOGISM",
-            "token_name": "NEOLOGISM",
-            "token_address": "EA136YfijGMS1qXdHT7F6MuFfqNreWhXWKcwNFh6Ezzo"
-          }
-        ],
-        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong overlap with meme stock culture and financial humor. Fartcoin and AMC tokens are particularly prominent in this category.",
-        "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 166067395.86
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI Agent Ecosystems",
-        "description": "Tokens tied to AI agent platforms, autonomous systems, and on-chain AI tools. These tokens often focus on governance, utility, and interaction with AI agents for tasks like trading, content creation, and automation.",
-        "defining_signals": [
-          "AI agent deployment and coordination platforms",
-          "On-chain governance and staking for AI systems",
-          "Integration with OpenClaw or similar frameworks",
-          "AI-driven trading or content generation",
-          "Tokenomics tied to AI task execution or rewards"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          },
-          {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
-          },
-          {
-            "token_symbol": "Mia",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZ4pump"
-          },
-          {
-            "token_symbol": "CLUD",
-            "token_name": "clud",
-            "token_address": "H4Mr1pHCnHgkHzwLx6UztfoRj7fJex8RqkUtTgSpump"
-          },
-          {
-            "token_symbol": "DATACLAW",
-            "token_name": "DataClaw",
-            "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
+            "token_symbol": "AgenC",
+            "token_name": "AgenC",
+            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
           },
           {
             "token_symbol": "Bourne",
             "token_name": "Bourne AI",
             "token_address": "8EspkvTJnCgxokFckrB96ws59vQKbvEnQSVF73p8pump"
-          }
-        ],
-        "leader_hint_token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qq2NPGZhW3",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Growing interest in AI agent ecosystems and their utility in on-chain environments. SKR and OPUS are leading in terms of market cap and narrative traction.",
-        "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 133980656.23
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI & Automation Utility Tokens",
-        "description": "Tokens tied to AI-driven automation, productivity tools, and decentralized systems. These tokens often focus on governance, access, and utility for AI-powered platforms.",
-        "defining_signals": [
-          "AI-driven productivity or automation tools",
-          "On-chain governance for AI systems",
-          "Integration with AI agent frameworks",
-          "Tokenomics tied to AI task execution or rewards",
-          "AI-based trading or content generation"
-        ],
-        "supporting_tokens": [
+          },
           {
-            "token_symbol": "SKR",
-            "token_name": "Seeker",
-            "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qq2NPGZhW3"
+            "token_symbol": "Clawd",
+            "token_name": "clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+          },
+          {
+            "token_symbol": "UniClaw",
+            "token_name": "UniClaw",
+            "token_address": "jXxd5UcLeN8mjRShtzVTA3r31H86DjpcNF8BMuRpump"
+          },
+          {
+            "token_symbol": "DATACLAW",
+            "token_name": "DataClaw",
+            "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
           }
         ],
+        "leader_hint_token_address": "67ezHLk8PUkjJCXjmmgPbx85VowA52ghfRXa9A8Tpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Emerging trend with multiple tokens leveraging AI agent ecosystems, though still speculative.",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 133980656.23
+          "token_symbol": "GROKIUS",
+          "token_name": "Grokius Maximus",
+          "token_address": "67ezHLk8PUkjJCXjmmgPbx85VowA52ghfRXa9A8Tpump",
+          "usd_market_cap": 3345260.79
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Animal Meme Tokens",
+        "meta_name": "Crypto Parody and Satire",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 575285093.67
+          "token_symbol": "USELESS",
+          "token_name": "USELESS COIN",
+          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+          "usd_market_cap": 43896105.68
         }
       },
       {
-        "meta_name": "Meme Stock & Financial Parody Tokens",
+        "meta_name": "Meme Animal Revival",
         "leader_token": {
-          "token_symbol": "Fartcoin",
-          "token_name": "Fartcoin",
-          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-          "usd_market_cap": 166067395.86
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 25212144.4
         }
       },
       {
-        "meta_name": "AI Agent Ecosystems",
+        "meta_name": "Nostalgia and Retro Culture",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 133980656.23
+          "token_symbol": "TROLL",
+          "token_name": "TROLL",
+          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "usd_market_cap": 17217614.67
         }
       },
       {
-        "meta_name": "AI & Automation Utility Tokens",
+        "meta_name": "AI Agent Utility",
         "leader_token": {
-          "token_symbol": "SKR",
-          "token_name": "Seeker",
-          "token_address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
-          "usd_market_cap": 133980656.23
+          "token_symbol": "GROKIUS",
+          "token_name": "Grokius Maximus",
+          "token_address": "67ezHLk8PUkjJCXjmmgPbx85VowA52ghfRXa9A8Tpump",
+          "usd_market_cap": 3345260.79
         }
       }
     ]
