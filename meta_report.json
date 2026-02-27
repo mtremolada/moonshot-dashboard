@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-27T05:31:54.691577Z",
+  "generated_at_utc": "2026-02-27T06:32:15.402436Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 134,
+  "token_context_count": 137,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 14 PVP group(s); excluding 16 token(s) from META prompt."
+    "Detected 13 PVP group(s); excluding 14 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 16,
+  "pvp_excluded_token_count": 14,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -126,26 +126,6 @@
           "token_address": "CjCi8UzLTTRZEbap3VYggkggY97n2DicmSc1vrsJpump",
           "usd_market_cap": 1579.4,
           "processed_at": "2026-02-26T19:50:27.078584Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "elon",
-      "tokens": [
-        {
-          "token_symbol": "Elon",
-          "token_name": "Elon Musk",
-          "token_address": "S7iXa9ieDKmu4Vgfy6zAEUeizejtknqhvdDpHqhpump",
-          "usd_market_cap": 260365.41,
-          "processed_at": "2026-02-26T06:06:28.352310Z"
-        },
-        {
-          "token_symbol": "ELON",
-          "token_name": "Elon Coin",
-          "token_address": "GGgeTvk7i7yTv42qFYc7ZABP5xzffkNQ8Mu2tPckpump",
-          "usd_market_cap": 13778235.15,
-          "processed_at": "2026-02-26T11:18:17.953330Z"
         }
       ]
     },
@@ -294,21 +274,78 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Parody Tokens",
-        "description": "Tokens repurposing established internet memes, pop culture references, or viral phrases for crypto branding. These often leverage humor, nostalgia, or ironic reinterpretations of existing cultural touchstones.",
+        "meta_name": "AI and Autonomous Agent Tokens",
+        "description": "Tokens centered around AI-driven or autonomous systems, often emphasizing automation, task execution, or AI-generated content as core utility.",
         "defining_signals": [
-          "Use of viral memes or pop culture references (e.g., 'Nietzschean Penguin', 'Hachiko', 'Wojak')",
-          "Lack of standalone crypto origin, relying on external meme popularity",
-          "Names or themes that directly mirror non-crypto cultural artifacts",
-          "Community-driven narratives with meme-based humor or irony",
-          "Absence of clear utility, instead emphasizing cultural resonance",
-          "High engagement on social platforms like TikTok, Reddit, or X"
+          "Focus on AI or autonomous agent functionality",
+          "Claims of on-chain execution or AI coordination",
+          "Inference of governance or task-based utility",
+          "Lack of clear documentation or team transparency",
+          "Inclusion of AI-related jargon like 'zero-knowledge proofs' or 'autonomous agents'"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PUNCH",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+            "token_symbol": "AgenC",
+            "token_name": "AgenC",
+            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH3Vcw1G6Jdpump"
+          },
+          {
+            "token_symbol": "Mia",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "Keef",
+            "token_name": "AGENT Keef",
+            "token_address": "BfbbiwubeghyQbnosCbj9LM9A56yV4K8vYiGdEtqpump"
+          },
+          {
+            "token_symbol": "PRAETOR",
+            "token_name": "e/acc substrate",
+            "token_address": "iSfVuaMVDuSfSQ7Vn27VdrgYWNV5VwCfKhmchMopump"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          }
+        ],
+        "leader_hint_token_address": "5yC9BM8KUsJTPbWPLfA2N8qQ3Vcw1G6Jdpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "Strong focus on AI and autonomous agents, with multiple tokens leveraging similar narratives. AgenC has a clear focus on coordination and privacy, which is a unique angle.",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 34525482.89
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Cultural Figure and Celebrity Meme Tokens",
+        "description": "Tokens referencing real-world celebrities, politicians, or fictional characters, often repurposing existing memes or scandals for crypto narratives.",
+        "defining_signals": [
+          "Direct references to celebrities, politicians, or fictional characters",
+          "Leveraging existing memes or scandals tied to the figure",
+          "Absence of non-crypto cultural origin beyond the figure’s fame",
+          "Inclusion of viral or controversial narratives",
+          "Community-driven humor or satire around the figure"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Bill",
+            "token_name": "Bill Clinton",
+            "token_address": "6Cka4cPGBbuQtWuyp3KpTMAnyGjjR7YXVFTafmoNpump"
+          },
+          {
+            "token_symbol": "ELON",
+            "token_name": "Elon Coin",
+            "token_address": "GGgeTvk7i7yTv42qFYc7ZABP5xzffkNQ8Mu2tPckpump"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           },
           {
             "token_symbol": "HACHI",
@@ -316,19 +353,42 @@
             "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
           },
           {
+            "token_symbol": "NA",
+            "token_name": "NA",
+            "token_address": "S7iXa9ieDKmu4Vgfy6zAEUeizejtknqhvdDpHqhpump"
+          }
+        ],
+        "leader_hint_token_address": "GGgeTvk7i7yTv42qFYc7ZABP5xzffkNQ8Mu2tPckpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong cultural references to well-known figures like Elon Musk and Bill Clinton. Elon Coin has the highest market cap and clear meme origins.",
+        "leader_token": {
+          "token_symbol": "ELON",
+          "token_name": "Elon Coin",
+          "token_address": "GGgeTvk7i7yTv42qFYc7ZABP5xzffkNQ8Mu2tPckpump",
+          "usd_market_cap": 13778235.15
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Nostalgia and Retro Meme Tokens",
+        "description": "Tokens inspired by retro internet culture, classic memes, or historical references, often repurposing older viral content for crypto narratives.",
+        "defining_signals": [
+          "References to classic memes or historical internet culture",
+          "Leveraging nostalgia for older viral content",
+          "Inclusion of retro or pop culture references",
+          "Absence of non-crypto origin beyond the meme or reference",
+          "Community-driven revival of older memes"
+        ],
+        "supporting_tokens": [
+          {
             "token_symbol": "WOJAK",
             "token_name": "Wojak",
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "RETARDS",
-            "token_name": "CRYPTOMAXXING",
-            "token_address": "kkAjN1Gnuq3AkfCTotuLaadLUFWs7VujivmF7Xwpump"
+            "token_symbol": "CLIP",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
             "token_symbol": "NIP",
@@ -336,146 +396,103 @@
             "token_address": "2Vmwz9AicMMuv6in2oYaj7regWR6w9DkDZKNqvtfpump"
           },
           {
-            "token_symbol": "PUNCHBF",
-            "token_name": "Punch Best Friends",
-            "token_address": "8qMFktkVQrkWVaCV1RayyXhsVYQrT7k34MU5GYGJpump"
-          },
-          {
-            "token_symbol": "PUNCH2",
-            "token_name": "パンチ 2",
-            "token_address": "BhHtSuc3tcyuq8p813oKZtYKx5kb787eY69d4TNhpump"
-          },
-          {
-            "token_symbol": "BUTTHOLE",
-            "token_name": "Butthole Coin",
-            "token_address": "C9n8PWYbZxBXq68VZjRq3neytXTNKtXfrkAHtaaE82bg"
-          },
-          {
-            "token_symbol": "FARTCOIN",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
-          },
-          {
-            "token_symbol": "CHICKEN",
-            "token_name": "Retarded Chicken",
-            "token_address": "DjXHhPisqgFses21rzVJZkVGQS21kPViM8qJ69Lrpump"
-          },
-          {
-            "token_symbol": "NIRE",
-            "token_name": "NotInRetardEducation",
-            "token_address": "7nePAcJhg88s1KFJptgaBvzYgHaUDzddgU65Etvtpump"
+            "token_symbol": "DOH",
+            "token_name": "DOH Market",
+            "token_address": "DGhYzKXkUtpV7WL2JWqiR6GjqnG5qoXU83yoHqVqpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 92,
-        "confidence_rationale": "BONK is a well-established meme token with a strong cultural foundation and high market cap, indicating it is the dominant token in this category. Other tokens like PUNCH and HACHI also show strong meme-based narratives and community engagement.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 530821727.38
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 6935089.99
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI Agent Utility Tokens",
-        "description": "Tokens tied to AI agents or autonomous systems, often emphasizing automation, task execution, or AI-driven governance. These tokens are typically utility-focused and may integrate with platforms like Solana or Ethereum.",
+        "meta_name": "Meme Animal Tokens",
+        "description": "Tokens inspired by viral animal memes or real-life animal stories, often leveraging emotional or humorous narratives to drive community engagement.",
         "defining_signals": [
-          "AI agent or autonomous system as a core narrative",
-          "Integration with AI execution platforms or tools",
-          "Governance or access to AI services as a utility",
-          "Mentions of on-chain execution or smart contracts",
-          "Community or developer-driven AI initiatives",
-          "Lack of clear non-crypto cultural origin, but strong technical narrative"
+          "References to real-life or fictional animals with viral internet fame",
+          "Emotional or humorous narratives tied to the animal's story",
+          "Leveraging existing meme culture or TikTok/Instagram trends",
+          "Community-driven branding with relatable or cute imagery",
+          "Absence of non-crypto cultural origin beyond the animal reference"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PUNCH",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+            "token_symbol": "Punch-ku",
+            "token_name": "Punch-kun パンチくん",
+            "token_address": "EXrBNZPC9z8pGGgTJFPLRJqvEVoqaPteQMkSgRQfWpump"
           },
           {
-            "token_symbol": "MIA",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "PunchBF",
+            "token_name": "Punch Best Friends",
+            "token_address": "8qMFktkVQrkWVaCV1RayyXhsVYQrT7k34MU5GYGJpump"
           },
           {
-            "token_symbol": "KEEF",
-            "token_name": "AGENT Keef",
-            "token_address": "BfbbiwubeghyQbnosCbj9LM9A56yV4K8vYiGdEtqpump"
+            "token_symbol": "Punch2",
+            "token_name": "パンチ 2",
+            "token_address": "BhHtSuc3tcyuq8q813oKZtT5Kx5kb787eY69d4TNhpump"
           },
           {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+            "token_symbol": "Bodie",
+            "token_name": "Bodie",
+            "token_address": "3AxEZdRESTC3RVHF7Z4GEkeHmHe2o1WELSS6Rdbppump"
           },
           {
-            "token_symbol": "OPENFANG",
-            "token_name": "OpenFang",
-            "token_address": "nhHJvFRhFJbGAM2YRsy1dG8W6YiF1ZtshesZgXrpump"
-          },
-          {
-            "token_symbol": "AGENC",
-            "token_name": "AgenC",
-            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
-          },
-          {
-            "token_symbol": "PRAETOR",
-            "token_name": "e/acc substrate",
-            "token_address": "iSfVuaMVDuSfSQ7Vn27VdrgYWNV5VwCfKhmchMopump"
-          },
-          {
-            "token_symbol": "MACRO",
-            "token_name": "Macro Strategy",
-            "token_address": "AnvacL8c4PDLyrQ92bbhfxMYtnckRja3dj6p6Yzepump"
-          },
-          {
-            "token_symbol": "FL",
-            "token_name": "FreeLattice",
-            "token_address": "738e9U81pp3MwHaLSyn5fw9VVostYgKpNVVDYBbPpump"
-          },
-          {
-            "token_symbol": "LOD",
-            "token_name": "League of Degens",
-            "token_address": "6nuKzTJRxC8NBoUMpVwnxtmjvYmUobdc3NwTabgKpump"
-          },
-          {
-            "token_symbol": "EFM",
-            "token_name": "ECLIPSE",
-            "token_address": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg"
-          },
-          {
-            "token_symbol": "PRAETOR",
-            "token_name": "e/acc substrate",
-            "token_address": "iSfVuaMVDuSfSQ7Vn27VdrgYWNV5VwCfKhmchMopump"
+            "token_symbol": "Slurmit",
+            "token_name": "Slurmit The Frog",
+            "token_address": "9MS4ptpnnJhBsWYShPw1tP1ykAmwEmkPXP9aLVpwpump"
           }
         ],
+        "leader_hint_token_address": "EXrBNZPC9z8pGgTJFPLRJqvEVoqaPteQMkSgRQfWpump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong narrative around real-life and fictional animals with viral stories, emotional appeal, and community-driven branding. Punch-kun and Bodie have clear viral origins.",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 34525482.89
+          "token_symbol": "Slurmit",
+          "token_name": "Slurmit The Frog",
+          "token_address": "9MS4ptpnnJhBsWYShPw1tP1ykAmwEmkPXP9aLVpwpump",
+          "usd_market_cap": 276739.71
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Parody Tokens",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 530821727.38
-        }
-      },
-      {
-        "meta_name": "AI Agent Utility Tokens",
+        "meta_name": "AI and Autonomous Agent Tokens",
         "leader_token": {
           "token_symbol": "arc",
           "token_name": "AI Rig Complex",
           "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
           "usd_market_cap": 34525482.89
+        }
+      },
+      {
+        "meta_name": "Cultural Figure and Celebrity Meme Tokens",
+        "leader_token": {
+          "token_symbol": "ELON",
+          "token_name": "Elon Coin",
+          "token_address": "GGgeTvk7i7yTv42qFYc7ZABP5xzffkNQ8Mu2tPckpump",
+          "usd_market_cap": 13778235.15
+        }
+      },
+      {
+        "meta_name": "Nostalgia and Retro Meme Tokens",
+        "leader_token": {
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 6935089.99
+        }
+      },
+      {
+        "meta_name": "Meme Animal Tokens",
+        "leader_token": {
+          "token_symbol": "Slurmit",
+          "token_name": "Slurmit The Frog",
+          "token_address": "9MS4ptpnnJhBsWYShPw1tP1ykAmwEmkPXP9aLVpwpump",
+          "usd_market_cap": 276739.71
         }
       }
     ]
