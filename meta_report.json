@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-27T01:29:29.620758Z",
+  "generated_at_utc": "2026-02-27T02:30:03.700273Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 139,
+  "token_context_count": 141,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 18 PVP group(s); excluding 20 token(s) from META prompt."
+    "Detected 16 PVP group(s); excluding 18 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 20,
+  "pvp_excluded_token_count": 18,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "final stop gamestop",
-      "tokens": [
-        {
-          "token_symbol": "GameStop",
-          "token_name": "Final Stop GameStop",
-          "token_address": "8qnigEij67UBLjMgbZFDnGkkdwhSkoWCKquETq4qpump",
-          "usd_market_cap": 1608.13,
-          "processed_at": "2026-02-26T00:59:13.143149Z"
-        },
-        {
-          "token_symbol": "GameStop",
-          "token_name": "Final Stop GameStop",
-          "token_address": "H4F6SXc3ss82ZABZopieaBdj3qQsJJpWj5PTDz4Tpump",
-          "usd_market_cap": 1673.67,
-          "processed_at": "2026-02-26T01:18:23.256176Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "crabster",
@@ -166,26 +146,6 @@
           "token_address": "CjCi8UzLTTRZEbap3VYggkggY97n2DicmSc1vrsJpump",
           "usd_market_cap": 1579.4,
           "processed_at": "2026-02-26T19:50:27.078584Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "gamestop",
-      "tokens": [
-        {
-          "token_symbol": "GameStop",
-          "token_name": "Final Stop GameStop",
-          "token_address": "8qnigEij67UBLjMgbZFDnGkkdwhSkoWCKquETq4qpump",
-          "usd_market_cap": 1608.13,
-          "processed_at": "2026-02-26T00:59:13.143149Z"
-        },
-        {
-          "token_symbol": "GameStop",
-          "token_name": "Final Stop GameStop",
-          "token_address": "H4F6SXc3ss82ZABZopieaBdj3qQsJJpWj5PTDz4Tpump",
-          "usd_market_cap": 1673.67,
-          "processed_at": "2026-02-26T01:18:23.256176Z"
         }
       ]
     },
@@ -374,71 +334,19 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Nostalgia Rebranding",
-        "description": "Tokens repurposing nostalgic or historical references, such as pop culture, games, or internet history. These often tie to retro themes, classic media, or internet history for emotional resonance.",
-        "defining_signals": [
-          "Use of historical or pop culture references",
-          "Leverage nostalgia for branding (e.g., 90s, 2000s)",
-          "Mentions of retro games, movies, or internet history",
-          "Community-driven sentiment around legacy or history",
-          "Tokens tied to classic memes or cultural touchstones",
-          "Rebranding of historical terms for crypto use"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLIPPY",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "COURAGE",
-            "token_name": "The Cowardly Dog",
-            "token_address": "BVX8KkocUyrenxuF58jhhr4tT5mVnqfiF3ncybtepump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "PIPPIN",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "KABUTO",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
-          }
-        ],
-        "leader_hint_token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong nostalgic branding with tokens like Clippy, Ralph Wiggum, and Hachiko. These tokens leverage emotional connections to pop culture and internet history for community engagement.",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 837092290.29
-        },
-        "leader_missing_reason": null
-      },
-      {
         "meta_name": "Meme Rebranding",
-        "description": "Tokens repurposing existing internet memes or cultural references for crypto branding. These often leverage viral images macros, phrases, or characters from non-crypto origins to create community-driven tokens.",
+        "description": "Tokens repurposing existing viral memes or cultural references for crypto branding, often with minimal or no original meme history outside of crypto.",
         "defining_signals": [
-          "Use of pre-existing meme imagery or phrases",
-          "Leverage viral TikTok/Instagram trends or historical memes",
-          "Community-driven branding with no direct utility",
-          "High market cap despite minimal documentation",
-          "Repurposing of pop culture references (e.g., movies, games, internet culture)",
-          "Token names and descriptions that mirror meme formats"
+          "Use of pre-existing memes (e.g., 'Wojak', 'Skeleton Banging Shield', 'Nietzschean Penguin')",
+          "Leveraging internet slang or viral phrases (e.g., 'Sendy', 'Clippy', 'Fartcoin')",
+          "Rebranding of non-crypto cultural figures or events (e.g., 'Ralph Wiggum', 'Hachiko', 'Minecraft Grandma Fund')"
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "Fartcoin",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          },
           {
             "token_symbol": "TROLL",
             "token_name": "TROLL",
@@ -447,7 +355,12 @@
           {
             "token_symbol": "BONK",
             "token_name": "Bonk",
-            "token_address": "DezXAZAqY6wU6K8j888jwK1jv7qjwXQ6E6gq6K7pPB263"
+            "token_address": "DezXAZ8z79869DtcDr8gQbrcKvKdS4w5Ubv92ePsq"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
           },
           {
             "token_symbol": "WOJAK",
@@ -455,42 +368,49 @@
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
+            "token_symbol": "CLIPY",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
             "token_symbol": "PUNCH",
-            "token_name": "パンチ",
-            "token_address": "Bxuk1hENin2SRWKuK8wMCtbTEeDg67kkBW7N4Rzgpump"
+            "token_name": "パンチ 2",
+            "token_address": "BhHtSuc3tcyuq8x813oKZtYKx5kb787eY69d4TNhpump"
           },
           {
-            "token_symbol": "HIRULE",
-            "token_name": "HIRULE",
-            "token_address": "2fbUeP5n2WxgSXuKoaj6Sa8nsvbbJH46AMoB6smWpump"
+            "token_symbol": "NIRVANA",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           },
           {
-            "token_symbol": "ALIENS",
-            "token_name": "Aliens are real",
-            "token_address": "F5tfztTnE44YsMhZT5KrFpWvHmYSfJZoRjCuxKPbpump"
+            "token_symbol": "SENDY",
+            "token_name": "SENDY",
+            "token_address": "7brc13cCxBu8JNu1edhXUMh9BR32F7JDdE7amkBDpump"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
           }
         ],
         "leader_hint_token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
         "confidence_0_100": 92,
-        "confidence_rationale": "Strong evidence of meme repurposing across multiple tokens with viral cultural origins, including TROLL, BONK, and WOJAK. These tokens dominate market caps and have clear meme-based narratives.",
+        "confidence_rationale": "Strong evidence of meme rebranding across multiple tokens, including direct repurposing of well-known memes like 'Wojak' and 'Skeleton Banging Shield'.",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 17217614.67
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 166067395.86
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "AI Agent Utility",
-        "description": "Tokens tied to AI agents or autonomous systems, often with governance, staking, or task execution roles. These tokens are typically positioned as tools for AI coordination, governance, or decentralized execution.",
+        "description": "Tokens tied to AI agent platforms, often with governance, staking, or task execution features, leveraging AI as a core narrative.",
         "defining_signals": [
-          "Focus on AI agent coordination or execution",
-          "Governance or staking mechanics for AI systems",
-          "Claims of autonomous on-chain operations",
-          "Inference of utility for AI-driven tasks or governance",
-          "Lack of clear documentation but strong community or narrative focus",
-          "Integration with AI platforms like Claude or OpenClaw"
+          "AI agent-based utility (e.g., 'Clawdbot', 'UniClaw', 'Mia Ko')",
+          "Governance or staking features for AI agents",
+          "Integration with AI tools (e.g., Claude Code, Hugging Face)"
         ],
         "supporting_tokens": [
           {
@@ -504,14 +424,34 @@
             "token_address": "jXxd5UcLeN8mjRShtzVTA3r31H86DjpcNF8BMuRpump"
           },
           {
-            "token_symbol": "ROSCLAWS",
-            "token_name": "RosClaw",
-            "token_address": "BVdMM5Fd7MxcTExnokXZzmCtiLvd2Es5zZQqRLNmrzSy"
-          },
-          {
             "token_symbol": "MIA",
             "token_name": "Mia Ko",
             "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "DATACLAW",
+            "token_name": "DataClaw",
+            "token_address": "Duxeg8HrG89Dq95oyiydrnFd8irZhjApGZu8PYrEpump"
+          },
+          {
+            "token_symbol": "BOURNE",
+            "token_name": "Bourne AI",
+            "token_address": "8EspkvTJnCgxokFckrB96ws59vQKbvEnQSVF73p8pump"
+          },
+          {
+            "token_symbol": "AGENC",
+            "token_name": "AgenC",
+            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
+          },
+          {
+            "token_symbol": "LEV8",
+            "token_name": "lev8",
+            "token_address": "gHZqBPigor1f62ZQvZQE9kc2v7fTRxTXY1kHgbapump"
+          },
+          {
+            "token_symbol": "MARTY",
+            "token_name": "Marty Ryze",
+            "token_address": "9U1KPCjsW6itdtmi5BHzbPkyybkYgfrCUy1tjrmrpump"
           },
           {
             "token_symbol": "KEEF",
@@ -519,14 +459,14 @@
             "token_address": "BfbbiwubeghyQbnosCbj9LM9A56yV4K8vYiGdEtqpump"
           },
           {
-            "token_symbol": "AGENC",
-            "token_name": "AgenC",
-            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
+            "token_symbol": "Lana",
+            "token_name": "Solana Official ai Agent",
+            "token_address": "DDY4sjrRkQAQGfV5VmUbxkwXxUiJq9anWaZrpwsEZFU"
           }
         ],
         "leader_hint_token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong clustering around AI agent themes with tokens like CLAWD, UNICLAW, and KEF. These tokens are positioned as tools for autonomous systems and show growing interest in AI utility narratives.",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong narrative around AI agent utility, with multiple tokens leveraging AI for automation, governance, and execution.",
         "leader_token": {
           "token_symbol": "AgenC",
           "token_name": "AgenC",
@@ -534,25 +474,44 @@
           "usd_market_cap": 1476871.19
         },
         "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Cultural Figure Rebranding",
+        "description": "Tokens repurposing real-world cultural figures, historical events, or fictional characters for branding, often with a satirical or ironic twist.",
+        "defining_signals": [
+          "Use of real-world figures (e.g., 'Bill Clinton', 'Ralph Wiggum', 'Hachiko')",
+          "Rebranding of historical or fictional characters (e.g., 'The Cowardly Dog', 'Pippin')",
+          "Satirical or ironic reinterpretation of public figures (e.g., 'CIA', 'Replacement')"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "BILL",
+            "token_name": "Bill Clinton",
+            "token_address": "6Cka4cPGBbuQtWuyp3KpTMAnyGjjR7YXVFTafmoNpump"
+          },
+          {
+            "token_symbol": "CIA",
+            "token_name": "John Kiriakou",
+            "token_address": "2tkoGDwxfhGGhHQrFFMJeVKwif75yGwgoyE9WM7UDpump"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "Bill",
+          "token_name": "Bill Clinton",
+          "token_address": "6Cka4cPGBbuQtWuyp3KpTMAnyGjjR7YXVFTafmoNpump",
+          "usd_market_cap": 239958.93
+        },
+        "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Nostalgia Rebranding",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 837092290.29
-        }
-      },
-      {
         "meta_name": "Meme Rebranding",
         "leader_token": {
-          "token_symbol": "TROLL",
-          "token_name": "TROLL",
-          "token_address": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-          "usd_market_cap": 17217614.67
+          "token_symbol": "Fartcoin",
+          "token_name": "Fartcoin",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "usd_market_cap": 166067395.86
         }
       },
       {
@@ -562,6 +521,15 @@
           "token_name": "AgenC",
           "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
           "usd_market_cap": 1476871.19
+        }
+      },
+      {
+        "meta_name": "Cultural Figure Rebranding",
+        "leader_token": {
+          "token_symbol": "Bill",
+          "token_name": "Bill Clinton",
+          "token_address": "6Cka4cPGBbuQtWuyp3KpTMAnyGjjR7YXVFTafmoNpump",
+          "usd_market_cap": 239958.93
         }
       }
     ]
