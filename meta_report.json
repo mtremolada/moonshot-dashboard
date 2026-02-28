@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-02-28T14:48:12.702796Z",
+  "generated_at_utc": "2026-02-28T15:48:41.213750Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 131,
+  "token_context_count": 133,
   "prompt_truncated": false,
   "warnings": [
     "Detected 10 PVP group(s); excluding 12 token(s) from META prompt."
@@ -214,40 +214,95 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Community-Driven Meme Tokens",
-        "description": "Tokens with no prior cultural reference but created to foster community engagement and virality within crypto.",
+        "meta_name": "Meme Revival",
+        "description": "Tokens are leveraging long-standing internet memes and cultural references to create community-driven projects. These tokens often repurpose established memes, such as 'Bonk' from Shiba Inu, 'Rage Guy', or 'Clippy', to tap into nostalgia and existing fanbases.",
         "defining_signals": [
-          "Names or themes with no verifiable non-crypto cultural origin.",
-          "Community-driven narratives and speculative utility.",
-          "Lack of technical documentation or real-world use cases.",
-          "Names derived from crypto-native slang or inside jokes.",
-          "Highly speculative, meme-based branding."
+          "Use of established memes with pre-2020 origins",
+          "Community-driven branding with meme-based themes",
+          "High engagement on platforms like TikTok, Reddit, and X",
+          "Lack of traditional utility, focusing on cultural resonance",
+          "Inclusion of meme-based lore or narratives",
+          "High market cap growth due to viral appeal"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PIPPIN",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "TESTICLE",
-            "token_name": "testicle",
-            "token_address": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump"
-          },
-          {
-            "token_symbol": "OBJECTS",
-            "token_name": "Talking Objects",
-            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpump"
-          },
-          {
-            "token_symbol": "BONK",
+            "token_symbol": "Bonk",
             "token_name": "Bonk",
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "FART",
-            "token_name": "Fartcoin",
-            "token_address": "9BB6NFEcjBCtnNLFko2FqV8HHM13kCyYcdQbgpump"
+            "token_symbol": "RAGE",
+            "token_name": "Rage Guy",
+            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjG587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "DOH",
+            "token_name": "D’oh Market",
+            "token_address": "DGhYzKXkUtpV7WL2JWqiR6GjqnG5qoXU83yoHqVqpump"
+          }
+        ],
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Bonk is the most prominent token in this category with a massive market cap and strong community engagement. It has a well-established meme history and is widely recognized in the crypto space.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 521637253.02
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Political & Social Commentary",
+        "description": "Tokens are being created to express political or social views, often leveraging trending political slogans, anti-war sentiments, or cultural movements. These tokens often align with broader narratives such as 'No More War' or 'Make Love, Not War', and are used to fundraise or spread awareness.",
+        "defining_signals": [
+          "Use of political slogans or anti-war themes",
+          "Community-driven fundraising for causes",
+          "Strong alignment with real-world events or movements",
+          "Inclusion of political figures or events in branding",
+          "High engagement on social media platforms like X",
+          "Lack of traditional utility, focusing on ideological expression"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "NOMOREWAR",
+            "token_name": "No More War",
+            "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump"
+          },
+          {
+            "token_symbol": "NMW",
+            "token_name": "No More Wars",
+            "token_address": "XpvRT5ZohqK1jtpa4AtGdfnrxSKnXQU6TTfFLskpump"
+          },
+          {
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
+          },
+          {
+            "token_symbol": "Nowar",
+            "token_name": "make love,not war",
+            "token_address": "DwZPYSKkBVeJKwZEwF86qft4a1Bm9ccz6tqQsakpump"
+          },
+          {
+            "token_symbol": "FuckIsrael",
+            "token_name": "Fuck Israel",
+            "token_address": "GpQd15D7AsAjkt2cXBqa5znfUXuNPfQanuTWgJJdfWZ4"
           },
           {
             "token_symbol": "PEACEGUY",
@@ -255,43 +310,29 @@
             "token_address": "85vdovHhkXnDi98EYMQmD2vXS82jRP1VDDXfkJ38pump"
           }
         ],
-        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqQ8HHH13kCyYcdQbgpump",
+        "leader_hint_token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump",
         "confidence_0_100": 80,
-        "confidence_rationale": "Emerging trend of community-driven meme tokens with no external cultural reference.",
+        "confidence_rationale": "No More War has the highest market cap among these tokens and is directly tied to a trending political slogan. It has strong community engagement and is being used to spread awareness around anti-war themes.",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 639049683.35
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 9195138.0
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Driven Utility",
-        "description": "Tokens centered around AI infrastructure, agents, or AI-generated content, often with speculative utility claims.",
+        "meta_name": "AI Agent Economy",
+        "description": "Tokens are emerging around AI agent ecosystems, where AI agents autonomously perform tasks, interact with smart contracts, and are governed by token holders. These tokens often focus on governance, utility, and access to AI-driven services.",
         "defining_signals": [
-          "Claims of AI integration in governance, trading, or content generation.",
-          "Focus on AI agent ecosystems, autonomous systems, or AI-driven trading.",
-          "Names referencing AI or machine learning (e.g., AgenC, AgenN, AgenT).",
-          "Speculative utility tied to AI tools, data, or infrastructure.",
-          "Community narratives around AI's future role in DeFi or Web3."
+          "AI agent-based governance or utility",
+          "Integration with autonomous AI systems",
+          "Focus on decentralized AI coordination",
+          "Community-driven development and funding",
+          "Claims of on-chain execution and smart contract interaction",
+          "Emerging narratives around AI agent competition and collaboration"
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "AGEN",
-            "token_name": "AgenN",
-            "token_address": "8dT7X2Uoaja6rfLzLi7sWNKLYuu58u1Ts9nP3qrApump"
-          },
-          {
-            "token_symbol": "CTM",
-            "token_name": "c8ntinuum",
-            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
-          },
-          {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
           {
             "token_symbol": "AgenC",
             "token_name": "AgenC",
@@ -303,127 +344,50 @@
             "token_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump"
           },
           {
-            "token_symbol": "CLAW",
-            "token_name": "ClawDAO",
-            "token_address": "E8yVqPRF4jxwMDWVL9WYUE6rBmhfv7sW7y49uHLeJdao"
+            "token_symbol": "OPENGORK",
+            "token_name": "OpenGork",
+            "token_address": "D1tR6t5Wgbf977rce1CKYoXq8JCQjTHJ47Rdn5vGXqGH"
+          },
+          {
+            "token_symbol": "Kobot",
+            "token_name": "kobot",
+            "token_address": "Y47cFq64kf4vZNVcTjPhfQrNgCiN5gghpfwxk29pump"
+          },
+          {
+            "token_symbol": "AgenN",
+            "token_name": "AgenN",
+            "token_address": "8dT7X2Uoaja6rfLzLi7sWNKLYuu58u1Ts9nP3qrApump"
+          },
+          {
+            "token_symbol": "SUPER",
+            "token_name": "SuperClaw",
+            "token_address": "agLXBpd9jMebGwYv5RZkDmhP2USrufexpSRCh3Vpump"
           }
         ],
-        "leader_hint_token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+        "leader_hint_token_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong focus on AI infrastructure and agent ecosystems, with multiple tokens in this space.",
+        "confidence_rationale": "Swarms has the highest market cap among these tokens and is actively positioned as a foundational token for an AI agent economy. It has a clear narrative and is gaining traction in the AI agent space.",
         "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 346974632.75
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political/Social Commentary Tokens",
-        "description": "Tokens referencing geopolitical events, social movements, or political figures to drive sentiment and engagement.",
-        "defining_signals": [
-          "Names or themes tied to political slogans, protests, or global events.",
-          "Leverage of real-world political narratives (e.g., anti-war, anti-Israel, etc.).",
-          "Names referencing political figures or movements (e.g., 'No More War', 'RIP khamenei').",
-          "Community-driven narratives around social justice or political change.",
-          "Meme-based political commentary (e.g., 'War', 'Fuck Israel')."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "WAR",
-            "token_name": "WAR",
-            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
-          },
-          {
-            "token_symbol": "NOMOREWAR",
-            "token_name": "No More War",
-            "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "WAR",
-          "token_name": "WAR",
-          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-          "usd_market_cap": 9195138.0
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "Tokens leveraging internet memes, viral phrases, or pop culture references to drive community engagement and virality.",
-        "defining_signals": [
-          "Use of established memes (e.g., Wojak, Rage Guy, Pepe, Clippy).",
-          "Cultural references to viral TikTok/Reddit trends or historical internet phenomena.",
-          "Names or themes tied to well-known characters, memes, or phrases (e.g., Hachiko, Punch, Fuggler).",
-          "Community-driven narratives with no prior crypto context.",
-          "Lack of technical utility, emphasizing meme-based identity and virality."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "RAGE",
-            "token_name": "Rage Guy",
-            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
-          },
-          {
-            "token_symbol": "PEPC",
-            "token_name": "cmol pepe",
-            "token_address": "E2MXVEUUCZVtsHhcjAMmR57tEC33KSNW6LBsFLpopump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjG587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "CLIP",
-            "token_name": "Clippy",
-            "token_address": "GKjAAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          }
-        ],
-        "leader_hint_token_address": "E2MXVEUUCZVtsHhcjAMmR57tEC33KSNW6LBsFLpopump",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong presence of meme-based tokens with clear cultural references and community traction.",
-        "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 7012506.97
+          "token_symbol": "swarms",
+          "token_name": "swarms",
+          "token_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+          "usd_market_cap": 7033157.09
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Community-Driven Meme Tokens",
+        "meta_name": "Meme Revival",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 639049683.35
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 521637253.02
         }
       },
       {
-        "meta_name": "AI-Driven Utility",
-        "leader_token": {
-          "token_symbol": "CTM",
-          "token_name": "c8ntinuum",
-          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
-          "usd_market_cap": 346974632.75
-        }
-      },
-      {
-        "meta_name": "Political/Social Commentary Tokens",
+        "meta_name": "Political & Social Commentary",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
@@ -432,12 +396,12 @@
         }
       },
       {
-        "meta_name": "Meme-Driven Tokens",
+        "meta_name": "AI Agent Economy",
         "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 7012506.97
+          "token_symbol": "swarms",
+          "token_name": "swarms",
+          "token_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+          "usd_market_cap": 7033157.09
         }
       }
     ]
