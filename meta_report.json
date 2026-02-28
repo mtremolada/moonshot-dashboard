@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-28T09:46:49.804542Z",
+  "generated_at_utc": "2026-02-28T10:47:13.640203Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 136,
+  "token_context_count": 135,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 5 PVP group(s); excluding 6 token(s) from META prompt."
+    "Detected 6 PVP group(s); excluding 8 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 6,
+  "pvp_excluded_token_count": 8,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -108,18 +108,41 @@
           "processed_at": "2026-02-28T00:02:43.415658Z"
         }
       ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "peace",
+      "tokens": [
+        {
+          "token_symbol": "PEACE",
+          "token_name": "PEACE",
+          "token_address": "J5XxXQueFp1Har8GYa69N8Jw9yAG6r9VKujhAFaTpump",
+          "usd_market_cap": 322718.88,
+          "processed_at": "2026-02-28T07:15:55.504998Z"
+        },
+        {
+          "token_symbol": "Peace",
+          "token_name": "World Peace",
+          "token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
+          "usd_market_cap": 276458.24,
+          "processed_at": "2026-02-28T10:19:37.126550Z"
+        }
+      ]
     }
   ],
   "llm_raw_text": null,
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Based Crypto Tokens",
-        "description": "Tokens leveraging viral internet memes, pop culture references, or internet slang. These tokens often derive their branding from existing memes or cultural phenomena, repurposing them for crypto communities.",
+        "meta_name": "Meme-Driven Memecoins",
+        "description": "Tokens leveraging established internet memes or viral phrases to drive community engagement and speculative interest.",
         "defining_signals": [
-          "Tokens reference viral memes, internet slang, or pop culture figures",
-          "Tokens use meme-based names or descriptions with no prior crypto context",
-          "Tokens are tied to characters or phrases with established meme histories"
+          "Names and themes rooted in pre-existing memes or viral internet culture.",
+          "Strong community-driven narratives with meme-based branding.",
+          "High social media engagement and virality potential.",
+          "Absence of traditional utility, focusing on cultural resonance.",
+          "Frequent use of humor, absurdity, or satire in branding.",
+          "Tie-ins to popular meme formats, characters, or catchphrases."
         ],
         "supporting_tokens": [
           {
@@ -128,149 +151,98 @@
             "token_address": "E2MXVEUUCZVtsHhcjAMmR57tEC33KSNW6LBsFLpopump"
           },
           {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
             "token_symbol": "RAGE",
             "token_name": "Rage Guy",
             "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
           },
           {
-            "token_symbol": "CLY",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+            "token_symbol": "DOH",
+            "token_name": "DOH Market",
+            "token_address": "DGhYzKXkUtpV7WL2JWWqiR6GjqnG5qoXU83yoHqVpump"
+          },
+          {
+            "token_symbol": "Fartcoin",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          },
+          {
+            "token_symbol": "Autism",
+            "token_name": "Autism Coin",
+            "token_address": "8jiVXftnn2ZG6bugK7HAH5j2G3D6TpsG521gqsWwpump"
+          },
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "RIP",
+            "token_name": "RIP DJ Daniel",
+            "token_address": "AezQKvKbXJZpwZj5WeKx8VhzFsxnmET7FPKVcCBeScT5"
+          },
+          {
+            "token_symbol": "SB",
+            "token_name": "Same Boat",
+            "token_address": "frSWZUrXYqzZ2MhbcdeAPckEWZTQqtBq3tCzd43pump"
+          },
+          {
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+          },
+          {
+            "token_symbol": "Pippkin",
+            "token_name": "Pippkin The Horse",
+            "token_address": "6ydMmFRaNt4AHBjgvSogbBvcxnTrX3QzUe2AEzVppump"
+          },
+          {
+            "token_symbol": "dippin",
+            "token_name": "dark pippin",
+            "token_address": "DzppeRRAjPpvcEE541aTN7Xm8ERjA9nBW8KDawfWpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Strong meme-based branding with clear cultural references. Bonk and Pepe are well-established meme assets, while newer tokens like Clippy and Rage Guy show strong community adoption.",
+        "leader_hint_token_address": "9BB6NFEcjBCtnNLFko2FqQQBq8HHM13kCyYcdQbgpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong meme-based narratives with clear cultural origins and high social media engagement. Fartcoin and Rage Guy are particularly dominant in this category.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 521637253.02
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 639049683.35
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Powered Trading and Finance",
-        "description": "Tokens focused on AI-driven trading platforms, financial tools, or market prediction systems. These tokens often emphasize automation, data-driven strategies, or AI-backed financial infrastructure.",
+        "meta_name": "AI-Driven Utility Tokens",
+        "description": "Tokens tied to AI agents, autonomous systems, or AI-powered platforms, often emphasizing automation, governance, or on-chain intelligence.",
         "defining_signals": [
-          "Tokens describe AI-based trading or financial tools",
-          "Tokens reference market prediction, trading signals, or financial automation",
-          "Tokens are tied to platforms or apps with AI-driven financial features"
+          "Integration with AI agents, autonomous systems, or machine learning models.",
+          "Claims of governance, automation, or decision-making via AI.",
+          "Focus on decentralized or autonomous operations.",
+          "Inferred utility in AI-driven DeFi, trading, or data processing.",
+          "Community-driven narratives around AI innovation or future tech.",
+          "Lack of traditional financial or speculative branding."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "NEXTAPE",
-            "token_name": "nextape",
-            "token_address": "tiZt3pcUPpXoJeqNqPYENpzuX4eGMvrQMW372JQpump"
+            "token_symbol": "CLD",
+            "token_name": "ClawDAO",
+            "token_address": "E8yVqPRF4jxwMDWVL9WYUE6rBmhfv7sW7y49uHLeJdao"
           },
           {
-            "token_symbol": "ALCH",
-            "token_name": "Alchemist AI",
-            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
-          },
-          {
-            "token_symbol": "IRONCLAW",
-            "token_name": "IronClaw",
-            "token_address": "2HPJQUjBbHRZv14oERNkPeVTPV3b4dyop6iGxAv9pump"
-          },
-          {
-            "token_symbol": "POKEX",
-            "token_name": "pokémon on x",
-            "token_address": "CnTo6ZbPd4KxcnfAVRBoVwDkhh9VaUyNUt4FcjdQpump"
-          },
-          {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
-          }
-        ],
-        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong clustering around AI-driven trading and financial tools. Alchemist AI and NextApe show the most detailed utility claims and higher market caps.",
-        "leader_token": {
-          "token_symbol": "ALCH",
-          "token_name": "Alchemist AI",
-          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
-          "usd_market_cap": 69593158.79
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Crypto-Community-Driven Tokens",
-        "description": "Tokens built around community engagement, social media virality, or grassroots movements. These tokens often lack traditional utility but thrive on community-driven narratives and social media traction.",
-        "defining_signals": [
-          "Tokens reference community-driven branding or social media virality",
-          "Tokens are tied to community events, social media trends, or viral content",
-          "Tokens lack traditional utility but emphasize community engagement"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "JELLYJELLY",
-            "token_name": "jelly-my-jelly",
-            "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
-          },
-          {
-            "token_symbol": "POMBO",
-            "token_name": "Pombon",
-            "token_address": "v8ic5ww8fy6ejkq4Cr5CVpYnstaXjMsRGJZSWn5SS1t"
-          },
-          {
-            "token_symbol": "PEACEGUY",
-            "token_name": "Just a peace guy",
-            "token_address": "85vdovHhkXnDi98EYMQmD2vXS82jRP1VDDXfkJ38pump"
-          },
-          {
-            "token_symbol": "VIOLET",
-            "token_name": "Viola Snow",
-            "token_address": "4uRNxUMqtd1kaFgSNbL2GPVUwBwMRjpfkcskjjTDpump"
-          },
-          {
-            "token_symbol": "PEACE",
-            "token_name": "PEACE",
-            "token_address": "J5XxXQueFp1Har8GYa69N8Jw9yAG6r9VKujhAFaTpump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "jellyjelly",
-          "token_name": "jelly-my-jelly",
-          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
-          "usd_market_cap": 65228315.57
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI Agent Utility",
-        "description": "Tokens tied to AI agents with specific functionalities like trading execution, memory retention, or autonomous decision-making. These tokens often leverage AI-driven narratives and are positioned as tools for automation or data processing.",
-        "defining_signals": [
-          "Tokens describe AI agents with on-chain memory or execution capabilities",
-          "Tokens are linked to AI-driven trading, governance, or automation",
-          "Tokens reference AI models like Claude, GPT, or AI-based trading systems"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLUD",
-            "token_name": "CLUD",
-            "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump"
-          },
-          {
-            "token_symbol": "AM",
-            "token_name": "Auto Memory",
-            "token_address": "Zyc5xp8ZCU13shRyJmGvFn4UdJzXrqr53Q75FGZpump"
-          },
-          {
-            "token_symbol": "CLAWD",
+            "token_symbol": "clawd",
             "token_name": "clawdbot",
             "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+          },
+          {
+            "token_symbol": "kobot",
+            "token_name": "kobot",
+            "token_address": "Y47cFq64kf4vZNVcTjPhfQrNgCiN5gghpfwxk29pump"
           },
           {
             "token_symbol": "AgenC",
@@ -278,58 +250,75 @@
             "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
           },
           {
-            "token_symbol": "Kobot",
-            "token_name": "kobot",
-            "token_address": "Y47cFq64kf4vZNVcTjPhfQrNgCiN5gghpfwxk29pump"
+            "token_symbol": "OpenFang",
+            "token_name": "OpenFang",
+            "token_address": "nhHJvFRhFJbGAM2YRsy1dG8W6YiF1ZtshesZgXrpump"
+          },
+          {
+            "token_symbol": "Mia",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "IRONCLAW",
+            "token_name": "IronClaw",
+            "token_address": "2HPJQUjBbHRZv14oERNkPeVTPV3b4dyop6iGxAv9pump"
+          },
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "nextape",
+            "token_name": "nextape",
+            "token_address": "tiZt3pcUPpXoJeqNqPYENpzuX4eGMvrQMW372JQpump"
+          },
+          {
+            "token_symbol": "OBJECTS",
+            "token_name": "Talking Objects",
+            "token_address": "H4EkHReWbjJpqNUiUeYNNZbNKLqLfH8Jt9MkceXGpump"
+          },
+          {
+            "token_symbol": "Pump",
+            "token_name": "Agent Pump",
+            "token_address": "Boi2KtPApoowwfvqYq1rtjhea4pF45v89vguonf4pump"
+          },
+          {
+            "token_symbol": "HOA",
+            "token_name": "House of Agent",
+            "token_address": "wxTqhtbYkn3Cr9ED4hn9S1AhdYbfw4FruHjm9Dopump"
           }
         ],
-        "leader_hint_token_address": "5yC9BM8KUsJTPbWPLfA2N8qQ1s9V8DQ3Vcw1G6Jdpump",
+        "leader_hint_token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong clustering around AI agent functionality, with multiple tokens referencing on-chain memory, autonomous execution, and AI-based governance. AgenC and AM show the most detailed utility claims and higher market caps.",
+        "confidence_rationale": "Strong focus on AI utility and automation with clear community narratives. Alchemist AI and AgenC are particularly prominent in this category.",
         "leader_token": {
-          "token_symbol": "AgenC",
-          "token_name": "AgenC",
-          "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
-          "usd_market_cap": 1512374.79
+          "token_symbol": "ALCH",
+          "token_name": "Alchemist AI",
+          "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "usd_market_cap": 69593158.79
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme-Based Crypto Tokens",
+        "meta_name": "Meme-Driven Memecoins",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 521637253.02
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 639049683.35
         }
       },
       {
-        "meta_name": "AI-Powered Trading and Finance",
+        "meta_name": "AI-Driven Utility Tokens",
         "leader_token": {
           "token_symbol": "ALCH",
           "token_name": "Alchemist AI",
           "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
           "usd_market_cap": 69593158.79
-        }
-      },
-      {
-        "meta_name": "Crypto-Community-Driven Tokens",
-        "leader_token": {
-          "token_symbol": "jellyjelly",
-          "token_name": "jelly-my-jelly",
-          "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
-          "usd_market_cap": 65228315.57
-        }
-      },
-      {
-        "meta_name": "AI Agent Utility",
-        "leader_token": {
-          "token_symbol": "AgenC",
-          "token_name": "AgenC",
-          "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
-          "usd_market_cap": 1512374.79
         }
       }
     ]
