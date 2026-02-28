@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-02-28T05:45:41.594112Z",
+  "generated_at_utc": "2026-02-28T06:46:20.899863Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 126,
+  "token_context_count": 129,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 7 PVP group(s); excluding 8 token(s) from META prompt."
+    "Detected 5 PVP group(s); excluding 6 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 8,
+  "pvp_excluded_token_count": 6,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "punchwifhat",
-      "tokens": [
-        {
-          "token_symbol": "punchwif",
-          "token_name": "punchwifhat",
-          "token_address": "Bxuk1hENin2SRWKuK8wMCtbTEeDg67kkBW7N4Rzgpump",
-          "usd_market_cap": 1652.96,
-          "processed_at": "2026-02-27T06:22:02.345288Z"
-        },
-        {
-          "token_symbol": "punchwif",
-          "token_name": "punchwifhat",
-          "token_address": "66wLeScYnuTQKaNDMSpcH8uA8qqJVecPn2QMVhGLpump",
-          "usd_market_cap": 1903172.81,
-          "processed_at": "2026-02-28T03:51:48.974966Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "we will not be divided",
@@ -91,26 +71,6 @@
     },
     {
       "match_type": "token_symbol",
-      "match_value": "punchwif",
-      "tokens": [
-        {
-          "token_symbol": "punchwif",
-          "token_name": "punchwifhat",
-          "token_address": "Bxuk1hENin2SRWKuK8wMCtbTEeDg67kkBW7N4Rzgpump",
-          "usd_market_cap": 1652.96,
-          "processed_at": "2026-02-27T06:22:02.345288Z"
-        },
-        {
-          "token_symbol": "punchwif",
-          "token_name": "punchwifhat",
-          "token_address": "66wLeScYnuTQKaNDMSpcH8uA8qqJVecPn2QMVhGLpump",
-          "usd_market_cap": 1903172.81,
-          "processed_at": "2026-02-28T03:51:48.974966Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
       "match_value": "notdivided",
       "tokens": [
         {
@@ -154,206 +114,201 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI Agent Utility",
-        "description": "Tokens leveraging AI agent infrastructure, governance, or execution capabilities are gaining traction. These projects often focus on decentralized AI coordination, on-chain memory, or autonomous trading.",
-        "defining_signals": [
-          "Tokens with AI agent-based governance or execution models",
-          "On-chain memory or proof-of-thought mechanisms",
-          "Integration with AI agent ecosystems like OpenClaw or xAI",
-          "Claims of decentralized or autonomous AI operations",
-          "Focus on trustless execution and smart contract interactions"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLUD",
-            "token_name": "CLUDE",
-            "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump"
-          },
-          {
-            "token_symbol": "OPENGORK",
-            "token_name": "OpenGork",
-            "token_address": "D1tR6t5Wgbf977rce1CKYoXq8JCQjTHJ47Rdn5vGXqGH"
-          },
-          {
-            "token_symbol": "AGEN",
-            "token_name": "AgenC",
-            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
-          },
-          {
-            "token_symbol": "KOBOT",
-            "token_name": "Kobot",
-            "token_address": "Y47cFq64kf4vZNVcTjPhfQrNgCiN5gghpfwxk29pump"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          }
-        ],
-        "leader_hint_token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong alignment with AI agent infrastructure and governance, plus active community engagement.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 521637253.02
-        },
-        "leader_missing_reason": null
-      },
-      {
         "meta_name": "Meme Rebranding",
-        "description": "Tokens are repurposing established memes or cultural references with new branding or narratives, often to tap into existing meme popularity while creating a crypto-native identity.",
+        "description": "Tokens repurpose existing internet memes, pop culture references, or historical figures into crypto branding. These often leverage nostalgia, humor, or viral content to attract attention and community.",
         "defining_signals": [
-          "Tokens rebranding or repurposing existing memes (e.g., Pepe, Bonk, Clippy)",
-          "Use of viral internet meme characters or phrases as branding",
-          "Tokens with no direct crypto origin but strong meme roots",
-          "Tokens leveraging meme nostalgia or humor for community engagement",
-          "Tokens with staged or curated meme narratives"
+          "Leverage of viral internet memes or pop culture references",
+          "Rebranding of historical or fictional characters for crypto context",
+          "Use of humor or absurdity in token branding",
+          "Community-driven narratives with meme-based themes",
+          "Absence of original non-crypto cultural origin for the token name",
+          "Strong social media presence with meme-based engagement"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "PEPC",
-            "token_name": "cmol pepe",
-            "token_address": "E2MXVEUUCZVtsHhcjAMmR57tEC33KSNW6LBsFLpopump"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          },
-          {
-            "token_symbol": "CLIP",
-            "token_name": "Clippy",
-            "token_address": "GKjA81bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "PENG",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "RAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          }
-        ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 92,
-        "confidence_rationale": "Strong meme-based branding and community traction, with clear viral meme roots.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 521637253.02
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "AI-Driven Utility",
-        "description": "Tokens are positioning themselves as tools or infrastructure for AI-driven applications, including trading, gaming, and productivity. These tokens often emphasize integration with AI models or decentralized AI ecosystems.",
-        "defining_signals": [
-          "Tokens tied to AI-driven trading or execution platforms",
-          "Integration with AI models like Claude or xAI",
-          "Claims of AI-powered productivity or automation tools",
-          "Tokens enabling governance or access to AI infrastructure",
-          "Focus on decentralized AI execution or governance"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "CLUD",
-            "token_name": "CLUDE",
-            "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump"
-          },
-          {
-            "token_symbol": "OPENGORK",
-            "token_name": "OpenGork",
-            "token_address": "D1tR6t5Wgbf977rce1CKYoXq8JCQjTHJ47Rdn5vGXqGH"
-          },
-          {
-            "token_symbol": "AGEN",
-            "token_name": "AgenC",
-            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
-          },
-          {
-            "token_symbol": "KOBOT",
-            "token_name": "Kobot",
-            "token_address": "Y47cFq64kf4vZNVcTjPhfQrNgCiN5gghpfwxk29pump"
-          },
-          {
-            "token_symbol": "BONK",
-            "token_name": "Bonk",
-            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
-          }
-        ],
-        "leader_hint_token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong focus on AI-driven infrastructure and execution, with active community and narrative.",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 521637253.02
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Community-Driven Meme Tokens",
-        "description": "Tokens are being created with a strong emphasis on community-driven virality and meme culture, often with no direct utility but relying on social engagement and humor to drive adoption.",
-        "defining_signals": [
-          "Tokens with no clear utility but strong meme or humor-based branding",
-          "Tokens tied to viral social media trends or internet humor",
-          "Tokens with staged or curated narratives for community engagement",
-          "Tokens leveraging humor or absurdity as a core branding strategy",
-          "Tokens with no clear technical or financial utility but strong community traction"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "BODIE",
-            "token_name": "Bodie",
-            "token_address": "3AxEZdRESTC3RVHF7Z4GEkeHmHe2o1WELSS6Rdbppump"
-          },
-          {
-            "token_symbol": "JELLY",
+            "token_symbol": "Jellybean",
             "token_name": "Jellybean",
             "token_address": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump"
           },
           {
-            "token_symbol": "MOMO",
-            "token_name": "The Vibe Coding Dog",
-            "token_address": "EYY7zdbd7kYq5ViCYvJyHtkoAJnBukQxutPxTJ6ZMYUJ"
+            "token_symbol": "JellyAura",
+            "token_name": "Jellybean Aura",
+            "token_address": "FYefkNfSDDgph16nz3CLYQU6LDgeUe2716MzQ9kfpump"
           },
           {
-            "token_symbol": "RIZZ",
-            "token_name": "RIZZTER",
-            "token_address": "BwUrTqcaoJUVnKTGPZk7k4iiSdTUeFSQKBh7f8rtpump"
+            "token_symbol": "RAGE",
+            "token_name": "Rage Guy",
+            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
           },
           {
-            "token_symbol": "POMBO",
-            "token_name": "Pombon",
-            "token_address": "v8ic5ww8fy6ejkq4Cr5CVpYnstaXjMsRGJZSWn5SS1t"
+            "token_symbol": "PUNCH",
+            "token_name": "Punch",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "Fartcoin",
+            "token_name": "Fartcoin",
+            "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+          }
+        ],
+        "leader_hint_token_address": "Bonk",
+        "confidence_0_100": 90,
+        "confidence_rationale": "Bonk has a strong meme-based legacy and high market cap. Other tokens like Jellybean and Rage Guy show similar meme-driven branding and community engagement.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 521637253.02
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Powered Utility",
+        "description": "Tokens are tied to AI-driven platforms, tools, or services, often emphasizing automation, data processing, or AI-generated content. These tokens are typically utility-based and focus on real-world applications.",
+        "defining_signals": [
+          "AI-driven platforms or tools for content generation, trading, or automation",
+          "Integration with AI models like Claude or Grok",
+          "Claims of AI-generated content or decision-making",
+          "Utility for AI-based services or governance",
+          "Focus on automation, efficiency, or data processing",
+          "Community-driven AI experiments or competitions"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CLUD",
+            "token_name": "CLUD",
+            "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump"
+          },
+          {
+            "token_symbol": "OPUS",
+            "token_name": "Opus The Trencher",
+            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+          },
+          {
+            "token_symbol": "ALCH",
+            "token_name": "Alchemist AI",
+            "token_address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+          },
+          {
+            "token_symbol": "CTM",
+            "token_name": "c8ntinuum",
+            "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          },
+          {
+            "token_symbol": "OPENGORK",
+            "token_name": "OpenGork",
+            "token_address": "D1tR6t5Wgbf977rce1CKYoXq8JCQjTHJ47Rdn5vGXqGH"
+          }
+        ],
+        "leader_hint_token_address": "CLUD",
+        "confidence_0_100": 80,
+        "confidence_rationale": "CLUD and ALCH have clear AI utility claims and active development. Other tokens like OPUS and CTM are emerging with similar narratives.",
+        "leader_token": {
+          "token_symbol": "CTM",
+          "token_name": "c8ntinuum",
+          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+          "usd_market_cap": 346974632.75
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI Agent Ecosystems",
+        "description": "Tokens are centered around AI agents, autonomous systems, or AI-driven infrastructure, often leveraging Solana for scalability and on-chain execution. These tokens emphasize automation, governance, and integration with AI tools.",
+        "defining_signals": [
+          "AI agent deployment or coordination",
+          "On-chain memory or trustless execution",
+          "Integration with Solana or other high-throughput blockchains",
+          "Governance or utility for AI ecosystems",
+          "Community-driven development or funding models",
+          "Claims of decentralized AI infrastructure or tooling"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "CLUD",
+            "token_name": "CLUD",
+            "token_address": "AWGCDT2gd8JadbYbYyZy1iKxfWokPNgrEQoU24zUpump"
+          },
+          {
+            "token_symbol": "CLD",
+            "token_name": "ClawDAO",
+            "token_address": "E8yVqPRF4jxwMDWVL9WYUE6rBmhfv7sW7y49uHLeJdao"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "AgenC",
+            "token_name": "AgenC",
+            "token_address": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
+          },
+          {
+            "token_symbol": "OPENGORK",
+            "token_name": "OpenGork",
+            "token_address": "D1tR6t5Wgbf977rce1CKYoXq8JCQjTHJ47Rdn5vGXqGH"
+          },
+          {
+            "token_symbol": "Kobot",
+            "token_name": "kobot",
+            "token_address": "Y47cFq64kf4vZNVcTjPhfQrNgCiN5gghpfwxk29pump"
+          }
+        ],
+        "leader_hint_token_address": "CLUD",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Multiple tokens in this category have strong AI infrastructure claims, active community engagement, and clear on-chain utility. CLUD and AgenC have notable market caps and active development narratives.",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 30708361.86
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI-Driven Trading & Finance",
+        "description": "Tokens are focused on AI-based trading strategies, financial automation, or market prediction. These often leverage AI for trading signals, risk management, or market analysis.",
+        "defining_signals": [
+          "AI-based trading signals or market analysis",
+          "Integration with financial data or trading platforms",
+          "Claims of predictive analytics or market insights",
+          "Focus on automated trading execution or portfolio management",
+          "Community-driven trading experiments or competitions",
+          "Utility for financial data or governance"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "OPUS",
+            "token_name": "Opus The Trencher",
+            "token_address": "7qQnePEqsrBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+          },
+          {
+            "token_symbol": "Kobot",
+            "token_name": "kobot",
+            "token_address": "Y47cFq64kf4vZNVcTjPhfQrNgCiN5gghpfwxk29pump"
           }
         ],
         "leader_token": {
-          "token_symbol": "Jellybean",
-          "token_name": "Jellybean",
-          "token_address": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump",
-          "usd_market_cap": 7432976.58
+          "token_symbol": "kobot",
+          "token_name": "kobot",
+          "token_address": "Y47cFq64kf4vZNVcTjPhfQrNgCiN5gghpfwxk29pump",
+          "usd_market_cap": 193483.28
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "AI Agent Utility",
-        "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 521637253.02
-        }
-      },
-      {
         "meta_name": "Meme Rebranding",
         "leader_token": {
           "token_symbol": "Bonk",
@@ -363,21 +318,30 @@
         }
       },
       {
-        "meta_name": "AI-Driven Utility",
+        "meta_name": "AI-Powered Utility",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 521637253.02
+          "token_symbol": "CTM",
+          "token_name": "c8ntinuum",
+          "token_address": "C8qKVjKNf6JH2yrVVf3aFyny6ZCbHCJUBXTQAT2Em888",
+          "usd_market_cap": 346974632.75
         }
       },
       {
-        "meta_name": "Community-Driven Meme Tokens",
+        "meta_name": "AI Agent Ecosystems",
         "leader_token": {
-          "token_symbol": "Jellybean",
-          "token_name": "Jellybean",
-          "token_address": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump",
-          "usd_market_cap": 7432976.58
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 30708361.86
+        }
+      },
+      {
+        "meta_name": "AI-Driven Trading & Finance",
+        "leader_token": {
+          "token_symbol": "kobot",
+          "token_name": "kobot",
+          "token_address": "Y47cFq64kf4vZNVcTjPhfQrNgCiN5gghpfwxk29pump",
+          "usd_market_cap": 193483.28
         }
       }
     ]
