@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-03-01T16:07:43.150388Z",
+  "generated_at_utc": "2026-03-01T17:08:13.144861Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 128,
+  "token_context_count": 129,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 8 PVP group(s); excluding 15 token(s) from META prompt."
+    "Detected 9 PVP group(s); excluding 17 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 15,
+  "pvp_excluded_token_count": 17,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -73,6 +73,26 @@
           "token_address": "AJvgGff11W7bMqvjGKmNTSxK4FdDiS6YhDbujRZpump",
           "usd_market_cap": 227981.79,
           "processed_at": "2026-03-01T13:45:22.480784Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "sol",
+      "tokens": [
+        {
+          "token_symbol": "SOL",
+          "token_name": "Sol The Trophy Tomato",
+          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
+          "usd_market_cap": 993739.62,
+          "processed_at": "2026-02-28T18:10:12.197466Z"
+        },
+        {
+          "token_symbol": "SOL",
+          "token_name": "Solana",
+          "token_address": "DRLNhjM7jusYFPF1qade1dBD1qhgds7oAfdKs51Vpump",
+          "usd_market_cap": 622700.46,
+          "processed_at": "2026-03-01T16:22:52.671250Z"
         }
       ]
     },
@@ -216,18 +236,120 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Animals and Characters",
-        "description": "Tokens based on viral internet memes featuring animals or fictional characters, often repurposed into crypto branding. These tokens rely on the emotional or humorous resonance of the original meme.",
+        "meta_name": "Meme Rehash",
+        "description": "Tokens repurposing existing internet memes or cultural references for crypto branding. These often lack originality but capitalize on established meme popularity.",
         "defining_signals": [
-          "Use of animal or character names (e.g., Bonk, Punch, Mushu)",
-          "Meme origins in viral videos, image macros, or social media trends",
-          "Community-driven branding with playful or ironic themes"
+          "Leverage pre-existing memes (e.g., Wojak, Rainbow Fish, Bonk).",
+          "Names or descriptions reference viral internet culture (e.g., 'i nuke u', 'RAGE Guy').",
+          "No distinct crypto innovation—just meme branding."
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "fish",
+            "token_name": "rainbowfish",
+            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
           {
             "token_symbol": "Bonk",
             "token_name": "Bonk",
             "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          },
+          {
+            "token_symbol": "RAGE",
+            "token_name": "Rage Guy",
+            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
+          },
+          {
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          }
+        ],
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong presence of meme-based tokens with clear cultural roots and high market caps.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 493334298.64
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI & Tech Meme",
+        "description": "Tokens leveraging AI, futuristic tech, or speculative narratives, often with a humorous or satirical twist.",
+        "defining_signals": [
+          "Names or themes tied to AI, robotics, or speculative tech (e.g., 'AI Rig Complex', 'WarGPT').",
+          "Descriptions include speculative or humorous tech claims.",
+          "Lack of real-world utility but focus on AI-related meme culture."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "arc",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "WarGPT",
+            "token_name": "WarGPT",
+            "token_address": "6JFvA3ZKEfi3wDnzEVB3jzMGsLfcqVr4oqi3BzXHpump"
+          },
+          {
+            "token_symbol": "OPENGORK",
+            "token_name": "OpenGork",
+            "token_address": "D1tR6t5Wgbf977rce1CKYoXq8JCQjTHJ47Rdn5vGXqGH"
+          },
+          {
+            "token_symbol": "SUPER",
+            "token_name": "SuperClaw",
+            "token_address": "agLXBpd9jMebGwYv5RZkDmhP2USrufexpSRCh3Vpump"
+          },
+          {
+            "token_symbol": "arc",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "arc",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          }
+        ],
+        "leader_hint_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+        "confidence_0_100": 70,
+        "confidence_rationale": "Emerging trend with speculative AI narratives, but not yet dominant.",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 26004206.93
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal Meme",
+        "description": "Tokens centered around animals or animal-related memes, often with whimsical or humorous branding.",
+        "defining_signals": [
+          "Names or themes tied to animals (e.g., 'Lobstar', 'Punch', 'Pippkin').",
+          "Descriptions reference viral animal memes or real-world animal stories.",
+          "Community-driven narratives around cute or quirky animals."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Lobstar",
+            "token_name": "Lobstar",
+            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
           },
           {
             "token_symbol": "Punch",
@@ -235,80 +357,67 @@
             "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
           },
           {
-            "token_symbol": "MUSHU",
-            "token_name": "Mushu",
-            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
-          },
-          {
-            "token_symbol": "BongoCat",
-            "token_name": "BongoCat",
-            "token_address": "9gdB6CmfBW7Cer73x6aGiqqkGEcuzpaZLJkhJVEGpump"
-          },
-          {
             "token_symbol": "Pippkin",
             "token_name": "Pippkin The Horse",
             "token_address": "6ydMmFRaNt4AHBjgvSogbBvcxnTrX3QzUe2AEzVppump"
           },
           {
-            "token_symbol": "Kabuto",
-            "token_name": "Kabuto",
-            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+            "token_symbol": "Stanley",
+            "token_name": "Stanley",
+            "token_address": "2xMf8s3Se7ozRStUdM5oApAHaAEiXqKPEJjZZxxGpump"
           }
         ],
-        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Strong meme heritage and cultural resonance, with tokens like Bonk and Mushu having clear viral origins.",
         "leader_token": {
-          "token_symbol": "Bonk",
-          "token_name": "Bonk",
-          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-          "usd_market_cap": 493334298.64
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 10956293.16
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "War and Conflict",
-        "description": "Tokens leveraging geopolitical tensions, war imagery, and anti-war narratives to drive community engagement and speculative interest. These tokens often tie into real-world events or historical symbolism.",
+        "meta_name": "Geopolitical Meme",
+        "description": "Tokens referencing geopolitical tensions, wars, or political figures, often with a satirical or protest angle.",
         "defining_signals": [
-          "Use of war-related names (e.g., WAR, WW3, B2 Bomber)",
-          "Meme origins tied to military or geopolitical events (e.g., Iran-Israel tensions, U.S.-Iran relations)",
-          "Symbolism of resistance or peace (e.g., 'No More War', 'Peace', 'Make Love Not War')"
+          "Names or themes tied to geopolitical events (e.g., 'USI', 'War', 'Kabuto').",
+          "Descriptions reference real-world conflicts or political figures.",
+          "Meme-like recontextualization of geopolitical topics."
         ],
         "supporting_tokens": [
+          {
+            "token_symbol": "$USI",
+            "token_name": "United States of Israel",
+            "token_address": "GefM7wpiCuv3Vtp413US2bmS7UGEkdbqHcD2qEfqpump"
+          },
           {
             "token_symbol": "WAR",
             "token_name": "WAR",
             "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           },
           {
-            "token_symbol": "WW3",
-            "token_name": "World War 3",
-            "token_address": "7QYaY7vXTi9PiTjRD23QKqtGhLYkyUmisWE6eh7Tpump"
+            "token_symbol": "BELLATOR",
+            "token_name": "BELLATOR",
+            "token_address": "Cc841PdMQUNWq989BszMHcjipGw89CBxDygiweb1pump"
           },
           {
-            "token_symbol": "B2",
-            "token_name": "B2 Bomber",
-            "token_address": "2n3qikMvFyc3c27BKiBKvBnGz2dwRXjKPt1SsXNwpump"
+            "token_symbol": "Peacemaker",
+            "token_name": "Peacemaker",
+            "token_address": "Eki8vCNskBNPva7bSNQpam51BzoggZahRBXbYnVipump"
           },
           {
-            "token_symbol": "NOMOREWAR",
-            "token_name": "No More War",
-            "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump"
+            "token_symbol": "BOP",
+            "token_name": "Bored of Peace",
+            "token_address": "7DDYv5sJ65EpqMH1fAcCNuDm5gpALpZDJyHUPMU4pump"
           },
           {
-            "token_symbol": "OEF",
-            "token_name": "OPERATION EPIC FURY",
-            "token_address": "9Ey3RvjnQ5EwGmxmynorLRaMX2KGLuHSUgQZctw4Kef3"
-          },
-          {
-            "token_symbol": "NMW",
-            "token_name": "No More Wars",
-            "token_address": "XpvRT5ZohqK1jtpa4AtGdfnrxSKnXQU6TTfFLskpump"
+            "token_symbol": "NOWAR",
+            "token_name": "make love,not war",
+            "token_address": "DwZPYSKcBVeJKwZEwF86qft4a1Bm9ccz6tqqsakpump"
           }
         ],
         "leader_hint_token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong cultural and geopolitical ties, with multiple tokens referencing real-world events and historical anti-war themes.",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong geopolitical meme presence with growing community engagement.",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
@@ -316,85 +425,11 @@
           "usd_market_cap": 8547989.0
         },
         "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political and Social Commentary",
-        "description": "Tokens that satirize or critique political figures, movements, or social issues. These tokens often originate from internet memes or political commentary and are used to express dissent or humor.",
-        "defining_signals": [
-          "Names referencing political figures or movements (e.g., Rubio, USI, Goys R Us)",
-          "Meme origins in political satire or protest (e.g., Marco Rubio memes, anti-Israel/anti-war memes)",
-          "Use of controversial or polarizing themes to drive engagement"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Rubio",
-            "token_name": "Marco Rubio Memes",
-            "token_address": "DgXjupqUXCMRzyR98WxKPdhxyLC72MdtMJULu4C3pump"
-          },
-          {
-            "token_symbol": "USI",
-            "token_name": "United States of Israel",
-            "token_address": "GefM7wpiCuv3Vtp413US2bmS7UGEkdbqHcD2qEfqpump"
-          },
-          {
-            "token_symbol": "Goy",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
-          },
-          {
-            "token_symbol": "FuckIsrael",
-            "token_name": "Fuck Israel",
-            "token_address": "GpQd15D7AsAjkt2cXBqa5znfUXuNPfQanuTWgJJdfWZ4"
-          },
-          {
-            "token_symbol": "Goys R Us",
-            "token_name": "Goys R Us",
-            "token_address": "CyDi275WFQaf5rnhXRMnuKqmWqFMRK6S9yFAf1kXpump"
-          },
-          {
-            "token_symbol": "OEF",
-            "token_name": "OPERATION EPIC FURY",
-            "token_address": "9Ey3RvjnQ5EwGmxmynorLRaMX2KGLuHSUgQZctw4Kef3"
-          }
-        ],
-        "leader_hint_token_address": "DgXjupqUXCMRzyR98WxKPdhxyLC72MdtMJULu4C3pump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong political and social commentary themes, with tokens like Rubio and Goys R Us having clear meme and protest origins.",
-        "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 1317028.2
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Nostalgia and Pop Culture References",
-        "description": "Tokens that draw from nostalgic or pop culture references, often leveraging iconic characters or internet phenomena from the past. These tokens capitalize on the emotional connection users have with these cultural touchstones.",
-        "defining_signals": [
-          "Names referencing pop culture or nostalgia (e.g., Clippy, Wojak, Rage Guy)",
-          "Meme origins in retro or internet culture (e.g., 2000s-era memes, MS Paint)",
-          "Community-driven branding with a focus on humor or irony"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "Gk1Ae1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "Clippy",
-          "token_name": "Clippy",
-          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-          "usd_market_cap": 477976.48
-        },
-        "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Animals and Characters",
+        "meta_name": "Meme Rehash",
         "leader_token": {
           "token_symbol": "Bonk",
           "token_name": "Bonk",
@@ -403,30 +438,30 @@
         }
       },
       {
-        "meta_name": "War and Conflict",
+        "meta_name": "AI & Tech Meme",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 26004206.93
+        }
+      },
+      {
+        "meta_name": "Animal Meme",
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 10956293.16
+        }
+      },
+      {
+        "meta_name": "Geopolitical Meme",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
           "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
           "usd_market_cap": 8547989.0
-        }
-      },
-      {
-        "meta_name": "Political and Social Commentary",
-        "leader_token": {
-          "token_symbol": "Goyim",
-          "token_name": "Goyim",
-          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
-          "usd_market_cap": 1317028.2
-        }
-      },
-      {
-        "meta_name": "Nostalgia and Pop Culture References",
-        "leader_token": {
-          "token_symbol": "Clippy",
-          "token_name": "Clippy",
-          "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
-          "usd_market_cap": 477976.48
         }
       }
     ]
