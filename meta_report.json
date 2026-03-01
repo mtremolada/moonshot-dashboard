@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-03-01T06:55:13.079014Z",
+  "generated_at_utc": "2026-03-01T07:55:27.446438Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 135,
+  "token_context_count": 132,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 7 PVP group(s); excluding 14 token(s) from META prompt."
+    "Detected 6 PVP group(s); excluding 12 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 14,
+  "pvp_excluded_token_count": 12,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -53,26 +53,6 @@
           "token_address": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
           "usd_market_cap": 9390932.3,
           "processed_at": "2026-02-28T17:56:36.322882Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
-      "match_value": "peace",
-      "tokens": [
-        {
-          "token_symbol": "PEACE",
-          "token_name": "PEACE",
-          "token_address": "J5XxXQueFp1Har8GYa69N8Jw9yAG6r9VKujhAFaTpump",
-          "usd_market_cap": 322718.88,
-          "processed_at": "2026-02-28T07:15:55.504998Z"
-        },
-        {
-          "token_symbol": "Peace",
-          "token_name": "World Peace",
-          "token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
-          "usd_market_cap": 276458.24,
-          "processed_at": "2026-02-28T10:19:37.126550Z"
         }
       ]
     },
@@ -189,18 +169,71 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "AI and Tech-Driven Utility Tokens",
-        "description": "Tokens tied to AI, blockchain, or decentralized tech ecosystems. These tokens often focus on governance, access, or utility within emerging AI platforms, agent economies, or decentralized infrastructure.",
+        "meta_name": "Meme & Pop Culture",
+        "description": "Tokens inspired by internet memes, pop culture references, or viral social media trends. These tokens often leverage humor, nostalgia, or ironic reinterpretations of existing cultural content.",
         "defining_signals": [
-          "Names and descriptions referencing AI, agents, or decentralized infrastructure (e.g., 'Swarms', 'AgenN', 'AI Rig Complex').",
-          "Claims of utility in AI ecosystems, governance, or decentralized applications.",
-          "Lack of traditional meme or cultural references, but strong technical or speculative narratives.",
-          "Frequent use of terms like 'agent', 'AI', 'blockchain', or 'decentralized'.",
-          "Tokens often tied to new platforms or experimental tech."
+          "Tokens referencing viral memes, internet slang, or pop culture characters.",
+          "Tokens with humorous or ironic descriptions tied to meme culture.",
+          "Tokens leveraging nostalgia for retro pop culture (e.g., Pokémon, Pepe, etc.).",
+          "Tokens with community-driven narratives tied to meme communities or subcultures.",
+          "Tokens named after or inspired by viral TikTok, Reddit, or X (Twitter) trends."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "SWARMS",
+            "token_symbol": "Pippkin",
+            "token_name": "Pippkin The Horse",
+            "token_address": "6ydMmFRaNt4AHBjgvSogbBvcxnTrX3QzUe2AEzVppump"
+          },
+          {
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+          },
+          {
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "Pombon",
+            "token_name": "Pombon",
+            "token_address": "v8ic5ww8fy6ejkq4Cr5CVpYnstaXjMsRGJZSWn5SS1t"
+          },
+          {
+            "token_symbol": "Yaranaika",
+            "token_name": "やらないか",
+            "token_address": "8S8LiQqai6Pi9bANBijYTtkvZ2XNeGtQbguyCdnUh8QP"
+          },
+          {
+            "token_symbol": "RAGE",
+            "token_name": "Rage Guy",
+            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
+          }
+        ],
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 82,
+        "confidence_rationale": "This theme is well-established in the crypto space, with tokens like Bonk and Ralph Wiggum showing strong community engagement and meme-driven growth.",
+        "leader_token": {
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 493334298.64
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI & Autonomous Agents",
+        "description": "Tokens focused on AI, autonomous agents, and decentralized AI ecosystems. These tokens often position themselves as the currency or governance mechanism for AI-driven platforms, tools, or marketplaces.",
+        "defining_signals": [
+          "Tokens tied to AI agent development, governance, or usage.",
+          "Tokens with narratives around AI-driven trading, automation, or decision-making.",
+          "Tokens leveraging AI-related jargon or futuristic concepts like 'agentic economy'.",
+          "Tokens with utility in AI model training, data sharing, or AI infrastructure.",
+          "Tokens referencing AI ethics, AI governance, or AI security."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "swarms",
             "token_name": "swarms",
             "token_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump"
           },
@@ -210,105 +243,52 @@
             "token_address": "8dT7X2Uoaja6rfLzLi7sWNKLYuu58u1Ts9nP3qrApump"
           },
           {
-            "token_symbol": "ARC",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+            "token_symbol": "IRONCLAW",
+            "token_name": "IronClaw",
+            "token_address": "2HPJQUjBbHRZv14oERNkPeVTPV3b4dyop6iGxAv9pump"
           },
           {
-            "token_symbol": "OPUS",
-            "token_name": "Opus The Trencher",
-            "token_address": "7qQnePEqSRBxnkFQQJ8jUYXUqo7mSkbwuUHj1jz7pump"
+            "token_symbol": "SAGE",
+            "token_name": "Sage - The War Dog",
+            "token_address": "GsjFFScHNz5MzqQCiSLjAJppLjNiXYwLkgdmznZ9Tpump"
           },
           {
-            "token_symbol": "PEPC",
-            "token_name": "cmol pepe",
-            "token_address": "E2MXVEUUCZVtsHhcjAMmR57tEC33KSNW6LBsFLpopump"
+            "token_symbol": "SUPER",
+            "token_name": "SuperClaw",
+            "token_address": "agLXBpd9jMebGwYv5RZkDmhP2USrufexpSRCh3Vpump"
           },
           {
-            "token_symbol": "CLAUDGATE",
-            "token_name": "ClaudeGate",
-            "token_address": "fdLPNgm1FRgYnaN1YtpprLNpt7HfqYHab9sNjkFpump"
+            "token_symbol": "AM",
+            "token_name": "Auto Memory",
+            "token_address": "Zyc5xp8ZCU13shRyJmGFn4UdJzXrqr53Q75FGZpump"
           }
         ],
         "leader_hint_token_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong technical narratives and growing interest in AI and agent-based economies. Tokens are gaining traction in niche but high-growth sectors.",
+        "confidence_0_100": 78,
+        "confidence_rationale": "This theme is gaining traction with tokens like Swarms and AgenN, which are backed by active development and community interest in AI and autonomous systems.",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 26004206.93
+          "token_symbol": "swarms",
+          "token_name": "swarms",
+          "token_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+          "usd_market_cap": 7033157.09
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Meme-Driven Crypto Tokens",
-        "description": "Tokens inspired by internet memes, often with viral origins in social media, TikTok, or Reddit. These tokens leverage humor, absurdity, or cultural references to drive community and speculative interest.",
+        "meta_name": "Peace & Anti-War",
+        "description": "A recurring theme centered around promoting peace, anti-war sentiment, and global unity. Tokens in this category often reference historical slogans, political figures, or cultural movements advocating for peace and the end of conflicts.",
         "defining_signals": [
-          "Names and descriptions tied to viral memes (e.g., 'Jellybean', 'Wojak', 'Pepe', 'Clippy').",
-          "Absurd or humorous branding (e.g., 'War Punch', 'Punchwifhat', 'WarGPT').",
-          "Lack of traditional utility, with value derived from meme culture and community sentiment.",
-          "Frequent use of animal or cartoon characters (e.g., 'Viola Snow', 'Mushu', 'Pippin').",
-          "Strong social media presence and community-driven narratives."
+          "Tokens named after anti-war slogans like 'No More War' or 'Make Love, Not War'.",
+          "Tokens inspired by political figures or statements, such as Donald Trump’s 'No More War' slogan.",
+          "Tokens with narratives tied to peace campaigns, human rights, or global unity.",
+          "Tokens leveraging historical peace symbols like doves, peace signs, or religious imagery.",
+          "Tokens with community-driven missions to fund peace initiatives or humanitarian causes."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Jellybean",
-            "token_name": "Jellybean",
-            "token_address": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump"
-          },
-          {
-            "token_symbol": "ViolaSnow",
-            "token_name": "Viola Snow",
-            "token_address": "4uRNxUMqtd1kaFgSNbL2GPVUwBwMRjpfkcskjjTDpump"
-          },
-          {
-            "token_symbol": "Jester",
-            "token_name": "JESTERMAXXING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
-          },
-          {
-            "token_symbol": "Pepe",
-            "token_name": "cmol pepe",
-            "token_address": "E2MXVEUUCZVtsHhcjAMmR57tEC33KSNW6LBsFLpopump"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "RAGE",
-            "token_name": "Rage Guy",
-            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
-          }
-        ],
-        "leader_hint_token_address": "E2MXVEUUCZVtsHhcjAMmR57tEC33KSNW6LBsFLpopump",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Strong meme-driven narratives with clear cultural origins and viral social media presence. High market caps and community engagement reinforce this meta.",
-        "leader_token": {
-          "token_symbol": "Jellybean",
-          "token_name": "Jellybean",
-          "token_address": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump",
-          "usd_market_cap": 2314927.3
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political Peace Symbols",
-        "description": "Tokens leveraging peace-related themes, often tied to geopolitical narratives or protest slogans. These tokens draw from cultural symbols of unity, anti-war sentiment, and political messaging.",
-        "defining_signals": [
-          "Use of peace-related names like 'PEACEGUY', 'NOMOREWAR', 'NotDivided', and 'Dove'.",
-          "References to political slogans, protest movements, or global peace initiatives.",
-          "Leverage of historical or modern peace symbols (e.g., dove, peace signs).",
-          "Tokens often created in response to geopolitical tensions or political rhetoric.",
-          "Community-driven narratives around unity, anti-war, or anti-conflict themes."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "PEACEGUY",
-            "token_name": "Just a peace guy",
-            "token_address": "85vdovHhkXnDi98EYMQmD2vXS82jRP1VDDXfkJ38pump"
+            "token_symbol": "NotDivided",
+            "token_name": "We Will Not Be Divided",
+            "token_address": "BxPkRK7ZZZsm4r6TCdBf2W4j85BktAzL8GD4oKfypump"
           },
           {
             "token_symbol": "NOMOREWAR",
@@ -316,19 +296,19 @@
             "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump"
           },
           {
-            "token_symbol": "NotDivided",
-            "token_name": "We Will Not Be Divided",
-            "token_address": "BxPkRK7ZZZsm4r6TCdBf2W4j85BktAzL8GD4oKfypump"
+            "token_symbol": "NMW",
+            "token_name": "No More Wars",
+            "token_address": "XpvRT5ZohqK1jtpa4AtGdfnrxSKnXQU6TTfFLskpump"
           },
           {
-            "token_symbol": "Dove",
-            "token_name": "The White Dove",
-            "token_address": "8s7sAJPhzUegLxnwq2ymK7f6AE4Ty9tuPChMRKfgpump"
+            "token_symbol": "Peace",
+            "token_name": "World Peace",
+            "token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump"
           },
           {
             "token_symbol": "Nowar",
             "token_name": "make love,not war",
-            "token_address": "DwZPYSKcVeJKwZEwF86qft4a1Bm9ccz6tqQsakpump"
+            "token_address": "DwZPYSKcBVeJKwZEwF86qft4a1Bm9ccz6tqQsakpump"
           },
           {
             "token_symbol": "Aloka",
@@ -336,44 +316,44 @@
             "token_address": "79L8DXeNgDtJCfNdb5bFtkVsXYpNGdcw9dNkNCMApump"
           }
         ],
-        "leader_hint_token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump",
+        "leader_hint_token_address": "atVjJ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across tokens, with clear political and peace-related narratives. High market caps for several tokens indicate active community engagement.",
+        "confidence_rationale": "This theme is well-supported by multiple tokens with strong cultural and political narratives, including tokens backed by historical slogans and community-driven peace campaigns.",
         "leader_token": {
-          "token_symbol": "NOMOREWAR",
-          "token_name": "No More War",
-          "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump",
-          "usd_market_cap": 299530.22
+          "token_symbol": "Nowar",
+          "token_name": "make love,not war",
+          "token_address": "DwZPYSKcBVeJKwZEwF86qft4a1Bm9ccz6tqQsakpump",
+          "usd_market_cap": 326806.26
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "AI and Tech-Driven Utility Tokens",
+        "meta_name": "Meme & Pop Culture",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 26004206.93
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 493334298.64
         }
       },
       {
-        "meta_name": "Meme-Driven Crypto Tokens",
+        "meta_name": "AI & Autonomous Agents",
         "leader_token": {
-          "token_symbol": "Jellybean",
-          "token_name": "Jellybean",
-          "token_address": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump",
-          "usd_market_cap": 2314927.3
+          "token_symbol": "swarms",
+          "token_name": "swarms",
+          "token_address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+          "usd_market_cap": 7033157.09
         }
       },
       {
-        "meta_name": "Political Peace Symbols",
+        "meta_name": "Peace & Anti-War",
         "leader_token": {
-          "token_symbol": "NOMOREWAR",
-          "token_name": "No More War",
-          "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump",
-          "usd_market_cap": 299530.22
+          "token_symbol": "Nowar",
+          "token_name": "make love,not war",
+          "token_address": "DwZPYSKcBVeJKwZEwF86qft4a1Bm9ccz6tqQsakpump",
+          "usd_market_cap": 326806.26
         }
       }
     ]
