@@ -1,14 +1,34 @@
 {
-  "generated_at_utc": "2026-03-01T22:10:47.871144Z",
+  "generated_at_utc": "2026-03-01T23:11:09.402357Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 129,
+  "token_context_count": 128,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 9 PVP group(s); excluding 16 token(s) from META prompt."
+    "Detected 10 PVP group(s); excluding 17 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 16,
+  "pvp_excluded_token_count": 17,
   "pvp_report": [
+    {
+      "match_type": "token_name",
+      "match_value": "trump the prophet",
+      "tokens": [
+        {
+          "token_symbol": "TRUMP",
+          "token_name": "Trump the Prophet",
+          "token_address": "CiqtyTqs8z2RUGe3gxbogAn2f5CBeVnn4btRMdm6pump",
+          "usd_market_cap": 1986350.29,
+          "processed_at": "2026-03-01T01:38:04.918878Z"
+        },
+        {
+          "token_symbol": "TRUMP",
+          "token_name": "Trump the Prophet",
+          "token_address": "2jCwQtsqmEsvTbBFMJYE53ThUXfgrY813f5Zq9Dxpump",
+          "usd_market_cap": 1975882.54,
+          "processed_at": "2026-03-01T23:08:25.291345Z"
+        }
+      ]
+    },
     {
       "match_type": "token_name",
       "match_value": "supreme leader trump",
@@ -121,6 +141,13 @@
           "token_address": "5DUEGjxje8Zr3XJScHJ7DGkE92aTiG89yEC999hTpump",
           "usd_market_cap": 1769.21,
           "processed_at": "2026-03-01T18:55:44.202386Z"
+        },
+        {
+          "token_symbol": "TRUMP",
+          "token_name": "Trump the Prophet",
+          "token_address": "2jCwQtsqmEsvTbBFMJYE53ThUXfgrY813f5Zq9Dxpump",
+          "usd_market_cap": 1975882.54,
+          "processed_at": "2026-03-01T23:08:25.291345Z"
         }
       ]
     },
@@ -229,12 +256,12 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal-Inspired Memes",
-        "description": "Tokens inspired by viral animal memes or real-life animal stories are gaining traction. These tokens often use cute or symbolic animals to create emotional or narrative-driven appeal.",
+        "meta_name": "Meme Character Tokens",
+        "description": "Tokens inspired by viral internet characters or memes are gaining popularity. These include characters like Wojak, Lili, and others that have become cultural touchstones.",
         "defining_signals": [
-          "Names or themes referencing animals (e.g., 'Pippin', 'Lili', 'Faith The Warrior')",
-          "Narratives tied to real-life animal stories or viral animal memes",
-          "Use of animal imagery in branding or token lore"
+          "Tokens referencing viral characters (e.g., Wojak, Lili, Pippin).",
+          "Meme origins from TikTok, Reddit, or Instagram.",
+          "Tokens with playful or ironic branding tied to the character."
         ],
         "supporting_tokens": [
           {
@@ -243,44 +270,44 @@
             "token_address": "FTtmjfCJCNrQPpGg4hBGbLfvf2ZwjBE3SQzYDdFBpump"
           },
           {
-            "token_symbol": "Faith",
-            "token_name": "Faith The Warrior",
-            "token_address": "J4NPHmnapuLJLeDkxuqaHNkKvXmjg81HJRwGk2xHpump"
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
             "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+          },
+          {
+            "token_symbol": "PippAgenC",
             "token_name": "Pippin AgenC",
             "token_address": "Cg6Kbxik5tpa1Wzt2wFZet5mTECM5fsYoW799bVXpump"
           },
           {
-            "token_symbol": "Mia",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
-          },
-          {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+            "token_symbol": "BongoCat",
+            "token_name": "BongoCat",
+            "token_address": "9gdB6CmfBW7Cer73x6aGiqqkGEcuzpaZLJkhJVEGpump"
           }
         ],
-        "leader_hint_token_address": "FTtmjfCJCNrQPpG4hBGbLfvf2ZwjBE3SQzYDdFBpump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Strong narrative and emotional appeal through animal stories and memes. Lili and Faith have high market caps and clear cultural references.",
+        "leader_hint_token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+        "confidence_0_100": 82,
+        "confidence_rationale": "Strong meme-based narratives with clear cultural touchstones. Pippin has high market cap and clear meme origin.",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 11888090.66
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 577378652.98
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "War and Conflict",
-        "description": "Tokens referencing geopolitical tensions, military themes, or anti-war sentiments are emerging as a dominant theme. These tokens often leverage historical or modern conflicts, or satirical takes on global events.",
+        "description": "Tokens referencing themes of war, resistance, and geopolitical tensions are emerging as a dominant narrative. These tokens often draw from historical, cultural, or internet-based symbols of conflict, such as WWII references, anti-war slogans, and geopolitical memes.",
         "defining_signals": [
-          "Names or themes referencing to wars, conflicts, or geopolitical tensions (e.g., WW3, WAR, B2 Bomber)",
-          "Use of military or war-related imagery (e.g., 'War Punch', 'Board of War')",
-          "Memes or narratives tied to real-world events like the Israel-Iran conflict or U.S. military actions"
+          "Tokens with names like WAR, BELLATOR, and WARPUNCH that reference war or resistance.",
+          "Meme origins tied to anti-war or geopolitical themes (e.g., 'Khuy Voyne!', 'Make Love, Not War').",
+          "Tokens leveraging historical or modern conflict imagery (e.g., 'Board of War', 'War Punch')."
         ],
         "supporting_tokens": [
           {
@@ -289,29 +316,34 @@
             "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           },
           {
-            "token_symbol": "WW3",
-            "token_name": "World War 3",
-            "token_address": "7QYaY7vXTi9PiTjRD23QKqtGhLYkyUmisWE6eh7Tpump"
+            "token_symbol": "BELLATOR",
+            "token_name": "BELLATOR",
+            "token_address": "Cc841PdMQUNWq989BszMHcjipGw89CBxDygiweb1pump"
           },
           {
-            "token_symbol": "B2",
-            "token_name": "B2 Bomber",
-            "token_address": "2n3qikMvFyc3c27BKiBKvBnGz2dwRXjKPt1SsXNwpump"
+            "token_symbol": "WARPUNCH",
+            "token_name": "War Punch",
+            "token_address": "Bu5rS5EwPUiSWaMSHYt61F8imEG4f7g6GZu3axEWbonk"
           },
           {
-            "token_symbol": "OEF",
-            "token_name": "OPERATION EPIC FURY",
-            "token_address": "9Ey3RvjnQ5EwGmxmynorLRaMX2KGLuHSUgQZctw4Kef3"
+            "token_symbol": "BOW",
+            "token_name": "Board of War",
+            "token_address": "AgPufgmY8kho6Nv27SzxSXWMKJHL4eXghth1ZFpnpump"
           },
           {
-            "token_symbol": "USI",
-            "token_name": "United States of Israel",
-            "token_address": "GefM7wpiCuv3Vtp413US2bmS7UGEkdbqHcD2qEfqpump"
+            "token_symbol": "WARROS",
+            "token_name": "WARROS",
+            "token_address": "FfjLgazvJBApdq6Tyn2pRvZUkPqhtp4VyeVEJENypump"
+          },
+          {
+            "token_symbol": "NOMOREWAR",
+            "token_name": "No More War",
+            "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump"
           }
         ],
         "leader_hint_token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
-        "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across tokens, with multiple tokens referencing real-world geopolitical tensions and military themes. High market caps for WAR and WW3 indicate strong community engagement.",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong historical and meme-based narratives, with multiple tokens referencing war and resistance themes. High market cap for WAR and BELLATOR.",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
@@ -321,98 +353,98 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Internet Meme Culture",
-        "description": "Tokens inspired by viral internet memes, often repurposing existing meme formats or characters for crypto branding. These tokens leverage humor, absurdity, or ironic references to internet culture.",
+        "meta_name": "Anti-Israeli Sentiment",
+        "description": "Tokens referencing anti-Israeli sentiment are gaining traction, often leveraging memes and political commentary. These tokens are often tied to internet culture and geopolitical tensions.",
         "defining_signals": [
-          "Names or themes referencing viral internet memes (e.g., Wojak, Rainbow Fish, BongoCat)",
-          "Use of meme-based imagery or humor in branding",
-          "Leverage of meme culture for community engagement or virality"
+          "Tokens with names like $FUCKISRAEL, $USI, and $GOY that reference anti-Israeli or pro-Palestinian themes.",
+          "Meme origins from TikTok/X/Instagram, often using shock value or political satire.",
+          "Tokens repurposing existing political memes for crypto branding."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "WOJAK",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+            "token_symbol": "FuckIsrael",
+            "token_name": "Fuck Israel",
+            "token_address": "GpQd15D7AsAjkt2cXBqa5znfUXuNPfQanuTWgJJdfWZ4"
           },
           {
-            "token_symbol": "RAINBOW",
-            "token_name": "rainbowfish",
-            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
+            "token_symbol": "USI",
+            "token_name": "United States of Israel",
+            "token_address": "GefM7wpiCuv3Vtp413US2bmS7UGEkdbqHcD2qEfqpump"
           },
           {
-            "token_symbol": "BongoCat",
-            "token_name": "BongoCat",
-            "token_address": "9gdB6CmfBW7Cer73x6aGiqqkGEcuzpaZLJkhJVEGpump"
+            "token_symbol": "GOY",
+            "token_name": "Goys R Us",
+            "token_address": "CyDi275WFQaf5rnhXRMnuKqmWqFMRK6S9yFAf1kXpump"
           },
           {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+            "token_symbol": "Goyim",
+            "token_name": "Goyim",
+            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+          },
+          {
+            "token_symbol": "USA",
+            "token_name": "United States Of America",
+            "token_address": "GVUapDeHGQvDiBMkBb7opW5kMRF5RrQ1JjAbPsWNpump"
           }
         ],
+        "leader_hint_token_address": "GpQd15D7AsAjkt2cXBqa5znfUXuNPfQanuTWgJJdfWZ4",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Strong meme-based narratives with clear political themes. $FUCKISRAEL has high market cap and clear meme origin.",
         "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 7119739.84
+          "token_symbol": "Goyim",
+          "token_name": "Goyim",
+          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+          "usd_market_cap": 892046.99
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Anti-War and Peace Movements",
-        "description": "Tokens promoting peace, anti-war sentiments, or humanitarian causes are emerging as a counter-narrative to the 'War and Conflict' theme. These tokens often tie into global peace movements or historical anti-war slogans.",
+        "meta_name": "Peace and Anti-War",
+        "description": "Tokens promoting peace and anti-war themes are emerging, often as counterpoints to the 'War' meta. These tokens leverage historical anti-war slogans and modern meme culture.",
         "defining_signals": [
-          "Names or themes referencing peace, anti-war, or humanitarian causes (e.g., 'No More War', 'Peace')",
-          "Narratives tied to historical or modern peace movements",
-          "Use of anti-war slogans or symbols in branding"
+          "Tokens with names like 'No More War', 'Peacemaker', and 'White Dove'.",
+          "Meme origins from historical anti-war slogans and modern peace movements.",
+          "Tokens referencing peace symbols or anti-war imagery."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "NOMOREWAR",
+            "token_symbol": "No More War",
             "token_name": "No More War",
             "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump"
           },
           {
-            "token_symbol": "Peace",
-            "token_name": "World Peace",
-            "token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump"
+            "token_symbol": "Peacemaker",
+            "token_name": "Peacemaker",
+            "token_address": "Eki8vCNskBNPva7bSNQpam51BzoggZahRBXbYnVipump"
+          },
+          {
+            "token_symbol": "WhiteDove",
+            "token_name": "The White Dove",
+            "token_address": "8S7sAJPhzUegLxnwq2ymK7f6AE4Ty9tuPChMRKfgpump"
           },
           {
             "token_symbol": "NMW",
             "token_name": "No More Wars",
             "token_address": "XpvRT5ZohqK1jtpa4AtGdfnrxSKnXQU6TTfFLskpump"
-          },
-          {
-            "token_symbol": "Dove",
-            "token_name": "The White Dove",
-            "token_address": "8S7sAJPhzUegLxnwq2ymK7f6AE4Ty9tuPChMRKfgpump"
-          },
-          {
-            "token_symbol": "BELLATOR",
-            "token_name": "BELLATOR",
-            "token_address": "Cc841PdMQUNWq989BszMHcjipGw89CBxDygiweb1pump"
           }
         ],
-        "leader_hint_token_address": "atVjJ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
-        "confidence_0_100": 70,
-        "confidence_rationale": "Emerging as a counter-narrative to the 'War and Conflict' theme. Peace and Dove have strong cultural and historical roots, while No More War is gaining traction.",
         "leader_token": {
-          "token_symbol": "Peace",
-          "token_name": "World Peace",
-          "token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
-          "usd_market_cap": 1211989.17
+          "token_symbol": "Peacemaker",
+          "token_name": "Peacemaker",
+          "token_address": "Eki8vCNskBNPva7bSNQpam51BzoggZahRBXbYnVipump",
+          "usd_market_cap": 806530.35
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Animal-Inspired Memes",
+        "meta_name": "Meme Character Tokens",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 11888090.66
+          "token_symbol": "pippin",
+          "token_name": "Pippin",
+          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "usd_market_cap": 577378652.98
         }
       },
       {
@@ -425,21 +457,21 @@
         }
       },
       {
-        "meta_name": "Internet Meme Culture",
+        "meta_name": "Anti-Israeli Sentiment",
         "leader_token": {
-          "token_symbol": "WOJAK",
-          "token_name": "Wojak",
-          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-          "usd_market_cap": 7119739.84
+          "token_symbol": "Goyim",
+          "token_name": "Goyim",
+          "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+          "usd_market_cap": 892046.99
         }
       },
       {
-        "meta_name": "Anti-War and Peace Movements",
+        "meta_name": "Peace and Anti-War",
         "leader_token": {
-          "token_symbol": "Peace",
-          "token_name": "World Peace",
-          "token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
-          "usd_market_cap": 1211989.17
+          "token_symbol": "Peacemaker",
+          "token_name": "Peacemaker",
+          "token_address": "Eki8vCNskBNPva7bSNQpam51BzoggZahRBXbYnVipump",
+          "usd_market_cap": 806530.35
         }
       }
     ]
