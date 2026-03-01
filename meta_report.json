@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-03-01T14:06:57.403149Z",
+  "generated_at_utc": "2026-03-01T15:07:17.423046Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 131,
+  "token_context_count": 128,
   "prompt_truncated": false,
   "warnings": [
     "Detected 8 PVP group(s); excluding 15 token(s) from META prompt."
@@ -16,13 +16,6 @@
         {
           "token_symbol": "Trump",
           "token_name": "The Peace President",
-          "token_address": "GWEdGq4X511cEUsGvkhn3UDDT2D6xJskNXjCwtVapump",
-          "usd_market_cap": 3007325.15,
-          "processed_at": "2026-02-28T14:24:23.477243Z"
-        },
-        {
-          "token_symbol": "Trump",
-          "token_name": "The Peace President",
           "token_address": "2R2Z8F9zjMy8c3uo3EYASvt19kfLrZpWSG8yQeMXpump",
           "usd_market_cap": 3831447.17,
           "processed_at": "2026-02-28T15:52:57.351478Z"
@@ -33,6 +26,13 @@
           "token_address": "4R67Fu3146yf87ZyseY6yQridxxgaCm9rR4Jv3wppump",
           "usd_market_cap": 1840.82,
           "processed_at": "2026-03-01T10:36:22.760169Z"
+        },
+        {
+          "token_symbol": "Trump",
+          "token_name": "The Peace President",
+          "token_address": "GWEdGq4X511cEUsGvkhn3UDDT2D6xJskNXjCwtVapump",
+          "usd_market_cap": 1653.11,
+          "processed_at": "2026-03-01T14:25:41.679112Z"
         }
       ]
     },
@@ -83,13 +83,6 @@
         {
           "token_symbol": "Trump",
           "token_name": "The Peace President",
-          "token_address": "GWEdGq4X511cEUsGvkhn3UDDT2D6xJskNXjCwtVapump",
-          "usd_market_cap": 3007325.15,
-          "processed_at": "2026-02-28T14:24:23.477243Z"
-        },
-        {
-          "token_symbol": "Trump",
-          "token_name": "The Peace President",
           "token_address": "2R2Z8F9zjMy8c3uo3EYASvt19kfLrZpWSG8yQeMXpump",
           "usd_market_cap": 3831447.17,
           "processed_at": "2026-02-28T15:52:57.351478Z"
@@ -121,6 +114,13 @@
           "token_address": "4R67Fu3146yf87ZyseY6yQridxxgaCm9rR4Jv3wppump",
           "usd_market_cap": 1840.82,
           "processed_at": "2026-03-01T10:36:22.760169Z"
+        },
+        {
+          "token_symbol": "Trump",
+          "token_name": "The Peace President",
+          "token_address": "GWEdGq4X511cEUsGvkhn3UDDT2D6xJskNXjCwtVapump",
+          "usd_market_cap": 1653.11,
+          "processed_at": "2026-03-01T14:25:41.679112Z"
         }
       ]
     },
@@ -129,18 +129,18 @@
       "match_value": "clawd",
       "tokens": [
         {
-          "token_symbol": "clawd",
-          "token_name": "clawdbot",
-          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
-          "usd_market_cap": 101948.56,
-          "processed_at": "2026-02-28T14:47:13.127084Z"
-        },
-        {
           "token_symbol": "CLAWD",
           "token_name": "ClawDroid",
           "token_address": "5gXoqxKQGBepCmPfvV5p98BCPXMhm1EBGbg4DKTRpump",
           "usd_market_cap": 10985.2,
           "processed_at": "2026-02-28T19:12:29.990529Z"
+        },
+        {
+          "token_symbol": "clawd",
+          "token_name": "clawdbot",
+          "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
+          "usd_market_cap": 101490.31,
+          "processed_at": "2026-03-01T14:48:18.215011Z"
         }
       ]
     },
@@ -216,14 +216,114 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "War and Conflict",
-        "description": "Tokens themed around geopolitical tensions, military symbols, and anti-war narratives are emerging as a dominant trend. These tokens leverage cultural references to real-world conflicts, historical war symbols, and peace movements to create community-driven narratives.",
+        "meta_name": "Meme-Driven Tokens",
+        "description": "Tokens leveraging viral internet memes and cultural references to drive community engagement and speculative interest.",
         "defining_signals": [
-          "Use of military imagery or historical war references (e.g., 'B2 Bomber', 'War Punch')",
-          "Anti-war or peace-focused themes (e.g., 'No More War', 'WarGPT')",
-          "Tokens referencing geopolitical events or speculative military operations (e.g., 'OPERATION EPIC FURY', 'AIS')",
-          "Community-driven narratives around resistance or conflict resolution",
-          "Meme-based tokens tied to war imagery or slogans (e.g., 'WAR', 'BELLATOR')"
+          "Tokens based on viral memes (e.g., Wojak, Rage Guy, Pepe, etc.)",
+          "Names and themes tied to established meme culture (e.g., 'Punch', 'Rizz', 'Banana', 'Warrior')",
+          "Community-driven narratives with no prior crypto context but strong meme roots"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+          },
+          {
+            "token_symbol": "RAGE",
+            "token_name": "Rage Guy",
+            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
+          },
+          {
+            "token_symbol": "PUNCH",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "RIZZTER",
+            "token_name": "RIZZTER",
+            "token_address": "BwUrTqcaoJUVnKTGPZk7k4iiSdTUeFSQKBh7f8rtpump"
+          },
+          {
+            "token_symbol": "BAN",
+            "token_name": "Comedian",
+            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
+          },
+          {
+            "token_symbol": "RAAAAAH",
+            "token_name": "Skeleton Banging Shield",
+            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+          }
+        ],
+        "leader_hint_token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong meme roots with cross-platform virality and established cultural references.",
+        "leader_token": {
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 109485341.39
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "AI and Tech-Driven Tokens",
+        "description": "Tokens leveraging AI, blockchain, and emerging tech narratives to appeal to innovation-focused communities.",
+        "defining_signals": [
+          "AI-related themes (e.g., 'AI Rig', 'IronClaw', 'Mushu')",
+          "Blockchain-based utility or governance models",
+          "Tokens tied to real-world applications like RWA, AI agents, or decentralized infrastructure"
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "IRONCLAW",
+            "token_name": "IronClaw",
+            "token_address": "2HPJQUjBBbHRZv14oERNkPeVTPV3b4dyop6iGxAv9pump"
+          },
+          {
+            "token_symbol": "ARC",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "MUSHU",
+            "token_name": "Mushu",
+            "token_address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump"
+          },
+          {
+            "token_symbol": "CLIP",
+            "token_name": "Clippy",
+            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "ROUNDTABLE",
+            "token_name": "ROUNDTABLE",
+            "token_address": "GTvCrAqGdbnPL7AH9Nkg9S4JnodZubuedMT4NkxZpump"
+          },
+          {
+            "token_symbol": "WARPUNCH",
+            "token_name": "War Punch",
+            "token_address": "Bu5rS5EwPUiSWaMSHYt61F8imEG4f7g6GZu3axEWbonk"
+          }
+        ],
+        "leader_hint_token_address": "2HPJQUjBbHRZv14oERNkPeVTPV3b4dyop6iGxAv9pump",
+        "confidence_0_100": 88,
+        "confidence_rationale": "Strong focus on AI, blockchain, and emerging tech with clear utility narratives.",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 26004206.93
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Geopolitical Tension Tokens",
+        "description": "Tokens leveraging geopolitical narratives, war imagery, and political commentary to tap into current global tensions.",
+        "defining_signals": [
+          "Names and themes tied to war, conflict, or geopolitical events (e.g., 'War', 'Israel', 'Iran', 'WW3')",
+          "Tokens referencing military hardware or political figures (e.g., 'B2 Bomber', 'Khamenei')",
+          "Narratives around resistance, peace, or anti-war sentiment"
         ],
         "supporting_tokens": [
           {
@@ -237,29 +337,29 @@
             "token_address": "2n3qikMvFyc3c27BKiBKvBnGz2dwRXjKPt1SssXNwpump"
           },
           {
-            "token_symbol": "BELLATOR",
-            "token_name": "BELLATOR",
-            "token_address": "Cc841PdMQUNWq989BszMHcjipGw89CBxDygiweb1pump"
+            "token_symbol": "WW3",
+            "token_name": "World War 3",
+            "token_address": "7QYaY7vXTi9PiTjRD23QKqtGhLYkyUmisWE6eh7Tpump"
           },
           {
-            "token_symbol": "NOMOREWAR",
-            "token_name": "No More War",
-            "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump"
-          },
-          {
-            "token_symbol": "AIS",
-            "token_name": "Alon Iran Soldier",
-            "token_address": "7HZ1GQtN32Bb6EFvgdWLrNt9wvoHfN83YwkGPHjYpump"
-          },
-          {
-            "token_symbol": "OPERATION EPIC FURY",
+            "token_symbol": "OPERATION",
             "token_name": "OPERATION EPIC FURY",
             "token_address": "9Ey3RvjnQ5EwGmxmynorLRaMX2KGLuHSUgQZctw4Kef3"
+          },
+          {
+            "token_symbol": "MOOSHALI",
+            "token_name": "Moosh-Ali",
+            "token_address": "FMxSCrEzCqsCPFvr3cs7WnFzFgw9kEKCapaPEbMepump"
+          },
+          {
+            "token_symbol": "PEACE",
+            "token_name": "World Peace",
+            "token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump"
           }
         ],
         "leader_hint_token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across tokens, with multiple tokens referencing real-world conflicts and military symbols. High community engagement and narrative overlap indicate a strong emerging META.",
+        "confidence_rationale": "Strong geopolitical themes with real-world events and cultural resonance.",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
@@ -269,115 +369,60 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "Animal and Nature Symbols",
-        "description": "Tokens are increasingly using animal and nature symbols to create relatable and emotionally resonant narratives. These tokens often reference real-world animals, mythical creatures, or nature-based symbols to build community and drive engagement.",
+        "meta_name": "Animal and Nature-Inspired Tokens",
+        "description": "Tokens inspired by animals, nature, or folklore, often repurposed for crypto branding.",
         "defining_signals": [
-          "Tokens referencing real-world animals (e.g., 'Stanley', 'Faith The Warrior')",
-          "Use of mythical or symbolic animals (e.g., 'Hachiko', 'Pigeon')",
-          "Nature-based symbols or themes (e.g., 'White Dove', 'Rainbow Fish')",
-          "Tokens with narratives centered on conservation or animal welfare",
-          "Community-driven stories around specific animals or species"
+          "Names and themes tied to animals (e.g., 'Pigeon', 'Rabbit', 'Mushu', 'Lili')",
+          "Nature-based symbolism (e.g., 'Dove', 'Warrior', 'Pippin')",
+          "Tokens referencing real-world animal stories or folklore"
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "Stanley",
-            "token_name": "Stanley",
-            "token_address": "2xMf8s3Se7ozRStUdM5oApAHaAEiXqKPEJjZZxxGpump"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
-          },
-          {
-            "token_symbol": "Pigeon",
+            "token_symbol": "PIGEON",
             "token_name": "level941",
-            "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump"
+            "token_address": "4fSWEw2wbYEUCcMtitzmeGUUfqinoafXxkhqZrA9Gpump"
           },
           {
-            "token_symbol": "Faith",
-            "token_name": "Faith The Warrior",
-            "token_address": "J4NPHmnapuLJLeDkkuqaHNkKvXmjg81HJRwGk2xHpump"
+            "token_symbol": "RABBIT",
+            "token_name": "The Survivalist Rabbit",
+            "token_address": "ABTZw146nJeRBbsxHqxtZasNnwMJBKaYrfxVk6zSJGip"
           },
           {
-            "token_symbol": "Dove",
-            "token_name": "The White Dove",
-            "token_address": "8S7sAJPhzUegLxnwq2ymK7f6AE4Ty9tuPChMRKfgpump"
-          },
-          {
-            "token_symbol": "RAINBOW",
-            "token_name": "rainbowfish",
-            "token_address": "CmgJ1PobhUqB7MEa8qDkiG2TUpMTskWj8d9JeZWSpump"
+            "token_symbol": "LILI",
+            "token_name": "丽丽",
+            "token_address": "FTtmjfCJCNrQPpGg4hBGbLfvf2ZwjBE3SQzYDdFBpump"
           }
         ],
-        "leader_hint_token_address": "x95HN3DWvbfCBtTjG587z8suK3ec6cwQwgZNLbWKyp",
-        "confidence_0_100": 80,
-        "confidence_rationale": "Strong narrative consistency around animal and nature symbols. Tokens are leveraging both real and mythical animals to create emotional and community-driven engagement.",
         "leader_token": {
-          "token_symbol": "Pigeon",
-          "token_name": "level941",
-          "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump",
-          "usd_market_cap": 6499611.03
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme and Internet Culture",
-        "description": "Tokens are increasingly leveraging established internet memes and cultural references to build community and drive virality. This includes references to viral images, characters, and phrases that have gained traction on platforms like TikTok, Reddit, and Twitter.",
-        "defining_signals": [
-          "Use of established internet memes (e.g., 'RAGE', 'Wojak', 'Pepe')",
-          "Tokens referencing viral characters or phrases (e.g., 'Clippy', 'RIZZTER', 'Jestermaxxing')",
-          "Community-driven humor and meme-based branding",
-          "Tokens with clear meme origins in non-crypto contexts (e.g., 'Punch', 'RAGE')",
-          "Leveraging meme formats for token descriptions and branding"
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "RAGE",
-            "token_name": "Rage Guy",
-            "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen"
-          },
-          {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          },
-          {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
-          },
-          {
-            "token_symbol": "RIZZTER",
-            "token_name": "RIZZTER",
-            "token_address": "BwUrTqcaoJUVnKTGPZk7k4iiSdTUeFSQKBh7f8rtpump"
-          },
-          {
-            "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXINGING",
-            "token_address": "6WdDhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
-          },
-          {
-            "token_symbol": "PEPC",
-            "token_name": "cmol pepe",
-            "token_address": "E2MXVEUUCZVtsHhcjAMmR57tEC33KSNW6LBsFLpopump"
-          }
-        ],
-        "leader_hint_token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen",
-        "confidence_0_100": 90,
-        "confidence_rationale": "Strong meme-based narratives with clear cultural origins. High virality and community engagement across platforms indicate a dominant META.",
-        "leader_token": {
-          "token_symbol": "RAGE",
-          "token_name": "Rage Guy",
-          "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen",
-          "usd_market_cap": 770699.0
+          "token_symbol": "Rabbit",
+          "token_name": "The Survivalist Rabbit",
+          "token_address": "ABTZw146nJeRBbsxHqxtZasNnwMJBKaYrfxVk6zSJGip",
+          "usd_market_cap": 162882.9
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "War and Conflict",
+        "meta_name": "Meme-Driven Tokens",
+        "leader_token": {
+          "token_symbol": "Ban",
+          "token_name": "Comedian",
+          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+          "usd_market_cap": 109485341.39
+        }
+      },
+      {
+        "meta_name": "AI and Tech-Driven Tokens",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 26004206.93
+        }
+      },
+      {
+        "meta_name": "Geopolitical Tension Tokens",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
@@ -386,21 +431,12 @@
         }
       },
       {
-        "meta_name": "Animal and Nature Symbols",
+        "meta_name": "Animal and Nature-Inspired Tokens",
         "leader_token": {
-          "token_symbol": "Pigeon",
-          "token_name": "level941",
-          "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump",
-          "usd_market_cap": 6499611.03
-        }
-      },
-      {
-        "meta_name": "Meme and Internet Culture",
-        "leader_token": {
-          "token_symbol": "RAGE",
-          "token_name": "Rage Guy",
-          "token_address": "b9M9Ts9jEMqKGBp8cQvNztVhxb3c1RfiJaBviMTtwen",
-          "usd_market_cap": 770699.0
+          "token_symbol": "Rabbit",
+          "token_name": "The Survivalist Rabbit",
+          "token_address": "ABTZw146nJeRBbsxHqxtZasNnwMJBKaYrfxVk6zSJGip",
+          "usd_market_cap": 162882.9
         }
       }
     ]
