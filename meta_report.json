@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-03-02T11:27:23.113444Z",
+  "generated_at_utc": "2026-03-02T12:27:27.181286Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 127,
+  "token_context_count": 126,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 12 PVP group(s); excluding 21 token(s) from META prompt."
+    "Detected 13 PVP group(s); excluding 23 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 21,
+  "pvp_excluded_token_count": 23,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -294,6 +294,26 @@
     },
     {
       "match_type": "token_symbol",
+      "match_value": "punch",
+      "tokens": [
+        {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 11888090.66,
+          "processed_at": "2026-03-01T17:28:55.060161Z"
+        },
+        {
+          "token_symbol": "PUNCH",
+          "token_name": "One Punch Man",
+          "token_address": "HCvQKHy7crusPfEkcxfWWmDeZFZ928Pd2oF4EKo2pump",
+          "usd_market_cap": 18554.16,
+          "processed_at": "2026-03-02T12:00:46.151318Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
       "match_value": "barron",
       "tokens": [
         {
@@ -324,13 +344,15 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme Rehashes",
-        "description": "Tokens repurposing well-known memes or viral internet content, often with minimal or no original cultural context. These tokens typically reference popular memes, characters, or phrases that have already gained traction online.",
+        "meta_name": "Meme Rebranding",
+        "description": "Tokens repurposing existing viral memes, internet culture, or historical references into crypto narratives. These often leverage nostalgia or humor to attract communities.",
         "defining_signals": [
-          "References to viral memes or internet culture",
-          "Use of meme-based names or descriptions (e.g., 'BongoCat', 'Wojak', 'Punch')",
-          "Tokens with no verifiable non-crypto cultural origin but strong meme ties",
-          "Inclusion of meme-based imagery or references in token branding"
+          "Leverage viral memes or cultural references (e.g., Bonk, Clippy, Wojak).",
+          "Names or themes tied to internet meme history (e.g., 'Wojak', 'Doge', 'Clippy').",
+          "Token narratives that reinterpret or repurpose memes for crypto branding.",
+          "High market cap relative to other tokens in the same meme category.",
+          "Community-driven branding with meme-based art or slogans.",
+          "Clear meme origin in non-crypto culture, with minimal originality in token context."
         ],
         "supporting_tokens": [
           {
@@ -339,34 +361,54 @@
             "token_address": "9gdB6CmfBW7Cer73x6aGiqqkGEcuzpaZLJkhJVEGpump"
           },
           {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "Wojak",
-            "token_name": "Wojak",
-            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
-          },
-          {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          },
-          {
             "token_symbol": "jellyjelly",
             "token_name": "jelly-my-jelly",
             "token_address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
           },
           {
+            "token_symbol": "WOJAK",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
+            "token_symbol": "Bonk",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+          },
+          {
+            "token_symbol": "HACHI",
+            "token_name": "Hachiko",
+            "token_address": "x95HN3DWvbfCBtTjGm587z8suK3ec6cwQwgZNLbWKyp"
+          },
+          {
+            "token_symbol": "Pippin",
+            "token_name": "Pippin",
+            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+          },
+          {
+            "token_symbol": "Clippy",
+            "token_name": "Clippy",
+            "token_address": "GKjAAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+          },
+          {
             "token_symbol": "Pippkin",
             "token_name": "Pippkin The Horse",
             "token_address": "6ydMmFRaNt4AHBjgvSogbBvcxnTrX3QzUe2AEzVppump"
+          },
+          {
+            "token_symbol": "PippAgenC",
+            "token_name": "Pippin AgenC",
+            "token_address": "C6Kbxik5tpa1Wzt2wFZet5mTECM5fsYoW799bVXpump"
           }
         ],
-        "leader_hint_token_address": "9gdB6CmfBW7Cer73x6aGiqqkGEcuzpaZLJkhJVEGpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong presence of meme-based tokens with viral origins, including BongoCat, Pippin, and Punch. These tokens are part of a broader trend of repurposing internet culture into crypto assets.",
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Strong meme origins and high market cap for Bonk, Clippy, and Wojak. These tokens have clear cultural roots and are widely recognized in crypto and internet culture.",
         "leader_token": {
           "token_symbol": "pippin",
           "token_name": "Pippin",
@@ -376,13 +418,15 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI Agent Hype",
-        "description": "Tokens leveraging AI agent narratives, often tied to automation, productivity, or autonomous systems. These tokens frequently reference AI-driven workflows, trading bots, or self-evolving systems.",
+        "meta_name": "AI & Automation",
+        "description": "Tokens centered around AI, automation, and agent-based systems. These often focus on AI-driven trading, productivity, or autonomous agents.",
         "defining_signals": [
-          "Mentions of AI agents or automation in token descriptions",
-          "References to AI-driven productivity or trading systems",
-          "Use of terms like 'autonomous', 'self-evolving', or 'self-learning'",
-          "Tokens with AI or bot-related names (e.g., 'Clippy', 'Frankbot', 'AI Rig Complex')"
+          "AI or automation-related utility (e.g., AI agents, bots, trading tools).",
+          "Names or themes tied to AI or automation (e.g., AgenN, AI Rig Complex, Clawdbot).",
+          "Focus on 24/7 productivity, AI-driven tasks, or agent-based systems.",
+          "High market cap for tokens with AI-related narratives.",
+          "Community-driven AI hype or speculative interest in agent-based systems.",
+          "Lack of clear meme origin, but strong technical or speculative appeal."
         ],
         "supporting_tokens": [
           {
@@ -391,9 +435,9 @@
             "token_address": "8dT7X2Uoaja6rfLzLi7sWNKLYuu58u1Ts9nP3qrApump"
           },
           {
-            "token_symbol": "frankbot",
-            "token_name": "franky127039",
-            "token_address": "94zLz8vmZVThhCVhoaWtbtNSecAwshM1pfqQKQ4pump"
+            "token_symbol": "clawd",
+            "token_name": "clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
           },
           {
             "token_symbol": "arc",
@@ -411,14 +455,34 @@
             "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
           },
           {
-            "token_symbol": "clawd",
-            "token_name": "clawdbot",
-            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+            "token_symbol": "frankbot",
+            "token_name": "franky127039",
+            "token_address": "94zLz8vmZVThhCVhoaWtbtNSecAwshM1pfqQKQ4pump"
+          },
+          {
+            "token_symbol": "DM",
+            "token_name": "DARKMATTER",
+            "token_address": "5DxioZwEeAKpBaYC5veTHArKE55qRDSmb5RZ6VwApump"
+          },
+          {
+            "token_symbol": "AI",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "arc",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "parre",
+            "token_name": "parre",
+            "token_address": "7C7m7HumGUm9RzkPpHhziDyDAoJb3zshxi8xdkjwpump"
           }
         ],
         "leader_hint_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong clustering of AI-related names and themes, with multiple tokens using 'AI Rig Complex', 'Frankbot', and 'Clippy' as key examples. These tokens are part of a broader trend in crypto leveraging AI hype.",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Strong AI/automation narratives and growing interest in agent-based systems. Tokens like AI rig complex and clawdbot have clear utility and technical appeal.",
         "leader_token": {
           "token_symbol": "arc",
           "token_name": "AI Rig Complex",
@@ -428,61 +492,35 @@
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI-Powered Trading",
-        "description": "Tokens centered around AI-driven trading strategies, bots, or predictive analytics. These tokens often emphasize algorithmic trading, market prediction, or automated financial systems.",
+        "meta_name": "Political & Geopolitical",
+        "description": "Tokens referencing political figures, geopolitical tensions, or political memes. These often leverage current events or ideological themes.",
         "defining_signals": [
-          "Mentions of trading bots or predictive analytics",
-          "Use of terms like 'AI-driven trading', 'predictive analytics', or 'automated trading'",
-          "Tokens with names like 'clawd', 'arc', or 'frankbot'",
-          "Descriptions referencing AI-based financial tools or market strategies"
+          "Names or themes tied to political figures or events (e.g., 'Hitler Was Right', 'War Punch', 'USA').",
+          "Leverage geopolitical tensions or political memes (e.g., 'War', 'Iran Steve', 'Red Line').",
+          "High market cap for tokens with political narratives.",
+          "Community-driven political or ideological themes.",
+          "Incorporation of political slogans or anti-establishment themes.",
+          "Lack of meme origin, but strong political or ideological appeal."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "clawd",
-            "token_name": "clawdbot",
-            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
-          },
-          {
-            "token_symbol": "frankbot",
-            "token_name": "franky127039",
-            "token_address": "94zLz8vmZVThhCVhoaWtbtNSecAwshM1pfqQKQ4pump"
-          },
-          {
-            "token_symbol": "arc",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
-          },
-          {
-            "token_symbol": "AgenN",
-            "token_name": "AgenN",
-            "token_address": "8dT7X2Uoaja6rfLzLi7sWNKLYuu58u1Ts9nP3qrApump"
-          },
-          {
-            "token_symbol": "parre",
-            "token_name": "parre",
-            "token_address": "7C7m7HumGUm9RzkPpHhziDyDAoJb3zshxi8xdkjwpump"
-          },
-          {
-            "token_symbol": "Mia",
-            "token_name": "Mia Ko",
-            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+            "token_symbol": "WAR",
+            "token_name": "WAR",
+            "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           }
         ],
-        "leader_hint_token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump",
-        "confidence_0_100": 78,
-        "confidence_rationale": "Growing trend of AI-powered trading tokens, with multiple tokens like 'clawd' and 'frankbot' emphasizing automated trading and predictive analytics. These tokens are part of a broader AI-driven financial narrative.",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 38309213.55
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 18285680.0
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme Rehashes",
+        "meta_name": "Meme Rebranding",
         "leader_token": {
           "token_symbol": "pippin",
           "token_name": "Pippin",
@@ -491,7 +529,7 @@
         }
       },
       {
-        "meta_name": "AI Agent Hype",
+        "meta_name": "AI & Automation",
         "leader_token": {
           "token_symbol": "arc",
           "token_name": "AI Rig Complex",
@@ -500,12 +538,12 @@
         }
       },
       {
-        "meta_name": "AI-Powered Trading",
+        "meta_name": "Political & Geopolitical",
         "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 38309213.55
+          "token_symbol": "WAR",
+          "token_name": "WAR",
+          "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
+          "usd_market_cap": 18285680.0
         }
       }
     ]
