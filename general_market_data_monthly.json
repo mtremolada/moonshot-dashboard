@@ -2,307 +2,9 @@
     "meta": {
         "retention_days": 30,
         "timezone": "America/Los_Angeles",
-        "last_updated_utc": "2026-03-02T07:25:54.072255+00:00"
+        "last_updated_utc": "2026-03-02T08:26:17.956780+00:00"
     },
     "snapshots": [
-        {
-            "day": "2026-01-31",
-            "generated_at_local": "2026-01-31T23:50:09.334246-08:00",
-            "timezone": "America/Los_Angeles",
-            "snapshot": {
-                "meta": {
-                    "generated_at_local": "2026-01-31T23:50:09.334246-08:00",
-                    "generated_at_utc": "2026-02-01T07:50:09.334246+00:00",
-                    "timezone": "America/Los_Angeles",
-                    "version": "2.0"
-                },
-                "fear_greed": {
-                    "stocks": {
-                        "value": 57.9428571428571,
-                        "rating": "greed",
-                        "timestamp": "2026-01-30T23:59:57+00:00",
-                        "source": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
-                        "error": null
-                    },
-                    "crypto": {
-                        "value": 14.0,
-                        "rating": "Extreme Fear",
-                        "timestamp": "2026-02-01T00:00:00+00:00",
-                        "source": "https://api.alternative.me/fng/?limit=1&format=json",
-                        "error": null
-                    }
-                },
-                "fomc": {
-                    "status": "in_future",
-                    "days_until": 45,
-                    "start_date": "2026-03-17",
-                    "end_date": "2026-03-18",
-                    "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-                    "error": null
-                },
-                "prices": {
-                    "S&P 500": {
-                        "symbol": "%5EGSPC",
-                        "change_pct_1d": -0.43019,
-                        "last_close": 6939.02978515625,
-                        "prev_close": 6969.009765625,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "Gold": {
-                        "symbol": "GC=F",
-                        "change_pct_1d": -10.779554,
-                        "last_close": 4745.10009765625,
-                        "prev_close": 5318.39990234375,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "Bitcoin": {
-                        "symbol": "BTC-USD",
-                        "change_pct_1d": -0.199771,
-                        "last_close": 78464.0546875,
-                        "prev_close": 78621.1171875,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "Ethereum": {
-                        "symbol": "ETH-USD",
-                        "change_pct_1d": -0.802648,
-                        "last_close": 2425.46630859375,
-                        "prev_close": 2445.091796875,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "VIX": {
-                        "symbol": "%5EVIX",
-                        "change_pct_1d": 3.317544,
-                        "last_close": 17.440000534057617,
-                        "prev_close": 16.8799991607666,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "DXY": {
-                        "symbol": "DX-Y.NYB",
-                        "change_pct_1d": 0.900503,
-                        "last_close": 97.14700317382812,
-                        "prev_close": 96.27999877929688,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "US10Y": {
-                        "symbol": "%5ETNX",
-                        "change_pct_1d": 0.331203,
-                        "last_close": 4.241000175476074,
-                        "prev_close": 4.2270002365112305,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "WTI": {
-                        "symbol": "CL=F",
-                        "change_pct_1d": -0.321001,
-                        "last_close": 65.20999908447266,
-                        "prev_close": 65.41999816894531,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "Nasdaq": {
-                        "symbol": "%5EIXIC",
-                        "change_pct_1d": -0.942781,
-                        "last_close": 23461.8203125,
-                        "prev_close": 23685.119140625,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "Russell2000": {
-                        "symbol": "%5ERUT",
-                        "change_pct_1d": -1.545892,
-                        "last_close": 2613.739990234375,
-                        "prev_close": 2654.780029296875,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5ERUT?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "HYG": {
-                        "symbol": "HYG",
-                        "change_pct_1d": 0.111075,
-                        "last_close": 81.12000274658203,
-                        "prev_close": 81.02999877929688,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/HYG?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "TLT": {
-                        "symbol": "TLT",
-                        "change_pct_1d": -0.559239,
-                        "last_close": 87.12999725341797,
-                        "prev_close": 87.62000274658203,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/TLT?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    }
-                },
-                "breadth": {
-                    "SPY": {
-                        "symbol": "SPY",
-                        "name": "SPY",
-                        "percent_change": -0.298255,
-                        "last_close": 691.969970703125,
-                        "prev_close": 694.0399780273438,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "RSP": {
-                        "symbol": "RSP",
-                        "name": "RSP",
-                        "percent_change": -0.221641,
-                        "last_close": 198.0800018310547,
-                        "prev_close": 198.52000427246094,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/RSP?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "IWM": {
-                        "symbol": "IWM",
-                        "name": "IWM",
-                        "percent_change": -1.412462,
-                        "last_close": 259.6499938964844,
-                        "prev_close": 263.3699951171875,
-                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/IWM?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
-                        "error": null
-                    },
-                    "rsp_minus_spy_pct": 0.07661399999999999,
-                    "iwm_minus_spy_pct": -1.1142070000000002
-                },
-                "crypto_global": {
-                    "total_mcap_usd": 2735733210580.707,
-                    "mcap_change_24h_pct": -5.740856060211062,
-                    "btc_dominance_pct": 57.261247708539884,
-                    "source": "https://api.coingecko.com/api/v3/global",
-                    "error": null
-                },
-                "defi": {
-                    "tvl": {
-                        "total_defi_tvl_usd": 108041509736.42853,
-                        "solana_tvl_usd": 8501367336.199675,
-                        "source": "https://api.llama.fi/v2/chains",
-                        "error": null
-                    }
-                },
-                "solana": {
-                    "dex": {
-                        "source": "https://api.llama.fi/overview/dexs/Solana",
-                        "totals": {
-                            "total24h": 4959826203.0,
-                            "total7d": 29892869546.0,
-                            "total30d": 115106987447.0
-                        },
-                        "selected": [
-                            {
-                                "venue": "PumpFun",
-                                "matched_name": "pump.fun",
-                                "total24h": 79391191.0,
-                                "total7d": 598692521.0,
-                                "total30d": 2073816714.0,
-                                "share_pct_24h": 1.6006849383548853,
-                                "share_pct_7d": 2.0027937434334127,
-                                "share_pct_30d": 1.8016427673036537,
-                                "error": null
-                            },
-                            {
-                                "venue": "Raydium",
-                                "matched_name": "Raydium AMM",
-                                "total24h": 334329663.0,
-                                "total7d": 2622201986.0,
-                                "total30d": 10648504360.0,
-                                "share_pct_24h": 6.740753593296825,
-                                "share_pct_7d": 8.771998225077994,
-                                "share_pct_30d": 9.250962601121856,
-                                "error": null
-                            },
-                            {
-                                "venue": "Meteora",
-                                "matched_name": "Meteora DAMM V1",
-                                "total24h": 49407158.0,
-                                "total7d": 117192501.0,
-                                "total30d": 229541661.0,
-                                "share_pct_24h": 0.9961469611599614,
-                                "share_pct_7d": 0.39204165668893326,
-                                "share_pct_30d": 0.19941592260477708,
-                                "error": null
-                            }
-                        ],
-                        "top5_by_24h": [
-                            {
-                                "name": "HumidiFi",
-                                "total24h": 915205543.0
-                            },
-                            {
-                                "name": "BisonFi",
-                                "total24h": 743885843.0
-                            },
-                            {
-                                "name": "PumpSwap",
-                                "total24h": 742416278.0
-                            },
-                            {
-                                "name": "Orca DEX",
-                                "total24h": 520215238.0
-                            },
-                            {
-                                "name": "Meteora DLMM",
-                                "total24h": 352219464.0
-                            }
-                        ],
-                        "pumpfun": {
-                            "total24h": 79391191.0
-                        },
-                        "pumpswap": {
-                            "total24h": 742416278.0
-                        },
-                        "pumpfun_over_pumpswap_ratio_24h": 0.10693622075996562
-                    }
-                },
-                "sp500_total_market_cap": {
-                    "total_mcap_usd": 62890000000000.0,
-                    "raw": "$62.89T",
-                    "source": "https://www.slickcharts.com/sp500",
-                    "error": null
-                },
-                "gold_market_cap": {
-                    "total_mcap_usd": 34121000000000.004,
-                    "raw": "$34.121 T",
-                    "source": "https://companiesmarketcap.com/gold/marketcap/",
-                    "error": null
-                },
-                "nvidia_market_cap": {
-                    "total_mcap_usd": 4653000000000.0,
-                    "raw": "$4.653 T",
-                    "source": "https://companiesmarketcap.com/nvidia/marketcap/",
-                    "error": null
-                },
-                "bitcoin_halving": {
-                    "current_height": 934570,
-                    "next_halving_height": 1050000,
-                    "blocks_remaining": 115430,
-                    "assumed_seconds_per_block": 600,
-                    "estimated_datetime_utc": "2028-04-12T22:10:26.619910+00:00",
-                    "estimated_datetime_local": "2028-04-12T15:10:26.619910-07:00",
-                    "source": "https://blockstream.info/api/blocks/tip/height",
-                    "error": null
-                },
-                "sources": {
-                    "cnn_fear_greed": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
-                    "alternative_fng": "https://api.alternative.me/fng/?limit=1&format=json",
-                    "fed_fomc_calendar": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-                    "yahoo_chart_json": "https://query1.finance.yahoo.com/v8/finance/chart/<symbol>",
-                    "coingecko_global": "https://api.coingecko.com/api/v3/global",
-                    "defillama_chains_tvl": "https://api.llama.fi/v2/chains",
-                    "defillama_solana_dex_overview": "https://api.llama.fi/overview/dexs/Solana",
-                    "sp500_total_market_cap_primary": "https://www.slickcharts.com/sp500",
-                    "sp500_total_market_cap_fallback": "https://stockanalysis.com/list/sp-500-stocks/",
-                    "gold_market_cap_companiesmarketcap": "https://companiesmarketcap.com/gold/marketcap/",
-                    "nvidia_market_cap_primary": "https://companiesmarketcap.com/nvidia/marketcap/",
-                    "nvidia_market_cap_fallback": "https://stockanalysis.com/stocks/nvda/market-cap/",
-                    "bitcoin_tip_height_blockstream": "https://blockstream.info/api/blocks/tip/height"
-                }
-            }
-        },
         {
             "day": "2026-02-01",
             "generated_at_local": "2026-02-01T23:59:19.786727-08:00",
@@ -8649,12 +8351,12 @@
         },
         {
             "day": "2026-03-01",
-            "generated_at_local": "2026-03-01T23:25:50.702984-08:00",
+            "generated_at_local": "2026-03-01T23:56:02.184524-08:00",
             "timezone": "America/Los_Angeles",
             "snapshot": {
                 "meta": {
-                    "generated_at_local": "2026-03-01T23:25:50.702984-08:00",
-                    "generated_at_utc": "2026-03-02T07:25:50.702984+00:00",
+                    "generated_at_local": "2026-03-01T23:56:02.184524-08:00",
+                    "generated_at_utc": "2026-03-02T07:56:02.184524+00:00",
                     "timezone": "America/Los_Angeles",
                     "version": "2.0"
                 },
@@ -8693,24 +8395,24 @@
                     },
                     "Gold": {
                         "symbol": "GC=F",
-                        "change_pct_1d": 3.644013,
-                        "last_close": 5421.10009765625,
+                        "change_pct_1d": 3.640185,
+                        "last_close": 5420.89990234375,
                         "prev_close": 5230.5,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
                     },
                     "Bitcoin": {
                         "symbol": "BTC-USD",
-                        "change_pct_1d": -0.007392,
-                        "last_close": 65733.2421875,
+                        "change_pct_1d": 0.354544,
+                        "last_close": 65971.171875,
                         "prev_close": 65738.1015625,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
                     },
                     "Ethereum": {
                         "symbol": "ETH-USD",
-                        "change_pct_1d": -0.138566,
-                        "last_close": 1936.3797607421875,
+                        "change_pct_1d": 0.118988,
+                        "last_close": 1941.3739013671875,
                         "prev_close": 1939.066650390625,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
@@ -8725,8 +8427,8 @@
                     },
                     "DXY": {
                         "symbol": "DX-Y.NYB",
-                        "change_pct_1d": 0.734559,
-                        "last_close": 98.3270034790039,
+                        "change_pct_1d": 0.822663,
+                        "last_close": 98.41300201416016,
                         "prev_close": 97.61000061035156,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
@@ -8741,8 +8443,8 @@
                     },
                     "WTI": {
                         "symbol": "CL=F",
-                        "change_pct_1d": 8.3408,
-                        "last_close": 72.61000061035156,
+                        "change_pct_1d": 8.430322,
+                        "last_close": 72.66999816894531,
                         "prev_close": 67.0199966430664,
                         "source": "https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
                         "error": null
@@ -8812,16 +8514,16 @@
                     "iwm_minus_spy_pct": -1.241667
                 },
                 "crypto_global": {
-                    "total_mcap_usd": 2338284222803.0713,
-                    "mcap_change_24h_pct": -2.2352208489911485,
-                    "btc_dominance_pct": 56.19824874590408,
+                    "total_mcap_usd": 2348654263354.1826,
+                    "mcap_change_24h_pct": -1.8016445051149417,
+                    "btc_dominance_pct": 56.16075909509725,
                     "source": "https://api.coingecko.com/api/v3/global",
                     "error": null
                 },
                 "defi": {
                     "tvl": {
-                        "total_defi_tvl_usd": 94247276709.07042,
-                        "solana_tvl_usd": 6555745614.665202,
+                        "total_defi_tvl_usd": 93327640630.85599,
+                        "solana_tvl_usd": 6521503855.313475,
                         "source": "https://api.llama.fi/v2/chains",
                         "error": null
                     }
@@ -8907,8 +8609,8 @@
                     "error": null
                 },
                 "gold_market_cap": {
-                    "total_mcap_usd": 37691000000000.0,
-                    "raw": "$37.691 T",
+                    "total_mcap_usd": 37677000000000.0,
+                    "raw": "$37.677 T",
                     "source": "https://companiesmarketcap.com/gold/marketcap/",
                     "error": null
                 },
@@ -8919,12 +8621,310 @@
                     "error": null
                 },
                 "bitcoin_halving": {
-                    "current_height": 938970,
+                    "current_height": 938976,
                     "next_halving_height": 1050000,
-                    "blocks_remaining": 111030,
+                    "blocks_remaining": 111024,
                     "assumed_seconds_per_block": 600,
-                    "estimated_datetime_utc": "2028-04-11T08:25:51.844081+00:00",
-                    "estimated_datetime_local": "2028-04-11T01:25:51.844081-07:00",
+                    "estimated_datetime_utc": "2028-04-11T07:56:03.435521+00:00",
+                    "estimated_datetime_local": "2028-04-11T00:56:03.435521-07:00",
+                    "source": "https://blockstream.info/api/blocks/tip/height",
+                    "error": null
+                },
+                "sources": {
+                    "cnn_fear_greed": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
+                    "alternative_fng": "https://api.alternative.me/fng/?limit=1&format=json",
+                    "fed_fomc_calendar": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+                    "yahoo_chart_json": "https://query1.finance.yahoo.com/v8/finance/chart/<symbol>",
+                    "coingecko_global": "https://api.coingecko.com/api/v3/global",
+                    "defillama_chains_tvl": "https://api.llama.fi/v2/chains",
+                    "defillama_solana_dex_overview": "https://api.llama.fi/overview/dexs/Solana",
+                    "sp500_total_market_cap_primary": "https://www.slickcharts.com/sp500",
+                    "sp500_total_market_cap_fallback": "https://stockanalysis.com/list/sp-500-stocks/",
+                    "gold_market_cap_companiesmarketcap": "https://companiesmarketcap.com/gold/marketcap/",
+                    "nvidia_market_cap_primary": "https://companiesmarketcap.com/nvidia/marketcap/",
+                    "nvidia_market_cap_fallback": "https://stockanalysis.com/stocks/nvda/market-cap/",
+                    "bitcoin_tip_height_blockstream": "https://blockstream.info/api/blocks/tip/height"
+                }
+            }
+        },
+        {
+            "day": "2026-03-02",
+            "generated_at_local": "2026-03-02T00:26:14.411141-08:00",
+            "timezone": "America/Los_Angeles",
+            "snapshot": {
+                "meta": {
+                    "generated_at_local": "2026-03-02T00:26:14.411141-08:00",
+                    "generated_at_utc": "2026-03-02T08:26:14.411141+00:00",
+                    "timezone": "America/Los_Angeles",
+                    "version": "2.0"
+                },
+                "fear_greed": {
+                    "stocks": {
+                        "value": 42.8857142857143,
+                        "rating": "fear",
+                        "timestamp": "2026-02-27T23:59:43+00:00",
+                        "source": "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
+                        "error": null
+                    },
+                    "crypto": {
+                        "value": 10.0,
+                        "rating": "Extreme Fear",
+                        "timestamp": "2026-03-02T00:00:00+00:00",
+                        "source": "https://api.alternative.me/fng/?limit=1&format=json",
+                        "error": null
+                    }
+                },
+                "fomc": {
+                    "status": "in_future",
+                    "days_until": 15,
+                    "start_date": "2026-03-17",
+                    "end_date": "2026-03-18",
+                    "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+                    "error": null
+                },
+                "prices": {
+                    "S&P 500": {
+                        "symbol": "%5EGSPC",
+                        "change_pct_1d": -0.433935,
+                        "last_close": 6878.8798828125,
+                        "prev_close": 6908.85986328125,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "Gold": {
+                        "symbol": "GC=F",
+                        "change_pct_1d": 3.674605,
+                        "last_close": 5422.7001953125,
+                        "prev_close": 5230.5,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "Bitcoin": {
+                        "symbol": "BTC-USD",
+                        "change_pct_1d": -0.009044,
+                        "last_close": 65732.15625,
+                        "prev_close": 65738.1015625,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "Ethereum": {
+                        "symbol": "ETH-USD",
+                        "change_pct_1d": -0.638603,
+                        "last_close": 1926.6837158203125,
+                        "prev_close": 1939.066650390625,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "VIX": {
+                        "symbol": "%5EVIX",
+                        "change_pct_1d": 6.602263,
+                        "last_close": 19.860000610351562,
+                        "prev_close": 18.6299991607666,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "DXY": {
+                        "symbol": "DX-Y.NYB",
+                        "change_pct_1d": 0.845197,
+                        "last_close": 98.43499755859375,
+                        "prev_close": 97.61000061035156,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "US10Y": {
+                        "symbol": "%5ETNX",
+                        "change_pct_1d": -1.369189,
+                        "last_close": 3.9619998931884766,
+                        "prev_close": 4.017000198364258,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "WTI": {
+                        "symbol": "CL=F",
+                        "change_pct_1d": 8.86303,
+                        "last_close": 72.95999908447266,
+                        "prev_close": 67.0199966430664,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "Nasdaq": {
+                        "symbol": "%5EIXIC",
+                        "change_pct_1d": -0.91864,
+                        "last_close": 22668.2109375,
+                        "prev_close": 22878.380859375,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "Russell2000": {
+                        "symbol": "%5ERUT",
+                        "change_pct_1d": -1.678187,
+                        "last_close": 2632.360107421875,
+                        "prev_close": 2677.2900390625,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5ERUT?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "HYG": {
+                        "symbol": "HYG",
+                        "change_pct_1d": -0.160788,
+                        "last_close": 80.72000122070312,
+                        "prev_close": 80.8499984741211,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/HYG?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "TLT": {
+                        "symbol": "TLT",
+                        "change_pct_1d": 0.609287,
+                        "last_close": 90.81999969482422,
+                        "prev_close": 90.2699966430664,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/TLT?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    }
+                },
+                "breadth": {
+                    "SPY": {
+                        "symbol": "SPY",
+                        "name": "SPY",
+                        "percent_change": -0.480197,
+                        "last_close": 685.989990234375,
+                        "prev_close": 689.2999877929688,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "RSP": {
+                        "symbol": "RSP",
+                        "name": "RSP",
+                        "percent_change": 0.11723,
+                        "last_close": 204.97000122070312,
+                        "prev_close": 204.72999572753906,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/RSP?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "IWM": {
+                        "symbol": "IWM",
+                        "name": "IWM",
+                        "percent_change": -1.721864,
+                        "last_close": 261.4100036621094,
+                        "prev_close": 265.989990234375,
+                        "source": "https://query1.finance.yahoo.com/v8/finance/chart/IWM?range=7d&interval=1d&includePrePost=false&events=div%2Csplits",
+                        "error": null
+                    },
+                    "rsp_minus_spy_pct": 0.5974269999999999,
+                    "iwm_minus_spy_pct": -1.241667
+                },
+                "crypto_global": {
+                    "total_mcap_usd": 2351323929575.677,
+                    "mcap_change_24h_pct": -0.878760010051907,
+                    "btc_dominance_pct": 56.18628046941112,
+                    "source": "https://api.coingecko.com/api/v3/global",
+                    "error": null
+                },
+                "defi": {
+                    "tvl": {
+                        "total_defi_tvl_usd": 93244937643.72906,
+                        "solana_tvl_usd": 6517026000.216943,
+                        "source": "https://api.llama.fi/v2/chains",
+                        "error": null
+                    }
+                },
+                "solana": {
+                    "dex": {
+                        "source": "https://api.llama.fi/overview/dexs/Solana",
+                        "totals": {
+                            "total24h": 2232671922.0,
+                            "total7d": 18254820927.0,
+                            "total30d": 103096236112.0
+                        },
+                        "selected": [
+                            {
+                                "venue": "PumpFun",
+                                "matched_name": "pump.fun",
+                                "total24h": 60991188.0,
+                                "total7d": 436665661.0,
+                                "total30d": 2055743707.0,
+                                "share_pct_24h": 2.7317577382961327,
+                                "share_pct_7d": 2.39205666681805,
+                                "share_pct_30d": 1.994004616004327,
+                                "error": null
+                            },
+                            {
+                                "venue": "Raydium",
+                                "matched_name": "Raydium AMM",
+                                "total24h": 232071650.0,
+                                "total7d": 1790295951.0,
+                                "total30d": 8623402963.0,
+                                "share_pct_24h": 10.394346241077509,
+                                "share_pct_7d": 9.807250140438477,
+                                "share_pct_30d": 8.364420747263605,
+                                "error": null
+                            },
+                            {
+                                "venue": "Meteora",
+                                "matched_name": "Meteora DAMM V1",
+                                "total24h": 1918759.0,
+                                "total7d": 71214941.0,
+                                "total30d": 706936357.0,
+                                "share_pct_24h": 0.08594003360248285,
+                                "share_pct_7d": 0.390115801654722,
+                                "share_pct_30d": 0.685705301823056,
+                                "error": null
+                            }
+                        ],
+                        "top5_by_24h": [
+                            {
+                                "name": "PumpSwap",
+                                "total24h": 469838997.0
+                            },
+                            {
+                                "name": "BisonFi",
+                                "total24h": 340454374.0
+                            },
+                            {
+                                "name": "Orca DEX",
+                                "total24h": 320361031.0
+                            },
+                            {
+                                "name": "Raydium AMM",
+                                "total24h": 232071650.0
+                            },
+                            {
+                                "name": "HumidiFi",
+                                "total24h": 165499110.0
+                            }
+                        ],
+                        "pumpfun": {
+                            "total24h": 60991188.0
+                        },
+                        "pumpswap": {
+                            "total24h": 469838997.0
+                        },
+                        "pumpfun_over_pumpswap_ratio_24h": 0.12981295377658914
+                    }
+                },
+                "sp500_total_market_cap": {
+                    "total_mcap_usd": 62370000000000.0,
+                    "raw": "$62.37T",
+                    "source": "https://www.slickcharts.com/sp500",
+                    "error": null
+                },
+                "gold_market_cap": {
+                    "total_mcap_usd": 37689000000000.0,
+                    "raw": "$37.689 T",
+                    "source": "https://companiesmarketcap.com/gold/marketcap/",
+                    "error": null
+                },
+                "nvidia_market_cap": {
+                    "total_mcap_usd": 4306000000000.0,
+                    "raw": "$4.306 T",
+                    "source": "https://companiesmarketcap.com/nvidia/marketcap/",
+                    "error": null
+                },
+                "bitcoin_halving": {
+                    "current_height": 938978,
+                    "next_halving_height": 1050000,
+                    "blocks_remaining": 111022,
+                    "assumed_seconds_per_block": 600,
+                    "estimated_datetime_utc": "2028-04-11T08:06:15.644029+00:00",
+                    "estimated_datetime_local": "2028-04-11T01:06:15.644029-07:00",
                     "source": "https://blockstream.info/api/blocks/tip/height",
                     "error": null
                 },
