@@ -1,34 +1,14 @@
 {
-  "generated_at_utc": "2026-03-02T08:26:26.292710Z",
+  "generated_at_utc": "2026-03-02T09:26:33.481874Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 127,
+  "token_context_count": 126,
   "prompt_truncated": false,
   "warnings": [
     "Detected 12 PVP group(s); excluding 21 token(s) from META prompt."
   ],
   "pvp_excluded_token_count": 21,
   "pvp_report": [
-    {
-      "match_type": "token_name",
-      "match_value": "supreme leader trump",
-      "tokens": [
-        {
-          "token_symbol": "TRUMP",
-          "token_name": "Supreme Leader Trump",
-          "token_address": "CryQGHkWBxYMbcMx2S4dgnsHZ5deYjvFgzbQz836pump",
-          "usd_market_cap": 793907.33,
-          "processed_at": "2026-03-01T08:56:54.936743Z"
-        },
-        {
-          "token_symbol": "TRUMP",
-          "token_name": "Supreme Leader Trump",
-          "token_address": "5DUEGjxje8Zr3XJScHJ7DGkE92aTiG89yEC999hTpump",
-          "usd_market_cap": 1769.21,
-          "processed_at": "2026-03-01T18:55:44.202386Z"
-        }
-      ]
-    },
     {
       "match_type": "token_name",
       "match_value": "the peace president",
@@ -73,6 +53,26 @@
           "token_address": "AJvgGff11W7bMqvjGKmNTSxK4FdDiS6YhDbujRZpump",
           "usd_market_cap": 227981.79,
           "processed_at": "2026-03-01T13:45:22.480784Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_name",
+      "match_value": "supreme leader trump",
+      "tokens": [
+        {
+          "token_symbol": "TRUMP",
+          "token_name": "Supreme Leader Trump",
+          "token_address": "5DUEGjxje8Zr3XJScHJ7DGkE92aTiG89yEC999hTpump",
+          "usd_market_cap": 1769.21,
+          "processed_at": "2026-03-01T18:55:44.202386Z"
+        },
+        {
+          "token_symbol": "TRUMP",
+          "token_name": "Supreme Leader Trump",
+          "token_address": "CryQGHkWBxYMbcMx2S4dgnsHZ5deYjvFgzbQz836pump",
+          "usd_market_cap": 6483.19,
+          "processed_at": "2026-03-02T08:58:04.644146Z"
         }
       ]
     },
@@ -141,13 +141,6 @@
       "match_value": "trump",
       "tokens": [
         {
-          "token_symbol": "TRUMP",
-          "token_name": "Supreme Leader Trump",
-          "token_address": "CryQGHkWBxYMbcMx2S4dgnsHZ5deYjvFgzbQz836pump",
-          "usd_market_cap": 793907.33,
-          "processed_at": "2026-03-01T08:56:54.936743Z"
-        },
-        {
           "token_symbol": "Trump",
           "token_name": "The Peace President",
           "token_address": "4R67Fu3146yf87ZyseY6yQridxxgaCm9rR4Jv3wppump",
@@ -202,6 +195,13 @@
           "token_address": "J1CZ27J3XasQeYDkqRy5ZnRPosqLRcBuqp5NJ81Gpump",
           "usd_market_cap": 2397164.6,
           "processed_at": "2026-03-02T06:45:47.319582Z"
+        },
+        {
+          "token_symbol": "TRUMP",
+          "token_name": "Supreme Leader Trump",
+          "token_address": "CryQGHkWBxYMbcMx2S4dgnsHZ5deYjvFgzbQz836pump",
+          "usd_market_cap": 6483.19,
+          "processed_at": "2026-03-02T08:58:04.644146Z"
         }
       ]
     },
@@ -324,17 +324,106 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Meme-Driven Tokens",
-        "description": "A significant number of tokens are based on internet memes, viral phrases, or pop culture references. These tokens often leverage humor, irony, or absurdity to attract attention and community engagement, with many drawing from TikTok, Reddit, or X (Twitter) trends.",
+        "meta_name": "AI and Automation",
+        "description": "Tokens leveraging AI, automation, or agent-based narratives, often tied to futuristic or speculative tech themes.",
         "defining_signals": [
-          "Tokens inspired by viral TikTok/X memes, such as 'Jestermaxxing' and 'BongoCat'.",
-          "Use of pop culture references, such as 'Ralph Wiggum' from The Simpsons and 'Clippy' from Microsoft.",
-          "Meme-based tokens with no prior cultural context, such as 'Pippkin The Horse' and 'Rizzter'."
+          "Tokens like 'Clawdbot', 'AgenN', and 'AI Rig Complex' focus on AI-driven automation or agent-based systems.",
+          "Descriptions often mention AI-driven trading, productivity, or autonomous agents.",
+          "Names and themes suggest speculative or future-oriented tech."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "clawd",
+            "token_name": "clawdbot",
+            "token_address": "Hoi9Lo8s2PP7EM9mv9bZjQ3aSB7ijyS238sTqQjbpump"
+          },
+          {
+            "token_symbol": "AgenN",
+            "token_name": "AgenN",
+            "token_address": "8dT7X2Uoaja6rfLzLi7sWNKLYuu58u1Ts9nP3qrApump"
+          },
+          {
+            "token_symbol": "arc",
+            "token_name": "AI Rig Complex",
+            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+          },
+          {
+            "token_symbol": "parre",
+            "token_name": "parre",
+            "token_address": "7C7m7HumGUm9RzkPpHhziDyDAoJb3zshxi8xdkjwpump"
+          },
+          {
+            "token_symbol": "MIA",
+            "token_name": "Mia Ko",
+            "token_address": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump"
+          }
+        ],
+        "leader_hint_token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+        "confidence_0_100": 75,
+        "confidence_rationale": "Emerging trend with strong thematic overlap, but limited market cap dominance yet.",
+        "leader_token": {
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 38309213.55
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal-Themed Tokens",
+        "description": "Tokens centered around animals, often leveraging viral animal stories or internet animal memes for branding.",
+        "defining_signals": [
+          "Tokens like 'Punch', 'Faith', 'Pippkin', and 'Jellybean' reference real or fictional animals.",
+          "Descriptions often tie to viral animal stories or rescue narratives.",
+          "Names and themes are frequently whimsical or humorous."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "Punch",
+            "token_name": "パンチ",
+            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+          },
+          {
+            "token_symbol": "Faith",
+            "token_name": "Faith The Warrior",
+            "token_address": "J4NPHmnapuLJLeDkxuqaHNkKvXmjg81HJRwGk2xHpump"
+          },
+          {
+            "token_symbol": "Jellybean",
+            "token_name": "Jellybean",
+            "token_address": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump"
+          },
+          {
+            "token_symbol": "Pippkin",
+            "token_name": "Pippkin The Horse",
+            "token_address": "6ydMmFRaNt4AHBjgvSogbBvcxnTrX3QzUe2AEzVppump"
+          },
+          {
+            "token_symbol": "Kabuto",
+            "token_name": "Kabuto",
+            "token_address": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump"
+          }
+        ],
+        "leader_token": {
+          "token_symbol": "Punch",
+          "token_name": "パンチ",
+          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+          "usd_market_cap": 11888090.66
+        },
+        "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Meme-Driven Tokens",
+        "description": "Tokens based on internet memes, often repurposing viral content, slang, or pop culture references for crypto branding.",
+        "defining_signals": [
+          "Tokens like 'Jester', 'BongoCat', 'Pippkin', and 'Clippy' are directly tied to viral memes or internet slang.",
+          "Names and descriptions often reference TikTok, Reddit, or X trends.",
+          "Lack of standalone utility, relying on cultural virality for adoption."
         ],
         "supporting_tokens": [
           {
             "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXINGING",
+            "token_name": "JESTERMAXXING",
             "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
           },
           {
@@ -343,91 +432,41 @@
             "token_address": "9gdB6CmfBW7Cer73x6aGiqqkGEcuzpaZLJkhJVEGpump"
           },
           {
-            "token_symbol": "RAALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
+            "token_symbol": "Pippkin",
+            "token_name": "Pippkin The Horse",
+            "token_address": "6ydMmFRaNt4AHBjgvSogbBvcxnTrX3QzUe2AEzVppump"
           },
           {
             "token_symbol": "Clippy",
             "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
+            "token_address": "GKjAAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
           },
           {
-            "token_symbol": "Pippkin",
-            "token_name": "Pippkin The Horse",
-            "token_address": "6ydMmFRaNt4AHBjgvSogbBvcxnTrX3QzUe2AEzVppump"
-          },
-          {
-            "token_symbol": "RIZZTER",
-            "token_name": "RIZZTER",
-            "token_address": "BwUrTqcaoJUVnKTGPZk7k4iiSdTUeFSQKBh7f8rtpump"
-          },
-          {
-            "token_symbol": "Pigeon",
-            "token_name": "level941",
-            "token_address": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump"
-          },
-          {
-            "token_symbol": "PENGUIN",
-            "token_name": "Nietzschean Penguin",
-            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
-          },
-          {
-            "token_symbol": "Sidelined",
-            "token_name": "Sidelined",
-            "token_address": "9QNw7B9EKUoaWZFsdho5UNqF5kLNZh7Ro12XZDkRpump"
-          },
-          {
-            "token_symbol": "BAN",
-            "token_name": "Comedian",
-            "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump"
-          },
-          {
-            "token_symbol": "PETAH",
-            "token_name": "ピータさん",
-            "token_address": "GDmSzyg3F3CqgusT4CcxhjaKKfaucN98L4EUePeqpump"
-          },
-          {
-            "token_symbol": "Pippkin",
-            "token_name": "Pippkin The Horse",
-            "token_address": "6ydMmFRaNt4AHBjgvSogbBvcxnTrX3QzUe2AEzVppump"
+            "token_symbol": "Wojak",
+            "token_name": "Wojak",
+            "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           }
         ],
-        "leader_hint_token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump",
+        "leader_hint_token_address": "9gdB6CmfBW7Cer73x6aGiqqkGEcuzpaZLJkhJVEGpump",
         "confidence_0_100": 90,
-        "confidence_rationale": "Strong meme-driven narrative with multiple tokens referencing viral TikTok/X memes and pop culture. The meme-based tokens are well-aligned with current internet trends and community engagement.",
+        "confidence_rationale": "Strong meme lineage and consistent naming patterns across tokens.",
         "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 113085483.61
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 7119739.84
         },
         "leader_missing_reason": null
       },
       {
         "meta_name": "Anti-War Sentiment",
-        "description": "A recurring theme across multiple tokens is the promotion of peace and opposition to war, often drawing from historical anti-war slogans, geopolitical tensions, or viral anti-war memes. These tokens leverage cultural narratives of resistance, peace advocacy, and humanitarian aid to attract attention and community support.",
+        "description": "Tokens leveraging anti-war themes, often referencing historical or modern peace movements. These tokens frequently tie into geopolitical tensions and humanitarian narratives.",
         "defining_signals": [
-          "Use of historical anti-war slogans like 'No More War' and 'make love, not war'.",
-          "Tokens referencing geopolitical tensions, such as 'RedX' tracking USA-Iran conflict.",
-          "Meme-based anti-war themes, such as 'Nuclear war is bad for Kittens'."
+          "Tokens with names like 'Peace', 'No More Wars', 'Nowar', and 'Faith The Warrior' reference anti-war or peace themes.",
+          "Descriptions often include humanitarian goals or symbolic imagery related to conflict resolution.",
+          "Tied to real-world events or viral anti-war slogans, such as 'make love, not war'."
         ],
         "supporting_tokens": [
-          {
-            "token_symbol": "DREMT",
-            "token_name": "DREMT",
-            "token_address": "AmUYmDAhxoD841aT44dNLVHRvnZ1zGe1uppZLFw5MSou"
-          },
-          {
-            "token_symbol": "RedX",
-            "token_name": "RED LINE",
-            "token_address": "2ezzm2op7yompaojh7vNVKhTcjjtYcyp4ueeULhZpump"
-          },
-          {
-            "token_symbol": "NOMOREWAR",
-            "token_name": "No More War",
-            "token_address": "56fQJEcjWp6XmDtFRJnuvPz4fiT3BCEfJ8ntFpJpump"
-          },
           {
             "token_symbol": "NMW",
             "token_name": "No More Wars",
@@ -440,69 +479,67 @@
           },
           {
             "token_symbol": "Nowar",
-            "token_name": "make love, not war",
+            "token_name": "make love,not war",
             "token_address": "DwZPYSKcBVeJKwZEwF86qft4a1Bm9ccz6tqQsakpump"
           },
           {
-            "token_symbol": "KINGS",
-            "token_name": "Board Of Kings",
-            "token_address": "CTju3ZkwmPArfLU9vR4HNEV4KQsw5wG3qaaBH9Hpump"
+            "token_symbol": "Faith",
+            "token_name": "Faith The Warrior",
+            "token_address": "J4NPHmnapuLJLeDkxuqaHNkKvXmjg81HJRwGk2xHpump"
           },
           {
             "token_symbol": "BOW",
             "token_name": "Board of War",
             "token_address": "AgPufgmY8kho6Nv27SzxSXWMKJHL4eXghth1ZFpnpump"
-          },
-          {
-            "token_symbol": "KALSHI",
-            "token_name": "Kalshi PreStocks",
-            "token_address": "PreLWGkkeqG1s4HEfFZSy9moCrJ7btsHuUtfcCeoRua"
-          },
-          {
-            "token_symbol": "OEF",
-            "token_name": "OPERATION EPIC FURY",
-            "token_address": "9Ey3RvjnQ5EwGmxmynorLRaMX2KGLuHSUgQZctw4Kef3"
-          },
-          {
-            "token_symbol": "Punch",
-            "token_name": "パンチ",
-            "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
-          },
-          {
-            "token_symbol": "WARPUNCH",
-            "token_name": "War Punch",
-            "token_address": "Bu5rS5EwPUiSWaMSHYt61F8imEG4f7g6GZu3axEWbonk"
           }
         ],
-        "leader_hint_token_address": "AmUYmDAhxoD841aT44dNLVHRvnZ1zGe1uppZLFw5MSou",
+        "leader_hint_token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
         "confidence_0_100": 85,
-        "confidence_rationale": "Strong thematic consistency across tokens, with multiple tokens referencing historical anti-war slogans, geopolitical tensions, and meme-based peace advocacy. The market narrative is well-aligned with current global tensions and cultural trends.",
+        "confidence_rationale": "Strong thematic consistency across tokens, with clear cultural and geopolitical references.",
         "leader_token": {
-          "token_symbol": "Punch",
-          "token_name": "パンチ",
-          "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-          "usd_market_cap": 11888090.66
+          "token_symbol": "Peace",
+          "token_name": "World Peace",
+          "token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
+          "usd_market_cap": 1211989.17
         },
         "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Meme-Driven Tokens",
+        "meta_name": "AI and Automation",
         "leader_token": {
-          "token_symbol": "Ban",
-          "token_name": "Comedian",
-          "token_address": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
-          "usd_market_cap": 113085483.61
+          "token_symbol": "arc",
+          "token_name": "AI Rig Complex",
+          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+          "usd_market_cap": 38309213.55
         }
       },
       {
-        "meta_name": "Anti-War Sentiment",
+        "meta_name": "Animal-Themed Tokens",
         "leader_token": {
           "token_symbol": "Punch",
           "token_name": "パンチ",
           "token_address": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
           "usd_market_cap": 11888090.66
+        }
+      },
+      {
+        "meta_name": "Meme-Driven Tokens",
+        "leader_token": {
+          "token_symbol": "WOJAK",
+          "token_name": "Wojak",
+          "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "usd_market_cap": 7119739.84
+        }
+      },
+      {
+        "meta_name": "Anti-War Sentiment",
+        "leader_token": {
+          "token_symbol": "Peace",
+          "token_name": "World Peace",
+          "token_address": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
+          "usd_market_cap": 1211989.17
         }
       }
     ]
