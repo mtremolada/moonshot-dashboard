@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-03-02T16:28:41.579324Z",
+  "generated_at_utc": "2026-03-02T17:29:03.556441Z",
   "input_file": "C:\\SoftwareDev\\Bots\\moonshot_beta_bot\\trending_tokens_agent_research_desk.json",
   "model": "qwen/qwen3-32b",
-  "token_context_count": 127,
+  "token_context_count": 123,
   "prompt_truncated": false,
   "warnings": [
-    "Detected 13 PVP group(s); excluding 24 token(s) from META prompt."
+    "Detected 13 PVP group(s); excluding 23 token(s) from META prompt."
   ],
-  "pvp_excluded_token_count": 24,
+  "pvp_excluded_token_count": 23,
   "pvp_report": [
     {
       "match_type": "token_name",
@@ -138,33 +138,6 @@
     },
     {
       "match_type": "token_symbol",
-      "match_value": "sol",
-      "tokens": [
-        {
-          "token_symbol": "SOL",
-          "token_name": "Solana",
-          "token_address": "DRLNhjM7jusYFPF1qade1dBD1qhgds7oAfdKs51Vpump",
-          "usd_market_cap": 622700.46,
-          "processed_at": "2026-03-01T16:22:52.671250Z"
-        },
-        {
-          "token_symbol": "SOL",
-          "token_name": "Sol The Trophy Tomato",
-          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
-          "usd_market_cap": 1104780.5,
-          "processed_at": "2026-03-01T18:11:41.486380Z"
-        },
-        {
-          "token_symbol": "sol",
-          "token_name": "PHX",
-          "token_address": "3EwuyxLFM3Nefh84FcLbxQNrhX1VUei2oHHLUXQzpump",
-          "usd_market_cap": 6127.02,
-          "processed_at": "2026-03-02T03:32:28.301818Z"
-        }
-      ]
-    },
-    {
-      "match_type": "token_symbol",
       "match_value": "punch",
       "tokens": [
         {
@@ -180,6 +153,26 @@
           "token_address": "HCvQKHy7crusPfEkcxfWWmDeZFZ928Pd2oF4EKo2pump",
           "usd_market_cap": 18554.16,
           "processed_at": "2026-03-02T12:00:46.151318Z"
+        }
+      ]
+    },
+    {
+      "match_type": "token_symbol",
+      "match_value": "sol",
+      "tokens": [
+        {
+          "token_symbol": "SOL",
+          "token_name": "Sol The Trophy Tomato",
+          "token_address": "jk1T35eWK41MBMM8AWoYVaNbjHEEQzMDetTsfnqpump",
+          "usd_market_cap": 1104780.5,
+          "processed_at": "2026-03-01T18:11:41.486380Z"
+        },
+        {
+          "token_symbol": "sol",
+          "token_name": "PHX",
+          "token_address": "3EwuyxLFM3Nefh84FcLbxQNrhX1VUei2oHHLUXQzpump",
+          "usd_market_cap": 6127.02,
+          "processed_at": "2026-03-02T03:32:28.301818Z"
         }
       ]
     },
@@ -344,63 +337,12 @@
   "llm_json": {
     "top_metas": [
       {
-        "meta_name": "Animal Meme Tokens",
-        "description": "Tokens centered around animals, often repurposed as internet memes or symbols of absurdity. These tokens typically use anthropomorphic or symbolic animal imagery to create a humorous or satirical identity.",
+        "meta_name": "Meme Rehashing",
+        "description": "Tokens repackaging existing internet memes or cultural references for crypto branding. These often leverage viral images, phrases, or characters from non-crypto origins to create a sense of familiarity and community.",
         "defining_signals": [
-          "Animal-centric names (e.g., 'Pippin', 'Ralph Wiggum', 'Lobstar').",
-          "Meme-like descriptions or lore (e.g., 'War Punch', 'Cherry').",
-          "Absence of traditional utility, with focus on humor or community."
-        ],
-        "supporting_tokens": [
-          {
-            "token_symbol": "Pippin",
-            "token_name": "Pippin",
-            "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
-          },
-          {
-            "token_symbol": "RALPH",
-            "token_name": "Ralph Wiggum",
-            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGS"
-          },
-          {
-            "token_symbol": "Lobstar",
-            "token_name": "Lobstar",
-            "token_address": "AVF9F4C4j8b1Kh4BmNHqybDaHgnZpJ7W7yLvL7hUpump"
-          },
-          {
-            "token_symbol": "Cherry",
-            "token_name": "Cherry",
-            "token_address": "4TcgfZpp6w7Ty445KwN61rLtyofx6WRiFByym7pDpump"
-          },
-          {
-            "token_symbol": "WarPunch",
-            "token_name": "War Punch",
-            "token_address": "Bu5rS5EwPUiSWaMSHYt61F8imEG4f7g6GZu3axEWbonk"
-          },
-          {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjG587z8suK3ec6cwQwgZNLbWKyp"
-          }
-        ],
-        "leader_hint_token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-        "confidence_0_100": 82,
-        "confidence_rationale": "Strong recurring theme of animal-based humor, with clear meme-like narratives and community-driven branding.",
-        "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 577378652.98
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Meme Rehash",
-        "description": "Tokens repurposing existing internet memes or cultural references for crypto branding. These often leverage viral phrases, characters, or concepts from TikTok, Reddit, or other platforms to create a sense of familiarity.",
-        "defining_signals": [
-          "Use of pre-existing meme characters (e.g., Wojak, Rainbow Fish, Hachiko).",
-          "Direct reference to viral phrases or internet slang (e.g., 'useless', 'rizz', 'goy').",
-          "Absence of original cultural context outside of crypto."
+          "Use of established memes (e.g., Wojak, Bonk, Ralph Wiggum) as core branding.",
+          "Direct linkage to viral internet content (e.g., TikTok, Reddit, 4chan) with no original cultural context.",
+          "Repetition of meme-based themes across multiple tokens (e.g., 'Useless', 'War Punch', 'Doom Neuron')."
         ],
         "supporting_tokens": [
           {
@@ -409,93 +351,70 @@
             "token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump"
           },
           {
-            "token_symbol": "RAAAAAH",
-            "token_name": "Skeleton Banging Shield",
-            "token_address": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump"
+            "token_symbol": "BONK",
+            "token_name": "Bonk",
+            "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
           },
           {
-            "token_symbol": "HACHI",
-            "token_name": "Hachiko",
-            "token_address": "x95HN3DWvbfCBtTjG587z8suK3ec6cwQwgZNLbWKyp"
+            "token_symbol": "RALPH",
+            "token_name": "Ralph Wiggum",
+            "token_address": "CxWPdDBqxVo3fnTMRTvNuSrd4gkp78udSrFvkVDBAGG"
           },
           {
-            "token_symbol": "USELESS",
-            "token_name": "USELESS COIN",
-            "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk"
+            "token_symbol": "DOOM",
+            "token_name": "Doom Neuron",
+            "token_address": "AukyjhMSmN5VEGjQ9npeu6Eu9X21feL1qCbZSPeJpump"
           },
           {
-            "token_symbol": "Goyim",
-            "token_name": "Goyim",
-            "token_address": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump"
+            "token_symbol": "WARPUNCH",
+            "token_name": "War Punch",
+            "token_address": "Bu5rR5EwPUiSWaMSHYt61F8imEG4f7g6GZu3axEWbonk"
           },
           {
-            "token_symbol": "JESTER",
-            "token_name": "JESTERMAXXINGING",
-            "token_address": "6WdHhpRY7vL8SQ69bd89tAj3sk8jsjBrCLDUTZSNpump"
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
           }
         ],
-        "leader_hint_token_address": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
-        "confidence_0_100": 88,
-        "confidence_rationale": "Strong evidence of meme-based branding across multiple tokens, with clear cultural references and viral internet origins.",
+        "leader_hint_token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "confidence_0_100": 92,
+        "confidence_rationale": "Bonk is a well-established meme with strong cultural roots in both gaming and meme culture, and has a large existing community. Other tokens in this category are newer but follow the same pattern.",
         "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 40539706.15
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 544895810.85
         },
         "leader_missing_reason": null
       },
       {
-        "meta_name": "AI & Future Tech",
-        "description": "Tokens centered around artificial intelligence, future tech, or speculative science fiction. These often use futuristic themes, AI agents, or speculative tech to create a narrative.",
+        "meta_name": "Political/Satirical Meme Tokens",
+        "description": "Tokens leveraging political figures, movements, or satirical internet content. These often use irony, parody, or subversion of real-world events to create a community identity.",
         "defining_signals": [
-          "AI or future tech themes (e.g., 'AI Rig Complex', 'Clippy', 'Parre').",
-          "Speculative or science fiction narratives.",
-          "Lack of traditional utility, with focus on speculative or experimental tech."
+          "Direct references to political figures (e.g., 'Ayatollah Donald Trump', 'Supreme Leader').",
+          "Use of political memes (e.g., 'RIP Khamenei', 'Goyim', 'Hitler Was Right').",
+          "Satirical or ironic framing of real-world events (e.g., 'War Punch', 'Iran Steve')."
         ],
         "supporting_tokens": [
           {
-            "token_symbol": "arc",
-            "token_name": "AI Rig Complex",
-            "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+            "token_symbol": "ADTRUMP",
+            "token_name": "Ayatollah Donald Trump",
+            "token_address": "62SkefeHDW7dpi2ER6ue7GPKmPHXdWY14z12yjPSpump"
           },
           {
-            "token_symbol": "Clippy",
-            "token_name": "Clippy",
-            "token_address": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump"
-          }
-        ],
-        "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 38309213.55
-        },
-        "leader_missing_reason": null
-      },
-      {
-        "meta_name": "Political Satire",
-        "description": "Tokens leveraging political figures, ideologies, or events for satirical or ironic purposes. These often use memes, slogans, or fictional narratives tied to real-world politics.",
-        "defining_signals": [
-          "References to political figures (e.g., 'Hitler Was Right', 'Ayatollah Donald Trump').",
-          "Use of political slogans or satirical phrases (e.g., 'Supreme Leader', 'WAR').",
-          "Absence of traditional utility, with focus on commentary or humor."
-        ],
-        "supporting_tokens": [
+            "token_symbol": "KHAMENEI",
+            "token_name": "Rip Ayatollah Khamenei",
+            "token_address": "9AueQtFFsA3XaUY6XnNqgKeDr4SKdFWU1LJvSDsWpump"
+          },
+          {
+            "token_symbol": "GOY",
+            "token_name": "Goys R Us",
+            "token_address": "CyDi275WFQaf5rnhXRMnuKqmWqFMRK6S9yFAf1kXpump"
+          },
           {
             "token_symbol": "HITLER",
             "token_name": "Hitler Was Right",
             "token_address": "ABvaesm1cqWvbon8Sc1EzYkXoZo7XBdV2piPAYi8pump"
-          },
-          {
-            "token_symbol": "ADTRUMP",
-            "token_name": "Ayatollah Donald Trump",
-            "token_address": "62skefeHDW7dpi2ER6ue7GPKmPHXdW14z12yjPSpump"
-          },
-          {
-            "token_symbol": "SUPREME",
-            "token_name": "Supreme Leader",
-            "token_address": "82iog3FJwjYQgeAj3TYTnDMwfiTU2kycBS7LovKUpump"
           },
           {
             "token_symbol": "WAR",
@@ -503,19 +422,14 @@
             "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk"
           },
           {
-            "token_symbol": "Khamenei",
-            "token_name": "Rip Ayatollah Khamenei",
-            "token_address": "9AueQtFFsA3XaUY6XnNqgKeDr4SKdFWU1LJvSDsWpump"
-          },
-          {
-            "token_symbol": "B2",
-            "token_name": "B2 Bomber",
-            "token_address": "2n3qikMvFycc27BKiBKvBnGz2dwRXjKPt1SsXNwpump"
+            "token_symbol": "SUPREME",
+            "token_name": "Supreme Leader",
+            "token_address": "82iog3FJwjYQgeAj3TYTnDMwfiTU2kycBS7LovKUpump"
           }
         ],
-        "leader_hint_token_address": "ABvaesm1cqWvbon8Sc1EzYkXoZo7XBdV2piPAYi8pump",
-        "confidence_0_100": 75,
-        "confidence_rationale": "Emerging trend with strong political satire themes, though some tokens have niche or controversial appeal.",
+        "leader_hint_token_address": "9AueQtFFsA3XaUY6XnNqgKeDr4SKdFWU1LJvSDsWpump",
+        "confidence_0_100": 80,
+        "confidence_rationale": "The 'RIP Khamenei' token is a clear example of a political meme with strong viral traction. Other tokens in this category are either newer or have weaker cultural ties.",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
@@ -523,43 +437,85 @@
           "usd_market_cap": 18285680.0
         },
         "leader_missing_reason": null
+      },
+      {
+        "meta_name": "Animal-Inspired Meme Tokens",
+        "description": "Tokens inspired by animals or animal-related internet phenomena. These often use cute, absurd, or symbolic animal imagery to create a viral identity.",
+        "defining_signals": [
+          "Use of animal imagery (e.g., penguin, lobster, cat, hippo) as central theme.",
+          "Leverage of viral animal-based memes (e.g., 'Nietzschean Penguin', 'Lobster Cat', 'Minecraft Grandma').",
+          "Community-driven narratives around animal symbolism (e.g., 'Faith the Warrior', 'Jellybean')."
+        ],
+        "supporting_tokens": [
+          {
+            "token_symbol": "PENGUIN",
+            "token_name": "Nietzschean Penguin",
+            "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump"
+          },
+          {
+            "token_symbol": "JELLYBEAN",
+            "token_name": "Jellybean",
+            "token_address": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump"
+          },
+          {
+            "token_symbol": "GRANDMA",
+            "token_name": "Minecraft Grandma Fund",
+            "token_address": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump"
+          },
+          {
+            "token_symbol": "FISH",
+            "token_name": "Rainbowfish",
+            "token_address": "CmgJ1PobhUqq7MEa8qDkiG2tUpMTskWj8d9JeZWSpump"
+          },
+          {
+            "token_symbol": "CAT",
+            "token_name": "Lobster Cat",
+            "token_address": "4TzzzEPbq8w7bS6BZ6txKUvMDKCKdJ5dVNKtdtiXpump"
+          },
+          {
+            "token_symbol": "FAITH",
+            "token_name": "Faith The Warrior",
+            "token_address": "J4NPHmnapuLJLeDkxuqaHNkKvXmjg81HJRwGk2xHpump"
+          }
+        ],
+        "leader_hint_token_address": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump",
+        "confidence_0_100": 85,
+        "confidence_rationale": "Jellybean has a strong viral narrative around a real-world animal and a clear meme origin. Other tokens in this category are either newer or have weaker cultural ties.",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 4795818.39
+        },
+        "leader_missing_reason": null
       }
     ],
     "meta_leaders": [
       {
-        "meta_name": "Animal Meme Tokens",
+        "meta_name": "Meme Rehashing",
         "leader_token": {
-          "token_symbol": "pippin",
-          "token_name": "Pippin",
-          "token_address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
-          "usd_market_cap": 577378652.98
+          "token_symbol": "Bonk",
+          "token_name": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "usd_market_cap": 544895810.85
         }
       },
       {
-        "meta_name": "Meme Rehash",
-        "leader_token": {
-          "token_symbol": "USELESS",
-          "token_name": "USELESS COIN",
-          "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-          "usd_market_cap": 40539706.15
-        }
-      },
-      {
-        "meta_name": "AI & Future Tech",
-        "leader_token": {
-          "token_symbol": "arc",
-          "token_name": "AI Rig Complex",
-          "token_address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
-          "usd_market_cap": 38309213.55
-        }
-      },
-      {
-        "meta_name": "Political Satire",
+        "meta_name": "Political/Satirical Meme Tokens",
         "leader_token": {
           "token_symbol": "WAR",
           "token_name": "WAR",
           "token_address": "8opvqaWysX1oYbXuTL8PHaoaTiXD69VFYAX4smPebonk",
           "usd_market_cap": 18285680.0
+        }
+      },
+      {
+        "meta_name": "Animal-Inspired Meme Tokens",
+        "leader_token": {
+          "token_symbol": "PENGUIN",
+          "token_name": "Nietzschean Penguin",
+          "token_address": "8Jx8AAHj86wbQgUTjGuj6GTTL5Ps3cqxKRTvpaJApump",
+          "usd_market_cap": 4795818.39
         }
       }
     ]
